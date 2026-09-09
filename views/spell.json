@@ -24,11 +24,16 @@
               "width": -1
             },
             {
-              "type": "image",
-              "value": "/icons/actions/{{data.actions}}.png",
-              "color": "#000",
-              "height": 26,
-              "visibleIf": "data.actions"
+              "type": "list",
+              "attribute": "data.castActions",
+              "views": [
+                {
+                  "type": "image",
+                  "value": "/icons/actions/{{value}}.png",
+                  "color": "#000",
+                  "height": 26
+                }
+              ]
             },
             {
               "type": "spacer"

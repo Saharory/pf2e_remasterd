@@ -102,6 +102,7 @@
   --box-border-color: rgba(0, 0, 0, 0.255);
   --box-background-color: rgba(255, 255, 255, 0.9);
   --box-text-color: #4E1B0E;
+  --page-border-color: rgba(0, 0, 0, 0.3);
 }
 
 /* colors */
@@ -149,8 +150,8 @@
     --pico-h6-color: #8891a4;
 
     .stat-block {
-      background-color: #F7F3F0;
-      --pico-background-color: #F7F3F0;
+      background-color: #172119;
+      --pico-background-color: #172119;
     }
   }
 }
@@ -338,6 +339,304 @@ p:last-child {
   /* filter: brightness(0.8) */
 }
 
+/* PF2E chapter-style pages used by ancestries and classes. */
+.core-page {
+  padding: 1rem;
+  margin: -1rem;
+  overflow: hidden;
+  background-color: #F7F3F0;
+  color: #000;
+  border-top: 1px solid var(--page-border-color);
+  border-bottom: 1px solid var(--page-border-color);
+  line-height: 1.33;
+  --pico-color: #000;
+  --pico-h1-color: #000;
+  --pico-h2-color: var(--dark-red-color);
+  --pico-h3-color: var(--dark-red-color);
+}
+
+.core-page a {
+  --pico-color: #075d79;
+  --pico-underline: #075d7955;
+}
+
+.core-page-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: end;
+  padding: 0.85rem 1rem 0.45rem;
+  margin: -1rem -1rem 0.6rem;
+  background-color: #f3e8c3;
+  background-image: url('../images/header-paper.jpg');
+  background-repeat: repeat;
+  border-bottom: 3px solid var(--dark-red-color);
+  color: #000;
+  text-transform: uppercase;
+}
+
+.core-page-header > * {
+  margin: 0;
+  color: #000;
+  font-family: FF Good Pro Cond;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.core-page-header h1 {
+  padding: 0;
+}
+
+.core-page .traits {
+  margin-bottom: 0.65rem;
+}
+
+.core-page-summary {
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #756d64;
+  font-family: Sabon;
+  font-style: italic;
+}
+
+.core-page-summary > :last-child {
+  margin-bottom: 0;
+}
+
+.core-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  margin-bottom: 0.9rem;
+  border-top: 1px solid #756d64;
+  border-bottom: 1px solid #756d64;
+}
+
+.core-fact {
+  min-width: 0;
+  padding: 0.55rem 0.7rem;
+  border-right: 1px solid #aaa198;
+}
+
+.core-fact:last-child {
+  border-right: 0;
+}
+
+.core-fact strong {
+  display: block;
+  color: var(--dark-red-color);
+  font-family: FF Good Pro Cond;
+  text-transform: uppercase;
+}
+
+.core-fact span {
+  display: block;
+}
+
+.core-columns,
+.core-proficiencies {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.core-section {
+  margin-top: 0.9rem;
+}
+
+.core-section h2 {
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid var(--dark-red-color);
+  color: var(--dark-red-color);
+  font-family: FF Good Pro Cond;
+  text-transform: uppercase;
+}
+
+.core-section p,
+.core-proficiencies p {
+  margin-bottom: 0.55rem;
+}
+
+.core-section strong,
+.core-proficiencies strong,
+.core-feature h3 {
+  color: var(--dark-red-color);
+}
+
+.core-feature {
+  margin-top: 0.75rem;
+}
+
+.core-feature h3 {
+  padding-bottom: 0.15rem;
+  margin-bottom: 0.3rem;
+  border-bottom: 1px solid #756d64;
+  font-family: FF Good Pro Cond;
+  text-transform: uppercase;
+}
+
+.core-advancement {
+  overflow-x: auto;
+}
+
+.core-advancement table {
+  margin-bottom: 0;
+}
+
+.core-advancement th,
+.core-advancement td {
+  padding: 0.35rem 0.45rem;
+  border-bottom: 1px solid #b8afa5;
+  color: #000;
+  vertical-align: top;
+}
+
+.core-advancement th {
+  color: var(--dark-red-color);
+  font-family: FF Good Pro Cond;
+  text-transform: uppercase;
+}
+
+/* Class-only table colors. The structure, spacing, and typography stay shared. */
+#class .core-advancement th {
+  background-color: #eadbd3;
+}
+
+#class .core-advancement th:first-child,
+#class .core-advancement td:first-child {
+  background-color: #eee2d9;
+  color: var(--dark-red-color);
+}
+
+#class .core-advancement tbody tr:nth-child(odd) td:not(:first-child) {
+  background-color: #fbf8f2;
+}
+
+#class .core-advancement tbody tr:nth-child(even) td:not(:first-child) {
+  background-color: #f2ece2;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  #class .core-page,
+  #ancestry .core-page {
+    background-color: #172119;
+    color: #d7dbd5;
+    border-color: #3a493e;
+    --pico-color: #d7dbd5;
+    --pico-h1-color: #f1e8d8;
+    --pico-h2-color: #e4a18c;
+    --pico-h3-color: #e9ab96;
+    --dark-red-color: #d68a74;
+    --page-border-color: #3a493e;
+  }
+
+  #class .core-page a,
+  #ancestry .core-page a {
+    --pico-color: #58aed0;
+    --pico-underline: #58aed055;
+  }
+
+  #class .core-page-header,
+  #ancestry .core-page-header {
+    background-color: #1c2820;
+    background-image: url('../images/header-paper.jpg');
+    background-blend-mode: multiply;
+    border-bottom-color: #b96b57;
+    color: #f1e8d8;
+  }
+
+  #class .core-page-header > *,
+  #ancestry .core-page-header > * {
+    color: #f1e8d8;
+  }
+
+  #class .core-page-summary,
+  #ancestry .core-page-summary {
+    border-bottom-color: #8b7465;
+    color: #e1d9cb;
+  }
+
+  #class .core-facts,
+  #ancestry .core-facts {
+    border-top-color: #536158;
+    border-bottom-color: #536158;
+  }
+
+  #class .core-fact,
+  #ancestry .core-fact {
+    border-right-color: #536158;
+  }
+
+  #class .core-section h2,
+  #ancestry .core-section h2 {
+    border-bottom-color: #a85f50;
+  }
+
+  #class .core-feature h3,
+  #ancestry .core-feature h3 {
+    border-bottom-color: #455349;
+  }
+
+  #class .core-advancement th,
+  #class .core-advancement td {
+    border-bottom-color: #425047;
+    color: #d7dbd5;
+  }
+
+  #class .core-advancement th {
+    background-color: #26362b;
+    color: #dfa08b;
+  }
+
+  #class .core-advancement th:first-child,
+  #class .core-advancement td:first-child {
+    background-color: #223128;
+    color: #e4a18c;
+  }
+
+  #class .core-advancement tbody tr:nth-child(odd) td:not(:first-child) {
+    background-color: #172119;
+  }
+
+  #class .core-advancement tbody tr:nth-child(even) td:not(:first-child) {
+    background-color: #1b271e;
+  }
+}
+
+@media (max-width: 575px) {
+  .core-page-header {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .core-page-header > :last-child {
+    font-size: 1rem;
+  }
+
+  .core-facts,
+  .core-columns,
+  .core-proficiencies {
+    grid-template-columns: 1fr;
+  }
+
+  .core-fact {
+    border-right: 0;
+    border-bottom: 1px solid #aaa198;
+  }
+
+  .core-fact:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .core-page {
+    margin: 0;
+    border: 1px solid var(--page-border-color);
+  }
+}
+
 .split-header {
 
   .right {
@@ -407,8 +706,8 @@ p:last-child {
   padding: 1rem;
   margin: -1rem;
   background-color: #F7F3F0;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--page-border-color);
+  border-bottom: 1px solid var(--page-border-color);
   overflow: hidden;
   line-height: 1.33;
 
@@ -462,6 +761,167 @@ p:last-child {
   } */
 }
 
+/* Shared PF2E palette for existing book-stat and compact reference layouts. */
+.stat-block table:not([class]) th,
+#default table:not([class]) th {
+  background-color: #eadbd3;
+  color: var(--dark-red-color);
+}
+
+.stat-block table:not([class]) tbody tr:nth-child(odd) td:not(:first-child),
+#default table:not([class]) tbody tr:nth-child(odd) td:not(:first-child) {
+  background-color: #fbf8f2;
+}
+
+.stat-block table:not([class]) tbody tr:nth-child(even) td:not(:first-child),
+#default table:not([class]) tbody tr:nth-child(even) td:not(:first-child) {
+  background-color: #f2ece2;
+}
+
+.stat-block table:not([class]) td:first-child:not(:only-child),
+#default table:not([class]) td:first-child:not(:only-child) {
+  background-color: #eee2d9;
+}
+
+#default {
+  background-color: #F7F3F0;
+  color: #000;
+}
+
+#default a {
+  --pico-color: #075d79;
+  --pico-underline: #075d7955;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  .stat-block {
+    background-color: #172119;
+    border-color: #3a493e;
+    color: #d7dbd5;
+    --pico-color: #d7dbd5;
+    --pico-h1-color: #f1e8d8;
+    --pico-h2-color: #e4a18c;
+    --pico-h3-color: #e9ab96;
+    --page-border-color: #3a493e;
+  }
+
+  .stat-block .header {
+    border-bottom-color: #b96b57;
+    color: #f1e8d8;
+  }
+
+  .stat-block .header > *,
+  .stat-block .header h1 {
+    color: #f1e8d8;
+    --pico-color: #f1e8d8;
+  }
+
+  .stat-block a {
+    --pico-color: #58aed0;
+    --pico-underline: #58aed055;
+  }
+
+  .stat-block strong,
+  .stat-block h2,
+  .stat-block h3,
+  .stat-block h4,
+  .stat-block h5,
+  .stat-block h6 {
+    color: #e4a18c;
+  }
+
+  .stat-block hr {
+    background-color: #536158;
+  }
+
+  .stat-block table:not([class]) th {
+    background-color: #26362b;
+    color: #dfa08b;
+  }
+
+  .stat-block table:not([class]) th,
+  .stat-block table:not([class]) td {
+    border-bottom-color: #425047;
+  }
+
+  .stat-block table:not([class]) tbody tr:nth-child(odd) td:not(:first-child) {
+    background-color: #172119;
+  }
+
+  .stat-block table:not([class]) tbody tr:nth-child(even) td:not(:first-child) {
+    background-color: #1b271e;
+  }
+
+  .stat-block table:not([class]) td:first-child:not(:only-child) {
+    background-color: #223128;
+    color: #e4a18c;
+  }
+
+  .stat-block img[src*="icons/actions/"] {
+    filter: invert(88%) sepia(11%) saturate(355%) hue-rotate(334deg) brightness(104%);
+  }
+
+  #default {
+    background-color: #172119;
+    color: #d7dbd5;
+    --pico-color: #d7dbd5;
+    --pico-h1-color: #f1e8d8;
+    --pico-h2-color: #e4a18c;
+    --pico-h3-color: #e9ab96;
+  }
+
+  #default a {
+    --pico-color: #58aed0;
+    --pico-underline: #58aed055;
+  }
+
+  #default h2,
+  #default h3,
+  #default h4,
+  #default h5,
+  #default h6,
+  #default strong {
+    color: #e4a18c;
+  }
+
+  #default hr {
+    border-color: #536158;
+  }
+
+  #default table:not([class]) th {
+    background-color: #26362b;
+    color: #dfa08b;
+  }
+
+  #default table:not([class]) th,
+  #default table:not([class]) td {
+    border-bottom-color: #425047;
+  }
+
+  #default table:not([class]) tbody tr:nth-child(odd) td:not(:first-child) {
+    background-color: #172119;
+  }
+
+  #default table:not([class]) tbody tr:nth-child(even) td:not(:first-child) {
+    background-color: #1b271e;
+  }
+
+  #default table:not([class]) td:first-child:not(:only-child) {
+    background-color: #223128;
+    color: #e4a18c;
+  }
+
+  footer strong {
+    color: #d9ddd7;
+  }
+
+  .tags .tag {
+    background-color: #26332a;
+    border-color: #536158;
+    color: #cbd2cc;
+  }
+}
+
 .table-responsive {
   width: 100%;
   overflow-x: scroll;
@@ -480,7 +940,7 @@ table td {
 @media (min-width: 576px) {
   .stat-block {
     margin: 0rem;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--page-border-color);
   }
 }
 

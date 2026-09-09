@@ -2,10 +2,6 @@
 **{{'Creature.Perception'|l}}** [{{data.perception|signed}}](roll "{{'Creature.Perception'|l}}"); {{data.senses}}
 {% endif %}
 
-{% if data.languages %}
-**{{'Creature.Languages'|l}}** {{data.languages|map: 'Language'|lowercase}}
-{% endif %}
-
 {% if data.skills %}
 **{{'Creature.Skills'|l}}** {% for key, value in data.skills %}{{ key|map: 'Skill' }} [{{value|signed}}](roll "{{ key|map: 'Skill' }}"), {% endfor %}
 {% endif %}

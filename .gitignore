@@ -4,6 +4,21 @@
 .LSOverride
 .system
 .module
+*.system
+*.module
+*.pdf
+*.epub
+*.sqlite
+*.sqlite3
+
+# Compendium content and private source material belong in separate modules,
+# never in the shareable game-system repository.
+modules/
+content/
+generated/
+reference/
+private/
+.upstream-git/
 
 # Icon must end with two \r
 Icon

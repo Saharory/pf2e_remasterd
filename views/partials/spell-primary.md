@@ -1,5 +1,5 @@
-{% if data.traditions %}
-**{{'Spell.Traditions'|l}}** {{data.traditions|map: 'MagicalTradition'|lowercase}}
+{% if data.traditionsText %}
+**{{'Spell.Traditions'|l}}** {{data.traditionsText}}
 {% endif %}
 
 {% if data.requirements %}**{{'Spell.Requirements'|l}}** {{data.requirements}} {% endif %}
@@ -9,4 +9,3 @@
 {% if data.range %}**{{'Spell.Range'|l}}** {{data.range|lowercase}}; {% endif %}{% if data.area %}**{{'Spell.Area'|l}}** {{data.area|lowercase}}; {% endif %}{% if data.targets %}**{{'Spell.Targets'|l}}** {{data.targets}} {% endif %}
 
 {% if data.defense %}**{{'Spell.Defense'|l}}** {{data.defense|map: 'SpellDefense'}}; {% endif %}{% if data.duration %}**{{'Spell.Duration'|l}}** {{data.duration|lowercase}}{% endif %}
-

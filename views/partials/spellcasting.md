@@ -1,1 +1,1 @@
-**{{name}}** {% if spellcasting.focusPoints %}{{focusPoints}} {{'Spellcasting.FocusPoints'|l|lowercase}},{% endif %} {{'Common.DC'|l}} {{spellDC}}{% if spellcasting.spellAttack %}, {{'Common.Attack'|l|lowercase}} [{{spellAttack|signed}}](roll){% endif %} ; {{text}}
+**{{name}}** {% if focusPoints %}{{focusPoints}} {{'Spellcasting.FocusPoints'|l|lowercase}},{% endif %} {{'Common.DC'|l}} {{spellDC}}{% if spellAttack %}, {{'Common.Attack'|l|lowercase}} [{{spellAttack|signed}}](roll){% endif %}; {{text}}

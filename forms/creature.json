@@ -44,6 +44,17 @@
       "type": "group",
       "fields": [
         {
+          "title": "Creature.RecallKnowledgeDC",
+          "type": "number",
+          "attribute": "data.recallKnowledge.dc"
+        },
+        {
+          "title": "Creature.RecallKnowledgeSkills",
+          "type": "multiPicker",
+          "attribute": "data.recallKnowledge.skills",
+          "attributeType": "Skill"
+        },
+        {
           "title": "Creature.Perception",
           "type": "number",
           "attribute": "data.perception",
