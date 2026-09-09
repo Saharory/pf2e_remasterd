@@ -1,6 +1,6 @@
 # Publication and licensing review
 
-Status: **local development baseline — not cleared for public release**
+Status: **ORC compendium reviewed; inherited system assets still on hold**
 
 This document records a conservative publication boundary. It is not legal
 advice. Policies and licenses can change, so their current text must be checked
@@ -9,10 +9,10 @@ again immediately before release.
 ## Recommended package split
 
 1. **Community base system** — schemas, forms, views, styling, scripts, and
-   generic Remaster mechanics. No compendium database.
-2. **Open-rules modules** — only material confirmed as Licensed Material under
-   the ORC License (or, separately, Open Game Content under the OGL), with all
-   required notices and source attribution.
+   generic Remaster mechanics.
+2. **Open-rules modules** — material confirmed as Licensed Material under the
+   ORC License, with required notices and source attribution. These live under
+   `compendium/packs` and remain individually distributable.
 3. **Personal source modules** — content generated from purchased books,
    including extracted prose or art. These remain private and must not be
    committed or distributed.
@@ -52,8 +52,8 @@ The exact notice required by the policy as of the review date is:
 > approved by Paizo. For more information about Paizo Inc. and Paizo products,
 > visit paizo.com.
 
-**Before publication:** add a real, monitored contact method beside this
-notice. Do not claim Paizo or Encounter+ endorsement.
+The repository notice includes a monitored GitHub contact. Keep that contact
+current, and do not claim Paizo or Encounter+ endorsement.
 
 ### ORC Remaster rules
 
@@ -77,7 +77,7 @@ module deliberately includes the complete OGL notice and COPYRIGHT NOTICE and
 clearly identifies its Open Game Content. OGL-only content cannot be converted
 to ORC Licensed Material.
 
-### Archives of Nethys and Foundry-derived data
+### Reference sites and structured staging data
 
 Archives of Nethys publishes Paizo material under its own Community Use/OGL
 notices and extensive source credits. Its public availability does not mean
@@ -86,11 +86,28 @@ republished under an arbitrary software license. A public builder should fetch
 only material independently permitted by the applicable Paizo/ORC/OGL terms,
 retain source attribution, and avoid redistributing an AoN cache.
 
+The private staging data used during development contained source-site IDs and
+text extracted from owned PDFs. The public builder removes those fields and
+publishes only the resulting ORC game mechanics and functional rules text. It
+does not redistribute a source-site database or cache.
+
 The PF2E for Foundry VTT project licenses its HTML/CSS/JavaScript under Apache
 2.0, but its Pathfinder compendium content and art rely on separate Paizo and
-Foundry licensing arrangements. Do not treat the entire Foundry repository as
-Apache-licensed content. Any reused Apache code must retain the Apache license,
-copyright notices, and modification notices.
+Foundry licensing arrangements. The public packs therefore contain no Foundry
+IDs, UUIDs, macros, art, or Foundry attribution claims.
+
+### Public ORC content status
+
+The public source allowlist currently contains 15 books whose Remaster editions
+are identified as ORC releases. `Rage of Elements` is excluded because the
+available edition is OGL-only and OGL content cannot be converted into ORC
+Licensed Material. Deity entities, creature/ancestry lore, class introductions,
+setting prose, and background story prompts are also excluded as Reserved
+Material or conservative publication holds.
+
+The generated tree is checked for private extraction fields, email/watermark
+patterns, Foundry identifiers and macros, deity records, accidental OGL pack
+inclusion, malformed collections, and missing module-specific ORC notices.
 
 ## Asset hold
 
@@ -110,11 +127,11 @@ Before a public release, either:
 
 - [ ] Encounter+ upstream code license confirmed in writing or in-repository
 - [ ] every bundled font and image has a documented redistribution license
-- [ ] Paizo trade-dress review completed
-- [ ] current Community Use notice included and visible
-- [ ] monitored project contact method included
-- [ ] ORC/OGL notices generated per module and never mixed incorrectly
-- [ ] author, artist, and upstream-project attribution included
-- [ ] no PDFs, watermarks, extracted book prose, AoN cache, or campaign data
-- [ ] no claim of endorsement by Paizo, Encounter+, Foundry, or Archives of Nethys
+- [ ] Paizo trade-dress review completed for inherited system assets
+- [x] current Community Use notice included and visible
+- [x] project contact method included
+- [x] ORC notices generated per public module; OGL-only source excluded
+- [x] ORC source author attribution included
+- [x] public compendium scan rejects PDFs, watermarks, private fields, source-site IDs, and campaign data
+- [x] no claim of endorsement by Paizo, Encounter+, Foundry, or Archives of Nethys
 - [ ] clean-room archive inspection passes before uploading a release

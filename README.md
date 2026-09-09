@@ -1,15 +1,14 @@
 # Pathfinder Second Edition Remaster system for Encounter+
 
-This repository tracks the **game-system layer only**: Encounter+ entity
-schemas, forms, views, styles, scripts, localization, and packaging metadata.
-Compendium entries generated from rulebooks, Archives of Nethys, or other data
-sources are deliberately maintained as separate modules and are not part of
-this repository.
+This repository tracks the Encounter+ game system and its public ORC rules
+compendium. It includes entity schemas, forms, views, styles, scripts,
+localization, packaging metadata, and 15 separately installable content packs.
 
-The current branch is a local development baseline derived from
+The current branch is a community-maintained baseline derived from
 [`encounterplus/pf2e`](https://github.com/encounterplus/pf2e). It is not yet a
-publication-ready open-source release. See [LEGAL-REVIEW.md](LEGAL-REVIEW.md)
-for the licensing issues that must be resolved before a public release.
+stand-alone publication-ready release because the inherited code and visual
+assets still need explicit license confirmation. See
+[LEGAL-REVIEW.md](LEGAL-REVIEW.md) for that remaining review.
 
 ## Repository boundary
 
@@ -21,19 +20,40 @@ Included here:
 - character and creature presentation logic
 - system icons, fonts, and visual assets currently inherited from upstream
   (pending asset-license review)
+- 15 ORC rules modules containing 14,287 mechanical records, with individual
+  notices and attribution in [`compendium/`](compendium/)
 
 Kept outside this repository:
 
 - PDFs, EPUBs, extracted text, watermarks, and user-owned source files
-- generated compendium modules and packaged `.module` archives
 - Archives of Nethys caches
 - the PF2E for Foundry VTT source/data checkout
 - installable `.system` archives and personal campaign data
 
 ## Publication status
 
-The base system is safe to develop and version locally. Do not publish a
-release until the upstream code license, bundled font licenses, visual-asset
-provenance, Paizo notices, and project contact information are resolved.
+The ORC compendium source is publication-scoped and validated separately from
+the inherited system assets. Do not publish a stand-alone binary release until
+the upstream code license, bundled font licenses, and visual-asset provenance
+are resolved.
 
 This project is intended to remain free and non-commercial.
+
+## Public rules compendium
+
+The [`compendium/`](compendium/) directory contains only reviewed
+ORC-licensed mechanics and functional rules text. It excludes private PDFs,
+watermarks, setting chapters, adventure text, art, maps, creature lore,
+background story prompts, deity records, and OGL-only books. `Rage of Elements`
+is deliberately absent because its current source edition is OGL-only, even
+though its rules are Remaster-compatible.
+
+Every module carries its own ORC and Community Use notices. Descriptive use of
+Paizo-owned names remains Paizo property and does not imply endorsement.
+
+To validate or package the reviewed tree:
+
+```sh
+python3 tools/validate_public_orc_compendium.py
+python3 tools/package_public_release.py
+```

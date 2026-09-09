@@ -1,0 +1,734 @@
+[
+  {
+    "id": "0FFE0521-7EA5-54D1-8845-8DD040C3C1BD",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Halfling) Keen Eyes",
+    "slug": "halfling-keen-eyes-npc-core",
+    "descr": "The halfling gains a +2 circumstance bonus when using the Seek action to find Hidden or undetected creatures within 30 feet of them. Whenever the halfling targets a creature that is Concealed or hidden from them, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "interaction",
+      "frequency": "",
+      "requirements": "",
+      "trigger": ""
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "A2F85FA3-B423-536C-92C8-8BA7D4B4E11D",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Leshy) Verdant Burst",
+    "slug": "leshy-verdant-burst-npc-core",
+    "descr": "When the leshy dies, a burst of primal energy explodes from their body, restoring Hit Points based on the leshy's level to each plant creature in a area. This area is filled with plants, becoming difficult terrain. If the terrain is not a viable environment for these plants, they wither after 24 hours.\n\n| Level | Healing | Level | Healing |\n| --- | --- | --- | --- |\n| -1–0 | 1d4 | 10–11 | 6d8 |\n| 1 | 1d8 | 12–13 | 7d8 |\n| 2–3 | 2d8 | 14–15 | 8d8 |\n| 4–5 | 3d8 | 16–17 | 9d8 |\n| 6–7 | 4d8 | 18–19 | 10d8 |\n| 8–9 | 5d8 | 20+ | 11d8 |",
+    "data": {
+      "rarity": "common",
+      "traits": [
+        "healing"
+      ],
+      "category": "defensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": ""
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "healing",
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "F018F57F-46AD-5D48-BC85-66A15A91C835",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist) Blazing Gate",
+    "slug": "martial-artist-blazing-gate-npc-core",
+    "descr": "**Requirements** The grandmaster has a target Grabbed or Restrained\n\n---\n\n**Effect** The grandmaster tosses their target upwards and electrocutes them with a qi-infused double palm strike as they land. The target becomes Prone, loses the grabbed or restrained condition, and takes 5d6 bludgeoning damage and 2d8 persistent electricity damage (basic Fortitude DC 38 save).",
+    "data": {
+      "rarity": "common",
+      "traits": [
+        "electricity"
+      ],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "The grandmaster has a target Grabbed or Restrained",
+      "trigger": "",
+      "actions": "two"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "electricity",
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "CC31573D-13DE-5120-9D00-878CFD96F1CC",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist) Competitive Taunt",
+    "slug": "martial-artist-competitive-taunt-npc-core",
+    "descr": "The tournament combatant attempts to Demoralize a target. On a success, the demoralized creature is Off Guard until the end of their next turn. The tournament combatant gets a +2 circumstance bonus to their damage against a creature made off-guard in this way.",
+    "data": {
+      "rarity": "common",
+      "traits": [
+        "emotion",
+        "fear",
+        "mental"
+      ],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "",
+      "actions": "one"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "emotion",
+      "fear",
+      "mental",
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "3D057304-5992-5A5A-9487-8CF10F86E368",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist) Constant Feint Stance",
+    "slug": "martial-artist-constant-feint-stance-npc-core",
+    "descr": "This stance option replaces a different Stance Shift option (usually Secure Grapple Stance). +2 to attempts to Feint. If the mixed martial artist rolls a critical failure to Feint, they get a failure instead. If they successfully Feint, they can use Stance Shift as a free action. Unlike other stances, in this stance the mixed martial artist can't make Strikes.",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": ""
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "B8180D85-BE6B-515C-A853-E2C85007FE42",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist) Defensive Side Kick",
+    "slug": "martial-artist-defensive-side-kick-npc-core",
+    "descr": "**Trigger** A creature within the black belt's reach uses a move action\n\n---\n\n**Effect** The black belt makes a fist Strike designed to intercept and create distance. This Strike does not count towards the black belt's multiple attack penalty, and the black belt's multiple attack penalty doesn't apply to this Strike. On a successful hit, the target is pushed 5 feet away.",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "A creature within the black belt's reach uses a move action",
+      "actions": "reaction"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "B265331D-FAB1-5655-96BD-F793BB028910",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist) Kiai!",
+    "slug": "martial-artist-kiai-npc-core",
+    "descr": "**Frequency** once per turn\n\n**Requirements** The martial student attempts a Strike\n\n---\n\n**Effect** The martial student shouts to startle their adversary. If the Strike is successful, the target becomes Frightened 1.",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "offensive",
+      "frequency": "once per turn",
+      "requirements": "The martial student attempts a Strike",
+      "trigger": "",
+      "actions": "free"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "A7B5989D-4A87-5A5A-91D8-11548BA2ABB5",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist, Dirty Fighting) Concealed Spikes",
+    "slug": "martial-artist-dirty-fighting-concealed-spikes-npc-core",
+    "descr": "**Trigger** The martial artist critically succeeds on an unarmed Strike\n\n---\n\n**Effect** Tiny spikes in the martial artist's gloves or footwear deal an additional 1d6 persistent,bleed] damage.",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "The martial artist critically succeeds on an unarmed Strike",
+      "actions": "reaction"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "4CA93D24-4C3E-5259-9CA2-FB2551B7A6C9",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist, Dirty Fighting) Contraband Substance",
+    "slug": "martial-artist-dirty-fighting-contraband-substance-npc-core",
+    "descr": "The martial artist pulls out a concealed alchemical vial of mutagen and drinks it to improve their combat prowess. The item is usually a Juggernaut Mutagen (Lesser), or Quicksilver Mutagen (Lesser). This ability can't be used again until the martial artist has time to acquire and hide a new mutagen. Some martial artists use concealed small vials, but others hide a syringe or soak the alchemical liquid into a garment they can put in their mouth.",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "",
+      "actions": "one"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "5FE9F1D1-4313-5582-94B1-9E35DCA74539",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist, Dirty Fighting) Illegal Bite",
+    "slug": "martial-artist-dirty-fighting-illegal-bite-npc-core",
+    "descr": "The martial artist makes an Athletics check against a target's Fortitude DC to bite them in a vulnerable area. On a success, the martial artist deals 2d6 piercing] damage (or double on a critical success).",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "",
+      "actions": "one"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "F7CB233A-7901-5BA8-8070-71112ADF213C",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist, Dirty Fighting) Sand in Your Eye",
+    "slug": "martial-artist-dirty-fighting-sand-in-your-eye-npc-core",
+    "descr": "The martial artist Feints. On a success, the martial artist tosses sand into the face of one target, Blinding them for 1 round or until the target Interacts to remove the blinded condition.",
+    "data": {
+      "rarity": "common",
+      "traits": [
+        "visual"
+      ],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "",
+      "actions": "one"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster",
+      "visual"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "51FB6CFC-CC1F-54F9-A723-C96573331309",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist, Grandmaster) Life Burn Aura",
+    "slug": "martial-artist-grandmaster-life-burn-aura-npc-core",
+    "descr": "The grandmaster transmutes their lifespan into an expulsion of qi. For the next minute, the grandmaster is surrounded by a 30-foot emanation that deals 3d6 force|options:area-damage] damage to all creatures who start their turn within the emanation, including the grandmaster themself. While Life Burn Aura is active, the grandmaster's fist Strikes deal 2 additional die of weapon damage. When the aura disappears, the grandmaster is permanently Doomed 1. This condition is cumulative.",
+    "data": {
+      "rarity": "common",
+      "traits": [
+        "aura",
+        "force"
+      ],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "",
+      "actions": "three"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "aura",
+      "force",
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "6409D642-6E26-56C3-AE29-16611B2B2810",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist, Grandmaster) Solar Surge",
+    "slug": "martial-artist-grandmaster-solar-surge-npc-core",
+    "descr": "The grandmaster unleashes a qi wave as bright as the sun. All creatures within a 50-foot radius of the grandmaster who can see must attempt a Reflex DC 38 save, including the grandmaster themself.\n\n---\n\n**Critical Success** The creature is Dazzled for 1 round.\n\n**Success** The creature is Blinded for 1 round.\n\n**Failure** The creature is blinded for 1 day.\n\n**Critical Failure** The creature is permanently blinded.",
+    "data": {
+      "rarity": "common",
+      "traits": [
+        "visual"
+      ],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "",
+      "actions": "three"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster",
+      "visual"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "17AD435B-9039-5531-8897-97958A458A48",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Martial Artist, Grandmaster) Super Qi Blast",
+    "slug": "martial-artist-grandmaster-super-qi-blast-npc-core",
+    "descr": "The grandmaster's body expands as it prepares to exude an unfathomable amount of qi. If the grandmaster's next action is to cast the two-action version of Qi Blast, the size of the cone increases to 120 feet and the damage increases to 16d6. The grandmaster also becomes one size category larger for the next minute, dealing an additional +9 damage with their melee Strikes. Additionally, the grandmaster is permanently Drained 1. This drained condition is cumulative.",
+    "data": {
+      "rarity": "common",
+      "traits": [
+        "force",
+        "polymorph",
+        "spellshape"
+      ],
+      "category": "offensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "",
+      "actions": "one"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "force",
+      "npc-core",
+      "polymorph",
+      "remaster",
+      "spellshape"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "F9575758-6AAA-58C5-803E-7F1824FA7284",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Retired) Rusty",
+    "slug": "retired-rusty-npc-core",
+    "descr": "The NPC is out of practice. They take a –1 status penalty to all their rolls and DCs. The NPC also rolls twice on initiative rolls and takes the lower result; this is a misfortune effect.",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "",
+      "frequency": "",
+      "requirements": "",
+      "trigger": ""
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "D81F5F78-9D8F-5B67-B0A1-C9BFEA3E3187",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Retired) Still Got It!",
+    "slug": "retired-still-got-it-npc-core",
+    "descr": "**Frequency** once per encounter\n\n**Requirements** The retired creature is in a combat encounter and has either made a critical hit or is in the second round of their encounter\n\n---\n\n**Effect** The retired creature gains temporary Hit Points equal to its level that last until the end of the encounter. The retired creature also suppresses the effects of being rusty until the end of the encounter.\n\n---\n\nEffect: Still Got It!",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "",
+      "frequency": "once per encounter",
+      "requirements": "The retired creature is in a combat encounter and has either made a critical hit or is in the second round of their encounter",
+      "trigger": "",
+      "actions": "one"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "4FC2C142-F8C6-5047-8B3D-8501524656F7",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "(Union Organizer) Solidarity",
+    "slug": "union-organizer-solidarity-npc-core",
+    "descr": "10 feet.\n\nWhile leading a demonstration, the union organizer grants themself and their allies a +1 circumstance bonus to saving throws against fatigue and mental effects. Greater numbers amplify the effect. The emanation increases to 20 feet if there are at least 5 allies within 10 feet, and to 30 feet if there are at least 10 allies within 20 feet.",
+    "data": {
+      "rarity": "common",
+      "traits": [
+        "aura"
+      ],
+      "category": "defensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": ""
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "aura",
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "58A50F44-6DBE-5604-9292-1CF11F4A665E",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "Change Formation",
+    "slug": "change-formation-npc-core",
+    "descr": "Changeformation",
+    "data": {
+      "rarity": "common",
+      "traits": [
+        "concentrate",
+        "move"
+      ],
+      "category": "interaction",
+      "frequency": "",
+      "requirements": "",
+      "trigger": "",
+      "actions": "two"
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "concentrate",
+      "move",
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "04903A0D-3BBE-5EDC-9904-27395176DD1A",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "Troop Defenses",
+    "slug": "troop-defenses-npc-core",
+    "descr": "Troopdefenses",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "defensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": ""
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  },
+  {
+    "id": "8CBB3E82-B42E-502B-BCC0-B558BE7A294F",
+    "kind": "Action",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "Troop Movement",
+    "slug": "troop-movement-npc-core",
+    "descr": "Troopmovement",
+    "data": {
+      "rarity": "common",
+      "traits": [],
+      "category": "defensive",
+      "frequency": "",
+      "requirements": "",
+      "trigger": ""
+    },
+    "attributes": {
+      "remaster": true,
+      "sourceId": "npc-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "npc-core",
+      "remaster"
+    ],
+    "sources": [
+      {
+        "name": "NPC Core"
+      }
+    ],
+    "modifiers": [],
+    "created": "2026-09-07T00:00:00Z",
+    "modified": "2026-09-07T00:00:00Z"
+  }
+]
