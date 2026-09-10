@@ -33,6 +33,8 @@ BANNED_TEXT = (
     "@Localize[",
     "Compendium.pf2e.",
     "[[/",
+    "{{collection",
+    "{{creatureAbilities",
     "/Users/",
     "user's local source library",
     "PF2E for Foundry VTT contributors",
@@ -43,9 +45,8 @@ STRIPPED_DESCRIPTION_KINDS = {
     "Ancestry",
     "Class",
     "Creature",
-    "Domain",
+    "Deity",
     "Hazard",
-    "Language",
     "Vehicle",
 }
 
@@ -112,9 +113,16 @@ def main() -> int:
                         errors.append(f"{path}: {record.get('name')} lacks source attribution")
                     if record.get("attributes", {}).get("license") != "ORC-1.0a":
                         errors.append(f"{path}: {record.get('name')} lacks its ORC marker")
-                    if kind == "Deity":
-                        errors.append(f"{path}: Deity record was not excluded")
-                    if kind in STRIPPED_DESCRIPTION_KINDS and record.get("descr"):
+                    allowed_deity_rules = (
+                        kind == "Deity"
+                        and record.get("descr")
+                        == record.get("data", {}).get("rulesText")
+                    )
+                    if (
+                        kind in STRIPPED_DESCRIPTION_KINDS
+                        and record.get("descr")
+                        and not allowed_deity_rules
+                    ):
                         errors.append(f"{path}: {kind} lore description was not stripped")
                     if kind in {"Ancestry", "Class"} and record.get("data", {}).get("summary"):
                         errors.append(f"{path}: {kind} summary lore was not stripped")
@@ -146,8 +154,8 @@ def main() -> int:
             errors.append(f"background mechanics were lost: {background.get('name')}")
 
     classes = by_kind.get("Class", [])
-    if len(classes) != 24:
-        errors.append(f"expected 24 ORC Remaster class records, found {len(classes)}")
+    if len(classes) != 28:
+        errors.append(f"expected 28 ORC Remaster class records, found {len(classes)}")
     for class_record in classes:
         data = class_record.get("data", {})
         advancement = str(data.get("classAdvancement") or "")
@@ -162,6 +170,24 @@ def main() -> int:
     if len(traits) < 428 or not all(trait.get("descr") for trait in traits):
         errors.append("trait catalog is incomplete")
 
+    domains = by_kind.get("Domain", [])
+    if len(domains) < 61 or not all(domain.get("descr") for domain in domains):
+        errors.append("domain catalog or descriptions are incomplete")
+
+    languages = by_kind.get("Language", [])
+    if len(languages) < 73 or not all(language.get("descr") for language in languages):
+        errors.append("language catalog or access descriptions are incomplete")
+
+    deities = by_kind.get("Deity", [])
+    if len(deities) != 420:
+        errors.append(f"expected 420 mechanical deity records, found {len(deities)}")
+    for deity in deities:
+        data = deity.get("data", {})
+        if not data.get("rulesText"):
+            errors.append(f"incomplete mechanical deity record: {deity.get('name')}")
+        if deity.get("descr") != data.get("rulesText"):
+            errors.append(f"deity mechanics are not exposed in the original description field: {deity.get('name')}")
+
     create_undead = next(
         (ritual for ritual in by_kind.get("Ritual", []) if ritual.get("name") == "Create Undead"),
         None,
@@ -169,7 +195,7 @@ def main() -> int:
     if not create_undead or "| Creature Level | Spell Rank Required | Cost |" not in str(create_undead.get("descr")):
         errors.append("Create Undead ritual table is missing or flattened")
 
-    if total < 14000:
+    if total < 17301:
         errors.append(f"public ORC record count is unexpectedly low: {total}")
 
     if errors:

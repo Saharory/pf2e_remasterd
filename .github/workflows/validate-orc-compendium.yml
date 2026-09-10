@@ -1,4 +1,4 @@
-name: Validate ORC compendium
+name: Validate public compendium
 
 on:
   push:
@@ -16,4 +16,6 @@ jobs:
         with:
           python-version: "3.12"
       - name: Validate public content boundary and data integrity
-        run: python3 tools/validate_public_orc_compendium.py
+        run: |
+          python3 tools/validate_public_orc_compendium.py
+          python3 tools/validate_public_ogl_compendium.py

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="{{env.baseURL|default: '/'}}" />
+  <title>{{name}}</title>
+  <link href="styles/pico.min.css" rel="stylesheet" type="text/css">
+  <link href="styles/default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <main id="deity" class="container-fluid">
+    <section class="core-page deity-page">
+      <header class="core-page-header">
+        <h1>{{name}}</h1>
+        <div>{{'Entity.Deity'|l}}</div>
+      </header>
+
+      {% if data.rarity or data.traits %}
+      <div class="traits">
+        {% if data.rarity and data.rarity != 'common' %}
+        <a class="trait trait-rarity-{{data.rarity}}" href="/trait/{{data.rarity}}">{{data.rarity|map: 'Rarity'}}</a>
+        {% endif %}
+        {% for trait in data.traits %}
+        <a class="trait" href="/trait/{{trait}}">{{trait}}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <table class="deity-stat-table">
+        <tbody>
+          {% if data.areasOfConcern %}
+          <tr><th>Areas of Concern</th><td>{{data.areasOfConcern}}</td></tr>
+          {% endif %}
+          {% if data.edicts %}
+          <tr><th>Edicts</th><td>{% for value in data.edicts %}{{value}}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
+          {% endif %}
+          {% if data.anathema %}
+          <tr><th>Anathema</th><td>{% for value in data.anathema %}{{value}}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
+          {% endif %}
+          {% if data.divineAttribute %}
+          <tr><th>Divine Attribute</th><td>{{data.divineAttribute|map: "Attribute", ", "}}</td></tr>
+          {% endif %}
+          {% if data.clericFont %}
+          <tr><th>Divine Font</th><td>{% for value in data.clericFont %}{{value}}{% if not forloop.last %}, {% endif %}{% endfor %}</td></tr>
+          {% endif %}
+          {% if data.sanctificationOptions %}
+          <tr class="deity-emphasis"><th>Sanctification</th><td>{% for value in data.sanctificationOptions %}<a href="/trait/{{value}}">{{value}}</a>{% if not forloop.last %}, {% endif %}{% endfor %}</td></tr>
+          {% endif %}
+          {% if data.divineSkill %}
+          <tr><th>Divine Skill</th><td>{{data.divineSkill|map: 'Skill'}}</td></tr>
+          {% endif %}
+          {% if data.favoredWeapon %}
+          <tr><th>Favored Weapon</th><td>{% for value in data.favoredWeapon %}{{value}}{% if not forloop.last %}, {% endif %}{% endfor %}</td></tr>
+          {% endif %}
+          {% if data.domains %}
+          <tr class="deity-emphasis"><th>Domains</th><td>{% for value in data.domains %}<a href="/domain/{{value}}">{{value}}</a>{% if not forloop.last %} · {% endif %}{% endfor %}</td></tr>
+          {% endif %}
+          {% if data.alternateDomains %}
+          <tr><th>Alternate Domains</th><td>{% for value in data.alternateDomains %}<a href="/domain/{{value}}">{{value}}</a>{% if not forloop.last %} · {% endif %}{% endfor %}</td></tr>
+          {% endif %}
+          {% if data.spells %}
+          <tr class="deity-emphasis"><th>Cleric Spells</th><td>{% for value in data.spells %}{{value}}{% if not forloop.last %} · {% endif %}{% endfor %}</td></tr>
+          {% endif %}
+        </tbody>
+      </table>
+
+      {% if notes %}
+      <section class="core-section">
+        <h2>{{'Common.Notes'|l}}</h2>
+        {{notes|md}}
+      </section>
+      {% endif %}
+    </section>
+
+    {% include "footer.html" %}
+  </main>
+</body>
+
+</html>

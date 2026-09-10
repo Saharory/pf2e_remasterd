@@ -37,6 +37,7 @@ COLLECTION_KIND = {
     "classes.json": "Class",
     "conditions.json": "StatusEffect",
     "creatures.json": "Creature",
+    "deities.json": "Deity",
     "domains.json": "Domain",
     "feats.json": "Feat",
     "hazards.json": "Hazard",
@@ -57,15 +58,16 @@ STRIP_TOP_LEVEL_DESCRIPTION = {
     "Ancestry",
     "Class",
     "Creature",
-    "Domain",
+    "Deity",
     "Hazard",
-    "Language",
     "Vehicle",
 }
 
-# Deity records are predominantly proper-name/setting material.  Their rules
-# can be added later only after a purpose-built Reserved Material scrubber.
-EXCLUDED_KINDS = {"Deity"}
+# Deity narrative is removed wholesale. The structured rules block contains
+# only the fields a GM needs to adjudicate cleric and sanctification mechanics;
+# proper-name references remain Paizo Reserved Material under the accompanying
+# community-use notice and are not offered under the ORC License.
+EXCLUDED_KINDS: set[str] = set()
 
 PRIVATE_OR_PROVENANCE_KEYS = {
     "rawText",
@@ -150,6 +152,7 @@ def clean_foundry_markup(value: str) -> str:
     text = re.sub(r"@Damage\[([^\]]+)\](?:\{([^}]+)\})?", lambda m: m.group(2) or m.group(1), text)
     text = re.sub(r"@Template\[[^\]]+\](?:\{([^}]+)\})?", lambda m: m.group(1) or "area", text)
     text = re.sub(r"@Localize\[([^\]]+)\]", lambda m: title_from_slug(m.group(1).rsplit(".", 1)[-1]), text)
+    text = re.sub(r"\bCompendium\.pf2e\.[A-Za-z0-9_-]+\.Item\.", "", text)
     text = re.sub(r"\[\[/[^\]]+\]\](?:\{([^}]+)\})?", lambda m: m.group(1) or "", text)
     text = re.sub(r"[ \t]+\n", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
@@ -186,6 +189,35 @@ def background_mechanics(value: str) -> str:
     return ""
 
 
+def deity_rules_text(data: dict[str, Any]) -> str:
+    """Create one display-only mechanics block without deity narrative prose."""
+    def values(value: Any) -> str:
+        if isinstance(value, dict):
+            return ", ".join(str(item) for item in value.values() if item)
+        if isinstance(value, list):
+            return "; ".join(str(item) for item in value if item)
+        return str(value or "")
+
+    lines = []
+    for label, key in (
+        ("Areas of Concern", "areasOfConcern"),
+        ("Edicts", "edicts"),
+        ("Anathema", "anathema"),
+        ("Divine Attribute", "divineAttribute"),
+        ("Divine Font", "clericFont"),
+        ("Sanctification", "sanctificationOptions"),
+        ("Divine Skill", "divineSkill"),
+        ("Favored Weapon", "favoredWeapon"),
+        ("Domains", "domains"),
+        ("Alternate Domains", "alternateDomains"),
+        ("Cleric Spells", "spells"),
+    ):
+        rendered = values(data.get(key))
+        if rendered:
+            lines.append(f"**{label}** {rendered}")
+    return "\n\n".join(lines)
+
+
 def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any] | None:
     if entity.get("kind") != expected_kind:
         raise ValueError(f"expected {expected_kind}, found {entity.get('kind')!r}")
@@ -204,6 +236,11 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
     data = result.get("data")
     if isinstance(data, dict) and expected_kind in {"Ancestry", "Class"}:
         data["summary"] = ""
+    if isinstance(data, dict) and expected_kind == "Deity":
+        data["rulesText"] = deity_rules_text(data)
+        # Keep deity mechanics in Encounter+'s original description field so
+        # they render reliably in both the detail view and editor.
+        result["descr"] = data["rulesText"]
 
     return result
 
@@ -251,10 +288,15 @@ Material under the ORC License.
 
 def module_community_use_notice() -> str:
     """Make the repository notice self-contained inside a module archive."""
+    common = COMMUNITY_USE_NOTICE.read_text().split(
+        "This notice applies to descriptive references", 1
+    )[0]
     return (
-        COMMUNITY_USE_NOTICE.read_text()
-        .replace("in `compendium/packs`", "supplied with this module")
-        .replace("`compendium/ORC-NOTICE.md`", "the accompanying `ORC-NOTICE.md`")
+        common
+        + "This notice applies to descriptive references to Paizo-owned names and marks.\n"
+        + "The game mechanics and functional rules text supplied with this module are\n"
+        + "separately licensed under the ORC License; see the accompanying\n"
+        + "`ORC-NOTICE.md`.\n"
     )
 
 

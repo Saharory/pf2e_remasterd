@@ -12,3 +12,5 @@ Contact: [Saharory on GitHub](https://github.com/Saharory).
 This notice applies to descriptive references to Paizo-owned names and marks.
 The game mechanics and functional rules text in `compendium/packs` are
 separately licensed under the ORC License; see `compendium/ORC-NOTICE.md`.
+The *Rage of Elements* mechanics in `compendium/ogl-packs` are separately
+licensed under OGL 1.0a; see `compendium/OGL-1.0a.txt`.

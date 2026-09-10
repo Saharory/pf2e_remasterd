@@ -1,4 +1,4 @@
-# Public ORC compendium
+# Public rules compendium
 
 This directory contains Encounter+ modules made from game mechanics and
 functional rules text that Paizo released under the Open RPG Creative (ORC)
@@ -10,6 +10,11 @@ Community Use notices so those terms and credits travel with an individual
 `.module` file. The aggregate ORC notice is in
 [ORC-NOTICE.md](ORC-NOTICE.md), and the upstream source and license review is
 recorded in [sources.json](sources.json).
+
+The separately licensed OGL module lives in `ogl-packs/rage-of-elements/`.
+It carries the complete OGL 1.0a text and COPYRIGHT NOTICE in
+`OGL-1.0a.txt`; it is not part of the ORC compendium and is not designated as
+ORC Licensed Material.
 
 ## What is included
 
@@ -25,9 +30,9 @@ recorded in [sources.json](sources.json).
 - all source-book art, maps, page images, fonts, and trade dress
 - creature and ancestry lore, class introductions, setting prose, and
   background story prompts
-- deity records and other predominantly setting-based records
+- deity narrative and intercession lore (mechanical cleric fields are retained)
 - private PDF extraction fields and source-site implementation identifiers
-- OGL-only books, including *Rage of Elements*
+- OGL-only material inside the ORC packs
 
 Names that identify Paizo game elements are descriptive references only and
 remain Paizo property. See [COMMUNITY-USE-NOTICE.md](COMMUNITY-USE-NOTICE.md).
@@ -40,7 +45,11 @@ prepared structured staging directory, rebuild and validate with:
 ```sh
 python3 tools/build_public_orc_compendium.py --source /path/to/private/structured-modules
 python3 tools/validate_public_orc_compendium.py
+python3 tools/build_public_ogl_compendium.py --source /path/to/private/structured-modules/rage-of-elements
+python3 tools/validate_public_ogl_compendium.py
 ```
 
 The builder uses a fail-closed source allowlist. A new book is not included
 until its ORC status, required attribution, and record types are reviewed.
+The OGL builder is deliberately restricted to the separately reviewed
+*Rage of Elements* module.

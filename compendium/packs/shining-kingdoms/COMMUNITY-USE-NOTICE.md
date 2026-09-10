@@ -11,4 +11,5 @@ Contact: [Saharory on GitHub](https://github.com/Saharory).
 
 This notice applies to descriptive references to Paizo-owned names and marks.
 The game mechanics and functional rules text supplied with this module are
-separately licensed under the ORC License; see the accompanying `ORC-NOTICE.md`.
+separately licensed under the ORC License; see the accompanying
+`ORC-NOTICE.md`.

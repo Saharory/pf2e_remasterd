@@ -39,14 +39,26 @@ def main() -> int:
         excluded_roots={"compendium", "dist", "tools"},
     )
 
-    pack_count = 0
+    orc_pack_count = 0
     for pack in sorted((REPO / "compendium" / "packs").iterdir()):
         if not pack.is_dir() or not (pack / "module.json").is_file():
             continue
         archive(pack, args.output / f"{pack.name}.module")
-        pack_count += 1
+        orc_pack_count += 1
 
-    print(f"Packaged one system and {pack_count} ORC modules in {args.output}")
+    ogl_pack_count = 0
+    ogl_root = REPO / "compendium" / "ogl-packs"
+    if ogl_root.is_dir():
+        for pack in sorted(ogl_root.iterdir()):
+            if not pack.is_dir() or not (pack / "module.json").is_file():
+                continue
+            archive(pack, args.output / f"{pack.name}-ogl.module")
+            ogl_pack_count += 1
+
+    print(
+        f"Packaged one system, {orc_pack_count} ORC modules, and "
+        f"{ogl_pack_count} separate OGL modules in {args.output}"
+    )
     return 0
 
 

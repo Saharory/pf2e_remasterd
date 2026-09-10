@@ -519,7 +519,8 @@ p:last-child {
 
 @media only screen and (prefers-color-scheme: dark) {
   #class .core-page,
-  #ancestry .core-page {
+  #ancestry .core-page,
+  #deity .core-page {
     background-color: #172119;
     color: #d7dbd5;
     border-color: #3a493e;
@@ -532,13 +533,15 @@ p:last-child {
   }
 
   #class .core-page a,
-  #ancestry .core-page a {
+  #ancestry .core-page a,
+  #deity .core-page a {
     --pico-color: #58aed0;
     --pico-underline: #58aed055;
   }
 
   #class .core-page-header,
-  #ancestry .core-page-header {
+  #ancestry .core-page-header,
+  #deity .core-page-header {
     background-color: #1c2820;
     background-image: url('../images/header-paper.jpg');
     background-blend-mode: multiply;
@@ -547,7 +550,8 @@ p:last-child {
   }
 
   #class .core-page-header > *,
-  #ancestry .core-page-header > * {
+  #ancestry .core-page-header > *,
+  #deity .core-page-header > * {
     color: #f1e8d8;
   }
 
@@ -601,6 +605,78 @@ p:last-child {
 
   #class .core-advancement tbody tr:nth-child(even) td:not(:first-child) {
     background-color: #1b271e;
+  }
+}
+
+/* Compact deity reference table: book-like hierarchy with easy row tracking. */
+.deity-stat-table {
+  width: 100%;
+  margin: 0.7rem 0 0;
+  border: 1px solid #c8b7aa;
+  border-collapse: collapse;
+  font-family: FF Good Pro;
+}
+
+.deity-stat-table th,
+.deity-stat-table td {
+  padding: 0.48rem 0.65rem;
+  border-bottom: 1px solid #c8b7aa;
+  vertical-align: top;
+}
+
+.deity-stat-table th {
+  width: 10.5rem;
+  background-color: #eee2d9;
+  color: var(--dark-red-color);
+  font-family: FF Good Pro Cond;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.deity-stat-table tbody tr:nth-child(odd) td {
+  background-color: #fbf8f2;
+}
+
+.deity-stat-table tbody tr:nth-child(even) td {
+  background-color: #f2ece2;
+}
+
+.deity-stat-table .deity-emphasis td {
+  box-shadow: inset 3px 0 0 #a76652;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  .deity-stat-table {
+    border-color: #425047;
+  }
+
+  .deity-stat-table th,
+  .deity-stat-table td {
+    border-bottom-color: #425047;
+  }
+
+  .deity-stat-table th {
+    background-color: #223128;
+    color: #e4a18c;
+  }
+
+  .deity-stat-table tbody tr:nth-child(odd) td {
+    background-color: #172119;
+  }
+
+  .deity-stat-table tbody tr:nth-child(even) td {
+    background-color: #1b271e;
+  }
+
+  .deity-stat-table .deity-emphasis td {
+    box-shadow: inset 3px 0 0 #b96b57;
+  }
+}
+
+@media (max-width: 575px) {
+  .deity-stat-table th {
+    width: 8.25rem;
   }
 }
 

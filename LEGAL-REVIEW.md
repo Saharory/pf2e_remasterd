@@ -1,6 +1,6 @@
 # Publication and licensing review
 
-Status: **ORC compendium reviewed; inherited system assets still on hold**
+Status: **ORC compendium and separate OGL module reviewed; inherited system assets still on hold**
 
 This document records a conservative publication boundary. It is not legal
 advice. Policies and licenses can change, so their current text must be checked
@@ -19,6 +19,9 @@ again immediately before release.
 4. **Experimental/personal features** — Remote Play and campaign-specific
    additions can live on a separate branch or in an optional add-on after the
    public base is stable.
+
+The *Rage of Elements* module follows path 2 but remains isolated under OGL
+1.0a in `compendium/ogl-packs`; it is not included in the ORC pack directory.
 
 ## Current legal constraints
 
@@ -71,11 +74,12 @@ Licensed Material. Do not relicense OGL-only material as ORC content.
 
 ### OGL legacy material
 
-OGL content and ORC content require separate compliance paths. This project is
-Remaster-focused; legacy OGL material should remain excluded unless a future
-module deliberately includes the complete OGL notice and COPYRIGHT NOTICE and
-clearly identifies its Open Game Content. OGL-only content cannot be converted
-to ORC Licensed Material.
+OGL content and ORC content require separate compliance paths. The
+Remaster-compatible *Rage of Elements* mechanics are therefore generated as a
+separate module containing the complete OGL 1.0a text, the upstream Section 15
+COPYRIGHT NOTICE, an Open Game Content designation, and a Product Identity
+designation. It is never marked as ORC Licensed Material. Other OGL sources
+remain excluded unless they receive the same source-specific review.
 
 ### Reference sites and structured staging data
 
@@ -98,10 +102,10 @@ IDs, UUIDs, macros, art, or Foundry attribution claims.
 
 ### Public ORC content status
 
-The public source allowlist currently contains 15 books whose Remaster editions
-are identified as ORC releases. `Rage of Elements` is excluded because the
-available edition is OGL-only and OGL content cannot be converted into ORC
-Licensed Material. Deity entities, creature/ancestry lore, class introductions,
+The ORC source allowlist currently contains 22 books whose Remaster editions
+are identified as ORC releases. `Rage of Elements` is excluded from those ORC
+packs and distributed separately under OGL 1.0a. Deity narrative,
+creature/ancestry lore, class introductions,
 setting prose, and background story prompts are also excluded as Reserved
 Material or conservative publication holds.
 
@@ -130,7 +134,8 @@ Before a public release, either:
 - [ ] Paizo trade-dress review completed for inherited system assets
 - [x] current Community Use notice included and visible
 - [x] project contact method included
-- [x] ORC notices generated per public module; OGL-only source excluded
+- [x] ORC notices generated per ORC module; OGL-only source excluded from ORC packs
+- [x] complete OGL 1.0a notice and Section 15 attribution included in the separate *Rage of Elements* module
 - [x] ORC source author attribution included
 - [x] public compendium scan rejects PDFs, watermarks, private fields, source-site IDs, and campaign data
 - [x] no claim of endorsement by Paizo, Encounter+, Foundry, or Archives of Nethys
