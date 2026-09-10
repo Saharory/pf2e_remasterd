@@ -96,7 +96,7 @@ def main() -> int:
     kinds: dict[str, int] = {}
     total = 0
     for path in sorted(PACK.glob("*.json")):
-        if path.name in {"module.json", "source.json"}:
+        if path.name in {"module.json", "source.json", "manifest.json"}:
             continue
         records = json.loads(path.read_text())
         if not isinstance(records, list):

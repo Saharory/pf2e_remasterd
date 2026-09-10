@@ -8,15 +8,19 @@ again immediately before release.
 
 ## Recommended package split
 
-1. **Community base system** — schemas, forms, views, styling, scripts, and
-   generic Remaster mechanics.
-2. **Open-rules modules** — material confirmed as Licensed Material under the
-   ORC License, with required notices and source attribution. These live under
-   `compendium/packs` and remain individually distributable.
-3. **Personal source modules** — content generated from purchased books,
+1. **Community system package** — schemas, forms, views, styling, scripts,
+   generic Remaster mechanics, and the merged content from every reviewed ORC
+   pack. The package carries the aggregate ORC notice and source attribution.
+2. **Separate OGL module** — *Rage of Elements* remains isolated with the full
+   OGL 1.0a text and its source-specific COPYRIGHT NOTICE.
+3. **Per-book ORC sources** — `compendium/packs` remains split by publication
+   for review, attribution, rebuilding, and optional maintainer test packages;
+   the normal community release does not install these alongside the merged
+   system content because that would duplicate entity IDs.
+4. **Personal source modules** — content generated from purchased books,
    including extracted prose or art. These remain private and must not be
    committed or distributed.
-4. **Experimental/personal features** — Remote Play and campaign-specific
+5. **Experimental/personal features** — Remote Play and campaign-specific
    additions can live on a separate branch or in an optional add-on after the
    public base is stable.
 
@@ -139,4 +143,4 @@ Before a public release, either:
 - [x] ORC source author attribution included
 - [x] public compendium scan rejects PDFs, watermarks, private fields, source-site IDs, and campaign data
 - [x] no claim of endorsement by Paizo, Encounter+, Foundry, or Archives of Nethys
-- [ ] clean-room archive inspection passes before uploading a release
+- [x] clean-room archive inspection passes before uploading a release

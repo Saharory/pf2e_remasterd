@@ -15,7 +15,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate public content boundary and data integrity
+          cache: pip
+      - name: Install development checks
+        run: python3 -m pip install -r requirements-dev.txt
+      - name: Validate system definitions and public content
         run: |
-          python3 tools/validate_public_orc_compendium.py
-          python3 tools/validate_public_ogl_compendium.py
+          python3 tools/eplus_dev.py check --json
+      - name: Build and inspect the two-package release
+        run: |
+          python3 tools/package_public_release.py
+          python3 tools/eplus_dev.py inspect-release --json
