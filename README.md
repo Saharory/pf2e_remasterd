@@ -20,7 +20,7 @@ Included here:
 - character and creature presentation logic
 - system icons, fonts, and visual assets currently inherited from upstream
   (pending asset-license review)
-- 22 ORC rules modules containing 17,302 mechanical records, with individual
+- 22 ORC rules modules containing 17,301 mechanical records, with individual
   notices and attribution in [`compendium/`](compendium/)
 - one separately licensed OGL 1.0a module for *Rage of Elements*, containing
   679 additional mechanical records
