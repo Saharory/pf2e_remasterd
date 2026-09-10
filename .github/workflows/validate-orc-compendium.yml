@@ -11,11 +11,12 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements-dev.txt
       - name: Install development checks
         run: python3 -m pip install -r requirements-dev.txt
       - name: Validate system definitions and public content
