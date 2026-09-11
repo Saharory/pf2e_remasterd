@@ -49,9 +49,7 @@ jobs:
           name: encounterplus-pf2e-remaster
           path: |
             dist/pf2e-remaster.system
-            dist/rage-of-elements-ogl.module
             dist/manifest.json
-            dist/rage-of-elements-ogl-manifest.json
             dist/release-summary.json
             dist/SHA256SUMS.txt
       - name: Publish GitHub Release
@@ -65,8 +63,6 @@ jobs:
             --title "Pathfinder 2E Remaster ${VERSION}" \
             --generate-notes \
             dist/pf2e-remaster.system \
-            dist/rage-of-elements-ogl.module \
             dist/manifest.json \
-            dist/rage-of-elements-ogl-manifest.json \
             dist/release-summary.json \
             dist/SHA256SUMS.txt

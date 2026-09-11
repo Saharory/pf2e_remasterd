@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Build the public Encounter+ release deterministically.
 
-The normal release has two installable packages:
-
-* pf2e-remaster.system -- definitions plus every reviewed ORC pack
-* rage-of-elements-ogl.module -- the separately licensed OGL pack
+The normal release is one installable ``pf2e-remaster.system`` archive. It
+contains the system definitions, every reviewed ORC pack, and the separately
+licensed Rage of Elements OGL records. The records retain their individual
+license markers and both complete notice sets are embedded in the archive.
 
 The per-book ORC module sources remain in the repository for review,
 attribution, and maintenance. They can still be built explicitly with
@@ -24,6 +24,7 @@ from typing import Iterable
 
 REPO = Path(__file__).resolve().parents[1]
 FIXED_TIME = (2020, 1, 1, 0, 0, 0)
+SYSTEM_VERSION = json.loads((REPO / "system.json").read_text(encoding="utf-8"))["version"]
 SYSTEM_FILES = {
     "system.json",
     "manifest.json",
@@ -33,6 +34,7 @@ SYSTEM_FILES = {
     "collections.json",
     "filters.json",
     "COMMUNITY-USE-NOTICE.md",
+    "CONTENT-LICENSES.md",
 }
 SYSTEM_DIRS = {
     "fonts",
@@ -130,13 +132,18 @@ def load_orc_collections() -> tuple[dict[str, list[dict]], dict[str, int]]:
                         f"duplicate entity id {record_id} in {seen_ids[record_id]} and {path}"
                     )
                 seen_ids[record_id] = str(path)
-                source_names = [
-                    str(source.get("name") or "").strip()
-                    for source in record.get("sources", [])
-                    if isinstance(source, dict) and str(source.get("name") or "").strip()
-                ]
+                source_names = []
+                for source in record.get("sources", []):
+                    if not isinstance(source, dict):
+                        continue
+                    name = str(source.get("name") or "").strip()
+                    if not name:
+                        continue
+                    page = source.get("page")
+                    source_names.append(f"{name} pg. {page}" if page else name)
                 if source_names:
                     record.setdefault("data", {})["sourceName"] = ", ".join(source_names)
+                record["systemVersion"] = SYSTEM_VERSION
             collections[path.name].extend(records)
 
     for records in collections.values():
@@ -152,8 +159,63 @@ def load_orc_collections() -> tuple[dict[str, list[dict]], dict[str, int]]:
     return dict(collections), counts
 
 
-def build_system(target: Path) -> dict[str, int]:
-    collections, counts = load_orc_collections()
+def load_ogl_collections(existing_ids: set[str]) -> tuple[dict[str, list[dict]], dict[str, int]]:
+    root = REPO / "compendium" / "ogl-packs" / "rage-of-elements"
+    collections: dict[str, list[dict]] = defaultdict(list)
+    seen_ids = set(existing_ids)
+
+    for path in sorted(root.glob("*.json")):
+        if path.name in {"module.json", "source.json", "manifest.json"}:
+            continue
+        records = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(records, list):
+            raise ValueError(f"{path}: expected a JSON array")
+        for record in records:
+            record_id = str(record.get("id") or "")
+            if not record_id:
+                raise ValueError(f"{path}: record without an id")
+            if record_id in seen_ids:
+                raise ValueError(f"duplicate ORC/OGL entity id {record_id} in {path}")
+            seen_ids.add(record_id)
+            source_names = []
+            for source in record.get("sources", []):
+                if not isinstance(source, dict):
+                    continue
+                name = str(source.get("name") or "").strip()
+                if not name:
+                    continue
+                page = source.get("page")
+                source_names.append(f"{name} pg. {page}" if page else name)
+            if source_names:
+                record.setdefault("data", {})["sourceName"] = ", ".join(source_names)
+            record["systemVersion"] = SYSTEM_VERSION
+        collections[path.name].extend(records)
+
+    counts = {name: len(records) for name, records in sorted(collections.items())}
+    return dict(collections), counts
+
+
+def build_system(target: Path) -> tuple[dict[str, int], dict[str, int]]:
+    orc_collections, orc_counts = load_orc_collections()
+    orc_ids = {
+        str(record.get("id") or "")
+        for records in orc_collections.values()
+        for record in records
+    }
+    ogl_collections, ogl_counts = load_ogl_collections(orc_ids)
+    collections: dict[str, list[dict]] = defaultdict(list)
+    for source in (orc_collections, ogl_collections):
+        for name, records in source.items():
+            collections[name].extend(records)
+    for records in collections.values():
+        records.sort(
+            key=lambda record: (
+                str(record.get("kind") or "").casefold(),
+                str(record.get("name") or "").casefold(),
+                str(record.get("id") or ""),
+            )
+        )
+
     with zipfile.ZipFile(
         target, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
     ) as bundle:
@@ -174,8 +236,11 @@ def build_system(target: Path) -> dict[str, int]:
         add_file(bundle, notices / "ORC-NOTICE.md", "ORC-NOTICE.md")
         add_file(bundle, notices / "sources.json", "notices/ORC-SOURCES.json")
         add_file(bundle, notices / "summary.json", "notices/ORC-SUMMARY.json")
+        ogl_root = notices / "ogl-packs" / "rage-of-elements"
+        add_file(bundle, ogl_root / "OGL-1.0a.txt", "OGL-1.0a.txt")
+        add_file(bundle, ogl_root / "source.json", "notices/OGL-RAGE-OF-ELEMENTS.json")
 
-    return counts
+    return orc_counts, ogl_counts
 
 
 def build_test_shell(target: Path) -> None:
@@ -241,14 +306,9 @@ def main() -> int:
     clear_owned_output(args.output)
 
     system_target = args.output / "pf2e-remaster.system"
-    orc_counts = build_system(system_target)
-
-    ogl_root = REPO / "compendium" / "ogl-packs" / "rage-of-elements"
-    ogl_target = args.output / "rage-of-elements-ogl.module"
-    build_directory_archive(ogl_root, ogl_target)
+    orc_counts, ogl_counts = build_system(system_target)
 
     copy_json(REPO / "manifest.json", args.output / "manifest.json")
-    copy_json(ogl_root / "manifest.json", args.output / "rage-of-elements-ogl-manifest.json")
 
     individual_count = 0
     if args.individual_modules:
@@ -269,14 +329,10 @@ def main() -> int:
         "system": system_target.name,
         "orcCollections": orc_counts,
         "orcRecords": sum(orc_counts.values()),
-        "oglModule": ogl_target.name,
-        "oglRecords": sum(
-            sum(kinds.values())
-            for kinds in json.loads(
-                (REPO / "compendium" / "ogl-summary.json").read_text(encoding="utf-8")
-            ).values()
-        ),
-        "installablePackages": 2,
+        "oglCollections": ogl_counts,
+        "oglRecords": sum(ogl_counts.values()),
+        "totalRecords": sum(orc_counts.values()) + sum(ogl_counts.values()),
+        "installablePackages": 1,
         "individualModulesBuilt": individual_count,
         "testShellBuilt": test_shell is not None,
     }
@@ -284,9 +340,7 @@ def main() -> int:
 
     checksummed = [
         system_target,
-        ogl_target,
         args.output / "manifest.json",
-        args.output / "rage-of-elements-ogl-manifest.json",
         args.output / "release-summary.json",
     ]
     checksum_text = "".join(f"{sha256(path)}  {path.name}\n" for path in checksummed)

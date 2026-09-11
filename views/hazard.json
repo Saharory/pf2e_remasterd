@@ -15,7 +15,7 @@
     { "type": "tags", "attribute": "data.traits" },
     { "type": "text", "value": "{{descr}}", "style": "stats-body" },
     { "type": "text", "title": "Common.Notes", "value": "{{notes}}" },
-    { "type": "text", "value": "{{footer}}" },
+    { "type": "text", "value": "{% if data.sourceName %}**{{'Common.Source'|l}}:** {{data.sourceName}}{% else %}{{footer}}{% endif %}" },
     { "type": "tags", "attribute": "tags" }
   ]
 }

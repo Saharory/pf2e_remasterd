@@ -213,19 +213,10 @@ def validate_project() -> dict[str, Any]:
     ogl_root = REPO / "compendium" / "ogl-packs" / "rage-of-elements"
     try:
         module = load_json(ogl_root / "module.json")
-        ogl_manifest = load_json(ogl_root / "manifest.json")
-        if module.get("id") != ogl_manifest.get("id"):
-            errors.append("Rage of Elements module and manifest ids differ")
-        if module.get("version") != ogl_manifest.get("version"):
-            errors.append("Rage of Elements module and manifest versions differ")
-        if ogl_manifest.get("type") != "module":
-            errors.append("Rage of Elements manifest type must be module")
-        if ogl_manifest.get("system") != SYSTEM_ID:
-            errors.append("Rage of Elements manifest targets the wrong system")
-        if not str(module.get("package") or "").endswith(
-            "/rage-of-elements-ogl-manifest.json"
-        ):
-            errors.append("Rage of Elements module package URL is missing")
+        if module.get("license") != "OGL-1.0a":
+            errors.append("Rage of Elements source pack lacks its OGL marker")
+        if module.get("licenseFile") != "OGL-1.0a.txt":
+            errors.append("Rage of Elements source pack lacks its OGL license file")
     except Exception as exc:
         errors.append(f"Rage of Elements metadata validation: {exc}")
 
@@ -372,12 +363,9 @@ def clean_zip_names(names: Iterable[str]) -> list[str]:
 def inspect_release(dist: Path) -> dict[str, Any]:
     errors: list[str] = []
     system_path = dist / "pf2e-remaster.system"
-    ogl_path = dist / "rage-of-elements-ogl.module"
     required = {
         system_path,
-        ogl_path,
         dist / "manifest.json",
-        dist / "rage-of-elements-ogl-manifest.json",
         dist / "release-summary.json",
         dist / "SHA256SUMS.txt",
     }
@@ -386,6 +374,7 @@ def inspect_release(dist: Path) -> dict[str, Any]:
             errors.append(f"missing release file: {path.name}")
 
     orc_records = 0
+    ogl_records = 0
     orc_ids: set[str] = set()
     collection_counts: dict[str, int] = {}
     if system_path.is_file():
@@ -398,62 +387,50 @@ def inspect_release(dist: Path) -> dict[str, Any]:
                 "system.json",
                 "manifest.json",
                 "ORC-NOTICE.md",
+                "OGL-1.0a.txt",
+                "CONTENT-LICENSES.md",
                 "COMMUNITY-USE-NOTICE.md",
                 "notices/ORC-SOURCES.json",
+                "notices/OGL-RAGE-OF-ELEMENTS.json",
             ):
                 if required_name not in names:
                     errors.append(f"system archive missing {required_name}")
-            if "module.json" in names or "OGL-1.0a.txt" in names:
-                errors.append("system archive crossed the ORC/OGL package boundary")
+            if "module.json" in names:
+                errors.append("system archive contains module installer metadata")
 
             for name in sorted(names):
                 if name not in {f"{label}.json" for label in COLLECTION_TITLES}:
                     continue
                 records = json.loads(bundle.read(name))
                 collection_counts[name] = len(records)
-                orc_records += len(records)
                 for record in records:
                     record_id = str(record.get("id") or "")
                     if not record_id or record_id in orc_ids:
-                        errors.append(f"missing or duplicate ORC entity id in {name}")
+                        errors.append(f"missing or duplicate entity id in {name}")
                         break
                     orc_ids.add(record_id)
                     if record.get("system") != SYSTEM_ID:
                         errors.append(f"wrong entity system in {name}")
                         break
-                    if (record.get("attributes") or {}).get("license") != "ORC-1.0a":
-                        errors.append(f"non-ORC entity found in {name}")
+                    license_name = (record.get("attributes") or {}).get("license")
+                    if license_name == "ORC-1.0a":
+                        orc_records += 1
+                    elif license_name == "OGL-1.0a":
+                        ogl_records += 1
+                    else:
+                        errors.append(f"unknown entity license in {name}: {license_name!r}")
                         break
-                    if not str((record.get("data") or {}).get("sourceName") or "").strip():
-                        errors.append(f"ORC entity missing packaged source name in {name}")
+                    source_name = str((record.get("data") or {}).get("sourceName") or "")
+                    if not source_name.strip():
+                        errors.append(f"entity is missing its packaged source name in {name}")
                         break
 
-    ogl_records = 0
-    if ogl_path.is_file():
-        with zipfile.ZipFile(ogl_path) as bundle:
-            names = set(bundle.namelist())
-            junk = clean_zip_names(names)
-            if junk:
-                errors.append(f"OGL module contains macOS junk: {junk[:3]}")
-            for required_name in (
-                "module.json",
-                "manifest.json",
-                "OGL-1.0a.txt",
-                "COMMUNITY-USE-NOTICE.md",
-            ):
-                if required_name not in names:
-                    errors.append(f"OGL module missing {required_name}")
-            if "ORC-NOTICE.md" in names or "system.json" in names:
-                errors.append("OGL module crossed the system/ORC package boundary")
-            for name in sorted(names):
-                if name not in {f"{label}.json" for label in COLLECTION_TITLES}:
-                    continue
-                records = json.loads(bundle.read(name))
-                ogl_records += len(records)
-                for record in records:
-                    if (record.get("attributes") or {}).get("license") != "OGL-1.0a":
-                        errors.append(f"non-OGL entity found in OGL {name}")
-                        break
+    for obsolete in (
+        dist / "rage-of-elements-ogl.module",
+        dist / "rage-of-elements-ogl-manifest.json",
+    ):
+        if obsolete.exists():
+            errors.append(f"obsolete second installer remains in release: {obsolete.name}")
 
     expected_orc = sum(
         sum(kinds.values()) for kinds in load_json(REPO / "compendium" / "summary.json").values()
@@ -469,12 +446,12 @@ def inspect_release(dist: Path) -> dict[str, Any]:
 
     return {
         "ok": not errors,
-        "installablePackages": 2,
+        "installablePackages": 1,
         "orcRecords": orc_records,
         "oglRecords": ogl_records,
+        "totalRecords": orc_records + ogl_records,
         "collectionCounts": collection_counts,
         "systemBytes": system_path.stat().st_size if system_path.is_file() else 0,
-        "oglBytes": ogl_path.stat().st_size if ogl_path.is_file() else 0,
         "errors": errors,
     }
 

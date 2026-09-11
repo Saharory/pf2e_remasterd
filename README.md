@@ -24,8 +24,8 @@ Included here:
 - 22 ORC source packs containing 17,301 mechanical records, with individual
   notices and attribution in [`compendium/`](compendium/); the normal release
   merges them into the `.system` package for a one-step baseline install
-- one separately licensed OGL 1.0a module for *Rage of Elements*, containing
-  679 additional mechanical records
+- 679 separately marked OGL 1.0a records from *Rage of Elements*, bundled into
+  the same system installer with their complete license and attribution
 
 Kept outside this repository:
 
@@ -53,11 +53,12 @@ ORC-licensed mechanics and functional rules text. It excludes private PDFs,
 watermarks, setting chapters, adventure text, art, maps, creature lore,
 background story prompts, deity narrative, and OGL-only material. The ORC packs
 deliberately exclude *Rage of Elements* because its current source edition is
-OGL-only, even though its rules are Remaster-compatible. It is supplied as a
-separate OGL 1.0a module with its own complete license and COPYRIGHT NOTICE.
+OGL-only, even though its rules are Remaster-compatible. Those records are
+merged into the same installer for convenience but retain their OGL markers,
+complete license, and COPYRIGHT NOTICE.
 
 Every ORC source pack carries its own ORC and Community Use notices. The OGL
-module carries its separate OGL license and attribution. Descriptive use of
+dataset carries its separate OGL license and attribution. Descriptive use of
 Paizo-owned names remains Paizo property and does not imply endorsement.
 
 ## Fast development loop
@@ -88,15 +89,15 @@ Then use the compact development helper:
 After an applied sync, use Encounter+'s **Reload System** action. The semantic
 Computer Use helper in `tools/encounterplus_ui_helper.mjs` performs that action
 and targeted library checks without screen coordinates or full UI dumps.
-Content records remain database-owned: rebuild and import only the affected
-module when testing a content change.
+Content records remain database-owned: rebuild and import the combined system
+archive when testing a content change.
 
 ## Building release files
 
-The normal build creates two installable packages: one `.system` containing
-the definitions and all reviewed ORC records, plus one separately licensed
-*Rage of Elements* OGL module. It also creates the two update manifests,
-checksums, and a machine-readable summary.
+The normal build creates one `.system` installer containing the definitions,
+all reviewed ORC records, and the separately marked *Rage of Elements* OGL
+records. It also embeds both license notice sets and creates the update
+manifest, checksums, and a machine-readable summary.
 
 ```sh
 .venv/bin/python tools/eplus_dev.py check --json

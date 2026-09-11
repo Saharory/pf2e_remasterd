@@ -10,5 +10,5 @@ For more information about Paizo Inc. and Paizo products, visit paizo.com.
 Contact: [Saharory on GitHub](https://github.com/Saharory).
 
 This notice applies to descriptive references to Paizo-owned names and marks.
-The game mechanics and functional rules text supplied with this module are
-separately licensed under OGL 1.0a; see the accompanying `OGL-1.0a.txt`.
+The game mechanics and functional rules text supplied with this source pack
+are separately licensed under OGL 1.0a; see the accompanying `OGL-1.0a.txt`.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the separately licensed public Rage of Elements OGL module."""
+"""Validate the separately licensed Rage of Elements OGL source pack."""
 
 from __future__ import annotations
 
@@ -153,12 +153,12 @@ def main() -> int:
         errors.append("source metadata does not match the generated collections")
 
     if errors:
-        print("OGL module validation failed:", file=sys.stderr)
+        print("OGL source-pack validation failed:", file=sys.stderr)
         for error in errors[:100]:
             print(f"- {error}", file=sys.stderr)
         return 1
 
-    print(f"Validated the separate Rage of Elements OGL module with {total} entity records")
+    print(f"Validated the Rage of Elements OGL source pack with {total} entity records")
     return 0
 
 

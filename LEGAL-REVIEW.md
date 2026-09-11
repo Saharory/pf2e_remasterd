@@ -1,6 +1,6 @@
 # Publication and licensing review
 
-Status: **ORC compendium and separate OGL module reviewed; inherited system assets still on hold**
+Status: **ORC and OGL datasets reviewed; inherited system assets still on hold**
 
 This document records a conservative publication boundary. It is not legal
 advice. Policies and licenses can change, so their current text must be checked
@@ -8,15 +8,18 @@ again immediately before release.
 
 ## Recommended package split
 
-1. **Community system package** — schemas, forms, views, styling, scripts,
-   generic Remaster mechanics, and the merged content from every reviewed ORC
-   pack. The package carries the aggregate ORC notice and source attribution.
-2. **Separate OGL module** — *Rage of Elements* remains isolated with the full
-   OGL 1.0a text and its source-specific COPYRIGHT NOTICE.
-3. **Per-book ORC sources** — `compendium/packs` remains split by publication
+1. **Community system package** — one installer containing schemas, forms,
+   views, styling, scripts, generic Remaster mechanics, and the merged content
+   from every reviewed source pack. ORC and OGL records keep explicit
+   record-level license markers, and the package carries both complete notice
+   sets. Aggregation does not relicense either dataset.
+2. **Per-book ORC sources** — `compendium/packs` remains split by publication
    for review, attribution, rebuilding, and optional maintainer test packages;
    the normal community release does not install these alongside the merged
    system content because that would duplicate entity IDs.
+3. **OGL source pack** — `compendium/ogl-packs/rage-of-elements` remains
+   isolated in the repository for validation and attribution even though its
+   records are bundled into the single user-facing system installer.
 4. **Personal source modules** — content generated from purchased books,
    including extracted prose or art. These remain private and must not be
    committed or distributed.
@@ -24,8 +27,9 @@ again immediately before release.
    additions can live on a separate branch or in an optional add-on after the
    public base is stable.
 
-The *Rage of Elements* module follows path 2 but remains isolated under OGL
-1.0a in `compendium/ogl-packs`; it is not included in the ORC pack directory.
+The *Rage of Elements* source remains isolated under OGL 1.0a in
+`compendium/ogl-packs`; it is not included in the ORC pack directory or
+relicensed as ORC content.
 
 ## Current legal constraints
 
@@ -79,11 +83,12 @@ Licensed Material. Do not relicense OGL-only material as ORC content.
 ### OGL legacy material
 
 OGL content and ORC content require separate compliance paths. The
-Remaster-compatible *Rage of Elements* mechanics are therefore generated as a
-separate module containing the complete OGL 1.0a text, the upstream Section 15
-COPYRIGHT NOTICE, an Open Game Content designation, and a Product Identity
-designation. It is never marked as ORC Licensed Material. Other OGL sources
-remain excluded unless they receive the same source-specific review.
+Remaster-compatible *Rage of Elements* records therefore retain explicit
+OGL 1.0a markers inside the aggregate system archive. That archive includes
+the complete OGL 1.0a text, upstream Section 15 COPYRIGHT NOTICE, an Open Game
+Content designation, a Product Identity designation, and a license map. The
+records are never marked as ORC Licensed Material. Other OGL sources remain
+excluded unless they receive the same source-specific review.
 
 ### Reference sites and structured staging data
 
@@ -114,8 +119,8 @@ setting prose, and background story prompts are also excluded as Reserved
 Material or conservative publication holds.
 
 The generated tree is checked for private extraction fields, email/watermark
-patterns, Foundry identifiers and macros, deity records, accidental OGL pack
-inclusion, malformed collections, and missing module-specific ORC notices.
+patterns, Foundry identifiers and macros, deity records, license-boundary
+errors, malformed collections, and missing source-specific notices.
 
 ## Asset hold
 
@@ -139,7 +144,7 @@ Before a public release, either:
 - [x] current Community Use notice included and visible
 - [x] project contact method included
 - [x] ORC notices generated per ORC module; OGL-only source excluded from ORC packs
-- [x] complete OGL 1.0a notice and Section 15 attribution included in the separate *Rage of Elements* module
+- [x] complete OGL 1.0a notice and Section 15 attribution included with the separately marked *Rage of Elements* records
 - [x] ORC source author attribution included
 - [x] public compendium scan rejects PDFs, watermarks, private fields, source-site IDs, and campaign data
 - [x] no claim of endorsement by Paizo, Encounter+, Foundry, or Archives of Nethys

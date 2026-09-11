@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the separately licensed OGL Rage of Elements Encounter+ module."""
+"""Build the separately licensed OGL Rage of Elements source pack."""
 
 from __future__ import annotations
 
@@ -74,8 +74,8 @@ def community_use_notice() -> str:
     return (
         common
         + "This notice applies to descriptive references to Paizo-owned names and marks.\n"
-        + "The game mechanics and functional rules text supplied with this module are\n"
-        + "separately licensed under OGL 1.0a; see the accompanying `OGL-1.0a.txt`.\n"
+        + "The game mechanics and functional rules text supplied with this source pack\n"
+        + "are separately licensed under OGL 1.0a; see the accompanying `OGL-1.0a.txt`.\n"
     )
 
 
@@ -115,9 +115,9 @@ def main() -> int:
         "system": "pf2e-remaster",
         "systemVersion": original_module.get("systemVersion", "1.2.10"),
         "name": "Rage of Elements (OGL)",
-        "slug": "pf2e-remaster-rage-of-elements-ogl",
+        "slug": "pf2e-remaster-rage-of-elements-ogl-source",
         "category": "other",
-        "descr": "Separately licensed OGL game mechanics and functional rules text for Encounter+.",
+        "descr": "Source pack for separately licensed OGL records bundled into the PF2E Remaster system installer.",
         "author": "Encounter+ adaptation by Saharory and contributors",
         "version": original_module.get("version", "1.2.10"),
         "license": "OGL-1.0a",
@@ -149,7 +149,7 @@ def main() -> int:
     summary_path.write_text(
         json.dumps({"rage-of-elements": counts}, ensure_ascii=False, indent=2) + "\n"
     )
-    print(f"Built one OGL module with {sum(counts.values())} records in {args.output}")
+    print(f"Built one OGL source pack with {sum(counts.values())} records in {args.output}")
     return 0
 
 

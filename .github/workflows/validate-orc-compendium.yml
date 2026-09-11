@@ -22,7 +22,7 @@ jobs:
       - name: Validate system definitions and public content
         run: |
           python3 tools/eplus_dev.py check --json
-      - name: Build and inspect the two-package release
+      - name: Build and inspect the single-install release
         run: |
           python3 tools/package_public_release.py
           python3 tools/eplus_dev.py inspect-release --json
