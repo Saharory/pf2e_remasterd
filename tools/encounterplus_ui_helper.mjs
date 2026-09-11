@@ -18,6 +18,7 @@ const LOWER_COLLECTIONS = new Set([
   "Deities",
   "Domains",
   "Languages",
+  "GM Tools",
 ]);
 
 function escapeRegex(value) {

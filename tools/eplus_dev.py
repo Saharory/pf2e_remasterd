@@ -36,6 +36,7 @@ SYSTEM_FILES = {
     "types.json",
     "collections.json",
     "filters.json",
+    "gm-tools.json",
     "COMMUNITY-USE-NOTICE.md",
 }
 SYSTEM_DIRS = {
@@ -62,6 +63,7 @@ COLLECTION_TITLES = {
     "deities": "Deities",
     "domains": "Domains",
     "feats": "Feats",
+    "gm-tools": "GM Tools",
     "hazards": "Hazards",
     "heritages": "Heritages",
     "items": "Items",
@@ -87,6 +89,7 @@ LABEL_TO_COLLECTION = {
     "deity": "deities",
     "domain": "domains",
     "feat": "feats",
+    "gm-tool": "gm-tools",
     "hazard": "hazards",
     "heritage": "heritages",
     "item": "items",
@@ -375,6 +378,7 @@ def inspect_release(dist: Path) -> dict[str, Any]:
 
     orc_records = 0
     ogl_records = 0
+    tool_records = 0
     orc_ids: set[str] = set()
     collection_counts: dict[str, int] = {}
     if system_path.is_file():
@@ -417,11 +421,13 @@ def inspect_release(dist: Path) -> dict[str, Any]:
                         orc_records += 1
                     elif license_name == "OGL-1.0a":
                         ogl_records += 1
+                    elif license_name == "Project-Code" and name == "gm-tools.json":
+                        tool_records += 1
                     else:
                         errors.append(f"unknown entity license in {name}: {license_name!r}")
                         break
                     source_name = str((record.get("data") or {}).get("sourceName") or "")
-                    if not source_name.strip():
+                    if license_name in {"ORC-1.0a", "OGL-1.0a"} and not source_name.strip():
                         errors.append(f"entity is missing its packaged source name in {name}")
                         break
 
@@ -443,13 +449,18 @@ def inspect_release(dist: Path) -> dict[str, Any]:
         errors.append(f"ORC record count {orc_records} != expected {expected_orc}")
     if ogl_records != expected_ogl:
         errors.append(f"OGL record count {ogl_records} != expected {expected_ogl}")
+    expected_tools = len(load_json(REPO / "gm-tools.json"))
+    if tool_records != expected_tools:
+        errors.append(f"GM tool record count {tool_records} != expected {expected_tools}")
 
     return {
         "ok": not errors,
         "installablePackages": 1,
         "orcRecords": orc_records,
         "oglRecords": ogl_records,
-        "totalRecords": orc_records + ogl_records,
+        "toolRecords": tool_records,
+        "contentRecords": orc_records + ogl_records,
+        "totalRecords": orc_records + ogl_records + tool_records,
         "collectionCounts": collection_counts,
         "systemBytes": system_path.stat().st_size if system_path.is_file() else 0,
         "errors": errors,

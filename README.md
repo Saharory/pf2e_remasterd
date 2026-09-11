@@ -26,6 +26,10 @@ Included here:
   merges them into the `.system` package for a one-step baseline install
 - 679 separately marked OGL 1.0a records from *Rage of Elements*, bundled into
   the same system installer with their complete license and attribution
+- a project-authored GM Tools collection containing an interactive Encounter
+  XP Planner with party-size budgets, creatures, hazards, weak/elite
+  adjustments, transparent overrides, direct Remaster rule links, and a
+  copy-ready handoff to Encounter+'s native Total Experience award sheet
 
 Kept outside this repository:
 
@@ -96,8 +100,8 @@ archive when testing a content change.
 
 The normal build creates one `.system` installer containing the definitions,
 all reviewed ORC records, and the separately marked *Rage of Elements* OGL
-records. It also embeds both license notice sets and creates the update
-manifest, checksums, and a machine-readable summary.
+records, plus the project-authored GM tools. It also embeds both license notice
+sets and creates the update manifest, checksums, and a machine-readable summary.
 
 ```sh
 .venv/bin/python tools/eplus_dev.py check --json

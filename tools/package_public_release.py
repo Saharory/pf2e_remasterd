@@ -33,6 +33,7 @@ SYSTEM_FILES = {
     "types.json",
     "collections.json",
     "filters.json",
+    "gm-tools.json",
     "COMMUNITY-USE-NOTICE.md",
     "CONTENT-LICENSES.md",
 }
@@ -195,7 +196,18 @@ def load_ogl_collections(existing_ids: set[str]) -> tuple[dict[str, list[dict]],
     return dict(collections), counts
 
 
-def build_system(target: Path) -> tuple[dict[str, int], dict[str, int]]:
+def load_project_collections() -> tuple[dict[str, list[dict]], dict[str, int]]:
+    records = json.loads((REPO / "gm-tools.json").read_text(encoding="utf-8"))
+    if not isinstance(records, list):
+        raise ValueError("gm-tools.json: expected a JSON array")
+    for record in records:
+        if (record.get("attributes") or {}).get("license") != "Project-Code":
+            raise ValueError("gm-tools.json: every tool must carry the Project-Code marker")
+        record["systemVersion"] = SYSTEM_VERSION
+    return {"gm-tools.json": records}, {"gm-tools.json": len(records)}
+
+
+def build_system(target: Path) -> tuple[dict[str, int], dict[str, int], dict[str, int]]:
     orc_collections, orc_counts = load_orc_collections()
     orc_ids = {
         str(record.get("id") or "")
@@ -203,8 +215,9 @@ def build_system(target: Path) -> tuple[dict[str, int], dict[str, int]]:
         for record in records
     }
     ogl_collections, ogl_counts = load_ogl_collections(orc_ids)
+    project_collections, project_counts = load_project_collections()
     collections: dict[str, list[dict]] = defaultdict(list)
-    for source in (orc_collections, ogl_collections):
+    for source in (orc_collections, ogl_collections, project_collections):
         for name, records in source.items():
             collections[name].extend(records)
     for records in collections.values():
@@ -221,6 +234,8 @@ def build_system(target: Path) -> tuple[dict[str, int], dict[str, int]]:
     ) as bundle:
         written: set[str] = set()
         for source, name in system_source_files():
+            if name in project_collections:
+                continue
             if name in written:
                 raise ValueError(f"duplicate system archive path: {name}")
             add_file(bundle, source, name)
@@ -240,7 +255,7 @@ def build_system(target: Path) -> tuple[dict[str, int], dict[str, int]]:
         add_file(bundle, ogl_root / "OGL-1.0a.txt", "OGL-1.0a.txt")
         add_file(bundle, ogl_root / "source.json", "notices/OGL-RAGE-OF-ELEMENTS.json")
 
-    return orc_counts, ogl_counts
+    return orc_counts, ogl_counts, project_counts
 
 
 def build_test_shell(target: Path) -> None:
@@ -263,6 +278,8 @@ def build_test_shell(target: Path) -> None:
         target, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
     ) as bundle:
         for source, name in system_source_files():
+            if name == "gm-tools.json":
+                continue
             if name == "manifest.json":
                 continue
             if name == "system.json":
@@ -306,7 +323,7 @@ def main() -> int:
     clear_owned_output(args.output)
 
     system_target = args.output / "pf2e-remaster.system"
-    orc_counts, ogl_counts = build_system(system_target)
+    orc_counts, ogl_counts, project_counts = build_system(system_target)
 
     copy_json(REPO / "manifest.json", args.output / "manifest.json")
 
@@ -331,7 +348,10 @@ def main() -> int:
         "orcRecords": sum(orc_counts.values()),
         "oglCollections": ogl_counts,
         "oglRecords": sum(ogl_counts.values()),
-        "totalRecords": sum(orc_counts.values()) + sum(ogl_counts.values()),
+        "projectCollections": project_counts,
+        "toolRecords": sum(project_counts.values()),
+        "contentRecords": sum(orc_counts.values()) + sum(ogl_counts.values()),
+        "totalRecords": sum(orc_counts.values()) + sum(ogl_counts.values()) + sum(project_counts.values()),
         "installablePackages": 1,
         "individualModulesBuilt": individual_count,
         "testShellBuilt": test_shell is not None,
