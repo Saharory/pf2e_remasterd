@@ -15,16 +15,13 @@ an indication of endorsement by Encounter+ or Paizo.
 
 ## Install the system
 
-1. Open the [latest GitHub release](https://github.com/Saharory/pf2e_remasterd/releases/latest).
-2. Under **Assets**, tap **`pf2e-remaster.system`** and wait for the download to
-   finish.
-3. Open Encounter+.
-4. Open **Settings**.
-5. Select **Import**.
-6. Choose the downloaded **`pf2e-remaster.system`** file.
-7. Confirm the import and wait until Encounter+ reports that it has finished.
-8. Return to **Settings** and select **Systems**.
-9. Select **Pathfinder 2E Remaster** to make it the active game system.
+1. **Download the system:** Open the [latest GitHub release](https://github.com/Saharory/pf2e_remasterd/releases/latest),
+   find **Assets**, and download **`pf2e-remaster.system`**.
+2. **Import it into Encounter+:** Open **Settings → Import**, choose the
+   downloaded **`pf2e-remaster.system`** file, confirm the import, and wait for
+   it to finish.
+3. **Activate the system:** Open **Settings → Systems** and select
+   **Pathfinder 2E Remaster**.
 
 The installed system checks this repository's latest release manifest for
 newer versions. When Encounter+ reports an update, install it through the app
@@ -37,12 +34,12 @@ about before updating.
 The Operations Center is designed to run as a compact reference panel over the
 game screen:
 
-1. Open **Library** in Encounter+.
-2. Open **Pages**, then select **PF2E Operations Center**.
-3. Open its main/home page and tap the **bookmark** icon in the page toolbar.
-   Bookmark the home page rather than one of its individual rule pages.
-4. Return to the game screen and open **Bookmarks**.
-5. Select **PF2E Operations Center** to open it in the compact panel.
+1. **Find the Operations Center:** Open **Library → Pages** and select
+   **PF2E Operations Center**.
+2. **Bookmark it:** Open its main/home page and tap the **bookmark** icon in the
+   page toolbar. Bookmark the home page rather than an individual rule page.
+3. **Use it during play:** Return to the game screen, open **Bookmarks**, and
+   select **PF2E Operations Center** to open it in the compact panel.
 
 Use the tiles to navigate. The breadcrumb trail at the top returns to any
 earlier Operations Center section, while explicit rule links open the complete
