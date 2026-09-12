@@ -16,12 +16,15 @@ an indication of endorsement by Encounter+ or Paizo.
 ## Install the system
 
 1. Open the [latest GitHub release](https://github.com/Saharory/pf2e_remasterd/releases/latest).
-2. Under **Assets**, download **`pf2e-remaster.system`**. Do not download the
-   automatically generated “Source code” archives; those are repository files,
-   not Encounter+ installers.
-3. Open the downloaded `.system` file with Encounter+ and confirm the import.
-4. In Encounter+, select **Pathfinder 2E Remaster** as the game system for the
-   campaign you want to test.
+2. Under **Assets**, tap **`pf2e-remaster.system`** and wait for the download to
+   finish.
+3. Open Encounter+.
+4. Open **Settings**.
+5. Select **Import**.
+6. Choose the downloaded **`pf2e-remaster.system`** file.
+7. Confirm the import and wait until Encounter+ reports that it has finished.
+8. Return to **Settings** and select **Systems**.
+9. Select **Pathfinder 2E Remaster** to make it the active game system.
 
 The installed system checks this repository's latest release manifest for
 newer versions. When Encounter+ reports an update, install it through the app
