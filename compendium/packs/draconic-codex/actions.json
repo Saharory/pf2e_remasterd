@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Enamoring Exhalation",
     "slug": "enamoring-exhalation-draconic-codex-action-action-3480",
-    "descr": "**Frequency** once per 10 minutes\n\n---\n\nYour riding dragonet enraptures those nearby, exhaling a 15-foot cone of pheromones that fascinates those within it. Each creature in the area is fascinated with you and your dragonet until the end of your next turn unless it succeeds at a Fortitude save. This uses a trained DC using the dragonet’s Charisma modifier, or an expert DC if the dragonet is specialized.",
+    "descr": "**Frequency** once per 10 minutes\n\n---\n\nYour riding dragonet enraptures those nearby, exhaling a 15-foot [cone](/rule/cone-rules-2386) of pheromones that fascinates those within it. Each creature in the area is [fascinated](/condition/fascinated-player-core) with you and your dragonet until the end of your next turn unless it succeeds at a Fortitude save. This uses a trained DC using the dragonet’s Charisma modifier, or an expert DC if the dragonet is [specialized](/rule/specialized-animal-companions-rules-2120).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -16,7 +16,13 @@
       "frequency": "once per 10 minutes",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "olfactory",
+          "slug": "olfactory"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

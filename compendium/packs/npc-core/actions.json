@@ -6,14 +6,15 @@
     "systemVersion": "1.2.10",
     "name": "(Halfling) Keen Eyes",
     "slug": "halfling-keen-eyes-npc-core",
-    "descr": "The halfling gains a +2 circumstance bonus when using the Seek action to find Hidden or undetected creatures within 30 feet of them. Whenever the halfling targets a creature that is Concealed or hidden from them, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.",
+    "descr": "The halfling gains a +2 circumstance bonus when using the [Seek](/action/seek-player-core) action to find [Hidden](/condition/hidden-player-core) or [undetected](/condition/undetected-player-core) creatures within 30 feet of them. Whenever the halfling targets a creature that is [Concealed](/condition/concealed-player-core) or hidden from them, reduce the DC of the flat check to 3 for a concealed target or 9 for a hidden one.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -49,7 +50,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "healing",
+          "slug": "healing"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -77,7 +84,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist) Blazing Gate",
     "slug": "martial-artist-blazing-gate-npc-core",
-    "descr": "**Requirements** The grandmaster has a target Grabbed or Restrained\n\n---\n\n**Effect** The grandmaster tosses their target upwards and electrocutes them with a qi-infused double palm strike as they land. The target becomes Prone, loses the grabbed or restrained condition, and takes 5d6 bludgeoning damage and 2d8 persistent electricity damage (basic Fortitude DC 38 save).",
+    "descr": "**Requirements** The grandmaster has a target [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core)\n\n---\n\n**Effect** The grandmaster tosses their target upwards and electrocutes them with a qi-infused double palm strike as they land. The target becomes [Prone](/condition/prone-player-core), loses the grabbed or restrained condition, and takes 5d6 bludgeoning damage and 2d8 persistent electricity damage (basic Fortitude DC 38 save).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -87,7 +94,13 @@
       "frequency": "",
       "requirements": "The grandmaster has a target Grabbed or Restrained",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -115,7 +128,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist) Competitive Taunt",
     "slug": "martial-artist-competitive-taunt-npc-core",
-    "descr": "The tournament combatant attempts to Demoralize a target. On a success, the demoralized creature is Off Guard until the end of their next turn. The tournament combatant gets a +2 circumstance bonus to their damage against a creature made off-guard in this way.",
+    "descr": "The tournament combatant attempts to Demoralize a target. On a success, the demoralized creature is [Off Guard](/condition/off-guard-player-core) until the end of their next turn. The tournament combatant gets a +2 circumstance bonus to their damage against a creature made off-guard in this way.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -127,7 +140,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "fear",
+          "slug": "fear"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -164,7 +191,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -199,7 +227,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "A creature within the black belt's reach uses a move action",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -226,7 +255,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist) Kiai!",
     "slug": "martial-artist-kiai-npc-core",
-    "descr": "**Frequency** once per turn\n\n**Requirements** The martial student attempts a Strike\n\n---\n\n**Effect** The martial student shouts to startle their adversary. If the Strike is successful, the target becomes Frightened 1.",
+    "descr": "**Frequency** once per turn\n\n**Requirements** The martial student attempts a Strike\n\n---\n\n**Effect** The martial student shouts to startle their adversary. If the Strike is successful, the target becomes [Frightened 1](/condition/frightened-player-core).",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -234,7 +263,8 @@
       "frequency": "once per turn",
       "requirements": "The martial student attempts a Strike",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -269,7 +299,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "The martial artist critically succeeds on an unarmed Strike",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -296,7 +327,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist, Dirty Fighting) Contraband Substance",
     "slug": "martial-artist-dirty-fighting-contraband-substance-npc-core",
-    "descr": "The martial artist pulls out a concealed alchemical vial of mutagen and drinks it to improve their combat prowess. The item is usually a Juggernaut Mutagen (Lesser), or Quicksilver Mutagen (Lesser). This ability can't be used again until the martial artist has time to acquire and hide a new mutagen. Some martial artists use concealed small vials, but others hide a syringe or soak the alchemical liquid into a garment they can put in their mouth.",
+    "descr": "The martial artist pulls out a concealed alchemical vial of mutagen and drinks it to improve their combat prowess. The item is usually a [Juggernaut Mutagen (Lesser)](/item/juggernaut-mutagen-lesser-player-core-2), or [Quicksilver Mutagen (Lesser)](/item/quicksilver-mutagen-lesser-player-core-2). This ability can't be used again until the martial artist has time to acquire and hide a new mutagen. Some martial artists use concealed small vials, but others hide a syringe or soak the alchemical liquid into a garment they can put in their mouth.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -304,7 +335,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -339,7 +371,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -366,7 +399,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist, Dirty Fighting) Sand in Your Eye",
     "slug": "martial-artist-dirty-fighting-sand-in-your-eye-npc-core",
-    "descr": "The martial artist Feints. On a success, the martial artist tosses sand into the face of one target, Blinding them for 1 round or until the target Interacts to remove the blinded condition.",
+    "descr": "The martial artist Feints. On a success, the martial artist tosses sand into the face of one target, [Blinding](/condition/blinded-player-core) them for 1 round or until the target Interacts to remove the blinded condition.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -376,7 +409,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -404,7 +443,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist, Grandmaster) Life Burn Aura",
     "slug": "martial-artist-grandmaster-life-burn-aura-npc-core",
-    "descr": "The grandmaster transmutes their lifespan into an expulsion of qi. For the next minute, the grandmaster is surrounded by a 30-foot emanation that deals 3d6 force|options:area-damage] damage to all creatures who start their turn within the emanation, including the grandmaster themself. While Life Burn Aura is active, the grandmaster's fist Strikes deal 2 additional die of weapon damage. When the aura disappears, the grandmaster is permanently Doomed 1. This condition is cumulative.",
+    "descr": "The grandmaster transmutes their lifespan into an expulsion of qi. For the next minute, the grandmaster is surrounded by a 30-foot emanation that deals 3d6 force|options:area-damage] damage to all creatures who start their turn within the emanation, including the grandmaster themself. While Life Burn Aura is active, the grandmaster's fist Strikes deal 2 additional die of weapon damage. When the aura disappears, the grandmaster is permanently [Doomed 1](/condition/doomed-player-core). This condition is cumulative.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -415,7 +454,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "force",
+          "slug": "force"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -444,7 +493,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist, Grandmaster) Solar Surge",
     "slug": "martial-artist-grandmaster-solar-surge-npc-core",
-    "descr": "The grandmaster unleashes a qi wave as bright as the sun. All creatures within a 50-foot radius of the grandmaster who can see must attempt a Reflex DC 38 save, including the grandmaster themself.\n\n---\n\n**Critical Success** The creature is Dazzled for 1 round.\n\n**Success** The creature is Blinded for 1 round.\n\n**Failure** The creature is blinded for 1 day.\n\n**Critical Failure** The creature is permanently blinded.",
+    "descr": "The grandmaster unleashes a qi wave as bright as the sun. All creatures within a 50-foot radius of the grandmaster who can see must attempt a Reflex DC 38 save, including the grandmaster themself.\n\n---\n\n**Critical Success** The creature is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Success** The creature is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Failure** The creature is blinded for 1 day.\n\n**Critical Failure** The creature is permanently blinded.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -454,7 +503,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -482,7 +537,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist, Grandmaster) Super Qi Blast",
     "slug": "martial-artist-grandmaster-super-qi-blast-npc-core",
-    "descr": "The grandmaster's body expands as it prepares to exude an unfathomable amount of qi. If the grandmaster's next action is to cast the two-action version of Qi Blast, the size of the cone increases to 120 feet and the damage increases to 16d6. The grandmaster also becomes one size category larger for the next minute, dealing an additional +9 damage with their melee Strikes. Additionally, the grandmaster is permanently Drained 1. This drained condition is cumulative.",
+    "descr": "The grandmaster's body expands as it prepares to exude an unfathomable amount of qi. If the grandmaster's next action is to cast the two-action version of [Qi Blast](/spell/qi-blast-player-core-2), the size of the cone increases to 120 feet and the damage increases to 16d6. The grandmaster also becomes one size category larger for the next minute, dealing an additional +9 damage with their melee Strikes. Additionally, the grandmaster is permanently [Drained 1](/condition/drained-player-core). This drained condition is cumulative.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -494,7 +549,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "force",
+          "slug": "force"
+        },
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        },
+        {
+          "label": "spellshape",
+          "slug": "spellshape"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -531,7 +600,8 @@
       "category": "",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -566,7 +636,8 @@
       "frequency": "once per encounter",
       "requirements": "The retired creature is in a combat encounter and has either made a critical hit or is in the second round of their encounter",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -602,7 +673,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -641,7 +718,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -677,7 +764,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -711,7 +799,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,

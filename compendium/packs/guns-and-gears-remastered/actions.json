@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Accidental Shot",
     "slug": "accidental-shot-guns-and-gears-remastered",
-    "descr": "**Frequency** once per day\n\n---\n\n**Effect** You make a Strike with a ranged weapon, rolling the attack and damage twice and using the better results for each. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being Concealed or Hidden.",
+    "descr": "**Frequency** once per day\n\n---\n\n**Effect** You make a Strike with a ranged weapon, rolling the attack and damage twice and using the better results for each. The attack ignores circumstance penalties to the attack roll and any flat check required due to the target being [Concealed](/condition/concealed-player-core) or [Hidden](/condition/hidden-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -16,7 +16,13 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -52,7 +58,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -87,7 +94,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "A creature within 30 feet Casts a Spell or Activates an Item using a concentrate Activation",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -124,7 +132,13 @@
       "frequency": "",
       "requirements": "You're unarmored and wielding a simple firearm or simple combination weapon",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "stance",
+          "slug": "stance"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -162,7 +176,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -200,7 +220,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "A critical hit deals physical damage to you",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "automaton",
+          "slug": "automaton"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -228,7 +254,7 @@
     "systemVersion": "1.2.10",
     "name": "Clear a Path",
     "slug": "clear-a-path-guns-and-gears-remastered",
-    "descr": "**Requirements** You're wielding a two-handed firearm or two-handed crossbow.\n\n---\n\nYou push outward with your weapon to clear some space before quickly reloading a fresh round. You make an Athletics check to Shove an opponent within your reach using your weapon, then Interact to reload. For this Shove, you don't need a free hand, and you add the weapon's item bonus on attack rolls (if any) to the Athletics check. If your last action or activity this round included a ranged Strike with the weapon, use the same multiple attack penalty as the last Strike you attempted with the weapon for the Shove; the Shove still counts toward your multiple attack penalty on further attacks.",
+    "descr": "**Requirements** You're wielding a two-handed firearm or two-handed crossbow.\n\n---\n\nYou push outward with your weapon to clear some space before quickly reloading a fresh round. You make an Athletics check to [Shove](/action/shove-player-core) an opponent within your reach using your weapon, then Interact to reload. For this Shove, you don't need a free hand, and you add the weapon's item bonus on attack rolls (if any) to the Athletics check. If your last action or activity this round included a ranged Strike with the weapon, use the same multiple attack penalty as the last Strike you attempted with the weapon for the Shove; the Shove still counts toward your multiple attack penalty on further attacks.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -238,7 +264,13 @@
       "frequency": "",
       "requirements": "You're wielding a two-handed firearm or two-handed crossbow",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -266,7 +298,7 @@
     "systemVersion": "1.2.10",
     "name": "Command a Construct",
     "slug": "command-a-construct-guns-and-gears-remastered",
-    "descr": "You instruct your construct companion to act as you instruct it, and according to its programming. Your construct companion gains 2 actions during this turn. See the minion trait for details.",
+    "descr": "You instruct your construct companion to act as you instruct it, and according to its programming. Your construct companion gains 2 actions during this turn. See the [minion](/trait/minion) trait for details.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -277,7 +309,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -314,7 +356,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -341,7 +384,7 @@
     "systemVersion": "1.2.10",
     "name": "Covered Reload",
     "slug": "covered-reload-guns-and-gears-remastered",
-    "descr": "You duck into a safe position or minimize your profile while reloading to make your next attack. Either Take Cover or attempt to Hide, then Interact to reload. As normal, you must meet the requirements to Take Cover or Hide; you must be Prone, benefiting from cover, or near a feature that allows you to Take Cover, and you need to be benefiting from cover or Concealed to a creature to Hide from that creature.",
+    "descr": "You duck into a safe position or minimize your profile while reloading to make your next attack. Either [Take Cover](/action/take-cover-player-core) or attempt to [Hide](/action/hide-player-core), then Interact to reload. As normal, you must meet the requirements to Take Cover or Hide; you must be [Prone](/condition/prone-player-core), benefiting from cover, or near a feature that allows you to Take Cover, and you need to be benefiting from cover or [Concealed](/condition/concealed-player-core) to a creature to Hide from that creature.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -351,7 +394,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -390,7 +439,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "spellshot",
+          "slug": "spellshot"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -429,7 +488,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -468,7 +533,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You roll initiative",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "spellshot",
+          "slug": "spellshot"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -507,7 +582,13 @@
       "frequency": "",
       "requirements": "On your last action, you failed (but didn't critically fail) a Strike with a firearm or crossbow you're holding in one hand, and your other hand is either wielding a melee weapon or empty",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -535,7 +616,7 @@
     "systemVersion": "1.2.10",
     "name": "Ghost Shot",
     "slug": "ghost-shot-guns-and-gears-remastered",
-    "descr": "Make a firearm or crossbow Strike. If you're Hidden from or Undetected by the target, the Strike adds the additional precision damage from One Shot, One Kill; if you would already receive that additional damage on the Strike, the effects aren't cumulative. If you were undetected or Unnoticed by any creatures, you're now hidden from them instead, or undetected if the shot was made with a silencer.",
+    "descr": "Make a firearm or crossbow Strike. If you're [Hidden](/condition/hidden-player-core) from or [Undetected](/condition/undetected-player-core) by the target, the Strike adds the additional precision damage from [One Shot, One Kill](/action/one-shot-one-kill-guns-and-gears-remastered); if you would already receive that additional damage on the Strike, the effects aren't cumulative. If you were undetected or [Unnoticed](/condition/unnoticed-player-core) by any creatures, you're now hidden from them instead, or undetected if the shot was made with a silencer.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -546,7 +627,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "flourish",
+          "slug": "flourish"
+        },
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -575,7 +666,7 @@
     "systemVersion": "1.2.10",
     "name": "Goblin Jubilee",
     "slug": "goblin-jubilee-guns-and-gears-remastered",
-    "descr": "Chaos fills a area within 120 feet. All creatures in the area takes (max(3,(3 + floor((current value - 10)/ 3))))d6 fire,(max(3,(3 + floor((current value - 10)/ 3))))d6[sonic]|options:area-damage] damage and must attempt a Fortitude save. Every 3 levels, the fire damage and sonic damage each increase by 1d6. You can expend 2 versatile vials instead of 1 to increase the fire and sonic damage by 1d6 each, or by 2d6 each at 16th level.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Dazzled and Deafened until the end of its next turn and takes half damage.\n\n**Failure** The creature is dazzled and deafened for 1 minute and takes full damage.\n\n**Critical Failure** The creature is Blinded for 1 round, dazzled and deafened for 1 minute, and takes double damage.",
+    "descr": "Chaos fills a area within 120 feet. All creatures in the area takes (max(3,(3 + floor((current value - 10)/ 3))))d6 fire,(max(3,(3 + floor((current value - 10)/ 3))))d6[sonic]|options:area-damage] damage and must attempt a Fortitude save. Every 3 levels, the fire damage and sonic damage each increase by 1d6. You can expend 2 versatile vials instead of 1 to increase the fire and sonic damage by 1d6 each, or by 2d6 each at 16th level.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Dazzled](/condition/dazzled-player-core) and [Deafened](/condition/deafened-player-core) until the end of its next turn and takes half damage.\n\n**Failure** The creature is dazzled and deafened for 1 minute and takes full damage.\n\n**Critical Failure** The creature is [Blinded](/condition/blinded-player-core) for 1 round, dazzled and deafened for 1 minute, and takes double damage.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -587,7 +678,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "sonic",
+          "slug": "sonic"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -617,7 +722,7 @@
     "systemVersion": "1.2.10",
     "name": "Grim Swagger",
     "slug": "grim-swagger-guns-and-gears-remastered",
-    "descr": "**Requirements** You have a one-handed firearm or one-handed crossbow visibly worn or wielded.\n\n---\n\nYou attempt to clear the room by promising a grim fate to anyone who doesn't do what you say, and quickly. Attempt a Deception or Intimidation check against the Will DCs of each creature within 30 feet, except for your allies. Regardless of whether you succeed or fail, each subject is temporarily immune to your Grim Swagger for 10 minutes.\n\nFor example, if you attempt a Deception check, you lie and boast about your prowess or the large group of friends on their way to back you up. If you attempt an Intimidation check, you promise everyone in the room that you're going to be the last thing they see.\n\n---\n\n**Critical Success** The creature becomes Frightened 3. If it's lower level than you, it's also Fleeing for 1 round.\n\n**Success** The creature becomes Frightened 2.",
+    "descr": "**Requirements** You have a one-handed firearm or one-handed crossbow visibly worn or wielded.\n\n---\n\nYou attempt to clear the room by promising a grim fate to anyone who doesn't do what you say, and quickly. Attempt a Deception or Intimidation check against the Will DCs of each creature within 30 feet, except for your allies. Regardless of whether you succeed or fail, each subject is temporarily immune to your Grim Swagger for 10 minutes.\n\nFor example, if you attempt a Deception check, you lie and boast about your prowess or the large group of friends on their way to back you up. If you attempt an Intimidation check, you promise everyone in the room that you're going to be the last thing they see.\n\n---\n\n**Critical Success** The creature becomes [Frightened 3](/condition/frightened-player-core). If it's lower level than you, it's also [Fleeing](/condition/fleeing-player-core) for 1 round.\n\n**Success** The creature becomes Frightened 2.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -632,7 +737,33 @@
       "frequency": "",
       "requirements": "You have a one-handed firearm or one-handed crossbow visibly worn or wielded",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "fear",
+          "slug": "fear"
+        },
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -675,7 +806,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You roll initiative",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -703,7 +840,7 @@
     "systemVersion": "1.2.10",
     "name": "Jumping Jenny",
     "slug": "jumping-jenny-guns-and-gears-remastered",
-    "descr": "Target a flying creature within 60 feet. Until the start of your next turn, each time that creature attempts to Fly, they must succeed at an Acrobatics check to Maneuver In Flight against the DC of Launch Fireworks, or the Fly action is disrupted. If all the creature's attempts to Fly are disrupted, at the end of its turn, it falls harmlessly to the ground below.",
+    "descr": "Target a flying creature within 60 feet. Until the start of your next turn, each time that creature attempts to Fly, they must succeed at an Acrobatics check to Maneuver In Flight against the DC of [Launch Fireworks](/action/launch-fireworks-guns-and-gears-remastered), or the [Fly](/action/fly-player-core) action is disrupted. If all the creature's attempts to Fly are disrupted, at the end of its turn, it falls harmlessly to the ground below.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -711,7 +848,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -738,7 +876,7 @@
     "systemVersion": "1.2.10",
     "name": "Launch Fireworks",
     "slug": "launch-fireworks-guns-and-gears-remastered",
-    "descr": "**Cost** 1 versatile vial\n\n**Requirements** You're holding or wearing an Alchemist'S Toolkit and have a free hand\n\n---\n\n**Effect** You set off a fireworks display. You can launch a normal firework to simply create a visual or audible signal within 20 feet or you can choose one of the following special effects. You can also use the comet, flower, or salute fireworks displays, and feats can add more options. A specific fireworks display takes the listed number of actions to launch and has the listed traits.\n\n**Comet** 1 (visual) You shoot a streak of shining light in a area. All spaces in that line are lit with bright light until the start of your next turn. As part of this action, you can also Point Out a single creature in the line, and your allies do not need to hear or understand you.\n\n**Flower** 1 (visual) You ignite a ring of sparks, creating a shape that might be reminiscent of a flower blooming in the sky. Each enemy in a area must attempt a Fortitude save. On a failure, the enemy is Dazzled for 1 round, and on a critical failure they are dazzled for 2 rounds.\n\n**Salute** 1 (auditory) You create a startling bang or whistle. When you launch a salute display, you can choose a Confused or Fascinated ally within 60 feet. If the ally you chose is fascinated, the noise is so violent that it acts as a hostile effect for the purpose of their fascinated condition (though it has no negative repercussions) automatically ending most applications of the fascinated condition. If they're confused, the sound is so loud and violent that it might snap the ally out of confusion. They can immediately attempt the flat check to remove the confused condition which normally occurs when a creature is damaged. If the confused condition has special rules that remove the flat check when taking damage or make the flat check harder, those rules also apply to the salute.",
+    "descr": "**Cost** 1 versatile vial\n\n**Requirements** You're holding or wearing an [Alchemist'S Toolkit](/item/alchemist-s-toolkit-player-core) and have a free hand\n\n---\n\n**Effect** You set off a fireworks display. You can launch a normal firework to simply create a visual or audible signal within 20 feet or you can choose one of the following special effects. You can also use the comet, flower, or salute fireworks displays, and feats can add more options. A specific fireworks display takes the listed number of actions to launch and has the listed traits.\n\n**Comet** 1 (visual) You shoot a streak of shining light in a area. All spaces in that line are lit with bright light until the start of your next turn. As part of this action, you can also [Point Out](/action/point-out-player-core) a single creature in the line, and your allies do not need to hear or understand you.\n\n**Flower** 1 (visual) You ignite a ring of sparks, creating a shape that might be reminiscent of a flower blooming in the sky. Each enemy in a area must attempt a Fortitude save. On a failure, the enemy is [Dazzled](/condition/dazzled-player-core) for 1 round, and on a critical failure they are dazzled for 2 rounds.\n\n**Salute** 1 (auditory) You create a startling bang or whistle. When you launch a salute display, you can choose a [Confused](/condition/confused-player-core) or [Fascinated](/condition/fascinated-player-core) ally within 60 feet. If the ally you chose is fascinated, the noise is so violent that it acts as a hostile effect for the purpose of their fascinated condition (though it has no negative repercussions) automatically ending most applications of the fascinated condition. If they're confused, the sound is so loud and violent that it might snap the ally out of confusion. They can immediately attempt the flat check to remove the confused condition which normally occurs when a creature is damaged. If the confused condition has special rules that remove the flat check when taking damage or make the flat check harder, those rules also apply to the salute.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -748,7 +886,13 @@
       "frequency": "",
       "requirements": "You're holding or wearing an Alchemist'S Toolkit and have a free hand",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -776,7 +920,7 @@
     "systemVersion": "1.2.10",
     "name": "Living Fortification",
     "slug": "living-fortification-guns-and-gears-remastered",
-    "descr": "**Trigger** You roll initiative.\n\n---\n\nYou posture defensively with firearms or crossbows, acting like a walking tower. Interact to draw a firearm or crossbow. You then position that weapon defensively, as the parry trait, gaining a +1 circumstance bonus to AC until the end of your first turn, or a +2 circumstance bonus if the chosen weapon has the parry trait.",
+    "descr": "**Trigger** You roll initiative.\n\n---\n\nYou posture defensively with firearms or crossbows, acting like a walking tower. Interact to draw a firearm or crossbow. You then position that weapon defensively, as the [parry](/trait/parry) trait, gaining a +1 circumstance bonus to AC until the end of your first turn, or a +2 circumstance bonus if the chosen weapon has the parry trait.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -786,7 +930,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You roll initiative",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -824,7 +974,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You roll Stealth for initiative",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -863,7 +1019,17 @@
       "frequency": "once per round",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "inventor",
+          "slug": "inventor"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -902,7 +1068,13 @@
       "frequency": "",
       "requirements": "You're wielding a one-handed firearm or one-handed crossbow",
       "trigger": "A foe within the first range increment of the one-handed firearm or one-handed crossbow you're wielding critically fails an attack roll against you",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -940,7 +1112,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -980,7 +1158,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You miss with a firearm or crossbow Strike",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "spellshot",
+          "slug": "spellshot"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1020,7 +1212,13 @@
       "frequency": "",
       "requirements": "You're wielding a firearm or crossbow in one hand, and your other hand either wields a one-handed melee weapon or is empty",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1056,7 +1254,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You attempt a saving throw against a harmful magical effect but haven't rolled yet",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1083,7 +1282,7 @@
     "systemVersion": "1.2.10",
     "name": "Set Explosives",
     "slug": "set-explosives-guns-and-gears-remastered",
-    "descr": "**Requirements** You have 1 or 2 bombs in hand\n\n---\n\n**Effect** You attach the bombs to an inanimate object within your reach, such as a door, wall, or column, and rig them to detonate at a set time. The bombs explode at a specific time you determine (such as after your next action or at the start of your next turn, to a maximum of 1 minute), dealing their damage and splash damage to the inanimate object. Combine this damage for the purpose of resistances and weaknesses, and this damage ignores an amount of the object's Hardness equal to your level. Any creatures adjacent to the hazard take the bombs' splash damage, also combined for the purpose of resistances and weaknesses. As a reminder, since you didn't throw the bombs, the Bomber's Field Discovery and similar effects don't apply. Making sure your timing is correct requires concentration, so you can't Set Explosives again while you're waiting for a previously set bomb to detonate.",
+    "descr": "**Requirements** You have 1 or 2 bombs in hand\n\n---\n\n**Effect** You attach the bombs to an inanimate object within your reach, such as a door, wall, or column, and rig them to detonate at a set time. The bombs explode at a specific time you determine (such as after your next action or at the start of your next turn, to a maximum of 1 minute), dealing their damage and splash damage to the inanimate object. Combine this damage for the purpose of resistances and weaknesses, and this damage ignores an amount of the object's Hardness equal to your level. Any creatures adjacent to the hazard take the bombs' splash damage, also combined for the purpose of resistances and weaknesses. As a reminder, since you didn't throw the bombs, the [Bomber's Field Discovery](/feat/field-discovery-bomber-player-core-2) and similar effects don't apply. Making sure your timing is correct requires concentration, so you can't Set Explosives again while you're waiting for a previously set bomb to detonate.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1093,7 +1292,13 @@
       "frequency": "",
       "requirements": "You have 1 or 2 bombs in hand",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1121,7 +1326,7 @@
     "systemVersion": "1.2.10",
     "name": "Siegebreaker",
     "slug": "siegebreaker-guns-and-gears-remastered",
-    "descr": "**Requirements** You're wielding a firearm that has the kickback or scatter trait, or a two-handed crossbow.\n\n---\n\nWith unbelievable force, you charge and smash your weapon into a target before digging in your heels and pulling the trigger. Leap or Stride, then make a Strike with the required firearm or crossbow against an adjacent target. This Strike deals an additional 3d8 bludgeoning] damage and ignores 10 points of the target's Hardness (if any), or of their shield's Hardness if the target uses Shield Block.\n\nAfter the Strike, you become Immobilized and position the required weapon defensively, as the parry trait, gaining a +1 circumstance bonus to AC, or a +2 circumstance bonus if the chosen weapon has the parry trait. Both effects last until the start of your next turn. If a force would move you while you're immobilized in this way, it must succeed at an appropriate check against your class DC.",
+    "descr": "**Requirements** You're wielding a firearm that has the kickback or scatter trait, or a two-handed crossbow.\n\n---\n\nWith unbelievable force, you charge and smash your weapon into a target before digging in your heels and pulling the trigger. [Leap](/action/leap-player-core) or Stride, then make a Strike with the required firearm or crossbow against an adjacent target. This Strike deals an additional 3d8 bludgeoning] damage and ignores 10 points of the target's Hardness (if any), or of their shield's Hardness if the target uses Shield Block.\n\nAfter the Strike, you become [Immobilized](/condition/immobilized-player-core) and position the required weapon defensively, as the [parry](/trait/parry) trait, gaining a +1 circumstance bonus to AC, or a +2 circumstance bonus if the chosen weapon has the parry trait. Both effects last until the start of your next turn. If a force would move you while you're immobilized in this way, it must succeed at an appropriate check against your class DC.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1131,7 +1336,13 @@
       "frequency": "",
       "requirements": "You're wielding a firearm that has the kickback or scatter trait, or a two-handed crossbow",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1167,7 +1378,8 @@
       "frequency": "",
       "requirements": "You are wielding a loaded magic firearm or magic crossbow",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1194,7 +1406,7 @@
     "systemVersion": "1.2.10",
     "name": "Spellsling",
     "slug": "spellsling-guns-and-gears-remastered",
-    "descr": "**Requirements** You're wielding your bonded beast gun or another magic firearm\n\n---\n\n**Effect** You Cast a Spell that takes 1 or 2 actions to cast and requires a spell attack roll. The effects of the spell do not occur immediately but are imbued into the beast gun you're wielding. Make a Strike with that beast gun. Your spell flies with the ammunition, using your attack roll result to determine the effects of both the Strike and the spell. Combine the Strike and spell's damage for the purpose of resistances and weaknesses. This counts as two attacks for the purposes of determining your multiple attack penalty, but you don't apply the penalty until after you've completed resolving the attack and spell.\n\n---\n\n**Special** If you also have the Spell Woven Shot action you can load and activate a piece of magical ammunition as a free action before making a Spellsling attack once per 10 minutes.",
+    "descr": "**Requirements** You're wielding your bonded beast gun or another magic firearm\n\n---\n\n**Effect** You Cast a Spell that takes 1 or 2 actions to cast and requires a spell attack roll. The effects of the spell do not occur immediately but are imbued into the beast gun you're wielding. Make a Strike with that beast gun. Your spell flies with the ammunition, using your attack roll result to determine the effects of both the Strike and the spell. Combine the Strike and spell's damage for the purpose of resistances and weaknesses. This counts as two attacks for the purposes of determining your multiple attack penalty, but you don't apply the penalty until after you've completed resolving the attack and spell.\n\n---\n\n**Special** If you also have the [Spell Woven Shot](/action/spell-woven-shot-guns-and-gears-remastered) action you can load and activate a piece of magical ammunition as a free action before making a Spellsling attack once per 10 minutes.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1202,7 +1414,8 @@
       "frequency": "",
       "requirements": "You're wielding your bonded beast gun or another magic firearm",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1229,7 +1442,7 @@
     "systemVersion": "1.2.10",
     "name": "Spinning Crush",
     "slug": "spinning-crush-guns-and-gears-remastered",
-    "descr": "**Requirements** You're wielding a loaded firearm or loaded crossbow.\n\n---\n\nYou go into a vicious spin, smashing your weapon into those nearby and increasing your momentum by firing. All creatures adjacent to you take 4d6 bludgeoning damage plus your Strength modifier; this increases to 6d6 if your firearm has a striking rune, 8d6 if it has a greater striking rune, and 10d6 if it has a major striking rune. This ability does not apply other effects that increase damage with your firearm Strikes such as weapon specialization. Creatures affected by this attack must attempt a basic Reflex save. A creature that fails its save is also pushed 10 feet directly away from you.",
+    "descr": "**Requirements** You're wielding a loaded firearm or loaded crossbow.\n\n---\n\nYou go into a vicious spin, smashing your weapon into those nearby and increasing your momentum by firing. All creatures adjacent to you take 4d6 bludgeoning damage plus your Strength modifier; this increases to 6d6 if your firearm has a [striking](/item/striking-gm-core) rune, 8d6 if it has a greater striking rune, and 10d6 if it has a major striking rune. This ability does not apply other effects that increase damage with your firearm Strikes such as weapon specialization. Creatures affected by this attack must attempt a basic Reflex save. A creature that fails its save is also pushed 10 feet directly away from you.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1239,7 +1452,13 @@
       "frequency": "",
       "requirements": "You're wielding a loaded firearm or loaded crossbow",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1277,7 +1496,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You roll initiative",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1315,7 +1540,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1343,7 +1574,7 @@
     "systemVersion": "1.2.10",
     "name": "Vital Shot",
     "slug": "vital-shot-guns-and-gears-remastered",
-    "descr": "Your careful shot against an unsuspecting opponent pierces a vital artery or organ. Make a ranged Strike. If the target is Off Guard, the Strike deals an extra die of weapon damage, and the foe takes persistent bleed damage equal to the amount of precision damage from your One Shot, One Kill.",
+    "descr": "Your careful shot against an unsuspecting opponent pierces a vital artery or organ. Make a ranged Strike. If the target is [Off Guard](/condition/off-guard-player-core), the Strike deals an extra die of weapon damage, and the foe takes persistent bleed damage equal to the amount of precision damage from your [One Shot, One Kill](/action/one-shot-one-kill-guns-and-gears-remastered).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1353,7 +1584,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "gunslinger",
+          "slug": "gunslinger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

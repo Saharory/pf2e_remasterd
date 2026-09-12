@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "(Divine Warden) Divine Destruction",
     "slug": "divine-warden-divine-destruction-monster-core-2",
-    "descr": "When the divine warden is reduced to 0 HP, it erupts with divine energy in a area, dealing 1d6 spirit|options:area-damage] damage per level. Each creature in the area must attempt a Will DC 0 save with the following outcomes.\n\n---\n\n**Critical Success** The creature takes half damage.\n\n**Success** The creature takes full damage.\n\n**Failure** The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes Enfeebled 1 and Stupefied 1 for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.\n\n**Critical Failure** As failure, except the creature becomes Enfeebled 2 and Stupefied 2.",
+    "descr": "When the divine warden is reduced to 0 HP, it erupts with divine energy in a area, dealing 1d6 spirit|options:area-damage] damage per level. Each creature in the area must attempt a Will DC 0 save with the following outcomes.\n\n---\n\n**Critical Success** The creature takes half damage.\n\n**Success** The creature takes full damage.\n\n**Failure** The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes [Enfeebled 1](/condition/enfeebled-player-core) and [Stupefied 1](/condition/stupefied-player-core) for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.\n\n**Critical Failure** As failure, except the creature becomes Enfeebled 2 and Stupefied 2.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -16,7 +16,17 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -45,14 +55,15 @@
     "systemVersion": "1.2.10",
     "name": "(Divine Warden) Divine Domain Spells",
     "slug": "divine-warden-divine-domain-spells-monster-core-2",
-    "descr": "The divine warden selects two of its patron deity's domains. The divine warden can cast the basic domain spell for its chosen domains. The divine warden has a focus pool of 1 Focus Point. It can't Refocus, but its focus pool automatically refills 24 hours after it last used a Focus Point. If the divine warden is at least 10th level, it also gains the advanced domain spells for its chosen domains, and its focus pool increases to 2 Focus Points.",
+    "descr": "The divine warden selects two of its patron deity's domains. The divine warden can cast the basic domain spell for its chosen domains. The divine warden has a focus pool of 1 Focus Point. It can't [Refocus](/action/refocus-player-core), but its focus pool automatically refills 24 hours after it last used a Focus Point. If the divine warden is at least 10th level, it also gains the advanced domain spells for its chosen domains, and its focus pool increases to 2 Focus Points.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -79,14 +90,15 @@
     "systemVersion": "1.2.10",
     "name": "(Divine Warden) Divine Innate Spells",
     "slug": "divine-warden-divine-innate-spells-monster-core-2",
-    "descr": "A divine warden gains Divine Lance as an innate cantrip.",
+    "descr": "A divine warden gains [Divine Lance](/spell/divine-lance-player-core) as an innate cantrip.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -122,7 +134,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -150,14 +168,15 @@
     "systemVersion": "1.2.10",
     "name": "(Divine Warden) Faithful Weapon",
     "slug": "divine-warden-faithful-weapon-monster-core-2",
-    "descr": "A divine warden always wields its patron deity's favored weapon. If the weapon is a ranged weapon, the divine warden automatically generates new ammunition with each attack. For a divine warden of 4th level or higher, the deity's favored weapon gains the effects of a *striking rune* while the divine warden wields it; at 12th level, these effects are of a *greater striking rune*, and at 19th level, they're instead of a *major striking rune*.",
+    "descr": "A divine warden always wields its patron deity's favored weapon. If the weapon is a ranged weapon, the divine warden automatically generates new ammunition with each attack. For a divine warden of 4th level or higher, the deity's favored weapon gains the effects of a *[striking](/item/striking-gm-core) rune* while the divine warden wields it; at 12th level, these effects are of a *greater striking rune*, and at 19th level, they're instead of a *major striking rune*.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -184,14 +203,15 @@
     "systemVersion": "1.2.10",
     "name": "(Divine Warden) Instrument of Faith",
     "slug": "divine-warden-instrument-of-faith-monster-core-2",
-    "descr": "The divine warden is a beacon for its deity's faith. A cleric of the divine warden's patron deity can channel a Heal spell through a divine warden they can see within 60 feet. The cleric determines any targets or area for the spell as if they were standing in the divine warden's space.",
+    "descr": "The divine warden is a beacon for its deity's faith. A cleric of the divine warden's patron deity can channel a [Heal](/spell/heal-player-core) spell through a divine warden they can see within 60 feet. The cleric determines any targets or area for the spell as if they were standing in the divine warden's space.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -218,14 +238,15 @@
     "systemVersion": "1.2.10",
     "name": "(Divine Warden) Sanctification",
     "slug": "divine-warden-sanctification-monster-core-2",
-    "descr": "Divine wardens are often sanctified, gaining the holy or unholy traits as preferred by their deity. If the deity doesn't have a preference, the warden isn't sanctified.",
+    "descr": "Divine wardens are often sanctified, gaining the holy or [unholy](/trait/unholy) traits as preferred by their deity. If the deity doesn't have a preference, the warden isn't sanctified.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -252,7 +273,7 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Graveknight's Shield",
     "slug": "graveknight-graveknight-s-shield-monster-core-2",
-    "descr": "The graveknight's curse extends to their shield, or the graveknight's armor uses a portion of itself to produce a shield.\n\nThe graveknight has a shield that uses the statistics of a *Sturdy Shield* of a level no higher than the graveknight's level - 1.\n\nThe shield is quasi-independent of the graveknight and automatically protects the graveknight from harm. When the shield is raised, it automatically uses Shield Block to reduce the damage of the first attack against the graveknight each round without the graveknight needing to spend their reaction to do so.\n\nThe shield automatically rejuvenates with the rest of the graveknight and must be destroyed in the same manner as the graveknight's armor.",
+    "descr": "The graveknight's curse extends to their shield, or the graveknight's armor uses a portion of itself to produce a shield.\n\nThe graveknight has a shield that uses the statistics of a *[Sturdy Shield](/item/sturdy-shield-minor-gm-core)* of a level no higher than the graveknight's level - 1.\n\nThe shield is quasi-independent of the graveknight and automatically protects the graveknight from harm. When the shield is raised, it automatically uses Shield Block to reduce the damage of the first attack against the graveknight each round without the graveknight needing to spend their reaction to do so.\n\nThe shield automatically rejuvenates with the rest of the graveknight and must be destroyed in the same manner as the graveknight's armor.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -261,7 +282,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -296,7 +323,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -330,7 +358,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -357,7 +386,7 @@
     "systemVersion": "1.2.10",
     "name": "(Spawning Soulrider) Celestial Flare",
     "slug": "spawning-soulrider-celestial-flare-monster-core-2",
-    "descr": "Each enemy within 30 feet of the soulrider takes 2d6 spirit] damage (basic Will DC 17 save). Creatures that fail the save are Blinded for 1 round. The spawning soulrider can't use Celestial Flare again for 1 minute.",
+    "descr": "Each enemy within 30 feet of the soulrider takes 2d6 spirit] damage (basic Will DC 17 save). Creatures that fail the save are [Blinded](/condition/blinded-player-core) for 1 round. The spawning soulrider can't use Celestial Flare again for 1 minute.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -369,7 +398,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "holy",
+          "slug": "holy"
+        },
+        {
+          "label": "light",
+          "slug": "light"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -409,7 +452,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -448,7 +497,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -484,7 +543,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -518,7 +578,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -555,7 +616,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "healing",
+          "slug": "healing"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -591,7 +658,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -628,7 +696,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -656,7 +730,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Nosferatu Overlord) Air of Sickness",
     "slug": "vampire-nosferatu-overlord-air-of-sickness-monster-core-2",
-    "descr": "30 feet. A creature entering or starting its turn in the aura must attempt a Fortitude save with a moderate DC for the nosferatu's level. On a failure, the creature is Sickened 1 and takes a –2 status penalty to saves made to resist diseases and remove the sickened condition for 1 hour.\n\nEffect: Air Of Sickness",
+    "descr": "30 feet. A creature entering or starting its turn in the aura must attempt a Fortitude save with a moderate DC for the nosferatu's level. On a failure, the creature is [Sickened 1](/condition/sickened-player-core) and takes a –2 status penalty to saves made to resist diseases and remove the sickened condition for 1 hour.\n\nEffect: Air Of Sickness",
     "data": {
       "rarity": "common",
       "traits": [
@@ -665,7 +739,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -693,7 +773,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Nosferatu Overlord) Paralytic Fear",
     "slug": "vampire-nosferatu-overlord-paralytic-fear-monster-core-2",
-    "descr": "**Requirements** The nosferatu overlord's last action was a successful claw Strike\n\n---\n\n**Effect** The nosferatu drags the target of the Strike close and freezes its mind in terror. The target must attempt a Will save with a moderate DC for the nosferatu's level.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is Immobilized by fear until the end of the nosferatu's next turn.\n\n**Failure** The target is Restrained and takes a –2 circumstance penalty to its Fortitude DC against the nosferatu's Drink Blood ability until the end of the nosferatu's next turn.\n\n**Critical Failure** As failure, and the target is Frightened 2.",
+    "descr": "**Requirements** The nosferatu overlord's last action was a successful claw Strike\n\n---\n\n**Effect** The nosferatu drags the target of the Strike close and freezes its mind in terror. The target must attempt a Will save with a moderate DC for the nosferatu's level.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is [Immobilized](/condition/immobilized-player-core) by fear until the end of the nosferatu's next turn.\n\n**Failure** The target is [Restrained](/condition/restrained-player-core) and takes a –2 circumstance penalty to its Fortitude DC against the nosferatu's Drink Blood ability until the end of the nosferatu's next turn.\n\n**Critical Failure** As failure, and the target is [Frightened 2](/condition/frightened-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -707,7 +787,29 @@
       "frequency": "",
       "requirements": "The nosferatu overlord's last action was a successful claw Strike",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "fear",
+          "slug": "fear"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -739,7 +841,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Nosferatu Thrall) Mindbound",
     "slug": "vampire-nosferatu-thrall-mindbound-monster-core-2",
-    "descr": "A nosferatu master exerts a fierce hold over their thrall's mind. If any creature other than the thrall's master targets them with an effect that would give them the Controlled condition, the thrall's master rolls a counteract check against it using their Dominate DC – 10 as the counteract check modifier.",
+    "descr": "A nosferatu master exerts a fierce hold over their thrall's mind. If any creature other than the thrall's master targets them with an effect that would give them the [Controlled](/condition/controlled-player-core) condition, the thrall's master rolls a counteract check against it using their Dominate DC – 10 as the counteract check modifier.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -748,7 +850,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -784,7 +892,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "The thrall's master would take damage from a Strike or spell attack and is in an adjacent square",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -819,7 +928,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "The thrall ends their turn more than 30 feet away from their master",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -858,7 +968,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -900,7 +1024,21 @@
       "frequency": "",
       "requirements": "One of the nosferatu's thralls is present and can hear the nosferatu",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -930,7 +1068,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Nosferatu) Dominate",
     "slug": "vampire-nosferatu-dominate-monster-core-2",
-    "descr": "The nosferatu can cast Dominate at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait. The save DC uses a high DC for the nosferatu's level, and a creature that succeeds is temporarily immune to that nosferatu's Dominate for 24 hours. Fully destroying the nosferatu ends the domination, but merely reducing the nosferatu to 0 HP is insufficient to break the spell.",
+    "descr": "The nosferatu can cast [Dominate](/spell/dominate-player-core) at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the [visual](/trait/visual) trait. The save DC uses a high DC for the nosferatu's level, and a creature that succeeds is temporarily immune to that nosferatu's Dominate for 24 hours. Fully destroying the nosferatu ends the domination, but merely reducing the nosferatu to 0 HP is insufficient to break the spell.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -943,7 +1081,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -974,7 +1130,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Nosferatu) Drink Blood",
     "slug": "vampire-nosferatu-drink-blood-monster-core-2",
-    "descr": "**Requirements** The nosferatu's last action was a successful fangs Strike\n\n---\n\n**Effect** The nosferatu sinks their fangs into the targeted creature to drink its blood. This requires an Athletics check against the creature's Fortitude DC. On a success, the creature becomes Drained 1, and the nosferatu regains HP equal to 10% of their maximum HP, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the nosferatu but increases the creature's drained condition value by 1, killing the victim when it reaches Drained 5. A nosferatu can also consume blood that's been emptied into a vessel for sustenance, but they gain no HP from doing so.\n\nThe target creature's drained condition value decreases by 1 per week. A blood transfusion, which requires a successful Medicine DC 20 check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.",
+    "descr": "**Requirements** The nosferatu's last action was a successful fangs Strike\n\n---\n\n**Effect** The nosferatu sinks their fangs into the targeted creature to drink its blood. This requires an Athletics check against the creature's Fortitude DC. On a success, the creature becomes [Drained 1](/condition/drained-player-core), and the nosferatu regains HP equal to 10% of their maximum HP, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the nosferatu but increases the creature's drained condition value by 1, killing the victim when it reaches Drained 5. A nosferatu can also consume blood that's been emptied into a vessel for sustenance, but they gain no HP from doing so.\n\nThe target creature's drained condition value decreases by 1 per week. A blood transfusion, which requires a successful Medicine DC 20 check and sufficient blood or a blood donor, reduces the drained value by 1 after 10 minutes.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -984,7 +1140,13 @@
       "frequency": "",
       "requirements": "The nosferatu's last action was a successful fangs Strike",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1012,14 +1174,15 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Nosferatu) Nosferatu Vulnerabilities",
     "slug": "vampire-nosferatu-nosferatu-vulnerabilities-monster-core-2",
-    "descr": "**Revulsion** A nosferatu can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a deity with a holy sanctification option. To brandish garlic or a religious symbol, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the nosferatu involuntarily comes within 10 feet of an object of their revulsion, they gain the Fleeing condition, running from the object of their revulsion until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a nosferatu can attempt a Will DC 25 save as a single action, which has the concentrate trait. On a success, they overcome their revulsions for 1d6 rounds (or 1 hour on a critical success).**Stake** A magical wooden stake (such as one affected by a weapon *potency rune*, Runic Weapon, or similar magic) driven through the nosferatu's heart drops the nosferatu to 0 HP and prevents them from healing above 0 HP, even in their coffin. Staking a nosferatu requires 3 actions and works only if the nosferatu is Unconscious. If the stake is removed, the nosferatu can heal above 0 HP again, and if they're in their coffin, the 1-hour rest period begins once the stake is removed. If the nosferatu's head is severed and anointed with Holy Water while the stake is in place, the nosferatu is destroyed.\n\n**Sunlight** If exposed to direct sunlight, a nosferatu immediately becomes Slowed 1. The slowed value increases by 1 each time the nosferatu ends their turn in sunlight, and the condition ends when they're no longer in sunlight. If the nosferatu loses all their actions in this way, they're destroyed.",
+    "descr": "**Revulsion** A nosferatu can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a deity with a holy sanctification option. To brandish garlic or a religious symbol, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the nosferatu involuntarily comes within 10 feet of an object of their revulsion, they gain the [Fleeing](/condition/fleeing-player-core) condition, running from the object of their revulsion until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a nosferatu can attempt a Will DC 25 save as a single action, which has the [concentrate](/trait/concentrate) trait. On a success, they overcome their revulsions for 1d6 rounds (or 1 hour on a critical success).**Stake** A magical wooden stake (such as one affected by a weapon *potency rune*, [Runic Weapon](/spell/runic-weapon-player-core), or similar magic) driven through the nosferatu's heart drops the nosferatu to 0 HP and prevents them from healing above 0 HP, even in their coffin. Staking a nosferatu requires 3 actions and works only if the nosferatu is [Unconscious](/condition/unconscious-player-core). If the stake is removed, the nosferatu can heal above 0 HP again, and if they're in their coffin, the 1-hour rest period begins once the stake is removed. If the nosferatu's head is severed and anointed with [Holy Water](/item/holy-water-gm-core) while the stake is in place, the nosferatu is destroyed.\n\n**Sunlight** If exposed to direct sunlight, a nosferatu immediately becomes [Slowed 1](/condition/slowed-player-core). The slowed value increases by 1 each time the nosferatu ends their turn in sunlight, and the condition ends when they're no longer in sunlight. If the nosferatu loses all their actions in this way, they're destroyed.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1046,7 +1209,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Nosferatu) Plague of Ancients",
     "slug": "vampire-nosferatu-plague-of-ancients-monster-core-2",
-    "descr": "**Saving Throw** Fortitude (use a high DC for the nosferatu's level)\n\n---\n\n**Onset** 1 day\n\n**Stage 1** Drained 1 (1 day)\n\n**Stage 2** Drained 2 and Enfeebled 2 (1 day)\n\n**Stage 3** Doomed 1, Drained 3, and Enfeebled 3 (1 day)\n\n**Stage 4** Doomed 2, drained 3, and enfeebled 3 (1 day)\n\n**Stage 5** Unconscious (1 day)\n\n**Stage 6** death",
+    "descr": "**Saving Throw** Fortitude (use a high DC for the nosferatu's level)\n\n---\n\n**Onset** 1 day\n\n**Stage 1** [Drained 1](/condition/drained-player-core) (1 day)\n\n**Stage 2** Drained 2 and [Enfeebled 2](/condition/enfeebled-player-core) (1 day)\n\n**Stage 3** [Doomed 1](/condition/doomed-player-core), Drained 3, and Enfeebled 3 (1 day)\n\n**Stage 4** Doomed 2, drained 3, and enfeebled 3 (1 day)\n\n**Stage 5** [Unconscious](/condition/unconscious-player-core) (1 day)\n\n**Stage 6** death",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1056,7 +1219,17 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "disease",
+          "slug": "disease"
+        },
+        {
+          "label": "virulent",
+          "slug": "virulent"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1095,7 +1268,17 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1124,14 +1307,15 @@
     "systemVersion": "1.2.10",
     "name": "(Zombie) Ankle Biter",
     "slug": "zombie-ankle-biter-monster-core-2",
-    "descr": "This zombie fights just as well on the ground as it does standing. While Prone, the zombie isn't Off Guard, it ignores the status penalty to its attack rolls, and it gains a +2 circumstance bonus to Athletics checks to Trip. The zombie can also move up to half its Speed when it Crawls.",
+    "descr": "This zombie fights just as well on the ground as it does standing. While [Prone](/condition/prone-player-core), the zombie isn't [Off Guard](/condition/off-guard-player-core), it ignores the status penalty to its attack rolls, and it gains a +2 circumstance bonus to Athletics checks to [Trip](/action/trip-player-core). The zombie can also move up to half its Speed when it Crawls.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1165,7 +1349,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1192,7 +1377,7 @@
     "systemVersion": "1.2.10",
     "name": "(Zombie) Putrid Stench",
     "slug": "zombie-putrid-stench-monster-core-2",
-    "descr": "15 feet. The zombie's rotting flesh is particularly malodorous. A creature that enters the area must attempt a Fortitude save. On a failure, the creature is Sickened 1, and on a critical failure, the creature also takes a –5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all zombies' putrid stenches for 1 minute.\n\nEffect: Putrid Stench",
+    "descr": "15 feet. The zombie's rotting flesh is particularly malodorous. A creature that enters the area must attempt a Fortitude save. On a failure, the creature is [Sickened 1](/condition/sickened-player-core), and on a critical failure, the creature also takes a –5-foot status penalty to its Speeds for 1 round. While within the aura, the creature takes a -2 circumstance penalty to saves to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to all zombies' putrid stenches for 1 minute.\n\nEffect: Putrid Stench",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1202,7 +1387,17 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "olfactory",
+          "slug": "olfactory"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

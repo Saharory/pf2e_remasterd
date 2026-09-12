@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Retreat Among the Rains",
     "slug": "retreat-among-the-rains-rival-academies",
-    "descr": "Ganhil developed this ritual to emulate the epiphanies and flowing mental states he experienced during 4718's Challenge of Sky and Heaven: intense focus, emotional acceptance, dilated perceptions, and growing awareness of elemental perfection.\n\nDuring the casting of this ritual, your thoughts enter a mindscape whose subjective flow of time is different, allowing you to perform retraining that would take a least a week of downtime. Your physical body still requires food or shelter during this time, so the secondary caster must nourish you with milk porridge or protect you from the elements with a raised parasol or similar item.\n\n---\n\n**Critical Success** At the end of the ritual, you can retrain a class feature, feat, or skill.\n\n**Success** At the end of the ritual, you can retrain a feat or skill.\n\n**Failure** At the end of the ritual, you gain the Fatigued condition.\n\n**Critical Failure** As failure, and you also suffer from starvation and thirst as if you hadn't eaten for a week, taking (10d4+7) damage that cannot be healed until you eat and drink.",
+    "descr": "Ganhil developed this ritual to emulate the epiphanies and flowing mental states he experienced during 4718's Challenge of Sky and Heaven: intense focus, emotional acceptance, dilated perceptions, and growing awareness of elemental perfection.\n\nDuring the casting of this ritual, your thoughts enter a mindscape whose subjective flow of time is different, allowing you to perform retraining that would take a least a week of downtime. Your physical body still requires food or shelter during this time, so the secondary caster must nourish you with milk porridge or protect you from the elements with a raised parasol or similar item.\n\n---\n\n**Critical Success** At the end of the ritual, you can retrain a class feature, feat, or skill.\n\n**Success** At the end of the ritual, you can retrain a feat or skill.\n\n**Failure** At the end of the ritual, you gain the [Fatigued](/condition/fatigued-player-core) condition.\n\n**Critical Failure** As failure, and you also suffer from starvation and thirst as if you hadn't eaten for a week, taking (10d4+7) damage that cannot be healed until you eat and drink.",
     "data": {
       "rank": 4,
       "rarity": "rare",
@@ -22,7 +22,17 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Nature (master) or Occultism (master)",
-      "secondaryChecks": "Cooking Lore, Survival"
+      "secondaryChecks": "Cooking Lore, Survival",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

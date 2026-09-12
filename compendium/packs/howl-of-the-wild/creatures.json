@@ -156,7 +156,21 @@
       },
       "languagesText": "Common, Empyrean, Fey",
       "recallKnowledgeText": "DC 39 (Nature)",
-      "sanctification": "holy"
+      "sanctification": "holy",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "fey",
+          "slug": "fey"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -279,7 +293,7 @@
           },
           {
             "name": "Reactive Strike (Horn only)",
-            "text": "Reactivestrike\n\nFleeing creatures take an additional 1d6 persistent bleed damage. On a critical hit, the target is knocked Prone.",
+            "text": "Reactivestrike\n\n[Fleeing](/condition/fleeing-player-core) creatures take an additional 1d6 persistent bleed damage. On a critical hit, the target is knocked Prone.",
             "traits": [],
             "actions": "reaction"
           }
@@ -287,7 +301,7 @@
         "offensive": [
           {
             "name": "Final Shake",
-            "text": "**Requirements** The almiraj has a creature Grabbed\n\n---\n\n**Effect** The almiraj clamps its jaws down on the creature and shakes it vigorously, attempting to finish it off. The creature takes 2d6 bludgeoning] damage and must succeed at a Fortitude DC 20 save or become Enfeebled 1. Small or smaller creatures take a –2 circumstance penalty to their save.",
+            "text": "**Requirements** The almiraj has a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The almiraj clamps its jaws down on the creature and shakes it vigorously, attempting to finish it off. The creature takes 2d6 bludgeoning] damage and must succeed at a Fortitude DC 20 save or become Enfeebled 1. Small or smaller creatures take a –2 circumstance penalty to their save.",
             "traits": [],
             "actions": "one"
           },
@@ -312,7 +326,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 21 (Nature)"
+      "recallKnowledgeText": "DC 21 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -411,7 +431,7 @@
           },
           {
             "name": "Ingest Potion",
-            "text": "The apothecary bee consumes the potion it has stored in its body. If the potion has the healing trait, the apothecary bee heals for the maximum amount.",
+            "text": "The apothecary bee consumes the potion it has stored in its body. If the potion has the [healing](/trait/healing) trait, the apothecary bee heals for the maximum amount.",
             "traits": [],
             "actions": "one"
           },
@@ -451,7 +471,13 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 23 (Nature)",
-      "items": "Healing Potion (Moderate)"
+      "items": "Healing Potion (Moderate)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -571,7 +597,7 @@
         "defensive": [
           {
             "name": "Dread Gaze",
-            "text": "**Trigger** A creature ends a move action within 30 feet of the ascendant griffon\n\n---\n\n**Effect** The ascendant griffon turns its head to stare down the triggering creature, and attempts to Demoralize it. This use of Demoralize has the visual trait rather than the auditory trait, and the griffon does not take a penalty on its check for not sharing a language.",
+            "text": "**Trigger** A creature ends a move action within 30 feet of the ascendant griffon\n\n---\n\n**Effect** The ascendant griffon turns its head to stare down the triggering creature, and attempts to Demoralize it. This use of Demoralize has the [visual](/trait/visual) trait rather than the [auditory](/trait/auditory) trait, and the griffon does not take a penalty on its check for not sharing a language.",
             "traits": [],
             "actions": "reaction"
           }
@@ -579,7 +605,7 @@
         "offensive": [
           {
             "name": "Carry Off",
-            "text": "An ascendant griffon can Fly at full speed with a creature Grabbed in its talons, moving that creature along with it.",
+            "text": "An ascendant griffon can Fly at full speed with a creature [Grabbed](/condition/grabbed-player-core) in its talons, moving that creature along with it.",
             "traits": []
           },
           {
@@ -620,7 +646,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 33 (Nature)"
+      "recallKnowledgeText": "DC 33 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -766,7 +798,7 @@
           },
           {
             "name": "Paired Spikes",
-            "text": "The barded manticore flings two spikes from their tail, targeting up to two creatures within 20 feet of each other. They make a separate ranged Strike against each creature, which counts as a single Strike for the barded manticore's multiple attack penalty, and the penalty doesn't increase until they've made both Strikes. If the manticore targeted only one creature and hits, that creature takes normal damage for a single spike, but also gains weakness 15 to electricity damage until the spikes are removed with an Interact action.\n\nEffect: Paired Spikes",
+            "text": "The barded manticore flings two spikes from their tail, targeting up to two creatures within 20 feet of each other. They make a separate ranged Strike against each creature, which counts as a single Strike for the barded manticore's multiple attack penalty, and the penalty doesn't increase until they've made both Strikes. If the manticore targeted only one creature and hits, that creature takes normal damage for a single spike, but also gains weakness 15 to electricity damage until the spikes are removed with an [Interact](/action/interact-player-core) action.\n\nEffect: Paired Spikes",
             "traits": [],
             "actions": "one"
           }
@@ -779,7 +811,13 @@
         ]
       },
       "languagesText": "Common, Mwangi",
-      "recallKnowledgeText": "DC 43 (Nature)"
+      "recallKnowledgeText": "DC 43 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -922,7 +960,7 @@
           },
           {
             "name": "Wail of the Forest",
-            "text": "**Requirements** The blooming guardian is in Full Bloom\n\n---\n\n**Effect** The blooming guardian confronts their mortality, causing their flowers to burst and spray their pollen. All creatures in a area take 1d4 rounds.\n\n---\n\n**Critical Success** No effect.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and becomes Drained 1. Creatures that are Enfeebled lose that condition and increase the drained condition by the same value.\n\n**Critical Failure** As failure, but double damage.",
+            "text": "**Requirements** The blooming guardian is in Full Bloom\n\n---\n\n**Effect** The blooming guardian confronts their mortality, causing their flowers to burst and spray their pollen. All creatures in a area take 1d4 rounds.\n\n---\n\n**Critical Success** No effect.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and becomes Drained 1. Creatures that are Enfeebled lose that condition and increase the [drained](/condition/drained-player-core) condition by the same value.\n\n**Critical Failure** As failure, but double damage.",
             "traits": [
               "primal",
               "void"
@@ -938,7 +976,13 @@
         ]
       },
       "languagesText": "Fey",
-      "recallKnowledgeText": "DC 34 (Nature)"
+      "recallKnowledgeText": "DC 34 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1064,7 +1108,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 23 (Nature)"
+      "recallKnowledgeText": "DC 23 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "dinosaur",
+          "slug": "dinosaur"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1191,7 +1245,7 @@
           },
           {
             "name": "Stormsight",
-            "text": "Wind, precipitation, and clouds don't impair a chaos falcon's vision; they ignore the Concealed condition from storms, mist, precipitation, and the like.",
+            "text": "Wind, precipitation, and clouds don't impair a chaos falcon's vision; they ignore the [Concealed](/condition/concealed-player-core) condition from storms, mist, precipitation, and the like.",
             "traits": []
           }
         ],
@@ -1219,7 +1273,7 @@
           },
           {
             "name": "Storm Nexus",
-            "text": "15 feet. 3d6 untyped|options:area-damage], basic Reflex DC 26 save. The chaos falcon is surrounded by a cloud of volcanic ash, lightning arcing within the cloud as it glows hot in some areas and collects ice in others. A chaos falcon can change the damage type of this aura to cold, electricity, or fire as an action, which has the concentrate trait.",
+            "text": "15 feet. 3d6 untyped|options:area-damage], basic Reflex DC 26 save. The chaos falcon is surrounded by a cloud of volcanic ash, lightning arcing within the cloud as it glows hot in some areas and collects ice in others. A chaos falcon can change the damage type of this aura to cold, electricity, or fire as an action, which has the [concentrate](/trait/concentrate) trait.",
             "traits": [
               "aura",
               "primal"
@@ -1234,7 +1288,29 @@
         ]
       },
       "languagesText": "Common, Sussuran",
-      "recallKnowledgeText": "DC 32 (Nature)"
+      "recallKnowledgeText": "DC 32 (Nature)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1362,7 +1438,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 24 (Nature)"
+      "recallKnowledgeText": "DC 24 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1509,7 +1591,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 18 (Nature)"
+      "recallKnowledgeText": "DC 18 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1665,7 +1753,17 @@
         ]
       },
       "languagesText": "Thalassic",
-      "recallKnowledgeText": "DC 24 (Nature)"
+      "recallKnowledgeText": "DC 24 (Nature)",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1800,7 +1898,7 @@
           },
           {
             "name": "Scorpion Sting",
-            "text": "The desert manticore Strikes an Off Guard creature with its stinger. The attack injects venom deeply, dealing an additional 4d8 poison damage and giving the target a –2 circumstance penalty to their initial save against the poison.",
+            "text": "The desert manticore Strikes an [Off Guard](/condition/off-guard-player-core) creature with its stinger. The attack injects venom deeply, dealing an additional 4d8 poison damage and giving the target a –2 circumstance penalty to their initial save against the poison.",
             "traits": [],
             "actions": "two"
           },
@@ -1819,7 +1917,13 @@
         ]
       },
       "languagesText": "Common, Kelish, Osiriani",
-      "recallKnowledgeText": "DC 32 (Nature)"
+      "recallKnowledgeText": "DC 32 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1933,7 +2037,7 @@
           },
           {
             "name": "Pull Under",
-            "text": "The drthak can Swim at half Speed while it has a creature Grabbed or Restrained in its jaws, carrying the creature along with it.",
+            "text": "The drthak can Swim at half Speed while it has a creature [Grabbed](/condition/grabbed-player-core) or Restrained in its jaws, carrying the creature along with it.",
             "traits": []
           },
           {
@@ -1967,7 +2071,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 22 (Nature)"
+      "recallKnowledgeText": "DC 22 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2075,7 +2185,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 18 (Nature)"
+      "recallKnowledgeText": "DC 18 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "swarm",
+          "slug": "swarm"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2200,7 +2324,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 18 (Nature)"
+      "recallKnowledgeText": "DC 18 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2350,7 +2480,17 @@
         ]
       },
       "languagesText": "Aklo",
-      "recallKnowledgeText": "DC 21 (Nature, Occultism)"
+      "recallKnowledgeText": "DC 21 (Nature, Occultism)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "ethereal",
+          "slug": "ethereal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2489,7 +2629,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 23 (Nature)"
+      "recallKnowledgeText": "DC 23 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2601,7 +2747,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 19 (Nature)"
+      "recallKnowledgeText": "DC 19 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2737,7 +2893,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 26 (Nature)"
+      "recallKnowledgeText": "DC 26 (Nature)",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2870,7 +3036,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 20 (Nature)"
+      "recallKnowledgeText": "DC 20 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2968,7 +3144,7 @@
           },
           {
             "name": "Three-Headed",
-            "text": "Any ability that would sever a greater chimera's head (such as a critical hit with a Vorpal weapon) severs one head at random. Losing a head doesn't kill a chimera (as long as it has at least one head left), but it does prevent it from making Strikes with the lost head or using any abilities granted by the head.",
+            "text": "Any ability that would sever a greater chimera's head (such as a critical hit with a [Vorpal](/item/vorpal-gm-core) weapon) severs one head at random. Losing a head doesn't kill a chimera (as long as it has at least one head left), but it does prevent it from making Strikes with the lost head or using any abilities granted by the head.",
             "traits": []
           }
         ],
@@ -2993,7 +3169,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 36 (Nature)"
+      "recallKnowledgeText": "DC 36 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3101,7 +3283,7 @@
           },
           {
             "name": "Aquatic Feast",
-            "text": "**Requirements** The harbor seal has a Medium or smaller creature Grabbed in its jaws\n\n---\n\n**Effect** The harbor seal Swims up to 10 feet, carrying its grabbed creature along with it dealing 1d8 slashing] damage (basic Fortitude DC 18 save).",
+            "text": "**Requirements** The harbor seal has a Medium or smaller creature [Grabbed](/condition/grabbed-player-core) in its jaws\n\n---\n\n**Effect** The harbor seal Swims up to 10 feet, carrying its grabbed creature along with it dealing 1d8 slashing] damage (basic Fortitude DC 18 save).",
             "traits": [],
             "actions": "one"
           },
@@ -3120,7 +3302,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 16 (Nature)"
+      "recallKnowledgeText": "DC 16 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3220,7 +3408,7 @@
         "offensive": [
           {
             "name": "Shovel Earth",
-            "text": "The hardhead mole leaves a burrow hole in its square or an adjacent square. The square becomes difficult terrain but can be flattened back into normal terrain with an Interact action.",
+            "text": "The hardhead mole leaves a burrow hole in its square or an adjacent square. The square becomes difficult terrain but can be flattened back into normal terrain with an [Interact](/action/interact-player-core) action.",
             "traits": [
               "manipulate"
             ],
@@ -3243,7 +3431,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 14 (Nature)"
+      "recallKnowledgeText": "DC 14 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3370,7 +3564,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 29 (Nature)"
+      "recallKnowledgeText": "DC 29 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3507,7 +3711,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 24 (Nature)"
+      "recallKnowledgeText": "DC 24 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3628,7 +3838,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 19 (Nature)"
+      "recallKnowledgeText": "DC 19 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3729,7 +3945,7 @@
         "defensive": [
           {
             "name": "Hold Tight",
-            "text": "**Trigger** A creature Grabbed by the holdfast's jaws takes damage from another creature's Strike\n\n---\n\n**Effect** The holdfast Constricts the creature in its jaws.",
+            "text": "**Trigger** A creature [Grabbed](/condition/grabbed-player-core) by the holdfast's jaws takes damage from another creature's Strike\n\n---\n\n**Effect** The holdfast Constricts the creature in its jaws.",
             "traits": [],
             "actions": "reaction"
           },
@@ -3772,7 +3988,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 19 (Nature)"
+      "recallKnowledgeText": "DC 19 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3907,7 +4129,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 20 (Nature)"
+      "recallKnowledgeText": "DC 20 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4051,7 +4279,21 @@
       },
       "languagesText": "Common, Fey",
       "recallKnowledgeText": "DC 23 (Nature)",
-      "sanctification": "holy"
+      "sanctification": "holy",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "fey",
+          "slug": "fey"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4195,7 +4437,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 19 (Nature)"
+      "recallKnowledgeText": "DC 19 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4328,7 +4576,7 @@
           },
           {
             "name": "Sparking Shell",
-            "text": "The lightning turtle withdraws into its shell. This increases its AC to 36, but it can't act except to use Shell Shock or reemerge as a single action. While in its shell, the turtle's Shell Shock deals another 4d6 damage and loses the nonlethal trait.",
+            "text": "The lightning turtle withdraws into its shell. This increases its AC to 36, but it can't act except to use Shell Shock or reemerge as a single action. While in its shell, the turtle's Shell Shock deals another 4d6 damage and loses the [nonlethal](/trait/nonlethal) trait.",
             "traits": [],
             "actions": "one"
           }
@@ -4341,7 +4589,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 30 (Nature)"
+      "recallKnowledgeText": "DC 30 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4431,7 +4685,7 @@
         "defensive": [
           {
             "name": "Metal Allergy",
-            "text": "When a magnegor takes damage from a metal weapon or an effect with the metal trait, it takes 5 untyped] additional damage and must succeed at a Flat DC 5 or become Sickened 1. The value of the sickened condition increases each time the magnegor fails such a check, to a maximum of 3.",
+            "text": "When a magnegor takes damage from a metal weapon or an effect with the [metal](/trait/metal) trait, it takes 5 untyped] additional damage and must succeed at a Flat DC 5 or become Sickened 1. The value of the [sickened](/condition/sickened-player-core) condition increases each time the magnegor fails such a check, to a maximum of 3.",
             "traits": []
           }
         ],
@@ -4445,12 +4699,12 @@
           },
           {
             "name": "Magnetized Coat",
-            "text": "When a magnegor comes within 30 feet of a metal object or a deposit of metal ore, its thousands of wiry hairs stand on end, pointing towards the metal and creating a magnetic field. Metal items of light or negligible Bulk that touch the magnegor's coat adhere to it magnetically, requiring an Interact action to be pried free. Creatures wearing or primarily composed of metal treat all squares in a 10-foot radius around the magnegor as difficult terrain, unless they are moving directly towards it.",
+            "text": "When a magnegor comes within 30 feet of a metal object or a deposit of metal ore, its thousands of wiry hairs stand on end, pointing towards the metal and creating a magnetic field. Metal items of light or negligible Bulk that touch the magnegor's coat adhere to it magnetically, requiring an [Interact](/action/interact-player-core) action to be pried free. Creatures wearing or primarily composed of metal treat all squares in a 10-foot radius around the magnegor as difficult terrain, unless they are moving directly towards it.",
             "traits": []
           },
           {
             "name": "Wallow",
-            "text": "**Requirements** The magnegor is Prone\n\n---\n\n**Effect** The magnegor rolls on its spine-covered back, up to its Speed, furrowing the earth and crushing any Large or smaller creatures in its path. This deals 4d10 piercing] damage with a basic Reflex DC 24 save; on a failed save, a creature wearing metal armor or made of metal is Restrained by the magnegor's magnetized coat (Escape). For each metal object or piece of equipment a restrained creature chooses to leave stuck to the magnegor, it gains a +1 circumstance bonus to its attempts to Escape. A creature that relinquishes all its metal Escapes automatically. The magnegor can move at its full Speed while it has a creature restrained in this way, bringing the creature along.",
+            "text": "**Requirements** The magnegor is Prone\n\n---\n\n**Effect** The magnegor rolls on its spine-covered back, up to its Speed, furrowing the earth and crushing any Large or smaller creatures in its path. This deals 4d10 piercing] damage with a basic Reflex DC 24 save; on a failed save, a creature wearing metal armor or made of metal is Restrained by the magnegor's magnetized coat (Escape). For each metal object or piece of equipment a [restrained](/condition/restrained-player-core) creature chooses to leave stuck to the magnegor, it gains a +1 circumstance bonus to its attempts to Escape. A creature that relinquishes all its metal Escapes automatically. The magnegor can move at its full Speed while it has a creature restrained in this way, bringing the creature along.",
             "traits": [
               "move"
             ],
@@ -4465,7 +4719,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 22 (Nature)"
+      "recallKnowledgeText": "DC 22 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4593,7 +4853,7 @@
           },
           {
             "name": "Static Cling",
-            "text": "If the gecko hits Small or smaller creature with its tongue, and the target is made of metal or is wearing metallic armor, the gecko's tongue latches on to the creature. The creature must attempt a Reflex DC 17 save or become Grabbed. While the gecko is Grabbing a creature in this way, it can attempt an Athletics check against the target's Fortitude DC to pull the creature to a space adjacent to the gecko. A creature grabbed in this way can Escape normally.",
+            "text": "If the gecko hits Small or smaller creature with its tongue, and the target is made of metal or is wearing metallic armor, the gecko's tongue latches on to the creature. The creature must attempt a Reflex DC 17 save or become Grabbed. While the gecko is Grabbing a creature in this way, it can attempt an Athletics check against the target's Fortitude DC to pull the creature to a space adjacent to the gecko. A creature [grabbed](/condition/grabbed-player-core) in this way can Escape normally.",
             "traits": []
           }
         ]
@@ -4605,7 +4865,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 15 (Nature)"
+      "recallKnowledgeText": "DC 15 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4707,7 +4973,7 @@
         "interaction": [
           {
             "name": "Frightened Prey",
-            "text": "Frightened creatures are Off Guard to a majungasaurus.",
+            "text": "[Frightened](/condition/frightened-player-core) creatures are Off Guard to a majungasaurus.",
             "traits": []
           },
           {
@@ -4720,7 +4986,7 @@
         "offensive": [
           {
             "name": "Crack Bones",
-            "text": "**Requirements** The majungasaurus has a creature Grabbed in its jaws\n\n---\n\n**Effect** The majungasaurus deals that creature 3d8 bludgeoning] damage (basic Fortitude DC 24 save). A creature that fails this save is Clumsy 1 until it recovers to full Hit Points.",
+            "text": "**Requirements** The majungasaurus has a creature [Grabbed](/condition/grabbed-player-core) in its jaws\n\n---\n\n**Effect** The majungasaurus deals that creature 3d8 bludgeoning] damage (basic Fortitude DC 24 save). A creature that fails this save is Clumsy 1 until it recovers to full Hit Points.",
             "traits": [],
             "actions": "one"
           }
@@ -4733,7 +4999,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 22 (Nature)"
+      "recallKnowledgeText": "DC 22 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "dinosaur",
+          "slug": "dinosaur"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4906,7 +5182,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 24 (Nature)"
+      "recallKnowledgeText": "DC 24 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5042,7 +5328,13 @@
         ]
       },
       "languagesText": "Common, Fey",
-      "recallKnowledgeText": "DC 19 (Nature)"
+      "recallKnowledgeText": "DC 19 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5157,7 +5449,7 @@
         "offensive": [
           {
             "name": "Bond with Mortal",
-            "text": "**Frequency** once per day\n\n---\n\n**Effect** The spirit guide spends 10 minutes to form a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 14, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane. The spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.\n\nThis bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and spirit traits, loses their immunity to disease, paralysis, and poison, along with their resistance to all damage, and changes their Strikes to deal the appropriate amount of physical damage (typically piercing or slashing) instead of force damage.",
+            "text": "**Frequency** once per day\n\n---\n\n**Effect** The spirit guide spends 10 minutes to form a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 14, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane. The spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.\n\nThis bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and [spirit](/trait/spirit) traits, loses their immunity to disease, paralysis, and poison, along with their resistance to all damage, and changes their Strikes to deal the appropriate amount of physical damage (typically piercing or slashing) instead of force damage.",
             "traits": [
               "mental",
               "primal"
@@ -5203,7 +5495,13 @@
         ]
       },
       "languagesText": "Common",
-      "recallKnowledgeText": "DC 23 (Nature)"
+      "recallKnowledgeText": "DC 23 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5302,7 +5600,7 @@
         "interaction": [
           {
             "name": "Mist Form",
-            "text": "Over the course of a minute, a mist bear can transmute its form into a cloud of ethereal vapor. In this state it has resistance 10 to physical damage, is immune to precision damage, and can't use any actions with the attack or manipulate trait. It has a fly Speed of 10 feet and can slip through tiny cracks. The mist bear can return to solid form as a single action.",
+            "text": "Over the course of a minute, a mist bear can transmute its form into a cloud of ethereal vapor. In this state it has resistance 10 to physical damage, is immune to precision damage, and can't use any actions with the attack or [manipulate](/trait/manipulate) trait. It has a fly Speed of 10 feet and can slip through tiny cracks. The mist bear can return to solid form as a single action.",
             "traits": [
               "concentrate",
               "exploration",
@@ -5325,7 +5623,7 @@
           },
           {
             "name": "Misty Mauling",
-            "text": "**Requirements** The mist bear has a creature Grabbed\n\n---\n\n**Effect** The mist bear digs its claws into the grabbed creature as it dissipates into mist. The grabbed creature takes 3d8 slashing] damage (basic Fortitude DC 25 save). The mist bear gains the benefits of its Mist Form, Flies up to 10 feet, and then returns to its solid form.",
+            "text": "**Requirements** The mist bear has a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The mist bear digs its claws into the grabbed creature as it dissipates into mist. The grabbed creature takes 3d8 slashing] damage (basic Fortitude DC 25 save). The mist bear gains the benefits of its Mist Form, Flies up to 10 feet, and then returns to its solid form.",
             "traits": [
               "concentrate",
               "occult",
@@ -5343,7 +5641,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 25 (Nature, Occultism)"
+      "recallKnowledgeText": "DC 25 (Nature, Occultism)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "ethereal",
+          "slug": "ethereal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5489,7 +5797,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 19 (Nature)"
+      "recallKnowledgeText": "DC 19 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5648,7 +5962,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 43 (Nature)"
+      "recallKnowledgeText": "DC 43 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5791,7 +6111,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 19 (Nature)"
+      "recallKnowledgeText": "DC 19 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5950,7 +6276,21 @@
       },
       "languagesText": "Common, Fey, Necril",
       "recallKnowledgeText": "DC 30 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "incorporeal",
+          "slug": "incorporeal"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6061,7 +6401,7 @@
           },
           {
             "name": "Crumbling Earth",
-            "text": "The plated python lets its breath sink into the ground, transforming it to brittle stone within a area. The stone is difficult terrain to all other creatures. Other creatures on the ground in this area when it transforms must succeed at a Reflex DC 29 save or be Immobilized as the stone beneath them crumbles to rubble. A creature immobilized in this way can Escape normally or use three total Interact actions to dig themself free.",
+            "text": "The plated python lets its breath sink into the ground, transforming it to brittle stone within a area. The stone is difficult terrain to all other creatures. Other creatures on the ground in this area when it transforms must succeed at a Reflex DC 29 save or be Immobilized as the stone beneath them crumbles to rubble. A creature [immobilized](/condition/immobilized-player-core) in this way can Escape normally or use three total [Interact](/action/interact-player-core) actions to dig themself free.",
             "traits": [
               "earth",
               "primal"
@@ -6070,7 +6410,7 @@
           },
           {
             "name": "Petrify Prey",
-            "text": "**Requirements** The plated python has a creature Grabbed\n\n**Trigger** The plated python begins its turn\n\n---\n\n**Effect** The python's breath seeps into the grabbed creature. That creature must attempt a Fortitude DC 32 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature's body hardens and stiffens, causing it to become Slowed 1 for 1 round.\n\n**Failure** The creature is Petrified for 1 round and Swallowed Whole.\n\n**Critical Failure** The creature is petrified permanently and Swallowed Whole.",
+            "text": "**Requirements** The plated python has a creature [Grabbed](/condition/grabbed-player-core)\n\n**Trigger** The plated python begins its turn\n\n---\n\n**Effect** The python's breath seeps into the grabbed creature. That creature must attempt a Fortitude DC 32 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature's body hardens and stiffens, causing it to become Slowed 1 for 1 round.\n\n**Failure** The creature is Petrified for 1 round and Swallowed Whole.\n\n**Critical Failure** The creature is petrified permanently and Swallowed Whole.",
             "traits": [
               "earth",
               "incapacitation",
@@ -6085,7 +6425,7 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, (3d10+5) acid], Rupture 20\n\n---\n\nThis damage ignores the hardness of petrified creatures.\n\nSwallowwhole",
+            "text": "Large, (3d10+5) acid], Rupture 20\n\n---\n\nThis damage ignores the hardness of [petrified](/condition/petrified-player-core) creatures.\n\nSwallowwhole",
             "traits": [
               "attack"
             ],
@@ -6112,7 +6452,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 32 (Nature)"
+      "recallKnowledgeText": "DC 32 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6263,7 +6609,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 40 (Nature)"
+      "recallKnowledgeText": "DC 40 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6379,7 +6731,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 16 (Nature)"
+      "recallKnowledgeText": "DC 16 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "dinosaur",
+          "slug": "dinosaur"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6543,7 +6905,17 @@
         ]
       },
       "languagesText": "Aklo",
-      "recallKnowledgeText": "DC 20 (Nature, Occultism)"
+      "recallKnowledgeText": "DC 20 (Nature, Occultism)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "ethereal",
+          "slug": "ethereal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6662,7 +7034,7 @@
         "defensive": [
           {
             "name": "Crowned Royalty",
-            "text": "The royal basilisk's crown is firmly attached to its head but can be Disarmed as though it were a held item. Without a crown, the royal basilisk's mastery over poison is weakened enough that it loses its miasmatic shroud. The royal basilisk can equip a crown within its tail's reach as an Interact action. A royal basilisk's crown is normally made of iron and enables the basilisk to use miasmatic shroud, but crowns made of other, more exotic materials might confer different abilities.",
+            "text": "The royal basilisk's crown is firmly attached to its head but can be Disarmed as though it were a held item. Without a crown, the royal basilisk's mastery over poison is weakened enough that it loses its miasmatic shroud. The royal basilisk can equip a crown within its tail's reach as an [Interact](/action/interact-player-core) action. A royal basilisk's crown is normally made of iron and enables the basilisk to use miasmatic shroud, but crowns made of other, more exotic materials might confer different abilities.",
             "traits": []
           },
           {
@@ -6720,7 +7092,13 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 36 (Nature)",
-      "items": "Iron Crown"
+      "items": "Iron Crown",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6850,7 +7228,7 @@
           },
           {
             "name": "Enthralling Call",
-            "text": "1 mile. Each non-rumindrol creature that enters or starts its turn within the emanation must succeed at a Will DC 26 save or become Fascinated. The creature then becomes temporarily immune to this effect for 1 day (1 hour on a critical failure). Any creature fascinated in this way will attempt to find the source of the rumindrol's cry, mindlessly wandering towards it.",
+            "text": "1 mile. Each non-rumindrol creature that enters or starts its turn within the emanation must succeed at a Will DC 26 save or become Fascinated. The creature then becomes temporarily immune to this effect for 1 day (1 hour on a critical failure). Any creature [fascinated](/condition/fascinated-player-core) in this way will attempt to find the source of the rumindrol's cry, mindlessly wandering towards it.",
             "traits": [
               "auditory",
               "aura",
@@ -6877,7 +7255,7 @@
           },
           {
             "name": "Inexorable",
-            "text": "The rumindrol recovers from the Paralyzed, Slowed, and Stunned conditions at the end of its turn. It's also immune to penalties to its Speeds and the Immobilized condition, and it ignores difficult terrain and greater difficult terrain.",
+            "text": "The rumindrol recovers from the Paralyzed, Slowed, and [Stunned](/condition/stunned-player-core) conditions at the end of its turn. It's also immune to penalties to its Speeds and the [Immobilized](/condition/immobilized-player-core) condition, and it ignores difficult terrain and greater difficult terrain.",
             "traits": []
           },
           {
@@ -6917,7 +7295,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 39 (Nature)"
+      "recallKnowledgeText": "DC 39 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7032,7 +7416,7 @@
           },
           {
             "name": "Grab Debris",
-            "text": "**Requirements** The scroungefeather is in its nest or another environment rich with debris\n\n---\n\n**Effect** The scroungefeather uses an Interact action to grab an item with its beak, selected randomly; roll 1d4 to determine the type of debris. The scroungefeather gains access to the listed abilities until it uses Tossed Scraps to discard the debris or until it Releases the debris. The scroungefeather can't use its beak attack while it is using its beak to Grab Debris.\n\n| d4 | Item | Effect |\n| --- | --- | --- |\n| 1 | Armor scrap | The scroungefeather gains a +2 circumstance bonus to its AC. |\n| 2 | Shattered blade | The scroungefeather gains a broken blade melee Strike with a +12 attack modifier that deals 2d10+6 slashing damage. |\n| 3 | Unexploded bomb | When the scroungefeather throws this with Tossed Scraps, all the damage is fire damage, and the bomb also deals 3 fire splash damage. |\n| 4 | Faulty wand | The scroungefeather gains a magic bolt ranged Strike witha +14 attack modifier that deals 2d6+6 force damage. |",
+            "text": "**Requirements** The scroungefeather is in its nest or another environment rich with debris\n\n---\n\n**Effect** The scroungefeather uses an [Interact](/action/interact-player-core) action to grab an item with its beak, selected randomly; roll 1d4 to determine the type of debris. The scroungefeather gains access to the listed abilities until it uses Tossed Scraps to discard the debris or until it Releases the debris. The scroungefeather can't use its beak attack while it is using its beak to Grab Debris.\n\n| d4 | Item | Effect |\n| --- | --- | --- |\n| 1 | Armor scrap | The scroungefeather gains a +2 circumstance bonus to its AC. |\n| 2 | Shattered blade | The scroungefeather gains a broken blade melee Strike with a +12 attack modifier that deals 2d10+6 slashing damage. |\n| 3 | Unexploded bomb | When the scroungefeather throws this with Tossed Scraps, all the damage is fire damage, and the bomb also deals 3 fire splash damage. |\n| 4 | Faulty wand | The scroungefeather gains a magic bolt ranged Strike witha +14 attack modifier that deals 2d6+6 force damage. |",
             "traits": [],
             "actions": "one"
           }
@@ -7045,7 +7429,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 20 (Nature)"
+      "recallKnowledgeText": "DC 20 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7175,7 +7565,13 @@
         ]
       },
       "languagesText": "Elven, Lashunta",
-      "recallKnowledgeText": "DC 18 (Nature)"
+      "recallKnowledgeText": "DC 18 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7324,7 +7720,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 28 (Nature)"
+      "recallKnowledgeText": "DC 28 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7446,7 +7848,7 @@
           },
           {
             "name": "Snatch",
-            "text": "The soniphak can Fly at half Speed with a creature Grabbed or Restrained in its claws, carrying that creature along with it.",
+            "text": "The soniphak can Fly at half Speed with a creature [Grabbed](/condition/grabbed-player-core) or Restrained in its claws, carrying that creature along with it.",
             "traits": []
           }
         ],
@@ -7480,7 +7882,13 @@
         ]
       },
       "languagesText": "Draconic",
-      "recallKnowledgeText": "DC 26 (Nature)"
+      "recallKnowledgeText": "DC 26 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7606,7 +8014,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 20 (Nature)"
+      "recallKnowledgeText": "DC 20 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7749,7 +8163,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 26 (Nature)"
+      "recallKnowledgeText": "DC 26 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7873,7 +8293,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 14 (Nature)"
+      "recallKnowledgeText": "DC 14 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7998,7 +8428,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 16 (Nature)"
+      "recallKnowledgeText": "DC 16 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "swarm",
+          "slug": "swarm"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8117,7 +8561,7 @@
           },
           {
             "name": "Stone Feast",
-            "text": "The stony bat specifically targets petrified body parts, which it can consume, unlike flesh. The stony bat's jaws deal an extra 1d6 damage against a creature that has been petrified, either partially or completely, and ignore the Hardness of petrified creatures.",
+            "text": "The stony bat specifically targets petrified body parts, which it can consume, unlike flesh. The stony bat's jaws deal an extra 1d6 damage against a creature that has been petrified, either partially or completely, and ignore the Hardness of [petrified](/condition/petrified-player-core) creatures.",
             "traits": []
           }
         ]
@@ -8129,7 +8573,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 20 (Nature)"
+      "recallKnowledgeText": "DC 20 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8227,7 +8677,7 @@
           },
           {
             "name": "Self-Petrify",
-            "text": "**Trigger** The stony goat gains the Frightened condition or takes more than 8 damage in a single hit\n\n---\n\n**Effect** The stony goat turns to stone in self-defense. It gains the Petrified condition for 1d4 rounds. If the goat is damaged while it's petrified, it immediately heals by that amount by absorbing minerals from its cud, causing its cud to lose value equal to the amount of Hit Points restored (for instance, losing 5 gp worth of value to restore 5 Hit Points); if the goat's cud is reduced to 0 gp, it has the minerals fully drained from it, and the goat won't form more cud until it has eaten a sufficient quantity of rock and slept.",
+            "text": "**Trigger** The stony goat gains the [Frightened](/condition/frightened-player-core) condition or takes more than 8 damage in a single hit\n\n---\n\n**Effect** The stony goat turns to stone in self-defense. It gains the [Petrified](/condition/petrified-player-core) condition for 1d4 rounds. If the goat is damaged while it's petrified, it immediately heals by that amount by absorbing minerals from its cud, causing its cud to lose value equal to the amount of Hit Points restored (for instance, losing 5 gp worth of value to restore 5 Hit Points); if the goat's cud is reduced to 0 gp, it has the minerals fully drained from it, and the goat won't form more cud until it has eaten a sufficient quantity of rock and slept.",
             "traits": [
               "polymorph"
             ],
@@ -8265,7 +8715,13 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 21 (Nature)",
-      "items": "Cud"
+      "items": "Cud",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8384,7 +8840,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 20 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 20 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8515,7 +8985,7 @@
         "offensive": [
           {
             "name": "Bond with Mortal",
-            "text": "**Frequency** once per day\n\n---\n\n**Effect** The spirit guide spends 10 minutes to form a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 28, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane. The spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.\n\nThis bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and spirit traits, loses their immunity to disease, paralysis, and poison, along with their resistance to all damage, and changes their Strikes to deal the appropriate amount of physical damage (typically piercing or slashing) instead of force damage.",
+            "text": "**Frequency** once per day\n\n---\n\n**Effect** The spirit guide spends 10 minutes to form a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 28, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane. The spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.\n\nThis bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and [spirit](/trait/spirit) traits, loses their immunity to disease, paralysis, and poison, along with their resistance to all damage, and changes their Strikes to deal the appropriate amount of physical damage (typically piercing or slashing) instead of force damage.",
             "traits": [
               "mental",
               "primal"
@@ -8575,7 +9045,13 @@
         ]
       },
       "languagesText": "Common, Draconic",
-      "recallKnowledgeText": "DC 34 (Nature)"
+      "recallKnowledgeText": "DC 34 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8685,7 +9161,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 18 (Nature)"
+      "recallKnowledgeText": "DC 18 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8850,7 +9336,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 20 (Nature)"
+      "recallKnowledgeText": "DC 20 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8947,7 +9439,7 @@
         "offensive": [
           {
             "name": "Stylets",
-            "text": "Each enemy in the swarm's space takes 4d8 piercing|options:area-damage] damage (basic Reflex DC 32 save). Creatures that fail their save become Drained 1 or increase their drained condition by one, to a maximum of drained 4.",
+            "text": "Each enemy in the swarm's space takes 4d8 piercing|options:area-damage] damage (basic Reflex DC 32 save). Creatures that fail their save become Drained 1 or increase their [drained](/condition/drained-player-core) condition by one, to a maximum of drained 4.",
             "traits": [],
             "actions": "one"
           }
@@ -8960,7 +9452,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 30 (Nature)"
+      "recallKnowledgeText": "DC 30 (Nature)",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9076,7 +9578,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 26 (Nature)"
+      "recallKnowledgeText": "DC 26 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "dinosaur",
+          "slug": "dinosaur"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9242,7 +9754,25 @@
       },
       "languagesText": "Common, Diabolic",
       "recallKnowledgeText": "DC 41 (Nature)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "devil",
+          "slug": "devil"
+        },
+        {
+          "label": "dinosaur",
+          "slug": "dinosaur"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9355,7 +9885,7 @@
         "offensive": [
           {
             "name": "Seismic Slam",
-            "text": "**Frequency** once per minute\n\n---\n\n**Effect** The titanosaur rears up on its hind legs before slamming its forelegs back on the ground with a thunderous crash, creating a localized tremor with the effects of an Earthquake spell centered on itself, though the effect is non-magical. Fissures do not form under the titanosaur.",
+            "text": "**Frequency** once per minute\n\n---\n\n**Effect** The titanosaur rears up on its hind legs before slamming its forelegs back on the ground with a thunderous crash, creating a localized tremor with the effects of an [Earthquake](/spell/earthquake-player-core) spell centered on itself, though the effect is non-magical. Fissures do not form under the titanosaur.",
             "traits": [],
             "actions": "two"
           },
@@ -9380,7 +9910,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 35 (Nature)"
+      "recallKnowledgeText": "DC 35 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "dinosaur",
+          "slug": "dinosaur"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9507,7 +10047,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 15 (Nature)"
+      "recallKnowledgeText": "DC 15 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "dinosaur",
+          "slug": "dinosaur"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9613,7 +10163,7 @@
           },
           {
             "name": "Deceptive Heads",
-            "text": "A tyrafdir is cunning, if unintelligent, using illusions of regrown heads to confuse and harry opponents. When a tyrafdir fails, but does not critically fail, its Fortitude save to regrow a head, a phantasm materializes to mimic the regrowth. This creates two deceptive heads that function differently than real heads. The tyrafdir gains a deceptive jaws Strike as long as it has at least one deceptive head. Any creature that attacks a deceptive head or uses the Seek action to examine it can attempt to disbelieve the illusion (Will DC 27 save).\n\nEffect: Deceptive Heads",
+            "text": "A tyrafdir is cunning, if unintelligent, using illusions of regrown heads to confuse and harry opponents. When a tyrafdir fails, but does not critically fail, its Fortitude save to regrow a head, a phantasm materializes to mimic the regrowth. This creates two deceptive heads that function differently than real heads. The tyrafdir gains a deceptive jaws Strike as long as it has at least one deceptive head. Any creature that attacks a deceptive head or uses the [Seek](/action/seek-player-core) action to examine it can attempt to disbelieve the illusion (Will DC 27 save).\n\nEffect: Deceptive Heads",
             "traits": [
               "illusion"
             ]
@@ -9656,7 +10206,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 30 (Nature)"
+      "recallKnowledgeText": "DC 30 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "fey",
+          "slug": "fey"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9784,7 +10344,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 28 (Nature)"
+      "recallKnowledgeText": "DC 28 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "swarm",
+          "slug": "swarm"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9912,7 +10482,7 @@
           },
           {
             "name": "Spellsong Casting",
-            "text": "The virtuosic lyrebird's exquisite vocal control lets it cast spells purely through its song. While it must be able to vocalize to Cast a Spell, it doesn't need to gesture, removing the manipulate trait from any spell that it casts. If it Casts a Spell with the linguistic trait (usually with its Spell Mimicry), it can Cast that Spell in Common, even though the bird doesn't truly understand the language.",
+            "text": "The virtuosic lyrebird's exquisite vocal control lets it cast spells purely through its song. While it must be able to vocalize to Cast a Spell, it doesn't need to gesture, removing the [manipulate](/trait/manipulate) trait from any spell that it casts. If it Casts a Spell with the [linguistic](/trait/linguistic) trait (usually with its Spell Mimicry), it can Cast that Spell in Common, even though the bird doesn't truly understand the language.",
             "traits": []
           }
         ]
@@ -9924,7 +10494,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 22 (Nature)"
+      "recallKnowledgeText": "DC 22 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10091,7 +10667,7 @@
         "offensive": [
           {
             "name": "Bury Beneath Stone",
-            "text": "**Requirements** The warden has a creature Grabbed\n\n---\n\n**Effect** The warden attempts to wedge a creature they have grabbed in their mandibles within a crack in the earth that opens beneath them. The warden attempts an Athletics check against the grabbed creature's Reflex DC. If they succeed, they bury the creature in the ground. The creature takes Escapes. If the creature is still buried at the end of its turn, it takes 5d10 bludgeoning] damage.",
+            "text": "**Requirements** The warden has a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The warden attempts to wedge a creature they have grabbed in their mandibles within a crack in the earth that opens beneath them. The warden attempts an Athletics check against the grabbed creature's Reflex DC. If they succeed, they bury the creature in the ground. The creature takes Escapes. If the creature is still buried at the end of its turn, it takes 5d10 bludgeoning] damage.",
             "traits": [
               "attack",
               "primal"
@@ -10139,7 +10715,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 54 (Nature)"
+      "recallKnowledgeText": "DC 54 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10364,7 +10950,7 @@
           },
           {
             "name": "Sneak Attack",
-            "text": "The warden deals an additional 3d6 precision damage to Off Guard creatures.",
+            "text": "The warden deals an additional 3d6 precision damage to [Off Guard](/condition/off-guard-player-core) creatures.",
             "traits": []
           }
         ]
@@ -10376,7 +10962,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 54 (Nature)"
+      "recallKnowledgeText": "DC 54 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10575,7 +11171,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 54 (Nature)"
+      "recallKnowledgeText": "DC 54 (Nature)",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10712,7 +11322,7 @@
           },
           {
             "name": "Stormsight",
-            "text": "Wind, precipitation, and clouds don't impair the warden's vision; she ignores the Concealed condition from storms, mist, precipitation, and the like.",
+            "text": "Wind, precipitation, and clouds don't impair the warden's vision; she ignores the [Concealed](/condition/concealed-player-core) condition from storms, mist, precipitation, and the like.",
             "traits": []
           },
           {
@@ -10782,7 +11392,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 54 (Nature)"
+      "recallKnowledgeText": "DC 54 (Nature)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10956,7 +11576,25 @@
       },
       "languagesText": "Common",
       "recallKnowledgeText": "DC 18 (Nature, Society)",
-      "items": "Greataxe, Hatchet, Scale Mail"
+      "items": "Greataxe, Hatchet, Scale Mail",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "werecreature",
+          "slug": "werecreature"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11082,7 +11720,7 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "Medium human with fist +14 for 1d4+7 bludgeoning,\n\nor Large shark with jaws +14 for 1d12+7 piercing, no land Speed, and swim Speed 40 feet.\n\nThe wereshark doesn't have the amphibious trait in human or shark form and has the aquatic trait in shark form.\n\n---\n\nChangeshape",
+            "text": "Medium human with fist +14 for 1d4+7 bludgeoning,\n\nor Large shark with jaws +14 for 1d12+7 piercing, no land Speed, and swim Speed 40 feet.\n\nThe wereshark doesn't have the [amphibious](/trait/amphibious) trait in human or shark form and has the [aquatic](/trait/aquatic) trait in shark form.\n\n---\n\nChangeshape",
             "traits": [
               "concentrate",
               "polymorph",
@@ -11100,7 +11738,7 @@
           },
           {
             "name": "Fish Fork",
-            "text": "**Requirements** The wereshark critically hit with a trident Strike on their most recent action this turn\n\n---\n\n**Effect** The wereshark digs their trident deep within their target, skewering it before taking a massive bite. The target of the Strike becomes Grabbed (Escape) and takes 1d4 bleed] damage, and the wereshark attempts a jaws Strike against it. The wereshark can't use their trident while they have a creature grabbed with it, but they can pull the trident free with a single action that has the manipulate trait.",
+            "text": "**Requirements** The wereshark critically hit with a trident Strike on their most recent action this turn\n\n---\n\n**Effect** The wereshark digs their trident deep within their target, skewering it before taking a massive bite. The target of the Strike becomes Grabbed (Escape) and takes 1d4 bleed] damage, and the wereshark attempts a jaws Strike against it. The wereshark can't use their trident while they have a creature [grabbed](/condition/grabbed-player-core) with it, but they can pull the trident free with a single action that has the [manipulate](/trait/manipulate) trait.",
             "traits": [],
             "actions": "one"
           },
@@ -11123,7 +11761,25 @@
       },
       "languagesText": "Common",
       "recallKnowledgeText": "DC 19 (Nature, Society)",
-      "items": "Trident, Studded Leather Armor"
+      "items": "Trident, Studded Leather Armor",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "werecreature",
+          "slug": "werecreature"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

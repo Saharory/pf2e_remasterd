@@ -91,7 +91,7 @@
         "offensive": [
           {
             "name": "Fetters of Debt",
-            "text": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** The aurosrath bellows a plea for gold, remarking that their foes are overladen. Creatures in a area must succeed at a Will DC 19 save or become Encumbered for 1 minute. The creature is aware that it can immediately end the condition by giving the aurosrath items or treasure worth at least 20 gp. Handing a held item to the aurosrath is a single Interact action. If the aurosrath's hands are full, the item falls in their space, but the condition still ends.",
+            "text": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** The aurosrath bellows a plea for gold, remarking that their foes are overladen. Creatures in a area must succeed at a Will DC 19 save or become Encumbered for 1 minute. The creature is aware that it can immediately end the condition by giving the aurosrath items or treasure worth at least 20 gp. Handing a held item to the aurosrath is a single [Interact](/action/interact-player-core) action. If the aurosrath's hands are full, the item falls in their space, but the condition still ends.",
             "traits": [
               "auditory",
               "curse",
@@ -116,7 +116,21 @@
       },
       "languagesText": "Common, Necril",
       "recallKnowledgeText": "DC 22 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "metal",
+          "slug": "metal"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -242,7 +256,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 18 (Nature)"
+      "recallKnowledgeText": "DC 18 (Nature)",
+      "traitLinks": [
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "fey",
+          "slug": "fey"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -412,7 +440,21 @@
       "languagesText": "",
       "recallKnowledgeText": "DC 26 (Religion)",
       "sanctification": "unholy",
-      "items": "Gavel"
+      "items": "Gavel",
+      "traitLinks": [
+        {
+          "label": "daemon",
+          "slug": "daemon"
+        },
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -596,7 +638,21 @@
         ]
       },
       "languagesText": "Common, Fey, Muan",
-      "recallKnowledgeText": "DC 40 (Nature)"
+      "recallKnowledgeText": "DC 40 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "fey",
+          "slug": "fey"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -702,7 +758,7 @@
         "defensive": [
           {
             "name": "Broken Mindscape",
-            "text": "30 feet. A creature entering the aura or starting its turn in the aura must attempt a Will DC 27 save.\n\n---\n\n**Critical Success** The creature is unaffected and becomes immune to broken mindscape for 1 minute.\n\n**Success** The creature is Stunned 1 as disjointed visions of the failed prophet's mindscape assail its senses.\n\n**Failure** The creature's mind is pulled into the failed prophet's mindscape. It's Paralyzed for 1 round. While paralyzed, the creature can take any actions with the mental or spirit traits, or that deal mental or spirit damage, as though those actions were purely mental. Such actions only have line of effect to the originating failed prophet and other creatures currently paralyzed by broken mindscape, though they treat all such creatures as though they were adjacent.\n\n**Critical Failure** As failure, but the duration is 1 minute or until the failed prophet is destroyed, whichever happens first.",
+            "text": "30 feet. A creature entering the aura or starting its turn in the aura must attempt a Will DC 27 save.\n\n---\n\n**Critical Success** The creature is unaffected and becomes immune to broken mindscape for 1 minute.\n\n**Success** The creature is Stunned 1 as disjointed visions of the failed prophet's mindscape assail its senses.\n\n**Failure** The creature's mind is pulled into the failed prophet's mindscape. It's Paralyzed for 1 round. While paralyzed, the creature can take any actions with the mental or [spirit](/trait/spirit) traits, or that deal mental or spirit damage, as though those actions were purely mental. Such actions only have line of effect to the originating failed prophet and other creatures currently paralyzed by broken mindscape, though they treat all such creatures as though they were adjacent.\n\n**Critical Failure** As failure, but the duration is 1 minute or until the failed prophet is destroyed, whichever happens first.",
             "traits": [
               "aura",
               "illusion",
@@ -740,7 +796,13 @@
         ]
       },
       "languagesText": "Common, Dwarven",
-      "recallKnowledgeText": "DC 32 (Arcana)"
+      "recallKnowledgeText": "DC 32 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "construct",
+          "slug": "construct"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -866,7 +928,17 @@
         ]
       },
       "languagesText": "Common",
-      "recallKnowledgeText": "DC 20 (Nature)"
+      "recallKnowledgeText": "DC 20 (Nature)",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1025,7 +1097,13 @@
       },
       "languagesText": "Aklo, Common, Fey",
       "recallKnowledgeText": "DC 22 (Nature)",
-      "items": "Shortbow, Arrows"
+      "items": "Shortbow, Arrows",
+      "traitLinks": [
+        {
+          "label": "fey",
+          "slug": "fey"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1136,14 +1214,14 @@
           },
           {
             "name": "Grave Blight",
-            "text": "**Saving Throw** Fortitude DC 18\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 persistent,poison] damage every hour, Sickened 1, and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)\n\n**Stage 3** 2d6 persistent,poison] damage every hour, Sickened 2, and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)",
+            "text": "**Saving Throw** Fortitude DC 18\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 persistent,poison] damage every hour, Sickened 1, and can't reduce the value of the [sickened](/condition/sickened-player-core) condition while taking persistent poison damage (1 day)\n\n**Stage 3** 2d6 persistent,poison] damage every hour, Sickened 2, and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)",
             "traits": [
               "disease"
             ]
           },
           {
             "name": "Soul Feeding",
-            "text": "**Requirements** The shroudwing is adjacent to a dying creature\n\n---\n\n**Effect** The shroudwing attempts to devour the dying creature's soul. The creature must attempt a Will DC 18 save or their dying condition increases by 1 and the shroudwing regains 2d8 healing] Hit Points.",
+            "text": "**Requirements** The shroudwing is adjacent to a [dying](/condition/dying-player-core) creature\n\n---\n\n**Effect** The shroudwing attempts to devour the dying creature's soul. The creature must attempt a Will DC 18 save or their dying condition increases by 1 and the shroudwing regains 2d8 healing] Hit Points.",
             "traits": [
               "concentrate",
               "death",
@@ -1159,7 +1237,8 @@
         "skills": []
       },
       "languagesText": "Common, Necril",
-      "recallKnowledgeText": "DC 19"
+      "recallKnowledgeText": "DC 19",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1294,7 +1373,7 @@
           },
           {
             "name": "Tear Asunder",
-            "text": "**Requirements** The torn quartet has a creature Grabbed or Restrained by at least two limbs\n\n---\n\n**Effect** The creature takes 5d6 slashing] damage for each limb currently grabbing or restraining it (maximum 15d6), with a basic Fortitude DC 30 save. On a critical failure, the creature also loses a random body part, and one of the torn quartet's limbs is now no longer grabbing or restraining it.",
+            "text": "**Requirements** The torn quartet has a creature [Grabbed](/condition/grabbed-player-core) or Restrained by at least two limbs\n\n---\n\n**Effect** The creature takes 5d6 slashing] damage for each limb currently grabbing or restraining it (maximum 15d6), with a basic Fortitude DC 30 save. On a critical failure, the creature also loses a random body part, and one of the torn quartet's limbs is now no longer grabbing or restraining it.",
             "traits": [],
             "actions": "one"
           }
@@ -1307,7 +1386,13 @@
         ]
       },
       "languagesText": "Common, Necril",
-      "recallKnowledgeText": "DC 33 (Religion)"
+      "recallKnowledgeText": "DC 33 (Religion)",
+      "traitLinks": [
+        {
+          "label": "undead",
+          "slug": "undead"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1453,7 +1538,13 @@
         ]
       },
       "languagesText": "Common",
-      "recallKnowledgeText": "DC 27 (Nature)"
+      "recallKnowledgeText": "DC 27 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1559,7 +1650,7 @@
         "offensive": [
           {
             "name": "Sneak Attack",
-            "text": "A walcofinde deals an additional 1d6 precision damage to Off Guard creatures.",
+            "text": "A walcofinde deals an additional 1d6 precision damage to [Off Guard](/condition/off-guard-player-core) creatures.",
             "traits": []
           },
           {
@@ -1597,7 +1688,17 @@
       },
       "languagesText": "Common, Necril",
       "recallKnowledgeText": "DC 16 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

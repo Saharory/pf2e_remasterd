@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Bacchanalia",
     "slug": "bacchanalia-dark-archive",
-    "descr": "You hold an elaborate feast and stoke the celebratory spirit, causing it to spread to other people nearby; you buoy them with hope and good cheer as they revel into the night. The ritual was first developed by the cult of the hero-god Kelksiomides in Iblydos and meant to be a benefit to the community during hard times, though other groups have used it for far different purposes, such as to spread chaos or to provide cover for a heist.\n\nYou and the secondary casters begin your feast in a public space where others can see you, exactly 8 hours before dusk. When dusk falls, you complete the ritual. The party spreads outward from your initial site until it slowly encompasses the settlement (for a town or smaller), or a district or division of up to approximately 1,000 people (for a larger settlement). Those partaking in the celebration are Fascinated until the ritual comes to an end (or someone uses a hostile action toward them, as usual). The partying appears to spread naturally, as others see the revelers, they too slowly join until the celebration reaches its peak size. The spell's effect ends sharply at midnight, but that doesn't mean people stop partying right away if they're enjoying themselves.\n\n---\n\n**Critical Success** The party is a huge hit! The effects work as above, except that in a larger settlement, the celebration can spread to an area with as many as 10,000 people. Furthermore, the celebration leaves strong memories in the hearts of those who participated, causing locals to commemorate it or possibly outlaw such celebrations (depending on their view of the event).\n\n**Success** The party is successful. It spreads as described in the ritual's description.\n\n**Failure** The party never really catches on. You and the secondary casters get to celebrate, but the most other people do is give you odd looks.\n\n**Critical Failure** Instead of celebration, you inspire anger and resentment toward you and the secondary casters for disturbing the peace or possibly even deepening the despair of a people who are already troubled. People in the area have their attitudes toward you temporarily adjusted two steps worse than normal. Those who become hostile won't necessarily attack you, but they will mock you, break up your revelry, and potentially arrest you.",
+    "descr": "You hold an elaborate feast and stoke the celebratory spirit, causing it to spread to other people nearby; you buoy them with hope and good cheer as they revel into the night. The ritual was first developed by the cult of the hero-god Kelksiomides in Iblydos and meant to be a benefit to the community during hard times, though other groups have used it for far different purposes, such as to spread chaos or to provide cover for a heist.\n\nYou and the secondary casters begin your feast in a public space where others can see you, exactly 8 hours before dusk. When dusk falls, you complete the ritual. The party spreads outward from your initial site until it slowly encompasses the settlement (for a town or smaller), or a district or division of up to approximately 1,000 people (for a larger settlement). Those partaking in the celebration are [Fascinated](/condition/fascinated-player-core) until the ritual comes to an end (or someone uses a hostile action toward them, as usual). The partying appears to spread naturally, as others see the revelers, they too slowly join until the celebration reaches its peak size. The spell's effect ends sharply at midnight, but that doesn't mean people stop partying right away if they're enjoying themselves.\n\n---\n\n**Critical Success** The party is a huge hit! The effects work as above, except that in a larger settlement, the celebration can spread to an area with as many as 10,000 people. Furthermore, the celebration leaves strong memories in the hearts of those who participated, causing locals to commemorate it or possibly outlaw such celebrations (depending on their view of the event).\n\n**Success** The party is successful. It spreads as described in the ritual's description.\n\n**Failure** The party never really catches on. You and the secondary casters get to celebrate, but the most other people do is give you odd looks.\n\n**Critical Failure** Instead of celebration, you inspire anger and resentment toward you and the secondary casters for disturbing the peace or possibly even deepening the despair of a people who are already troubled. People in the area have their attitudes toward you temporarily adjusted two steps worse than normal. Those who become hostile won't necessarily attack you, but they will mock you, break up your revelry, and potentially arrest you.",
     "data": {
       "rank": 6,
       "rarity": "uncommon",
@@ -22,7 +22,17 @@
       "requirements": "",
       "secondaryCasters": 8,
       "primaryChecks": "Occultism or Religion",
-      "secondaryChecks": "Performance"
+      "secondaryChecks": "Performance",
+      "traitLinks": [
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -66,7 +76,13 @@
       "requirements": "",
       "secondaryCasters": 2,
       "primaryChecks": "Arcana or Occultism (master)",
-      "secondaryChecks": "Arcana or Occultism, Crafting"
+      "secondaryChecks": "Arcana or Occultism, Crafting",
+      "traitLinks": [
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -94,7 +110,7 @@
     "systemVersion": "1.2.10",
     "name": "Contact Friends",
     "slug": "contact-friends-dark-archive",
-    "descr": "You meditate for a quiet moment before your mind seeks out others whom you have befriended, as well as friends of any of the secondary casters. The ritual projects your mind to a blank space where you see one or more friends from your past. Once there, you can ask each friend a single question. If more than one friend is present, you can ask each one a different question. These friends aren't compelled to answer you honestly or answer at all, but those who are your friends are likely to help you if they can, barring special situations.\n\n---\n\n**Critical Success** You contact up to three close friends of yourself or any of the secondary casters, and the friends attempt to help you with their knowledge. They each answer one of your questions, as described above.\n\n**Success** As critical success, but your mind reaches one friend, instead of three.\n\n**Failure** Your mind reaches three friends you've made in the past, but each of them gives you a useless fact. None of these facts help with your situation at all.\n\n**Critical Failure** Your mind freezes. You saw something that terrified you to your core, leaving you and all other casters Stupefied 3 for 1 day.",
+    "descr": "You meditate for a quiet moment before your mind seeks out others whom you have befriended, as well as friends of any of the secondary casters. The ritual projects your mind to a blank space where you see one or more friends from your past. Once there, you can ask each friend a single question. If more than one friend is present, you can ask each one a different question. These friends aren't compelled to answer you honestly or answer at all, but those who are your friends are likely to help you if they can, barring special situations.\n\n---\n\n**Critical Success** You contact up to three close friends of yourself or any of the secondary casters, and the friends attempt to help you with their knowledge. They each answer one of your questions, as described above.\n\n**Success** As critical success, but your mind reaches one friend, instead of three.\n\n**Failure** Your mind reaches three friends you've made in the past, but each of them gives you a useless fact. None of these facts help with your situation at all.\n\n**Critical Failure** Your mind freezes. You saw something that terrified you to your core, leaving you and all other casters [Stupefied 3](/condition/stupefied-player-core) for 1 day.",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -107,7 +123,8 @@
       "requirements": "",
       "secondaryCasters": 0,
       "primaryChecks": "Arcana or Occultism (expert)",
-      "secondaryChecks": "Survival"
+      "secondaryChecks": "Survival",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -149,7 +166,13 @@
       "requirements": "",
       "secondaryCasters": 3,
       "primaryChecks": "Arcana or Occultism (expert)",
-      "secondaryChecks": "Arcana or Occultism, Deception or Diplomacy, Perception"
+      "secondaryChecks": "Arcana or Occultism, Deception or Diplomacy, Perception",
+      "traitLinks": [
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -177,7 +200,7 @@
     "systemVersion": "1.2.10",
     "name": "Oblivious Expulsion",
     "slug": "oblivious-expulsion-dark-archive",
-    "descr": "Severing ties with a member of a cult courts danger and threatens to undermine the secrecy of the group, whether that secrecy protects its worshippers or enables them to operate in the shadows. Many cults end their association with a wayward member on the edge of a blade, but there are options that preserve both secrecy and the life of the expelled member. An oblivious expulsion removes knowledge of the cult but is time-consuming enough that a cult usually reserves it for only the most well-regarded members who nevertheless need to be removed-or for sleeper agents the cult wishes to place among society and activate later.\n\nIt's difficult to cast this ritual unless the target is willing or Restrained. If the creature is unwilling to accept the ritual, it can attempt a Will save to negate the effect. The effects of the ritual depend on the results of your Occultism check.\n\n---\n\n**Critical Success** The ritual removes all memories of the cult's activity, practices, and secrets from the target's memory. The target remembers only what an average citizen of the larger society would know, which is typically nothing or a few rumors with very little detail. The spell is hard to detect: a Detect Magic spell or similar effect must be a higher rank than *oblivious expulsion* to detect it. You can Dismiss the spell. While casting the spell, you can choose to give the secondary casters the ability to Dismiss it. You can also choose to set a key phrase or event that causes the spell to be Dismissed. When the target witnesses this phrase or event, the spell immediately ends.\n\n**Success** As critical success, except the spell isn't harder to detect with *detect magic*.\n\n**Failure** The ritual fails.\n\n**Critical Failure** The ritual fails, and the target is temporarily immune for 1 month.",
+    "descr": "Severing ties with a member of a cult courts danger and threatens to undermine the secrecy of the group, whether that secrecy protects its worshippers or enables them to operate in the shadows. Many cults end their association with a wayward member on the edge of a blade, but there are options that preserve both secrecy and the life of the expelled member. An oblivious expulsion removes knowledge of the cult but is time-consuming enough that a cult usually reserves it for only the most well-regarded members who nevertheless need to be removed-or for sleeper agents the cult wishes to place among society and activate later.\n\nIt's difficult to cast this ritual unless the target is willing or [Restrained](/condition/restrained-player-core). If the creature is unwilling to accept the ritual, it can attempt a Will save to negate the effect. The effects of the ritual depend on the results of your Occultism check.\n\n---\n\n**Critical Success** The ritual removes all memories of the cult's activity, practices, and secrets from the target's memory. The target remembers only what an average citizen of the larger society would know, which is typically nothing or a few rumors with very little detail. The spell is hard to detect: a [Detect Magic](/spell/detect-magic-player-core) spell or similar effect must be a higher rank than *oblivious expulsion* to detect it. You can Dismiss the spell. While casting the spell, you can choose to give the secondary casters the ability to Dismiss it. You can also choose to set a key phrase or event that causes the spell to be Dismissed. When the target witnesses this phrase or event, the spell immediately ends.\n\n**Success** As critical success, except the spell isn't harder to detect with *detect magic*.\n\n**Failure** The ritual fails.\n\n**Critical Failure** The ritual fails, and the target is temporarily immune for 1 month.",
     "data": {
       "rank": 5,
       "rarity": "uncommon",
@@ -192,7 +215,13 @@
       "requirements": "",
       "secondaryCasters": 2,
       "primaryChecks": "Occultism (master) or Religion (master)",
-      "secondaryChecks": "Deception, Society"
+      "secondaryChecks": "Deception, Society",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -220,7 +249,7 @@
     "systemVersion": "1.2.10",
     "name": "Recall Past Life",
     "slug": "recall-past-life-dark-archive",
-    "descr": "You and the secondary casters spend 2 days drawing sigils on one another. At the end of the second day, the secondary caster responsible for the Crafting check carefully mixes the wine with the herbs and a small amount of saliva or blood from the target. The target then drinks the concoction, entering a state of metaphorical death and rebirth, their body becoming comatose for the final day of the ritual. During this time, you and the other secondary caster bathe the body in dirt, symbolizing a grave, and sprinkle the remainder of the wine around the body. If done properly, swaddled baby orchids grow around the area, enveloping the body in a bed of flowers.\n\nOn the final hour, the target returns to life, waking up temporarily possessed by an incarnation from one of their past lives. Though they retain the memories from their current life, their demeanor and personality are different for the remaining duration of the ritual, and they also remember vivid details from their past life. Unfortunately, it's impossible to choose a particular past self or to know whether a given former incarnation has good or bad intentions.\n\n---\n\n**Critical Success** The target's personality reverts to a previous incarnation, determined by the GM. Normally they keep their abilities, but in rare cases, the GM might determine that the past incarnation has a different set of abilities based on their previous life. The lingering knowledge of the past incarnation is powerful and sticks with the target, allowing them to retrain one of their skills increases into a skill in which the past incarnation was particularly talented; the list of possible skills depends on the nature of the past incarnation and is determined by the GM.\n\n**Success** As critical success, except there's no lingering knowledge, and the target isn't able to retrain a skill increase.\n\n**Failure** Nothing happens, though the target's Unconscious state is disturbing, and they wake up Fatigued as well as likely disoriented.\n\n**Critical Failure** The sigils are drawn improperly, or the wine was tainted. The swaddled baby orchids that grow around the body scream at the moment when the target would've awakened. The target dies and their body is immediately possessed by a malevolent spirit that seeks to destroy their former allies. Use the statistics for a Ghost Commoner using Malevolent Possession on the target's body.",
+    "descr": "You and the secondary casters spend 2 days drawing sigils on one another. At the end of the second day, the secondary caster responsible for the Crafting check carefully mixes the wine with the herbs and a small amount of saliva or blood from the target. The target then drinks the concoction, entering a state of metaphorical death and rebirth, their body becoming comatose for the final day of the ritual. During this time, you and the other secondary caster bathe the body in dirt, symbolizing a grave, and sprinkle the remainder of the wine around the body. If done properly, swaddled baby orchids grow around the area, enveloping the body in a bed of flowers.\n\nOn the final hour, the target returns to life, waking up temporarily possessed by an incarnation from one of their past lives. Though they retain the memories from their current life, their demeanor and personality are different for the remaining duration of the ritual, and they also remember vivid details from their past life. Unfortunately, it's impossible to choose a particular past self or to know whether a given former incarnation has good or bad intentions.\n\n---\n\n**Critical Success** The target's personality reverts to a previous incarnation, determined by the GM. Normally they keep their abilities, but in rare cases, the GM might determine that the past incarnation has a different set of abilities based on their previous life. The lingering knowledge of the past incarnation is powerful and sticks with the target, allowing them to retrain one of their skills increases into a skill in which the past incarnation was particularly talented; the list of possible skills depends on the nature of the past incarnation and is determined by the GM.\n\n**Success** As critical success, except there's no lingering knowledge, and the target isn't able to retrain a skill increase.\n\n**Failure** Nothing happens, though the target's [Unconscious](/condition/unconscious-player-core) state is disturbing, and they wake up [Fatigued](/condition/fatigued-player-core) as well as likely disoriented.\n\n**Critical Failure** The sigils are drawn improperly, or the wine was tainted. The swaddled baby orchids that grow around the body scream at the moment when the target would've awakened. The target dies and their body is immediately possessed by a malevolent spirit that seeks to destroy their former allies. Use the statistics for a [Ghost Commoner](/creature/ghost-commoner-monster-core) using Malevolent Possession on the target's body.",
     "data": {
       "rank": 4,
       "rarity": "rare",
@@ -233,7 +262,8 @@
       "requirements": "",
       "secondaryCasters": 2,
       "primaryChecks": "Occultism (master) or Religion (master)",
-      "secondaryChecks": "Crafting"
+      "secondaryChecks": "Crafting",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -260,7 +290,7 @@
     "systemVersion": "1.2.10",
     "name": "Supreme Connection",
     "slug": "supreme-connection-dark-archive",
-    "descr": "In a show of power, you call forth a powerful entity in front of a crowd of onlookers, forcing the entity to manifest and answer your questions. The being appears as a twisted ball of vines and branches that springs forth from a nearby patch of dirt or up from between cobblestones or bricks. The ball of vines is relatively formless, giving no indication of the being that controls it. However, when you make a request, it twists into a rough face to answer your request.\n\nYou can ask up to seven questions that could be answered with \"yes\" or \"no,\" although the entity can give you any one working answer it wants, including vague answers like \"likely\" or \"unknown.\" The entity is likely to know answers related to its nature and priorities. Depending on the entity you call, it might attempt to deceive you and likely has its own agenda. The entity can only respond when surrounded by the energy of a crowd.\n\nOnce it has answered your questions, the vines freeze in place, contorted in pain, a reminder of where the powerful creature touched this world.\n\n---\n\n**Critical Success** The entity is in a good mood or is more honest than most. It won't attempt to deceive you, though it still might not know the answers. When it's important to provide clarity, the entity will answer your questions with up to five words, such as \"if you leave immediately\" or \"that was true once.\" The words of the entity ring with truth, and the crowd takes the statements as gospel. You gain a +4 circumstance bonus to Diplomacy checks made to influence the crowd and to any Deception checks to Lie to the crowd by directly incorporating the entity's answers.\n\n**Success** You can ask and receive your seven answers normally. The crowd is excited by the entity's words and believes them to be true. You gain a +2 circumstance bonus to Diplomacy checks made to influence the crowd and to any Deception checks to Lie to the crowd by directly incorporating the entity's answers.\n\n**Failure** The vines reach out in a weighted gasp before dying. The crowd is likely disappointed, especially if you made them wait, but they don't necessarily change their attitude toward you.\n\n**Critical Failure** The vines wrap around you in desperation, trying to squeeze out your life force to survive. You take 10d6 bludgeoning] damage and become Drained 3, and you can't reduce the drained condition for 1 week. The attitude of the most members of the crowd toward you become one step worse, though individual members of the crowd might have different reactions.",
+    "descr": "In a show of power, you call forth a powerful entity in front of a crowd of onlookers, forcing the entity to manifest and answer your questions. The being appears as a twisted ball of vines and branches that springs forth from a nearby patch of dirt or up from between cobblestones or bricks. The ball of vines is relatively formless, giving no indication of the being that controls it. However, when you make a request, it twists into a rough face to answer your request.\n\nYou can ask up to seven questions that could be answered with \"yes\" or \"no,\" although the entity can give you any one working answer it wants, including vague answers like \"likely\" or \"unknown.\" The entity is likely to know answers related to its nature and priorities. Depending on the entity you call, it might attempt to deceive you and likely has its own agenda. The entity can only respond when surrounded by the energy of a crowd.\n\nOnce it has answered your questions, the vines freeze in place, contorted in pain, a reminder of where the powerful creature touched this world.\n\n---\n\n**Critical Success** The entity is in a good mood or is more honest than most. It won't attempt to deceive you, though it still might not know the answers. When it's important to provide clarity, the entity will answer your questions with up to five words, such as \"if you leave immediately\" or \"that was true once.\" The words of the entity ring with truth, and the crowd takes the statements as gospel. You gain a +4 circumstance bonus to Diplomacy checks made to influence the crowd and to any Deception checks to Lie to the crowd by directly incorporating the entity's answers.\n\n**Success** You can ask and receive your seven answers normally. The crowd is excited by the entity's words and believes them to be true. You gain a +2 circumstance bonus to Diplomacy checks made to influence the crowd and to any Deception checks to Lie to the crowd by directly incorporating the entity's answers.\n\n**Failure** The vines reach out in a weighted gasp before dying. The crowd is likely disappointed, especially if you made them wait, but they don't necessarily change their attitude toward you.\n\n**Critical Failure** The vines wrap around you in desperation, trying to squeeze out your life force to survive. You take 10d6 bludgeoning] damage and become [Drained 3](/condition/drained-player-core), and you can't reduce the drained condition for 1 week. The attitude of the most members of the crowd toward you become one step worse, though individual members of the crowd might have different reactions.",
     "data": {
       "rank": 7,
       "rarity": "uncommon",
@@ -273,7 +303,8 @@
       "requirements": "",
       "secondaryCasters": 2,
       "primaryChecks": "Occultism (master) or Religion (master)",
-      "secondaryChecks": "Performance"
+      "secondaryChecks": "Performance",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -300,7 +331,7 @@
     "systemVersion": "1.2.10",
     "name": "Vital Singularity",
     "slug": "vital-singularity-dark-archive",
-    "descr": "When several companions or followers have reached a point of undying love and trust in you, they might be willing to die to save your life. You can grant them that wish. The secondary casters must be living creatures willing to sacrifice their energy to you, by allowing their life essence to drain out of them to protect you whenever you're in danger. If you're undead, the secondary casters must be undead instead, and if you're neither living nor undead, you can't cast vital singularity. Whenever you take damage, after calculating the total amount of damage, including immunities, resistances, weaknesses, and any other increases or mitigation, divide the amount by 4, rounding down. You and each of the secondary casters lose that many Hit Points. If a secondary caster doesn't have enough Hit Points to give before dropping to 0 Hit Points, you take any remaining damage for them as well. When a secondary caster reaches 0 Hit Points in this way, their skin dries out like leather as the last of their life leaves their bodies; this is a death effect.\n\n---\n\n**Critical Success** The light from your secondary casters envelops you in a warm radiance. In addition to the effects described above, you're healed to full Hit Points upon completion of the ritual.\n\n**Success** The secondary casters channel their energies to you, protecting you as described above.\n\n**Failure** The secondary casters cry out in sorrow, reaching out to you to feel your embrace, then they grow sad that they couldn't live up to your expectations. Nothing else happens.\n\n**Critical Failure** The secondary casters' attempts to unite with you become desperate, but ultimately, the only function of the link was to disorient all of you, making your bodies feel like they aren't your own. You and all secondary casters become Clumsy 3 for 3 days.",
+    "descr": "When several companions or followers have reached a point of undying love and trust in you, they might be willing to die to save your life. You can grant them that wish. The secondary casters must be living creatures willing to sacrifice their energy to you, by allowing their life essence to drain out of them to protect you whenever you're in danger. If you're undead, the secondary casters must be undead instead, and if you're neither living nor undead, you can't cast vital singularity. Whenever you take damage, after calculating the total amount of damage, including immunities, resistances, weaknesses, and any other increases or mitigation, divide the amount by 4, rounding down. You and each of the secondary casters lose that many Hit Points. If a secondary caster doesn't have enough Hit Points to give before dropping to 0 Hit Points, you take any remaining damage for them as well. When a secondary caster reaches 0 Hit Points in this way, their skin dries out like leather as the last of their life leaves their bodies; this is a death effect.\n\n---\n\n**Critical Success** The light from your secondary casters envelops you in a warm radiance. In addition to the effects described above, you're healed to full Hit Points upon completion of the ritual.\n\n**Success** The secondary casters channel their energies to you, protecting you as described above.\n\n**Failure** The secondary casters cry out in sorrow, reaching out to you to feel your embrace, then they grow sad that they couldn't live up to your expectations. Nothing else happens.\n\n**Critical Failure** The secondary casters' attempts to unite with you become desperate, but ultimately, the only function of the link was to disorient all of you, making your bodies feel like they aren't your own. You and all secondary casters become [Clumsy 3](/condition/clumsy-player-core) for 3 days.",
     "data": {
       "rank": 9,
       "rarity": "uncommon",
@@ -313,7 +344,8 @@
       "requirements": "",
       "secondaryCasters": 3,
       "primaryChecks": "Occultism or Religion (legendary)",
-      "secondaryChecks": "Fortitude, Society, Will"
+      "secondaryChecks": "Fortitude, Society, Will",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,

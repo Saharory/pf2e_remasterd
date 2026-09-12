@@ -6,14 +6,15 @@
     "systemVersion": "1.2.10",
     "name": "Absorb Familiar",
     "slug": "absorb-familiar-player-core",
-    "descr": "Your familiar can transform into a mark you carry on your flesh, typically seeming like a birthmark, tattoo, or gem that vaguely resembles its normal form. When transformed, the familiar can't act except to turn back into a familiar. It isn't affected by area effects and must be targeted separately to affect it, which requires knowledge that it's a creature.\n\nThis means you and your allies can heal or assist the familiar while most enemies stay unaware of its true nature. Creatures must attempt a Perception DC 20 check to Seek to realize a it is actually a familiar. Your familiar can still communicate its feelings empathically. Transforming the familiar between forms is a 1-minute activity that has the concentrate trait.",
+    "descr": "Your familiar can transform into a mark you carry on your flesh, typically seeming like a birthmark, tattoo, or gem that vaguely resembles its normal form. When transformed, the familiar can't act except to turn back into a familiar. It isn't affected by area effects and must be targeted separately to affect it, which requires knowledge that it's a creature.\n\nThis means you and your allies can heal or assist the familiar while most enemies stay unaware of its true nature. Creatures must attempt a Perception DC 20 check to [Seek](/action/seek-player-core) to realize a it is actually a familiar. Your familiar can still communicate its feelings empathically. Transforming the familiar between forms is a 1-minute activity that has the [concentrate](/trait/concentrate) trait.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -47,7 +48,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -74,7 +76,7 @@
     "systemVersion": "1.2.10",
     "name": "Administer First Aid",
     "slug": "administer-first-aid-player-core",
-    "descr": "**Requirements** You're wearing or holding a Healer'S Toolkit.\n\n---\n\nYou perform first aid on an adjacent creature that is Dying or Bleeding. If a creature is both dying and bleeding, choose which ailment you're trying to treat before you roll. You can Administer First Aid again to attempt to remedy the other effect.\n\n**Stabilize** Attempt a Medicine check on a creature that has 0 Hit Points and the dying condition. The DC is equal to 5 + that creature's recovery roll DC (typically 15 + its dying value).**Stop Bleeding** Attempt a Medicine check on a creature that is taking persistent bleed damage. The DC is usually the DC of the effect that caused the bleed.\n\n---\n\n**Success** If you're trying to stabilize, the target loses the dying condition (but remains Unconscious). If you're trying to stop bleeding, the target benefits from an assisted recovery with the lowered DC for particularly appropriate help.\n\n**Critical Failure** If you were trying to stabilize, the target's dying value increases by 1. If you were trying to stop bleeding, the target immediately takes an amount of damage equal to its persistent bleed damage.",
+    "descr": "**Requirements** You're wearing or holding a [Healer'S Toolkit](/item/healer-s-toolkit-player-core).\n\n---\n\nYou perform first aid on an adjacent creature that is [Dying](/condition/dying-player-core) or [Bleeding](/condition/persistent-damage-player-core). If a creature is both dying and bleeding, choose which ailment you're trying to treat before you roll. You can Administer First Aid again to attempt to remedy the other effect.\n\n**Stabilize** Attempt a Medicine check on a creature that has 0 Hit Points and the dying condition. The DC is equal to 5 + that creature's recovery roll DC (typically 15 + its dying value).**Stop Bleeding** Attempt a Medicine check on a creature that is taking persistent bleed damage. The DC is usually the DC of the effect that caused the bleed.\n\n---\n\n**Success** If you're trying to stabilize, the target loses the dying condition (but remains [Unconscious](/condition/unconscious-player-core)). If you're trying to stop bleeding, the target benefits from an assisted recovery with the lowered DC for particularly appropriate help.\n\n**Critical Failure** If you were trying to stabilize, the target's dying value increases by 1. If you were trying to stop bleeding, the target immediately takes an amount of damage equal to its persistent bleed damage.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -84,7 +86,13 @@
       "frequency": "",
       "requirements": "You're wearing or holding a Healer'S Toolkit",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -112,7 +120,7 @@
     "systemVersion": "1.2.10",
     "name": "Aid",
     "slug": "aid-player-core",
-    "descr": "**Trigger** An ally is about to use an action that requires a skill check or attack roll.\n\n**Requirements** The ally is willing to accept your aid, and you have prepared to help (see below).\n\n---\n\nYou try to help your ally with a task. To use this reaction, you must first prepare to help, usually by using an action during your turn. You must explain to the GM exactly how you're trying to help, and they determine whether you can Aid your ally.\n\nWhen you use your Aid reaction, attempt a skill check or attack roll of a type decided by the GM. The typical DC is 15, but the GM might adjust this DC for particularly hard or easy tasks. The GM can add any relevant traits to your preparatory action or to your Aid reaction depending on the situation, or even allow you to Aid checks other than skill checks and attack rolls.\n\n---\n\n**Critical Success** You grant your ally a +2 circumstance bonus to the triggering check. If you're a master with the check you attempted, the bonus is +3, and if you're legendary, it's +4.\n\n**Success** You grant your ally a +1 circumstance bonus to the triggering check.\n\n**Critical Failure** Your ally takes a –1 circumstance penalty to the triggering check.\n\nEffect: Aid",
+    "descr": "**Trigger** An ally is about to use an action that requires a skill check or attack roll.\n\n**Requirements** The ally is willing to accept your aid, and you have prepared to help (see below).\n\n---\n\nYou try to help your ally with a task. To use this reaction, you must first prepare to help, usually by using an action during your turn. You must explain to the GM exactly how you're trying to help, and they determine whether you can Aid your ally.\n\nWhen you use your Aid reaction, attempt a skill check or attack roll of a type decided by the GM. The typical DC is 15, but the GM might adjust this DC for particularly hard or easy tasks. The GM can add any relevant traits to your preparatory action or to your Aid reaction depending on the situation, or even allow you to Aid checks other than skill checks and attack rolls.\n\n---\n\n**Critical Success** You grant your ally a +2 circumstance bonus to the triggering check. If you're a master with the check you attempted, the bonus is +3, and if you're legendary, it's +4.\n\n**Success** You grant your ally a +1 circumstance bonus to the triggering check.\n\n**Critical Failure** Your ally takes a –1 circumstance penalty to the triggering check.\n\n[Effect: Aid](/condition/effect-aid-player-core)",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -120,7 +128,8 @@
       "frequency": "",
       "requirements": "The ally is willing to accept your aid, and you have prepared to help (see below)",
       "trigger": "An ally is about to use an action that requires a skill check or attack roll",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -147,14 +156,15 @@
     "systemVersion": "1.2.10",
     "name": "Amphibious",
     "slug": "amphibious-player-core",
-    "descr": "It gains the amphibious trait, allowing it to breathe in both air and water, and has both a land Speed and a swim Speed, each equal to its highest land Speed or swim Speed.",
+    "descr": "It gains the [amphibious](/trait/amphibious) trait, allowing it to breathe in both air and water, and has both a land Speed and a swim Speed, each equal to its highest land Speed or swim Speed.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -181,7 +191,7 @@
     "systemVersion": "1.2.10",
     "name": "Anchor",
     "slug": "anchor-player-core",
-    "descr": "**Requirements** You're on a solid surface\n\n---\n\n**Effect** You send your roots into or across the ground, making it harder for you to stumble. Until you move, you gain a +2 circumstance bonus to your Fortitude or Reflex DC against attempts to Reposition, Shove, or Trip you (or a +4 circumstance bonus if you're a root leshy). This bonus also applies to saving throws against spells or effects that attempt to move you or knock you Prone. If an effect forces you to move, you move only half the normal distance, as some of the effort goes to tearing loose the roots.",
+    "descr": "**Requirements** You're on a solid surface\n\n---\n\n**Effect** You send your roots into or across the ground, making it harder for you to stumble. Until you move, you gain a +2 circumstance bonus to your Fortitude or Reflex DC against attempts to [Reposition](/action/reposition-player-core), [Shove](/action/shove-player-core), or [Trip](/action/trip-player-core) you (or a +4 circumstance bonus if you're a root leshy). This bonus also applies to saving throws against spells or effects that attempt to move you or knock you [Prone](/condition/prone-player-core). If an effect forces you to move, you move only half the normal distance, as some of the effort goes to tearing loose the roots.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -191,7 +201,13 @@
       "frequency": "",
       "requirements": "You're on a solid surface",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "leshy",
+          "slug": "leshy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -227,7 +243,8 @@
       "frequency": "",
       "requirements": "You have a fly Speed",
       "trigger": "You fall",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -262,7 +279,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -289,7 +307,7 @@
     "systemVersion": "1.2.10",
     "name": "Avoid Notice",
     "slug": "avoid-notice-player-core",
-    "descr": "You attempt a Stealth check to avoid notice while traveling at half speed. If you're Avoiding Notice at the start of an encounter, you usually roll a Stealth check instead of a Perception check both to determine your initiative and to see if the enemies notice you (based on their Perception DCs, as normal for Sneak, regardless of their initiative check results).",
+    "descr": "You attempt a Stealth check to avoid notice while traveling at half speed. If you're Avoiding Notice at the start of an encounter, you usually roll a Stealth check instead of a Perception check both to determine your initiative and to see if the enemies notice you (based on their Perception DCs, as normal for [Sneak](/action/sneak-player-core), regardless of their initiative check results).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -298,7 +316,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -326,7 +350,7 @@
     "systemVersion": "1.2.10",
     "name": "Balance",
     "slug": "balance-player-core",
-    "descr": "**Requirements** You are in a square that contains a narrow surface, uneven ground, or another similar feature.\n\n---\n\nYou move across a narrow surface or uneven ground, attempting an Acrobatics check against its Balance DC. You are Off Guard while on a narrow surface or uneven ground.\n\n---\n\n**Critical Success** You move up to your Speed.\n\n**Success** You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement).\n\n**Failure** You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.\n\n**Critical Failure** You fall and your turn ends.\n\n## Sample Balance Tasks\n\n**Untrained** tangled roots, uneven cobblestones**Trained** wooden beam**Expert** deep, loose gravel**Master** tightrope, smooth sheet of ice**Legendary** razor's edge, chunks of floor falling in midair",
+    "descr": "**Requirements** You are in a square that contains a narrow surface, uneven ground, or another similar feature.\n\n---\n\nYou move across a narrow surface or uneven ground, attempting an Acrobatics check against its Balance DC. You are [Off Guard](/condition/off-guard-player-core) while on a narrow surface or uneven ground.\n\n---\n\n**Critical Success** You move up to your Speed.\n\n**Success** You move up to your Speed, treating it as difficult terrain (every 5 feet costs 10 feet of movement).\n\n**Failure** You must remain stationary to keep your balance (wasting the action) or you fall. If you fall, your turn ends.\n\n**Critical Failure** You fall and your turn ends.\n\n## Sample Balance Tasks\n\n**Untrained** tangled roots, uneven cobblestones**Trained** wooden beam**Expert** deep, loose gravel**Master** tightrope, smooth sheet of ice**Legendary** razor's edge, chunks of floor falling in midair",
     "data": {
       "rarity": "common",
       "traits": [
@@ -336,7 +360,13 @@
       "frequency": "",
       "requirements": "You are in a square that contains a narrow surface, uneven ground, or another similar feature",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -364,7 +394,7 @@
     "systemVersion": "1.2.10",
     "name": "Borrow an Arcane Spell",
     "slug": "borrow-an-arcane-spell-player-core",
-    "descr": "If you're an arcane spellcaster who prepares from a spellbook, you can attempt to prepare a spell from someone else's spellbook. The GM sets the DC for the check based on the spell's rank and rarity; it's typically a bit easier than Learning the Spell.\n\n---\n\n**Success** You prepare the borrowed spell as part of your normal spell preparation.\n\n**Failure** You fail to prepare the spell, but the spell slot remains available for you to prepare a different spell. You can't try to prepare this spell until the next time you prepare spells.",
+    "descr": "If you're an arcane spellcaster who prepares from a spellbook, you can attempt to prepare a spell from someone else's spellbook. The GM sets the DC for the check based on the spell's rank and rarity; it's typically a bit easier than [Learning the Spell](/action/learn-a-spell-player-core).\n\n---\n\n**Success** You prepare the borrowed spell as part of your normal spell preparation.\n\n**Failure** You fail to prepare the spell, but the spell slot remains available for you to prepare a different spell. You can't try to prepare this spell until the next time you prepare spells.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -374,7 +404,17 @@
       "category": "",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -413,7 +453,13 @@
       "frequency": "",
       "requirements": "You have a burrow Speed",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -448,7 +494,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -483,7 +530,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You attempt a saving throw against a magical effect, but you haven't rolled yet",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -517,7 +565,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -544,14 +593,15 @@
     "systemVersion": "1.2.10",
     "name": "Cast a Spell",
     "slug": "cast-a-spell-player-core",
-    "descr": "Spells can vary in how many actions they take, as shown in the spell's stat block. You cast cantrips, spells from spell slots, and focus spells using the same process, but must expend the spell when casting a spell from a spell slot and must spend 1 Focus Point to cast a focus spell. Some rules will refer to the Cast a Spell activity, such as \"if the next action you use is to Cast a Spell.\" Any spell qualifies as a Cast a Spell activity, and any characteristics of the spell use those of the specific spell you're casting.\n\n**Costs and Loci** Some spells require you to pay a cost or provide a locus. If the spell lists a cost, you must have the listed money, valuable materials, or other resources to cast the spell (such as gems or magical reagents), and they're expended during the casting.\n\nA **locus** is an object that funnels or directs the magical energy of the spell but is not consumed in its casting. As part of Casting the Spell, you retrieve the locus (if necessary, and if you have a free hand), and you can put it away again if you so choose. Loci tend to be expensive, and you need to acquire them in advance to cast the spell, but they aren't expended like costs are. Unless noted otherwise, a locus has negligible Bulk.\n\n**Long Casting** **Times** Some spells take minutes or hours to cast. You can't use other actions or reactions while casting such a spell, though at the GM's discretion, you might be able to speak a few sentences. As with other activities that take a long time, these spells have the exploration trait, and you can't cast them in an encounter. If combat breaks out while you're casting one, your spell is disrupted.\n\n**Disrupted and Lost Spells** Some abilities and spells can disrupt a spell, causing it to have no effect and be lost. When you lose a spell, you've already expended the spell slot and spent the spell's costs and actions. If a spell is disrupted during a Sustain action, the spell immediately ends.",
+    "descr": "Spells can vary in how many actions they take, as shown in the spell's stat block. You cast cantrips, spells from spell slots, and focus spells using the same process, but must expend the spell when casting a spell from a spell slot and must spend 1 Focus Point to cast a focus spell. Some rules will refer to the Cast a Spell activity, such as \"if the next action you use is to Cast a Spell.\" Any spell qualifies as a Cast a Spell activity, and any characteristics of the spell use those of the specific spell you're casting.\n\n**Costs and Loci** Some spells require you to pay a cost or provide a locus. If the spell lists a cost, you must have the listed money, valuable materials, or other resources to cast the spell (such as gems or magical reagents), and they're expended during the casting.\n\nA **locus** is an object that funnels or directs the magical energy of the spell but is not consumed in its casting. As part of Casting the Spell, you retrieve the locus (if necessary, and if you have a free hand), and you can put it away again if you so choose. Loci tend to be expensive, and you need to acquire them in advance to cast the spell, but they aren't expended like costs are. Unless noted otherwise, a locus has negligible Bulk.\n\n**Long Casting** **Times** Some spells take minutes or hours to cast. You can't use other actions or reactions while casting such a spell, though at the GM's discretion, you might be able to speak a few sentences. As with other activities that take a long time, these spells have the [exploration](/trait/exploration) trait, and you can't cast them in an encounter. If combat breaks out while you're casting one, your spell is disrupted.\n\n**Disrupted and Lost Spells** Some abilities and spells can disrupt a spell, causing it to have no effect and be lost. When you lose a spell, you've already expended the spell slot and spent the spell's costs and actions. If a spell is disrupted during a [Sustain](/action/sustain-player-core) action, the spell immediately ends.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -578,7 +628,7 @@
     "systemVersion": "1.2.10",
     "name": "Climb",
     "slug": "climb-player-core",
-    "descr": "**Requirements** You have both hands free\n\n---\n\nYou attempt an Athletics check to move a maximum distance of 5 feet up, down, or across an incline. You're Off Guard while climbing unless you have a climb Speed. The GM determines the DC based on the nature of the incline and environmental circumstances; you might get an automatic critical success on an incline that's trivial to climb. If your land Speed is 40 feet or higher, increase the maximum distance by 5 feet for every 20 feet of Speed above 20 feet.\n\n---\n\n**Critical Success** You move along the incline, increasing the maximum distance by 5 feet.\n\n**Success** You move along the incline.\n\n**Critical Failure** You fall. If you began the climb on stable ground, you fall and land Prone.\n\n## Sample Climb Tasks\n\n**Untrained** ladder, steep slope, low-branched tree**Trained** rigging, rope, typical tree**Expert** wall with small handholds and footholds**Master** ceiling with handholds and footholds, rock wall**Legendary** smooth surface",
+    "descr": "**Requirements** You have both hands free\n\n---\n\nYou attempt an Athletics check to move a maximum distance of 5 feet up, down, or across an incline. You're [Off Guard](/condition/off-guard-player-core) while climbing unless you have a climb Speed. The GM determines the DC based on the nature of the incline and environmental circumstances; you might get an automatic critical success on an incline that's trivial to climb. If your land Speed is 40 feet or higher, increase the maximum distance by 5 feet for every 20 feet of Speed above 20 feet.\n\n---\n\n**Critical Success** You move along the incline, increasing the maximum distance by 5 feet.\n\n**Success** You move along the incline.\n\n**Critical Failure** You fall. If you began the climb on stable ground, you fall and land [Prone](/condition/prone-player-core).\n\n## Sample Climb Tasks\n\n**Untrained** ladder, steep slope, low-branched tree**Trained** rigging, rope, typical tree**Expert** wall with small handholds and footholds**Master** ceiling with handholds and footholds, rock wall**Legendary** smooth surface",
     "data": {
       "rarity": "common",
       "traits": [
@@ -588,7 +638,13 @@
       "frequency": "",
       "requirements": "You have both hands free",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -623,7 +679,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -664,7 +721,33 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -697,7 +780,7 @@
     "systemVersion": "1.2.10",
     "name": "Command an Animal",
     "slug": "command-an-animal-player-core",
-    "descr": "You issue an order to an animal. Attempt a Nature check against the animal's Will DC. The GM might adjust the DC if the animal has a good attitude toward you, you suggest a course of action it was predisposed toward, or you offer it a treat.\n\nYou automatically fail if the animal is hostile or unfriendly to you. If the animal is helpful to you, increase your degree of success by one step. You might be able to Command an Animal more easily with a feat like Ride.\n\nMost animals know the Drop Prone, Leap, Seek, Stand, Stride, and Strike basic actions. If an animal knows an activity, such as a horse's Gallop, you can Command the Animal to perform the activity, but you must spend as many actions on Command an Animal as the activity's number of actions. You can also spend multiple actions to Command the Animal to perform that number of basic actions on its next turn; for instance, you could spend 3 actions to Command an Animal to Stride three times or to Stride twice and then make a Strike.\n\n---\n\n**Success** The animal does as you command on its next turn.\n\n**Failure** The animal is hesitant or resistant, and it does nothing.\n\n**Critical Failure** The animal misbehaves or misunderstands, and it takes some other action determined by the GM.",
+    "descr": "You issue an order to an animal. Attempt a Nature check against the animal's Will DC. The GM might adjust the DC if the animal has a good attitude toward you, you suggest a course of action it was predisposed toward, or you offer it a treat.\n\nYou automatically fail if the animal is hostile or unfriendly to you. If the animal is helpful to you, increase your degree of success by one step. You might be able to Command an Animal more easily with a feat like [Ride](/feat/ride-player-core).\n\nMost animals know the [Drop Prone](/action/drop-prone-player-core), [Leap](/action/leap-player-core), [Seek](/action/seek-player-core), [Stand](/action/stand-player-core), [Stride](/action/stride-player-core), and [Strike](/action/strike-player-core) basic actions. If an animal knows an activity, such as a horse's Gallop, you can Command the Animal to perform the activity, but you must spend as many actions on Command an Animal as the activity's number of actions. You can also spend multiple actions to Command the Animal to perform that number of basic actions on its next turn; for instance, you could spend 3 actions to Command an Animal to Stride three times or to Stride twice and then make a Strike.\n\n---\n\n**Success** The animal does as you command on its next turn.\n\n**Failure** The animal is hesitant or resistant, and it does nothing.\n\n**Critical Failure** The animal misbehaves or misunderstands, and it takes some other action determined by the GM.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -708,7 +791,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -748,7 +841,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -777,14 +880,15 @@
     "systemVersion": "1.2.10",
     "name": "Construct",
     "slug": "construct-player-core",
-    "descr": "Your familiar has the construct trait instead of the animal trait. The familiar is immune to death effects, disease, doomed, drained, fatigued, healing, nonlethal attacks, paralyzed, poison, sickened, spirit, unconscious, vitality, and void. Your familiar must have the Tough pet ability to select this.",
+    "descr": "Your familiar has the [construct](/trait/construct) trait instead of the [animal](/trait/animal) trait. The familiar is immune to death effects, disease, doomed, drained, fatigued, healing, nonlethal attacks, paralyzed, poison, sickened, spirit, unconscious, vitality, and void. Your familiar must have the [Tough](/action/tough-player-core) pet ability to select this.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -811,7 +915,7 @@
     "systemVersion": "1.2.10",
     "name": "Cover Tracks",
     "slug": "cover-tracks-player-core",
-    "descr": "You cover your tracks, moving up to half your travel Speed, using the Travel Speed rules. You don't need to attempt a Survival check to cover your tracks, but anyone tracking you must succeed at a Survival check against your Survival DC if it is higher than the normal DC to Track.\n\nIn some cases, you might Cover Tracks in an encounter. In this case, Cover Tracks is a single action and doesn't have the exploration trait.",
+    "descr": "You cover your tracks, moving up to half your travel Speed, using the [Travel Speed](/rule/travel-speed-rules-2441) rules. You don't need to attempt a Survival check to cover your tracks, but anyone tracking you must succeed at a Survival check against your Survival DC if it is higher than the normal DC to [Track](/action/track-player-core).\n\nIn some cases, you might Cover Tracks in an encounter. In this case, Cover Tracks is a single action and doesn't have the [exploration](/trait/exploration) trait.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -822,7 +926,21 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -852,7 +970,7 @@
     "systemVersion": "1.2.10",
     "name": "Craft",
     "slug": "craft-player-core",
-    "descr": "You can make an item from raw materials. You need the Alchemical Crafting skill feat to create alchemical items and the Magical Crafting feat to create magic items.\n\nTo craft an item, you must meet the following requirements:\n\nThe item is your level or lower. An item that doesn't list a level is level 0. If the item is 9th level or higher, you must be a master in Crafting, and if it's 17th or higher, you must be legendary.The item must be common, or you must otherwise have access to it.You have an appropriate set of tools and, in many cases, a workshop. For example, you need access to a smithy to forge a metal shield, or an Alchemist'S Lab to produce alchemical items.You must supply raw materials worth at least half the item's Price. You always expend at least that amount of raw materials when you Craft successfully. If you're in a settlement, you can usually spend currency to get the amount of raw materials you need, except in the case of rarer precious materials.\n\nYou attempt a Crafting check after you spend 2 days of work setting up, or 1 day if you have the item's formula. The GM determines the DC to Craft the item based on its level, rarity, and other circumstances.\n\nIf your attempt to create the item is successful, you expend the raw materials you supplied. You can pay the remaining portion of the item's Price in materials to complete the item immediately, or you can spend additional downtime days working on it. For each additional day you spend, reduce the value of the materials you need to expend to complete the item. This amount is determined using the Income Earned table, based on your proficiency rank in Crafting and using your own level instead of a task level.\n\nAfter any of these downtime days, you can complete the item by spending the remaining portion of its Price in materials. If the downtime days you spend are interrupted,you can return to finish the item later, continuing where you left off.\n\n---\n\n**Critical Success** Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level + 1 and your proficiency rank in Crafting.\n\n**Success** Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level and your proficiency rank.\n\n**Failure** You fail to complete the item. You can salvage the raw materials you supplied for their full value. If you want to try again, you must start over.\n\n**Critical Failure** You fail to complete the item. You ruin 10% of the raw materials you supplied, but you can salvage the rest. If you want to try again, you must start over.",
+    "descr": "You can make an item from raw materials. You need the [Alchemical Crafting](/feat/alchemical-crafting-player-core) skill feat to create alchemical items and the [Magical Crafting](/feat/magical-crafting-player-core) feat to create magic items.\n\nTo craft an item, you must meet the following requirements:\n\nThe item is your level or lower. An item that doesn't list a level is level 0. If the item is 9th level or higher, you must be a master in Crafting, and if it's 17th or higher, you must be legendary.The item must be common, or you must otherwise have access to it.You have an appropriate set of tools and, in many cases, a workshop. For example, you need access to a smithy to forge a metal shield, or an [Alchemist'S Lab](/item/alchemist-s-lab-player-core) to produce alchemical items.You must supply raw materials worth at least half the item's Price. You always expend at least that amount of raw materials when you Craft successfully. If you're in a settlement, you can usually spend currency to get the amount of raw materials you need, except in the case of rarer precious materials.\n\nYou attempt a Crafting check after you spend 2 days of work setting up, or 1 day if you have the item's formula. The GM determines the DC to Craft the item based on its level, rarity, and other circumstances.\n\nIf your attempt to create the item is successful, you expend the raw materials you supplied. You can pay the remaining portion of the item's Price in materials to complete the item immediately, or you can spend additional downtime days working on it. For each additional day you spend, reduce the value of the materials you need to expend to complete the item. This amount is determined using the Income Earned table, based on your proficiency rank in Crafting and using your own level instead of a task level.\n\nAfter any of these downtime days, you can complete the item by spending the remaining portion of its Price in materials. If the downtime days you spend are interrupted,you can return to finish the item later, continuing where you left off.\n\n---\n\n**Critical Success** Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level + 1 and your proficiency rank in Crafting.\n\n**Success** Your attempt is successful. Each additional day spent Crafting reduces the materials needed to complete the item by an amount based on your level and your proficiency rank.\n\n**Failure** You fail to complete the item. You can salvage the raw materials you supplied for their full value. If you want to try again, you must start over.\n\n**Critical Failure** You fail to complete the item. You ruin 10% of the raw materials you supplied, but you can salvage the rest. If you want to try again, you must start over.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -862,7 +980,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -891,7 +1019,7 @@
     "systemVersion": "1.2.10",
     "name": "Crawl",
     "slug": "crawl-player-core",
-    "descr": "**Requirements** You are prone and your Speed is at least 10 feet.\n\n---\n\nYou move 5 feet by crawling and continue to stay Prone.",
+    "descr": "**Requirements** You are prone and your Speed is at least 10 feet.\n\n---\n\nYou move 5 feet by crawling and continue to stay [Prone](/condition/prone-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -901,7 +1029,13 @@
       "frequency": "",
       "requirements": "You are prone and your Speed is at least 10 feet",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -929,7 +1063,7 @@
     "systemVersion": "1.2.10",
     "name": "Create a Diversion",
     "slug": "create-a-diversion-player-core",
-    "descr": "With a gesture, a trick, or some distracting words, you can create a diversion that draws creatures' attention elsewhere. If you use a gesture or trick, this action gains the manipulate trait. If you use distracting words, it gains the auditory and linguistic traits.\n\nAttempt a single Deception check and compare it to the Perception DCs of the creatures whose attention you're trying to divert. Whether or not you succeed, creatures you attempt to divert gain a +4 circumstance bonus to their Perception DCs against your attempts to Create a Diversion for 1 minute.\n\n---\n\n**Success** You become Hidden to each creature whose Perception DC is less than or equal to your result. (The hidden condition allows you to Sneak away.) This lasts until the end of your turn or until you do anything except Step or use the Stealth skill to Hide or Sneak. If you Strike a creature, the creature remains Off Guard against that attack, and you then become observed. If you do anything else, you become observed just before you act unless the GM determines otherwise.\n\n**Failure** You don't divert the attention of any creatures whose Perception DC exceeds your result, and those creatures are aware you were trying to trick them.",
+    "descr": "With a gesture, a trick, or some distracting words, you can create a diversion that draws creatures' attention elsewhere. If you use a gesture or trick, this action gains the [manipulate](/trait/manipulate) trait. If you use distracting words, it gains the auditory and [linguistic](/trait/linguistic) traits.\n\nAttempt a single Deception check and compare it to the Perception DCs of the creatures whose attention you're trying to divert. Whether or not you succeed, creatures you attempt to divert gain a +4 circumstance bonus to their Perception DCs against your attempts to Create a Diversion for 1 minute.\n\n---\n\n**Success** You become [Hidden](/condition/hidden-player-core) to each creature whose Perception DC is less than or equal to your result. (The hidden condition allows you to [Sneak](/action/sneak-player-core) away.) This lasts until the end of your turn or until you do anything except Step or use the Stealth skill to Hide or Sneak. If you Strike a creature, the creature remains [Off Guard](/condition/off-guard-player-core) against that attack, and you then become observed. If you do anything else, you become observed just before you act unless the GM determines otherwise.\n\n**Failure** You don't divert the attention of any creatures whose Perception DC exceeds your result, and those creatures are aware you were trying to trick them.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -939,7 +1073,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -977,7 +1117,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "You provide the proper writing materials for your forgery",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1013,7 +1163,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1047,7 +1198,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1074,7 +1226,7 @@
     "systemVersion": "1.2.10",
     "name": "Debilitating Strike",
     "slug": "debilitating-strike-player-core",
-    "descr": "**Trigger** Your Strike hits an off-guard creature and deals damage\n\n---\n\nYou apply one of the following debilitations, which lasts until the end of your next turn:\n\n**Debilitation** The target takes a –10-foot status penalty to its Speeds.**Debilitation** The target becomes Enfeebled 1.",
+    "descr": "**Trigger** Your Strike hits an [off-guard](/condition/off-guard-player-core) creature and deals damage\n\n---\n\nYou apply one of the following debilitations, which lasts until the end of your next turn:\n\n**Debilitation** The target takes a –10-foot status penalty to its Speeds.**Debilitation** The target becomes [Enfeebled 1](/condition/enfeebled-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1084,7 +1236,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "Your Strike hits an off-guard creature and deals damage",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "rogue",
+          "slug": "rogue"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1123,7 +1281,21 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1153,7 +1325,7 @@
     "systemVersion": "1.2.10",
     "name": "Defend",
     "slug": "defend-player-core",
-    "descr": "You move at half your travel speed with your shield raised. If combat breaks out, you gain the benefits of Raising a Shield before your first turn begins.",
+    "descr": "You move at half your travel speed with your shield raised. If combat breaks out, you gain the benefits of [Raising a Shield](/action/raise-a-shield-player-core) before your first turn begins.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1162,7 +1334,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1190,7 +1368,7 @@
     "systemVersion": "1.2.10",
     "name": "Delay",
     "slug": "delay-player-core",
-    "descr": "**Trigger** Your turn begins.\n\n---\n\nYou wait for the right moment to act. The rest of your turn doesn't happen yet. Instead, you're removed from the initiative order. You can return to the initiative order as a free action triggered by the end of any other creature's turn. This permanently changes your initiative to the new position. You can't use reactions until you return to the initiative order. If you Delay an entire round without returning to the initiative order, the actions from the Delayed turn are lost, your initiative doesn't change, and your next turn occurs at your original position in the initiative order.\n\nWhen you Delay, any Persistent Damage or other negative effects that normally occur at the start or end of your turn occur immediately when you use the Delay action. Any beneficial effects that would end at any point during your turn also end. The GM might determine that other effects end when you Delay as well. Essentially, you can't Delay to avoid negative consequences that would happen on your turn or to extend beneficial effects that would end on your turn.",
+    "descr": "**Trigger** Your turn begins.\n\n---\n\nYou wait for the right moment to act. The rest of your turn doesn't happen yet. Instead, you're removed from the initiative order. You can return to the initiative order as a free action triggered by the end of any other creature's turn. This permanently changes your initiative to the new position. You can't use reactions until you return to the initiative order. If you Delay an entire round without returning to the initiative order, the actions from the Delayed turn are lost, your initiative doesn't change, and your next turn occurs at your original position in the initiative order.\n\nWhen you Delay, any [Persistent Damage](/condition/persistent-damage-player-core) or other negative effects that normally occur at the start or end of your turn occur immediately when you use the Delay action. Any beneficial effects that would end at any point during your turn also end. The GM might determine that other effects end when you Delay as well. Essentially, you can't Delay to avoid negative consequences that would happen on your turn or to extend beneficial effects that would end on your turn.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1198,7 +1376,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "Your turn begins",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1225,7 +1404,7 @@
     "systemVersion": "1.2.10",
     "name": "Demoralize",
     "slug": "demoralize-player-core",
-    "descr": "With a sudden shout, a well-timed taunt, or a cutting put-down, you can shake an enemy's resolve. Choose a creature within 30 feet of you who you're aware of. Attempt an Intimidation check against that target's Will DC. If the target doesn't understand the language you are speaking, or you're not speaking a language, you take a –4 circumstance penalty to the check. Regardless of your result, the target is temporarily immune to your attempts to Demoralize it for 10 minutes.\n\n---\n\n**Critical Success** The target becomes Frightened 2.\n\n**Success** The target becomes Frightened 1.",
+    "descr": "With a sudden shout, a well-timed taunt, or a cutting put-down, you can shake an enemy's resolve. Choose a creature within 30 feet of you who you're aware of. Attempt an Intimidation check against that target's Will DC. If the target doesn't understand the language you are speaking, or you're not speaking a language, you take a –4 circumstance penalty to the check. Regardless of your result, the target is temporarily immune to your attempts to Demoralize it for 10 minutes.\n\n---\n\n**Critical Success** The target becomes [Frightened 2](/condition/frightened-player-core).\n\n**Success** The target becomes Frightened 1.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1239,7 +1418,29 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "fear",
+          "slug": "fear"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1271,7 +1472,7 @@
     "systemVersion": "1.2.10",
     "name": "Detect Magic",
     "slug": "detect-magic-player-core",
-    "descr": "You cast Detect Magic at regular intervals. You move at half your travel speed or slower. You have no chance of accidentally overlooking a magic aura at a travel speed up to 300 feet per minute, but must be traveling no more than 150 feet per minute to detect magic auras before the party moves into them.",
+    "descr": "You cast [Detect Magic](/spell/detect-magic-player-core) at regular intervals. You move at half your travel speed or slower. You have no chance of accidentally overlooking a magic aura at a travel speed up to 300 feet per minute, but must be traveling no more than 150 feet per minute to detect magic auras before the party moves into them.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1281,7 +1482,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1310,7 +1521,7 @@
     "systemVersion": "1.2.10",
     "name": "Disable a Device",
     "slug": "disable-a-device-player-core",
-    "descr": "This action allows you to disarm a trap or another complex device. Often, a device requires numerous successes before becoming disabled, depending on its construction and complexity. A Thieves' Toolkit is helpful and sometimes even required to Disable a Device, as determined by the GM, and sometimes a device requires a higher proficiency rank in Thievery to disable it.\n\nYour Thievery check result determines your progress.\n\n---\n\n**Critical Success** You disable the device, or you achieve two successes toward disabling a device requiring more than one success. You leave no trace of your tampering, and you can rearm the device later, if that type of device can be rearmed.\n\n**Success** You disable the device, or you achieve one success toward disabling a device that requires more than one success.\n\n**Critical Failure** You trigger the device.",
+    "descr": "This action allows you to disarm a trap or another complex device. Often, a device requires numerous successes before becoming disabled, depending on its construction and complexity. A [Thieves' Toolkit](/item/thieves-toolkit-player-core) is helpful and sometimes even required to Disable a Device, as determined by the GM, and sometimes a device requires a higher proficiency rank in Thievery to disable it.\n\nYour Thievery check result determines your progress.\n\n---\n\n**Critical Success** You disable the device, or you achieve two successes toward disabling a device requiring more than one success. You leave no trace of your tampering, and you can rearm the device later, if that type of device can be rearmed.\n\n**Success** You disable the device, or you achieve one success toward disabling a device that requires more than one success.\n\n**Critical Failure** You trigger the device.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1320,7 +1531,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1348,7 +1565,7 @@
     "systemVersion": "1.2.10",
     "name": "Disarm",
     "slug": "disarm-player-core",
-    "descr": "**Requirements** You have at least one hand free. The target can't be more than one size larger than you.\n\n---\n\nYou try to knock an item out of a creature's grasp. Attempt an Athletics check against the target's Reflex DC.\n\n---\n\n**Critical Success** You knock the item out of the target's grasp. It falls to the ground in the target's space.\n\n**Success** You weaken your target's grasp on the item. Further attempts to Disarm the target of that item gain a +2 circumstance bonus, and the target takes a –2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item. The creature can end the effect by Interacting to change its grip on the item; otherwise, it lasts as long as the creature holds the item.\n\nEffect: Disarm (Success)\n\n**Critical Failure** You lose your balance and become Off Guard until the start of your next turn.",
+    "descr": "**Requirements** You have at least one hand free. The target can't be more than one size larger than you.\n\n---\n\nYou try to knock an item out of a creature's grasp. Attempt an Athletics check against the target's Reflex DC.\n\n---\n\n**Critical Success** You knock the item out of the target's grasp. It falls to the ground in the target's space.\n\n**Success** You weaken your target's grasp on the item. Further attempts to Disarm the target of that item gain a +2 circumstance bonus, and the target takes a –2 circumstance penalty to attacks with the item or other checks requiring a firm grasp on the item. The creature can end the effect by Interacting to change its grip on the item; otherwise, it lasts as long as the creature holds the item.\n\n[Effect: Disarm (Success)](/condition/effect-disarm-success-player-core)\n\n**Critical Failure** You lose your balance and become [Off Guard](/condition/off-guard-player-core) until the start of your next turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1358,7 +1575,13 @@
       "frequency": "",
       "requirements": "You have at least one hand free. The target can't be more than one size larger than you",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1396,7 +1619,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1424,14 +1653,15 @@
     "systemVersion": "1.2.10",
     "name": "Dragon",
     "slug": "dragon-player-core",
-    "descr": "Your familiar has the dragon trait instead of the animal trait.",
+    "descr": "Your familiar has the [dragon](/trait/dragon) trait instead of the [animal](/trait/animal) trait.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1466,7 +1696,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1504,7 +1735,17 @@
       "frequency": "once per day",
       "requirements": "Your bonded item is on your person",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1533,7 +1774,7 @@
     "systemVersion": "1.2.10",
     "name": "Drop Prone",
     "slug": "drop-prone-player-core",
-    "descr": "You fall Prone.",
+    "descr": "You fall [Prone](/condition/prone-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1543,7 +1784,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1580,7 +1827,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1615,7 +1868,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1642,7 +1896,7 @@
     "systemVersion": "1.2.10",
     "name": "Escape",
     "slug": "escape-player-core",
-    "descr": "You attempt to escape from being Grabbed, Immobilized, or Restrained. Choose one creature, object, spell effect, hazard, or other impediment imposing any of those conditions on you. Attempt a check using your unarmed attack modifier against the DC of the effect. This is typically the Athletics DC of a creature grabbing you, the Thievery DC of a creature who tied you up, the spell DC for a spell effect, or the listed Escape DC of an object, hazard, or other impediment. You can attempt an Acrobatics or Athletics check instead of using your attack modifier if you choose (but this action still has the attack trait).\n\n---\n\n**Critical Success** You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target. You can then Stride up to 5 feet.\n\n**Success** You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target.\n\n**Critical Failure** You don't get free, and you can't attempt to Escape again until your next turn.",
+    "descr": "You attempt to escape from being [Grabbed](/condition/grabbed-player-core), [Immobilized](/condition/immobilized-player-core), or [Restrained](/condition/restrained-player-core). Choose one creature, object, spell effect, hazard, or other impediment imposing any of those conditions on you. Attempt a check using your unarmed attack modifier against the DC of the effect. This is typically the Athletics DC of a creature grabbing you, the Thievery DC of a creature who tied you up, the spell DC for a spell effect, or the listed Escape DC of an object, hazard, or other impediment. You can attempt an Acrobatics or Athletics check instead of using your attack modifier if you choose (but this action still has the [attack](/trait/attack) trait).\n\n---\n\n**Critical Success** You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target. You can then Stride up to 5 feet.\n\n**Success** You get free and remove the grabbed, immobilized, and restrained conditions imposed by your chosen target.\n\n**Critical Failure** You don't get free, and you can't attempt to Escape again until your next turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1652,7 +1906,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1680,7 +1940,7 @@
     "systemVersion": "1.2.10",
     "name": "Familiar Focus",
     "slug": "familiar-focus-player-core",
-    "descr": "Once per day, your familiar can use 2 actions with the concentrate trait to restore 1 Focus Point to your focus pool, up to your usual maximum. You must have a focus pool to select this.",
+    "descr": "Once per day, your familiar can use 2 actions with the [concentrate](/trait/concentrate) trait to restore 1 Focus Point to your focus pool, up to your usual maximum. You must have a focus pool to select this.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1688,7 +1948,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1722,7 +1983,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1756,7 +2018,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1790,7 +2053,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1817,14 +2081,15 @@
     "systemVersion": "1.2.10",
     "name": "Familiar of Keen Senses",
     "slug": "familiar-of-keen-senses-player-core",
-    "descr": "Your familiar has glinting eyes, twitching ears, or some other sign of a beast's powerful senses. When you Cast or Sustain a hex, your familiar gains your choice of an imprecise scent, tremorsense, or wavesense, with a range of 60 feet until the start of your next turn, and it can immediately Point Out as a free action.\n\nEffect: Familiar Of Keen Senses",
+    "descr": "Your familiar has glinting eyes, twitching ears, or some other sign of a beast's powerful senses. When you Cast or Sustain a hex, your familiar gains your choice of an imprecise scent, tremorsense, or wavesense, with a range of 60 feet until the start of your next turn, and it can immediately [Point Out](/action/point-out-player-core) as a free action.\n\nEffect: Familiar Of Keen Senses",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1858,7 +2123,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1892,7 +2158,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1919,14 +2186,15 @@
     "systemVersion": "1.2.10",
     "name": "Familiar of Stalking Night",
     "slug": "familiar-of-stalking-night-player-core",
-    "descr": "Your familiar is dark of fur or feather, and light seems to disappear into it. When you Cast or Sustain a hex, and your familiar is adjacent to an enemy to which it's Concealed, Hidden, or undetected, the enemy becomes Frightened 1.",
+    "descr": "Your familiar is dark of fur or feather, and light seems to disappear into it. When you Cast or Sustain a hex, and your familiar is adjacent to an enemy to which it's [Concealed](/condition/concealed-player-core), [Hidden](/condition/hidden-player-core), or undetected, the enemy becomes [Frightened 1](/condition/frightened-player-core).",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1960,7 +2228,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1987,7 +2256,7 @@
     "systemVersion": "1.2.10",
     "name": "Feint",
     "slug": "feint-player-core",
-    "descr": "**Requirements** You are within melee reach of the target you attempt to Feint.\n\n---\n\nWith a misleading flourish, you leave an opponent unprepared for your real attack. Attempt a Deception check against your target's Perception DC.\n\n---\n\n**Critical Success** You throw your enemy's defenses against you entirely off. The target is Off Guard against melee attacks that you attempt against it until the end of your next turn.\n\n**Success** Your foe is fooled, but only momentarily. The target is off-guard against the next melee attack that you attempt against it before the end of your current turn.\n\n**Critical Failure** Your feint backfires. You are off-guard against melee attacks the target attempts against you until the end of your next turn.",
+    "descr": "**Requirements** You are within melee reach of the target you attempt to Feint.\n\n---\n\nWith a misleading flourish, you leave an opponent unprepared for your real attack. Attempt a Deception check against your target's Perception DC.\n\n---\n\n**Critical Success** You throw your enemy's defenses against you entirely off. The target is [Off Guard](/condition/off-guard-player-core) against melee attacks that you attempt against it until the end of your next turn.\n\n**Success** Your foe is fooled, but only momentarily. The target is off-guard against the next melee attack that you attempt against it before the end of your current turn.\n\n**Critical Failure** Your feint backfires. You are off-guard against melee attacks the target attempts against you until the end of your next turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1997,7 +2266,13 @@
       "frequency": "",
       "requirements": "You are within melee reach of the target you attempt to Feint",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2032,7 +2307,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2069,7 +2345,13 @@
       "frequency": "",
       "requirements": "You have a fly Speed",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2104,7 +2386,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2131,7 +2414,7 @@
     "systemVersion": "1.2.10",
     "name": "Follow the Expert",
     "slug": "follow-the-expert-player-core",
-    "descr": "Choose an ally attempting a recurring skill check while exploring, such as climbing, or performing a different exploration tactic that requires a skill check (like Avoiding Notice). The ally must be at least an expert in that skill and must be willing to provide assistance. While Following the Expert, you match their tactic or attempt similar skill checks.\n\nThanks to your ally's assistance, you can add your level as a proficiency bonus to the associated skill check, even if you're untrained. Additionally, you gain a circumstance bonus to your skill check based on your ally's proficiency (+2 for expert, +3 for master, and +4 for legendary).\n\nEffect: Follow The Expert",
+    "descr": "Choose an ally attempting a recurring skill check while exploring, such as climbing, or performing a different exploration tactic that requires a skill check (like [Avoiding Notice](/action/avoid-notice-player-core)). The ally must be at least an expert in that skill and must be willing to provide assistance. While Following the Expert, you match their tactic or attempt similar skill checks.\n\nThanks to your ally's assistance, you can add your level as a proficiency bonus to the associated skill check, even if you're untrained. Additionally, you gain a circumstance bonus to your skill check based on your ally's proficiency (+2 for expert, +3 for master, and +4 for legendary).\n\n[Effect: Follow The Expert](/condition/effect-follow-the-expert-player-core)",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2143,7 +2426,25 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2174,7 +2475,7 @@
     "systemVersion": "1.2.10",
     "name": "Force Open",
     "slug": "force-open-player-core",
-    "descr": "Using your body, a lever, or some other tool, you attempt to forcefully open a door, window, container or heavy gate. With a high enough result, you can even smash through walls. Without a crowbar, prying something open takes a –2 item penalty to the Athletics check to Force Open.\n\n---\n\n**Critical Success** You open the door, window, container, or gate and can avoid damaging it in the process.\n\n**Success** You break the door, window, container, or gate open, and it gains the Broken condition. If it's especially sturdy, the GM might have it take damage but not be broken.\n\n**Critical Failure** Your attempt jams the door, window, container, or gate shut, imposing a –2 circumstance penalty on future attempts to Force it Open.\n\n## Sample Force Open Tasks\n\n**Untrained** fabric, flimsy glass**Trained** ice, sturdy glass**Expert** flimsy wooden door, wooden portcullis**Master** sturdy wooden door, iron portcullis, metal bar**Legendary** stone or iron door",
+    "descr": "Using your body, a lever, or some other tool, you attempt to forcefully open a door, window, container or heavy gate. With a high enough result, you can even smash through walls. Without a crowbar, prying something open takes a –2 item penalty to the Athletics check to Force Open.\n\n---\n\n**Critical Success** You open the door, window, container, or gate and can avoid damaging it in the process.\n\n**Success** You break the door, window, container, or gate open, and it gains the [Broken](/condition/broken-player-core) condition. If it's especially sturdy, the GM might have it take damage but not be broken.\n\n**Critical Failure** Your attempt jams the door, window, container, or gate shut, imposing a –2 circumstance penalty on future attempts to Force it Open.\n\n## Sample Force Open Tasks\n\n**Untrained** fabric, flimsy glass**Trained** ice, sturdy glass**Expert** flimsy wooden door, wooden portcullis**Master** sturdy wooden door, iron portcullis, metal bar**Legendary** stone or iron door",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2184,7 +2485,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2212,7 +2519,7 @@
     "systemVersion": "1.2.10",
     "name": "Foresight",
     "slug": "foresight-player-core",
-    "descr": "**Trigger** The target of Foresight defends against a hostile creature or other danger.\n\n---\n\n**Effect** If the hostile creature or danger forces the target to roll dice (a saving throw, for example), the target rolls twice and uses the higher result, and this spell gains the fortune trait. But if the hostile creature or danger is rolling against the target (an attack roll or skill check, for example), that hostile creature or danger rolls twice and uses the lower result, and this spell gains the misfortune trait.",
+    "descr": "**Trigger** The target of [Foresight](/spell/foresight-player-core) defends against a [hostile](/condition/hostile-player-core) creature or other danger.\n\n---\n\n**Effect** If the hostile creature or danger forces the target to roll dice (a saving throw, for example), the target rolls twice and uses the higher result, and this spell gains the [fortune](/trait/fortune) trait. But if the hostile creature or danger is rolling against the target (an attack roll or skill check, for example), that hostile creature or danger rolls twice and uses the lower result, and this spell gains the [misfortune](/trait/misfortune) trait.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -2220,7 +2527,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "The target of Foresight defends against a hostile creature or other danger",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2247,14 +2555,15 @@
     "systemVersion": "1.2.10",
     "name": "Fungus",
     "slug": "fungus-player-core",
-    "descr": "Your familiar has the fungus trait instead of the animal trait.",
+    "descr": "Your familiar has the [fungus](/trait/fungus) trait instead of the [animal](/trait/animal) trait.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2291,7 +2600,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2320,7 +2639,7 @@
     "systemVersion": "1.2.10",
     "name": "Grab an Edge",
     "slug": "grab-an-edge-player-core",
-    "descr": "**Trigger** You fall from or past an edge or handhold.\n\n**Requirements** Your hands are not tied behind your back or otherwise restrained.\n\n---\n\nWhen you fall off or past an edge or other handhold, you can try to grab it, potentially stopping your fall. You must succeed at your choice of an Acrobatics check or a Reflex save, usually at the Climb DC. If you grab the edge or handhold, you can then Climb up using Athletics.\n\n---\n\n**Critical Success** You grab the edge or handhold, whether or not you have a hand free, typically by using a suitable held item to catch yourself (catching a battle axe on a ledge, for example). You still take damage from the distance fallen so far, but you treat the fall as though it were 30 feet shorter.\n\n**Success** If you have at least one hand free, you grab the edge or handhold, stopping your fall. You still take damage from the distance fallen so far, but you treat the fall as though it were 20 feet shorter. If you have no hands free, you continue to fall as if you had failed the check.\n\n**Critical Failure** You continue to fall, and if you've fallen 20 feet or more before you use this reaction, you take 10 bludgeoning damage from the impact for every 20 feet fallen.",
+    "descr": "**Trigger** You fall from or past an edge or handhold.\n\n**Requirements** Your hands are not tied behind your back or otherwise restrained.\n\n---\n\nWhen you fall off or past an edge or other handhold, you can try to grab it, potentially stopping your fall. You must succeed at your choice of an Acrobatics check or a Reflex save, usually at the Climb DC. If you grab the edge or handhold, you can then [Climb](/action/climb-player-core) up using Athletics.\n\n---\n\n**Critical Success** You grab the edge or handhold, whether or not you have a hand free, typically by using a suitable held item to catch yourself (catching a battle axe on a ledge, for example). You still take damage from the distance fallen so far, but you treat the fall as though it were 30 feet shorter.\n\n**Success** If you have at least one hand free, you grab the edge or handhold, stopping your fall. You still take damage from the distance fallen so far, but you treat the fall as though it were 20 feet shorter. If you have no hands free, you continue to fall as if you had failed the check.\n\n**Critical Failure** You continue to fall, and if you've fallen 20 feet or more before you use this reaction, you take 10 bludgeoning damage from the impact for every 20 feet fallen.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2330,7 +2649,13 @@
       "frequency": "",
       "requirements": "Your hands are not tied behind your back or otherwise restrained",
       "trigger": "You fall from or past an edge or handhold",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2358,7 +2683,7 @@
     "systemVersion": "1.2.10",
     "name": "Grapple",
     "slug": "grapple-player-core",
-    "descr": "**Requirements** You have at least one free hand and your target is no more than one size larger than you.\n\n---\n\nYou attempt to grab a creature or object with your free hand. Attempt an Athletics check against the target's Fortitude DC. You can grapple a target you already have Grabbed or Restrained without having a hand free.\n\n---\n\n**Critical Success** Your target is restrained until the end of your next turn unless you move or your target Escapes.\n\n**Success** Your target is grabbed until the end of your next turn unless you move or your target Escapes.\n\n**Failure** You fail to grab your target. If you already had the target grabbed or restrained using a Grapple, those conditions on the target end.\n\n**Critical Failure** If you already had the target grabbed or restrained, it breaks free. Your target can either grab you, as if it succeeded at using the Grapple action against you, or force you to fall and land Prone.",
+    "descr": "**Requirements** You have at least one free hand and your target is no more than one size larger than you.\n\n---\n\nYou attempt to grab a creature or object with your free hand. Attempt an Athletics check against the target's Fortitude DC. You can grapple a target you already have [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) without having a hand free.\n\n---\n\n**Critical Success** Your target is restrained until the end of your next turn unless you move or your target Escapes.\n\n**Success** Your target is grabbed until the end of your next turn unless you move or your target Escapes.\n\n**Failure** You fail to grab your target. If you already had the target grabbed or restrained using a Grapple, those conditions on the target end.\n\n**Critical Failure** If you already had the target grabbed or restrained, it breaks free. Your target can either grab you, as if it succeeded at using the Grapple action against you, or force you to fall and land [Prone](/condition/prone-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2368,7 +2693,13 @@
       "frequency": "",
       "requirements": "You have at least one free hand and your target is no more than one size larger than you",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2396,14 +2727,15 @@
     "systemVersion": "1.2.10",
     "name": "Grasping Tendrils",
     "slug": "grasping-tendrils-player-core",
-    "descr": "**Prerequisites** Leshy Familiar Secrets\n\nYour familiar can extend vines or similar tendrils, increasing its reach to 15 feet.",
+    "descr": "**Prerequisites** [Leshy Familiar Secrets](/feat/leshy-familiar-secrets-player-core)\n\nYour familiar can extend vines or similar tendrils, increasing its reach to 15 feet.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2430,7 +2762,7 @@
     "systemVersion": "1.2.10",
     "name": "Hide",
     "slug": "hide-player-core",
-    "descr": "You huddle behind cover or greater cover or deeper into concealment to become Hidden, rather than Observed. The GM rolls your Stealth check in secret and compares the result to the Perception DC of each creature you're observed by but that you have cover or greater cover against or are Concealed from. You get a +2 circumstance bonus to your check if you have standard cover (or +4 from greater cover).\n\n---\n\n**Success** If the creature could see you, you're now Hidden from it instead of observed. If you were hidden from or Undetected by the creature, you retain that condition.\n\nIf you successfully become hidden to a creature but then cease to have cover or greater cover against it or be concealed from it, you become observed again. You cease being hidden if you do anything except Hide, Sneak, or Step. If you attempt to Strike a creature, the creature remains off-guard against that attack, and you then become observed. If you do anything else, you become observed just before you act unless the GM determines otherwise. The GM might allow you to perform a particularly unobtrusive action without being noticed, possibly requiring another Stealth check.\n\nIf a creature uses Seek to make you observed by it, you must successfully Hide to become hidden from it again.",
+    "descr": "You huddle behind cover or greater cover or deeper into concealment to become [Hidden](/condition/hidden-player-core), rather than [Observed](/condition/observed-player-core). The GM rolls your Stealth check in secret and compares the result to the Perception DC of each creature you're observed by but that you have cover or greater cover against or are [Concealed](/condition/concealed-player-core) from. You get a +2 circumstance bonus to your check if you have standard cover (or +4 from greater cover).\n\n---\n\n**Success** If the creature could see you, you're now Hidden from it instead of observed. If you were hidden from or [Undetected](/condition/undetected-player-core) by the creature, you retain that condition.\n\nIf you successfully become hidden to a creature but then cease to have cover or greater cover against it or be concealed from it, you become observed again. You cease being hidden if you do anything except Hide, [Sneak](/action/sneak-player-core), or [Step](/action/step-player-core). If you attempt to Strike a creature, the creature remains off-guard against that attack, and you then become observed. If you do anything else, you become observed just before you act unless the GM determines otherwise. The GM might allow you to perform a particularly unobtrusive action without being noticed, possibly requiring another Stealth check.\n\nIf a creature uses [Seek](/action/seek-player-core) to make you observed by it, you must successfully Hide to become hidden from it again.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2440,7 +2772,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2468,7 +2806,7 @@
     "systemVersion": "1.2.10",
     "name": "High Jump",
     "slug": "high-jump-player-core",
-    "descr": "You Stride, then attempt a DC 30 Athletics check to jump vertically. If you didn't Stride at least 10 feet, you automatically fail. This DC might be increased or decreased due to the situation, as determined by the GM.\n\n---\n\n**Critical Success** You Leap up to 8 feet vertically and 10 feet horizontally.\n\n**Success** You Leap up to 5 feet vertically and 5 feet horizontally.\n\n**Failure** You Leap normally.\n\n**Critical Failure** You fall Prone in your space.",
+    "descr": "You Stride, then attempt a DC 30 Athletics check to jump vertically. If you didn't Stride at least 10 feet, you automatically fail. This DC might be increased or decreased due to the situation, as determined by the GM.\n\n---\n\n**Critical Success** You [Leap](/action/leap-player-core) up to 8 feet vertically and 10 feet horizontally.\n\n**Success** You Leap up to 5 feet vertically and 5 feet horizontally.\n\n**Failure** You Leap normally.\n\n**Critical Failure** You fall [Prone](/condition/prone-player-core) in your space.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2478,7 +2816,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2506,7 +2850,7 @@
     "systemVersion": "1.2.10",
     "name": "Hunt Prey",
     "slug": "hunt-prey-player-core",
-    "descr": "You designate a single creature as your prey and focus your attacks against that creature. You must be able to see or hear the prey, or you must be tracking the prey during exploration.\n\nYou gain a +2 circumstance bonus to Perception checks when you Seek your prey and a +2 circumstance bonus to Survival checks when you Track your prey. You also ignore the penalty for making ranged attacks within your second range increment against the prey you're hunting.\n\nYou can have only one creature designated as your prey at a time. If you use Hunt Prey against a creature when you already have a creature designated, the prior creature loses the designation and the new prey gains the designation. Your designation lasts until your next daily preparations.",
+    "descr": "You designate a single creature as your prey and focus your attacks against that creature. You must be able to see or hear the prey, or you must be tracking the prey during exploration.\n\nYou gain a +2 circumstance bonus to Perception checks when you [Seek](/action/seek-player-core) your prey and a +2 circumstance bonus to Survival checks when you [Track](/action/track-player-core) your prey. You also ignore the penalty for making ranged attacks within your second range increment against the prey you're hunting.\n\nYou can have only one creature designated as your prey at a time. If you use Hunt Prey against a creature when you already have a creature designated, the prior creature loses the designation and the new prey gains the designation. Your designation lasts until your next daily preparations.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2517,7 +2861,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "ranger",
+          "slug": "ranger"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2556,7 +2910,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2585,7 +2949,7 @@
     "systemVersion": "1.2.10",
     "name": "Identify Alchemy",
     "slug": "identify-alchemy-player-core",
-    "descr": "**Requirements** You're holding or wearing an Alchemist'S Toolkit.\n\n---\n\nYou can identify the nature of an alchemical item with 10 minutes of testing using alchemist's toolkit. If your attempt is interrupted in any way, you must start over.\n\n---\n\n**Success** You identify the item and the means of activating it.\n\n**Failure** You fail to identify the item but can try again.\n\n**Critical Failure** You misidentify the item as another item of the GM's choice.",
+    "descr": "**Requirements** You're holding or wearing an [Alchemist'S Toolkit](/item/alchemist-s-toolkit-player-core).\n\n---\n\nYou can identify the nature of an alchemical item with 10 minutes of testing using alchemist's toolkit. If your attempt is interrupted in any way, you must start over.\n\n---\n\n**Success** You identify the item and the means of activating it.\n\n**Failure** You fail to identify the item but can try again.\n\n**Critical Failure** You misidentify the item as another item of the GM's choice.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2596,7 +2960,21 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "You're holding or wearing an Alchemist'S Toolkit",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2637,7 +3015,21 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2667,7 +3059,7 @@
     "systemVersion": "1.2.10",
     "name": "Impersonate",
     "slug": "impersonate-player-core",
-    "descr": "You create a disguise to pass yourself off as someone or something you are not. Assembling a convincing disguise takes 10 minutes and requires a Disguise Kit, but a simpler, quicker disguise might do the job if you're not trying to imitate a specific individual, at the GM's discretion.\n\nIn most cases, creatures have a chance to detect your deception only if they use the Seek action to attempt Perception checks against your Deception DC. If you attempt to directly interact with someone while disguised, the GM rolls a secret Deception check for you against that creature's Perception DC instead.\n\nIf you're disguised as a specific individual, the GM might give creatures you interact with a circumstance bonus based on how well they know the person you're imitating, or the GM might roll a secret Deception check even if you aren't directly interacting with others.\n\n---\n\n**Success** You trick the creature into thinking you're the person you're disguised as. You might have to attempt a new check if your behavior changes.\n\n**Failure** The creature can tell you're not who you claim to be.\n\n**Critical Failure** The creature can tell you're not who you claim to be, and it recognizes you if it would know you without a disguise.",
+    "descr": "You create a disguise to pass yourself off as someone or something you are not. Assembling a convincing disguise takes 10 minutes and requires a [Disguise Kit](/item/disguise-kit-player-core), but a simpler, quicker disguise might do the job if you're not trying to imitate a specific individual, at the GM's discretion.\n\nIn most cases, creatures have a chance to detect your deception only if they use the [Seek](/action/seek-player-core) action to attempt Perception checks against your Deception DC. If you attempt to directly interact with someone while disguised, the GM rolls a secret Deception check for you against that creature's Perception DC instead.\n\nIf you're disguised as a specific individual, the GM might give creatures you interact with a circumstance bonus based on how well they know the person you're imitating, or the GM might roll a secret Deception check even if you aren't directly interacting with others.\n\n---\n\n**Success** You trick the creature into thinking you're the person you're disguised as. You might have to attempt a new check if your behavior changes.\n\n**Failure** The creature can tell you're not who you claim to be.\n\n**Critical Failure** The creature can tell you're not who you claim to be, and it recognizes you if it would know you without a disguise.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2679,7 +3071,25 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2710,14 +3120,15 @@
     "systemVersion": "1.2.10",
     "name": "Independent",
     "slug": "independent-player-core",
-    "descr": "In an encounter, if you don't Command your familiar, it still gains 1 action each round. Typically, you still decide how it spends that action, but, the GM might determine that your familiar chooses its own tactics rather than performing your preferred action. This doesn't work with Valet or similar abilities that require a command, if you're capable of riding your familiar, or similar situations.",
+    "descr": "In an encounter, if you don't Command your familiar, it still gains 1 action each round. Typically, you still decide how it spends that action, but, the GM might determine that your familiar chooses its own tactics rather than performing your preferred action. This doesn't work with [Valet](/action/valet-player-core) or similar abilities that require a command, if you're capable of riding your familiar, or similar situations.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2751,7 +3162,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2789,7 +3201,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "An ally you reviewed stratagems with is about to attempt an attack roll or skill check",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2828,7 +3250,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2856,7 +3284,7 @@
     "systemVersion": "1.2.10",
     "name": "Investigate",
     "slug": "investigate-player-core",
-    "descr": "You seek out information about your surroundings while traveling at half speed. You use Recall Knowledge as a secret check to discover clues among the various things you can see and engage with as you journey along. You can use any skill that has a Recall Knowledge action while Investigating, but the GM determines whether the skill is relevant to the clues you could find.",
+    "descr": "You seek out information about your surroundings while traveling at half speed. You use Recall Knowledge as a secret check to discover clues among the various things you can see and engage with as you journey along. You can use any skill that has a [Recall Knowledge](/action/recall-knowledge-player-core) action while Investigating, but the GM determines whether the skill is relevant to the clues you could find.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2866,7 +3294,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2895,7 +3333,7 @@
     "systemVersion": "1.2.10",
     "name": "Jinx",
     "slug": "jinx-player-core",
-    "descr": "**Frequency** once per day\n\n---\n\n**Effect** You can curse another creature with clumsiness. This curse has a range of 30 feet, and you must be able to see your target. The target gets a Will saving throw against your class DC or spell DC, whichever is higher.\n\n---\n\n**Success** The target is unaffected and temporarily immune for 24 hours.\n\n**Failure** The target is Clumsy 1 for 1 minute.\n\n**Critical Failure** The target is Clumsy 2 for 1 minute.",
+    "descr": "**Frequency** once per day\n\n---\n\n**Effect** You can curse another creature with clumsiness. This curse has a range of 30 feet, and you must be able to see your target. The target gets a Will saving throw against your class DC or spell DC, whichever is higher.\n\n---\n\n**Success** The target is unaffected and temporarily immune for 24 hours.\n\n**Failure** The target is [Clumsy 1](/condition/clumsy-player-core) for 1 minute.\n\n**Critical Failure** The target is Clumsy 2 for 1 minute.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2906,7 +3344,17 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "curse",
+          "slug": "curse"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2942,7 +3390,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2969,7 +3418,7 @@
     "systemVersion": "1.2.10",
     "name": "Leap",
     "slug": "leap-player-core",
-    "descr": "You take a short horizontal or vertical jump. Jumping a greater distance requires using the Athletics skill for a High Jump or Long Jump.\n\n**Horizontal** Jump up to 10 feet horizontally if your Speed is at least 15 feet, or up to 15 feet horizontally if your speed is at least 30 feet. You land in the space where your Leap ends (meaning you can typically clear a 5-foot gap, or a 10-foot gap if your Speed is 30 feet or more). You can't make a horizontal Leap if your Speed is less than 15 feet.**Vertical** Jump up to 3 feet vertically and 5 feet horizontally onto an elevated surface.",
+    "descr": "You take a short horizontal or vertical jump. Jumping a greater distance requires using the Athletics skill for a [High Jump](/action/high-jump-player-core) or [Long Jump](/action/long-jump-player-core).\n\n**Horizontal** Jump up to 10 feet horizontally if your Speed is at least 15 feet, or up to 15 feet horizontally if your speed is at least 30 feet. You land in the space where your Leap ends (meaning you can typically clear a 5-foot gap, or a 10-foot gap if your Speed is 30 feet or more). You can't make a horizontal Leap if your Speed is less than 15 feet.**Vertical** Jump up to 3 feet vertically and 5 feet horizontally onto an elevated surface.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2979,7 +3428,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3007,7 +3462,7 @@
     "systemVersion": "1.2.10",
     "name": "Learn a Spell",
     "slug": "learn-a-spell-player-core",
-    "descr": "## Magical Traditions and Skills\n\nEach magical tradition has a corresponding skill, as shown on the table below. You must have the trained proficiency rank in a skill to use it to Identify Magic or Learn a Spell. Something without a specific tradition, such as an item with the magical trait, can be identified using any of these skills.\n\n| Magical Tradition | Corresponding Skill |\n| --- | --- |\n| Arcane | Arcana |\n| Divine | Religion |\n| Occult | Occultism |\n| Primal | Nature |\n\n---\n\n**Requirements** You have a spellcasting class feature, and the spell you want to learn is on your magical tradition's spell list.\n\n---\n\nYou can gain access to a new spell of your tradition from someone who knows that spell or from magical writing like a spellbook or scroll. If you can cast spells of multiple traditions, you can Learn a Spell of any of those traditions, but you must use the corresponding skill to do so. For example, if you were a cleric with the bard multiclass archetype, you couldn't use Religion to add an occult spell to your bardic spell repertoire.\n\nTo learn the spell, you must do the following:\n\nSpend 1 hour per spell rank, during which you must remain in conversation with a person who knows the spell or have the magical writing in your possession.Have materials with the Price indicated in the Learning a Spell table.Attempt a skill check for the skill corresponding to your tradition (DC determined by the GM, often close to the DC on the Learning a Spell Table). Uncommon or rare spells have higher DCs; full guidelines for the GM appear on page 52 of GM Core.\n\n### Learning a Spell\n\n| Spell Rank | Price | Typical DC |\n| --- | --- | --- |\n| 1st or cantrip | 2 gp | 15 |\n| 2nd | 6 gp | 18 |\n| 3rd | 16 gp | 20 |\n| 4th | 36 gp | 23 |\n| 5th | 70 gp | 26 |\n| 6th | 140 gp | 28 |\n| 7th | 300 gp | 31 |\n| 8th | 650 gp | 34 |\n| 9th | 1,500 gp | 36 |\n| 10th | 7,000 gp | 41 |\n\n---\n\n**Critical Success** You expend half the materials and learn the spell.\n\n**Success** You expend the materials and learn the spell.\n\n**Failure** You fail to learn the spell but can try again after you gain a level. The materials aren't expended.\n\n**Critical Failure** As failure, except you expend half the materials.",
+    "descr": "## Magical Traditions and Skills\n\nEach magical tradition has a corresponding skill, as shown on the table below. You must have the trained proficiency rank in a skill to use it to Identify Magic or Learn a Spell. Something without a specific tradition, such as an item with the [magical](/trait/magical) trait, can be identified using any of these skills.\n\n| Magical Tradition | Corresponding Skill |\n| --- | --- |\n| Arcane | Arcana |\n| Divine | Religion |\n| Occult | Occultism |\n| Primal | Nature |\n\n---\n\n**Requirements** You have a spellcasting class feature, and the spell you want to learn is on your magical tradition's spell list.\n\n---\n\nYou can gain access to a new spell of your tradition from someone who knows that spell or from magical writing like a spellbook or scroll. If you can cast spells of multiple traditions, you can Learn a Spell of any of those traditions, but you must use the corresponding skill to do so. For example, if you were a cleric with the bard multiclass archetype, you couldn't use Religion to add an occult spell to your bardic spell repertoire.\n\nTo learn the spell, you must do the following:\n\nSpend 1 hour per spell rank, during which you must remain in conversation with a person who knows the spell or have the magical writing in your possession.Have materials with the Price indicated in the Learning a Spell table.Attempt a skill check for the skill corresponding to your tradition (DC determined by the GM, often close to the DC on the Learning a Spell Table). Uncommon or rare spells have higher DCs; full guidelines for the GM appear on page 52 of GM Core.\n\n### Learning a Spell\n\n| Spell Rank | Price | Typical DC |\n| --- | --- | --- |\n| 1st or cantrip | 2 gp | 15 |\n| 2nd | 6 gp | 18 |\n| 3rd | 16 gp | 20 |\n| 4th | 36 gp | 23 |\n| 5th | 70 gp | 26 |\n| 6th | 140 gp | 28 |\n| 7th | 300 gp | 31 |\n| 8th | 650 gp | 34 |\n| 9th | 1,500 gp | 36 |\n| 10th | 7,000 gp | 41 |\n\n---\n\n**Critical Success** You expend half the materials and learn the spell.\n\n**Success** You expend the materials and learn the spell.\n\n**Failure** You fail to learn the spell but can try again after you gain a level. The materials aren't expended.\n\n**Critical Failure** As failure, except you expend half the materials.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3017,7 +3472,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "You have a spellcasting class feature, and the spell you want to learn is on your magical tradition's spell list",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3046,7 +3511,7 @@
     "systemVersion": "1.2.10",
     "name": "Lie",
     "slug": "lie-player-core",
-    "descr": "You try to fool someone with an untruth. Doing so takes at least 1 round, or longer if the lie is elaborate. You roll a single Deception check and compare it against the Perception DC of every creature you are trying to fool. The GM might give them a circumstance bonus based on the situation and the nature of the lie you are trying to tell. Elaborate or highly unbelievable lies are much harder to get a creature to believe than simpler and more believable lies, and some lies are so big that it's impossible to get anyone to believe them.\n\nAt the GM's discretion, if a creature initially believes your lie, it might attempt a Perception check later to Sense Motive against your Deception DC to realize it's a lie. This usually happens if the creature discovers enough evidence to counter your statements.\n\n---\n\n**Success** The target believes your lie.\n\n**Failure** The target doesn't believe your lie and gains a +4 circumstance bonus against your attempts to Lie for the duration of your conversation. The target is also more likely to be suspicious of you in the future.",
+    "descr": "You try to fool someone with an untruth. Doing so takes at least 1 round, or longer if the lie is elaborate. You roll a single Deception check and compare it against the Perception DC of every creature you are trying to fool. The GM might give them a circumstance bonus based on the situation and the nature of the lie you are trying to tell. Elaborate or highly unbelievable lies are much harder to get a creature to believe than simpler and more believable lies, and some lies are so big that it's impossible to get anyone to believe them.\n\nAt the GM's discretion, if a creature initially believes your lie, it might attempt a Perception check later to [Sense Motive](/action/sense-motive-player-core) against your Deception DC to realize it's a lie. This usually happens if the creature discovers enough evidence to counter your statements.\n\n---\n\n**Success** The target believes your lie.\n\n**Failure** The target doesn't believe your lie and gains a +4 circumstance bonus against your attempts to Lie for the duration of your conversation. The target is also more likely to be suspicious of you in the future.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3059,7 +3524,29 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3091,14 +3578,15 @@
     "systemVersion": "1.2.10",
     "name": "Lifelink",
     "slug": "lifelink-player-core",
-    "descr": "If your familiar would be reduced to 0 HP by damage, as a reaction with the concentrate trait, you can take all the damage, and your familiar takes none. However, special effects that would occur due to that damage (such as snake venom) still apply.",
+    "descr": "If your familiar would be reduced to 0 HP by damage, as a reaction with the [concentrate](/trait/concentrate) trait, you can take all the damage, and your familiar takes none. However, special effects that would occur due to that damage (such as snake venom) still apply.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3125,7 +3613,7 @@
     "systemVersion": "1.2.10",
     "name": "Long Jump",
     "slug": "long-jump-player-core",
-    "descr": "You Stride, then attempt a DC 15 Athletics check to make a long jump in the direction you were Striding. If you didn't Stride at least 10 feet, you automatically fail your check. The GM might increase or decrease this DC depending on the situation.\n\n---\n\n**Success** You Leap up to a distance equal to your check result rounded down to the nearest 5 feet. You can't jump farther than your land Speed.\n\n**Failure** You make a normal horizontal Leap.\n\n**Critical Failure** You make a normal horizontal Leap, then fall and land Prone.",
+    "descr": "You Stride, then attempt a DC 15 Athletics check to make a long jump in the direction you were Striding. If you didn't Stride at least 10 feet, you automatically fail your check. The GM might increase or decrease this DC depending on the situation.\n\n---\n\n**Success** You [Leap](/action/leap-player-core) up to a distance equal to your check result rounded down to the nearest 5 feet. You can't jump farther than your land Speed.\n\n**Failure** You make a normal horizontal Leap.\n\n**Critical Failure** You make a normal horizontal Leap, then fall and land [Prone](/condition/prone-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3135,7 +3623,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3172,7 +3666,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3207,7 +3707,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3247,7 +3748,29 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3289,7 +3812,13 @@
       "frequency": "",
       "requirements": "You have a fly Speed",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3324,7 +3853,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3351,7 +3881,7 @@
     "systemVersion": "1.2.10",
     "name": "Master Strike",
     "slug": "master-strike-player-core",
-    "descr": "**Trigger** Your Strike hits an Off Guard creature and deals damage.\n\n---\n\nThe target attempts a Fortitude save against your class DC. It then becomes temporarily immune to your Master Strike for 1 day.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is Enfeebled 2 until the end of your next turn.\n\n**Failure** The target is Paralyzed for 4 rounds.\n\n**Critical Failure** The target is paralyzed for 4 rounds, knocked Unconscious for 2 hours, or killed (your choice).",
+    "descr": "**Trigger** Your Strike hits an [Off Guard](/condition/off-guard-player-core) creature and deals damage.\n\n---\n\nThe target attempts a Fortitude save against your class DC. It then becomes temporarily immune to your Master Strike for 1 day.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is [Enfeebled 2](/condition/enfeebled-player-core) until the end of your next turn.\n\n**Failure** The target is [Paralyzed](/condition/paralyzed-player-core) for 4 rounds.\n\n**Critical Failure** The target is paralyzed for 4 rounds, knocked [Unconscious](/condition/unconscious-player-core) for 2 hours, or killed (your choice).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3362,7 +3892,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "Your Strike hits an Off Guard creature and deals damage",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "rogue",
+          "slug": "rogue"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3391,14 +3931,15 @@
     "systemVersion": "1.2.10",
     "name": "Master's Form",
     "slug": "master-s-form-player-core",
-    "descr": "Your familiar can change shape as a single action, transforming into a humanoid of your ancestry with the same age, gender, and build of its true form, though it always maintains a clearly unnatural remnant of its nature, such as a cat's eyes or a serpent's tongue. This form is always the same each time it uses this ability. This otherwise uses the effects of Humanoid Form, except the change is purely cosmetic. It only appears humanoid and gains no new capabilities. Your familiar must have the manual dexterity and speech abilities to select this.",
+    "descr": "Your familiar can change shape as a single action, transforming into a humanoid of your ancestry with the same age, gender, and build of its true form, though it always maintains a clearly unnatural remnant of its nature, such as a cat's eyes or a serpent's tongue. This form is always the same each time it uses this ability. This otherwise uses the effects of [Humanoid Form](/spell/humanoid-form-player-core), except the change is purely cosmetic. It only appears humanoid and gains no new capabilities. Your familiar must have the manual dexterity and speech abilities to select this.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3435,7 +3976,13 @@
       "frequency": "",
       "requirements": "You are adjacent to a creature that is at least one size larger than you and is willing to be your mount",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3473,7 +4020,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3508,7 +4061,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3535,7 +4089,7 @@
     "systemVersion": "1.2.10",
     "name": "Patron's Claim",
     "slug": "patron-s-claim-player-core",
-    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** Your familiar's mouth opens impossibly wide before your patron's grasping limb stretches forth from it at a creature within 30 feet, dealing 10d10 spirit] damage with a basic Fortitude save against your spell DC. If the creature fails its save and takes damage, it is also Drained 2 (or Drained 4 on a critical failure) and you regain 1 Focus Point, up to your usual maximum, as your patron grants you additional magic in exchange for your gift of your opponent's spirit.",
+    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** Your familiar's mouth opens impossibly wide before your patron's grasping limb stretches forth from it at a creature within 30 feet, dealing 10d10 spirit] damage with a basic Fortitude save against your spell DC. If the creature fails its save and takes damage, it is also [Drained 2](/condition/drained-player-core) (or Drained 4 on a critical failure) and you regain 1 Focus Point, up to your usual maximum, as your patron grants you additional magic in exchange for your gift of your opponent's spirit.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -3543,7 +4097,8 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3570,7 +4125,7 @@
     "systemVersion": "1.2.10",
     "name": "Patron's Presence",
     "slug": "patron-s-presence-player-core",
-    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** A palpable weight extends from your familiar in a area. Enemies who enter or start their turn within the aura must succeed at a Will save against your spell DC or become Stupefied 2 as long as they remain within the aura, or Stupefied 3 on a critical failure. The aura lasts until the end of your next turn, but the familiar can Sustain it up to 1 minute.",
+    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** A palpable weight extends from your familiar in a area. Enemies who enter or start their turn within the aura must succeed at a Will save against your spell DC or become [Stupefied 2](/condition/stupefied-player-core) as long as they remain within the aura, or Stupefied 3 on a critical failure. The aura lasts until the end of your next turn, but the familiar can Sustain it up to 1 minute.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3580,7 +4135,13 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3618,7 +4179,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3646,7 +4213,7 @@
     "systemVersion": "1.2.10",
     "name": "Pick a Lock",
     "slug": "pick-a-lock-player-core",
-    "descr": "**Requirements** You're holding or wearing a Thieves' Toolkit.\n\n---\n\nOpening a lock without a key is very similar to Disabling a Device, but the DC of the check is determined by the complexity and construction of the lock you are attempting to pick. Locks of higher quality might require multiple successes to unlock. If you lack the proper tools, the GM might let you use improvised picks, which are treated as a shoddy toolkit.\n\n---\n\n**Critical Success** You unlock the lock, or you achieve two successes toward opening a lock that requires more than one success. You leave no trace of your tampering.\n\n**Success** You open the lock, or you achieve one success toward opening a lock that requires more than one success. You leave behind damage that indicates the lock was picked on close scrutiny.\n\n**Critical Failure** You break your toolkit and leave behind obvious damage. Fixing a broken toolkit requires using Crafting to Repair it or else swapping in replacement picks (costing 3 sp, or 3 gp for an infiltrator thieves' toolkit).",
+    "descr": "**Requirements** You're holding or wearing a [Thieves' Toolkit](/item/thieves-toolkit-player-core).\n\n---\n\nOpening a lock without a key is very similar to [Disabling a Device](/action/disable-a-device-player-core), but the DC of the check is determined by the complexity and construction of the lock you are attempting to pick. Locks of higher quality might require multiple successes to unlock. If you lack the proper tools, the GM might let you use improvised picks, which are treated as a shoddy toolkit.\n\n---\n\n**Critical Success** You unlock the lock, or you achieve two successes toward opening a lock that requires more than one success. You leave no trace of your tampering.\n\n**Success** You open the lock, or you achieve one success toward opening a lock that requires more than one success. You leave behind damage that indicates the lock was picked on close scrutiny.\n\n**Critical Failure** You break your toolkit and leave behind obvious damage. Fixing a broken toolkit requires using Crafting to [Repair](/action/repair-player-core) it or else swapping in [replacement picks](/item/thieves-toolkit-replacement-picks-player-core) (costing 3 sp, or 3 gp for an [infiltrator thieves' toolkit](/item/thieves-toolkit-infiltrator-picks-player-core)).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3656,7 +4223,13 @@
       "frequency": "",
       "requirements": "You're holding or wearing a Thieves' Toolkit",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3684,14 +4257,15 @@
     "systemVersion": "1.2.10",
     "name": "Plant",
     "slug": "plant-player-core",
-    "descr": "Your familiar has the plant trait instead of the animal trait.",
+    "descr": "Your familiar has the [plant](/trait/plant) trait instead of the [animal](/trait/animal) trait.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3718,14 +4292,15 @@
     "systemVersion": "1.2.10",
     "name": "Plant Form",
     "slug": "plant-form-player-core",
-    "descr": "Your plant familiar can change shape as a single action, transforming into a Tiny plant of a type roughly similar to the familiar's nature. This otherwise uses the effects of One With Plants. You must have a familiar with the plant trait to select this ability.",
+    "descr": "Your plant familiar can change shape as a single action, transforming into a Tiny plant of a type roughly similar to the familiar's nature. This otherwise uses the effects of [One With Plants](/spell/one-with-plants-player-core). You must have a familiar with the [plant](/trait/plant) trait to select this ability.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3752,7 +4327,7 @@
     "systemVersion": "1.2.10",
     "name": "Point Out",
     "slug": "point-out-player-core",
-    "descr": "**Requirements** A creature is undetected by one or more of your allies but isn't undetected by you.\n\n---\n\nYou indicate a creature that you can see to one or more allies, gesturing in a direction and describing the distance verbally. That creature is Hidden to your allies, rather than Undetected. This works only for allies who can see you and are in a position where they could potentially detect the target. If your allies can't hear or understand you, they must succeed at a Perception check against the creature's Stealth DC or they misunderstand and believe the target is in a different location.",
+    "descr": "**Requirements** A creature is undetected by one or more of your allies but isn't undetected by you.\n\n---\n\nYou indicate a creature that you can see to one or more allies, gesturing in a direction and describing the distance verbally. That creature is [Hidden](/condition/hidden-player-core) to your allies, rather than [Undetected](/condition/undetected-player-core). This works only for allies who can see you and are in a position where they could potentially detect the target. If your allies can't hear or understand you, they must succeed at a Perception check against the creature's Stealth DC or they misunderstand and believe the target is in a different location.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3764,7 +4339,21 @@
       "frequency": "",
       "requirements": "A creature is undetected by one or more of your allies but isn't undetected by you",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3794,7 +4383,7 @@
     "systemVersion": "1.2.10",
     "name": "Primal Howl",
     "slug": "primal-howl-player-core",
-    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** Your animal companion screeches and howls, empowered with natural magic. All creatures in a area take (floor(current value/2))d6 sonic|options:area-damage] damage for every 2 levels your companion has, with a basic Fortitude save against your spell DC. Creatures that fail become Frightened 1, and creatures that critically fail become Frightened 2. The fright is an emotion, fear, and mental effect.",
+    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** Your animal companion screeches and howls, empowered with natural magic. All creatures in a area take (floor(current value/2))d6 sonic|options:area-damage] damage for every 2 levels your companion has, with a basic Fortitude save against your spell DC. Creatures that fail become [Frightened 1](/condition/frightened-player-core), and creatures that critically fail become Frightened 2. The fright is an emotion, fear, and mental effect.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3805,7 +4394,17 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "sonic",
+          "slug": "sonic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3834,14 +4433,15 @@
     "systemVersion": "1.2.10",
     "name": "Purify Air",
     "slug": "purify-air-player-core",
-    "descr": "**Prerequisites** Leshy Familiar Secrets\n\nYour familiar recycles air, providing enough oxygen for a Medium creature in areas with stale air, such as a sealed chamber or extradimensional space. If the leshy is within the area of an inhaled poison effect or an effect that relies on smell, creatures within a area from the leshy gain a +2 circumstance bonus to their saving throws against the effect.",
+    "descr": "**Prerequisites** [Leshy Familiar Secrets](/feat/leshy-familiar-secrets-player-core)\n\nYour familiar recycles air, providing enough oxygen for a Medium creature in areas with stale air, such as a sealed chamber or extradimensional space. If the leshy is within the area of an inhaled poison effect or an effect that relies on smell, creatures within a area from the leshy gain a +2 circumstance bonus to their saving throws against the effect.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3876,7 +4476,8 @@
       "frequency": "",
       "requirements": "You are wielding a shield",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3911,7 +4512,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3948,7 +4550,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3976,14 +4584,15 @@
     "systemVersion": "1.2.10",
     "name": "Recall Familiar",
     "slug": "recall-familiar-player-core",
-    "descr": "Once per day, you can use a 3-action activity, which has the concentrate trait, to teleport your familiar to your space. Your familiar must be within 1 mile or the attempt to summon it fails. This is a teleportation effect.",
+    "descr": "Once per day, you can use a 3-action activity, which has the [concentrate](/trait/concentrate) trait, to teleport your familiar to your space. Your familiar must be within 1 mile or the attempt to summon it fails. This is a teleportation effect.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4021,7 +4630,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4060,7 +4679,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "You have a focus pool",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4089,7 +4718,7 @@
     "systemVersion": "1.2.10",
     "name": "Release",
     "slug": "release-player-core",
-    "descr": "You release something you're holding in your hand or hands. This might mean dropping an item, removing one hand from your weapon while continuing to hold it in another hand, releasing a rope suspending a chandelier, or performing a similar action. Unlike most manipulate actions, Release does not trigger reactions that can be triggered by actions with the manipulate trait (such as Reactive Strike).\n\nIf you want to prepare to Release something outside of your turn, use the Ready activity.",
+    "descr": "You release something you're holding in your hand or hands. This might mean dropping an item, removing one hand from your weapon while continuing to hold it in another hand, releasing a rope suspending a chandelier, or performing a similar action. Unlike most manipulate actions, Release does not trigger reactions that can be triggered by actions with the [manipulate](/trait/manipulate) trait (such as Reactive Strike).\n\nIf you want to prepare to Release something outside of your turn, use the [Ready](/action/ready-player-core) activity.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4099,7 +4728,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4127,7 +4762,7 @@
     "systemVersion": "1.2.10",
     "name": "Repair",
     "slug": "repair-player-core",
-    "descr": "**Requirements** You are holding or wearing a Repair Kit\n\n---\n\nYou spend 10 minutes attempting to fix a damaged item, placing the item on a stable surface and using the repair kit with both hands. The GM sets the DC, but it's usually about the same DC to Repair a given item as it is to Craft it in the first place. You can't Repair a destroyed item.\n\n---\n\n**Critical Success** You restore 10 Hit Points to the item, plus an additional 10 Hit Points per proficiency rank you have in Crafting (a total of 20 HP if you're trained, 30 HP if you're an expert, 40 HP if you're a master, or 50 HP if you're legendary).\n\n**Success** You restore 5 Hit Points to the item, plus an additional 5 per proficiency rank you have in Crafting (for a total of 10 HP if you are trained, 15 HP if you're an expert, 20 HP if you're a master, or 25 HP if you're legendary).\n\n**Critical Failure** You deal 2d6 damage to the item. Apply the item's Hardness to this damage.",
+    "descr": "**Requirements** You are holding or wearing a [Repair Kit](/item/repair-toolkit-player-core)\n\n---\n\nYou spend 10 minutes attempting to fix a damaged item, placing the item on a stable surface and using the repair kit with both hands. The GM sets the DC, but it's usually about the same DC to Repair a given item as it is to Craft it in the first place. You can't Repair a destroyed item.\n\n---\n\n**Critical Success** You restore 10 Hit Points to the item, plus an additional 10 Hit Points per proficiency rank you have in Crafting (a total of 20 HP if you're trained, 30 HP if you're an expert, 40 HP if you're a master, or 50 HP if you're legendary).\n\n**Success** You restore 5 Hit Points to the item, plus an additional 5 per proficiency rank you have in Crafting (for a total of 10 HP if you are trained, 15 HP if you're an expert, 20 HP if you're a master, or 25 HP if you're legendary).\n\n**Critical Failure** You deal 2d6 damage to the item. Apply the item's Hardness to this damage.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4137,7 +4772,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "You are holding or wearing a Repair Kit",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4166,7 +4811,7 @@
     "systemVersion": "1.2.10",
     "name": "Repeat a Spell",
     "slug": "repeat-a-spell-player-core",
-    "descr": "You repeatedly cast the same spell while moving at half speed. Typically, this spell is a cantrip that you want to have in effect in the event a combat breaks out, and it must be one you can cast in 2 actions or fewer. Repeating a spell that requires making complex decisions, such as Figment, can make you Fatigued, as determined by the GM.",
+    "descr": "You repeatedly cast the same spell while moving at half speed. Typically, this spell is a cantrip that you want to have in effect in the event a combat breaks out, and it must be one you can cast in 2 actions or fewer. Repeating a spell that requires making complex decisions, such as [Figment](/spell/figment-player-core), can make you [Fatigued](/condition/fatigued-player-core), as determined by the GM.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4176,7 +4821,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4215,7 +4870,13 @@
       "frequency": "",
       "requirements": "You either have at least one hand free, or you're grabbing or restraining the target. The target can't be more than one size larger than you",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4256,7 +4917,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4294,7 +4973,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4321,14 +5001,15 @@
     "systemVersion": "1.2.10",
     "name": "Restorative Familiar",
     "slug": "restorative-familiar-player-core",
-    "descr": "Once per day, your familiar can use 2 actions with the concentrate trait to give up some of its energy and heal you. It must be in your space to do so. You restore a number of Hit Points equal to 1d8 times half your level (minimum 1d8).",
+    "descr": "Once per day, your familiar can use 2 actions with the [concentrate](/trait/concentrate) trait to give up some of its energy and heal you. It must be in your space to do so. You restore a number of Hit Points equal to 1d8 times half your level (minimum 1d8).",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4364,7 +5045,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4399,7 +5086,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4426,7 +5114,7 @@
     "systemVersion": "1.2.10",
     "name": "Scout",
     "slug": "scout-player-core",
-    "descr": "You scout ahead and behind the group to watch danger, moving at half speed. At the start of the next encounter, every creature in your party gains a +1 circumstance bonus to their initiative rolls.\n\nEffect: Scout",
+    "descr": "You scout ahead and behind the group to watch danger, moving at half speed. At the start of the next encounter, every creature in your party gains a +1 circumstance bonus to their initiative rolls.\n\n[Effect: Scout](/condition/effect-scout-player-core)",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4436,7 +5124,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4465,7 +5163,7 @@
     "systemVersion": "1.2.10",
     "name": "Search",
     "slug": "search-player-core",
-    "descr": "You Seek meticulously for hidden doors, concealed hazards, and so on. You can usually make an educated guess as to which locations are best to check and move at half speed, but if you want to be thorough and guarantee you checked everything, you need to travel at a Speed of no more than 300 feet per minute, or 150 feet per minute to ensure you check everything before you walk into it. You can always move more slowly while Searching to cover the area more thoroughly, and the Expeditious Search feat increases these maximum Speeds. If you come across a secret door, item, or hazard while Searching, the GM will attempt a free secret check to Seek to see if you notice the hidden object or hazard. In locations with many objects to search, you have to stop and spend significantly longer to search thoroughly.",
+    "descr": "You [Seek](/action/seek-player-core) meticulously for hidden doors, concealed hazards, and so on. You can usually make an educated guess as to which locations are best to check and move at half speed, but if you want to be thorough and guarantee you checked everything, you need to travel at a Speed of no more than 300 feet per minute, or 150 feet per minute to ensure you check everything before you walk into it. You can always move more slowly while Searching to cover the area more thoroughly, and the [Expeditious Search](/feat/expeditious-search-player-core) feat increases these maximum Speeds. If you come across a secret door, item, or hazard while Searching, the GM will attempt a free secret check to Seek to see if you notice the hidden object or hazard. In locations with many objects to search, you have to stop and spend significantly longer to search thoroughly.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4475,7 +5173,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4504,7 +5212,7 @@
     "systemVersion": "1.2.10",
     "name": "Seek",
     "slug": "seek-player-core",
-    "descr": "You scan an area for signs of creatures or objects, possibly including secret doors or hazards. Choose an area to scan. The GM determines the area you can scan with one Seek action—almost always 30 feet or less in any dimension. The GM might impose a penalty if you search far away from you or adjust the number of actions it takes to Seek a particularly cluttered area.\n\nThe GM attempts a single secret Perception check for you and compares the result to the Stealth DCs of any Undetected or Hidden creatures in the area, or the DC to detect each object in the area (as determined by the GM or by someone Concealing the Object). A creature you detect might remain hidden, rather than becoming Observed, if you're using an imprecise sense or if an effect (such as Invisibility) prevents the subject from being observed.\n\n---\n\n**Critical Success** Any undetected or hidden creature you critically succeeded against becomes observed by you. You learn the location of objects in the area you critically succeeded against.\n\n**Success** Any undetected creature you suceeded against becomes hidden from you instead of undetected, and any hidden creature you succeeded against becomes observed by you. You learn the location of any object or get a clue to its whereabouts, as determined by the GM.",
+    "descr": "You scan an area for signs of creatures or objects, possibly including secret doors or hazards. Choose an area to scan. The GM determines the area you can scan with one Seek action—almost always 30 feet or less in any dimension. The GM might impose a penalty if you search far away from you or adjust the number of actions it takes to Seek a particularly cluttered area.\n\nThe GM attempts a single secret Perception check for you and compares the result to the Stealth DCs of any [Undetected](/condition/undetected-player-core) or [Hidden](/condition/hidden-player-core) creatures in the area, or the DC to detect each object in the area (as determined by the GM or by someone [Concealing the Object](/action/conceal-an-object-player-core)). A creature you detect might remain hidden, rather than becoming [Observed](/condition/observed-player-core), if you're using an imprecise sense or if an effect (such as [Invisibility](/spell/invisibility-player-core)) prevents the subject from being observed.\n\n---\n\n**Critical Success** Any undetected or hidden creature you critically succeeded against becomes observed by you. You learn the location of objects in the area you critically succeeded against.\n\n**Success** Any undetected creature you suceeded against becomes hidden from you instead of undetected, and any hidden creature you succeeded against becomes observed by you. You learn the location of any object or get a clue to its whereabouts, as determined by the GM.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4515,7 +5223,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4544,7 +5262,7 @@
     "systemVersion": "1.2.10",
     "name": "Sense Direction",
     "slug": "sense-direction-player-core",
-    "descr": "Using the stars, the position of the sun, traits of the geography or flora, or the behavior of fauna, you can stay oriented in the wild. Typically, you attempt a Survival check only once per day, but some environments or changes might necessitate rolling more often. The GM determines the DC and how long this activity takes (usually just a minute or so). More unusual locales or those you're unfamiliar with might require you to have a minimum proficiency rank to Sense Direction. Without a Compass, you take a –2 item penalty to checks to Sense Direction.\n\n---\n\n**Critical Success** You get an excellent sense of where you are. If you are in an environment with cardinal directions, you know them exactly.\n\n**Success** You gain enough orientation to avoid becoming hopelessly lost. If you are in an environment with cardinal directions, you have a sense of those directions.\n\n## Sense Direction Tasks\n\n**Untrained** determine a cardinal direction using the sun**Trained** find an overgrown path in a forest**Expert** navigate a hedge maze**Master** navigate a byzantine labyrinth or relatively featureless desert**Legendary** navigate an ever-changing dream realm",
+    "descr": "Using the stars, the position of the sun, traits of the geography or flora, or the behavior of fauna, you can stay oriented in the wild. Typically, you attempt a Survival check only once per day, but some environments or changes might necessitate rolling more often. The GM determines the DC and how long this activity takes (usually just a minute or so). More unusual locales or those you're unfamiliar with might require you to have a minimum proficiency rank to Sense Direction. Without a [Compass](/item/compass-player-core), you take a –2 item penalty to checks to Sense Direction.\n\n---\n\n**Critical Success** You get an excellent sense of where you are. If you are in an environment with cardinal directions, you know them exactly.\n\n**Success** You gain enough orientation to avoid becoming hopelessly lost. If you are in an environment with cardinal directions, you have a sense of those directions.\n\n## Sense Direction Tasks\n\n**Untrained** determine a cardinal direction using the sun**Trained** find an overgrown path in a forest**Expert** navigate a hedge maze**Master** navigate a byzantine labyrinth or relatively featureless desert**Legendary** navigate an ever-changing dream realm",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4554,7 +5272,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4594,7 +5322,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4623,14 +5361,15 @@
     "systemVersion": "1.2.10",
     "name": "Share Senses",
     "slug": "share-senses-player-core",
-    "descr": "Once every 10 minutes, you can use a single action with the concentrate trait to project your senses into your familiar. When you do, you lose all sensory information from your own body, but can sense through your familiar's body for up to 1 minute. You can Dismiss this effect.",
+    "descr": "Once every 10 minutes, you can use a single action with the [concentrate](/trait/concentrate) trait to project your senses into your familiar. When you do, you lose all sensory information from your own body, but can sense through your familiar's body for up to 1 minute. You can Dismiss this effect.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4665,7 +5404,8 @@
       "frequency": "once per 10 minutes",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4692,7 +5432,7 @@
     "systemVersion": "1.2.10",
     "name": "Shove",
     "slug": "shove-player-core",
-    "descr": "**Requirements** You have at least one hand free. The target can't be more than one size larger than you.\n\n---\n\nYou push a creature away from you. Attempt an Athletics check against your target's Fortitude DC.\n\n---\n\n**Critical Success** You push your target up to 10 feet away from you. You can Stride after it, but you must move the same distance and in the same direction.\n\n**Success** You push your target back 5 feet. You can Stride after it, but you must move the same distance and in the same direction.\n\n**Critical Failure** You lose your balance, fall, and land Prone.",
+    "descr": "**Requirements** You have at least one hand free. The target can't be more than one size larger than you.\n\n---\n\nYou push a creature away from you. Attempt an Athletics check against your target's Fortitude DC.\n\n---\n\n**Critical Success** You push your target up to 10 feet away from you. You can Stride after it, but you must move the same distance and in the same direction.\n\n**Success** You push your target back 5 feet. You can Stride after it, but you must move the same distance and in the same direction.\n\n**Critical Failure** You lose your balance, fall, and land [Prone](/condition/prone-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4702,7 +5442,13 @@
       "frequency": "",
       "requirements": "You have at least one hand free. The target can't be more than one size larger than you",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4737,7 +5483,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4764,7 +5511,7 @@
     "systemVersion": "1.2.10",
     "name": "Sneak",
     "slug": "sneak-player-core",
-    "descr": "You attempt to move to another place while becoming or staying undetected. Stride up to half your Speed. (You can use Sneak while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type; you must move at half that Speed.)\n\nAt the end of your movement, the GM rolls your Sneak check in secret and compares the result to the Perception DC of each creature you were Hidden from or Undetected by at the start of your movement. If you have cover or greater cover from the creature throughout your Stride, you gain the +2 circumstance bonus from cover (or +4 from greater cover) to your Stealth check. Because you're moving, the bonus increase from Taking Cover doesn't apply. You don't get to roll against a creature if, at the end of your movement, you neither are Concealed from it nor have cover or greater cover against it. You automatically become observed by such a creature.\n\n---\n\n**Success** You're undetected by the creature during your movement and remain undetected by the creature at the end of it.\n\nYou become observed as soon as you do anything other than Hide, Sneak, or Step. If you attempt to Strike a creature, the creature remains Off Guard against that attack, and you then become observed. If you do anything else, you become observed just before you act unless the GM determines otherwise. The GM might allow you to perform a particularly unobtrusive action without being noticed, possibly requiring another Stealth check. If you speak or make a deliberate loud noise, you become hidden instead of undetected.\n\nIf a creature uses Seek and you become hidden to it as a result, you must Sneak if you want to become undetected by that creature again.\n\n**Failure** A telltale sound or other sign gives your position away, though you still remain unseen. You're hidden from the creature throughout your movement and remain so.\n\n**Critical Failure** You're spotted! You're observed by the creature throughout your movement and remain so. If you're Invisible and were hidden from the creature, instead of being observed you're hidden throughout your movement and remain so.",
+    "descr": "You attempt to move to another place while becoming or staying undetected. Stride up to half your Speed. (You can use Sneak while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type; you must move at half that Speed.)\n\nAt the end of your movement, the GM rolls your Sneak check in secret and compares the result to the Perception DC of each creature you were [Hidden](/condition/hidden-player-core) from or [Undetected](/condition/undetected-player-core) by at the start of your movement. If you have cover or greater cover from the creature throughout your Stride, you gain the +2 circumstance bonus from cover (or +4 from greater cover) to your Stealth check. Because you're moving, the bonus increase from Taking Cover doesn't apply. You don't get to roll against a creature if, at the end of your movement, you neither are [Concealed](/condition/concealed-player-core) from it nor have cover or greater cover against it. You automatically become observed by such a creature.\n\n---\n\n**Success** You're undetected by the creature during your movement and remain undetected by the creature at the end of it.\n\nYou become observed as soon as you do anything other than Hide, Sneak, or Step. If you attempt to Strike a creature, the creature remains [Off Guard](/condition/off-guard-player-core) against that attack, and you then become observed. If you do anything else, you become observed just before you act unless the GM determines otherwise. The GM might allow you to perform a particularly unobtrusive action without being noticed, possibly requiring another Stealth check. If you speak or make a deliberate loud noise, you become hidden instead of undetected.\n\nIf a creature uses [Seek](/action/seek-player-core) and you become hidden to it as a result, you must Sneak if you want to become undetected by that creature again.\n\n**Failure** A telltale sound or other sign gives your position away, though you still remain unseen. You're hidden from the creature throughout your movement and remain so.\n\n**Critical Failure** You're spotted! You're observed by the creature throughout your movement and remain so. If you're [Invisible](/condition/invisible-player-core) and were hidden from the creature, instead of being observed you're hidden throughout your movement and remain so.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4775,7 +5522,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4811,7 +5568,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4845,7 +5603,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4879,7 +5638,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4913,7 +5673,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -4950,7 +5711,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4979,7 +5750,7 @@
     "systemVersion": "1.2.10",
     "name": "Stand",
     "slug": "stand-player-core",
-    "descr": "You stand up from Prone.",
+    "descr": "You stand up from [Prone](/condition/prone-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4989,7 +5760,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5027,7 +5804,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5055,7 +5838,7 @@
     "systemVersion": "1.2.10",
     "name": "Step",
     "slug": "step-player-core",
-    "descr": "**Requirements** Your Speed is at least 10 feet.\n\n---\n\nYou carefully move 5 feet. Unlike most types of movement, Stepping doesn't trigger reactions, such as Reactive Strike, that can be triggered by move actions or upon leaving or entering a square.\n\nYou can't Step into difficult terrain, and you can't Step using a Speed other than your land Speed.",
+    "descr": "**Requirements** Your Speed is at least 10 feet.\n\n---\n\nYou carefully move 5 feet. Unlike most types of movement, Stepping doesn't trigger reactions, such as [Reactive Strike](/action/reactive-strike-player-core), that can be triggered by move actions or upon leaving or entering a square.\n\nYou can't Step into difficult terrain, and you can't Step using a Speed other than your land Speed.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5065,7 +5848,13 @@
       "frequency": "",
       "requirements": "Your Speed is at least 10 feet",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5093,7 +5882,7 @@
     "systemVersion": "1.2.10",
     "name": "Stitching Strike",
     "slug": "stitching-strike-player-core",
-    "descr": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** Your familiar unravels into magical fibers that encompass an enemy within 30 feet and deal (6+max(0,(ceil((current value -8)/2)*2)))d6 slashing] damage, with a basic Reflex save against your spell DC. On a failure, the target is also Immobilized for 1 round or until it Escapes against your spell DC. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.",
+    "descr": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** Your familiar unravels into magical fibers that encompass an enemy within 30 feet and deal (6+max(0,(ceil((current value -8)/2)*2)))d6 slashing] damage, with a basic Reflex save against your spell DC. On a failure, the target is also [Immobilized](/condition/immobilized-player-core) for 1 round or until it [Escapes](/action/escape-player-core) against your spell DC. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -5101,7 +5890,8 @@
       "frequency": "once per 10 minutes",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -5138,7 +5928,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5176,7 +5972,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5204,7 +6006,7 @@
     "systemVersion": "1.2.10",
     "name": "Subsist",
     "slug": "subsist-player-core",
-    "descr": "You try to provide food and shelter for yourself, and possibly others as well, with a standard of living. This typically uses Society if you're in a settlement or Survival if you're in the wild. The GM determines the DC based on the nature of the place where you're trying to Subsist. You might need a minimum proficiency rank to Subsist in particularly strange environments. Unlike most downtime activities, you can Subsist after 8 hours or less of exploration, but if you do, you take a –5 penalty.\n\n## Sample Subsist Tasks\n\n**Untrained** a lush forest with calm weather or a large city with plentiful resources**Trained** typical hillside or village**Expert** typical mountains or insular hamlet**Master** typical desert or city under siege**Legendary** barren wasteland or city of undead\n\n---\n\n**Critical Success** You either provide a subsistence living for yourself and one additional creature, or you improve your own food and shelter, granting yourself a comfortable living.\n\n**Success** You find enough food and shelter with basic protection from the elements to provide you a subsistence living.\n\n**Failure** You're exposed to the elements and don't get enough food, becoming Fatigued until you attain sufficient food and shelter.\n\n**Critical Failure** You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing.\n\nEffect: Adverse Subsist Situation",
+    "descr": "You try to provide food and shelter for yourself, and possibly others as well, with a standard of living. This typically uses Society if you're in a settlement or Survival if you're in the wild. The GM determines the DC based on the nature of the place where you're trying to Subsist. You might need a minimum proficiency rank to Subsist in particularly strange environments. Unlike most downtime activities, you can Subsist after 8 hours or less of exploration, but if you do, you take a –5 penalty.\n\n## Sample Subsist Tasks\n\n**Untrained** a lush forest with calm weather or a large city with plentiful resources**Trained** typical hillside or village**Expert** typical mountains or insular hamlet**Master** typical desert or city under siege**Legendary** barren wasteland or city of undead\n\n---\n\n**Critical Success** You either provide a subsistence living for yourself and one additional creature, or you improve your own food and shelter, granting yourself a comfortable living.\n\n**Success** You find enough food and shelter with basic protection from the elements to provide you a subsistence living.\n\n**Failure** You're exposed to the elements and don't get enough food, becoming [Fatigued](/condition/fatigued-player-core) until you attain sufficient food and shelter.\n\n**Critical Failure** You attract trouble, eat something you shouldn't, or otherwise worsen your situation. You take a –2 circumstance penalty to checks to Subsist for 1 week. You don't find any food at all; if you don't have any stored up, you're in danger of starving or dying of thirst if you continue failing.\n\n[Effect: Adverse Subsist Situation](/condition/effect-adverse-subsist-situation-player-core)",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5213,7 +6015,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5251,7 +6059,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5279,7 +6093,7 @@
     "systemVersion": "1.2.10",
     "name": "Sustain an Effect",
     "slug": "sustain-an-effect-player-core",
-    "descr": "You Sustain one effect with a sustained duration while moving at half speed. Most such effects can be sustained for 10 minutes, though some specify they can be sustained for a different duration. Sustaining an effect that requires making complex decisions, such as Spiritual Armament, can make you Fatigued, as determined by the GM.",
+    "descr": "You Sustain one effect with a sustained duration while moving at half speed. Most such effects can be sustained for 10 minutes, though some specify they can be sustained for a different duration. Sustaining an effect that requires making complex decisions, such as [Spiritual Armament](/spell/spiritual-armament-player-core), can make you [Fatigued](/condition/fatigued-player-core), as determined by the GM.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5289,7 +6103,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5328,7 +6152,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5356,7 +6186,7 @@
     "systemVersion": "1.2.10",
     "name": "Take Cover",
     "slug": "take-cover-player-core",
-    "descr": "**Requirements** You are benefiting from standard cover, are near a feature that allows you to take cover, or are Prone.\n\n---\n\nYou press yourself against a wall or duck behind an obstacle to take better advantage of cover. If you would have standard cover, you instead gain greater cover, which provides a +4 circumstance bonus to AC; to Reflex saves against area effects; and to Stealth checks to Hide, Sneak, or otherwise avoid detection. Otherwise, you gain standard cover (a +2 circumstance bonus instead). If you're prone, you gain greater cover against ranged attacks. Take Cover lasts until you move from your current space, use an attack action, become Unconscious, or end it as a free action.",
+    "descr": "**Requirements** You are benefiting from standard cover, are near a feature that allows you to take cover, or are [Prone](/condition/prone-player-core).\n\n---\n\nYou press yourself against a wall or duck behind an obstacle to take better advantage of cover. If you would have standard cover, you instead gain greater cover, which provides a +4 circumstance bonus to AC; to Reflex saves against area effects; and to Stealth checks to Hide, Sneak, or otherwise avoid detection. Otherwise, you gain standard cover (a +2 circumstance bonus instead). If you're prone, you gain greater cover against ranged attacks. Take Cover lasts until you move from your current space, use an attack action, become [Unconscious](/condition/unconscious-player-core), or end it as a free action.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -5364,7 +6194,8 @@
       "frequency": "",
       "requirements": "You are benefiting from standard cover, are near a feature that allows you to take cover, or are Prone",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -5398,7 +6229,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -5432,7 +6264,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -5466,7 +6299,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -5493,7 +6327,7 @@
     "systemVersion": "1.2.10",
     "name": "Track",
     "slug": "track-player-core",
-    "descr": "You follow tracks, moving at up to half your travel Speed, using the Travel Speed rules. After a successful check to Track, you can continue following the tracks at half your Speed without attempting additional checks for up to 1 hour.\n\nIn some cases, you might Track in an encounter. In this case, Track is a single action and doesn't have the exploration trait, but you might need to roll more often because you're in a tense situation. The GM determines how often you must attempt this check.\n\nYou attempt your Survival check when you start Tracking, once every hour you continue tracking, and any time something significant changes in the trail. The GM determines the DCs for such checks, depending on the freshness of the trail, the weather, and the type of ground.\n\n## Sample Track Tasks\n\n**Untrained** the path of a large army following a road**Trained** relatively fresh tracks of a rampaging bear through the plains**Expert** a nimble panther's tracks through a jungle, tracks obscured by rainfall**Master** tracks obscured by winter snow, tracks of a mouse or smaller creature, tracks left on surfaces that can't hold prints like bare rock**Legendary** old tracks through a windy desert's sands, tracks obscured by a major blizzard or hurricane\n\n---\n\n**Success** You find the trail or continue to follow the one you're already following.\n\n**Failure** You lose the trail but can try again after a 1-hour delay.\n\n**Critical Failure** You lose the trail and can't try again for 24 hours.",
+    "descr": "You follow tracks, moving at up to half your travel Speed, using the [Travel Speed](/rule/travel-speed-rules-2441) rules. After a successful check to Track, you can continue following the tracks at half your Speed without attempting additional checks for up to 1 hour.\n\nIn some cases, you might Track in an encounter. In this case, Track is a single action and doesn't have the [exploration](/trait/exploration) trait, but you might need to roll more often because you're in a tense situation. The GM determines how often you must attempt this check.\n\nYou attempt your Survival check when you start Tracking, once every hour you continue tracking, and any time something significant changes in the trail. The GM determines the DCs for such checks, depending on the freshness of the trail, the weather, and the type of ground.\n\n## Sample Track Tasks\n\n**Untrained** the path of a large army following a road**Trained** relatively fresh tracks of a rampaging bear through the plains**Expert** a nimble panther's tracks through a jungle, tracks obscured by rainfall**Master** tracks obscured by winter snow, tracks of a mouse or smaller creature, tracks left on surfaces that can't hold prints like bare rock**Legendary** old tracks through a windy desert's sands, tracks obscured by a major blizzard or hurricane\n\n---\n\n**Success** You find the trail or continue to follow the one you're already following.\n\n**Failure** You lose the trail but can try again after a 1-hour delay.\n\n**Critical Failure** You lose the trail and can't try again for 24 hours.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5504,7 +6338,21 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5534,7 +6382,7 @@
     "systemVersion": "1.2.10",
     "name": "Treat Disease",
     "slug": "treat-disease-player-core",
-    "descr": "**Requirements** You're wearing or holding a Healer'S Toolkit\n\n---\n\nYou spend at least 8 hours caring for a diseased creature. Attempt a Medicine check against the disease's DC. After you attempt to Treat a Disease for a creature, you can't try again until after that creature's next save against the disease.\n\n---\n\n**Critical Success** You grant the creature a +4 circumstance bonus to its next saving throw against the disease.\n\n**Success** You grant the creature a +2 circumstance bonus to its next saving throw against the disease.\n\n**Critical Failure** Your efforts cause the creature to take a −2 circumstance penalty to its next save against the disease.\n\nEffect: Treat Disease",
+    "descr": "**Requirements** You're wearing or holding a [Healer'S Toolkit](/item/healer-s-toolkit-player-core)\n\n---\n\nYou spend at least 8 hours caring for a diseased creature. Attempt a Medicine check against the disease's DC. After you attempt to Treat a Disease for a creature, you can't try again until after that creature's next save against the disease.\n\n---\n\n**Critical Success** You grant the creature a +4 circumstance bonus to its next saving throw against the disease.\n\n**Success** You grant the creature a +2 circumstance bonus to its next saving throw against the disease.\n\n**Critical Failure** Your efforts cause the creature to take a −2 circumstance penalty to its next save against the disease.\n\n[Effect: Treat Disease](/condition/effect-treat-disease-player-core)",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5544,7 +6392,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "You're wearing or holding a Healer'S Toolkit",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5573,7 +6431,7 @@
     "systemVersion": "1.2.10",
     "name": "Treat Poison",
     "slug": "treat-poison-player-core",
-    "descr": "**Requirements** You're wearing or holding a Healer'S Toolkit\n\n---\n\nYou treat a patient to prevent the spread of poison. Attempt a Medicine check against the poison's DC. After you attempt to Treat a Poison for a creature, you can't try again until after the next time that creature attempts a save against the poison.\n\n---\n\n**Critical Success** You grant the creature a +4 circumstance bonus to its next saving throw against the poison.\n\n**Success** You grant the creature a +2 circumstance bonus to its next saving throw against the poison.\n\n**Critical Failure** Your efforts cause the creature to take a −2 circumstance penalty to its next save against the poison.\n\nEffect: Treat Poison",
+    "descr": "**Requirements** You're wearing or holding a [Healer'S Toolkit](/item/healer-s-toolkit-player-core)\n\n---\n\nYou treat a patient to prevent the spread of poison. Attempt a Medicine check against the poison's DC. After you attempt to Treat a Poison for a creature, you can't try again until after the next time that creature attempts a save against the poison.\n\n---\n\n**Critical Success** You grant the creature a +4 circumstance bonus to its next saving throw against the poison.\n\n**Success** You grant the creature a +2 circumstance bonus to its next saving throw against the poison.\n\n**Critical Failure** Your efforts cause the creature to take a −2 circumstance penalty to its next save against the poison.\n\n[Effect: Treat Poison](/condition/effect-treat-poison-player-core)",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5583,7 +6441,13 @@
       "frequency": "",
       "requirements": "You're wearing or holding a Healer'S Toolkit",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5611,7 +6475,7 @@
     "systemVersion": "1.2.10",
     "name": "Treat Wounds",
     "slug": "treat-wounds-player-core",
-    "descr": "**Requirements** You're wearing or holding a Healer'S Toolkit.\n\n---\n\nYou spend 10 minutes treating one injured living creature (targeting yourself, if you so choose). The target is then temporarily immune to Treat Wounds actions for 1 hour, but this interval overlaps with the time you spent treating (so a patient can be treated once per hour, not once per 70 minutes).\n\nThe Medicine check DC is usually 15, though the GM might adjust it based on the circumstances, such as treating a patient outside in a storm, or treating magically cursed wounds. If you're an expert in Medicine, you can instead attempt a DC 20 check to increase the Hit Points regained by 10; if you're a master of Medicine, you can instead attempt a DC 30 check to increase the Hit Points regained by 30; and if you're legendary, you can instead attempt a DC 40 check to increase the Hit Points regained by 50. The damage dealt on a critical failure remains the same.\n\nIf you succeed at your check, you can continue treating the target to grant additional healing. If you treat it for a total of 1 hour, double the Hit Points it regains from Treat Wounds.\n\nThe result of your Medicine check determines how many Hit Points the target regains.\n\nTreat Wounds\n\n---\n\n**Critical Success** The target regains 4d8[healing] Hit Points and loses the Wounded condition.\n\n**Success** The target regains 2d8[healing] Hit Points, and loses the wounded condition.\n\n**Critical Failure** The target takes 1d8[damage] damage.",
+    "descr": "**Requirements** You're wearing or holding a [Healer'S Toolkit](/item/healer-s-toolkit-player-core).\n\n---\n\nYou spend 10 minutes treating one injured living creature (targeting yourself, if you so choose). The target is then temporarily immune to Treat Wounds actions for 1 hour, but this interval overlaps with the time you spent treating (so a patient can be treated once per hour, not once per 70 minutes).\n\nThe Medicine check DC is usually 15, though the GM might adjust it based on the circumstances, such as treating a patient outside in a storm, or treating magically cursed wounds. If you're an expert in Medicine, you can instead attempt a DC 20 check to increase the Hit Points regained by 10; if you're a master of Medicine, you can instead attempt a DC 30 check to increase the Hit Points regained by 30; and if you're legendary, you can instead attempt a DC 40 check to increase the Hit Points regained by 50. The damage dealt on a critical failure remains the same.\n\nIf you succeed at your check, you can continue treating the target to grant additional healing. If you treat it for a total of 1 hour, double the Hit Points it regains from Treat Wounds.\n\nThe result of your Medicine check determines how many Hit Points the target regains.\n\nTreat Wounds\n\n---\n\n**Critical Success** The target regains 4d8[healing] Hit Points and loses the [Wounded](/condition/wounded-player-core) condition.\n\n**Success** The target regains 2d8[healing] Hit Points, and loses the wounded condition.\n\n**Critical Failure** The target takes 1d8[damage] damage.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5622,7 +6486,21 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "You're wearing or holding a Healer'S Toolkit",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5652,7 +6530,7 @@
     "systemVersion": "1.2.10",
     "name": "Trip",
     "slug": "trip-player-core",
-    "descr": "**Requirements** You have at least one hand free. Your target can't be more than one size larger than you.\n\n---\n\nYou try to knock a creature to the ground. Attempt an Athletics check against the target's Reflex DC.\n\n---\n\n**Critical Success** The target falls, lands Prone, and takes 1d6 bludgeoning] damage.\n\n**Success** The target falls and lands prone.\n\n**Critical Failure** You lose your balance, fall, and land prone.",
+    "descr": "**Requirements** You have at least one hand free. Your target can't be more than one size larger than you.\n\n---\n\nYou try to knock a creature to the ground. Attempt an Athletics check against the target's Reflex DC.\n\n---\n\n**Critical Success** The target falls, lands [Prone](/condition/prone-player-core), and takes 1d6 bludgeoning] damage.\n\n**Success** The target falls and lands prone.\n\n**Critical Failure** You lose your balance, fall, and land prone.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5662,7 +6540,13 @@
       "frequency": "",
       "requirements": "You have at least one hand free. Your target can't be more than one size larger than you",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5690,7 +6574,7 @@
     "systemVersion": "1.2.10",
     "name": "True Shapeshift",
     "slug": "true-shapeshift-player-core",
-    "descr": "**Requirements** You're under the effects of Untamed Form\n\n---\n\n**Effect** You change into any other shape on your *untamed form* list. If the duration of that shape is different from the one you were previously in, use the shorter duration to determine your duration remaining.",
+    "descr": "**Requirements** You're under the effects of [Untamed Form](/spell/untamed-form-player-core)\n\n---\n\n**Effect** You change into any other shape on your *untamed form* list. If the duration of that shape is different from the one you were previously in, use the shorter duration to determine your duration remaining.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5700,7 +6584,13 @@
       "frequency": "",
       "requirements": "You're under the effects of Untamed Form",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5738,7 +6628,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5773,7 +6669,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -5800,14 +6697,15 @@
     "systemVersion": "1.2.10",
     "name": "Verdant Burst",
     "slug": "verdant-burst-player-core",
-    "descr": "**Prerequisites** Leshy Familiar Secrets\n\nWhen your familiar dies, it releases its primal energy to cast the 3-action version of Heal, heightened to a rank 1 lower than your highest-rank spell slot. The *heal* spell gains a status bonus equal to twice the spell's rank to the Hit Points it restores to plants. You must be able to cast 2nd-rank spells using spell slots to select this familiar ability.",
+    "descr": "**Prerequisites** [Leshy Familiar Secrets](/feat/leshy-familiar-secrets-player-core)\n\nWhen your familiar dies, it releases its primal energy to cast the 3-action version of [Heal](/spell/heal-player-core), heightened to a rank 1 lower than your highest-rank spell slot. The *heal* spell gains a status bonus equal to twice the spell's rank to the Hit Points it restores to plants. You must be able to cast 2nd-rank spells using spell slots to select this familiar ability.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -5834,7 +6732,7 @@
     "systemVersion": "1.2.10",
     "name": "Verdant Rest",
     "slug": "verdant-rest-player-core",
-    "descr": "You turn into a tree or other non-creature plant. This has the effect of using One With Plants to turn into a plant, except that your AC is 30. You can Dismiss this effect to turn back. If you rest for 10 minutes in this form in natural sunlight, you recover half your maximum Hit Points. If you take your daily rest in this form, the rest restores you to maximum Hit Points and removes all non-permanent Drained, Enfeebled, Clumsy, and Stupefied conditions, as well as all poisons and diseases of 19th level or lower.",
+    "descr": "You turn into a tree or other non-creature plant. This has the effect of using [One With Plants](/spell/one-with-plants-player-core) to turn into a plant, except that your AC is 30. You can Dismiss this effect to turn back. If you rest for 10 minutes in this form in natural sunlight, you recover half your maximum Hit Points. If you take your daily rest in this form, the rest restores you to maximum Hit Points and removes all non-permanent [Drained](/condition/drained-player-core), [Enfeebled](/condition/enfeebled-player-core), [Clumsy](/condition/clumsy-player-core), and [Stupefied](/condition/stupefied-player-core) conditions, as well as all poisons and diseases of 19th level or lower.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5844,7 +6742,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

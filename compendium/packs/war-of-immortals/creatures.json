@@ -125,7 +125,7 @@
           },
           {
             "name": "Stormsight",
-            "text": "Wind, precipitation, and clouds don't impair Agyra's vision; she ignores the Concealed condition from storms, mist, precipitation, and the like.",
+            "text": "Wind, precipitation, and clouds don't impair Agyra's vision; she ignores the [Concealed](/condition/concealed-player-core) condition from storms, mist, precipitation, and the like.",
             "traits": []
           }
         ],
@@ -220,7 +220,21 @@
         ]
       },
       "languagesText": "Tien",
-      "recallKnowledgeText": "DC 56 (Nature)"
+      "recallKnowledgeText": "DC 56 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "kaiju",
+          "slug": "kaiju"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -344,7 +358,7 @@
         "offensive": [
           {
             "name": "Bond with Mortals",
-            "text": "**Frequency** once per day\n\n---\n\n**Effect** The Immortal Trickster forms a bond with a mortal creature. While the bond exists, the mortals bonded to the Immortal Trickster increase their current and maximum Hit Points by 10 and gain a +2 status bonus to their attack and damage rolls, as well as to skill checks they make using Deception, Stealth, or Thievery. The Immortal Trickster can communicate telepathically with any of his bonded mortals as long as both beings are on the same plane. Each week that they are bonded to the Trickster, the bonded mortals increase their doomed value by 1; their doomed value cannot be increased above 3 by this ability and their doomed value cannot decrease while they remain bonded to the Trickster. The Immortal Trickster can be bonded with up to six mortals at a time, and they can take this action again to end the bond or to form a new bond. The bond also ends if the mortal dies. Whenever one of his bonded mortals dies, the Immortal Trickster becomes Drained 1 or increases the value of his drained condition by 1, and the Trickster gains a +2 status bonus on the next attack roll or skill check he attempts.",
+            "text": "**Frequency** once per day\n\n---\n\n**Effect** The Immortal Trickster forms a bond with a mortal creature. While the bond exists, the mortals bonded to the Immortal Trickster increase their current and maximum Hit Points by 10 and gain a +2 status bonus to their attack and damage rolls, as well as to skill checks they make using Deception, Stealth, or Thievery. The Immortal Trickster can communicate telepathically with any of his bonded mortals as long as both beings are on the same plane. Each week that they are bonded to the Trickster, the bonded mortals increase their doomed value by 1; their doomed value cannot be increased above 3 by this ability and their doomed value cannot decrease while they remain bonded to the Trickster. The Immortal Trickster can be bonded with up to six mortals at a time, and they can take this action again to end the bond or to form a new bond. The bond also ends if the mortal dies. Whenever one of his bonded mortals dies, the Immortal Trickster becomes Drained 1 or increases the value of his [drained](/condition/drained-player-core) condition by 1, and the Trickster gains a +2 status bonus on the next attack roll or skill check he attempts.",
             "traits": [
               "mental",
               "primal"
@@ -418,7 +432,25 @@
       },
       "languagesText": "Common",
       "recallKnowledgeText": "DC 38 (Nature, Occultism, Society)",
-      "items": "Wandering Pipe"
+      "items": "Wandering Pipe",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -547,7 +579,7 @@
           },
           {
             "name": "Mythic Resilience (Reflex and Will)",
-            "text": "The creature treats its saving throws with the associated save as one degree of success better than it rolled. This is not cumulative with other effects that change their degree of success, like the incapacitation trait (except for rolling a natural 1 or 20). Each time the monster gains mythic resilience, choose one save. The ability should apply to the creature's highest saves first.",
+            "text": "The creature treats its saving throws with the associated save as one degree of success better than it rolled. This is not cumulative with other effects that change their degree of success, like the [incapacitation](/trait/incapacitation) trait (except for rolling a natural 1 or 20). Each time the monster gains mythic resilience, choose one save. The ability should apply to the creature's highest saves first.",
             "traits": []
           },
           {
@@ -562,7 +594,7 @@
         "offensive": [
           {
             "name": "Carry Off Prey",
-            "text": "The gogiteth can move at its full Speed while it has a creature Grabbed in its jaws, bringing the grabbed creature along.",
+            "text": "The gogiteth can move at its full Speed while it has a creature [Grabbed](/condition/grabbed-player-core) in its jaws, bringing the grabbed creature along.",
             "traits": []
           },
           {
@@ -603,7 +635,17 @@
         ]
       },
       "languagesText": "Sakvroth",
-      "recallKnowledgeText": "DC 35 (Occultism)"
+      "recallKnowledgeText": "DC 35 (Occultism)",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -772,7 +814,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 24 (Nature)"
+      "recallKnowledgeText": "DC 24 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -925,7 +977,7 @@
           },
           {
             "name": "Mythic Resilience (Reflex and Will)",
-            "text": "The creature treats its saving throws with the associated save as one degree of success better than it rolled. This is not cumulative with other effects that change their degree of success, like the incapacitation trait (except for rolling a natural 1 or 20). Each time the monster gains mythic resilience, choose one save. The ability should apply to the creature's highest saves first.",
+            "text": "The creature treats its saving throws with the associated save as one degree of success better than it rolled. This is not cumulative with other effects that change their degree of success, like the [incapacitation](/trait/incapacitation) trait (except for rolling a natural 1 or 20). Each time the monster gains mythic resilience, choose one save. The ability should apply to the creature's highest saves first.",
             "traits": []
           },
           {
@@ -960,7 +1012,7 @@
           },
           {
             "name": "Steady Spellcasting",
-            "text": "If a reaction would disrupt the lich's spellcasting action, the lich attempts a Flat DC 15 check. On a success, the action isn't disrupted.",
+            "text": "If a reaction would disrupt the lich's [spellcasting](/action/spellcasting-player-core) action, the lich attempts a Flat DC 15 check. On a success, the action isn't disrupted.",
             "traits": []
           }
         ]
@@ -974,7 +1026,21 @@
       "languagesText": "Aklo, Chthonian, Common, Diabolic, Draconic, Elven, Necril, Sakvroth",
       "recallKnowledgeText": "DC 35 (Religion)",
       "sanctification": "unholy",
-      "items": "Staff of Fire (Greater), Invisibility Potion, Scroll of Teleport (Rank 6)"
+      "items": "Staff of Fire (Greater), Invisibility Potion, Scroll of Teleport (Rank 6)",
+      "traitLinks": [
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1140,7 +1206,17 @@
       },
       "languagesText": "Common, Jotun",
       "recallKnowledgeText": "DC 28 (Society)",
-      "items": "Javelin, Gut-Ripper, Breastplate"
+      "items": "Javelin, Gut-Ripper, Breastplate",
+      "traitLinks": [
+        {
+          "label": "giant",
+          "slug": "giant"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1348,7 +1424,7 @@
         "offensive": [
           {
             "name": "Brutal Drag",
-            "text": "When the Oliphaunt takes a Stride action, any creature Grabbed by the Oliphaunt of Jandelay's tusk is moved along with it to a location within 20 feet of the Oliphaunt's ending location. They remain grabbed and the GM determines which square they end up in.",
+            "text": "When the Oliphaunt takes a [Stride](/action/stride-player-core) action, any creature [Grabbed](/condition/grabbed-player-core) by the Oliphaunt of Jandelay's tusk is moved along with it to a location within 20 feet of the Oliphaunt's ending location. They remain grabbed and the GM determines which square they end up in.",
             "traits": []
           },
           {
@@ -1391,7 +1467,17 @@
         ]
       },
       "languagesText": "Aklo",
-      "recallKnowledgeText": "DC 60 (Religion)"
+      "recallKnowledgeText": "DC 60 (Religion)",
+      "traitLinks": [
+        {
+          "label": "monitor",
+          "slug": "monitor"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1556,7 +1642,7 @@
           },
           {
             "name": "Change Shape",
-            "text": "The sublime breath can take on the appearance of any Medium or Large humanoid creature. This doesn't change their Speed or their attack and damage bonuses with their Strikes, but might change the damage type their Strikes deal.\n\nThe sublime breath instinctively takes on the appearance an observer finds most inspiring. The first time they become observed, they use Change Shape as a free action, even if they were unaware they were being observed, they take on a specific appearance reflecting the Hidden desires, hopes, artistic inclinations, or similar deep-seated emotions of a single observer. As long as the sublime breath can be observed by this creature and maintains this shape, the observer gains a +1 circumstance bonus to Crafting and Performance checks and takes a –1 circumstance penalty to Will saves against the sublime breath or to any check or DC that would attempt to capture or restrain them, such as attempts to Grapple or the DC of a Paralyze spell.",
+            "text": "The sublime breath can take on the appearance of any Medium or Large humanoid creature. This doesn't change their Speed or their attack and damage bonuses with their Strikes, but might change the damage type their Strikes deal.\n\nThe sublime breath instinctively takes on the appearance an observer finds most inspiring. The first time they become observed, they use Change Shape as a free action, even if they were unaware they were being observed, they take on a specific appearance reflecting the Hidden desires, hopes, artistic inclinations, or similar deep-seated emotions of a single observer. As long as the sublime breath can be observed by this creature and maintains this shape, the observer gains a +1 circumstance bonus to Crafting and Performance checks and takes a –1 circumstance penalty to Will saves against the sublime breath or to any check or DC that would attempt to capture or restrain them, such as attempts to Grapple or the DC of a [Paralyze](/spell/paralyze-player-core) spell.",
             "traits": [
               "concentrate",
               "divine",
@@ -1588,7 +1674,17 @@
       },
       "languagesText": "Common, Fey",
       "recallKnowledgeText": "DC 27 (Nature)",
-      "items": "Immaculate Instrument"
+      "items": "Immaculate Instrument",
+      "traitLinks": [
+        {
+          "label": "fey",
+          "slug": "fey"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1778,7 +1874,7 @@
           },
           {
             "name": "Bloodboils",
-            "text": "Wounds caused by direct contact with Verex-That-Was erupt into painful, blood-filled boils. A creature struck by Verex-That-Was's jaws or tail must succeed at a Fortitude DC 45 or gain weakness 10 to physical damage for 1 day as the boils explode messily each time the creature sustains another wound. The bloodboils can be counteracted with a 3rd-rank (or higher) Cleanse Affliction spell, but the disease also ends if the victim receives magical healing that brings them to their Hit Point maximum.",
+            "text": "Wounds caused by direct contact with Verex-That-Was erupt into painful, blood-filled boils. A creature struck by Verex-That-Was's jaws or tail must succeed at a Fortitude DC 45 or gain weakness 10 to physical damage for 1 day as the boils explode messily each time the creature sustains another wound. The bloodboils can be counteracted with a 3rd-rank (or higher) [Cleanse Affliction](/spell/cleanse-affliction-player-core) spell, but the disease also ends if the victim receives magical healing that brings them to their Hit Point maximum.",
             "traits": [
               "disease"
             ]
@@ -1817,7 +1913,17 @@
         ]
       },
       "languagesText": "Aklo, Common, Orcish",
-      "recallKnowledgeText": "DC 58 (Occultism)"
+      "recallKnowledgeText": "DC 58 (Occultism)",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1936,7 +2042,7 @@
         "interaction": [
           {
             "name": "Absolute Surety",
-            "text": "Vulot is dependent on deception and charm to achieve their goals. If Vulot fails to deceive someone, for example failing the Deception check associated with a mislead spell to convince an observer that an action came from the duplicate, Vulot takes 4d6 mental] damage. This damage ignores Vulot's usual immunity.",
+            "text": "Vulot is dependent on deception and charm to achieve their goals. If Vulot fails to deceive someone, for example failing the Deception check associated with a [mislead](/spell/mislead-player-core) spell to convince an observer that an action came from the duplicate, Vulot takes 4d6 mental] damage. This damage ignores Vulot's usual immunity.",
             "traits": []
           },
           {
@@ -1983,7 +2089,7 @@
           },
           {
             "name": "Suffocated by a Thousand Breaths",
-            "text": "30 feet. Vulot's breath-stealing influence radiates out from their body, causing victims to feel like they are being smothered. Any creature that starts its turn within the aura must attempt a Fortitude DC 41 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes short of breath and is Off Guard until the beginning of its next turn.\n\n**Failure** The creature finds it very difficult to catch its breath. It can't speak or use auditory actions until the beginning of its next turn; this prevents it from casting spells that don't have the subtle trait.\n\n**Critical Failure** All the air immediately leaves the creature's lungs and it begins to suffocate. When it succeeds at the saving throw to regain consciousness at the end of its turn, it becomes Fatigued until it gets a full night's rest.",
+            "text": "30 feet. Vulot's breath-stealing influence radiates out from their body, causing victims to feel like they are being smothered. Any creature that starts its turn within the aura must attempt a Fortitude DC 41 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes short of breath and is Off Guard until the beginning of its next turn.\n\n**Failure** The creature finds it very difficult to catch its breath. It can't speak or use auditory actions until the beginning of its next turn; this prevents it from casting spells that don't have the [subtle](/trait/subtle) trait.\n\n**Critical Failure** All the air immediately leaves the creature's lungs and it begins to suffocate. When it succeeds at the saving throw to regain consciousness at the end of its turn, it becomes Fatigued until it gets a full night's rest.",
             "traits": [
               "aura",
               "incapacitation"
@@ -2004,7 +2110,7 @@
           },
           {
             "name": "Steal Thoughts",
-            "text": "Vulot's mental attacks can confuse and disorient. A creature struck by Vulot's thought spike must attempt a Will DC 44 save. A creature stupefied by this effect is Off Guard to Vulot's Steal Face ability.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes Stupefied 1 for 1 round.\n\n**Failure** The creature becomes stupefied 1 for 1 minute. If it's already stupefied, its stupefied value increases by 1 instead (to a maximum of stupefied 4).\n\n**Critical Failure** As failure, plus the creature is Confused for 1 minute.",
+            "text": "Vulot's mental attacks can confuse and disorient. A creature struck by Vulot's thought spike must attempt a Will DC 44 save. A creature [stupefied](/condition/stupefied-player-core) by this effect is Off Guard to Vulot's Steal Face ability.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes Stupefied 1 for 1 round.\n\n**Failure** The creature becomes stupefied 1 for 1 minute. If it's already stupefied, its stupefied value increases by 1 instead (to a maximum of stupefied 4).\n\n**Critical Failure** As failure, plus the creature is Confused for 1 minute.",
             "traits": [
               "emotion",
               "mental"
@@ -2020,7 +2126,25 @@
       },
       "languagesText": "Chthonian, Common, Draconic, Empyrean",
       "recallKnowledgeText": "DC 52 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "demon",
+          "slug": "demon"
+        },
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2161,7 +2285,7 @@
         "interaction": [
           {
             "name": "Countless Eyes",
-            "text": "The Weaver of Webs can see through the eyes of any spider, living or dead, in one of her many lairs. When the Weaver casts her Scrying spell and targets a spider in her lair, the spell is not expended, and the spider automatically critically fails its saving throw.",
+            "text": "The Weaver of Webs can see through the eyes of any spider, living or dead, in one of her many lairs. When the Weaver casts her [Scrying](/spell/scrying-player-core) spell and targets a spider in her lair, the spell is not expended, and the spider automatically critically fails its saving throw.",
             "traits": [
               "scrying"
             ]
@@ -2181,7 +2305,7 @@
           },
           {
             "name": "Webbed Conveyance",
-            "text": "**Requirements** The Weaver is within 15 feet of a creature Paralyzed in her nightmare cocoon\n\n---\n\n**Effect** The Weaver grabs the paralyzed target, webs them to her back or one of her legs, and then Strides. As long as the creature is Immobilized by the Weaver's nightmare cocoon, it shares the Weaver's space and moves with her. The DC to Escape the nightmare cocoon increases to 36.",
+            "text": "**Requirements** The Weaver is within 15 feet of a creature [Paralyzed](/condition/paralyzed-player-core) in her nightmare cocoon\n\n---\n\n**Effect** The Weaver grabs the paralyzed target, webs them to her back or one of her legs, and then Strides. As long as the creature is Immobilized by the Weaver's nightmare cocoon, it shares the Weaver's space and moves with her. The DC to Escape the nightmare cocoon increases to 36.",
             "traits": [
               "manipulate"
             ]
@@ -2211,7 +2335,7 @@
           },
           {
             "name": "Spilled Secrets",
-            "text": "Any creature that speaks within this aura must succeed at a Will DC 34 save or divulge some kind of secret instead of whatever speech they intended. Linguistic spells and effects gain the concentrate trait if they didn't have it already and are wasted if the creature fails this save.\n\nOn a critical failure, the character betrays a secret they least want to reveal to the Weaver or those present.",
+            "text": "Any creature that speaks within this aura must succeed at a Will DC 34 save or divulge some kind of secret instead of whatever speech they intended. Linguistic spells and effects gain the [concentrate](/trait/concentrate) trait if they didn't have it already and are wasted if the creature fails this save.\n\nOn a critical failure, the character betrays a secret they least want to reveal to the Weaver or those present.",
             "traits": [
               "aura",
               "mental"
@@ -2226,7 +2350,7 @@
           },
           {
             "name": "Nightmare Cocoon",
-            "text": "A creature struck by the Weaver's web Strike must succeed at a Reflex DC 34 save or become Immobilized (Escape). If the Weaver spends 1 Mythic Point as a free action when a creature fails this save, the creature is also Paralyzed, experiencing terrible nightmares of their deepest-held anxieties. The Weaver can view these dreams using a Sustain action, which imparts a –2 circumstance penalty to any Will saves the target attempts against the Weaver's spells until the beginning of the Weaver's next turn. At the end of a paralyzed victim's turn, they can attempt a Will DC 34 save to end the paralyzed condition (though they are still immobilized until they Escape).",
+            "text": "A creature struck by the Weaver's web Strike must succeed at a Reflex DC 34 save or become Immobilized (Escape). If the Weaver spends 1 Mythic Point as a free action when a creature fails this save, the creature is also Paralyzed, experiencing terrible nightmares of their deepest-held anxieties. The Weaver can view these dreams using a [Sustain](/action/sustain-player-core) action, which imparts a –2 circumstance penalty to any Will saves the target attempts against the Weaver's spells until the beginning of the Weaver's next turn. At the end of a paralyzed victim's turn, they can attempt a Will DC 34 save to end the paralyzed condition (though they are still immobilized until they Escape).",
             "traits": [
               "incapacitation",
               "mental"
@@ -2248,7 +2372,17 @@
         ]
       },
       "languagesText": "Aklo, Chthonian, Common, Diabolic, Draconic, Dwarven, Empyrean, Jotun, Sakvroth",
-      "recallKnowledgeText": "DC 44 (Nature)"
+      "recallKnowledgeText": "DC 44 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Basic Finisher",
     "slug": "basic-finisher-player-core-2",
-    "descr": "You make a graceful, deadly attack. Make a Strike; if you hit and your weapon qualifies for Precise Strike, you deal the full 1d6 damage from precise strike.",
+    "descr": "You make a graceful, deadly attack. Make a Strike; if you hit and your weapon qualifies for [Precise Strike](/feat/precise-strike-player-core-2), you deal the full 1d6 damage from precise strike.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -16,7 +16,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "finisher",
+          "slug": "finisher"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -54,7 +60,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "flourish",
+          "slug": "flourish"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -91,7 +103,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -130,7 +148,17 @@
       "frequency": "once per 10 minutes",
       "requirements": "",
       "trigger": "Another creature attempts a check that could help get you closer to answering the question at the heart of one of your active investigations",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "investigator",
+          "slug": "investigator"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -159,7 +187,7 @@
     "systemVersion": "1.2.10",
     "name": "Cobble Together",
     "slug": "cobble-together-player-core-2",
-    "descr": "You Craft a temporary item out of anything, anywhere, with whatever materials happen to be on hand, spending only 10 minutes to perform the initial Crafting check.\n\nThe temporary item must be one you've memorized or have the formula for, and must be common, non-magical, half your level or lower, and must be a weapon, armor, or a non-consumable piece of adventuring gear (non-consumable adventuring gear appears on page 291 of Player Core). Instead of a single item, you can create 10 pieces of a single type of ammunition. You can create only the physical item, not any information or magic, so for example, while you could create a blank journal or one with random pages, you couldn't use it as a scholarly journal or a religious text",
+    "descr": "You [Craft](/action/craft-player-core) a temporary item out of anything, anywhere, with whatever materials happen to be on hand, spending only 10 minutes to perform the initial Crafting check.\n\nThe temporary item must be one you've memorized or have the formula for, and must be common, non-magical, half your level or lower, and must be a weapon, armor, or a non-consumable piece of adventuring gear (non-consumable adventuring gear appears on page 291 of Player Core). Instead of a single item, you can create 10 pieces of a single type of ammunition. You can create only the physical item, not any information or magic, so for example, while you could create a blank journal or one with random pages, you couldn't use it as a scholarly journal or a religious text",
     "data": {
       "rarity": "common",
       "traits": [
@@ -168,7 +196,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -196,7 +230,7 @@
     "systemVersion": "1.2.10",
     "name": "Confident Finisher",
     "slug": "confident-finisher-player-core-2",
-    "descr": "You make an incredibly graceful attack, piercing your foe's defenses. Make a Strike with the following failure effect.\n\n---\n\n**Failure** You deal half your Precise Strike damage to the target. This damage type is that of the weapon or unarmed attack you used for the Strike.",
+    "descr": "You make an incredibly graceful attack, piercing your foe's defenses. Make a Strike with the following failure effect.\n\n---\n\n**Failure** You deal half your [Precise Strike](/feat/precise-strike-player-core-2) damage to the target. This damage type is that of the weapon or unarmed attack you used for the Strike.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -206,7 +240,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "finisher",
+          "slug": "finisher"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -245,7 +285,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "An enemy in your champion's aura damages you",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "champion",
+          "slug": "champion"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -274,7 +324,7 @@
     "systemVersion": "1.2.10",
     "name": "Devise a Stratagem",
     "slug": "devise-a-stratagem-player-core-2",
-    "descr": "**Frequency** once per round\n\n---\n\nYou assess a foe's weaknesses in combat and use them to formulate a plan of attack. Choose a creature you can see. You can Devise a Stratagem as a free action if you're aware that creature could help answer the question at the heart of one of your active investigations. Roll a d20, then decide on an attack stratagem or skill stratagem.\n\n**Attack Stratagem** If you Strike the chosen creature before the start of your next turn, your Strike gains the fortune trait and you must use the result of the d20 roll for your Strike's attack roll instead of rolling. You make this substitution only for the first Strike you make against the creature this round, not any subsequent ones. When you make this substitution, you can add your Intelligence modifier to your attack roll instead of your Strength or Dexterity modifier. If you Strike with a melee weapon, melee unarmed attack, or thrown weapon, it must have the agile or finesse trait to benefit from the substitution.\n\n**Skill Stratagem** You can't attempt to Strike the target until the start of your next turn. You gain a +1 circumstance bonus to your next Intelligence-, Wisdom-, or Charisma-based skill check or Perception check involving the target before the start of your next turn. If you would gain your Pursue a Lead investigation bonus to such a check, that bonus increases by 1 instead of you gaining the +1 bonus listed.",
+    "descr": "**Frequency** once per round\n\n---\n\nYou assess a foe's weaknesses in combat and use them to formulate a plan of attack. Choose a creature you can see. You can Devise a Stratagem as a free action if you're aware that creature could help answer the question at the heart of one of your active investigations. Roll a d20, then decide on an attack stratagem or skill stratagem.\n\n**Attack Stratagem** If you Strike the chosen creature before the start of your next turn, your Strike gains the [fortune](/trait/fortune) trait and you must use the result of the d20 roll for your Strike's attack roll instead of rolling. You make this substitution only for the first Strike you make against the creature this round, not any subsequent ones. When you make this substitution, you can add your Intelligence modifier to your attack roll instead of your Strength or Dexterity modifier. If you Strike with a melee weapon, melee unarmed attack, or thrown weapon, it must have the agile or [finesse](/trait/finesse) trait to benefit from the substitution.\n\n**Skill Stratagem** You can't attempt to Strike the target until the start of your next turn. You gain a +1 circumstance bonus to your next Intelligence-, Wisdom-, or Charisma-based skill check or Perception check involving the target before the start of your next turn. If you would gain your Pursue a Lead investigation bonus to such a check, that bonus increases by 1 instead of you gaining the +1 bonus listed.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -285,7 +335,17 @@
       "frequency": "once per round",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "investigator",
+          "slug": "investigator"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -322,7 +382,8 @@
       "frequency": "",
       "requirements": "You are wielding a bow or a loaded crossbow",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -349,7 +410,7 @@
     "systemVersion": "1.2.10",
     "name": "Expeditious Inspection",
     "slug": "expeditious-inspection-player-core-2",
-    "descr": "**Frequency** once per 10 minutes\n\n---\n\nYou observe and assess your surroundings with great speed. You Recall Knowledge, Seek, or Sense Motive.",
+    "descr": "**Frequency** once per 10 minutes\n\n---\n\nYou observe and assess your surroundings with great speed. You [Recall Knowledge](/action/recall-knowledge-player-core), [Seek](/action/seek-player-core), or [Sense Motive](/action/sense-motive-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -359,7 +420,13 @@
       "frequency": "once per 10 minutes",
       "requirements": "",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "investigator",
+          "slug": "investigator"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -387,14 +454,15 @@
     "systemVersion": "1.2.10",
     "name": "Extra Alchemy",
     "slug": "extra-alchemy-player-core-2",
-    "descr": "Your familiar helps you brew items at the start of the day. You can create one additional item with Advanced Alchemy during your daily preparations. You must have the Advanced Alchemy ability to select this ability.\n\nEffect: Extra Alchemy",
+    "descr": "Your familiar helps you brew items at the start of the day. You can create one additional item with [Advanced Alchemy](/feat/advanced-alchemy-player-core-2) during your daily preparations. You must have the Advanced Alchemy ability to select this ability.\n\nEffect: Extra Alchemy",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -421,14 +489,15 @@
     "systemVersion": "1.2.10",
     "name": "Extra Vial",
     "slug": "extra-vial-player-core-2",
-    "descr": "Your familiar accretes alchemical liquids in its body. Once per day, you can Interact when your familiar is adjacent to you to gain a versatile vial. You must have the Versatile Vials ability to select this ability.",
+    "descr": "Your familiar accretes alchemical liquids in its body. Once per day, you can Interact when your familiar is adjacent to you to gain a versatile vial. You must have the [Versatile Vials](/feat/versatile-vials-player-core-2) ability to select this ability.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -466,7 +535,17 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "You attempt a skill check and haven't yet rolled",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -495,7 +574,7 @@
     "systemVersion": "1.2.10",
     "name": "Final Surge",
     "slug": "final-surge-player-core-2",
-    "descr": "You Stride twice. The Drakeheart Mutagen's duration ends.",
+    "descr": "You Stride twice. The [Drakeheart Mutagen](/item/drakeheart-mutagen-lesser-player-core-2)'s duration ends.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -503,7 +582,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -530,7 +610,7 @@
     "systemVersion": "1.2.10",
     "name": "Flash of Grandeur",
     "slug": "flash-of-grandeur-player-core-2",
-    "descr": "**Trigger** An enemy damages your ally, and both are in your champion's aura\n\n---\n\n**Effect** Imperious divine light flashes out from you to surround your foe. The ally gains resistance to all damage against the triggering damage equal to 2 + your level. Until the end of your next turn, the attacker is affected by Revealing Light.\n\nEffect: Champion'S Resistance",
+    "descr": "**Trigger** An enemy damages your ally, and both are in your champion's aura\n\n---\n\n**Effect** Imperious divine light flashes out from you to surround your foe. The ally gains resistance to all damage against the triggering damage equal to 2 + your level. Until the end of your next turn, the attacker is affected by [Revealing Light](/spell/revealing-light-player-core).\n\nEffect: Champion'S Resistance",
     "data": {
       "rarity": "common",
       "traits": [
@@ -541,7 +621,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "An enemy damages your ally, and both are in your champion's aura",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "champion",
+          "slug": "champion"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -570,7 +660,7 @@
     "systemVersion": "1.2.10",
     "name": "Glimpse of Redemption",
     "slug": "glimpse-of-redemption-player-core-2",
-    "descr": "**Trigger** An enemy damages your ally, and both are in your champion's aura\n\n---\n\n**Effect** Your enemy hesitates under the weight of sin as visions of redemption play in their mind's eye. The enemy must choose to repent or refuse, with the following effects. If the enemy is mindless or otherwise unable to repent, use the refuse result.\n\n**Repent** The ally is unharmed by the triggering damage.\n\n**Refuse** The ally gains resistance to all damage against the triggering damage equal to 2 + your level. After the damaging effect is applied, the enemy becomes Enfeebled 2 until the end of its next turn.\n\nEffect: Champion'S Resistance",
+    "descr": "**Trigger** An enemy damages your ally, and both are in your champion's aura\n\n---\n\n**Effect** Your enemy hesitates under the weight of sin as visions of redemption play in their mind's eye. The enemy must choose to repent or refuse, with the following effects. If the enemy is mindless or otherwise unable to repent, use the refuse result.\n\n**Repent** The ally is unharmed by the triggering damage.\n\n**Refuse** The ally gains resistance to all damage against the triggering damage equal to 2 + your level. After the damaging effect is applied, the enemy becomes [Enfeebled 2](/condition/enfeebled-player-core) until the end of its next turn.\n\nEffect: Champion'S Resistance",
     "data": {
       "rarity": "common",
       "traits": [
@@ -581,7 +671,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "An enemy damages your ally, and both are in your champion's aura",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "champion",
+          "slug": "champion"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -619,7 +719,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -647,7 +753,7 @@
     "systemVersion": "1.2.10",
     "name": "Iron Command",
     "slug": "iron-command-player-core-2",
-    "descr": "**Trigger** An enemy in your champion's aura damages you\n\n---\n\n**Effect** You put an impertinent foe who dared harm you in their proper place. You command your enemy to kneel before you in obedience. If they dare to refuse, they must pay the price in pain and anguish. The enemy must choose one of the following options.\n\n**Kneel** The enemy drops Prone as a free action.\n\n**Refuse** You deal (ternary(gte(current value,19),6,ternary(gte(current value,16),5,ternary(gte(current value,12),4,ternary(gte(current value,9),3,ternary(gte(current value,5),2,1))))))d6 mental] damage to the enemy. This damage increases to 2d6 at 5th level, 3d6 at 9th level, 4d6 at 12th level, 5d6 at 16th level, and 6d6 at 19th level.\n\nRegardless of which option the enemy chose, your Strikes against it deal 1 extra spirit damage until the end of your next turn. This extra damage increases to 2 at 9th level and 3 at 16th level.\n\nEffect: Champion'S Extra Damage",
+    "descr": "**Trigger** An enemy in your champion's aura damages you\n\n---\n\n**Effect** You put an impertinent foe who dared harm you in their proper place. You command your enemy to kneel before you in obedience. If they dare to refuse, they must pay the price in pain and anguish. The enemy must choose one of the following options.\n\n**Kneel** The enemy drops [Prone](/condition/prone-player-core) as a free action.\n\n**Refuse** You deal (ternary(gte(current value,19),6,ternary(gte(current value,16),5,ternary(gte(current value,12),4,ternary(gte(current value,9),3,ternary(gte(current value,5),2,1))))))d6 mental] damage to the enemy. This damage increases to 2d6 at 5th level, 3d6 at 9th level, 4d6 at 12th level, 5d6 at 16th level, and 6d6 at 19th level.\n\nRegardless of which option the enemy chose, your Strikes against it deal 1 extra spirit damage until the end of your next turn. This extra damage increases to 2 at 9th level and 3 at 16th level.\n\nEffect: Champion'S Extra Damage",
     "data": {
       "rarity": "common",
       "traits": [
@@ -660,7 +766,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "An enemy in your champion's aura damages you",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "champion",
+          "slug": "champion"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -698,7 +822,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -725,7 +850,7 @@
     "systemVersion": "1.2.10",
     "name": "Liberating Step",
     "slug": "liberating-step-player-core-2",
-    "descr": "**Trigger** An enemy damages, grabs, or restrains your ally, and both are in your champion's aura\n\n---\n\nYou free an ally from restraint.\n\nIf the trigger was an ally taking damage, the ally gains resistance to all damage against the triggering damage equal to 2 + your level.\n\nThe ally can attempt to break free of effects grabbing, Restraining, Immobilizing, or Paralyzing them. They either attempt a new save against one such effect that allows a save, or attempt to Escape from one effect as a free action.\n\nIf they can move, the ally can Step as a free action, even if they didn't need to escape.\n\nEffect: Champion'S Resistance",
+    "descr": "**Trigger** An enemy damages, [grabs](/condition/grabbed-player-core), or [restrains](/condition/restrained-player-core) your ally, and both are in your champion's aura\n\n---\n\nYou free an ally from restraint.\n\nIf the trigger was an ally taking damage, the ally gains resistance to all damage against the triggering damage equal to 2 + your level.\n\nThe ally can attempt to break free of effects grabbing, Restraining, [Immobilizing](/condition/immobilized-player-core), or [Paralyzing](/condition/paralyzed-player-core) them. They either attempt a new save against one such effect that allows a save, or attempt to [Escape](/action/escape-player-core) from one effect as a free action.\n\nIf they can move, the ally can Step as a free action, even if they didn't need to escape.\n\nEffect: Champion'S Resistance",
     "data": {
       "rarity": "common",
       "traits": [
@@ -735,7 +860,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "An enemy damages, grabs, or restrains your ally, and both are in your champion's aura",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "champion",
+          "slug": "champion"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -763,7 +894,7 @@
     "systemVersion": "1.2.10",
     "name": "Mark for Death",
     "slug": "mark-for-death-player-core-2",
-    "descr": "**Requirements** The creature you intend to mark is observed by you\n\n---\n\n**Effect** You designate a single creature as your mark. Using Mark for Death while Hidden or Undetected doesn't make you Observed. Mark for Death lasts until the mark dies or you use Mark for Death again. You gain a +2 circumstance bonus to Perception checks to Seek your mark, as well as to Deception checks to Feint against your mark. Your mark takes a –2 circumstance penalty to all Perception checks to Seek you.\n\nIn addition, when attacking your mark, you have the Sneak Attack class feature, except it deals 1d4 precision damage and you don't increase the number of dice as you gain levels. At 6th level, the damage increases to 1d6. If you already have the sneak attack class feature, you instead deal an additional 1 precision damage with your sneak attacks made against your mark, increasing to 2 precision damage at 6th level.",
+    "descr": "**Requirements** The creature you intend to mark is observed by you\n\n---\n\n**Effect** You designate a single creature as your mark. Using Mark for Death while [Hidden](/condition/hidden-player-core) or [Undetected](/condition/undetected-player-core) doesn't make you [Observed](/condition/observed-player-core). Mark for Death lasts until the mark dies or you use Mark for Death again. You gain a +2 circumstance bonus to Perception checks to [Seek](/action/seek-player-core) your mark, as well as to Deception checks to [Feint](/action/feint-player-core) against your mark. Your mark takes a –2 circumstance penalty to all Perception checks to Seek you.\n\nIn addition, when attacking your mark, you have the [Sneak Attack](/feat/sneak-attack-player-core) class feature, except it deals 1d4 precision damage and you don't increase the number of dice as you gain levels. At 6th level, the damage increases to 1d6. If you already have the sneak attack class feature, you instead deal an additional 1 precision damage with your sneak attacks made against your mark, increasing to 2 precision damage at 6th level.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -773,7 +904,13 @@
       "frequency": "",
       "requirements": "The creature you intend to mark is observed by you",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -809,7 +946,8 @@
       "frequency": "",
       "requirements": "You have prepared your clothing to poison attackers",
       "trigger": "A creature adjacent to you hits you with a melee unarmed Strike",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -836,7 +974,7 @@
     "systemVersion": "1.2.10",
     "name": "Opportune Riposte",
     "slug": "opportune-riposte-player-core-2",
-    "descr": "**Trigger** A foe within your reach critically fails a Strike against you\n\n---\n\nYou take advantage of an opening from your enemy's fumbled attack. You either make a melee Strike against the triggering foe or attempt to Disarm it of the weapon it used for the Strike.",
+    "descr": "**Trigger** A foe within your reach critically fails a Strike against you\n\n---\n\nYou take advantage of an opening from your enemy's fumbled attack. You either make a melee Strike against the triggering foe or attempt to [Disarm](/action/disarm-player-core) it of the weapon it used for the Strike.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -847,7 +985,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "A foe within your reach critically fails a Strike against you",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "bravado",
+          "slug": "bravado"
+        },
+        {
+          "label": "swashbuckler",
+          "slug": "swashbuckler"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -884,7 +1032,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You fall at least 10 feet and take no damage from the fall",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -911,7 +1060,7 @@
     "systemVersion": "1.2.10",
     "name": "Pointed Question",
     "slug": "pointed-question-player-core-2",
-    "descr": "You ask a question that charms or needles someone in just the right way. Ask a question of a non-allied creature that you can see. Attempt a Diplomacy check against the creature's Will DC. The creature is then temporarily immune for 1 hour.\n\n---\n\n**Critical Success** The target must directly answer your question. It doesn't have to answer truthfully, but you gain a +4 circumstance bonus to your Perception DC if the creature attempts to Lie to you.\n\nWhether it answers truthfully or not, you glean something from its body language, and it is Off Guard to the Strike you make using Devise A Stratagem against it before the end of your turn.\n\n**Success** As critical success, but the circumstance bonus to your Perception DC is +2.\n\nEffect: Pointed Question\n\n**Failure** The target can refuse to answer you as normal.\n\n**Critical Failure** The target can refuse to answer you as normal, and its attitude toward you decreases by one step due to your aggravating attention.",
+    "descr": "You ask a question that charms or needles someone in just the right way. Ask a question of a non-allied creature that you can see. Attempt a Diplomacy check against the creature's Will DC. The creature is then temporarily immune for 1 hour.\n\n---\n\n**Critical Success** The target must directly answer your question. It doesn't have to answer truthfully, but you gain a +4 circumstance bonus to your Perception DC if the creature attempts to [Lie](/action/lie-player-core) to you.\n\nWhether it answers truthfully or not, you glean something from its body language, and it is [Off Guard](/condition/off-guard-player-core) to the Strike you make using [Devise A Stratagem](/action/devise-a-stratagem-player-core-2) against it before the end of your turn.\n\n**Success** As critical success, but the circumstance bonus to your Perception DC is +2.\n\nEffect: Pointed Question\n\n**Failure** The target can refuse to answer you as normal.\n\n**Critical Failure** The target can refuse to answer you as normal, and its attitude toward you decreases by one step due to your aggravating attention.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -925,7 +1074,29 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "investigator",
+          "slug": "investigator"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -957,14 +1128,15 @@
     "systemVersion": "1.2.10",
     "name": "Poison Reservoir",
     "slug": "poison-reservoir-player-core-2",
-    "descr": "Your familiar has a reservoir for poison, allowing it to apply an injury poison to an adjacent ally's exposed weapon with a single Interact action. You must supply the poison and instill it into this reservoir using two consecutive Interact actions. You must have a homunculus familiar to select this ability",
+    "descr": "Your familiar has a reservoir for poison, allowing it to apply an injury poison to an adjacent ally's exposed weapon with a single [Interact](/action/interact-player-core) action. You must supply the poison and instill it into this reservoir using two consecutive Interact actions. You must have a homunculus familiar to select this ability",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -991,7 +1163,7 @@
     "systemVersion": "1.2.10",
     "name": "Pursue a Lead",
     "slug": "pursue-a-lead-player-core-2",
-    "descr": "**Frequency** once per 10 minutes\n\n---\n\nYou name one detail you've identified that you think is part of a larger mystery, then spend 1 minute examining it. The detail is typically either obvious or something you've already discovered using Recall Knowledge, Sense Motive, Gather Information, or a similar action. After the minute passes, the GM either confirms there's a larger mystery or tells you there's nothing more to learn (the detail is inconsequential or you know all the information already). If there is in fact a larger mystery at play, you can't Pursue a Lead again for 10 minutes, but you can choose to open an investigation. To do so, define the question at the heart of the mystery, such as \"Where has the priceless work of art that was supposed to hang here been taken?\" or \"Who or what killed this priest?\" Work with your GM to refine the question if need be. You can also give your investigation a name to better keep track of it (such as \"The Case of the Cheated Goblin\" or \"The Skinsaw Murders\").\n\n**Investigation Bonus** Whenever you attempt a Perception check or skill check to attempt to get closer to answering the question at the heart of an active investigation, you gain a +1 circumstance bonus to the check. The exact checks this applies to depend on the actions you use to investigate and are determined by the GM, but checks to investigate are typically Perception checks or skill checks that use Intelligence, Wisdom, or Charisma.\n\n**Active Investigations** You can maintain two active investigations at a time. If you Pursue another Lead after that, the case must be different from any of your current investigations (as far as you are aware), and you give up on a current investigation of your choice. Once you've given up pursuit of an investigation, you can't Pursue a Lead into it again until after the next time you make your daily preparations.\n\n**Solving an Investigation** If you answer the question at the heart of your investigation, the GM tells you that you've done so. You don't lose the bonus or other benefits until you choose to close the investigation by Pursuing a Lead again or voluntarily Dismissing it. If what you discover points to an even larger mystery, you can work with the GM to adapt the question and name of the investigation to the new information.",
+    "descr": "**Frequency** once per 10 minutes\n\n---\n\nYou name one detail you've identified that you think is part of a larger mystery, then spend 1 minute examining it. The detail is typically either obvious or something you've already discovered using [Recall Knowledge](/action/recall-knowledge-player-core), [Sense Motive](/action/sense-motive-player-core), [Gather Information](/action/gather-information-player-core), or a similar action. After the minute passes, the GM either confirms there's a larger mystery or tells you there's nothing more to learn (the detail is inconsequential or you know all the information already). If there is in fact a larger mystery at play, you can't Pursue a Lead again for 10 minutes, but you can choose to open an investigation. To do so, define the question at the heart of the mystery, such as \"Where has the priceless work of art that was supposed to hang here been taken?\" or \"Who or what killed this priest?\" Work with your GM to refine the question if need be. You can also give your investigation a name to better keep track of it (such as \"The Case of the Cheated Goblin\" or \"The Skinsaw Murders\").\n\n**Investigation Bonus** Whenever you attempt a Perception check or skill check to attempt to get closer to answering the question at the heart of an active investigation, you gain a +1 circumstance bonus to the check. The exact checks this applies to depend on the actions you use to investigate and are determined by the GM, but checks to investigate are typically Perception checks or skill checks that use Intelligence, Wisdom, or Charisma.\n\n**Active Investigations** You can maintain two active investigations at a time. If you Pursue another Lead after that, the case must be different from any of your current investigations (as far as you are aware), and you give up on a current investigation of your choice. Once you've given up pursuit of an investigation, you can't Pursue a Lead into it again until after the next time you make your daily preparations.\n\n**Solving an Investigation** If you answer the question at the heart of your investigation, the GM tells you that you've done so. You don't lose the bonus or other benefits until you choose to close the investigation by Pursuing a Lead again or voluntarily Dismissing it. If what you discover points to an even larger mystery, you can work with the GM to adapt the question and name of the investigation to the new information.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1002,7 +1174,21 @@
       "category": "interaction",
       "frequency": "once per 10 minutes",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "investigator",
+          "slug": "investigator"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1032,7 +1218,7 @@
     "systemVersion": "1.2.10",
     "name": "Quick Alchemy",
     "slug": "quick-alchemy-player-core-2",
-    "descr": "**Requirements** You're either holding or wearing an Alchemist'S Toolkit. and you have a free hand.\n\n---\n\nYou can either use up a versatile vial to make another alchemical consumable at a moment's notice or create an especially short-lived versatile vial. Any effect created by an item made with Quick Alchemy that would have a duration longer than 10 minutes lasts for 10 minutes instead.\n\n**Create Consumable** You expend one of your versatile vials to create a single alchemical consumable item of your level or lower that's in your formula book. You don't have to spend the normal monetary cost in alchemical raw materials or need to attempt a Crafting check. This item has the infused trait, but it remains potent only until the start of your next turn. (As normal, you need only one formula for an item to create any level of that item.)\n\n**Quick Vial** You create a versatile vial that can be used only as a bomb or for the versatile vial option from your research field (it can't be used to create a consumable, for example). This item has the infused trait, but it remains potent only until the end of your current turn.",
+    "descr": "**Requirements** You're either holding or wearing an [Alchemist'S Toolkit](/item/alchemist-s-toolkit-player-core). and you have a free hand.\n\n---\n\nYou can either use up a versatile vial to make another alchemical consumable at a moment's notice or create an especially short-lived versatile vial. Any effect created by an item made with Quick Alchemy that would have a duration longer than 10 minutes lasts for 10 minutes instead.\n\n**Create Consumable** You expend one of your versatile vials to create a single alchemical consumable item of your level or lower that's in your formula book. You don't have to spend the normal monetary cost in alchemical raw materials or need to attempt a Crafting check. This item has the [infused](/trait/infused) trait, but it remains potent only until the start of your next turn. (As normal, you need only one formula for an item to create any level of that item.)\n\n**Quick Vial** You create a versatile vial that can be used only as a bomb or for the versatile vial option from your research field (it can't be used to create a consumable, for example). This item has the infused trait, but it remains potent only until the end of your current turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1043,7 +1229,17 @@
       "frequency": "",
       "requirements": "You're either holding or wearing an Alchemist'S Toolkit. and you have a free hand",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "alchemist",
+          "slug": "alchemist"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1072,7 +1268,7 @@
     "systemVersion": "1.2.10",
     "name": "Quick Tincture",
     "slug": "quick-tincture-player-core-2",
-    "descr": "**Cost** 1 versatile vial\n\n**Requirements** You know the formula for the alchemical item you're creating, you are holding or wearing alchemist's toolkit, and you have a free hand.\n\n---\n\nYou quickly brew up a short-lived tincture. You create a single alchemical elixir or tool of your level or lower without having to spend the normal monetary cost in alchemical reagents or needing to attempt a Crafting check. This item has the infused trait, but it remains potent only until the end of the current turn.",
+    "descr": "**Cost** 1 versatile vial\n\n**Requirements** You know the formula for the alchemical item you're creating, you are holding or wearing alchemist's toolkit, and you have a free hand.\n\n---\n\nYou quickly brew up a short-lived tincture. You create a single alchemical elixir or tool of your level or lower without having to spend the normal monetary cost in alchemical reagents or needing to attempt a Crafting check. This item has the [infused](/trait/infused) trait, but it remains potent only until the end of the current turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1083,7 +1279,17 @@
       "frequency": "",
       "requirements": "You know the formula for the alchemical item you're creating, you are holding or wearing alchemist's toolkit, and you have a free hand",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "investigator",
+          "slug": "investigator"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1112,7 +1318,7 @@
     "systemVersion": "1.2.10",
     "name": "Quick-Tempered",
     "slug": "quick-tempered-player-core-2",
-    "descr": "**Trigger** You roll initiative.\n\n**Requirements** You are not Encumbered or wearing heavy armor.\n\n---\n\nSo long as you are able to move freely, your fury is instinctive and instantaneous. You Rage.",
+    "descr": "**Trigger** You roll initiative.\n\n**Requirements** You are not [Encumbered](/condition/encumbered-player-core) or wearing heavy armor.\n\n---\n\nSo long as you are able to move freely, your fury is instinctive and instantaneous. You [Rage](/action/rage-player-core-2).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1122,7 +1328,13 @@
       "frequency": "",
       "requirements": "You are not Encumbered or wearing heavy armor",
       "trigger": "You roll initiative",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "barbarian",
+          "slug": "barbarian"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1150,7 +1362,7 @@
     "systemVersion": "1.2.10",
     "name": "Rage",
     "slug": "rage-player-core-2",
-    "descr": "**Requirements** You aren't Fatigued or raging.\n\n---\n\nYou tap into your inner fury and begin raging. You gain a number of temporary Hit Points equal to your level plus your Constitution modifier. While you are raging:\n\nYou deal 2 additional damage on melee Strikes. This additional damage is halved if your weapon or unarmed attack is agile.\n\nYou can't use actions with the concentrate trait unless they also have the rage trait. You can Seek while raging.\n\nRage lasts for 1 minute, until you fall Unconscious, or until the encounter ends, whichever comes first. You can't voluntarily stop raging. When you stop raging, you lose any remaining temporary Hit Points from Rage, and can't gain temporary Hit Points from using the Rage action again for 1 minute.\n\nEffect: Rage Temporary Hit Points Immunity",
+    "descr": "**Requirements** You aren't [Fatigued](/condition/fatigued-player-core) or raging.\n\n---\n\nYou tap into your inner fury and begin raging. You gain a number of temporary Hit Points equal to your level plus your Constitution modifier. While you are raging:\n\nYou deal 2 additional damage on melee Strikes. This additional damage is halved if your weapon or unarmed attack is agile.\n\nYou can't use actions with the [concentrate](/trait/concentrate) trait unless they also have the [rage](/trait/rage) trait. You can [Seek](/action/seek-player-core) while raging.\n\nRage lasts for 1 minute, until you fall [Unconscious](/condition/unconscious-player-core), or until the encounter ends, whichever comes first. You can't voluntarily stop raging. When you stop raging, you lose any remaining temporary Hit Points from Rage, and can't gain temporary Hit Points from using the Rage action again for 1 minute.\n\nEffect: Rage Temporary Hit Points Immunity",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1163,7 +1375,25 @@
       "frequency": "",
       "requirements": "You aren't Fatigued or raging",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "barbarian",
+          "slug": "barbarian"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1202,7 +1432,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You attempt a saving throw against a magical effect but haven't rolled yet",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1240,7 +1471,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "An enemy damages your ally, and both are in your champion's aura",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "champion",
+          "slug": "champion"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1269,14 +1510,15 @@
     "systemVersion": "1.2.10",
     "name": "Second Opinion",
     "slug": "second-opinion-player-core-2",
-    "descr": "Your familiar is your academic confidant. Despite being a minion, your familiar gains 1 reaction at the start of its turns, which it can use only to Aid you on a Recall Knowledge skill check for a skill in which it has the Skilled familiar ability (it still has to prepare to help you as normal for the Aid reaction).\n\nIt automatically succeeds at its check to Aid you with those skills or automatically critically succeeds if you're a master of the skill in question. Your familiar must have the skilled ability to select this.",
+    "descr": "Your familiar is your academic confidant. Despite being a minion, your familiar gains 1 reaction at the start of its turns, which it can use only to [Aid](/action/aid-player-core) you on a Recall Knowledge skill check for a skill in which it has the [Skilled](/action/skilled-player-core) familiar ability (it still has to prepare to help you as normal for the Aid reaction).\n\nIt automatically succeeds at its check to Aid you with those skills or automatically critically succeeds if you're a master of the skill in question. Your familiar must have the skilled ability to select this.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1314,7 +1556,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "An enemy in your champion's aura damages you",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "champion",
+          "slug": "champion"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1354,7 +1606,17 @@
       "frequency": "once per day",
       "requirements": "You are wielding a piercing or slashing weapon",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "kobold",
+          "slug": "kobold"
+        },
+        {
+          "label": "poison",
+          "slug": "poison"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1383,7 +1645,7 @@
     "systemVersion": "1.2.10",
     "name": "Threatening Approach",
     "slug": "threatening-approach-player-core-2",
-    "descr": "You Stride to be adjacent to a foe and Demoralize that foe. If you succeed, the foe is Frightened 2 instead of frightened 1.",
+    "descr": "You Stride to be adjacent to a foe and Demoralize that foe. If you succeed, the foe is [Frightened 2](/condition/frightened-player-core) instead of frightened 1.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1391,7 +1653,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1418,7 +1681,7 @@
     "systemVersion": "1.2.10",
     "name": "Toxic Skin",
     "slug": "toxic-skin-player-core-2",
-    "descr": "**Frequency** once per hour\n\n**Trigger** A creature touches you, such as by Grappling you, successfully hitting you with an unarmed attack, or using a touch-range spell against you\n\n---\n\n**Effect** You exude a deadly toxin. The triggering creature takes (ceil(current value/2))d4 poison] damage (basic Fortitude save using your class DC or spell DC, whichever is higher). At 3rd level and every 2 levels thereafter, the damage increases by 1d4.",
+    "descr": "**Frequency** once per hour\n\n**Trigger** A creature touches you, such as by [Grappling](/action/grapple-player-core) you, successfully hitting you with an unarmed attack, or using a touch-range spell against you\n\n---\n\n**Effect** You exude a deadly toxin. The triggering creature takes (ceil(current value/2))d4 poison] damage (basic Fortitude save using your class DC or spell DC, whichever is higher). At 3rd level and every 2 levels thereafter, the damage increases by 1d4.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1429,7 +1692,17 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "A creature touches you, such as by Grappling you, successfully hitting you with an unarmed attack, or using a touch-range spell against you",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "poison",
+          "slug": "poison"
+        },
+        {
+          "label": "tripkee",
+          "slug": "tripkee"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1458,7 +1731,7 @@
     "systemVersion": "1.2.10",
     "name": "Transform Ammunition",
     "slug": "transform-ammunition-player-core-2",
-    "descr": "**Frequency** once per round\n\n---\n\n**Effect** You transform a non-magical arrow or bolt on your person into a piece of magical ammunition of one type you chose for the Magic Ammunition feat. You must shoot the ammunition before the end of your turn or the magic dissipates. If the ammunition has an Activate entry, you still need to spend the required actions to activate the ammunition before shooting it.\n\nYou can choose a type of magical ammunition that is typically not available to the type of ammunition you're using—for example, you can use Climbing Bolt on an arrow, even though that magical ammunition is normally only found on bolts.",
+    "descr": "**Frequency** once per round\n\n---\n\n**Effect** You transform a non-magical arrow or bolt on your person into a piece of magical ammunition of one type you chose for the [Magic Ammunition](/feat/magic-ammunition-player-core-2) feat. You must shoot the ammunition before the end of your turn or the magic dissipates. If the ammunition has an Activate entry, you still need to spend the required actions to activate the ammunition before shooting it.\n\nYou can choose a type of magical ammunition that is typically not available to the type of ammunition you're using—for example, you can use [Climbing Bolt](/item/climbing-bolt-gm-core) on an arrow, even though that magical ammunition is normally only found on bolts.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1468,7 +1741,13 @@
       "frequency": "once per round",
       "requirements": "",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1504,7 +1783,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "An enemy attempts a skill check and doesn't get a critical success",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1541,7 +1821,13 @@
       "frequency": "once per minute",
       "requirements": "",
       "trigger": "You attempt a saving throw against a magical effect, but you haven't rolled yet",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

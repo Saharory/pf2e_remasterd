@@ -15,8 +15,14 @@ from build_public_orc_compendium import (
     COMMUNITY_USE_NOTICE,
     PRIVATE_OR_PROVENANCE_KEYS,
     STRIP_TOP_LEVEL_DESCRIPTION,
+    add_trait_links,
     background_mechanics,
+    canonical_trait_catalog,
     clean_foundry_markup,
+    dedupe_entity_links,
+    load_catalog,
+    normalize_trait_arrays,
+    normalize_trait_routes,
 )
 
 
@@ -44,7 +50,7 @@ def scrub_tree(value: Any) -> Any:
     if isinstance(value, list):
         return [scrub_tree(child) for child in value]
     if isinstance(value, str):
-        return clean_foundry_markup(value)
+        return normalize_trait_routes(clean_foundry_markup(value))
     return value
 
 
@@ -53,6 +59,7 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         raise ValueError(f"expected {expected_kind}, found {entity.get('kind')!r}")
 
     result = scrub_tree(copy.deepcopy(entity))
+    normalize_trait_arrays(result)
     result["system"] = "pf2e-remaster"
     result.setdefault("attributes", {})["license"] = "OGL-1.0a"
 
@@ -62,8 +69,11 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         result["descr"] = background_mechanics(str(result.get("descr") or ""))
 
     data = result.get("data")
+    if isinstance(data, dict):
+        add_trait_links(data)
     if isinstance(data, dict) and expected_kind in {"Ancestry", "Class"}:
         data["summary"] = ""
+    dedupe_entity_links(result)
     return result
 
 
@@ -89,6 +99,10 @@ def main() -> int:
         raise SystemExit("Rage of Elements source is not marked OGL-1.0a")
     if not (args.source / "module.json").is_file():
         raise SystemExit(f"private staging module not found: {args.source}")
+
+    # Populate the same global trait-route aliases used by the ORC build so
+    # OGL entries link into the single canonical trait catalog.
+    canonical_trait_catalog(args.source.parent, load_catalog())
 
     if args.output.exists():
         shutil.rmtree(args.output)

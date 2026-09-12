@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Liberate Self",
     "slug": "liberate-self-hellfire-dispatches-action-action-3759",
-    "descr": "**Frequency** once per day\n\n**Requirements** You're grabbed, immobilized, or restrained\n\n---\n\nAttempt to Escape, rolling the check twice and taking the better result.",
+    "descr": "**Frequency** once per day\n\n**Requirements** You're [grabbed](/condition/grabbed-player-core), [immobilized](/condition/immobilized-player-core), or [restrained](/condition/restrained-player-core)\n\n---\n\nAttempt to [Escape](/action/escape-player-core), rolling the check twice and taking the better result.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -17,7 +17,17 @@
       "frequency": "once per day",
       "requirements": "You're grabbed, immobilized, or restrained",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -49,7 +59,7 @@
     "systemVersion": "1.2.10",
     "name": "Puncture Flesh",
     "slug": "puncture-flesh-hellfire-dispatches-action-action-3758",
-    "descr": "**Trigger** Your last action was to deal piercing damage to an enemy within your reach\n\n---\n\nAttempt an Athletics check to Grapple the same enemy. The weapon that dealt the triggering damage gains the grapple trait for this check. On a success, the target also takes 1d8 persistent piercing damage (or 2d8 persistent piercing damage on a critical success). When the target is no longer grabbed or restrained by you, the persistent damage ends.",
+    "descr": "**Trigger** Your last action was to deal piercing damage to an enemy within your reach\n\n---\n\nAttempt an Athletics check to [Grapple](/action/grapple-player-core) the same enemy. The weapon that dealt the triggering damage gains the [grapple](/trait/grapple) trait for this check. On a success, the target also takes 1d8 [persistent piercing damage](/condition/persistent-damage-player-core) (or 2d8 persistent piercing damage on a critical success). When the target is no longer [grabbed](/condition/grabbed-player-core) or [restrained](/condition/restrained-player-core) by you, the persistent damage ends.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -57,7 +67,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "Your last action was to deal piercing damage to an enemy within your reach",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,

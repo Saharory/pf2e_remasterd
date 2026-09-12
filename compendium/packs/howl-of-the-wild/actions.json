@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "(Stargut Hydra) Skymetal Metamorphosis (Abysium)",
     "slug": "stargut-hydra-skymetal-metamorphosis-abysium-howl-of-the-wild",
-    "descr": "Each stargut hydra has at least one metamorphosis resulting from consuming a specific skymetal and internalizing its properties.\n\n**Abysium** (aura, poison) The stargut hydra emits an aura of nauseating radiation from the abysium in its body. Any creature that begins its turn within 30 feet of the stargut hydra is Sickened 1.",
+    "descr": "Each stargut hydra has at least one metamorphosis resulting from consuming a specific skymetal and internalizing its properties.\n\n**Abysium** (aura, poison) The stargut hydra emits an aura of nauseating radiation from the abysium in its body. Any creature that begins its turn within 30 feet of the stargut hydra is [Sickened 1](/condition/sickened-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -16,7 +16,17 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "poison",
+          "slug": "poison"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -52,7 +62,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -88,7 +99,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -123,7 +140,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -157,7 +175,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -184,14 +203,15 @@
     "systemVersion": "1.2.10",
     "name": "(Stargut Hydra) Skymetal Metamorphosis (Orichalcum)",
     "slug": "stargut-hydra-skymetal-metamorphosis-orichalcum-howl-of-the-wild",
-    "descr": "Each stargut hydra has at least one metamorphosis resulting from consuming a specific skymetal and internalizing its properties.\n\n**Orichalcum** When the stargut hydra has only two heads remaining, it is Quickened. It can use the extra action only to Stride or Strike.",
+    "descr": "Each stargut hydra has at least one metamorphosis resulting from consuming a specific skymetal and internalizing its properties.\n\n**Orichalcum** When the stargut hydra has only two heads remaining, it is [Quickened](/condition/quickened-player-core). It can use the extra action only to Stride or Strike.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -225,7 +245,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -259,7 +280,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -293,7 +315,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -330,7 +353,13 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "healing",
+          "slug": "healing"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -366,7 +395,8 @@
       "frequency": "",
       "requirements": "Your swarm is outside your body",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -403,7 +433,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "stance",
+          "slug": "stance"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -441,7 +477,13 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -469,7 +511,7 @@
     "systemVersion": "1.2.10",
     "name": "Dazzle Seeker",
     "slug": "dazzle-seeker-howl-of-the-wild",
-    "descr": "**Trigger** A creature attempts a flat check to target you due to you being Concealed from it\n\n---\n\n**Effect** You flash your bright scales in the creature's eyes, making it hard for them to pinpoint your exact location. The creature must roll the flat check twice and take the worse result.",
+    "descr": "**Trigger** A creature attempts a flat check to target you due to you being [Concealed](/condition/concealed-player-core) from it\n\n---\n\n**Effect** You flash your bright scales in the creature's eyes, making it hard for them to pinpoint your exact location. The creature must roll the flat check twice and take the worse result.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -479,7 +521,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "A creature attempts a flat check to target you due to you being Concealed from it",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "misfortune",
+          "slug": "misfortune"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -507,7 +555,7 @@
     "systemVersion": "1.2.10",
     "name": "Death Drone",
     "slug": "death-drone-howl-of-the-wild",
-    "descr": "The cicadas in your swarm make a droning sound that stimulates a fear response. Each creature within your swarm's space takes 6d4 mental] damage and must attempt a Will save against your class DC or spell DC, whichever is higher.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creatures takes half damage.\n\n**Failure** The creature takes full damage, is Frightened 1, and takes a –2 circumstance penalty to Perception checks that require hearing.\n\n**Critical Failure** The creature takes double damage, is Frightened 2, and is Deafened until the start of your next turn.",
+    "descr": "The cicadas in your swarm make a droning sound that stimulates a fear response. Each creature within your swarm's space takes 6d4 mental] damage and must attempt a Will save against your class DC or spell DC, whichever is higher.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creatures takes half damage.\n\n**Failure** The creature takes full damage, is [Frightened 1](/condition/frightened-player-core), and takes a –2 circumstance penalty to Perception checks that require hearing.\n\n**Critical Failure** The creature takes double damage, is Frightened 2, and is [Deafened](/condition/deafened-player-core) until the start of your next turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -519,7 +567,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "flourish",
+          "slug": "flourish"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -559,7 +621,13 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "A creature Casts a Spell with you as the only target",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -587,7 +655,7 @@
     "systemVersion": "1.2.10",
     "name": "Drape Ambient Magic",
     "slug": "drape-ambient-magic-howl-of-the-wild",
-    "descr": "**Frequency** once per round\n\n---\n\n**Effect** Your ostilli turns clear as it converts its stored magic into a bubble of refracting light around you. You become Hidden to all creatures until the end of your turn. If you Strike a creature, that creature is Off Guard against that attack, and you then become observed.",
+    "descr": "**Frequency** once per round\n\n---\n\n**Effect** Your ostilli turns clear as it converts its stored magic into a bubble of refracting light around you. You become [Hidden](/condition/hidden-player-core) to all creatures until the end of your turn. If you Strike a creature, that creature is [Off Guard](/condition/off-guard-player-core) against that attack, and you then become observed.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -597,7 +665,13 @@
       "frequency": "once per round",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -632,7 +706,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -666,7 +741,8 @@
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -693,14 +769,15 @@
     "systemVersion": "1.2.10",
     "name": "Familiar of Parasitic Might",
     "slug": "familiar-of-parasitic-might-howl-of-the-wild",
-    "descr": "Your familiar appears gaunt and malnourished or otherwise on the brink of death, even though it's quite healthy. When you Cast or Sustain a hex, your familiar can draw on the waning strength of another to sustain itself. One creature within 15 feet of your familiar with less than half of its maximum Hit Points becomes Sickened 1 unless it succeeds at a Fortitude saving throw against your spell DC.",
+    "descr": "Your familiar appears gaunt and malnourished or otherwise on the brink of death, even though it's quite healthy. When you Cast or Sustain a hex, your familiar can draw on the waning strength of another to sustain itself. One creature within 15 feet of your familiar with less than half of its maximum Hit Points becomes [Sickened 1](/condition/sickened-player-core) unless it succeeds at a Fortitude saving throw against your spell DC.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "familiar",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -738,7 +815,17 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "You fail a save against a mental effect",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -779,7 +866,21 @@
       "frequency": "",
       "requirements": "Your lantern light is shining",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "light",
+          "slug": "light"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -809,7 +910,7 @@
     "systemVersion": "1.2.10",
     "name": "Lantern Strobe",
     "slug": "lantern-strobe-howl-of-the-wild",
-    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** As you pulse your lantern, your emitters flash erratically, disorienting your opponents that see it. Each opponent in a area must attempt a Fortitude save against your class DC or spell DC (whichever is higher). On a failure, the creature is Dazzled for 1 round. On a critical failure, the creature is Blinded for 1 round and dazzled for the following round.",
+    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** As you pulse your lantern, your emitters flash erratically, disorienting your opponents that see it. Each opponent in a area must attempt a Fortitude save against your class DC or spell DC (whichever is higher). On a failure, the creature is [Dazzled](/condition/dazzled-player-core) for 1 round. On a critical failure, the creature is [Blinded](/condition/blinded-player-core) for 1 round and dazzled for the following round.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -821,7 +922,21 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "light",
+          "slug": "light"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -851,7 +966,7 @@
     "systemVersion": "1.2.10",
     "name": "Raise Slabs",
     "slug": "raise-slabs-howl-of-the-wild",
-    "descr": "**Frequency** once per day\n\n---\n\n**Effect** Thick slabs of stone rise around you before tilting over. You deal (ceil(current value/2)d6) bludgeoning] damage to all adjacent creatures (basic Reflex against your class DC or spell DC, whichever is higher). On a critical failure, the creature is also knocked Prone. At 3rd level, and every 2 levels thereafter, this damage increases by 1d6.",
+    "descr": "**Frequency** once per day\n\n---\n\n**Effect** Thick slabs of stone rise around you before tilting over. You deal (ceil(current value/2)d6) bludgeoning] damage to all adjacent creatures (basic Reflex against your class DC or spell DC, whichever is higher). On a critical failure, the creature is also knocked [Prone](/condition/prone-player-core). At 3rd level, and every 2 levels thereafter, this damage increases by 1d6.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -862,7 +977,17 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -901,7 +1026,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -929,7 +1060,7 @@
     "systemVersion": "1.2.10",
     "name": "Shielding Wave",
     "slug": "shielding-wave-howl-of-the-wild",
-    "descr": "You raise a magical barrier of twisting currents. Until the start of your next turn, the first time you take acid or fire damage, you gain resistance to that damage equal to half your level (minimum 1). The resistance is equal to your level instead if you're submerged in water, if you already Cast a Spell with the water trait, or if you used another ability with the water trait this turn.",
+    "descr": "You raise a magical barrier of twisting currents. Until the start of your next turn, the first time you take acid or fire damage, you gain resistance to that damage equal to half your level (minimum 1). The resistance is equal to your level instead if you're submerged in water, if you already Cast a Spell with the [water](/trait/water) trait, or if you used another ability with the water trait this turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -940,7 +1071,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -980,7 +1121,17 @@
       "frequency": "once per round",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1009,7 +1160,7 @@
     "systemVersion": "1.2.10",
     "name": "Stridulating Song",
     "slug": "stridulating-song-howl-of-the-wild",
-    "descr": "**Frequency** once per day\n\n---\n\n**Effect** You circulate magic through your wings, causing them to vibrate at high speeds such that their scraping produces disruptive sounds. You focus the sound at one creature within 30 feet who must succeed at a Fortitude save against your class DC or spell DC (whichever is higher) or become Sickened 1, or Sickened 2 on a critical failure, as the vibrations disrupt its inner equilibrium. You can Sustain the effect for up to 1 minute; the creature can't recover from the sickened condition as long as you continue your song and it can hear you.",
+    "descr": "**Frequency** once per day\n\n---\n\n**Effect** You circulate magic through your wings, causing them to vibrate at high speeds such that their scraping produces disruptive sounds. You focus the sound at one creature within 30 feet who must succeed at a Fortitude save against your class DC or spell DC (whichever is higher) or become [Sickened 1](/condition/sickened-player-core), or Sickened 2 on a critical failure, as the vibrations disrupt its inner equilibrium. You can Sustain the effect for up to 1 minute; the creature can't recover from the sickened condition as long as you continue your song and it can hear you.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1020,7 +1171,17 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1059,7 +1220,13 @@
       "frequency": "",
       "requirements": "Your swarm is within your body",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1087,7 +1254,7 @@
     "systemVersion": "1.2.10",
     "name": "Talon Stance",
     "slug": "talon-stance-howl-of-the-wild",
-    "descr": "**Effect** You sway in a loose stance that lets you sweep in wide arcs with the claws on your feet. The only Strikes you can make are spinning talon unarmed attacks. These deal 1d8 slashing] damage, are in the brawling group, and have the finesse, sweep, and unarmed traits. You don't need a free hand to use spinning talon strikes.",
+    "descr": "**Effect** You sway in a loose stance that lets you sweep in wide arcs with the claws on your feet. The only Strikes you can make are spinning talon unarmed attacks. These deal 1d8 slashing] damage, are in the brawling group, and have the finesse, sweep, and [unarmed](/trait/unarmed) traits. You don't need a free hand to use spinning talon strikes.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1097,7 +1264,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "stance",
+          "slug": "stance"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1133,7 +1306,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You're subjected to forced movement",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1170,7 +1344,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

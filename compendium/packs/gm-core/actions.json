@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Affix a Talisman",
     "slug": "affix-a-talisman-gm-core",
-    "descr": "**Requirements** You must use a Repair Toolkit\n\n---\n\nYou spend 10 minutes affixing a talisman to an item, placing the item on a stable surface and using the repair toolkit with both hands. You can also use this activity to remove a talisman. Attaching more than one talisman to an item deactivates all the talismans. They must be removed and re-affixed before they can be used again.",
+    "descr": "**Requirements** You must use a [Repair Toolkit](/item/repair-toolkit-player-core)\n\n---\n\nYou spend 10 minutes affixing a talisman to an item, placing the item on a stable surface and using the repair toolkit with both hands. You can also use this activity to remove a talisman. Attaching more than one talisman to an item deactivates all the talismans. They must be removed and re-affixed before they can be used again.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -16,7 +16,17 @@
       "category": "",
       "frequency": "",
       "requirements": "You must use a Repair Toolkit",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -45,7 +55,7 @@
     "systemVersion": "1.2.10",
     "name": "Apothecary's Garden",
     "slug": "apothecary-s-garden-gm-core",
-    "descr": "**Aspect** plant\n\n---\n\nYour relic grows potent natural medicines. Each night, two medicinal herbs (or other plants) grow from your relic and can be harmlessly harvested during your next daily preparations. A living creature that consumes an herb with an Interact action regains 1d8 healing] Hit Points for every 2 relic levels (minimum 1d8). At 9th level, the relic grows three herbs each night, and at 17th level, the relic grows four herbs each night. Herbs wither away 1 day after being harvested.",
+    "descr": "**Aspect** plant\n\n---\n\nYour relic grows potent natural medicines. Each night, two medicinal herbs (or other plants) grow from your relic and can be harmlessly harvested during your next daily preparations. A living creature that consumes an herb with an [Interact](/action/interact-player-core) action regains 1d8 healing] Hit Points for every 2 relic levels (minimum 1d8). At 9th level, the relic grows three herbs each night, and at 17th level, the relic grows four herbs each night. Herbs wither away 1 day after being harvested.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -54,7 +64,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "plant",
+          "slug": "plant"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -91,7 +107,13 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": "A creature within 60 feet is critically hit by or critically fails a save against a fire effect and is not reduced to 0 Hit Points"
+      "trigger": "A creature within 60 feet is critically hit by or critically fails a save against a fire effect and is not reduced to 0 Hit Points",
+      "traitLinks": [
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -129,7 +151,13 @@
       "frequency": "",
       "requirements": "You are adjacent to a point of entry on the vehicle you are attempting to board",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -167,7 +195,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You are targeted by an acid or water effect",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -205,7 +239,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "You've successfully Gained a Contact",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -234,7 +278,7 @@
     "systemVersion": "1.2.10",
     "name": "Bullying Press",
     "slug": "bullying-press-gm-core",
-    "descr": "**Trigger** You attempt a melee Strike against your opponent, but haven't rolled yet.\n\n**Requirements** You're in a duel, you're trained in Intimidation, and you rolled an Intimidation check for initiative this round.\n\n---\n\nIf you hit, your opponent becomes Frightened 1. If your opponent is using Perception for initiative when this ability is used, they become Frightened 2 instead.",
+    "descr": "**Trigger** You attempt a melee Strike against your opponent, but haven't rolled yet.\n\n**Requirements** You're in a duel, you're trained in Intimidation, and you rolled an Intimidation check for initiative this round.\n\n---\n\nIf you hit, your opponent becomes [Frightened 1](/condition/frightened-player-core). If your opponent is using Perception for initiative when this ability is used, they become Frightened 2 instead.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -244,7 +288,13 @@
       "frequency": "",
       "requirements": "You're in a duel, you're trained in Intimidation, and you rolled an Intimidation check for initiative this round",
       "trigger": "You attempt a melee Strike against your opponent, but haven't rolled yet",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "flourish",
+          "slug": "flourish"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -280,7 +330,8 @@
       "frequency": "",
       "requirements": "You are in a duel and are trained in the skill for the tradition you're changing your focus to (Arcana for arcane, Occultism for occult, Nature for primal, or Religion for divine)",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -317,7 +368,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -355,7 +412,13 @@
       "frequency": "",
       "requirements": "You're in a duel, you're trained in Deception, and you rolled a Deception check for initiative this round",
       "trigger": "An opponent hits, but does not critically hit you, with a melee Strike",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "misfortune",
+          "slug": "misfortune"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -393,7 +456,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -432,7 +505,13 @@
       "frequency": "",
       "requirements": "You are piloting a vehicle",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -470,7 +549,13 @@
       "frequency": "",
       "requirements": "You are in a duel and have a tradition focus",
       "trigger": "Your opponent Casts a Spell from the same tradition as your tradition focus",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -498,7 +583,7 @@
     "systemVersion": "1.2.10",
     "name": "Flowing Footsteps",
     "slug": "flowing-footsteps-gm-core",
-    "descr": "**Aspect** water\n\n---\n\nYour relic ensures no water impedes your movement. You gain the effects of the Water Walk spell, and the ability to breathe water. You also gain a swim Speed equal to your Speed or 15 feet, whichever is higher.",
+    "descr": "**Aspect** water\n\n---\n\nYour relic ensures no water impedes your movement. You gain the effects of the [Water Walk](/spell/water-walk-player-core) spell, and the ability to breathe water. You also gain a swim Speed equal to your Speed or 15 feet, whichever is higher.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -507,7 +592,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -545,7 +636,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -583,7 +684,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -621,7 +728,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -650,7 +767,7 @@
     "systemVersion": "1.2.10",
     "name": "Grim Specter",
     "slug": "grim-specter-gm-core",
-    "descr": "**Aspect** death\n\n**Activate** 2 (concentrate, polymorph, void)\n\n**Frequency** once per day\n\n---\n\n**Effect** You can call upon the terrifying powers that fuel your relic to transform yourself into a specter of death. You become incorporeal, having no physical body. You are immune to effects that require a physical body, including precision damage as well as exposure to most diseases and poisons. You also have resistance to all damage equal to half the relic's level; force damage, Ghost Touch attacks, spirit damage, void damage, and vitality damage ignore this resistance, and the resistance doubles against non-magical damage.\n\nYou can move through solid objects. When inside an object, you can't perceive, attack, or Interact with anything outside it, and you're always Slowed 1 on turns you start in an object. Corporeal creatures can pass through you but can't end their movement in your space. You can't attempt Strength-based checks against corporeal creatures or objects, unless those objects have the *ghost touch* property rune. Likewise, corporeal creatures can't attempt Strength-based checks against you.\n\nYou can Sustain the activation for up to 1 minute.",
+    "descr": "**Aspect** death\n\n**Activate** 2 (concentrate, polymorph, void)\n\n**Frequency** once per day\n\n---\n\n**Effect** You can call upon the terrifying powers that fuel your relic to transform yourself into a specter of death. You become incorporeal, having no physical body. You are immune to effects that require a physical body, including precision damage as well as exposure to most diseases and poisons. You also have resistance to all damage equal to half the relic's level; force damage, [Ghost Touch](/item/ghost-touch-gm-core) attacks, spirit damage, void damage, and vitality damage ignore this resistance, and the resistance doubles against non-magical damage.\n\nYou can move through solid objects. When inside an object, you can't perceive, attack, or Interact with anything outside it, and you're always [Slowed 1](/condition/slowed-player-core) on turns you start in an object. Corporeal creatures can pass through you but can't end their movement in your space. You can't attempt Strength-based checks against corporeal creatures or objects, unless those objects have the *ghost touch* property rune. Likewise, corporeal creatures can't attempt Strength-based checks against you.\n\nYou can Sustain the activation for up to 1 minute.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -661,7 +778,17 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -701,7 +828,17 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "vitality",
+          "slug": "vitality"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -740,7 +877,13 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -768,7 +911,7 @@
     "systemVersion": "1.2.10",
     "name": "Inextinguishable",
     "slug": "inextinguishable-gm-core",
-    "descr": "**Aspect** life\n\n---\n\nYour connection to life force makes you more difficult to snuff out than others. You die from the Dying condition at dying 5, rather than dying 4. If you roll a success on a save against a death or void effect, you get a critical success instead.",
+    "descr": "**Aspect** life\n\n---\n\nYour connection to life force makes you more difficult to snuff out than others. You die from the [Dying](/condition/dying-player-core) condition at dying 5, rather than dying 4. If you roll a success on a save against a death or void effect, you get a critical success instead.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -777,7 +920,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "vitality",
+          "slug": "vitality"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -815,7 +964,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -844,14 +1003,15 @@
     "systemVersion": "1.2.10",
     "name": "Invest an Item",
     "slug": "invest-an-item-gm-core",
-    "descr": "You invest your energy in an item with the invested trait as you don it. This process requires 1 or more Interact actions, usually taking the same amount of time it takes to don the item. Once you've Invested the Item, you benefit from its constant magical abilities as long as you meet its other requirements (for most invested items, the only other requirement is that you must be wearing the item). This investiture lasts until you remove the item.\n\nYou can invest no more than 10 items per day. If you remove an invested item, it loses its investiture. The item still counts against your daily limit after it loses its investiture. You reset the limit during your daily preparations, at which point you Invest your Items anew. If you're still wearing items you had invested the previous day, you can typically keep them invested on the new day, but they still count against your limit.",
+    "descr": "You invest your energy in an item with the [invested](/trait/invested) trait as you don it. This process requires 1 or more [Interact](/action/interact-player-core) actions, usually taking the same amount of time it takes to don the item. Once you've Invested the Item, you benefit from its constant magical abilities as long as you meet its other requirements (for most invested items, the only other requirement is that you must be wearing the item). This investiture lasts until you remove the item.\n\nYou can invest no more than 10 items per day. If you remove an invested item, it loses its investiture. The item still counts against your daily limit after it loses its investiture. You reset the limit during your daily preparations, at which point you Invest your Items anew. If you're still wearing items you had invested the previous day, you can typically keep them invested on the new day, but they still count against your limit.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -888,7 +1048,13 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -916,7 +1082,7 @@
     "systemVersion": "1.2.10",
     "name": "Life Everlasting",
     "slug": "life-everlasting-gm-core",
-    "descr": "**Aspect** life\n\n**Activate** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** Massive amounts of vitality energy surge forth. For 1 minute, you emit vitality energy in a area centered on you. At the end of your turn, you (if you are living) and allied living creatures in the emanation regain 10 healing] Hit Points. If you or an allied creature would die due to an increased Dying value, you can Dismiss the activation as a free action to prevent the death; if you do, their dying value doesn't increase.",
+    "descr": "**Aspect** life\n\n**Activate** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** Massive amounts of vitality energy surge forth. For 1 minute, you emit vitality energy in a area centered on you. At the end of your turn, you (if you are living) and allied living creatures in the emanation regain 10 healing] Hit Points. If you or an allied creature would die due to an increased [Dying](/condition/dying-player-core) value, you can Dismiss the activation as a free action to prevent the death; if you do, their dying value doesn't increase.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -927,7 +1093,17 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "vitality",
+          "slug": "vitality"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -956,7 +1132,7 @@
     "systemVersion": "1.2.10",
     "name": "Living Death",
     "slug": "living-death-gm-core",
-    "descr": "**Aspect** death\n\n---\n\nYou stand on the threshold between the living and the dead. If you attempt a saving throw against an effect that would deal void damage to you, such as Harm, your outcome is one degree of success better than what you rolled. If you roll a critical success and the effect is capable of healing undead, you regain Hit Points equal to half the spell's full damage. Any vitality spell or effect that would heal you has only half the normal effect. All these effects apply only if you are a living creature.",
+    "descr": "**Aspect** death\n\n---\n\nYou stand on the threshold between the living and the dead. If you attempt a saving throw against an effect that would deal void damage to you, such as [Harm](/spell/harm-player-core), your outcome is one degree of success better than what you rolled. If you roll a critical success and the effect is capable of healing undead, you regain Hit Points equal to half the spell's full damage. Any vitality spell or effect that would heal you has only half the normal effect. All these effects apply only if you are a living creature.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -965,7 +1141,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1004,7 +1186,17 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1033,7 +1225,7 @@
     "systemVersion": "1.2.10",
     "name": "Petal Dance",
     "slug": "petal-dance-gm-core",
-    "descr": "**Aspect** plant\n\n**Activate** 2 (concentrate)\n\n**Frequency** once per hour\n\n---\n\n**Effect** You discorporate into a cloud of petals and leaves. This grants you the swarm trait, immunity to falling damage, resistance 5 to bludgeoning and slashing damage, and weakness 5 to area and splash damage. You can fit into spaces only a few inches wide, moving your constituent petals through the gap. You don't gain the swarm mind ability, so you're still affected normally by mental effects. As a swarm, you can't speak, cast spells, use manipulate actions requiring your hands, activate your magic items, or make any of your Strikes with your normal body. You remain in this form for 1 minute or until you Dismiss the activation. At 13th level, the relic gains a reaction that triggers when you fall or take damage, applying this gift's resistances, weaknesses, and immunity to falling damage to the triggering effect.",
+    "descr": "**Aspect** plant\n\n**Activate** 2 (concentrate)\n\n**Frequency** once per hour\n\n---\n\n**Effect** You discorporate into a cloud of petals and leaves. This grants you the [swarm](/trait/swarm) trait, immunity to falling damage, resistance 5 to bludgeoning and slashing damage, and weakness 5 to area and splash damage. You can fit into spaces only a few inches wide, moving your constituent petals through the gap. You don't gain the swarm mind ability, so you're still affected normally by mental effects. As a swarm, you can't speak, cast spells, use manipulate actions requiring your hands, activate your magic items, or make any of your Strikes with your normal body. You remain in this form for 1 minute or until you Dismiss the activation. At 13th level, the relic gains a reaction that triggers when you fall or take damage, applying this gift's resistances, weaknesses, and immunity to falling damage to the triggering effect.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1043,7 +1235,13 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "plant",
+          "slug": "plant"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1071,7 +1269,7 @@
     "systemVersion": "1.2.10",
     "name": "Pierce the Veil",
     "slug": "pierce-the-veil-gm-core",
-    "descr": "**Aspect** death\n\n**Prerequisite** living death gift\n\n---\n\nThe relic allows you to pierce the veil between life and death. While you are holding or wearing the relic, you have the void healing ability (as though you were undead; vitality energy harms you and void energy heals you). In addition, whenever you are healed by a void spell or effect, you gain resistance 5 to all damage (except force, Ghost Touch, spirit, and vitality) until the start of your next turn. Finally, you gain a +2 item bonus to all saves against death effects while you are the bearer of the relic; this increases to a +3 item bonus at 13th level.",
+    "descr": "**Aspect** death\n\n**Prerequisite** living death gift\n\n---\n\nThe relic allows you to pierce the veil between life and death. While you are holding or wearing the relic, you have the void healing ability (as though you were undead; vitality energy harms you and void energy heals you). In addition, whenever you are healed by a void spell or effect, you gain resistance 5 to all damage (except force, [Ghost Touch](/item/ghost-touch-gm-core), spirit, and vitality) until the start of your next turn. Finally, you gain a +2 item bonus to all saves against death effects while you are the bearer of the relic; this increases to a +3 item bonus at 13th level.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1080,7 +1278,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1118,7 +1322,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1147,7 +1361,7 @@
     "systemVersion": "1.2.10",
     "name": "Righteous Call",
     "slug": "righteous-call-gm-core",
-    "descr": "**Aspect** celestial\n\n**Activate** 2 (concentrate, manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** Holy magic fills your armaments, making them true weapons against evil. For 1 minute, your weapons and unarmed attacks gain the holy weapon rune while you hold them. If a weapon is at its limit on property runes, you can choose one property rune on the weapon to go dormant while the holy rune takes effect. In addition, Strikes your allies make while they're within 30 feet of you gain the holy trait.",
+    "descr": "**Aspect** celestial\n\n**Activate** 2 (concentrate, manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** Holy magic fills your armaments, making them true weapons against evil. For 1 minute, your weapons and unarmed attacks gain the [holy](/item/holy-gm-core) weapon rune while you hold them. If a weapon is at its limit on property runes, you can choose one property rune on the weapon to go dormant while the holy rune takes effect. In addition, Strikes your allies make while they're within 30 feet of you gain the [holy](/trait/holy) trait.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1157,7 +1371,13 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "holy",
+          "slug": "holy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1185,7 +1405,7 @@
     "systemVersion": "1.2.10",
     "name": "Ripples and Waves",
     "slug": "ripples-and-waves-gm-core",
-    "descr": "**Aspect** water\n\n---\n\nYou become attuned to the ebb and flow of all things, as if embodying water itself. You gain wavesense 60 feet as a precise sense and can cast 5th-rank Hydraulic Push at will as an innate spell.\n\n---\n\n**Activate** 2 (concentrate)\n\n**Frequency** once per day\n\n**Effect** Ankle-deep water floods outward from you, filling a area centered on you for 1 minute. Enemies within the area without a swim Speed treat the area as difficult terrain for movement on land. While the effect persists, you can have any water effects you generate originate from any point within the emanation, in addition to their normal range and area.",
+    "descr": "**Aspect** water\n\n---\n\nYou become attuned to the ebb and flow of all things, as if embodying water itself. You gain wavesense 60 feet as a precise sense and can cast 5th-rank [Hydraulic Push](/spell/hydraulic-push-player-core) at will as an innate spell.\n\n---\n\n**Activate** 2 (concentrate)\n\n**Frequency** once per day\n\n**Effect** Ankle-deep water floods outward from you, filling a area centered on you for 1 minute. Enemies within the area without a swim Speed treat the area as difficult terrain for movement on land. While the effect persists, you can have any water effects you generate originate from any point within the emanation, in addition to their normal range and area.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1195,7 +1415,13 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1233,7 +1459,13 @@
       "frequency": "",
       "requirements": "You are piloting a vehicle",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1271,7 +1503,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        },
+        {
+          "label": "secret",
+          "slug": "secret"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1309,7 +1551,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1337,7 +1585,7 @@
     "systemVersion": "1.2.10",
     "name": "Sense Weakness",
     "slug": "sense-weakness-gm-core",
-    "descr": "**Trigger** You attempt a melee Strike against your opponent, but haven't rolled yet.\n\n**Requirements** You're in a duel, you're trained in Perception, and you rolled a Perception check for initiative this round.\n\n---\n\nYou pick a precise moment to attack, giving you an edge. Your opponent is Off Guard against the attack. If your opponent is using Deception for initiative when this ability is used, they are instead off-guard until the start of their next turn.",
+    "descr": "**Trigger** You attempt a melee Strike against your opponent, but haven't rolled yet.\n\n**Requirements** You're in a duel, you're trained in Perception, and you rolled a Perception check for initiative this round.\n\n---\n\nYou pick a precise moment to attack, giving you an edge. Your opponent is [Off Guard](/condition/off-guard-player-core) against the attack. If your opponent is using Deception for initiative when this ability is used, they are instead off-guard until the start of their next turn.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1345,7 +1593,8 @@
       "frequency": "",
       "requirements": "You're in a duel, you're trained in Perception, and you rolled a Perception check for initiative this round",
       "trigger": "You attempt a melee Strike against your opponent, but haven't rolled yet",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1382,7 +1631,13 @@
       "frequency": "",
       "requirements": "You are piloting a vehicle in motion",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1420,7 +1675,13 @@
       "frequency": "",
       "requirements": "You are aboard the vehicle and adjacent to its controls",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1458,7 +1719,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1486,7 +1753,7 @@
     "systemVersion": "1.2.10",
     "name": "Tide of Death",
     "slug": "tide-of-death-gm-core",
-    "descr": "**Aspect** death\n\n**Prerequisite** death gaze gift\n\n---\n\nYou can Activate Death Gaze with 3 actions instead of 2. If you do, it targets all living creatures within 30 feet except for you. If you have the void healing ability, you can include yourself to be healed.",
+    "descr": "**Aspect** death\n\n**Prerequisite** death gaze gift\n\n---\n\nYou can Activate [Death Gaze](/action/death-gaze-gm-core) with 3 actions instead of 2. If you do, it targets all living creatures within 30 feet except for you. If you have the void healing ability, you can include yourself to be healed.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1495,7 +1762,13 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1532,7 +1805,13 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1570,7 +1849,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

@@ -43,6 +43,12 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
       ]
     },
     "attributes": {
@@ -111,6 +117,12 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "haunt",
+          "slug": "haunt"
+        }
       ]
     },
     "attributes": {
@@ -174,6 +186,20 @@
           "traits": [],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -233,12 +259,18 @@
       "abilities": [
         {
           "name": "Unmask",
-          "text": "**Trigger** Two or more creatures enter the haunt's area\n\n---\n\n**Effect** Each creature sees the forms of nearby creatures shift and change, appearing to transform into fiendish or aberrant beings with a thirst for blood. Each creature in the area must attempt a Will DC 30 save. The haunt then rolls initiative.\n\n---\n\n**Critical Success** The creature sees through the illusions entirely and is temporarily immune to the haunt's routine for 1 minute.\n\n**Success** The creature is unaffected by the strange images.\n\n**Failure** The creature believes the illusions to be true; if they become Confused by the haunt's routine, they can't attempt flat checks to end the confused condition when they take damage.\n\n**Critical Failure** As failure, but the creature is left with a lingering suspicion of others and can't benefit from Aid reactions for 24 hours.",
+          "text": "**Trigger** Two or more creatures enter the haunt's area\n\n---\n\n**Effect** Each creature sees the forms of nearby creatures shift and change, appearing to transform into fiendish or aberrant beings with a thirst for blood. Each creature in the area must attempt a Will DC 30 save. The haunt then rolls initiative.\n\n---\n\n**Critical Success** The creature sees through the illusions entirely and is temporarily immune to the haunt's routine for 1 minute.\n\n**Success** The creature is unaffected by the strange images.\n\n**Failure** The creature believes the illusions to be true; if they become Confused by the haunt's routine, they can't attempt flat checks to end the [confused](/condition/confused-player-core) condition when they take damage.\n\n**Critical Failure** As failure, but the creature is left with a lingering suspicion of others and can't benefit from Aid reactions for 24 hours.",
           "traits": [
             "illusion",
             "occult"
           ],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "haunt",
+          "slug": "haunt"
         }
       ]
     },
@@ -305,6 +337,12 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "haunt",
+          "slug": "haunt"
+        }
       ]
     },
     "attributes": {
@@ -366,6 +404,16 @@
           "text": "**Trigger** A creature walks onto the trapdoor\n\n---\n\n**Effect** The triggering creature falls in and takes damage from the fall, reduced by 5 feet for falling into the water (typically 12 bludgeoning|options:fall-damage] damage). A creature can Grab An Edge to avoid falling. The trapdoor then slams shut, and the hazard rolls initiative.",
           "traits": [],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
         }
       ]
     },
@@ -434,6 +482,20 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -499,6 +561,12 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "haunt",
+          "slug": "haunt"
+        }
       ]
     },
     "attributes": {
@@ -558,12 +626,26 @@
       "abilities": [
         {
           "name": "Fireball",
-          "text": "**Trigger** A living creature enters the sensor area\n\n---\n\n**Effect** The rune detonates a Fireball centered on the triggering creature's square. This is a 3rd-rank fireball spell that deals 6d6 fire] damage (basic Reflex DC 22 save).",
+          "text": "**Trigger** A living creature enters the sensor area\n\n---\n\n**Effect** The rune detonates a Fireball centered on the triggering creature's square. This is a 3rd-rank [fireball](/spell/fireball-player-core) spell that deals 6d6 fire] damage (basic Reflex DC 22 save).",
           "traits": [
             "arcane",
             "fire"
           ],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
         }
       ]
     },
@@ -627,6 +709,12 @@
           "text": "**Trigger** Three or more creatures enter the area of the haunt\n\n---\n\n**Effect** Sharp fragments lift up from the ground and begin to spin in rapid circles taking up one 5-foot square. The haunt rolls initiative.",
           "traits": [],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "haunt",
+          "slug": "haunt"
         }
       ]
     },
@@ -695,6 +783,12 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "haunt",
+          "slug": "haunt"
+        }
       ]
     },
     "attributes": {
@@ -759,6 +853,16 @@
             "poison"
           ],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
         }
       ]
     },
@@ -826,6 +930,20 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -889,6 +1007,12 @@
           "traits": [],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "environmental",
+          "slug": "environmental"
+        }
       ]
     },
     "attributes": {
@@ -950,6 +1074,16 @@
           "text": "**Trigger** A creature walks onto the trapdoor.\n\n---\n\n**Effect** The triggering creature falls in and takes falling damage (typically 10 bludgeoning|options:fall-damage] damage). That creature can use the Grab An Edge reaction to avoid falling.",
           "traits": [],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
         }
       ]
     },
@@ -1017,6 +1151,16 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -1082,6 +1226,16 @@
             "teleportation"
           ],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
         }
       ]
     },
@@ -1159,6 +1313,16 @@
             "poison"
           ]
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -1230,6 +1394,16 @@
           "traits": [
             "poison"
           ]
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
         }
       ]
     },
@@ -1309,6 +1483,16 @@
             "poison"
           ]
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "environmental",
+          "slug": "environmental"
+        },
+        {
+          "label": "fungus",
+          "slug": "fungus"
+        }
       ]
     },
     "attributes": {
@@ -1374,6 +1558,16 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -1436,6 +1630,12 @@
           "traits": [],
           "actions": "free"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "environmental",
+          "slug": "environmental"
+        }
       ]
     },
     "attributes": {
@@ -1497,6 +1697,16 @@
           "text": "**Trigger** The trip wire is pulled or severed.\n\n---\n\n**Effect** Both blades swing down, each one Striking all creatures under the ceiling grooves.",
           "traits": [],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
         }
       ]
     },
@@ -1561,6 +1771,16 @@
           "traits": [],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -1622,6 +1842,12 @@
           "text": "**Trigger** A creature moves beneath where the snowfall is resting.\n\n---\n\n**Effect** Ice and snow fall on the triggering creature, dealing (2d6+3) bludgeoning] damage (basic Reflex DC 18 save) and soaking their clothing. Until they change into fresh clothing or spend at least an hour in an area of normal or higher temperature, they treat cold environments as one step colder (for example, mild cold as severe cold).",
           "traits": [],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "environmental",
+          "slug": "environmental"
         }
       ]
     },
@@ -1686,6 +1912,16 @@
             "attack"
           ],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
         }
       ]
     },
@@ -1759,6 +1995,12 @@
           "text": "Spectral reflections often infuse entire buildings, manifesting in any sufficiently large mirror. The example Hit Points and Hardness given represent a typical mirror reinforced by the haunt; at your discretion, the haunt might appear in reflective surfaces that are harder to destroy. Defeating a manifestation through damage destroys the surface, preventing the haunt from using it again. If this haunt appears in an area with many mirrors, consider giving PCs double or even triple the XP for a typical simple hazard.",
           "traits": []
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "haunt",
+          "slug": "haunt"
+        }
       ]
     },
     "attributes": {
@@ -1828,6 +2070,16 @@
           "text": "10 feet",
           "traits": []
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -1894,6 +2146,16 @@
           ],
           "actions": "reaction"
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -1958,7 +2220,7 @@
         },
         {
           "name": "Devour",
-          "text": "The target is trapped by the flytrap's jaws, gaining the Grabbed condition until it Escapes. Additionally, it is exposed to the titanic flytrap toxin from the hundreds of tiny hairs that line the inside of its leaves. If the flytrap's jaws Strike was a critical success, the target takes a –2 circumstance penalty to its saving throws against this poison. At the end of each of the target's turns that it remains grabbed, the target takes 3d6 acid] damage.",
+          "text": "The target is trapped by the flytrap's jaws, gaining the [Grabbed](/condition/grabbed-player-core) condition until it Escapes. Additionally, it is exposed to the titanic flytrap toxin from the hundreds of tiny hairs that line the inside of its leaves. If the flytrap's jaws Strike was a critical success, the target takes a –2 circumstance penalty to its saving throws against this poison. At the end of each of the target's turns that it remains grabbed, the target takes 3d6 acid] damage.",
           "traits": []
         },
         {
@@ -1968,6 +2230,12 @@
             "contact",
             "poison"
           ]
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "environmental",
+          "slug": "environmental"
         }
       ]
     },
@@ -2036,6 +2304,16 @@
           "text": "On a critical hit, a target must succeed at a Fortitude DC 39 save or be decapitated, dying instantly unless it can survive without a head.",
           "traits": []
         }
+      ],
+      "traitLinks": [
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
+        }
       ]
     },
     "attributes": {
@@ -2099,6 +2377,20 @@
           "text": "**Trigger** A creature enters the sensor's detection area.\n\n---\n\n**Effect** The wheel begins to spin and rolls initiative.",
           "traits": [],
           "actions": "reaction"
+        }
+      ],
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mechanical",
+          "slug": "mechanical"
+        },
+        {
+          "label": "trap",
+          "slug": "trap"
         }
       ]
     },

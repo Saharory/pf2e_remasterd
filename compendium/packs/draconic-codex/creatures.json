@@ -152,7 +152,7 @@
           },
           {
             "name": "Adamantine Weight",
-            "text": "(Earth, metal, primal) The dragon shapes rocks even after it throws them, capturing its prey. The creature struck must succeed at a DC 44 Reflex save or be immobilized. Creatures remain immobilized until they Escape and immediately fall if they're flying. The weight can be destroyed as an object with 40 Hit Points and 20 Hardness.",
+            "text": "(Earth, metal, primal) The dragon shapes rocks even after it throws them, capturing its prey. The creature struck must succeed at a DC 44 Reflex save or be [immobilized](/condition/immobilized-player-core). Creatures remain immobilized until they Escape and immediately fall if they're flying. The weight can be destroyed as an object with 40 Hit Points and 20 Hardness.",
             "traits": []
           },
           {
@@ -216,7 +216,17 @@
         ]
       },
       "recallKnowledgeText": "DC 47 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Fey, Petran, Sakvroth, Talican"
+      "languagesText": "Aklo, Common, Draconic, Fey, Petran, Sakvroth, Talican",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -404,7 +414,17 @@
         ]
       },
       "recallKnowledgeText": "DC 30 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -572,7 +592,7 @@
           },
           {
             "name": "Slain to Serve",
-            "text": "(Downtime) A bog dragon can perform a special ritual over the body of a humanoid creature slain by bog rot to raise it as a humanoid intelligent undead. This functions like a 6th-rank _create undead_ ritual, except that it takes only 8 hours, the bog dragon doesn't require any secondary casters, and they don't need to pay a cost. If the bog dragon critically fails the ritual's skill check, they get a failure instead.",
+            "text": "(Downtime) A bog dragon can perform a special ritual over the body of a humanoid creature slain by bog rot to raise it as a humanoid intelligent undead. This functions like a 6th-rank _[create undead](/ritual/create-undead-player-core)_ ritual, except that it takes only 8 hours, the bog dragon doesn't require any secondary casters, and they don't need to pay a cost. If the bog dragon critically fails the ritual's skill check, they get a failure instead.",
             "traits": []
           },
           {
@@ -595,7 +615,21 @@
         ]
       },
       "recallKnowledgeText": "DC 28 (Arcana)",
-      "languagesText": "Common, Draconic, Necril"
+      "languagesText": "Common, Draconic, Necril",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -806,7 +840,29 @@
         ]
       },
       "recallKnowledgeText": "DC 30 (Arcana)",
-      "languagesText": "Common, Draconic, Thalassic"
+      "languagesText": "Common, Draconic, Thalassic",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -955,7 +1011,7 @@
         "interaction": [
           {
             "name": "Mist Vision",
-            "text": "Fog and mist don't impair a cloud dragon's vision; they ignore the concealed condition from fog and _mist_.",
+            "text": "Fog and mist don't impair a cloud dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from fog and _mist_.",
             "traits": []
           }
         ],
@@ -1011,7 +1067,21 @@
         ]
       },
       "recallKnowledgeText": "DC 32 (Arcana)",
-      "languagesText": "Common, Draconic, Jotun, Sussuran"
+      "languagesText": "Common, Draconic, Jotun, Sussuran",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1190,7 +1260,21 @@
         ]
       },
       "recallKnowledgeText": "DC 28 (Arcana)",
-      "languagesText": "Common, Draconic, Petran, Sakvroth"
+      "languagesText": "Common, Draconic, Petran, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1353,7 +1437,7 @@
         "offensive": [
           {
             "name": "Breath of Fresh Air",
-            "text": "**Two Actions** (Divine, emotion, mental) The dragon unleashes a stream of magical bubbles in a 40-foot cone. Each creature within the area takes 10d8 spirit damage (DC 34 basic Will save). A creature who fails the save is also slowed 1 as they give in to the joyful urge to dance, sing, laugh, or admire the world around them. On a critical failure, the creature is slowed 1 for 1 minute and can't use reactions for as long as they are slowed; they can attempt a new save at the end of each of its turn to end the slowed condition early.",
+            "text": "**Two Actions** (Divine, emotion, mental) The dragon unleashes a stream of magical bubbles in a 40-foot cone. Each creature within the area takes 10d8 spirit damage (DC 34 basic Will save). A creature who fails the save is also slowed 1 as they give in to the joyful urge to dance, sing, laugh, or admire the world around them. On a critical failure, the creature is slowed 1 for 1 minute and can't use reactions for as long as they are slowed; they can attempt a new save at the end of each of its turn to end the [slowed](/condition/slowed-player-core) condition early.",
             "traits": [],
             "actions": "two"
           },
@@ -1388,7 +1472,21 @@
         ]
       },
       "recallKnowledgeText": "DC 32 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1573,7 +1671,17 @@
         ]
       },
       "recallKnowledgeText": "DC 31 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1709,12 +1817,12 @@
         "defensive": [
           {
             "name": "Countered by Metal",
-            "text": "If the forest dragon takes damage from a metal item or effect with the metal trait, they lose woodland passage and vanishing tracks until the end of their next turn.",
+            "text": "If the forest dragon takes damage from a metal item or effect with the [metal](/trait/metal) trait, they lose woodland passage and vanishing tracks until the end of their next turn.",
             "traits": []
           },
           {
             "name": "Frightful Presence",
-            "text": "(aura, emotion, fear, mental) 90 feet, DC 27. Creatures with the animal, fungus, or plant trait take a –2 circumstance penalty to the save.",
+            "text": "(aura, emotion, fear, mental) 90 feet, DC 27. Creatures with the animal, fungus, or [plant](/trait/plant) trait take a –2 circumstance penalty to the save.",
             "traits": []
           },
           {
@@ -1738,7 +1846,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed at a time; one in each of their two front claws, and one with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) at a time; one in each of their two front claws, and one with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -1778,7 +1886,25 @@
         ]
       },
       "recallKnowledgeText": "DC 32 (Arcana)",
-      "languagesText": "Common, Draconic, Fey, Muan"
+      "languagesText": "Common, Draconic, Fey, Muan",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1987,7 +2113,21 @@
         ]
       },
       "recallKnowledgeText": "DC 31 (Arcana)",
-      "languagesText": "Common, Draconic, Petran, Pyric"
+      "languagesText": "Common, Draconic, Petran, Pyric",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2195,7 +2335,17 @@
         ]
       },
       "recallKnowledgeText": "DC 30 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2384,7 +2534,17 @@
         ]
       },
       "recallKnowledgeText": "DC 34 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean, Utopian"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean, Utopian",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2587,7 +2747,21 @@
         ]
       },
       "recallKnowledgeText": "DC 27 (Arcana)",
-      "languagesText": "Common, Draconic, Jotun"
+      "languagesText": "Common, Draconic, Jotun",
+      "traitLinks": [
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2785,7 +2959,17 @@
         ]
       },
       "recallKnowledgeText": "DC 31 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2920,12 +3104,12 @@
         "defensive": [
           {
             "name": "Countered by Earth",
-            "text": "If the sea dragon is targeted by a spell with the earth trait, Liquefy ends and they can't use it until the end of their next turn.",
+            "text": "If the sea dragon is targeted by a spell with the [earth](/trait/earth) trait, Liquefy ends and they can't use it until the end of their next turn.",
             "traits": []
           },
           {
             "name": "Fed by Metal",
-            "text": "(arcane) When a sea dragon is damaged by a spell or unarmed Strike of a creature with the metal trait, or a metallic weapon, the dragon's scales transform and grant them a +1 item bonus to AC until the start of their next turn.",
+            "text": "(arcane) When a sea dragon is damaged by a spell or unarmed Strike of a creature with the [metal](/trait/metal) trait, or a metallic weapon, the dragon's scales transform and grant them a +1 item bonus to AC until the start of their next turn.",
             "traits": []
           },
           {
@@ -2935,7 +3119,7 @@
           },
           {
             "name": "Vortex",
-            "text": "(aura, water) 40 feet. Water in the aura that's also in the same body of water as the dragon is difficult terrain for Swimming creatures who don't have the water trait.",
+            "text": "(aura, water) 40 feet. Water in the aura that's also in the same body of water as the dragon is difficult terrain for Swimming creatures who don't have the [water](/trait/water) trait.",
             "traits": []
           },
           {
@@ -2954,7 +3138,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a third with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a third with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -2988,7 +3172,25 @@
         ]
       },
       "recallKnowledgeText": "DC 30 (Arcana)",
-      "languagesText": "Common, Draconic, Sussuran, Thalassic"
+      "languagesText": "Common, Draconic, Sussuran, Thalassic",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3126,7 +3328,7 @@
         "interaction": [
           {
             "name": "Mist Vision",
-            "text": "Fog and mist don't impair a sky dragon's vision; they ignore the concealed condition from fog and _mist_.",
+            "text": "Fog and mist don't impair a sky dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from fog and _mist_.",
             "traits": []
           }
         ],
@@ -3156,7 +3358,7 @@
         "offensive": [
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of its front claws, and a last with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of its front claws, and a last with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -3195,7 +3397,25 @@
         ]
       },
       "recallKnowledgeText": "DC 31 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean, Sussuran, Talican"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean, Sussuran, Talican",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3359,7 +3579,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a third with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a third with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -3406,7 +3626,21 @@
         ]
       },
       "recallKnowledgeText": "DC 34 (Arcana)",
-      "languagesText": "Chthonian, Common, Diabolic, Draconic, Empyrean"
+      "languagesText": "Chthonian, Common, Diabolic, Draconic, Empyrean",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3583,7 +3817,7 @@
         "offensive": [
           {
             "name": "Command Lightning",
-            "text": "**Free Action** (Concentrate, electricity, primal) **Requirements** The dragon's last action was to use Draconic Frenzy or Cast a Spell with the air or electricity trait and they're in an area of stormy weather; **Effect** The dragon directs a bolt of lightning at a creature within 100 feet, dealing 3d12 electricity damage with a DC 33 basic Reflex save.",
+            "text": "**Free Action** (Concentrate, electricity, primal) **Requirements** The dragon's last action was to use Draconic Frenzy or Cast a Spell with the air or [electricity](/trait/electricity) trait and they're in an area of stormy weather; **Effect** The dragon directs a bolt of lightning at a creature within 100 feet, dealing 3d12 electricity damage with a DC 33 basic Reflex save.",
             "traits": [],
             "actions": "free"
           },
@@ -3628,7 +3862,21 @@
         ]
       },
       "recallKnowledgeText": "DC 31 (Arcana)",
-      "languagesText": "Common, Draconic, Sussuran, Talican"
+      "languagesText": "Common, Draconic, Sussuran, Talican",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3820,7 +4068,17 @@
         ]
       },
       "recallKnowledgeText": "DC 36 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Elven, Empyrean, Fey"
+      "languagesText": "Aklo, Common, Draconic, Elven, Empyrean, Fey",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3969,7 +4227,7 @@
         "defensive": [
           {
             "name": "Pin Shadow",
-            "text": "**Reaction** (shadow) **Trigger** A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using; **Requirements** The triggering creature is in bright light or dim light and has a shadow; **Effect** The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.",
+            "text": "**Reaction** (shadow) **Trigger** A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using; **Requirements** The triggering creature is in bright light or dim light and has a shadow; **Effect** The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an [Interact](/action/interact-player-core) action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.",
             "traits": [],
             "actions": "reaction"
           }
@@ -4011,7 +4269,21 @@
         ]
       },
       "recallKnowledgeText": "DC 36 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Jotun, Shadowtongue"
+      "languagesText": "Common, Diabolic, Draconic, Jotun, Shadowtongue",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        },
+        {
+          "label": "shadow",
+          "slug": "shadow"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4146,19 +4418,19 @@
         "interaction": [
           {
             "name": "Smoke Vision",
-            "text": "Smoke doesn't impair an underworld dragon's vision; they ignore the concealed condition from smoke.",
+            "text": "Smoke doesn't impair an underworld dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Countered by Water",
-            "text": "If the underworld dragon takes damage from a spell with the cold or water trait, the elemental magic of fire within them is momentarily dampened. Until the end of their next turn, they take a –1 circumstance penalty to attack rolls, and their jaws Strikes don't deal fire damage. This limitation ends if the dragon uses Exploding Red Breath.",
+            "text": "If the underworld dragon takes damage from a spell with the cold or [water](/trait/water) trait, the elemental magic of fire within them is momentarily dampened. Until the end of their next turn, they take a –1 circumstance penalty to attack rolls, and their jaws Strikes don't deal fire damage. This limitation ends if the dragon uses Exploding Red Breath.",
             "traits": []
           },
           {
             "name": "Fed by Wood",
-            "text": "When an underworld dragon is struck by a weapon made primarily of wood or affected by a spell with the plant or wood trait, the dragon's internal fiery essences are stoked with the added fuel. Their Exploding Red Breath recharges, and the fire damage from the dragon's jaws deals an additional die of damage until the end of the dragon's next turn.",
+            "text": "When an underworld dragon is struck by a weapon made primarily of wood or affected by a spell with the plant or [wood](/trait/wood) trait, the dragon's internal fiery essences are stoked with the added fuel. Their Exploding Red Breath recharges, and the fire damage from the dragon's jaws deals an additional die of damage until the end of the dragon's next turn.",
             "traits": []
           },
           {
@@ -4182,7 +4454,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a last with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a last with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -4211,7 +4483,21 @@
         ]
       },
       "recallKnowledgeText": "DC 28 (Arcana)",
-      "languagesText": "Common, Draconic, Pyric, Sakvroth"
+      "languagesText": "Common, Draconic, Pyric, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4421,7 +4707,17 @@
         ]
       },
       "recallKnowledgeText": "DC 34 (Arcana)",
-      "languagesText": "Common, Draconic, Dwarven, Elven, Fey, truespeech"
+      "languagesText": "Common, Draconic, Dwarven, Elven, Fey, truespeech",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4607,7 +4903,7 @@
           },
           {
             "name": "Vorpal Binding",
-            "text": "(Arcane) The vorpal dragon beheads its foes— sometimes without killing them. A vorpal dragon's chin blade Strikes count as having the _vorpal_ weapon property rune for the purpose of weaknesses. Whenever the vorpal dragon critically succeeds on a chin blade Strike, it deals an additional 3d6 persistent bleed damage, which can be ended normally.\nWhen a vorpal dragon rolls a natural 20 on a chin blade Strike, the target must attempt a DC 33 Fortitude save; this has the incapacitation trait. On a failure, the creature is beheaded. A creature beheaded this way does not automatically die; instead, their head and body live on, disconnected but mystically linked, with the head controlling the body from afar. A beheaded creature is clumsy 2 and dazzled as they attempt to coordinate movements from an unusual perspective, or clumsy 4 and blinded and deafened if their head can't perceive their body from its location. These conditions are suppressed if the body holds its head, and don't apply to actions performed exclusively by the head, mind, or voice. If the body is killed, the head can live on, but destroying the head kills the body as well. This effect can be reversed by taking a 2-action activity, which has the manipulate trait, to firmly reattach the severed head to the correct body. Whether attaching the severed head to a different headless body is effective is at the GM's discretion.",
+            "text": "(Arcane) The vorpal dragon beheads its foes— sometimes without killing them. A vorpal dragon's chin blade Strikes count as having the _[vorpal](/item/vorpal-gm-core)_ weapon property rune for the purpose of weaknesses. Whenever the vorpal dragon critically succeeds on a chin blade Strike, it deals an additional 3d6 persistent bleed damage, which can be ended normally.\nWhen a vorpal dragon rolls a natural 20 on a chin blade Strike, the target must attempt a DC 33 Fortitude save; this has the [incapacitation](/trait/incapacitation) trait. On a failure, the creature is beheaded. A creature beheaded this way does not automatically die; instead, their head and body live on, disconnected but mystically linked, with the head controlling the body from afar. A beheaded creature is clumsy 2 and dazzled as they attempt to coordinate movements from an unusual perspective, or clumsy 4 and blinded and deafened if their head can't perceive their body from its location. These conditions are suppressed if the body holds its head, and don't apply to actions performed exclusively by the head, mind, or voice. If the body is killed, the head can live on, but destroying the head kills the body as well. This effect can be reversed by taking a 2-action activity, which has the [manipulate](/trait/manipulate) trait, to firmly reattach the severed head to the correct body. Whether attaching the severed head to a different headless body is effective is at the GM's discretion.",
             "traits": []
           },
           {
@@ -4624,7 +4920,21 @@
         ]
       },
       "recallKnowledgeText": "DC 31 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Fey, Talican"
+      "languagesText": "Aklo, Common, Draconic, Fey, Talican",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4799,7 +5109,7 @@
           },
           {
             "name": "Eerie Call",
-            "text": "**Two Actions** (Arcane, auditory, emotion, fear, mental) **Requirements** The dragon is hidden or undetected; **Effect** The dragon's wail draws in unsuspecting opponents. Anyone that can hear the Eerie Call must attempt a DC 29 Will save or become fascinated by the sound. A fascinated creature must spend at least 1 action Seeking the dragon each turn, and the dragon can Sustain this affect for up to 1 minute.",
+            "text": "**Two Actions** (Arcane, auditory, emotion, fear, mental) **Requirements** The dragon is hidden or undetected; **Effect** The dragon's wail draws in unsuspecting opponents. Anyone that can hear the Eerie Call must attempt a DC 29 Will save or become fascinated by the sound. A [fascinated](/condition/fascinated-player-core) creature must spend at least 1 action Seeking the dragon each turn, and the dragon can Sustain this affect for up to 1 minute.",
             "traits": [],
             "actions": "two"
           },
@@ -4828,7 +5138,17 @@
         ]
       },
       "recallKnowledgeText": "DC 27 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4995,7 +5315,7 @@
           },
           {
             "name": "Grant Wish",
-            "text": "**Three Actions** (Arcane, concentrate) **Frequency** once per year; **Effect** The wish dragon instantly grants the benefits of a critical success with the _wish_ ritual to a mortal creature. This has no cost. That creature specifies what they wish for, but the interpretation is up to the wish dragon. A summoned wish dragon can't use this ability.",
+            "text": "**Three Actions** (Arcane, concentrate) **Frequency** once per year; **Effect** The wish dragon instantly grants the benefits of a critical success with the _[wish](/ritual/wish-player-core)_ ritual to a mortal creature. This has no cost. That creature specifies what they wish for, but the interpretation is up to the wish dragon. A summoned wish dragon can't use this ability.",
             "traits": [],
             "actions": "three"
           },
@@ -5019,7 +5339,17 @@
         ]
       },
       "recallKnowledgeText": "DC 32 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5214,7 +5544,17 @@
         ]
       },
       "recallKnowledgeText": "DC 38 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5385,7 +5725,7 @@
           },
           {
             "name": "Slain to Serve",
-            "text": "(Downtime) A bog dragon can perform a special ritual over the body of a humanoid creature slain by bog rot to raise it as a humanoid intelligent undead. This functions like a 8th-rank _create undead_ ritual, except that it takes only 8 hours, the bog dragon doesn't require any secondary casters, and they don't need to pay a cost. If the bog dragon critically fails the ritual's skill check, they get a failure instead.",
+            "text": "(Downtime) A bog dragon can perform a special ritual over the body of a humanoid creature slain by bog rot to raise it as a humanoid intelligent undead. This functions like a 8th-rank _[create undead](/ritual/create-undead-player-core)_ ritual, except that it takes only 8 hours, the bog dragon doesn't require any secondary casters, and they don't need to pay a cost. If the bog dragon critically fails the ritual's skill check, they get a failure instead.",
             "traits": []
           },
           {
@@ -5413,7 +5753,21 @@
         ]
       },
       "recallKnowledgeText": "DC 37 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Necril"
+      "languagesText": "Aklo, Common, Draconic, Necril",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5625,7 +5979,29 @@
         ]
       },
       "recallKnowledgeText": "DC 38 (Arcana)",
-      "languagesText": "Common, Draconic, Thalassic"
+      "languagesText": "Common, Draconic, Thalassic",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5776,7 +6152,7 @@
         "interaction": [
           {
             "name": "Mist Vision",
-            "text": "Fog and mist don't impair a cloud dragon's vision; they ignore the concealed condition from fog and _mist_.",
+            "text": "Fog and mist don't impair a cloud dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from fog and _mist_.",
             "traits": []
           }
         ],
@@ -5838,7 +6214,21 @@
         ]
       },
       "recallKnowledgeText": "DC 41 (Arcana)",
-      "languagesText": "Common, Draconic, Fey, Jotun, Sussuran"
+      "languagesText": "Common, Draconic, Fey, Jotun, Sussuran",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5992,7 +6382,7 @@
         "offensive": [
           {
             "name": "Crystallize",
-            "text": "(Incapacitation, primal) The claws of an ancient crystal dragon embed shards that slowly turns the flesh of those they Strike to crystal. The target must succeed at a DC 34 Fortitude save or become slowed 1 (slowed 2 on a critical failure) for 1 minute. Further failed saves against crystallize increase the slowed condition. Once a creature's actions are reduced to 0 by crystallize, that creature becomes petrified, turned into crystal instead of stone.",
+            "text": "(Incapacitation, primal) The claws of an ancient crystal dragon embed shards that slowly turns the flesh of those they Strike to crystal. The target must succeed at a DC 34 Fortitude save or become slowed 1 (slowed 2 on a critical failure) for 1 minute. Further failed saves against crystallize increase the [slowed](/condition/slowed-player-core) condition. Once a creature's actions are reduced to 0 by crystallize, that creature becomes petrified, turned into crystal instead of stone.",
             "traits": []
           },
           {
@@ -6022,7 +6412,21 @@
         ]
       },
       "recallKnowledgeText": "DC 37 (Arcana)",
-      "languagesText": "Common, Draconic, Petran, Sakvroth"
+      "languagesText": "Common, Draconic, Petran, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6186,13 +6590,13 @@
         "offensive": [
           {
             "name": "Breath of Fresh Air",
-            "text": "**Two Actions** (Divine, emotion, mental) The dragon unleashes a stream of magical bubbles in a 50-foot cone. Each creature within the area takes 14d8 spirit damage (DC 41 basic Will save). A creature who fails the save is also slowed 1 as they give in to the joyful urge to dance, sing, laugh, or admire the world around them. On a critical failure, the creature is slowed 1 for 1 minute and can't use reactions for as long as they are slowed; they can attempt a new save at the end of each of its turn to end the slowed condition early.",
+            "text": "**Two Actions** (Divine, emotion, mental) The dragon unleashes a stream of magical bubbles in a 50-foot cone. Each creature within the area takes 14d8 spirit damage (DC 41 basic Will save). A creature who fails the save is also slowed 1 as they give in to the joyful urge to dance, sing, laugh, or admire the world around them. On a critical failure, the creature is slowed 1 for 1 minute and can't use reactions for as long as they are slowed; they can attempt a new save at the end of each of its turn to end the [slowed](/condition/slowed-player-core) condition early.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Cloud of Giggles",
-            "text": "**Two Actions** (Concentrate, divine, polymorph) **Frequency** once per day; **Effect** The delight dragon transforms into a Huge sparkling cloud of gas for 10 minutes. During this time, the dragon gains resistance 20 to physical damage and is immune to precision damage, but they can't cast spells, activate items, or use Strikes or actions that have the attack or manipulate trait. They can only use their fly Speed, can slip through tiny cracks, and occupy the same space as other creatures. If the dragon ends their turn sharing the same space as other creatures, each of those creatures must attempt a DC 41 Will save or be off-guard from a fit of giggles until the end of the dragon's next turn. The dragon can Dismiss this action as long as it has space to take its original size.",
+            "text": "**Two Actions** (Concentrate, divine, polymorph) **Frequency** once per day; **Effect** The delight dragon transforms into a Huge sparkling cloud of gas for 10 minutes. During this time, the dragon gains resistance 20 to physical damage and is immune to precision damage, but they can't cast spells, activate items, or use Strikes or actions that have the attack or [manipulate](/trait/manipulate) trait. They can only use their fly Speed, can slip through tiny cracks, and occupy the same space as other creatures. If the dragon ends their turn sharing the same space as other creatures, each of those creatures must attempt a DC 41 Will save or be off-guard from a fit of giggles until the end of the dragon's next turn. The dragon can Dismiss this action as long as it has space to take its original size.",
             "traits": [],
             "actions": "two"
           },
@@ -6227,7 +6631,21 @@
         ]
       },
       "recallKnowledgeText": "DC 41 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6400,7 +6818,17 @@
         ]
       },
       "recallKnowledgeText": "DC 40 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6537,7 +6965,7 @@
         "defensive": [
           {
             "name": "Frightful Presence",
-            "text": "(aura, emotion, fear, mental) 90 feet, DC 39. Creatures with the animal, fungus, or plant trait take a –2 circumstance penalty to the save.",
+            "text": "(aura, emotion, fear, mental) 90 feet, DC 39. Creatures with the animal, fungus, or [plant](/trait/plant) trait take a –2 circumstance penalty to the save.",
             "traits": []
           },
           {
@@ -6561,7 +6989,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed at a time; one in each of their two front claws, and one with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) at a time; one in each of their two front claws, and one with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -6606,7 +7034,25 @@
         ]
       },
       "recallKnowledgeText": "DC 41 (Arcana)",
-      "languagesText": "Common, Draconic, Fey, Muan, Nagaji"
+      "languagesText": "Common, Draconic, Fey, Muan, Nagaji",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6821,7 +7267,21 @@
         ]
       },
       "recallKnowledgeText": "DC 40 (Arcana)",
-      "languagesText": "Common, Draconic, Petran, Pyric, Sakvroth"
+      "languagesText": "Common, Draconic, Petran, Pyric, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7029,7 +7489,17 @@
         ]
       },
       "recallKnowledgeText": "DC 38 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7218,7 +7688,17 @@
         ]
       },
       "recallKnowledgeText": "DC 41 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean, Utopian"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean, Utopian",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7423,7 +7903,21 @@
         ]
       },
       "recallKnowledgeText": "DC 36 (Arcana)",
-      "languagesText": "Common, Draconic, Jotun, Thalassic"
+      "languagesText": "Common, Draconic, Jotun, Thalassic",
+      "traitLinks": [
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7628,7 +8122,17 @@
         ]
       },
       "recallKnowledgeText": "DC 40 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7764,12 +8268,12 @@
         "defensive": [
           {
             "name": "Countered by Earth",
-            "text": "If the sea dragon is targeted by a spell with the earth trait, Liquefy ends and they can't use it until the end of their next turn.",
+            "text": "If the sea dragon is targeted by a spell with the [earth](/trait/earth) trait, Liquefy ends and they can't use it until the end of their next turn.",
             "traits": []
           },
           {
             "name": "Fed by Metal",
-            "text": "(arcane) When a sea dragon is damaged by a spell or unarmed Strike of a creature with the metal trait, or a metallic weapon, the dragon's scales transform and grant them a +1 item bonus to AC until the start of their next turn.",
+            "text": "(arcane) When a sea dragon is damaged by a spell or unarmed Strike of a creature with the [metal](/trait/metal) trait, or a metallic weapon, the dragon's scales transform and grant them a +1 item bonus to AC until the start of their next turn.",
             "traits": []
           },
           {
@@ -7779,7 +8283,7 @@
           },
           {
             "name": "Vortex",
-            "text": "(aura, water) 40 feet. Water in the aura that's also in the same body of water as the dragon is difficult terrain for Swimming creatures who don't have the water trait.",
+            "text": "(aura, water) 40 feet. Water in the aura that's also in the same body of water as the dragon is difficult terrain for Swimming creatures who don't have the [water](/trait/water) trait.",
             "traits": []
           },
           {
@@ -7798,7 +8302,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a third with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a third with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -7833,7 +8337,25 @@
         ]
       },
       "recallKnowledgeText": "DC 38 (Arcana)",
-      "languagesText": "Common, Draconic, Empyrean, Sussuran, Thalassic"
+      "languagesText": "Common, Draconic, Empyrean, Sussuran, Thalassic",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7971,7 +8493,7 @@
         "interaction": [
           {
             "name": "Mist Vision",
-            "text": "Fog and mist don't impair a sky dragon's vision; they ignore the concealed condition from fog and _mist_.",
+            "text": "Fog and mist don't impair a sky dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from fog and _mist_.",
             "traits": []
           }
         ],
@@ -8001,7 +8523,7 @@
         "offensive": [
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of its front claws, and a last with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of its front claws, and a last with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -8046,7 +8568,25 @@
         ]
       },
       "recallKnowledgeText": "DC 40 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean, Sussuran, Talican"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean, Sussuran, Talican",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8213,7 +8753,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a third with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a third with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -8260,7 +8800,21 @@
         ]
       },
       "recallKnowledgeText": "DC 42 (Arcana)",
-      "languagesText": "Chthonian, Common, Diabolic, Draconic, Empyrean"
+      "languagesText": "Chthonian, Common, Diabolic, Draconic, Empyrean",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8440,7 +8994,7 @@
         "offensive": [
           {
             "name": "Command Lightning",
-            "text": "**Free Action** (Concentrate, electricity, primal) **Requirements** The dragon's last action was to use Draconic Frenzy or Cast a Spell with the air or electricity trait and they're in an area of stormy weather; **Effect** The dragon directs a bolt of lightning at a creature within 100 feet, dealing 4d12 electricity damage with a DC 40 basic Reflex save",
+            "text": "**Free Action** (Concentrate, electricity, primal) **Requirements** The dragon's last action was to use Draconic Frenzy or Cast a Spell with the air or [electricity](/trait/electricity) trait and they're in an area of stormy weather; **Effect** The dragon directs a bolt of lightning at a creature within 100 feet, dealing 4d12 electricity damage with a DC 40 basic Reflex save",
             "traits": [],
             "actions": "free"
           },
@@ -8490,7 +9044,21 @@
         ]
       },
       "recallKnowledgeText": "DC 40 (Arcana)",
-      "languagesText": "Common, Draconic, Fey, Sussuran, Talican"
+      "languagesText": "Common, Draconic, Fey, Sussuran, Talican",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8690,7 +9258,17 @@
         ]
       },
       "recallKnowledgeText": "DC 42 (Arcana)",
-      "languagesText": "Aklo, Common, Diabolic, Draconic, Elven, Empyrean, Fey, Sussuran"
+      "languagesText": "Aklo, Common, Diabolic, Draconic, Elven, Empyrean, Fey, Sussuran",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8841,7 +9419,7 @@
         "defensive": [
           {
             "name": "Pin Shadow",
-            "text": "**Reaction** (shadow) **Trigger** A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using; **Requirements** The triggering creature is in bright light or dim light and has a shadow; **Effect** The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.",
+            "text": "**Reaction** (shadow) **Trigger** A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using; **Requirements** The triggering creature is in bright light or dim light and has a shadow; **Effect** The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an [Interact](/action/interact-player-core) action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.",
             "traits": [],
             "actions": "reaction"
           }
@@ -8865,7 +9443,7 @@
           },
           {
             "name": "Drain Vigor",
-            "text": "(Occult) When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a DC 40 Fortitude save or become drained 1 (drained 2 on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of drained 4.",
+            "text": "(Occult) When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a DC 40 Fortitude save or become drained 1 (drained 2 on a critical failure). Further damage dealt by the dragon's jaws Strike increases the [drained](/condition/drained-player-core) condition value by 1 on a failed save (2 on a critical failure), to a maximum of drained 4.",
             "traits": []
           },
           {
@@ -8888,7 +9466,21 @@
         ]
       },
       "recallKnowledgeText": "DC 42 (Arcana)",
-      "languagesText": "Common, D'ziriak, Diabolic, Draconic, Jotun, Shadowtongue"
+      "languagesText": "Common, D'ziriak, Diabolic, Draconic, Jotun, Shadowtongue",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        },
+        {
+          "label": "shadow",
+          "slug": "shadow"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9025,19 +9617,19 @@
         "interaction": [
           {
             "name": "Smoke Vision",
-            "text": "Smoke doesn't impair an underworld dragon's vision; they ignore the concealed condition from smoke.",
+            "text": "Smoke doesn't impair an underworld dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Countered by Water",
-            "text": "If the underworld dragon takes damage from a spell with the cold or water trait, the elemental magic of fire within them is momentarily dampened. Until the end of their next turn, they take a –1 circumstance penalty to attack rolls, and their jaws Strikes don't deal fire damage. This limitation ends if the dragon uses Exploding Red Breath.",
+            "text": "If the underworld dragon takes damage from a spell with the cold or [water](/trait/water) trait, the elemental magic of fire within them is momentarily dampened. Until the end of their next turn, they take a –1 circumstance penalty to attack rolls, and their jaws Strikes don't deal fire damage. This limitation ends if the dragon uses Exploding Red Breath.",
             "traits": []
           },
           {
             "name": "Fed by Wood",
-            "text": "When an underworld dragon is struck by a weapon made primarily of wood or affected by a spell with the plant or wood trait, the dragon's internal fiery essences are stoked with the added fuel. Their Exploding Red Breath recharges, and the fire damage from the dragon's jaws deals an additional die of damage until the end of the dragon's next turn.",
+            "text": "When an underworld dragon is struck by a weapon made primarily of wood or affected by a spell with the plant or [wood](/trait/wood) trait, the dragon's internal fiery essences are stoked with the added fuel. Their Exploding Red Breath recharges, and the fire damage from the dragon's jaws deals an additional die of damage until the end of the dragon's next turn.",
             "traits": []
           },
           {
@@ -9061,7 +9653,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a last with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a last with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -9096,7 +9688,21 @@
         ]
       },
       "recallKnowledgeText": "DC 37 (Arcana)",
-      "languagesText": "Common, Draconic, Petran, Pyric, Sakvroth"
+      "languagesText": "Common, Draconic, Petran, Pyric, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9320,7 +9926,17 @@
         ]
       },
       "recallKnowledgeText": "DC 42 (Arcana)",
-      "languagesText": "Common, Draconic, Dwarven, Elven, Fey, Gnomish, Jotun, truespeech"
+      "languagesText": "Common, Draconic, Dwarven, Elven, Fey, Gnomish, Jotun, truespeech",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9505,7 +10121,7 @@
           },
           {
             "name": "Vorpal Binding",
-            "text": "(Arcane) The vorpal dragon beheads its foes— sometimes without killing them. A vorpal dragon's chin blade Strikes count as having the _vorpal_ weapon property rune for the purpose of weaknesses. Whenever the vorpal dragon critically succeeds on a chin blade Strike, it deals an additional 4d6 persistent bleed damage, which can be ended normally.\nWhen a vorpal dragon rolls a natural 20 on a chin blade Strike, the target must attempt a DC 40 Fortitude save; this has the incapacitation trait. On a failure, the creature is beheaded. A creature beheaded this way does not automatically die; instead, their head and body live on, disconnected but mystically linked, with the head controlling the body from afar. A beheaded creature is clumsy 2 and dazzled as they attempt to coordinate movements from an unusual perspective, or clumsy 4 and blinded and deafened if their head can't perceive their body from its location. These conditions are suppressed if the body holds its head, and don't apply to actions performed exclusively by the head, mind, or voice. If the body is killed, the head can live on, but destroying the head kills the body as well. This effect can be ended only by _regenerate_, _breath of life_, or any effect that restores life to the dead; only effects that restore an incomplete corpse will replace an absent or destroyed body, however. The dragon can choose to instantly kill a creature when beheading them, as per the vorpal weapon property rune's activation.",
+            "text": "(Arcane) The vorpal dragon beheads its foes— sometimes without killing them. A vorpal dragon's chin blade Strikes count as having the _[vorpal](/item/vorpal-gm-core)_ weapon property rune for the purpose of weaknesses. Whenever the vorpal dragon critically succeeds on a chin blade Strike, it deals an additional 4d6 persistent bleed damage, which can be ended normally.\nWhen a vorpal dragon rolls a natural 20 on a chin blade Strike, the target must attempt a DC 40 Fortitude save; this has the [incapacitation](/trait/incapacitation) trait. On a failure, the creature is beheaded. A creature beheaded this way does not automatically die; instead, their head and body live on, disconnected but mystically linked, with the head controlling the body from afar. A beheaded creature is clumsy 2 and dazzled as they attempt to coordinate movements from an unusual perspective, or clumsy 4 and blinded and deafened if their head can't perceive their body from its location. These conditions are suppressed if the body holds its head, and don't apply to actions performed exclusively by the head, mind, or voice. If the body is killed, the head can live on, but destroying the head kills the body as well. This effect can be ended only by _regenerate_, _breath of life_, or any effect that restores life to the dead; only effects that restore an incomplete corpse will replace an absent or destroyed body, however. The dragon can choose to instantly kill a creature when beheading them, as per the vorpal weapon property rune's activation.",
             "traits": []
           },
           {
@@ -9527,7 +10143,21 @@
         ]
       },
       "recallKnowledgeText": "DC 40 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Fey, Talican"
+      "languagesText": "Aklo, Common, Draconic, Fey, Talican",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9702,7 +10332,7 @@
           },
           {
             "name": "Eerie Call",
-            "text": "**Two Actions** (Arcane, auditory, emotion, fear, mental) **Requirements** The dragon is hidden or undetected; **Effect** The dragon's wail draws in unsuspecting opponents. Anyone that can hear the Eerie Call must attempt a DC 36 Will save or become fascinated by the sound. A fascinated creature must spend at least 1 action Seeking the dragon each turn, and the dragon can Sustain this affect for up to 1 minute.",
+            "text": "**Two Actions** (Arcane, auditory, emotion, fear, mental) **Requirements** The dragon is hidden or undetected; **Effect** The dragon's wail draws in unsuspecting opponents. Anyone that can hear the Eerie Call must attempt a DC 36 Will save or become fascinated by the sound. A [fascinated](/condition/fascinated-player-core) creature must spend at least 1 action Seeking the dragon each turn, and the dragon can Sustain this affect for up to 1 minute.",
             "traits": [],
             "actions": "two"
           },
@@ -9737,7 +10367,17 @@
         ]
       },
       "recallKnowledgeText": "DC 36 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9905,7 +10545,7 @@
           },
           {
             "name": "Grant Wish",
-            "text": "**Three Actions** (Arcane, concentrate) **Frequency** once per month; **Effect** The wish dragon instantly grants the benefits of a critical success with the _wish_ ritual to a mortal creature. This has no cost. That creature specifies what they wish for, but the interpretation is up to the wish dragon. A summoned wish dragon can't use this ability.",
+            "text": "**Three Actions** (Arcane, concentrate) **Frequency** once per month; **Effect** The wish dragon instantly grants the benefits of a critical success with the _[wish](/ritual/wish-player-core)_ ritual to a mortal creature. This has no cost. That creature specifies what they wish for, but the interpretation is up to the wish dragon. A summoned wish dragon can't use this ability.",
             "traits": [],
             "actions": "three"
           },
@@ -9935,7 +10575,17 @@
         ]
       },
       "recallKnowledgeText": "DC 41 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10142,7 +10792,17 @@
         ]
       },
       "recallKnowledgeText": "DC 45 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10312,7 +10972,7 @@
           },
           {
             "name": "Drag Beneath the Muck",
-            "text": "**Three Actions** **Requirements** The bog archdragon is in a swamp and doesn't have a creature grabbed or restrained in their jaws; **Effect** The dragon Burrows, and if they end their movement directly under a creature, they make a jaws Strike against that creature, who is off-guard against the attack. If the Strike is successful, the dragon makes an Athletics check to grapple the target with their jaws; like Grab, this check doesn't use or contribute to the archdragon's multiple attack penalty. The dragon then Burrows again; any creature they have grabbed or restrained in their jaws moves with them.",
+            "text": "**Three Actions** **Requirements** The bog archdragon is in a swamp and doesn't have a creature [grabbed](/condition/grabbed-player-core) or restrained in their jaws; **Effect** The dragon Burrows, and if they end their movement directly under a creature, they make a jaws Strike against that creature, who is off-guard against the attack. If the Strike is successful, the dragon makes an Athletics check to grapple the target with their jaws; like Grab, this check doesn't use or contribute to the archdragon's multiple attack penalty. The dragon then Burrows again; any creature they have grabbed or restrained in their jaws moves with them.",
             "traits": [],
             "actions": "three"
           },
@@ -10324,7 +10984,7 @@
           },
           {
             "name": "Slain to Serve",
-            "text": "(Downtime) A bog dragon can perform a special ritual over the body of a humanoid creature slain by bog rot to raise it as a humanoid intelligent undead. This functions like a 10th-rank _create undead_ ritual, except that it takes only 8 hours, the bog dragon doesn't require any secondary casters, and they don't need to pay a cost. If the bog dragon critically fails the ritual's skill check, they get a failure instead.",
+            "text": "(Downtime) A bog dragon can perform a special ritual over the body of a humanoid creature slain by bog rot to raise it as a humanoid intelligent undead. This functions like a 10th-rank _[create undead](/ritual/create-undead-player-core)_ ritual, except that it takes only 8 hours, the bog dragon doesn't require any secondary casters, and they don't need to pay a cost. If the bog dragon critically fails the ritual's skill check, they get a failure instead.",
             "traits": []
           },
           {
@@ -10352,7 +11012,21 @@
         ]
       },
       "recallKnowledgeText": "DC 44 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Necril"
+      "languagesText": "Aklo, Common, Draconic, Necril",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10564,7 +11238,29 @@
         ]
       },
       "recallKnowledgeText": "DC 45 (Arcana)",
-      "languagesText": "Common, Draconic, Thalassic"
+      "languagesText": "Common, Draconic, Thalassic",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10723,7 +11419,7 @@
         "interaction": [
           {
             "name": "Smoke Vision",
-            "text": "Smoke doesn't impair a cinder dragon's vision; they ignore the concealed condition from smoke.",
+            "text": "Smoke doesn't impair a cinder dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           }
         ],
@@ -10796,7 +11492,21 @@
         ]
       },
       "recallKnowledgeText": "DC 49 (Arcana)",
-      "languagesText": "Common, Draconic, Pyric"
+      "languagesText": "Common, Draconic, Pyric",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10945,7 +11655,7 @@
         "interaction": [
           {
             "name": "Mist Vision",
-            "text": "Fog and mist don't impair a cloud dragon's vision; they ignore the concealed condition from fog and _mist_.",
+            "text": "Fog and mist don't impair a cloud dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from fog and _mist_.",
             "traits": []
           }
         ],
@@ -11012,7 +11722,21 @@
         ]
       },
       "recallKnowledgeText": "DC 49 (Arcana)",
-      "languagesText": "Common, Draconic, Fey, Jotun, Sussuran"
+      "languagesText": "Common, Draconic, Fey, Jotun, Sussuran",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11225,7 +11949,17 @@
         ]
       },
       "recallKnowledgeText": "DC 45 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Shadowtongue, Sussuran, Tien"
+      "languagesText": "Aklo, Common, Draconic, Shadowtongue, Sussuran, Tien",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11413,7 +12147,21 @@
         ]
       },
       "recallKnowledgeText": "DC 47 (Arcana)",
-      "languagesText": "Common, Draconic, Thalassic"
+      "languagesText": "Common, Draconic, Thalassic",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11562,7 +12310,7 @@
         "offensive": [
           {
             "name": "Crystallize",
-            "text": "(Incapacitation, primal) The claws of an ancient crystal dragon embed shards that slowly turns the flesh of those they Strike to crystal. The target must succeed at a DC 38 Fortitude save or become slowed 1 (slowed 2 on a critical failure) for 1 minute. Further failed saves against crystallize increase the slowed condition. Once a creature's actions are reduced to 0 by crystallize, that creature becomes petrified, turned into crystal instead of stone.",
+            "text": "(Incapacitation, primal) The claws of an ancient crystal dragon embed shards that slowly turns the flesh of those they Strike to crystal. The target must succeed at a DC 38 Fortitude save or become slowed 1 (slowed 2 on a critical failure) for 1 minute. Further failed saves against crystallize increase the [slowed](/condition/slowed-player-core) condition. Once a creature's actions are reduced to 0 by crystallize, that creature becomes petrified, turned into crystal instead of stone.",
             "traits": []
           },
           {
@@ -11598,7 +12346,21 @@
         ]
       },
       "recallKnowledgeText": "DC 44 (Arcana)",
-      "languagesText": "Common, Draconic, Petran, Sakvroth"
+      "languagesText": "Common, Draconic, Petran, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11743,7 +12505,7 @@
         "defensive": [
           {
             "name": "Can't Kill Fun",
-            "text": "(divine) Once per day, if the delight archdragon would die, it instead automatically resurrects in its most recently visited lair with half its maximum Hit Points.\nPlay Scape (aura, divine) 30 feet. Delight dragon magic alters their surroundings, turning weapons into toys and spells into stage effects. All Strikes and other damaging effects used in the aura gain the nonlethal trait and are accompanied by magical sound effects. A creature entering or beginning their turn in the aura must attempt a DC 45 Will save.\n**Failure** The creature's first damaging effect (such as a Strike) this round does half damage.\n**Critical Failure** All the creature's damaging effects this turn do half damage.",
+            "text": "(divine) Once per day, if the delight archdragon would die, it instead automatically resurrects in its most recently visited lair with half its maximum Hit Points.\nPlay Scape (aura, divine) 30 feet. Delight dragon magic alters their surroundings, turning weapons into toys and spells into stage effects. All Strikes and other damaging effects used in the aura gain the [nonlethal](/trait/nonlethal) trait and are accompanied by magical sound effects. A creature entering or beginning their turn in the aura must attempt a DC 45 Will save.\n**Failure** The creature's first damaging effect (such as a Strike) this round does half damage.\n**Critical Failure** All the creature's damaging effects this turn do half damage.",
             "traits": []
           },
           {
@@ -11756,13 +12518,13 @@
         "offensive": [
           {
             "name": "Breath of Fresh Air",
-            "text": "**Two Actions** (Divine, emotion, mental) The dragon unleashes a stream of magical bubbles in a 60-foot cone. Each creature within the area takes 16d8 spirit damage (DC 45 basic Will save). A creature who fails the save is also slowed 1 as they give in to the joyful urge to dance, sing, laugh, or admire the world around them. On a critical failure, the creature is slowed 1 for 1 minute and can't use reactions for as long as they are slowed; they can attempt a new save at the end of each of its turn to end the slowed condition early.",
+            "text": "**Two Actions** (Divine, emotion, mental) The dragon unleashes a stream of magical bubbles in a 60-foot cone. Each creature within the area takes 16d8 spirit damage (DC 45 basic Will save). A creature who fails the save is also slowed 1 as they give in to the joyful urge to dance, sing, laugh, or admire the world around them. On a critical failure, the creature is slowed 1 for 1 minute and can't use reactions for as long as they are slowed; they can attempt a new save at the end of each of its turn to end the [slowed](/condition/slowed-player-core) condition early.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Cloud of Giggles",
-            "text": "**Two Actions** (Concentrate, divine, polymorph) **Frequency** once per day; **Effect** The delight dragon transforms into a Huge sparkling cloud of gas for 10 minutes. During this time, the dragon gains resistance 20 to physical damage and is immune to precision damage, but they can't cast spells, activate items, or use Strikes or actions that have the attack or manipulate trait. They can only use their fly Speed, can slip through tiny cracks, and occupy the same space as other creatures. If the dragon ends their turn sharing the same space as other creatures, each of those creatures must attempt a DC 45 Will save or be off-guard from a fit of giggles until the end of the dragon's next turn. The dragon can Dismiss this action as long as it has space to take its original size.",
+            "text": "**Two Actions** (Concentrate, divine, polymorph) **Frequency** once per day; **Effect** The delight dragon transforms into a Huge sparkling cloud of gas for 10 minutes. During this time, the dragon gains resistance 20 to physical damage and is immune to precision damage, but they can't cast spells, activate items, or use Strikes or actions that have the attack or [manipulate](/trait/manipulate) trait. They can only use their fly Speed, can slip through tiny cracks, and occupy the same space as other creatures. If the dragon ends their turn sharing the same space as other creatures, each of those creatures must attempt a DC 45 Will save or be off-guard from a fit of giggles until the end of the dragon's next turn. The dragon can Dismiss this action as long as it has space to take its original size.",
             "traits": [],
             "actions": "two"
           },
@@ -11797,7 +12559,21 @@
         ]
       },
       "recallKnowledgeText": "DC 49 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11929,7 +12705,7 @@
         "interaction": [
           {
             "name": "Fearsense",
-            "text": "(emotion, mental, occult) The dragon senses all creatures with the frightened condition at the listed range.",
+            "text": "(emotion, mental, occult) The dragon senses all creatures with the [frightened](/condition/frightened-player-core) condition at the listed range.",
             "traits": []
           }
         ],
@@ -11979,7 +12755,7 @@
           },
           {
             "name": "Tongue Decoy",
-            "text": "(Manipulate, occult) The despair dragon inflates several bladders at the end of their tongue to create the basic form of a creature. This process takes 1 minute to complete, during which the dragon is off-guard. If the dragon stops or is interrupted in this process, the bladders deflate, and the dragon must start over. Once the process is complete, the dragon can maintain the inflated bladders indefinitely, and can Dismiss to deflate the bladders and retract their tongue instantly.\nThe inflated tongue takes the basic form of an animal or humanoid, and can be inflated to be either Small or Medium. The form resembles the general silhouette of a creature, though closer inspection and success at a DC 30 Perception check can determine the true nature of the tongue. While inflated, the dragon can send their voice through the decoy, though keeping their tongue inflated makes it difficult to speak, causing the dragon to take a –4 circumstance penalty to any checks related to speaking, such as Deception checks to Lie.\nThe dragon's tongue can extend up to 90 feet from the dragon's body, and they can fully extend their tongue as part of the process to inflate the bladders. The dragon can move the inflated part of their tongue up to 15 feet at a time with an action, which has the concentrate, manipulate, and move traits. While extended, the inflated end of the tongue occupies space as a creature of the appropriate size, but the rest of the tongue doesn't impede or block movement in any way. The dragon's scent functions through cilia at the end of the tongue, but otherwise the dragon has no means of knowing what's near their tongue.\nAttacking the tongue is the same as attacking the dragon, except that the tongue is always off-guard. If the tongue takes any damage, it immediately deflates and remains extended. The dragon is off-guard as long as their tongue is out, but the dragon can retract their tongue with 2 consecutive Interact actions. If the tongue takes damage, the dragon can't use their Tongue Decoy again for 1 day.",
+            "text": "(Manipulate, occult) The despair dragon inflates several bladders at the end of their tongue to create the basic form of a creature. This process takes 1 minute to complete, during which the dragon is off-guard. If the dragon stops or is interrupted in this process, the bladders deflate, and the dragon must start over. Once the process is complete, the dragon can maintain the inflated bladders indefinitely, and can Dismiss to deflate the bladders and retract their tongue instantly.\nThe inflated tongue takes the basic form of an animal or humanoid, and can be inflated to be either Small or Medium. The form resembles the general silhouette of a creature, though closer inspection and success at a DC 30 Perception check can determine the true nature of the tongue. While inflated, the dragon can send their voice through the decoy, though keeping their tongue inflated makes it difficult to speak, causing the dragon to take a –4 circumstance penalty to any checks related to speaking, such as Deception checks to Lie.\nThe dragon's tongue can extend up to 90 feet from the dragon's body, and they can fully extend their tongue as part of the process to inflate the bladders. The dragon can move the inflated part of their tongue up to 15 feet at a time with an action, which has the concentrate, manipulate, and [move](/trait/move) traits. While extended, the inflated end of the tongue occupies space as a creature of the appropriate size, but the rest of the tongue doesn't impede or block movement in any way. The dragon's scent functions through cilia at the end of the tongue, but otherwise the dragon has no means of knowing what's near their tongue.\nAttacking the tongue is the same as attacking the dragon, except that the tongue is always off-guard. If the tongue takes any damage, it immediately deflates and remains extended. The dragon is off-guard as long as their tongue is out, but the dragon can retract their tongue with 2 consecutive [Interact](/action/interact-player-core) actions. If the tongue takes damage, the dragon can't use their Tongue Decoy again for 1 day.",
             "traits": []
           },
           {
@@ -11996,7 +12772,17 @@
         ]
       },
       "recallKnowledgeText": "DC 49 (Arcana)",
-      "languagesText": "Common, Draconic, telepathy 90 feet, truespeech"
+      "languagesText": "Common, Draconic, telepathy 90 feet, truespeech",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12149,7 +12935,7 @@
         "interaction": [
           {
             "name": "Smoke Vision",
-            "text": "Smoke doesn't impair the dragon's vision they ignore the concealed condition from smoke.",
+            "text": "Smoke doesn't impair the dragon's vision they ignore the [concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           }
         ],
@@ -12180,7 +12966,7 @@
           },
           {
             "name": "Diabolic Impalement",
-            "text": "**Single Action** (Attack, unholy) **Requirements** The dragon has a creature grabbed or restrained in its claw and doesn't already have a creature impaled; **Effect** The dragon attempts an Athletics check against the creature's Fortitude DC. On a success, the dragon drives the creature through the bony protrusion on their chest, dealing 7d10 piercing damage (doubled on a critical success). The creature is grabbed while on the protrusion and can attempt to Escape as normal. The dragon's claws become free to Grab other creatures, and the dragon doesn't need to use additional actions to keep the impaled creature grabbed. If the dragon moves, they bring the grabbed creature along with them.\nAn impaled creature takes 2d10 spirit damage at the end of each of its turns, as the bone drives itself deeper to pierce the creature's soul. If the creature dies from this spirit damage, its soul becomes condemned to Hell. A creature condemned to Hell in this way can't be resurrected except by a _wish_ ritual, divine intervention, or reclaiming the soul from Hell.",
+            "text": "**Single Action** (Attack, unholy) **Requirements** The dragon has a creature [grabbed](/condition/grabbed-player-core) or restrained in its claw and doesn't already have a creature impaled; **Effect** The dragon attempts an Athletics check against the creature's Fortitude DC. On a success, the dragon drives the creature through the bony protrusion on their chest, dealing 7d10 piercing damage (doubled on a critical success). The creature is grabbed while on the protrusion and can attempt to Escape as normal. The dragon's claws become free to Grab other creatures, and the dragon doesn't need to use additional actions to keep the impaled creature grabbed. If the dragon moves, they bring the grabbed creature along with them.\nAn impaled creature takes 2d10 spirit damage at the end of each of its turns, as the bone drives itself deeper to pierce the creature's soul. If the creature dies from this spirit damage, its soul becomes condemned to Hell. A creature condemned to Hell in this way can't be resurrected except by a _[wish](/ritual/wish-player-core)_ ritual, divine intervention, or reclaiming the soul from Hell.",
             "traits": [],
             "actions": "one"
           },
@@ -12215,7 +13001,21 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana)",
-      "languagesText": "Aklo, Chthonian, Common, Diabolic, Draconic, Empyrean, Necril, Pyric"
+      "languagesText": "Aklo, Chthonian, Common, Diabolic, Draconic, Empyrean, Necril, Pyric",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12402,7 +13202,7 @@
           },
           {
             "name": "Ectoplasmic Form",
-            "text": "**Single Action** (Divine) A wyrmwraith can push through the ectoplasmic veil to temporarily assume a physical form made of ectoplasm. The wyrmwraith loses the incorporeal trait for 1d4 rounds, though they can return to their incorporeal form as a free action before then. Once this ability ends, the wyrmwraith can't use this ability again for 1d4 rounds. While in their ectoplasmic form, the wyrmwraith's AC increases to 52 and they gain 125 temporary Hit Points. They lose their immunity to precision and bleed damage and all their resistances. Their jaws and claw Strikes deal piercing and slashing damage, respectively, instead of void damage.",
+            "text": "**Single Action** (Divine) A wyrmwraith can push through the ectoplasmic veil to temporarily assume a physical form made of ectoplasm. The wyrmwraith loses the [incorporeal](/trait/incorporeal) trait for 1d4 rounds, though they can return to their incorporeal form as a free action before then. Once this ability ends, the wyrmwraith can't use this ability again for 1d4 rounds. While in their ectoplasmic form, the wyrmwraith's AC increases to 52 and they gain 125 temporary Hit Points. They lose their immunity to precision and bleed damage and all their resistances. Their jaws and claw Strikes deal piercing and slashing damage, respectively, instead of void damage.",
             "traits": [],
             "actions": "one"
           },
@@ -12438,7 +13238,29 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana, Religion)",
-      "languagesText": "Common, Draconic, Necril"
+      "languagesText": "Common, Draconic, Necril",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "incorporeal",
+          "slug": "incorporeal"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        },
+        {
+          "label": "wraith",
+          "slug": "wraith"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12636,7 +13458,7 @@
           },
           {
             "name": "Luminous Form",
-            "text": "**Two Actions** (Divine, fire, holy, light, spirit, visual) The dragon transforms into a being of pure light for 1 minute, shedding bright light in a 30-foot emanation. While in their heavenly form, the dragon's melee Strikes deal an additional 1d6 fire damage and 1d6 spirit damage. Creatures with the unholy trait that can see the light must make a DC 46 Fortitude save or be blinded for 1 round (blinded for 1 minute on a critical failure); they are then temporarily immune for 1 minute.",
+            "text": "**Two Actions** (Divine, fire, holy, light, spirit, visual) The dragon transforms into a being of pure light for 1 minute, shedding bright light in a 30-foot emanation. While in their heavenly form, the dragon's melee Strikes deal an additional 1d6 fire damage and 1d6 spirit damage. Creatures with the [unholy](/trait/unholy) trait that can see the light must make a DC 46 Fortitude save or be blinded for 1 round (blinded for 1 minute on a critical failure); they are then temporarily immune for 1 minute.",
             "traits": [],
             "actions": "two"
           },
@@ -12660,7 +13482,21 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana)",
-      "languagesText": "Chthonian, Common, Diabolic, Draconic, Empyrean, Fey, Necril, truespeech"
+      "languagesText": "Chthonian, Common, Diabolic, Draconic, Empyrean, Fey, Necril, truespeech",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12846,7 +13682,17 @@
         ]
       },
       "recallKnowledgeText": "DC 47 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12985,7 +13831,7 @@
         "defensive": [
           {
             "name": "Frightful Presence",
-            "text": "(aura, emotion, fear, mental) 90 feet, DC 45. Creatures with the animal, fungus, or plant trait take a –2 circumstance penalty to the save.",
+            "text": "(aura, emotion, fear, mental) 90 feet, DC 45. Creatures with the animal, fungus, or [plant](/trait/plant) trait take a –2 circumstance penalty to the save.",
             "traits": []
           },
           {
@@ -13009,7 +13855,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed at a time; one in each of their two front claws, and one with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) at a time; one in each of their two front claws, and one with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -13060,7 +13906,25 @@
         ]
       },
       "recallKnowledgeText": "DC 49 (Arcana)",
-      "languagesText": "Common, Draconic, Elven, Fey, Muan, Nagaji"
+      "languagesText": "Common, Draconic, Elven, Fey, Muan, Nagaji",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -13263,7 +14127,17 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana)",
-      "languagesText": "Common, Draconic, Dwarven, Petran"
+      "languagesText": "Common, Draconic, Dwarven, Petran",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -13456,7 +14330,7 @@
           },
           {
             "name": "Impaling Charge",
-            "text": "**Two Actions** **Requirements** The dragon doesn't have a creature impaled on their horn; **Effect** The dragon attempts to gore a foe. They Stride, then attempt a horn Strike. On a hit, the target becomes impaled on the dragon's horn. The creature is grabbed while on the horn (and can attempt to Escape as normal). The dragon doesn't need to use additional actions to keep the impaled creature grabbed. If the dragon moves, they bring the grabbed creature along with them.",
+            "text": "**Two Actions** **Requirements** The dragon doesn't have a creature impaled on their horn; **Effect** The dragon attempts to gore a foe. They Stride, then attempt a horn Strike. On a hit, the target becomes impaled on the dragon's horn. The creature is grabbed while on the horn (and can attempt to Escape as normal). The dragon doesn't need to use additional actions to keep the impaled creature [grabbed](/condition/grabbed-player-core). If the dragon moves, they bring the grabbed creature along with them.",
             "traits": [],
             "actions": "two"
           },
@@ -13485,7 +14359,21 @@
         ]
       },
       "recallKnowledgeText": "DC 47 (Arcana)",
-      "languagesText": "Arboreal, Chthonian, Common, Draconic, Elven, Fey, Jotun"
+      "languagesText": "Arboreal, Chthonian, Common, Draconic, Elven, Fey, Jotun",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -13705,7 +14593,21 @@
         ]
       },
       "recallKnowledgeText": "DC 47 (Arcana)",
-      "languagesText": "Common, Draconic, Petran, Pyric, Sakvroth"
+      "languagesText": "Common, Draconic, Petran, Pyric, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -13906,7 +14808,17 @@
         ]
       },
       "recallKnowledgeText": "DC 49 (Arcana)",
-      "languagesText": "Common, Draconic, Fey, Shadowtongue"
+      "languagesText": "Common, Draconic, Fey, Shadowtongue",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -14119,7 +15031,17 @@
         ]
       },
       "recallKnowledgeText": "DC 45 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -14314,7 +15236,17 @@
         ]
       },
       "recallKnowledgeText": "DC 49 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean, Utopian"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean, Utopian",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -14494,7 +15426,7 @@
           },
           {
             "name": "Prophetic Wings",
-            "text": "The dragon or any ally can glimpse into the future in their wings in a process that requires 10 minutes of concentration. This casts a 10th-rank _augury_ spell, except that the wings can predict results up to 1 day into the future and the dragon always speaks a few cryptic words related to the result of the prediction. The dragon can use their wings in this way only once per hour and a given creature can seek a future in the wings only once per week. In addition, a creature can choose to predict events up to 1 year into the future—the dragon can view a year ahead in their own wings only once per day.",
+            "text": "The dragon or any ally can glimpse into the future in their wings in a process that requires 10 minutes of concentration. This casts a 10th-rank _[augury](/spell/augury-player-core)_ spell, except that the wings can predict results up to 1 day into the future and the dragon always speaks a few cryptic words related to the result of the prediction. The dragon can use their wings in this way only once per hour and a given creature can seek a future in the wings only once per week. In addition, a creature can choose to predict events up to 1 year into the future—the dragon can view a year ahead in their own wings only once per day.",
             "traits": []
           },
           {
@@ -14517,7 +15449,17 @@
         ]
       },
       "recallKnowledgeText": "DC 45 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Fey, Jotun"
+      "languagesText": "Aklo, Common, Draconic, Fey, Jotun",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -14664,7 +15606,17 @@
         ]
       },
       "recallKnowledgeText": "DC 17 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -14785,7 +15737,17 @@
         ]
       },
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "swarm",
+          "slug": "swarm"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -14929,7 +15891,7 @@
         "offensive": [
           {
             "name": "Blinking Barrage",
-            "text": "**Three Actions** (Arcane, concentrate, teleportation) The dragon channels all their teleportation prowess into a remarkable series of blows. The dragon teleports up to 70 feet to a space adjacent to a creature and makes a claw Strike against that creature. The dragon can do this any number of times, teleporting to a different creature each time. Each attack counts toward their multiple attack penalty, but the penalty does not increase until all attacks have been made. The dragon cannot take actions with the teleportation trait again until the end of their next turn.",
+            "text": "**Three Actions** (Arcane, concentrate, teleportation) The dragon channels all their teleportation prowess into a remarkable series of blows. The dragon teleports up to 70 feet to a space adjacent to a creature and makes a claw Strike against that creature. The dragon can do this any number of times, teleporting to a different creature each time. Each attack counts toward their multiple attack penalty, but the penalty does not increase until all attacks have been made. The dragon cannot take actions with the [teleportation](/trait/teleportation) trait again until the end of their next turn.",
             "traits": [],
             "actions": "three"
           },
@@ -14976,7 +15938,17 @@
         ]
       },
       "recallKnowledgeText": "DC 49 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -15157,7 +16129,7 @@
           },
           {
             "name": "Spare the Dying, Free the Tormented",
-            "text": "**Two Actions** (Concentrate, divine, healing, manipulate, vitality) **Frequency** once per hour; **Effect** The requiem dragon flaps their mighty wings to produce a gust of energy from Creation's Forge. Each dying creature within a 200-foot emanation immediately loses the dying condition, though it remains unconscious at 0 Hit Points. Each creature with void healing in the same area takes 16d6 vitality damage (DC 48 basic Fortitude save); a creature who is reduced to 0 Hit Points by this damage is immediately destroyed and its soul returns to the River of Souls, even if that creature has an ability like rejuvenation. The dragon can choose to exclude as many creatures from this effect as they wish.",
+            "text": "**Two Actions** (Concentrate, divine, healing, manipulate, vitality) **Frequency** once per hour; **Effect** The requiem dragon flaps their mighty wings to produce a gust of energy from Creation's Forge. Each [dying](/condition/dying-player-core) creature within a 200-foot emanation immediately loses the dying condition, though it remains unconscious at 0 Hit Points. Each creature with void healing in the same area takes 16d6 vitality damage (DC 48 basic Fortitude save); a creature who is reduced to 0 Hit Points by this damage is immediately destroyed and its soul returns to the River of Souls, even if that creature has an ability like rejuvenation. The dragon can choose to exclude as many creatures from this effect as they wish.",
             "traits": [],
             "actions": "two"
           },
@@ -15175,7 +16147,17 @@
         ]
       },
       "recallKnowledgeText": "DC 53 (Arcana)",
-      "languagesText": "Chthonian, Common, Daemonic, Draconic, Empyrean, Requian"
+      "languagesText": "Chthonian, Common, Daemonic, Draconic, Empyrean, Requian",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -15319,7 +16301,7 @@
           },
           {
             "name": "Siphon Life",
-            "text": "**Reaction** (divine, healing, vitality) **Trigger** A creature within 60 feet uses a healing effect that restores Hit Points; **Effect** The resurrection dragon redirects vital energies away from the effect, minimizing its impact. The triggering effect rolls the minimum amount on any dice rolls to restore Hit Points, and any flat values for restoring Hit Points (such as the additional Hit Points for a two-action _heal_ spell), are cut in half. The dragon then gains 4d8 temporary Hit Points that last for 1 round.",
+            "text": "**Reaction** (divine, healing, vitality) **Trigger** A creature within 60 feet uses a healing effect that restores Hit Points; **Effect** The resurrection dragon redirects vital energies away from the effect, minimizing its impact. The triggering effect rolls the minimum amount on any dice rolls to restore Hit Points, and any flat values for restoring Hit Points (such as the additional Hit Points for a two-action _[heal](/spell/heal-player-core)_ spell), are cut in half. The dragon then gains 4d8 temporary Hit Points that last for 1 round.",
             "traits": [],
             "actions": "reaction"
           }
@@ -15338,13 +16320,13 @@
           },
           {
             "name": "Mortal Fears",
-            "text": "**Two Actions** (Concentrate, emotion, fear, mental) The archdragon imposes the fear of death onto the living and fear of the living onto the undead. Each creature within a 120-foot emanation must attempt a DC 46 Will save.\n**Critical Success** The creature is unaffected.\n**Success** The creature is frightened 2.\n**Failure** The creature is frightened 3. A living creature can't reduce its frightened condition below 1 if it ends its turn within 15 feet of the archdragon or an undead creature. An undead creature can't reduce its frightened condition below 1 if it ends its turn within 15 feet of the archdragon or a living creature.\n**Critical Failure** As failure, but frightened 4.",
+            "text": "**Two Actions** (Concentrate, emotion, fear, mental) The archdragon imposes the fear of death onto the living and fear of the living onto the undead. Each creature within a 120-foot emanation must attempt a DC 46 Will save.\n**Critical Success** The creature is unaffected.\n**Success** The creature is frightened 2.\n**Failure** The creature is frightened 3. A living creature can't reduce its [frightened](/condition/frightened-player-core) condition below 1 if it ends its turn within 15 feet of the archdragon or an undead creature. An undead creature can't reduce its frightened condition below 1 if it ends its turn within 15 feet of the archdragon or a living creature.\n**Critical Failure** As failure, but frightened 4.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Necro Puppeteer",
-            "text": "**Two Actions** (Divine, void) The dragon siphons energy into an undead creature, a dying creature, or a corpse they can see within 60 feet. The dragon moves the target creature 30 feet and causes it to unleash a wave of void energy in a 10-foot emanation, dealing 8d8 void damage (DC 43 basic Reflex save).",
+            "text": "**Two Actions** (Divine, void) The dragon siphons energy into an undead creature, a [dying](/condition/dying-player-core) creature, or a corpse they can see within 60 feet. The dragon moves the target creature 30 feet and causes it to unleash a wave of void energy in a 10-foot emanation, dealing 8d8 void damage (DC 43 basic Reflex save).",
             "traits": [],
             "actions": "two"
           },
@@ -15368,7 +16350,17 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana)",
-      "languagesText": "Common, Draconic, Necril"
+      "languagesText": "Common, Draconic, Necril",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -15573,7 +16565,21 @@
         ]
       },
       "recallKnowledgeText": "DC 43 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Jotun, Thalassic"
+      "languagesText": "Aklo, Common, Draconic, Jotun, Thalassic",
+      "traitLinks": [
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -15727,7 +16733,7 @@
           },
           {
             "name": "Detonating Rune",
-            "text": "The rune dragon's Strikes and abilities can leave a detonating rune on their targets. If a creature would receive a detonating rune while they already have one, instead of adding another rune, their current detonating rune activates, dealing 8d6 damage to the target and expending the rune. The detonating rune's damage type matches the dragon's current Shifting Rune. A creature can use an Interact action to remove the rune. Detonating runes fade after 1 minute if not detonated.",
+            "text": "The rune dragon's Strikes and abilities can leave a detonating rune on their targets. If a creature would receive a detonating rune while they already have one, instead of adding another rune, their current detonating rune activates, dealing 8d6 damage to the target and expending the rune. The detonating rune's damage type matches the dragon's current [Shifting](/item/shifting-gm-core) Rune. A creature can use an [Interact](/action/interact-player-core) action to remove the rune. Detonating runes fade after 1 minute if not detonated.",
             "traits": []
           },
           {
@@ -15776,7 +16782,17 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana)",
-      "languagesText": "Common, Draconic, all common and uncommon languages, one rare language"
+      "languagesText": "Common, Draconic, all common and uncommon languages, one rare language",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -15985,7 +17001,17 @@
         ]
       },
       "recallKnowledgeText": "DC 47 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -16121,12 +17147,12 @@
         "defensive": [
           {
             "name": "Countered by Earth",
-            "text": "If the sea dragon is targeted by a spell with the earth trait, Liquefy ends and they can't use it until the end of their next turn.",
+            "text": "If the sea dragon is targeted by a spell with the [earth](/trait/earth) trait, Liquefy ends and they can't use it until the end of their next turn.",
             "traits": []
           },
           {
             "name": "Fed by Metal",
-            "text": "(arcane) When a sea dragon is damaged by a spell or unarmed Strike of a creature with the metal trait, or a metallic weapon, the dragon's scales transform and grant them a +2 item bonus to AC until the start of their next turn.",
+            "text": "(arcane) When a sea dragon is damaged by a spell or unarmed Strike of a creature with the [metal](/trait/metal) trait, or a metallic weapon, the dragon's scales transform and grant them a +2 item bonus to AC until the start of their next turn.",
             "traits": []
           },
           {
@@ -16136,7 +17162,7 @@
           },
           {
             "name": "Vortex",
-            "text": "(aura, water) 40 feet. Water in the aura that's also in the same body of water as the dragon is difficult terrain for Swimming creatures who don't have the water trait.",
+            "text": "(aura, water) 40 feet. Water in the aura that's also in the same body of water as the dragon is difficult terrain for Swimming creatures who don't have the [water](/trait/water) trait.",
             "traits": []
           },
           {
@@ -16155,7 +17181,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a third with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a third with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -16201,7 +17227,25 @@
         ]
       },
       "recallKnowledgeText": "DC 45 (Arcana)",
-      "languagesText": "Common, Draconic, Empyrean, Sussuran, Thalassic"
+      "languagesText": "Common, Draconic, Empyrean, Sussuran, Thalassic",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -16339,7 +17383,7 @@
         "interaction": [
           {
             "name": "Mist Vision",
-            "text": "Fog and mist don't impair a sky dragon's vision; they ignore the concealed condition from fog and _mist_.",
+            "text": "Fog and mist don't impair a sky dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from fog and _mist_.",
             "traits": []
           }
         ],
@@ -16369,7 +17413,7 @@
         "offensive": [
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of its front claws, and a last with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of its front claws, and a last with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -16419,7 +17463,25 @@
         ]
       },
       "recallKnowledgeText": "DC 47 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean, Sussuran, Talican"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean, Sussuran, Talican",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -16589,7 +17651,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a third with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a third with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -16636,7 +17698,21 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana)",
-      "languagesText": "Chthonian, Common, Diabolic, Draconic, Empyrean"
+      "languagesText": "Chthonian, Common, Diabolic, Draconic, Empyrean",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -16818,7 +17894,7 @@
         "offensive": [
           {
             "name": "Command Lightning",
-            "text": "**Free Action** (Concentrate, electricity, primal) **Requirements** The dragon's last action was to use Draconic Frenzy or Cast a Spell with the air or electricity trait and they're in an area of stormy weather; **Effect** The dragon directs a bolt of lightning at a creature within 100 feet, dealing 5d12 electricity damage with a DC 44 basic Reflex save",
+            "text": "**Free Action** (Concentrate, electricity, primal) **Requirements** The dragon's last action was to use Draconic Frenzy or Cast a Spell with the air or [electricity](/trait/electricity) trait and they're in an area of stormy weather; **Effect** The dragon directs a bolt of lightning at a creature within 100 feet, dealing 5d12 electricity damage with a DC 44 basic Reflex save",
             "traits": [],
             "actions": "free"
           },
@@ -16874,7 +17950,21 @@
         ]
       },
       "recallKnowledgeText": "DC 47 (Arcana)",
-      "languagesText": "Common, Draconic, Fey, Jotun, Sussuran, Talican"
+      "languagesText": "Common, Draconic, Fey, Jotun, Sussuran, Talican",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -16994,7 +18084,7 @@
         "defensive": [
           {
             "name": "Crushing Jaws",
-            "text": "**Reaction** **Trigger** A creature grabbed by the dragonet's jaws fails a check to Escape; **Effect** The dragonet's jaws deals 1d12+3 bludgeoning damage to the triggering creature.",
+            "text": "**Reaction** **Trigger** A creature [grabbed](/condition/grabbed-player-core) by the dragonet's jaws fails a check to Escape; **Effect** The dragonet's jaws deals 1d12+3 bludgeoning damage to the triggering creature.",
             "traits": [],
             "actions": "reaction"
           }
@@ -17002,7 +18092,7 @@
         "offensive": [
           {
             "name": "Boiling Breath",
-            "text": "**Two Actions** (Arcane, fire) The dragonet breathes a 15-foot line of superheated gas. The dragonet can use this ability underwater even though it has the fire trait. If it does, the activity gains the water trait and emerges as a 20-foot cone of boiling water. Each creature in the area must succeed at a DC 20 Reflex save or take 4d6 fire damage. The dragonet can't use Boiling Breath again for 1d4 rounds.",
+            "text": "**Two Actions** (Arcane, fire) The dragonet breathes a 15-foot line of superheated gas. The dragonet can use this ability underwater even though it has the [fire](/trait/fire) trait. If it does, the activity gains the [water](/trait/water) trait and emerges as a 20-foot cone of boiling water. Each creature in the area must succeed at a DC 20 Reflex save or take 4d6 fire damage. The dragonet can't use Boiling Breath again for 1d4 rounds.",
             "traits": [],
             "actions": "two"
           },
@@ -17020,7 +18110,21 @@
         ]
       },
       "recallKnowledgeText": "DC 18 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -17222,7 +18326,17 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana)",
-      "languagesText": "Aklo, Common, Diabolic, Draconic, Dwarven, Elven, Empyrean, Fey, Sussuran, Utopian"
+      "languagesText": "Aklo, Common, Diabolic, Draconic, Dwarven, Elven, Empyrean, Fey, Sussuran, Utopian",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -17373,12 +18487,12 @@
         "defensive": [
           {
             "name": "Tenacious Shadows",
-            "text": "(misfortune, occult, shadow) Shadows fill attacker's eyes. Any creature that must attempt a flat check to target the dragon because of dim light must roll twice and use the worse result.\nUmbral Pall (aura, occult, shadow) 120 feet. Shadows surround the dragon. The radius of all light from light sources and the areas of light spells in the aura are halved.",
+            "text": "(misfortune, occult, shadow) Shadows fill attacker's eyes. Any creature that must attempt a flat check to target the dragon because of dim light must roll twice and use the worse result.\nUmbral Pall (aura, occult, shadow) 120 feet. Shadows surround the dragon. The radius of all light from light sources and the areas of [light](/spell/light-player-core) spells in the aura are halved.",
             "traits": []
           },
           {
             "name": "Pin Shadow",
-            "text": "**Reaction** (shadow) **Trigger** A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using; **Requirements** The triggering creature is in bright light or dim light and has a shadow; **Effect** The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.",
+            "text": "**Reaction** (shadow) **Trigger** A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using; **Requirements** The triggering creature is in bright light or dim light and has a shadow; **Effect** The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an [Interact](/action/interact-player-core) action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.",
             "traits": [],
             "actions": "reaction"
           }
@@ -17402,7 +18516,7 @@
           },
           {
             "name": "Drain Vigor",
-            "text": "(Occult) When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a DC 44 Fortitude save or become drained 1 (drained 2 on a critical failure). Further damage dealt by the dragon's jaws Strike increases the drained condition value by 1 on a failed save (2 on a critical failure), to a maximum of drained 4.",
+            "text": "(Occult) When the dragon deals void damage to a living creature with its jaws Strike, the umbral dragon gains 20 temporary HP that last for 1 minute and the creature must succeed at a DC 44 Fortitude save or become drained 1 (drained 2 on a critical failure). Further damage dealt by the dragon's jaws Strike increases the [drained](/condition/drained-player-core) condition value by 1 on a failed save (2 on a critical failure), to a maximum of drained 4.",
             "traits": []
           },
           {
@@ -17425,7 +18539,21 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana)",
-      "languagesText": "Common, D'ziriak, Diabolic, Draconic, Jotun, Shadowtongue"
+      "languagesText": "Common, D'ziriak, Diabolic, Draconic, Jotun, Shadowtongue",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        },
+        {
+          "label": "shadow",
+          "slug": "shadow"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -17562,19 +18690,19 @@
         "interaction": [
           {
             "name": "Smoke Vision",
-            "text": "Smoke doesn't impair an underworld dragon's vision; they ignore the concealed condition from smoke.",
+            "text": "Smoke doesn't impair an underworld dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Countered by Water",
-            "text": "If the underworld dragon takes damage from a spell with the cold or water trait, the elemental magic of fire within them is momentarily dampened. Until the end of their next turn, they take a –1 circumstance penalty to attack rolls, and their jaws Strikes don't deal fire damage. This limitation ends if the dragon uses Exploding Red Breath.",
+            "text": "If the underworld dragon takes damage from a spell with the cold or [water](/trait/water) trait, the elemental magic of fire within them is momentarily dampened. Until the end of their next turn, they take a –1 circumstance penalty to attack rolls, and their jaws Strikes don't deal fire damage. This limitation ends if the dragon uses Exploding Red Breath.",
             "traits": []
           },
           {
             "name": "Fed by Wood",
-            "text": "When an underworld dragon is struck by a weapon made primarily of wood or affected by a spell with the plant or wood trait, the dragon's internal fiery essences are stoked with the added fuel. Their Exploding Red Breath recharges, and the fire damage from the dragon's jaws deals an additional die of damage until the end of the dragon's next turn.",
+            "text": "When an underworld dragon is struck by a weapon made primarily of wood or affected by a spell with the plant or [wood](/trait/wood) trait, the dragon's internal fiery essences are stoked with the added fuel. Their Exploding Red Breath recharges, and the fire damage from the dragon's jaws deals an additional die of damage until the end of the dragon's next turn.",
             "traits": []
           },
           {
@@ -17598,7 +18726,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a last with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a last with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -17639,7 +18767,21 @@
         ]
       },
       "recallKnowledgeText": "DC 44 (Arcana)",
-      "languagesText": "Common, Draconic, Petran, Pyric, Sakvroth"
+      "languagesText": "Common, Draconic, Petran, Pyric, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -17869,7 +19011,17 @@
         ]
       },
       "recallKnowledgeText": "DC 51 (Arcana)",
-      "languagesText": "Common, Draconic, Dwarven, Elven, Fey, Gnomish, Jotun, truespeech"
+      "languagesText": "Common, Draconic, Dwarven, Elven, Fey, Gnomish, Jotun, truespeech",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -18060,7 +19212,7 @@
           },
           {
             "name": "Vorpal Binding",
-            "text": "(Arcane) The vorpal dragon beheads its foes— sometimes without killing them. A vorpal dragon's chin blade Strikes count as having the _vorpal_ weapon property rune for the purpose of weaknesses. Whenever the vorpal dragon critically succeeds on a chin blade Strike, it deals an additional 6d6 persistent bleed damage, which can be ended normally.\nWhen a vorpal dragon rolls a natural 20 on a chin blade Strike, the target must attempt a DC 44 Fortitude save; this has the incapacitation trait. On a failure, the creature is beheaded. A creature beheaded this way does not automatically die; instead, their head and body live on, disconnected but mystically linked, with the head controlling the body from afar. A beheaded creature is clumsy 2 and dazzled as they attempt to coordinate movements from an unusual perspective, or clumsy 4 and blinded and deafened if their head can't perceive their body from its location. These conditions are suppressed if the body holds its head, and don't apply to actions performed exclusively by the head, mind, or voice. If the body is killed, the head can live on, but destroying the head kills the body as well. This effect can be ended only by _regenerate_, _breath of life_, or any effect that restores life to the dead; only effects that restore an incomplete corpse will replace an absent or destroyed body, however. The dragon can choose to instantly kill a creature when beheading them, as per the vorpal weapon property rune's activation.",
+            "text": "(Arcane) The vorpal dragon beheads its foes— sometimes without killing them. A vorpal dragon's chin blade Strikes count as having the _[vorpal](/item/vorpal-gm-core)_ weapon property rune for the purpose of weaknesses. Whenever the vorpal dragon critically succeeds on a chin blade Strike, it deals an additional 6d6 persistent bleed damage, which can be ended normally.\nWhen a vorpal dragon rolls a natural 20 on a chin blade Strike, the target must attempt a DC 44 Fortitude save; this has the [incapacitation](/trait/incapacitation) trait. On a failure, the creature is beheaded. A creature beheaded this way does not automatically die; instead, their head and body live on, disconnected but mystically linked, with the head controlling the body from afar. A beheaded creature is clumsy 2 and dazzled as they attempt to coordinate movements from an unusual perspective, or clumsy 4 and blinded and deafened if their head can't perceive their body from its location. These conditions are suppressed if the body holds its head, and don't apply to actions performed exclusively by the head, mind, or voice. If the body is killed, the head can live on, but destroying the head kills the body as well. This effect can be ended only by _regenerate_, _breath of life_, or any effect that restores life to the dead; only effects that restore an incomplete corpse will replace an absent or destroyed body, however. The dragon can choose to instantly kill a creature when beheading them, as per the vorpal weapon property rune's activation.",
             "traits": []
           },
           {
@@ -18077,7 +19229,21 @@
         ]
       },
       "recallKnowledgeText": "DC 47 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Fey, Talican"
+      "languagesText": "Aklo, Common, Draconic, Fey, Talican",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -18252,7 +19418,7 @@
           },
           {
             "name": "Eerie Call",
-            "text": "**Two Actions** (Arcane, auditory, emotion, fear, mental) **Requirements** The dragon is hidden or undetected; **Effect** The dragon's wail draws in unsuspecting opponents. Anyone that can hear the Eerie Call must attempt a DC 40 Will save or become fascinated by the sound. A fascinated creature must spend at least 1 action Seeking the dragon each turn, and the dragon can Sustain this affect for up to 1 minute.",
+            "text": "**Two Actions** (Arcane, auditory, emotion, fear, mental) **Requirements** The dragon is hidden or undetected; **Effect** The dragon's wail draws in unsuspecting opponents. Anyone that can hear the Eerie Call must attempt a DC 40 Will save or become fascinated by the sound. A [fascinated](/condition/fascinated-player-core) creature must spend at least 1 action Seeking the dragon each turn, and the dragon can Sustain this affect for up to 1 minute.",
             "traits": [],
             "actions": "two"
           },
@@ -18292,7 +19458,17 @@
         ]
       },
       "recallKnowledgeText": "DC 43 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -18488,7 +19664,7 @@
           },
           {
             "name": "Unveil Secret",
-            "text": "**Two Actions** (Fear, mental, occult) The dragon delves into the mind of a creature within 60 feet, learning something they'd find embarrassing or shameful unless they succeed at a DC 42 Will save. The target becomes frightened 1 and cannot reduce their frightened condition for 1 minute or until the dragon reveals the secret. As a reaction when the affected creature attempts a check, the dragon can reveal their secret to discomfit them, requiring them to roll twice and take the lower result; this is a misfortune effect.",
+            "text": "**Two Actions** (Fear, mental, occult) The dragon delves into the mind of a creature within 60 feet, learning something they'd find embarrassing or shameful unless they succeed at a DC 42 Will save. The target becomes frightened 1 and cannot reduce their [frightened](/condition/frightened-player-core) condition for 1 minute or until the dragon reveals the secret. As a reaction when the affected creature attempts a check, the dragon can reveal their secret to discomfit them, requiring them to roll twice and take the lower result; this is a misfortune effect.",
             "traits": [],
             "actions": "two"
           },
@@ -18506,7 +19682,17 @@
         ]
       },
       "recallKnowledgeText": "DC 45 (Arcana)",
-      "languagesText": "Common, Draconic, Elven, Empyrean, Fey, Pyric, Sussuran"
+      "languagesText": "Common, Draconic, Elven, Empyrean, Fey, Pyric, Sussuran",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -18680,7 +19866,7 @@
           },
           {
             "name": "Grant Wish",
-            "text": "**Three Actions** (Arcane, concentrate) **Frequency** once per week; **Effect** The wish dragon instantly grants the benefits of a critical success with the _wish_ ritual to a mortal creature. This has no cost. That creature specifies what they wish for, but the interpretation is up to the wish dragon. A summoned wish dragon can't use this ability.",
+            "text": "**Three Actions** (Arcane, concentrate) **Frequency** once per week; **Effect** The wish dragon instantly grants the benefits of a critical success with the _[wish](/ritual/wish-player-core)_ ritual to a mortal creature. This has no cost. That creature specifies what they wish for, but the interpretation is up to the wish dragon. A summoned wish dragon can't use this ability.",
             "traits": [],
             "actions": "three"
           },
@@ -18710,7 +19896,17 @@
         ]
       },
       "recallKnowledgeText": "DC 49 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -18885,7 +20081,7 @@
           },
           {
             "name": "Ectoplasmic Form",
-            "text": "**Single Action** (Divine) A wyrmwraith can push through the ectoplasmic veil to temporarily assume a physical form made of ectoplasm. The wyrmwraith loses the incorporeal trait for 1d4 rounds, though they can return to their incorporeal form as a free action before then. Once this ability ends, the wyrmwraith can't use this ability again for 1d4 rounds. While in their ectoplasmic form, the wyrmwraith's AC increases to 43 and they gain 100 temporary Hit Points. They lose their immunity to precision and bleed damage and all their resistances. Their jaws and claw Strikes deal piercing and slashing damage, respectively, instead of void damage.",
+            "text": "**Single Action** (Divine) A wyrmwraith can push through the ectoplasmic veil to temporarily assume a physical form made of ectoplasm. The wyrmwraith loses the [incorporeal](/trait/incorporeal) trait for 1d4 rounds, though they can return to their incorporeal form as a free action before then. Once this ability ends, the wyrmwraith can't use this ability again for 1d4 rounds. While in their ectoplasmic form, the wyrmwraith's AC increases to 43 and they gain 100 temporary Hit Points. They lose their immunity to precision and bleed damage and all their resistances. Their jaws and claw Strikes deal piercing and slashing damage, respectively, instead of void damage.",
             "traits": [],
             "actions": "one"
           },
@@ -18921,7 +20117,29 @@
         ]
       },
       "recallKnowledgeText": "DC 41 (Arcana, Religion)",
-      "languagesText": "Common, Draconic, Necril"
+      "languagesText": "Common, Draconic, Necril",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "incorporeal",
+          "slug": "incorporeal"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        },
+        {
+          "label": "wraith",
+          "slug": "wraith"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -19106,7 +20324,17 @@
         ]
       },
       "recallKnowledgeText": "DC 24 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -19292,7 +20520,21 @@
         ]
       },
       "recallKnowledgeText": "DC 23 (Arcana)",
-      "languagesText": "Common, Draconic, Necril"
+      "languagesText": "Common, Draconic, Necril",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -19486,7 +20728,29 @@
         ]
       },
       "recallKnowledgeText": "DC 24 (Arcana)",
-      "languagesText": "Common, Draconic, Thalassic"
+      "languagesText": "Common, Draconic, Thalassic",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -19633,7 +20897,7 @@
         "interaction": [
           {
             "name": "Mist Vision",
-            "text": "Fog and mist don't impair a cloud dragon's vision; they ignore the concealed condition from fog and _mist_.",
+            "text": "Fog and mist don't impair a cloud dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from fog and _mist_.",
             "traits": []
           }
         ],
@@ -19676,7 +20940,21 @@
         ]
       },
       "recallKnowledgeText": "DC 27 (Arcana)",
-      "languagesText": "Common, Draconic, Sussuran"
+      "languagesText": "Common, Draconic, Sussuran",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -19843,7 +21121,21 @@
         ]
       },
       "recallKnowledgeText": "DC 23 (Arcana)",
-      "languagesText": "Common, Draconic, Petran, Sakvroth"
+      "languagesText": "Common, Draconic, Petran, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -20006,7 +21298,7 @@
         "offensive": [
           {
             "name": "Breath of Fresh Air",
-            "text": "**Two Actions** (Divine, emotion, mental) The dragon unleashes a stream of magical bubbles in a 30-foot cone. Each creature within the area takes 7d8 spirit damage (DC 29 basic Will save). A creature who fails the save is also slowed 1 as they give in to the joyful urge to dance, sing, laugh, or admire the world around them. On a critical failure, the creature is slowed 1 for 1 minute and can't use reactions for as long as they are slowed; they can attempt a new save at the end of each of its turn to end the slowed condition early.",
+            "text": "**Two Actions** (Divine, emotion, mental) The dragon unleashes a stream of magical bubbles in a 30-foot cone. Each creature within the area takes 7d8 spirit damage (DC 29 basic Will save). A creature who fails the save is also slowed 1 as they give in to the joyful urge to dance, sing, laugh, or admire the world around them. On a critical failure, the creature is slowed 1 for 1 minute and can't use reactions for as long as they are slowed; they can attempt a new save at the end of each of its turn to end the [slowed](/condition/slowed-player-core) condition early.",
             "traits": [],
             "actions": "two"
           },
@@ -20035,7 +21327,21 @@
         ]
       },
       "recallKnowledgeText": "DC 27 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -20205,7 +21511,17 @@
         ]
       },
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -20340,12 +21656,12 @@
         "defensive": [
           {
             "name": "Countered by Metal",
-            "text": "If the forest dragon takes damage from a metal item or effect with the metal trait, they lose woodland passage and vanishing tracks until the end of their next turn.",
+            "text": "If the forest dragon takes damage from a metal item or effect with the [metal](/trait/metal) trait, they lose woodland passage and vanishing tracks until the end of their next turn.",
             "traits": []
           },
           {
             "name": "Frightful Presence",
-            "text": "(aura, emotion, fear, mental) 90 feet, DC 27. Creatures with the animal, fungus, or plant trait take a –2 circumstance penalty to the save.",
+            "text": "(aura, emotion, fear, mental) 90 feet, DC 27. Creatures with the animal, fungus, or [plant](/trait/plant) trait take a –2 circumstance penalty to the save.",
             "traits": []
           },
           {
@@ -20369,7 +21685,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed at a time; one in each of their two front claws, and one with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) at a time; one in each of their two front claws, and one with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -20398,7 +21714,25 @@
         ]
       },
       "recallKnowledgeText": "DC 27 (Arcana)",
-      "languagesText": "Common, Draconic, Fey, Muan"
+      "languagesText": "Common, Draconic, Fey, Muan",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -20592,7 +21926,21 @@
         ]
       },
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "languagesText": "Common, Draconic, Pyric"
+      "languagesText": "Common, Draconic, Pyric",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -20795,7 +22143,17 @@
         ]
       },
       "recallKnowledgeText": "DC 24 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -20983,7 +22341,17 @@
         ]
       },
       "recallKnowledgeText": "DC 29 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean, Utopian"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean, Utopian",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -21174,7 +22542,21 @@
         ]
       },
       "recallKnowledgeText": "DC 22 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -21366,7 +22748,17 @@
         ]
       },
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -21497,12 +22889,12 @@
         "defensive": [
           {
             "name": "Countered by Earth",
-            "text": "If the sea dragon is targeted by a spell with the earth trait, Liquefy ends and they can't use it until the end of their next turn.",
+            "text": "If the sea dragon is targeted by a spell with the [earth](/trait/earth) trait, Liquefy ends and they can't use it until the end of their next turn.",
             "traits": []
           },
           {
             "name": "Fed by Metal",
-            "text": "(arcane) When a sea dragon is damaged by a spell or unarmed Strike of a creature with the metal trait, or a metallic weapon, the dragon's scales transform and grant them a +1 item bonus to AC until the start of their next turn.",
+            "text": "(arcane) When a sea dragon is damaged by a spell or unarmed Strike of a creature with the [metal](/trait/metal) trait, or a metallic weapon, the dragon's scales transform and grant them a +1 item bonus to AC until the start of their next turn.",
             "traits": []
           },
           {
@@ -21526,7 +22918,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a third with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a third with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -21560,7 +22952,25 @@
         ]
       },
       "recallKnowledgeText": "DC 24 (Arcana)",
-      "languagesText": "Common, Draconic, Thalassic"
+      "languagesText": "Common, Draconic, Thalassic",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -21696,7 +23106,7 @@
         "interaction": [
           {
             "name": "Mist Vision",
-            "text": "Fog and mist don't impair a sky dragon's vision; they ignore the concealed condition from fog and _mist_.",
+            "text": "Fog and mist don't impair a sky dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from fog and _mist_.",
             "traits": []
           }
         ],
@@ -21726,7 +23136,7 @@
         "offensive": [
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of its front claws, and a last with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of its front claws, and a last with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -21760,7 +23170,25 @@
         ]
       },
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "languagesText": "Common, Draconic, Sussuran, Talican"
+      "languagesText": "Common, Draconic, Sussuran, Talican",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -21922,7 +23350,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a third with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a third with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -21963,7 +23391,21 @@
         ]
       },
       "recallKnowledgeText": "DC 28 (Arcana)",
-      "languagesText": "Common, Diabolic, Draconic, Empyrean"
+      "languagesText": "Common, Diabolic, Draconic, Empyrean",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -22175,7 +23617,21 @@
         ]
       },
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "languagesText": "Common, Draconic, Sussuran"
+      "languagesText": "Common, Draconic, Sussuran",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -22358,7 +23814,17 @@
         ]
       },
       "recallKnowledgeText": "DC 30 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Elven"
+      "languagesText": "Aklo, Common, Draconic, Elven",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -22499,7 +23965,7 @@
         "defensive": [
           {
             "name": "Pin Shadow",
-            "text": "**Reaction** (shadow) **Trigger** A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using; **Requirements** The triggering creature is in bright light or dim light and has a shadow; **Effect** The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an Interact action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.",
+            "text": "**Reaction** (shadow) **Trigger** A creature within reach of the dragon's claw uses a move action or leaves a square during a move action it's using; **Requirements** The triggering creature is in bright light or dim light and has a shadow; **Effect** The dragon makes a claw Strike against the triggering creature. On a hit, the trigger creature also has its shadow pinned in place, restricting its movement. The creature treats the area of the dragon's aura as difficult terrain until it uses an [Interact](/action/interact-player-core) action to unpin its shadow. If the area was already difficult terrain, the creature treats it as greater difficult terrain.",
             "traits": [],
             "actions": "reaction"
           }
@@ -22541,7 +24007,21 @@
         ]
       },
       "recallKnowledgeText": "DC 28 (Arcana)",
-      "languagesText": "Common, Draconic, Shadowtongue"
+      "languagesText": "Common, Draconic, Shadowtongue",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        },
+        {
+          "label": "shadow",
+          "slug": "shadow"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -22677,19 +24157,19 @@
         "interaction": [
           {
             "name": "Smoke Vision",
-            "text": "Smoke doesn't impair an underworld dragon's vision; they ignore the concealed condition from smoke.",
+            "text": "Smoke doesn't impair an underworld dragon's vision; they ignore the [concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Countered by Water",
-            "text": "If the underworld dragon takes damage from a spell with the cold or water trait, the elemental magic of fire within them is momentarily dampened. Until the end of their next turn, they take a –1 circumstance penalty to attack rolls, and their jaws Strikes don't deal fire damage. This limitation ends if the dragon uses Exploding Red Breath.",
+            "text": "If the underworld dragon takes damage from a spell with the cold or [water](/trait/water) trait, the elemental magic of fire within them is momentarily dampened. Until the end of their next turn, they take a –1 circumstance penalty to attack rolls, and their jaws Strikes don't deal fire damage. This limitation ends if the dragon uses Exploding Red Breath.",
             "traits": []
           },
           {
             "name": "Fed by Wood",
-            "text": "When an underworld dragon is struck by a weapon made primarily of wood or affected by a spell with the plant or wood trait, the dragon's internal fiery essences are stoked with the added fuel. Their Exploding Red Breath recharges, and the fire damage from the dragon's jaws deals an additional die of damage until the end of the dragon's next turn.",
+            "text": "When an underworld dragon is struck by a weapon made primarily of wood or affected by a spell with the plant or [wood](/trait/wood) trait, the dragon's internal fiery essences are stoked with the added fuel. Their Exploding Red Breath recharges, and the fire damage from the dragon's jaws deals an additional die of damage until the end of the dragon's next turn.",
             "traits": []
           },
           {
@@ -22713,7 +24193,7 @@
           },
           {
             "name": "Coiling Frenzy",
-            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures grabbed or restrained at a time; one in each of their front claws, and a last with their tail.",
+            "text": "**Two Actions** The dragon makes one claw Strike and one tail Strike in either order, each against the same target. If either Strike hits, the dragon can attempt to Grab the target with that limb as a free action. The dragon can have up to three creatures [grabbed](/condition/grabbed-player-core) or restrained at a time; one in each of their front claws, and a last with their tail.",
             "traits": [],
             "actions": "two"
           },
@@ -22742,7 +24222,21 @@
         ]
       },
       "recallKnowledgeText": "DC 23 (Arcana)",
-      "languagesText": "Common, Draconic, Pyric, Sakvroth"
+      "languagesText": "Common, Draconic, Pyric, Sakvroth",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -22937,7 +24431,17 @@
         ]
       },
       "recallKnowledgeText": "DC 28 (Arcana)",
-      "languagesText": "Common, Draconic, Elven, Fey"
+      "languagesText": "Common, Draconic, Elven, Fey",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -23116,7 +24620,7 @@
           },
           {
             "name": "Vorpal Binding",
-            "text": "(Arcane) The vorpal dragon beheads its foes— sometimes without killing them. A vorpal dragon's chin blade Strikes count as having the _vorpal_ weapon property rune for the purpose of weaknesses. Whenever the vorpal dragon critically succeeds on a chin blade Strike, it deals an additional 2d6 persistent bleed damage, which can be ended normally.\nWhen a vorpal dragon rolls a natural 20 on a chin blade Strike, the target must attempt a DC 28 Fortitude save; this has the incapacitation trait. On a failure, the creature is beheaded. A creature beheaded this way does not automatically die; instead, their head and body live on, disconnected but mystically linked, with the head controlling the body from afar. A beheaded creature is clumsy 2 and dazzled as they attempt to coordinate movements from an unusual perspective, or clumsy 4 and blinded and deafened if their head can't perceive their body from its location. These conditions are suppressed if the body holds its head, and don't apply to actions performed exclusively by the head, mind, or voice. If the body is killed, the head can live on, but destroying the head kills the body as well. This effect can be reversed by taking a 2-action activity, which has the manipulate trait, to firmly reattach the severed head to the correct body. Whether attaching the severed head to a different headless body is effective is at the GM's discretion.",
+            "text": "(Arcane) The vorpal dragon beheads its foes— sometimes without killing them. A vorpal dragon's chin blade Strikes count as having the _[vorpal](/item/vorpal-gm-core)_ weapon property rune for the purpose of weaknesses. Whenever the vorpal dragon critically succeeds on a chin blade Strike, it deals an additional 2d6 persistent bleed damage, which can be ended normally.\nWhen a vorpal dragon rolls a natural 20 on a chin blade Strike, the target must attempt a DC 28 Fortitude save; this has the [incapacitation](/trait/incapacitation) trait. On a failure, the creature is beheaded. A creature beheaded this way does not automatically die; instead, their head and body live on, disconnected but mystically linked, with the head controlling the body from afar. A beheaded creature is clumsy 2 and dazzled as they attempt to coordinate movements from an unusual perspective, or clumsy 4 and blinded and deafened if their head can't perceive their body from its location. These conditions are suppressed if the body holds its head, and don't apply to actions performed exclusively by the head, mind, or voice. If the body is killed, the head can live on, but destroying the head kills the body as well. This effect can be reversed by taking a 2-action activity, which has the [manipulate](/trait/manipulate) trait, to firmly reattach the severed head to the correct body. Whether attaching the severed head to a different headless body is effective is at the GM's discretion.",
             "traits": []
           }
         ]
@@ -23128,7 +24632,21 @@
         ]
       },
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "languagesText": "Aklo, Common, Draconic, Fey, Talican"
+      "languagesText": "Aklo, Common, Draconic, Fey, Talican",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -23302,7 +24820,7 @@
           },
           {
             "name": "Eerie Call",
-            "text": "**Two Actions** (Arcane, Auditory, Emotion, Fear, Mental) **Requirements** The dragon is hidden or undetected; **Effect** The dragon's wail draws in unsuspecting opponents. Anyone that can hear the Eerie Call must attempt a DC 24 Will save or become fascinated by the sound. A fascinated creature must spend at least 1 action Seeking the dragon each turn, and the dragon can Sustain this affect for up to 1 minute.",
+            "text": "**Two Actions** (Arcane, Auditory, Emotion, Fear, Mental) **Requirements** The dragon is hidden or undetected; **Effect** The dragon's wail draws in unsuspecting opponents. Anyone that can hear the Eerie Call must attempt a DC 24 Will save or become fascinated by the sound. A [fascinated](/condition/fascinated-player-core) creature must spend at least 1 action Seeking the dragon each turn, and the dragon can Sustain this affect for up to 1 minute.",
             "traits": [],
             "actions": "two"
           },
@@ -23336,7 +24854,17 @@
         ]
       },
       "recallKnowledgeText": "DC 22 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -23521,7 +25049,17 @@
         ]
       },
       "recallKnowledgeText": "DC 27 (Arcana)",
-      "languagesText": "Common, Draconic"
+      "languagesText": "Common, Draconic",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

@@ -1,5 +1,7 @@
 # Pathfinder Second Edition Remaster system for Encounter+
 
+![Pathfinder Remastered Compatible — Unofficial](pf2e-banner.png)
+
 This repository tracks the Encounter+ game system and its public ORC rules
 compendium. It includes entity schemas, forms, views, styles, scripts,
 localization, packaging metadata, and the source-by-source content packs used
@@ -21,15 +23,28 @@ Included here:
 - character and creature presentation logic
 - system icons, fonts, and visual assets currently inherited from upstream
   (pending asset-license review)
-- 22 ORC source packs containing 17,301 mechanical records, with individual
+- 22 ORC source packs containing 17,289 mechanical records, with individual
   notices and attribution in [`compendium/`](compendium/); the normal release
   merges them into the `.system` package for a one-step baseline install
 - 679 separately marked OGL 1.0a records from *Rage of Elements*, bundled into
   the same system installer with their complete license and attribution
+- source-aware internal cross-links across the 17,968 shipped entries: the
+  first meaningful reference opens the matching condition, action, trait,
+  spell, item, feat, rule, or other compendium entry without repeating the
+  same destination throughout a page
+- one canonical rules entry for parameterized traits such as Deadly, Fatal,
+  Two-Hand, Versatile, Capacity, Thrown, and Volley, while each item keeps its
+  complete die, range, or damage-type label
 - a project-authored GM Tools collection containing an interactive Encounter
   XP Planner with party-size budgets, creatures, hazards, weak/elite
   adjustments, transparent overrides, direct Remaster rule links, and a
   copy-ready handoff to Encounter+'s native Total Experience award sheet
+- a bookmarkable PF2E Operations Center made from internal system Pages, with
+  compact-panel navigation, persistent breadcrumbs, a fast Quick Reference,
+  an A–Z fallback index, and task-oriented guides for encounters, checks,
+  conditions, exploration, downtime, creatures, hazards, magic, equipment,
+  party advancement, and GM subsystems; explicit links open the unchanged full
+  compendium entries only when exact rule text is needed
 
 Kept outside this repository:
 
@@ -94,7 +109,9 @@ After an applied sync, use Encounter+'s **Reload System** action. The semantic
 Computer Use helper in `tools/encounterplus_ui_helper.mjs` performs that action
 and targeted library checks without screen coordinates or full UI dumps.
 Content records remain database-owned: rebuild and import the combined system
-archive when testing a content change.
+archive when testing a content change, including generated Pages. The
+Operations Center source is maintained in `tools/build_operations_center.py`;
+run it before packaging whenever its navigation or summaries change.
 
 ## Building release files
 

@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Animate Object",
     "slug": "animate-object-player-core",
-    "descr": "You transform the target into an animated object with a level up to that allowed by the Creature Creation Rituals table and of a type corresponding to the object (so a broom would become an animated broom).\n\n---\n\n**Critical Success** The target becomes an animated object of the appropriate type. If it's at least 4 levels lower than you, you can make it a minion. This gives it the minion trait, meaning it can use 2 actions when you command it, and commanding it is a single action that has the auditory and concentrate traits. You can have a maximum of four minions under your control. If it doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.\n\n**Success** As critical success, except an animated object that doesn't become your minion stays in place and attacks anyone that attacks it or tries to steal or move it, rather than following your command.\n\n**Failure** You fail to create the animated object.\n\n**Critical Failure** You create the animated object, but it goes berserk and attempts to destroy you.\n\n## Creatures Creation Rituals\n\n| Creature Level | Spell Rank Required | Cost |\n| --- | --- | --- |\n| -1 or 0 | 2 | 15 gp |\n| 1 | 2 | 60 gp |\n| 2 | 3 | 105 gp |\n| 3 | 3 | 180 gp |\n| 4 | 4 | 300 gp |\n| 5 | 4 | 480 gp |\n| 6 | 5 | 750 gp |\n| 7 | 5 | 1,080 gp |\n| 8 | 6 | 1,500 gp |\n| 9 | 6 | 2,100 gp |\n| 10 | 7 | 3,000 gp |\n| 11 | 7 | 4,200 gp |\n| 12 | 8 | 6,000 gp |\n| 13 | 8 | 9,000 gp |\n| 14 | 9 | 13,500 gp |\n| 15 | 9 | 19,500 gp |\n| 16 | 10 | 30,000 gp |\n| 17 | 10 | 45,000 gp |",
+    "descr": "You transform the target into an animated object with a level up to that allowed by the Creature Creation Rituals table and of a type corresponding to the object (so a broom would become an animated broom).\n\n---\n\n**Critical Success** The target becomes an animated object of the appropriate type. If it's at least 4 levels lower than you, you can make it a minion. This gives it the [minion](/trait/minion) trait, meaning it can use 2 actions when you command it, and commanding it is a single action that has the auditory and [concentrate](/trait/concentrate) traits. You can have a maximum of four minions under your control. If it doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.\n\n**Success** As critical success, except an animated object that doesn't become your minion stays in place and attacks anyone that attacks it or tries to steal or move it, rather than following your command.\n\n**Failure** You fail to create the animated object.\n\n**Critical Failure** You create the animated object, but it goes berserk and attempts to destroy you.\n\n## Creatures Creation Rituals\n\n| Creature Level | Spell Rank Required | Cost |\n| --- | --- | --- |\n| -1 or 0 | 2 | 15 gp |\n| 1 | 2 | 60 gp |\n| 2 | 3 | 105 gp |\n| 3 | 3 | 180 gp |\n| 4 | 4 | 300 gp |\n| 5 | 4 | 480 gp |\n| 6 | 5 | 750 gp |\n| 7 | 5 | 1,080 gp |\n| 8 | 6 | 1,500 gp |\n| 9 | 6 | 2,100 gp |\n| 10 | 7 | 3,000 gp |\n| 11 | 7 | 4,200 gp |\n| 12 | 8 | 6,000 gp |\n| 13 | 8 | 9,000 gp |\n| 14 | 9 | 13,500 gp |\n| 15 | 9 | 19,500 gp |\n| 16 | 10 | 30,000 gp |\n| 17 | 10 | 45,000 gp |",
     "data": {
       "rank": 2,
       "rarity": "uncommon",
@@ -19,7 +19,8 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Arcana (expert)",
-      "secondaryChecks": "Crafting"
+      "secondaryChecks": "Crafting",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -59,7 +60,8 @@
       "requirements": "",
       "secondaryCasters": 0,
       "primaryChecks": "Nature or Religion (expert)",
-      "secondaryChecks": "Nature or Religion (whichever is used for the primary check)"
+      "secondaryChecks": "Nature or Religion (whichever is used for the primary check)",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -101,7 +103,13 @@
       "requirements": "",
       "secondaryCasters": 3,
       "primaryChecks": "Nature (master)",
-      "secondaryChecks": "Lore (any), Society, Survival"
+      "secondaryChecks": "Lore (any), Society, Survival",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -142,7 +150,8 @@
       "requirements": "",
       "secondaryCasters": 3,
       "primaryChecks": "Arcana (master) or Occultism (master)",
-      "secondaryChecks": "Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)"
+      "secondaryChecks": "Diplomacy or Intimidation; Arcana or Occultism (whichever isn't used for the primary check)",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -185,7 +194,17 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Nature (expert)",
-      "secondaryChecks": "Survival"
+      "secondaryChecks": "Survival",
+      "traitLinks": [
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -227,7 +246,8 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Occultism (expert) or Religion (expert)",
-      "secondaryChecks": "Occultism or Religion (whichever isn't used for the primary check)"
+      "secondaryChecks": "Occultism or Religion (whichever isn't used for the primary check)",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -267,7 +287,8 @@
       "requirements": "",
       "secondaryCasters": 2,
       "primaryChecks": "Occultism (master)",
-      "secondaryChecks": "Performance, Society"
+      "secondaryChecks": "Performance, Society",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -294,7 +315,7 @@
     "systemVersion": "1.2.10",
     "name": "Commune",
     "slug": "commune-player-core",
-    "descr": "You call upon an unknown, powerful being to answer questions. The being varies depending on the skill used for the primary check.\n\n**Nature** Primal spirits of nature, which know about animals, beasts, fey, fungi, plants, topography, and natural resources within a 3-mile radius.**Occultism** Planar and other mysterious entities such as elementals, forgotten spirits, and monitors, which know about forgotten knowledge, the planes, obscure secrets, and other esoterica.**Religion** Divine beings like celestials and fiends that know about the gods they serve and the god's respective purview; these are typically a servitor of your deity if you have one.\n\nYou can ask up to seven questions that could be answered with \"Yes\" or \"No.\" The entity answers with one-word answers such as \"Yes,\" \"No,\" \"Likely,\" and \"Unknown,\" though its answers always reflect its own agenda and could be deceptive.\n\n---\n\n**Critical Success** You contact a more powerful entity aligned strongly with your interests, possibly even your deity. The entity won't attempt to deceive you, though it still might not know the answers. When it's important to provide clarity, the entity will answer your questions with up to five words, such as \"If you leave immediately\" or \"That was true once.\"\n\n**Success** You can ask your questions and receive answers.\n\n**Failure** You fail to contact an appropriate being.\n\n**Critical Failure** You are exposed to the enormity of the cosmos and are Stupefied 4 for 1 week (can't remove by any means).",
+    "descr": "You call upon an unknown, powerful being to answer questions. The being varies depending on the skill used for the primary check.\n\n**Nature** Primal spirits of nature, which know about animals, beasts, fey, fungi, plants, topography, and natural resources within a 3-mile radius.**Occultism** Planar and other mysterious entities such as elementals, forgotten spirits, and monitors, which know about forgotten knowledge, the planes, obscure secrets, and other esoterica.**Religion** Divine beings like celestials and fiends that know about the gods they serve and the god's respective purview; these are typically a servitor of your deity if you have one.\n\nYou can ask up to seven questions that could be answered with \"Yes\" or \"No.\" The entity answers with one-word answers such as \"Yes,\" \"No,\" \"Likely,\" and \"Unknown,\" though its answers always reflect its own agenda and could be deceptive.\n\n---\n\n**Critical Success** You contact a more powerful entity aligned strongly with your interests, possibly even your deity. The entity won't attempt to deceive you, though it still might not know the answers. When it's important to provide clarity, the entity will answer your questions with up to five words, such as \"If you leave immediately\" or \"That was true once.\"\n\n**Success** You can ask your questions and receive answers.\n\n**Failure** You fail to contact an appropriate being.\n\n**Critical Failure** You are exposed to the enormity of the cosmos and are [Stupefied 4](/condition/stupefied-player-core) for 1 week (can't remove by any means).",
     "data": {
       "rank": 6,
       "rarity": "uncommon",
@@ -309,7 +330,13 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Nature (master), Occultism (master) or Religion (master)",
-      "secondaryChecks": "Nature, Occultism or Religion (whichever is used for the primary check)"
+      "secondaryChecks": "Nature, Occultism or Religion (whichever is used for the primary check)",
+      "traitLinks": [
+        {
+          "label": "prediction",
+          "slug": "prediction"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -337,7 +364,7 @@
     "systemVersion": "1.2.10",
     "name": "Consecrate",
     "slug": "consecrate-player-core",
-    "descr": "**Area** 40-foot-radius burst around an immobile altar, shrine, or fixture of your deity\n\n**Secondary Casters** 2, must be worshippers of your religion\n\n---\n\nYou consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those rolls. If your deity's divine sanctification allows you to choose holy or unholy, you can choose to make the consecrated site holy or unholy as well. If the deity's sanctification *must* be holy or unholy, you must make the site match that sanctification. Strikes made by worshippers of your deity within the area gain the site's sanctification trait, if any.\n\n---\n\n**Critical Success** The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.\n\n**Success** The consecration succeeds.\n\n**Failure** The consecration fails.\n\n**Critical Failure** The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.\n\n---\n\n**Heightened (7th)** The consecrated area also gains the effects of the *planar seal* spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.",
+    "descr": "**Area** 40-foot-radius burst around an immobile altar, shrine, or fixture of your deity\n\n**Secondary Casters** 2, must be worshippers of your religion\n\n---\n\nYou consecrate a site to your deity, chanting praises and creating a sacred space. While within the area, worshippers of your deity gain a +1 status bonus to attack rolls, skill checks, saving throws, and Perception checks, and creatures anathema to your deity (such as undead for Pharasma or Sarenrae) take a -1 status penalty to those rolls. If your deity's divine sanctification allows you to choose holy or unholy, you can choose to make the consecrated site holy or unholy as well. If the deity's sanctification *must* be holy or unholy, you must make the site match that sanctification. Strikes made by worshippers of your deity within the area gain the site's sanctification trait, if any.\n\n---\n\n**Critical Success** The consecration succeeds, and it either lasts for 10 years instead of 1 or covers an area with twice the radius. Occasionally, with your deity's favor, this might produce an even more amazing effect, such as a permanently consecrated area or the effect covering an entire cathedral.\n\n**Success** The consecration succeeds.\n\n**Failure** The consecration fails.\n\n**Critical Failure** The consecration fails spectacularly and angers your deity, who sends a sign of displeasure. For at least 1 year, further attempts to consecrate the site fail.\n\n---\n\n**Heightened (7th)** The consecrated area also gains the effects of the *[planar seal](/spell/planar-seal-player-core)* spell, but the effect doesn't attempt to counteract teleportation by worshippers of your deity. The cost increases to 200 gp × the spell rank.",
     "data": {
       "rank": 2,
       "rarity": "uncommon",
@@ -353,7 +380,13 @@
       "area": "40-foot burst",
       "secondaryCasters": 2,
       "primaryChecks": "Religion",
-      "secondaryChecks": "Crafting, Performance"
+      "secondaryChecks": "Crafting, Performance",
+      "traitLinks": [
+        {
+          "label": "consecration",
+          "slug": "consecration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -394,7 +427,8 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Nature (master)",
-      "secondaryChecks": "Survival"
+      "secondaryChecks": "Survival",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -421,7 +455,7 @@
     "systemVersion": "1.2.10",
     "name": "Create Undead",
     "slug": "create-undead-player-core",
-    "descr": "You transform the target into an undead creature with a level up to that allowed in the Creature Creation Rituals table. There are many versions of this ritual, each specific to a particular type of undead (one ritual for all zombies, one for skeletons, one for ghouls, and so on), and the rituals that create rare undead are also rare. Some forms of undead, such as liches, form using their own unique methods and can't be created with a version of *create undead*.\n\n---\n\n**Critical Success** The target becomes an undead creature of the appropriate type. If it's at least 4 levels lower than you, you can make it a minion. This gives it the minion trait, meaning it can use 2 actions when you command it, and commanding it is a single action that has the auditory and concentrate traits. You can have a maximum of four minions under your control. If it's intelligent and doesn't become a minion, the undead is helpful to you for awakening it, though it's still a horrid and evil creature. If it's unintelligent and doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.\n\n**Success** As critical success, except an intelligent undead that doesn't become your minion is only friendly to you, and an unintelligent undead that doesn't become your minion leaves you alone unless you attack it. It marauds the local area rather than following your command.\n\n**Failure** You fail to create the undead.\n\n**Critical Failure** You create the undead, but its soul, tortured by your foul necromancy, is full of nothing but hatred for you. It attempts to destroy you.\n\n## Creatures Creation Rituals\n\n| Creature Level | Spell Rank Required | Cost |\n| --- | --- | --- |\n| -1 or 0 | 2 | 15 gp |\n| 1 | 2 | 60 gp |\n| 2 | 3 | 105 gp |\n| 3 | 3 | 180 gp |\n| 4 | 4 | 300 gp |\n| 5 | 4 | 480 gp |\n| 6 | 5 | 750 gp |\n| 7 | 5 | 1,080 gp |\n| 8 | 6 | 1,500 gp |\n| 9 | 6 | 2,100 gp |\n| 10 | 7 | 3,000 gp |\n| 11 | 7 | 4,200 gp |\n| 12 | 8 | 6,000 gp |\n| 13 | 8 | 9,000 gp |\n| 14 | 9 | 13,500 gp |\n| 15 | 9 | 19,500 gp |\n| 16 | 10 | 30,000 gp |\n| 17 | 10 | 45,000 gp |",
+    "descr": "You transform the target into an undead creature with a level up to that allowed in the Creature Creation Rituals table. There are many versions of this ritual, each specific to a particular type of undead (one ritual for all zombies, one for skeletons, one for ghouls, and so on), and the rituals that create rare undead are also rare. Some forms of undead, such as liches, form using their own unique methods and can't be created with a version of *create undead*.\n\n---\n\n**Critical Success** The target becomes an undead creature of the appropriate type. If it's at least 4 levels lower than you, you can make it a minion. This gives it the [minion](/trait/minion) trait, meaning it can use 2 actions when you command it, and commanding it is a single action that has the auditory and [concentrate](/trait/concentrate) traits. You can have a maximum of four minions under your control. If it's intelligent and doesn't become a minion, the undead is helpful to you for awakening it, though it's still a horrid and evil creature. If it's unintelligent and doesn't become a minion, you can give it one simple command. It pursues that goal single-mindedly, ignoring any of your subsequent commands.\n\n**Success** As critical success, except an intelligent undead that doesn't become your minion is only friendly to you, and an unintelligent undead that doesn't become your minion leaves you alone unless you attack it. It marauds the local area rather than following your command.\n\n**Failure** You fail to create the undead.\n\n**Critical Failure** You create the undead, but its soul, tortured by your foul necromancy, is full of nothing but hatred for you. It attempts to destroy you.\n\n## Creatures Creation Rituals\n\n| Creature Level | Spell Rank Required | Cost |\n| --- | --- | --- |\n| -1 or 0 | 2 | 15 gp |\n| 1 | 2 | 60 gp |\n| 2 | 3 | 105 gp |\n| 3 | 3 | 180 gp |\n| 4 | 4 | 300 gp |\n| 5 | 4 | 480 gp |\n| 6 | 5 | 750 gp |\n| 7 | 5 | 1,080 gp |\n| 8 | 6 | 1,500 gp |\n| 9 | 6 | 2,100 gp |\n| 10 | 7 | 3,000 gp |\n| 11 | 7 | 4,200 gp |\n| 12 | 8 | 6,000 gp |\n| 13 | 8 | 9,000 gp |\n| 14 | 9 | 13,500 gp |\n| 15 | 9 | 19,500 gp |\n| 16 | 10 | 30,000 gp |\n| 17 | 10 | 45,000 gp |",
     "data": {
       "rank": 2,
       "rarity": "uncommon",
@@ -436,7 +470,13 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Arcana (expert), Occultism (expert), or Religion (expert)",
-      "secondaryChecks": "Religion"
+      "secondaryChecks": "Religion",
+      "traitLinks": [
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -464,7 +504,7 @@
     "systemVersion": "1.2.10",
     "name": "Geas",
     "slug": "geas-player-core",
-    "descr": "You enforce a magic rule on a willing target, forcing it to either perform or refrain from carrying out a certain act. A *geas* to perform an act is usually conditional, such as, \"Always offer hospitality to strangers seeking a place to stay.\" An unconditional *geas* to perform a certain act doesn't require the target to perform that act exclusively, though it must prioritize the task above all leisurely pursuits. The most common *geas* to refrain from carrying out an act is a specification to avoid violating a contract. In those cases, the secondary caster usually takes charge of making sure the wording of the contract is attuned correctly with the ritual's magic. Because the target is willing, *geas* can have a duration that lasts for as long as the target agrees to. If the target is unable to fulfill the *geas*, it becomes Sickened 1, and the sickened condition increases by 1 for each consecutive day it is prevented from following the *geas*, to a maximum of sickened 4. The sickened condition ends immediately when it follows the *geas* again; it can't remove the sickened condition in any other way. Only powerful magic such as a Wish ritual can remove the effects of *geas* from a willing target.\n\n---\n\n**Critical Success** The *geas* succeeds, and the target receives a +1 status bonus to skill checks that directly uphold the *geas* (at the GM's discretion).\n\n**Success** The *geas* succeeds.\n\n**Failure** The *geas* fails.\n\n**Critical Failure** The *geas* fails, and you are instead affected by the *geas* you were attempting to place on the target. You are considered an unwilling target, so the *geas* can be counteracted with a Cleanse Affliction spell.\n\n---\n\n**Heightened (5th)** You can use *geas* on an unwilling creature; it can attempt a Will save to negate the effect. If the target fails this Will save, the *geas* lasts up to 1 week. A *cleanse affliction* spell can counteract a *geas* on an unwilling creature, in addition to powerful magic such as a *wish* ritual. A clever unwilling creature can subvert the *geas* by contriving situations that prevent it from complying, but in that case it becomes Sickened (as described above).\n\n**Heightened (7th)** As 5th rank, but the *geas* lasts for up to 1 year on an unwilling creature.\n\n**Heightened (9th)** As 5th rank, but the *geas* lasts for a duration you choose (even unlimited) on an unwilling creature.",
+    "descr": "You enforce a [magic](/rule/magic-rules-2968) rule on a willing target, forcing it to either perform or refrain from carrying out a certain act. A *geas* to perform an act is usually conditional, such as, \"Always offer hospitality to strangers seeking a place to stay.\" An unconditional *geas* to perform a certain act doesn't require the target to perform that act exclusively, though it must prioritize the task above all leisurely pursuits. The most common *geas* to refrain from carrying out an act is a specification to avoid violating a contract. In those cases, the secondary caster usually takes charge of making sure the wording of the contract is attuned correctly with the ritual's magic. Because the target is willing, *geas* can have a duration that lasts for as long as the target agrees to. If the target is unable to fulfill the *geas*, it becomes [Sickened 1](/condition/sickened-player-core), and the sickened condition increases by 1 for each consecutive day it is prevented from following the *geas*, to a maximum of sickened 4. The sickened condition ends immediately when it follows the *geas* again; it can't remove the sickened condition in any other way. Only powerful magic such as a [Wish](/ritual/wish-player-core) ritual can remove the effects of *geas* from a willing target.\n\n---\n\n**Critical Success** The *geas* succeeds, and the target receives a +1 status bonus to skill checks that directly uphold the *geas* (at the GM's discretion).\n\n**Success** The *geas* succeeds.\n\n**Failure** The *geas* fails.\n\n**Critical Failure** The *geas* fails, and you are instead affected by the *geas* you were attempting to place on the target. You are considered an unwilling target, so the *geas* can be counteracted with a [Cleanse Affliction](/spell/cleanse-affliction-player-core) spell.\n\n---\n\n**Heightened (5th)** You can use *geas* on an unwilling creature; it can attempt a Will save to negate the effect. If the target fails this Will save, the *geas* lasts up to 1 week. A *cleanse affliction* spell can counteract a *geas* on an unwilling creature, in addition to powerful magic such as a *wish* ritual. A clever unwilling creature can subvert the *geas* by contriving situations that prevent it from complying, but in that case it becomes Sickened (as described above).\n\n**Heightened (7th)** As 5th rank, but the *geas* lasts for up to 1 year on an unwilling creature.\n\n**Heightened (9th)** As 5th rank, but the *geas* lasts for a duration you choose (even unlimited) on an unwilling creature.",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -480,7 +520,17 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Arcana (expert), Occultism (expert), or Religion (expert)",
-      "secondaryChecks": "Society or Legal Lore"
+      "secondaryChecks": "Society or Legal Lore",
+      "traitLinks": [
+        {
+          "label": "curse",
+          "slug": "curse"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -509,7 +559,7 @@
     "systemVersion": "1.2.10",
     "name": "Planar Displacement",
     "slug": "planar-displacement-player-core",
-    "descr": "You draw a ritual circle, and when the ritual is complete, you shift all creatures in the area to a different plane of existence. The skill you use for the primary check must be one that can be used to make a Recall Knowledge check about the intended destination, such as Arcana or Nature for the Plane of Fire or Occultism for the Astral Plane.\n\nA secondary caster can be located at the exact site of the destination, instead of with you at the point of origin. If a secondary caster at the destination succeeds at its check and you roll a success, the ritual is a critical success instead.\n\n---\n\n**Critical Success** You arrive on the intended plane at the last place one of the targets (of your choice) was located the last time the target traveled to that plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. The circle remains active for 1 minute, during which time any creature the ritual transported can return to the origin point with a single action, which has the concentrate trait.\n\n**Success** As critical success, but you arrive 1d10×25 miles from your destination.\n\n**Failure** Your attempt is unsuccessful.\n\n**Critical Failure** The ritual fails, and the GM determines whether you travel to the wrong plane or are barred from planar travel for 1 week.",
+    "descr": "You draw a ritual circle, and when the ritual is complete, you shift all creatures in the area to a different plane of existence. The skill you use for the primary check must be one that can be used to make a Recall Knowledge check about the intended destination, such as Arcana or Nature for the Plane of Fire or Occultism for the Astral Plane.\n\nA secondary caster can be located at the exact site of the destination, instead of with you at the point of origin. If a secondary caster at the destination succeeds at its check and you roll a success, the ritual is a critical success instead.\n\n---\n\n**Critical Success** You arrive on the intended plane at the last place one of the targets (of your choice) was located the last time the target traveled to that plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. The circle remains active for 1 minute, during which time any creature the ritual transported can return to the origin point with a single action, which has the [concentrate](/trait/concentrate) trait.\n\n**Success** As critical success, but you arrive 1d10×25 miles from your destination.\n\n**Failure** Your attempt is unsuccessful.\n\n**Critical Failure** The ritual fails, and the GM determines whether you travel to the wrong plane or are barred from planar travel for 1 week.",
     "data": {
       "rank": 7,
       "rarity": "uncommon",
@@ -525,7 +575,13 @@
       "area": "20-foot burst",
       "secondaryCasters": 2,
       "primaryChecks": "Arcana (master), Nature (master), Occultism (master), or Religion (master)",
-      "secondaryChecks": "Lore (related to the destination plane), Survival"
+      "secondaryChecks": "Lore (related to the destination plane), Survival",
+      "traitLinks": [
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -566,7 +622,8 @@
       "requirements": "",
       "secondaryCasters": 2,
       "primaryChecks": "Religion (expert)",
-      "secondaryChecks": "Diplomacy"
+      "secondaryChecks": "Diplomacy",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -610,7 +667,21 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Nature (expert)",
-      "secondaryChecks": "Farming Lore or Survival"
+      "secondaryChecks": "Farming Lore or Survival",
+      "traitLinks": [
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "vitality",
+          "slug": "vitality"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -653,7 +724,8 @@
       "requirements": "",
       "secondaryCasters": 4,
       "primaryChecks": "Nature (master)",
-      "secondaryChecks": "Crafting, Diplomacy, Survival"
+      "secondaryChecks": "Crafting, Diplomacy, Survival",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -680,7 +752,7 @@
     "systemVersion": "1.2.10",
     "name": "Resurrect",
     "slug": "resurrect-player-core",
-    "descr": "You attempt to call forth the target's soul and return it to its body. This requires the target's body to be present and relatively intact. The target must have died within the past year. If Pharasma has decided that the target's time has come or the target doesn't wish to return, this ritual automatically fails, but you discover this after the successful Religion check and can end the ritual without paying the cost.\n\n---\n\n**Critical Success** You resurrect the target. They return to life with full Hit Points and the same spells prepared and points in their pools they had when they died, and still suffering from any long-term debilitations of the old body. The target meets an agent of their deity during the resurrection who inspires them, granting them a +1 status bonus to attack rolls, Perception, saving throws, and skill checks for 1 week. The target is also permanently changed in some way by their time in the afterlife, such as gaining a slight personality shift, a streak of white in the hair, or a strange new birthmark.\n\n**Success** As critical success, except the target returns to life with 1 Hit Point and no spells prepared or points in any pools, and still is affected by any long-term debilitations of the old body. Instead of inspiring them, the character's time in the Boneyard has left them temporarily debilitated. The target is Clumsy 1, Drained 1, and Enfeebled 1 for 1 week; these conditions can't be removed or reduced by any means until the week has passed.\n\n**Failure** Your attempt is unsuccessful.\n\n**Critical Failure** Something goes horribly wrong-an evil spirit possesses the body, the body transforms into a special kind of undead, or some worse fate befalls the target.\n\n---\n\n**Heightened (6th)** You can resurrect a target of up to 12th level, and the base cost is 125 gp.\n\n**Heightened (7th)** You can use *resurrect* even with only a small portion of the body; the ritual creates a new body on a success or critical success. The target must have died within the past decade. The ritual requires four secondary casters, each of whom must be at least half the target's level. The target can be up to 14th level, and the base cost is 200 gp.\n\n**Heightened (8th)** As 7th rank, but the target can be up to 16th level and the base cost is 300 gp.\n\n**Heightened (9th)** You can use *resurrect* even without the body as long as you know the target's name and have touched a portion of its body at any time. The target must have died within the past century, and it doesn't gain the negative conditions on a success. The ritual requires eight secondary casters, each of whom must be at least half the target's level. The target can be up to 18th level, and the base cost is 600 gp.\n\n**Heightened (10th)** As 9th rank, except it doesn't matter how long ago the target died. The ritual requires 16 secondary casters, each of whom must be at least half the target's level. The target can be up to 20th level, and the ritual's base cost is 1,000 gp.",
+    "descr": "You attempt to call forth the target's soul and return it to its body. This requires the target's body to be present and relatively intact. The target must have died within the past year. If Pharasma has decided that the target's time has come or the target doesn't wish to return, this ritual automatically fails, but you discover this after the successful Religion check and can end the ritual without paying the cost.\n\n---\n\n**Critical Success** You resurrect the target. They return to life with full Hit Points and the same spells prepared and points in their pools they had when they died, and still suffering from any long-term debilitations of the old body. The target meets an agent of their deity during the resurrection who inspires them, granting them a +1 status bonus to attack rolls, Perception, saving throws, and skill checks for 1 week. The target is also permanently changed in some way by their time in the afterlife, such as gaining a slight personality shift, a streak of white in the hair, or a strange new birthmark.\n\n**Success** As critical success, except the target returns to life with 1 Hit Point and no spells prepared or points in any pools, and still is affected by any long-term debilitations of the old body. Instead of inspiring them, the character's time in the Boneyard has left them temporarily debilitated. The target is [Clumsy 1](/condition/clumsy-player-core), [Drained 1](/condition/drained-player-core), and [Enfeebled 1](/condition/enfeebled-player-core) for 1 week; these conditions can't be removed or reduced by any means until the week has passed.\n\n**Failure** Your attempt is unsuccessful.\n\n**Critical Failure** Something goes horribly wrong-an evil spirit possesses the body, the body transforms into a special kind of undead, or some worse fate befalls the target.\n\n---\n\n**Heightened (6th)** You can resurrect a target of up to 12th level, and the base cost is 125 gp.\n\n**Heightened (7th)** You can use *resurrect* even with only a small portion of the body; the ritual creates a new body on a success or critical success. The target must have died within the past decade. The ritual requires four secondary casters, each of whom must be at least half the target's level. The target can be up to 14th level, and the base cost is 200 gp.\n\n**Heightened (8th)** As 7th rank, but the target can be up to 16th level and the base cost is 300 gp.\n\n**Heightened (9th)** You can use *resurrect* even without the body as long as you know the target's name and have touched a portion of its body at any time. The target must have died within the past century, and it doesn't gain the negative conditions on a success. The ritual requires eight secondary casters, each of whom must be at least half the target's level. The target can be up to 18th level, and the base cost is 600 gp.\n\n**Heightened (10th)** As 9th rank, except it doesn't matter how long ago the target died. The ritual requires 16 secondary casters, each of whom must be at least half the target's level. The target can be up to 20th level, and the ritual's base cost is 1,000 gp.",
     "data": {
       "rank": 5,
       "rarity": "uncommon",
@@ -695,7 +767,13 @@
       "requirements": "",
       "secondaryCasters": 2,
       "primaryChecks": "Religion (expert)",
-      "secondaryChecks": "Medicine, Society"
+      "secondaryChecks": "Medicine, Society",
+      "traitLinks": [
+        {
+          "label": "healing",
+          "slug": "healing"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -736,7 +814,8 @@
       "requirements": "",
       "secondaryCasters": 1,
       "primaryChecks": "Arcana (expert), Nature (expert), Occultism (expert), or Religion (expert) as determined by the tradition of spell cast in the ritual",
-      "secondaryChecks": "Crafting"
+      "secondaryChecks": "Crafting",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -776,7 +855,8 @@
       "requirements": "",
       "secondaryCasters": 2,
       "primaryChecks": "Arcana (legendary), Nature (legendary), Occultism (legendary), or Religion (legendary)",
-      "secondaryChecks": "Crafting, Diplomacy"
+      "secondaryChecks": "Crafting, Diplomacy",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,

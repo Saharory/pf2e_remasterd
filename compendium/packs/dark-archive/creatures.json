@@ -136,7 +136,13 @@
         ]
       },
       "languagesText": "Aklo, Common, Draconic",
-      "recallKnowledgeText": "DC 36 (Occultism)"
+      "recallKnowledgeText": "DC 36 (Occultism)",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -253,7 +259,7 @@
         "defensive": [
           {
             "name": "Destabilized Form",
-            "text": "When the Echo has fewer than 140 Hit Points, his form destabilizes, large chunks disintegrating from his face, limbs, and torso. White moths constantly stream from the missing spaces, creating a area that deals 6d6 mental|options:area-damage] damage with a basic Will DC 34.\n\nAs long as the aura persists, he can dissolve into moths and re-form at another location within 15 feet as a free action at the beginning of each of his turns; this has the occult and teleportation traits.",
+            "text": "When the Echo has fewer than 140 Hit Points, his form destabilizes, large chunks disintegrating from his face, limbs, and torso. White moths constantly stream from the missing spaces, creating a area that deals 6d6 mental|options:area-damage] damage with a basic Will DC 34.\n\nAs long as the aura persists, he can dissolve into moths and re-form at another location within 15 feet as a free action at the beginning of each of his turns; this has the occult and [teleportation](/trait/teleportation) traits.",
             "traits": []
           },
           {
@@ -266,7 +272,7 @@
         "offensive": [
           {
             "name": "Astral Spindel Implement",
-            "text": "The Echo carries a drop spindle that constantly spins red astral thread, which is both his thaumaturgic implement and weapon. If his *rope dart* is lost or broken, he can re-form it with an Interact action. If he critically succeeds at a *rope dart* Strike, overwhelming thoughts and figments flow down the thread into the target's mind. The target becomes Confused for 1 round.",
+            "text": "The Echo carries a drop spindle that constantly spins red astral thread, which is both his thaumaturgic implement and weapon. If his *rope dart* is lost or broken, he can re-form it with an [Interact](/action/interact-player-core) action. If he critically succeeds at a *rope dart* Strike, overwhelming thoughts and figments flow down the thread into the target's mind. The target becomes Confused for 1 round.",
             "traits": []
           },
           {
@@ -283,7 +289,7 @@
           },
           {
             "name": "Reconstitute from Thought",
-            "text": "**Requirements** The Echo is standing on one of the eight large islands of the map, and the island hasn't darkened\n\n---\n\n**Effect** The Echo throws his rope dart into the island and uses it to absorb mental essence from the mindscape, repairing himself. He regains 45 healing] Hit Points and the island turns a desaturated gray for 1 day, preventing future absorption and disabling the Call Of The Void hazard on that island.",
+            "text": "**Requirements** The Echo is standing on one of the eight large islands of the map, and the island hasn't darkened\n\n---\n\n**Effect** The Echo throws his rope dart into the island and uses it to absorb mental essence from the mindscape, repairing himself. He regains 45 healing] Hit Points and the island turns a desaturated gray for 1 day, preventing future absorption and disabling the [Call Of The Void](/hazard/call-of-the-void-dark-archive) hazard on that island.",
             "traits": [
               "healing"
             ],
@@ -304,7 +310,17 @@
         ]
       },
       "languagesText": "Common, Tien",
-      "recallKnowledgeText": "DC 42 (Society)"
+      "recallKnowledgeText": "DC 42 (Society)",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -421,7 +437,7 @@
         "offensive": [
           {
             "name": "Ascension is Near",
-            "text": "**Frequency** once per ascension ritual\n\n---\n\n**Effect** Mitera activates the moonflower link with her followers. Any followers within 30 feet who failed their saving throw against the moonflower tea become Sickened 1. Anyone who critically failed and did not receive an antidote explodes (this is about half of Mitera's congregation if the PCs didn't successfully administer the antidote). If anyone's body explodes, Mitera gains 30 temporary HP and is Quickened for 3 rounds; she can use this additional action each round only for Strike and Stride actions.",
+            "text": "**Frequency** once per ascension ritual\n\n---\n\n**Effect** Mitera activates the moonflower link with her followers. Any followers within 30 feet who failed their saving throw against the moonflower tea become Sickened 1. Anyone who critically failed and did not receive an antidote explodes (this is about half of Mitera's congregation if the PCs didn't successfully administer the antidote). If anyone's body explodes, Mitera gains 30 temporary HP and is Quickened for 3 rounds; she can use this additional action each round only for Strike and [Stride](/action/stride-player-core) actions.",
             "traits": [
               "auditory",
               "concentrate",
@@ -439,7 +455,13 @@
       },
       "languagesText": "Common",
       "recallKnowledgeText": "DC 34",
-      "items": "Dagger, Ceremonial Robes, Crystal Flower Crown"
+      "items": "Dagger, Ceremonial Robes, Crystal Flower Crown",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -542,14 +564,14 @@
         "defensive": [
           {
             "name": "Light Vulnerability",
-            "text": "An object shedding magical light (such as from the Light spell) is treated as magical when used to attack the shadow.",
+            "text": "An object shedding magical light (such as from the [Light](/spell/light-player-core) spell) is treated as magical when used to attack the shadow.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Crystal Siphon",
-            "text": "**Requirements** The shadow and the target are both within 40 feet of the crystal that spawned the shadow, and the crystal isn't covered or obstructed\n\n---\n\n**Effect** Shadows in the shape of tendrils curl around the target, drawing out a portion of the target's vitality and siphoning it into the crystal. The target takes 4d6 void] damage (basic Fortitude DC 21). On a failure, they are also Enfeebled 1. This enfeebled condition is cumulative with other enfeebled conditions from quartz-spawned shadows, to a maximum of enfeebled 4. If Crystal Siphon increases the creature's enfeebled value to 3 or more, the target's shadow is pulled entirely into the shadow's crystal.\n\nWhile the target's shadow is trapped, they feel an Invisible tether linking them to the crystal, and they become Slowed 1 whenever they are more than 40 feet away from it. The enfeebled condition from Crystal Siphon can't be reduced until the crystal is broken; if the crystal is broken, the effect immediately ends.",
+            "text": "**Requirements** The shadow and the target are both within 40 feet of the crystal that spawned the shadow, and the crystal isn't covered or obstructed\n\n---\n\n**Effect** Shadows in the shape of tendrils curl around the target, drawing out a portion of the target's vitality and siphoning it into the crystal. The target takes 4d6 void] damage (basic Fortitude DC 21). On a failure, they are also Enfeebled 1. This [enfeebled](/condition/enfeebled-player-core) condition is cumulative with other enfeebled conditions from quartz-spawned shadows, to a maximum of enfeebled 4. If Crystal Siphon increases the creature's enfeebled value to 3 or more, the target's shadow is pulled entirely into the shadow's crystal.\n\nWhile the target's shadow is trapped, they feel an Invisible tether linking them to the crystal, and they become Slowed 1 whenever they are more than 40 feet away from it. The enfeebled condition from Crystal Siphon can't be reduced until the crystal is broken; if the crystal is broken, the effect immediately ends.",
             "traits": [
               "death",
               "divine",
@@ -572,7 +594,21 @@
       },
       "languagesText": "Necril",
       "recallKnowledgeText": "DC 19 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "incorporeal",
+          "slug": "incorporeal"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -673,7 +709,8 @@
         "skills": []
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 22"
+      "recallKnowledgeText": "DC 22",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -765,7 +802,7 @@
         "interaction": [
           {
             "name": "Disgusted by Food",
-            "text": "The morrowkin eats dreams and potential, not food. A creature that spends an action to brandish food at the morrowkin automatically makes the creature Sickened 1 (or increases its sickened value by 1, to a maximum of sickened 6), decreasing the morrowkin's AC, attack rolls, saves, skills, and ability DCs accordingly, as normal for the sickened condition. The morrowkin can't retch to reduce its sickened condition.",
+            "text": "The morrowkin eats dreams and potential, not food. A creature that spends an action to brandish food at the morrowkin automatically makes the creature [Sickened](/condition/sickened-player-core) 1 (or increases its sickened value by 1, to a maximum of sickened 6), decreasing the morrowkin's AC, attack rolls, saves, skills, and ability DCs accordingly, as normal for the sickened condition. The morrowkin can't retch to reduce its sickened condition.",
             "traits": []
           },
           {
@@ -808,7 +845,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 42 (Occultism)"
+      "recallKnowledgeText": "DC 42 (Occultism)",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        },
+        {
+          "label": "time",
+          "slug": "time"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -963,7 +1010,13 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 29 (Nature)"
+      "recallKnowledgeText": "DC 29 (Nature)",
+      "traitLinks": [
+        {
+          "label": "plant",
+          "slug": "plant"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

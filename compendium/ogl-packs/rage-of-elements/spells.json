@@ -32,7 +32,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -63,7 +77,7 @@
     "systemVersion": "1.2.10",
     "name": "Arrow Salvo",
     "slug": "arrow-salvo-rage-of-elements",
-    "descr": "You conjure an immense wooden bow that launches a salvo of massive arrows at all nearby enemies. All creatures in the affected area take 8d10 piercing damage, with a basic Reflex save. On a critical failure, the target is knocked Prone from the force of the impact.\n\n---\n\n**Heightened (+1)** Increase the damage by 1d10.",
+    "descr": "You conjure an immense wooden bow that launches a salvo of massive arrows at all nearby enemies. All creatures in the affected area take 8d10 piercing damage, with a basic Reflex save. On a critical failure, the target is knocked [Prone](/condition/prone-player-core) from the force of the impact.\n\n---\n\n**Heightened (+1)** Increase the damage by 1d10.",
     "data": {
       "rank": 6,
       "rarity": "common",
@@ -89,7 +103,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -120,7 +148,7 @@
     "systemVersion": "1.2.10",
     "name": "Beheading Buzz Saw",
     "slug": "beheading-buzz-saw-rage-of-elements",
-    "descr": "You compress molten scraps pulled from the Plane of Metal into a spinning disc with gruesome blades protruding from its edges. It wheels forward, slicing through anyone in its path. Each creature in the area takes 5d10 slashing damage and 4d6 persistent bleed damage, with a Reflex save.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature takes full damage.\n\n**Critical Failure** The creature takes double damage. If the creature has a head, it must succeed at a Fortitude save or be decapitated; this kills any creature except ones that don't require a head to live. For creatures with multiple heads, this usually kills the creature only if you sever its last head. This second save has the death and incapacitation traits.\n\n---\n\n**Heightened (+1)** The slashing damage increases by 1d10, and the persistent bleed damage increases by 1d6.",
+    "descr": "You compress molten scraps pulled from the Plane of Metal into a spinning disc with gruesome blades protruding from its edges. It wheels forward, slicing through anyone in its path. Each creature in the area takes 5d10 slashing damage and 4d6 persistent bleed damage, with a Reflex save.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature takes full damage.\n\n**Critical Failure** The creature takes double damage. If the creature has a head, it must succeed at a Fortitude save or be decapitated; this kills any creature except ones that don't require a head to live. For creatures with multiple heads, this usually kills the creature only if you sever its last head. This second save has the death and [incapacitation](/trait/incapacitation) traits.\n\n---\n\n**Heightened (+1)** The slashing damage increases by 1d10, and the persistent bleed damage increases by 1d6.",
     "data": {
       "rank": 7,
       "rarity": "common",
@@ -145,7 +173,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -201,7 +243,17 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -231,7 +283,7 @@
     "systemVersion": "1.2.10",
     "name": "Blazing Armory",
     "slug": "blazing-armory-rage-of-elements",
-    "descr": "As long as you have magic, you're never unarmed. You materialize a flaming simulacrum of any common simple or martial weapon into the target's grasp. The target must have a free hand to hold the weapon, or else the weapon falls to the ground in the target's space. The blazing weapon functions as a *+1 striking weapon*, and its damage type changes to fire. The damage type can't be changed using the versatile trait, modular trait, or similar methods.\n\nA thrown weapon rematerializes in the target's hand after the Strike is complete. If you choose a ranged weapon that uses ammunition, the wielder must still reload the weapon using the normal number of actions, though this generates ammunition automatically; this functions as normal ammunition, and the blazing weapon can't use other types of ammunition.\n\nAny creature other than you or the target that attempts to touch, make a Strike with, or Disarm the weapon takes 1d6 fire] damage each time.\n\n---\n\n**Heightened (4th)** You can target up to 5 willing creatures and can choose a different weapon for each target. The weapons function as *+1 striking flaming* weapons.\n\n**Heightened (6th)** As 4th, but the weapons function as *+2 greater striking flaming* weapons.\n\n**Heightened (8th)** As 4th, but the weapons function as *+3 greater striking greater flaming* weapons.\n\n**Heightened (10th)** As 4th, but the weapons function as *+3 major striking greater flaming* weapons.",
+    "descr": "As long as you have magic, you're never unarmed. You materialize a flaming simulacrum of any common simple or martial weapon into the target's grasp. The target must have a free hand to hold the weapon, or else the weapon falls to the ground in the target's space. The blazing weapon functions as a *+1 [striking](/item/striking-gm-core) weapon*, and its damage type changes to fire. The damage type can't be changed using the [versatile](/trait/versatile) trait, [modular](/trait/modular) trait, or similar methods.\n\nA thrown weapon rematerializes in the target's hand after the Strike is complete. If you choose a ranged weapon that uses ammunition, the wielder must still reload the weapon using the normal number of actions, though this generates ammunition automatically; this functions as normal ammunition, and the blazing weapon can't use other types of ammunition.\n\nAny creature other than you or the target that attempts to touch, make a Strike with, or [Disarm](/action/disarm-player-core) the weapon takes 1d6 fire] damage each time.\n\n---\n\n**Heightened (4th)** You can target up to 5 willing creatures and can choose a different weapon for each target. The weapons function as *+1 striking [flaming](/item/flaming-gm-core)* weapons.\n\n**Heightened (6th)** As 4th, but the weapons function as *+2 greater striking flaming* weapons.\n\n**Heightened (8th)** As 4th, but the weapons function as *+3 greater striking greater flaming* weapons.\n\n**Heightened (10th)** As 4th, but the weapons function as *+3 major striking greater flaming* weapons.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -256,7 +308,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -312,7 +378,25 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "acid",
+          "slug": "acid"
+        },
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -367,7 +451,17 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -423,7 +517,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -454,7 +562,7 @@
     "systemVersion": "1.2.10",
     "name": "Cauterize Wounds",
     "slug": "cauterize-wounds-rage-of-elements",
-    "descr": "You seal bleeding wounds with fire. Any target that has persistent bleed damage can choose to take 1 fire|immutable:true] damage. If it does, it can attempt to recover from its persistent bleed damage, with the lower DC for particularly effective assistance. During the spell's duration, you can use a single action, which has the concentrate trait, to repeat this effect for one target of the spell.\n\nSpell Effect: Cauterize Wounds",
+    "descr": "You seal bleeding wounds with fire. Any target that has persistent bleed damage can choose to take 1 fire|immutable:true] damage. If it does, it can attempt to recover from its persistent bleed damage, with the lower DC for particularly effective assistance. During the spell's duration, you can use a single action, which has the [concentrate](/trait/concentrate) trait, to repeat this effect for one target of the spell.\n\nSpell Effect: Cauterize Wounds",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -480,7 +588,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -538,7 +664,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -569,7 +709,7 @@
     "systemVersion": "1.2.10",
     "name": "Cinder Swarm",
     "slug": "cinder-swarm-rage-of-elements",
-    "descr": "You breathe life into a mass of fiery critters. They swarm the target and create an aura around it in a area. The target and enemies in the aura are subject to an effect depending on the insects you choose. On subsequent rounds, the first time you Sustain this spell each round, you repeat the effect on the target and all your enemies in the insect aura. Pick a type of insect to determine the effects.\n\n**Fire Ants** You create fiery flying ants that deal 3d6 piercing damage plus 2d6 persistent fire damage with a basic Reflex save. A creature that fails its save must move 5 feet in a direction of your choice as it tries to escape the biting ants; this happens after all the creatures attempt their saves and can't add new creatures to the aura if the main target moves.\n**Fireflies** (incapacitation) You create a flurry of fireflies that deal 3d6 fire damage and can dazzle or blind, depending on the target's Fortitude save.\n\n---\n\n**Critical Success** The creature takes no damage.\n\n**Success** The creature takes half damage and is Dazzled for 1 round.\n\n**Failure** The creature takes full damage and is Blinded for 1 round. It's then temporarily immune to being blinded by cinder swarm for 24 hours.\n\n**Critical Failure** As failure, but double damage and blinded for 1 minute.\n\n---\n\n**Heightened (+1)** Increase the ants' piercing damage and fireflies' fire damage by 2d6.",
+    "descr": "You breathe life into a mass of fiery critters. They swarm the target and create an aura around it in a area. The target and enemies in the aura are subject to an effect depending on the insects you choose. On subsequent rounds, the first time you Sustain this spell each round, you repeat the effect on the target and all your enemies in the insect aura. Pick a type of insect to determine the effects.\n\n**Fire Ants** You create fiery flying ants that deal 3d6 piercing damage plus 2d6 persistent fire damage with a basic Reflex save. A creature that fails its save must move 5 feet in a direction of your choice as it tries to escape the biting ants; this happens after all the creatures attempt their saves and can't add new creatures to the aura if the main target moves.\n**Fireflies** (incapacitation) You create a flurry of fireflies that deal 3d6 fire damage and can dazzle or blind, depending on the target's Fortitude save.\n\n---\n\n**Critical Success** The creature takes no damage.\n\n**Success** The creature takes half damage and is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Failure** The creature takes full damage and is [Blinded](/condition/blinded-player-core) for 1 round. It's then temporarily immune to being blinded by cinder swarm for 24 hours.\n\n**Critical Failure** As failure, but double damage and blinded for 1 minute.\n\n---\n\n**Heightened (+1)** Increase the ants' piercing damage and fireflies' fire damage by 2d6.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -593,7 +733,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -649,7 +803,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -706,7 +874,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -737,7 +919,7 @@
     "systemVersion": "1.2.10",
     "name": "Cloud Dragon's Cloak",
     "slug": "cloud-dragon-s-cloak-rage-of-elements",
-    "descr": "**Trigger** You or an ally in range is targeted by a ranged attack.\n\n---\n\nA cloud of mist enshrouds the target, appearing much like the deflecting clouds created by cloud dragons. The target is treated as Hidden for the purposes of resolving the triggering attack (so normally the attacker must succeed at a Flat DC 11 to target it) and all ranged attacks against it for the duration.",
+    "descr": "**Trigger** You or an ally in range is targeted by a ranged attack.\n\n---\n\nA cloud of mist enshrouds the target, appearing much like the deflecting clouds created by cloud dragons. The target is treated as [Hidden](/condition/hidden-player-core) for the purposes of resolving the triggering attack (so normally the attacker must succeed at a Flat DC 11 to target it) and all ranged attacks against it for the duration.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -760,7 +942,17 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -812,7 +1004,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -843,7 +1053,7 @@
     "systemVersion": "1.2.10",
     "name": "Conductive Weapon",
     "slug": "conductive-weapon-rage-of-elements",
-    "descr": "You channel powerful electric current through the metal of a weapon, zapping anyone the item hits. The target becomes a *+1 shock weapon*. If any target of an attack with the weapon is wearing metal armor or is primarily made of metal, the electricity damage die from the *shock* rune is 1d12.\n\nSpell Effect: Conductive Weapon",
+    "descr": "You channel powerful electric current through the metal of a weapon, zapping anyone the item hits. The target becomes a *+1 [shock](/item/shock-gm-core) weapon*. If any target of an attack with the weapon is wearing metal armor or is primarily made of metal, the electricity damage die from the *shock* rune is 1d12.\n\nSpell Effect: Conductive Weapon",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -868,7 +1078,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -900,7 +1128,7 @@
     "systemVersion": "1.2.10",
     "name": "Coral Scourge",
     "slug": "coral-scourge-rage-of-elements",
-    "descr": "Barnacles, coral, and other rough aquatic creatures grow on the target's body, getting in between their joints and stiffening their movement. This impedes the target's movement depending on the result of its saving throw.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is Clumsy 1. The target can Interact to scrape the coral growths from its body, decreasing the clumsy condition to 0 and ending the spell.\n\n**Failure** The target is Clumsy 2. Each round at the beginning of its turn, the target becomes clumsy 1 or increases its clumsy condition by 1, to a maximum of 4. The target can Interact to scrape the coral growths from its body, decreasing the clumsy condition to 0 and ending the spell. If the target's clumsy condition caused by *coral scourge* reaches 4, the growths spread to cover the target's entire body, and the target becomes Paralyzed.\n\n**Critical Failure** As failure, but when the target Interacts to scrape the coral growths from its body, it reduces its clumsy condition by 1, instead of decreasing it to 0, and decreasing the clumsy condition to 0 doesn't end the spell.",
+    "descr": "Barnacles, coral, and other rough aquatic creatures grow on the target's body, getting in between their joints and stiffening their movement. This impedes the target's movement depending on the result of its saving throw.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is [Clumsy 1](/condition/clumsy-player-core). The target can Interact to scrape the coral growths from its body, decreasing the clumsy condition to 0 and ending the spell.\n\n**Failure** The target is Clumsy 2. Each round at the beginning of its turn, the target becomes clumsy 1 or increases its clumsy condition by 1, to a maximum of 4. The target can Interact to scrape the coral growths from its body, decreasing the clumsy condition to 0 and ending the spell. If the target's clumsy condition caused by *coral scourge* reaches 4, the growths spread to cover the target's entire body, and the target becomes [Paralyzed](/condition/paralyzed-player-core).\n\n**Critical Failure** As failure, but when the target Interacts to scrape the coral growths from its body, it reduces its clumsy condition by 1, instead of decreasing it to 0, and decreasing the clumsy condition to 0 doesn't end the spell.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -926,7 +1154,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -958,7 +1204,7 @@
     "systemVersion": "1.2.10",
     "name": "Crushing Ground",
     "slug": "crushing-ground-rage-of-elements",
-    "descr": "You tear open the ground then slam it shut. The target creature takes 2d6 bludgeoning damage with a Reflex save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage.\n\n**Failure** The target takes full damage, is Off Guard, and takes a –10-foot circumstance penalty to Speed.\n\n**Critical Failure** The target takes double damage and is off-guard and Immobilized. It can attempt to Escape against your spell DC. If it doesn't Escape, the target takes an additional 2d6 bludgeoning damage when the spell ends.\n\nSpell Effect: Crushing Ground\n\n---\n\n**Heightened (+1)** Increase the initial damage and additional damage by 2d6.",
+    "descr": "You tear open the ground then slam it shut. The target creature takes 2d6 bludgeoning damage with a Reflex save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage.\n\n**Failure** The target takes full damage, is [Off Guard](/condition/off-guard-player-core), and takes a –10-foot circumstance penalty to Speed.\n\n**Critical Failure** The target takes double damage and is off-guard and [Immobilized](/condition/immobilized-player-core). It can attempt to Escape against your spell DC. If it doesn't Escape, the target takes an additional 2d6 bludgeoning damage when the spell ends.\n\nSpell Effect: Crushing Ground\n\n---\n\n**Heightened (+1)** Increase the initial damage and additional damage by 2d6.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -981,7 +1227,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1012,7 +1276,7 @@
     "systemVersion": "1.2.10",
     "name": "Dancing Fountain",
     "slug": "dancing-fountain-rage-of-elements",
-    "descr": "**Area** 30-foot burst centered on you\n\n---\n\nTapping the ground, you create a shallow pool of water that spreads over the affected area, and majestic sprays, jets, and mists of water erupt forth in a dazzling water show. When you Cast the Spell, and the first time each round you Sustain the spell, you can command the fountain to use one of the following displays, which is accompanied by a loud burst of music. The dancing fountain is somewhat fickle in its desire for novelty, meaning it can't be commanded to use the same display on two consecutive turns.\n\n**Chasing Jets** A series of vertical jets shoot up in a chase sequence, forcing one creature within the fountain to move 15 feet in a direction of your choice unless it succeeds at a Reflex save against your spell DC. The fountain can't make a creature move outside its area.\n**Flashing Spray** Diffuse fog fills the area of the emanation. All creatures within the fountain become Concealed, and all creatures outside the fountain become concealed to creatures within it. The spray persists until the beginning of your next turn.\n**Power Rings** The fountain blasts a series of rings of water into the air that land with a crash in a area centered on a location of your choice within the fountain. The falling torrent deals 10d6 bludgeoning] damage to all creatures within the burst (basic Reflex).",
+    "descr": "**Area** 30-foot burst centered on you\n\n---\n\nTapping the ground, you create a shallow pool of water that spreads over the affected area, and majestic sprays, jets, and mists of water erupt forth in a dazzling water show. When you Cast the Spell, and the first time each round you Sustain the spell, you can command the fountain to use one of the following displays, which is accompanied by a loud burst of music. The dancing fountain is somewhat fickle in its desire for novelty, meaning it can't be commanded to use the same display on two consecutive turns.\n\n**Chasing Jets** A series of vertical jets shoot up in a chase sequence, forcing one creature within the fountain to move 15 feet in a direction of your choice unless it succeeds at a Reflex save against your spell DC. The fountain can't make a creature move outside its area.\n**Flashing Spray** Diffuse fog fills the area of the emanation. All creatures within the fountain become [Concealed](/condition/concealed-player-core), and all creatures outside the fountain become concealed to creatures within it. The spray persists until the beginning of your next turn.\n**Power Rings** The fountain blasts a series of rings of water into the air that land with a crash in a area centered on a location of your choice within the fountain. The falling torrent deals 10d6 bludgeoning] damage to all creatures within the burst (basic Reflex).",
     "data": {
       "rank": 7,
       "rarity": "common",
@@ -1038,7 +1302,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1093,7 +1371,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1124,7 +1416,7 @@
     "systemVersion": "1.2.10",
     "name": "Dehydrate",
     "slug": "dehydrate-rage-of-elements",
-    "descr": "You stir the inner fire of all things within the area, driving out moisture. All creatures in the area take 1d6 persistent fire damage with a basic Fortitude save; creatures with the water or plant traits get a result one degree of success worse than they rolled. The spell ends for a creature when its persistent damage ends.\n\nA creature affected by *dehydrate* attempts an additional Fortitude save at the end of each of its turns, before rolling to recover from the persistent damage. It can forgo this additional save if it consumed water or a similar hydrating liquid within the last round (drinking typically requires a single action).\n\n---\n\n**Success** The creature takes no additional effect.\n\n**Failure** The creature is Enfeebled 1 until the end of its next turn.\n\n**Critical Failure** The creature is Enfeebled 2 until the end of its next turn.\n\n---\n\n**Heightened (+2)** The range increases by 10 feet, the burst increases by 5 feet, and the persistent fire damage increases by 3d6.",
+    "descr": "You stir the inner fire of all things within the area, driving out moisture. All creatures in the area take 1d6 persistent fire damage with a basic Fortitude save; creatures with the water or [plant](/trait/plant) traits get a result one degree of success worse than they rolled. The spell ends for a creature when its persistent damage ends.\n\nA creature affected by *dehydrate* attempts an additional Fortitude save at the end of each of its turns, before rolling to recover from the persistent damage. It can forgo this additional save if it consumed water or a similar hydrating liquid within the last round (drinking typically requires a single action).\n\n---\n\n**Success** The creature takes no additional effect.\n\n**Failure** The creature is [Enfeebled 1](/condition/enfeebled-player-core) until the end of its next turn.\n\n**Critical Failure** The creature is Enfeebled 2 until the end of its next turn.\n\n---\n\n**Heightened (+2)** The range increases by 10 feet, the burst increases by 5 feet, and the persistent fire damage increases by 3d6.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -1150,7 +1442,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1181,7 +1487,7 @@
     "systemVersion": "1.2.10",
     "name": "Detect Metal",
     "slug": "detect-metal-rage-of-elements",
-    "descr": "You attune yourself to magnetic fields, becoming aware of the presence or absence of metallic objects, veins, and deposits within the area. You can choose to ignore metal you're fully aware of, such as the gear you and your allies wear and carry.\n\nYou detect metal hidden by illusions (such as Invisibility) only if the illusion has a lower rank than your *detect metal* spell. Against deceptive illusions, *detect metal* always notices an absence of metal when a non-metallic object is disguised as metallic. However, if the deception involves disguising one metallic object as another, such as pretending a copper coin is made of gold, *detect metal* registers only the presence of metal, not its type, even if the rank of your *detect metal* spell exceeds that of the illusion effect.\n\n---\n\n**Heightened (3rd)** You can discern all types of metal you detected. Your spell can overcome deceptive illusory spells hiding one metal as another if the magic effect's rank is lower than that of your *detect metal* spell.",
+    "descr": "You attune yourself to magnetic fields, becoming aware of the presence or absence of metallic objects, veins, and deposits within the area. You can choose to ignore metal you're fully aware of, such as the gear you and your allies wear and carry.\n\nYou detect metal hidden by illusions (such as [Invisibility](/spell/invisibility-player-core)) only if the illusion has a lower rank than your *detect metal* spell. Against deceptive illusions, *detect metal* always notices an absence of metal when a non-metallic object is disguised as metallic. However, if the deception involves disguising one metallic object as another, such as pretending a copper coin is made of gold, *detect metal* registers only the presence of metal, not its type, even if the rank of your *detect metal* spell exceeds that of the illusion effect.\n\n---\n\n**Heightened (3rd)** You can discern all types of metal you detected. Your spell can overcome deceptive illusory spells hiding one metal as another if the magic effect's rank is lower than that of your *detect metal* spell.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -1210,7 +1516,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "detection",
+          "slug": "detection"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1243,7 +1571,7 @@
     "systemVersion": "1.2.10",
     "name": "Dive and Breach",
     "slug": "dive-and-breach-rage-of-elements",
-    "descr": "You make the briefest of dives through the Plane of Water. You Leap 10 feet, and where you would land on the ground, you instead disappear in a splash of water, your body entering the surface like a diver entering a pool. You then exit from an unoccupied surface within 40 feet, appearing in another splash of water as you Leap out, landing 10 feet away from where you exited. Each splash deals 3d10 bludgeoning damage to all creatures in a area; creatures in multiple splash zones take damage only once.\n\n---\n\n**Heightened (+1)** The damage dealt by each splash increases by 1d10.",
+    "descr": "You make the briefest of dives through the Plane of Water. You [Leap](/action/leap-player-core) 10 feet, and where you would land on the ground, you instead disappear in a splash of water, your body entering the surface like a diver entering a pool. You then exit from an unoccupied surface within 40 feet, appearing in another splash of water as you Leap out, landing 10 feet away from where you exited. Each splash deals 3d10 bludgeoning damage to all creatures in a area; creatures in multiple splash zones take damage only once.\n\n---\n\n**Heightened (+1)** The damage dealt by each splash increases by 1d10.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -1269,7 +1597,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1327,7 +1673,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1359,7 +1723,7 @@
     "systemVersion": "1.2.10",
     "name": "Eat Fire",
     "slug": "eat-fire-rage-of-elements",
-    "descr": "**Trigger** You would take fire damage.\n\n---\n\nYou consume and ingest fire, making it less harmful to you. You gain resistance 5 to fire damage until the end of the current turn. During the remaining duration of the spell, you can use the Belch Smoke action. The spell ends if you fall Unconscious, inhale, or exhale (this includes speaking).\n\nSpell Effect: Eat Fire\n\n**Belch Smoke** 1 You exhale what remains of the smoke, ending the spell and creating a smoke cloud in a area within 20 feet. All creatures within the smoke cloud are Concealed, and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.\n\n---\n\n**Heightened (+3)** The resistance increases by 5.",
+    "descr": "**Trigger** You would take fire damage.\n\n---\n\nYou consume and ingest fire, making it less harmful to you. You gain resistance 5 to fire damage until the end of the current turn. During the remaining duration of the spell, you can use the Belch Smoke action. The spell ends if you fall [Unconscious](/condition/unconscious-player-core), inhale, or exhale (this includes speaking).\n\nSpell Effect: Eat Fire\n\n**Belch Smoke** 1 You exhale what remains of the smoke, ending the spell and creating a smoke cloud in a area within 20 feet. All creatures within the smoke cloud are [Concealed](/condition/concealed-player-core), and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.\n\n---\n\n**Heightened (+3)** The resistance increases by 5.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -1384,7 +1748,21 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1415,7 +1793,7 @@
     "systemVersion": "1.2.10",
     "name": "Elemental Annihilation Wave",
     "slug": "elemental-annihilation-wave-rage-of-elements",
-    "descr": "You draw elemental power from your surroundings, and combining it with your own magical energy, unleash a wave of utter destruction and swirling colors that deals 1d6 fire damage and 3d6 bludgeoning damage with a basic Reflex save. You can replace the air trait with the metal and wood traits when you cast the spell. The number of actions you spend when Casting this Spell determines the area and other parameters.\n\n2 **(somatic, verbal)** The spell is a 30-foot cone.\n\n3 **(material, somatic, verbal)** The spell is a 30-foot cone. On a failed saving throw, creatures are pushed 5 feet away from you, and on a critical failure they are pushed 10 feet away and are knocked prone.\n\n**Two Rounds** If you spend 3 actions Casting the Spell, you can avoid finishing the spell and spend another 3 actions on your next turn to empower the spell even further. If you do, the spell is as 3 actions, but the area is a area, and for 1 round, the elements linger in the cone, racing off into the distance and making approaching you difficult, with the effects of Gust Of Wind.\n\n---\n\n**Heightened (+2)** The damage increases by 3d6 bludgeoning and 1d6 fire, and the distance that enemies are pushed back if you spent 3 actions or 2 rounds increases by 5 feet on a failed save and 10 feet on a critical failure.",
+    "descr": "You draw elemental power from your surroundings, and combining it with your own magical energy, unleash a wave of utter destruction and swirling colors that deals 1d6 fire damage and 3d6 bludgeoning damage with a basic Reflex save. You can replace the [air](/trait/air) trait with the metal and [wood](/trait/wood) traits when you cast the spell. The number of actions you spend when Casting this Spell determines the area and other parameters.\n\n2 **(somatic, verbal)** The spell is a 30-foot cone.\n\n3 **(material, somatic, verbal)** The spell is a 30-foot cone. On a failed saving throw, creatures are pushed 5 feet away from you, and on a critical failure they are pushed 10 feet away and are knocked prone.\n\n**Two Rounds** If you spend 3 actions Casting the Spell, you can avoid finishing the spell and spend another 3 actions on your next turn to empower the spell even further. If you do, the spell is as 3 actions, but the area is a area, and for 1 round, the elements linger in the cone, racing off into the distance and making approaching you difficult, with the effects of [Gust Of Wind](/spell/gust-of-wind-player-core).\n\n---\n\n**Heightened (+2)** The damage increases by 3d6 bludgeoning and 1d6 fire, and the distance that enemies are pushed back if you spent 3 actions or 2 rounds increases by 5 feet on a failed save and 10 feet on a critical failure.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -1440,7 +1818,33 @@
         "primal"
       ],
       "traditionsText": "Arcane, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1473,7 +1877,7 @@
     "systemVersion": "1.2.10",
     "name": "Elemental Breath",
     "slug": "elemental-breath-rage-of-elements",
-    "descr": "You open a miniature portal to an elemental plane within your mouth, then exhale a powerful explosion of the plane's element. Roll 1d6 to determine the element. If you used 3 actions to Cast this Spell, you can choose the element instead. This spell gains the trait matching the element.\n\nEach creature in the cone must attempt a basic Reflex save.\n\n**Air** Strong winds and lightning strikes buffet creatures in the cone, dealing 6d10 electricity] damage. A creature that fails its save is also pushed 10 feet.\n**Earth** A cone of mud deals 5d10 bludgeoning] damage to creatures in the area. A creature on the ground that fails its save slips and falls Prone.\n**Fire** A surging cone of fire deals 7d10 fire] damage.\n**Metal** A cone of rust slices flesh and damages metal. Each creature in the area takes 5d10 slashing] damage. A creature made of metal gets a result one degree of success worse than it rolled, and an unattended metal object gets a critical failure.\n**Water** A torrent of chilled water deals 3d10 cold] damage and 3d10 bludgeoning] damage.\n**Wood** Branches rip through creatures, dealing 3d10 piercing] damage and 3d10 slashing] damage. Ground in the area becomes difficult terrain for 1 minute.\n\n---\n\n**Heightened (+1)** The damage increases by 1d10. For water and wood, you can choose which damage type increases for each rank the spell is heightened.",
+    "descr": "You open a miniature portal to an elemental plane within your mouth, then exhale a powerful explosion of the plane's element. Roll 1d6 to determine the element. If you used 3 actions to Cast this Spell, you can choose the element instead. This spell gains the trait matching the element.\n\nEach creature in the cone must attempt a basic Reflex save.\n\n**Air** Strong winds and lightning strikes buffet creatures in the cone, dealing 6d10 electricity] damage. A creature that fails its save is also pushed 10 feet.\n**Earth** A cone of mud deals 5d10 bludgeoning] damage to creatures in the area. A creature on the ground that fails its save slips and falls [Prone](/condition/prone-player-core).\n**Fire** A surging cone of fire deals 7d10 fire] damage.\n**Metal** A cone of rust slices flesh and damages metal. Each creature in the area takes 5d10 slashing] damage. A creature made of metal gets a result one degree of success worse than it rolled, and an unattended metal object gets a critical failure.\n**Water** A torrent of chilled water deals 3d10 cold] damage and 3d10 bludgeoning] damage.\n**Wood** Branches rip through creatures, dealing 3d10 piercing] damage and 3d10 slashing] damage. Ground in the area becomes difficult terrain for 1 minute.\n\n---\n\n**Heightened (+1)** The damage increases by 1d10. For water and wood, you can choose which damage type increases for each rank the spell is heightened.",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -1498,6 +1902,16 @@
       "castActions": [
         "two",
         "three"
+      ],
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
       ]
     },
     "attributes": {
@@ -1527,7 +1941,7 @@
     "systemVersion": "1.2.10",
     "name": "Elemental Counter",
     "slug": "elemental-counter-rage-of-elements",
-    "descr": "**Trigger** You or a creature within 60 feet rolls a saving throw against a spell with the earth, fire, metal, plant, water, or wood trait, or are targeted by a spell attack with such a trait.\n\n**Requirements** You have a spell slot from which you could Cast a Spell of the triggering spell's countering element; see text.\n\n---\n\nEach element in the elemental cycle counters another, and you can use your elemental spells to protect against elements they counter. You lose your spell slot as if you had cast the triggering spell. You then attempt to counteract the triggering spell, using the rank of the spell you lost for the counteract rank. You can lose a plant or wood spell to counter earth, an earth spell to counter water, a water spell to counter fire, a fire spell to counter metal, or a metal spell to counter plant or wood.",
+    "descr": "**Trigger** You or a creature within 60 feet rolls a saving throw against a spell with the earth, fire, metal, plant, water, or [wood](/trait/wood) trait, or are targeted by a spell attack with such a trait.\n\n**Requirements** You have a spell slot from which you could Cast a Spell of the triggering spell's countering element; see text.\n\n---\n\nEach element in the elemental cycle counters another, and you can use your elemental spells to protect against elements they counter. You lose your spell slot as if you had cast the triggering spell. You then attempt to counteract the triggering spell, using the rank of the spell you lost for the counteract rank. You can lose a plant or wood spell to counter earth, an earth spell to counter water, a water spell to counter fire, a fire spell to counter metal, or a metal spell to counter plant or wood.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -1550,7 +1964,17 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1580,7 +2004,7 @@
     "systemVersion": "1.2.10",
     "name": "Elemental Sense",
     "slug": "elemental-sense-rage-of-elements",
-    "descr": "The elements grant you sensory enhancements. Choose one of the options below. The spell gains the listed trait or traits.\n\n**Aquatic Echolocation** (water) You use your hearing as a precise sense when underwater.\n**Heatsense** (fire) You can sense creatures with a temperature of 90º Fahrenheit or higher within 30 feet as an imprecise sense.\n**Magnetoreception** (metal) You can sense creatures carrying metal items with a total of 1 Bulk or greater; this is an imprecise sense with a range of 30 feet. If a creature is made of metal or has the metal trait, you can detect it as though magnetoreception were a precise sense. In addition, you continuously know which direction is north.\n**Mechanoreception** (air) You can see Invisible creatures and objects. They appear to you as translucent shapes, and they are Concealed to you.\n**Tremorsense**(earth) You gain tremorsense (imprecise) with a range of 30 feet.\n**Woodsense**(plant, wood) You can sense creatures carrying wood items with a total of 1 Bulk or greater; this is an imprecise sense with a range of 30 feet. If a creature is made of wood or has the plant or wood trait, you can detect it as though woodsense were a precise sense.\n\n---\n\n**Heightened (6th)** The duration increases to 8 hours, and you can take 1 minute to recalibrate the sense, switching from your current elemental sense to a different one.",
+    "descr": "The elements grant you sensory enhancements. Choose one of the options below. The spell gains the listed trait or traits.\n\n**[Aquatic](/trait/aquatic) Echolocation** (water) You use your hearing as a precise sense when underwater.\n**Heatsense** (fire) You can sense creatures with a temperature of 90º Fahrenheit or higher within 30 feet as an imprecise sense.\n**Magnetoreception** (metal) You can sense creatures carrying metal items with a total of 1 Bulk or greater; this is an imprecise sense with a range of 30 feet. If a creature is made of metal or has the [metal](/trait/metal) trait, you can detect it as though magnetoreception were a precise sense. In addition, you continuously know which direction is north.\n**Mechanoreception** (air) You can see [Invisible](/condition/invisible-player-core) creatures and objects. They appear to you as translucent shapes, and they are [Concealed](/condition/concealed-player-core) to you.\n**Tremorsense**(earth) You gain tremorsense (imprecise) with a range of 30 feet.\n**Woodsense**(plant, wood) You can sense creatures carrying wood items with a total of 1 Bulk or greater; this is an imprecise sense with a range of 30 feet. If a creature is made of wood or has the plant or [wood](/trait/wood) trait, you can detect it as though woodsense were a precise sense.\n\n---\n\n**Heightened (6th)** The duration increases to 8 hours, and you can take 1 minute to recalibrate the sense, switching from your current elemental sense to a different one.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -1604,7 +2028,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "revelation",
+          "slug": "revelation"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1655,7 +2093,21 @@
         "primal"
       ],
       "traditionsText": "Arcane, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1686,7 +2138,7 @@
     "systemVersion": "1.2.10",
     "name": "Entwined Roots",
     "slug": "entwined-roots-rage-of-elements",
-    "descr": "Slithering roots gird you and your allies in layers of flexible wooden protection. Each affected creature gains resistance 5 to bludgeoning and piercing damage. Whenever a creature protected by these roots is targeted by a ranged weapon attack but takes no damage (such as if the attack missed or the damage was reduced to 0 by resistance), the roots snatch up the ammunition or thrown weapon and hold it. The protected creature can retrieve the thrown weapon or ammunition as an Interact action.\n\nSpell Effect: Entwined Roots\n\n---\n\n**Heightened (7th)** The resistances increase to 10.\n\n**Heightened (9th)** The resistances increase to 15.",
+    "descr": "Slithering roots gird you and your allies in layers of flexible wooden protection. Each affected creature gains resistance 5 to bludgeoning and piercing damage. Whenever a creature protected by these roots is targeted by a ranged weapon attack but takes no damage (such as if the attack missed or the damage was reduced to 0 by resistance), the roots snatch up the ammunition or thrown weapon and hold it. The protected creature can retrieve the thrown weapon or ammunition as an [Interact](/action/interact-player-core) action.\n\nSpell Effect: Entwined Roots\n\n---\n\n**Heightened (7th)** The resistances increase to 10.\n\n**Heightened (9th)** The resistances increase to 15.",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -1707,7 +2159,21 @@
         "primal"
       ],
       "traditionsText": "Arcane, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1738,7 +2204,7 @@
     "systemVersion": "1.2.10",
     "name": "Exploding Earth",
     "slug": "exploding-earth-rage-of-elements",
-    "descr": "You throw a hard-packed ball of earth and stone at a creature, and the projectile explodes upon impact. Attempt a spell attack against the target's AC. If you hit, you deal 4d6 bludgeoning damage plus 1d6 bludgeoning splash damage. On a critical hit, double the initial damage, but not the splash damage, and the target you hit must succeed at a Fortitude saving throw or fall Prone.\n\n---\n\n**Heightened (+2)** The damage increases by 2d6, and the splash damage increases by 1d6.",
+    "descr": "You throw a hard-packed ball of earth and stone at a creature, and the projectile explodes upon impact. Attempt a spell attack against the target's AC. If you hit, you deal 4d6 bludgeoning damage plus 1d6 bludgeoning splash damage. On a critical hit, double the initial damage, but not the splash damage, and the target you hit must succeed at a Fortitude saving throw or fall [Prone](/condition/prone-player-core).\n\n---\n\n**Heightened (+2)** The damage increases by 2d6, and the splash damage increases by 1d6.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -1764,7 +2230,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1796,7 +2280,7 @@
     "systemVersion": "1.2.10",
     "name": "Falsify Heat",
     "slug": "falsify-heat-rage-of-elements",
-    "descr": "You veil the signs of the fires of vitality, altering the target's apparent body temperature. This illusion applies to all senses, and a creature that touches the target can attempt to disbelieve the illusion. You can Dismiss the spell. Choose an illusory body temperature when you cast the spell.\n\n**Moderate** The target's body temperature appears the same as the surrounding environment, giving the target a +2 circumstance bonus to Deception checks to Impersonate an undead, a cold-blooded creature, or an inanimate object (such as a corpse). The target is also Invisible to heatvision and other abilities that sense heat similarly.\n**Warm** The target appears to emit substantial body heat, gaining a +2 circumstance bonus to Deception checks to Impersonate a warm-blooded creature.\n\n---\n\n**Heightened (4th)** You can target up to 10 creatures, and you can choose a different body temperature for each of them.",
+    "descr": "You veil the signs of the fires of vitality, altering the target's apparent body temperature. This illusion applies to all senses, and a creature that touches the target can attempt to disbelieve the illusion. You can Dismiss the spell. Choose an illusory body temperature when you cast the spell.\n\n**Moderate** The target's body temperature appears the same as the surrounding environment, giving the target a +2 circumstance bonus to Deception checks to Impersonate an undead, a cold-blooded creature, or an inanimate object (such as a corpse). The target is also [Invisible](/condition/invisible-player-core) to heatvision and other abilities that sense heat similarly.\n**Warm** The target appears to emit substantial body heat, gaining a +2 circumstance bonus to Deception checks to Impersonate a warm-blooded creature.\n\n---\n\n**Heightened (4th)** You can target up to 10 creatures, and you can choose a different body temperature for each of them.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -1821,7 +2305,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1853,7 +2355,7 @@
     "systemVersion": "1.2.10",
     "name": "Ferrous Form",
     "slug": "ferrous-form-rage-of-elements",
-    "descr": "Your body transforms entirely into flexible iron. You gain resistance 10 to physical damage, except adamantine. You're immune to death effects, disease, drained, Fatigued, healing, nonlethal attacks, Paralyzed, poison, sickened, vitality, and void; any of those conditions you had when the spell is cast are suspended until the spell ends, then return with their remaining duration when the spell ends. While made of iron, you're subject to rusting effects like the Rust Cloud spell.\n\nYour fist Strikes have a 1d10 damage die, and your metal spells deal one additional die of damage (of the same damage die and damage type the spell uses). You can cast Needle Darts as an innate spell; the casting is reduced from 2 actions to 1.\n\nIn this form, you don't need to breathe. Your Bulk doubles (to 6 if you're Small or 12 if you're Medium), and you become too dense to Swim in water, automatically sinking to the bottom. You can Dismiss the spell.\n\nSpell Effect: Ferrous Form\n\n---\n\n**Heightened (9th)** The resistance increases to 15.",
+    "descr": "Your body transforms entirely into flexible iron. You gain resistance 10 to physical damage, except adamantine. You're immune to death effects, disease, drained, [Fatigued](/condition/fatigued-player-core), healing, nonlethal attacks, [Paralyzed](/condition/paralyzed-player-core), poison, sickened, vitality, and void; any of those conditions you had when the spell is cast are suspended until the spell ends, then return with their remaining duration when the spell ends. While made of iron, you're subject to rusting effects like the [Rust Cloud](/spell/rust-cloud-rage-of-elements) spell.\n\nYour fist Strikes have a 1d10 damage die, and your metal spells deal one additional die of damage (of the same damage die and damage type the spell uses). You can cast [Needle Darts](/spell/needle-darts-rage-of-elements) as an innate spell; the casting is reduced from 2 actions to 1.\n\nIn this form, you don't need to breathe. Your Bulk doubles (to 6 if you're Small or 12 if you're Medium), and you become too dense to Swim in water, automatically sinking to the bottom. You can Dismiss the spell.\n\nSpell Effect: Ferrous Form\n\n---\n\n**Heightened (9th)** The resistance increases to 15.",
     "data": {
       "rank": 8,
       "rarity": "common",
@@ -1878,7 +2380,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        },
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1936,7 +2456,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1988,7 +2522,25 @@
         "primal"
       ],
       "traditionsText": "Arcane, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2019,7 +2571,7 @@
     "systemVersion": "1.2.10",
     "name": "Fireproof",
     "slug": "fireproof-rage-of-elements",
-    "descr": "You prevent the target item from conducting heat or catching fire for the spell's duration. The item gains fire resistance 10. In addition, effects with the fire trait that target the item must first succeed at a counteract check against your spell DC.\n\n---\n\n**Heightened (4th)** The duration is 24 hours.\n\n**Heightened (6th)** The duration is unlimited.",
+    "descr": "You prevent the target item from conducting heat or catching fire for the spell's duration. The item gains fire resistance 10. In addition, effects with the [fire](/trait/fire) trait that target the item must first succeed at a counteract check against your spell DC.\n\n---\n\n**Heightened (4th)** The duration is 24 hours.\n\n**Heightened (6th)** The duration is unlimited.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -2040,7 +2592,21 @@
         "primal"
       ],
       "traditionsText": "Arcane, Divine, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2071,7 +2637,7 @@
     "systemVersion": "1.2.10",
     "name": "Flame Dancer",
     "slug": "flame-dancer-rage-of-elements",
-    "descr": "Fire encircles the target's hands and feet, and its eyes and hair catch ablaze. The target's unarmed Strikes deal an additional 2d6 fire damage. Critical hits with these Strikes also deal 2d4 persistent fire damage. Additionally, when the target attempts to Demoralize a foe, they can use Performance instead of Intimidation; when using Performance to Demoralize, the action loses the auditory trait but gains the visual trait, and the target doesn't take a penalty when attempting to Demoralize a creature that doesn't understand its language.\n\n---\n\n**Heightened (7th)** The fire damage increases to 3d6, and the persistent fire damage increases to 3d4. If the target gets a critical success on a Demoralize check using Performance, the target of the Demoralize check becomes Fleeing from the target of *flame dancer* for 1 round.\n\nSpell Effect: Flame Dancer",
+    "descr": "Fire encircles the target's hands and feet, and its eyes and hair catch ablaze. The target's unarmed Strikes deal an additional 2d6 fire damage. Critical hits with these Strikes also deal 2d4 persistent fire damage. Additionally, when the target attempts to [Demoralize](/action/demoralize-player-core) a foe, they can use Performance instead of Intimidation; when using Performance to Demoralize, the action loses the [auditory](/trait/auditory) trait but gains the [visual](/trait/visual) trait, and the target doesn't take a penalty when attempting to Demoralize a creature that doesn't understand its language.\n\n---\n\n**Heightened (7th)** The fire damage increases to 3d6, and the persistent fire damage increases to 3d4. If the target gets a critical success on a Demoralize check using Performance, the target of the Demoralize check becomes [Fleeing](/condition/fleeing-player-core) from the target of *flame dancer* for 1 round.\n\nSpell Effect: Flame Dancer",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -2096,7 +2662,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2127,7 +2707,7 @@
     "systemVersion": "1.2.10",
     "name": "Flames of Ego",
     "slug": "flames-of-ego-rage-of-elements",
-    "descr": "Elegant flames of incredible beauty coruscate across the target's body, creating overconfidence and carelessness. The target attempts a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target sheds bright light in a area (and dim light to the next 40 feet) and becomes Fascinated with itself for 1 round. It must spend at least 1 action on its turn on a taunting display of arrogance or overconfidence. Using actions that include such a display—such as using Perform to show off—count toward this requirement.\n\n**Failure** As success, but the duration is 1 minute and the target can't act hostile toward a creature until that creature acts hostile toward the target.\n\n**Critical Failure** As failure, except the target must spend at least 2 actions on its turn on a taunting display of arrogance or overconfidence.",
+    "descr": "Elegant flames of incredible beauty coruscate across the target's body, creating overconfidence and carelessness. The target attempts a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target sheds bright light in a area (and dim light to the next 40 feet) and becomes [Fascinated](/condition/fascinated-player-core) with itself for 1 round. It must spend at least 1 action on its turn on a taunting display of arrogance or overconfidence. Using actions that include such a display—such as using [Perform](/action/perform-player-core) to show off—count toward this requirement.\n\n**Failure** As success, but the duration is 1 minute and the target can't act hostile toward a creature until that creature acts hostile toward the target.\n\n**Critical Failure** As failure, except the target must spend at least 2 actions on its turn on a taunting display of arrogance or overconfidence.",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -2156,7 +2736,33 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "light",
+          "slug": "light"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2190,7 +2796,7 @@
     "systemVersion": "1.2.10",
     "name": "Flourishing Flora",
     "slug": "flourishing-flora-rage-of-elements",
-    "descr": "Plants rapidly grow up from the ground. All creatures in the target area take 2d4 damage. The type of damage depends on the type of plant you choose to grow. On a critical failure, targets experience additional effects, also depending on what you choose to grow. The type of plant and its effects are chosen when you Cast the Spell.\n\n**Cacti** Piercing damage, and (current value) bleed] damage on a critical failure.\n**Flowers** Poison damage, and Dazzled for 2 rounds on a critical failure.\n**Fruits** Bludgeoning damage, and Clumsy 1 for 2 rounds on a critical failure.\n**Roots** Bludgeoning damage, and the affected creatures fall Prone on a critical failure.\n\n---\n\n**Heightened (+1)** The damage increases by 1d4, and the persistent bleed damage from cacti increases by 1.",
+    "descr": "Plants rapidly grow up from the ground. All creatures in the target area take 2d4 damage. The type of damage depends on the type of plant you choose to grow. On a critical failure, targets experience additional effects, also depending on what you choose to grow. The type of plant and its effects are chosen when you Cast the Spell.\n\n**Cacti** Piercing damage, and (current value) bleed] damage on a critical failure.\n**Flowers** Poison damage, and [Dazzled](/condition/dazzled-player-core) for 2 rounds on a critical failure.\n**Fruits** Bludgeoning damage, and [Clumsy 1](/condition/clumsy-player-core) for 2 rounds on a critical failure.\n**Roots** Bludgeoning damage, and the affected creatures fall [Prone](/condition/prone-player-core) on a critical failure.\n\n---\n\n**Heightened (+1)** The damage increases by 1d4, and the persistent bleed damage from cacti increases by 1.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -2217,7 +2823,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2272,7 +2896,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2303,7 +2941,7 @@
     "systemVersion": "1.2.10",
     "name": "Freezing Rain",
     "slug": "freezing-rain-rage-of-elements",
-    "descr": "Intense cold rain comes from nowhere, a microcosm of a sudden downpour, and a magical tweak can turn the rain to freezing sleet. The driving rain and pooling water make the area difficult terrain and extinguish non-magical fires.\n\nOn subsequent rounds, the first time you Sustain the spell each round, you can move the area up to 20 feet and can also freeze the rain. If you freeze the rain, each creature in the area takes 4d6 cold damage and might be slowed, depending on result of its Reflex save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is Slowed 1 for 1 round.\n\n**Critical Failure** The creature takes double damage and is Slowed 2 for 1 round.\n\n---\n\n**Heightened (+1)** The damage increases by 1d6.",
+    "descr": "Intense cold rain comes from nowhere, a microcosm of a sudden downpour, and a magical tweak can turn the rain to freezing sleet. The driving rain and pooling water make the area difficult terrain and extinguish non-magical fires.\n\nOn subsequent rounds, the first time you Sustain the spell each round, you can move the area up to 20 feet and can also freeze the rain. If you freeze the rain, each creature in the area takes 4d6 cold damage and might be slowed, depending on result of its Reflex save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is [Slowed 1](/condition/slowed-player-core) for 1 round.\n\n**Critical Failure** The creature takes double damage and is Slowed 2 for 1 round.\n\n---\n\n**Heightened (+1)** The damage increases by 1d6.",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -2330,7 +2968,25 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2362,7 +3018,7 @@
     "systemVersion": "1.2.10",
     "name": "Frost Pillar",
     "slug": "frost-pillar-rage-of-elements",
-    "descr": "Ice crystallizes around a creature, imprisoning it within an icy pillar. On a successful saving throw, the creature is pushed to an adjacent space of its choice; otherwise, it's frozen inside the pillar and becomes Restrained as its body can barely move within the ice. The ice has AC 10, Hardness 10, and 60 Hit Points; it's immune to critical hits, cold damage, and precision damage, and it has weakness 15 to fire. If the ice is destroyed, the creature within is freed and the spell immediately ends.",
+    "descr": "Ice crystallizes around a creature, imprisoning it within an icy pillar. On a successful saving throw, the creature is pushed to an adjacent space of its choice; otherwise, it's frozen inside the pillar and becomes [Restrained](/condition/restrained-player-core) as its body can barely move within the ice. The ice has AC 10, Hardness 10, and 60 Hit Points; it's immune to critical hits, cold damage, and precision damage, and it has weakness 15 to fire. If the ice is destroyed, the creature within is freed and the spell immediately ends.",
     "data": {
       "rank": 6,
       "rarity": "common",
@@ -2388,7 +3044,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2448,7 +3122,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "vitality",
+          "slug": "vitality"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2481,7 +3177,7 @@
     "systemVersion": "1.2.10",
     "name": "Glass Form",
     "slug": "glass-form-rage-of-elements",
-    "descr": "You grant the target properties of dull, transparent glass. The target becomes Concealed, has no scent, and can't bleed. They gain resistance 5 to acid, cold, electricity, and piercing damage and weakness 5 to sonic and bludgeoning damage. A creature in this form is affected by the shatter spell as though the creature were an unattended object. Each time the target takes damage to which the spell grants resistance or weakness, reduce the duration by 1 minute.\n\nSpell Effect: Glass Form\n\n---\n\n**Heightened (+2)** The resistances and weaknesses increase by 5.",
+    "descr": "You grant the target properties of dull, transparent glass. The target becomes [Concealed](/condition/concealed-player-core), has no scent, and can't bleed. They gain resistance 5 to acid, cold, electricity, and piercing damage and weakness 5 to sonic and bludgeoning damage. A creature in this form is affected by the [shatter](/spell/shatter-player-core) spell as though the creature were an unattended object. Each time the target takes damage to which the spell grants resistance or weakness, reduce the duration by 1 minute.\n\nSpell Effect: Glass Form\n\n---\n\n**Heightened (+2)** The resistances and weaknesses increase by 5.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -2505,7 +3201,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2536,7 +3246,7 @@
     "systemVersion": "1.2.10",
     "name": "Glass Shield",
     "slug": "glass-shield-rage-of-elements",
-    "descr": "You summon a layer of clear glass to keep you from harm. This counts as using the Raise A Shield action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use. You can Shield Block with the glass shield. It has Hardness 2. You can use the spell's reaction to reduce damage from any spell or magical effect, even if it doesn't deal physical damage. When you Shield Block, the shield explodes in a shower of glass. If creature that broke it is within 5 feet, the shards deal 1d4 piercing damage to that creature with a basic Reflex save. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes.\n\nSpell Effect: Glass Shield\n\n---\n\n**Heightened (3rd)** The shield has Hardness 4, and the damage increases to 3d4.\n\n**Heightened (5th)** The shield has Hardness 7, and the damage increases to 4d4.\n\n**Heightened (7th)** The shield has Hardness 10, and the damage increases to 5d4.\n\n**Heightened (9th)** The shield has Hardness 12, and the damage increases to 6d4.",
+    "descr": "You summon a layer of clear glass to keep you from harm. This counts as using the [Raise A Shield](/action/raise-a-shield-player-core) action, giving you a +1 circumstance bonus to AC until the start of your next turn, but it doesn't require a hand to use. You can [Shield Block](/feat/shield-block-player-core) with the glass shield. It has Hardness 2. You can use the spell's reaction to reduce damage from any spell or magical effect, even if it doesn't deal physical damage. When you Shield Block, the shield explodes in a shower of glass. If creature that broke it is within 5 feet, the shards deal 1d4 piercing damage to that creature with a basic Reflex save. After you use Shield Block, the spell ends and you can't cast it again for 10 minutes.\n\nSpell Effect: Glass Shield\n\n---\n\n**Heightened (3rd)** The shield has Hardness 4, and the damage increases to 3d4.\n\n**Heightened (5th)** The shield has Hardness 7, and the damage increases to 4d4.\n\n**Heightened (7th)** The shield has Hardness 10, and the damage increases to 5d4.\n\n**Heightened (9th)** The shield has Hardness 12, and the damage increases to 6d4.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -2561,7 +3271,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2592,7 +3316,7 @@
     "systemVersion": "1.2.10",
     "name": "Grasp of the Deep",
     "slug": "grasp-of-the-deep-rage-of-elements",
-    "descr": "You grip one target with the phantasmal pressure of the deep sea, disorienting and crushing its lungs and joints. The target takes 6d6 bludgeoning damage and other effects, depending on its Will saving throw.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The target takes half damage.\n\n**Failure** The target takes full damage, and feels as though it's being crushed. The target also becomes Grabbed, but it can attempt to Escape with an Escape DC equal to your spell DC.\n\n**Critical Failure** As failure, but the target takes double damage.\n\n---\n\n**Heightened (6th)** You can target up to 5 creatures.",
+    "descr": "You grip one target with the phantasmal pressure of the deep sea, disorienting and crushing its lungs and joints. The target takes 6d6 bludgeoning damage and other effects, depending on its Will saving throw.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The target takes half damage.\n\n**Failure** The target takes full damage, and feels as though it's being crushed. The target also becomes [Grabbed](/condition/grabbed-player-core), but it can attempt to [Escape](/action/escape-player-core) with an Escape DC equal to your spell DC.\n\n**Critical Failure** As failure, but the target takes double damage.\n\n---\n\n**Heightened (6th)** You can target up to 5 creatures.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -2618,7 +3342,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2650,7 +3392,7 @@
     "systemVersion": "1.2.10",
     "name": "Grasping Earth",
     "slug": "grasping-earth-rage-of-elements",
-    "descr": "Handlike protrusions of rock and soil grab and bury creatures. Each creature in the area when you cast the spell, and each creature that ends its turn in the area during the spell's duration, must attempt a Fortitude save. The first time each round you Sustain this spell, each creature still Grabbed by the earth takes 1d6 bludgeoning] damage, and each creature Restrained by the earth takes 2d6 bludgeoning] damage. A creature can attempt to Escape, rolling against your spell DC.\n\n---\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is grabbed by the earth.\n\n**Critical Failure** The creature is restrained by the earth.\n\n---\n\n**Heightened (+2)** The bludgeoning damage dealt when you Sustain this spell increases by 1d6 for grabbed creatures and 2d6 for restrained creatures.",
+    "descr": "Handlike protrusions of rock and soil grab and bury creatures. Each creature in the area when you cast the spell, and each creature that ends its turn in the area during the spell's duration, must attempt a Fortitude save. The first time each round you Sustain this spell, each creature still [Grabbed](/condition/grabbed-player-core) by the earth takes 1d6 bludgeoning] damage, and each creature [Restrained](/condition/restrained-player-core) by the earth takes 2d6 bludgeoning] damage. A creature can attempt to [Escape](/action/escape-player-core), rolling against your spell DC.\n\n---\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is grabbed by the earth.\n\n**Critical Failure** The creature is restrained by the earth.\n\n---\n\n**Heightened (+2)** The bludgeoning damage dealt when you Sustain this spell increases by 1d6 for grabbed creatures and 2d6 for restrained creatures.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -2676,7 +3418,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2707,7 +3463,7 @@
     "systemVersion": "1.2.10",
     "name": "Heatvision",
     "slug": "heatvision-rage-of-elements",
-    "descr": "The target visually senses the heat energy emitted by the creatures and objects around it, gaining infrared vision at a range of 60 feet as a precise sense. This vision can detect any warm-blooded creature or source of heat not completely covered behind a solid object, such as a wall; this bypasses any concealment granted by smoke or darkness. It can similarly detect especially cold creatures and sources of cold. Almost all creatures with the cold or fire trait can be detected with heatvision. Undead and constructs are typically the same temperature as their environment and can't be detected with heatvision. The GM decides in other cases.\n\n---\n\n**Heightened (6th)** The duration lasts until you next make your daily preparations, and the range increases to 120 feet.",
+    "descr": "The target visually senses the heat energy emitted by the creatures and objects around it, gaining infrared vision at a range of 60 feet as a precise sense. This vision can detect any warm-blooded creature or source of heat not completely covered behind a solid object, such as a wall; this bypasses any concealment granted by smoke or darkness. It can similarly detect especially cold creatures and sources of cold. Almost all creatures with the cold or [fire](/trait/fire) trait can be detected with heatvision. Undead and constructs are typically the same temperature as their environment and can't be detected with heatvision. The GM decides in other cases.\n\n---\n\n**Heightened (6th)** The duration lasts until you next make your daily preparations, and the range increases to 120 feet.",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -2733,7 +3489,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2764,7 +3534,7 @@
     "systemVersion": "1.2.10",
     "name": "Heaving Earth",
     "slug": "heaving-earth-rage-of-elements",
-    "descr": "You strike the ground, and unleash a wave that travels through the struck surface to the target. The effect ends as soon as it can't travel through a solid surface, such as a stone floor. Each creature in a line between you and the target is shaken by tremors and must attempt a Reflex saving throw against your spell DC. A creature that fails this save is pushed 10 feet away from you.\n\nThe wave explodes once it reaches the target, showering the target with earth and stone and dealing 12d10 bludgeoning] damage with a basic Reflex save. A target that fails its save against this explosion is also pushed back 10 feet and knocked Prone. A creature subject to the explosion doesn't need to save against the tremors.\n\n---\n\n**Heightened (9th)** The wave explodes on one additional target of your choice in the line to the final target.",
+    "descr": "You strike the ground, and unleash a wave that travels through the struck surface to the target. The effect ends as soon as it can't travel through a solid surface, such as a stone floor. Each creature in a line between you and the target is shaken by tremors and must attempt a Reflex saving throw against your spell DC. A creature that fails this save is pushed 10 feet away from you.\n\nThe wave explodes once it reaches the target, showering the target with earth and stone and dealing 12d10 bludgeoning] damage with a basic Reflex save. A target that fails its save against this explosion is also pushed back 10 feet and knocked [Prone](/condition/prone-player-core). A creature subject to the explosion doesn't need to save against the tremors.\n\n---\n\n**Heightened (9th)** The wave explodes on one additional target of your choice in the line to the final target.",
     "data": {
       "rank": 7,
       "rarity": "common",
@@ -2789,7 +3559,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2820,7 +3604,7 @@
     "systemVersion": "1.2.10",
     "name": "Helpful Wood Spirits",
     "slug": "helpful-wood-spirits-rage-of-elements",
-    "descr": "Upon casting this spell, a cluster of little wood spirits tumbles into the area. They perform a simple task each round. These spirits are a magical echo of the true spirits that live on the Plane of Wood and can't be attacked, damaged, or otherwise interfered with. These spirits often look like kodama but can appear in any of the countless varieties of wood spirits that inhabit the Plane of Wood.\n\nChoose the kind of aid your wood spirits supply from the list below when you Cast the Spell. The first time each round you Sustain the spell, you can move the area occupied by the apparitions up to 10 feet and you can choose the kind of aid they provide this round.\n\n**Chores** The wood spirits perform a minor manual task of your choice, such as cleaning, opening a door, picking up an unattended object, or carrying an object from one location to another. The spirits can't pick up or carry an object of greater than 2 Bulk.\n**Distract** The wood spirits distract your foes, clambering all over their feet and bodies and being a nuisance. Creatures in the area are Off Guard unless they succeed at a Reflex save.\n**Obstacle** The wood spirits fill the area as a chaotic, bouncing mass. The area they occupy is difficult terrain.\n**Search** The wood spirits Seek in the area they occupy, using your Perception check as their own. You learn anything they do from Seeking in this way.",
+    "descr": "Upon casting this spell, a cluster of little wood spirits tumbles into the area. They perform a simple task each round. These spirits are a magical echo of the true spirits that live on the Plane of Wood and can't be attacked, damaged, or otherwise interfered with. These spirits often look like kodama but can appear in any of the countless varieties of wood spirits that inhabit the Plane of Wood.\n\nChoose the kind of aid your wood spirits supply from the list below when you Cast the Spell. The first time each round you Sustain the spell, you can move the area occupied by the apparitions up to 10 feet and you can choose the kind of aid they provide this round.\n\n**Chores** The wood spirits perform a minor manual task of your choice, such as cleaning, opening a door, picking up an unattended object, or carrying an object from one location to another. The spirits can't pick up or carry an object of greater than 2 Bulk.\n**Distract** The wood spirits distract your foes, clambering all over their feet and bodies and being a nuisance. Creatures in the area are [Off Guard](/condition/off-guard-player-core) unless they succeed at a Reflex save.\n**Obstacle** The wood spirits fill the area as a chaotic, bouncing mass. The area they occupy is difficult terrain.\n**Search** The wood spirits [Seek](/action/seek-player-core) in the area they occupy, using your Perception check as their own. You learn anything they do from Seeking in this way.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -2845,7 +3629,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2903,7 +3701,25 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2963,7 +3779,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3018,7 +3848,29 @@
         "primal"
       ],
       "traditionsText": "Arcane, Divine, Occult, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "contingency",
+          "slug": "contingency"
+        },
+        {
+          "label": "extradimensional",
+          "slug": "extradimensional"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3070,7 +3922,21 @@
         "primal"
       ],
       "traditionsText": "Arcane, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3124,7 +3990,17 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3181,7 +4057,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3213,7 +4107,7 @@
     "systemVersion": "1.2.10",
     "name": "Lignify",
     "slug": "lignify-rage-of-elements",
-    "descr": "You turn the target's flesh slowly into wood. The target must attempt a Fortitude save. Creatures with the plant trait have a +2 circumstance bonus to saves against this spell.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is Slowed 1 for 1 round.\n\n**Failure** The target is slowed 1 and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the slowed condition increases by 1 (or 2 on a critical failure). A successful save reduces the slowed condition by 1. When a creature is unable to act due to the slowed condition from lignify, the creature is permanently non-magically petrified, though it's turned to wood instead of stone. The spell ends if the creature is magically petrified or the slowed condition is removed.\n\n**Critical Failure** As failure, but the target is initially Slowed 2.",
+    "descr": "You turn the target's flesh slowly into wood. The target must attempt a Fortitude save. Creatures with the [plant](/trait/plant) trait have a +2 circumstance bonus to saves against this spell.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is [Slowed 1](/condition/slowed-player-core) for 1 round.\n\n**Failure** The target is slowed 1 and must attempt a Fortitude save at the end of each of its turns; this ongoing save has the [incapacitation](/trait/incapacitation) trait. On a failed save, the slowed condition increases by 1 (or 2 on a critical failure). A successful save reduces the slowed condition by 1. When a creature is unable to act due to the slowed condition from lignify, the creature is permanently non-magically petrified, though it's turned to wood instead of stone. The spell ends if the creature is magically petrified or the slowed condition is removed.\n\n**Critical Failure** As failure, but the target is initially Slowed 2.",
     "data": {
       "rank": 6,
       "rarity": "common",
@@ -3239,7 +4133,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3297,7 +4209,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3354,7 +4284,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3385,7 +4333,7 @@
     "systemVersion": "1.2.10",
     "name": "Magnetic Attraction",
     "slug": "magnetic-attraction-rage-of-elements",
-    "descr": "You adjust your magnetic polarity, plucking daggers from hands and coins from belts. The targeted objects fly to your location, letting you catch them easily in your hands, or dropping to the ground at your position, at your discretion. Unattended objects fly to you automatically. If you target secured objects or those in another creature's possession (such as sheathed weapons), you must attempt to Disarm the creature of the metal objects, making a spell attack roll instead of an Athletics check to do so.\n\nInstead of drawing the objects to yourself, you can polarize a single metal object within range, designating it as a lodestone and causing the metal objects to fly to it instead. The lodestone must be at least three times the total Bulk of the targeted metal objects. Objects will stick to the lodestone for 1 minute, though they can be wrenched away with an Interact action.",
+    "descr": "You adjust your magnetic polarity, plucking daggers from hands and coins from belts. The targeted objects fly to your location, letting you catch them easily in your hands, or dropping to the ground at your position, at your discretion. Unattended objects fly to you automatically. If you target secured objects or those in another creature's possession (such as sheathed weapons), you must attempt to Disarm the creature of the metal objects, making a spell attack roll instead of an Athletics check to do so.\n\nInstead of drawing the objects to yourself, you can polarize a single metal object within range, designating it as a lodestone and causing the metal objects to fly to it instead. The lodestone must be at least three times the total Bulk of the targeted metal objects. Objects will stick to the lodestone for 1 minute, though they can be wrenched away with an [Interact](/action/interact-player-core) action.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -3409,7 +4357,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3439,7 +4401,7 @@
     "systemVersion": "1.2.10",
     "name": "Magnetic Dominion",
     "slug": "magnetic-dominion-rage-of-elements",
-    "descr": "The roiling magnetic fields of the Plane of Metal radiate from you as you channel and reshape them at your merest thought. When you Cast this Spell, you can relocate each affected target to any other unoccupied space within the emanation. You can't move yourself in this way. An unwilling target can resist being moved with a successful Reflex save.\n\nThe creatures move all at once—after you know the results of all the saves, you determine which target occupies each space in whatever order you choose. You can move a creature into a space that was previously occupied by another creature so long as you also relocate the first creature elsewhere as part of the movement. If you move a target into the air, it descends to the ground harmlessly after being moved unless it chooses not to.\n\nYou can choose to be affected by an 8th-rank Magnetic Repulsion spell that lasts for the duration of *magnetic dominion*. Each time you Sustain the spell, you can move one creature in the emanation, with the same targeting restrictions and stipulations as above.",
+    "descr": "The roiling magnetic fields of the Plane of Metal radiate from you as you channel and reshape them at your merest thought. When you Cast this Spell, you can relocate each affected target to any other unoccupied space within the emanation. You can't move yourself in this way. An unwilling target can resist being moved with a successful Reflex save.\n\nThe creatures move all at once—after you know the results of all the saves, you determine which target occupies each space in whatever order you choose. You can move a creature into a space that was previously occupied by another creature so long as you also relocate the first creature elsewhere as part of the movement. If you move a target into the air, it descends to the ground harmlessly after being moved unless it chooses not to.\n\nYou can choose to be affected by an 8th-rank [Magnetic Repulsion](/spell/magnetic-repulsion-rage-of-elements) spell that lasts for the duration of *magnetic dominion*. Each time you Sustain the spell, you can move one creature in the emanation, with the same targeting restrictions and stipulations as above.",
     "data": {
       "rank": 9,
       "rarity": "common",
@@ -3465,7 +4427,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3496,7 +4472,7 @@
     "systemVersion": "1.2.10",
     "name": "Magnetic Repulsion",
     "slug": "magnetic-repulsion-rage-of-elements",
-    "descr": "You adjust your magnetic polarity, causing metal objects to jump and shudder away from you. Attacks made with metal objects against you take a -1 status penalty, and the squares adjacent to you are difficult terrain for creatures wearing metal armor. For creatures made entirely of metal, the penalty to their attack rolls is -2 and the squares adjacent to you are greater difficult terrain.\n\nWhile this spell is active, you require an additional Interact action before using a metal object (including to Strike with a metal weapon), and if you're wearing metal armor, you're Slowed 1.\n\n---\n\n**Heightened (+3)** The status penalty to attack rolls increases by 1.",
+    "descr": "You adjust your magnetic polarity, causing metal objects to jump and shudder away from you. Attacks made with metal objects against you take a -1 status penalty, and the squares adjacent to you are difficult terrain for creatures wearing metal armor. For creatures made entirely of metal, the penalty to their attack rolls is -2 and the squares adjacent to you are greater difficult terrain.\n\nWhile this spell is active, you require an additional [Interact](/action/interact-player-core) action before using a metal object (including to Strike with a metal weapon), and if you're wearing metal armor, you're [Slowed 1](/condition/slowed-player-core).\n\n---\n\n**Heightened (+3)** The status penalty to attack rolls increases by 1.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -3520,7 +4496,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3550,7 +4540,7 @@
     "systemVersion": "1.2.10",
     "name": "Mantle of the Melting Heart",
     "slug": "mantle-of-the-melting-heart-rage-of-elements",
-    "descr": "You bathe yourself in a mantle of liquid metal, gilding your skin and armor with an oily sheen. Upon Casting this Spell, pick two of the options below. As a single action, which has the concentrate trait, you can change one of your chosen abilities to a different option from the list.\n\n**Copper Core** You draw electricity toward you, then disperse it. You gain resistance 10 to electricity. All electricity effects within 30 feet of you must succeed at a counteract check against your spell DC or target you and only you.**Golden Flesh** Your body gains the chemical inertness of gold, barely reacting to substances that would otherwise greatly disturb your physiology. You become immune to poison and disease and gain a +2 circumstance bonus to your checks against any poison and disease effects currently affecting you.**Reactive Touch** Your touch reacts easily with other metals. Any metal that touches you or that you touch takes 2d6 acid] damage that bypasses Hardness.**Weighted Grasp** Your arms become long cables, your fists heavy as anchors. You gain a cabled fist unarmed attack with the disarm, finesse, reach, and trip traits and that's in the flail group. Your cabled fist deals 1d4 bludgeoning damage plus an additional 1d6 poison damage and Grab.\n\nSpell Effect: Mantle Of The Melting Heart",
+    "descr": "You bathe yourself in a mantle of liquid metal, gilding your skin and armor with an oily sheen. Upon Casting this Spell, pick two of the options below. As a single action, which has the [concentrate](/trait/concentrate) trait, you can change one of your chosen abilities to a different option from the list.\n\n**Copper Core** You draw electricity toward you, then disperse it. You gain resistance 10 to electricity. All electricity effects within 30 feet of you must succeed at a counteract check against your spell DC or target you and only you.**Golden Flesh** Your body gains the chemical inertness of gold, barely reacting to substances that would otherwise greatly disturb your physiology. You become immune to poison and disease and gain a +2 circumstance bonus to your checks against any poison and disease effects currently affecting you.**Reactive Touch** Your touch reacts easily with other metals. Any metal that touches you or that you touch takes 2d6 acid] damage that bypasses Hardness.**Weighted Grasp** Your arms become long cables, your fists heavy as anchors. You gain a cabled fist unarmed attack with the disarm, finesse, reach, and [trip](/trait/trip) traits and that's in the flail group. Your cabled fist deals 1d4 bludgeoning damage plus an additional 1d6 poison damage and Grab.\n\nSpell Effect: Mantle Of The Melting Heart",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -3575,7 +4565,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        },
+        {
+          "label": "morph",
+          "slug": "morph"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3607,7 +4615,7 @@
     "systemVersion": "1.2.10",
     "name": "Mantle of the Unwavering Heart",
     "slug": "mantle-of-the-unwavering-heart-rage-of-elements",
-    "descr": "Vines and branches envelop you in an instant, growing a wild bloom of colors that open to reveal your new form. Upon Casting this Spell, pick two of the options below. As a single action, which has the concentrate trait, you can change one of your chosen abilities to a different option from the list.\n\n**Evergreen Vitality** You gain fast healing 3 and a +2 bonus to saves against poison and disease. This effect has the healing and vitality traits.\n**Overwhelming Perfume** (aura, olfactory) A cloud of potent floral scent surrounds you in a area. Creatures in the aura can't benefit from the scent ability and are Sickened 1 as long as they remain in the aura. The sickness is a disease effect.\n**Towering Trunk** You grow to a considerable height. Increase your size to Large. You're Clumsy 1. Your reach increases by 5 feet (or by 10 feet if you started out Tiny), and you gain a grasping branch unarmed attack; this attack is in the brawling weapon group and deals 2d8 bludgeoning] damage plus Grab.\n**Unyielding Will** Your mind becomes incredibly resilient to change. You're immune to being Fascinated, and you get a +1 bonus to saves and DCs against mental effects.\n\nSpell Effect: Mantle Of The Unwavering Heart",
+    "descr": "Vines and branches envelop you in an instant, growing a wild bloom of colors that open to reveal your new form. Upon Casting this Spell, pick two of the options below. As a single action, which has the [concentrate](/trait/concentrate) trait, you can change one of your chosen abilities to a different option from the list.\n\n**Evergreen Vitality** You gain fast healing 3 and a +2 bonus to saves against poison and disease. This effect has the healing and [vitality](/trait/vitality) traits.\n**Overwhelming Perfume** (aura, olfactory) A cloud of potent floral scent surrounds you in a area. Creatures in the aura can't benefit from the scent ability and are [Sickened 1](/condition/sickened-player-core) as long as they remain in the aura. The sickness is a disease effect.\n**Towering Trunk** You grow to a considerable height. Increase your size to Large. You're [Clumsy 1](/condition/clumsy-player-core). Your reach increases by 5 feet (or by 10 feet if you started out Tiny), and you gain a grasping branch unarmed attack; this attack is in the brawling weapon group and deals 2d8 bludgeoning] damage plus Grab.\n**Unyielding Will** Your mind becomes incredibly resilient to change. You're immune to being [Fascinated](/condition/fascinated-player-core), and you get a +1 bonus to saves and DCs against mental effects.\n\nSpell Effect: Mantle Of The Unwavering Heart",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -3633,7 +4641,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "morph",
+          "slug": "morph"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3666,7 +4696,7 @@
     "systemVersion": "1.2.10",
     "name": "Mercurial Stride",
     "slug": "mercurial-stride-rage-of-elements",
-    "descr": "Your form ripples as you take on the fluidity and toxicity of quicksilver. You partially shift into a liquid metal form and Stride up to twice your speed. During this movement, you can pass through one creature's space—without needing to attempt a check to Tumble Through—by splitting into droplets of mercury and reforming on the other side, though you can't end your turn in such a space. Passing through a creature's space in this way exposes it to mercury poisoning, with a Fortitude save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target becomes Sickened 1.\n\n**Failure** The target becomes Sickened 2 and takes (current value+2)d6 poison] damage.\n\n**Critical Failure** The target becomes Sickened 2 and takes ((current value+2)*2)d6 poison] damage.\n\n---\n\n**Heightened (+1)** The damage increases by 1d6 on a failure and 2d6 on a critical failure.",
+    "descr": "Your form ripples as you take on the fluidity and toxicity of quicksilver. You partially shift into a liquid metal form and Stride up to twice your speed. During this movement, you can pass through one creature's space—without needing to attempt a check to [Tumble Through](/action/tumble-through-player-core)—by splitting into droplets of mercury and reforming on the other side, though you can't end your turn in such a space. Passing through a creature's space in this way exposes it to mercury poisoning, with a Fortitude save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target becomes [Sickened 1](/condition/sickened-player-core).\n\n**Failure** The target becomes Sickened 2 and takes (current value+2)d6 poison] damage.\n\n**Critical Failure** The target becomes Sickened 2 and takes ((current value+2)*2)d6 poison] damage.\n\n---\n\n**Heightened (+1)** The damage increases by 1d6 on a failure and 2d6 on a critical failure.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -3692,7 +4722,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        },
+        {
+          "label": "poison",
+          "slug": "poison"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3745,7 +4793,21 @@
         "primal"
       ],
       "traditionsText": "Arcane, Divine, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3802,7 +4864,29 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "poison",
+          "slug": "poison"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3862,7 +4946,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3895,7 +5001,7 @@
     "systemVersion": "1.2.10",
     "name": "Noxious Metals",
     "slug": "noxious-metals-rage-of-elements",
-    "descr": "This spell forces toxic metal to coalesce on the skin or surface of all living creatures in the area, dealing 4d6 poison damage with a basic Fortitude save. Any creature that has the plant trait, has the wood trait, or has an anathema toward metal, takes the following effects depending on the result of that Fortitude save.\n\n---\n\n**Critical Success** The creature suffers no additional effects.\n\n**Success** The creature takes 1 persistent,poison] damage and is Sickened 1 as long as it takes this persistent damage.\n\n**Failure** As success, except 1d4 persistent,poison] damage and Sickened 2.\n\n**Critical Failure** As success, except 1d8 persistent,poison] damage and Sickened 3.\n\n---\n\n**Heightened (+1)** The initial poison damage increases by 2d6.",
+    "descr": "This spell forces toxic metal to coalesce on the skin or surface of all living creatures in the area, dealing 4d6 poison damage with a basic Fortitude save. Any creature that has the [plant](/trait/plant) trait, has the [wood](/trait/wood) trait, or has an anathema toward metal, takes the following effects depending on the result of that Fortitude save.\n\n---\n\n**Critical Success** The creature suffers no additional effects.\n\n**Success** The creature takes 1 persistent,poison] damage and is [Sickened 1](/condition/sickened-player-core) as long as it takes this persistent damage.\n\n**Failure** As success, except 1d4 persistent,poison] damage and Sickened 2.\n\n**Critical Failure** As success, except 1d8 persistent,poison] damage and Sickened 3.\n\n---\n\n**Heightened (+1)** The initial poison damage increases by 2d6.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -3921,7 +5027,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        },
+        {
+          "label": "poison",
+          "slug": "poison"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3978,7 +5102,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4009,7 +5147,7 @@
     "systemVersion": "1.2.10",
     "name": "Personal Ocean",
     "slug": "personal-ocean-rage-of-elements",
-    "descr": "You surround yourself in a bubble-like shroud of seawater that fills your space completely and moves with you. You can breathe, speak, and perceive normally while within your personal ocean, and you gain a swim Speed equal to your land Speed if you don't have one. The rules of aquatic combat apply to you, attacks targeting you, or attacks passing through your square. For instance, a bludgeoning or slashing melee attack targeting you would take a –2 circumstance penalty, and you can't cast fire spells or use actions with the fire trait.\n\nEach time you move, you extinguish non-magical fires in spaces you pass through and can attempt to counteract magical fires you move through. If you successfully counteract a fire larger than the spaces you moved through, you merely push it out of the spaces along your path. If you fail to counteract a given fire, you can't counteract that fire for the duration of the spell.\n\nYou can Dismiss the spell.",
+    "descr": "You surround yourself in a bubble-like shroud of seawater that fills your space completely and moves with you. You can breathe, speak, and perceive normally while within your personal ocean, and you gain a swim Speed equal to your land Speed if you don't have one. The rules of aquatic combat apply to you, attacks targeting you, or attacks passing through your square. For instance, a bludgeoning or slashing melee attack targeting you would take a –2 circumstance penalty, and you can't cast fire spells or use actions with the [fire](/trait/fire) trait.\n\nEach time you move, you extinguish non-magical fires in spaces you pass through and can attempt to counteract magical fires you move through. If you successfully counteract a fire larger than the spaces you moved through, you merely push it out of the spaces along your path. If you fail to counteract a given fire, you can't counteract that fire for the duration of the spell.\n\nYou can Dismiss the spell.",
     "data": {
       "rank": 6,
       "rarity": "common",
@@ -4033,7 +5171,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4092,7 +5244,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "sonic",
+          "slug": "sonic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4148,7 +5318,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4179,7 +5363,7 @@
     "systemVersion": "1.2.10",
     "name": "Pillar of Water",
     "slug": "pillar-of-water-rage-of-elements",
-    "descr": "You create a large, self-contained cylinder of still, clear fresh water. You choose the radius and height of the pillar, to a maximum radius of 15 feet and a maximum height of 60 feet. Creatures inside the pillar can Swim through the water as normal (Athletics DC 10), or if the spell was cast on solid ground, walk along the bottom (which is difficult terrain). Any creature that exits the pillar falls or lands accordingly.",
+    "descr": "You create a large, self-contained cylinder of still, clear fresh water. You choose the radius and height of the pillar, to a maximum radius of 15 feet and a maximum height of 60 feet. Creatures inside the pillar can [Swim](/action/swim-player-core) through the water as normal (Athletics DC 10), or if the spell was cast on solid ground, walk along the bottom (which is difficult terrain). Any creature that exits the pillar falls or lands accordingly.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -4203,7 +5387,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4234,7 +5432,7 @@
     "systemVersion": "1.2.10",
     "name": "Pollen Pods",
     "slug": "pollen-pods-rage-of-elements",
-    "descr": "**Area** four unoccupied 5-foot squares, each of which is at least 20 feet apart\n\n---\n\nYou cultivate four wooden bulbs, each filled with toxic pollen and sensitive to motion. When a creature enters a space adjacent to a bulb, or when a bulb is touched or damaged (each bulb has AC 5), the bulb blossoms and releases pollen in a area. Creatures in the area take 8d8 poison damage and must attempt a Fortitude save with the following results.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage and becomes Dazzled for 1 round.\n\n**Failure** The creature takes full damage, becomes dazzled for 1 round, and becomes Stupefied 1 for 1 minute.\n\n**Critical Failure** The creature takes double damage, is dazzled for 1 round, and becomes Stupefied 2 for 1 minute.\n\n---\n\n**Heightened (+1)** The damage increases by 2d8.",
+    "descr": "**Area** four unoccupied 5-foot squares, each of which is at least 20 feet apart\n\n---\n\nYou cultivate four wooden bulbs, each filled with toxic pollen and sensitive to motion. When a creature enters a space adjacent to a bulb, or when a bulb is touched or damaged (each bulb has AC 5), the bulb blossoms and releases pollen in a area. Creatures in the area take 8d8 poison damage and must attempt a Fortitude save with the following results.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage and becomes [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Failure** The creature takes full damage, becomes dazzled for 1 round, and becomes [Stupefied 1](/condition/stupefied-player-core) for 1 minute.\n\n**Critical Failure** The creature takes double damage, is dazzled for 1 round, and becomes Stupefied 2 for 1 minute.\n\n---\n\n**Heightened (+1)** The damage increases by 2d8.",
     "data": {
       "rank": 7,
       "rarity": "common",
@@ -4260,7 +5458,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4316,7 +5532,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4347,7 +5581,7 @@
     "systemVersion": "1.2.10",
     "name": "Pressure Zone",
     "slug": "pressure-zone-rage-of-elements",
-    "descr": "Air pressure drops precipitously, causing pain and debilitation in creatures' inner ears and joints. Each living creature in the area of the spell when you cast it or that enters the area during the spell's duration must attempt a Fortitude save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Deafened and Clumsy 1 until the end of its next turn, after which it's temporarily immune for 1 hour.\n\n**Failure** The creature is deafened and Clumsy 2. At the end of each of its turns, it can attempt a new save if it's no longer in the pressure zone. On a success, it ends the effects and is temporarily immune for 1 hour.\n\n**Critical Failure** The creature is deafened and clumsy 2 for the duration of the spell.\n\nA creature Deafened by this spell can attempt to end the condition by popping its ears. It can use a single action to attempt a new Fortitude save, losing the deafened condition from this spell on a success. Some creatures with anatomies that lack inner ears or joints might be immune to these effects, as determined by the GM.",
+    "descr": "Air pressure drops precipitously, causing pain and debilitation in creatures' inner ears and joints. Each living creature in the area of the spell when you cast it or that enters the area during the spell's duration must attempt a Fortitude save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Deafened](/condition/deafened-player-core) and [Clumsy 1](/condition/clumsy-player-core) until the end of its next turn, after which it's temporarily immune for 1 hour.\n\n**Failure** The creature is deafened and Clumsy 2. At the end of each of its turns, it can attempt a new save if it's no longer in the pressure zone. On a success, it ends the effects and is temporarily immune for 1 hour.\n\n**Critical Failure** The creature is deafened and clumsy 2 for the duration of the spell.\n\nA creature Deafened by this spell can attempt to end the condition by popping its ears. It can use a single action to attempt a new Fortitude save, losing the deafened condition from this spell on a success. Some creatures with anatomies that lack inner ears or joints might be immune to these effects, as determined by the GM.",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -4373,7 +5607,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4404,7 +5652,7 @@
     "systemVersion": "1.2.10",
     "name": "Propulsive Breeze",
     "slug": "propulsive-breeze-rage-of-elements",
-    "descr": "**Trigger** An ally in range Strides or Leaps.\n\n---\n\nYou create a current of wind at your ally's back, propelling their movement. When your ally's Stride or Leap ends, the current propels them an additional 15 feet in the same direction as the last 5 feet of their Stride or Leap.",
+    "descr": "**Trigger** An ally in range Strides or Leaps.\n\n---\n\nYou create a current of wind at your ally's back, propelling their movement. When your ally's Stride or [Leap](/action/leap-player-core) ends, the current propels them an additional 15 feet in the same direction as the last 5 feet of their Stride or Leap.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -4428,7 +5676,21 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4483,7 +5745,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4514,7 +5794,7 @@
     "systemVersion": "1.2.10",
     "name": "Rainbow Fumarole",
     "slug": "rainbow-fumarole-rage-of-elements",
-    "descr": "**Area** 20-foot radius, 60-foot-tall cylinder\n\n---\n\nMulti-hued flames break through cracks in the ground, reaching high into the sky and giving off dangerous fumes. When you cast the spell, roll 1d8 on the table below to determine the effects of the fumarole.\n\nAny creature caught inside the area of *rainbow fumarole* when you cast it takes the indicated damage with a basic Reflex save and, on a failure, takes any added effect listed. Creatures must also attempt a saving throw when they move through the spell's area or end their turn in it. Squares within the area of the *rainbow fumarole* are difficult terrain.\n\n| d8 | Color | Damage | Added Effect |\n| --- | --- | --- | --- |\n| 1 | Red | 50 fire plus 2d6 persistent fire | — |\n| 2 | Orange | 30 fire plus 20 bludgeoning | Pushed 10 feet |\n| 4 | Green | 20 fire plus 20 acid | Sickened 2 |\n| 5 | Blue | 30 fire\\|options:area-damage] | Paralyzed for 1 round |\n| 6 | Indigo | 30 fire\\|options:area-damage] | Confused for 1 minute |\n| 7 | Violet | 30 fire\\|options:area-damage] | Slowed 1 for 1 minute |\n| 8 | All | Choose the color for each affected creature and use that color's damage and added effect; if a creature is affected again, you can choose a different color. | — |",
+    "descr": "**Area** 20-foot radius, 60-foot-tall cylinder\n\n---\n\nMulti-hued flames break through cracks in the ground, reaching high into the sky and giving off dangerous fumes. When you cast the spell, roll 1d8 on the table below to determine the effects of the fumarole.\n\nAny creature caught inside the area of *rainbow fumarole* when you cast it takes the indicated damage with a basic Reflex save and, on a failure, takes any added effect listed. Creatures must also attempt a saving throw when they move through the spell's area or end their turn in it. Squares within the area of the *rainbow fumarole* are difficult terrain.\n\n| d8 | Color | Damage | Added Effect |\n| --- | --- | --- | --- |\n| 1 | Red | 50 fire plus 2d6 persistent fire | — |\n| 2 | Orange | 30 fire plus 20 bludgeoning | Pushed 10 feet |\n| 4 | Green | 20 fire plus 20 acid | [Sickened 2](/condition/sickened-player-core) |\n| 5 | Blue | 30 fire\\|options:area-damage] | [Paralyzed](/condition/paralyzed-player-core) for 1 round |\n| 6 | Indigo | 30 fire\\|options:area-damage] | [Confused](/condition/confused-player-core) for 1 minute |\n| 7 | Violet | 30 fire\\|options:area-damage] | [Slowed 1](/condition/slowed-player-core) for 1 minute |\n| 8 | All | Choose the color for each affected creature and use that color's damage and added effect; if a creature is affected again, you can choose a different color. | — |",
     "data": {
       "rank": 8,
       "rarity": "common",
@@ -4542,7 +5822,29 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "light",
+          "slug": "light"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4599,7 +5901,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4652,7 +5968,25 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "move",
+          "slug": "move"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4683,7 +6017,7 @@
     "systemVersion": "1.2.10",
     "name": "Root Reading",
     "slug": "root-reading-rage-of-elements",
-    "descr": "You gain general insights into the immediate vicinity by sending your sense through the root systems of trees and bushes. If there are any unnoticed Medium or larger creatures in the area, you learn of their presence and they're undetected to you. You can immediately attempt to Seek an undetected creature, and you gain a +1 status bonus to this attempt and any of your other attempts to Seek Hidden or undetected creatures until the end of your next turn. You also learn if any such creatures passed through this area in the last hour, although you get only the vaguest sense of direction from the spell. If you begin to Track a creature detected in this way, you gain a +1 status bonus to the initial check.",
+    "descr": "You gain general insights into the immediate vicinity by sending your sense through the root systems of trees and bushes. If there are any unnoticed Medium or larger creatures in the area, you learn of their presence and they're undetected to you. You can immediately attempt to [Seek](/action/seek-player-core) an [undetected](/condition/undetected-player-core) creature, and you gain a +1 status bonus to this attempt and any of your other attempts to Seek [Hidden](/condition/hidden-player-core) or undetected creatures until the end of your next turn. You also learn if any such creatures passed through this area in the last hour, although you get only the vaguest sense of direction from the spell. If you begin to [Track](/action/track-player-core) a creature detected in this way, you gain a +1 status bonus to the initial check.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -4709,7 +6043,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4766,7 +6118,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4822,7 +6192,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4853,7 +6237,7 @@
     "systemVersion": "1.2.10",
     "name": "Rust Cloud",
     "slug": "rust-cloud-rage-of-elements",
-    "descr": "Red-blown flecks of rust jitter in the air, forming a cloud of agitated particles. All creatures within the cloud become Concealed, and all creatures outside the cloud become concealed to creatures within it. The cloud deals 5d10 slashing damage to any creature that starts its turn in the area, with a basic Fortitude save.\n\nMetal that rusts off of a creature adds to the cloud. When a metal creature takes damage from the cloud, the cloud's area increases by 5 feet (to a maximum of a area), and the creature starts to rust, taking (floor(current value/2)-1)d4 persistent,slashing] damage. You can Dismiss the cloud.\n\n---\n\n**Heightened (+2)** The cloud's slashing damage increases by 1d10 and the persistent damage increases by 1d4.",
+    "descr": "Red-blown flecks of rust jitter in the air, forming a cloud of agitated particles. All creatures within the cloud become [Concealed](/condition/concealed-player-core), and all creatures outside the cloud become concealed to creatures within it. The cloud deals 5d10 slashing damage to any creature that starts its turn in the area, with a basic Fortitude save.\n\nMetal that rusts off of a creature adds to the cloud. When a metal creature takes damage from the cloud, the cloud's area increases by 5 feet (to a maximum of a area), and the creature starts to rust, taking (floor(current value/2)-1)d4 persistent,slashing] damage. You can Dismiss the cloud.\n\n---\n\n**Heightened (+2)** The cloud's slashing damage increases by 1d10 and the persistent damage increases by 1d4.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -4879,7 +6263,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4934,7 +6332,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4988,7 +6400,25 @@
         "primal"
       ],
       "traditionsText": "Arcane, Divine, Occult, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "scrying",
+          "slug": "scrying"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5020,7 +6450,7 @@
     "systemVersion": "1.2.10",
     "name": "Shielded Arm",
     "slug": "shielded-arm-rage-of-elements",
-    "descr": "Reinforcing veins of ore run through the target's arm, letting it ward off blows with its bare skin. It can use the Raise a Shield action to instead raise its arm, gaining a +2 circumstance bonus to AC. It can Shield Block with its Raised arm as well; when it does, the target reduces the damage as if it had a shield with Hardness 4 and 15 Hit Points. This shield doesn't have a Broken Threshold, and the spell ends if the shield's Hit Points are expended.\n\nThis spell doesn't modify the target's unarmed attacks and can't be used to make a shield bash Strike. Casting or coming under the effects of this spell also counts as using a metallic item with regards to anathema.\n\n---\n\n**Heightened (+2)** The Hardness increases by 4, and the Hit Points increase by 15.",
+    "descr": "Reinforcing veins of ore run through the target's arm, letting it ward off blows with its bare skin. It can use the [Raise a Shield](/action/raise-a-shield-player-core) action to instead raise its arm, gaining a +2 circumstance bonus to AC. It can Shield Block with its Raised arm as well; when it does, the target reduces the damage as if it had a shield with Hardness 4 and 15 Hit Points. This shield doesn't have a Broken Threshold, and the spell ends if the shield's Hit Points are expended.\n\nThis spell doesn't modify the target's unarmed attacks and can't be used to make a shield bash Strike. Casting or coming under the effects of this spell also counts as using a metallic item with regards to anathema.\n\n---\n\n**Heightened (+2)** The Hardness increases by 4, and the Hit Points increase by 15.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -5045,7 +6475,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5076,7 +6520,7 @@
     "systemVersion": "1.2.10",
     "name": "Shock to the System",
     "slug": "shock-to-the-system-rage-of-elements",
-    "descr": "A dense lightning cloud descends to fill the target's space, then fires a jolt of revitalizing lightning into the target. If the target is a corpse that died within the last round, the creature comes back to life with 0 Hit Points, and any effects and conditions it had when it died, with the exception of dying, and its wounded condition increases by 1. The creature's initiative is right before yours.\n\nRegardless of whether the creature came back to life or was already alive, it regains 8d8 Hit Points, and the bolt wakes it up if it was Unconscious. For the duration of the spell, the target is supercharged. It becomes Quickened and can use the extra action to Stand, Stride, Strike, or Fly (if it has a fly Speed). In addition, it can cast 5th-rank Thunderstrike as an innate spell at will, using your spell DC.\n\nThe cloud that covered the creature remains until the end of the target's next turn. Any creature in the cloud is Hidden, and anything outside the cloud is hidden to any creature inside the cloud.\n\n---\n\n**Heightened (+1)** The healing increases by 2d8, and the thunderstrike rank increases by 1.",
+    "descr": "A dense lightning cloud descends to fill the target's space, then fires a jolt of revitalizing lightning into the target. If the target is a corpse that died within the last round, the creature comes back to life with 0 Hit Points, and any effects and conditions it had when it died, with the exception of dying, and its [wounded](/condition/wounded-player-core) condition increases by 1. The creature's initiative is right before yours.\n\nRegardless of whether the creature came back to life or was already alive, it regains 8d8 Hit Points, and the bolt wakes it up if it was [Unconscious](/condition/unconscious-player-core). For the duration of the spell, the target is supercharged. It becomes [Quickened](/condition/quickened-player-core) and can use the extra action to Stand, Stride, Strike, or Fly (if it has a fly Speed). In addition, it can cast 5th-rank [Thunderstrike](/spell/thunderstrike-player-core) as an innate spell at will, using your spell DC.\n\nThe cloud that covered the creature remains until the end of the target's next turn. Any creature in the cloud is [Hidden](/condition/hidden-player-core), and anything outside the cloud is hidden to any creature inside the cloud.\n\n---\n\n**Heightened (+1)** The healing increases by 2d8, and the thunderstrike rank increases by 1.",
     "data": {
       "rank": 7,
       "rarity": "common",
@@ -5104,7 +6548,33 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "electricity",
+          "slug": "electricity"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "vitality",
+          "slug": "vitality"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5138,7 +6608,7 @@
     "systemVersion": "1.2.10",
     "name": "Signal Skyrocket",
     "slug": "signal-skyrocket-rage-of-elements",
-    "descr": "With a pinch of metallic powder and gunpowder, you call forth blistering red energy that shoots straight upward into the air and explodes, unleashing a crackling boom. Over time, you might even customize your own pattern and color for the skyrocket as you refine the spell.\n\nYou can't change the direction or distance of the rocket-it must go straight up, continuing up to the maximum range if possible. If the rocket explodes at its maximum height, the bright light can be seen up to 10 miles away, and the sound of the explosion can be heard up to 1 mile away under clear weather conditions.\n\nIf the rocket explodes in an enclosed space smaller than the full size of the burst, each creature in the area takes 1d10 sonic damage depending on the result of its Reflex save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is Dazzled for 1 round.\n\n**Critical Failure** The creature takes double damage and is Blinded for 1 round.\n\n---\n\n**Heightened (+1)** The sonic damage increases by 1d10.",
+    "descr": "With a pinch of metallic powder and gunpowder, you call forth blistering red energy that shoots straight upward into the air and explodes, unleashing a crackling boom. Over time, you might even customize your own pattern and color for the skyrocket as you refine the spell.\n\nYou can't change the direction or distance of the rocket-it must go straight up, continuing up to the maximum range if possible. If the rocket explodes at its maximum height, the bright light can be seen up to 10 miles away, and the sound of the explosion can be heard up to 1 mile away under clear weather conditions.\n\nIf the rocket explodes in an enclosed space smaller than the full size of the burst, each creature in the area takes 1d10 sonic damage depending on the result of its Reflex save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Critical Failure** The creature takes double damage and is [Blinded](/condition/blinded-player-core) for 1 round.\n\n---\n\n**Heightened (+1)** The sonic damage increases by 1d10.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -5166,7 +6636,25 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "sonic",
+          "slug": "sonic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5224,7 +6712,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5281,7 +6791,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5337,6 +6861,24 @@
       "castActions": [
         "two",
         "three"
+      ],
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
       ]
     },
     "attributes": {
@@ -5369,7 +6911,7 @@
     "systemVersion": "1.2.10",
     "name": "Stifling Stillness",
     "slug": "stifling-stillness-rage-of-elements",
-    "descr": "You make all air in the target area unnaturally still and unyielding, creating a shimmering haze. The stagnant, heavy air becomes an area of difficult terrain. Creatures in the area that breathe air and aren't holding their breath must spend a single action on their turn straining to breathe the stagnant air; once they do, they still mostly breathe their own exhaled air, taking 3d6 poison damage (basic Fortitude save) and becoming Fatigued.\n\n---\n\n**Heightened (+2)** The damage increases by 3d6.",
+    "descr": "You make all air in the target area unnaturally still and unyielding, creating a shimmering haze. The stagnant, heavy air becomes an area of difficult terrain. Creatures in the area that breathe air and aren't holding their breath must spend a single action on their turn straining to breathe the stagnant air; once they do, they still mostly breathe their own exhaled air, taking 3d6 poison damage (basic Fortitude save) and becoming [Fatigued](/condition/fatigued-player-core).\n\n---\n\n**Heightened (+2)** The damage increases by 3d6.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -5396,7 +6938,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "poison",
+          "slug": "poison"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5428,7 +6988,7 @@
     "systemVersion": "1.2.10",
     "name": "Stone Lance",
     "slug": "stone-lance-rage-of-elements",
-    "descr": "You conjure a jagged lance of stone and then launch it at a foe. Make a spell attack roll against the target. On a hit, you deal 6d6 piercing damage and the lance impales the creature, giving it a –10-foot circumstance penalty to its Speeds unless it Escapes. On a critical hit, if the creature is on the ground, the lance also embeds into the ground and Immobilizes the creature until it Escapes. A creature that Escapes after being impaled takes 3 bleed] damage. When the spell ends, the lance crumbles into dirt, freeing the target if it hasn't Escaped.\n\n---\n\n**Heightened (+1)** Increase the damage by 2d6 and the persistent bleed damage for Escapes by 1.",
+    "descr": "You conjure a jagged lance of stone and then launch it at a foe. Make a spell attack roll against the target. On a hit, you deal 6d6 piercing damage and the lance impales the creature, giving it a –10-foot circumstance penalty to its Speeds unless it Escapes. On a critical hit, if the creature is on the ground, the lance also embeds into the ground and [Immobilizes](/condition/immobilized-player-core) the creature until it Escapes. A creature that Escapes after being impaled takes 3 bleed] damage. When the spell ends, the lance crumbles into dirt, freeing the target if it hasn't Escaped.\n\n---\n\n**Heightened (+1)** Increase the damage by 2d6 and the persistent bleed damage for Escapes by 1.",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -5451,7 +7011,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5483,7 +7065,7 @@
     "systemVersion": "1.2.10",
     "name": "Summon Elemental Herald",
     "slug": "summon-elemental-herald-rage-of-elements",
-    "descr": "Your meditation into the different elemental planes connects you to them deeply, and this connection allows you to summon a herald of an elemental lord. The herald arrives in the form of a natural disaster centralized on your enemies. The herald occupies the space of a Huge creature. When you Cast this Spell, choose one of the elemental heralds below to summon; if you're a divine spellcaster who worships an elemental lord, you must choose the option matching your deity's element. This spell gains the trait (air, earth, fire, metal, water, or wood) matching your choice.\n\n**Air** Speed fly 60 feet; **Arrive**(air) *Supercell Front* The herald of air arrives in the form of a twisting tornado, with high-speed winds slamming into your enemies. Each enemy in a area takes 10d8 bludgeoning] damage with a basic Fortitude save; **Depart** (air) *Twister Downdraft* Each enemy in a area must attempt a Fortitude save. A creature that fails is knocked Prone if it's on the ground or descends 40 feet if it's in the air. A creature that descends takes falling damage if this forced movement brings it to the ground.\n**Earth** Speed 50 feet, burrow 30 feet; **Arrive**(earth) *Tectonic Rise* The herald of earth erupts from the ground, splitting it open in a area. Each enemy in the emanation takes 10d6 slashing] damage from the flying debris with a basic Reflex save. Enemies who critically fail fall 30 feet into the crevasse, taking falling damage (the sides of the fissure require successful Athletics DC 15 checks to Climb); **Depart** (sonic) *Plate Crash* The herald of earth sinks back into the ground, and the sides of the crevasse slam together with a deafening blow, dealing 5d10 sonic] damage with a basic Fortitude save to all enemies in a area. An enemy that critically fails is Deafened for 10 minutes.\n**Fire** Speed 60 feet, fly 40 feet; **Arrive**(fire) *Magma Flow* The herald of fire flows into the area as living magma, dealing 10d6 fire] damage and 3d6 persistent,fire] damage to all enemies in a area with a basic Reflex save; **Depart**(fire) *Flame Vortex* Each enemy in a 60-foot line takes 6d6 fire] damage and 3d6 persistent,fire] damage with a basic Reflex save as the fire herald whips into a fire pillar before vanishing.\n**Metal** Speed 50 feet, fly 50 feet; **Arrive**(metal) *Shard Cloud* The herald of metal arrives as a cloud of metal shards and static electricity, dealing 4d8 slashing] damage and 4d12 electricity] damage to all enemies in a area with a basic Reflex save; **Depart**(metal) *Rust Mist* The shards in the cloud rapidly rust and cling to enemies in the area, dealing 10d6 damage to metal creatures and objects in the area with a basic Reflex save, ignoring Hardness. Unattended objects automatically critically fail this save.\n**Water** Speed 40 feet, swim 60 feet; **Arrive**(cold, water) *Hurricane Formation* The herald of water forms as a miniature hurricane. Each enemy in a area takes 4d10 bludgeoning] damage from the slamming rains and 4d10 cold] damage from the falling hail with a basic Fortitude save; **Depart**(cold, water) *Cataclysmic Deluge* The hurricane collapses into a rushing flood, dealing 6d8 bludgeoning] damage to all enemies in a area with a basic Fortitude save. A creature that fails its save is pushed 20 feet away from the herald (or 40 feet on a critical failure).\n**Wood** Speed 50 feet, burrow 30 feet; **Arrive**(plant, wood) *Advantageous Roots* The herald of wood bursts forth from the ground as a complex root system. Each enemy in a area takes 6d10 piercing] damage with a basic Reflex save as the roots skewer its limbs and body. Each enemy that fails its save takes a –10-foot status penalty to its Speeds until the herald departs; **Depart**(plant, wood) *Retreat to Soil* The roots retreat into the ground, dealing 6d10 piercing] damage to each enemy in a area with a basic Reflex save. Any creature with a penalty to Speeds from its initial save automatically takes 2d6 persistent,bleed] damage. The ground in the emanation is difficult terrain after the roots retreat.",
+    "descr": "Your meditation into the different elemental planes connects you to them deeply, and this connection allows you to summon a herald of an elemental lord. The herald arrives in the form of a natural disaster centralized on your enemies. The herald occupies the space of a Huge creature. When you Cast this Spell, choose one of the elemental heralds below to summon; if you're a divine spellcaster who worships an elemental lord, you must choose the option matching your deity's element. This spell gains the trait ([air](/trait/air), earth, fire, metal, water, or wood) matching your choice.\n\n**Air** Speed fly 60 feet; **Arrive**(air) *Supercell Front* The herald of air arrives in the form of a twisting tornado, with high-speed winds slamming into your enemies. Each enemy in a area takes 10d8 bludgeoning] damage with a basic Fortitude save; **Depart** (air) *Twister Downdraft* Each enemy in a area must attempt a Fortitude save. A creature that fails is knocked [Prone](/condition/prone-player-core) if it's on the ground or descends 40 feet if it's in the air. A creature that descends takes falling damage if this forced movement brings it to the ground.\n**Earth** Speed 50 feet, burrow 30 feet; **Arrive**(earth) *Tectonic Rise* The herald of earth erupts from the ground, splitting it open in a area. Each enemy in the emanation takes 10d6 slashing] damage from the flying debris with a basic Reflex save. Enemies who critically fail fall 30 feet into the crevasse, taking falling damage (the sides of the fissure require successful Athletics DC 15 checks to Climb); **Depart** (sonic) *Plate Crash* The herald of earth sinks back into the ground, and the sides of the crevasse slam together with a deafening blow, dealing 5d10 sonic] damage with a basic Fortitude save to all enemies in a area. An enemy that critically fails is [Deafened](/condition/deafened-player-core) for 10 minutes.\n**Fire** Speed 60 feet, fly 40 feet; **Arrive**(fire) *Magma Flow* The herald of fire flows into the area as living magma, dealing 10d6 fire] damage and 3d6 persistent,fire] damage to all enemies in a area with a basic Reflex save; **Depart**(fire) *Flame Vortex* Each enemy in a 60-foot line takes 6d6 fire] damage and 3d6 persistent,fire] damage with a basic Reflex save as the fire herald whips into a fire pillar before vanishing.\n**Metal** Speed 50 feet, fly 50 feet; **Arrive**(metal) *Shard Cloud* The herald of metal arrives as a cloud of metal shards and static electricity, dealing 4d8 slashing] damage and 4d12 electricity] damage to all enemies in a area with a basic Reflex save; **Depart**(metal) *Rust Mist* The shards in the cloud rapidly rust and cling to enemies in the area, dealing 10d6 damage to metal creatures and objects in the area with a basic Reflex save, ignoring Hardness. Unattended objects automatically critically fail this save.\n**Water** Speed 40 feet, swim 60 feet; **Arrive**(cold, water) *Hurricane Formation* The herald of water forms as a miniature hurricane. Each enemy in a area takes 4d10 bludgeoning] damage from the slamming rains and 4d10 cold] damage from the falling hail with a basic Fortitude save; **Depart**(cold, water) *Cataclysmic Deluge* The hurricane collapses into a rushing flood, dealing 6d8 bludgeoning] damage to all enemies in a area with a basic Fortitude save. A creature that fails its save is pushed 20 feet away from the herald (or 40 feet on a critical failure).\n**Wood** Speed 50 feet, burrow 30 feet; **Arrive**(plant, wood) *Advantageous Roots* The herald of wood bursts forth from the ground as a complex root system. Each enemy in a area takes 6d10 piercing] damage with a basic Reflex save as the roots skewer its limbs and body. Each enemy that fails its save takes a –10-foot status penalty to its Speeds until the herald departs; **Depart**(plant, wood) *Retreat to Soil* The roots retreat into the ground, dealing 6d10 piercing] damage to each enemy in a area with a basic Reflex save. Any creature with a penalty to Speeds from its initial save automatically takes 2d6 persistent,bleed] damage. The ground in the emanation is difficult terrain after the roots retreat.",
     "data": {
       "rank": 8,
       "rarity": "common",
@@ -5508,7 +7090,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incarnate",
+          "slug": "incarnate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5539,7 +7135,7 @@
     "systemVersion": "1.2.10",
     "name": "Take Root",
     "slug": "take-root-rage-of-elements",
-    "descr": "Roots sprout from the flesh of the target and coil across the floor or around objects, reinforcing their stance or grip. The targeted creature gains a +1 circumstance bonus to their Fortitude DC against attempts to Shove them and a +1 circumstance bonus to their Reflex DC against attempts to Disarm or Trip them. This bonus also applies to saving throws against spells or effects that would attempt to remove a held item from their grasp.\n\nSpell Effect: Take Root",
+    "descr": "Roots sprout from the flesh of the target and coil across the floor or around objects, reinforcing their stance or grip. The targeted creature gains a +1 circumstance bonus to their Fortitude DC against attempts to [Shove](/action/shove-player-core) them and a +1 circumstance bonus to their Reflex DC against attempts to [Disarm](/action/disarm-player-core) or [Trip](/action/trip-player-core) them. This bonus also applies to saving throws against spells or effects that would attempt to remove a held item from their grasp.\n\nSpell Effect: Take Root",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -5564,7 +7160,25 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5620,7 +7234,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5672,7 +7300,21 @@
         "primal"
       ],
       "traditionsText": "Arcane, Divine, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5703,7 +7345,7 @@
     "systemVersion": "1.2.10",
     "name": "Timber",
     "slug": "timber-rage-of-elements",
-    "descr": "You create a small dead tree in your space that falls over on anyone in its path, then immediately decomposes. Any creature in the area takes 2d4 bludgeoning damage, with a basic Reflex saving throw. A creature that critically fails its save is knocked for a loop, making it Dazzled until the end of its next turn.\n\n---\n\n**Heightened (+1)** The initial damage increases by 1d4.",
+    "descr": "You create a small dead tree in your space that falls over on anyone in its path, then immediately decomposes. Any creature in the area takes 2d4 bludgeoning damage, with a basic Reflex saving throw. A creature that critically fails its save is knocked for a loop, making it [Dazzled](/condition/dazzled-player-core) until the end of its next turn.\n\n---\n\n**Heightened (+1)** The initial damage increases by 1d4.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -5730,7 +7372,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5789,7 +7449,25 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "subtle",
+          "slug": "subtle"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5846,7 +7524,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5877,7 +7569,7 @@
     "systemVersion": "1.2.10",
     "name": "Updraft",
     "slug": "updraft-rage-of-elements",
-    "descr": "A powerful blast of wind erupts from the ground, launching the target into the air and sending it crashing back down. The collision deals 2d6 bludgeoning damage with a basic Reflex save. On a failure, the target is knocked Prone.\n\n---\n\n**Heightened (+1)** Increase the damage by 2d6.",
+    "descr": "A powerful blast of wind erupts from the ground, launching the target into the air and sending it crashing back down. The collision deals 2d6 bludgeoning damage with a basic Reflex save. On a failure, the target is knocked [Prone](/condition/prone-player-core).\n\n---\n\n**Heightened (+1)** Increase the damage by 2d6.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -5900,7 +7592,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5931,7 +7641,7 @@
     "systemVersion": "1.2.10",
     "name": "Vacuum",
     "slug": "vacuum-rage-of-elements",
-    "descr": "You inhale all air in the surrounding area, stealing the breath of nearby creatures. During *vacuum*'s duration, you take a –1 circumstance penalty against inhaled threats, such as inhaled poisons. If you cast *vacuum* in an environment where you can't breathe, the spell fails and you immediately begin to suffocate.\n\nCreatures in the area must attempt a Fortitude save. A creature that's holding its breath gets a result one degree of success better than it rolled, and creatures that don't need to breathe air are immune to the spell. A creature that later enters the area or ceases holding its breath must attempt a save against the effect. On subsequent rounds, the first time each round you Sustain the spell, you can force each creature in the area to save against the effect.\n\n---\n\n**Success** The creature begins holding its breath.\n\n**Failure** The creature wheezes and gasps as its breath is stolen, becoming Stunned 1. The creature then begins holding its breath but has only half its normal number of rounds of remaining air.\n\n**Critical Failure** The creature has all the air sucked out from its lungs and immediately starts to suffocate.",
+    "descr": "You inhale all air in the surrounding area, stealing the breath of nearby creatures. During *vacuum*'s duration, you take a –1 circumstance penalty against inhaled threats, such as inhaled poisons. If you cast *vacuum* in an environment where you can't breathe, the spell fails and you immediately begin to suffocate.\n\nCreatures in the area must attempt a Fortitude save. A creature that's holding its breath gets a result one degree of success better than it rolled, and creatures that don't need to breathe air are immune to the spell. A creature that later enters the area or ceases holding its breath must attempt a save against the effect. On subsequent rounds, the first time each round you Sustain the spell, you can force each creature in the area to save against the effect.\n\n---\n\n**Success** The creature begins holding its breath.\n\n**Failure** The creature wheezes and gasps as its breath is stolen, becoming [Stunned 1](/condition/stunned-player-core). The creature then begins holding its breath but has only half its normal number of rounds of remaining air.\n\n**Critical Failure** The creature has all the air sucked out from its lungs and immediately starts to suffocate.",
     "data": {
       "rank": 7,
       "rarity": "common",
@@ -5958,7 +7668,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5990,7 +7718,7 @@
     "systemVersion": "1.2.10",
     "name": "Vitrifying Blast",
     "slug": "vitrifying-blast-rage-of-elements",
-    "descr": "You launch a cone of glass shards, which embed in creatures to turn them partially to glass. The shards deal 8d6 piercing damage to creatures in the area, based on each creature's saving throw.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage and gains weakness 3 to sonic and bludgeoning damage for 1 round.\n\n**Failure** The target takes full damage, is Slowed 1, and gains weakness to sonic and bludgeoning damage. The weakness is equal to 3 × the slowed value it has from this spell. The target must attempt a Fortitude save at the end of each of its turns; this ongoing save has the incapacitation trait. On a failed save, the creature's slowed value increases by 1 (or by 2 on a critical failure), to a maximum of Slowed 3. A successful save reduces the creature's slowed value by 1 (or by 2 on a critical success). If the creature ends its turn with a slowed value of 0, the effect ends.\n\n**Critical Failure** As failure, but the target is initially Slowed 2.\n\nSpell Effect: Vitrifying Blast\n\n---\n\n**Heightened (+1)** The damage increases by 1d6.",
+    "descr": "You launch a cone of glass shards, which embed in creatures to turn them partially to glass. The shards deal 8d6 piercing damage to creatures in the area, based on each creature's saving throw.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage and gains weakness 3 to sonic and bludgeoning damage for 1 round.\n\n**Failure** The target takes full damage, is [Slowed 1](/condition/slowed-player-core), and gains weakness to sonic and bludgeoning damage. The weakness is equal to 3 × the slowed value it has from this spell. The target must attempt a Fortitude save at the end of each of its turns; this ongoing save has the [incapacitation](/trait/incapacitation) trait. On a failed save, the creature's slowed value increases by 1 (or by 2 on a critical failure), to a maximum of Slowed 3. A successful save reduces the creature's slowed value by 1 (or by 2 on a critical success). If the creature ends its turn with a slowed value of 0, the effect ends.\n\n**Critical Failure** As failure, but the target is initially Slowed 2.\n\nSpell Effect: Vitrifying Blast\n\n---\n\n**Heightened (+1)** The damage increases by 1d6.",
     "data": {
       "rank": 6,
       "rarity": "common",
@@ -6016,7 +7744,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6073,7 +7815,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6128,7 +7884,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6184,7 +7954,25 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6216,7 +8004,7 @@
     "systemVersion": "1.2.10",
     "name": "Waterproof",
     "slug": "waterproof-rage-of-elements",
-    "descr": "You prevent the target item from taking on water or becoming wet for the duration of the spell. The hydrophobic properties of the spell also grant resistance 10 to acid and a +2 bonus to saves and DCs against damaging effects with the water or acid traits.\n\n---\n\n**Heightened (4th)** The duration is 1 day.\n\n**Heightened (8th)** The duration is unlimited.",
+    "descr": "You prevent the target item from taking on water or becoming wet for the duration of the spell. The hydrophobic properties of the spell also grant resistance 10 to acid and a +2 bonus to saves and DCs against damaging effects with the water or [acid](/trait/acid) traits.\n\n---\n\n**Heightened (4th)** The duration is 1 day.\n\n**Heightened (8th)** The duration is unlimited.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -6240,7 +8028,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6296,7 +8098,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6347,7 +8163,21 @@
         "primal"
       ],
       "traditionsText": "Arcane, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6404,7 +8234,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6459,7 +8303,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6512,7 +8374,21 @@
         "primal"
       ],
       "traditionsText": "Arcane, Divine, Occult, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6543,7 +8419,7 @@
     "systemVersion": "1.2.10",
     "name": "Wooden Double",
     "slug": "wooden-double-rage-of-elements",
-    "descr": "**Trigger** You're critically hit by a damage-dealing effect or a Strike.\n\n---\n\nA wooden double appears out of nowhere and takes the blow in your place. Take a Step action. A wooden block of your size and roughly shaped like you appears in the space you left and absorbs the hit. This block has Hardness 5 and 20 Hit Points. If the wooden block is destroyed, you take any excess damage that the block didn't absorb. After taking the blow, the wooden block collapses into a pile of splinters and dust.\n\n---\n\n**Heightened (+1)** The block's Hit Points increase by 10.",
+    "descr": "**Trigger** You're critically hit by a damage-dealing effect or a Strike.\n\n---\n\nA wooden double appears out of nowhere and takes the blow in your place. Take a [Step](/action/step-player-core) action. A wooden block of your size and roughly shaped like you appears in the space you left and absorbs the hit. This block has Hardness 5 and 20 Hit Points. If the wooden block is destroyed, you take any excess damage that the block didn't absorb. After taking the blow, the wooden block collapses into a pile of splinters and dust.\n\n---\n\n**Heightened (+1)** The block's Hit Points increase by 10.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -6567,7 +8443,17 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6597,7 +8483,7 @@
     "systemVersion": "1.2.10",
     "name": "Wooden Fists",
     "slug": "wooden-fists-rage-of-elements",
-    "descr": "Your arms and hands swell with new growth, transforming into tree trunks twice as big as their current size. Your fists deal 1d6 bludgeoning damage, lose the nonlethal trait, and have reach.\n\n---\n\n**Heightened (3rd)** Your fists gain the magical trait and become a *striking weapon*, increasing the damage your fists deal to 2d6 bludgeoning.\n\n**Heightened (7th)** Your fists gain the magical trait and become a *greater striking weapon*, increasing the damage your fists deal to 3d6 bludgeoning. The duration is 10 minutes.\n\n**Heightened (9th)** Your fists gain the magical trait and become a *major striking weapon*, increasing the damage your fists deal to 4d6 bludgeoning. The duration is 1 hour.\n\nSpell Effect: Wooden Fists",
+    "descr": "Your arms and hands swell with new growth, transforming into tree trunks twice as big as their current size. Your fists deal 1d6 bludgeoning damage, lose the [nonlethal](/trait/nonlethal) trait, and have reach.\n\n---\n\n**Heightened (3rd)** Your fists gain the [magical](/trait/magical) trait and become a *[striking](/item/striking-gm-core) weapon*, increasing the damage your fists deal to 2d6 bludgeoning.\n\n**Heightened (7th)** Your fists gain the magical trait and become a *greater striking weapon*, increasing the damage your fists deal to 3d6 bludgeoning. The duration is 10 minutes.\n\n**Heightened (9th)** Your fists gain the magical trait and become a *major striking weapon*, increasing the damage your fists deal to 4d6 bludgeoning. The duration is 1 hour.\n\nSpell Effect: Wooden Fists",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -6622,7 +8508,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "morph",
+          "slug": "morph"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6654,7 +8558,7 @@
     "systemVersion": "1.2.10",
     "name": "Ymeri's Mark",
     "slug": "ymeri-s-mark-rage-of-elements",
-    "descr": "You place the fiery mark of the Queen of the Inferno on the target, burning into the creature's very essence. The mark gives off a heat that only you can sense; as long as you're on the same plane as the target, you can sense the direction it's in. The target is Fatigued and can't reduce the value of this condition normally.\n\nYou can detonate the mark at any point during its duration by Dismissing the spell. The rune explodes in a area centered on the target that deals 5d6 fire damage with a basic Reflex save. You choose whether the mark's target is included in the explosion.\n\nWhen you cast the spell, the target attempts a Fortitude save to determine how long the mark lasts. If the spell's duration elapses, the rune doesn't detonate.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The duration is 1 minute.\n\n**Failure** The duration is 1 week.\n\n**Critical Failure** The duration is unlimited.\n\n---\n\n**Heightened (+1)** The damage increases by 2d6.",
+    "descr": "You place the fiery mark of the Queen of the Inferno on the target, burning into the creature's very essence. The mark gives off a heat that only you can sense; as long as you're on the same plane as the target, you can sense the direction it's in. The target is [Fatigued](/condition/fatigued-player-core) and can't reduce the value of this condition normally.\n\nYou can detonate the mark at any point during its duration by Dismissing the spell. The rune explodes in a area centered on the target that deals 5d6 fire damage with a basic Reflex save. You choose whether the mark's target is included in the explosion.\n\nWhen you cast the spell, the target attempts a Fortitude save to determine how long the mark lasts. If the spell's duration elapses, the rune doesn't detonate.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The duration is 1 minute.\n\n**Failure** The duration is 1 week.\n\n**Critical Failure** The duration is unlimited.\n\n---\n\n**Heightened (+1)** The damage increases by 2d6.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -6682,7 +8586,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "curse",
+          "slug": "curse"
+        },
+        {
+          "label": "detection",
+          "slug": "detection"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6738,7 +8664,21 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

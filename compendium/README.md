@@ -43,13 +43,20 @@ The repository does not contain private source files. Given a separately
 prepared structured staging directory, rebuild and validate with:
 
 ```sh
+python3 tools/sync_aon_core_traits.py --staging /path/to/private/structured-modules --reference /path/to/aon-remaster.json
+python3 tools/refresh_aon_rule_descriptions.py --staging /path/to/private/structured-modules --reference /path/to/aon-remaster.json
+python3 tools/link_compendium_references.py --staging /path/to/private/structured-modules --foundry /path/to/foundry-pf2e/packs/pf2e --aon-reference /path/to/aon-remaster.json --write
 python3 tools/build_public_orc_compendium.py --source /path/to/private/structured-modules
-python3 tools/validate_public_orc_compendium.py
 python3 tools/build_public_ogl_compendium.py --source /path/to/private/structured-modules/rage-of-elements
+python3 tools/validate_public_orc_compendium.py
 python3 tools/validate_public_ogl_compendium.py
 ```
 
 The builder uses a fail-closed source allowlist. A new book is not included
 until its ORC status, required attribution, and record types are reviewed.
 The OGL builder is deliberately restricted to the separately reviewed
-*Rage of Elements* module.
+*Rage of Elements* module. The cross-link pass is read-only unless `--write`
+is supplied. It restores source-authored Foundry/AoN references, adds only
+context-disambiguated fallback links, and never processes Operations Center
+pages. Validation rejects missing destinations and repeated links to the same
+entry.

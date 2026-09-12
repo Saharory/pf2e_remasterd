@@ -13,7 +13,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -40,7 +41,7 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Experimental) Clobber",
     "slug": "cryptid-experimental-clobber-dark-archive",
-    "descr": "The experimental cryptid Strikes a creature. On a hit, the creature is pushed 5 feet (10 feet on a critical hit) and knocked Prone. If this causes the creature to collide with a solid object, the creature takes an additional 1d10 untyped damage. If the experimental cryptid is at least 5th level, this Strike deals one additional weapon damage die of damage, and if the experimental cryptid is at least 15th level, this Strike deals two additional weapon damage dice of damage.",
+    "descr": "The experimental cryptid Strikes a creature. On a hit, the creature is pushed 5 feet (10 feet on a critical hit) and knocked [Prone](/condition/prone-player-core). If this causes the creature to collide with a solid object, the creature takes an additional 1d10 untyped damage. If the experimental cryptid is at least 5th level, this Strike deals one additional weapon damage die of damage, and if the experimental cryptid is at least 15th level, this Strike deals two additional weapon damage dice of damage.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -48,7 +49,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -83,7 +85,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -117,7 +120,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -152,7 +156,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -186,7 +191,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -213,14 +219,15 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Mutant) Marrowlance",
     "slug": "cryptid-mutant-marrowlance-dark-archive",
-    "descr": "The mutant cryptid can make wicked spears of bone erupt from its body. The creature can make marrowlance ranged unarmed attacks. Use the highest attack modifier from the creature's highest ranged Strike, as well as the damage from that Strike. If it has no ranged attacks, use moderate accuracy and low damage for the creature's level. Marrowlance unarmed attacks have a range of 60 feet and the versatile S trait.",
+    "descr": "The mutant cryptid can make wicked spears of bone erupt from its body. The creature can make marrowlance ranged unarmed attacks. Use the highest attack modifier from the creature's highest ranged Strike, as well as the damage from that Strike. If it has no ranged attacks, use moderate accuracy and low damage for the creature's level. Marrowlance unarmed attacks have a range of 60 feet and the [versatile S](/trait/versatile) trait.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -256,7 +263,13 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -284,14 +297,15 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Mutant) Unusual Bane",
     "slug": "cryptid-mutant-unusual-bane-dark-archive",
-    "descr": "The mutant cryptid gains an unusual weakness to a specific bane—such as aversion to saffron or to the sound of children's laughter. The first time each round the creature comes within 15 feet of its bane or interacts with its bane (such as stepping over a line of saffron or hearing children laugh) it takes an amount of mental damage equal to its level and must attempt a Will save with a hard DC for its level. On a failure, it's Stunned 1 (Stunned 3 on a critical failure).",
+    "descr": "The mutant cryptid gains an unusual weakness to a specific bane—such as aversion to saffron or to the sound of children's laughter. The first time each round the creature comes within 15 feet of its bane or interacts with its bane (such as stepping over a line of saffron or hearing children laugh) it takes an amount of mental damage equal to its level and must attempt a Will save with a hard DC for its level. On a failure, it's [Stunned 1](/condition/stunned-player-core) (Stunned 3 on a critical failure).",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -328,7 +342,13 @@
       "frequency": "once per week",
       "requirements": "",
       "trigger": "The primeval cryptid would be reduced to 0 Hit Points",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "healing",
+          "slug": "healing"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -356,7 +376,7 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Primeval) Shockwave",
     "slug": "cryptid-primeval-shockwave-dark-archive",
-    "descr": "The primeval cryptid creates a shockwave by stomping on the ground, beating its tail on the ground, or making another similarly violent, percussive slam. Creatures on the ground within 30 feet of the primeval cryptid take 1d6 bludgeoning] damage per level of the primeval cryptid (minimum 2d6 damage), with a basic Reflex. On a critical failure, a creature is also knocked Prone.",
+    "descr": "The primeval cryptid creates a shockwave by stomping on the ground, beating its tail on the ground, or making another similarly violent, percussive slam. Creatures on the ground within 30 feet of the primeval cryptid take 1d6 bludgeoning] damage per level of the primeval cryptid (minimum 2d6 damage), with a basic Reflex. On a critical failure, a creature is also knocked [Prone](/condition/prone-player-core).",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -364,7 +384,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -391,7 +412,7 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Primeval) Stench",
     "slug": "cryptid-primeval-stench-dark-archive",
-    "descr": "30 feet. A creature entering the emanation or starting its turn in the emanation must succeed at a Fortitude save against the standard DC for the creature's level or become Sickened 1 (plus Slowed 1 as long as it's sickened on a critical failure). While within the emanation, affected creatures take a -2 circumstance penalty to saves against diseases and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.\n\nEffect: Stench",
+    "descr": "30 feet. A creature entering the emanation or starting its turn in the emanation must succeed at a Fortitude save against the standard DC for the creature's level or become [Sickened 1](/condition/sickened-player-core) (plus [Slowed 1](/condition/slowed-player-core) as long as it's sickened on a critical failure). While within the emanation, affected creatures take a -2 circumstance penalty to saves against diseases and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute.\n\nEffect: Stench",
     "data": {
       "rarity": "common",
       "traits": [
@@ -401,7 +422,17 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "olfactory",
+          "slug": "olfactory"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -437,7 +468,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -464,14 +496,15 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Rumored) Creature Obscura",
     "slug": "cryptid-rumored-creature-obscura-dark-archive",
-    "descr": "The cryptid appears in so many urban legends, it can be identified using Society or a Lore skill connected to a nearby settlement, in addition to the normal skills. However, much of the information known about it is dubious. The DC to identify a rumored cryptid is incredibly hard (rather than very hard for most rare creatures), but all failures to identify a rumored cryptid gain the effects of the Dubious Knowledge skill feat.",
+    "descr": "The cryptid appears in so many urban legends, it can be identified using Society or a Lore skill connected to a nearby settlement, in addition to the normal skills. However, much of the information known about it is dubious. The DC to identify a rumored cryptid is incredibly hard (rather than very hard for most rare creatures), but all failures to identify a rumored cryptid gain the effects of the [Dubious Knowledge](/feat/dubious-knowledge-player-core) skill feat.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -498,7 +531,7 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Rumored) Howl",
     "slug": "cryptid-rumored-howl-dark-archive",
-    "descr": "The rumored cryptid calls out with a wretched sound no living creature should make. Each creature in a area must attempt a Will save. A creature that fails is Frightened 1 (or Frightened 2 on a critical failure). A creature that succeeds is temporarily immune for 1 minute. The DC is the high DC for a creature of the rumored cryptid's level.",
+    "descr": "The rumored cryptid calls out with a wretched sound no living creature should make. Each creature in a area must attempt a Will save. A creature that fails is [Frightened 1](/condition/frightened-player-core) (or Frightened 2 on a critical failure). A creature that succeeds is temporarily immune for 1 minute. The DC is the high DC for a creature of the rumored cryptid's level.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -511,7 +544,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "fear",
+          "slug": "fear"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -549,7 +600,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -576,14 +628,15 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Rumored) Obscura Vulnerability",
     "slug": "cryptid-rumored-obscura-vulnerability-dark-archive",
-    "descr": "The cryptid is weakened by those who seek its truth. Whenever a creature succeeds at a Recall Knowledge check to identify the rumored cryptid, the rumored cryptid becomes Drained 1 (or Drained 2 if the Recall Knowledge check was a critical success).",
+    "descr": "The cryptid is weakened by those who seek its truth. Whenever a creature succeeds at a Recall Knowledge check to identify the rumored cryptid, the rumored cryptid becomes [Drained 1](/condition/drained-player-core) (or Drained 2 if the Recall Knowledge check was a critical success).",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -617,7 +670,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -644,7 +698,7 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Rumored) Stalk",
     "slug": "cryptid-rumored-stalk-dark-archive",
-    "descr": "**Requirements** The rumored cryptid is Undetected\n\n---\n\n**Effect** The rumored cryptid swiftly stalks prey from hiding. It Strides, then Strikes.",
+    "descr": "**Requirements** The rumored cryptid is [Undetected](/condition/undetected-player-core)\n\n---\n\n**Effect** The rumored cryptid swiftly stalks prey from hiding. It Strides, then Strikes.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -652,7 +706,8 @@
       "frequency": "",
       "requirements": "The rumored cryptid is Undetected",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -679,7 +734,7 @@
     "systemVersion": "1.2.10",
     "name": "(Cryptid, Rumored) Vanishing Escape",
     "slug": "cryptid-rumored-vanishing-escape-dark-archive",
-    "descr": "The rumored cryptid breaks away and fades into the background. It Strides, then Hides.",
+    "descr": "The rumored cryptid breaks away and fades into the background. It Strides, then [Hides](/action/hide-player-core).",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -687,7 +742,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -721,7 +777,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -755,7 +812,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -790,7 +848,8 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "The secret society member is reduced to 0 Hit Points",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -817,7 +876,7 @@
     "systemVersion": "1.2.10",
     "name": "(Secret Society) Prepared Diversion",
     "slug": "secret-society-prepared-diversion-dark-archive",
-    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** The secret society member has fellow members in all sorts of places, ready to make a distraction to help them duck from sight or make a quick attack against their foe. The secret society member either Creates a Diversion or Feints. If they Create A Diversion, it doesn't gain either the auditory, linguistic, or manipulate trait (since someone else has provided the diversion), and onlookers who have already been diverted by the secret society member don't receive a +4 circumstance bonus against the attempt. If they Feint, they don't need to be in melee reach of their target, and the benefit applies to both melee and ranged attacks against their target.",
+    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** The secret society member has fellow members in all sorts of places, ready to make a distraction to help them duck from sight or make a quick attack against their foe. The secret society member either Creates a Diversion or Feints. If they Create A Diversion, it doesn't gain either the auditory, linguistic, or [manipulate](/trait/manipulate) trait (since someone else has provided the diversion), and onlookers who have already been diverted by the secret society member don't receive a +4 circumstance bonus against the attempt. If they Feint, they don't need to be in melee reach of their target, and the benefit applies to both melee and ranged attacks against their target.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -825,7 +884,8 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -860,7 +920,8 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -894,7 +955,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -921,14 +983,15 @@
     "systemVersion": "1.2.10",
     "name": "(Secret Society) Skill Savvy",
     "slug": "secret-society-skill-savvy-dark-archive",
-    "descr": "The secret society member has a few tricks most others do not. They gain two of the following skill feats: Charming Liar, Courtly Graces, Glean Contents, Hobnobber, Lengthy Diversion, Lie To Me, Quick Coercion, or Streetwise. If they are at least 2nd level, they can also choose from among the following: Discreet Inquiry, Glad Hand, or Lasting Coercion. If they are at least 7th level, they can also choose Shameless Request or Slippery Secrets.",
+    "descr": "The secret society member has a few tricks most others do not. They gain two of the following skill feats: [Charming Liar](/feat/charming-liar-player-core), [Courtly Graces](/feat/courtly-graces-player-core), [Glean Contents](/feat/glean-contents-player-core-2), [Hobnobber](/feat/hobnobber-player-core), [Lengthy Diversion](/feat/lengthy-diversion-player-core), [Lie To Me](/feat/lie-to-me-player-core), [Quick Coercion](/feat/quick-coercion-player-core), or [Streetwise](/feat/streetwise-player-core). If they are at least 2nd level, they can also choose from among the following: [Discreet Inquiry](/feat/discreet-inquiry-player-core-2), [Glad Hand](/feat/glad-hand-player-core), or [Lasting Coercion](/feat/lasting-coercion-player-core). If they are at least 7th level, they can also choose [Shameless Request](/feat/shameless-request-player-core) or [Slippery Secrets](/feat/slippery-secrets-player-core).",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -955,14 +1018,15 @@
     "systemVersion": "1.2.10",
     "name": "(Secret Society) Tag Team",
     "slug": "secret-society-tag-team-dark-archive",
-    "descr": "A secret society member works best with other members of the same society (whether they have the secret society member adjustment and this ability or not). Any creature is Off Guard against a secret society member's melee attacks due to flanking as long as the enemy is within both the secret society member's reach and the reach of one allied creature that is a member of the same secret society. Against a creature within the reach of two or more allied creatures that are members of the same secret society, the secret society member's Strikes deal an additional 1d6 precision damage.",
+    "descr": "A secret society member works best with other members of the same society (whether they have the secret society member adjustment and this ability or not). Any creature is [Off Guard](/condition/off-guard-player-core) against a secret society member's melee attacks due to flanking as long as the enemy is within both the secret society member's reach and the reach of one allied creature that is a member of the same secret society. Against a creature within the reach of two or more allied creatures that are members of the same secret society, the secret society member's Strikes deal an additional 1d6 precision damage.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1000,7 +1064,17 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1041,7 +1115,21 @@
       "frequency": "",
       "requirements": "You're holding your amulet implement and are benefiting from Exploit Vulnerability",
       "trigger": "The target of your Exploit Vulnerability would damage you or an ally within 15 feet of you",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "thaumaturge",
+          "slug": "thaumaturge"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1081,7 +1169,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "You've spent at least 1 hour studying a creature whose role you intend to copy and have done so within the last 3 days. This could include meeting and learning from someone in that role, tailing and spying on someone, using magic to observe them at work, or some other method, as long as you have a visual source of information",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1122,7 +1220,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "psyche",
+          "slug": "psyche"
+        },
+        {
+          "label": "psychic",
+          "slug": "psychic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1152,7 +1264,7 @@
     "systemVersion": "1.2.10",
     "name": "Daydream Trance",
     "slug": "daydream-trance-dark-archive",
-    "descr": "You fall into a half-sleeping trance. This lasts for 1 minute or until you fall Unconscious, whichever comes first. You can attempt to Dismiss your trance, but your attempt fails unless you succeed at a Will saving throw against your own class DC or spell DC, whichever is higher. Once your trance ends, you can't enter a Daydream Trance again for 1 minute. While you're in your trance, you gain the following effects:\n\nYou gain a +1 status bonus to Will saves. This bonus increases to +2 against mental effects. If you're legendary in Occultism, the bonus against mental effects increases to +3.\n\nYou take a –1 penalty to Perception checks and initiative rolls.",
+    "descr": "You fall into a half-sleeping trance. This lasts for 1 minute or until you fall [Unconscious](/condition/unconscious-player-core), whichever comes first. You can attempt to Dismiss your trance, but your attempt fails unless you succeed at a Will saving throw against your own class DC or spell DC, whichever is higher. Once your trance ends, you can't enter a Daydream Trance again for 1 minute. While you're in your trance, you gain the following effects:\n\nYou gain a +1 status bonus to Will saves. This bonus increases to +2 against mental effects. If you're legendary in Occultism, the bonus against mental effects increases to +3.\n\nYou take a –1 penalty to Perception checks and initiative rolls.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1163,7 +1275,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1200,7 +1322,8 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1227,7 +1350,7 @@
     "systemVersion": "1.2.10",
     "name": "Drink from the Chalice",
     "slug": "drink-from-the-chalice-dark-archive",
-    "descr": "**Frequency** once per round\n\n**Requirements** You are holding your chalice implement.\n\n---\n\nYou drink from the liquid that slowly collects in your chalice or administer it to an adjacent ally. The drinker chooses whether to take a small sip or to drain the contents.\n\n**Sip** A sip grants the drinker an amount of temporary Hit Points equal to your level (minimum 3) that last until the end of your next turn.\n\nEffect: Drink From The Chalice\n\n**Drain** (healing, vitality) Drinking deep instead heals the drinker 3 Hit Points for each level you have. After the chalice is drained, it's left with only its slowly collecting dregs; the chalice can't be drained again, though it can still be sipped from. If 10 minutes pass without anyone drinking from the chalice, it refills itself and can be drained again. If the drinker has void healing, it can still heal in this way, and the effect has the void trait instead of healing and vitality.",
+    "descr": "**Frequency** once per round\n\n**Requirements** You are holding your chalice implement.\n\n---\n\nYou drink from the liquid that slowly collects in your chalice or administer it to an adjacent ally. The drinker chooses whether to take a small sip or to drain the contents.\n\n**Sip** A sip grants the drinker an amount of temporary Hit Points equal to your level (minimum 3) that last until the end of your next turn.\n\nEffect: Drink From The Chalice\n\n**Drain** (healing, vitality) Drinking deep instead heals the drinker 3 Hit Points for each level you have. After the chalice is drained, it's left with only its slowly collecting dregs; the chalice can't be drained again, though it can still be sipped from. If 10 minutes pass without anyone drinking from the chalice, it refills itself and can be drained again. If the drinker has void healing, it can still heal in this way, and the effect has the [void](/trait/void) trait instead of healing and vitality.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1239,7 +1362,21 @@
       "frequency": "once per round",
       "requirements": "You are holding your chalice implement",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "thaumaturge",
+          "slug": "thaumaturge"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1279,7 +1416,13 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "You would take mental damage or be affected by a mental effect",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1307,7 +1450,7 @@
     "systemVersion": "1.2.10",
     "name": "Entity's Resurgence",
     "slug": "entity-s-resurgence-dark-archive",
-    "descr": "**Trigger** You would be reduced to 0 Hit Points but not immediately killed\n\n---\n\n**Effect** Instead of letting you fall Unconscious, your entity takes control. You remain at 1 Hit Point and gain temporary Hit Points equal to your level + your key attribute modifier that last for 1 minute. However, the entity is in control for 1 minute or until you fall unconscious, whichever comes first.\n\nWhile the entity is in control, you gain a +1 status bonus to attack rolls and damage rolls, and the GM usually controls your character, roleplaying the entity. The GM might decide to have you roleplay the entity instead, but they retain final say over any decisions you make. No matter the entity's nature, the entity is sure to wreak vengeance upon the foe who jeopardized the life of their vessel—even a malicious entity won't change allegiances or ignore danger except in the most extreme circumstances.",
+    "descr": "**Trigger** You would be reduced to 0 Hit Points but not immediately killed\n\n---\n\n**Effect** Instead of letting you fall [Unconscious](/condition/unconscious-player-core), your entity takes control. You remain at 1 Hit Point and gain temporary Hit Points equal to your level + your key attribute modifier that last for 1 minute. However, the entity is in control for 1 minute or until you fall unconscious, whichever comes first.\n\nWhile the entity is in control, you gain a +1 status bonus to attack rolls and damage rolls, and the GM usually controls your character, roleplaying the entity. The GM might decide to have you roleplay the entity instead, but they retain final say over any decisions you make. No matter the entity's nature, the entity is sure to wreak vengeance upon the foe who jeopardized the life of their vessel—even a malicious entity won't change allegiances or ignore danger except in the most extreme circumstances.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1315,7 +1458,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You would be reduced to 0 Hit Points but not immediately killed",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1353,7 +1497,17 @@
       "frequency": "",
       "requirements": "You're in a curse maelstrom state",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "curse",
+          "slug": "curse"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1382,7 +1536,7 @@
     "systemVersion": "1.2.10",
     "name": "Exploit Vulnerability",
     "slug": "exploit-vulnerability-dark-archive",
-    "descr": "**Frequency** once per round\n\n**Requirements** You are holding your implement.\n\n---\n\nYou scour your experiences and learning to identify something that might repel your foe. You retrieve an object from your esoterica with the appropriate supernatural qualities, then use your implement to stoke the remnants of its power into a blaze. Select a creature you can see and attempt an Esoteric Lore check against a standard DC for its level, as you retrieve the right object from your esoterica and use your implement to empower it. You gain the following effects until you Exploit Vulnerabilities again.\n\n---\n\n**Critical Success** You remember the creature's weaknesses, and as you empower your esoterica, you have a flash of insight that grants even more knowledge about the creature. You learn all of the creature's resistances, weaknesses, and immunities, including the amounts of the resistances and weaknesses and any unusual weaknesses or vulnerabilities, such as an oni's bean panic. You can exploit either the creature's mortal weakness or personal antithesis (see below). Your unarmed and weapon Strikes against the creature also become magical if they weren't already.\n\n**Success** You recall an important fact about the creature, learning its highest weakness (or one of its highest weaknesses, if it has multiple with the same value) but not its other weaknesses, resistances, or immunities. You can exploit either the creature's mortal weakness or personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.\n\n**Failure** Failing to recall a salient weakness about the creature, you instead attempt to exploit a more personal vulnerability. You can exploit only the creature's personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.\n\n**Critical Failure** You couldn't remember the right object to use and become distracted while you rummage through your esoterica. You become Off Guard until the start of your next turn.",
+    "descr": "**Frequency** once per round\n\n**Requirements** You are holding your implement.\n\n---\n\nYou scour your experiences and learning to identify something that might repel your foe. You retrieve an object from your esoterica with the appropriate supernatural qualities, then use your implement to stoke the remnants of its power into a blaze. Select a creature you can see and attempt an Esoteric Lore check against a standard DC for its level, as you retrieve the right object from your esoterica and use your implement to empower it. You gain the following effects until you Exploit Vulnerabilities again.\n\n---\n\n**Critical Success** You remember the creature's weaknesses, and as you empower your esoterica, you have a flash of insight that grants even more knowledge about the creature. You learn all of the creature's resistances, weaknesses, and immunities, including the amounts of the resistances and weaknesses and any unusual weaknesses or vulnerabilities, such as an oni's bean panic. You can exploit either the creature's mortal weakness or personal antithesis (see below). Your unarmed and weapon Strikes against the creature also become magical if they weren't already.\n\n**Success** You recall an important fact about the creature, learning its highest weakness (or one of its highest weaknesses, if it has multiple with the same value) but not its other weaknesses, resistances, or immunities. You can exploit either the creature's mortal weakness or personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.\n\n**Failure** Failing to recall a salient weakness about the creature, you instead attempt to exploit a more personal vulnerability. You can exploit only the creature's personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.\n\n**Critical Failure** You couldn't remember the right object to use and become distracted while you rummage through your esoterica. You become [Off Guard](/condition/off-guard-player-core) until the start of your next turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1394,7 +1548,21 @@
       "frequency": "once per round",
       "requirements": "You are holding your implement",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "esoterica",
+          "slug": "esoterica"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "thaumaturge",
+          "slug": "thaumaturge"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1424,7 +1592,7 @@
     "systemVersion": "1.2.10",
     "name": "Fade Into Daydreams",
     "slug": "fade-into-daydreams-dark-archive",
-    "descr": "Your flights of imagination spill into the real world, causing you to become indistinct, hazy, or cloaked in figments. You become Concealed until the start of your next turn. This concealment can't be used to Hide, as normal for concealing effects that leave your location obvious.",
+    "descr": "Your flights of imagination spill into the real world, causing you to become indistinct, hazy, or cloaked in figments. You become [Concealed](/condition/concealed-player-core) until the start of your next turn. This concealment can't be used to [Hide](/action/hide-player-core), as normal for concealing effects that leave your location obvious.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1436,7 +1604,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "psyche",
+          "slug": "psyche"
+        },
+        {
+          "label": "psychic",
+          "slug": "psychic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1479,7 +1661,25 @@
       "frequency": "",
       "requirements": "You are holding your wand implement",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "thaumaturge",
+          "slug": "thaumaturge"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1521,7 +1721,17 @@
       "frequency": "once per round",
       "requirements": "You are holding your implement",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "esoterica",
+          "slug": "esoterica"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1561,7 +1771,17 @@
       "frequency": "",
       "requirements": "You're holding your weapon implement and are benefiting from Exploit Vulnerability against a creature. The creature must be within your reach if you're wielding a melee weapon, or within 10 feet if you're wielding a ranged weapon",
       "trigger": "The target of your Exploit Vulnerability uses a concentrate, manipulate, or move action, or leaves a square during a move action it's using",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "thaumaturge",
+          "slug": "thaumaturge"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1590,7 +1810,7 @@
     "systemVersion": "1.2.10",
     "name": "Intensify Vulnerability",
     "slug": "intensify-vulnerability-dark-archive",
-    "descr": "**Prerequisites** Exploit Vulnerability\n\n**Frequency** once per round\n\n**Requirements** You're benefiting from Exploit Vulnerability, you can see the subject, and you haven't used Exploit Vulnerability this round.\n\n---\n\nYou present your implement and esoterica again, intensifying their effects on the target in a way unique to your implement. You gain the intensified vulnerability benefit from one of the implements you're holding, which lasts until the beginning of your next turn.",
+    "descr": "**Prerequisites** [Exploit Vulnerability](/action/exploit-vulnerability-dark-archive)\n\n**Frequency** once per round\n\n**Requirements** You're benefiting from Exploit Vulnerability, you can see the subject, and you haven't used Exploit Vulnerability this round.\n\n---\n\nYou present your implement and esoterica again, intensifying their effects on the target in a way unique to your implement. You gain the intensified vulnerability benefit from one of the implements you're holding, which lasts until the beginning of your next turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1603,7 +1823,25 @@
       "frequency": "once per round",
       "requirements": "You're benefiting from Exploit Vulnerability, you can see the subject, and you haven't used Exploit Vulnerability this round",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "esoterica",
+          "slug": "esoterica"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "thaumaturge",
+          "slug": "thaumaturge"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1634,7 +1872,7 @@
     "systemVersion": "1.2.10",
     "name": "Mirror's Reflection",
     "slug": "mirror-s-reflection-dark-archive",
-    "descr": "**Requirements** You're holding your mirror implement.\n\n---\n\nYou reflect an illusory image of yourself into another unoccupied space within 15 feet that you can see. You are treated as being in both spaces until the start of your next turn. For example, you can attack, Seek, and provide flanking—even with yourself. You occupy both spaces. Your mirror self mimics your actions exactly, but any effects you generate come from only one of your positions; you decide which each time you act. For example, if you made a melee Strike against a creature within reach of the reflection, you'd mime the actions of the Strike, but only the reflection would actually make the Strike. Anything that targets or would affect your reflection affects you and uses your statistics. Something that would target or affect both of you affects you only once. For example, a fireball that included both of you in its area would require only one save from you and damage you no more than once. When you move, you choose which square to move from, but the mirror effect ends (see below).\n\nSome events force you to determine which image is the real you, and then end the effect and cause your mirror self to disappear; this happens automatically at the start of your next turn. It also happens if you choose to move out of your space. Other benefits of this implement add more events that can end the reflection. The effect also ends when you fall Unconscious, at which point you decide which version is truly you.",
+    "descr": "**Requirements** You're holding your mirror implement.\n\n---\n\nYou reflect an illusory image of yourself into another unoccupied space within 15 feet that you can see. You are treated as being in both spaces until the start of your next turn. For example, you can attack, [Seek](/action/seek-player-core), and provide flanking—even with yourself. You occupy both spaces. Your mirror self mimics your actions exactly, but any effects you generate come from only one of your positions; you decide which each time you act. For example, if you made a melee Strike against a creature within reach of the reflection, you'd mime the actions of the Strike, but only the reflection would actually make the Strike. Anything that targets or would affect your reflection affects you and uses your statistics. Something that would target or affect both of you affects you only once. For example, a fireball that included both of you in its area would require only one save from you and damage you no more than once. When you move, you choose which square to move from, but the mirror effect ends (see below).\n\nSome events force you to determine which image is the real you, and then end the effect and cause your mirror self to disappear; this happens automatically at the start of your next turn. It also happens if you choose to move out of your space. Other benefits of this implement add more events that can end the reflection. The effect also ends when you fall [Unconscious](/condition/unconscious-player-core), at which point you decide which version is truly you.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1647,7 +1885,25 @@
       "frequency": "",
       "requirements": "You're holding your mirror implement",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "thaumaturge",
+          "slug": "thaumaturge"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1691,7 +1947,25 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "You would be hit by a Strike",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1732,7 +2006,13 @@
       "frequency": "once per minute",
       "requirements": "",
       "trigger": "You're about to attempt a saving throw against a linguistic effect",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1771,7 +2051,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1800,7 +2090,7 @@
     "systemVersion": "1.2.10",
     "name": "Psychic Defense",
     "slug": "psychic-defense-dark-archive",
-    "descr": "**Trigger** Your opponent uses a psychic manifestation against you.\n\n**Requirements** You're in a psychic duel and are psychically centered.\n\n---\n\nYou gain the benefit matching your psychic center against the triggering manifestation. Then your psychic center is expended.\n\n**Armor of Insight (Perception)** Sensing the incoming attack, you make your mind resist psychic harm. You gain resistance equal to half your level (minimum 1) to mental damage against the triggering effect. This resistance is doubled if you're a master in Perception and tripled if you're legendary.\n\n**Empathic Orbit (Diplomacy)** Displaying empathy, you sow doubt in your attacker to diminish their resolve for psychic combat. The opponent is Stupefied 1 until the end of their next turn or Stupefied 2 if you're legendary in Diplomacy.\n\n**Ire's Spear (Intimidation)** Blazing anger surges in your mind, causing backlash to anyone who harms you. If the manifestation damages you, the opponent takes damage equal to the counteract rank of the manifestation it used against you. This damage is doubled if you're a master of Intimidation or tripled if you're legendary.\n\n**Rational Labyrinth (Occultism)** Analytically breaking down the attack, you realign your mind's defenses into a puzzle designed to confound it. You gain a +2 status bonus to your Will save or Will DC, or a +4 status bonus if the effect has the emotion trait.\n\n**Sensory Phantasm (Deception)** Using your guile, you send psychic illusions through your mental link to your foe, making yourself harder to pinpoint. You're Concealed against the opponent until the end of its next turn.",
+    "descr": "**Trigger** Your opponent uses a psychic manifestation against you.\n\n**Requirements** You're in a psychic duel and are psychically centered.\n\n---\n\nYou gain the benefit matching your psychic center against the triggering manifestation. Then your psychic center is expended.\n\n**Armor of Insight (Perception)** Sensing the incoming attack, you make your mind resist psychic harm. You gain resistance equal to half your level (minimum 1) to mental damage against the triggering effect. This resistance is doubled if you're a master in Perception and tripled if you're legendary.\n\n**Empathic Orbit (Diplomacy)** Displaying empathy, you sow doubt in your attacker to diminish their resolve for psychic combat. The opponent is [Stupefied 1](/condition/stupefied-player-core) until the end of their next turn or Stupefied 2 if you're legendary in Diplomacy.\n\n**Ire's Spear (Intimidation)** Blazing anger surges in your mind, causing backlash to anyone who harms you. If the manifestation damages you, the opponent takes damage equal to the counteract rank of the manifestation it used against you. This damage is doubled if you're a master of Intimidation or tripled if you're legendary.\n\n**Rational Labyrinth (Occultism)** Analytically breaking down the attack, you realign your mind's defenses into a puzzle designed to confound it. You gain a +2 status bonus to your Will save or Will DC, or a +4 status bonus if the effect has the [emotion](/trait/emotion) trait.\n\n**Sensory Phantasm (Deception)** Using your guile, you send psychic illusions through your mental link to your foe, making yourself harder to pinpoint. You're [Concealed](/condition/concealed-player-core) against the opponent until the end of its next turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1811,7 +2101,17 @@
       "frequency": "",
       "requirements": "You're in a psychic duel and are psychically centered",
       "trigger": "Your opponent uses a psychic manifestation against you",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1853,7 +2153,29 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "Your bare hands are touching an object in which you detected psychometric resonance",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1885,7 +2207,7 @@
     "systemVersion": "1.2.10",
     "name": "Recall the Teachings",
     "slug": "recall-the-teachings-dark-archive",
-    "descr": "The heightened power of your psyche lets you recall every lesson you've ever learned. You search your mind for the right teaching, which at first seems cryptic but comes into clarity when it's most relevant. Until the start of your next turn, you count as having prepared to Aid all allies within 30 feet of you. If you use the Aid reaction to help one of them during that time, you roll an Occultism check for Aid as you recall a lesson to help them. Most lessons take the form of short axioms, parables, or sayings, meaning that conveying them to your ally usually grants your Aid reaction the auditory and linguistic traits.",
+    "descr": "The heightened power of your psyche lets you recall every lesson you've ever learned. You search your mind for the right teaching, which at first seems cryptic but comes into clarity when it's most relevant. Until the start of your next turn, you count as having prepared to [Aid](/action/aid-player-core) all allies within 30 feet of you. If you use the Aid reaction to help one of them during that time, you roll an Occultism check for Aid as you recall a lesson to help them. Most lessons take the form of short axioms, parables, or sayings, meaning that conveying them to your ally usually grants your Aid reaction the auditory and [linguistic](/trait/linguistic) traits.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1897,7 +2219,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "occult",
+          "slug": "occult"
+        },
+        {
+          "label": "psyche",
+          "slug": "psyche"
+        },
+        {
+          "label": "psychic",
+          "slug": "psychic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1937,7 +2273,13 @@
       "frequency": "",
       "requirements": "You're in a psychic duel and are trained in the statistic matching the psychic center you are changing to",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1979,7 +2321,29 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "psyche",
+          "slug": "psyche"
+        },
+        {
+          "label": "psychic",
+          "slug": "psychic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2011,7 +2375,7 @@
     "systemVersion": "1.2.10",
     "name": "Ring Bell",
     "slug": "ring-bell-dark-archive",
-    "descr": "**Trigger** The target of your Exploit Vulnerability makes a Strike or Casts a Spell that would affect you or one of your allies.\n\n**Requirements** You are holding your bell implement, and the triggering creature is within 30 feet of you.\n\n---\n\nYour implement sings out abruptly, disrupting your foe. The piece played depends on whether the trigger was a Strike or Spell, and it applies to the triggering Strike or Spell, except where noted otherwise.\n\n**Distracting Cacophony** The trigger is a spell. You create a musical crash of sonic energy that assails the target and breaks its concentration. The target must succeed at a Fortitude save against your class DC or become Stupefied 1 until the end of your next turn (Stupefied 2 on a critical failure). The target doesn't have to attempt a flat check to avoid losing the triggering spell, but the discordant ring does lower the spell attack modifier or spell DC of the triggering spell from stupefied.**Disrupting Harmony** The trigger is a Strike. You create a strangely discordant harmony that sinks into your foe's body and throws its movements off. The target must succeed at a Will save against your class DC or become your choice of Enfeebled 1 or Clumsy 1 until the end of your next turn (Enfeebled 2 or Clumsy 2 on a critical failure).",
+    "descr": "**Trigger** The target of your Exploit Vulnerability makes a Strike or Casts a Spell that would affect you or one of your allies.\n\n**Requirements** You are holding your bell implement, and the triggering creature is within 30 feet of you.\n\n---\n\nYour implement sings out abruptly, disrupting your foe. The piece played depends on whether the trigger was a Strike or Spell, and it applies to the triggering Strike or Spell, except where noted otherwise.\n\n**Distracting Cacophony** The trigger is a spell. You create a musical crash of sonic energy that assails the target and breaks its concentration. The target must succeed at a Fortitude save against your class DC or become [Stupefied 1](/condition/stupefied-player-core) until the end of your next turn (Stupefied 2 on a critical failure). The target doesn't have to attempt a flat check to avoid losing the triggering spell, but the discordant ring does lower the spell attack modifier or spell DC of the triggering spell from stupefied.**Disrupting Harmony** The trigger is a Strike. You create a strangely discordant harmony that sinks into your foe's body and throws its movements off. The target must succeed at a Will save against your class DC or become your choice of [Enfeebled 1](/condition/enfeebled-player-core) or [Clumsy 1](/condition/clumsy-player-core) until the end of your next turn (Enfeebled 2 or Clumsy 2 on a critical failure).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2025,7 +2389,29 @@
       "frequency": "",
       "requirements": "You are holding your bell implement, and the triggering creature is within 30 feet of you",
       "trigger": "The target of your Exploit Vulnerability makes a Strike or Casts a Spell that would affect you or one of your allies",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "sonic",
+          "slug": "sonic"
+        },
+        {
+          "label": "thaumaturge",
+          "slug": "thaumaturge"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2057,7 +2443,7 @@
     "systemVersion": "1.2.10",
     "name": "Set Free",
     "slug": "set-free-dark-archive",
-    "descr": "**Frequency** once per hour\n\n**Trigger** You attempt a check to remove or counteract an effect with the Confused, Controlled, Fascinated, Immobilized, Paralyzed, or Restrained conditions\n\n---\n\n**Effect** You roll twice and use the better result.",
+    "descr": "**Frequency** once per hour\n\n**Trigger** You attempt a check to remove or counteract an effect with the [Confused](/condition/confused-player-core), [Controlled](/condition/controlled-player-core), [Fascinated](/condition/fascinated-player-core), [Immobilized](/condition/immobilized-player-core), [Paralyzed](/condition/paralyzed-player-core), or [Restrained](/condition/restrained-player-core) conditions\n\n---\n\n**Effect** You roll twice and use the better result.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2067,7 +2453,13 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "You attempt a check to remove or counteract an effect with the Confused, Controlled, Fascinated, Immobilized, Paralyzed, or Restrained conditions",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2106,7 +2498,17 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2135,7 +2537,7 @@
     "systemVersion": "1.2.10",
     "name": "Unleash Psyche",
     "slug": "unleash-psyche-dark-archive",
-    "descr": "**Trigger** Your turn begins.\n\n**Requirements** You're in an encounter, you Cast a Spell on your previous turn, and you aren't Stupefied.\n\n---\n\nYou call on the depths of your mind and let psychic power flood through. Your Psyche remains Unleashed for 2 rounds or until your fall Unconscious, whichever comes first. You can't voluntarily quell your unleashed psyche. While your Psyche is Unleashed, the following effects occur.\n\nYou're constantly surrounded by the visual manifestation of your psychic magic.When you cast a damaging spell using your psychic spellcasting, you gain a status bonus to its damage equal to double the spell's rank. This applies only to the initial damage the spell deals when cast, and an individual creature takes this damage only once per spell, even if the spell would damage that creature multiple times.You can use actions that have the psyche trait. After your unleashed psyche subsides, your mind must recover from the strain of channeling its full power. You can't use Unleash Psyche again for 2 rounds, and you're Stupefied 1 for 2 rounds.",
+    "descr": "**Trigger** Your turn begins.\n\n**Requirements** You're in an encounter, you Cast a Spell on your previous turn, and you aren't [Stupefied](/condition/stupefied-player-core).\n\n---\n\nYou call on the depths of your mind and let psychic power flood through. Your Psyche remains Unleashed for 2 rounds or until your fall [Unconscious](/condition/unconscious-player-core), whichever comes first. You can't voluntarily quell your unleashed psyche. While your Psyche is Unleashed, the following effects occur.\n\nYou're constantly surrounded by the visual manifestation of your psychic magic.When you cast a damaging spell using your psychic spellcasting, you gain a status bonus to its damage equal to double the spell's rank. This applies only to the initial damage the spell deals when cast, and an individual creature takes this damage only once per spell, even if the spell would damage that creature multiple times.You can use actions that have the [psyche](/trait/psyche) trait. After your unleashed psyche subsides, your mind must recover from the strain of channeling its full power. You can't use Unleash Psyche again for 2 rounds, and you're Stupefied 1 for 2 rounds.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2145,7 +2547,13 @@
       "frequency": "",
       "requirements": "You're in an encounter, you Cast a Spell on your previous turn, and you aren't Stupefied",
       "trigger": "Your turn begins",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "psychic",
+          "slug": "psychic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2185,7 +2593,21 @@
       "frequency": "once per minute",
       "requirements": "You're on land and adjacent to a body of water",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

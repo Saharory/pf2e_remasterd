@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "(Bulwark) Serpentstone Breath",
     "slug": "bulwark-serpentstone-breath-monster-core",
-    "descr": "The bulwark breathes a area of green gas. Each creature in the area must attempt a Fortitude DC 34 save. The bulwark can't use Serpentstone Breath again for 1d4 rounds.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature's body hardens, causing it to become Slowed 1 for 1 round.\n\n**Failure** The creature becomes Petrified for 1 minute. It can attempt a new save at the end of each of its turns.\n\n**Critical Failure** The creature becomes petrified permanently.",
+    "descr": "The bulwark breathes a area of green gas. Each creature in the area must attempt a Fortitude DC 34 save. The bulwark can't use Serpentstone Breath again for 1d4 rounds.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature's body hardens, causing it to become [Slowed 1](/condition/slowed-player-core) for 1 round.\n\n**Failure** The creature becomes [Petrified](/condition/petrified-player-core) for 1 minute. It can attempt a new save at the end of each of its turns.\n\n**Critical Failure** The creature becomes petrified permanently.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -18,7 +18,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -48,7 +62,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghost) Corrupting Gaze",
     "slug": "ghost-corrupting-gaze-monster-core",
-    "descr": "The ghost stares at a creature it can see within 30 feet. The target takes 1d6 void] damage + 1d6 per 2 levels with a basic Will save.\n\nA creature that fails its save is also Stupefied 1 for 1 minute.\n\nFor DCs, use the high spell DC of the ghost's level.",
+    "descr": "The ghost stares at a creature it can see within 30 feet. The target takes 1d6 void] damage + 1d6 per 2 levels with a basic Will save.\n\nA creature that fails its save is also [Stupefied 1](/condition/stupefied-player-core) for 1 minute.\n\nFor DCs, use the high spell DC of the ghost's level.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -56,7 +70,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -83,7 +98,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghost) Draining Touch",
     "slug": "ghost-draining-touch-monster-core",
-    "descr": "With a touch, the ghost attempts to drain a living creature's life force. It makes a ghostly hand Strike but deals no damage on a hit.\n\nInstead, the target becomes Drained 1 for 1 day, and the ghost regains HP equal to half its own level.",
+    "descr": "With a touch, the ghost attempts to drain a living creature's life force. It makes a ghostly hand Strike but deals no damage on a hit.\n\nInstead, the target becomes [Drained 1](/condition/drained-player-core) for 1 day, and the ghost regains HP equal to half its own level.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -91,7 +106,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -118,7 +134,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghost) Frightful Moan",
     "slug": "ghost-frightful-moan-monster-core",
-    "descr": "The ghost laments its fate, forcing each living creature within 30 feet to attempt a Will save. On a failure, a creature becomes Frightened 2 (or Frightened 3 on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.\n\nFor DCs, use the high spell DC of the ghost's level.",
+    "descr": "The ghost laments its fate, forcing each living creature within 30 feet to attempt a Will save. On a failure, a creature becomes [Frightened 2](/condition/frightened-player-core) (or Frightened 3 on a critical failure). On a success, a creature is temporarily immune to this ghost's frightful moan for 1 minute.\n\nFor DCs, use the high spell DC of the ghost's level.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -132,7 +148,29 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "fear",
+          "slug": "fear"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -172,7 +210,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -199,7 +238,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghost) Malevolent Possession",
     "slug": "ghost-malevolent-possession-monster-core",
-    "descr": "The ghost attempts to possess an adjacent corporeal creature. This has the same effect as the Possession spell, except since the ghost doesn't have a physical body, it is unaffected by that restriction of the spell.\n\nFor DCs, use the high spell DC of the ghost's level.",
+    "descr": "The ghost attempts to possess an adjacent corporeal creature. This has the same effect as the [Possession](/spell/possession-player-core) spell, except since the ghost doesn't have a physical body, it is unaffected by that restriction of the spell.\n\nFor DCs, use the high spell DC of the ghost's level.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -211,7 +250,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "possession",
+          "slug": "possession"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -250,7 +303,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -285,7 +344,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -322,7 +382,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -360,7 +426,13 @@
       "frequency": "",
       "requirements": "The ghoul is adjacent to the corpse of a creature that died within the last hour",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -388,7 +460,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghoul) Ghoul Whispers",
     "slug": "ghoul-ghoul-whispers-monster-core",
-    "descr": "**Requirements** A Grabbed, Paralyzed, Restrained, or Unconscious creature is within the ghoul's reach\n\n---\n\n**Effect** The ghoul whispers dark thoughts and vile cravings into the creature's ears. The creature must save against the forbidden cravings curse.\n\n**Forbidden Cravings** (curse) A creature can still eat and drink while sickened by this curse\n\n**Saving Throw** Will, using the high spell DC for the ghoul's level\n\n**Stage 1** carrier with no ill effects (1 day)\n\n**Stage 2** 2d6 void] damage and the target is Sickened 1 until it consumes raw meat (1 day)\n\n**Stage 3** as stage 2\n\n**Stage 4** as stage 2 unless the target has consumed raw meat in the past 24 hours, then it takes 4d6 void] damage and is Sickened 2 until it consumes raw meat;\n\n**Stage 5** if the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul, if not, it returns to stage 4",
+    "descr": "**Requirements** A [Grabbed](/condition/grabbed-player-core), [Paralyzed](/condition/paralyzed-player-core), [Restrained](/condition/restrained-player-core), or [Unconscious](/condition/unconscious-player-core) creature is within the ghoul's reach\n\n---\n\n**Effect** The ghoul whispers dark thoughts and vile cravings into the creature's ears. The creature must save against the forbidden cravings curse.\n\n**Forbidden Cravings** (curse) A creature can still eat and drink while sickened by this curse\n\n**Saving Throw** Will, using the high spell DC for the ghoul's level\n\n**Stage 1** carrier with no ill effects (1 day)\n\n**Stage 2** 2d6 void] damage and the target is [Sickened 1](/condition/sickened-player-core) until it consumes raw meat (1 day)\n\n**Stage 3** as stage 2\n\n**Stage 4** as stage 2 unless the target has consumed raw meat in the past 24 hours, then it takes 4d6 void] damage and is Sickened 2 until it consumes raw meat;\n\n**Stage 5** if the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul, if not, it returns to stage 4",
     "data": {
       "rarity": "common",
       "traits": [
@@ -400,7 +472,21 @@
       "frequency": "",
       "requirements": "A Grabbed, Paralyzed, Restrained, or Unconscious creature is within the ghoul's reach",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -430,7 +516,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghoul) Grave Knowledge",
     "slug": "ghoul-grave-knowledge-monster-core",
-    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** The ghoul calls upon knowledge it retains from one creature it has consumed in the past 7 days. The ghoul attempts a skill check using a skill in which the consumed creature was trained (if it's unclear whether the creature was trained, the GM decides). The ghoul is treated as trained and uses the high skill modifier for the ghoul's level. This takes the same amount of actions or time as usual for the check.\n\nThe ghoul can instead automatically learn something specific known by a creature it consumed in the last 7 days, like the location of a Hidden treasure or the name of a loved one. The ghoul can do this only once for a given creature, no matter how much of its flesh the ghoul consumed.",
+    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** The ghoul calls upon knowledge it retains from one creature it has consumed in the past 7 days. The ghoul attempts a skill check using a skill in which the consumed creature was trained (if it's unclear whether the creature was trained, the GM decides). The ghoul is treated as trained and uses the high skill modifier for the ghoul's level. This takes the same amount of actions or time as usual for the check.\n\nThe ghoul can instead automatically learn something specific known by a creature it consumed in the last 7 days, like the location of a [Hidden](/condition/hidden-player-core) treasure or the name of a loved one. The ghoul can do this only once for a given creature, no matter how much of its flesh the ghoul consumed.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -439,7 +525,13 @@
       "category": "offensive",
       "frequency": "once per hour",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -477,7 +569,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -512,7 +610,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -539,14 +638,15 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Create Grave Squire",
     "slug": "graveknight-create-grave-squire-monster-core",
-    "descr": "The graveknight can gift a piece of their armor to another creature, which becomes their grave squire.\n\nThe graveknight can communicate telepathically with their squire at any distance, see through the squire's senses, and cast Suggestion as a divine innate spell through the telepathic link at will; the squire treats their degree of success as one step worse.\n\nIf the graveknight's main armor is destroyed, the squire's piece expands to cover the squire's body over 1d10 days, after which point it becomes the graveknight's new body.\n\nThe graveknight can have only one squire at a time and must recover the armor piece to create a new squire.",
+    "descr": "The graveknight can gift a piece of their armor to another creature, which becomes their grave squire.\n\nThe graveknight can communicate telepathically with their squire at any distance, see through the squire's senses, and cast [Suggestion](/spell/suggestion-player-core) as a divine innate spell through the telepathic link at will; the squire treats their degree of success as one step worse.\n\nIf the graveknight's main armor is destroyed, the squire's piece expands to cover the squire's body over 1d10 days, after which point it becomes the graveknight's new body.\n\nThe graveknight can have only one squire at a time and must recover the armor piece to create a new squire.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -580,7 +680,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -617,7 +718,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -645,7 +752,7 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Graveknight's Curse",
     "slug": "graveknight-graveknight-s-curse-monster-core",
-    "descr": "This curse affects anyone who wears a graveknight's armor for at least 1 hour\n\n**Saving Throw** Will save\n\n**Onset** 1 hour\n\n**Stage 1** Doomed 1 and can't remove armor (1 day)\n\n**Stage 2** Doomed 2, –10-foot status penalty to Speeds, and can't remove armor (1 day)\n\n**Stage 3** dies and transforms into the armor's graveknight.",
+    "descr": "This curse affects anyone who wears a graveknight's armor for at least 1 hour\n\n**Saving Throw** Will save\n\n**Onset** 1 hour\n\n**Stage 1** [Doomed 1](/condition/doomed-player-core) and can't remove armor (1 day)\n\n**Stage 2** Doomed 2, –10-foot status penalty to Speeds, and can't remove armor (1 day)\n\n**Stage 3** dies and transforms into the armor's graveknight.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -655,7 +762,17 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "curse",
+          "slug": "curse"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -684,7 +801,7 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Phantom Mount",
     "slug": "graveknight-phantom-mount-monster-core",
-    "descr": "HP __; AC __, Fort +__, Ref +__, Will +__\n\n---\n\nThe graveknight summons a supernatural mount, as Marvelous Mount heightened to a rank equal to half the graveknight's level. Unlike *marvelous mount*, the steed's AC and saving throw bonuses are all 4 lower than the graveknight's, and the steed has one-third the graveknight's Hit Points (rounded down).\n\nIf the steed is destroyed, the graveknight must wait 1 hour before using this ability again.",
+    "descr": "HP __; AC __, Fort +__, Ref +__, Will +__\n\n---\n\nThe graveknight summons a supernatural mount, as [Marvelous Mount](/spell/marvelous-mount-player-core) heightened to a rank equal to half the graveknight's level. Unlike *marvelous mount*, the steed's AC and saving throw bonuses are all 4 lower than the graveknight's, and the steed has one-third the graveknight's Hit Points (rounded down).\n\nIf the steed is destroyed, the graveknight must wait 1 hour before using this ability again.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -695,7 +812,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "summon",
+          "slug": "summon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -724,7 +851,7 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Rejuvenation",
     "slug": "graveknight-rejuvenation-monster-core",
-    "descr": "When a graveknight is destroyed, their armor rebuilds their body over the course of 1d10 days—or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.\n\nA graveknight can only be permanently destroyed by obliterating their armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.",
+    "descr": "When a graveknight is destroyed, their armor rebuilds their body over the course of 1d10 days—or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.\n\nA graveknight can only be permanently destroyed by obliterating their armor (such as with [Disintegrate](/spell/disintegrate-player-core)), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -733,7 +860,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -761,14 +894,15 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Ruinous Weapons",
     "slug": "graveknight-ruinous-weapons-monster-core",
-    "descr": "When created, a graveknight chooses one of the following energy types that was relevant to their life or death: acid, cold, electricity, or fire.\n\nAny weapon the graveknight wields or unarmed attack the graveknight uses gains the effects of the *caustic*, *frost*, *shock*, or *flaming* weapon rune, respectively, in addition to a +1 striking weapon rune.\n\nIf the graveknight is 14th level or higher, their weapons instead gain the effects of the greater versions of both of these runes.",
+    "descr": "When created, a graveknight chooses one of the following energy types that was relevant to their life or death: acid, cold, electricity, or fire.\n\nAny weapon the graveknight wields or unarmed attack the graveknight uses gains the effects of the *caustic*, *frost*, *shock*, or *[flaming](/item/flaming-gm-core)* weapon rune, respectively, in addition to a +1 [striking](/item/striking-gm-core) weapon rune.\n\nIf the graveknight is 14th level or higher, their weapons instead gain the effects of the greater versions of both of these runes.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -806,7 +940,21 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -843,7 +991,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -870,7 +1019,7 @@
     "systemVersion": "1.2.10",
     "name": "(Lich) Blasphemous Utterances",
     "slug": "lich-blasphemous-utterances-monster-core",
-    "descr": "10 feet. The lich is accompanied by a constant echo of blasphemous murmurs and tainted whispers.\n\nA creature in the aura takes a -2 circumstance penalty to saves against mental effects and can't take actions that have the concentrate trait unless they succeed at a Flat DC 10 check. On a failure, the action is disrupted.\n\nEffect: Blasphemous Utterances",
+    "descr": "10 feet. The lich is accompanied by a constant echo of blasphemous murmurs and tainted whispers.\n\nA creature in the aura takes a -2 circumstance penalty to saves against mental effects and can't take actions that have the [concentrate](/trait/concentrate) trait unless they succeed at a Flat DC 10 check. On a failure, the action is disrupted.\n\nEffect: Blasphemous Utterances",
     "data": {
       "rarity": "common",
       "traits": [
@@ -881,7 +1030,21 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        },
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -911,14 +1074,15 @@
     "systemVersion": "1.2.10",
     "name": "(Lich) Cold Beyond Cold",
     "slug": "lich-cold-beyond-cold-monster-core",
-    "descr": "The lich's hand Strike deals cold damage instead of void, and the target is Slowed 2.\n\nA successful Fortitude save reduces this to Slowed 1 (or negates it on a critical success).",
+    "descr": "The lich's hand Strike deals cold damage instead of void, and the target is [Slowed 2](/condition/slowed-player-core).\n\nA successful Fortitude save reduces this to Slowed 1 (or negates it on a critical success).",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -952,7 +1116,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -987,7 +1152,8 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1023,7 +1189,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "arcane",
+          "slug": "arcane"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1051,14 +1223,15 @@
     "systemVersion": "1.2.10",
     "name": "(Lich) Siphon Life",
     "slug": "lich-siphon-life-monster-core",
-    "descr": "A lich's form draws forth life from those who come into contact with it. When the lich damages a living creature with an unarmed attack, the lich gains 5 temporary Hit Points and the creature must succeed at a Fortitude save against the lich's spell DC – 2 or become Drained 1.\n\nIf the lich is Grabbed or Restrained at the start of its turn, each creature grabbing or restraining it must succeed at a Fortitude save or become drained 1. If the lich siphons a creature's life again, the drained value increase by 1, to a maximum of Drained 4.",
+    "descr": "A lich's form draws forth life from those who come into contact with it. When the lich damages a living creature with an unarmed attack, the lich gains 5 temporary Hit Points and the creature must succeed at a Fortitude save against the lich's spell DC – 2 or become [Drained 1](/condition/drained-player-core).\n\nIf the lich is [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) at the start of its turn, each creature grabbing or restraining it must succeed at a Fortitude save or become drained 1. If the lich siphons a creature's life again, the drained value increase by 1, to a maximum of Drained 4.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1085,7 +1258,7 @@
     "systemVersion": "1.2.10",
     "name": "(Lich) Void Shroud",
     "slug": "lich-void-shroud-monster-core",
-    "descr": "30 feet. The lich is surrounded by an aura of death, drawing forth souls to be consumed by the lich's constant hunger.\n\nLiving creatures in the emanation take a -2 status penalty to saves against fear and death effects. In addition, any creature that starts its turn in the area gains the Doomed 1 condition unless it succeeds at a Will save against the lich's spell DC-4.\n\nEffect: Void Shroud",
+    "descr": "30 feet. The lich is surrounded by an aura of death, drawing forth souls to be consumed by the lich's constant hunger.\n\nLiving creatures in the emanation take a -2 status penalty to saves against fear and death effects. In addition, any creature that starts its turn in the area gains the [Doomed 1](/condition/doomed-player-core) condition unless it succeeds at a Will save against the lich's spell DC-4.\n\nEffect: Void Shroud",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1095,7 +1268,17 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "death",
+          "slug": "death"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1135,7 +1318,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1177,7 +1370,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1220,7 +1431,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1263,7 +1488,29 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1295,14 +1542,15 @@
     "systemVersion": "1.2.10",
     "name": "(Nymph Queen) Tied to the Land",
     "slug": "nymph-queen-tied-to-the-land-monster-core",
-    "descr": "A nymph queen is intrinsically tied to a specific region. As long as the queen is healthy, the environment is exceptionally resilient, allowing the nymph queen to automatically attempt to counteract any spell that would harm the environment (such as the Blight ritual), using her spell DC with a counteract rank equal to the highest-rank druid spell she can cast.\n\nWhen the nymph queen becomes physically or psychologically unhealthy, however, her warded region eventually becomes twisted or unhealthy as well. In that case, restoring the nymph queen swiftly heals the entire region.",
+    "descr": "A nymph queen is intrinsically tied to a specific region. As long as the queen is healthy, the environment is exceptionally resilient, allowing the nymph queen to automatically attempt to counteract any spell that would harm the environment (such as the [Blight](/ritual/blight-player-core) ritual), using her spell DC with a counteract rank equal to the highest-rank druid spell she can cast.\n\nWhen the nymph queen becomes physically or psychologically unhealthy, however, her warded region eventually becomes twisted or unhealthy as well. In that case, restoring the nymph queen swiftly heals the entire region.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1329,7 +1577,7 @@
     "systemVersion": "1.2.10",
     "name": "(Protean) Protean Anatomy",
     "slug": "protean-protean-anatomy-monster-core",
-    "descr": "A protean's vital organs shift and change shape and position constantly. Immediately after the protean takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first. The protean is immune to polymorph effects unless it is a willing target. If Blinded or Deafened, the protean automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.\n\nEffect: Protean Anatomy",
+    "descr": "A protean's vital organs shift and change shape and position constantly. Immediately after the protean takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first. The protean is immune to polymorph effects unless it is a willing target. If [Blinded](/condition/blinded-player-core) or [Deafened](/condition/deafened-player-core), the protean automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.\n\nEffect: Protean Anatomy",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1338,7 +1586,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1366,14 +1620,15 @@
     "systemVersion": "1.2.10",
     "name": "(Protean) Warpwave",
     "slug": "protean-warpwave-monster-core",
-    "descr": "Many proteans can subject their foes to disorienting alterations perceived in time and space by creating ripples of unstable reality in the environment called warpwaves. When a creature fails its saving throw and is affected by a warpwave, roll 1d8 and consult the table below for the specific effect on that creature. Unless indicated otherwise, a warpwave effect lasts for 1d4 rounds, and a new warpwave effect negates any previous warpwave effect already affecting a creature.\n\n| 1d8 | Warpwave Effect |\n| --- | --- |\n| 1 | Clumsy 2 (Clumsy 3 on a critical failure) |\n| 2 | Confused and gains 4d6 temporary Hit Points |\n| 3 | Dazzled (permanent on a critical failure) |\n| 4 | Enfeebled 2 (Enfeebled 3 on a critical failure) |\n| 5 | Immobilized by filaments of energy |\n| 6 | Quickened (Stride, Strike, or Step only) |\n| 7 | Slowed 1 |\n| 8 | Stupefied 2 (Stupefied 3 on a critical failure) |",
+    "descr": "Many proteans can subject their foes to disorienting alterations perceived in time and space by creating ripples of unstable reality in the environment called warpwaves. When a creature fails its saving throw and is affected by a warpwave, roll 1d8 and consult the table below for the specific effect on that creature. Unless indicated otherwise, a warpwave effect lasts for 1d4 rounds, and a new warpwave effect negates any previous warpwave effect already affecting a creature.\n\n| 1d8 | Warpwave Effect |\n| --- | --- |\n| 1 | [Clumsy 2](/condition/clumsy-player-core) (Clumsy 3 on a critical failure) |\n| 2 | [Confused](/condition/confused-player-core) and gains 4d6 temporary Hit Points |\n| 3 | [Dazzled](/condition/dazzled-player-core) (permanent on a critical failure) |\n| 4 | [Enfeebled 2](/condition/enfeebled-player-core) (Enfeebled 3 on a critical failure) |\n| 5 | [Immobilized](/condition/immobilized-player-core) by filaments of energy |\n| 6 | [Quickened](/condition/quickened-player-core) (Stride, Strike, or Step only) |\n| 7 | [Slowed 1](/condition/slowed-player-core) |\n| 8 | [Stupefied 2](/condition/stupefied-player-core) (Stupefied 3 on a critical failure) |",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1407,7 +1662,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1434,7 +1690,7 @@
     "systemVersion": "1.2.10",
     "name": "(Skeleton) Collapse",
     "slug": "skeleton-collapse-monster-core",
-    "descr": "**Trigger** The skeleton is critically hit.\n\n---\n\n**Effect** The skeleton collapses into a pile of bones and the attack deals only normal damage. The skeleton can reform in a standing position as an action, but until it does, it is Immobilized and Off Guard.",
+    "descr": "**Trigger** The skeleton is critically hit.\n\n---\n\n**Effect** The skeleton collapses into a pile of bones and the attack deals only normal damage. The skeleton can reform in a standing position as an action, but until it does, it is [Immobilized](/condition/immobilized-player-core) and [Off Guard](/condition/off-guard-player-core).",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1442,7 +1698,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "The skeleton is critically hit",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1476,7 +1733,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1503,7 +1761,7 @@
     "systemVersion": "1.2.10",
     "name": "(Skeleton) Screaming Skull",
     "slug": "skeleton-screaming-skull-monster-core",
-    "descr": "The skeleton removes its skull and throws it, making a jaws attack with a range of 20 feet. It then attempts to Demoralize each foe within 10 feet of the target.\n\nThe head bounces, rolls, or even flies back, returning to the skeleton at the start of its next turn. The skeleton is Blinded until then.",
+    "descr": "The skeleton removes its skull and throws it, making a jaws attack with a range of 20 feet. It then attempts to [Demoralize](/action/demoralize-player-core) each foe within 10 feet of the target.\n\nThe head bounces, rolls, or even flies back, returning to the skeleton at the start of its next turn. The skeleton is [Blinded](/condition/blinded-player-core) until then.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1516,7 +1774,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "fear",
+          "slug": "fear"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1547,7 +1823,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Basic) Coffin Restoration",
     "slug": "vampire-basic-coffin-restoration-monster-core",
-    "descr": "Unlike other undead, a vampire isn't destroyed at 0 HP. Instead, it falls Unconscious. If its body rests in its coffin for 1 hour, the vampire gains 1 HP, after which its fast healing begins to function normally.",
+    "descr": "Unlike other undead, a vampire isn't destroyed at 0 HP. Instead, it falls [Unconscious](/condition/unconscious-player-core). If its body rests in its coffin for 1 hour, the vampire gains 1 HP, after which its fast healing begins to function normally.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1557,7 +1833,17 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1586,7 +1872,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Basic) Drink Blood",
     "slug": "vampire-basic-drink-blood-monster-core",
-    "descr": "**Requirement** A Grabbed, Paralyzed, Restrained, Unconscious, or willing creature is within the vampire's reach.\n\n---\n\n**Effect** The vampire sinks its fangs into that creature to drink its blood. This requires an Athletics check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.\n\nThe victim is Drained 1 and the vampire regains HP equal to 10% of its maximum HP, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.\n\nA victim's drained condition decreases by 1 per week. A blood transfusion, which requires a Medicine DC 20 check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.",
+    "descr": "**Requirement** A [Grabbed](/condition/grabbed-player-core), [Paralyzed](/condition/paralyzed-player-core), [Restrained](/condition/restrained-player-core), [Unconscious](/condition/unconscious-player-core), or willing creature is within the vampire's reach.\n\n---\n\n**Effect** The vampire sinks its fangs into that creature to drink its blood. This requires an Athletics check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.\n\nThe victim is [Drained 1](/condition/drained-player-core) and the vampire regains HP equal to 10% of its maximum HP, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.\n\nA victim's drained condition decreases by 1 per week. A blood transfusion, which requires a Medicine DC 20 check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1596,7 +1882,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1624,14 +1916,15 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Basic) Vampire Vulnerabilities",
     "slug": "vampire-basic-vampire-vulnerabilities-monster-core",
-    "descr": "All vampires possess the following vulnerabilities.\n\n**Compulsions** Vampires are creatures with strange and unknowable compulsions. A typical vampire can't voluntarily cross running water unless they're transported while they hide within their coffin, nor can they enter a private dwelling unless invited in by someone with the authority to do so. At your discretion, vampires might have different compulsions—a pirate vampire might not be able to set foot on solid ground without being invited, for example. The vampire can still be forced to do these things and might be able to overcome their compulsion just as they do their revulsion.\n**Revulsion** A vampire can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a deity with a holy sanctification option. To brandish garlic or a religious symbol, a creature must Interact to do so, and it remains brandished for 1 round (similar to Raising a Shield). If the vampire involuntarily comes within 10 feet of an object of their revulsion, they gain the Fleeing condition, running from the object of their revulsion until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a vampire can attempt a Will DC 25 save as a single action, which has the concentrate trait. On a success, they overcome their revulsions for 1d6 rounds (or 1 hour on a critical success).\n**Stake** A wooden stake driven through a vampire's heart drops the vampire to 0 HP and prevents them from healing above 0 HP, even in their coffin. Staking a vampire requires 3 actions and works only if the vampire is Unconscious. If the stake is removed, the vampire can heal above 0 HP again, and if they're in their coffin, the 1-hour rest period begins once the stake is removed. If the vampire's head is severed and anointed with holy water while the stake is in place, the vampire is destroyed.\n**Sunlight** If exposed to direct sunlight, a vampire immediately becomes Slowed 1. The slowed value increases by 1 each time the vampire ends their turn in sunlight, and the condition ends when they're no longer in sunlight. If the vampire loses all their actions in this way, they're destroyed. Due to their supernatural aversion to light, vampires don't cast shadows or show a reflection in mirrors",
+    "descr": "All vampires possess the following vulnerabilities.\n\n**Compulsions** Vampires are creatures with strange and unknowable compulsions. A typical vampire can't voluntarily cross running water unless they're transported while they hide within their coffin, nor can they enter a private dwelling unless invited in by someone with the authority to do so. At your discretion, vampires might have different compulsions—a pirate vampire might not be able to set foot on solid ground without being invited, for example. The vampire can still be forced to do these things and might be able to overcome their compulsion just as they do their revulsion.\n**Revulsion** A vampire can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a deity with a holy sanctification option. To brandish garlic or a religious symbol, a creature must Interact to do so, and it remains brandished for 1 round (similar to Raising a Shield). If the vampire involuntarily comes within 10 feet of an object of their revulsion, they gain the [Fleeing](/condition/fleeing-player-core) condition, running from the object of their revulsion until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a vampire can attempt a Will DC 25 save as a single action, which has the [concentrate](/trait/concentrate) trait. On a success, they overcome their revulsions for 1d6 rounds (or 1 hour on a critical success).\n**Stake** A wooden stake driven through a vampire's heart drops the vampire to 0 HP and prevents them from healing above 0 HP, even in their coffin. Staking a vampire requires 3 actions and works only if the vampire is [Unconscious](/condition/unconscious-player-core). If the stake is removed, the vampire can heal above 0 HP again, and if they're in their coffin, the 1-hour rest period begins once the stake is removed. If the vampire's head is severed and anointed with holy water while the stake is in place, the vampire is destroyed.\n**Sunlight** If exposed to direct sunlight, a vampire immediately becomes [Slowed 1](/condition/slowed-player-core). The slowed value increases by 1 each time the vampire ends their turn in sunlight, and the condition ends when they're no longer in sunlight. If the vampire loses all their actions in this way, they're destroyed. Due to their supernatural aversion to light, vampires don't cast shadows or show a reflection in mirrors",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1658,7 +1951,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, True) Change Shape",
     "slug": "vampire-true-change-shape-monster-core",
-    "descr": "The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.\n\nUse the options in the Aerial Form and Animal Form spells as guidelines.\n\n**Bat** The vampire changes into a Bat Swarm or Giant Bat. They gain echolocation 40 feet, a land Speed of 20 feet and a fly Speed of 30 feet, and a fangs Strike with the same attack bonus as their highest melee attack. These fangs deal the same amount of damage as the vampire's claws, but deal piercing damage rather than slashing damage.\n\n---\n\nChangeshape",
+    "descr": "The vampire transforms into one of its animal forms or back into its normal form. Most vampires can turn into a bat, but some can turn into a different creature, such as a rat or a wolf.\n\nUse the options in the [Aerial Form](/spell/aerial-form-player-core) and [Animal Form](/spell/animal-form-player-core) spells as guidelines.\n\n**Bat** The vampire changes into a [Bat Swarm](/creature/vampire-bat-swarm-monster-core) or [Giant Bat](/creature/giant-bat-monster-core). They gain echolocation 40 feet, a land Speed of 20 feet and a fly Speed of 30 feet, and a fangs Strike with the same attack bonus as their highest melee attack. These fangs deal the same amount of damage as the vampire's claws, but deal piercing damage rather than slashing damage.\n\n---\n\nChangeshape",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1670,7 +1963,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1700,7 +2007,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, True) Children of the Night",
     "slug": "vampire-true-children-of-the-night-monster-core",
-    "descr": "The vampire's presence brings forth creatures of the night to do the master's bidding. These typically include Rat Swarms, Bat Swarms, and Wolves, but can include other creatures.\n\nThe vampire can give telepathic orders to these creatures as long as they are within 100 feet, but they can't communicate back.",
+    "descr": "The vampire's presence brings forth creatures of the night to do the master's bidding. These typically include [Rat Swarms](/creature/rat-swarm-monster-core), [Bat Swarms](/creature/vampire-bat-swarm-monster-core), and [Wolves](/creature/wolf-monster-core), but can include other creatures.\n\nThe vampire can give telepathic orders to these creatures as long as they are within 100 feet, but they can't communicate back.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1710,7 +2017,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1749,7 +2066,17 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "downtime",
+          "slug": "downtime"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1778,7 +2105,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, True) Dominate",
     "slug": "vampire-true-dominate-monster-core",
-    "descr": "The vampire can cast Dominate at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the visual trait (Will). The save DC uses the high spell DC of the vampire's level, and a creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.\n\nFully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.",
+    "descr": "The vampire can cast [Dominate](/spell/dominate-player-core) at will as a divine innate spell. Casting it requires staring into the target's eyes, giving the spell the [visual](/trait/visual) trait (Will). The save DC uses the high spell DC of the vampire's level, and a creature that succeeds is temporarily immune to that vampire's Dominate for 24 hours.\n\nFully destroying the vampire ends the domination, but merely reducing the vampire to 0 HP is insufficient to break the spell.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1791,7 +2118,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1822,7 +2167,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, True) Drink Blood",
     "slug": "vampire-true-drink-blood-monster-core",
-    "descr": "**Requirement** A Grabbed, Paralyzed, Restrained, Unconscious, or willing creature is within the vampire's reach.\n\n---\n\n**Effect** The vampire sinks its fangs into that creature to drink its blood. This requires an Athletics check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.\n\nThe victim is Drained 2 and the vampire regains HP equal to 10% of its maximum HP, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.\n\nA victim's drained condition decreases by 1 per week. A blood transfusion, which requires a Medicine DC 20 check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.",
+    "descr": "**Requirement** A [Grabbed](/condition/grabbed-player-core), [Paralyzed](/condition/paralyzed-player-core), [Restrained](/condition/restrained-player-core), [Unconscious](/condition/unconscious-player-core), or willing creature is within the vampire's reach.\n\n---\n\n**Effect** The vampire sinks its fangs into that creature to drink its blood. This requires an Athletics check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.\n\nThe victim is [Drained 2](/condition/drained-player-core) and the vampire regains HP equal to 10% of its maximum HP, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.\n\nA victim's drained condition decreases by 1 per week. A blood transfusion, which requires a Medicine DC 20 check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1832,7 +2177,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1868,7 +2219,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "The vampire is reduced to 0 HP",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1895,7 +2247,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, True) Turn to Mist",
     "slug": "vampire-true-turn-to-mist-monster-core",
-    "descr": "The vampire turns into a cloud of vapor, as the Vapor Form spell, or back to its normal form. The vampire loses fast healing while in gaseous form.\n\nThe vampire can remain in this form indefinitely.",
+    "descr": "The vampire turns into a cloud of vapor, as the [Vapor Form](/spell/vapor-form-player-core) spell, or back to its normal form. The vampire loses fast healing while in gaseous form.\n\nThe vampire can remain in this form indefinitely.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1908,7 +2260,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1946,7 +2316,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1985,7 +2356,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2025,7 +2410,17 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "curse",
+          "slug": "curse"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2054,7 +2449,7 @@
     "systemVersion": "1.2.10",
     "name": "(Werecreature) Moon Frenzy",
     "slug": "werecreature-moon-frenzy-monster-core",
-    "descr": "When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws by 2.\n\nWhen the moon sets or the sun rises, the werecreature returns to humanoid form and is Fatigued for 2d4 hours.\n\nEffect: Moon Frenzy",
+    "descr": "When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws by 2.\n\nWhen the moon sets or the sun rises, the werecreature returns to humanoid form and is [Fatigued](/condition/fatigued-player-core) for 2d4 hours.\n\nEffect: Moon Frenzy",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2064,7 +2459,17 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2093,7 +2498,7 @@
     "systemVersion": "1.2.10",
     "name": "(Zombie) Disgusting Pustules",
     "slug": "zombie-disgusting-pustules-monster-core",
-    "descr": "The zombie is covered in pustules that rupture when it takes any piercing damage or any critical hit.\n\nAdjacent creatures are hit with vile fluid, causing them to become Sickened 1 unless they succeed at a Fortitude save against the moderate spell DC for the zombie's level.",
+    "descr": "The zombie is covered in pustules that rupture when it takes any piercing damage or any critical hit.\n\nAdjacent creatures are hit with vile fluid, causing them to become [Sickened 1](/condition/sickened-player-core) unless they succeed at a Fortitude save against the moderate spell DC for the zombie's level.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2102,7 +2507,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "disease",
+          "slug": "disease"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2130,7 +2541,7 @@
     "systemVersion": "1.2.10",
     "name": "(Zombie) Feast",
     "slug": "zombie-feast-monster-core",
-    "descr": "If the zombie is adjacent to a Restrained or Unconscious creature, or a corpse that died in the past hour, the zombie can feast upon its flesh to heal itself.\n\nThis restores an amount of Hit Points equal to the zombie's level. If the creature is alive, the zombie deals damage equal to its jaws, fist, or claw damage.",
+    "descr": "If the zombie is adjacent to a [Restrained](/condition/restrained-player-core) or [Unconscious](/condition/unconscious-player-core) creature, or a corpse that died in the past hour, the zombie can feast upon its flesh to heal itself.\n\nThis restores an amount of Hit Points equal to the zombie's level. If the creature is alive, the zombie deals damage equal to its jaws, fist, or claw damage.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2140,7 +2551,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2168,7 +2585,7 @@
     "systemVersion": "1.2.10",
     "name": "(Zombie) Plague-Ridden",
     "slug": "zombie-plague-ridden-monster-core",
-    "descr": "The zombie carries a plague that can create more of its own kind.\n\nThis functions as the Plague Zombie's zombie rot, except at stage 5, the victim rises as another of the zombie's type, rather than a plague zombie.\n\n---\n\n**Zombie Rot**\n\nAn infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.\n\n**Saving Throw** Type:Fortitude. Use the high spell DC for the zombie's level.\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 void] damage (1 day)\n\n**Stage 3** 1d6 void] damage (1 day)\n\n**Stage 4** 1d6 void] damage (1 day)\n\n**Stage 5** dead, rising as another of the zombie's type immediately",
+    "descr": "The zombie carries a plague that can create more of its own kind.\n\nThis functions as the [Plague Zombie's](/creature/plague-zombie-monster-core) zombie rot, except at stage 5, the victim rises as another of the zombie's type, rather than a plague zombie.\n\n---\n\n**Zombie Rot**\n\nAn infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.\n\n**Saving Throw** Type:Fortitude. Use the high spell DC for the zombie's level.\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 void] damage (1 day)\n\n**Stage 3** 1d6 void] damage (1 day)\n\n**Stage 4** 1d6 void] damage (1 day)\n\n**Stage 5** dead, rising as another of the zombie's type immediately",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2177,7 +2594,13 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "disease",
+          "slug": "disease"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2216,7 +2639,21 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "disease",
+          "slug": "disease"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2253,7 +2690,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2287,7 +2725,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2321,7 +2760,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2356,7 +2796,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2390,7 +2831,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2424,7 +2866,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2459,7 +2902,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2497,7 +2941,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2533,7 +2987,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2568,7 +3023,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2605,7 +3061,17 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2641,7 +3107,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2675,7 +3142,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2710,7 +3178,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2744,7 +3213,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2779,7 +3249,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2818,7 +3289,25 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "fear",
+          "slug": "fear"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2857,7 +3346,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2892,7 +3382,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2926,7 +3417,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2961,7 +3453,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -2996,7 +3489,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3031,7 +3525,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3066,7 +3561,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3100,7 +3596,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3134,7 +3631,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3168,7 +3666,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3195,7 +3694,7 @@
     "systemVersion": "1.2.10",
     "name": "Master's Eye",
     "slug": "master-s-eye-monster-core",
-    "descr": "The master observes the world through the raktavarna's eyes instead of their own, using the raktavarna's Perception and darkvision. This lasts until the end of the master's next turn, but the master can Sustain the activity.\n\nThis ability functions at any range, even on different planes of existence. If the raktavarna dies while their master is using this ability, the master is Stunned 5.",
+    "descr": "The master observes the world through the raktavarna's eyes instead of their own, using the raktavarna's Perception and darkvision. This lasts until the end of the master's next turn, but the master can Sustain the activity.\n\nThis ability functions at any range, even on different planes of existence. If the raktavarna dies while their master is using this ability, the master is [Stunned 5](/condition/stunned-player-core).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3207,7 +3706,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "scrying",
+          "slug": "scrying"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3244,7 +3757,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3279,7 +3793,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3314,7 +3829,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3349,7 +3865,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3383,7 +3900,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3418,7 +3936,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3452,7 +3971,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3487,7 +4007,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3524,7 +4045,17 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "olfactory",
+          "slug": "olfactory"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3563,7 +4094,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3598,7 +4135,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3636,7 +4174,21 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3674,7 +4226,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3709,7 +4262,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3743,7 +4297,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3777,7 +4332,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -3811,7 +4367,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,

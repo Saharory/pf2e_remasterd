@@ -13,7 +13,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -47,7 +48,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -81,7 +83,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -115,7 +118,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -149,7 +153,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -183,7 +188,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -210,7 +216,7 @@
     "systemVersion": "1.2.10",
     "name": "(Mythic) Mythic Ferocity",
     "slug": "mythic-mythic-ferocity-war-of-immortals",
-    "descr": "**Cost** 1 Mythic Point\n\n**Trigger** The monster is reduced to 0 HP\n\n---\n\n**Effect** The monster avoids being knocked out and remains at half its maximum HP, but its wounded value increases by 1. When it is Wounded 3, it can no longer use this ability.",
+    "descr": "**Cost** 1 Mythic Point\n\n**Trigger** The monster is reduced to 0 HP\n\n---\n\n**Effect** The monster avoids being knocked out and remains at half its maximum HP, but its wounded value increases by 1. When it is [Wounded 3](/condition/wounded-player-core), it can no longer use this ability.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -218,7 +224,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "The monster is reduced to 0 HP",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -252,7 +259,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -286,7 +294,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -320,7 +329,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -354,7 +364,8 @@
       "category": "offensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -381,14 +392,15 @@
     "systemVersion": "1.2.10",
     "name": "(Mythic) Mythic Resilience",
     "slug": "mythic-mythic-resilience-war-of-immortals",
-    "descr": "The creature treats its saving throws with the associated save as one degree of success better than it rolled. This is not cumulative with other effects that change their degree of success, like the incapacitation trait (except for rolling a natural 1 or 20). Each time the monster gains mythic resilience, choose one save. The ability should apply to the creature's highest saves first.",
+    "descr": "The creature treats its saving throws with the associated save as one degree of success better than it rolled. This is not cumulative with other effects that change their degree of success, like the [incapacitation](/trait/incapacitation) trait (except for rolling a natural 1 or 20). Each time the monster gains mythic resilience, choose one save. The ability should apply to the creature's highest saves first.",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -423,7 +435,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -457,7 +470,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -492,7 +506,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -526,7 +541,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -560,7 +576,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -594,7 +611,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -631,7 +649,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -669,7 +693,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -707,7 +737,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -745,7 +781,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "The creature fails a check",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -773,14 +815,15 @@
     "systemVersion": "1.2.10",
     "name": "(Mythic) Titanic Might",
     "slug": "mythic-titanic-might-war-of-immortals",
-    "descr": "A mythic brute ignores size limitations when performing actions like Grapple or Trip.",
+    "descr": "A mythic brute ignores size limitations when performing actions like [Grapple](/action/grapple-player-core) or [Trip](/action/trip-player-core).",
     "data": {
       "rarity": "common",
       "traits": [],
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -815,7 +858,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "The creature would die and has at least 1 Mythic Point",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -842,7 +886,7 @@
     "systemVersion": "1.2.10",
     "name": "(Mythic) Unimpeded",
     "slug": "mythic-unimpeded-war-of-immortals",
-    "descr": "**Cost** 1 Mythic Point\n\n---\n\n**Effect** The mythic striker automatically ends one effect that would give it a circumstance penalty to Speed. When it attempts to Escape an effect that has it Immobilized, Grabbed, or Restrained, it automatically succeeds.",
+    "descr": "**Cost** 1 Mythic Point\n\n---\n\n**Effect** The mythic striker automatically ends one effect that would give it a circumstance penalty to Speed. When it attempts to [Escape](/action/escape-player-core) an effect that has it [Immobilized](/condition/immobilized-player-core), [Grabbed](/condition/grabbed-player-core), or [Restrained](/condition/restrained-player-core), it automatically succeeds.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -850,7 +894,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -877,7 +922,7 @@
     "systemVersion": "1.2.10",
     "name": "A Challenge for Heroes",
     "slug": "a-challenge-for-heroes-war-of-immortals",
-    "descr": "You declare an enemy within 60 feet to be a heroic test. For 1 minute, that enemy deals an additional 10 spirit damage to you with each successful Strike or spell it targets you with.\n\nEffect: A Challenge For Heroes (Enemy)\n\nWhenever that enemy deals spirit damage to you, each ally who has the enemy in melee reach can attempt a Reactive Strike against it, even if the ally doesn't normally have that reaction. If an ally successfully slays the enemy with a Reactive Strike due to this effect, that ally immediately gains temporary Hit Points equal to your level, which persist for 1 minute.\n\nEffect: A Challenge For Heroes (Ally)",
+    "descr": "You declare an enemy within 60 feet to be a heroic test. For 1 minute, that enemy deals an additional 10 spirit damage to you with each successful Strike or spell it targets you with.\n\nEffect: A Challenge For Heroes (Enemy)\n\nWhenever that enemy deals spirit damage to you, each ally who has the enemy in melee reach can attempt a [Reactive Strike](/action/reactive-strike-player-core) against it, even if the ally doesn't normally have that reaction. If an ally successfully slays the enemy with a Reactive Strike due to this effect, that ally immediately gains temporary Hit Points equal to your level, which persist for 1 minute.\n\nEffect: A Challenge For Heroes (Ally)",
     "data": {
       "rarity": "common",
       "traits": [
@@ -890,7 +935,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -933,7 +996,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "prediction",
+          "slug": "prediction"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -973,7 +1050,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1001,7 +1084,7 @@
     "systemVersion": "1.2.10",
     "name": "Arrow Splits Arrow",
     "slug": "arrow-splits-arrow-war-of-immortals",
-    "descr": "**Requirements** Your previous action was to Strike with the Unfailing Bow\n\n---\n\n**Effect** You repeat your motions exactly, your attack landing in the same location as your previous shot. You make a Strike against the same target. The result of your d20 roll is the same as the result of the required shot, though any penalties (such as your multiple attack penalty) apply normally to this shot and you don't automatically adjust the degree of success if the initial roll was a natural 1 or 20.",
+    "descr": "**Requirements** Your previous action was to Strike with the [Unfailing Bow](/feat/unfailing-bow-war-of-immortals)\n\n---\n\n**Effect** You repeat your motions exactly, your attack landing in the same location as your previous shot. You make a Strike against the same target. The result of your d20 roll is the same as the result of the required shot, though any penalties (such as your multiple attack penalty) apply normally to this shot and you don't automatically adjust the degree of success if the initial roll was a natural 1 or 20.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1011,7 +1094,13 @@
       "frequency": "",
       "requirements": "Your previous action was to Strike with the Unfailing Bow",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1049,7 +1138,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1090,7 +1185,25 @@
       "frequency": "once per 10 minutes",
       "requirements": "Your nimbus is active",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1121,7 +1234,7 @@
     "systemVersion": "1.2.10",
     "name": "Blinding of the Needle",
     "slug": "blinding-of-the-needle-war-of-immortals",
-    "descr": "You aim your weapon in a superficial cut above your opponent's eye. Make a Strike with the imbued ikon. If that Strike is successful, the target must succeed at a Fortitude save against your class DC or become Blinded for 1 round or until it uses an Interact action to clear the blood from its vision.",
+    "descr": "You aim your weapon in a superficial cut above your opponent's eye. Make a Strike with the imbued ikon. If that Strike is successful, the target must succeed at a Fortitude save against your class DC or become [Blinded](/condition/blinded-player-core) for 1 round or until it uses an [Interact](/action/interact-player-core) action to clear the blood from its vision.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1131,7 +1244,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1159,7 +1278,7 @@
     "systemVersion": "1.2.10",
     "name": "Break Free",
     "slug": "break-free-war-of-immortals",
-    "descr": "You can attempt to Escape with a +2 status bonus on your check, then Stride up to twice your Speed in a straight line, and finally make a melee Strike. If you don't need to Escape or you can't move or choose not to, you still take the other actions listed.",
+    "descr": "You can attempt to [Escape](/action/escape-player-core) with a +2 status bonus on your check, then Stride up to twice your Speed in a straight line, and finally make a melee Strike. If you don't need to Escape or you can't move or choose not to, you still take the other actions listed.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1169,7 +1288,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1197,7 +1322,7 @@
     "systemVersion": "1.2.10",
     "name": "Break the Sun's Legs",
     "slug": "break-the-sun-s-legs-war-of-immortals",
-    "descr": "You make a slashing motion over the brightest source of light, whether it's a torch or the sun in the sky. A gash appears over the light source, visible to all, and devours the light. The entire area within a area around you is affected by a 9th-rank Darkness spell for 1 minute. The stolen light is channeled to your eyes, granting you greater darkvision for the duration of the effect.",
+    "descr": "You make a slashing motion over the brightest source of light, whether it's a torch or the sun in the sky. A gash appears over the light source, visible to all, and devours the light. The entire area within a area around you is affected by a 9th-rank [Darkness](/spell/darkness-player-core) spell for 1 minute. The stolen light is channeled to your eyes, granting you greater darkvision for the duration of the effect.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1210,7 +1335,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "darkness",
+          "slug": "darkness"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1253,7 +1396,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1283,7 +1440,7 @@
     "systemVersion": "1.2.10",
     "name": "Captivating Charm",
     "slug": "captivating-charm-war-of-immortals",
-    "descr": "You focus your attention on a creature within 30 feet, overwhelming its senses. The creature must succeed at a Will save against your class DC or be Fascinated by you until the start of your next turn. The condition ends if you use a hostile action against the target, but not if you use a hostile action against its allies.",
+    "descr": "You focus your attention on a creature within 30 feet, overwhelming its senses. The creature must succeed at a Will save against your class DC or be [Fascinated](/condition/fascinated-player-core) by you until the start of your next turn. The condition ends if you use a hostile action against the target, but not if you use a hostile action against its allies.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1297,7 +1454,29 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1329,7 +1508,7 @@
     "systemVersion": "1.2.10",
     "name": "Coiling Serpents",
     "slug": "coiling-serpents-war-of-immortals",
-    "descr": "Make a ranged Strike with your ikon. If the Strike hits, the target must succeed at a Reflex save against your class DC or the arrow transforms into a multitude of ethereal snakes that coil around the target, Immobilizing it until it succeeds at an Escape attempt against your class DC.",
+    "descr": "Make a ranged Strike with your ikon. If the Strike hits, the target must succeed at a Reflex save against your class DC or the arrow transforms into a multitude of ethereal snakes that coil around the target, [Immobilizing](/condition/immobilized-player-core) it until it succeeds at an [Escape](/action/escape-player-core) attempt against your class DC.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1337,7 +1516,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1364,7 +1544,7 @@
     "systemVersion": "1.2.10",
     "name": "Crash Against Me",
     "slug": "crash-against-me-war-of-immortals",
-    "descr": "Your skin becomes virtually unbreakable. Until the start of your next turn, you have resistance equal to your level to the chosen damage type.\n\nDuring this time, if a creature attacking you using a weapon dealing the same damage type as your resistance misses you or hits you but deals no damage due to your resistance, the weapon clangs wildly off your skin. This painful reverberation makes the attacking enemy Off Guard and gives it a –2 circumstance penalty to attacks with that weapon until the start of the enemy's next turn.",
+    "descr": "Your skin becomes virtually unbreakable. Until the start of your next turn, you have resistance equal to your level to the chosen damage type.\n\nDuring this time, if a creature attacking you using a weapon dealing the same damage type as your resistance misses you or hits you but deals no damage due to your resistance, the weapon clangs wildly off your skin. This painful reverberation makes the attacking enemy [Off Guard](/condition/off-guard-player-core) and gives it a –2 circumstance penalty to attacks with that weapon until the start of the enemy's next turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1374,7 +1554,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1412,7 +1598,13 @@
       "frequency": "",
       "requirements": "Your manifested realm has a radius of at least 10 feet",
       "trigger": "Your previous action was to Sustain your manifested realm",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1440,7 +1632,7 @@
     "systemVersion": "1.2.10",
     "name": "Drink of my Foes",
     "slug": "drink-of-my-foes-war-of-immortals",
-    "descr": "**Requirements** Your last action was a successful Strike with the Barrow'S Edge\n\n---\n\n**Effect** Your blade glows as it absorbs your foe's vitality. You regain Hit Points equal to half the damage dealt.",
+    "descr": "**Requirements** Your last action was a successful Strike with the [Barrow'S Edge](/feat/barrow-s-edge-war-of-immortals)\n\n---\n\n**Effect** Your blade glows as it absorbs your foe's vitality. You regain Hit Points equal to half the damage dealt.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1452,7 +1644,21 @@
       "frequency": "",
       "requirements": "Your last action was a successful Strike with the Barrow'S Edge",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        },
+        {
+          "label": "vitality",
+          "slug": "vitality"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1494,7 +1700,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1524,7 +1744,7 @@
     "systemVersion": "1.2.10",
     "name": "Enter Seat Of Power",
     "slug": "enter-seat-of-power-war-of-immortals",
-    "descr": "You focus your mind on your seat of power, then tap into this connection to transport yourself to its demiplane. This process takes 10 minutes. You can bring up to 10 willing creatures with you when you Enter Seat of Power; these creatures must remain within 30 feet of you for the duration of the activity.\n\nYou can remain in your seat of power for as long as you desire. Any creature that you bring to your seat of power in this way (including you) can depart the demiplane as a three-action activity that has the concentrate trait. They return to the location they were in when they Entered your Seat of Power, or the nearest unoccupied space if that location is occupied.",
+    "descr": "You focus your mind on your seat of power, then tap into this connection to transport yourself to its demiplane. This process takes 10 minutes. You can bring up to 10 willing creatures with you when you Enter Seat of Power; these creatures must remain within 30 feet of you for the duration of the activity.\n\nYou can remain in your seat of power for as long as you desire. Any creature that you bring to your seat of power in this way (including you) can depart the demiplane as a three-action activity that has the [concentrate](/trait/concentrate) trait. They return to the location they were in when they Entered your Seat of Power, or the nearest unoccupied space if that location is occupied.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1535,7 +1755,21 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1565,7 +1799,7 @@
     "systemVersion": "1.2.10",
     "name": "Feed the Masses",
     "slug": "feed-the-masses-war-of-immortals",
-    "descr": "The Horn Of Plenty allows you to transfer the effects of potions and elixirs to your allies. You Interact to draw a consumable from the horn and then Interact to drink it. Rather than nourishing yourself, the item's effects are transferred to a willing ally within 60 feet, as if they had consumed it themself.\n\nIf the consumable restores Hit Points, you can choose to divide the amount it restores between you and the ally freely (after rolling dice to determine the amount).",
+    "descr": "The [Horn Of Plenty](/feat/horn-of-plenty-war-of-immortals) allows you to transfer the effects of potions and elixirs to your allies. You Interact to draw a consumable from the horn and then Interact to drink it. Rather than nourishing yourself, the item's effects are transferred to a willing ally within 60 feet, as if they had consumed it themself.\n\nIf the consumable restores Hit Points, you can choose to divide the amount it restores between you and the ally freely (after rolling dice to determine the amount).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1575,7 +1809,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1603,7 +1843,7 @@
     "systemVersion": "1.2.10",
     "name": "Feral Swing",
     "slug": "feral-swing-war-of-immortals",
-    "descr": "You lash out with both arms, rending all before you. Each creature in a area must succeed at a basic Reflex save against your class DC or take spirit damage equal to your normal Strike damage with your Hands Of The Wildling.\n\nYou can choose to swing with abandon, which imposes a –2 circumstance bonus to enemies' saving throws, but causes you to become Off Guard until the start of your next turn.\n\nEffect: Feral Swing",
+    "descr": "You lash out with both arms, rending all before you. Each creature in a area must succeed at a basic Reflex save against your class DC or take spirit damage equal to your normal Strike damage with your [Hands Of The Wildling](/feat/hands-of-the-wildling-war-of-immortals).\n\nYou can choose to swing with abandon, which imposes a –2 circumstance bonus to enemies' saving throws, but causes you to become [Off Guard](/condition/off-guard-player-core) until the start of your next turn.\n\nEffect: Feral Swing",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1614,7 +1854,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1653,7 +1903,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You attempt a saving throw against a spell or magic effect but haven't rolled yet",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1694,7 +1950,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "light",
+          "slug": "light"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1725,7 +1999,7 @@
     "systemVersion": "1.2.10",
     "name": "Flowing Spirit Strike",
     "slug": "flowing-spirit-strike-war-of-immortals",
-    "descr": "Make two Strikes with the gleaming blade, each against the same target and using your current multiple attack penalty. If the Gleaming Blade doesn't have the agile trait, the second Strike takes a –2 penalty. If both attacks hit, you combine their damage, which is all dealt as spirit damage.\n\nYou add any precision damage only once. Combine the damage from both Strikes and apply resistances and weaknesses only once. This counts as two attacks when calculating your multiple attack penalty.",
+    "descr": "Make two Strikes with the gleaming blade, each against the same target and using your current multiple attack penalty. If the [Gleaming Blade](/feat/gleaming-blade-war-of-immortals) doesn't have the [agile](/trait/agile) trait, the second Strike takes a –2 penalty. If both attacks hit, you combine their damage, which is all dealt as spirit damage.\n\nYou add any precision damage only once. Combine the damage from both Strikes and apply resistances and weaknesses only once. This counts as two attacks when calculating your multiple attack penalty.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1736,7 +2010,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1773,7 +2057,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1800,7 +2085,7 @@
     "systemVersion": "1.2.10",
     "name": "Fracture Mountains",
     "slug": "fracture-mountains-war-of-immortals",
-    "descr": "Your spirit is so dense it takes on tangible force. Make a melee Strike with the Titan'S Breaker. This counts as two attacks when calculating your multiple attack penalty. If this Strike hits, your additional spirit damage from the ikon's immanence increases to 4 plus an extra die of weapon damage.\n\nIf you're at least 10th level, it's increased to 6 spirit damage and two extra dice, and if you're at least 18th level, it's increased to 8 spirit damage and three extra dice.",
+    "descr": "Your spirit is so dense it takes on tangible force. Make a melee Strike with the [Titan'S Breaker](/feat/titan-s-breaker-war-of-immortals). This counts as two attacks when calculating your multiple attack penalty. If this Strike hits, your additional spirit damage from the ikon's immanence increases to 4 plus an extra die of weapon damage.\n\nIf you're at least 10th level, it's increased to 6 spirit damage and two extra dice, and if you're at least 18th level, it's increased to 8 spirit damage and three extra dice.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1811,7 +2096,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1840,7 +2135,7 @@
     "systemVersion": "1.2.10",
     "name": "Giant-Felling Comet",
     "slug": "giant-felling-comet-war-of-immortals",
-    "descr": "You shoot the Starshot, causing a detonation in a area within 60 feet. Each creature in the area must succeed at a basic Reflex save against your class DC or take spirit damage equal to your normal Strike damage with the starshot. Creatures larger than you take a –2 circumstance penalty to their saving throws. This shot requires any ammunition that would normally be required for the weapon.",
+    "descr": "You shoot the [Starshot](/feat/starshot-war-of-immortals), causing a detonation in a area within 60 feet. Each creature in the area must succeed at a basic Reflex save against your class DC or take spirit damage equal to your normal Strike damage with the starshot. Creatures larger than you take a –2 circumstance penalty to their saving throws. This shot requires any ammunition that would normally be required for the weapon.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1851,7 +2146,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1880,7 +2185,7 @@
     "systemVersion": "1.2.10",
     "name": "Harvest Blood",
     "slug": "harvest-blood-war-of-immortals",
-    "descr": "**Requirements** Your last action was a successful piercing or slashing melee Strike against a creature that is not immune to bleed\n\n---\n\n**Effect** You consume the blood lingering upon your weapon. You reduce the value of your drained condition by 1, gain temporary Hit Points equal to your Constitution modifier, and gain a +1 circumstance bonus to saving throws against that creature's spells for 1 minute, or until you Harvest Blood from another creature.",
+    "descr": "**Requirements** Your last action was a successful piercing or slashing melee Strike against a creature that is not immune to bleed\n\n---\n\n**Effect** You consume the blood lingering upon your weapon. You reduce the value of your [drained](/condition/drained-player-core) condition by 1, gain temporary Hit Points equal to your Constitution modifier, and gain a +1 circumstance bonus to saving throws against that creature's spells for 1 minute, or until you Harvest Blood from another creature.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1888,7 +2193,8 @@
       "frequency": "",
       "requirements": "Your last action was a successful piercing or slashing melee Strike against a creature that is not immune to bleed",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1925,7 +2231,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1953,7 +2265,7 @@
     "systemVersion": "1.2.10",
     "name": "Heavy is the Crown",
     "slug": "heavy-is-the-crown-war-of-immortals",
-    "descr": "The weight of authority falls heavily upon you, as well as nearby creatures. All enemies in a area within 60 feet take spirit damage damage equal to your level with a basic Will save against your class DC. Any enemy that fails its save must immediately kneel, dropping Prone as a free action.",
+    "descr": "The weight of authority falls heavily upon you, as well as nearby creatures. All enemies in a area within 60 feet take spirit damage damage equal to your level with a basic Will save against your class DC. Any enemy that fails its save must immediately kneel, dropping [Prone](/condition/prone-player-core) as a free action.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1966,7 +2278,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2009,7 +2339,21 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "Your hierophant Casts a Spell",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "spellshape",
+          "slug": "spellshape"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2039,7 +2383,7 @@
     "systemVersion": "1.2.10",
     "name": "Liar's Hidden Blade",
     "slug": "liar-s-hidden-blade-war-of-immortals",
-    "descr": "**Requirements** Your previous action was an unsuccessful Strike with the weapon from the Shadow Sheath\n\n---\n\n**Effect** The shadow weapon you threw fades, the distraction covering your true intention all along—a second strike in hidden in the blind spot of the first! Interact to draw another weapon from the shadow sheath, then Strike with it at the same multiple attack penalty as the unsuccessful attack. The opponent is Off Guard to this attack.\n\nThis Strike counts toward your multiple attack penalty as normal. After the Strike resolves, you can Interact to draw another weapon from the shadow sheath.",
+    "descr": "**Requirements** Your previous action was an unsuccessful Strike with the weapon from the [Shadow Sheath](/feat/shadow-sheath-war-of-immortals)\n\n---\n\n**Effect** The [shadow](/item/shadow-gm-core) weapon you threw fades, the distraction covering your true intention all along—a second strike in hidden in the blind spot of the first! Interact to draw another weapon from the shadow sheath, then Strike with it at the same multiple attack penalty as the unsuccessful attack. The opponent is [Off Guard](/condition/off-guard-player-core) to this attack.\n\nThis Strike counts toward your multiple attack penalty as normal. After the Strike resolves, you can Interact to draw another weapon from the shadow sheath.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2050,7 +2394,17 @@
       "frequency": "",
       "requirements": "Your previous action was an unsuccessful Strike with the weapon from the Shadow Sheath",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2091,7 +2445,21 @@
       "frequency": "once per hour",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2131,7 +2499,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2169,7 +2543,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2210,7 +2590,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        },
+        {
+          "label": "vitality",
+          "slug": "vitality"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2254,7 +2652,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2296,7 +2712,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2325,7 +2751,7 @@
     "systemVersion": "1.2.10",
     "name": "Overawe Crowd",
     "slug": "overawe-crowd-war-of-immortals",
-    "descr": "**Requirements** You are sharing the same space as a swarm or are adjacent to a troop\n\n---\n\n**Effect** Spend 1 Mythic Point and attempt an Intimidation check at mythic proficiency against the Will DC of the required swarm or troop. On a failure, the target Strides in a direction of your choosing and you move along with it. On a success, the target Strides twice in a direction of your choosing and you can decide whether or not to move along with it. No matter the result, the target is Stunned 1 and temporarily immune to your Overawe Crowd for 24 hours.",
+    "descr": "**Requirements** You are sharing the same space as a swarm or are adjacent to a troop\n\n---\n\n**Effect** Spend 1 Mythic Point and attempt an Intimidation check at mythic proficiency against the Will DC of the required swarm or troop. On a failure, the target Strides in a direction of your choosing and you move along with it. On a success, the target Strides twice in a direction of your choosing and you can decide whether or not to move along with it. No matter the result, the target is [Stunned 1](/condition/stunned-player-core) and temporarily immune to your Overawe Crowd for 24 hours.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2335,7 +2761,13 @@
       "frequency": "",
       "requirements": "You are sharing the same space as a swarm or are adjacent to a troop",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2374,7 +2806,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "death",
+          "slug": "death"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2414,7 +2856,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2454,7 +2906,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "force",
+          "slug": "force"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2483,7 +2945,7 @@
     "systemVersion": "1.2.10",
     "name": "Reap the Field",
     "slug": "reap-the-field-war-of-immortals",
-    "descr": "**Requirements** Your previous action was a successful Strike with the Mortal Harvest\n\n---\n\n**Effect** Time seems to lag as you blur across the battlefield, deciding the fate of many in a moment. Stride up to half your Speed and make another melee Strike with the mortal harvest against a different creature.\n\nThis Strike uses the same multiple attack penalty as your previous Strike, but counts toward your multiple attack penalty as normal.",
+    "descr": "**Requirements** Your previous action was a successful Strike with the [Mortal Harvest](/feat/mortal-harvest-war-of-immortals)\n\n---\n\n**Effect** Time seems to lag as you blur across the battlefield, deciding the fate of many in a moment. Stride up to half your Speed and make another melee Strike with the mortal harvest against a different creature.\n\nThis Strike uses the same multiple attack penalty as your previous Strike, but counts toward your multiple attack penalty as normal.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2493,7 +2955,13 @@
       "frequency": "",
       "requirements": "Your previous action was a successful Strike with the Mortal Harvest",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2521,7 +2989,7 @@
     "systemVersion": "1.2.10",
     "name": "Rejoin in Flight",
     "slug": "rejoin-in-flight-war-of-immortals",
-    "descr": "You throw your weapon ikons to either side of a creature, and they seek each other out, converging on the target. Make two thrown Strikes against a target within the first range increment of both your weapon ikons. This counts as two attacks toward your multiple attack penalty, but the penalty doesn't increase until after you've made both attacks. The target is flanked for both attacks (typically making it Off Guard against both attacks). If both Strikes hit, the target also takes an additional die of weapon damage. The weapons then return to your hand.",
+    "descr": "You throw your weapon ikons to either side of a creature, and they seek each other out, converging on the target. Make two thrown Strikes against a target within the first range increment of both your weapon ikons. This counts as two attacks toward your multiple attack penalty, but the penalty doesn't increase until after you've made both attacks. The target is flanked for both attacks (typically making it [Off Guard](/condition/off-guard-player-core) against both attacks). If both Strikes hit, the target also takes an additional die of weapon damage. The weapons then return to your hand.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2531,7 +2999,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2570,7 +3044,17 @@
       "frequency": "",
       "requirements": "",
       "trigger": "You roll a skill check or saving throw and don't like the result",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2599,7 +3083,7 @@
     "systemVersion": "1.2.10",
     "name": "Ringing Challenge",
     "slug": "ringing-challenge-war-of-immortals",
-    "descr": "You clang your ikon against a weapon, shield, or the ground, emitting a shock wave that deals (max(1,(floor((current value - 2)/2))))d4 spirit,(max(1,(floor((current value - 2)/2))))d4[sonic]|options:area-damage] damage to all creatures in a area or area (basic Fortitude save). A creature that critically fails its saving throw is Deafened for 1 minute.\n\nAt 6th level and every 2 levels thereafter, the damage increases by 1d4 spirit damage and 1d4 sonic damage.",
+    "descr": "You clang your ikon against a weapon, shield, or the ground, emitting a shock wave that deals (max(1,(floor((current value - 2)/2))))d4 spirit,(max(1,(floor((current value - 2)/2))))d4[sonic]|options:area-damage] damage to all creatures in a area or area (basic Fortitude save). A creature that critically fails its saving throw is [Deafened](/condition/deafened-player-core) for 1 minute.\n\nAt 6th level and every 2 levels thereafter, the damage increases by 1d4 spirit damage and 1d4 sonic damage.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2611,7 +3095,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "sonic",
+          "slug": "sonic"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2641,7 +3139,7 @@
     "systemVersion": "1.2.10",
     "name": "Royal Grace",
     "slug": "royal-grace-war-of-immortals",
-    "descr": "You spend 10 minutes conferring with one of your knights who has the doomed condition. By discussing plans for your future kingdom with them and describing the benefits of your rule, you can attempt to soothe their spirits. Attempt a Diplomacy or Society check against a hard DC of your knight's level. Regardless of the result, that knight gains the benefits of the Refocus activity (if they have a focus pool) but is temporarily immune to Royal Grace for 24 hours.\n\n**Critical Success** The knight's doomed condition is reduced by 2 (minimum 0).\n\n**Success** The knight's doomed condition is reduced by 1 (minimum 0).\n\n**Failure** The knight's doomed condition isn't reduced.",
+    "descr": "You spend 10 minutes conferring with one of your knights who has the [doomed](/condition/doomed-player-core) condition. By discussing plans for your future kingdom with them and describing the benefits of your rule, you can attempt to soothe their spirits. Attempt a Diplomacy or Society check against a hard DC of your knight's level. Regardless of the result, that knight gains the benefits of the Refocus activity (if they have a focus pool) but is temporarily immune to Royal Grace for 24 hours.\n\n**Critical Success** The knight's doomed condition is reduced by 2 (minimum 0).\n\n**Success** The knight's doomed condition is reduced by 1 (minimum 0).\n\n**Failure** The knight's doomed condition isn't reduced.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2653,7 +3151,25 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2694,7 +3210,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2722,7 +3244,7 @@
     "systemVersion": "1.2.10",
     "name": "Shed the Mortal Skin",
     "slug": "shed-the-mortal-skin-war-of-immortals",
-    "descr": "Like the serpent, that most ancient of immortals, you shed your skin, revealing a glowing divine form. If you are currently taking persistent fire or acid damage, you immediately end the effect. Until the beginning of your next turn, you shed bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. The next time you are dealt damage by an enemy before the beginning of your next turn, you shed glowing ichor in a square adjacent to you, and where it hits the earth, a glowing, thorned herb grows. A creature other than you can pluck and consume the herb with an Interact action to regain a number of Hit Points equal to half of the damage you were dealt by the attack that sprouted the herb.",
+    "descr": "Like the serpent, that most ancient of immortals, you shed your skin, revealing a glowing divine form. If you are currently taking persistent fire or acid damage, you immediately end the effect. Until the beginning of your next turn, you shed bright light in a 20-foot radius (and dim light for the next 20 feet) like a torch. The next time you are dealt damage by an enemy before the beginning of your next turn, you shed glowing ichor in a square adjacent to you, and where it hits the earth, a glowing, thorned herb grows. A creature other than you can pluck and consume the herb with an [Interact](/action/interact-player-core) action to regain a number of Hit Points equal to half of the damage you were dealt by the attack that sprouted the herb.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2735,7 +3257,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "light",
+          "slug": "light"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        },
+        {
+          "label": "vitality",
+          "slug": "vitality"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2766,7 +3306,7 @@
     "systemVersion": "1.2.10",
     "name": "Shift Immanence",
     "slug": "shift-immanence-war-of-immortals",
-    "descr": "**Frequency** once per round\n\n---\n\nYou shift your power, filling one of your ikons with your divine spark. That ikon softly glows with radiant light, emits subtle chimes as it moves, or is otherwise obviously empowered in a way that matches your growing divinity, granting the ikon the divine trait and granting you that ikon's immanence effects for as long as your divine spark is empowering it. Your spark is indivisible, so it can empower only one ikon at a time. You can also Shift Immanence to return your spark to the depths of your soul, leaving none of your ikons empowered.\n\n---\n\n**Special** In addition to the above usage, you can also Shift Immanence as a free action triggered when you roll initiative.",
+    "descr": "**Frequency** once per round\n\n---\n\nYou shift your power, filling one of your ikons with your divine spark. That ikon softly glows with radiant light, emits subtle chimes as it moves, or is otherwise obviously empowered in a way that matches your growing divinity, granting the ikon the [divine](/trait/divine) trait and granting you that ikon's immanence effects for as long as your divine spark is empowering it. Your spark is indivisible, so it can empower only one ikon at a time. You can also Shift Immanence to return your spark to the depths of your soul, leaving none of your ikons empowered.\n\n---\n\n**Special** In addition to the above usage, you can also Shift Immanence as a free action triggered when you roll initiative.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2777,7 +3317,17 @@
       "frequency": "once per round",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "exemplar",
+          "slug": "exemplar"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2806,7 +3356,7 @@
     "systemVersion": "1.2.10",
     "name": "Skirt the Underworld",
     "slug": "skirt-the-underworld-war-of-immortals",
-    "descr": "You skirt into the world of the dead, becoming Invisible for 1 round, then Fly up to your Speed. Each enemy adjacent to you at any point during this movement must succeed at a Fortitude save against your class DC or become Blinded for 1 minute (or permanently on a critical failure).\n\nFor each creature blinded by this effect, the duration of the granted invisibility extends by 1 round. Undead and other creatures with strong ties to the world of the dead, such as psychopomps, are immune to this effect.",
+    "descr": "You skirt into the world of the dead, becoming [Invisible](/condition/invisible-player-core) for 1 round, then Fly up to your Speed. Each enemy adjacent to you at any point during this movement must succeed at a Fortitude save against your class DC or become [Blinded](/condition/blinded-player-core) for 1 minute (or permanently on a critical failure).\n\nFor each creature blinded by this effect, the duration of the granted invisibility extends by 1 round. Undead and other creatures with strong ties to the world of the dead, such as psychopomps, are immune to this effect.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2819,7 +3369,25 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2850,7 +3418,7 @@
     "systemVersion": "1.2.10",
     "name": "Spasm of the Berserker",
     "slug": "spasm-of-the-berserker-war-of-immortals",
-    "descr": "Your body warps beyond recognition into a powerful, one-eyed form. You're affected by a 4th-rank Enlarge spell and a 6th-rank Moon Frenzy spell, which both last until the end of your next turn. You can't attempt to end the moon frenzy early.\n\nIf this ikon becomes empowered again, you can extend Spasm of the Berserker's duration until the end of your next turn. While you're already affected by Spasm of the Berserker, the transcend action becomes a free action to extend its duration until the end of your next turn.",
+    "descr": "Your body warps beyond recognition into a powerful, one-eyed form. You're affected by a 4th-rank [Enlarge](/spell/enlarge-player-core) spell and a 6th-rank [Moon Frenzy](/spell/moon-frenzy-player-core) spell, which both last until the end of your next turn. You can't attempt to end the moon frenzy early.\n\nIf this ikon becomes empowered again, you can extend Spasm of the Berserker's duration until the end of your next turn. While you're already affected by Spasm of the Berserker, the transcend action becomes a free action to extend its duration until the end of your next turn.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2860,7 +3428,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2898,7 +3472,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "Your turn begins",
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2936,7 +3516,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "Your previous action was to Sustain your manifested realm",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2964,7 +3550,7 @@
     "systemVersion": "1.2.10",
     "name": "Strike, Breathe, Rend",
     "slug": "strike-breathe-rend-war-of-immortals",
-    "descr": "**Requirements** Your last action this turn was a successful Strike with the Noble Branch\n\n---\n\n**Effect** You channel a rending pulse of energy down your weapon in the moment of contact. The target of the Strike takes spirit damage equal to the noble branch's weapon damage dice. This includes any extra dice from striking runes, but not from special abilities, property runes, or the like.",
+    "descr": "**Requirements** Your last action this turn was a successful Strike with the [Noble Branch](/feat/noble-branch-war-of-immortals)\n\n---\n\n**Effect** You channel a rending pulse of energy down your weapon in the moment of contact. The target of the Strike takes spirit damage equal to the noble branch's weapon damage dice. This includes any extra dice from [striking](/item/striking-gm-core) runes, but not from special abilities, property runes, or the like.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2975,7 +3561,17 @@
       "frequency": "",
       "requirements": "Your last action this turn was a successful Strike with the Noble Branch",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3016,7 +3612,21 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3056,7 +3666,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "transcendence",
+          "slug": "transcendence"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3084,7 +3700,7 @@
     "systemVersion": "1.2.10",
     "name": "Ultimatum of Liberation",
     "slug": "ultimatum-of-liberation-war-of-immortals",
-    "descr": "**Frequency** once per day\n\n---\n\n**Effect** You proclaim an ultimatum against a creature you believe is oppressing others and all who follow their orders. All other creatures (including you) who hear your ultimatum, or learn about it later on, are emboldened by your words for 1 day, and gain a +2 status bonus to their Will saving throws against effects produced by the oppressing creature and their allies, which increases to +3 if they are within 30 feet of you.\n\nEffect: Ultimatum Of Liberation\n\nAdditionally, the first time each day that creature and each of its allies comes within 30 feet of you, they must succeed on a Will save against your class DC or spell DC (whichever is higher) or become Frightened 1 (Frightened 2 on a critical failure). This second effect has the emotion, fear, and mental traits. The oppressing creature may end all the effects as a free action by truthfully agreeing to permanently end their oppression. Otherwise, your Ultimatum of Liberation has no duration, though you can have only one Ultimatum of Liberation active at a time. If you pronounce a second Ultimatum of Liberation, the effects of the first one end.",
+    "descr": "**Frequency** once per day\n\n---\n\n**Effect** You proclaim an ultimatum against a creature you believe is oppressing others and all who follow their orders. All other creatures (including you) who hear your ultimatum, or learn about it later on, are emboldened by your words for 1 day, and gain a +2 status bonus to their Will saving throws against effects produced by the oppressing creature and their allies, which increases to +3 if they are within 30 feet of you.\n\nEffect: Ultimatum Of Liberation\n\nAdditionally, the first time each day that creature and each of its allies comes within 30 feet of you, they must succeed on a Will save against your class DC or spell DC (whichever is higher) or become [Frightened 1](/condition/frightened-player-core) (Frightened 2 on a critical failure). This second effect has the emotion, fear, and [mental](/trait/mental) traits. The oppressing creature may end all the effects as a free action by truthfully agreeing to permanently end their oppression. Otherwise, your Ultimatum of Liberation has no duration, though you can have only one Ultimatum of Liberation active at a time. If you pronounce a second Ultimatum of Liberation, the effects of the first one end.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3097,7 +3713,25 @@
       "frequency": "once per day",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3138,7 +3772,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "Your previous action was to Sustain your manifested realm",
-      "actions": "free"
+      "actions": "free",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

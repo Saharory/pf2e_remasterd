@@ -9,6 +9,10 @@ license.
 - Records whose `attributes.license` value is `OGL-1.0a` are Open Game Content
   covered by the accompanying `OGL-1.0a.txt`, including its Section 15 notice
   and Open Game Content and Product Identity designations.
+- The Operations Center Pages are project-authored quick-reference adaptations
+  of the included ORC mechanical rules. Their explicit full-rule links identify
+  the corresponding source records, and the archive carries the complete ORC
+  notice for those underlying rules.
 - Encounter+ schemas, presentation code, project metadata, and inherited
   visual assets are not designated as ORC Licensed Material or Open Game
   Content by these notices.

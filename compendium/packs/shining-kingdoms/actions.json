@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "(Failed Prophet) Broken Mindscape",
     "slug": "failed-prophet-broken-mindscape-shining-kingdoms",
-    "descr": "30 feet.\n\nA creature entering the aura or starting its turn in the aura must attempt a Will save. Use the moderate spell DC for the failed prophet's level.\n\n---\n\n**Critical Success** The creature is unaffected and becomes immune to broken mindscape for 1 minute.\n\n**Success** The creature is Stunned 1 as disjointed visions of the failed prophet's mindscape assail its senses.\n\n**Failure** The creature's mind is pulled into the failed prophet's mindscape. It's Paralyzed for 1 round. While paralyzed, the creature can take any actions with the mental or spirit traits, or that deal mental or spirit damage, as though those actions were purely mental. Such actions only have line of effect to the originating failed prophet and other creatures currently paralyzed by broken mindscape, though they treat all such creatures as though they were adjacent.\n\n**Critical Failure** As failure, but the duration is 1 minute or until the failed prophet is destroyed, whichever happens first.",
+    "descr": "30 feet.\n\nA creature entering the aura or starting its turn in the aura must attempt a Will save. Use the moderate spell DC for the failed prophet's level.\n\n---\n\n**Critical Success** The creature is unaffected and becomes immune to broken mindscape for 1 minute.\n\n**Success** The creature is [Stunned 1](/condition/stunned-player-core) as disjointed visions of the failed prophet's mindscape assail its senses.\n\n**Failure** The creature's mind is pulled into the failed prophet's mindscape. It's [Paralyzed](/condition/paralyzed-player-core) for 1 round. While paralyzed, the creature can take any actions with the mental or [spirit](/trait/spirit) traits, or that deal mental or spirit damage, as though those actions were purely mental. Such actions only have line of effect to the originating failed prophet and other creatures currently paralyzed by broken mindscape, though they treat all such creatures as though they were adjacent.\n\n**Critical Failure** As failure, but the duration is 1 minute or until the failed prophet is destroyed, whichever happens first.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -18,7 +18,25 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -57,7 +75,8 @@
       "frequency": "",
       "requirements": "The failed prophet's last action was a successful fist Strike that dealt damage",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -91,7 +110,8 @@
       "category": "defensive",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -118,7 +138,7 @@
     "systemVersion": "1.2.10",
     "name": "(Failed Prophet) This Is My Reality!",
     "slug": "failed-prophet-this-is-my-reality-shining-kingdoms",
-    "descr": "The failed prophet exerts control over their crumbling mindscape to inflict harm upon those trapped within. This can take the form of falling debris, natural disasters, or anything else the failed prophet can imagine. No matter the form, each creature currently Paralyzed by the failed prophet's broken mindscape takes spirit damage with a basic Will save. The save DC uses the high spell DC for the failed prophet's level and the unlimited use area damage for the failed prophet's level.",
+    "descr": "The failed prophet exerts control over their crumbling mindscape to inflict harm upon those trapped within. This can take the form of falling debris, natural disasters, or anything else the failed prophet can imagine. No matter the form, each creature currently [Paralyzed](/condition/paralyzed-player-core) by the failed prophet's broken mindscape takes spirit damage with a basic Will save. The save DC uses the high spell DC for the failed prophet's level and the unlimited use area damage for the failed prophet's level.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -128,7 +148,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -163,7 +189,8 @@
       "category": "interaction",
       "frequency": "",
       "requirements": "",
-      "trigger": ""
+      "trigger": "",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -198,7 +225,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -225,7 +253,7 @@
     "systemVersion": "1.2.10",
     "name": "Remove Head",
     "slug": "remove-head-shining-kingdoms",
-    "descr": "**Effect** You Interact to remove your head from your ghostly body and hold it in a free hand. While your head is detached, you can use it to look around and over obstacles while remaining behind cover, although you don't have line of effect to target creatures unless the effect originates from your head. You can leave your head behind and move your body around independently, but your head gains the Paralyzed condition and your body becomes blind, deaf, and unable to take any action that has the auditory trait that requires speech or vocalization. You can cause your head to dematerialize and reappear atop your neck as a free action, which occurs automatically if it takes damage while detached or is separated from your body by more than 50 feet.",
+    "descr": "**Effect** You Interact to remove your head from your ghostly body and hold it in a free hand. While your head is detached, you can use it to look around and over obstacles while remaining behind cover, although you don't have line of effect to target creatures unless the effect originates from your head. You can leave your head behind and move your body around independently, but your head gains the [Paralyzed](/condition/paralyzed-player-core) condition and your body becomes [blind](/condition/blinded-player-core), [deaf](/condition/deafened-player-core), and unable to take any action that has the [auditory](/trait/auditory) trait that requires speech or vocalization. You can cause your head to dematerialize and reappear atop your neck as a free action, which occurs automatically if it takes damage while detached or is separated from your body by more than 50 feet.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -235,7 +263,13 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

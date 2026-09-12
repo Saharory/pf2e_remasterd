@@ -14,7 +14,8 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -53,7 +54,21 @@
       "category": "consumable",
       "price": "155 gp",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "alchemical",
+          "slug": "alchemical"
+        },
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "elixir",
+          "slug": "elixir"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -92,7 +107,8 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -119,7 +135,7 @@
     "systemVersion": "1.2.10",
     "name": "Book of Lost Days",
     "slug": "book-of-lost-days-dark-archive",
-    "descr": "This massive tome's yellowed pages curl at the edges, and the letters on its face and spine are too worn to be read. When you open the book, it always opens to a page that seems to perfectly answer the question you had in mind, but reading more than a few lines causes your head to swim alarmingly.\n\n---\n\n**Activate—Study Memory** 1 hour (concentrate, manipulate)\n\n**Requirements** You aren't drained\n\n---\n\n**Effect** You open the book while trying to learn information about any topic. *The Book of Lost Days* permits you to view another's memory, which contains information about that subject commensurate to rolling a total of 40 to Recall Knowledge about the topic, with additional context provided on a success or critical success.\n\nThe price for this knowledge is the memory of a day in your past, and the vitality of a day in your future. You lose the memory of that day completely, and the total of all the knowledge you learned on that date is added to the book's repository of information. The book, not you, chooses which memories are taken, preferring days with concentrated emotional resonance, and thus tends to steal significant life moments. This loss affects only your memories; it has no effect on your level, class, feats, or other character choices.\n\nYour natural lifespan is also shortened by 1 day. The loss of this life energy causes you to be Drained 2. You can't reduce the drained condition for 2 days, after which you can recover normally from the condition.\n\nCreatures have occasionally managed to use the *Book of Lost Days* not to gain others' knowledge but to wipe their minds clean of painful memories or deadly secrets. Their memories aren't destroyed but merely stored in the book, where someone else might later retrieve them.",
+    "descr": "This massive tome's yellowed pages curl at the edges, and the letters on its face and spine are too worn to be read. When you open the book, it always opens to a page that seems to perfectly answer the question you had in mind, but reading more than a few lines causes your head to swim alarmingly.\n\n---\n\n**Activate—Study Memory** 1 hour (concentrate, manipulate)\n\n**Requirements** You aren't drained\n\n---\n\n**Effect** You open the book while trying to learn information about any topic. *The Book of Lost Days* permits you to view another's memory, which contains information about that subject commensurate to rolling a total of 40 to [Recall Knowledge](/action/recall-knowledge-player-core) about the topic, with additional context provided on a success or critical success.\n\nThe price for this knowledge is the memory of a day in your past, and the vitality of a day in your future. You lose the memory of that day completely, and the total of all the knowledge you learned on that date is added to the book's repository of information. The book, not you, chooses which memories are taken, preferring days with concentrated emotional resonance, and thus tends to steal significant life moments. This loss affects only your memories; it has no effect on your level, class, feats, or other character choices.\n\nYour natural lifespan is also shortened by 1 day. The loss of this life energy causes you to be [Drained 2](/condition/drained-player-core). You can't reduce the drained condition for 2 days, after which you can recover normally from the condition.\n\nCreatures have occasionally managed to use the *Book of Lost Days* not to gain others' knowledge but to wipe their minds clean of painful memories or deadly secrets. Their memories aren't destroyed but merely stored in the book, where someone else might later retrieve them.",
     "data": {
       "level": 15,
       "rarity": "unique",
@@ -130,7 +146,17 @@
       "category": "held",
       "price": "",
       "usage": "held-in-two-hands",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -172,7 +198,21 @@
       "category": "other",
       "price": "",
       "usage": "other",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "contract",
+          "slug": "contract"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -215,7 +255,21 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "scrying",
+          "slug": "scrying"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -258,7 +312,21 @@
       "category": "worn",
       "price": "125 gp",
       "usage": "worncollar",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "companion",
+          "slug": "companion"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -300,7 +368,17 @@
       "category": "consumable",
       "price": "15 gp",
       "usage": "other",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -330,7 +408,7 @@
     "systemVersion": "1.2.10",
     "name": "Cloak of the False Foe",
     "slug": "cloak-of-the-false-foe-dark-archive",
-    "descr": "Images of strange animals and distorted figures are woven into this coarse, fur-lined cloak.\n\n**Activate—Cryptid Shape** 1 (manipulate, polymorph, primal)\n\n**Frequency** once per day\n\n**Effect** The cloak rises to envelop your head and body, reshaping your appearance into that of a locally feared cryptid. If there is no such figure in local lore, the *cloak of the false* foe instead alters your appearance into a form imagined by the crafter of the cloak. One choice that occurs with disturbing frequency is a gaunt figure with triple-jointed fingers; an eyeless, hairless head with a lamprey mouth in the center of its face; and stubby tentacles waving down its neck. The transformation also grants the effects of either a 3rd-rank Humanoid Form spell that lasts for 1 hour if you turn into a Medium cryptid, or a 5th-rank *humanoid form* spell that lasts for 10 minutes if you turn into a Large cryptid.\n\nWhile you're in cryptid form, any wounds left by your spells and Strikes appear to be the result of the cryptid's unarmed attacks and special abilities to a casual inspection. This doesn't alter the actual damage type inflicted or the effects of such attack. Someone closely studying the wounds can, with a successful Medicine DC 30 check, realize that magic has altered the appearance of the injuries.",
+    "descr": "Images of strange animals and distorted figures are woven into this coarse, fur-lined cloak.\n\n**Activate—Cryptid Shape** 1 (manipulate, polymorph, primal)\n\n**Frequency** once per day\n\n**Effect** The cloak rises to envelop your head and body, reshaping your appearance into that of a locally feared cryptid. If there is no such figure in local lore, the *cloak of the false* foe instead alters your appearance into a form imagined by the crafter of the cloak. One choice that occurs with disturbing frequency is a gaunt figure with triple-jointed fingers; an eyeless, hairless head with a lamprey mouth in the center of its face; and stubby tentacles waving down its neck. The transformation also grants the effects of either a 3rd-rank [Humanoid Form](/spell/humanoid-form-player-core) spell that lasts for 1 hour if you turn into a Medium cryptid, or a 5th-rank *humanoid form* spell that lasts for 10 minutes if you turn into a Large cryptid.\n\nWhile you're in cryptid form, any wounds left by your spells and Strikes appear to be the result of the cryptid's unarmed attacks and special abilities to a casual inspection. This doesn't alter the actual damage type inflicted or the effects of such attack. Someone closely studying the wounds can, with a successful Medicine DC 30 check, realize that magic has altered the appearance of the injuries.",
     "data": {
       "level": 12,
       "rarity": "common",
@@ -341,7 +419,17 @@
       "category": "worn",
       "price": "1850 gp",
       "usage": "worncloak",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "primal",
+          "slug": "primal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -371,7 +459,7 @@
     "systemVersion": "1.2.10",
     "name": "Compass of Transpositional Awareness",
     "slug": "compass-of-transpositional-awareness-dark-archive",
-    "descr": "The silver face of this glass-encased compass is etched with dozens of esoteric symbols, obscure icons, and inscrutable abbreviations.\n\n**Activate—Track Teleportation** 1 (concentrate, manipulate)\n\n**Frequency** once per minute\n\n---\n\n**Effect** You point the compass of transpositional awareness at an extant teleportation effect (such as a magical portal) or the site of a teleportation effect that existed within the last 1 minute (such as the space where a creature just cast Translocate). Attempt an Occultism check to determine to where the effect leads or led. The DC of this check is the effect's counteract DC. On a success, you know roughly the destination of the teleportation effect (for example \"the Plane of Fire,\" \"north,\" or \"Avistan\"). On a critical success, you ascertain the exact destination within mere feet for local effects (such as *translocate*) or within a few miles for long-range effects (such as Teleport, Interplanar Teleport, or interdimensional portals).\n\n**Activate—Triangulate** 1 (concentrate, manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You use the compass of transpositional awareness to triangulate your current coordinates and those of your intended destination using teleportation magic. For 1 minute, whenever you cast a teleportation spell that has a range, increase that spell's range by 30 feet. If the spell normally has a range of touch, extend its range to 30 feet.",
+    "descr": "The silver face of this glass-encased compass is etched with dozens of esoteric symbols, obscure icons, and inscrutable abbreviations.\n\n**Activate—Track Teleportation** 1 (concentrate, manipulate)\n\n**Frequency** once per minute\n\n---\n\n**Effect** You point the compass of transpositional awareness at an extant teleportation effect (such as a magical portal) or the site of a teleportation effect that existed within the last 1 minute (such as the space where a creature just cast [Translocate](/spell/translocate-player-core)). Attempt an Occultism check to determine to where the effect leads or led. The DC of this check is the effect's counteract DC. On a success, you know roughly the destination of the teleportation effect (for example \"the Plane of Fire,\" \"north,\" or \"Avistan\"). On a critical success, you ascertain the exact destination within mere feet for local effects (such as *translocate*) or within a few miles for long-range effects (such as [Teleport](/spell/teleport-player-core), [Interplanar Teleport](/spell/interplanar-teleport-player-core), or interdimensional portals).\n\n**Activate—Triangulate** 1 (concentrate, manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You use the compass of transpositional awareness to triangulate your current coordinates and those of your intended destination using teleportation magic. For 1 minute, whenever you cast a teleportation spell that has a range, increase that spell's range by 30 feet. If the spell normally has a range of touch, extend its range to 30 feet.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -383,7 +471,21 @@
       "category": "held",
       "price": "950 gp",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -414,7 +516,7 @@
     "systemVersion": "1.2.10",
     "name": "Conrasu Coin (Arbiter)",
     "slug": "conrasu-coin-arbiter-dark-archive",
-    "descr": "**Activate** F (concentrate)\n\n**Trigger** You attempt a Diplomacy check to Make An Impression.\n\n---\n\nThese wooden discs sometimes form spontaneously at the Wood Pile, a secret conrasu location suffused with extraplanar energy. A conrasu coin can be activated to call upon the power of a specific type of aeon.\n\nThis coin has small wings like an arbiter, the messenger and diplomat aeon. When you activate the coin, you gain a +2 circumstance bonus on the Diplomacy check, which increases to a +3 circumstance bonus to Make An Impression on a creature with the aeon trait.",
+    "descr": "**Activate** F (concentrate)\n\n**Trigger** You attempt a Diplomacy check to [Make An Impression](/action/make-an-impression-player-core).\n\n---\n\nThese wooden discs sometimes form spontaneously at the Wood Pile, a secret conrasu location suffused with extraplanar energy. A conrasu coin can be activated to call upon the power of a specific type of aeon.\n\nThis coin has small wings like an arbiter, the messenger and diplomat aeon. When you activate the coin, you gain a +2 circumstance bonus on the Diplomacy check, which increases to a +3 circumstance bonus to Make An Impression on a creature with the [aeon](/trait/aeon) trait.",
     "data": {
       "level": 3,
       "rarity": "uncommon",
@@ -426,7 +528,21 @@
       "category": "talisman",
       "price": "7 gp",
       "usage": "affixed-to-armor",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "talisman",
+          "slug": "talisman"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -456,7 +572,7 @@
     "systemVersion": "1.2.10",
     "name": "Conrasu Coin (Bythos)",
     "slug": "conrasu-coin-bythos-dark-archive",
-    "descr": "**Activate** F (concentrate)\n\n**Trigger** You're targeted with an attack but the opponent hasn't rolled yet.\n\n---\n\nThese wooden discs sometimes form spontaneously at the Wood Pile, a secret conrasu location suffused with extraplanar energy. A conrasu coin can be activated to call upon the power of a specific type of aeon.\n\nThis cog-like coin bears an hourglass on one side and the four-armed silhouette of a bythos—aeons that steward over time—on the other. When activated, you catch a glimpse of your body moving on one of its potential timelines in response to danger and you follow those movements to dodge. You gain a +2 circumstance bonus to AC against the attack, and after resolving the attack, you can Stride up to 10 feet without triggering reactions. If you have the Nimble Roll feat and the attack misses, you can Stride up to 20 feet instead.",
+    "descr": "**Activate** F (concentrate)\n\n**Trigger** You're targeted with an attack but the opponent hasn't rolled yet.\n\n---\n\nThese wooden discs sometimes form spontaneously at the Wood Pile, a secret conrasu location suffused with extraplanar energy. A conrasu coin can be activated to call upon the power of a specific type of aeon.\n\nThis cog-like coin bears an hourglass on one side and the four-armed silhouette of a bythos—aeons that steward over time—on the other. When activated, you catch a glimpse of your body moving on one of its potential timelines in response to danger and you follow those movements to dodge. You gain a +2 circumstance bonus to AC against the attack, and after resolving the attack, you can Stride up to 10 feet without triggering reactions. If you have the [Nimble Roll](/feat/nimble-roll-player-core) feat and the attack misses, you can Stride up to 20 feet instead.",
     "data": {
       "level": 10,
       "rarity": "uncommon",
@@ -468,7 +584,21 @@
       "category": "talisman",
       "price": "200 gp",
       "usage": "affixed-to-armor",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "talisman",
+          "slug": "talisman"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -498,7 +628,7 @@
     "systemVersion": "1.2.10",
     "name": "Cryolite Eye",
     "slug": "cryolite-eye-dark-archive",
-    "descr": "You tore your eye from the socket and offered it to whatever spirit would take it. In return, you received a glass eye in its place. This eye allows you to see as normal, and when you succeed at a Perception check against an illusion, you get a critical success instead. Once per day, from any distance, the entity that holds your *bargained contract* can overwhelm your cryolite eye with magical energy, causing images to float over your vision that inflict the Dazzled condition on you for 1 minute.\n\n**Activate—Look Beyond** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You look through the glass eye sealing your *bargained contract*. The contract casts See The Unseen affecting you.",
+    "descr": "You tore your eye from the socket and offered it to whatever spirit would take it. In return, you received a glass eye in its place. This eye allows you to see as normal, and when you succeed at a Perception check against an illusion, you get a critical success instead. Once per day, from any distance, the entity that holds your *bargained contract* can overwhelm your cryolite eye with magical energy, causing images to float over your vision that inflict the [Dazzled](/condition/dazzled-player-core) condition on you for 1 minute.\n\n**Activate—Look Beyond** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You look through the glass eye sealing your *bargained contract*. The contract casts [See The Unseen](/spell/see-the-unseen-player-core) affecting you.",
     "data": {
       "level": 6,
       "rarity": "rare",
@@ -510,7 +640,21 @@
       "category": "other",
       "price": "",
       "usage": "other",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "contract",
+          "slug": "contract"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -559,7 +703,25 @@
       "hands": "one",
       "weaponType": "melee",
       "weaponCategory": "simple",
-      "weaponGroup": "knife"
+      "weaponGroup": "knife",
+      "traitLinks": [
+        {
+          "label": "agile",
+          "slug": "agile"
+        },
+        {
+          "label": "finesse",
+          "slug": "finesse"
+        },
+        {
+          "label": "thrown-10",
+          "slug": "thrown"
+        },
+        {
+          "label": "versatile-s",
+          "slug": "versatile"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -599,7 +761,8 @@
       "category": "held",
       "price": "5 sp",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -627,7 +790,7 @@
     "systemVersion": "1.2.10",
     "name": "Forgetful Drops",
     "slug": "forgetful-drops-dark-archive",
-    "descr": "**Activate** 1 (manipulate)\n\n**Access** Member of a secret society\n\n---\n\nThese innocuous, colorless drops can be poured directly into a victim's mouth, or slipped into their food or drink. They initially haze a victim's mind slightly, making them easier to fool; in later stages, they can lead to the victim entering a murderous Confused state. Secret societies use these drops to befuddle a target or to frame them for violence.\n\n**Saving Throw** Fortitude DC 18\n\n**Onset** 5 minutes\n\n**Maximum Duration** 1 hour\n\n**Stage 1** Stupefied 1 (10 minutes)\n\n**Stage 2** stupefied 1 and Clumsy 1 (20 minutes)\n\n**Stage 3** stupefied 1, clumsy 1, and Confused (30 minutes)",
+    "descr": "**Activate** 1 (manipulate)\n\n**Access** Member of a secret society\n\n---\n\nThese innocuous, colorless drops can be poured directly into a victim's mouth, or slipped into their food or drink. They initially haze a victim's mind slightly, making them easier to fool; in later stages, they can lead to the victim entering a murderous [Confused](/condition/confused-player-core) state. Secret societies use these drops to befuddle a target or to frame them for violence.\n\n**Saving Throw** Fortitude DC 18\n\n**Onset** 5 minutes\n\n**Maximum Duration** 1 hour\n\n**Stage 1** [Stupefied 1](/condition/stupefied-player-core) (10 minutes)\n\n**Stage 2** stupefied 1 and [Clumsy 1](/condition/clumsy-player-core) (20 minutes)\n\n**Stage 3** stupefied 1, clumsy 1, and Confused (30 minutes)",
     "data": {
       "level": 3,
       "rarity": "uncommon",
@@ -640,7 +803,25 @@
       "category": "consumable",
       "price": "10 gp",
       "usage": "held-in-one-hand",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "alchemical",
+          "slug": "alchemical"
+        },
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "ingested",
+          "slug": "ingested"
+        },
+        {
+          "label": "poison",
+          "slug": "poison"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -672,7 +853,7 @@
     "systemVersion": "1.2.10",
     "name": "Gift of the Poisoned Heart",
     "slug": "gift-of-the-poisoned-heart-dark-archive",
-    "descr": "**Activate** 1 minute (concentrate, manipulate)\n\n---\n\nThose who fail to see the curse view this object as a priceless gift, capable of restoring life to the deceased, but deep in the heart of this diamond lies a single flaw: a fissured occlusion of sickly, tainted red. To activate the diamond, place it on the relatively intact body of a creature that died within the past year. The stone shatters, restoring the recipient to life with the effects of a successful Resurrect ritual, except there's no limit to the level of the creature that can be revived.\n\nThis gift of life comes with a terrible cost: the recipient believes you—and anyone else who aided in the resurrection—deliberately caused their death and revived them only in furtherance of some nefarious scheme. Having a proxy activate the *gift of the poisoned heart* is of no use, as the item's magic sniffs out all coconspirators and uses your attempt to avoid the drawback to feed the resurrected creature's paranoia.\n\nNo amount of information or persuasion can alleviate this mistrust, as the cursed creature twists the facts endlessly to fit their delusion. Only magic such as Cleanse Affliction can neutralize this effect, and the subject resists any attempt to alter their beliefs by magic.",
+    "descr": "**Activate** 1 minute (concentrate, manipulate)\n\n---\n\nThose who fail to see the curse view this object as a priceless gift, capable of restoring life to the deceased, but deep in the heart of this diamond lies a single flaw: a fissured occlusion of sickly, tainted red. To activate the diamond, place it on the relatively intact body of a creature that died within the past year. The stone shatters, restoring the recipient to life with the effects of a successful [Resurrect](/ritual/resurrect-player-core) ritual, except there's no limit to the level of the creature that can be revived.\n\nThis gift of life comes with a terrible cost: the recipient believes you—and anyone else who aided in the resurrection—deliberately caused their death and revived them only in furtherance of some nefarious scheme. Having a proxy activate the *gift of the poisoned heart* is of no use, as the item's magic sniffs out all coconspirators and uses your attempt to avoid the drawback to feed the resurrected creature's paranoia.\n\nNo amount of information or persuasion can alleviate this mistrust, as the cursed creature twists the facts endlessly to fit their delusion. Only magic such as [Cleanse Affliction](/spell/cleanse-affliction-player-core) can neutralize this effect, and the subject resists any attempt to alter their beliefs by magic.",
     "data": {
       "level": 16,
       "rarity": "rare",
@@ -685,7 +866,25 @@
       "category": "consumable",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -725,7 +924,8 @@
       "category": "worn",
       "price": "10 gp",
       "usage": "worn",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -753,7 +953,7 @@
     "systemVersion": "1.2.10",
     "name": "Golden Goose",
     "slug": "golden-goose-dark-archive",
-    "descr": "This life-sized, hollow, golden goose statuette has an open, fanged mouth and an unsettling aura of hunger. Fiends sometimes present it as a gift to mortals whose greed makes them susceptible to temptation. While the *golden goose* can be used without malice, those who possess such a thing often find its glittering lure erodes their morals over time.\n\n---\n\n**Activate—Golden Goose** (manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You feed the goose the warm, still-bloody heart of any sapient, non-unholy creature who died within the past hour. The golden goose's eyes flare red as it chews the heart into pulp. Once the heart is destroyed, the goose lays a golden egg worth 50 gp, or 100 gp if you murdered the creature for no reason other than to feed the goose.\n\nAfter 12 such eggs are laid, the next time you activate the golden goose, it transmutes your heart to gold. This effect functions as Petrify, with a Fortitude DC 30 save to resist. If you become Petrified, you turn to solid, transparent stone. Your heart becomes a golden egg worth 100 gp, which can be retrieved only by shattering your body. Whether or not you turn to stone, the golden goose dissipates with a honk into sulfurous smoke.",
+    "descr": "This life-sized, hollow, golden goose statuette has an open, fanged mouth and an unsettling aura of hunger. Fiends sometimes present it as a gift to mortals whose greed makes them susceptible to temptation. While the *golden goose* can be used without malice, those who possess such a thing often find its glittering lure erodes their morals over time.\n\n---\n\n**Activate—Golden Goose** (manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You feed the goose the warm, still-bloody heart of any sapient, non-unholy creature who died within the past hour. The golden goose's eyes flare red as it chews the heart into pulp. Once the heart is destroyed, the goose lays a golden egg worth 50 gp, or 100 gp if you murdered the creature for no reason other than to feed the goose.\n\nAfter 12 such eggs are laid, the next time you activate the golden goose, it transmutes your heart to gold. This effect functions as [Petrify](/spell/petrify-player-core), with a Fortitude DC 30 save to resist. If you become [Petrified](/condition/petrified-player-core), you turn to solid, transparent stone. Your heart becomes a golden egg worth 100 gp, which can be retrieved only by shattering your body. Whether or not you turn to stone, the golden goose dissipates with a honk into sulfurous smoke.",
     "data": {
       "level": 11,
       "rarity": "rare",
@@ -765,7 +965,21 @@
       "category": "held",
       "price": "",
       "usage": "held-in-two-hands",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -796,7 +1010,7 @@
     "systemVersion": "1.2.10",
     "name": "Hand-Hewed Face",
     "slug": "hand-hewed-face-dark-archive",
-    "descr": "At the crossroads under a new moon, you traded your face for one that you can mold as though it were clay, sealed with a ribbon worn around your neck to hide the seam. Your true appearance changes to that of a generic member of your ancestry. You can shape your facial features with your hands and thus don't need a disguise kit to Impersonate, and you don't take circumstance penalties to Impersonate someone due to the difference in your facial features. Once per day, from any distance, the entity that holds your *bargained contract* can change their appearance to match your appearance from before you sealed the contract, or the appearance you're currently using through Impersonate. When they do, your face transforms to your new true appearance—that of a generic member of your ancestry—and you become Stunned 3 by the sudden backlash.\n\n**Activate—Fresh Face** 2 (manipulate)\n\n**Requirements** You have used Impersonate and molded your face into a different face\n\n---\n\n**Effect** You peel your current face from your skin, revealing the true generic appearance from your *bargained contract*. This allows you to duck out of sight and remove the facial component of your disguise almost immediately, though clothing or other elements might still give you away.",
+    "descr": "At the crossroads under a new moon, you traded your face for one that you can mold as though it were clay, sealed with a ribbon worn around your neck to hide the seam. Your true appearance changes to that of a generic member of your ancestry. You can shape your facial features with your hands and thus don't need a disguise kit to Impersonate, and you don't take circumstance penalties to Impersonate someone due to the difference in your facial features. Once per day, from any distance, the entity that holds your *bargained contract* can change their appearance to match your appearance from before you sealed the contract, or the appearance you're currently using through Impersonate. When they do, your face transforms to your new true appearance—that of a generic member of your ancestry—and you become [Stunned 3](/condition/stunned-player-core) by the sudden backlash.\n\n**Activate—Fresh Face** 2 (manipulate)\n\n**Requirements** You have used Impersonate and molded your face into a different face\n\n---\n\n**Effect** You peel your current face from your skin, revealing the true generic appearance from your *bargained contract*. This allows you to duck out of sight and remove the facial component of your disguise almost immediately, though clothing or other elements might still give you away.",
     "data": {
       "level": 7,
       "rarity": "rare",
@@ -808,7 +1022,21 @@
       "category": "other",
       "price": "",
       "usage": "other",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "contract",
+          "slug": "contract"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -839,7 +1067,7 @@
     "systemVersion": "1.2.10",
     "name": "Hoax-Hunter's Kit",
     "slug": "hoax-hunter-s-kit-dark-archive",
-    "descr": "This wooden box unfolds into a stack of hinged trays holding calipers, magnifying lenses, acids and reagents, comparison sketches of species commonly mistaken for one another, and glass slides for specimen testing. When you use this kit to study accounts of a creature or what it left behind (such as spoor, tracks, or fur samples), you gain a +1 item bonus to Recall Knowledge about the creature or to Track the creature. In addition, if you fail to Recall Knowledge about the creature (but don't critically fail), you're able to eliminate at least one possibility of a common type of animal. For instance, you might be able to verify the creature isn't an ankhrav, even if you get no further information.",
+    "descr": "This wooden box unfolds into a stack of hinged trays holding calipers, magnifying lenses, acids and reagents, comparison sketches of species commonly mistaken for one another, and glass slides for specimen testing. When you use this kit to study accounts of a creature or what it left behind (such as spoor, tracks, or fur samples), you gain a +1 item bonus to [Recall Knowledge](/action/recall-knowledge-player-core) about the creature or to Track the creature. In addition, if you fail to Recall Knowledge about the creature (but don't critically fail), you're able to eliminate at least one possibility of a common type of animal. For instance, you might be able to verify the creature isn't an ankhrav, even if you get no further information.",
     "data": {
       "level": 3,
       "rarity": "uncommon",
@@ -847,7 +1075,8 @@
       "category": "held",
       "price": "50 gp",
       "usage": "held-in-two-hands",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -885,7 +1114,17 @@
       "category": "held",
       "price": "",
       "usage": "held-in-two-hands",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -915,7 +1154,7 @@
     "systemVersion": "1.2.10",
     "name": "Key to the Stomach",
     "slug": "key-to-the-stomach-dark-archive",
-    "descr": "Whether due to the inconvenience of having a physical body or the desperation of impending starvation, you were drawn to a person offering relief from hunger. You swallowed a key, which remains in your stomach, that continuously satiates you. You no longer need to eat or drink. Once per day, from any distance, the entity that holds your *bargained contract* can have the key sealing your *bargained contract* absorb all items in your stomach, which prevents you from benefiting from items that require you to eat or drink them, such as potions and elixirs, for 10 minutes. During this time, the entity gains the benefits of these items instead.\n\n**Activate—Iron Gut** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You absorb any poisons with the key sealing your *bargained contract*. You're affected by a 5th-rank Cleanse Affliction spell to remove a poison (counteract modifier +15).",
+    "descr": "Whether due to the inconvenience of having a physical body or the desperation of impending starvation, you were drawn to a person offering relief from hunger. You swallowed a key, which remains in your stomach, that continuously satiates you. You no longer need to eat or drink. Once per day, from any distance, the entity that holds your *bargained contract* can have the key sealing your *bargained contract* absorb all items in your stomach, which prevents you from benefiting from items that require you to eat or drink them, such as potions and elixirs, for 10 minutes. During this time, the entity gains the benefits of these items instead.\n\n**Activate—Iron Gut** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You absorb any poisons with the key sealing your *bargained contract*. You're affected by a 5th-rank [Cleanse Affliction](/spell/cleanse-affliction-player-core) spell to remove a poison (counteract modifier +15).",
     "data": {
       "level": 9,
       "rarity": "rare",
@@ -927,7 +1166,21 @@
       "category": "other",
       "price": "",
       "usage": "other",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "contract",
+          "slug": "contract"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -966,7 +1219,8 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -993,7 +1247,7 @@
     "systemVersion": "1.2.10",
     "name": "Lost Ember",
     "slug": "lost-ember-dark-archive",
-    "descr": "Sealed with a vial containing the ashes from your childhood home, you traded the memories of your early life to stay focused on the present, allowing you to avoid distractions during combat. Once per day, from any distance, the entity that holds your *bargained contract* can take one of your memories. This functions as a casting of Rewrite Memory that doesn't grant you a saving throw and can't be reversed by any means without stealing the memory back first.\n\n---\n\n**Activate—Fix Focus** f (concentrate)\n\n**Frequency** once per day\n\n**Trigger** You start your turn Off Guard or Confused\n\n---\n\n**Effect** A speck of ash from the vial sealing your *bargained contract* appears out of nowhere on your tongue, bringing your senses into focus. You suppress the Off Guard or Confused condition until the start of your next turn. You can use this free action when you're confused, even though you normally can't take actions of your choice when confused.",
+    "descr": "Sealed with a vial containing the ashes from your childhood home, you traded the memories of your early life to stay focused on the present, allowing you to avoid distractions during combat. Once per day, from any distance, the entity that holds your *bargained contract* can take one of your memories. This functions as a casting of [Rewrite Memory](/spell/rewrite-memory-player-core) that doesn't grant you a saving throw and can't be reversed by any means without stealing the memory back first.\n\n---\n\n**Activate—Fix Focus** f (concentrate)\n\n**Frequency** once per day\n\n**Trigger** You start your turn [Off Guard](/condition/off-guard-player-core) or [Confused](/condition/confused-player-core)\n\n---\n\n**Effect** A speck of ash from the vial sealing your *bargained contract* appears out of nowhere on your tongue, bringing your senses into focus. You suppress the Off Guard or Confused condition until the start of your next turn. You can use this free action when you're confused, even though you normally can't take actions of your choice when confused.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -1005,7 +1259,21 @@
       "category": "other",
       "price": "",
       "usage": "other",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "contract",
+          "slug": "contract"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1044,7 +1312,8 @@
       "category": "worn",
       "price": "5 gp",
       "usage": "worn",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1080,7 +1349,8 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1120,7 +1390,25 @@
       "category": "potion",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "potion",
+          "slug": "potion"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1162,7 +1450,17 @@
       "category": "consumable",
       "price": "5 gp",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "alchemical",
+          "slug": "alchemical"
+        },
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1202,7 +1500,13 @@
       "category": "other",
       "price": "2000 gp",
       "usage": "other",
-      "bulk": "3"
+      "bulk": "3",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1243,7 +1547,21 @@
       "category": "consumable",
       "price": "8 gp",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1282,7 +1600,8 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1321,7 +1640,21 @@
       "category": "worn",
       "price": "",
       "usage": "wornring",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1352,7 +1685,7 @@
     "systemVersion": "1.2.10",
     "name": "Rose of Loves Lost",
     "slug": "rose-of-loves-lost-dark-archive",
-    "descr": "**Activate** 1 (manipulate)\n\n---\n\nNo thorns are visible on this ruby-red crystal rose, which seems to grant a boon to a loved one, but it draws three beads of blood when first bestowed upon an unwitting recipient. Hags delight in using the rose's curse to ruin young lovers, but it can be found anywhere—even buried innocently in a treasure hoard.\n\nYou activate the *rose of loves* lost by giving it to someone toward whom you feel romantic attraction. This item functions only if you feel genuine attraction and desire, and it doesn't function if you know the item's curse. If the target accepts the gift, they must succeed at a Will DC 27 save or be affected by Charm with an unlimited duration. Every 24 hours, the victim attempts another Will save to break the spell. If they fail three consecutive Will saves, they become Doomed 1, as the rose inflicts a lethal wasting disease. This value can't decrease while the curse continues. Instead, it worsens every 3 days the victim fails to break the rose's spell, until the victim either dies or shakes off the curse. A successful saving throw or Cleanse Affliction (of 4th rank or higher) ends the charm and enables the victim to begin decreasing their doomed value.",
+    "descr": "**Activate** 1 (manipulate)\n\n---\n\nNo thorns are visible on this ruby-red crystal rose, which seems to grant a boon to a loved one, but it draws three beads of blood when first bestowed upon an unwitting recipient. Hags delight in using the rose's curse to ruin young lovers, but it can be found anywhere—even buried innocently in a treasure hoard.\n\nYou activate the *rose of loves* lost by giving it to someone toward whom you feel romantic attraction. This item functions only if you feel genuine attraction and desire, and it doesn't function if you know the item's curse. If the target accepts the gift, they must succeed at a Will DC 27 save or be affected by [Charm](/spell/charm-player-core) with an unlimited duration. Every 24 hours, the victim attempts another Will save to break the spell. If they fail three consecutive Will saves, they become [Doomed 1](/condition/doomed-player-core), as the rose inflicts a lethal wasting disease. This value can't decrease while the curse continues. Instead, it worsens every 3 days the victim fails to break the rose's spell, until the victim either dies or shakes off the curse. A successful saving throw or [Cleanse Affliction](/spell/cleanse-affliction-player-core) (of 4th rank or higher) ends the charm and enables the victim to begin decreasing their doomed value.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -1365,7 +1698,25 @@
       "category": "consumable",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1408,7 +1759,17 @@
       "category": "ammunition",
       "price": "22 gp",
       "usage": "",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1438,7 +1799,7 @@
     "systemVersion": "1.2.10",
     "name": "Self-Emptying Pocket",
     "slug": "self-emptying-pocket-dark-archive",
-    "descr": "You never perform to an empty crowd after promising any profits to a phantom in a playhouse, sealed by holes that appear in your pockets. By meeting with the attendees at your events, you can use Performance instead of Diplomacy to Gather Information. When you would use Performance to Earn Income, you don't earn any gold pieces, as the money disappears before you can even count it.\n\nThe entity that holds your *bargained contract* can influence your reception any time you perform for a crowd or Activate the pocket. If they influence your performance favorably, you gain a +2 item bonus to your Performance check. If they influence your performance unfavorably, you take a -2 item penalty to your Performance check. If you've failed to earn the entity money in quite a while, it often influences your performance unfavorably.\n\n---\n\n**Activate—Beguiling Presence** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You exercise all of your charm on a creature, turning a chance meeting into an impromptu performance that commands attention. Attempt a single Performance check against the Perception DC of the creature. On a success, the creature is affected as though by a successful Deception check to Create A Diversion. The entity that holds your contract can influence this performance as well.",
+    "descr": "You never perform to an empty crowd after promising any profits to a phantom in a playhouse, sealed by holes that appear in your pockets. By meeting with the attendees at your events, you can use Performance instead of Diplomacy to Gather Information. When you would use Performance to [Earn Income](/action/earn-income-player-core), you don't earn any gold pieces, as the money disappears before you can even count it.\n\nThe entity that holds your *bargained contract* can influence your reception any time you perform for a crowd or Activate the pocket. If they influence your performance favorably, you gain a +2 item bonus to your Performance check. If they influence your performance unfavorably, you take a -2 item penalty to your Performance check. If you've failed to earn the entity money in quite a while, it often influences your performance unfavorably.\n\n---\n\n**Activate—Beguiling Presence** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You exercise all of your charm on a creature, turning a chance meeting into an impromptu performance that commands attention. Attempt a single Performance check against the Perception DC of the creature. On a success, the creature is affected as though by a successful Deception check to Create A Diversion. The entity that holds your contract can influence this performance as well.",
     "data": {
       "level": 9,
       "rarity": "rare",
@@ -1450,7 +1811,21 @@
       "category": "other",
       "price": "",
       "usage": "other",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "contract",
+          "slug": "contract"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1481,7 +1856,7 @@
     "systemVersion": "1.2.10",
     "name": "Self-Immolating Note",
     "slug": "self-immolating-note-dark-archive",
-    "descr": "**Activate** 1 (manipulate)\n\n**Access** Member of a secret society\n\n---\n\nThis paper is crafted with an unusual formula, causing it to catch fire and self-immolate 5 minutes after being exposed to the air. The item activates automatically when the envelope is opened, which typically takes an Interact action. Anyone holding the note when it catches fire takes 1 fire] damage. Often, these notes are given as practical jokes or threats, but secret societies find them quite useful when sharing information about upcoming meetings or any other relevant news. These letters must be written in haste and require the use of their accompanying envelopes, which prevent air from interacting with the paper until the envelope's seal is broken.",
+    "descr": "**Activate** 1 (manipulate)\n\n**Access** Member of a secret society\n\n---\n\nThis paper is crafted with an unusual formula, causing it to catch fire and self-immolate 5 minutes after being exposed to the air. The item activates automatically when the envelope is opened, which typically takes an [Interact](/action/interact-player-core) action. Anyone holding the note when it catches fire takes 1 fire] damage. Often, these notes are given as practical jokes or threats, but secret societies find them quite useful when sharing information about upcoming meetings or any other relevant news. These letters must be written in haste and require the use of their accompanying envelopes, which prevent air from interacting with the paper until the envelope's seal is broken.",
     "data": {
       "level": 1,
       "rarity": "uncommon",
@@ -1493,7 +1868,21 @@
       "category": "consumable",
       "price": "3 gp",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "alchemical",
+          "slug": "alchemical"
+        },
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1532,7 +1921,8 @@
       "category": "held",
       "price": "10 gp",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1559,7 +1949,7 @@
     "systemVersion": "1.2.10",
     "name": "Silent Bell",
     "slug": "silent-bell-dark-archive",
-    "descr": "**Access** Member of a secret society\n\n---\n\nThis large handbell is made from cast bronze and has a wooden handle. The outside of the bell is covered in fine etchings, showing a group of varied people sitting around a table with clouds obscuring anyone in the background. The clapper is curiously absent from this bell and, when idly rung, it produces no audible sound.\n\n---\n\n**Activate—Ring in the Quiet** 3 (concentrate, manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** The silent bell creates an invisible wall surrounding a cube, 20 feet to a side, that prevents sound from passing into or from the cube for 10 minutes. The wall isn't solid and doesn't prevent anything but sound from passing through. Since the cube is invisible, creatures can still read lips and body language through the wall.",
+    "descr": "**Access** Member of a secret society\n\n---\n\nThis large handbell is made from cast bronze and has a wooden handle. The outside of the bell is covered in fine etchings, showing a group of varied people sitting around a table with clouds obscuring anyone in the background. The clapper is curiously absent from this bell and, when idly rung, it produces no audible sound.\n\n---\n\n**Activate—Ring in the Quiet** 3 (concentrate, manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** The silent bell creates an invisible wall surrounding a cube, 20 feet to a side, that prevents sound from passing into or from the cube for 10 minutes. The wall isn't solid and doesn't prevent anything but sound from passing through. Since the cube is [invisible](/condition/invisible-player-core), creatures can still read lips and body language through the wall.",
     "data": {
       "level": 9,
       "rarity": "uncommon",
@@ -1570,7 +1960,17 @@
       "category": "held",
       "price": "600 gp",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1610,7 +2010,13 @@
       "category": "held",
       "price": "210 gp",
       "usage": "held-in-one-hand",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1639,7 +2045,7 @@
     "systemVersion": "1.2.10",
     "name": "Stone of Unrivaled Skill",
     "slug": "stone-of-unrivaled-skill-dark-archive",
-    "descr": "You traded your senses to a hag for unrivaled expertise stolen from various souls who were once the greatest in their field. Your *bargained contract* is sealed by sleeping with a pitch-black stone under your pillow every night. Choose one skill when you seal this *bargained contract*. You become an expert in that skill; if you were already an expert, you become a master, and if you were already a master, you become legendary. Once per day, from any distance, the hag that holds your contract can take over your senses for 10 minutes, during which time the hag hears, sees, smells, tastes, and feels everything you would typically experience. During this time, you're Dazzled by your own disjointed senses.\n\n**Activate—Taste Fluency** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You place the stone sealing your *bargained contract* in your mouth. For the next 10 minutes, you gain a +3 status bonus to skill checks using the skill you chose for your contract.",
+    "descr": "You traded your senses to a hag for unrivaled expertise stolen from various souls who were once the greatest in their field. Your *bargained contract* is sealed by sleeping with a pitch-black stone under your pillow every night. Choose one skill when you seal this *bargained contract*. You become an expert in that skill; if you were already an expert, you become a master, and if you were already a master, you become legendary. Once per day, from any distance, the hag that holds your contract can take over your senses for 10 minutes, during which time the hag hears, sees, smells, tastes, and feels everything you would typically experience. During this time, you're [Dazzled](/condition/dazzled-player-core) by your own disjointed senses.\n\n**Activate—Taste Fluency** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You place the stone sealing your *bargained contract* in your mouth. For the next 10 minutes, you gain a +3 status bonus to skill checks using the skill you chose for your contract.",
     "data": {
       "level": 17,
       "rarity": "rare",
@@ -1651,7 +2057,21 @@
       "category": "other",
       "price": "",
       "usage": "other",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "contract",
+          "slug": "contract"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1682,7 +2102,7 @@
     "systemVersion": "1.2.10",
     "name": "Swirling Sand",
     "slug": "swirling-sand-dark-archive",
-    "descr": "**Activate** Cast a Spell\n\n---\n\nSwirling sand carries a faint trace of strange compulsions from the helical sand spire near Beachcomber. Adding this catalyst to a Suggestion spell implants a strange compulsion in one target of the spell. The target creature must spin counterclockwise at the end of its turn if it didn't take a move action that turn. This spin is a free action that has the move trait. This effect lasts for 3 rounds on a success, failure, or critical failure against *suggestion* (even if the target completes its *suggestion* in fewer rounds); a target that critically succeeds against *suggestion* is unaffected by the swirling sand.",
+    "descr": "**Activate** Cast a Spell\n\n---\n\nSwirling sand carries a faint trace of strange compulsions from the helical sand spire near Beachcomber. Adding this catalyst to a [Suggestion](/spell/suggestion-player-core) spell implants a strange compulsion in one target of the spell. The target creature must spin counterclockwise at the end of its turn if it didn't take a move action that turn. This spin is a free action that has the [move](/trait/move) trait. This effect lasts for 3 rounds on a success, failure, or critical failure against *suggestion* (even if the target completes its *suggestion* in fewer rounds); a target that critically succeeds against *suggestion* is unaffected by the swirling sand.",
     "data": {
       "level": 7,
       "rarity": "rare",
@@ -1694,7 +2114,21 @@
       "category": "consumable",
       "price": "52 gp",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "catalyst",
+          "slug": "catalyst"
+        },
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1736,7 +2170,17 @@
       "category": "held",
       "price": "",
       "usage": "held-in-two-hands",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1766,7 +2210,7 @@
     "systemVersion": "1.2.10",
     "name": "Taleteller's Ring",
     "slug": "taleteller-s-ring-dark-archive",
-    "descr": "Smiling faces are inscribed about this silver band. You become a fluent weaver of fictions, gaining a +2 item bonus to Deception checks to Lie, Deception DCs against Sense Motive, and Performance checks for storytelling. Whenever you're under suspicion or being questioned by an authority figure, you find yourself compulsively spinning absurd, tall tales that are so unconvincing that they make you look guilty even when you're innocent. The ring's bonuses vanish, and any listener can quickly determine you're lying. Nevertheless, you're completely unable to be honest in such situations.",
+    "descr": "Smiling faces are inscribed about this silver band. You become a fluent weaver of fictions, gaining a +2 item bonus to Deception checks to [Lie](/action/lie-player-core), Deception DCs against Sense Motive, and Performance checks for storytelling. Whenever you're under suspicion or being questioned by an authority figure, you find yourself compulsively spinning absurd, tall tales that are so unconvincing that they make you look guilty even when you're innocent. The ring's bonuses vanish, and any listener can quickly determine you're lying. Nevertheless, you're completely unable to be honest in such situations.",
     "data": {
       "level": 9,
       "rarity": "rare",
@@ -1778,7 +2222,21 @@
       "category": "worn",
       "price": "",
       "usage": "wornring",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1816,7 +2274,8 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1851,7 +2310,8 @@
       "category": "worn",
       "price": "15 gp",
       "usage": "worn",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1878,7 +2338,7 @@
     "systemVersion": "1.2.10",
     "name": "Vial of the Immortal Wellspring",
     "slug": "vial-of-the-immortal-wellspring-dark-archive",
-    "descr": "At a wellspring, you gave your blood to a force of nature and received a vial from the wellspring's heart in return. Once per 10 minutes, when your dying value would increase above 3, you instead become Unconscious and are no longer dying; this doesn't prevent you from being killed by death effects or the doomed condition. Once per day, from any distance, the entity that holds your *bargained contract* can possess you and control your actions, leaving you unaware of what goes on. This possession automatically succeeds, regardless of any countermeasures you might take. Normally this lasts for only 1 round if during an encounter, or no longer than a few minutes during exploration. However, the more you rely on the power of the wellspring's heart to survive death, the longer it can possess you the next time it chooses to do so, doubling the amount of time with each use, to a maximum duration of 1 day. Once the entity possesses you, this duration resets.\n\n---\n\n**Activate—Spring of Life** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You drink from the vial of water that seals your *bargained contract*. You gain the effects of a 9th-rank, 2-action Heal spell.",
+    "descr": "At a wellspring, you gave your blood to a force of nature and received a vial from the wellspring's heart in return. Once per 10 minutes, when your dying value would increase above 3, you instead become [Unconscious](/condition/unconscious-player-core) and are no longer dying; this doesn't prevent you from being killed by death effects or the [doomed](/condition/doomed-player-core) condition. Once per day, from any distance, the entity that holds your *bargained contract* can possess you and control your actions, leaving you unaware of what goes on. This possession automatically succeeds, regardless of any countermeasures you might take. Normally this lasts for only 1 round if during an encounter, or no longer than a few minutes during exploration. However, the more you rely on the power of the wellspring's heart to survive death, the longer it can possess you the next time it chooses to do so, doubling the amount of time with each use, to a maximum duration of 1 day. Once the entity possesses you, this duration resets.\n\n---\n\n**Activate—Spring of Life** 2 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You drink from the vial of water that seals your *bargained contract*. You gain the effects of a 9th-rank, 2-action [Heal](/spell/heal-player-core) spell.",
     "data": {
       "level": 20,
       "rarity": "rare",
@@ -1890,7 +2350,21 @@
       "category": "other",
       "price": "",
       "usage": "other",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "contract",
+          "slug": "contract"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1929,7 +2403,8 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -1969,7 +2444,25 @@
       "category": "potion",
       "price": "30 gp",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "potion",
+          "slug": "potion"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

@@ -14,7 +14,6 @@
       "traits": [
         "gnome",
         "humanoid",
-        "no-alignment",
         "troop"
       ],
       "attributes": {
@@ -103,7 +102,21 @@
         ]
       },
       "recallKnowledgeText": "DC 21 (Society)",
-      "languagesText": "Common, Gnomish"
+      "languagesText": "Common, Gnomish",
+      "traitLinks": [
+        {
+          "label": "gnome",
+          "slug": "gnome"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -115,7 +128,6 @@
       "gnome",
       "hellfire-dispatches",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop"
     ],
@@ -146,7 +158,6 @@
         "animal",
         "human",
         "humanoid",
-        "no-alignment",
         "troop",
         "unholy"
       ],
@@ -204,7 +215,7 @@
         "defensive": [
           {
             "name": "Crushing Despair",
-            "text": "(aura, divine, emotion, fear, mental) 10 feet, DC 24. Enemy creatures that enter or begin their turn in the area must attempt a Will save. Regardless of the result of the saving throw, the creature is then temporarily immune to the aura for 1 minute.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is frightened 1.\n\n**Failure** The creature is frightened 1 and can’t use reactions for 1 round.\n\n**Critical Failure** As failure, and the creature slowed 1 as it sobs uncontrollably.",
+            "text": "(aura, divine, emotion, fear, mental) 10 feet, DC 24. Enemy creatures that enter or begin their turn in the area must attempt a Will save. Regardless of the result of the saving throw, the creature is then temporarily immune to the aura for 1 minute.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is frightened 1.\n\n**Failure** The creature is frightened 1 and can’t use reactions for 1 round.\n\n**Critical Failure** As failure, and the creature [slowed](/condition/slowed-player-core) 1 as it sobs uncontrollably.",
             "traits": []
           }
         ],
@@ -246,7 +257,29 @@
         ]
       },
       "recallKnowledgeText": "DC 24 (Nature, Society)",
-      "languagesText": "Common, Daemonic, Varisian"
+      "languagesText": "Common, Daemonic, Varisian",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -259,7 +292,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop",
       "unholy"
@@ -290,7 +322,6 @@
       "traits": [
         "human",
         "humanoid",
-        "no-alignment",
         "troop"
       ],
       "attributes": {
@@ -359,7 +390,7 @@
           },
           {
             "name": "Thus Always to Tyrants",
-            "text": "**Free Action** (Aura, emotion, mental, visual) **Frequency** once per hour; **Trigger** The sentinels reduce an enemy with a level equal to or greater than their own to 0 Hit Points; **Effect** The sentinels' victory inspires allies and demoralizes enemies. Each ally in a 15-foot emanation gains a +1 status bonus to attack rolls for 1 round. Each enemy in the same area must succeed at a DC 18 Will save or take a –1 penalty to attack rolls for 1 round.",
+            "text": "**Free Action** ([Aura](/action/aura-monster-core), emotion, mental, visual) **Frequency** once per hour; **Trigger** The sentinels reduce an enemy with a level equal to or greater than their own to 0 Hit Points; **Effect** The sentinels' victory inspires allies and demoralizes enemies. Each ally in a 15-foot emanation gains a +1 status bonus to attack rolls for 1 round. Each enemy in the same area must succeed at a DC 18 Will save or take a –1 penalty to attack rolls for 1 round.",
             "traits": [],
             "actions": "free"
           }
@@ -372,7 +403,21 @@
         ]
       },
       "recallKnowledgeText": "DC 21 (Society)",
-      "languagesText": "Common, Elven, Empyrean, Varisian"
+      "languagesText": "Common, Elven, Empyrean, Varisian",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -384,7 +429,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop"
     ],
@@ -414,7 +458,6 @@
       "traits": [
         "human",
         "humanoid",
-        "no-alignment",
         "troop",
         "unholy"
       ],
@@ -504,7 +547,25 @@
         ]
       },
       "recallKnowledgeText": "DC 22 (Society)",
-      "languagesText": "Common, Diabolic"
+      "languagesText": "Common, Diabolic",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -516,7 +577,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop",
       "unholy"
@@ -547,7 +607,6 @@
       "traits": [
         "human",
         "humanoid",
-        "no-alignment",
         "troop"
       ],
       "attributes": {
@@ -649,7 +708,21 @@
         ]
       },
       "recallKnowledgeText": "DC 32 (Society)",
-      "languagesText": "Common, Diabolic"
+      "languagesText": "Common, Diabolic",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -661,7 +734,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop"
     ],
@@ -691,7 +763,6 @@
       "traits": [
         "human",
         "humanoid",
-        "no-alignment",
         "troop"
       ],
       "attributes": {
@@ -771,7 +842,7 @@
           },
           {
             "name": "Pacify",
-            "text": "**Single Action** The unit's Whirling Onslaught gains the nonlethal trait until the end of their next turn.",
+            "text": "**Single Action** The unit's Whirling Onslaught gains the [nonlethal](/trait/nonlethal) trait until the end of their next turn.",
             "traits": [],
             "actions": "one"
           },
@@ -782,7 +853,7 @@
           },
           {
             "name": "You're Coming with Us",
-            "text": "**Free Action** **Trigger** The unit Strides; **Requirements** The unit has one or more creatures grabbed or restrained; **Effect** Before moving any of its segments, the unit attempts a single Athletics check against the Fortitude DC of all creatures it has grabbed or restrained. On a success, the creature is moved alongside the unit, moving the same distance and direction until the end of the unit's current turn. The unit can't move a total number of creatures greater than double its current number of segments.",
+            "text": "**Free Action** **Trigger** The unit Strides; **Requirements** The unit has one or more creatures [grabbed](/condition/grabbed-player-core) or restrained; **Effect** Before moving any of its segments, the unit attempts a single Athletics check against the Fortitude DC of all creatures it has grabbed or restrained. On a success, the creature is moved alongside the unit, moving the same distance and direction until the end of the unit's current turn. The unit can't move a total number of creatures greater than double its current number of segments.",
             "traits": [],
             "actions": "free"
           }
@@ -795,7 +866,21 @@
         ]
       },
       "recallKnowledgeText": "DC 24 (Society)",
-      "languagesText": "Common, Diabolic"
+      "languagesText": "Common, Diabolic",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -807,7 +892,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop"
     ],
@@ -838,7 +922,6 @@
         "animal",
         "human",
         "humanoid",
-        "no-alignment",
         "troop"
       ],
       "attributes": {
@@ -935,7 +1018,25 @@
         ]
       },
       "recallKnowledgeText": "DC 25 (Nature, Society)",
-      "languagesText": "Common, Shadowtongue, Varisian"
+      "languagesText": "Common, Shadowtongue, Varisian",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -948,7 +1049,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop"
     ],
@@ -978,7 +1078,6 @@
       "traits": [
         "hobgoblin",
         "humanoid",
-        "no-alignment",
         "troop"
       ],
       "attributes": {
@@ -1063,7 +1162,21 @@
         ]
       },
       "recallKnowledgeText": "DC 25 (Society)",
-      "languagesText": "Common, Goblin"
+      "languagesText": "Common, Goblin",
+      "traitLinks": [
+        {
+          "label": "hobgoblin",
+          "slug": "hobgoblin"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1075,7 +1188,6 @@
       "hellfire-dispatches",
       "hobgoblin",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop"
     ],
@@ -1106,7 +1218,6 @@
         "devil",
         "fiend",
         "mindless",
-        "no-alignment",
         "troop",
         "unholy"
       ],
@@ -1164,7 +1275,7 @@
         "offensive": [
           {
             "name": "Subservience",
-            "text": "An ort mob can be commandeered by any non-ort devil within 60 feet of it with a single action, which has the auditory and concentrate traits. The devil picks one of the following commands, and the ort mob follows it to the best of their ability. The command and its effects end once the commander is out of the mob's sight or when a new command is issued by the same or another devil.\n\n- **Hustle** The mob gains a +10-foot circumstance bonus to its Speed until the command ends.\n- **Kill** The mob moves adjacent to one target singled out by its commander and spends all its available actions to use Grasping Claws until the target is dead or the command ends. The targeted creature takes a –1 circumstance penalty to its Reflex save against Grasping Claws and it takes an additional 1d6 slashing damage from the attack.\n- **Rally** The mob moves so that it shares a space with its commander. The commander doesn't treat the mob's spaces as difficult terrain and gains lesser cover while it's in the mob's spaces until the command ends.\n- **Work** The mob performs drudge work dictated by its commander. Faceless Horde An ort mob is less organized than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to other creatures.",
+            "text": "An ort mob can be commandeered by any non-ort devil within 60 feet of it with a single action, which has the auditory and [concentrate](/trait/concentrate) traits. The devil picks one of the following commands, and the ort mob follows it to the best of their ability. The command and its effects end once the commander is out of the mob's sight or when a new command is issued by the same or another devil.\n\n- **Hustle** The mob gains a +10-foot circumstance bonus to its Speed until the command ends.\n- **Kill** The mob moves adjacent to one target singled out by its commander and spends all its available actions to use Grasping Claws until the target is dead or the command ends. The targeted creature takes a –1 circumstance penalty to its Reflex save against Grasping Claws and it takes an additional 1d6 slashing damage from the attack.\n- **Rally** The mob moves so that it shares a space with its commander. The commander doesn't treat the mob's spaces as difficult terrain and gains lesser cover while it's in the mob's spaces until the command ends.\n- **Work** The mob performs drudge work dictated by its commander. Faceless Horde An ort mob is less organized than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to other creatures.",
             "traits": []
           },
           {
@@ -1181,7 +1292,29 @@
         ]
       },
       "recallKnowledgeText": "DC 22 (Religion)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "devil",
+          "slug": "devil"
+        },
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1194,7 +1327,6 @@
       "fiend",
       "hellfire-dispatches",
       "mindless",
-      "no-alignment",
       "remaster",
       "troop",
       "unholy"
@@ -1225,7 +1357,6 @@
       "traits": [
         "human",
         "humanoid",
-        "no-alignment",
         "troop"
       ],
       "attributes": {
@@ -1277,7 +1408,7 @@
         "defensive": [
           {
             "name": "Nonbelievers",
-            "text": "When attempting a saving throw against a spell or effect with the divine trait, a Pure Legion regiment gets an outcome one degree better than the result of their roll. However, the regiment can't ever be a willing target for helpful divine spells.",
+            "text": "When attempting a saving throw against a spell or effect with the [divine](/trait/divine) trait, a Pure Legion regiment gets an outcome one degree better than the result of their roll. However, the regiment can't ever be a willing target for helpful divine spells.",
             "traits": []
           }
         ],
@@ -1296,7 +1427,7 @@
           },
           {
             "name": "Rebuking Strike",
-            "text": "**Single Action to Three Actions** **Frequency** once per round; **Effect** The regiment strikes with their longswords against enemies in a 5-foot emanation (DC 26 basic Reflex save). Damage dealt depends on the number of actions. If a creature critically fails the Reflex save while affected by the regiment's Denounce Divinity, it is unable to reduce its stupefied or frightened condition by any means for 1 round.\n**Single Action** 1d8+2 slashing damage\n **Two Actions** 2d8+11 slashing damage\n **Three Actions** 3d8+13 slashing damage.",
+            "text": "**Single Action to Three Actions** **Frequency** once per round; **Effect** The regiment strikes with their longswords against enemies in a 5-foot emanation (DC 26 basic Reflex save). Damage dealt depends on the number of actions. If a creature critically fails the Reflex save while affected by the regiment's Denounce Divinity, it is unable to reduce its stupefied or [frightened](/condition/frightened-player-core) condition by any means for 1 round.\n**Single Action** 1d8+2 slashing damage\n **Two Actions** 2d8+11 slashing damage\n **Three Actions** 3d8+13 slashing damage.",
             "traits": []
           },
           {
@@ -1313,7 +1444,21 @@
         ]
       },
       "recallKnowledgeText": "DC 29 (Society)",
-      "languagesText": "Common, Osiriani"
+      "languagesText": "Common, Osiriani",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1325,7 +1470,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop"
     ],
@@ -1354,7 +1498,6 @@
       "size": "gargantuan",
       "traits": [
         "fiend",
-        "no-alignment",
         "troop",
         "unholy",
         "velstrac"
@@ -1415,7 +1558,7 @@
         "interaction": [
           {
             "name": "Painsight",
-            "text": "(divine) Each member of a sacristan scourge automatically knows whether a creature they can see has any of the doomed, dying, and wounded conditions, as well as the value of those conditions.",
+            "text": "(divine) Each member of a sacristan scourge automatically knows whether a creature they can see has any of the doomed, dying, and [wounded](/condition/wounded-player-core) conditions, as well as the value of those conditions.",
             "traits": []
           }
         ],
@@ -1435,7 +1578,7 @@
           },
           {
             "name": "Shadow Scream",
-            "text": "**Three Actions** (Aura, concentrate, darkness, divine, mental, sonic) **Frequency** once per hour; **Effect** The sacristans open their mouths in unison to unleash a chorus of ghastly wailing infused with the mind-shattering darkness of the Netherworld. This creates a 30-foot emanation of darkness and pandemonium around it that's impenetrable even to creatures with darkvision (but not greater darkvision). They can Sustain Shadow Scream for up to 1 minute. Non-velstrac creatures in the area when the ability is used, as well as those that enter or start their turn in the area, must attempt a DC 33 Will save.\n\n**Critical Success** The creature is unaffected and is temporarily immune for 24 hours.\n\n**Success** The creature is deafened for 1 round.\n\n**Failure** The creature is confused and deafened for 1 round.\n\n**Critical Failure** The creature takes 60 mental damage and is confused and deafened for 1 round.",
+            "text": "**Three Actions** ([Aura](/action/aura-monster-core), concentrate, darkness, divine, mental, sonic) **Frequency** once per hour; **Effect** The sacristans open their mouths in unison to unleash a chorus of ghastly wailing infused with the mind-shattering darkness of the Netherworld. This creates a 30-foot emanation of darkness and pandemonium around it that's impenetrable even to creatures with darkvision (but not greater darkvision). They can Sustain Shadow Scream for up to 1 minute. Non-velstrac creatures in the area when the ability is used, as well as those that enter or start their turn in the area, must attempt a DC 33 Will save.\n\n**Critical Success** The creature is unaffected and is temporarily immune for 24 hours.\n\n**Success** The creature is deafened for 1 round.\n\n**Failure** The creature is confused and deafened for 1 round.\n\n**Critical Failure** The creature takes 60 mental damage and is confused and deafened for 1 round.",
             "traits": [],
             "actions": "three"
           },
@@ -1458,7 +1601,25 @@
         ]
       },
       "recallKnowledgeText": "DC 36 (Religion)",
-      "languagesText": "Common, Diabolic, Shadowtongue"
+      "languagesText": "Common, Diabolic, Shadowtongue",
+      "traitLinks": [
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        },
+        {
+          "label": "velstrac",
+          "slug": "velstrac"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1469,7 +1630,6 @@
       "creature",
       "fiend",
       "hellfire-dispatches",
-      "no-alignment",
       "remaster",
       "troop",
       "unholy",
@@ -1501,7 +1661,6 @@
       "traits": [
         "human",
         "humanoid",
-        "no-alignment",
         "troop"
       ],
       "attributes": {
@@ -1571,7 +1730,21 @@
         ]
       },
       "recallKnowledgeText": "DC 22 (Society)",
-      "languagesText": "Common, Mwangi"
+      "languagesText": "Common, Mwangi",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1583,7 +1756,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop"
     ],
@@ -1613,7 +1785,6 @@
       "traits": [
         "human",
         "humanoid",
-        "no-alignment",
         "troop",
         "unholy"
       ],
@@ -1698,7 +1869,25 @@
         ]
       },
       "recallKnowledgeText": "DC 30 (Society)",
-      "languagesText": "Common, Diabolic"
+      "languagesText": "Common, Diabolic",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1710,7 +1899,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop",
       "unholy"
@@ -1741,7 +1929,6 @@
       "traits": [
         "human",
         "humanoid",
-        "no-alignment",
         "troop"
       ],
       "attributes": {
@@ -1798,7 +1985,7 @@
           },
           {
             "name": "Undercover",
-            "text": "(concentrate, exploration, manipulate, secret) By spending 2 hours preparing disguises, performing reconnaissance, and the like, the infiltrators can convincingly impersonate any troop unit of their level or lower that has the humanoid trait. Alternatively, they can disguise themselves as a mixed assortment of humanoid noncombatants who don't obviously form a cohesive unit. This functions as the Impersonate action with the infiltrators gaining a +2 circumstance bonus to their Deception DC. Infiltrators can't use Undercover to appear as specific individuals, nor can they impersonate groups that require resources unavailable to them, at the GM's discretion (impersonating a cavalry unit without access to mounts, for example).",
+            "text": "(concentrate, exploration, manipulate, secret) By spending 2 hours preparing disguises, performing reconnaissance, and the like, the infiltrators can convincingly impersonate any troop unit of their level or lower that has the [humanoid](/trait/humanoid) trait. Alternatively, they can disguise themselves as a mixed assortment of humanoid noncombatants who don't obviously form a cohesive unit. This functions as the [Impersonate](/action/impersonate-player-core) action with the infiltrators gaining a +2 circumstance bonus to their Deception DC. Infiltrators can't use Undercover to appear as specific individuals, nor can they impersonate groups that require resources unavailable to them, at the GM's discretion (impersonating a cavalry unit without access to mounts, for example).",
             "traits": []
           },
           {
@@ -1828,7 +2015,21 @@
         ]
       },
       "recallKnowledgeText": "DC 26 (Society)",
-      "languagesText": "Common"
+      "languagesText": "Common",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1840,7 +2041,6 @@
       "hellfire-dispatches",
       "human",
       "humanoid",
-      "no-alignment",
       "remaster",
       "troop"
     ],

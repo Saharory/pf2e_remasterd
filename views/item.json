@@ -44,7 +44,25 @@
       "views": [
         {
           "type": "list",
+          "attribute": "data.traitLinks",
+          "visibleIf": "data.traitLinks != nil",
+          "views": [
+            {
+              "type": "label",
+              "value": "{{label}}",
+              "style": "trait",
+              "bgColor": "#58180D",
+              "padding": [4, 8],
+              "borderColor": "#d8c384",
+              "borderWidth": 2,
+              "link": "{% if slug %}/trait/{{slug}}{% endif %}"
+            },
+          ]
+        },
+        {
+          "type": "list",
           "attribute": "data.traits",
+          "visibleIf": "data.traitLinks == nil",
           "views": [
             {
               "type": "label",

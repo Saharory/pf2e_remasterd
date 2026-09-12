@@ -76,7 +76,7 @@
           },
           {
             "name": "Harmonizing Aura",
-            "text": "20 feet.\n\nAllies in the aura gain a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against effects with the auditory or sonic trait. Enemies in the aura take a –2 status penalty to sonic damage rolls and a –1 status penalty to AC and all saves against auditory and sonic effects.",
+            "text": "20 feet.\n\nAllies in the aura gain a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against effects with the auditory or [sonic](/trait/sonic) trait. Enemies in the aura take a –2 status penalty to sonic damage rolls and a –1 status penalty to AC and all saves against auditory and sonic effects.",
             "traits": [
               "aura",
               "divine",
@@ -129,7 +129,25 @@
       },
       "languagesText": "Diabolic, Draconic, Empyrean",
       "recallKnowledgeText": "DC 32 (Religion)",
-      "sanctification": "holy"
+      "sanctification": "holy",
+      "traitLinks": [
+        {
+          "label": "angel",
+          "slug": "angel"
+        },
+        {
+          "label": "celestial",
+          "slug": "celestial"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -245,7 +263,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 24 (Arcana)"
+      "recallKnowledgeText": "DC 24 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -377,7 +409,21 @@
         ]
       },
       "languagesText": "Common, Draconic",
-      "recallKnowledgeText": "DC 20 (Society)"
+      "recallKnowledgeText": "DC 20 (Society)",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -513,7 +559,21 @@
         ]
       },
       "languagesText": "Arboreal, Common, Fey",
-      "recallKnowledgeText": "DC 28 (Nature)"
+      "recallKnowledgeText": "DC 28 (Nature)",
+      "traitLinks": [
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -637,7 +697,21 @@
         ]
       },
       "languagesText": "Common",
-      "recallKnowledgeText": "DC 30 (Society)"
+      "recallKnowledgeText": "DC 30 (Society)",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -788,7 +862,25 @@
       },
       "languagesText": "Diabolic, Draconic, Empyrean, Utopian",
       "recallKnowledgeText": "DC 37 (Religion)",
-      "sanctification": "holy"
+      "sanctification": "holy",
+      "traitLinks": [
+        {
+          "label": "archon",
+          "slug": "archon"
+        },
+        {
+          "label": "celestial",
+          "slug": "celestial"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -924,7 +1016,7 @@
           },
           {
             "name": "Tongue Lashing",
-            "text": "The dreadknot's giant frogs lash out at each enemy in a area with their tongues, requiring them to succeed at a Reflex DC 26 save or become Grabbed. A creature grabbed in this way isn't Immobilized, but it can't move more than 15 feet from the dreadknot. A creature can sever one of the tongues with a Strike against AC 25 that deals at least 15 slashing damage. This doesn't deal damage to the dreadknot.",
+            "text": "The dreadknot's giant frogs lash out at each enemy in a area with their tongues, requiring them to succeed at a Reflex DC 26 save or become Grabbed. A creature [grabbed](/condition/grabbed-player-core) in this way isn't Immobilized, but it can't move more than 15 feet from the dreadknot. A creature can sever one of the tongues with a Strike against AC 25 that deals at least 15 slashing damage. This doesn't deal damage to the dreadknot.",
             "traits": [],
             "actions": "two"
           }
@@ -938,7 +1030,29 @@
         ]
       },
       "languagesText": "Boggard, Common",
-      "recallKnowledgeText": "DC 27 (Nature, Society)"
+      "recallKnowledgeText": "DC 27 (Nature, Society)",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "boggard",
+          "slug": "boggard"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1053,7 +1167,7 @@
           },
           {
             "name": "Coordinated Tongue Pull",
-            "text": "**Frequency** once per round\n\n---\n\n**Effect** Several boggards use their tongues to grapple an enemy within 10 feet to pull them closer. The target must attempt a Reflex DC 21 save. On a failure, they are Grabbed and pulled 5 feet closer to the scouting party. A creature grabbed in this way isn't Immobilized, but it can't move more than 10 feet from the scouting party. A creature can sever one of the tongues with a Strike against AC 21 that deals at least 5 slashing damage. This doesn't damage the scouting party.",
+            "text": "**Frequency** once per round\n\n---\n\n**Effect** Several boggards use their tongues to grapple an enemy within 10 feet to pull them closer. The target must attempt a Reflex DC 21 save. On a failure, they are Grabbed and pulled 5 feet closer to the scouting party. A creature [grabbed](/condition/grabbed-player-core) in this way isn't Immobilized, but it can't move more than 10 feet from the scouting party. A creature can sever one of the tongues with a Strike against AC 21 that deals at least 5 slashing damage. This doesn't damage the scouting party.",
             "traits": [],
             "actions": "one"
           },
@@ -1083,7 +1197,25 @@
         ]
       },
       "languagesText": "Boggard, Common",
-      "recallKnowledgeText": "DC 22 (Society)"
+      "recallKnowledgeText": "DC 22 (Society)",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "boggard",
+          "slug": "boggard"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1212,7 +1344,21 @@
         ]
       },
       "languagesText": "Draconic, Mwangi",
-      "recallKnowledgeText": "DC 24 (Society)"
+      "recallKnowledgeText": "DC 24 (Society)",
+      "traitLinks": [
+        {
+          "label": "charau-ka",
+          "slug": "charau-ka"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1343,7 +1489,25 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 30 (Arcana)"
+      "recallKnowledgeText": "DC 30 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "clockwork",
+          "slug": "clockwork"
+        },
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1475,7 +1639,25 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 22 (Arcana)"
+      "recallKnowledgeText": "DC 22 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "clockwork",
+          "slug": "clockwork"
+        },
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1597,7 +1779,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 23 (Nature)"
+      "recallKnowledgeText": "DC 23 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "dinosaur",
+          "slug": "dinosaur"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1752,7 +1948,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 34 (Nature)"
+      "recallKnowledgeText": "DC 34 (Nature)",
+      "traitLinks": [
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1886,7 +2092,17 @@
         ]
       },
       "languagesText": "Draconic",
-      "recallKnowledgeText": "DC 33 (Arcana)"
+      "recallKnowledgeText": "DC 33 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2013,7 +2229,29 @@
         ]
       },
       "languagesText": "Common, Orcish",
-      "recallKnowledgeText": "DC 22 (Society)"
+      "recallKnowledgeText": "DC 22 (Society)",
+      "traitLinks": [
+        {
+          "label": "dromaar",
+          "slug": "dromaar"
+        },
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "orc",
+          "slug": "orc"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2144,7 +2382,21 @@
         ]
       },
       "languagesText": "Common, Wildsong",
-      "recallKnowledgeText": "DC 30 (Society)"
+      "recallKnowledgeText": "DC 30 (Society)",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2255,7 +2507,7 @@
           },
           {
             "name": "Hampering Fusillade",
-            "text": "The dwarven longshots fire dozens of bolts in quick succession to slow down advancing enemies. Each creature in a area within 120 feet must attempt a Fortitude DC 26 saving throw. On a failure, a creature takes a –10-foot circumstance penalty to its Speed for 1 minute. Spending an Interact action to remove the bolts ends this penalty.\n\nEffect: Hampering Fusillade",
+            "text": "The dwarven longshots fire dozens of bolts in quick succession to slow down advancing enemies. Each creature in a area within 120 feet must attempt a Fortitude DC 26 saving throw. On a failure, a creature takes a –10-foot circumstance penalty to its Speed for 1 minute. Spending an [Interact](/action/interact-player-core) action to remove the bolts ends this penalty.\n\nEffect: Hampering Fusillade",
             "traits": [],
             "actions": "two"
           }
@@ -2268,7 +2520,21 @@
         ]
       },
       "languagesText": "Common, Dwarven",
-      "recallKnowledgeText": "DC 27 (Society)"
+      "recallKnowledgeText": "DC 27 (Society)",
+      "traitLinks": [
+        {
+          "label": "dwarf",
+          "slug": "dwarf"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2392,7 +2658,21 @@
         ]
       },
       "languagesText": "Common, Dwarven",
-      "recallKnowledgeText": "DC 29 (Society)"
+      "recallKnowledgeText": "DC 29 (Society)",
+      "traitLinks": [
+        {
+          "label": "dwarf",
+          "slug": "dwarf"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2477,7 +2757,7 @@
         "defensive": [
           {
             "name": "No Retreat",
-            "text": "These soldiers have been extensively trained to hold their ground no matter the situation. If any effect would force the first-class infantry to move, reduce the distance by 10 feet. Any time they would be affected by the Fleeing condition, the first-class infantry is instead Slowed 2 for the same duration.",
+            "text": "These soldiers have been extensively trained to hold their ground no matter the situation. If any effect would force the first-class infantry to move, reduce the distance by 10 feet. Any time they would be affected by the [Fleeing](/condition/fleeing-player-core) condition, the first-class infantry is instead Slowed 2 for the same duration.",
             "traits": []
           },
           {
@@ -2525,7 +2805,21 @@
         ]
       },
       "languagesText": "Common",
-      "recallKnowledgeText": "DC 31 (Society)"
+      "recallKnowledgeText": "DC 31 (Society)",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2659,7 +2953,21 @@
         ]
       },
       "languagesText": "Common, Sakvroth",
-      "recallKnowledgeText": "DC 26 (Occultism)"
+      "recallKnowledgeText": "DC 26 (Occultism)",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2771,7 +3079,7 @@
         "offensive": [
           {
             "name": "Catch and Release",
-            "text": "The gargoyle wing attempts an Athletics checks to Grapple, comparing the result to the Fortitude DC of a number of Large or smaller creatures in a area equal to the gargoyle wing's remaining number of segments, then Flies up to 40 feet, bringing any successfully Grabbed or Restrained creatures along, and Releases them.",
+            "text": "The gargoyle wing attempts an Athletics checks to Grapple, comparing the result to the Fortitude DC of a number of Large or smaller creatures in a area equal to the gargoyle wing's remaining number of segments, then Flies up to 40 feet, bringing any successfully Grabbed or [Restrained](/condition/restrained-player-core) creatures along, and Releases them.",
             "traits": [],
             "actions": "two"
           },
@@ -2790,7 +3098,21 @@
         ]
       },
       "languagesText": "Common, Petran",
-      "recallKnowledgeText": "DC 26 (Nature)"
+      "recallKnowledgeText": "DC 26 (Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2891,13 +3213,13 @@
           },
           {
             "name": "Grasping Mandibles",
-            "text": "**Requirements** The giant ant army's last action was a Mandible Frenzy that at least one creature failed their save against or the giant ant army has at least one creature Grabbed or Restrained\n\n---\n\n**Effect** If used after Grasping Mandibles, the giant ant army can attempt an Athletics check to Grapple, comparing the result to the Fortitude DC of each creature who failed its saving throw, up to as many creatures as the giant ant army has remaining segments. The giant any army can instead use Grasping Mandibles to choose one creature it's grabbing or restraining to automatically extend that condition to the end of the army's next turn.",
+            "text": "**Requirements** The giant ant army's last action was a Mandible Frenzy that at least one creature failed their save against or the giant ant army has at least one creature [Grabbed](/condition/grabbed-player-core) or Restrained\n\n---\n\n**Effect** If used after Grasping Mandibles, the giant ant army can attempt an Athletics check to Grapple, comparing the result to the Fortitude DC of each creature who failed its saving throw, up to as many creatures as the giant ant army has remaining segments. The giant any army can instead use Grasping Mandibles to choose one creature it's grabbing or restraining to automatically extend that condition to the end of the army's next turn.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Haul Away",
-            "text": "**Requirements** The giant ant army has at least one creature Restrained\n\n---\n\n**Effect** The army Strides up to its Speed, carrying any restrained creatures with it. If the creature is Gargantuan, the giant ant army is Encumbered.",
+            "text": "**Requirements** The giant ant army has at least one creature [Restrained](/condition/restrained-player-core)\n\n---\n\n**Effect** The army Strides up to its Speed, carrying any restrained creatures with it. If the creature is Gargantuan, the giant ant army is Encumbered.",
             "traits": [],
             "actions": "one"
           },
@@ -2922,7 +3244,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 23 (Nature)"
+      "recallKnowledgeText": "DC 23 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3050,7 +3382,21 @@
         ]
       },
       "languagesText": "Common, Fey, Gnomish",
-      "recallKnowledgeText": "DC 23 (Society)"
+      "recallKnowledgeText": "DC 23 (Society)",
+      "traitLinks": [
+        {
+          "label": "gnome",
+          "slug": "gnome"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3176,7 +3522,21 @@
         ]
       },
       "languagesText": "Common, Goblin",
-      "recallKnowledgeText": "DC 19 (Society)"
+      "recallKnowledgeText": "DC 19 (Society)",
+      "traitLinks": [
+        {
+          "label": "goblin",
+          "slug": "goblin"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3312,7 +3672,21 @@
         ]
       },
       "languagesText": "Common, Halfling",
-      "recallKnowledgeText": "DC 24 (Society)"
+      "recallKnowledgeText": "DC 24 (Society)",
+      "traitLinks": [
+        {
+          "label": "halfling",
+          "slug": "halfling"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3449,7 +3823,29 @@
       },
       "languagesText": "Diabolic",
       "recallKnowledgeText": "DC 24 (Nature, Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3586,7 +3982,21 @@
         ]
       },
       "languagesText": "Common, Goblin",
-      "recallKnowledgeText": "DC 26 (Society)"
+      "recallKnowledgeText": "DC 26 (Society)",
+      "traitLinks": [
+        {
+          "label": "hobgoblin",
+          "slug": "hobgoblin"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3719,7 +4129,21 @@
         ]
       },
       "languagesText": "Common, Sakvroth",
-      "recallKnowledgeText": "DC 19 (Society)"
+      "recallKnowledgeText": "DC 19 (Society)",
+      "traitLinks": [
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "kobold",
+          "slug": "kobold"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3880,7 +4304,25 @@
       },
       "languagesText": "Daemonic",
       "recallKnowledgeText": "DC 32 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "daemon",
+          "slug": "daemon"
+        },
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4029,7 +4471,7 @@
           },
           {
             "name": "Steady Troop Spellcasting",
-            "text": "When the lich legion Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone. When Casting a Spell that has an area of a burst, cone, or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.\n\nIf a reaction would disrupt the lich legion's spellcasting action, the lich legion attempts a Flat DC 12. On a success, the action isn't disrupted.",
+            "text": "When the lich legion Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone. When Casting a Spell that has an area of a burst, cone, or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.\n\nIf a reaction would disrupt the lich legion's [spellcasting](/action/spellcasting-player-core) action, the lich legion attempts a Flat DC 12. On a success, the action isn't disrupted.",
             "traits": []
           }
         ]
@@ -4042,7 +4484,21 @@
       },
       "languagesText": "Aklo, Common, Chthonian, Diabolic, Draconic, Elven, Necril, Sakvroth",
       "recallKnowledgeText": "DC 43 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4177,7 +4633,25 @@
         ]
       },
       "languagesText": "Sakvroth",
-      "recallKnowledgeText": "DC 19 (Nature)"
+      "recallKnowledgeText": "DC 19 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "fey",
+          "slug": "fey"
+        },
+        {
+          "label": "gremlin",
+          "slug": "gremlin"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4306,7 +4780,21 @@
         ]
       },
       "languagesText": "Common",
-      "recallKnowledgeText": "DC 32 (Society)"
+      "recallKnowledgeText": "DC 32 (Society)",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4451,7 +4939,17 @@
         ]
       },
       "languagesText": "Common",
-      "recallKnowledgeText": "DC 36 (Occultism)"
+      "recallKnowledgeText": "DC 36 (Occultism)",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4589,7 +5087,7 @@
           },
           {
             "name": "Smothering Grasp",
-            "text": "**Requirements** The omox slime pool has a creature Grabbed or Restrained\n\n---\n\n**Effect** Omox slime flows onto the creature, completely covering it. The creature must then succeed at a Fortitude DC 38 save or it becomes Blinded and must hold its breath or begin suffocating. These effects last as long as the omoxes have the creature grabbed or restrained.\n\nEffect: Remaining Air",
+            "text": "**Requirements** The omox slime pool has a creature [Grabbed](/condition/grabbed-player-core) or Restrained\n\n---\n\n**Effect** Omox slime flows onto the creature, completely covering it. The creature must then succeed at a Fortitude DC 38 save or it becomes Blinded and must hold its breath or begin suffocating. These effects last as long as the omoxes have the creature grabbed or restrained.\n\nEffect: Remaining Air",
             "traits": [],
             "actions": "one"
           },
@@ -4609,7 +5107,29 @@
       },
       "languagesText": "Chthonian, Draconic, Empyrean",
       "recallKnowledgeText": "DC 36 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "demon",
+          "slug": "demon"
+        },
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "ooze",
+          "slug": "ooze"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4741,7 +5261,21 @@
         ]
       },
       "languagesText": "Common, Orcish",
-      "recallKnowledgeText": "DC 20 (Society)"
+      "recallKnowledgeText": "DC 20 (Society)",
+      "traitLinks": [
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "orc",
+          "slug": "orc"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4912,7 +5446,21 @@
         ]
       },
       "languagesText": "Chthonian, Protean, Empyrean",
-      "recallKnowledgeText": "DC 32 (Religion)"
+      "recallKnowledgeText": "DC 32 (Religion)",
+      "traitLinks": [
+        {
+          "label": "monitor",
+          "slug": "monitor"
+        },
+        {
+          "label": "protean",
+          "slug": "protean"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5056,7 +5604,25 @@
         ]
       },
       "languagesText": "Common, Kelish",
-      "recallKnowledgeText": "DC 22 (Nature, Society)"
+      "recallKnowledgeText": "DC 22 (Nature, Society)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5157,7 +5723,7 @@
         "offensive": [
           {
             "name": "Dirty Tricks",
-            "text": "The ratfolk feint and trip up their foes in a area, attempting a single Thievery check and comparing the result to each target's Reflex DC. On a success, the target is Clumsy 1 (Clumsy 2 on a critical success) until they take an Interact action to remove the condition.",
+            "text": "The ratfolk feint and trip up their foes in a area, attempting a single Thievery check and comparing the result to each target's Reflex DC. On a success, the target is Clumsy 1 (Clumsy 2 on a critical success) until they take an [Interact](/action/interact-player-core) action to remove the condition.",
             "traits": [],
             "actions": "two"
           },
@@ -5182,7 +5748,21 @@
         ]
       },
       "languagesText": "Common",
-      "recallKnowledgeText": "DC 23 (Society)"
+      "recallKnowledgeText": "DC 23 (Society)",
+      "traitLinks": [
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "ratfolk",
+          "slug": "ratfolk"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5275,7 +5855,7 @@
           },
           {
             "name": "Divine Revulsion",
-            "text": "If a redcap brigade sees a creature brandish a religious symbol of a deity (which requires an Interact action by that creature) or cast a divine spell while wearing a religious symbol, the troop must attempt a Will DC 26 save. They then become temporarily immune to all brandished religious symbols for 10 minutes.\n\n---\n\n**Critical Success** The troop is unaffected.\n\n**Success** The troop is Frightened 1.\n\n**Failure** The troop is Frightened 2.\n\n**Critical Failure** The troop is Frightened 3.",
+            "text": "If a redcap brigade sees a creature brandish a religious symbol of a deity (which requires an [Interact](/action/interact-player-core) action by that creature) or cast a divine spell while wearing a religious symbol, the troop must attempt a Will DC 26 save. They then become temporarily immune to all brandished religious symbols for 10 minutes.\n\n---\n\n**Critical Success** The troop is unaffected.\n\n**Success** The troop is Frightened 1.\n\n**Failure** The troop is Frightened 2.\n\n**Critical Failure** The troop is Frightened 3.",
             "traits": [
               "emotion",
               "fear",
@@ -5327,7 +5907,17 @@
         ]
       },
       "languagesText": "Common, Fey",
-      "recallKnowledgeText": "DC 29 (Nature)"
+      "recallKnowledgeText": "DC 29 (Nature)",
+      "traitLinks": [
+        {
+          "label": "fey",
+          "slug": "fey"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5457,7 +6047,21 @@
         ]
       },
       "languagesText": "Petran",
-      "recallKnowledgeText": "DC 24 (Arcana)"
+      "recallKnowledgeText": "DC 24 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5592,7 +6196,21 @@
         ]
       },
       "languagesText": "Thalassic",
-      "recallKnowledgeText": "DC 24 (Arcana)"
+      "recallKnowledgeText": "DC 24 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5684,7 +6302,7 @@
         "interaction": [
           {
             "name": "Smoke Vision",
-            "text": "The scamp inferno ignores the Concealed condition from smoke.",
+            "text": "The scamp inferno ignores the [Concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           }
         ],
@@ -5730,7 +6348,21 @@
         ]
       },
       "languagesText": "Pyric",
-      "recallKnowledgeText": "DC 24 (Arcana)"
+      "recallKnowledgeText": "DC 24 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5863,7 +6495,21 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 24 (Arcana)"
+      "recallKnowledgeText": "DC 24 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5995,7 +6641,21 @@
         ]
       },
       "languagesText": "Muan",
-      "recallKnowledgeText": "DC 24 (Arcana)"
+      "recallKnowledgeText": "DC 24 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6086,7 +6746,7 @@
         "interaction": [
           {
             "name": "Fog Vision",
-            "text": "The scamp whirlwind ignores the Concealed condition from fog.",
+            "text": "The scamp whirlwind ignores the [Concealed](/condition/concealed-player-core) condition from fog.",
             "traits": []
           }
         ],
@@ -6132,7 +6792,21 @@
         ]
       },
       "languagesText": "Sussuran",
-      "recallKnowledgeText": "DC 24 (Arcana)"
+      "recallKnowledgeText": "DC 24 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6268,7 +6942,17 @@
         ]
       },
       "languagesText": "Aklo, Thassilonian",
-      "recallKnowledgeText": "DC 26 (Occultism)"
+      "recallKnowledgeText": "DC 26 (Occultism)",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6402,7 +7086,29 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 22 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        },
+        {
+          "label": "skeleton",
+          "slug": "skeleton"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6534,7 +7240,7 @@
         "offensive": [
           {
             "name": "Guardians' Curse",
-            "text": "**Frequency** three times per day\n\n---\n\n**Effect** The guardian flock bestows a curse upon all enemies in a area by touching them with their scythes. Each affected creature must attempt a Will DC 33 save.\n\n---\n\n**Critical Success** The target is unaffected and is temporarily immune to Guardians' Curse for 24 hours.\n\n**Success** The target feels a momentary shudder of doom and is Stupefied 1 for 1 minute by the distracting sensation.\n\n**Failure** The target becomes morose and glum as it accepts its own inevitable fate. For 1 hour, the target is Stupefied 2. Each time the target gains the dying condition, the stupefied condition value increases by 1, to a maximum value of Stupefied 4.\n\n**Critical Failure** As failure, but the effect is permanent.",
+            "text": "**Frequency** three times per day\n\n---\n\n**Effect** The guardian flock bestows a curse upon all enemies in a area by touching them with their scythes. Each affected creature must attempt a Will DC 33 save.\n\n---\n\n**Critical Success** The target is unaffected and is temporarily immune to Guardians' Curse for 24 hours.\n\n**Success** The target feels a momentary shudder of doom and is Stupefied 1 for 1 minute by the distracting sensation.\n\n**Failure** The target becomes morose and glum as it accepts its own inevitable fate. For 1 hour, the target is Stupefied 2. Each time the target gains the [dying](/condition/dying-player-core) condition, the [stupefied](/condition/stupefied-player-core) condition value increases by 1, to a maximum value of Stupefied 4.\n\n**Critical Failure** As failure, but the effect is permanent.",
             "traits": [
               "curse",
               "divine",
@@ -6562,7 +7268,21 @@
         ]
       },
       "languagesText": "Chthonian, Diabolic, Empyrean, Requian",
-      "recallKnowledgeText": "DC 31 (Religion)"
+      "recallKnowledgeText": "DC 31 (Religion)",
+      "traitLinks": [
+        {
+          "label": "monitor",
+          "slug": "monitor"
+        },
+        {
+          "label": "psychopomp",
+          "slug": "psychopomp"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6696,7 +7416,21 @@
         ]
       },
       "languagesText": "Common, Skald",
-      "recallKnowledgeText": "DC 28 (Society)"
+      "recallKnowledgeText": "DC 28 (Society)",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6799,7 +7533,7 @@
           },
           {
             "name": "Reactive Attack",
-            "text": "**Trigger** A creature within the vordine legion's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using\n\n---\n\n**Effect** The creature takes (2d8+11) piercing|options:area-damage|traits:magical,unholy] damage (basic Reflex DC 26 save); this damage has the magical and unholy traits. If the creature critically fails its saving throw and the trigger was a manipulate action, the legion disrupts that action.",
+            "text": "**Trigger** A creature within the vordine legion's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using\n\n---\n\n**Effect** The creature takes (2d8+11) piercing|options:area-damage|traits:[magical](/trait/magical),unholy] damage (basic Reflex DC 26 save); this damage has the magical and [unholy](/trait/unholy) traits. If the creature critically fails its saving throw and the trigger was a manipulate action, the legion disrupts that action.",
             "traits": [],
             "actions": "reaction"
           },
@@ -6853,7 +7587,25 @@
       },
       "languagesText": "Common, Diabolic",
       "recallKnowledgeText": "DC 27 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "devil",
+          "slug": "devil"
+        },
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6996,7 +7748,25 @@
       },
       "languagesText": "Common, Necril",
       "recallKnowledgeText": "DC 26 (Religion)",
-      "sanctification": "unholy"
+      "sanctification": "unholy",
+      "traitLinks": [
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        },
+        {
+          "label": "wight",
+          "slug": "wight"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7113,7 +7883,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 22 (Nature)"
+      "recallKnowledgeText": "DC 22 (Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7244,7 +8024,21 @@
         ]
       },
       "languagesText": "Draconic, Sakvroth",
-      "recallKnowledgeText": "DC 22 (Society)"
+      "recallKnowledgeText": "DC 22 (Society)",
+      "traitLinks": [
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "xulgath",
+          "slug": "xulgath"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7385,7 +8179,29 @@
         ]
       },
       "languagesText": "Draconic, Sakvroth",
-      "recallKnowledgeText": "DC 31 (Nature, Society)"
+      "recallKnowledgeText": "DC 31 (Nature, Society)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "dinosaur",
+          "slug": "dinosaur"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "xulgath",
+          "slug": "xulgath"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7511,7 +8327,7 @@
           },
           {
             "name": "Zecui Larvae",
-            "text": "**Saving Throw** Fortitude DC 30\n\n**Stage 1** visible lumps as the larvae move but no ill effect (1 day)\n\n**Stage 2** Drained 1 (1 day)\n\n**Stage 3** Drained 2 (1 day)\n\n**Stage 4** Drained 3 and controlled by the zecui larva (1 day)\n\n**Stage 5** the creature dies and an adult Zecui can emerge from the corpse as an Interact action.",
+            "text": "**Saving Throw** Fortitude DC 30\n\n**Stage 1** visible lumps as the larvae move but no ill effect (1 day)\n\n**Stage 2** Drained 1 (1 day)\n\n**Stage 3** Drained 2 (1 day)\n\n**Stage 4** Drained 3 and controlled by the zecui larva (1 day)\n\n**Stage 5** the creature dies and an adult Zecui can emerge from the corpse as an [Interact](/action/interact-player-core) action.",
             "traits": [
               "disease"
             ]
@@ -7525,7 +8341,17 @@
         ]
       },
       "languagesText": "Aklo",
-      "recallKnowledgeText": "DC 30 (Occultism)"
+      "recallKnowledgeText": "DC 30 (Occultism)",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

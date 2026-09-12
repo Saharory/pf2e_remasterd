@@ -88,7 +88,7 @@
         "defensive": [
           {
             "name": "Green Glow",
-            "text": "20 feet.\n\nAn abysium horror constantly emanates a powerful energy toxic to life. This radiation sheds dim light in the area. Any creature beginning its turn in the aura must attempt a Fortitude DC 27 save, becoming Sickened 1 on a failure or Sickened 2 on a critical failure. Once out of the aura, an affected creature's sickened condition automatically decreases by 1 at the beginning of each of its turns.",
+            "text": "20 feet.\n\nAn abysium horror constantly emanates a powerful energy toxic to life. This radiation sheds dim light in the area. Any creature beginning its turn in the aura must attempt a Fortitude DC 27 save, becoming Sickened 1 on a failure or Sickened 2 on a critical failure. Once out of the aura, an affected creature's [sickened](/condition/sickened-player-core) condition automatically decreases by 1 at the beginning of each of its turns.",
             "traits": [
               "aura",
               "poison",
@@ -117,7 +117,17 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 27 (Arcana)"
+      "recallKnowledgeText": "DC 27 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -271,7 +281,7 @@
           },
           {
             "name": "Blessed by the Winds",
-            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the air trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
+            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the [air](/trait/air) trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
             "traits": [
               "air",
               "aura"
@@ -294,7 +304,7 @@
         "offensive": [
           {
             "name": "Collect Thunder",
-            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the auditory trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
+            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the [auditory](/trait/auditory) trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
             "traits": [
               "electricity",
               "manipulate"
@@ -329,7 +339,17 @@
         ]
       },
       "languagesText": "Common, Empyrean, Sussuran",
-      "recallKnowledgeText": "DC 43 (Arcana)"
+      "recallKnowledgeText": "DC 43 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -446,7 +466,7 @@
         "offensive": [
           {
             "name": "Decompose",
-            "text": "**Frequency** once per day\n\n---\n\n**Effect** Void energy seeps out of the ardande gardener, decaying everything within a area and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or wood trait take 1d6 void|options:area-damage] damage (basic Fortitude DC 16).",
+            "text": "**Frequency** once per day\n\n---\n\n**Effect** Void energy seeps out of the ardande gardener, decaying everything within a area and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or [wood](/trait/wood) trait take 1d6 void|options:area-damage] damage (basic Fortitude DC 16).",
             "traits": [
               "primal",
               "void"
@@ -463,7 +483,21 @@
       },
       "languagesText": "Common, Muan",
       "recallKnowledgeText": "DC 15 (Society)",
-      "items": "Shortbow, Sickle, Glowing Lantern Fruit, Arrows"
+      "items": "Shortbow, Sickle, Glowing Lantern Fruit, Arrows",
+      "traitLinks": [
+        {
+          "label": "ardande",
+          "slug": "ardande"
+        },
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -609,7 +643,21 @@
         ]
       },
       "languagesText": "Common, Empyrean, Talican",
-      "recallKnowledgeText": "DC 27 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 27 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -764,7 +812,7 @@
           },
           {
             "name": "Blessed by the Winds",
-            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the air trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
+            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the [air](/trait/air) trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
             "traits": [
               "air",
               "aura"
@@ -787,7 +835,7 @@
         "offensive": [
           {
             "name": "Collect Thunder",
-            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the auditory trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
+            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the [auditory](/trait/auditory) trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
             "traits": [
               "electricity",
               "manipulate"
@@ -822,7 +870,17 @@
         ]
       },
       "languagesText": "Common, Empyrean, Sussuran",
-      "recallKnowledgeText": "DC 48 (Arcana)"
+      "recallKnowledgeText": "DC 48 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -964,7 +1022,21 @@
         ]
       },
       "languagesText": "Petran",
-      "recallKnowledgeText": "DC 28 (Arcana)"
+      "recallKnowledgeText": "DC 28 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1058,7 +1130,7 @@
         "defensive": [
           {
             "name": "Bullying Bluster",
-            "text": "30 feet. The blustering gale constantly unleashes a tirade of insults and aggressive taunts. Each enemy who enters or starts their turn in the aura must succeed at a Will DC 30 save or become Stupefied 1 for as long as they remain within the aura (Stupefied 2 on a critical failure). The troop's members are collectively able to mimic a few curse words or insults in every language, allowing their Bullying Bluster to affect any creature who understands a language. A creature who succeeds at its save is temporarily immune for 1 hour. The blustering gale can activate or deactivate the aura with a free action, which has the concentrate trait.",
+            "text": "30 feet. The blustering gale constantly unleashes a tirade of insults and aggressive taunts. Each enemy who enters or starts their turn in the aura must succeed at a Will DC 30 save or become Stupefied 1 for as long as they remain within the aura (Stupefied 2 on a critical failure). The troop's members are collectively able to mimic a few curse words or insults in every language, allowing their Bullying Bluster to affect any creature who understands a language. A creature who succeeds at its save is temporarily immune for 1 hour. The blustering gale can activate or deactivate the aura with a free action, which has the [concentrate](/trait/concentrate) trait.",
             "traits": [
               "auditory",
               "aura",
@@ -1102,7 +1174,21 @@
         ]
       },
       "languagesText": "Sussuran",
-      "recallKnowledgeText": "DC 28 (Arcana)"
+      "recallKnowledgeText": "DC 28 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1215,7 +1301,7 @@
         "interaction": [
           {
             "name": "Steam Vision",
-            "text": "The boiling spring ignores the Concealed condition from mist and steam.",
+            "text": "The boiling spring ignores the [Concealed](/condition/concealed-player-core) condition from mist and steam.",
             "traits": []
           }
         ],
@@ -1259,7 +1345,25 @@
         ]
       },
       "languagesText": "Thalassic",
-      "recallKnowledgeText": "DC 31 (Arcana)"
+      "recallKnowledgeText": "DC 31 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1415,7 +1519,7 @@
           },
           {
             "name": "Blessed by the Winds",
-            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the air trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
+            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the [air](/trait/air) trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
             "traits": [
               "air",
               "aura"
@@ -1438,7 +1542,7 @@
         "offensive": [
           {
             "name": "Collect Thunder",
-            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the auditory trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
+            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the [auditory](/trait/auditory) trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
             "traits": [
               "electricity",
               "manipulate"
@@ -1473,7 +1577,17 @@
         ]
       },
       "languagesText": "Common, Empyrean, Sussuran",
-      "recallKnowledgeText": "DC 48 (Arcana)"
+      "recallKnowledgeText": "DC 48 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1621,7 +1735,21 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 37 (Arcana)",
-      "items": "Falchion"
+      "items": "Falchion",
+      "traitLinks": [
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1739,7 +1867,7 @@
           },
           {
             "name": "Roast",
-            "text": "The brochmaw turns a skewer over their oven, cooking anything impaled on it. Creatures Grabbed by the brochmaw's skewer take 3d6 fire] damage (basic Fortitude DC 32 save). Creatures who have been Roasted take a –2 circumstance penalty to Fortitude saves against Serve for 1 minute.\n\nEffect: Roast",
+            "text": "The brochmaw turns a skewer over their oven, cooking anything impaled on it. Creatures [Grabbed](/condition/grabbed-player-core) by the brochmaw's skewer take 3d6 fire] damage (basic Fortitude DC 32 save). Creatures who have been Roasted take a –2 circumstance penalty to Fortitude saves against Serve for 1 minute.\n\nEffect: Roast",
             "traits": [],
             "actions": "one"
           },
@@ -1769,7 +1897,17 @@
         ]
       },
       "languagesText": "Common, Pyric",
-      "recallKnowledgeText": "DC 31 (Arcana)"
+      "recallKnowledgeText": "DC 31 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1932,7 +2070,17 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 41 (Arcana)"
+      "recallKnowledgeText": "DC 41 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2070,7 +2218,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 22 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 22 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2205,7 +2367,21 @@
         ]
       },
       "languagesText": "Thalassic",
-      "recallKnowledgeText": "DC 24 (Arcana)"
+      "recallKnowledgeText": "DC 24 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2314,7 +2490,7 @@
         "defensive": [
           {
             "name": "Illuminating Flames",
-            "text": "30 feet. The comozant wyrd sheds bright light in the emanation and dim light for another 30 feet. Heatless flames similar to the wyrd's own surround any creature in the emanation. A visible creature can't become Concealed while in the emanation, and an Invisible creature becomes concealed rather than undetected. The wyrd can communicate empathically with any non-mindless creature affected by illuminating flames, even if they don't share a language.",
+            "text": "30 feet. The comozant wyrd sheds bright light in the emanation and dim light for another 30 feet. Heatless flames similar to the wyrd's own surround any creature in the emanation. A visible creature can't become Concealed while in the emanation, and an [Invisible](/condition/invisible-player-core) creature becomes concealed rather than undetected. The wyrd can communicate empathically with any non-mindless creature affected by illuminating flames, even if they don't share a language.",
             "traits": [
               "aura",
               "electricity",
@@ -2332,7 +2508,7 @@
           },
           {
             "name": "Wyrd Wisdom",
-            "text": "**Frequency** once per day\n\n**Requirements** The comozant wyrd is communicating empathically with another creature through illuminating flames\n\n---\n\n**Effect** The comozant wyrd's odd means of communication brings strange insight. One creature the wyrd is empathically conversing with gains the benefits of an augury spell, though only about this conversation topic, rather than any topic of the creature's choice.",
+            "text": "**Frequency** once per day\n\n**Requirements** The comozant wyrd is communicating empathically with another creature through illuminating flames\n\n---\n\n**Effect** The comozant wyrd's odd means of communication brings strange insight. One creature the wyrd is empathically conversing with gains the benefits of an [augury](/spell/augury-player-core) spell, though only about this conversation topic, rather than any topic of the creature's choice.",
             "traits": [],
             "actions": "one"
           }
@@ -2345,7 +2521,21 @@
         ]
       },
       "languagesText": "Sussuran",
-      "recallKnowledgeText": "DC 20 (Arcana)"
+      "recallKnowledgeText": "DC 20 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "incorporeal",
+          "slug": "incorporeal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2498,7 +2688,17 @@
         ]
       },
       "languagesText": "Petran",
-      "recallKnowledgeText": "DC 27 (Arcana)"
+      "recallKnowledgeText": "DC 27 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2631,7 +2831,17 @@
         ]
       },
       "languagesText": "Petran",
-      "recallKnowledgeText": "DC 18 (Arcana)"
+      "recallKnowledgeText": "DC 18 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2766,7 +2976,17 @@
         ]
       },
       "languagesText": "Sussuran",
-      "recallKnowledgeText": "DC 15 (Arcana)"
+      "recallKnowledgeText": "DC 15 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2890,7 +3110,21 @@
         ]
       },
       "languagesText": "Thalassic",
-      "recallKnowledgeText": "DC 15 (Arcana)"
+      "recallKnowledgeText": "DC 15 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3009,7 +3243,7 @@
         "defensive": [
           {
             "name": "Dust Eternal",
-            "text": "30 feet. Dust swirls about the outcrop, rendering everything within its aura (including the outcrop) Concealed. In addition, the dust at the outcrop's base creates difficult terrain on the ground within the aura. The outcrop can activate or deactivate this aura using a single action, which has the concentrate trait.",
+            "text": "30 feet. Dust swirls about the outcrop, rendering everything within its aura (including the outcrop) Concealed. In addition, the dust at the outcrop's base creates difficult terrain on the ground within the aura. The outcrop can activate or deactivate this aura using a single action, which has the [concentrate](/trait/concentrate) trait.",
             "traits": [
               "aura",
               "earth"
@@ -3017,14 +3251,14 @@
           },
           {
             "name": "Unstoppable",
-            "text": "The elder outcrop's slowed condition can't exceed Slowed 1, and it ignores penalties to its Speeds and the Immobilized condition.",
+            "text": "The elder outcrop's [slowed](/condition/slowed-player-core) condition can't exceed Slowed 1, and it ignores penalties to its Speeds and the [Immobilized](/condition/immobilized-player-core) condition.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Call of Earth",
-            "text": "A flying creature hit by the elder outcrop's rock ranged strike is affected by a 7th-rank Earthbind spell (Fortitude DC 33).",
+            "text": "A flying creature hit by the elder outcrop's rock ranged strike is affected by a 7th-rank [Earthbind](/spell/earthbind-player-core) spell (Fortitude DC 33).",
             "traits": [
               "primal"
             ]
@@ -3044,7 +3278,7 @@
           },
           {
             "name": "Stone Grip",
-            "text": "Great fingers of stone arise to grasp up to two Medium or smaller creatures on the ground in the outcrop's aura. Each target must succeed at a Reflex DC 33 save or be Grabbed by the stone hand (or Restrained on a critical failure; Escape). A creature grabbed or restrained by a stone hand at the end of its turn becomes Slowed 1 or increases its existing slowed condition by 1. When a creature is unable to act due to the slowed condition from this effect, the creature is permanently Petrified.",
+            "text": "Great fingers of stone arise to grasp up to two Medium or smaller creatures on the ground in the outcrop's aura. Each target must succeed at a Reflex DC 33 save or be Grabbed by the stone hand (or Restrained on a critical failure; Escape). A creature [grabbed](/condition/grabbed-player-core) or restrained by a stone hand at the end of its turn becomes Slowed 1 or increases its existing slowed condition by 1. When a creature is unable to act due to the slowed condition from this effect, the creature is permanently Petrified.",
             "traits": [
               "earth",
               "incapacitation",
@@ -3073,7 +3307,17 @@
         ]
       },
       "languagesText": "Common, Fey, Petran",
-      "recallKnowledgeText": "DC 31 (Arcana)"
+      "recallKnowledgeText": "DC 31 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3215,7 +3459,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 28 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 28 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3370,7 +3628,7 @@
           },
           {
             "name": "Blessed by the Winds",
-            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the air trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
+            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the [air](/trait/air) trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
             "traits": [
               "air",
               "aura"
@@ -3393,7 +3651,7 @@
         "offensive": [
           {
             "name": "Collect Thunder",
-            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the auditory trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
+            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the [auditory](/trait/auditory) trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
             "traits": [
               "electricity",
               "manipulate"
@@ -3428,7 +3686,17 @@
         ]
       },
       "languagesText": "Common, Empyrean, Sussuran",
-      "recallKnowledgeText": "DC 48 (Arcana)"
+      "recallKnowledgeText": "DC 48 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3594,7 +3862,7 @@
           },
           {
             "name": "Turbulent Seas",
-            "text": "60 feet. Water in the aura that is also in the same body of water as the faydhaan is difficult terrain for Swimming creatures. Creatures with the water trait are immune.",
+            "text": "60 feet. Water in the aura that is also in the same body of water as the faydhaan is difficult terrain for Swimming creatures. Creatures with the [water](/trait/water) trait are immune.",
             "traits": [
               "aura",
               "water"
@@ -3614,7 +3882,7 @@
           },
           {
             "name": "Diplomatic Wish",
-            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a wish ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh interprets the wish to please the most people possible.",
+            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a [wish](/ritual/wish-player-core) ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh interprets the wish to please the most people possible.",
             "traits": [
               "downtime"
             ]
@@ -3635,7 +3903,21 @@
       },
       "languagesText": "Common, Muan, Petran, Pyric, Sussuran, Talican, Thalassic",
       "recallKnowledgeText": "DC 37 (Arcana)",
-      "items": "+2 Striking Jambiya"
+      "items": "+2 Striking Jambiya",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3752,7 +4034,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 15 (Arcana)"
+      "recallKnowledgeText": "DC 15 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3856,7 +4148,7 @@
         "interaction": [
           {
             "name": "Inspiring Influence",
-            "text": "A gennayn automatically succeeds with the Aid action supporting any Performance or Diplomacy skill check. Their Aid action automatically counts as a critical success while aiding in the creation of new art or a new performance.",
+            "text": "A gennayn automatically succeeds with the [Aid](/action/aid-player-core) action supporting any Performance or Diplomacy skill check. Their Aid action automatically counts as a critical success while aiding in the creation of new art or a new performance.",
             "traits": []
           }
         ],
@@ -3894,7 +4186,17 @@
         ]
       },
       "languagesText": "Common, Muan, Petran, Pyric, Sussuran, Talican, Thalassic",
-      "recallKnowledgeText": "DC 16 (Arcana)"
+      "recallKnowledgeText": "DC 16 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4015,7 +4317,17 @@
         ]
       },
       "languagesText": "Petran",
-      "recallKnowledgeText": "DC 15 (Arcana)"
+      "recallKnowledgeText": "DC 15 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4146,7 +4458,25 @@
         ]
       },
       "languagesText": "Fey, Muan",
-      "recallKnowledgeText": "DC 24 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 24 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4321,7 +4651,7 @@
           },
           {
             "name": "Pedantic Wish",
-            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a wish ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh subverts the wish-maker's true intentions, twisting the phrasing to maximize suffering.",
+            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a [wish](/ritual/wish-player-core) ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh subverts the wish-maker's true intentions, twisting the phrasing to maximize suffering.",
             "traits": [
               "downtime"
             ]
@@ -4336,7 +4666,21 @@
       },
       "languagesText": "Common, Pyric",
       "recallKnowledgeText": "DC 37 (Arcana)",
-      "items": "Scimitar, Breastplate"
+      "items": "Scimitar, Breastplate",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4489,12 +4833,12 @@
         "defensive": [
           {
             "name": "Naturally Invisible",
-            "text": "The jaathoom is Invisible at all times. They can become visible or return to invisibility as a single action, which has the concentrate trait.",
+            "text": "The jaathoom is Invisible at all times. They can become visible or return to invisibility as a single action, which has the [concentrate](/trait/concentrate) trait.",
             "traits": []
           },
           {
             "name": "Turbulent Skies",
-            "text": "20 feet. Swirling winds make all squares in the emanation difficult terrain for Striding and Flying creatures. Creatures with the air trait are immune. The jaathoom can activate or deactivate this aura as a single action, which has the concentrate trait.",
+            "text": "20 feet. Swirling winds make all squares in the emanation difficult terrain for Striding and Flying creatures. Creatures with the [air](/trait/air) trait are immune. The jaathoom can activate or deactivate this aura as a single action, which has the concentrate trait.",
             "traits": [
               "air",
               "arcane",
@@ -4523,7 +4867,7 @@
           },
           {
             "name": "Impressive Wish",
-            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a wish ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh's visions of the subject's future inform how it interprets the wish.",
+            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a [wish](/ritual/wish-player-core) ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh's visions of the subject's future inform how it interprets the wish.",
             "traits": [
               "downtime"
             ]
@@ -4547,7 +4891,21 @@
       },
       "languagesText": "Common, Sussuran",
       "recallKnowledgeText": "DC 32 (Arcana)",
-      "items": "+1 Striking Jambiya"
+      "items": "+1 Striking Jambiya",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4711,7 +5069,7 @@
           },
           {
             "name": "Economical Wish",
-            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a wish ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh fulfills the wish in the most straightforward, simple way possible.",
+            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a [wish](/ritual/wish-player-core) ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh fulfills the wish in the most straightforward, simple way possible.",
             "traits": [
               "downtime"
             ]
@@ -4749,7 +5107,21 @@
       },
       "languagesText": "Common, Petran",
       "recallKnowledgeText": "DC 35 (Arcana)",
-      "items": "Falchion"
+      "items": "Falchion",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4912,7 +5284,7 @@
           },
           {
             "name": "Elemental Resistance",
-            "text": "The jann shuyookh's elemental resistance applies to cold, electricity, and fire damage, as well as all damage from elemental sources (including environmental damage from the elemental planes and damage from anything with the air, earth, fire, metal, water, or wood trait).",
+            "text": "The jann shuyookh's elemental resistance applies to cold, electricity, and fire damage, as well as all damage from elemental sources (including environmental damage from the elemental planes and damage from anything with the air, earth, fire, metal, water, or [wood](/trait/wood) trait).",
             "traits": []
           }
         ],
@@ -4935,7 +5307,7 @@
           },
           {
             "name": "Wanderer's Wish",
-            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The jann instantly grants the benefits of a critical success with the *wish* ritual to a mortal creature. This has no cost. That creature specifies what they wish for, but the interpretation is up to the jann. A jann typically attempts to grant wishes in a way that encourages growth and exploration. A summoned jann can't use this ability.",
+            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The jann instantly grants the benefits of a critical success with the *[wish](/ritual/wish-player-core)* ritual to a mortal creature. This has no cost. That creature specifies what they wish for, but the interpretation is up to the jann. A jann typically attempts to grant wishes in a way that encourages growth and exploration. A summoned jann can't use this ability.",
             "traits": [],
             "actions": "three"
           }
@@ -4949,7 +5321,41 @@
       },
       "languagesText": "Common, Muan, Petran, Pyric, Sussuran, Talican, Thalassic",
       "recallKnowledgeText": "DC 28 (Arcana)",
-      "items": "Scimitar, Composite Longbow"
+      "items": "Scimitar, Composite Longbow",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5071,7 +5477,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 18 (Arcana)"
+      "recallKnowledgeText": "DC 18 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5224,7 +5640,25 @@
       },
       "languagesText": "Common, Muan",
       "recallKnowledgeText": "DC 24 (Arcana, Nature)",
-      "items": "Staff, Wooden Shield"
+      "items": "Staff, Wooden Shield",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5362,7 +5796,7 @@
           },
           {
             "name": "Manipulative Wish",
-            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a *wish* ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh attempts to advance their own interests along with those of any beneficiaries from the wish.",
+            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a *[wish](/ritual/wish-player-core)* ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh attempts to advance their own interests along with those of any beneficiaries from the wish.",
             "traits": [
               "downtime"
             ]
@@ -5409,7 +5843,25 @@
       },
       "languagesText": "Common, Muan",
       "recallKnowledgeText": "DC 33 (Arcana, Nature)",
-      "items": "Spear, Wooden Shield"
+      "items": "Spear, Wooden Shield",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5557,7 +6009,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 15 (Arcana)"
+      "recallKnowledgeText": "DC 15 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5690,7 +6152,25 @@
         ]
       },
       "languagesText": "Petran",
-      "recallKnowledgeText": "DC 37 (Arcana, Occultism)"
+      "recallKnowledgeText": "DC 37 (Arcana, Occultism)",
+      "traitLinks": [
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5827,7 +6307,21 @@
         ]
       },
       "languagesText": "Arboreal, Muan",
-      "recallKnowledgeText": "DC 20 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 20 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5954,7 +6448,7 @@
           },
           {
             "name": "Magnetic Disarm",
-            "text": "The living lodestone attempts to Disarm a metal weapon from a creature within its magnetic field. On a critical success, the weapon is either pushed to just outside the aura if the polarity is negative or is pulled to the lodestone and sticks to it if the polarity is positive. An item stuck to the lodestone can be wrenched free with an Interact action.",
+            "text": "The living lodestone attempts to Disarm a metal weapon from a creature within its magnetic field. On a critical success, the weapon is either pushed to just outside the aura if the polarity is negative or is pulled to the lodestone and sticks to it if the polarity is positive. An item stuck to the lodestone can be wrenched free with an [Interact](/action/interact-player-core) action.",
             "traits": [
               "primal"
             ],
@@ -5975,7 +6469,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 22 (Arcana)"
+      "recallKnowledgeText": "DC 22 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6131,7 +6635,17 @@
         ]
       },
       "languagesText": "Pyric",
-      "recallKnowledgeText": "DC 31 (Arcana)"
+      "recallKnowledgeText": "DC 31 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6267,7 +6781,21 @@
         ]
       },
       "languagesText": "Muan, Rasu, Utopian",
-      "recallKnowledgeText": "DC 23 (Nature)"
+      "recallKnowledgeText": "DC 23 (Nature)",
+      "traitLinks": [
+        {
+          "label": "aeon",
+          "slug": "aeon"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6397,7 +6925,7 @@
           },
           {
             "name": "Rhythmic Stomp",
-            "text": "**Frequency** once per round\n\n---\n\n**Effect** The melomach's footsteps raise a clanging sound through their body to create a brief musical phrase. The melomach Strides, then generates the effect of one of the following bard composition cantrips at 7th rank: Allegro, Dirge Of Doom (adds the fear trait), or Triple Time.",
+            "text": "**Frequency** once per round\n\n---\n\n**Effect** The melomach's footsteps raise a clanging sound through their body to create a brief musical phrase. The melomach Strides, then generates the effect of one of the following bard composition cantrips at 7th rank: Allegro, Dirge Of Doom (adds the [fear](/trait/fear) trait), or Triple Time.",
             "traits": [
               "emotion",
               "mental",
@@ -6423,7 +6951,17 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 31 (Arcana)"
+      "recallKnowledgeText": "DC 31 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6566,7 +7104,17 @@
       },
       "languagesText": "Common, Talican",
       "recallKnowledgeText": "DC 16 (Arcana)",
-      "items": "Shuriken"
+      "items": "Shuriken",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6689,7 +7237,17 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 15 (Arcana)"
+      "recallKnowledgeText": "DC 15 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6788,14 +7346,14 @@
         "interaction": [
           {
             "name": "Rust Vision",
-            "text": "A metal wisp ignores the concealed condition from rust clouds.",
+            "text": "A metal wisp ignores the [concealed](/condition/concealed-player-core) condition from rust clouds.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Accord Essence",
-            "text": "**Trigger** An ally within 30 feet that benefited from the wisp's resonance in the last hour is targeted by an attack\n\n---\n\n**Effect** The wisp detonates itself in a small elemental explosion. Allies within 30 feet that have benefited from the wisp's resonance in the last hour gain temporary Hit Points equal to half the wisp's current Hit Points. These temporary Hit Points last 1 hour.\n\nA wisp that uses this reaction is permanently destroyed, and it can be restored only by a Wish ritual or similarly powerful effect. If an ability would prevent the wisp's destruction (for instance, if the wisp is summoned and would merely be dismissed), Accord Essence has no effect.",
+            "text": "**Trigger** An ally within 30 feet that benefited from the wisp's resonance in the last hour is targeted by an attack\n\n---\n\n**Effect** The wisp detonates itself in a small elemental explosion. Allies within 30 feet that have benefited from the wisp's resonance in the last hour gain temporary Hit Points equal to half the wisp's current Hit Points. These temporary Hit Points last 1 hour.\n\nA wisp that uses this reaction is permanently destroyed, and it can be restored only by a [Wish](/ritual/wish-player-core) ritual or similarly powerful effect. If an ability would prevent the wisp's destruction (for instance, if the wisp is summoned and would merely be dismissed), Accord Essence has no effect.",
             "traits": [
               "plant"
             ],
@@ -6803,7 +7361,7 @@
           },
           {
             "name": "Resonance",
-            "text": "30 feet. All wisps vibrate at a frequency attuned to their element, resonating with and empowering all creatures and effects sharing that trait. Creatures in the area gain a +1 status bonus to attack and damage rolls made with metal weapons or effects with the metal trait; a creature with the elemental and metal traits gains this bonus to all attack and damage rolls.",
+            "text": "30 feet. All wisps vibrate at a frequency attuned to their element, resonating with and empowering all creatures and effects sharing that trait. Creatures in the area gain a +1 status bonus to attack and damage rolls made with metal weapons or effects with the [metal](/trait/metal) trait; a creature with the elemental and metal traits gains this bonus to all attack and damage rolls.",
             "traits": [
               "aura",
               "metal"
@@ -6830,7 +7388,17 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 14 (Arcana)"
+      "recallKnowledgeText": "DC 14 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6963,7 +7531,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 16 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 16 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7096,7 +7678,7 @@
           },
           {
             "name": "Burning Touch",
-            "text": "The munsahir gatecrasher's Strikes deal an extra 1d6 fire damage (included above). When the gatecrasher successfully performs a Grapple or Shove action, they also deal 1d6 fire] damage to their target.",
+            "text": "The munsahir gatecrasher's Strikes deal an extra 1d6 fire damage (included above). When the gatecrasher successfully performs a Grapple or [Shove](/action/shove-player-core) action, they also deal 1d6 fire] damage to their target.",
             "traits": [
               "fire",
               "primal"
@@ -7113,7 +7695,21 @@
       },
       "languagesText": "Common, Pyric",
       "recallKnowledgeText": "DC 19 (Arcana, Society)",
-      "items": "Gatecrasher Armor"
+      "items": "Gatecrasher Armor",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7248,7 +7844,7 @@
         "offensive": [
           {
             "name": "Burning Touch",
-            "text": "The munsahir gatecrasher's Strikes deal an extra 1d6 fire damage (included above). When the gatecrasher successfully performs a Grapple or Shove action, they also deal 1d6 fire] damage to their target.",
+            "text": "The munsahir gatecrasher's Strikes deal an extra 1d6 fire damage (included above). When the gatecrasher successfully performs a Grapple or [Shove](/action/shove-player-core) action, they also deal 1d6 fire] damage to their target.",
             "traits": [
               "fire",
               "primal"
@@ -7271,7 +7867,21 @@
       },
       "languagesText": "Common, Pyric",
       "recallKnowledgeText": "DC 20 (Arcana, Society)",
-      "items": "Warhammer, Dueling Pistol, Breastplate, Rounds (Dueling Pistol)"
+      "items": "Warhammer, Dueling Pistol, Breastplate, Rounds (Dueling Pistol)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7418,7 +8028,17 @@
       },
       "languagesText": "Common, Thalassic",
       "recallKnowledgeText": "DC 20 (Society)",
-      "items": "Spear, Mesmerizing Opal, Potency Crystal, Shark Tooth Charm"
+      "items": "Spear, Mesmerizing Opal, Potency Crystal, Shark Tooth Charm",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7577,7 +8197,21 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 26 (Arcana)"
+      "recallKnowledgeText": "DC 26 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        },
+        {
+          "label": "swarm",
+          "slug": "swarm"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7687,7 +8321,7 @@
         "defensive": [
           {
             "name": "Fire-fueled Rage",
-            "text": "When a nightwood guardian takes fire damage, they become enraged. The guardian gains 15 temporary Hit Points, deals 2 additional damage with melee Strikes, and has a –1 penalty to AC. They can't Raise their Shield or use actions with the concentrate trait except for Seek. This effect ends when the nightwood guardian no longer observes any fire for 1 round or when they fall Unconscious, whichever comes first.\n\n---\n\nEffect: Rage",
+            "text": "When a nightwood guardian takes fire damage, they become enraged. The guardian gains 15 temporary Hit Points, deals 2 additional damage with melee Strikes, and has a –1 penalty to AC. They can't Raise their Shield or use actions with the [concentrate](/trait/concentrate) trait except for Seek. This effect ends when the nightwood guardian no longer observes any fire for 1 round or when they fall Unconscious, whichever comes first.\n\n---\n\nEffect: Rage",
             "traits": []
           },
           {
@@ -7717,7 +8351,7 @@
           },
           {
             "name": "Shield Eyes",
-            "text": "When a nightwood guardian has their shield raised, they protect their eyes, losing the Blinded and Dazzled conditions from light blindness and other light effects.",
+            "text": "When a nightwood guardian has their shield raised, they protect their eyes, losing the Blinded and [Dazzled](/condition/dazzled-player-core) conditions from light blindness and other light effects.",
             "traits": []
           }
         ],
@@ -7740,7 +8374,21 @@
       },
       "languagesText": "Fey, Jotun, Muan",
       "recallKnowledgeText": "DC 28",
-      "items": "Club, Elemental Wooden Shield"
+      "items": "Club, Elemental Wooden Shield",
+      "traitLinks": [
+        {
+          "label": "giant",
+          "slug": "giant"
+        },
+        {
+          "label": "troll",
+          "slug": "troll"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7848,7 +8496,7 @@
         "offensive": [
           {
             "name": "Germinate",
-            "text": "A creature hit by the nursery crawler's seed Strike must, on its turn, spend an Interact action to remove the seed; any seeds still implanted at the end of the creature's turn begin to sprout, dealing 1d6 persistent,bleed] damage and rendering the seeded creature Clumsy 1 and Off Guard. Removing a seed after it's sprouted deals 1d4 piercing] damage; removing it before it begins to sprout does no damage. Removed seeds that land in viable soil sprout immediately and grow into new saplings after 1 hour.",
+            "text": "A creature hit by the nursery crawler's seed Strike must, on its turn, spend an [Interact](/action/interact-player-core) action to remove the seed; any seeds still implanted at the end of the creature's turn begin to sprout, dealing 1d6 persistent,bleed] damage and rendering the seeded creature [Clumsy](/condition/clumsy-player-core) 1 and Off Guard. Removing a seed after it's sprouted deals 1d4 piercing] damage; removing it before it begins to sprout does no damage. Removed seeds that land in viable soil sprout immediately and grow into new saplings after 1 hour.",
             "traits": [
               "plant"
             ]
@@ -7863,7 +8511,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 18 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 18 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7971,14 +8633,14 @@
           },
           {
             "name": "Decomposing Toxin",
-            "text": "A living creature struck by an olobigonde's jaws Strike must succeed at a Fortitude DC 15 save or become Enfeebled 1 and take 1d6 poison,persistent] damage (or Enfeebled 2 with 2d6 poison,persistent] damage on a critical failure). The enfeebled condition ends when the persistent damage does. A creature currently affected by decomposing toxin doesn't need to save again.",
+            "text": "A living creature struck by an olobigonde's jaws Strike must succeed at a Fortitude DC 15 save or become Enfeebled 1 and take 1d6 poison,persistent] damage (or Enfeebled 2 with 2d6 poison,persistent] damage on a critical failure). The [enfeebled](/condition/enfeebled-player-core) condition ends when the persistent damage does. A creature currently affected by decomposing toxin doesn't need to save again.",
             "traits": [
               "poison"
             ]
           },
           {
             "name": "Reactive Grab",
-            "text": "**Trigger** A creature within the olobigonde's reach leaves a square during a move action it's using\n\n**Requirements** The olobigonde doesn't have a creature Grabbed\n\n---\n\n**Effect** The olobigonde attempts to Grapple the triggering creature with its jaws. On a success, the target also takes 3 piercing] damage (doubled on a critical success).",
+            "text": "**Trigger** A creature within the olobigonde's reach leaves a square during a move action it's using\n\n**Requirements** The olobigonde doesn't have a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The olobigonde attempts to Grapple the triggering creature with its jaws. On a success, the target also takes 3 piercing] damage (doubled on a critical success).",
             "traits": [],
             "actions": "reaction"
           }
@@ -7992,7 +8654,25 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 16 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 16 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8111,7 +8791,7 @@
         "offensive": [
           {
             "name": "Consume Living Metal",
-            "text": "**Requirements** The ore louse is adjacent to a creature that died within the last hour and had the metal trait or was another ore louse\n\n---\n\n**Effect** An ore louse can replenish its health by eating the remains of its kin or a once-living metal creature. The ore louse feasts upon the corpse, regaining 3d6 healing] Hit Points. The ore louse can regain Hit Points from a given corpse only once.",
+            "text": "**Requirements** The ore louse is adjacent to a creature that died within the last hour and had the [metal](/trait/metal) trait or was another ore louse\n\n---\n\n**Effect** An ore louse can replenish its health by eating the remains of its kin or a once-living metal creature. The ore louse feasts upon the corpse, regaining 3d6 healing] Hit Points. The ore louse can regain Hit Points from a given corpse only once.",
             "traits": [
               "manipulate"
             ],
@@ -8141,7 +8821,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 20 (Nature)"
+      "recallKnowledgeText": "DC 20 (Nature)",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8255,7 +8949,7 @@
         "interaction": [
           {
             "name": "Rust Vision",
-            "text": "An oregorger ignores the concealed condition from rust clouds.",
+            "text": "An oregorger ignores the [concealed](/condition/concealed-player-core) condition from rust clouds.",
             "traits": []
           }
         ],
@@ -8292,7 +8986,17 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 28 (Arcana)"
+      "recallKnowledgeText": "DC 28 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8411,7 +9115,7 @@
           },
           {
             "name": "Painted Dance",
-            "text": "The stag shakes the wooden plating along its body in a cacophonous clatter that sets its painted patterns dancing. All creatures within 60 feet of the painted stag who can see or hear it must attempt a Will DC 28 save; a creature Grabbed by the stag takes a –4 circumstance penalty to its save. Regardless of the result of its save, each creature is temporarily immune for 1 hour.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Fascinated by the painted stag for 1 round.\n\n**Failure** The creature is Stunned 2 and fascinated by the painted stag for as long as it's stunned.\n\n**Critical Failure** As failure, except Stunned 4.",
+            "text": "The stag shakes the wooden plating along its body in a cacophonous clatter that sets its painted patterns dancing. All creatures within 60 feet of the painted stag who can see or hear it must attempt a Will DC 28 save; a creature [Grabbed](/condition/grabbed-player-core) by the stag takes a –4 circumstance penalty to its save. Regardless of the result of its save, each creature is temporarily immune for 1 hour.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Fascinated by the painted stag for 1 round.\n\n**Failure** The creature is Stunned 2 and fascinated by the painted stag for as long as it's stunned.\n\n**Critical Failure** As failure, except Stunned 4.",
             "traits": [
               "auditory",
               "mental",
@@ -8437,7 +9141,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 26 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 26 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8583,7 +9301,21 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 28 (Arcana)"
+      "recallKnowledgeText": "DC 28 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8696,7 +9428,7 @@
           },
           {
             "name": "High Winds",
-            "text": "60 feet. Air within the emanation is difficult terrain for Flying creatures that don't have the air trait.",
+            "text": "60 feet. Air within the emanation is difficult terrain for Flying creatures that don't have the [air](/trait/air) trait.",
             "traits": [
               "air",
               "aura"
@@ -8750,7 +9482,17 @@
         ]
       },
       "languagesText": "Sussuran",
-      "recallKnowledgeText": "DC 31 (Arcana)"
+      "recallKnowledgeText": "DC 31 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8868,7 +9610,7 @@
           },
           {
             "name": "Secrete Tar",
-            "text": "The pine pangolin secretes a brown, sticky tar within a area, making those squares difficult terrain for 1 minute. Each creature that enters or starts its turn in a tarred square must succeed at a Fortitude DC 25 save or become Immobilized until it Escapes. On a critical failure, the creature falls Prone; prone creatures take a –2 circumstance penalty to their checks to Escape the tar. The pine pangolin is immune to the effects of its own tar.",
+            "text": "The pine pangolin secretes a brown, sticky tar within a area, making those squares difficult terrain for 1 minute. Each creature that enters or starts its turn in a tarred square must succeed at a Fortitude DC 25 save or become Immobilized until it Escapes. On a critical failure, the creature falls Prone; [prone](/condition/prone-player-core) creatures take a –2 circumstance penalty to their checks to Escape the tar. The pine pangolin is immune to the effects of its own tar.",
             "traits": [
               "plant"
             ],
@@ -8890,7 +9632,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 23 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 23 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8995,14 +9751,14 @@
           },
           {
             "name": "Djezet Extraction",
-            "text": "When a quickiron plasm dies, most of the djezet making up its body becomes inert and useless. However, a skilled alchemist can sometimes extract trace amounts of the valuable skymetal from its remains. This is a 10-minute process that requires the Alchemical Crafting feat, a proficiency rank of expert or better in Crafting, and a successful Crafting DC 20 check. A successful attempt produces a single djezet dose that remains potent for 1 hour before breaking down into a foul-smelling goo. The item has no value if sold due to its temporary nature.",
+            "text": "When a quickiron plasm dies, most of the djezet making up its body becomes inert and useless. However, a skilled alchemist can sometimes extract trace amounts of the valuable skymetal from its remains. This is a 10-minute process that requires the [Alchemical Crafting](/feat/alchemical-crafting-player-core) feat, a proficiency rank of expert or better in Crafting, and a successful Crafting DC 20 check. A successful attempt produces a single djezet dose that remains potent for 1 hour before breaking down into a foul-smelling goo. The item has no value if sold due to its temporary nature.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Biomagical Feedback",
-            "text": "The quickiron plasm's conductive properties are dangerous to those in physical contact with it. When a creature Grabbed by a quickiron plasm Casts a Spell, that creature takes 5 force] damage per rank of the spell.",
+            "text": "The quickiron plasm's conductive properties are dangerous to those in physical contact with it. When a creature [Grabbed](/condition/grabbed-player-core) by a quickiron plasm Casts a Spell, that creature takes 5 force] damage per rank of the spell.",
             "traits": []
           },
           {
@@ -9034,7 +9790,17 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 19 (Arcana)"
+      "recallKnowledgeText": "DC 19 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9180,7 +9946,17 @@
         ]
       },
       "languagesText": "Pyric",
-      "recallKnowledgeText": "DC 20 (Arcana)"
+      "recallKnowledgeText": "DC 20 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9283,7 +10059,7 @@
           },
           {
             "name": "Rust Vision",
-            "text": "A rust scarab ignores the Concealed condition from rust clouds.",
+            "text": "A rust scarab ignores the [Concealed](/condition/concealed-player-core) condition from rust clouds.",
             "traits": []
           }
         ],
@@ -9322,7 +10098,17 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 20 (Arcana)"
+      "recallKnowledgeText": "DC 20 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9436,7 +10222,7 @@
           },
           {
             "name": "Saline Crust",
-            "text": "20 feet\n\n---\n\n**Requirements** The saltborn stalkers are in a body of water\n\n---\n\n**Effect** Layers of the saltborn's salty skin flake off to foul the water around them. A creature that ends its turn in the aura takes 2d6 acid] damage with a basic Reflex DC 30 save; creatures with the amphibious or aquatic trait are immune.",
+            "text": "20 feet\n\n---\n\n**Requirements** The saltborn stalkers are in a body of water\n\n---\n\n**Effect** Layers of the saltborn's salty skin flake off to foul the water around them. A creature that ends its turn in the aura takes 2d6 acid] damage with a basic Reflex DC 30 save; creatures with the amphibious or [aquatic](/trait/aquatic) trait are immune.",
             "traits": [
               "aura",
               "water"
@@ -9444,7 +10230,7 @@
           },
           {
             "name": "Salty Clutch",
-            "text": "**Frequency** once per round\n\n---\n\n**Effect** The stalkers reach out to Grab their foes and drag them underwater. Each enemy in a area must succeed at a Reflex DC 33 save or be Grabbed by the stalkers (or Restrained on a critical success). For the rest of the current turn, the saltborn stalkers can move toward water or in water without ending the grab, carrying any grabbed or restrained creatures along with them.",
+            "text": "**Frequency** once per round\n\n---\n\n**Effect** The stalkers reach out to Grab their foes and drag them underwater. Each enemy in a area must succeed at a Reflex DC 33 save or be Grabbed by the stalkers (or Restrained on a critical success). For the rest of the current turn, the saltborn stalkers can move toward water or in water without ending the grab, carrying any grabbed or [restrained](/condition/restrained-player-core) creatures along with them.",
             "traits": [],
             "actions": "one"
           },
@@ -9468,7 +10254,25 @@
         ]
       },
       "languagesText": "Thalassic",
-      "recallKnowledgeText": "DC 31 (Arcana)"
+      "recallKnowledgeText": "DC 31 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9605,7 +10409,17 @@
         ]
       },
       "languagesText": "Talican",
-      "recallKnowledgeText": "DC 23 (Arcana)"
+      "recallKnowledgeText": "DC 23 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9783,7 +10597,21 @@
         ]
       },
       "languagesText": "Arboreal, Common, Muan",
-      "recallKnowledgeText": "DC 24 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 24 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9898,7 +10726,7 @@
         "interaction": [
           {
             "name": "Smoke Vision",
-            "text": "Smoke doesn't impair a solar crow's vision; they ignore the Concealed condition from smoke.",
+            "text": "Smoke doesn't impair a solar crow's vision; they ignore the [Concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           }
         ],
@@ -9936,7 +10764,7 @@
           },
           {
             "name": "Burning Talons",
-            "text": "A creature Grabbed by the solar crow takes 1d4 persistent,fire] damage. It can't recover from this damage while grabbed by the crow.",
+            "text": "A creature [Grabbed](/condition/grabbed-player-core) by the solar crow takes 1d4 persistent,fire] damage. It can't recover from this damage while grabbed by the crow.",
             "traits": []
           },
           {
@@ -9959,7 +10787,17 @@
         ]
       },
       "languagesText": "Pyric",
-      "recallKnowledgeText": "DC 27 (Arcana)"
+      "recallKnowledgeText": "DC 27 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10080,7 +10918,7 @@
           },
           {
             "name": "Smoke Vision",
-            "text": "Sootsoldiers ignore the Concealed condition from smoke.",
+            "text": "Sootsoldiers ignore the [Concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           },
           {
@@ -10097,7 +10935,21 @@
         ]
       },
       "languagesText": "Pyric",
-      "recallKnowledgeText": "DC 27 (Arcana)"
+      "recallKnowledgeText": "DC 27 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10219,7 +11071,7 @@
           },
           {
             "name": "Smoke Vision",
-            "text": "Sootsoldiers ignore the Concealed condition from smoke.",
+            "text": "Sootsoldiers ignore the [Concealed](/condition/concealed-player-core) condition from smoke.",
             "traits": []
           },
           {
@@ -10236,7 +11088,21 @@
         ]
       },
       "languagesText": "Pyric",
-      "recallKnowledgeText": "DC 27 (Arcana)"
+      "recallKnowledgeText": "DC 27 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10373,7 +11239,21 @@
       },
       "languagesText": "Common, Talican",
       "recallKnowledgeText": "DC 15 (Society)",
-      "items": "Light Hammer, Leather Armor, Artisan's Tools, Formula Book (Blank), Blast Boots (Lesser), Explosive Mine (Lesser), Ablative Armor Plating (Lesser)"
+      "items": "Light Hammer, Leather Armor, Artisan's Tools, Formula Book (Blank), Blast Boots (Lesser), Explosive Mine (Lesser), Ablative Armor Plating (Lesser)",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "talos",
+          "slug": "talos"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10513,7 +11393,21 @@
         ]
       },
       "languagesText": "Thalassic",
-      "recallKnowledgeText": "DC 23 (Arcana)"
+      "recallKnowledgeText": "DC 23 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10653,7 +11547,7 @@
         "defensive": [
           {
             "name": "Beacon of the Rowan Guard",
-            "text": "40 feet.\n\nThe lantern carried by the twins of rowan contains pure elemental life energy that resonates with and empowers all wood elementals. While within the emanation, a creature with the elemental trait and either the plant trait or wood trait gains fast healing 10 and a +2 circumstance bonus to all attack and damage rolls. The aura can be counteracted with a DC 30 check to Dispel Magic; doing so deactivates the aura for 1d6 rounds",
+            "text": "40 feet.\n\nThe lantern carried by the twins of rowan contains pure elemental life energy that resonates with and empowers all wood elementals. While within the emanation, a creature with the [elemental](/trait/elemental) trait and either the [plant](/trait/plant) trait or [wood](/trait/wood) trait gains fast healing 10 and a +2 circumstance bonus to all attack and damage rolls. The aura can be counteracted with a DC 30 check to Dispel Magic; doing so deactivates the aura for 1d6 rounds",
             "traits": [
               "aura",
               "plant",
@@ -10695,7 +11589,21 @@
         ]
       },
       "languagesText": "Arboreal, Common, Fey, Muan",
-      "recallKnowledgeText": "DC 31 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 31 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10922,7 +11830,17 @@
         ]
       },
       "languagesText": "Orvian, Petran",
-      "recallKnowledgeText": "DC 51 (Arcana)"
+      "recallKnowledgeText": "DC 51 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11124,7 +12042,17 @@
         ]
       },
       "languagesText": "Orvian, Petran",
-      "recallKnowledgeText": "DC 37 (Arcana)"
+      "recallKnowledgeText": "DC 37 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11228,7 +12156,7 @@
         "interaction": [
           {
             "name": "Nature's Bounty",
-            "text": "Each day, a vegetable lamb grows 1d4 edible flowers (such as artichoke, broccoli, or dandelion) among the green cotton covering its body. These vegetables can be picked without hurting the lamb. A living creature can eat the vegetable with an Interact action to regain (1d6+4) healing] Hit Points.",
+            "text": "Each day, a vegetable lamb grows 1d4 edible flowers (such as artichoke, broccoli, or dandelion) among the green cotton covering its body. These vegetables can be picked without hurting the lamb. A living creature can eat the vegetable with an [Interact](/action/interact-player-core) action to regain (1d6+4) healing] Hit Points.",
             "traits": [
               "healing",
               "plant",
@@ -11255,7 +12183,21 @@
         ]
       },
       "languagesText": "",
-      "recallKnowledgeText": "DC 15 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 15 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11391,7 +12333,17 @@
         ]
       },
       "languagesText": "Sussuran",
-      "recallKnowledgeText": "DC 24 (Arcana)"
+      "recallKnowledgeText": "DC 24 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11532,7 +12484,17 @@
         ]
       },
       "languagesText": "Sussuran",
-      "recallKnowledgeText": "DC 28 (Arcana)"
+      "recallKnowledgeText": "DC 28 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11668,7 +12630,21 @@
         ]
       },
       "languagesText": "Arboreal, Muan",
-      "recallKnowledgeText": "DC 19 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 19 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11782,7 +12758,7 @@
           },
           {
             "name": "Thorn Puncture",
-            "text": "The wood scamp breaks off one of its thorn-like claws in the target's skin, dealing 1 persistent bleed damage until the thorn is removed, which requires an Interact action. This damage is cumulative with each thorn caught in a creature's skin.",
+            "text": "The wood scamp breaks off one of its thorn-like claws in the target's skin, dealing 1 persistent bleed damage until the thorn is removed, which requires an [Interact](/action/interact-player-core) action. This damage is cumulative with each thorn caught in a creature's skin.",
             "traits": []
           }
         ]
@@ -11795,7 +12771,21 @@
         ]
       },
       "languagesText": "Muan",
-      "recallKnowledgeText": "DC 15 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 15 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11899,7 +12889,7 @@
         "defensive": [
           {
             "name": "Accord Essence",
-            "text": "**Trigger** An ally within 30 feet that benefited from the wisp's resonance in the last hour is targeted by an attack\n\n---\n\n**Effect** The wisp detonates itself in a small elemental explosion of leaves and pollen. This gives temporary Hit Points equal to half the wisp's current HP to all allies within 30 feet that have benefited from the wisp's resonance aura in the past hour. These temporary Hit Points last 1 hour.\n\nA wisp that uses this reaction is permanently destroyed and can be restored only by a Wish ritual or similarly powerful effect. If an ability would prevent the wisp's destruction (for instance, if the wisp is summoned and would merely be dismissed), Accord Essence has no effect.",
+            "text": "**Trigger** An ally within 30 feet that benefited from the wisp's resonance in the last hour is targeted by an attack\n\n---\n\n**Effect** The wisp detonates itself in a small elemental explosion of leaves and pollen. This gives temporary Hit Points equal to half the wisp's current HP to all allies within 30 feet that have benefited from the wisp's resonance aura in the past hour. These temporary Hit Points last 1 hour.\n\nA wisp that uses this reaction is permanently destroyed and can be restored only by a [Wish](/ritual/wish-player-core) ritual or similarly powerful effect. If an ability would prevent the wisp's destruction (for instance, if the wisp is summoned and would merely be dismissed), Accord Essence has no effect.",
             "traits": [
               "plant"
             ],
@@ -11907,7 +12897,7 @@
           },
           {
             "name": "Resonance",
-            "text": "30 feet. All wisps vibrate at a frequency attuned to their element, resonating with and empowering all creatures and effects sharing that trait. A creature in the area gains a +1 status bonus to attack and damage rolls for effects with the plant or wood trait; a creature with the elemental trait and either plant trait or wood trait gains this bonus to all attack and damage rolls. For wood wisps, this bonus also applies to nonmagical wooden weapons, such as staves and clubs.",
+            "text": "30 feet. All wisps vibrate at a frequency attuned to their element, resonating with and empowering all creatures and effects sharing that trait. A creature in the area gains a +1 status bonus to attack and damage rolls for effects with the plant or [wood](/trait/wood) trait; a creature with the [elemental](/trait/elemental) trait and either [plant](/trait/plant) trait or wood trait gains this bonus to all attack and damage rolls. For wood wisps, this bonus also applies to nonmagical wooden weapons, such as staves and clubs.",
             "traits": [
               "aura",
               "plant",
@@ -11931,7 +12921,21 @@
         ]
       },
       "languagesText": "Muan",
-      "recallKnowledgeText": "DC 14 (Arcana, Nature)"
+      "recallKnowledgeText": "DC 14 (Arcana, Nature)",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12086,7 +13090,7 @@
           },
           {
             "name": "Blessed by the Winds",
-            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the air trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
+            "text": "80 feet. The winds grow turbulent for those who would dare to fly in the same space as an anemos, but they take care to never harm or inconvenience their shepherd. Air within the emanation is difficult terrain for Flying creatures that do not have the [air](/trait/air) trait. While the aura is active, the anemos cannot be affected by environmental air or weather affects unless they choose to be.",
             "traits": [
               "air",
               "aura"
@@ -12109,7 +13113,7 @@
         "offensive": [
           {
             "name": "Collect Thunder",
-            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the auditory trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
+            "text": "**Requirements** The anemos has a hand free\n\n---\n\n**Effect** The anemos runs a hand through the winds that swirl around them, the sparks from their fingertips coalescing into a thunderbolt. The anemos creates a thunderbolt in their open hand. If the anemos spends an action to Collect Thunder, a bolt instead strikes their open hand, creating a booming peal that deafens all creatures within 20 feet for 1 round unless they succeed at a Fortitude DC 40 save; this adds the [auditory](/trait/auditory) trait to Collect Thunder. Any thunderbolts dissipate after 1 round.",
             "traits": [
               "electricity",
               "manipulate"
@@ -12144,7 +13148,17 @@
         ]
       },
       "languagesText": "Common, Empyrean, Sussuran",
-      "recallKnowledgeText": "DC 48 (Arcana)"
+      "recallKnowledgeText": "DC 48 (Arcana)",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12306,7 +13320,21 @@
       },
       "languagesText": "Common, Talican",
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "items": "Spiked Chain"
+      "items": "Spiked Chain",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        },
+        {
+          "label": "metal",
+          "slug": "metal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12478,7 +13506,7 @@
           },
           {
             "name": "Mercurial Wish",
-            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a Wish ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh attempts to fulfill the wish in a way that creates an unstable or impermanent benefit.",
+            "text": "**Frequency** three times per year\n\n---\n\n**Effect** The shuyookh conducts a [Wish](/ritual/wish-player-core) ritual for the benefit of a mortal, requiring no cost or secondary casters. The shuyookh's result is a success if they succeed at a Flat DC 5 or a failure if not. The shuyookh attempts to fulfill the wish in a way that creates an unstable or impermanent benefit.",
             "traits": [
               "downtime"
             ]
@@ -12493,7 +13521,17 @@
       },
       "languagesText": "Common, Talican",
       "recallKnowledgeText": "DC 31 (Arcana)",
-      "items": "Spiked Chain"
+      "items": "Spiked Chain",
+      "traitLinks": [
+        {
+          "label": "elemental",
+          "slug": "elemental"
+        },
+        {
+          "label": "genie",
+          "slug": "genie"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

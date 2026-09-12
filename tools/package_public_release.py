@@ -34,10 +34,14 @@ SYSTEM_FILES = {
     "collections.json",
     "filters.json",
     "gm-tools.json",
+    "groups.json",
+    "pages.json",
+    "pf2e-banner.png",
     "COMMUNITY-USE-NOTICE.md",
     "CONTENT-LICENSES.md",
 }
 SYSTEM_DIRS = {
+    "assets",
     "fonts",
     "forms",
     "icons",
@@ -278,7 +282,7 @@ def build_test_shell(target: Path) -> None:
         target, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
     ) as bundle:
         for source, name in system_source_files():
-            if name == "gm-tools.json":
+            if name in {"gm-tools.json", "groups.json", "pages.json"}:
                 continue
             if name == "manifest.json":
                 continue

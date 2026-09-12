@@ -9,6 +9,12 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from build_public_orc_compendium import (
+    PARAMETERIZED_TRAIT_NAMES,
+    canonical_trait_slug,
+    parameterized_trait_family,
+)
+
 
 REPO = Path(__file__).resolve().parents[1]
 COMPENDIUM = REPO / "compendium"
@@ -49,6 +55,37 @@ STRIPPED_DESCRIPTION_KINDS = {
     "Hazard",
     "Vehicle",
 }
+ROUTE_BY_KIND = {
+    "Action": "action",
+    "Affliction": "affliction",
+    "Ancestry": "ancestry",
+    "Archetype": "archetype",
+    "Background": "background",
+    "Class": "class",
+    "Creature": "creature",
+    "Deity": "deity",
+    "Domain": "domain",
+    "Feat": "feat",
+    "Hazard": "hazard",
+    "Heritage": "heritage",
+    "Item": "item",
+    "Language": "language",
+    "Ritual": "ritual",
+    "Rule": "rule",
+    "Spell": "spell",
+    "StatusEffect": "condition",
+    "Trait": "trait",
+    "Vehicle": "vehicle",
+}
+INTERNAL_LINK = re.compile(r"\[[^\]]+\]\(/([a-z-]+)/([^)\s]+)\)")
+RICH_TEXT_KEYS = {
+    "classDescription",
+    "classFeaturesText",
+    "description",
+    "rulesText",
+    "summary",
+    "text",
+}
 
 
 def inspect(value: Any, location: str, errors: list[str]) -> None:
@@ -68,6 +105,21 @@ def inspect(value: Any, location: str, errors: list[str]) -> None:
             errors.append(f"{location}: possible email/private watermark")
 
 
+def rich_text_values(value: Any) -> list[str]:
+    result: list[str] = []
+    if isinstance(value, dict):
+        for key, child in value.items():
+            if key in RICH_TEXT_KEYS and isinstance(child, str):
+                result.append(child)
+            elif isinstance(child, (dict, list)):
+                result.extend(rich_text_values(child))
+    elif isinstance(value, list):
+        for child in value:
+            if isinstance(child, (dict, list)):
+                result.extend(rich_text_values(child))
+    return result
+
+
 def main() -> int:
     sources = json.loads(CATALOG.read_text())
     source_ids = {record["id"] for record in sources}
@@ -83,6 +135,8 @@ def main() -> int:
     ids: set[str] = set()
     by_kind: dict[str, list[dict[str, Any]]] = {}
     collection_counts: dict[str, dict[str, int]] = {}
+    linked_records: list[tuple[Path, dict[str, Any]]] = []
+    valid_routes: set[tuple[str, str]] = set()
     for path in sorted(PACKS.rglob("*.json")):
         value = json.loads(path.read_text())
         inspect(value, str(path.relative_to(REPO)), errors)
@@ -99,6 +153,10 @@ def main() -> int:
                     kind = str(record.get("kind") or "")
                     collection_counts[source_id][kind] = collection_counts[source_id].get(kind, 0) + 1
                     by_kind.setdefault(kind, []).append(record)
+                    linked_records.append((path, record))
+                    route_kind = ROUTE_BY_KIND.get(kind)
+                    if route_kind and record.get("slug"):
+                        valid_routes.add((route_kind, str(record["slug"])))
                     record_id = str(record.get("id") or "")
                     if not UUID.match(record_id):
                         errors.append(f"{path}: invalid entity UUID {record_id!r}")
@@ -126,6 +184,12 @@ def main() -> int:
                         errors.append(f"{path}: {kind} lore description was not stripped")
                     if kind in {"Ancestry", "Class"} and record.get("data", {}).get("summary"):
                         errors.append(f"{path}: {kind} summary lore was not stripped")
+                    if kind == "Rule":
+                        for line in str(record.get("descr") or "").splitlines():
+                            if line.startswith("## ") and len(line) > 80:
+                                errors.append(
+                                    f"{path}: probable flattened rule heading in {record.get('name')}: {line[:80]!r}"
+                                )
 
     for source_id in sorted(pack_ids):
         notice = PACKS / source_id / "ORC-NOTICE.md"
@@ -167,8 +231,53 @@ def main() -> int:
             errors.append(f"incomplete class features: {class_record.get('name')}")
 
     traits = by_kind.get("Trait", [])
-    if len(traits) < 428 or not all(trait.get("descr") for trait in traits):
+    required_core_traits = {
+        "Attached", "City", "Coagulant", "Deadly", "Erratic", "Fatal",
+        "Finite", "Flowing", "High Gravity", "Immeasurable", "Jousting",
+        "Low Gravity", "Metamorphic", "Metropolis", "Microgravity",
+        "Minion", "Munsahir", "Sentient", "Soulrider", "Static",
+        "Strange Gravity", "Subjective Gravity", "Timeless", "Town",
+        "Two-Hand", "Unbounded", "Venomous", "Versatile", "Village", "Volley",
+    }
+    required_parameterized_families = set(PARAMETERIZED_TRAIT_NAMES.values())
+    trait_names = {str(trait.get("name") or "") for trait in traits}
+    trait_slugs = {str(trait.get("slug") or "") for trait in traits}
+    if (
+        len(traits) < 438
+        or not all(trait.get("descr") for trait in traits)
+        or not required_core_traits.issubset(trait_names)
+        or not required_parameterized_families.issubset(trait_names)
+    ):
         errors.append("trait catalog is incomplete")
+    if len(trait_names) != len(traits) or len(trait_slugs) != len(traits):
+        errors.append("trait catalog contains duplicate names or routes")
+    for trait in traits:
+        slug = str(trait.get("slug") or "")
+        family = parameterized_trait_family(slug)
+        if family and slug != family:
+            errors.append(f"parameterized trait was not consolidated: {trait.get('name')}")
+
+    for record in [entry for records in by_kind.values() for entry in records]:
+        data = record.get("data")
+        if not isinstance(data, dict) or not isinstance(data.get("traits"), list):
+            continue
+        raw_traits = data["traits"]
+        links = data.get("traitLinks")
+        if not isinstance(links, list) or len(links) != len(raw_traits):
+            errors.append(f"{record.get('name')}: trait navigation metadata is incomplete")
+            continue
+        for raw_trait, link in zip(raw_traits, links):
+            if not isinstance(raw_trait, str) or not isinstance(link, dict):
+                errors.append(f"{record.get('name')}: malformed trait navigation metadata")
+                break
+            canonical_slug = canonical_trait_slug(raw_trait)
+            expected_slug = canonical_slug if canonical_slug in trait_slugs else ""
+            if link.get("label") != raw_trait or link.get("slug") != expected_slug:
+                errors.append(f"{record.get('name')}: trait label or destination was altered")
+                break
+            if record.get("kind") == "Item" and not link.get("slug"):
+                errors.append(f"{record.get('name')}: item trait links to a missing entry")
+                break
 
     domains = by_kind.get("Domain", [])
     if len(domains) < 61 or not all(domain.get("descr") for domain in domains):
@@ -195,7 +304,58 @@ def main() -> int:
     if not create_undead or "| Creature Level | Spell Rank Required | Cost |" not in str(create_undead.get("descr")):
         errors.append("Create Undead ritual table is missing or flattened")
 
-    if total < 17301:
+    # OGL records are installed in the same system bundle and are therefore
+    # valid cross-link destinations from ORC records (and vice versa).
+    for path in sorted((COMPENDIUM / "ogl-packs").rglob("*.json")):
+        if path.name in {"module.json", "source.json"}:
+            continue
+        value = json.loads(path.read_text())
+        if not isinstance(value, list):
+            continue
+        for record in value:
+            if not isinstance(record, dict):
+                continue
+            linked_records.append((path, record))
+            route_kind = ROUTE_BY_KIND.get(str(record.get("kind") or ""))
+            if route_kind and record.get("slug"):
+                valid_routes.add((route_kind, str(record["slug"])))
+
+    for path, record in linked_records:
+        displayed_text = [str(record.get("descr") or "")]
+        displayed_text.extend(rich_text_values(record.get("data")))
+        displayed_text = list(dict.fromkeys(displayed_text))
+        destinations = [
+            match.groups()
+            for value in displayed_text
+            for match in INTERNAL_LINK.finditer(value)
+        ]
+        missing = [destination for destination in destinations if destination not in valid_routes]
+        if missing:
+            errors.append(
+                f"{path}: {record.get('name')} links to missing entries {missing[:5]}"
+            )
+        duplicate_count = len(destinations) - len(set(destinations))
+        if duplicate_count:
+            errors.append(
+                f"{path}: {record.get('name')} repeats {duplicate_count} internal destination links"
+            )
+
+    dying_rule = next(
+        (rule for rule in by_kind.get("Rule", []) if rule.get("slug") == "dying-rules-2325"),
+        None,
+    )
+    dying_text = str(dying_rule.get("descr") if dying_rule else "")
+    if (
+        "/condition/dying-player-core" not in dying_text
+        or
+        "/condition/unconscious-player-core" not in dying_text
+        or "/condition/wounded-player-core" not in dying_text
+        or "## Conditions Related to Dying" in dying_text
+        or "## Unconscious" in dying_text
+    ):
+        errors.append("Dying rule does not use continuous first-mention condition links")
+
+    if total < 17289:
         errors.append(f"public ORC record count is unexpectedly low: {total}")
 
     if errors:

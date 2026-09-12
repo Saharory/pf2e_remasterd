@@ -30,7 +30,29 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "death",
+          "slug": "death"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -62,7 +84,7 @@
     "systemVersion": "1.2.10",
     "name": "Annunciation of the Outer Gate",
     "slug": "annunciation-of-the-outer-gate-rival-academies",
-    "descr": "You announce yourself in the name of certain grim pacts that predate mortal life. This is not a compulsion, but rather an invitation of sorts. The invitation is understood by creatures in the area with telepathy and any who understand Aklo, Chthonian, Empyrean, Fey, or Utopian.\n\nThose who accept the invitation cannot take hostile action against others who agreed until 10 minutes pass and can communicate telepathically with them during that time. This effect ends immediately if any hostile action is taken against a creature that agreed.\n\nThose creatures who decline the choice or do not understand it must attempt a Will save.\n\n---\n\n**Critical Success** Nothing happens.\n\n**Success** The creature is Frightened 1. If it understood the invitation, its frightened status doesn't decrease at the end of any turn in which it damaged a creature that agreed to the invitation.\n\n**Failure** As success, but the creature is Frightened 2.\n\n**Critical Failure** As success, but the creature is Frightened 3.",
+    "descr": "You announce yourself in the name of certain grim pacts that predate mortal life. This is not a compulsion, but rather an invitation of sorts. The invitation is understood by creatures in the area with telepathy and any who understand Aklo, Chthonian, Empyrean, Fey, or Utopian.\n\nThose who accept the invitation cannot take hostile action against others who agreed until 10 minutes pass and can communicate telepathically with them during that time. This effect ends immediately if any hostile action is taken against a creature that agreed.\n\nThose creatures who decline the choice or do not understand it must attempt a Will save.\n\n---\n\n**Critical Success** Nothing happens.\n\n**Success** The creature is [Frightened 1](/condition/frightened-player-core). If it understood the invitation, its frightened status doesn't decrease at the end of any turn in which it damaged a creature that agreed to the invitation.\n\n**Failure** As success, but the creature is Frightened 2.\n\n**Critical Failure** As success, but the creature is Frightened 3.",
     "data": {
       "rank": 3,
       "rarity": "rare",
@@ -88,7 +110,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -141,7 +177,17 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -170,7 +216,7 @@
     "systemVersion": "1.2.10",
     "name": "Bridge of Vines",
     "slug": "bridge-of-vines-rival-academies",
-    "descr": "Vines sprout beneath your feet and extend away from you in a straight line up to 60 feet, forming a 10-foot-wide bridge that can cross over difficult terrain and low obstacles, as well as reach higher ground. The bridge has an AC equal to your spell DC, Hardness 10, and 20 Hit Points. It is immune to critical hits and precision damage. The bridge lasts either for the duration of the spell, until it is destroyed, or until you Dismiss the spell.\n\nWhile the spell is active, you and your allies can use the bridge normally. If any other creatures attempt to use the bridge, the vines attempt to trip and entangle them. They must attempt a Reflex save against your spell DC.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target treats the length of the bridge as difficult terrain.\n\n**Failure** As success, and the target is knocked Prone.\n\n**Critical Failure** As success, and the target is knocked prone and Grabbed until it Escapes (with a DC equal to your spell DC) or the spell ends.\n\n---\n\n**Heightened (+1)** The bridge's Hit Points increase by 10.",
+    "descr": "Vines sprout beneath your feet and extend away from you in a straight line up to 60 feet, forming a 10-foot-wide bridge that can cross over difficult terrain and low obstacles, as well as reach higher ground. The bridge has an AC equal to your spell DC, Hardness 10, and 20 Hit Points. It is immune to critical hits and precision damage. The bridge lasts either for the duration of the spell, until it is destroyed, or until you Dismiss the spell.\n\nWhile the spell is active, you and your allies can use the bridge normally. If any other creatures attempt to use the bridge, the vines attempt to trip and entangle them. They must attempt a Reflex save against your spell DC.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target treats the length of the bridge as difficult terrain.\n\n**Failure** As success, and the target is knocked [Prone](/condition/prone-player-core).\n\n**Critical Failure** As success, and the target is knocked prone and [Grabbed](/condition/grabbed-player-core) until it Escapes (with a DC equal to your spell DC) or the spell ends.\n\n---\n\n**Heightened (+1)** The bridge's Hit Points increase by 10.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -196,7 +242,25 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -252,7 +316,17 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -303,7 +377,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -333,7 +421,7 @@
     "systemVersion": "1.2.10",
     "name": "Censure Falsehoods",
     "slug": "censure-falsehoods-rival-academies",
-    "descr": "You call on your patron to reprimand a creature that has attempted a Deception or Stealth check against you or an ally within the past month. You must be aware they did so. Whenever the target speaks, toads and serpents fall from their lips. The target attempts a Fortitude saving throw. The spell lasts as long as the target remains sickened by it.\n\n---\n\n**Critical Success** A few animals fall from their lips, but they're otherwise unaffected.\n\n**Success** The target is Sickened 1.\n\n**Failure** The target is Sickened 2 and if they perform an action that has the auditory trait or attempt to Cast a Spell, they must succeed at a Flat DC 5, or the action is disrupted as they choke on an animal.\n\n**Critical Failure** As failure, and if the target attempts a Deception or Stealth check, their sickened value increases by 1 (to a maximum of Sickened 4).",
+    "descr": "You call on your patron to reprimand a creature that has attempted a Deception or Stealth check against you or an ally within the past month. You must be aware they did so. Whenever the target speaks, toads and serpents fall from their lips. The target attempts a Fortitude saving throw. The spell lasts as long as the target remains sickened by it.\n\n---\n\n**Critical Success** A few animals fall from their lips, but they're otherwise unaffected.\n\n**Success** The target is [Sickened 1](/condition/sickened-player-core).\n\n**Failure** The target is Sickened 2 and if they perform an action that has the [auditory](/trait/auditory) trait or attempt to Cast a Spell, they must succeed at a Flat DC 5, or the action is disrupted as they choke on an animal.\n\n**Critical Failure** As failure, and if the target attempts a Deception or Stealth check, their sickened value increases by 1 (to a maximum of Sickened 4).",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -358,7 +446,33 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "curse",
+          "slug": "curse"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "hex",
+          "slug": "hex"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "witch",
+          "slug": "witch"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -391,7 +505,7 @@
     "systemVersion": "1.2.10",
     "name": "Chrysopoetic Curse",
     "slug": "chrysopoetic-curse-rival-academies",
-    "descr": "You grant the target the gift of riches, giving them the power to turn anything they touch to gold. The target must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target's skin turns their armor and clothing partially to gold. If the target is wearing any armor or clothing, they become Encumbered.\n\n**Failure** As success, but the curse extends to the target's held weapons and other gear. If the target is holding any weapons or other objects, they become Clumsy 3, and the objects' Hardness is reduced by 5.\n\n**Critical Failure** The curse becomes even stronger, extending to the surrounding terrain. As failure, and if the creature is standing on a solid surface, the ground in their space transmutes itself into a quagmire of liquid gold. The gold is greater difficult terrain. If the creature leaves its square (or when the curse ends), any affected terrain returns to its original shape and substance and the terrain in the new square transmutes to gold.\n\nAny objects that were turned to gold return to their previous form and original shape when they leave the target's possession or the spell ends. As long as the target did not critically succeed on their saving throw, 2d6 gp worth of gold flakes and dust are left behind as the curse recedes.",
+    "descr": "You grant the target the gift of riches, giving them the power to turn anything they touch to gold. The target must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target's skin turns their armor and clothing partially to gold. If the target is wearing any armor or clothing, they become [Encumbered](/condition/encumbered-player-core).\n\n**Failure** As success, but the curse extends to the target's held weapons and other gear. If the target is holding any weapons or other objects, they become [Clumsy 3](/condition/clumsy-player-core), and the objects' Hardness is reduced by 5.\n\n**Critical Failure** The curse becomes even stronger, extending to the surrounding terrain. As failure, and if the creature is standing on a solid surface, the ground in their space transmutes itself into a quagmire of liquid gold. The gold is greater difficult terrain. If the creature leaves its square (or when the curse ends), any affected terrain returns to its original shape and substance and the terrain in the new square transmutes to gold.\n\nAny objects that were turned to gold return to their previous form and original shape when they leave the target's possession or the spell ends. As long as the target did not critically succeed on their saving throw, 2d6 gp worth of gold flakes and dust are left behind as the curse recedes.",
     "data": {
       "rank": 7,
       "rarity": "uncommon",
@@ -416,7 +530,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "curse",
+          "slug": "curse"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -446,7 +574,7 @@
     "systemVersion": "1.2.10",
     "name": "Coiling Dance",
     "slug": "coiling-dance-rival-academies",
-    "descr": "You perform a dance that seeks to pass on the knowledge and wisdom of a naga. Your allies in the area are filled with sacred energy, making their spells and attacks holy. Creatures or effects that would be unholy don't gain this benefit\n\nSpell Effect: Coiling Dance\n\nWhen you cast or Sustain this spell, you can choose an ally in the area that's Grabbed, Immobilized, or Restrained. They can immediately use a reaction to Escape; they can use your Occultism or Religion modifier for the check instead of their unarmed attack, Acrobatics, or Athletics modifier if that would be better.",
+    "descr": "You perform a dance that seeks to pass on the knowledge and wisdom of a naga. Your allies in the area are filled with sacred energy, making their spells and attacks holy. Creatures or effects that would be unholy don't gain this benefit\n\nSpell Effect: Coiling Dance\n\nWhen you cast or Sustain this spell, you can choose an ally in the area that's [Grabbed](/condition/grabbed-player-core), [Immobilized](/condition/immobilized-player-core), or [Restrained](/condition/restrained-player-core). They can immediately use a reaction to [Escape](/action/escape-player-core); they can use your Occultism or Religion modifier for the check instead of their unarmed attack, Acrobatics, or Athletics modifier if that would be better.",
     "data": {
       "rank": 2,
       "rarity": "rare",
@@ -471,7 +599,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -501,7 +643,7 @@
     "systemVersion": "1.2.10",
     "name": "Crescent Scepter",
     "slug": "crescent-scepter-rival-academies",
-    "descr": "You hold up any object, which takes on the appearance of glowing regalia in the eyes of those who look on you, representing the political or religious institute most feared by each creature. If a creature attempts to attack you during the spell's duration, it must attempt a Will save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes Frightened 1, the penalty applying to its attack roll.\n\n**Failure** As success, but Frightened 2.",
+    "descr": "You hold up any object, which takes on the appearance of glowing regalia in the eyes of those who look on you, representing the political or religious institute most feared by each creature. If a creature attempts to attack you during the spell's duration, it must attempt a Will save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes [Frightened 1](/condition/frightened-player-core), the penalty applying to its attack roll.\n\n**Failure** As success, but Frightened 2.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -527,7 +669,37 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "fear",
+          "slug": "fear"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -561,7 +733,7 @@
     "systemVersion": "1.2.10",
     "name": "Cutting Eye",
     "slug": "cutting-eye-rival-academies",
-    "descr": "**Trigger** You are the target of an attack or must attempt a saving throw against a spell.\n\n---\n\nYour eyes open enviously, stealing the power of an opponent for yourself. You are not Off Guard to the attacker or spellcaster until the beginning of your next turn. You gain a +2 circumstance bonus to your AC against the triggering attack or a +2 circumstance bonus to the triggering save.\n\nSpell Effect: Cutting Eye",
+    "descr": "**Trigger** You are the target of an attack or must attempt a saving throw against a spell.\n\n---\n\nYour eyes open enviously, stealing the power of an opponent for yourself. You are not [Off Guard](/condition/off-guard-player-core) to the attacker or spellcaster until the beginning of your next turn. You gain a +2 circumstance bonus to your AC against the triggering attack or a +2 circumstance bonus to the triggering save.\n\nSpell Effect: Cutting Eye",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -582,7 +754,21 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -639,7 +825,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -669,7 +869,7 @@
     "systemVersion": "1.2.10",
     "name": "Disruptive Transfer",
     "slug": "disruptive-transfer-rival-academies",
-    "descr": "Using Venorium Blorm's formulas, you calculate a path through space. Teleport to an empty square you can see within range. Creatures adjacent to your initial location witness an array of overlapping destinations. Each of them must succeed at a Will save or become Dazzled for 1 minute.",
+    "descr": "Using Venorium Blorm's formulas, you calculate a path through space. Teleport to an empty square you can see within range. Creatures adjacent to your initial location witness an array of overlapping destinations. Each of them must succeed at a Will save or become [Dazzled](/condition/dazzled-player-core) for 1 minute.",
     "data": {
       "rank": 3,
       "rarity": "rare",
@@ -695,7 +895,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -753,7 +971,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -785,7 +1025,7 @@
     "systemVersion": "1.2.10",
     "name": "Grasping Vine",
     "slug": "grasping-vine-rival-academies",
-    "descr": "A thick, curling vine erupts from the ground beneath you and stretches to the target, allowing you to move it around. If the target is an item, you can move it 10 feet in any direction within range when you Cast the Spell and the first time you Sustain it each round. If the target is a creature, they must attempt a Reflex save.\n\n---\n\n**Critical Success** The target is unaffected and the spell ends.\n\n**Success** The target is Grabbed until the end of your next turn unless it Escapes (the vine's Escape DC is equal to your spell DC) or destroys the vine (the vine has AC 15 and 10 Hit Points), at which point the spell ends.\n\n**Failure** The target is grabbed until it Escapes or destroys the vine, at which point the spell ends. The first time each round you Sustain this spell, you can Reposition the grabbed target up to 5 feet.\n\n**Critical Failure** As failure, and you can immediately Reposition the target up to 10 feet.",
+    "descr": "A thick, curling vine erupts from the ground beneath you and stretches to the target, allowing you to move it around. If the target is an item, you can move it 10 feet in any direction within range when you Cast the Spell and the first time you Sustain it each round. If the target is a creature, they must attempt a Reflex save.\n\n---\n\n**Critical Success** The target is unaffected and the spell ends.\n\n**Success** The target is [Grabbed](/condition/grabbed-player-core) until the end of your next turn unless it Escapes (the vine's [Escape](/action/escape-player-core) DC is equal to your spell DC) or destroys the vine (the vine has AC 15 and 10 Hit Points), at which point the spell ends.\n\n**Failure** The target is grabbed until it Escapes or destroys the vine, at which point the spell ends. The first time each round you Sustain this spell, you can [Reposition](/action/reposition-player-core) the grabbed target up to 5 feet.\n\n**Critical Failure** As failure, and you can immediately Reposition the target up to 10 feet.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -810,7 +1050,33 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -843,7 +1109,7 @@
     "systemVersion": "1.2.10",
     "name": "Halcyon Mists",
     "slug": "halcyon-mists-rival-academies",
-    "descr": "In a moment of dire need, you call upon ancestral power to strengthen and sustain. A soothing mist gathers around the target, granting 1d8 temporary Hit Points and ending one source of persistent acid, bleed, fire, poison, or void damage affecting it. If the creature has persistent damage from more than one of these sources, you choose the one that ends.\n\nThe mists linger around the target, making them Concealed until the beginning of their next turn, though this obvious concealment can't be used to Hide.\n\n---\n\n**Heightened (+1)** The temporary Hit Points increase by 1d8.\n\nSpell Effect: Halcyon Mists",
+    "descr": "In a moment of dire need, you call upon ancestral power to strengthen and sustain. A soothing mist gathers around the target, granting 1d8 temporary Hit Points and ending one source of persistent acid, bleed, fire, poison, or void damage affecting it. If the creature has persistent damage from more than one of these sources, you choose the one that ends.\n\nThe mists linger around the target, making them [Concealed](/condition/concealed-player-core) until the beginning of their next turn, though this obvious concealment can't be used to Hide.\n\n---\n\n**Heightened (+1)** The temporary Hit Points increase by 1d8.\n\nSpell Effect: Halcyon Mists",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -865,7 +1131,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -921,7 +1205,33 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -982,6 +1292,24 @@
         "one",
         "two",
         "three"
+      ],
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
       ]
     },
     "attributes": {
@@ -1013,7 +1341,7 @@
     "systemVersion": "1.2.10",
     "name": "Indolent Haze",
     "slug": "indolent-haze-rival-academies",
-    "descr": "The faint scent of poppies and a soothing calm fill the area, urging creatures to lay down and take a rest, to do nothing at all, ever again. Creatures in the area when you Cast the Spell must attempt a Will save. Creatures who end their turn in the area must also attempt the save. You can Dismiss the spell.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature lies down to rest, becoming Prone. If they were already prone, they instead drift off to sleep, becoming Unconscious.\n\n**Failure** As success, except that the creature is so happy lying down that they cannot attempt to Stand or otherwise maneuver themself off of the ground on their next turn, though they can Crawl (potentially to escape the spell's area).\n\n**Critical Failure** The creature immediately lies down and drifts off to sleep, becoming prone and unconscious. Any creature in the area who is already unconscious when you Cast the Spell (or whose turn ends in the spell's area while they are unconscious) takes 6d4 spirit damage as their life force is drained away through their dreams. This damage does not automatically wake them.\n\n---\n\n**Heightened (+1)** The spirit damage increases by 2d4.",
+    "descr": "The faint scent of poppies and a soothing calm fill the area, urging creatures to lay down and take a rest, to do nothing at all, ever again. Creatures in the area when you Cast the Spell must attempt a Will save. Creatures who end their turn in the area must also attempt the save. You can Dismiss the spell.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature lies down to rest, becoming [Prone](/condition/prone-player-core). If they were already prone, they instead drift off to sleep, becoming [Unconscious](/condition/unconscious-player-core).\n\n**Failure** As success, except that the creature is so happy lying down that they cannot attempt to Stand or otherwise maneuver themself off of the ground on their next turn, though they can [Crawl](/action/crawl-player-core) (potentially to escape the spell's area).\n\n**Critical Failure** The creature immediately lies down and drifts off to sleep, becoming prone and unconscious. Any creature in the area who is already unconscious when you Cast the Spell (or whose turn ends in the spell's area while they are unconscious) takes 6d4 spirit damage as their life force is drained away through their dreams. This damage does not automatically wake them.\n\n---\n\n**Heightened (+1)** The spirit damage increases by 2d4.",
     "data": {
       "rank": 7,
       "rarity": "uncommon",
@@ -1041,7 +1369,29 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "sleep",
+          "slug": "sleep"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1073,7 +1423,7 @@
     "systemVersion": "1.2.10",
     "name": "Information Overload",
     "slug": "information-overload-rival-academies",
-    "descr": "You call on Cobyslarni to open the target's mind to knowledge—too much knowledge. The target's thoughts flood with irrelevant and confusing information, causing it to become Stupefied 1 if it fails a Will save (or Stupefied 2 on a critical failure).",
+    "descr": "You call on Cobyslarni to open the target's mind to knowledge—too much knowledge. The target's thoughts flood with irrelevant and confusing information, causing it to become [Stupefied 1](/condition/stupefied-player-core) if it fails a Will save (or Stupefied 2 on a critical failure).",
     "data": {
       "rank": 1,
       "rarity": "rare",
@@ -1097,7 +1447,29 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "hex",
+          "slug": "hex"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "witch",
+          "slug": "witch"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1154,6 +1526,24 @@
       "castActions": [
         "one",
         "two"
+      ],
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
       ]
     },
     "attributes": {
@@ -1211,7 +1601,25 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1266,7 +1674,17 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1318,7 +1736,17 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1347,7 +1775,7 @@
     "systemVersion": "1.2.10",
     "name": "Overwhelming Memory",
     "slug": "overwhelming-memory-rival-academies",
-    "descr": "You cause the target to recall a specific type of memory you choose from the list below, bringing it to the forefront of their mind with perfect clarity.\n\n**Gleeful** The memory makes the target laugh uncontrollably. They can't use reactions.**Romantic** The creature is consumed with their love for another. They are Fascinated by the memory.**Terrifying** The creature is filled with terror and is Frightened 1.**Tragic** The creature is overwhelmed with sorrow. They are Dazzled from the tears in their eyes.\n\nThe target must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is affected by the memory until the beginning of your next turn.\n\n**Failure** The target is affected by the memory until the beginning of your next turn and Stupefied 2 for the spell's duration.\n\n**Critical Failure** As failure, but the target is Stupefied 3 for the spell's duration.",
+    "descr": "You cause the target to recall a specific type of memory you choose from the list below, bringing it to the forefront of their mind with perfect clarity.\n\n**Gleeful** The memory makes the target laugh uncontrollably. They can't use reactions.**Romantic** The creature is consumed with their love for another. They are [Fascinated](/condition/fascinated-player-core) by the memory.**Terrifying** The creature is filled with terror and is [Frightened 1](/condition/frightened-player-core).**Tragic** The creature is overwhelmed with sorrow. They are [Dazzled](/condition/dazzled-player-core) from the tears in their eyes.\n\nThe target must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is affected by the memory until the beginning of your next turn.\n\n**Failure** The target is affected by the memory until the beginning of your next turn and [Stupefied 2](/condition/stupefied-player-core) for the spell's duration.\n\n**Critical Failure** As failure, but the target is Stupefied 3 for the spell's duration.",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -1372,7 +1800,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1427,7 +1873,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1458,7 +1922,7 @@
     "systemVersion": "1.2.10",
     "name": "Pocket Library",
     "slug": "pocket-library-rival-academies",
-    "descr": "Like Vil Seral, you collect information from all around you and store it in book form in an extradimensional library. When you Cast this Spell, choose any skill in which you are at least trained that has the Recall Knowledge action.\n\nDuring the duration of this spell, you can call forth a tome from the extradimensional library when attempting a Recall Knowledge check using your chosen skill. This is part of the action to Recall Knowledge. You must have a hand free to do so. The tome appears in your hand, open to an appropriate page. This grants you a +1 status bonus to the Recall Knowledge check. If you roll a critical failure on this check, you get a failure instead. If the roll is successful and the subject is a creature, you gain additional information or context about the creature. Once you reference a book from your pocket library, the spell ends.\n\nSpell Effect: Pocket Library\n\n---\n\n**Heightened (3rd)** The status bonus increases to +2 and you can reference your *pocket library* twice before the spell ends.\n\n**Heightened (6th)** The status bonus increases to +3 and you can reference your *pocket library* three times before the spell ends.\n\n**Heightened (9th)** The status bonus increases to +4 and you can reference your *pocket library* four times before the spell ends.",
+    "descr": "Like Vil Seral, you collect information from all around you and store it in book form in an extradimensional library. When you Cast this Spell, choose any skill in which you are at least trained that has the [Recall Knowledge](/action/recall-knowledge-player-core) action.\n\nDuring the duration of this spell, you can call forth a tome from the extradimensional library when attempting a Recall Knowledge check using your chosen skill. This is part of the action to Recall Knowledge. You must have a hand free to do so. The tome appears in your hand, open to an appropriate page. This grants you a +1 status bonus to the Recall Knowledge check. If you roll a critical failure on this check, you get a failure instead. If the roll is successful and the subject is a creature, you gain additional information or context about the creature. Once you reference a book from your pocket library, the spell ends.\n\nSpell Effect: Pocket Library\n\n---\n\n**Heightened (3rd)** The status bonus increases to +2 and you can reference your *pocket library* twice before the spell ends.\n\n**Heightened (6th)** The status bonus increases to +3 and you can reference your *pocket library* three times before the spell ends.\n\n**Heightened (9th)** The status bonus increases to +4 and you can reference your *pocket library* four times before the spell ends.",
     "data": {
       "rank": 1,
       "rarity": "rare",
@@ -1482,7 +1946,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "extradimensional",
+          "slug": "extradimensional"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1535,7 +2013,29 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1567,7 +2067,7 @@
     "systemVersion": "1.2.10",
     "name": "Ranage's Circle",
     "slug": "ranage-s-circle-rival-academies",
-    "descr": "Many stories tell of a clearing deep in the Mwangi jungle, surrounded by ancient cypress trees. At the center stands an ancient baobab tree growing around a large sphere of black basalt. Legends say that two spirit brothers, Ranage and Golokango, dwelled there long ago until Golokango's evil ways forced the virtuous Ranage to encase his brother in stone. Ranage then transformed himself into a tree to surround and protect the rock for all time. By telling this tale, you condemn an enemy to a stony fate similar to Golokango's and summon plants to surround them.\n\nWhen you Cast this Spell, every square adjacent to the target becomes difficult terrain from the sudden eruption of plant life for 1 minute. The target also attempts a Fortitude save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is Clumsy 1 as their feet are bound within stone. This condition lasts until they move from their current position.\n\n**Failure** The target is Clumsy 2 and Immobilized as their legs are encased in rock. The clumsy condition lasts until they move from their current position, and they can Escape from being immobilized with a check against your spell DC.\n\n**Critical Failure** The target is clumsy 2 and Restrained as nearly their entire body is covered in basalt. The clumsy condition lasts until they move from their current position, and they can Escape from being restrained with a successful check against your spell DC.",
+    "descr": "Many stories tell of a clearing deep in the Mwangi jungle, surrounded by ancient cypress trees. At the center stands an ancient baobab tree growing around a large sphere of black basalt. Legends say that two spirit brothers, Ranage and Golokango, dwelled there long ago until Golokango's evil ways forced the virtuous Ranage to encase his brother in stone. Ranage then transformed himself into a tree to surround and protect the rock for all time. By telling this tale, you condemn an enemy to a stony fate similar to Golokango's and summon plants to surround them.\n\nWhen you Cast this Spell, every square adjacent to the target becomes difficult terrain from the sudden eruption of plant life for 1 minute. The target also attempts a Fortitude save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is [Clumsy 1](/condition/clumsy-player-core) as their feet are bound within stone. This condition lasts until they move from their current position.\n\n**Failure** The target is Clumsy 2 and [Immobilized](/condition/immobilized-player-core) as their legs are encased in rock. The clumsy condition lasts until they move from their current position, and they can [Escape](/action/escape-player-core) from being immobilized with a check against your spell DC.\n\n**Critical Failure** The target is clumsy 2 and [Restrained](/condition/restrained-player-core) as nearly their entire body is covered in basalt. The clumsy condition lasts until they move from their current position, and they can Escape from being restrained with a successful check against your spell DC.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -1596,7 +2096,37 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "plant",
+          "slug": "plant"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1654,7 +2184,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1707,7 +2251,29 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1739,7 +2305,7 @@
     "systemVersion": "1.2.10",
     "name": "Restore Ground",
     "slug": "restore-ground-rival-academies",
-    "descr": "You sense that this place yearns to throw off the shackles of civilization. You attempt to restore the area within the burst to a natural state, removing all artificial objects and buildings and encouraging the growth of plants on the ground that remains. Creatures are unaffected unless caught in a structural collapse.\n\n**Ground** All ground within the area becomes greater difficult terrain for 1 round.**Objects** Any unattended object of Bulk 4 or less is destroyed, regardless of Hardness, unless it's an artifact or similarly hard to destroy.**Plants** Plants in the area become healthier and more fruitful for 1 year.**Structures** Structures within range are shaken and may collapse, as if affected by Earthquake.",
+    "descr": "You sense that this place yearns to throw off the shackles of civilization. You attempt to restore the area within the burst to a natural state, removing all artificial objects and buildings and encouraging the growth of plants on the ground that remains. Creatures are unaffected unless caught in a structural collapse.\n\n**Ground** All ground within the area becomes greater difficult terrain for 1 round.**Objects** Any unattended object of Bulk 4 or less is destroyed, regardless of Hardness, unless it's an artifact or similarly hard to destroy.**Plants** Plants in the area become healthier and more fruitful for 1 year.**Structures** Structures within range are shaken and may collapse, as if affected by [Earthquake](/spell/earthquake-player-core).",
     "data": {
       "rank": 7,
       "rarity": "uncommon",
@@ -1764,7 +2330,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1794,7 +2374,7 @@
     "systemVersion": "1.2.10",
     "name": "The Four Hunters",
     "slug": "the-four-hunters-rival-academies",
-    "descr": "This is a story of four evenly matched hunters who sought to capture a falling star. Each hunter was known by the region they came from, and this spell focuses on one of their attributes. When you cast this spell, you must choose East, North, South, or West.\n\n**East** was steady and optimistic. The target gains 5 temporary Hit Points and a +1 status bonus to Athletics for 1 round.**North** was careful and cautious. The target can Step as a free action and gains a +1 status bonus to Survival for 1 round.**South** was clever and cunning. The target becomes Concealed and gains a +1 status bonus to Stealth for 1 round.**West** was bold and competitive. The target gains a +10-foot status bonus to their land Speed and a +1 status bonus to Acrobatics for 1 round.\n\n1 You quickly remind yourself of the story, granting only yourself the benefit.\n\n2 You tell a trusted ally within 30 feet this story, granting them the benefit.\n\n3 You impart this tale on all of your allies within 30 feet, granting them the benefit.\n\nSpell Effect: The Four Hunters",
+    "descr": "This is a story of four evenly matched hunters who sought to capture a falling star. Each hunter was known by the region they came from, and this spell focuses on one of their attributes. When you cast this spell, you must choose East, North, South, or West.\n\n**East** was steady and optimistic. The target gains 5 temporary Hit Points and a +1 status bonus to Athletics for 1 round.**North** was careful and cautious. The target can Step as a free action and gains a +1 status bonus to Survival for 1 round.**South** was clever and cunning. The target becomes [Concealed](/condition/concealed-player-core) and gains a +1 status bonus to Stealth for 1 round.**West** was bold and competitive. The target gains a +10-foot status bonus to their land Speed and a +1 status bonus to Acrobatics for 1 round.\n\n1 You quickly remind yourself of the story, granting only yourself the benefit.\n\n2 You tell a trusted ally within 30 feet this story, granting them the benefit.\n\n3 You impart this tale on all of your allies within 30 feet, granting them the benefit.\n\nSpell Effect: The Four Hunters",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -1820,6 +2400,24 @@
         "one",
         "two",
         "three"
+      ],
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
       ]
     },
     "attributes": {
@@ -1876,7 +2474,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1906,7 +2518,7 @@
     "systemVersion": "1.2.10",
     "name": "The Queen's Rainbow",
     "slug": "the-queen-s-rainbow-rival-academies",
-    "descr": "You tell the story of the Queen of Bees and her retinue trying to pass through a rainbow on their way to visit the King of Spiders. You conjure forth a large, transparent rainbow. Creatures who enter or begin their turn in the rainbow's space must succeed at a Fortitude saving throw or become Dazzled for 1 round (or Blinded for 1 round on a critical failure).",
+    "descr": "You tell the story of the Queen of Bees and her retinue trying to pass through a rainbow on their way to visit the King of Spiders. You conjure forth a large, transparent rainbow. Creatures who enter or begin their turn in the rainbow's space must succeed at a Fortitude saving throw or become [Dazzled](/condition/dazzled-player-core) for 1 round (or [Blinded](/condition/blinded-player-core) for 1 round on a critical failure).",
     "data": {
       "rank": 2,
       "rarity": "uncommon",
@@ -1934,7 +2546,25 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1988,7 +2618,17 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2017,7 +2657,7 @@
     "systemVersion": "1.2.10",
     "name": "Threefold Limb",
     "slug": "threefold-limb-rival-academies",
-    "descr": "You temporarily transform one of your limbs into water, taking the form of ice, liquid water, or steam as you desire. Make a melee spell attack roll. On a hit, the target takes 2d6 damage; the type of damage dealt and any additional effect depends on the form you choose. On a critical hit, double the damage.\n\n**Ice** The limb deals cold damage, and the target takes a –10-foot status penalty to its Speeds until the start of your next turn. This spell gains the cold trait.\n\nSpell Effect: Threefold Limb (Ice)\n\n**Liquid Water** The limb deals bludgeoning damage and you can Reposition the target up to 10 feet.**Steam** The limb deals fire damage and steam clings to the target, making all creatures Concealed to them until the start of your next turn or they perform an Interact action to wave the steam away. This spell gains the fire trait.\n\n---\n\n**Heightened (+1)** The damage increases by 2d6.",
+    "descr": "You temporarily transform one of your limbs into water, taking the form of ice, liquid water, or steam as you desire. Make a melee spell attack roll. On a hit, the target takes 2d6 damage; the type of damage dealt and any additional effect depends on the form you choose. On a critical hit, double the damage.\n\n**Ice** The limb deals cold damage, and the target takes a –10-foot status penalty to its Speeds until the start of your next turn. This spell gains the [cold](/trait/cold) trait.\n\nSpell Effect: Threefold Limb (Ice)\n\n**Liquid Water** The limb deals bludgeoning damage and you can [Reposition](/action/reposition-player-core) the target up to 10 feet.**Steam** The limb deals fire damage and steam clings to the target, making all creatures [Concealed](/condition/concealed-player-core) to them until the start of your next turn or they perform an [Interact](/action/interact-player-core) action to wave the steam away. This spell gains the [fire](/trait/fire) trait.\n\n---\n\n**Heightened (+1)** The damage increases by 2d6.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -2043,7 +2683,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "morph",
+          "slug": "morph"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2098,7 +2760,25 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "magus",
+          "slug": "magus"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2129,7 +2809,7 @@
     "systemVersion": "1.2.10",
     "name": "Unbroken Panoply",
     "slug": "unbroken-panoply-rival-academies",
-    "descr": "As tools of violence undone by violence, broken weapons contain potent symbolic magic that faydhaans often call upon when forming alliances. Images of similar legendary weapons overlay the target, and the weapon's broken condition is suppressed for the duration. The weapon gains the nonlethal trait during this time. The weapon's wielder can apply the weapon's item bonus to attack rolls, if any, to their Diplomacy checks. If the weapon would be damaged or broken again, this spell ends.",
+    "descr": "As tools of violence undone by violence, broken weapons contain potent symbolic magic that faydhaans often call upon when forming alliances. Images of similar legendary weapons overlay the target, and the weapon's [broken](/condition/broken-player-core) condition is suppressed for the duration. The weapon gains the [nonlethal](/trait/nonlethal) trait during this time. The weapon's wielder can apply the weapon's item bonus to attack rolls, if any, to their Diplomacy checks. If the weapon would be damaged or broken again, this spell ends.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -2153,7 +2833,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "nonlethal",
+          "slug": "nonlethal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2183,7 +2877,7 @@
     "systemVersion": "1.2.10",
     "name": "Unravel Knowledge",
     "slug": "unravel-knowledge-rival-academies",
-    "descr": "Your patron reaches into the target's mind, plucking out their past training like pulling a thread from a cloth. Choose a single action, activity, or spell you know the target can use, such as from seeing it previously or identifying the creature's capabilities with a Recall Knowledge check. You could select, for example, the Strike action, the Disarm action, a dragon's breath, or the Haste spell if you were aware the target could use them. The target attempts a Will save.\n\n---\n\n**Success** The target is unaffected.\n\n**Failure** The target's memories of their ability grow foggy. The first time they use the chosen ability each round, they take 3d8 mental damage. This ability is less effective if you choose an ability almost anyone can use; the target takes 3d4 mental damage instead if you choose a basic action (such as Strike, Stride, or Raise a Shield) or a skill action that can be used untrained (such as Demoralize or Hide).\n\n**Critical Failure** As failure, and the target takes a –2 status penalty to any check or DC for the ability the first time they use it each round.\n\nSpell Effect: Unravel Knowledge\n\n---\n\n**Heightened (+1)** The damage increases by 1d8, or by 1d4 for a basic action or untrained skill action.",
+    "descr": "Your patron reaches into the target's mind, plucking out their past training like pulling a thread from a cloth. Choose a single action, activity, or spell you know the target can use, such as from seeing it previously or identifying the creature's capabilities with a Recall Knowledge check. You could select, for example, the [Strike](/action/strike-player-core) action, the [Disarm](/action/disarm-player-core) action, a dragon's breath, or the [Haste](/spell/haste-player-core) spell if you were aware the target could use them. The target attempts a Will save.\n\n---\n\n**Success** The target is unaffected.\n\n**Failure** The target's memories of their ability grow foggy. The first time they use the chosen ability each round, they take 3d8 mental damage. This ability is less effective if you choose an ability almost anyone can use; the target takes 3d4 mental damage instead if you choose a basic action (such as Strike, Stride, or Raise a Shield) or a skill action that can be used untrained (such as [Demoralize](/action/demoralize-player-core) or Hide).\n\n**Critical Failure** As failure, and the target takes a –2 status penalty to any check or DC for the ability the first time they use it each round.\n\nSpell Effect: Unravel Knowledge\n\n---\n\n**Heightened (+1)** The damage increases by 1d8, or by 1d4 for a basic action or untrained skill action.",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -2208,7 +2902,33 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "hex",
+          "slug": "hex"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "witch",
+          "slug": "witch"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2241,7 +2961,7 @@
     "systemVersion": "1.2.10",
     "name": "Unsettling Knowledge",
     "slug": "unsettling-knowledge-rival-academies",
-    "descr": "You share a piece of hidden knowledge with a creature that is both upsetting and intriguing. When you Cast this Spell, choose Arcana, Nature, Occultism, Religion, or Society as the focus of this knowledge. The target must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is Fascinated by the knowledge you shared for 1 round.\n\n**Failure** The target is fascinated by the knowledge for 1 minute. The target can end this fascination early by attempting a skill check to Recall Knowledge to understand the knowledge using the chosen skill (using your spell DC as the DC); regardless of the result, the target becomes Frightened 2, but if they failed the check, they can't reduce their frightened condition below 1 for the remainder of the spell's duration.\n\n**Critical Failure** As failure, but the target becomes Frightened 3 if they attempt to Recall Knowledge.",
+    "descr": "You share a piece of hidden knowledge with a creature that is both upsetting and intriguing. When you Cast this Spell, choose Arcana, Nature, Occultism, Religion, or Society as the focus of this knowledge. The target must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is [Fascinated](/condition/fascinated-player-core) by the knowledge you shared for 1 round.\n\n**Failure** The target is fascinated by the knowledge for 1 minute. The target can end this fascination early by attempting a skill check to Recall Knowledge to understand the knowledge using the chosen skill (using your spell DC as the DC); regardless of the result, the target becomes [Frightened 2](/condition/frightened-player-core), but if they failed the check, they can't reduce their frightened condition below 1 for the remainder of the spell's duration.\n\n**Critical Failure** As failure, but the target becomes Frightened 3 if they attempt to Recall Knowledge.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -2265,7 +2985,29 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "linguistic",
+          "slug": "linguistic"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "wood",
+          "slug": "wood"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2319,7 +3061,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "wizard",
+          "slug": "wizard"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

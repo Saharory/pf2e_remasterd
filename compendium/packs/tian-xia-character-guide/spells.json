@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Home Among Mulberry Leaves",
     "slug": "home-among-mulberry-leaves-tian-xia-character-guide-spell-spell-2134",
-    "descr": "**Requirements** You're wielding qi-infused fabric\n\n---\n\nQi-formed threads unravel from your fabric on conjured needles as your attack makes contact with an enemy and wraps it in place like an insect in its cocoon. Make a melee Strike with your qi-infused fabric. On a success, the target is immobilized until the start of your next turn, though it can attempt to Escape against your spell DC. On a critical success, your needles anchor in the target’s nerve centers after the threads bind it, making it your choice of clumsy 1 or enfeebled 1 until the start of your next turn, in addition to immobilizing it.",
+    "descr": "**Requirements** You're wielding qi-infused fabric\n\n---\n\nQi-formed threads unravel from your fabric on conjured needles as your attack makes contact with an enemy and wraps it in place like an insect in its cocoon. Make a melee Strike with your qi-infused fabric. On a success, the target is [immobilized](/condition/immobilized-player-core) until the start of your next turn, though it can attempt to [Escape](/action/escape-player-core) against your spell DC. On a critical success, your needles anchor in the target’s nerve centers after the threads bind it, making it your choice of [clumsy](/condition/clumsy-player-core) 1 or [enfeebled](/condition/enfeebled-player-core) 1 until the start of your next turn, in addition to immobilizing it.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -29,7 +29,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "magus",
+          "slug": "magus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -62,7 +76,7 @@
     "systemVersion": "1.2.10",
     "name": "Luminous Stardust Healing",
     "slug": "luminous-stardust-healing-tian-xia-character-guide-spell-spell-2132",
-    "descr": "**Range** 30 feet\n\n**Target** 1 creature\n\n---\n\nYou scatter twinkling sparks from your sentinel weapon, replenishing your allies’ fighting spirit and driving out evil. The target regains 16 Hit Points. If they were affected by a possession effect, you attempt to counteract the effect, casting out the possessing entity on a success and preventing them from possessing the target again for 1 week. If you fail, the entity is immune to being cast out by this spell for 1 week, though you can still heal the target as normal.\n\n---\n**Heightened (+1)** The amount of healing increases by 8.",
+    "descr": "**Range** 30 feet\n\n**Target** 1 creature\n\n---\n\nYou scatter twinkling sparks from your sentinel weapon, replenishing your allies’ fighting spirit and driving out evil. The target regains 16 Hit Points. If they were affected by a [possession](/trait/possession) effect, you attempt to counteract the effect, casting out the possessing entity on a success and preventing them from possessing the target again for 1 week. If you fail, the entity is immune to being cast out by this spell for 1 week, though you can still heal the target as normal.\n\n---\n**Heightened (+1)** The amount of healing increases by 8.",
     "data": {
       "rank": 2,
       "rarity": "rare",
@@ -87,7 +101,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -122,7 +158,7 @@
     "systemVersion": "1.2.10",
     "name": "Shining Starlight Attack",
     "slug": "shining-starlight-attack-tian-xia-character-guide-spell-spell-2133",
-    "descr": "**Area** varies (see below)\n\n---\n\nYou brandish your sentinel weapon, summoning the image of your constellation above your head. The constellation then releases a powerful blast that deals 2d10 damage to all enemies in either a 30-foot line or 15-foot cone, with a basic save against your arcane spell DC. Enemies that critically fail are dazzled until the start of your next turn. The damage type, traits, area, and saving throw are determined by your zodiac constellation (see below).\n\n##\n\n| Constellation | Attack (Area, Save, Damage Type; Traits) | | |\n| --- | --- | --- | --- |\n| Underworld Dragon | Volcanic Vents (line, Reflex, fire) | | |\n| Ogre | Wild club swing (cone, Fortitude, bludgeoning) | Swordswoman | Falling blades of light (line, Reflex,\r piercing) |\n| Forest Dragon | Swarm of Insects (cone, Fortitude, poison) | | |\n| Sea Dragon | Pressurized seawater (line, Reflex, piercing; water trait) | | |\n| Blossom | Storming petals and pollen (line, Fortitude; poison, plant, wood) | | |\n| Swallow | Wind gust (cone, Reflex, slashing; air) | | |\n| Dog | A biting dog (line, Reflex, slashing) | | |\n| Ox | A trampling ox (line, Reflex, bludgeoning) | | |\n| Sky Dragon | Draconic lightning (line, Reflex, electricity) | | |\n| Sovereign Dragon | Psychic roar (cone, Will, mental) | | |\n| Archer | Hail of silver Arrows (piercing, cone, Reflex) | | |\n\n---\n**Heightened (+1)** The damage increases by 1d10.",
+    "descr": "**Area** varies (see below)\n\n---\n\nYou brandish your sentinel weapon, summoning the image of your constellation above your head. The constellation then releases a powerful blast that deals 2d10 damage to all enemies in either a 30-foot line or 15-foot cone, with a basic save against your arcane spell DC. Enemies that critically fail are [dazzled](/condition/dazzled-player-core) until the start of your next turn. The damage type, traits, area, and saving throw are determined by your zodiac constellation (see below).\n\n##\n\n| Constellation | Attack (Area, Save, Damage Type; Traits) | | |\n| --- | --- | --- | --- |\n| Underworld Dragon | Volcanic Vents (line, Reflex, fire) | | |\n| Ogre | Wild club swing (cone, Fortitude, bludgeoning) | Swordswoman | Falling blades of light (line, Reflex,\r piercing) |\n| Forest Dragon | Swarm of Insects (cone, Fortitude, poison) | | |\n| Sea Dragon | Pressurized seawater (line, Reflex, piercing; [water](/trait/water) trait) | | |\n| Blossom | Storming petals and pollen (line, Fortitude; poison, plant, wood) | | |\n| Swallow | Wind gust (cone, Reflex, slashing; air) | | |\n| Dog | A biting dog (line, Reflex, slashing) | | |\n| Ox | A trampling ox (line, Reflex, bludgeoning) | | |\n| Sky Dragon | Draconic lightning (line, Reflex, electricity) | | |\n| Sovereign Dragon | Psychic roar (cone, Will, mental) | | |\n| Archer | Hail of silver Arrows (piercing, cone, Reflex) | | |\n\n---\n**Heightened (+1)** The damage increases by 1d10.",
     "data": {
       "rank": 2,
       "rarity": "rare",
@@ -146,7 +182,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -202,7 +252,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "magus",
+          "slug": "magus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

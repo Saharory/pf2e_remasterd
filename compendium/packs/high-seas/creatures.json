@@ -118,7 +118,7 @@
           },
           {
             "name": "Skeleton Crew",
-            "text": "(divine, unholy) The bone ship is compelled not by a single mind but by the collective consciousness of dead sailors' souls. The ship is immune to mental effects that target only a specific number of creatures. It's still subject to mental effects that affect all creatures in an area. Any creature that tries to communicate with the ship via telepathy or read its thoughts hears the dying screams and gasps of the crew, and is targeted with a 9th-rank _warp mind_spell (DC 41).\nThe ship animates skeletal crew members out of its own bones, arming them with rusty old cutlasses or other armaments so they can attack anyone who comes next to the ship. These entities have appearances matching those the bound souls had in life but aren't truly individuals; anything that targets them targets the bone ship they're a part of.\nHundreds of soul gems decorate the ship's exterior, each holding one soul. These gems can hold souls of creatures whose level was 16th or lower, and they have no value. If the ship is destroyed, all these gems shatter, freeing the souls within.",
+            "text": "(divine, unholy) The bone ship is compelled not by a single mind but by the collective consciousness of dead sailors' souls. The ship is immune to mental effects that target only a specific number of creatures. It's still subject to mental effects that affect all creatures in an area. Any creature that tries to communicate with the ship via telepathy or read its thoughts hears the dying screams and gasps of the crew, and is targeted with a 9th-rank _[warp mind](/spell/warp-mind-player-core)_spell (DC 41).\nThe ship animates skeletal crew members out of its own bones, arming them with rusty old cutlasses or other armaments so they can attack anyone who comes next to the ship. These entities have appearances matching those the bound souls had in life but aren't truly individuals; anything that targets them targets the bone ship they're a part of.\nHundreds of soul gems decorate the ship's exterior, each holding one soul. These gems can hold souls of creatures whose level was 16th or lower, and they have no value. If the ship is destroyed, all these gems shatter, freeing the souls within.",
             "traits": []
           }
         ],
@@ -131,13 +131,13 @@
           },
           {
             "name": "Chain Shot",
-            "text": "**Single Action** The bone ship makes a special bone cannon Strike, firing a chain made of bones. A creature hit by this Strike is grabbed by the chain (Escape DC 41). The bone ship can use Interact actions to reel in a grabbed creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.",
+            "text": "**Single Action** The bone ship makes a special bone cannon Strike, firing a chain made of bones. A creature hit by this Strike is grabbed by the chain (Escape DC 41). The bone ship can use [Interact](/action/interact-player-core) actions to reel in a [grabbed](/condition/grabbed-player-core) creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Crew's Call",
-            "text": "**Two Actions** (Divine) The crew lets out an anguished cry in unison. This is a _wails of the damned_ spell in a 100-foot emanation (DC 39). In addition, any creature within 5 feet of the ship is automatically grabbed by the crew. The ship can't use Crew's Call again for 1d4+1 rounds.",
+            "text": "**Two Actions** (Divine) The crew lets out an anguished cry in unison. This is a _[wails of the damned](/spell/wails-of-the-damned-player-core)_ spell in a 100-foot emanation (DC 39). In addition, any creature within 5 feet of the ship is automatically grabbed by the crew. The ship can't use Crew's Call again for 1d4+1 rounds.",
             "traits": [],
             "actions": "two"
           },
@@ -167,7 +167,17 @@
         ]
       },
       "recallKnowledgeText": "DC 43 (Religion)",
-      "languagesText": "Common, Necril, (can't speak any language)"
+      "languagesText": "Common, Necril, (can't speak any language)",
+      "traitLinks": [
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -287,7 +297,17 @@
         ]
       },
       "recallKnowledgeText": "DC 15 (Nature)",
-      "languagesText": "Common"
+      "languagesText": "Common",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -422,7 +442,7 @@
           },
           {
             "name": "Electric Eel Shock",
-            "text": "**Two Actions** (Electricity, incapacitation) **Requirements** The coral juggernaut has a creature grabbed or restrained; **Effect** The electric eels that live within the coral juggernaut unleash jolting waves of electricity. The required creature takes 4d8 electricity damage and must attempt a DC 28 basic Fortitude save. On a failure the creature is also stunned 1 for 1 round (stunned 2 for 1 round on a critical failure).",
+            "text": "**Two Actions** (Electricity, incapacitation) **Requirements** The coral juggernaut has a creature [grabbed](/condition/grabbed-player-core) or restrained; **Effect** The electric eels that live within the coral juggernaut unleash jolting waves of electricity. The required creature takes 4d8 electricity damage and must attempt a DC 28 basic Fortitude save. On a failure the creature is also stunned 1 for 1 round (stunned 2 for 1 round on a critical failure).",
             "traits": [],
             "actions": "two"
           },
@@ -447,7 +467,17 @@
         ]
       },
       "recallKnowledgeText": "DC 28 (Arcana)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -588,13 +618,13 @@
           },
           {
             "name": "Change Shape",
-            "text": "**Free Action** (Concentrate, divine, polymorph) The dedalon takes on the appearance of a Medium humanoid. This doesn’t change their Speeds or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal (typically to bludgeoning). They lose any unarmed attacks with the reach trait.",
+            "text": "**Free Action** (Concentrate, divine, polymorph) The dedalon takes on the appearance of a Medium humanoid. This doesn’t change their Speeds or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal (typically to bludgeoning). They lose any unarmed attacks with the [reach](/trait/reach) trait.",
             "traits": [],
             "actions": "free"
           },
           {
             "name": "Retch Bilge Water",
-            "text": "**Two Actions** (Poison, water) The dedalon vomits a 20-foot cone of tainted, sludgy bilge water. Each living creature in the area takes 13d6 poison damage (DC 33 basic Reflex save). On a failure, the creature is also sickened 1 (or sickened 2 on a critical failure). The dedalon can’t use Retch Bilge Water again for 1d4 rounds.\n\n## Coveted Items\n\nWhen not in a humanoid disguise, a small object can be clearly seen embedded in a dedalon's flesh. Other than being small enough to be stuck in their flesh, these items have no common physical characteristics— everything from broken blades and arrows to gold coins, rings, and other knickknacks have been seen. These coveted items are tied to the dedalon's creation, and the fiends protect them above all else. Possession of their coveted item is the only thing that offers a dedalon some semblance of self control, and if they ever lose physical contact with the item (such as by being Disarmed or having it Stolen) they become obsessed with recovering it, abandoning all other tasks as their envious impulsivity takes control.",
+            "text": "**Two Actions** ([Poison](/action/poison-monster-core), water) The dedalon vomits a 20-foot cone of tainted, sludgy bilge water. Each living creature in the area takes 13d6 poison damage (DC 33 basic Reflex save). On a failure, the creature is also sickened 1 (or sickened 2 on a critical failure). The dedalon can’t use Retch Bilge Water again for 1d4 rounds.\n\n## Coveted Items\n\nWhen not in a humanoid disguise, a small object can be clearly seen embedded in a dedalon's flesh. Other than being small enough to be stuck in their flesh, these items have no common physical characteristics— everything from broken blades and arrows to gold coins, rings, and other knickknacks have been seen. These coveted items are tied to the dedalon's creation, and the fiends protect them above all else. Possession of their coveted item is the only thing that offers a dedalon some semblance of self control, and if they ever lose physical contact with the item (such as by being Disarmed or having it Stolen) they become obsessed with recovering it, abandoning all other tasks as their envious impulsivity takes control.",
             "traits": [],
             "actions": "two"
           }
@@ -620,7 +650,25 @@
         ]
       },
       "recallKnowledgeText": "DC 33 (Religion)",
-      "languagesText": "Chthonian, Common, truespeech"
+      "languagesText": "Chthonian, Common, truespeech",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "demon",
+          "slug": "demon"
+        },
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -749,7 +797,7 @@
           },
           {
             "name": "Discorporate",
-            "text": "**Two Actions** (Manipulate) **Requirements** The flotsam terror is in water; **Effect** The rubbish and detritus of the flotsam terror’s tangled body breaks apart into a swarming mass of broken bones and debris. While discorporated, the flotsam terror occupies a 10-foot space; gains the swarm trait; gains immunity to grabbed, prone, and restrained; loses its land Speed; and can no longer make Strikes. A discorporated flotsam terror can Dismiss this ability to reconstitute, choosing an unoccupied square of its discorporated form to reconstitute in.\n\n## Lost At Sea\n\nMost of a flotsam terror is composed of splintered wood and nails from a ship, but anything and everything on board can find its way into this mass. When something valuable is lost at sea and can't be recovered from the shipwreck, it might have been swept up into a flotsam terror as it formed from the unsettled spirits of the wreck. Many flotsam terrors hide small valuables like jewelry, silverware, coins, and precious gemstones tangled up within their other wreckage.",
+            "text": "**Two Actions** (Manipulate) **Requirements** The flotsam terror is in water; **Effect** The rubbish and detritus of the flotsam terror’s tangled body breaks apart into a swarming mass of broken bones and debris. While discorporated, the flotsam terror occupies a 10-foot space; gains the [swarm](/trait/swarm) trait; gains immunity to grabbed, prone, and restrained; loses its land Speed; and can no longer make Strikes. A discorporated flotsam terror can Dismiss this ability to reconstitute, choosing an unoccupied square of its discorporated form to reconstitute in.\n\n## Lost At Sea\n\nMost of a flotsam terror is composed of splintered wood and nails from a ship, but anything and everything on board can find its way into this mass. When something valuable is lost at sea and can't be recovered from the shipwreck, it might have been swept up into a flotsam terror as it formed from the unsettled spirits of the wreck. Many flotsam terrors hide small valuables like jewelry, silverware, coins, and precious gemstones tangled up within their other wreckage.",
             "traits": [],
             "actions": "two"
           }
@@ -776,7 +824,17 @@
         ]
       },
       "recallKnowledgeText": "DC 19 (Religion)",
-      "languagesText": "Necril, (can’t speak any language)"
+      "languagesText": "Necril, (can’t speak any language)",
+      "traitLinks": [
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -930,7 +988,17 @@
         ]
       },
       "recallKnowledgeText": "DC 19 (Nature)",
-      "languagesText": "Common, Diabolic, Thalassic"
+      "languagesText": "Common, Diabolic, Thalassic",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1083,7 +1151,17 @@
         ]
       },
       "recallKnowledgeText": "DC 18 (Religion)",
-      "languagesText": "Common, Necril"
+      "languagesText": "Common, Necril",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1214,7 +1292,21 @@
         ]
       },
       "recallKnowledgeText": "DC 24 (Society)",
-      "languagesText": "Common"
+      "languagesText": "Common",
+      "traitLinks": [
+        {
+          "label": "human",
+          "slug": "human"
+        },
+        {
+          "label": "humanoid",
+          "slug": "humanoid"
+        },
+        {
+          "label": "troop",
+          "slug": "troop"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1383,7 +1475,25 @@
         ]
       },
       "recallKnowledgeText": "DC 30 (Religion)",
-      "languagesText": "Azlanti, Common, Daemonic, Thalassic, telepathy 100 feet"
+      "languagesText": "Azlanti, Common, Daemonic, Thalassic, telepathy 100 feet",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "daemon",
+          "slug": "daemon"
+        },
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1528,7 +1638,7 @@
           },
           {
             "name": "Hurl and Whirl",
-            "text": "**Single Action** (Attack) **Requirements** The scylla has a creature grabbed or restrained, and there's an active charybdis within 30 feet; **Effect** The scylla attempts an Athletics check against the required creature's Fortitude DC. If they succeed, that creature is thrown into a free space in the charybdis, immediately taking the effects of a failed save against it. On a critical success, the creature takes the effects of a critically failed save instead.",
+            "text": "**Single Action** (Attack) **Requirements** The scylla has a creature [grabbed](/condition/grabbed-player-core) or restrained, and there's an active charybdis within 30 feet; **Effect** The scylla attempts an Athletics check against the required creature's Fortitude DC. If they succeed, that creature is thrown into a free space in the charybdis, immediately taking the effects of a failed save against it. On a critical success, the creature takes the effects of a critically failed save instead.",
             "traits": [],
             "actions": "one"
           },
@@ -1552,7 +1662,17 @@
         ]
       },
       "recallKnowledgeText": "DC 40 (Occultism)",
-      "languagesText": "Aklo, Common, Empyrean, Thalassic"
+      "languagesText": "Aklo, Common, Empyrean, Thalassic",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        },
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1686,7 +1806,17 @@
         ]
       },
       "recallKnowledgeText": "DC 24 (Nature)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

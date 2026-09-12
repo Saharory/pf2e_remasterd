@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Arcane Explosion",
     "slug": "arcane-explosion-war-of-immortals",
-    "descr": "Your body is temporarily converted into a ball of pure magic, rapidly exploding outward and reforming as a glowing sphere, after which you eventually regain your normal form. All creatures and objects in the emanation take 16d6 force damage (basic Fortitude saving throw). Creatures that fail are also pushed 10 feet directly away from you; creatures that can't complete this forced movement are knocked Prone (but creatures who reduce this movement, such as with an ability or feat, don't fall prone). You become unfiltered magic; you gain the incorporeal trait, are immune to disease, poison, and precision damage, and gain resistance to all damage equal to your level (except force damage, spirit damage, and damage from Strikes with the Ghost Touch property rune), with double the resistance against non-magical damage. While incorporeal, you can't Strike, Cast a Spell, or take any actions with the manipulate trait. Any creature that ends its turn adjacent to you while you're in this state takes 6d6 force] damage. You remain as pure magic until you Dismiss your new form, returning to your normal state at maximum Hit Points.\n\nSpell Effect: Arcane Explosion",
+    "descr": "Your body is temporarily converted into a ball of pure magic, rapidly exploding outward and reforming as a glowing sphere, after which you eventually regain your normal form. All creatures and objects in the emanation take 16d6 force damage (basic Fortitude saving throw). Creatures that fail are also pushed 10 feet directly away from you; creatures that can't complete this forced movement are knocked [Prone](/condition/prone-player-core) (but creatures who reduce this movement, such as with an ability or feat, don't fall prone). You become unfiltered magic; you gain the [incorporeal](/trait/incorporeal) trait, are immune to disease, poison, and precision damage, and gain resistance to all damage equal to your level (except force damage, spirit damage, and damage from Strikes with the [Ghost Touch](/item/ghost-touch-gm-core) property rune), with double the resistance against non-magical damage. While incorporeal, you can't Strike, Cast a Spell, or take any actions with the [manipulate](/trait/manipulate) trait. Any creature that ends its turn adjacent to you while you're in this state takes 6d6 force] damage. You remain as pure magic until you Dismiss your new form, returning to your normal state at maximum Hit Points.\n\nSpell Effect: Arcane Explosion",
     "data": {
       "rank": 9,
       "rarity": "uncommon",
@@ -31,7 +31,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "force",
+          "slug": "force"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -91,6 +113,24 @@
         "one",
         "two",
         "three"
+      ],
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
       ]
     },
     "attributes": {
@@ -122,7 +162,7 @@
     "systemVersion": "1.2.10",
     "name": "Beseech Arcanotheign",
     "slug": "beseech-arcanotheign-war-of-immortals",
-    "descr": "With a whispered prayer or arcane sending, you conjure Arcanotheign, herald of Nethys. She's a storm of magic, half white and half black, roiling in a vaguely humanoid shape. She occupies the space of a Medium creature and has a Speed of 40 feet and a fly Speed of 60 feet.\n\n**Arrive** (sonic) *Storm's Unbridled Destruction* Arcanotheign arrives with a flash of light and a cacophonous crash of colliding magic. All enemies in a area take 8d12 sonic] damage with a basic Reflex save. A creature that critically fails is additionally Deafened for 10 minutes.\n\n**Depart** (electricity, healing) *Flash of Brilliance* Arcanotheign fires a powerful arcane blast at one target within 100 feet, dealing 5d12 electricity] damage with a basic Reflex save, and a powerful divine blast at one ally, healing 5d12 Hit Points. Then, Arcanotheign asks for payment in the form of a fond memory. If you pay this cost, you lose this memory, Arcanotheign gains this memory, and Arcanotheign whispers a secret into your mind; you can immediately Recall Knowledge on any subject at mythic proficiency.",
+    "descr": "With a whispered prayer or arcane sending, you conjure Arcanotheign, herald of Nethys. She's a storm of magic, half white and half black, roiling in a vaguely humanoid shape. She occupies the space of a Medium creature and has a Speed of 40 feet and a fly Speed of 60 feet.\n\n**Arrive** (sonic) *Storm's Unbridled Destruction* Arcanotheign arrives with a flash of light and a cacophonous crash of colliding magic. All enemies in a area take 8d12 sonic] damage with a basic Reflex save. A creature that critically fails is additionally [Deafened](/condition/deafened-player-core) for 10 minutes.\n\n**Depart** (electricity, healing) *Flash of Brilliance* Arcanotheign fires a powerful arcane blast at one target within 100 feet, dealing 5d12 electricity] damage with a basic Reflex save, and a powerful divine blast at one ally, healing 5d12 Hit Points. Then, Arcanotheign asks for payment in the form of a fond memory. If you pay this cost, you lose this memory, Arcanotheign gains this memory, and Arcanotheign whispers a secret into your mind; you can immediately [Recall Knowledge](/action/recall-knowledge-player-core) on any subject at mythic proficiency.",
     "data": {
       "rank": 9,
       "rarity": "rare",
@@ -149,7 +189,25 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incarnate",
+          "slug": "incarnate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -181,7 +239,7 @@
     "systemVersion": "1.2.10",
     "name": "Bounty of the Sky",
     "slug": "bounty-of-the-sky-war-of-immortals",
-    "descr": "You call forth a flock of geese that drop restorative fruits and breads from the sky as they fly overhead. You or an ally in the area can Interact to collect one of these gifts, and can then either consume it as part of the same action or do so with a separate Interact action later in the spell's duration. Enemies who attempt to pick up one of these gifts find that it turns to ash in their hands. Each time a character consumes one of these gifts, they can select one of the following benefits.\n\nThe character regains 4d6 Hit Points.The character reduces the stage of one poison or disease they suffer from by one stage. This can't reduce the stage below 1 or cure the affliction.The character reduces the value of their Clumsy, Drained, Enfeebled, or Stupefied condition by 2, or reduces two of the listed conditions by 1 each.\n\n---\n\n**Heightened (+2)** The amount of Hit Points a character regains from consuming a gift increases by 2d6.",
+    "descr": "You call forth a flock of geese that drop restorative fruits and breads from the sky as they fly overhead. You or an ally in the area can Interact to collect one of these gifts, and can then either consume it as part of the same action or do so with a separate [Interact](/action/interact-player-core) action later in the spell's duration. Enemies who attempt to pick up one of these gifts find that it turns to ash in their hands. Each time a character consumes one of these gifts, they can select one of the following benefits.\n\nThe character regains 4d6 Hit Points.The character reduces the stage of one poison or disease they suffer from by one stage. This can't reduce the stage below 1 or cure the affliction.The character reduces the value of their [Clumsy](/condition/clumsy-player-core), [Drained](/condition/drained-player-core), [Enfeebled](/condition/enfeebled-player-core), or [Stupefied](/condition/stupefied-player-core) condition by 2, or reduces two of the listed conditions by 1 each.\n\n---\n\n**Heightened (+2)** The amount of Hit Points a character regains from consuming a gift increases by 2d6.",
     "data": {
       "rank": 6,
       "rarity": "rare",
@@ -207,7 +265,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -239,7 +315,7 @@
     "systemVersion": "1.2.10",
     "name": "Darkened Forest Form",
     "slug": "darkened-forest-form-war-of-immortals",
-    "descr": "Your apparition casts a feral shadow over your form. You can polymorph into any form listed in Pest Form. When you transform into a form granted by a spell, you gain all the effects of the form you chose from a version of the spell heightened to darkened forest form's rank. Each time you Sustain this Spell, you can choose to change to a different shape from those available via any of the associated spells.\n\n---\n\n**Heightened (2nd)** You can also transform into the forms listed in Animal Form.\n\n**Heightened (5th)** You can also transform into the forms listed in Elemental Form.",
+    "descr": "Your apparition casts a feral shadow over your form. You can polymorph into any form listed in [Pest Form](/spell/pest-form-player-core). When you transform into a form granted by a spell, you gain all the effects of the form you chose from a version of the spell heightened to darkened forest form's rank. Each time you Sustain this Spell, you can choose to change to a different shape from those available via any of the associated spells.\n\n---\n\n**Heightened (2nd)** You can also transform into the forms listed in [Animal Form](/spell/animal-form-player-core).\n\n**Heightened (5th)** You can also transform into the forms listed in [Elemental Form](/spell/elemental-form-player-core).",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -260,7 +336,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "polymorph",
+          "slug": "polymorph"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -290,7 +380,7 @@
     "systemVersion": "1.2.10",
     "name": "Devouring Dark Form",
     "slug": "devouring-dark-form-war-of-immortals",
-    "descr": "Your apparition's dark power blends with your physical body, allowing you to take on terrifying characteristics of creatures that lurk in dark places. Your arms and legs transform into twisting tentacles. You gain a tentacle unarmed attack with 10-foot reach that deals 1d8 bludgeoning damage and has the grapple trait. The first time you Sustain this spell each round, you can attempt a single Grapple check with your tentacle against a creature within its reach.\n\nSpell Effect: Devouring Dark Form\n\n---\n\n**Heightened (2nd)** You can choose to take on the shark battle form from Animal Form instead of gaining a tentacle unarmed attack, heightened to the same level as this vessel spell. When you do, this spell loses the morph trait and gains the polymorph trait. You can attempt a jaws unarmed Strike against a creature within your reach each time you Sustain this spell.\n\n**Heightened (5th)** You can choose to take on the water elemental battle form from Elemental Form instead of gaining a tentacle unarmed attack, heightened to the same level as this vessel spell. When you do, this spell loses the morph trait and gains the polymorph trait. You can attempt an unarmed attack Strike against a creature within your reach each time you Sustain this spell.",
+    "descr": "Your apparition's dark power blends with your physical body, allowing you to take on terrifying characteristics of creatures that lurk in dark places. Your arms and legs transform into twisting tentacles. You gain a tentacle unarmed attack with 10-foot reach that deals 1d8 bludgeoning damage and has the [grapple](/trait/grapple) trait. The first time you Sustain this spell each round, you can attempt a single [Grapple](/action/grapple-player-core) check with your tentacle against a creature within its reach.\n\nSpell Effect: Devouring Dark Form\n\n---\n\n**Heightened (2nd)** You can choose to take on the shark battle form from [Animal Form](/spell/animal-form-player-core) instead of gaining a tentacle unarmed attack, heightened to the same level as this vessel spell. When you do, this spell loses the [morph](/trait/morph) trait and gains the [polymorph](/trait/polymorph) trait. You can attempt a jaws unarmed Strike against a creature within your reach each time you Sustain this spell.\n\n**Heightened (5th)** You can choose to take on the water elemental battle form from [Elemental Form](/spell/elemental-form-player-core) instead of gaining a tentacle unarmed attack, heightened to the same level as this vessel spell. When you do, this spell loses the morph trait and gains the polymorph trait. You can attempt an unarmed attack Strike against a creature within your reach each time you Sustain this spell.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -311,7 +401,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "morph",
+          "slug": "morph"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -341,7 +445,7 @@
     "systemVersion": "1.2.10",
     "name": "Diadem of Divine Radiance",
     "slug": "diadem-of-divine-radiance-war-of-immortals",
-    "descr": "You don a diadem of radiant light, which sheds bright light to a range of 60 feet and dim light to a further 60 feet. When you Cast the Spell and when you Sustain it during the duration, you can draw a disc of spiraling light from the diadem and throw it at a creature within 120 feet. Make a ranged spell attack at mythic proficiency against the target's AC. This action has the attack and spirit traits. On a hit, you deal 4d8 spirit damage, 1d4 persistent spirit damage, and the target is Dazzled for 1 round (3 rounds on a critical hit). The persistent damage isn't doubled on a critical hit.\n\nIf the disc passes through an area of magical darkness or targets a creature affected by magical darkness, the disc's glow attempts to counteract the darkness using your Religion or Occultism skill modifier as the counteract check modifier and half your level as the counteract rank.\n\nSpell Effect: Diadem Of Divine Radiance\n\n---\n\n**Heightened (+2)** The disc's spirit damage increases by 2d8, and the persistent damage increases by 1d4.",
+    "descr": "You don a diadem of radiant light, which sheds bright light to a range of 60 feet and dim light to a further 60 feet. When you Cast the Spell and when you Sustain it during the duration, you can draw a disc of spiraling light from the diadem and throw it at a creature within 120 feet. Make a ranged spell attack at mythic proficiency against the target's AC. This action has the attack and [spirit](/trait/spirit) traits. On a hit, you deal 4d8 spirit damage, 1d4 persistent spirit damage, and the target is [Dazzled](/condition/dazzled-player-core) for 1 round (3 rounds on a critical hit). The persistent damage isn't doubled on a critical hit.\n\nIf the disc passes through an area of magical darkness or targets a creature affected by magical darkness, the disc's glow attempts to counteract the darkness using your Religion or Occultism skill modifier as the counteract check modifier and half your level as the counteract rank.\n\nSpell Effect: Diadem Of Divine Radiance\n\n---\n\n**Heightened (+2)** The disc's spirit damage increases by 2d8, and the persistent damage increases by 1d4.",
     "data": {
       "rank": 5,
       "rarity": "rare",
@@ -369,7 +473,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "light",
+          "slug": "light"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "sanctified",
+          "slug": "sanctified"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -427,7 +553,29 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "misfortune",
+          "slug": "misfortune"
+        },
+        {
+          "label": "void",
+          "slug": "void"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -483,7 +631,25 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "earth",
+          "slug": "earth"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -514,7 +680,7 @@
     "systemVersion": "1.2.10",
     "name": "Embodiment of Battle",
     "slug": "embodiment-of-battle-war-of-immortals",
-    "descr": "Your apparition guides your attacks and imparts its skill to your movements. For the duration, your proficiency with martial weapons is equal to your proficiency with simple weapons, you gain a +1 status bonus to attack and damage rolls made with weapons or unarmed attacks, and you gain the Reactive Strike reaction; this reaction gains the apparition trait. The instincts of an apparition of battle run contrary to the use of magic; for the duration of this spell, you take a –2 status penalty to your spell attack modifiers and your spell DCs.\n\nSpell Effect: Embodiment Of Battle\n\n---\n\n**Heightened (4th)** The status bonus to attack and damage rolls granted by this spell is increased to +2.\n\n**Heightened (7th)** The status bonus to attack and damage rolls granted by this spell is increased to +3.",
+    "descr": "Your apparition guides your attacks and imparts its skill to your movements. For the duration, your proficiency with martial weapons is equal to your proficiency with simple weapons, you gain a +1 status bonus to attack and damage rolls made with weapons or unarmed attacks, and you gain the [Reactive Strike](/action/reactive-strike-player-core) reaction; this reaction gains the [apparition](/trait/apparition) trait. The instincts of an apparition of battle run contrary to the use of magic; for the duration of this spell, you take a –2 status penalty to your spell attack modifiers and your spell DCs.\n\nSpell Effect: Embodiment Of Battle\n\n---\n\n**Heightened (4th)** The status bonus to attack and damage rolls granted by this spell is increased to +2.\n\n**Heightened (7th)** The status bonus to attack and damage rolls granted by this spell is increased to +3.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -534,7 +700,17 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -563,7 +739,7 @@
     "systemVersion": "1.2.10",
     "name": "Final Fate of the Locust Host",
     "slug": "final-fate-of-the-locust-host-war-of-immortals",
-    "descr": "You conjure the rotting corpse of Deskari, previously Lord of the Locust Hosts, to the battlefield. Deskari's corpse occupies the space of a Gargantuan creature. The corpse is riddled with vermin, including countless locusts, whose collective movement grants the corpse a Speed of 60 feet and a fly Speed of 60 feet.\n\n**Arrive** *Behold the Rotten Lord* Deskari's corpse is unspeakably foul, emitting a putrid stench, and constantly twitches thanks to the movement of the millions of insects and vermin that consume it. A loud, persistent buzzing is created by the clouds of locusts surrounding it like a haze. Each living enemy creature within a area must attempt a Fortitude save with the following effects.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Sickened 2.\n\n**Failure** The creature is Sickened 3 and Deafened for the duration.\n\n**Critical Failure** The creature is Sickened 4, Stunned 1, and deafened for the duration.\n\n---\n\n**Depart** (poison) *Feast of the Locust Host* The millions of insects and vermin feasting on Deskari pour out of its corpse and surge across the battlefield, consuming your enemies. This swarm deals 5d8 piercing damage and 5d8 poison damage to enemy creatures in a area with a basic Reflex save. A creature that critically fails is additionally Drained 2.",
+    "descr": "You conjure the rotting corpse of Deskari, previously Lord of the Locust Hosts, to the battlefield. Deskari's corpse occupies the space of a Gargantuan creature. The corpse is riddled with vermin, including countless locusts, whose collective movement grants the corpse a Speed of 60 feet and a fly Speed of 60 feet.\n\n**Arrive** *Behold the Rotten Lord* Deskari's corpse is unspeakably foul, emitting a putrid stench, and constantly twitches thanks to the movement of the millions of insects and vermin that consume it. A loud, persistent buzzing is created by the clouds of locusts surrounding it like a haze. Each living enemy creature within a area must attempt a Fortitude save with the following effects.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Sickened 2](/condition/sickened-player-core).\n\n**Failure** The creature is Sickened 3 and [Deafened](/condition/deafened-player-core) for the duration.\n\n**Critical Failure** The creature is Sickened 4, [Stunned 1](/condition/stunned-player-core), and deafened for the duration.\n\n---\n\n**Depart** (poison) *Feast of the Locust Host* The millions of insects and vermin feasting on Deskari pour out of its corpse and surge across the battlefield, consuming your enemies. This swarm deals 5d8 piercing damage and 5d8 poison damage to enemy creatures in a area with a basic Reflex save. A creature that critically fails is additionally [Drained 2](/condition/drained-player-core).",
     "data": {
       "rank": 7,
       "rarity": "rare",
@@ -590,7 +766,25 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incarnate",
+          "slug": "incarnate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -647,7 +841,33 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -680,7 +900,7 @@
     "systemVersion": "1.2.10",
     "name": "Garden of the Green Man's Growth",
     "slug": "garden-of-the-green-man-s-growth-war-of-immortals",
-    "descr": "You cast your magic into the earth, calling out to a powerful green man, a verdant lesser deity of nature, to come to your aid. They occupy the space of a Medium creature, have a Speed of 40 feet, and a climb Speed of 40 feet.\n\n**Arrive** (plant) *Verdant Bloom* The green man erupts from the ground in a burst of lush growth, dealing 10d8 bludgeoning] damage to creatures in a area with a basic Reflex save. Creatures that fail this save are pushed 30 feet away from the green man and are knocked Prone. The area becomes greater difficult terrain for 24 hours.\n\n**Depart** (plant) *Forest of Grasping Vines* The green man casts out their arms, causing vines to rise from the ground, lash at up to six different creatures, and coil them up. Each of these vines targets a different enemy within 100 feet of the green man and deals 12d6 slashing] damage with a basic Reflex save. A creature that fails is Grabbed until it Escapes (on a critical failure it is Restrained until it Escapes). The Escape DC is your spell DC. Each creature that begins its turn grabbed or Immobilized by these vines takes an additional 4d6 bludgeoning] damage, as the vines continue to squeeze the life from it.",
+    "descr": "You cast your magic into the earth, calling out to a powerful green man, a verdant lesser deity of nature, to come to your aid. They occupy the space of a Medium creature, have a Speed of 40 feet, and a climb Speed of 40 feet.\n\n**Arrive** (plant) *Verdant Bloom* The green man erupts from the ground in a burst of lush growth, dealing 10d8 bludgeoning] damage to creatures in a area with a basic Reflex save. Creatures that fail this save are pushed 30 feet away from the green man and are knocked [Prone](/condition/prone-player-core). The area becomes greater difficult terrain for 24 hours.\n\n**Depart** (plant) *Forest of Grasping Vines* The green man casts out their arms, causing vines to rise from the ground, lash at up to six different creatures, and coil them up. Each of these vines targets a different enemy within 100 feet of the green man and deals 12d6 slashing] damage with a basic Reflex save. A creature that fails is [Grabbed](/condition/grabbed-player-core) until it Escapes (on a critical failure it is [Restrained](/condition/restrained-player-core) until it Escapes). The [Escape](/action/escape-player-core) DC is your spell DC. Each creature that begins its turn grabbed or [Immobilized](/condition/immobilized-player-core) by these vines takes an additional 4d6 bludgeoning] damage, as the vines continue to squeeze the life from it.",
     "data": {
       "rank": 10,
       "rarity": "rare",
@@ -705,7 +925,25 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incarnate",
+          "slug": "incarnate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -761,7 +999,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "prediction",
+          "slug": "prediction"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -792,7 +1044,7 @@
     "systemVersion": "1.2.10",
     "name": "Manifest Will",
     "slug": "manifest-will-war-of-immortals",
-    "descr": "You unleash energy from the broken connection to your patron. You are Concealed from creatures beyond the edge of the emanation but can't use that concealment to Hide. Any creature that begins its turn in the emanation is affected based on your patron's tradition.\n\nAura: Manifest Will\n\n**Arcane** Raw energy and magical formulae circulate around you. A creature that begins its turn in the emanation gains weakness 1 to spell damage for 1 round.**Divine** Divine power crashes in a cycle of life and death. A living or undead creature that begins its turn in the emanation gains 2 temporary Hit Points for 1 round. This effect has the spirit trait.**Occult** Esoteric symbology etches the air. An allied creature that begins its turn in the emanation has Lesser Cover while inside the emanation, and for 1 round after it leaves.**Primal** Plants and fungus symbolic of your patron constantly grow and wither in the emanation. A creature that begins its turn in the emanation has a –10-foot status penalty to all its Speeds for 1 round or until it Escapes. This effect has the fungus, plant, and wood traits.\n\nSpell Effect: Manifest Will\n\n---\n\n**Heightened (+1)** An arcane manifestation increases its weakness by 1 and a divine manifestation increases its temporary Hit Points by 2.",
+    "descr": "You unleash energy from the broken connection to your patron. You are [Concealed](/condition/concealed-player-core) from creatures beyond the edge of the emanation but can't use that concealment to [Hide](/action/hide-player-core). Any creature that begins its turn in the emanation is affected based on your patron's tradition.\n\nAura: Manifest Will\n\n**Arcane** Raw energy and magical formulae circulate around you. A creature that begins its turn in the emanation gains weakness 1 to spell damage for 1 round.**Divine** Divine power crashes in a cycle of life and death. A living or undead creature that begins its turn in the emanation gains 2 temporary Hit Points for 1 round. This effect has the [spirit](/trait/spirit) trait.**Occult** Esoteric symbology etches the air. An allied creature that begins its turn in the emanation has [Lesser Cover](/condition/effect-cover-player-core) while inside the emanation, and for 1 round after it leaves.**Primal** Plants and fungus symbolic of your patron constantly grow and wither in the emanation. A creature that begins its turn in the emanation has a –10-foot status penalty to all its Speeds for 1 round or until it [Escapes](/action/escape-player-core). This effect has the fungus, plant, and [wood](/trait/wood) traits.\n\nSpell Effect: Manifest Will\n\n---\n\n**Heightened (+1)** An arcane manifestation increases its weakness by 1 and a divine manifestation increases its temporary Hit Points by 2.",
     "data": {
       "rank": 1,
       "rarity": "rare",
@@ -816,7 +1068,29 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "cantrip",
+          "slug": "cantrip"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "hex",
+          "slug": "hex"
+        },
+        {
+          "label": "witch",
+          "slug": "witch"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -849,7 +1123,7 @@
     "systemVersion": "1.2.10",
     "name": "Nymph's Grace",
     "slug": "nymph-s-grace-war-of-immortals",
-    "descr": "Your apparition manifests as a mask of unearthly beauty that bewilders your enemies. The first time an enemy enters the aura each round, or if they start their turn within the aura, they must succeed at a Will saving throw or become Confused for 1 round. While confused by this effect, the creature's confused actions never include harming you.",
+    "descr": "Your apparition manifests as a mask of unearthly beauty that bewilders your enemies. The first time an enemy enters the aura each round, or if they start their turn within the aura, they must succeed at a Will saving throw or become [Confused](/condition/confused-player-core) for 1 round. While confused by this effect, the creature's confused actions never include harming you.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -876,7 +1150,37 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "aura",
+          "slug": "aura"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -935,7 +1239,33 @@
         "primal"
       ],
       "traditionsText": "Arcane, Divine, Occult, Primal",
-      "type": "spell"
+      "type": "spell",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "exploration",
+          "slug": "exploration"
+        },
+        {
+          "label": "extradimensional",
+          "slug": "extradimensional"
+        },
+        {
+          "label": "healing",
+          "slug": "healing"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -995,7 +1325,25 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "fortune",
+          "slug": "fortune"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "prediction",
+          "slug": "prediction"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1027,7 +1375,7 @@
     "systemVersion": "1.2.10",
     "name": "Rainbow's End",
     "slug": "rainbow-s-end-war-of-immortals",
-    "descr": "You reach upward to wrest down a rainbow and harness its power to connect this world to the heavens. Each creature in the area takes 1d4 spirit damage with a basic Fortitude save. Any creature that fails this save is additionally Dazzled for 1 round. For the spell's duration, an ally who's adjacent to you can Interact and be instantly teleported to an unoccupied space in the spell's area, as long as they don't travel more than 60 feet. This effect has the teleportation trait.\n\n---\n\n**Heightened (+2)** The damage increases by 2d4, the duration of the dazzled condition on a failed save increases by 1 round, and the maximum distance an ally can use the rainbow to teleport increases by 10 feet.",
+    "descr": "You reach upward to wrest down a rainbow and harness its power to connect this world to the heavens. Each creature in the area takes 1d4 spirit damage with a basic Fortitude save. Any creature that fails this save is additionally [Dazzled](/condition/dazzled-player-core) for 1 round. For the spell's duration, an ally who's adjacent to you can Interact and be instantly teleported to an unoccupied space in the spell's area, as long as they don't travel more than 60 feet. This effect has the [teleportation](/trait/teleportation) trait.\n\n---\n\n**Heightened (+2)** The damage increases by 2d4, the duration of the dazzled condition on a failed save increases by 1 round, and the maximum distance an ally can use the rainbow to teleport increases by 10 feet.",
     "data": {
       "rank": 1,
       "rarity": "rare",
@@ -1057,7 +1405,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "light",
+          "slug": "light"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1110,7 +1480,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1140,7 +1524,7 @@
     "systemVersion": "1.2.10",
     "name": "Seize Identity",
     "slug": "seize-identity-war-of-immortals",
-    "descr": "With a gleeful cackle, you seize an individual's voice and swallow it. For the duration, you look and sound like the target, and the target can't speak. The effects depend on the result of the target's Will saving throw.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** You take on the target's appearance, with the same effects of a 3rd-rank Illusory Disguise spell, and the target can't speak, with the same effects of a 2nd-rank Silence spell.\n\n**Failure** As success, but the target also takes 4d6 mental damage from the transformation.\n\n**Critical Failure** As success, but the target also takes 8d6 mental damage from the transformation.\n\nThe first time each round you Sustain this spell after you cast this spell, the target ages rapidly, taking (ternary(gte(current value,9),3,2))d8 void] damage (basic Will save). On a failure, the target also becomes Enfeebled 1 or increases the value of its enfeebled condition by 1.\n\n---\n\n**Heightened (9th)** The mental damage increases by 4d6, and the void damage increases by 1d8.",
+    "descr": "With a gleeful cackle, you seize an individual's voice and swallow it. For the duration, you look and sound like the target, and the target can't speak. The effects depend on the result of the target's Will saving throw.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** You take on the target's appearance, with the same effects of a 3rd-rank [Illusory Disguise](/spell/illusory-disguise-player-core) spell, and the target can't speak, with the same effects of a 2nd-rank [Silence](/spell/silence-player-core) spell.\n\n**Failure** As success, but the target also takes 4d6 mental damage from the transformation.\n\n**Critical Failure** As success, but the target also takes 8d6 mental damage from the transformation.\n\nThe first time each round you Sustain this spell after you cast this spell, the target ages rapidly, taking (ternary(gte(current value,9),3,2))d8 void] damage (basic Will save). On a failure, the target also becomes [Enfeebled 1](/condition/enfeebled-player-core) or increases the value of its enfeebled condition by 1.\n\n---\n\n**Heightened (9th)** The mental damage increases by 4d6, and the void damage increases by 1d8.",
     "data": {
       "rank": 6,
       "rarity": "rare",
@@ -1168,7 +1552,33 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1202,7 +1612,7 @@
     "systemVersion": "1.2.10",
     "name": "Spellsurge",
     "slug": "spellsurge-war-of-immortals",
-    "descr": "Magic surges to life around you, feeding on the raw power you radiate. Choose one of the following abilities to affect creatures in your aura. You can choose a different effect, ending the previous one, by Sustaining the spell. You can Dismiss the aura.\n\n**Interference** The excess magic surrounding you creates a mental static. All saving throws against mental effects gain a +2 circumstance bonus.**Mana Well** You become a source of pure magic that allows spells to be cast more freely. Allied creatures that would normally be required to attempt a flat check to Cast a Spell (such as from the Stupefied condition) automatically succeed.**Overpower Resistance** Surging magic penetrates most defenses. Any time a spell affects a creature within the aura, that spell ignores an amount of the creature's resistance equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell. This doesn't cause the spell to ignore immunities.**Ward** Stray magical energy diffuses damaging spells. Any time a spell affects a creature within the aura, the damage dealt by the spell is reduced by an amount equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell.",
+    "descr": "Magic surges to life around you, feeding on the raw power you radiate. Choose one of the following abilities to affect creatures in your aura. You can choose a different effect, ending the previous one, by Sustaining the spell. You can Dismiss the aura.\n\n**Interference** The excess magic surrounding you creates a mental static. All saving throws against mental effects gain a +2 circumstance bonus.**Mana Well** You become a source of pure magic that allows spells to be cast more freely. Allied creatures that would normally be required to attempt a flat check to Cast a Spell (such as from the [Stupefied](/condition/stupefied-player-core) condition) automatically succeed.**Overpower Resistance** Surging magic penetrates most defenses. Any time a spell affects a creature within the aura, that spell ignores an amount of the creature's resistance equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell. This doesn't cause the spell to ignore immunities.**Ward** Stray magical energy diffuses damaging spells. Any time a spell affects a creature within the aura, the damage dealt by the spell is reduced by an amount equal to your level. This applies to all damage the spell deals, including persistent damage and damage caused by an ongoing effect of the spell.",
     "data": {
       "rank": 6,
       "rarity": "uncommon",
@@ -1224,7 +1634,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1274,7 +1698,17 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1328,7 +1762,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incarnate",
+          "slug": "incarnate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1384,7 +1836,21 @@
       "castActions": [
         "three"
       ],
-      "actions": "three"
+      "actions": "three",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1415,7 +1881,7 @@
     "systemVersion": "1.2.10",
     "name": "Traveling Workshop",
     "slug": "traveling-workshop-war-of-immortals",
-    "descr": "Your apparition guides you through complex procedures while using your magic to provide you with whatever tools you need. For the duration of this spell, you are trained in Crafting and Thievery. When you Cast the Spell and as long as you Sustain it, your apparition provides you with an array of simple tools, granting you use of an alchemist's toolkit, a repair kit, and a thieves' toolkit; these tools are made of ephemeral magic and disappear if they leave your possession.\n\nSpell Effect: Traveling Workshop\n\nYou can cast this spell as an exploration or downtime activity with a casting time of 10 minutes; when you do, its duration increases to 8 hours (enough to complete 1 day of work), and you also gain an alchemist's lab and functioning forge. You are always treated as having spent a day of work setting up when using this spell to help you Craft an item and have whatever materials you need to Repair an item in your possession. You can't use a traveling workshop to Earn Income and any item you Craft using it disappears moments after it leaves your possession, making it unwise to Craft anything other than consumable items you intend to use yourself. A crafter in the vault is extremely proud of work you do together when using the spell in this way and demands to see the results of your work together. When you cast traveling workshop as an exploration or downtime activity, you must continue to choose crafter in the vault as one of your attuned apparitions during your next daily preparations until such time as you've used any Crafted items in combat.\n\n---\n\n**Heightened (3rd)** Your proficiency in Crafting and Thievery is expert.\n\n**Heightened (5th)** Your proficiency in Crafting and Thievery is master.\n\n**Heightened (9th)** Your proficiency in Crafting and Thievery is legendary.",
+    "descr": "Your apparition guides you through complex procedures while using your magic to provide you with whatever tools you need. For the duration of this spell, you are trained in Crafting and Thievery. When you Cast the Spell and as long as you Sustain it, your apparition provides you with an array of simple tools, granting you use of an alchemist's toolkit, a repair kit, and a thieves' toolkit; these tools are made of ephemeral magic and disappear if they leave your [possession](/spell/possession-player-core).\n\nSpell Effect: Traveling Workshop\n\nYou can cast this spell as an exploration or downtime activity with a casting time of 10 minutes; when you do, its duration increases to 8 hours (enough to complete 1 day of work), and you also gain an alchemist's lab and functioning forge. You are always treated as having spent a day of work setting up when using this spell to help you Craft an item and have whatever materials you need to Repair an item in your possession. You can't use a traveling workshop to [Earn Income](/action/earn-income-player-core) and any item you Craft using it disappears moments after it leaves your possession, making it unwise to Craft anything other than consumable items you intend to use yourself. A crafter in the vault is extremely proud of work you do together when using the spell in this way and demands to see the results of your work together. When you cast traveling workshop as an exploration or downtime activity, you must continue to choose crafter in the vault as one of your attuned apparitions during your next daily preparations until such time as you've used any Crafted items in combat.\n\n---\n\n**Heightened (3rd)** Your proficiency in Crafting and Thievery is expert.\n\n**Heightened (5th)** Your proficiency in Crafting and Thievery is master.\n\n**Heightened (9th)** Your proficiency in Crafting and Thievery is legendary.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -1436,7 +1902,21 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1466,7 +1946,7 @@
     "systemVersion": "1.2.10",
     "name": "Trickster's Feathers",
     "slug": "trickster-s-feathers-war-of-immortals",
-    "descr": "You conjure four magic feathers, each with the potential to hold a single illusory guise. These feathers have negligible Bulk and remain potent for the duration. As an Interact action, you can place one of these feathers into your hair or cap, or remove an already donned feather. When worn in this way, the feather causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity but not to impersonate a specific individual. This disguise also changes your voice and scent, but it doesn't disguise your mannerisms or behavior. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.\n\nWhen you don a feather for the first time, you determine the illusory appearance that feather grants you, selecting the ancestry, age, gender, attire, and other visual features. For the duration, this feather is linked to that disguise. Wearing it in your hair or hat always imparts the linked appearance. Selecting a feather's appearance for the first time counts as setting up a disguise for the Impersonate use of Deception; attempt this Deception check at mythic proficiency.\n\nYou can only wear one feather at a time. When you remove a feather, you revert to your true appearance. If you give a feather to another creature, it can no longer impart a disguise.",
+    "descr": "You conjure four magic feathers, each with the potential to hold a single illusory guise. These feathers have negligible Bulk and remain potent for the duration. As an [Interact](/action/interact-player-core) action, you can place one of these feathers into your hair or cap, or remove an already donned feather. When worn in this way, the feather causes you to appear as another creature of the same body shape, and with roughly similar height (within 6 inches) and weight (within 50 pounds), as yourself. The disguise is typically good enough to hide your identity but not to impersonate a specific individual. This disguise also changes your voice and scent, but it doesn't disguise your mannerisms or behavior. You can change the appearance of your clothing and worn items, such as making your armor look like a dress. Held items are unaffected, and any worn item you remove returns to its true appearance.\n\nWhen you don a feather for the first time, you determine the illusory appearance that feather grants you, selecting the ancestry, age, gender, attire, and other visual features. For the duration, this feather is linked to that disguise. Wearing it in your hair or hat always imparts the linked appearance. Selecting a feather's appearance for the first time counts as setting up a disguise for the [Impersonate](/action/impersonate-player-core) use of Deception; attempt this Deception check at mythic proficiency.\n\nYou can only wear one feather at a time. When you remove a feather, you revert to your true appearance. If you give a feather to another creature, it can no longer impart a disguise.",
     "data": {
       "rank": 4,
       "rarity": "rare",
@@ -1494,7 +1974,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1526,7 +2028,7 @@
     "systemVersion": "1.2.10",
     "name": "Trickster's Mirrors",
     "slug": "trickster-s-mirrors-war-of-immortals",
-    "descr": "You are surrounded by up to 3 mirrors that reflect twisted and distorted images of you, making it hard to tell where you actually are within your space and potentially causing those who attack you to hit one of the mirrors instead. You start with 1 mirror and gain an additional mirror each time you Sustain this spell, up to a maximum of 3 mirrors. Any attack that would hit you has a random chance of hitting one of your mirrors instead of you. With one mirror, the chances are 1 in 2 (1–3 on 1d6). With two mirrors, there is a 1 in 3 chance of hitting you (1–2 on 1d6). With three mirrors, there is a 1 in 4 chance of hitting you (1 on 1d4).\n\nOnce an image is hit, it is destroyed. If an attack roll fails to hit your AC but doesn't critically fail, it destroys a mirror. If the attacker was within 5 feet, they must succeed at a basic Will save or take 1d4 mental damage as they believe themselves cut by a shower of glass shards from the breaking mirror. A damaging effect that affects all targets within your space (such as Caustic Blast) destroys all of the mirrors.\n\n---\n\n**Heightened (+1)** The mental damage dealt by a broken mirror increases by 1d4.",
+    "descr": "You are surrounded by up to 3 mirrors that reflect twisted and distorted images of you, making it hard to tell where you actually are within your space and potentially causing those who attack you to hit one of the mirrors instead. You start with 1 mirror and gain an additional mirror each time you Sustain this spell, up to a maximum of 3 mirrors. Any attack that would hit you has a random chance of hitting one of your mirrors instead of you. With one mirror, the chances are 1 in 2 (1–3 on 1d6). With two mirrors, there is a 1 in 3 chance of hitting you (1–2 on 1d6). With three mirrors, there is a 1 in 4 chance of hitting you (1 on 1d4).\n\nOnce an image is hit, it is destroyed. If an attack roll fails to hit your AC but doesn't critically fail, it destroys a mirror. If the attacker was within 5 feet, they must succeed at a basic Will save or take 1d4 mental damage as they believe themselves cut by a shower of glass shards from the breaking mirror. A damaging effect that affects all targets within your space (such as [Caustic Blast](/spell/caustic-blast-player-core)) destroys all of the mirrors.\n\n---\n\n**Heightened (+1)** The mental damage dealt by a broken mirror increases by 1d4.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -1550,7 +2052,29 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "animist",
+          "slug": "animist"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "illusion",
+          "slug": "illusion"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "visual",
+          "slug": "visual"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1582,7 +2106,7 @@
     "systemVersion": "1.2.10",
     "name": "Vindicator's Judgment",
     "slug": "vindicator-s-judgment-war-of-immortals",
-    "descr": "You pronounce a terrible judgment upon your quarry that causes all of your attacks and divine spells to strike with deadly efficacy. The target takes extra damage from your attacks, depending on the result of its Fortitude save. The spell ends immediately if the target is no longer your hunted prey.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target has weakness 5 to the next Strike you make against it or damaging divine spell you cast that includes it as a target before the end of your next turn.\n\n**Failure** The target has weakness 5 to all Strikes you make against it or damaging divine spells you cast that includes it as a target for the duration of the spell.\n\n**Critical Failure** As failure, but the target is Off Guard against the first Strike or divine spell attack you make against it each round for the duration of the spell.\n\n---\n\n**Heightened (7th)** The weakness is 10.\n\n**Heightened (9th)** The weakness is 15.",
+    "descr": "You pronounce a terrible judgment upon your quarry that causes all of your attacks and divine spells to strike with deadly efficacy. The target takes extra damage from your attacks, depending on the result of its Fortitude save. The spell ends immediately if the target is no longer your hunted prey.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target has weakness 5 to the next Strike you make against it or damaging divine spell you cast that includes it as a target before the end of your next turn.\n\n**Failure** The target has weakness 5 to all Strikes you make against it or damaging divine spells you cast that includes it as a target for the duration of the spell.\n\n**Critical Failure** As failure, but the target is [Off Guard](/condition/off-guard-player-core) against the first Strike or divine spell attack you make against it each round for the duration of the spell.\n\n---\n\n**Heightened (7th)** The weakness is 10.\n\n**Heightened (9th)** The weakness is 15.",
     "data": {
       "rank": 5,
       "rarity": "uncommon",
@@ -1603,7 +2127,17 @@
       "castActions": [
         "one"
       ],
-      "actions": "one"
+      "actions": "one",
+      "traitLinks": [
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1632,7 +2166,7 @@
     "systemVersion": "1.2.10",
     "name": "Vindicator's Mark",
     "slug": "vindicator-s-mark-war-of-immortals",
-    "descr": "You launch a magical dart at your hunted prey, which marks them with a nimbus only you can detect. Make a spell attack against the target. On a hit, you deal 2d4 spirit damage and the target is marked by a glowing nimbus of energy that only you can see. For the duration of your spell, the marked target takes an additional +2 damage from all your weapon or unarmed attacks. Invisible targets marked by your *vindicator's mark* are Concealed to you, rather than Undetected.\n\nYou can Dismiss the spell on your turn if your last action dealt damage to the target with a weapon or unarmed attack, instantly dealing an additional (ceil(current value/2)+1)d6 spirit] damage to it.\n\nSpell Effect: Vindicator'S Mark\n\n---\n\n**Heightened (+2)** The initial damage increases by 2d4, the additional damage you deal increases by 1, and the damage dealt when the spell is Dismissed increases by 1d6.",
+    "descr": "You launch a magical dart at your hunted prey, which marks them with a nimbus only you can detect. Make a spell attack against the target. On a hit, you deal 2d4 spirit damage and the target is marked by a glowing nimbus of energy that only you can see. For the duration of your spell, the marked target takes an additional +2 damage from all your weapon or unarmed attacks. [Invisible](/condition/invisible-player-core) targets marked by your *vindicator's mark* are [Concealed](/condition/concealed-player-core) to you, rather than [Undetected](/condition/undetected-player-core).\n\nYou can Dismiss the spell on your turn if your last action dealt damage to the target with a weapon or unarmed attack, instantly dealing an additional (ceil(current value/2)+1)d6 spirit] damage to it.\n\nSpell Effect: Vindicator'S Mark\n\n---\n\n**Heightened (+2)** The initial damage increases by 2d4, the additional damage you deal increases by 1, and the damage dealt when the spell is Dismissed increases by 1d6.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -1654,7 +2188,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "attack",
+          "slug": "attack"
+        },
+        {
+          "label": "focus",
+          "slug": "focus"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "sanctified",
+          "slug": "sanctified"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

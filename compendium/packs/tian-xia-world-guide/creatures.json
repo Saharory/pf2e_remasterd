@@ -106,7 +106,17 @@
         ]
       },
       "recallKnowledgeText": "DC 16 (Arcana)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -242,7 +252,17 @@
         ]
       },
       "recallKnowledgeText": "DC 14 (Arcana)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -382,7 +402,17 @@
         ]
       },
       "recallKnowledgeText": "DC 18 (Arcana)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -505,7 +535,7 @@
           },
           {
             "name": "Trample",
-            "text": "**Three Actions** Medium, hoof, DC 29\n\n## Adyin Horns\n\nThe horns of an aoyin are a potent material for crafting magical items that induce a frenzied state or blood loss, much like in tales about the beast's calls. Each horn, of which an aoyin normally has four, can be used as 60 gp worth of materials for items like a _wounding_ rune.",
+            "text": "**Three Actions** Medium, hoof, DC 29\n\n## Adyin Horns\n\nThe horns of an aoyin are a potent material for crafting magical items that induce a frenzied state or blood loss, much like in tales about the beast's calls. Each horn, of which an aoyin normally has four, can be used as 60 gp worth of materials for items like a _[wounding](/item/wounding-gm-core)_ rune.",
             "traits": [],
             "actions": "three"
           }
@@ -518,7 +548,13 @@
         ]
       },
       "recallKnowledgeText": "DC 32 (Nature)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -647,7 +683,7 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "**Single Action** (Concentrate, Divine, Polymorph) The aso berang takes the appearance of any Medium or Small humanoid creature. In this form, the aso berang can't use their tusk Strikes, and their claw Strike becomes a fist Strike that deals bludgeoning damage and loses the reach trait.",
+            "text": "**Single Action** (Concentrate, Divine, Polymorph) The aso berang takes the appearance of any Medium or Small humanoid creature. In this form, the aso berang can't use their tusk Strikes, and their claw Strike becomes a fist Strike that deals bludgeoning damage and loses the [reach](/trait/reach) trait.",
             "traits": [],
             "actions": "one"
           },
@@ -676,7 +712,13 @@
         ]
       },
       "recallKnowledgeText": "DC 35 (Occultism)",
-      "languagesText": "Celestial, Petran, Sylvan, Tien"
+      "languagesText": "Celestial, Petran, Sylvan, Tien",
+      "traitLinks": [
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -776,7 +818,7 @@
         "defensive": [
           {
             "name": "Eclipse Aura",
-            "text": "(aura, darkness, occult) 100 feet. Light and shadows morph strangely around the bul-gae. Non-magical bright light is reduced to dim light within the aura. When a creature attempts an action within the aura that has the light trait, it must attempt a DC 34 Will save. On a failure, the action is disrupted.",
+            "text": "(aura, darkness, occult) 100 feet. Light and shadows morph strangely around the bul-gae. Non-magical bright light is reduced to dim light within the aura. When a creature attempts an action within the aura that has the [light](/trait/light) trait, it must attempt a DC 34 Will save. On a failure, the action is disrupted.",
             "traits": []
           },
           {
@@ -812,7 +854,21 @@
         ]
       },
       "recallKnowledgeText": "DC 32 (Nature)",
-      "languagesText": "Tien"
+      "languagesText": "Tien",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "fire",
+          "slug": "fire"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -919,14 +975,14 @@
         "interaction": [
           {
             "name": "Floral Camouflage",
-            "text": "When Hiding, the five-color orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures concealed.",
+            "text": "When Hiding, the five-color orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures [concealed](/condition/concealed-player-core).",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Elemental Expulsion",
-            "text": "**Reaction** **Requirements** The mantis has an elemental trait from Color Shift **Trigger** It's damaged by a weapon Strike; **Effect** Elemental energy pushes back against the blow, giving the attacker a –2 status penalty to attack rolls until the beginning of its next turn. If the weapon contains material that matches the mantis's trait (such as earth for a thrown rock or fire for a lit torch), the mantis gains resistance 10 to all damage from this Strike.",
+            "text": "**Reaction** **Requirements** The mantis has an [elemental](/trait/elemental) trait from Color Shift **Trigger** It's damaged by a weapon Strike; **Effect** Elemental energy pushes back against the blow, giving the attacker a –2 status penalty to attack rolls until the beginning of its next turn. If the weapon contains material that matches the mantis's trait (such as earth for a thrown rock or fire for a lit torch), the mantis gains resistance 10 to all damage from this Strike.",
             "traits": [],
             "actions": "reaction"
           },
@@ -940,7 +996,7 @@
         "offensive": [
           {
             "name": "Harvesting Limbs",
-            "text": "**Two Actions** The mantis makes two leg attacks. If both attacks hit, the mantis gains 10 temporary Hit Points, and the target must succeed at a DC 27 Fortitude saving throw or become drained 1 (drained 2 on a critical failure). The drained condition ends when the mantis is reduced to 0 Hit Points.",
+            "text": "**Two Actions** The mantis makes two leg attacks. If both attacks hit, the mantis gains 10 temporary Hit Points, and the target must succeed at a DC 27 Fortitude saving throw or become drained 1 (drained 2 on a critical failure). The [drained](/condition/drained-player-core) condition ends when the mantis is reduced to 0 Hit Points.",
             "traits": [],
             "actions": "two"
           },
@@ -958,7 +1014,13 @@
         ]
       },
       "recallKnowledgeText": "DC 28 (Nature)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1064,7 +1126,7 @@
           },
           {
             "name": "Subsumed Traits",
-            "text": "After it finishes digesting a full meal, the gau cho rong will gain a trait from that creature until the next time it's full. Gau cho rongs that gain the animal trait have scent out to 60 feet as an imprecise sense, while those with the amphibious or aquatic trait gain a swim speed of 25 feet. Humanoid hollow bears gain the Reactive Strike reaction. Traits like fire add that damage type to a gau cho rong's resistances. Other traits have effects at the GM's discretion.",
+            "text": "After it finishes digesting a full meal, the gau cho rong will gain a trait from that creature until the next time it's full. Gau cho rongs that gain the [animal](/trait/animal) trait have scent out to 60 feet as an imprecise sense, while those with the amphibious or [aquatic](/trait/aquatic) trait gain a swim speed of 25 feet. Humanoid hollow bears gain the Reactive Strike reaction. Traits like fire add that damage type to a gau cho rong's resistances. Other traits have effects at the GM's discretion.",
             "traits": []
           }
         ],
@@ -1091,7 +1153,13 @@
         ]
       },
       "recallKnowledgeText": "DC 21 (Nature)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1195,7 +1263,7 @@
         "interaction": [
           {
             "name": "Floral Camouflage",
-            "text": "When Hiding, the giant orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures concealed.",
+            "text": "When Hiding, the giant orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures [concealed](/condition/concealed-player-core).",
             "traits": []
           }
         ],
@@ -1221,7 +1289,13 @@
         ]
       },
       "recallKnowledgeText": "DC 16 (Nature)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1356,7 +1430,17 @@
         ]
       },
       "recallKnowledgeText": "DC 15 (Arcana)",
-      "languagesText": "Sakvroth, Tien"
+      "languagesText": "Sakvroth, Tien",
+      "traitLinks": [
+        {
+          "label": "clockwork",
+          "slug": "clockwork"
+        },
+        {
+          "label": "construct",
+          "slug": "construct"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1506,7 +1590,21 @@
         ]
       },
       "recallKnowledgeText": "DC 32 (Religion)",
-      "languagesText": "Celestial, Chthonian, Diabolic, Requian, telepathy 100 feet, truespeech"
+      "languagesText": "Celestial, Chthonian, Diabolic, Requian, telepathy 100 feet, truespeech",
+      "traitLinks": [
+        {
+          "label": "fiend",
+          "slug": "fiend"
+        },
+        {
+          "label": "sahkil",
+          "slug": "sahkil"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1631,7 +1729,7 @@
         "interaction": [
           {
             "name": "Nesting",
-            "text": "By coiling around a butterfly koi egg for 1 minute, the imugi designates it as their chosen heir, which grants the imugi the effects of a constant status spell on that egg. If the egg is destroyed or otherwise made nonviable, the imugi can choose a new koi egg with this ability after 1 week.",
+            "text": "By coiling around a butterfly koi egg for 1 minute, the imugi designates it as their chosen heir, which grants the imugi the effects of a constant [status](/spell/status-player-core) spell on that egg. If the egg is destroyed or otherwise made nonviable, the imugi can choose a new koi egg with this ability after 1 week.",
             "traits": []
           }
         ],
@@ -1675,7 +1773,21 @@
         ]
       },
       "recallKnowledgeText": "DC 25 (Arcana)",
-      "languagesText": "Draconic, Tien"
+      "languagesText": "Draconic, Tien",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1785,7 +1897,7 @@
         "defensive": [
           {
             "name": "Blotting",
-            "text": "While a creature has the inkdrop grabbed or pinned, it can destroy the inkdrop by smudging the inkdrop out with an Interact action.",
+            "text": "While a creature has the inkdrop grabbed or pinned, it can destroy the inkdrop by smudging the inkdrop out with an [Interact](/action/interact-player-core) action.",
             "traits": []
           }
         ],
@@ -1810,7 +1922,17 @@
         ]
       },
       "recallKnowledgeText": "DC 13 (Arcana)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "construct",
+          "slug": "construct"
+        },
+        {
+          "label": "mindless",
+          "slug": "mindless"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1915,18 +2037,18 @@
         "offensive": [
           {
             "name": "Consumed Fragments",
-            "text": "**Single Action** (Concentrate, Polymorph, Primal) The jiidon takes on the form of any Medium or Small humanoid creature whose fingernails or similar fragments they've consumed within the last week, gaining the effects of a 3rd-rank _illusory disguise_ spell to impersonate the creature for 8 hours; this is a polymorph effect rather than an illusion effect. Once a jiidon has transformed into a creature in this way, they must eat that creature's fingernails again to transform into it again. If a jiidon consumes the nails of a specific humanoid three nights in a row, they can take the form of that humanoid at will but can't use this ability to imitate any other humanoid thereafter.",
+            "text": "**Single Action** (Concentrate, Polymorph, Primal) The jiidon takes on the form of any Medium or Small humanoid creature whose fingernails or similar fragments they've consumed within the last week, gaining the effects of a 3rd-rank _[illusory disguise](/spell/illusory-disguise-player-core)_ spell to impersonate the creature for 8 hours; this is a polymorph effect rather than an illusion effect. Once a jiidon has transformed into a creature in this way, they must eat that creature's fingernails again to transform into it again. If a jiidon consumes the nails of a specific humanoid three nights in a row, they can take the form of that humanoid at will but can't use this ability to imitate any other humanoid thereafter.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Sneak Attack",
-            "text": "The jiidon deals an additional 1d6 precision damage to off-guard creatures.",
+            "text": "The jiidon deals an additional 1d6 precision damage to [off-guard](/condition/off-guard-player-core) creatures.",
             "traits": []
           },
           {
             "name": "Tactical Gnaw",
-            "text": "**Two Actions** The jiidon uses their nearly indestructible teeth to chew through even the toughest armor, leaving an opponent vulnerable. The jiidon makes a jaws Strike. On a successful attack, if the target is wearing armor with Hardness 10 or lower, the armor becomes broken. This Strike doesn't further damage armor that's already broken.\n\n## Playing a Jiidon\n\nWhile jiidons don't have ancestral rules in this book, a player interested in creating a jiidon character can use the beastkin versatile heritage to emulate a jiidon who has obtained a permanent humanoid form. The player should work with the GM to determine who the jiidon is imitating and what complications this might have.",
+            "text": "**Two Actions** The jiidon uses their nearly indestructible teeth to chew through even the toughest armor, leaving an opponent vulnerable. The jiidon makes a jaws Strike. On a successful attack, if the target is wearing armor with Hardness 10 or lower, the armor becomes broken. This Strike doesn't further damage armor that's already broken.\n\n## Playing a Jiidon\n\nWhile jiidons don't have ancestral rules [in this book](/rule/in-this-book-rules-2089), a player interested in creating a jiidon character can use the beastkin versatile heritage to emulate a jiidon who has obtained a permanent humanoid form. The player should work with the GM to determine who the jiidon is imitating and what complications this might have.",
             "traits": [],
             "actions": "two"
           }
@@ -1939,7 +2061,13 @@
         ]
       },
       "recallKnowledgeText": "DC 20 (Nature)",
-      "languagesText": "Sylvan, Tien"
+      "languagesText": "Sylvan, Tien",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2058,13 +2186,13 @@
           },
           {
             "name": "Reap Souls",
-            "text": "**Reaction** (Death) **Trigger** The joseung saja brings a target to 0 Hit Points or successfully Strikes a target with the dying condition; **Effect** The target must succeed at a DC 34 Will save or immediately die. A reaped creature can't be return to life or become undead except by a 9th-rank or higher ritual.",
+            "text": "**Reaction** (Death) **Trigger** The joseung saja brings a target to 0 Hit Points or successfully Strikes a target with the [dying](/condition/dying-player-core) condition; **Effect** The target must succeed at a DC 34 Will save or immediately die. A reaped creature can't be return to life or become undead except by a 9th-rank or higher ritual.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Shifting Form",
-            "text": "**Single Action** The joseung saja is incorporeal until the end of their next turn. While they're incorporeal, they have resistance 10 to all damage (except force, void, and ghost touch weapons).",
+            "text": "**Single Action** The joseung saja is incorporeal until the end of their next turn. While they're incorporeal, they have resistance 10 to all damage (except force, void, and [ghost touch](/item/ghost-touch-gm-core) weapons).",
             "traits": [],
             "actions": "one"
           },
@@ -2087,7 +2215,17 @@
         ]
       },
       "recallKnowledgeText": "DC 32 (Religion)",
-      "languagesText": "Celestial, Chthonian, Diabolic, Requian, truespeech"
+      "languagesText": "Celestial, Chthonian, Diabolic, Requian, truespeech",
+      "traitLinks": [
+        {
+          "label": "monitor",
+          "slug": "monitor"
+        },
+        {
+          "label": "psychopomp",
+          "slug": "psychopomp"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2216,7 +2354,7 @@
           },
           {
             "name": "Heart of Darkness",
-            "text": "Whenever the kun makes a jaws Strike from within an area of darkness, their jaws deals an additional 2d6 spirit damage and gains the unholy trait.",
+            "text": "Whenever the kun makes a jaws Strike from within an area of darkness, their jaws deals an additional 2d6 spirit damage and gains the [unholy](/trait/unholy) trait.",
             "traits": []
           },
           {
@@ -2239,7 +2377,25 @@
         ]
       },
       "recallKnowledgeText": "DC 34 (Nature)",
-      "languagesText": "Thalassic, (can't speak any language)"
+      "languagesText": "Thalassic, (can't speak any language)",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "unholy",
+          "slug": "unholy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2353,13 +2509,13 @@
         "offensive": [
           {
             "name": "Blood Drain",
-            "text": "**Single Action** **Requirements** The manananggal has a creature grabbed; **Effect** The manananggal drives their tongue into the grabbed creature to drink its blood. This deals 4d6 damage, and the manananggal gains temporary Hit Points equal to the damage dealt. A creature whose blood is drained by a manananggal is drained 1 until it receives healing (of any kind or amount).",
+            "text": "**Single Action** **Requirements** The manananggal has a creature [grabbed](/condition/grabbed-player-core); **Effect** The manananggal drives their tongue into the grabbed creature to drink its blood. This deals 4d6 damage, and the manananggal gains temporary Hit Points equal to the damage dealt. A creature whose blood is drained by a manananggal is drained 1 until it receives healing (of any kind or amount).",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Separated Body",
-            "text": "A manananggal typically resembles a living humanoid. They don't appear as an aberration at first glance and receive a +4 status bonus to their Deception DC when Impersonating a humanoid. At any time, but especially at night, a manananggal can, as a 3-action activity with the manipulate trait, rip their upper torso from their bottom half, leaving the lower torso limp and helpless but allowing the upper torso to fly free. A manananggal can separate their body at any time, but they risk further damage if they do so during the day. The manananggal's upper and lower halves share the same pool of HP. If its lower half is damaged, the manananggal is immediately aware of the attack. Each minute a manananggal remains separated after sunrise and before sunset, it takes 2d6 points of damage until it reattaches its upper and lower torsos or is destroyed, whichever comes first.\n\n## Grim Blades\n\nMinatan folktales have it that a forgotten demigod created the first manananggals by bisecting the torso of a human with a divine knife. The demigod then cut into the human's shoulders and drove a pair of bat wings into their back, birthing the first manananggal. The divine power of the demigod's knife still resonates in every manananggal and makes each of the aberrations susceptible to cuts from similar weapons. Communities dealing with a manananggal's terror train with light blades and other slashing weapons to cut the monsters from the sky.",
+            "text": "A manananggal typically resembles a living humanoid. They don't appear as an aberration at first glance and receive a +4 status bonus to their Deception DC when Impersonating a humanoid. At any time, but especially at night, a manananggal can, as a 3-action activity with the [manipulate](/trait/manipulate) trait, rip their upper torso from their bottom half, leaving the lower torso limp and helpless but allowing the upper torso to fly free. A manananggal can separate their body at any time, but they risk further damage if they do so during the day. The manananggal's upper and lower halves share the same pool of HP. If its lower half is damaged, the manananggal is immediately aware of the attack. Each minute a manananggal remains separated after sunrise and before sunset, it takes 2d6 points of damage until it reattaches its upper and lower torsos or is destroyed, whichever comes first.\n\n## Grim Blades\n\nMinatan folktales have it that a forgotten demigod created the first manananggals by bisecting the torso of a human with a divine knife. The demigod then cut into the human's shoulders and drove a pair of bat wings into their back, birthing the first manananggal. The divine power of the demigod's knife still resonates in every manananggal and makes each of the aberrations susceptible to cuts from similar weapons. Communities dealing with a manananggal's terror train with light blades and other slashing weapons to cut the monsters from the sky.",
             "traits": []
           },
           {
@@ -2376,7 +2532,17 @@
         ]
       },
       "recallKnowledgeText": "DC 24 (Occultism)",
-      "languagesText": "Aklo, Common"
+      "languagesText": "Aklo, Common",
+      "traitLinks": [
+        {
+          "label": "aberration",
+          "slug": "aberration"
+        },
+        {
+          "label": "tanggal",
+          "slug": "tanggal"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2541,7 +2707,13 @@
         ]
       },
       "recallKnowledgeText": "DC 28 (Nature)",
-      "languagesText": "Tien"
+      "languagesText": "Tien",
+      "traitLinks": [
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2632,7 +2804,7 @@
         "interaction": [
           {
             "name": "Floral Camouflage",
-            "text": "When Hiding, the orchid mantis swarm is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures concealed.",
+            "text": "When Hiding, the orchid mantis swarm is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures [concealed](/condition/concealed-player-core).",
             "traits": []
           }
         ],
@@ -2659,7 +2831,17 @@
         ]
       },
       "recallKnowledgeText": "DC 22 (Nature)",
-      "languagesText": ""
+      "languagesText": "",
+      "traitLinks": [
+        {
+          "label": "animal",
+          "slug": "animal"
+        },
+        {
+          "label": "swarm",
+          "slug": "swarm"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2778,7 +2960,7 @@
         "defensive": [
           {
             "name": "Calm Weather Aura",
-            "text": "(air, aura, primal) 1 mile. The ambient weather around a peng is always lightly cloudy with a pleasant breeze, and the temperature is pleasantly warm for the season. Another creature that attempts to alter the weather within this aura; otherwise, the effect is disrupted. The peng can activate or deactivate this aura as a single action with the concentrate trait.",
+            "text": "(air, aura, primal) 1 mile. The ambient weather around a peng is always lightly cloudy with a pleasant breeze, and the temperature is pleasantly warm for the season. Another creature that attempts to alter the weather within this aura; otherwise, the effect is disrupted. The peng can activate or deactivate this aura as a single action with the [concentrate](/trait/concentrate) trait.",
             "traits": []
           }
         ],
@@ -2808,7 +2990,25 @@
         ]
       },
       "recallKnowledgeText": "DC 30 (Nature)",
-      "languagesText": "Sussuran"
+      "languagesText": "Sussuran",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        },
+        {
+          "label": "cold",
+          "slug": "cold"
+        },
+        {
+          "label": "holy",
+          "slug": "holy"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2962,7 +3162,13 @@
         ]
       },
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "languagesText": "Draconic"
+      "languagesText": "Draconic",
+      "traitLinks": [
+        {
+          "label": "dragon",
+          "slug": "dragon"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3117,7 +3323,7 @@
           },
           {
             "name": "Ti Sh-on",
-            "text": "**Reaction** (death, divine) **Trigger** A creature grabbed by the shui gui dies of suffocation **Effect** Ripping the spirit of its drowned victim out of the target's body, the shui gui enters the corpse to take the original owner's place. The shui gui then returns to life at the edge of its body of water as if it had been the target of a successful _resurrect_ ritual, except it has the appearance of the target rather than its original body. After a week, the spirit of the drowned creature becomes a shui gui. The new spirit can't be raised from the dead by normal magical means until they've been destroyed as a shui gui.",
+            "text": "**Reaction** (death, divine) **Trigger** A creature [grabbed](/condition/grabbed-player-core) by the shui gui dies of suffocation **Effect** Ripping the spirit of its drowned victim out of the target's body, the shui gui enters the corpse to take the original owner's place. The shui gui then returns to life at the edge of its body of water as if it had been the target of a successful _[resurrect](/ritual/resurrect-player-core)_ ritual, except it has the appearance of the target rather than its original body. After a week, the spirit of the drowned creature becomes a shui gui. The new spirit can't be raised from the dead by normal magical means until they've been destroyed as a shui gui.",
             "traits": [],
             "actions": "reaction"
           }
@@ -3150,7 +3356,33 @@
         ]
       },
       "recallKnowledgeText": "DC 22 (Occultism, Religion)",
-      "languagesText": "Tien"
+      "languagesText": "Tien",
+      "traitLinks": [
+        {
+          "label": "aquatic",
+          "slug": "aquatic"
+        },
+        {
+          "label": "ghost",
+          "slug": "ghost"
+        },
+        {
+          "label": "incorporeal",
+          "slug": "incorporeal"
+        },
+        {
+          "label": "spirit",
+          "slug": "spirit"
+        },
+        {
+          "label": "undead",
+          "slug": "undead"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3292,7 +3524,7 @@
           },
           {
             "name": "Rescue",
-            "text": "**Single Action** The caterpillar carriage absorbs a willing construct within its reach. That construct doesn't exist separately until the caterpillar carriage releases it as an Interact action or is destroyed.",
+            "text": "**Single Action** The caterpillar carriage absorbs a willing construct within its reach. That construct doesn't exist separately until the caterpillar carriage releases it as an [Interact](/action/interact-player-core) action or is destroyed.",
             "traits": [],
             "actions": "one"
           },
@@ -3316,7 +3548,17 @@
         ]
       },
       "recallKnowledgeText": "DC 48 (Arcana)",
-      "languagesText": "Sakvroth, Tien"
+      "languagesText": "Sakvroth, Tien",
+      "traitLinks": [
+        {
+          "label": "clockwork",
+          "slug": "clockwork"
+        },
+        {
+          "label": "construct",
+          "slug": "construct"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3495,7 +3737,17 @@
         ]
       },
       "recallKnowledgeText": "DC 50 (Nature)",
-      "languagesText": "Draconic, Petran, Thalassic, Tien"
+      "languagesText": "Draconic, Petran, Thalassic, Tien",
+      "traitLinks": [
+        {
+          "label": "amphibious",
+          "slug": "amphibious"
+        },
+        {
+          "label": "beast",
+          "slug": "beast"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3613,7 +3865,7 @@
         "offensive": [
           {
             "name": "Fortune's Favor",
-            "text": "**Three Actions** (Curse, Divine, Incapacitation, Polymorph) **Frequency** once per day; **Effect** A target creature within 30 feet must succeed at a DC 25 Will save or gain the effects of cursed metamorphosis, being polymorphed into a pig whose girth is determined by the target's wealth. After 24 hours, the target can end this effect using a Dismiss action, at which point the yeongno becomes aware that the effect has ended. A yeongno can use Fortune's Favor only if no targets are currently under its effects.",
+            "text": "**Three Actions** (Curse, Divine, Incapacitation, Polymorph) **Frequency** once per day; **Effect** A target creature within 30 feet must succeed at a DC 25 Will save or gain the effects of cursed metamorphosis, being polymorphed into a pig whose girth is determined by the target's wealth. After 24 hours, the target can end this effect using a [Dismiss](/action/dismiss-player-core) action, at which point the yeongno becomes aware that the effect has ended. A yeongno can use Fortune's Favor only if no targets are currently under its effects.",
             "traits": [],
             "actions": "three"
           },
@@ -3638,7 +3890,13 @@
         ]
       },
       "recallKnowledgeText": "DC 23 (Religion)",
-      "languagesText": "Diabolic, Draconic, Empyrean, Tien, telepathy 100 feet"
+      "languagesText": "Diabolic, Draconic, Empyrean, Tien, telepathy 100 feet",
+      "traitLinks": [
+        {
+          "label": "celestial",
+          "slug": "celestial"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

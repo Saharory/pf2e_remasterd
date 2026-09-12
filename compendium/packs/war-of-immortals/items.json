@@ -16,7 +16,13 @@
       "category": "worn",
       "price": "",
       "usage": "wornanklets",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -44,7 +50,7 @@
     "systemVersion": "1.2.10",
     "name": "Combat Fishing Pole",
     "slug": "combat-fishing-pole-war-of-immortals",
-    "descr": "The combat fishing pole is a sturdy and flexible pole that can be used as a weapon in melee. When a lure is attached to a combat fishing pole, it can be used to make thrown weapon attacks with a range increment of 20 feet, though the lure must then be reeled back in with an Interact action before the weapon can be used at range again (see the tethered trait). The ranged trip, tethered, thrown, and versatile P traits of the combat fishing pole only apply to thrown attacks made with a lure; throwing the pole itself leaves you with no practical way to retrieve it other than moving to its location and picking it up. A combat fishing pole can be used alongside fishing tackle to fish, and it adds its item bonus from weapon potency runes (if any) as an item bonus on checks to fish when used in this manner.",
+    "descr": "The combat fishing pole is a sturdy and flexible pole that can be used as a weapon in melee. When a lure is attached to a combat fishing pole, it can be used to make thrown weapon attacks with a range increment of 20 feet, though the lure must then be reeled back in with an [Interact](/action/interact-player-core) action before the weapon can be used at range again (see the [tethered](/trait/tethered) trait). The ranged trip, tethered, thrown, and [versatile P](/trait/versatile) traits of the combat fishing pole only apply to thrown attacks made with a lure; throwing the pole itself leaves you with no practical way to retrieve it other than moving to its location and picking it up. A combat fishing pole can be used alongside fishing tackle to fish, and it adds its item bonus from weapon potency runes (if any) as an item bonus on checks to fish when used in this manner.",
     "data": {
       "level": 0,
       "rarity": "uncommon",
@@ -62,7 +68,25 @@
       "hands": "twos",
       "weaponType": "melee",
       "weaponCategory": "martial",
-      "weaponGroup": "flail"
+      "weaponGroup": "flail",
+      "traitLinks": [
+        {
+          "label": "ranged-trip",
+          "slug": "ranged-trip"
+        },
+        {
+          "label": "tethered",
+          "slug": "tethered"
+        },
+        {
+          "label": "thrown-20",
+          "slug": "thrown"
+        },
+        {
+          "label": "versatile-p",
+          "slug": "versatile"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -93,7 +117,7 @@
     "systemVersion": "1.2.10",
     "name": "Cursed Immaculate Instrument",
     "slug": "cursed-immaculate-instrument-war-of-immortals",
-    "descr": "This Immaculate Instrument has been cursed by the sublime breath it was taken from, causing it to warp, rust, or tarnish, though the holder of the instrument cannot perceive this and rationalizes away any attempt to explain the instrument's obviously cursed nature. Whenever the *cursed immaculate instrument* is used to produce a work, the holder must succeed on a Flat DC 16 or the work fails, leaving the holder frustrated and raising the DC of subsequent flat checks by 1. When the DC reaches 20, the work fails as normal, but the holder continues to attempt it fruitlessly to the exclusion of all other activities, including eating, drinking, and sleep, until they expire or the curse is broken.",
+    "descr": "This [Immaculate Instrument](/item/immaculate-instrument-war-of-immortals) has been cursed by the sublime breath it was taken from, causing it to warp, rust, or tarnish, though the holder of the instrument cannot perceive this and rationalizes away any attempt to explain the instrument's obviously cursed nature. Whenever the *cursed immaculate instrument* is used to produce a work, the holder must succeed on a Flat DC 16 or the work fails, leaving the holder frustrated and raising the DC of subsequent flat checks by 1. When the DC reaches 20, the work fails as normal, but the holder continues to attempt it fruitlessly to the exclusion of all other activities, including eating, drinking, and sleep, until they expire or the curse is broken.",
     "data": {
       "level": 12,
       "rarity": "rare",
@@ -106,7 +130,25 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "artifact",
+          "slug": "artifact"
+        },
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -138,7 +180,7 @@
     "systemVersion": "1.2.10",
     "name": "Dragon-Lotus Drum",
     "slug": "dragon-lotus-drum-war-of-immortals",
-    "descr": "This traditional barrel drum has tacked heads in the old military style of Hwanggot and is painted with a many-colored imperial dragon twined around white and pink lotuses, a symbol of long memory. The dragon holds a scroll in its two front claws that bears the inscription \"So that the memory of war may be truthfully recalled.\"\n\nA creature who activates the drum is bound to join its army after death. Once their spirit has fought in a hundred and one battles, they are freed to face whatever fate their soul has earned. However, until this duty is discharged, the dead creature cannot be resurrected, nor can their soul be captured by any other means.\n\n---\n\n**Activate—Summon Dragon-Lotus Army** 3 (concentrate, incarnate, manipulate)\n\n**Frequency** once every 20 years\n\n**Effect** Spend a Mythic Point; beating the drum summons a spectral army to an area you designate within 500 feet. The army takes its Arrive action when you finish playing. At the end of your next turn, the army Strides up to 60 feet and then takes its Depart action. The Dragon-Lotus Army follows your orders and attempts to not harm you and your allies when possible. The spectral force isn't fully a creature. It can't take any other actions, nor can it be targeted or harmed by Strikes, spells, or other effects unless they would be able to target or end a spell effect (such as Dispel Magic). The army is Gargantuan, but it doesn't block movement.\n\n**Arrive** (emotion, fear, mental, sonic) *The Sound of Thunder* The beating of the drum amplifies to become like the stomping of hundreds of booted feet. The Dragon- Lotus Army appears in perfect formation and gives a brief, staccato battle cry. All enemies in a area around the army take bludgeoning, piercing, or slashing damage (whichever would be most harmful at the GM's discretion) with a basic Reflex DC 48 save. A creature who critically fails its save is also knocked Prone.\n\n---\n\n**Destruction** If the *Dragon-Lotus Drum* is captured by an enemy of Hwanggot (such as a warring rival nation) and then played continually for 1 week while singing anthems that disparage Hwanggot and its leaders, the drum falls to pieces and the souls bound to it are obliterated.",
+    "descr": "This traditional barrel drum has tacked heads in the old military style of Hwanggot and is painted with a many-colored imperial dragon twined around white and pink lotuses, a symbol of long memory. The dragon holds a scroll in its two front claws that bears the inscription \"So that the memory of war may be truthfully recalled.\"\n\nA creature who activates the drum is bound to join its army after death. Once their spirit has fought in a hundred and one battles, they are freed to face whatever fate their soul has earned. However, until this duty is discharged, the dead creature cannot be resurrected, nor can their soul be captured by any other means.\n\n---\n\n**Activate—Summon Dragon-Lotus Army** 3 (concentrate, incarnate, manipulate)\n\n**Frequency** once every 20 years\n\n**Effect** Spend a Mythic Point; beating the drum summons a spectral army to an area you designate within 500 feet. The army takes its Arrive action when you finish playing. At the end of your next turn, the army Strides up to 60 feet and then takes its Depart action. The Dragon-Lotus Army follows your orders and attempts to not harm you and your allies when possible. The spectral force isn't fully a creature. It can't take any other actions, nor can it be targeted or harmed by Strikes, spells, or other effects unless they would be able to target or end a spell effect (such as [Dispel Magic](/spell/dispel-magic-player-core)). The army is Gargantuan, but it doesn't block movement.\n\n**Arrive** (emotion, fear, mental, sonic) *The Sound of Thunder* The beating of the drum amplifies to become like the stomping of hundreds of booted feet. The Dragon- Lotus Army appears in perfect formation and gives a brief, staccato battle cry. All enemies in a area around the army take bludgeoning, piercing, or slashing damage (whichever would be most harmful at the GM's discretion) with a basic Reflex DC 48 save. A creature who critically fails its save is also knocked [Prone](/condition/prone-player-core).\n\n---\n\n**Destruction** If the *Dragon-Lotus Drum* is captured by an enemy of Hwanggot (such as a warring rival nation) and then played continually for 1 week while singing anthems that disparage Hwanggot and its leaders, the drum falls to pieces and the souls bound to it are obliterated.",
     "data": {
       "level": 24,
       "rarity": "unique",
@@ -150,7 +192,21 @@
       "category": "held",
       "price": "",
       "usage": "held-in-two-hands",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "artifact",
+          "slug": "artifact"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -191,7 +247,13 @@
       "category": "worn",
       "price": "",
       "usage": "wornbracers",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -235,7 +297,17 @@
       "hands": "twos",
       "weaponType": "melee",
       "weaponCategory": "simple",
-      "weaponGroup": "polearm"
+      "weaponGroup": "polearm",
+      "traitLinks": [
+        {
+          "label": "sweep",
+          "slug": "sweep"
+        },
+        {
+          "label": "versatile-s",
+          "slug": "versatile"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -264,7 +336,7 @@
     "systemVersion": "1.2.10",
     "name": "Final Scalecloak",
     "slug": "final-scalecloak-war-of-immortals",
-    "descr": "Fashioned from a swath of Mogaru's red-and-black hide and trimmed with Agyra's rough scales in green, blue, and white, this cloak draws upon the power of both kaiju, but at considerable cost. Any kaiju within a 5-mile radius of the *Final Scalecloak* can sense the presence and nature of the item, and can also determine whether it's being worn by a mortal. This sense grows stronger as the item and kaiju near one another, until the kaiju can pinpoint exactly where the cloak is and who currently possesses it.\n\nWhen worn, the *Final Scalecloak* grants you resistance 15 to physical and precision damage, immunity to electricity, and a Fly speed of 60 feet. You are unaffected by strong winds while flying.\n\n---\n\n**Activate—Commune with Kaiju** 2 (concentrate, manipulate, primal)\n\n**Frequency** once per day\n\n**Effect** Spend a Mythic Point; you gain the effects of a 6th-rank Telepathy spell but can use it only to communicate with Gargantuan animals and beasts. Most kaiju are hostile toward you for wearing the *Final Scalecloak*, however, requiring great effort to calm them enough to have a conversation.\n\n---\n\n**Activate—Embody the Storm** 2 (concentrate, manipulate, primal)\n\n**Frequency** once per hour\n\n**Effect** Spend a Mythic Point; a nimbus of crackling electricity surrounds you for 1 minute. You gain a +4 status bonus to AC against ranged projectiles that are at least partly made of metal. If a foe attempts to Strike you with an unarmed attack or melee attack with a weapon at least partly made of metal, that creature takes 3d10 electricity] damage (basic Reflex DC 40 save).\n\nEffect: Embody The Storm\n\n---\n\n**Destruction** The *Final Scalecloak* is torn to shreds if the wearer is struck by an attack or effect from both Agyra and Mogaru within the same round.",
+    "descr": "Fashioned from a swath of Mogaru's red-and-black hide and trimmed with Agyra's rough scales in green, blue, and white, this cloak draws upon the power of both kaiju, but at considerable cost. Any kaiju within a 5-mile radius of the *Final Scalecloak* can sense the presence and nature of the item, and can also determine whether it's being worn by a mortal. This sense grows stronger as the item and kaiju near one another, until the kaiju can pinpoint exactly where the cloak is and who currently possesses it.\n\nWhen worn, the *Final Scalecloak* grants you resistance 15 to physical and precision damage, immunity to electricity, and a Fly speed of 60 feet. You are unaffected by strong winds while flying.\n\n---\n\n**Activate—Commune with Kaiju** 2 (concentrate, manipulate, primal)\n\n**Frequency** once per day\n\n**Effect** Spend a Mythic Point; you gain the effects of a 6th-rank [Telepathy](/spell/telepathy-player-core) spell but can use it only to communicate with Gargantuan animals and beasts. Most kaiju are hostile toward you for wearing the *Final Scalecloak*, however, requiring great effort to calm them enough to have a conversation.\n\n---\n\n**Activate—Embody the Storm** 2 (concentrate, manipulate, primal)\n\n**Frequency** once per hour\n\n**Effect** Spend a Mythic Point; a nimbus of crackling electricity surrounds you for 1 minute. You gain a +4 status bonus to AC against ranged projectiles that are at least partly made of metal. If a foe attempts to Strike you with an unarmed attack or melee attack with a weapon at least partly made of metal, that creature takes 3d10 electricity] damage (basic Reflex DC 40 save).\n\nEffect: Embody The Storm\n\n---\n\n**Destruction** The *Final Scalecloak* is torn to shreds if the wearer is struck by an attack or effect from both Agyra and Mogaru within the same round.",
     "data": {
       "level": 20,
       "rarity": "unique",
@@ -277,7 +349,25 @@
       "category": "worn",
       "price": "",
       "usage": "worncloak",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "artifact",
+          "slug": "artifact"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -309,7 +399,7 @@
     "systemVersion": "1.2.10",
     "name": "Fishing Lure",
     "slug": "fishing-lure-war-of-immortals",
-    "descr": "When a lure is attached to a combat fishing pole, it can be used to make thrown weapon attacks with a range increment of 20 feet, though the lure must then be reeled back in with an Interact action before the weapon can be used at range again (see the tethered trait). The ranged trip, tethered, thrown, and versatile P traits of the combat fishing pole only apply to thrown attacks made with a lure.",
+    "descr": "When a lure is attached to a combat fishing pole, it can be used to make thrown weapon attacks with a range increment of 20 feet, though the lure must then be reeled back in with an [Interact](/action/interact-player-core) action before the weapon can be used at range again (see the [tethered](/trait/tethered) trait). The ranged trip, tethered, thrown, and [versatile P](/trait/versatile) traits of the combat fishing pole only apply to thrown attacks made with a lure.",
     "data": {
       "level": 0,
       "rarity": "uncommon",
@@ -319,7 +409,13 @@
       "category": "ammunition",
       "price": "2 sp",
       "usage": "",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -347,7 +443,7 @@
     "systemVersion": "1.2.10",
     "name": "Freedom's Flame",
     "slug": "freedom-s-flame-war-of-immortals",
-    "descr": "This *+4 major striking holy morningstar* is made of wood and adorned with golden flames traced along its haft and head. It has the razing trait, and it ignores the Hardness of structures used to hold those you feel are being unjustly imprisoned (subject to the GM's discretion).\n\n---\n\n**Activate—Break Free** 2 (concentrate, manipulate)\n\n**Effect** Spend a Mythic Point; *Freedom's Flame* blazes with a rose-red light, creating a beacon of spiritual strength. Any creature within 120 feet that's currently under a compulsion or control effect can immediately attempt a new saving throw to break free of the effect, with a +3 status bonus.\n\n---\n\n**Activate—Holy Retribution** f (concentrate, divine)\n\n**Trigger** Your previous action was to use *Freedom's Flame* to Strike a foe you have witnessed use a compulsion or control effect on an ally within the past hour\n\n**Frequency** once per day\n\n**Effect** Spend a Mythic Point; your blow is empowered by the righteousness of Milani. The target's holy weakness is triggered again or, if the target doesn't have a holy weakness, it takes 15 spirit] damage.\n\n---\n\n**Destruction** *Freedom's Flame* is sliced in two if struck by a Final Blade that has been anointed with Unholy Water created by a level 20 unholy creature.",
+    "descr": "This *+4 major striking holy morningstar* is made of wood and adorned with golden flames traced along its haft and head. It has the [razing](/trait/razing) trait, and it ignores the Hardness of structures used to hold those you feel are being unjustly imprisoned (subject to the GM's discretion).\n\n---\n\n**Activate—Break Free** 2 (concentrate, manipulate)\n\n**Effect** Spend a Mythic Point; *Freedom's Flame* blazes with a rose-red light, creating a beacon of spiritual strength. Any creature within 120 feet that's currently under a compulsion or control effect can immediately attempt a new saving throw to break free of the effect, with a +3 status bonus.\n\n---\n\n**Activate—Holy Retribution** f (concentrate, divine)\n\n**Trigger** Your previous action was to use *Freedom's Flame* to Strike a foe you have witnessed use a compulsion or control effect on an ally within the past hour\n\n**Frequency** once per day\n\n**Effect** Spend a Mythic Point; your blow is empowered by the righteousness of Milani. The target's holy weakness is triggered again or, if the target doesn't have a holy weakness, it takes 15 spirit] damage.\n\n---\n\n**Destruction** *Freedom's Flame* is sliced in two if struck by a Final Blade that has been anointed with [Unholy Water](/item/unholy-water-gm-core) created by a level 20 unholy creature.",
     "data": {
       "level": 21,
       "rarity": "unique",
@@ -366,7 +462,29 @@
       "hands": "one",
       "weaponType": "melee",
       "weaponCategory": "simple",
-      "weaponGroup": "club"
+      "weaponGroup": "club",
+      "traitLinks": [
+        {
+          "label": "artifact",
+          "slug": "artifact"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "razing",
+          "slug": "razing"
+        },
+        {
+          "label": "versatile-p",
+          "slug": "versatile"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -414,7 +532,17 @@
       "hands": "one",
       "weaponType": "melee",
       "weaponCategory": "martial",
-      "weaponGroup": "sword"
+      "weaponGroup": "sword",
+      "traitLinks": [
+        {
+          "label": "deadly-d10",
+          "slug": "deadly"
+        },
+        {
+          "label": "versatile-s",
+          "slug": "versatile"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -461,7 +589,25 @@
       "hands": "twos",
       "weaponType": "melee",
       "weaponCategory": "martial",
-      "weaponGroup": "pick"
+      "weaponGroup": "pick",
+      "traitLinks": [
+        {
+          "label": "deadly-d10",
+          "slug": "deadly"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "trip",
+          "slug": "trip"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -504,7 +650,17 @@
       "category": "adventuringGear",
       "price": "",
       "usage": "worn",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "extradimensional",
+          "slug": "extradimensional"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -533,7 +689,7 @@
     "systemVersion": "1.2.10",
     "name": "Immaculate Instrument",
     "slug": "immaculate-instrument-war-of-immortals",
-    "descr": "This object, made of silver light, takes the form of a small musical instrument, prop, or other tool associated with a specific art form. The holder of the *immaculate instrument* never suffers from creative blocks of any kind and their work is always insightful and skilled. A character who uses the *immaculate instrument* to Perform or Craft can attempt the check at mythic proficiency once per month, and as long as they possess their *immaculate instrument*, they treat any critical failures with these skills as failures.\n\n---\n\n**Destruction** If the holder uses the *immaculate instrument* to intentionally produce a work that is not just mediocre or crass, but one that devalues the public opinion of the art form itself in a showing of at least 100 spectators, the instrument fades away in shame.",
+    "descr": "This object, made of silver light, takes the form of a small musical instrument, prop, or other tool associated with a specific art form. The holder of the *immaculate instrument* never suffers from creative blocks of any kind and their work is always insightful and skilled. A character who uses the *immaculate instrument* to [Perform](/action/perform-player-core) or [Craft](/action/craft-player-core) can attempt the check at mythic proficiency once per month, and as long as they possess their *immaculate instrument*, they treat any critical failures with these skills as failures.\n\n---\n\n**Destruction** If the holder uses the *immaculate instrument* to intentionally produce a work that is not just mediocre or crass, but one that devalues the public opinion of the art form itself in a showing of at least 100 spectators, the instrument fades away in shame.",
     "data": {
       "level": 12,
       "rarity": "rare",
@@ -545,7 +701,21 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "artifact",
+          "slug": "artifact"
+        },
+        {
+          "label": "divine",
+          "slug": "divine"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -594,7 +764,17 @@
       "hands": "one",
       "weaponType": "ranged",
       "weaponCategory": "martial",
-      "weaponGroup": "sling"
+      "weaponGroup": "sling",
+      "traitLinks": [
+        {
+          "label": "concussive",
+          "slug": "concussive"
+        },
+        {
+          "label": "propulsive",
+          "slug": "propulsive"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -640,7 +820,13 @@
       "speedPenalty": 0,
       "str": 1,
       "armorCategory": "light",
-      "armorGroup": "plate"
+      "armorGroup": "plate",
+      "traitLinks": [
+        {
+          "label": "flexible",
+          "slug": "flexible"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -683,7 +869,8 @@
       "speedPenalty": -5,
       "str": 3,
       "armorCategory": "medium",
-      "armorGroup": "chain"
+      "armorGroup": "chain",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -727,7 +914,21 @@
       "hands": "twos",
       "weaponType": "melee",
       "weaponCategory": "martial",
-      "weaponGroup": "club"
+      "weaponGroup": "club",
+      "traitLinks": [
+        {
+          "label": "backswing",
+          "slug": "backswing"
+        },
+        {
+          "label": "tearing",
+          "slug": "tearing"
+        },
+        {
+          "label": "versatile-b",
+          "slug": "versatile"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -768,7 +969,17 @@
       "category": "other",
       "price": "70000 gp",
       "usage": "etched-onto-armor",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -797,7 +1008,7 @@
     "systemVersion": "1.2.10",
     "name": "Mythic Resilient",
     "slug": "mythic-resilient-war-of-immortals",
-    "descr": "*Mythic resilient* runes imbue armor with unrivaled protection from a wide array of effects. The armor grants a +4 item bonus to saving throws to the wearer.\n\n---\n\n**Activate—Defy Obliteration** r (concentration)\n\n**Trigger** You critically fail a saving throw\n\n**Effect** Spend a Mythic Point; if the triggering save was made due to an effect created by a mythic monster, hazard, or other effect, it's a normal failure instead. If the save was made due to an effect that wasn't mythic, it becomes a success.\n\n---\n\n**Craft Requirements** *Mythic resilient* runes can only be crafted, etched, or transferred by a mythic character capable of making a Crafting check at mythic proficiency (such as by having the Artisan's Calling).",
+    "descr": "*Mythic [resilient](/item/resilient-gm-core)* runes imbue armor with unrivaled protection from a wide array of effects. The armor grants a +4 item bonus to saving throws to the wearer.\n\n---\n\n**Activate—Defy Obliteration** r (concentration)\n\n**Trigger** You critically fail a saving throw\n\n**Effect** Spend a Mythic Point; if the triggering save was made due to an effect created by a mythic monster, hazard, or other effect, it's a normal failure instead. If the save was made due to an effect that wasn't mythic, it becomes a success.\n\n---\n\n**Craft Requirements** *Mythic resilient* runes can only be crafted, etched, or transferred by a mythic character capable of making a Crafting check at mythic proficiency (such as by having the Artisan's Calling).",
     "data": {
       "level": 20,
       "rarity": "rare",
@@ -808,7 +1019,17 @@
       "category": "other",
       "price": "70000 gp",
       "usage": "etched-onto-armor",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -837,7 +1058,7 @@
     "systemVersion": "1.2.10",
     "name": "Mythic Striking",
     "slug": "mythic-striking-war-of-immortals",
-    "descr": "This weapon is filled with unmatched destructive power. The weapon deals five weapon damage dice.\n\n---\n\n**Activate—Unstoppable Devastation** r (concentration)\n\n**Trigger** You roll the weapon damage dice for a Strike with this weapon and do not like the result\n\n**Effect** Spend a Mythic Point and reroll your weapon damage dice, taking the higher of the two results.\n\n---\n\n**Craft Requirements** *Mythic striking* runes can only be crafted, etched, or transferred by a mythic character capable of making a Crafting check at mythic proficiency (such as by having the Artisan's Calling).",
+    "descr": "This weapon is filled with unmatched destructive power. The weapon deals five weapon damage dice.\n\n---\n\n**Activate—Unstoppable Devastation** r (concentration)\n\n**Trigger** You roll the weapon damage dice for a Strike with this weapon and do not like the result\n\n**Effect** Spend a Mythic Point and reroll your weapon damage dice, taking the higher of the two results.\n\n---\n\n**Craft Requirements** *Mythic [striking](/item/striking-gm-core)* runes can only be crafted, etched, or transferred by a mythic character capable of making a Crafting check at mythic proficiency (such as by having the Artisan's Calling).",
     "data": {
       "level": 20,
       "rarity": "rare",
@@ -848,7 +1069,17 @@
       "category": "other",
       "price": "70000 gp",
       "usage": "etched-onto-a-weapon",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -888,7 +1119,17 @@
       "category": "other",
       "price": "70000 gp",
       "usage": "etched-onto-a-weapon",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -932,7 +1173,13 @@
       "hands": "one",
       "weaponType": "melee",
       "weaponCategory": "simple",
-      "weaponGroup": "axe"
+      "weaponGroup": "axe",
+      "traitLinks": [
+        {
+          "label": "sweep",
+          "slug": "sweep"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -970,7 +1217,13 @@
       "category": "worn",
       "price": "",
       "usage": "worncloak",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1015,7 +1268,13 @@
       "speedPenalty": 0,
       "str": 0,
       "armorCategory": "light",
-      "armorGroup": "wood"
+      "armorGroup": "wood",
+      "traitLinks": [
+        {
+          "label": "aquadynamic",
+          "slug": "aquadynamic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1060,7 +1319,13 @@
       "speedPenalty": 0,
       "str": 1,
       "armorCategory": "light",
-      "armorGroup": "wood"
+      "armorGroup": "wood",
+      "traitLinks": [
+        {
+          "label": "laminar",
+          "slug": "laminar"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1088,7 +1353,7 @@
     "systemVersion": "1.2.10",
     "name": "Shadowpiercer",
     "slug": "shadowpiercer-war-of-immortals",
-    "descr": "Muted, silvery moonlight gleams along the curved blade of this *+4 major striking ghost touch spear*. Braided tassels of horsehair dangle from its sturdy haft, and archaic runes in Nidalese script shimmer along the weapon in the presence of shadow magic.\n\n*Shadowpiercer* ignores immunity and resistance to precision damage of creatures with the incorporeal or shadow trait, and deals an additional 2d6 precision damage to such creatures. While wielding *Shadowpiercer*, you gain a +2 status bonus to saving throws against darkness and shadow effects; this bonus also applies to allies within 60 feet of you while you wield the spear. If you are a worshipper of Zon Kuthon, you are Drained 4 and Enfeebled 4 while carrying or wielding *Shadowpiercer*. If you use a darkness or shadow effect while carrying or wielding *Shadowpiercer*, you become enfeebled 4; this condition's value reduces by 1 at the start of each day you do not have physical contact with *Shadowpiercer*.\n\n---\n\n**Activate—Absorb Shadows** 2 (concentrate, healing, manipulate, occult)\n\n**Frequency** once per day\n\n**Effect** You touch *Shadowpiercer* to a darkness or shadow effect to siphon its energy and bolster yourself. You gain a number of temporary Hit Points equal to four times the effect's counteract rank. These temporary Hit Points last for 1 hour. In addition, if the effect is causing darkness, that darkness is automatically counteracted within 15 feet of you for as long as you have those temporary Hit Points. This doesn't provide light—it merely restores the area to its natural illumination level.\n\n---\n\n**Activate—Rebuff Gloom** r (concentrate, occult)\n\n**Trigger** You or an ally within 60 feet is targeted by a darkness or shadow effect\n\n**Requirements** You don't currently have the drained condition\n\n**Effect** Spend a Mythic Point; the spear drains your vitality to counteract the effect. You can attempt to counteract the effect (+46 modifier level, counteract rank 10). You can activate this effect without having a Mythic Point available but doing so makes you Drained 2.\n\n---\n\n**Destruction** *Shadowpiercer* simply disappears if a worshipper of Zon-Kuthon casts a 10th-rank Darkness spell on it once a day for an entire month while it is unattended.",
+    "descr": "Muted, silvery moonlight gleams along the curved blade of this *+4 major striking ghost touch spear*. Braided tassels of horsehair dangle from its sturdy haft, and archaic runes in Nidalese script shimmer along the weapon in the presence of shadow magic.\n\n*Shadowpiercer* ignores immunity and resistance to precision damage of creatures with the incorporeal or [shadow](/trait/shadow) trait, and deals an additional 2d6 precision damage to such creatures. While wielding *Shadowpiercer*, you gain a +2 status bonus to saving throws against darkness and shadow effects; this bonus also applies to allies within 60 feet of you while you wield the spear. If you are a worshipper of Zon Kuthon, you are [Drained 4](/condition/drained-player-core) and [Enfeebled 4](/condition/enfeebled-player-core) while carrying or wielding *Shadowpiercer*. If you use a darkness or shadow effect while carrying or wielding *Shadowpiercer*, you become enfeebled 4; this condition's value reduces by 1 at the start of each day you do not have physical contact with *Shadowpiercer*.\n\n---\n\n**Activate—Absorb Shadows** 2 (concentrate, healing, manipulate, occult)\n\n**Frequency** once per day\n\n**Effect** You touch *Shadowpiercer* to a darkness or shadow effect to siphon its energy and bolster yourself. You gain a number of temporary Hit Points equal to four times the effect's counteract rank. These temporary Hit Points last for 1 hour. In addition, if the effect is causing darkness, that darkness is automatically counteracted within 15 feet of you for as long as you have those temporary Hit Points. This doesn't provide light—it merely restores the area to its natural illumination level.\n\n---\n\n**Activate—Rebuff Gloom** r (concentrate, occult)\n\n**Trigger** You or an ally within 60 feet is targeted by a darkness or shadow effect\n\n**Requirements** You don't currently have the drained condition\n\n**Effect** Spend a Mythic Point; the spear drains your vitality to counteract the effect. You can attempt to counteract the effect (+46 modifier level, counteract rank 10). You can activate this effect without having a Mythic Point available but doing so makes you Drained 2.\n\n---\n\n**Destruction** *Shadowpiercer* simply disappears if a worshipper of Zon-Kuthon casts a 10th-rank [Darkness](/spell/darkness-player-core) spell on it once a day for an entire month while it is unattended.",
     "data": {
       "level": 23,
       "rarity": "unique",
@@ -1107,7 +1372,29 @@
       "hands": "one",
       "weaponType": "melee",
       "weaponCategory": "simple",
-      "weaponGroup": "spear"
+      "weaponGroup": "spear",
+      "traitLinks": [
+        {
+          "label": "artifact",
+          "slug": "artifact"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "monk",
+          "slug": "monk"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        },
+        {
+          "label": "thrown-20",
+          "slug": "thrown"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1156,7 +1443,17 @@
       "hands": "one",
       "weaponType": "melee",
       "weaponCategory": "simple",
-      "weaponGroup": "knife"
+      "weaponGroup": "knife",
+      "traitLinks": [
+        {
+          "label": "cursed",
+          "slug": "cursed"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1195,7 +1492,13 @@
       "category": "worn",
       "price": "",
       "usage": "wornbelt",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1233,7 +1536,13 @@
       "category": "consumable",
       "price": "1 sp",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1271,7 +1580,13 @@
       "category": "worn",
       "price": "",
       "usage": "wornshoes",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1309,7 +1624,13 @@
       "category": "worn",
       "price": "",
       "usage": "wornheadwear",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "divine",
+          "slug": "divine"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1337,7 +1658,7 @@
     "systemVersion": "1.2.10",
     "name": "Wandering Pipe",
     "slug": "wandering-pipe-war-of-immortals",
-    "descr": "This long-stemmed pipe always emits a thin plume of smoke, even when not lit or in active use. The exact material the pipe is made of varies in every accounting; sometimes made of polished oak, other times ebony, sometimes stone, and in one Erutaki legend the pipe is made of pure ice that somehow holds a flame. Though the *wandering pipe* is not intelligent, it is rumored to possess a certain capriciousness, leaving the possession of mortals whose lives are not exciting enough but inevitably finding its way back to its one true owner.\n\nWhen held in one hand, the pipe grants its holder a +2 circumstance bonus to Deception checks but imposes a -1 circumstance penalty to Stealth checks made to Hide or Sneak, as its telltale plume of smoke gives away the bearer's position.\n\n**Activate—Smoky Protections** 2 (concentrate, manipulate, primal)\n\n**Frequency** once per hour; **Cost** 1 Mythic Point\n\n---\n\n**Effect** For the next 10 minutes, smoke gathers around you buoying your steps and protecting you. For the duration of this effect, you gain a fly Speed equal to your land Speed and automatically hover in place, and you have concealment from ranged attacks.\n\nEffect: Smoky Protections\n\n---\n\n**Destruction** The *wandering pipe* can be broken as easily as any other wooden pipe, but it always reforms afterward in the hands of the Immortal Trickster or one of his bonded mortals. It can only be broken by the hands of one of the Trickster's bonded mortals who is an honest person acting with good intent; it is said that if this occurs, the Trickster would also be significantly weakened as a result.",
+    "descr": "This long-stemmed pipe always emits a thin plume of smoke, even when not lit or in active use. The exact material the pipe is made of varies in every accounting; sometimes made of polished oak, other times ebony, sometimes stone, and in one Erutaki legend the pipe is made of pure ice that somehow holds a flame. Though the *wandering pipe* is not intelligent, it is rumored to possess a certain capriciousness, leaving the possession of mortals whose lives are not exciting enough but inevitably finding its way back to its one true owner.\n\nWhen held in one hand, the pipe grants its holder a +2 circumstance bonus to Deception checks but imposes a -1 circumstance penalty to Stealth checks made to Hide or [Sneak](/action/sneak-player-core), as its telltale plume of smoke gives away the bearer's position.\n\n**Activate—Smoky Protections** 2 (concentrate, manipulate, primal)\n\n**Frequency** once per hour; **Cost** 1 Mythic Point\n\n---\n\n**Effect** For the next 10 minutes, smoke gathers around you buoying your steps and protecting you. For the duration of this effect, you gain a fly Speed equal to your land Speed and automatically hover in place, and you have concealment from ranged attacks.\n\nEffect: Smoky Protections\n\n---\n\n**Destruction** The *wandering pipe* can be broken as easily as any other wooden pipe, but it always reforms afterward in the hands of the Immortal Trickster or one of his bonded mortals. It can only be broken by the hands of one of the Trickster's bonded mortals who is an honest person acting with good intent; it is said that if this occurs, the Trickster would also be significantly weakened as a result.",
     "data": {
       "level": 11,
       "rarity": "unique",
@@ -1350,7 +1671,25 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "—"
+      "bulk": "—",
+      "traitLinks": [
+        {
+          "label": "artifact",
+          "slug": "artifact"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1397,7 +1736,13 @@
       "hands": "one",
       "weaponType": "melee",
       "weaponCategory": "simple",
-      "weaponGroup": "club"
+      "weaponGroup": "club",
+      "traitLinks": [
+        {
+          "label": "versatile-p",
+          "slug": "versatile"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1441,7 +1786,17 @@
       "hands": "one",
       "weaponType": "melee",
       "weaponCategory": "martial",
-      "weaponGroup": "dart"
+      "weaponGroup": "dart",
+      "traitLinks": [
+        {
+          "label": "tethered",
+          "slug": "tethered"
+        },
+        {
+          "label": "thrown-30",
+          "slug": "thrown"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1470,7 +1825,7 @@
     "systemVersion": "1.2.10",
     "name": "Worldforge",
     "slug": "worldforge-war-of-immortals",
-    "descr": "Mounted upon a base of iron, inscribed with innumerable runes, this immense anvil can be used to forge nearly anything into reality. Stories claim that even metaphorical and abstract concepts, including \"a graveknight's mercy\" and \"the tears of a living wildfire\" have been hammered into solid shape upon *Worldforge*, though the tales disagree about what form those objects took.\n\nThe cost of using *Worldforge*, however, is prohibitive for mere mortals. In addition to the fuel and metal it consumes, *Worldforge* draws upon the user's physical and spiritual strength to sustain the act of creation. The demand of its magic is such that no one save gods, or those who are nearly gods, can use it and survive.\n\n---\n\n**Activate—Wondrous Forge** (downtime, manipulate)\n\n**Requirements** You have the ability to make a Crafting check at mythic proficiency (such as that granted by the Artisan's Calling)\n\n**Effect** After spending 2 days setting up the work (or 1 if you have the desired item's formula) and supplying *Worldforge* with adequate raw materials (as determined by the GM), you attempt to Craft something upon it. The DC and final cost of the item is also determined by the GM. For each day you spend Crafting, you must expend a Mythic Point or your Drained condition increases by 1; this condition can't be reduced until you have finished Crafting the item or you abandon the project. Each day spent Crafting upon the *Worldforge* counts as 10 days of normal Crafting time. If the value of your drained condition reaches 4, you must attempt a Fortitude DC 46 save or die. If you fail this save or if you abandon the activity, what remains of your project shatters irrecoverably into a multitude of useless fragments.\n\n---\n\n**Destruction** *Worldforge* can't be destroyed as long as Torag maintains his divinity.",
+    "descr": "Mounted upon a base of iron, inscribed with innumerable runes, this immense anvil can be used to forge nearly anything into reality. Stories claim that even metaphorical and abstract concepts, including \"a graveknight's mercy\" and \"the tears of a living wildfire\" have been hammered into solid shape upon *Worldforge*, though the tales disagree about what form those objects took.\n\nThe cost of using *Worldforge*, however, is prohibitive for mere mortals. In addition to the fuel and metal it consumes, *Worldforge* draws upon the user's physical and spiritual strength to sustain the act of creation. The demand of its magic is such that no one save gods, or those who are nearly gods, can use it and survive.\n\n---\n\n**Activate—Wondrous Forge** (downtime, manipulate)\n\n**Requirements** You have the ability to make a Crafting check at mythic proficiency (such as that granted by the Artisan's Calling)\n\n**Effect** After spending 2 days setting up the work (or 1 if you have the desired item's formula) and supplying *Worldforge* with adequate raw materials (as determined by the GM), you attempt to Craft something upon it. The DC and final cost of the item is also determined by the GM. For each day you spend Crafting, you must expend a Mythic Point or your [Drained](/condition/drained-player-core) condition increases by 1; this condition can't be reduced until you have finished Crafting the item or you abandon the project. Each day spent Crafting upon the *Worldforge* counts as 10 days of normal Crafting time. If the value of your drained condition reaches 4, you must attempt a Fortitude DC 46 save or die. If you fail this save or if you abandon the activity, what remains of your project shatters irrecoverably into a multitude of useless fragments.\n\n---\n\n**Destruction** *Worldforge* can't be destroyed as long as Torag maintains his divinity.",
     "data": {
       "level": 25,
       "rarity": "unique",
@@ -1483,7 +1838,25 @@
       "category": "held",
       "price": "",
       "usage": "held-in-one-hand",
-      "bulk": "15"
+      "bulk": "15",
+      "traitLinks": [
+        {
+          "label": "artifact",
+          "slug": "artifact"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

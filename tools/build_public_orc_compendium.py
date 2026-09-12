@@ -17,6 +17,7 @@ import copy
 import json
 import re
 import shutil
+import uuid
 from pathlib import Path
 from typing import Any
 
@@ -90,6 +91,88 @@ FOUNDRY_MARKERS = (
     "[[/",
 )
 
+# Parameterized traits carry a value on the item (for example Deadly d8 or
+# Versatile P), but the value does not create a different rules concept. Keep
+# the complete label on the item and route every variant to one canonical trait
+# entry. This also prevents the Traits collection from filling with identical
+# descriptions for each die, range, or damage type.
+PARAMETERIZED_TRAIT_NAMES = {
+    "additive": "Additive",
+    "attached": "Attached",
+    "capacity": "Capacity",
+    "deadly": "Deadly",
+    "deflecting": "Deflecting",
+    "entrench": "Entrench",
+    "fatal": "Fatal",
+    "fatal-aim": "Fatal Aim",
+    "hefty": "Hefty",
+    "integrated": "Integrated",
+    "jousting": "Jousting",
+    "scatter": "Scatter",
+    "shield-throw": "Shield Throw",
+    "thrown": "Thrown",
+    "two-hand": "Two-Hand",
+    "versatile": "Versatile",
+    "volley": "Volley",
+}
+
+PARAMETERIZED_TRAIT_PATTERNS = (
+    (re.compile(r"additive-?\d+$"), "additive"),
+    (re.compile(r"attached-to-.+$"), "attached"),
+    (re.compile(r"capacity-\d+$"), "capacity"),
+    (re.compile(r"deadly-d\d+$"), "deadly"),
+    (re.compile(r"deflecting-.+$"), "deflecting"),
+    (re.compile(r"entrench-(?:melee|ranged)$"), "entrench"),
+    (re.compile(r"fatal-aim-d\d+$"), "fatal-aim"),
+    (re.compile(r"fatal-d\d+$"), "fatal"),
+    (re.compile(r"hefty-\d+$"), "hefty"),
+    (re.compile(r"integrated-.+$"), "integrated"),
+    (re.compile(r"jousting-d\d+$"), "jousting"),
+    (re.compile(r"scatter-\d+$"), "scatter"),
+    (re.compile(r"shield-throw-\d+$"), "shield-throw"),
+    (re.compile(r"thrown-\d+$"), "thrown"),
+    (re.compile(r"two-hand-d\d+$"), "two-hand"),
+    (re.compile(r"versatile-[a-z]+$"), "versatile"),
+    (re.compile(r"volley-\d+$"), "volley"),
+)
+
+# Generic Core traits added from AoN originally received source-qualified
+# slugs because their parameterized forms already occupied the short names.
+GENERIC_TRAIT_SLUG_ALIASES = {
+    "attached-player-core-trait-trait-539": "attached",
+    "deadly-player-core-trait-trait-570": "deadly",
+    "fatal-player-core-trait-trait-597": "fatal",
+    "jousting-player-core-trait-trait-638": "jousting",
+    "two-hand-player-core-trait-trait-718": "two-hand",
+    "versatile-player-core-trait-trait-724": "versatile",
+    "volley-player-core-trait-trait-730": "volley",
+}
+
+LEGACY_TRAIT_REPLACEMENTS: dict[str, str | None] = {
+    "locathah": "athamaru",
+    "metamagic": "spellshape",
+    "negative": "void",
+    "no-alignment": None,
+    "positive": "vitality",
+}
+
+# Filled from the complete approved staging catalog before packs are built.
+# This lets every source-qualified trait route resolve to the one canonical
+# short slug even when the referenced trait lives in another source pack.
+TRAIT_SLUG_ALIASES: dict[str, str] = dict(GENERIC_TRAIT_SLUG_ALIASES)
+CANONICAL_TRAIT_SLUGS: set[str] = set()
+
+TRAIT_ROUTE = re.compile(r"(/trait/)([a-z0-9-]+)")
+INTERNAL_MARKDOWN_LINK = re.compile(r"\[([^\]]+)\]\((/[a-z-]+/[^)\s]+)\)")
+RICH_TEXT_KEYS = {
+    "classDescription",
+    "classFeaturesText",
+    "description",
+    "rulesText",
+    "summary",
+    "text",
+}
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -117,6 +200,231 @@ def load_catalog() -> dict[str, dict[str, Any]]:
 
 def title_from_slug(value: str) -> str:
     return " ".join(part.capitalize() for part in value.replace("_", "-").split("-") if part)
+
+
+def normalized_trait_token(value: str) -> str:
+    value = value.strip().casefold().replace("_", "-").replace(" ", "-")
+    return re.sub(r"-+", "-", value)
+
+
+def parameterized_trait_family(value: str) -> str | None:
+    token = normalized_trait_token(value)
+    if token in PARAMETERIZED_TRAIT_NAMES:
+        return token
+    alias = GENERIC_TRAIT_SLUG_ALIASES.get(token)
+    if alias:
+        return alias
+    for pattern, family in PARAMETERIZED_TRAIT_PATTERNS:
+        if pattern.fullmatch(token):
+            return family
+    return None
+
+
+def canonical_trait_slug(value: str) -> str:
+    token = normalized_trait_token(value)
+    replacement = LEGACY_TRAIT_REPLACEMENTS.get(token, token)
+    if replacement is None:
+        return token
+    return (
+        TRAIT_SLUG_ALIASES.get(token)
+        or parameterized_trait_family(token)
+        or replacement
+    )
+
+
+def normalize_trait_routes(value: str) -> str:
+    def replace(match: re.Match[str]) -> str:
+        return match.group(1) + canonical_trait_slug(match.group(2))
+
+    return TRAIT_ROUTE.sub(replace, value)
+
+
+def normalize_trait_values(traits: list[str]) -> list[str]:
+    normalized_traits: list[str] = []
+    seen: set[str] = set()
+    for trait in traits:
+        token = normalized_trait_token(trait)
+        replacement = LEGACY_TRAIT_REPLACEMENTS.get(token, token)
+        if replacement is None or replacement in seen:
+            continue
+        seen.add(replacement)
+        # Parameter values remain on the item; only explicitly legacy names
+        # are replaced in the displayed tag list.
+        normalized_traits.append(replacement if token in LEGACY_TRAIT_REPLACEMENTS else trait)
+    return normalized_traits
+
+
+def normalize_trait_arrays(value: Any) -> None:
+    if isinstance(value, dict):
+        for key, child in value.items():
+            if key in {"traits", "tags"} and isinstance(child, list) and all(
+                isinstance(item, str) for item in child
+            ):
+                value[key] = normalize_trait_values(child)
+            else:
+                normalize_trait_arrays(child)
+    elif isinstance(value, list):
+        for child in value:
+            normalize_trait_arrays(child)
+
+
+def add_trait_links(data: dict[str, Any]) -> None:
+    traits = data.get("traits")
+    if not isinstance(traits, list) or not all(isinstance(trait, str) for trait in traits):
+        return
+    normalized_traits = normalize_trait_values(traits)
+    data["traits"] = normalized_traits
+    data["traitLinks"] = []
+    for trait in normalized_traits:
+        slug = canonical_trait_slug(trait)
+        data["traitLinks"].append(
+            {
+                "label": trait,
+                "slug": slug if not CANONICAL_TRAIT_SLUGS or slug in CANONICAL_TRAIT_SLUGS else "",
+            }
+        )
+
+
+def simple_trait_slug(value: str) -> str:
+    value = value.casefold().replace("’", "'")
+    value = re.sub(r"['\u2019]", "", value)
+    return re.sub(r"[^a-z0-9]+", "-", value).strip("-")
+
+
+def trait_source_score(
+    source_id: str,
+    record: dict[str, Any],
+    catalog: dict[str, dict[str, Any]],
+) -> tuple[int, int, int]:
+    """Prefer the record housed with the source named in its attribution."""
+    pack_name = simple_trait_slug(str(catalog[source_id].get("name") or ""))
+    credited = [
+        simple_trait_slug(str(source.get("name") or ""))
+        for source in record.get("sources", [])
+        if isinstance(source, dict)
+    ]
+    source_match = any(name and (name in pack_name or pack_name in name) for name in credited)
+    attrs = record.get("attributes") or {}
+    foundry_id = str(attrs.get("foundryId") or "")
+    return (
+        int(source_match),
+        int(not foundry_id.startswith("derived-Trait-")),
+        int(bool(attrs.get("aonId"))),
+    )
+
+
+def canonical_trait_catalog(
+    source_root: Path,
+    catalog: dict[str, dict[str, Any]],
+) -> dict[str, list[dict[str, Any]]]:
+    """Build one globally canonical trait catalog, grouped by source pack."""
+    candidates: dict[str, list[tuple[str, dict[str, Any]]]] = {}
+    parameter_templates: dict[str, tuple[str, dict[str, Any]]] = {}
+
+    for source_id in catalog:
+        path = source_root / source_id / "traits.json"
+        if not path.is_file():
+            continue
+        records = json.loads(path.read_text())
+        if not isinstance(records, list):
+            raise ValueError(f"{path} must contain a JSON array")
+        for record in records:
+            if not isinstance(record, dict):
+                raise ValueError(f"{path} contains a non-object entry")
+            prepared = copy.deepcopy(record)
+            old_slug = normalized_trait_token(str(prepared.get("slug") or ""))
+            family = parameterized_trait_family(old_slug or str(prepared.get("name") or ""))
+            if family:
+                TRAIT_SLUG_ALIASES[old_slug] = family
+                is_generic = normalized_trait_token(str(prepared.get("name") or "")) == family
+                if not is_generic:
+                    parameter_templates.setdefault(family, (source_id, prepared))
+                    continue
+                prepared["name"] = PARAMETERIZED_TRAIT_NAMES[family]
+                canonical_slug = family
+            else:
+                canonical_slug = simple_trait_slug(str(prepared.get("name") or ""))
+                if not canonical_slug:
+                    continue
+                legacy = LEGACY_TRAIT_REPLACEMENTS.get(canonical_slug, canonical_slug)
+                if legacy is None or legacy != canonical_slug:
+                    TRAIT_SLUG_ALIASES[old_slug] = legacy or canonical_slug
+                    continue
+
+            TRAIT_SLUG_ALIASES[old_slug] = canonical_slug
+            prepared["slug"] = canonical_slug
+            candidates.setdefault(canonical_slug, []).append((source_id, prepared))
+
+    for family, (source_id, template) in parameter_templates.items():
+        if family in candidates:
+            continue
+        prepared = copy.deepcopy(template)
+        prepared["id"] = str(
+            uuid.uuid5(uuid.NAMESPACE_URL, f"pf2e-remaster:canonical-trait:{family}")
+        ).upper()
+        prepared["name"] = PARAMETERIZED_TRAIT_NAMES[family]
+        prepared["slug"] = family
+        candidates[family] = [(source_id, prepared)]
+
+    grouped: dict[str, list[dict[str, Any]]] = {source_id: [] for source_id in catalog}
+    CANONICAL_TRAIT_SLUGS.clear()
+    CANONICAL_TRAIT_SLUGS.update(candidates)
+    for records in candidates.values():
+        source_id, selected = max(
+            records,
+            key=lambda item: trait_source_score(item[0], item[1], catalog),
+        )
+        grouped[source_id].append(selected)
+    for records in grouped.values():
+        records.sort(
+            key=lambda record: (
+                str(record.get("name") or "").casefold(),
+                str(record.get("slug") or ""),
+            )
+        )
+    return grouped
+
+
+def dedupe_entity_links(result: dict[str, Any]) -> None:
+    """Keep only the first link to each destination in one displayed entry.
+
+    Identical mirrored text (notably deity ``descr`` and ``rulesText``) is
+    rewritten identically instead of treating the storage copy as a second
+    displayed mention.
+    """
+    seen: set[str] = set()
+    rewritten: dict[str, str] = {}
+
+    def dedupe_text(value: str) -> str:
+        if value in rewritten:
+            return rewritten[value]
+
+        def replace(match: re.Match[str]) -> str:
+            label, route = match.groups()
+            if route in seen:
+                return label
+            seen.add(route)
+            return match.group(0)
+
+        updated = INTERNAL_MARKDOWN_LINK.sub(replace, value)
+        rewritten[value] = updated
+        return updated
+
+    result["descr"] = dedupe_text(str(result.get("descr") or ""))
+
+    def visit(value: Any) -> None:
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in RICH_TEXT_KEYS and isinstance(child, str):
+                    value[key] = dedupe_text(child)
+                elif isinstance(child, (dict, list)):
+                    visit(child)
+        elif isinstance(value, list):
+            for child in value:
+                if isinstance(child, (dict, list)):
+                    visit(child)
+
+    visit(result.get("data"))
 
 
 def clean_foundry_markup(value: str) -> str:
@@ -170,7 +478,7 @@ def scrub_tree(value: Any) -> Any:
     if isinstance(value, list):
         return [scrub_tree(child) for child in value]
     if isinstance(value, str):
-        return clean_foundry_markup(value)
+        return normalize_trait_routes(clean_foundry_markup(value))
     return value
 
 
@@ -191,6 +499,13 @@ def background_mechanics(value: str) -> str:
 
 def deity_rules_text(data: dict[str, Any]) -> str:
     """Create one display-only mechanics block without deity narrative prose."""
+    # The staging cross-link pass may already have produced this mechanical
+    # summary with safe Encounter+ links. Preserve it instead of flattening the
+    # same structured values a second time.
+    existing = str(data.get("rulesText") or "").strip()
+    if existing:
+        return existing
+
     def values(value: Any) -> str:
         if isinstance(value, dict):
             return ", ".join(str(item) for item in value.values() if item)
@@ -225,6 +540,7 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         return None
 
     result = scrub_tree(copy.deepcopy(entity))
+    normalize_trait_arrays(result)
     result["system"] = "pf2e-remaster"
     result.setdefault("attributes", {})["license"] = "ORC-1.0a"
 
@@ -234,6 +550,8 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         result["descr"] = background_mechanics(str(result.get("descr") or ""))
 
     data = result.get("data")
+    if isinstance(data, dict):
+        add_trait_links(data)
     if isinstance(data, dict) and expected_kind in {"Ancestry", "Class"}:
         data["summary"] = ""
     if isinstance(data, dict) and expected_kind == "Deity":
@@ -241,6 +559,8 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         # Keep deity mechanics in Encounter+'s original description field so
         # they render reliably in both the detail view and editor.
         result["descr"] = data["rulesText"]
+
+    dedupe_entity_links(result)
 
     return result
 
@@ -344,7 +664,12 @@ Material under the ORC License.
 """
 
 
-def build_module(source_dir: Path, output_dir: Path, source: dict[str, Any]) -> dict[str, int]:
+def build_module(
+    source_dir: Path,
+    output_dir: Path,
+    source: dict[str, Any],
+    trait_records: list[dict[str, Any]],
+) -> dict[str, int]:
     output_dir.mkdir(parents=True, exist_ok=True)
     counts: dict[str, int] = {}
     excluded = 0
@@ -353,7 +678,7 @@ def build_module(source_dir: Path, output_dir: Path, source: dict[str, Any]) -> 
         expected_kind = COLLECTION_KIND.get(path.name)
         if expected_kind is None:
             continue
-        records = json.loads(path.read_text())
+        records = trait_records if expected_kind == "Trait" else json.loads(path.read_text())
         if not isinstance(records, list):
             raise ValueError(f"{path} must contain a JSON array")
         cleaned: list[dict[str, Any]] = []
@@ -414,6 +739,8 @@ def main() -> int:
     if not args.source.is_dir():
         raise SystemExit(f"private staging directory not found: {args.source}")
 
+    trait_catalog = canonical_trait_catalog(args.source, catalog)
+
     if args.output.exists():
         shutil.rmtree(args.output)
     args.output.mkdir(parents=True)
@@ -423,7 +750,12 @@ def main() -> int:
         source_dir = args.source / source_id
         if not (source_dir / "module.json").is_file():
             raise SystemExit(f"approved source pack is missing: {source_dir}")
-        summary[source_id] = build_module(source_dir, args.output / source_id, source)
+        summary[source_id] = build_module(
+            source_dir,
+            args.output / source_id,
+            source,
+            trait_catalog[source_id],
+        )
 
     summary_path = args.output.parent / "summary.json"
     summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n")

@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Anchoring Air",
     "slug": "anchoring-air-high-seas-spell-spell-2621",
-    "descr": "**Traditions**\nOccult, Primal\n\n**Trigger** A creature attempts a melee Strike against you.\n\n**Defense**\nReflex\n\n---\n\nYou solidify the air around an incoming attack, catching it in a vise-like grip. The triggering creature must attempt a Reflex save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes a –2 circumstance penalty to the triggering Strike’s attack roll.\n\n**Failure** The creature takes a –2 circumstance penalty to all attack rolls until the end of its turn.\n\n**Critical Failure** As failure, but the creature is also immobilized until the start of its next turn.",
+    "descr": "**Traditions**\nOccult, Primal\n\n**Trigger** A creature attempts a melee [Strike](/action/strike-player-core) against you.\n\n**Defense**\nReflex\n\n---\n\nYou solidify the air around an incoming attack, catching it in a vise-like grip. The triggering creature must attempt a Reflex save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes a –2 circumstance penalty to the triggering Strike’s attack roll.\n\n**Failure** The creature takes a –2 circumstance penalty to all attack rolls until the end of its turn.\n\n**Critical Failure** As failure, but the creature is also [immobilized](/condition/immobilized-player-core) until the start of its next turn.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -31,7 +31,17 @@
       "castActions": [
         "reaction"
       ],
-      "actions": "reaction"
+      "actions": "reaction",
+      "traitLinks": [
+        {
+          "label": "air",
+          "slug": "air"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -63,7 +73,7 @@
     "systemVersion": "1.2.10",
     "name": "Connective Current",
     "slug": "connective-current-high-seas-spell-spell-2622",
-    "descr": "**Tradition**\nOccult\n\n**Range** 30 feet\n\n**Target** 1 enemy\n\n**Duration** 1 minute\n\n---\n\nYou create a magical connection between you and an enemy, as if you were both caught in the same current. When the target takes a move action, you can Stride up to half your Speed in the same direction as the target as a reaction.\n\n---\n**Heightened (4th)** You can Stride up to your Speed.\n\n**Heightened (6th)** As 4th, and you gain an additional reaction when you Cast this Spell and at the start of each of your turns that you can use only to make this movement.",
+    "descr": "**Tradition**\nOccult\n\n**Range** 30 feet\n\n**Target** 1 enemy\n\n**Duration** 1 minute\n\n---\n\nYou create a magical connection between you and an enemy, as if you were both caught in the same current. When the target takes a [move](/trait/move) action, you can [Stride](/action/stride-player-core) up to half your Speed in the same direction as the target as a reaction.\n\n---\n**Heightened (4th)** You can Stride up to your Speed.\n\n**Heightened (6th)** As 4th, and you gain an additional reaction when you [Cast this Spell](/action/cast-a-spell-player-core) and at the start of each of your turns that you can use only to make this movement.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -87,7 +97,17 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -119,7 +139,7 @@
     "systemVersion": "1.2.10",
     "name": "Shipwreck",
     "slug": "shipwreck-high-seas-spell-spell-2623",
-    "descr": "**Tradition**\nOccult\n\n**Range** 500 feet\n\n**Target** 1 vehicle\n\n**Defense**\nFortitude\n\n---\n\nYou gesture toward a vehicle and the vessel wrenches itself apart. It must attempt a Fortitude save.\n\n**Critical Success** The vehicle is unaffected.\n\n**Success** The vehicle becomes uncontrolled, and spaces within it become difficult terrain.\n\n**Failure** As success, plus the vehicle gains the broken condition. If it already had the broken condition, it’s destroyed.\n\n**Critical Failure** The vehicle is reduced to 0 HP and is destroyed.",
+    "descr": "**Tradition**\nOccult\n\n**Range** 500 feet\n\n**Target** 1 vehicle\n\n**Defense**\nFortitude\n\n---\n\nYou gesture toward a vehicle and the vessel wrenches itself apart. It must attempt a Fortitude save.\n\n**Critical Success** The vehicle is unaffected.\n\n**Success** The vehicle becomes [uncontrolled](/rule/uncontrolled-vehicles-rules-3131), and spaces within it become [difficult terrain](/rule/difficult-terrain-rules-2366).\n\n**Failure** As success, plus the vehicle gains the [broken](/condition/broken-player-core) condition. If it already had the broken condition, it’s destroyed.\n\n**Critical Failure** The vehicle is reduced to 0 HP and is destroyed.",
     "data": {
       "rank": 8,
       "rarity": "common",
@@ -144,7 +164,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -177,7 +211,7 @@
     "systemVersion": "1.2.10",
     "name": "Undertow",
     "slug": "undertow-high-seas-spell-spell-2624",
-    "descr": "**Tradition**\nPrimal\n\n**Range** 120 feet\n\n**Area** 20-foot burst\n\n**Duration** 1 minute\n\n---\n\nYou create an area of water 20 feet deep. The DC for Athletics checks to Swim in the area is equal to your spell DC. A creature that starts its turn in the area must attempt a Fortitude save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes 2d6 bludgeoning damage.\n\n**Failure** The creature takes 4d6 bludgeoning damage and takes a –2 circumstance penalty to Athletics checks to Swim and a –10-foot circumstance penalty to its swim Speed, if it has one, until it leaves the area.\n\n**Critical Failure** As failure, and the creature is pulled 10 feet down.",
+    "descr": "**Tradition**\nPrimal\n\n**Range** 120 feet\n\n**Area** 20-foot [burst](/rule/burst-rules-2385)\n\n**Duration** 1 minute\n\n---\n\nYou create an area of water 20 feet deep. The DC for Athletics checks to [Swim](/action/swim-player-core) in the area is equal to your spell DC. A creature that starts its turn in the area must attempt a Fortitude save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes 2d6 bludgeoning damage.\n\n**Failure** The creature takes 4d6 bludgeoning damage and takes a –2 circumstance penalty to Athletics checks to Swim and a –10-foot circumstance penalty to its [swim Speed](/rule/swim-speed-rules-2351), if it has one, until it leaves the area.\n\n**Critical Failure** As failure, and the creature is pulled 10 feet down.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -203,7 +237,21 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "water",
+          "slug": "water"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -236,7 +284,7 @@
     "systemVersion": "1.2.10",
     "name": "Whispers of a Dead Goddess",
     "slug": "whispers-of-a-dead-goddess-high-seas-spell-spell-2625",
-    "descr": "**Traditions**\nDivine, Occult\n\n**Range** 60 feet\n\n**Area** 15-foot burst\n\n**Defense**\nWill\n\n**Duration** sustained up to 1 minute\n\n---\n\nThe mysterious whispers that fill the Mordant Spire, which some believe to be the voice of the dead goddess Acavna, become audible. A creature in the area when this Spell is Cast or who enters the area must attempt a Will save.\n\n**Critical Success** The creature is unaffected and becomes temporarily immune for 1 hour.\n\n**Success** The target becomes stunned 1, listening to the whispers.\n\n**Failure** As success, and the creature will not voluntarily leave the area for 1 round.\n\n**Critical Failure** As failure, and you can whisper a single course of action to each creature that critically failed, with the effects of _suggestion_. The effect ends on a creature if you stop sustaining the spell or the creature leaves the area.",
+    "descr": "**Traditions**\nDivine, Occult\n\n**Range** 60 feet\n\n**Area** 15-foot [burst](/rule/burst-rules-2385)\n\n**Defense**\nWill\n\n**Duration** [sustained](/action/sustain-player-core) up to 1 minute\n\n---\n\nThe mysterious whispers that fill the Mordant Spire, which some believe to be the voice of the dead goddess [Acavna](/deity/acavna-the-shield-divine-mysteries-deity-deity-402), become audible. A creature in the area when this Spell is Cast or who enters the area must attempt a Will save.\n\n**Critical Success** The creature is unaffected and becomes temporarily immune for 1 hour.\n\n**Success** The target becomes [stunned](/condition/stunned-player-core) 1, listening to the whispers.\n\n**Failure** As success, and the creature will not voluntarily leave the area for 1 round.\n\n**Critical Failure** As failure, and you can whisper a single course of action to each creature that critically failed, with the effects of [_suggestion_](/spell/suggestion-player-core). The effect ends on a creature if you stop sustaining the spell or the creature leaves the area.",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -265,7 +313,29 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "incapacitation",
+          "slug": "incapacitation"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -300,7 +370,7 @@
     "systemVersion": "1.2.10",
     "name": "With Friends Like These",
     "slug": "with-friends-like-these-high-seas-spell-spell-2626",
-    "descr": "**Tradition**\nOccult\n\n**Range** 30 feet\n\n**Target** 2 creatures\n\n**Defense**\nWill\n\n---\n\nYou create a subtle dissonance between creatures, driving them apart.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes sickened 1.\n\n**Failure** The creature becomes sickened 2. While sickened this way, it doesn’t treat any other target of the spell as an ally.\n\n**Critical Failure** As failure, and it can’t end a move action within 10 feet of any other target as long as it is sickened.\n\n---\n**Heightened (+2)** You can target one additional creature.",
+    "descr": "**Tradition**\nOccult\n\n**Range** 30 feet\n\n**Target** 2 creatures\n\n**Defense**\nWill\n\n---\n\nYou create a subtle dissonance between creatures, driving them apart.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes [sickened](/condition/sickened-player-core) 1.\n\n**Failure** The creature becomes sickened 2. While sickened this way, it doesn’t treat any other target of the spell as an ally.\n\n**Critical Failure** As failure, and it can’t end a [move](/trait/move) action within 10 feet of any other target as long as it is sickened.\n\n---\n**Heightened (+2)** You can target one additional creature.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -326,7 +396,25 @@
       "castActions": [
         "two"
       ],
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "concentrate",
+          "slug": "concentrate"
+        },
+        {
+          "label": "emotion",
+          "slug": "emotion"
+        },
+        {
+          "label": "manipulate",
+          "slug": "manipulate"
+        },
+        {
+          "label": "mental",
+          "slug": "mental"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

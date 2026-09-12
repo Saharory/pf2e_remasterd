@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Amaranthine Visage",
     "slug": "amaranthine-visage-high-seas-equipment-equipment-4967",
-    "descr": "**Price** 15,000 gp\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nThe shape of this 2-foot-tall wooden mask, worn by the secretive leaders of the elves who inhabit the Mordant Spire, mirrors the tower itself. While wearing it, your innards turn to purple smoke, giving you resistance 10 to precision damage.\n\n**Activate—Eternal Renewal** **Reaction** (healing) **Frequency** once per day; **Trigger** Your dying condition would reach the value that would cause you to die; **Effect** You Sublimate Self. You lose the dying condition, gaining or increasing your wounded condition as normal, and gain fast healing 20 for 1 minute. You can use Eternal Renewal even while unconscious or otherwise unable to act.\n\n**Activate—Sublimate Self** **Two Actions** (air, concentrate, polymorph) **Effect** Your body transforms completely into purple vapor for 5 minutes, with the effects of _vapor form_.",
+    "descr": "**Price** 15,000 gp\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nThe shape of this 2-foot-tall wooden mask, worn by the secretive leaders of the elves who inhabit the Mordant Spire, mirrors the tower itself. While wearing it, your innards turn to purple smoke, giving you [resistance](/rule/resistance-rules-2318) 10 to precision damage.\n\n**Activate—Eternal Renewal** **Reaction** ([healing](/trait/healing)) **Frequency** once per day; **Trigger** Your [dying](/condition/dying-player-core) condition would reach the value that would cause you to die; **Effect** You Sublimate Self. You lose the dying condition, gaining or increasing your [wounded](/condition/wounded-player-core) condition as normal, and gain [fast healing](/rule/fast-healing-and-regeneration-rules-2322) 20 for 1 minute. You can use Eternal Renewal even while [unconscious](/condition/unconscious-player-core) or otherwise unable to act.\n\n**Activate—Sublimate Self** **Two Actions** (air, [concentrate](/trait/concentrate), [polymorph](/trait/polymorph)) **Effect** Your body transforms completely into purple vapor for 5 minutes, with the effects of _[vapor form](/spell/vapor-form-player-core)_.",
     "data": {
       "level": 17,
       "rarity": "rare",
@@ -17,7 +17,17 @@
       "category": "worn",
       "price": "15,000 gp",
       "usage": "worn mask",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -50,7 +60,7 @@
     "systemVersion": "1.2.10",
     "name": "Bloodstride Blade",
     "slug": "bloodstride-blade-high-seas-equipment-equipment-4961",
-    "descr": "_**PFS Note** This item is restricted due to the teleportation effect._\n\n**Price** 3,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Base Weapon** Sawtooth Saber\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThis _+2 greater striking cunning wounding sawtooth saber_ appears rusty but never loses its edge. It’s drawn to the blood of your targets. You gain a +2 item bonus to Seek or Track creatures that have blood.\n\n**Activate—Call of the Bloodthirst** **Reaction** ; **Frequency** once per hour; **Trigger** A creature within 60 feet takes bleed damage; **Effect** You cast _translocate_, appearing adjacent to the triggering creature, then Strike it with this weapon. The creature is off-guard to the attack.",
+    "descr": "_**PFS Note** This item is restricted due to the teleportation effect._\n\n**Price** 3,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Base Weapon** [Sawtooth Saber](/item/sawtooth-saber-player-core)\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThis _+2 [greater striking](/item/striking-gm-core) cunning [wounding](/item/wounding-gm-core) sawtooth saber_ appears rusty but never loses its edge. It’s drawn to the blood of your targets. You gain a +2 item bonus to [Seek](/action/seek-player-core) or [Track](/action/track-player-core) creatures that have blood.\n\n**Activate—Call of the Bloodthirst** **Reaction** ; **Frequency** once per hour; **Trigger** A creature within 60 feet takes [bleed](/condition/persistent-damage-player-core) damage; **Effect** You cast _[translocate](/spell/translocate-player-core)_, appearing adjacent to the triggering creature, then [Strike](/action/strike-player-core) it with this weapon. The creature is [off-guard](/condition/off-guard-player-core) to the attack.",
     "data": {
       "level": 13,
       "rarity": "rare",
@@ -61,7 +71,17 @@
       "category": "weapon",
       "price": "3,000 gp",
       "usage": "held in 1 hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "occult",
+          "slug": "occult"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -94,7 +114,7 @@
     "systemVersion": "1.2.10",
     "name": "Bloodstride Boots",
     "slug": "bloodstride-boots-high-seas-equipment-equipment-4962",
-    "descr": "**Price** 2,400 gp\n\n**Usage** worn shoes\n\n**Bulk** L\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThese red leather boots greedily absorb any blood they touch.\n\n**Activate—Blood Hop** **Two Actions** (concentrate, manipulate) **Frequency** once per hour; **Effect** The boots produce a small pool of blood beneath your feet and in a free space you can see within 120 feet. You melt into the pool beneath you and reconstitute at the other pool, with the effects of _translocate_.\n\n**Activate—Blood Walk** **** 1 minute (concentrate, manipulate) **Frequency** once per day; **Requirements** You’re standing in blood; **Effect** You melt into the ground and reconstitute at a location you have previously seen that’s within 100 miles, with the effects of _translocate_. This effect fails if no sentient creature has died at that location in the past 24 hours.",
+    "descr": "**Price** 2,400 gp\n\n**Usage** worn shoes\n\n**Bulk** L\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThese red leather boots greedily absorb any blood they touch.\n\n**Activate—Blood Hop** **Two Actions** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Frequency** once per hour; **Effect** The boots produce a small pool of blood beneath your feet and in a free space you can see within 120 feet. You melt into the pool beneath you and reconstitute at the other pool, with the effects of _[translocate](/spell/translocate-player-core)_.\n\n**Activate—Blood Walk** **** 1 minute (concentrate, manipulate) **Frequency** once per day; **Requirements** You’re standing in blood; **Effect** You melt into the ground and reconstitute at a location you have previously seen that’s within 100 miles, with the effects of _translocate_. This effect fails if no sentient creature has died at that location in the past 24 hours.",
     "data": {
       "level": 13,
       "rarity": "rare",
@@ -106,7 +126,21 @@
       "category": "worn",
       "price": "2,400 gp",
       "usage": "worn shoes",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        },
+        {
+          "label": "teleportation",
+          "slug": "teleportation"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -140,7 +174,7 @@
     "systemVersion": "1.2.10",
     "name": "Cloak of Social Graces",
     "slug": "cloak-of-social-graces-high-seas-equipment-equipment-4957",
-    "descr": "**Usage** worn cloak\n\n**Bulk** L\n\n**Access** You're from Hermea\n\n---\n\nThese cloaks are created from hand-dyed leather decorated with gemstones, appealing to the individual tastes of the owner. The beautiful decorations of these cloaks encourage their owner to wear them no matter the season, making it visibly part of their unique style. Wearing the cloak boosts self-confidence, granting a +1 item bonus to Diplomacy checks.\n\n**Activate—Overcome Self-Doubt** **Two Actions** (concentrate, manipulate) **Frequency** once per day; **Effect** You readjust your cloak, straightening the collar and brushing out any wrinkles. You gain the effects of a _heroism_ spell for 1 minute.\n\n## Cloak of Social Graces\n\n**Price** 380 gp\n\n## Greater Cloak of Social Graces\n\n**Price** 3,000 gp\n\n---\n\nThe item bonus is +2, and when you activate the cloak, you gain the benefits of a 6th-rank _heroism_ spell for 1 minute.\n\n## Major Cloak of Social Graces\n\n**Price** 40,000 gp\n\n---\n\nThe item bonus is +3, and when you activate the cloak, you gain the benefits of a 9th-rank _heroism_ spell for 1 minute.",
+    "descr": "**Usage** worn cloak\n\n**Bulk** L\n\n**Access** You're from Hermea\n\n---\n\nThese cloaks are created from hand-dyed leather decorated with gemstones, appealing to the individual tastes of the owner. The beautiful decorations of these cloaks encourage their owner to wear them no matter the season, making it visibly part of their unique style. Wearing the cloak boosts self-confidence, granting a +1 item bonus to Diplomacy checks.\n\n**Activate—Overcome Self-Doubt** **Two Actions** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You readjust your cloak, straightening the collar and brushing out any wrinkles. You gain the effects of a _[heroism](/spell/heroism-player-core)_ spell for 1 minute.\n\n## Cloak of Social Graces\n\n**Price** 380 gp\n\n## Greater Cloak of Social Graces\n\n**Price** 3,000 gp\n\n---\n\nThe item bonus is +2, and when you activate the cloak, you gain the benefits of a 6th-rank _heroism_ spell for 1 minute.\n\n## Major Cloak of Social Graces\n\n**Price** 40,000 gp\n\n---\n\nThe item bonus is +3, and when you activate the cloak, you gain the benefits of a 9th-rank _heroism_ spell for 1 minute.",
     "data": {
       "level": 7,
       "rarity": "rare",
@@ -150,7 +184,17 @@
       ],
       "category": "worn",
       "usage": "worn cloak",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -183,7 +227,7 @@
     "systemVersion": "1.2.10",
     "name": "Cloak of Social Graces",
     "slug": "cloak-of-social-graces-high-seas-equipment-equipment-4957-4519",
-    "descr": "**Usage** worn cloak\n\n**Bulk** L\n\n**Access** You're from Hermea\n\n---\n\nThese cloaks are created from hand-dyed leather decorated with gemstones, appealing to the individual tastes of the owner. The beautiful decorations of these cloaks encourage their owner to wear them no matter the season, making it visibly part of their unique style. Wearing the cloak boosts self-confidence, granting a +1 item bonus to Diplomacy checks.\n\n**Activate—Overcome Self-Doubt** **Two Actions** (concentrate, manipulate) **Frequency** once per day; **Effect** You readjust your cloak, straightening the collar and brushing out any wrinkles. You gain the effects of a _heroism_ spell for 1 minute.\n\n## Cloak of Social Graces\n\n**Price** 380 gp\n\n## Greater Cloak of Social Graces\n\n**Price** 3,000 gp\n\n---\n\nThe item bonus is +2, and when you activate the cloak, you gain the benefits of a 6th-rank _heroism_ spell for 1 minute.\n\n## Major Cloak of Social Graces\n\n**Price** 40,000 gp\n\n---\n\nThe item bonus is +3, and when you activate the cloak, you gain the benefits of a 9th-rank _heroism_ spell for 1 minute.",
+    "descr": "**Usage** worn cloak\n\n**Bulk** L\n\n**Access** You're from Hermea\n\n---\n\nThese cloaks are created from hand-dyed leather decorated with gemstones, appealing to the individual tastes of the owner. The beautiful decorations of these cloaks encourage their owner to wear them no matter the season, making it visibly part of their unique style. Wearing the cloak boosts self-confidence, granting a +1 item bonus to Diplomacy checks.\n\n**Activate—Overcome Self-Doubt** **Two Actions** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You readjust your cloak, straightening the collar and brushing out any wrinkles. You gain the effects of a _[heroism](/spell/heroism-player-core)_ spell for 1 minute.\n\n## Cloak of Social Graces\n\n**Price** 380 gp\n\n## Greater Cloak of Social Graces\n\n**Price** 3,000 gp\n\n---\n\nThe item bonus is +2, and when you activate the cloak, you gain the benefits of a 6th-rank _heroism_ spell for 1 minute.\n\n## Major Cloak of Social Graces\n\n**Price** 40,000 gp\n\n---\n\nThe item bonus is +3, and when you activate the cloak, you gain the benefits of a 9th-rank _heroism_ spell for 1 minute.",
     "data": {
       "level": 7,
       "rarity": "rare",
@@ -194,7 +238,17 @@
       "category": "worn",
       "price": "380 gp",
       "usage": "worn cloak",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -227,7 +281,7 @@
     "systemVersion": "1.2.10",
     "name": "Coral Aspect",
     "slug": "coral-aspect-high-seas-equipment-equipment-4968",
-    "descr": "**Price** 80 gp\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nMade of petrified wood, this mask evokes the form of a coral reef. When you wear it, you gain a +1 item bonus to Athletics checks to Swim, and any armor you’re wearing gains the aquadynamic trait.\n\n**Activate—Cohabitate** **Two Actions** (concentrate, manipulate, polymorph) **Frequency** once per day; **Effect** For 1 minute, your body becomes a mobile coral reef, letting much smaller creatures pass through or shelter in it. Creatures at least one size category smaller than you can share your space. Allies that share your space gain a +2 circumstance bonus to their AC, and you gain resistance 5 to any damage caused by a creature sharing the same space as you.",
+    "descr": "**Price** 80 gp\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nMade of petrified wood, this mask evokes the form of a coral reef. When you wear it, you gain a +1 item bonus to Athletics checks to [Swim](/action/swim-player-core), and any armor you’re wearing gains the [aquadynamic](/trait/aquadynamic) trait.\n\n**Activate—Cohabitate** **Two Actions** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate), [polymorph](/trait/polymorph)) **Frequency** once per day; **Effect** For 1 minute, your body becomes a mobile coral reef, letting much smaller creatures pass through or shelter in it. Creatures at least one size category smaller than you can share your space. Allies that share your space gain a +2 circumstance bonus to their AC, and you gain [resistance](/rule/resistance-rules-2318) 5 to any damage caused by a creature sharing the same space as you.",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -238,7 +292,17 @@
       "category": "worn",
       "price": "80 gp",
       "usage": "worn mask",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -271,7 +335,7 @@
     "systemVersion": "1.2.10",
     "name": "Crown of the Master",
     "slug": "crown-of-the-master-high-seas-equipment-equipment-4972",
-    "descr": "**Usage** worn headwear\n\n**Bulk** L\n\n---\n\nThis crown, granted to favored azarketis by their alghollthu masters, is made of coral sculpted into the shape of a tentacled creature clutching the wearer’s temples. While wearing the crown, you gain an item bonus to saving throws against mental effects and can cast _figment_ as an occult innate spell.\n\n## Crown of the Master\n\n**Price** 350 gp\n\n---\n\nThe item bonus is +1.\n\n## Greater Crown of the Master\n\n**Price** 2,600 gp\n\n---\n\nThe item bonus is +2, and the crown gains the following activation.\n\n**Activate—Imperative Order** **Two Actions** (concentrate) **Frequency** once per day; **Effect** You cast a 6th-rank _dominate_ with a DC of 30. When you cast _dominate_ this way, its duration is reduced to 8 hours.",
+    "descr": "**Usage** worn headwear\n\n**Bulk** L\n\n---\n\nThis crown, granted to favored azarketis by their alghollthu masters, is made of coral sculpted into the shape of a tentacled creature clutching the wearer’s temples. While wearing the crown, you gain an item bonus to saving throws against [mental](/trait/mental) effects and can cast _[figment](/spell/figment-player-core)_ as an occult [innate spell](/rule/innate-spells-rules-2232).\n\n## Crown of the Master\n\n**Price** 350 gp\n\n---\n\nThe item bonus is +1.\n\n## Greater Crown of the Master\n\n**Price** 2,600 gp\n\n---\n\nThe item bonus is +2, and the crown gains the following activation.\n\n**Activate—Imperative Order** **Two Actions** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Effect** You cast a 6th-rank _[dominate](/spell/dominate-player-core)_ with a DC of 30. When you cast _dominate_ this way, its duration is reduced to 8 hours.",
     "data": {
       "level": 7,
       "rarity": "rare",
@@ -281,7 +345,17 @@
       ],
       "category": "worn",
       "usage": "worn headwear",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -314,7 +388,7 @@
     "systemVersion": "1.2.10",
     "name": "Crown of the Master",
     "slug": "crown-of-the-master-high-seas-equipment-equipment-4972-4532",
-    "descr": "**Usage** worn headwear\n\n**Bulk** L\n\n---\n\nThis crown, granted to favored azarketis by their alghollthu masters, is made of coral sculpted into the shape of a tentacled creature clutching the wearer’s temples. While wearing the crown, you gain an item bonus to saving throws against mental effects and can cast _figment_ as an occult innate spell.\n\n## Crown of the Master\n\n**Price** 350 gp\n\n---\n\nThe item bonus is +1.\n\n## Greater Crown of the Master\n\n**Price** 2,600 gp\n\n---\n\nThe item bonus is +2, and the crown gains the following activation.\n\n**Activate—Imperative Order** **Two Actions** (concentrate) **Frequency** once per day; **Effect** You cast a 6th-rank _dominate_ with a DC of 30. When you cast _dominate_ this way, its duration is reduced to 8 hours.",
+    "descr": "**Usage** worn headwear\n\n**Bulk** L\n\n---\n\nThis crown, granted to favored azarketis by their alghollthu masters, is made of coral sculpted into the shape of a tentacled creature clutching the wearer’s temples. While wearing the crown, you gain an item bonus to saving throws against [mental](/trait/mental) effects and can cast _[figment](/spell/figment-player-core)_ as an occult [innate spell](/rule/innate-spells-rules-2232).\n\n## Crown of the Master\n\n**Price** 350 gp\n\n---\n\nThe item bonus is +1.\n\n## Greater Crown of the Master\n\n**Price** 2,600 gp\n\n---\n\nThe item bonus is +2, and the crown gains the following activation.\n\n**Activate—Imperative Order** **Two Actions** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Effect** You cast a 6th-rank _[dominate](/spell/dominate-player-core)_ with a DC of 30. When you cast _dominate_ this way, its duration is reduced to 8 hours.",
     "data": {
       "level": 7,
       "rarity": "rare",
@@ -325,7 +399,17 @@
       "category": "worn",
       "price": "350 gp",
       "usage": "worn headwear",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -358,7 +442,7 @@
     "systemVersion": "1.2.10",
     "name": "Gaze of the Mantis",
     "slug": "gaze-of-the-mantis-high-seas-equipment-equipment-4963",
-    "descr": "_**PFS Note** Seeing all Red Mantis contracts is outside the scope of PFS play._\n\n**Price** 1,400 gp\n\n**Usage** worn eyepiece\n\n**Bulk** L\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThese glasses have faceted red lenses like those of a mantis and are popular as a less ostentatious alternative to a full mask. While wearing the _gaze of the mantis_, your field of view increases to give you better awareness of your surroundings. You gain a +2 item bonus to visual Perception checks and cannot be flanked.\n\n**Activate—Target Sense** **Single Action** ; **Frequency** once per day; **Requirements** You’re a Red Mantis assassin; **Effect** You learn the distance to and direction of all creatures that have a Red Mantis contract on them within 10 miles. If one of these creatures is within 100 feet, you also know any afflictions, conditions, and spells affecting them. This awareness lasts for 1 hour.",
+    "descr": "_**PFS Note** Seeing all Red Mantis contracts is outside the scope of PFS play._\n\n**Price** 1,400 gp\n\n**Usage** worn eyepiece\n\n**Bulk** L\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThese glasses have faceted red lenses like those of a mantis and are popular as a less ostentatious alternative to a full mask. While wearing the _gaze of the mantis_, your field of view increases to give you better awareness of your surroundings. You gain a +2 item bonus to visual Perception checks and cannot be [flanked](/rule/flanking-rules-2375).\n\n**Activate—Target Sense** **Single Action** ; **Frequency** once per day; **Requirements** You’re a Red Mantis assassin; **Effect** You learn the distance to and direction of all creatures that have a Red Mantis contract on them within 10 miles. If one of these creatures is within 100 feet, you also know any afflictions, conditions, and spells affecting them. This awareness lasts for 1 hour.",
     "data": {
       "level": 11,
       "rarity": "rare",
@@ -369,7 +453,17 @@
       "category": "worn",
       "price": "1,400 gp",
       "usage": "worn eyepiece",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -402,7 +496,7 @@
     "systemVersion": "1.2.10",
     "name": "Gloves of Precision",
     "slug": "gloves-of-precision-high-seas-equipment-equipment-4958",
-    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese fingerless gloves increase the agility and sensitivity of the hands, enabling the wearer to perform more delicate, precise work. While wearing the _gloves of precision,_ you gain a +2 item bonus to Athletics checks to Climb, and to Thievery checks to Disable a Device and Pick a Lock.\n\n**Activate—Nimble Fingers** **Free Action** (fortune, manipulate) **Frequency** once per day; **Trigger** You attempt a skill check to Climb, Disable a Device, or Pick a Lock; **Effect** You roll the skill check twice and take the better result.\n\n## Gloves of Precision\n\n**Price** 900 gp\n\n## Greater Gloves of Precision\n\n**Price** 19,000 gp\n\n---\n\nThe gloves grant a +3 item bonus.",
+    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese fingerless gloves increase the agility and sensitivity of the hands, enabling the wearer to perform more delicate, precise work. While wearing the _gloves of precision,_ you gain a +2 item bonus to Athletics checks to [Climb](/action/climb-player-core), and to Thievery checks to [Disable a Device](/action/disable-a-device-player-core) and [Pick a Lock](/action/pick-a-lock-player-core).\n\n**Activate—Nimble Fingers** **Free Action** ([fortune](/trait/fortune), [manipulate](/trait/manipulate)) **Frequency** once per day; **Trigger** You attempt a skill check to Climb, Disable a Device, or Pick a Lock; **Effect** You roll the skill check twice and take the better result.\n\n## Gloves of Precision\n\n**Price** 900 gp\n\n## Greater Gloves of Precision\n\n**Price** 19,000 gp\n\n---\n\nThe gloves grant a +3 item bonus.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -411,7 +505,17 @@
         "magical"
       ],
       "category": "worn",
-      "usage": "worn gloves"
+      "usage": "worn gloves",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -444,7 +548,7 @@
     "systemVersion": "1.2.10",
     "name": "Gloves of Precision",
     "slug": "gloves-of-precision-high-seas-equipment-equipment-4958-4522",
-    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese fingerless gloves increase the agility and sensitivity of the hands, enabling the wearer to perform more delicate, precise work. While wearing the _gloves of precision,_ you gain a +2 item bonus to Athletics checks to Climb, and to Thievery checks to Disable a Device and Pick a Lock.\n\n**Activate—Nimble Fingers** **Free Action** (fortune, manipulate) **Frequency** once per day; **Trigger** You attempt a skill check to Climb, Disable a Device, or Pick a Lock; **Effect** You roll the skill check twice and take the better result.\n\n## Gloves of Precision\n\n**Price** 900 gp\n\n## Greater Gloves of Precision\n\n**Price** 19,000 gp\n\n---\n\nThe gloves grant a +3 item bonus.",
+    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese fingerless gloves increase the agility and sensitivity of the hands, enabling the wearer to perform more delicate, precise work. While wearing the _gloves of precision,_ you gain a +2 item bonus to Athletics checks to [Climb](/action/climb-player-core), and to Thievery checks to [Disable a Device](/action/disable-a-device-player-core) and [Pick a Lock](/action/pick-a-lock-player-core).\n\n**Activate—Nimble Fingers** **Free Action** ([fortune](/trait/fortune), [manipulate](/trait/manipulate)) **Frequency** once per day; **Trigger** You attempt a skill check to Climb, Disable a Device, or Pick a Lock; **Effect** You roll the skill check twice and take the better result.\n\n## Gloves of Precision\n\n**Price** 900 gp\n\n## Greater Gloves of Precision\n\n**Price** 19,000 gp\n\n---\n\nThe gloves grant a +3 item bonus.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -454,7 +558,17 @@
       ],
       "category": "worn",
       "price": "900 gp",
-      "usage": "worn gloves"
+      "usage": "worn gloves",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -487,7 +601,7 @@
     "systemVersion": "1.2.10",
     "name": "Golden Wings",
     "slug": "golden-wings-high-seas-equipment-equipment-4959",
-    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** (manipulate) **Frequency** once per day; **Effect** For the next 10 minutes, you can Leap 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a bright light in a 20-foot radius and dim light for the next 20 feet. You take a –2 item penalty to Stealth checks to Hide and Sneak.\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
+    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** For the next 10 minutes, you can [Leap](/action/leap-player-core) 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a [bright light](/rule/bright-light-rules-2402) in a 20-foot radius and [dim light](/rule/dim-light-rules-2403) for the next 20 feet. You take a –2 item penalty to Stealth checks to [Hide](/action/hide-player-core) and [Sneak](/action/sneak-player-core).\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a [fly Speed](/rule/fly-speed-rules-2350) of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
     "data": {
       "level": 3,
       "rarity": "rare",
@@ -497,7 +611,17 @@
       ],
       "category": "worn",
       "usage": "worn cloak",
-      "bulk": "2"
+      "bulk": "2",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -530,7 +654,7 @@
     "systemVersion": "1.2.10",
     "name": "Golden Wings",
     "slug": "golden-wings-high-seas-equipment-equipment-4959-4524",
-    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** (manipulate) **Frequency** once per day; **Effect** For the next 10 minutes, you can Leap 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a bright light in a 20-foot radius and dim light for the next 20 feet. You take a –2 item penalty to Stealth checks to Hide and Sneak.\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
+    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** For the next 10 minutes, you can [Leap](/action/leap-player-core) 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a [bright light](/rule/bright-light-rules-2402) in a 20-foot radius and [dim light](/rule/dim-light-rules-2403) for the next 20 feet. You take a –2 item penalty to Stealth checks to [Hide](/action/hide-player-core) and [Sneak](/action/sneak-player-core).\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a [fly Speed](/rule/fly-speed-rules-2350) of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
     "data": {
       "level": 3,
       "rarity": "rare",
@@ -541,7 +665,17 @@
       "category": "worn",
       "price": "60 gp",
       "usage": "worn cloak",
-      "bulk": "2"
+      "bulk": "2",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -574,7 +708,7 @@
     "systemVersion": "1.2.10",
     "name": "Greater Cloak of Social Graces",
     "slug": "greater-cloak-of-social-graces-high-seas-equipment-equipment-4957-4520",
-    "descr": "**Usage** worn cloak\n\n**Bulk** L\n\n**Access** You're from Hermea\n\n---\n\nThese cloaks are created from hand-dyed leather decorated with gemstones, appealing to the individual tastes of the owner. The beautiful decorations of these cloaks encourage their owner to wear them no matter the season, making it visibly part of their unique style. Wearing the cloak boosts self-confidence, granting a +1 item bonus to Diplomacy checks.\n\n**Activate—Overcome Self-Doubt** **Two Actions** (concentrate, manipulate) **Frequency** once per day; **Effect** You readjust your cloak, straightening the collar and brushing out any wrinkles. You gain the effects of a _heroism_ spell for 1 minute.\n\n## Cloak of Social Graces\n\n**Price** 380 gp\n\n## Greater Cloak of Social Graces\n\n**Price** 3,000 gp\n\n---\n\nThe item bonus is +2, and when you activate the cloak, you gain the benefits of a 6th-rank _heroism_ spell for 1 minute.\n\n## Major Cloak of Social Graces\n\n**Price** 40,000 gp\n\n---\n\nThe item bonus is +3, and when you activate the cloak, you gain the benefits of a 9th-rank _heroism_ spell for 1 minute.",
+    "descr": "**Usage** worn cloak\n\n**Bulk** L\n\n**Access** You're from Hermea\n\n---\n\nThese cloaks are created from hand-dyed leather decorated with gemstones, appealing to the individual tastes of the owner. The beautiful decorations of these cloaks encourage their owner to wear them no matter the season, making it visibly part of their unique style. Wearing the cloak boosts self-confidence, granting a +1 item bonus to Diplomacy checks.\n\n**Activate—Overcome Self-Doubt** **Two Actions** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You readjust your cloak, straightening the collar and brushing out any wrinkles. You gain the effects of a _[heroism](/spell/heroism-player-core)_ spell for 1 minute.\n\n## Cloak of Social Graces\n\n**Price** 380 gp\n\n## Greater Cloak of Social Graces\n\n**Price** 3,000 gp\n\n---\n\nThe item bonus is +2, and when you activate the cloak, you gain the benefits of a 6th-rank _heroism_ spell for 1 minute.\n\n## Major Cloak of Social Graces\n\n**Price** 40,000 gp\n\n---\n\nThe item bonus is +3, and when you activate the cloak, you gain the benefits of a 9th-rank _heroism_ spell for 1 minute.",
     "data": {
       "level": 13,
       "rarity": "rare",
@@ -585,7 +719,17 @@
       "category": "worn",
       "price": "3,000 gp",
       "usage": "worn cloak",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -618,7 +762,7 @@
     "systemVersion": "1.2.10",
     "name": "Greater Crown of the Master",
     "slug": "greater-crown-of-the-master-high-seas-equipment-equipment-4972-4533",
-    "descr": "**Usage** worn headwear\n\n**Bulk** L\n\n---\n\nThis crown, granted to favored azarketis by their alghollthu masters, is made of coral sculpted into the shape of a tentacled creature clutching the wearer’s temples. While wearing the crown, you gain an item bonus to saving throws against mental effects and can cast _figment_ as an occult innate spell.\n\n## Crown of the Master\n\n**Price** 350 gp\n\n---\n\nThe item bonus is +1.\n\n## Greater Crown of the Master\n\n**Price** 2,600 gp\n\n---\n\nThe item bonus is +2, and the crown gains the following activation.\n\n**Activate—Imperative Order** **Two Actions** (concentrate) **Frequency** once per day; **Effect** You cast a 6th-rank _dominate_ with a DC of 30. When you cast _dominate_ this way, its duration is reduced to 8 hours.",
+    "descr": "**Usage** worn headwear\n\n**Bulk** L\n\n---\n\nThis crown, granted to favored azarketis by their alghollthu masters, is made of coral sculpted into the shape of a tentacled creature clutching the wearer’s temples. While wearing the crown, you gain an item bonus to saving throws against [mental](/trait/mental) effects and can cast _[figment](/spell/figment-player-core)_ as an occult [innate spell](/rule/innate-spells-rules-2232).\n\n## Crown of the Master\n\n**Price** 350 gp\n\n---\n\nThe item bonus is +1.\n\n## Greater Crown of the Master\n\n**Price** 2,600 gp\n\n---\n\nThe item bonus is +2, and the crown gains the following activation.\n\n**Activate—Imperative Order** **Two Actions** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Effect** You cast a 6th-rank _[dominate](/spell/dominate-player-core)_ with a DC of 30. When you cast _dominate_ this way, its duration is reduced to 8 hours.",
     "data": {
       "level": 13,
       "rarity": "rare",
@@ -629,7 +773,17 @@
       "category": "worn",
       "price": "2,600 gp",
       "usage": "worn headwear",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -662,7 +816,7 @@
     "systemVersion": "1.2.10",
     "name": "Greater Gloves of Precision",
     "slug": "greater-gloves-of-precision-high-seas-equipment-equipment-4958-4523",
-    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese fingerless gloves increase the agility and sensitivity of the hands, enabling the wearer to perform more delicate, precise work. While wearing the _gloves of precision,_ you gain a +2 item bonus to Athletics checks to Climb, and to Thievery checks to Disable a Device and Pick a Lock.\n\n**Activate—Nimble Fingers** **Free Action** (fortune, manipulate) **Frequency** once per day; **Trigger** You attempt a skill check to Climb, Disable a Device, or Pick a Lock; **Effect** You roll the skill check twice and take the better result.\n\n## Gloves of Precision\n\n**Price** 900 gp\n\n## Greater Gloves of Precision\n\n**Price** 19,000 gp\n\n---\n\nThe gloves grant a +3 item bonus.",
+    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese fingerless gloves increase the agility and sensitivity of the hands, enabling the wearer to perform more delicate, precise work. While wearing the _gloves of precision,_ you gain a +2 item bonus to Athletics checks to [Climb](/action/climb-player-core), and to Thievery checks to [Disable a Device](/action/disable-a-device-player-core) and [Pick a Lock](/action/pick-a-lock-player-core).\n\n**Activate—Nimble Fingers** **Free Action** ([fortune](/trait/fortune), [manipulate](/trait/manipulate)) **Frequency** once per day; **Trigger** You attempt a skill check to Climb, Disable a Device, or Pick a Lock; **Effect** You roll the skill check twice and take the better result.\n\n## Gloves of Precision\n\n**Price** 900 gp\n\n## Greater Gloves of Precision\n\n**Price** 19,000 gp\n\n---\n\nThe gloves grant a +3 item bonus.",
     "data": {
       "level": 18,
       "rarity": "rare",
@@ -672,7 +826,17 @@
       ],
       "category": "worn",
       "price": "19,000 gp",
-      "usage": "worn gloves"
+      "usage": "worn gloves",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -705,7 +869,7 @@
     "systemVersion": "1.2.10",
     "name": "Greater Golden Wings",
     "slug": "greater-golden-wings-high-seas-equipment-equipment-4959-4525",
-    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** (manipulate) **Frequency** once per day; **Effect** For the next 10 minutes, you can Leap 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a bright light in a 20-foot radius and dim light for the next 20 feet. You take a –2 item penalty to Stealth checks to Hide and Sneak.\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
+    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** For the next 10 minutes, you can [Leap](/action/leap-player-core) 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a [bright light](/rule/bright-light-rules-2402) in a 20-foot radius and [dim light](/rule/dim-light-rules-2403) for the next 20 feet. You take a –2 item penalty to Stealth checks to [Hide](/action/hide-player-core) and [Sneak](/action/sneak-player-core).\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a [fly Speed](/rule/fly-speed-rules-2350) of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
     "data": {
       "level": 7,
       "rarity": "rare",
@@ -716,7 +880,17 @@
       "category": "worn",
       "price": "350 gp",
       "usage": "worn cloak",
-      "bulk": "2"
+      "bulk": "2",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -749,7 +923,7 @@
     "systemVersion": "1.2.10",
     "name": "Greater Kinetic Wraps of Strength",
     "slug": "greater-kinetic-wraps-of-strength-high-seas-equipment-equipment-4960-4529",
-    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese tightly woven strips strengthen the hands and arms, allowing for the wearer to increase their application of force while lifting heavy loads, and shoving past blockades. Promise sculptors primarily use them to handle large blocks of stone, moving them around as they prepare to carve them. You gain a +2 item bonus to Athletics checks to Force Open, Reposition, and Shove.\n\n**Activate—Burst of Might** **Free Action** (fortune, manipulate) **Frequency** once per day; **Trigger** You attempt an Athletics check to Force Open, Reposition, or Shove; **Effect** You roll the skill check twice and take the better result.\n\n## Kinetic Wraps of Strength\n\n**Price** 900 gp\n\n## Greater Kinetic Wraps of Strength\n\n**Price** 19,000 gp\n\n---\n\nThe wraps grant a +3 item bonus.",
+    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese tightly woven strips strengthen the hands and arms, allowing for the wearer to increase their application of force while lifting heavy loads, and shoving past blockades. Promise sculptors primarily use them to handle large blocks of stone, moving them around as they prepare to carve them. You gain a +2 item bonus to Athletics checks to [Force Open](/action/force-open-player-core), [Reposition](/action/reposition-player-core), and [Shove](/action/shove-player-core).\n\n**Activate—Burst of Might** **Free Action** ([fortune](/trait/fortune), [manipulate](/trait/manipulate)) **Frequency** once per day; **Trigger** You attempt an Athletics check to Force Open, Reposition, or Shove; **Effect** You roll the skill check twice and take the better result.\n\n## Kinetic Wraps of Strength\n\n**Price** 900 gp\n\n## Greater Kinetic Wraps of Strength\n\n**Price** 19,000 gp\n\n---\n\nThe wraps grant a +3 item bonus.",
     "data": {
       "level": 18,
       "rarity": "rare",
@@ -759,7 +933,17 @@
       ],
       "category": "worn",
       "price": "19,000 gp",
-      "usage": "worn gloves"
+      "usage": "worn gloves",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -792,7 +976,7 @@
     "systemVersion": "1.2.10",
     "name": "Greater Trident of the Azarketis",
     "slug": "greater-trident-of-the-azarketis-high-seas-equipment-equipment-4976-4535",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** 1\n\n**Base Weapon** Trident\n\n---\n\nThis _+2 striking trident_ is made of golden metal, its handle carved with reliefs of waves and seashells. These tridents are often wielded by high-ranking azarketi soldiers in the ranks of alghollthu armies.\n\n**Activate—Force of the Sea** **Two Actions** (manipulate) **Frequency** once per day; **Effect** You cast a 5th-rank _hydraulic torrent_. The spell DC is 29.\n\n## Trident of the Azarketis\n\n**Price** 1,300 gp\n\n## Greater Trident of the Azarketis\n\n**Price** 2,700 gp\n\n---\n\nThis is a _+2 greater striking trident_. When you activate the trident to cast _hydraulic torrent_, the spell is 6th-rank (DC 31).",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** 1\n\n**Base Weapon** [Trident](/item/trident-player-core)\n\n---\n\nThis _[+2 striking](/item/striking-gm-core) trident_ is made of golden metal, its handle carved with reliefs of waves and seashells. These tridents are often wielded by high-ranking azarketi soldiers in the ranks of alghollthu armies.\n\n**Activate—Force of the Sea** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You cast a 5th-rank _[hydraulic torrent](/spell/hydraulic-torrent-player-core)_. The spell DC is 29.\n\n## Trident of the Azarketis\n\n**Price** 1,300 gp\n\n## Greater Trident of the Azarketis\n\n**Price** 2,700 gp\n\n---\n\nThis is a _+2 greater striking trident_. When you activate the trident to cast _hydraulic torrent_, the spell is 6th-rank (DC 31).",
     "data": {
       "level": 13,
       "rarity": "uncommon",
@@ -803,7 +987,17 @@
       "category": "weapon",
       "price": "2,700 gp",
       "usage": "held in 1 hand",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -836,7 +1030,7 @@
     "systemVersion": "1.2.10",
     "name": "Helm of the Tides",
     "slug": "helm-of-the-tides-high-seas-equipment-equipment-4973",
-    "descr": "**Price** 1,200 gp\n\n**Usage** worn headwear\n\n**Bulk** L\n\n---\n\nThis silvery, hydrodynamic helm features curling waves inscribed along its surface. You gain a +2 item bonus to Athletics checks to Swim.\n\n**Activate—Raise the Tide** **Two Actions** (manipulate) **Frequency** once per day; **Effect** You cast _control water_. If you cast it at night, the spell’s area becomes 100 feet long by 100 feet wide.",
+    "descr": "**Price** 1,200 gp\n\n**Usage** worn headwear\n\n**Bulk** L\n\n---\n\nThis silvery, hydrodynamic helm features curling waves inscribed along its surface. You gain a +2 item bonus to Athletics checks to [Swim](/action/swim-player-core).\n\n**Activate—Raise the Tide** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You cast _[control water](/spell/control-water-player-core)_. If you cast it at night, the spell’s area becomes 100 feet long by 100 feet wide.",
     "data": {
       "level": 11,
       "rarity": "common",
@@ -847,7 +1041,17 @@
       "category": "worn",
       "price": "1,200 gp",
       "usage": "worn headwear",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -880,7 +1084,7 @@
     "systemVersion": "1.2.10",
     "name": "Hydration Cloak",
     "slug": "hydration-cloak-high-seas-equipment-equipment-4974",
-    "descr": "**Price** 150 gp\n\n**Usage** worn cloak\n\n**Bulk** L\n\n---\n\nThis cloak is made of turquoise scales that absorb moisture, hydrating the wearer. After being fully submerged in water for 1 hour, the cloak allows aquatic creatures, such as azarketis, to stay out of water for up to 1 week without penalties, after which it must be submerged again.\n\n**Activate—Pull Hood** **Two Actions** (manipulate) **Frequency** once per day; **Effect** You pull the cloak’s hood up and gain the effects of a 2nd-rank _water walk_ until you pull the hood down, to a maximum of 10 minutes.",
+    "descr": "**Price** 150 gp\n\n**Usage** worn cloak\n\n**Bulk** L\n\n---\n\nThis cloak is made of turquoise scales that absorb moisture, hydrating the wearer. After being fully submerged in water for 1 hour, the cloak allows aquatic creatures, such as azarketis, to stay out of water for up to 1 week without penalties, after which it must be submerged again.\n\n**Activate—Pull Hood** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You pull the cloak’s hood up and gain the effects of a 2nd-rank _[water walk](/spell/water-walk-player-core)_ until you pull the hood down, to a maximum of 10 minutes.",
     "data": {
       "level": 5,
       "rarity": "common",
@@ -891,7 +1095,17 @@
       "category": "worn",
       "price": "150 gp",
       "usage": "worn cloak",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -924,7 +1138,7 @@
     "systemVersion": "1.2.10",
     "name": "Kinetic Wraps of Strength",
     "slug": "kinetic-wraps-of-strength-high-seas-equipment-equipment-4960",
-    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese tightly woven strips strengthen the hands and arms, allowing for the wearer to increase their application of force while lifting heavy loads, and shoving past blockades. Promise sculptors primarily use them to handle large blocks of stone, moving them around as they prepare to carve them. You gain a +2 item bonus to Athletics checks to Force Open, Reposition, and Shove.\n\n**Activate—Burst of Might** **Free Action** (fortune, manipulate) **Frequency** once per day; **Trigger** You attempt an Athletics check to Force Open, Reposition, or Shove; **Effect** You roll the skill check twice and take the better result.\n\n## Kinetic Wraps of Strength\n\n**Price** 900 gp\n\n## Greater Kinetic Wraps of Strength\n\n**Price** 19,000 gp\n\n---\n\nThe wraps grant a +3 item bonus.",
+    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese tightly woven strips strengthen the hands and arms, allowing for the wearer to increase their application of force while lifting heavy loads, and shoving past blockades. Promise sculptors primarily use them to handle large blocks of stone, moving them around as they prepare to carve them. You gain a +2 item bonus to Athletics checks to [Force Open](/action/force-open-player-core), [Reposition](/action/reposition-player-core), and [Shove](/action/shove-player-core).\n\n**Activate—Burst of Might** **Free Action** ([fortune](/trait/fortune), [manipulate](/trait/manipulate)) **Frequency** once per day; **Trigger** You attempt an Athletics check to Force Open, Reposition, or Shove; **Effect** You roll the skill check twice and take the better result.\n\n## Kinetic Wraps of Strength\n\n**Price** 900 gp\n\n## Greater Kinetic Wraps of Strength\n\n**Price** 19,000 gp\n\n---\n\nThe wraps grant a +3 item bonus.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -933,7 +1147,17 @@
         "magical"
       ],
       "category": "worn",
-      "usage": "worn gloves"
+      "usage": "worn gloves",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -966,7 +1190,7 @@
     "systemVersion": "1.2.10",
     "name": "Kinetic Wraps of Strength",
     "slug": "kinetic-wraps-of-strength-high-seas-equipment-equipment-4960-4528",
-    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese tightly woven strips strengthen the hands and arms, allowing for the wearer to increase their application of force while lifting heavy loads, and shoving past blockades. Promise sculptors primarily use them to handle large blocks of stone, moving them around as they prepare to carve them. You gain a +2 item bonus to Athletics checks to Force Open, Reposition, and Shove.\n\n**Activate—Burst of Might** **Free Action** (fortune, manipulate) **Frequency** once per day; **Trigger** You attempt an Athletics check to Force Open, Reposition, or Shove; **Effect** You roll the skill check twice and take the better result.\n\n## Kinetic Wraps of Strength\n\n**Price** 900 gp\n\n## Greater Kinetic Wraps of Strength\n\n**Price** 19,000 gp\n\n---\n\nThe wraps grant a +3 item bonus.",
+    "descr": "**Usage** worn gloves\n\n**Access** You're from Hermea\n\n---\n\nThese tightly woven strips strengthen the hands and arms, allowing for the wearer to increase their application of force while lifting heavy loads, and shoving past blockades. Promise sculptors primarily use them to handle large blocks of stone, moving them around as they prepare to carve them. You gain a +2 item bonus to Athletics checks to [Force Open](/action/force-open-player-core), [Reposition](/action/reposition-player-core), and [Shove](/action/shove-player-core).\n\n**Activate—Burst of Might** **Free Action** ([fortune](/trait/fortune), [manipulate](/trait/manipulate)) **Frequency** once per day; **Trigger** You attempt an Athletics check to Force Open, Reposition, or Shove; **Effect** You roll the skill check twice and take the better result.\n\n## Kinetic Wraps of Strength\n\n**Price** 900 gp\n\n## Greater Kinetic Wraps of Strength\n\n**Price** 19,000 gp\n\n---\n\nThe wraps grant a +3 item bonus.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -976,7 +1200,17 @@
       ],
       "category": "worn",
       "price": "900 gp",
-      "usage": "worn gloves"
+      "usage": "worn gloves",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1009,7 +1243,7 @@
     "systemVersion": "1.2.10",
     "name": "Lesser Mariner's Mien",
     "slug": "lesser-mariner-s-mien-high-seas-equipment-equipment-4969-4530",
-    "descr": "_**PFS Note** Pathfinder Society does not use vehicle rules_\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nThe swirls on this wooden mask—often worn by Mordant Censors—move and shift, reflecting the shape of the nearest currents. Wearing the mask grants you a +1 item bonus to Sailing Lore and Survival checks. In addition, it allows you to pilot a boat with simply a thought. When you pilot a vehicle, you can keep both hands free and Drive from any location on the vehicle.\n\n**Activate—Set the Course** **Single Action** (concentrate) **Frequency** once per day; **Requirements** You are aboard a vehicle; **Effect** You become quickened for 1 minute or until you leave the vehicle, whichever comes first, and can use the extra action to Take Control of the vehicle or, if you’re already piloting it, Drive or Stop the vehicle.\n\n## Lesser Mariner's Mien\n\n**Price** 425 gp\n\n## Moderate Mariner's Mien\n\n**Price** 5,300 gp\n\n---\n\nThe mask grants a +2 item bonus, and you can activate it once per hour.",
+    "descr": "_**PFS Note** Pathfinder Society does not use vehicle rules_\n\n**[Usage](/rule/usage-rules-3151)** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nThe swirls on this wooden mask—often worn by Mordant Censors—move and shift, reflecting the shape of the nearest currents. Wearing the mask grants you a +1 item bonus to Sailing Lore and Survival checks. In addition, it allows you to pilot a boat with simply a thought. When you pilot a vehicle, you can keep both hands free and [Drive](/action/drive-gm-core) from any location on the vehicle.\n\n**Activate—Set the Course** **Single Action** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Requirements** You are aboard a vehicle; **Effect** You become [quickened](/condition/quickened-player-core) for 1 minute or until you leave the vehicle, whichever comes first, and can use the extra action to [Take Control](/action/take-control-gm-core) of the vehicle or, if you’re already piloting it, Drive or [Stop](/action/stop-gm-core) the vehicle.\n\n## Lesser Mariner's Mien\n\n**Price** 425 gp\n\n## Moderate Mariner's Mien\n\n**Price** 5,300 gp\n\n---\n\nThe mask grants a +2 item bonus, and you can activate it once per hour.",
     "data": {
       "level": 8,
       "rarity": "uncommon",
@@ -1020,7 +1254,17 @@
       "category": "worn",
       "price": "425 gp",
       "usage": "worn mask",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1053,7 +1297,7 @@
     "systemVersion": "1.2.10",
     "name": "Major Cloak of Social Graces",
     "slug": "major-cloak-of-social-graces-high-seas-equipment-equipment-4957-4521",
-    "descr": "**Usage** worn cloak\n\n**Bulk** L\n\n**Access** You're from Hermea\n\n---\n\nThese cloaks are created from hand-dyed leather decorated with gemstones, appealing to the individual tastes of the owner. The beautiful decorations of these cloaks encourage their owner to wear them no matter the season, making it visibly part of their unique style. Wearing the cloak boosts self-confidence, granting a +1 item bonus to Diplomacy checks.\n\n**Activate—Overcome Self-Doubt** **Two Actions** (concentrate, manipulate) **Frequency** once per day; **Effect** You readjust your cloak, straightening the collar and brushing out any wrinkles. You gain the effects of a _heroism_ spell for 1 minute.\n\n## Cloak of Social Graces\n\n**Price** 380 gp\n\n## Greater Cloak of Social Graces\n\n**Price** 3,000 gp\n\n---\n\nThe item bonus is +2, and when you activate the cloak, you gain the benefits of a 6th-rank _heroism_ spell for 1 minute.\n\n## Major Cloak of Social Graces\n\n**Price** 40,000 gp\n\n---\n\nThe item bonus is +3, and when you activate the cloak, you gain the benefits of a 9th-rank _heroism_ spell for 1 minute.",
+    "descr": "**Usage** worn cloak\n\n**Bulk** L\n\n**Access** You're from Hermea\n\n---\n\nThese cloaks are created from hand-dyed leather decorated with gemstones, appealing to the individual tastes of the owner. The beautiful decorations of these cloaks encourage their owner to wear them no matter the season, making it visibly part of their unique style. Wearing the cloak boosts self-confidence, granting a +1 item bonus to Diplomacy checks.\n\n**Activate—Overcome Self-Doubt** **Two Actions** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You readjust your cloak, straightening the collar and brushing out any wrinkles. You gain the effects of a _[heroism](/spell/heroism-player-core)_ spell for 1 minute.\n\n## Cloak of Social Graces\n\n**Price** 380 gp\n\n## Greater Cloak of Social Graces\n\n**Price** 3,000 gp\n\n---\n\nThe item bonus is +2, and when you activate the cloak, you gain the benefits of a 6th-rank _heroism_ spell for 1 minute.\n\n## Major Cloak of Social Graces\n\n**Price** 40,000 gp\n\n---\n\nThe item bonus is +3, and when you activate the cloak, you gain the benefits of a 9th-rank _heroism_ spell for 1 minute.",
     "data": {
       "level": 19,
       "rarity": "rare",
@@ -1064,7 +1308,17 @@
       "category": "worn",
       "price": "40,000 gp",
       "usage": "worn cloak",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1097,7 +1351,7 @@
     "systemVersion": "1.2.10",
     "name": "Major Golden Wings",
     "slug": "major-golden-wings-high-seas-equipment-equipment-4959-4526",
-    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** (manipulate) **Frequency** once per day; **Effect** For the next 10 minutes, you can Leap 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a bright light in a 20-foot radius and dim light for the next 20 feet. You take a –2 item penalty to Stealth checks to Hide and Sneak.\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
+    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** For the next 10 minutes, you can [Leap](/action/leap-player-core) 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a [bright light](/rule/bright-light-rules-2402) in a 20-foot radius and [dim light](/rule/dim-light-rules-2403) for the next 20 feet. You take a –2 item penalty to Stealth checks to [Hide](/action/hide-player-core) and [Sneak](/action/sneak-player-core).\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a [fly Speed](/rule/fly-speed-rules-2350) of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
     "data": {
       "level": 9,
       "rarity": "rare",
@@ -1108,7 +1362,17 @@
       "category": "worn",
       "price": "650 gp",
       "usage": "worn cloak",
-      "bulk": "2"
+      "bulk": "2",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1141,7 +1405,7 @@
     "systemVersion": "1.2.10",
     "name": "Mariner's Mien",
     "slug": "mariner-s-mien-high-seas-equipment-equipment-4969",
-    "descr": "_**PFS Note** Pathfinder Society does not use vehicle rules_\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nThe swirls on this wooden mask—often worn by Mordant Censors—move and shift, reflecting the shape of the nearest currents. Wearing the mask grants you a +1 item bonus to Sailing Lore and Survival checks. In addition, it allows you to pilot a boat with simply a thought. When you pilot a vehicle, you can keep both hands free and Drive from any location on the vehicle.\n\n**Activate—Set the Course** **Single Action** (concentrate) **Frequency** once per day; **Requirements** You are aboard a vehicle; **Effect** You become quickened for 1 minute or until you leave the vehicle, whichever comes first, and can use the extra action to Take Control of the vehicle or, if you’re already piloting it, Drive or Stop the vehicle.\n\n## Lesser Mariner's Mien\n\n**Price** 425 gp\n\n## Moderate Mariner's Mien\n\n**Price** 5,300 gp\n\n---\n\nThe mask grants a +2 item bonus, and you can activate it once per hour.",
+    "descr": "_**PFS Note** Pathfinder Society does not use vehicle rules_\n\n**[Usage](/rule/usage-rules-3151)** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nThe swirls on this wooden mask—often worn by Mordant Censors—move and shift, reflecting the shape of the nearest currents. Wearing the mask grants you a +1 item bonus to Sailing Lore and Survival checks. In addition, it allows you to pilot a boat with simply a thought. When you pilot a vehicle, you can keep both hands free and [Drive](/action/drive-gm-core) from any location on the vehicle.\n\n**Activate—Set the Course** **Single Action** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Requirements** You are aboard a vehicle; **Effect** You become [quickened](/condition/quickened-player-core) for 1 minute or until you leave the vehicle, whichever comes first, and can use the extra action to [Take Control](/action/take-control-gm-core) of the vehicle or, if you’re already piloting it, Drive or [Stop](/action/stop-gm-core) the vehicle.\n\n## Lesser Mariner's Mien\n\n**Price** 425 gp\n\n## Moderate Mariner's Mien\n\n**Price** 5,300 gp\n\n---\n\nThe mask grants a +2 item bonus, and you can activate it once per hour.",
     "data": {
       "level": 8,
       "rarity": "uncommon",
@@ -1151,7 +1415,17 @@
       ],
       "category": "worn",
       "usage": "worn mask",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1184,7 +1458,7 @@
     "systemVersion": "1.2.10",
     "name": "Moderate Mariner's Mien",
     "slug": "moderate-mariner-s-mien-high-seas-equipment-equipment-4969-4531",
-    "descr": "_**PFS Note** Pathfinder Society does not use vehicle rules_\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nThe swirls on this wooden mask—often worn by Mordant Censors—move and shift, reflecting the shape of the nearest currents. Wearing the mask grants you a +1 item bonus to Sailing Lore and Survival checks. In addition, it allows you to pilot a boat with simply a thought. When you pilot a vehicle, you can keep both hands free and Drive from any location on the vehicle.\n\n**Activate—Set the Course** **Single Action** (concentrate) **Frequency** once per day; **Requirements** You are aboard a vehicle; **Effect** You become quickened for 1 minute or until you leave the vehicle, whichever comes first, and can use the extra action to Take Control of the vehicle or, if you’re already piloting it, Drive or Stop the vehicle.\n\n## Lesser Mariner's Mien\n\n**Price** 425 gp\n\n## Moderate Mariner's Mien\n\n**Price** 5,300 gp\n\n---\n\nThe mask grants a +2 item bonus, and you can activate it once per hour.",
+    "descr": "_**PFS Note** Pathfinder Society does not use vehicle rules_\n\n**[Usage](/rule/usage-rules-3151)** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nThe swirls on this wooden mask—often worn by Mordant Censors—move and shift, reflecting the shape of the nearest currents. Wearing the mask grants you a +1 item bonus to Sailing Lore and Survival checks. In addition, it allows you to pilot a boat with simply a thought. When you pilot a vehicle, you can keep both hands free and [Drive](/action/drive-gm-core) from any location on the vehicle.\n\n**Activate—Set the Course** **Single Action** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Requirements** You are aboard a vehicle; **Effect** You become [quickened](/condition/quickened-player-core) for 1 minute or until you leave the vehicle, whichever comes first, and can use the extra action to [Take Control](/action/take-control-gm-core) of the vehicle or, if you’re already piloting it, Drive or [Stop](/action/stop-gm-core) the vehicle.\n\n## Lesser Mariner's Mien\n\n**Price** 425 gp\n\n## Moderate Mariner's Mien\n\n**Price** 5,300 gp\n\n---\n\nThe mask grants a +2 item bonus, and you can activate it once per hour.",
     "data": {
       "level": 15,
       "rarity": "uncommon",
@@ -1195,7 +1469,17 @@
       "category": "worn",
       "price": "5,300 gp",
       "usage": "worn mask",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1228,7 +1512,7 @@
     "systemVersion": "1.2.10",
     "name": "Mordant Mask",
     "slug": "mordant-mask-high-seas-equipment-equipment-4970",
-    "descr": "**Price** 225 gp\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nA constant murmuring, like waves washing up on the shore, fills your ears when you don this wooden mask. The soothing sounds grant you a +1 item bonus to your Will save and Will DC against emotion effects.\n\n**Activate—Pounding Surf** **Reaction** (concentrate) **Frequency** once per day; **Trigger** You would be affected by an auditory effect; **Effect** The noise of the waves grow to an overwhelming, crashing booming, drowning out all other sounds. You become deafened to all other noise until the end of your next turn. You can Sustain the activation up to 1 minute.",
+    "descr": "**Price** 225 gp\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nA constant murmuring, like waves washing up on the shore, fills your ears when you don this wooden mask. The soothing sounds grant you a +1 item bonus to your Will save and Will DC against [emotion](/trait/emotion) effects.\n\n**Activate—Pounding Surf** **Reaction** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Trigger** You would be affected by an auditory effect; **Effect** The noise of the waves grow to an overwhelming, crashing booming, drowning out all other sounds. You become [deafened](/condition/deafened-player-core) to all other noise until the end of your next turn. You can [Sustain](/action/sustain-player-core) the activation up to 1 minute.",
     "data": {
       "level": 6,
       "rarity": "uncommon",
@@ -1240,7 +1524,21 @@
       "category": "worn",
       "price": "225 gp",
       "usage": "worn mask",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "auditory",
+          "slug": "auditory"
+        },
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1274,7 +1572,7 @@
     "systemVersion": "1.2.10",
     "name": "Oneiric Crystals of the Slumberer",
     "slug": "oneiric-crystals-of-the-slumberer-high-seas-equipment-equipment-4975",
-    "descr": "**Price** 5,500 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n---\n\nThese trapezoidal crystals were created by a powerful alghollthu master from long-forgotten deep sea stones. They were used to steal the dreams and memories of the master’s victims, trapping them inside so they could be consulted when needed. When broken, the creatures whose memories were stolen retrieve them but are stupefied 1 for 1 round.\n\n**Activate—Steal Remembrance** **Two Actions** (concentrate, manipulate) **Frequency** once per day; **Effect** Choose a creature you can see, trapping its memories in the crystal. The creature must attempt a DC 31 Will saving throw. If the creature is asleep, it uses the outcome one degree of success worse than the result of its roll.\n\n**Critical Success** The creature is unaffected and realizes you tried to steal its memories.\n\n**Success** The creature is stupefied 1 for 1 round but doesn’t lose any memory, and believes you did something harmless to its mind.\n\n**Failure** The creature is stupefied 2 for 1 hour and loses all memory of a particular topic that can be detailed in 50 words or fewer.\n\n**Critical Failure** The creature is stupefied 4 for 1 day and loses all memory of two particular topics, each of which can be detailed in 50 words or fewer.",
+    "descr": "**Price** 5,500 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n---\n\nThese trapezoidal crystals were created by a powerful alghollthu master from long-forgotten deep sea stones. They were used to steal the dreams and memories of the master’s victims, trapping them inside so they could be consulted when needed. When broken, the creatures whose memories were stolen retrieve them but are [stupefied](/condition/stupefied-player-core) 1 for 1 round.\n\n**Activate—Steal Remembrance** **Two Actions** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** Choose a creature you can see, trapping its memories in the crystal. The creature must attempt a DC 31 Will saving throw. If the creature is asleep, it uses the outcome one degree of success worse than the result of its roll.\n\n**Critical Success** The creature is unaffected and realizes you tried to steal its memories.\n\n**Success** The creature is stupefied 1 for 1 round but doesn’t lose any memory, and believes you did something harmless to its mind.\n\n**Failure** The creature is stupefied 2 for 1 hour and loses all memory of a particular topic that can be detailed in 50 words or fewer.\n\n**Critical Failure** The creature is stupefied 4 for 1 day and loses all memory of two particular topics, each of which can be detailed in 50 words or fewer.",
     "data": {
       "level": 15,
       "rarity": "uncommon",
@@ -1285,7 +1583,17 @@
       "category": "held",
       "price": "5,500 gp",
       "usage": "held in 1 hand",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "mental",
+          "slug": "mental"
+        },
+        {
+          "label": "occult",
+          "slug": "occult"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1318,7 +1626,7 @@
     "systemVersion": "1.2.10",
     "name": "Sanguine Ammunition",
     "slug": "sanguine-ammunition-high-seas-equipment-equipment-4964",
-    "descr": "**Price** 75 gp\n\n**Ammunition** any\n\n**Access** You're a member of the Red Mantis Assassins\n\n**Activate**\n**Single Action**\n(manipulate)\n\n---\n\nThis wickedly barbed ammunition looks dangerous to even touch. It dissolves into blood on impact, leaving no trace if the target has blood. The target takes a –2 circumstance penalty to saves against diseases and poisons for 1 round.\n\nYou can also Activate _sanguine ammunition_ as part of Casting a Spell. The spell must be 3rd-rank or lower, must take 1 or 2 actions to cast, must have the poison or disease trait, and must target a creature other than the caster. Casting a Spell this way has no effect; instead, a creature hit by _sanguine ammunition_ activated this way is targeted by the spell in addition to the item’s normal effects. If the target isn’t a valid target for the spell, the spell is lost.\n\nThe ammunition affects only the target hit. If the spell requires a spell attack, use the result of your ranged attack roll to determine the degree of success of the spell. If the spell requires a save, the target attempts the save against your spell DC.",
+    "descr": "**Price** 75 gp\n\n**Ammunition** any\n\n**Access** You're a member of the Red Mantis Assassins\n\n**Activate**\n**Single Action**\n([manipulate](/trait/manipulate))\n\n---\n\nThis wickedly barbed ammunition looks dangerous to even touch. It dissolves into blood on impact, leaving no trace if the target has blood. The target takes a –2 circumstance penalty to saves against diseases and poisons for 1 round.\n\nYou can also Activate _sanguine ammunition_ as part of [Casting a Spell](/action/cast-a-spell-player-core). The spell must be 3rd-rank or lower, must take 1 or 2 actions to cast, must have the [poison](/trait/poison) or [disease](/trait/disease) trait, and must target a creature other than the caster. Casting a Spell this way has no effect; instead, a creature hit by _sanguine ammunition_ activated this way is targeted by the spell in addition to the item’s normal effects. If the target isn’t a valid target for the spell, the spell is lost.\n\nThe ammunition affects only the target hit. If the spell requires a spell attack, use the result of your ranged attack roll to determine the degree of success of the spell. If the spell requires a save, the target attempts the save against your spell DC.",
     "data": {
       "level": 8,
       "rarity": "rare",
@@ -1328,7 +1636,17 @@
       ],
       "category": "consumable",
       "price": "75 gp",
-      "ammunition": "any"
+      "ammunition": "any",
+      "traitLinks": [
+        {
+          "label": "consumable",
+          "slug": "consumable"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1360,7 +1678,7 @@
     "systemVersion": "1.2.10",
     "name": "Sawtooth Reaper",
     "slug": "sawtooth-reaper-high-seas-equipment-equipment-4965",
-    "descr": "_**PFS Note** No duration on effects._\n\n**Price** 6,000 gp\n\n**Usage** held in 2 hands\n\n**Bulk** 1\n\n**Base Weapon** Kusarigama\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThe serrated blade and chain of this _+2 greater striking keen wounding kusarigama_ shine blood red. A crimson haze wafts from the blade.\n\n**Activate—Ensnaring Disarm** **Reaction** ; **Trigger** An enemy within reach misses you with a melee weapon Strike; **Effect** You attempt to Disarm the triggering creature. You can do so even if you don’t have a hand free.\n\n**Activate—Bloodmist Whirl** **Single Action** (concentrate, manipulate) **Frequency** once per hour; **Effect** You whirl the chain of the _sawtooth reaper_, creating a crimson fog that conceals you for 1 round or until you Strike. The next Strike you make treats the target as off-guard, and when you use Ensnaring Disarm you can also Strike the same target as a free action.",
+    "descr": "_**PFS Note** No duration on effects._\n\n**Price** 6,000 gp\n\n**Usage** held in 2 hands\n\n**Bulk** 1\n\n**Base Weapon** Kusarigama\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThe serrated blade and chain of this _+2 [greater striking](/item/striking-gm-core) [keen](/item/keen-gm-core) [wounding](/item/wounding-gm-core) kusarigama_ shine blood red. A crimson haze wafts from the blade.\n\n**Activate—Ensnaring Disarm** **Reaction** ; **Trigger** An enemy within reach misses you with a melee weapon [Strike](/action/strike-player-core); **Effect** You attempt to [Disarm](/action/disarm-player-core) the triggering creature. You can do so even if you don’t have a hand free.\n\n**Activate—Bloodmist Whirl** **Single Action** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Frequency** once per hour; **Effect** You whirl the chain of the _sawtooth reaper_, creating a crimson fog that conceals you for 1 round or until you Strike. The next Strike you make treats the target as [off-guard](/condition/off-guard-player-core), and when you use Ensnaring Disarm you can also Strike the same target as a free action.",
     "data": {
       "level": 15,
       "rarity": "rare",
@@ -1370,7 +1688,13 @@
       "category": "weapon",
       "price": "6,000 gp",
       "usage": "held in 2 hands",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1402,7 +1726,7 @@
     "systemVersion": "1.2.10",
     "name": "Trident of the Azarketis",
     "slug": "trident-of-the-azarketis-high-seas-equipment-equipment-4976",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** 1\n\n**Base Weapon** Trident\n\n---\n\nThis _+2 striking trident_ is made of golden metal, its handle carved with reliefs of waves and seashells. These tridents are often wielded by high-ranking azarketi soldiers in the ranks of alghollthu armies.\n\n**Activate—Force of the Sea** **Two Actions** (manipulate) **Frequency** once per day; **Effect** You cast a 5th-rank _hydraulic torrent_. The spell DC is 29.\n\n## Trident of the Azarketis\n\n**Price** 1,300 gp\n\n## Greater Trident of the Azarketis\n\n**Price** 2,700 gp\n\n---\n\nThis is a _+2 greater striking trident_. When you activate the trident to cast _hydraulic torrent_, the spell is 6th-rank (DC 31).",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** 1\n\n**Base Weapon** [Trident](/item/trident-player-core)\n\n---\n\nThis _[+2 striking](/item/striking-gm-core) trident_ is made of golden metal, its handle carved with reliefs of waves and seashells. These tridents are often wielded by high-ranking azarketi soldiers in the ranks of alghollthu armies.\n\n**Activate—Force of the Sea** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You cast a 5th-rank _[hydraulic torrent](/spell/hydraulic-torrent-player-core)_. The spell DC is 29.\n\n## Trident of the Azarketis\n\n**Price** 1,300 gp\n\n## Greater Trident of the Azarketis\n\n**Price** 2,700 gp\n\n---\n\nThis is a _+2 greater striking trident_. When you activate the trident to cast _hydraulic torrent_, the spell is 6th-rank (DC 31).",
     "data": {
       "level": 11,
       "rarity": "uncommon",
@@ -1412,7 +1736,17 @@
       ],
       "category": "weapon",
       "usage": "held in 1 hand",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1445,7 +1779,7 @@
     "systemVersion": "1.2.10",
     "name": "Trident of the Azarketis",
     "slug": "trident-of-the-azarketis-high-seas-equipment-equipment-4976-4534",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** 1\n\n**Base Weapon** Trident\n\n---\n\nThis _+2 striking trident_ is made of golden metal, its handle carved with reliefs of waves and seashells. These tridents are often wielded by high-ranking azarketi soldiers in the ranks of alghollthu armies.\n\n**Activate—Force of the Sea** **Two Actions** (manipulate) **Frequency** once per day; **Effect** You cast a 5th-rank _hydraulic torrent_. The spell DC is 29.\n\n## Trident of the Azarketis\n\n**Price** 1,300 gp\n\n## Greater Trident of the Azarketis\n\n**Price** 2,700 gp\n\n---\n\nThis is a _+2 greater striking trident_. When you activate the trident to cast _hydraulic torrent_, the spell is 6th-rank (DC 31).",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** 1\n\n**Base Weapon** [Trident](/item/trident-player-core)\n\n---\n\nThis _[+2 striking](/item/striking-gm-core) trident_ is made of golden metal, its handle carved with reliefs of waves and seashells. These tridents are often wielded by high-ranking azarketi soldiers in the ranks of alghollthu armies.\n\n**Activate—Force of the Sea** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You cast a 5th-rank _[hydraulic torrent](/spell/hydraulic-torrent-player-core)_. The spell DC is 29.\n\n## Trident of the Azarketis\n\n**Price** 1,300 gp\n\n## Greater Trident of the Azarketis\n\n**Price** 2,700 gp\n\n---\n\nThis is a _+2 greater striking trident_. When you activate the trident to cast _hydraulic torrent_, the spell is 6th-rank (DC 31).",
     "data": {
       "level": 11,
       "rarity": "uncommon",
@@ -1456,7 +1790,17 @@
       "category": "weapon",
       "price": "1,300 gp",
       "usage": "held in 1 hand",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1489,7 +1833,7 @@
     "systemVersion": "1.2.10",
     "name": "True Golden Wings",
     "slug": "true-golden-wings-high-seas-equipment-equipment-4959-4527",
-    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** (manipulate) **Frequency** once per day; **Effect** For the next 10 minutes, you can Leap 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a bright light in a 20-foot radius and dim light for the next 20 feet. You take a –2 item penalty to Stealth checks to Hide and Sneak.\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
+    "descr": "**Usage** worn cloak\n\n**Bulk** 2\n\n**Access** You're from Hermea\n\n---\n\nThis pair of huge wings is crafted from numerous feathers made of a lightweight, golden magical alloy. When activated, the wings emit a melodic sound and a shimmering glow.\n\n**Activate—Assisted Flight** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** For the next 10 minutes, you can [Leap](/action/leap-player-core) 20 feet, using the wings to propel yourself. You must land on a space with solid ground. For the duration, you also emit a [bright light](/rule/bright-light-rules-2402) in a 20-foot radius and [dim light](/rule/dim-light-rules-2403) for the next 20 feet. You take a –2 item penalty to Stealth checks to [Hide](/action/hide-player-core) and [Sneak](/action/sneak-player-core).\n\n## Golden Wings\n\n**Price** 60 gp\n\n## Greater Golden Wings\n\n**Price** 350 gp\n\n---\n\nWhen you activate the wings, for the duration, you can also use an action to flap the wings to glide slowly toward the ground, 5 feet down and up to 20 feet forward through the air. As long as you spend 1 action gliding each round and haven’t yet reached the ground, you remain in the air at the end of your turn.\n\n## Major Golden Wings\n\n**Price** 650 gp\n\n---\n\nWhen you activate the wings, you also gain a [fly Speed](/rule/fly-speed-rules-2350) of 20 feet for the duration.\n\n## True Golden Wings\n\n**Price** 14,000 gp\n\n---\n\nWhen you activate the wings, you also gain a fly Speed equal to your Speed or 25 feet, whichever is greater, for the duration.",
     "data": {
       "level": 17,
       "rarity": "rare",
@@ -1500,7 +1844,17 @@
       "category": "worn",
       "price": "14,000 gp",
       "usage": "worn cloak",
-      "bulk": "2"
+      "bulk": "2",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1533,7 +1887,7 @@
     "systemVersion": "1.2.10",
     "name": "Whispering Veil",
     "slug": "whispering-veil-high-seas-equipment-equipment-4971",
-    "descr": "**Price** 2,600 gp\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nCarved concentric circles surround the eye and ear holes on this dark wooden mask, which lets you hear the whispers that fill the Mordant Spire. The barely audible susurrus that fills your ears advises you of peril, granting you a +1 item bonus to Perception checks for initiative and to Seek, Search, or Sense Motive against things that intend harm to you, at the GM’s discretion, such as hostile creatures and haunts. If you tie a foe’s initiative roll, you go first.\n\n**Activate—Spire Power** **Free Action** (concentrate) **Frequency** once per day; **Trigger** You are about to attempt a check that your mythic calling would allow you to spend a Mythic Point on; **Effect** You draw on the power of the Mordant Spire. You gain 1 Mythic Point, which you can spend to attempt the check. If you don’t spend this point by the end of this turn, it is lost. You do not regain a Mythic Point if you critically succeed on the check, even if it’s the first time you did so that day, but still do so on the subsequent critical success, as usual.\n\n**Activate—Unforeseen Alert** **Free Action** ; **Requirements** A creature or hazard you aren’t aware of targets you or includes you in an area effect, and you aren’t deafened; **Effect** The whispers warn you of the impending danger. You immediately gain a reaction that you can use only to respond to the triggering action or effect.",
+    "descr": "**Price** 2,600 gp\n\n**Usage** worn mask\n\n**Bulk** L\n\n**Access** You're from the Mordant Spire\n\n---\n\nCarved concentric circles surround the eye and ear holes on this dark wooden mask, which lets you hear the whispers that fill the Mordant Spire. The barely audible susurrus that fills your ears advises you of peril, granting you a +1 item bonus to Perception checks for initiative and to [Seek](/action/seek-player-core), [Search](/action/search-player-core), or [Sense Motive](/action/sense-motive-player-core) against things that intend harm to you, at the GM’s discretion, such as [hostile](/condition/hostile-player-core) creatures and haunts. If you tie a foe’s initiative roll, you go first.\n\n**Activate—Spire Power** **Free Action** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Trigger** You are about to attempt a check that your mythic calling would allow you to spend a Mythic Point on; **Effect** You draw on the power of the Mordant Spire. You gain 1 Mythic Point, which you can spend to attempt the check. If you don’t spend this point by the end of this turn, it is lost. You do not regain a Mythic Point if you critically succeed on the check, even if it’s the first time you did so that day, but still do so on the subsequent critical success, as usual.\n\n**Activate—Unforeseen Alert** **Free Action** ; **Requirements** A creature or hazard you aren’t aware of targets you or includes you in an area effect, and you aren’t [deafened](/condition/deafened-player-core); **Effect** The whispers warn you of the impending danger. You immediately gain a reaction that you can use only to respond to the triggering action or effect.",
     "data": {
       "level": 13,
       "rarity": "rare",
@@ -1545,7 +1899,21 @@
       "category": "worn",
       "price": "2,600 gp",
       "usage": "worn mask",
-      "bulk": "L"
+      "bulk": "L",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        },
+        {
+          "label": "mythic",
+          "slug": "mythic"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1579,7 +1947,7 @@
     "systemVersion": "1.2.10",
     "name": "Winged Terror",
     "slug": "winged-terror-high-seas-equipment-equipment-4966",
-    "descr": "**Usage** worn armor\n\n**Bulk** 1\n\n**Base Armor** Studded Leather Armor\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThis _+2 greater resilient winged studded leather armor_ features the Red Mantis emblem in carapace studs. The wearer gains resistance 5 to physical damage dealt by frightened creatures.",
+    "descr": "**Usage** worn armor\n\n**Bulk** 1\n\n**Base Armor** [Studded Leather Armor](/item/studded-leather-armor-player-core)\n\n**Access** You're a member of the Red Mantis Assassins\n\n---\n\nThis _[+2 greater resilient](/item/resilient-gm-core) [winged](/item/winged-gm-core) studded leather armor_ features the Red Mantis emblem in carapace studs. The wearer gains [resistance](/rule/resistance-rules-2318) 5 to physical damage dealt by [frightened](/condition/frightened-player-core) creatures.",
     "data": {
       "level": 16,
       "rarity": "rare",
@@ -1589,7 +1957,17 @@
       ],
       "category": "armor",
       "usage": "worn armor",
-      "bulk": "1"
+      "bulk": "1",
+      "traitLinks": [
+        {
+          "label": "invested",
+          "slug": "invested"
+        },
+        {
+          "label": "magical",
+          "slug": "magical"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

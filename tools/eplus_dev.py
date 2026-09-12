@@ -37,9 +37,12 @@ SYSTEM_FILES = {
     "collections.json",
     "filters.json",
     "gm-tools.json",
+    "groups.json",
+    "pages.json",
     "COMMUNITY-USE-NOTICE.md",
 }
 SYSTEM_DIRS = {
+    "assets",
     "fonts",
     "forms",
     "icons",
@@ -210,6 +213,55 @@ def validate_project() -> dict[str, Any]:
             names.add(name)
             labels.add(label)
             collections.add(collection)
+
+        pages = load_json(REPO / "pages.json")
+        groups = load_json(REPO / "groups.json")
+        page_slugs = {str(page.get("slug") or "") for page in pages}
+        group_ids = {str(group.get("id") or "") for group in groups}
+        record_ids = [str(record.get("id") or "") for record in pages + groups]
+        if not pages or not groups:
+            errors.append("Operations Center pages and groups must not be empty")
+        if "" in page_slugs or len(page_slugs) != len(pages):
+            errors.append("pages.json: missing or duplicate page slug")
+        if "" in record_ids or len(record_ids) != len(set(record_ids)):
+            errors.append("pages/groups: missing or duplicate record id")
+        for page in pages:
+            slug = str(page.get("slug") or "")
+            content = str(page.get("content") or "")
+            if str(page.get("parentId") or "") not in group_ids:
+                errors.append(f"pages.json: {slug} has an unknown parent group")
+            if "<style data-pf2e-operations-center>" not in content or ".pf2e-ops {" not in content:
+                errors.append(f"pages.json: {slug} is missing its standalone page styles")
+            for target_slug in re.findall(r'href="/page/([^\"]+)"', content):
+                if target_slug not in page_slugs:
+                    errors.append(f"pages.json: {slug} links to unknown page {target_slug}")
+            if slug != "pf2e-operations-center" and 'href="/page/pf2e-operations-center"' not in content:
+                errors.append(f"pages.json: {slug} has no Home breadcrumb")
+
+        rule_slugs: set[str] = set()
+        for rules_file in (REPO / "compendium").glob("**/rules.json"):
+            for rule in load_json(rules_file):
+                rule_slugs.add(str(rule.get("slug") or ""))
+        tool_slugs = {
+            str(tool.get("slug") or "")
+            for tool in load_json(REPO / "gm-tools.json")
+        }
+        action_slugs: set[str] = set()
+        for actions_file in (REPO / "compendium").glob("**/actions.json"):
+            for action in load_json(actions_file):
+                action_slugs.add(str(action.get("slug") or ""))
+        for page in pages:
+            slug = str(page.get("slug") or "")
+            content = str(page.get("content") or "")
+            for target_slug in re.findall(r'href="/rule/([^\"]+)"', content):
+                if target_slug not in rule_slugs:
+                    errors.append(f"pages.json: {slug} links to unknown rule {target_slug}")
+            for target_slug in re.findall(r'href="/gm-tool/([^\"]+)"', content):
+                if target_slug not in tool_slugs:
+                    errors.append(f"pages.json: {slug} links to unknown GM tool {target_slug}")
+            for target_slug in re.findall(r'href="/action/([^\"]+)"', content):
+                if target_slug not in action_slugs:
+                    errors.append(f"pages.json: {slug} links to unknown action {target_slug}")
     except Exception as exc:
         errors.append(f"metadata validation: {exc}")
 
@@ -277,6 +329,8 @@ def impacted_collections(paths: Iterable[str]) -> list[str]:
             "types.json",
             "collections.json",
             "filters.json",
+            "groups.json",
+            "pages.json",
         }:
             all_collections = True
             continue

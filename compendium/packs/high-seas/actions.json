@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Barbed Dash",
     "slug": "barbed-dash-high-seas-action-action-4233",
-    "descr": "---\n\nThe pufferfish inflates and swims past an enemy, piercing it with its spines. It attempts to Tumble Through a foe. On a success, the pufferfish deals 1 piercing damage and an additional 1d6 persistent poison damage to the foe as it passes through its space. If your pufferfish is nimble or savage, the persistent poison increases to 2d6.",
+    "descr": "---\n\nThe pufferfish inflates and swims past an enemy, piercing it with its spines. It attempts to [Tumble Through](/action/tumble-through-player-core) a foe. On a success, the pufferfish deals 1 piercing damage and an additional 1d6 [persistent poison damage](/condition/persistent-damage-player-core) to the foe as it passes through its space. If your pufferfish is nimble or savage, the persistent poison increases to 2d6.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -14,7 +14,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -44,7 +45,7 @@
     "systemVersion": "1.2.10",
     "name": "Color Swirl",
     "slug": "color-swirl-high-seas-action-action-4232",
-    "descr": "---\n\nYour salamander rapidly changes color in a dizzying pattern. A creature within 30 feet must attempt a Fortitude save against the higher of your class DC or spell DC. On a failure, the creature is sickened 1, or sickened 2 on a critical failure.",
+    "descr": "---\n\nYour salamander rapidly changes color in a dizzying pattern. A creature within 30 feet must attempt a Fortitude save against the higher of your class DC or spell DC. On a failure, the creature is [sickened](/condition/sickened-player-core) 1, or sickened 2 on a critical failure.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -52,7 +53,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -82,7 +84,7 @@
     "systemVersion": "1.2.10",
     "name": "Crushing Embrace",
     "slug": "crushing-embrace-high-seas-action-action-4231",
-    "descr": "---\n\nThe cephalopod wraps its tentacles around a foe and crushes them. It makes an arm Strike. If the Strike hits, the target creature automatically becomes grabbed by the cephalopod, then takes 1d6 bludgeoning damage. If your cephalopod is nimble or savage, the bludgeoning damage increases to 2d6.",
+    "descr": "---\n\nThe cephalopod wraps its tentacles around a foe and crushes them. It makes an arm [Strike](/action/strike-player-core). If the Strike hits, the target creature automatically becomes [grabbed](/condition/grabbed-player-core) by the cephalopod, then takes 1d6 bludgeoning damage. If your cephalopod is nimble or savage, the bludgeoning damage increases to 2d6.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -90,7 +92,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,
@@ -120,7 +123,7 @@
     "systemVersion": "1.2.10",
     "name": "Disengage",
     "slug": "disengage-high-seas-action-action-4230",
-    "descr": "**Requirements** You are piloting a sea vehicle during boarding combat.\n\n---\n\nYou attempt to break your ship free and escape the battle. Attempt a check to pilot against a very hard DC. This is typically a Sailing Lore check against the standard DC of the vessel’s level + 5 (for the very hard adjustment). Piloting checks are described here.\n\n**Success** The vehicle pulls free and moves up to its Speed. It can turn normally provided it moves away from the ship it disengaged from.\n\n**Failure** The boarding combat continues.",
+    "descr": "**Requirements** You are piloting a sea vehicle during boarding combat.\n\n---\n\nYou attempt to break your ship free and escape the battle. Attempt a check to pilot against a very hard DC. This is typically a Sailing Lore check against the standard DC of the vessel’s level + 5 (for the very hard adjustment). Piloting checks are described [here](/rule/piloting-checks-rules-3128).\n\n**Success** The vehicle pulls free and moves up to its Speed. It can turn normally provided it moves away from the ship it disengaged from.\n\n**Failure** The boarding combat continues.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -130,7 +133,13 @@
       "frequency": "",
       "requirements": "You are piloting a sea vehicle during boarding combat.",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": [
+        {
+          "label": "move",
+          "slug": "move"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -161,7 +170,7 @@
     "systemVersion": "1.2.10",
     "name": "Ingest Magic",
     "slug": "ingest-magic-high-seas-action-action-4234",
-    "descr": "---\n\nThe silt frog makes a jaws Strike. If the Strike hits, it attempts to counteract a spell or magical effect on the target (its counteract modifier is equal to its attack modifier with its tongue Strike, unmodified by any bonuses or effects that apply to attack rolls, and its counteract rank is equal to half its level, rounded up).",
+    "descr": "---\n\nThe silt frog makes a jaws [Strike](/action/strike-player-core). If the Strike hits, it attempts to [counteract](/rule/specialized-animal-companions-rules-2120) a spell or [magical](/trait/magical) effect on the target (its counteract modifier is equal to its attack modifier with its tongue Strike, unmodified by any bonuses or effects that apply to attack rolls, and its counteract rank is equal to half its level, rounded up).",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -169,7 +178,8 @@
       "frequency": "",
       "requirements": "",
       "trigger": "",
-      "actions": "two"
+      "actions": "two",
+      "traitLinks": []
     },
     "attributes": {
       "remaster": true,

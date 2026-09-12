@@ -154,6 +154,7 @@
     row.setAttribute("data-xp-entry", "");
 
     var nameCell = row.insertCell();
+    nameCell.setAttribute("data-label", "Name");
     var name = document.createElement("input");
     name.type = "text";
     name.className = "xp-entry-name";
@@ -162,6 +163,7 @@
     nameCell.appendChild(name);
 
     var kindCell = row.insertCell();
+    kindCell.setAttribute("data-label", "Type");
     var kind = document.createElement("select");
     kind.className = "xp-entry-kind";
     kind.appendChild(makeOption("creature", "Creature"));
@@ -171,9 +173,11 @@
     kindCell.appendChild(kind);
 
     var levelCell = row.insertCell();
+    levelCell.setAttribute("data-label", "Level");
     levelCell.appendChild(makeNumberInput("xp-entry-level", entry.level, -1, 25));
 
     var adjustmentCell = row.insertCell();
+    adjustmentCell.setAttribute("data-label", "Adjustment");
     var adjustment = document.createElement("select");
     adjustment.className = "xp-entry-adjustment";
     adjustment.appendChild(makeOption("-1", "Weak (−1)"));
@@ -183,20 +187,25 @@
     adjustmentCell.appendChild(adjustment);
 
     var quantityCell = row.insertCell();
+    quantityCell.setAttribute("data-label", "Quantity");
     quantityCell.appendChild(makeNumberInput("xp-entry-quantity", entry.quantity || 1, 1, 99));
 
     var overrideCell = row.insertCell();
+    overrideCell.setAttribute("data-label", "XP override");
     overrideCell.appendChild(makeNumberInput("xp-entry-override", entry.overrideXp == null ? "" : entry.overrideXp, 0, null, "Auto"));
 
     var eachCell = row.insertCell();
+    eachCell.setAttribute("data-label", "XP each");
     eachCell.className = "xp-entry-each";
     eachCell.textContent = "—";
 
     var totalCell = row.insertCell();
+    totalCell.setAttribute("data-label", "Total XP");
     totalCell.className = "xp-entry-total";
     totalCell.textContent = "—";
 
     var removeCell = row.insertCell();
+    removeCell.className = "xp-entry-remove-cell";
     var remove = document.createElement("button");
     remove.type = "button";
     remove.className = "xp-remove";
