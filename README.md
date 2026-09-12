@@ -7,11 +7,41 @@ compendium. It includes entity schemas, forms, views, styles, scripts,
 localization, packaging metadata, and the source-by-source content packs used
 to build the public release.
 
-The current branch is a community-maintained baseline derived from
-[`encounterplus/pf2e`](https://github.com/encounterplus/pf2e). It is not yet a
-stand-alone publication-ready release because the inherited code and visual
-assets still need explicit license confirmation. See
-[LEGAL-REVIEW.md](LEGAL-REVIEW.md) for that remaining review.
+The current branch is an unofficial community test build derived from
+[`encounterplus/pf2e`](https://github.com/encounterplus/pf2e). It is intended
+for testing and upstream review, and is not an official Encounter+ release or
+an indication of endorsement by Encounter+ or Paizo.
+
+## Install the test build
+
+1. Open the [latest GitHub release](https://github.com/Saharory/pf2e_remasterd/releases/latest).
+2. Under **Assets**, download **`pf2e-remaster.system`**. Do not download the
+   automatically generated “Source code” archives; those are repository files,
+   not Encounter+ installers.
+3. Open the downloaded `.system` file with Encounter+ and confirm the import.
+4. In Encounter+, select **Pathfinder 2E Remaster** as the game system for the
+   campaign you want to test.
+
+The installed system checks this repository's latest release manifest for
+newer versions. When Encounter+ reports an update, install it through the app
+to replace the system files while keeping campaign data separate. During the
+testing period, keep a backup of any campaign you care about before updating.
+
+## Bookmark the PF2E Operations Center
+
+The Operations Center is designed to run as a compact reference panel over the
+game screen:
+
+1. Open **Library** in Encounter+.
+2. Open **Pages**, then select **PF2E Operations Center**.
+3. Open its main/home page and tap the **bookmark** icon in the page toolbar.
+   Bookmark the home page rather than one of its individual rule pages.
+4. Return to the game screen and open **Bookmarks**.
+5. Select **PF2E Operations Center** to open it in the compact panel.
+
+Use the tiles to navigate. The breadcrumb trail at the top returns to any
+earlier Operations Center section, while explicit rule links open the complete
+compendium entry when the short table reference is not enough.
 
 ## Repository boundary
 
@@ -55,13 +85,11 @@ Kept outside this repository:
 
 ## Publication status
 
-The ORC compendium source is publication-scoped and validated separately from
-the inherited system assets. Do not publish or upload a stand-alone binary
-release until the upstream code license, bundled font licenses, and
-visual-asset provenance are resolved. The release workflow validates and
-builds candidates inside its runner, but both artifact upload and public
-publication require the exact legal-clearance confirmation documented by the
-workflow.
+The GitHub packages are community testing builds, not releases in Encounter+'s
+official in-app catalogue. The ORC compendium source is publication-scoped and
+validated separately from inherited system assets. Upstream maintainers must
+review the changes and confirm the inherited code, font, and visual-asset
+licensing before any official adoption or distribution through Encounter+.
 
 This project is intended to remain free and non-commercial.
 
