@@ -7,12 +7,13 @@ compendium. It includes entity schemas, forms, views, styles, scripts,
 localization, packaging metadata, and the source-by-source content packs used
 to build the public release.
 
-The current branch is an unofficial community test build derived from
-[`encounterplus/pf2e`](https://github.com/encounterplus/pf2e). It is intended
-for testing and upstream review, and is not an official Encounter+ release or
+The current branch is an unofficial, community-maintained **work in progress**
+derived from [`encounterplus/pf2e`](https://github.com/encounterplus/pf2e).
+It is a complete, playable Encounter+ system that remains under active
+development and upstream review. It is not an official Encounter+ release or
 an indication of endorsement by Encounter+ or Paizo.
 
-## Install the test build
+## Install the system
 
 1. Open the [latest GitHub release](https://github.com/Saharory/pf2e_remasterd/releases/latest).
 2. Under **Assets**, download **`pf2e-remaster.system`**. Do not download the
@@ -24,8 +25,9 @@ an indication of endorsement by Encounter+ or Paizo.
 
 The installed system checks this repository's latest release manifest for
 newer versions. When Encounter+ reports an update, install it through the app
-to replace the system files while keeping campaign data separate. During the
-testing period, keep a backup of any campaign you care about before updating.
+to replace the system files while keeping campaign data separate. Because the
+project remains a work in progress, keep a backup of any campaign you care
+about before updating.
 
 ## Bookmark the PF2E Operations Center
 
@@ -85,11 +87,12 @@ Kept outside this repository:
 
 ## Publication status
 
-The GitHub packages are community testing builds, not releases in Encounter+'s
-official in-app catalogue. The ORC compendium source is publication-scoped and
-validated separately from inherited system assets. Upstream maintainers must
-review the changes and confirm the inherited code, font, and visual-asset
-licensing before any official adoption or distribution through Encounter+.
+The GitHub packages are complete community releases of a work-in-progress
+system, but they are not releases in Encounter+'s official in-app catalogue.
+The ORC compendium source is publication-scoped and validated separately from
+inherited system assets. Upstream maintainers must review the changes and
+confirm the inherited code, font, and visual-asset licensing before any
+official adoption or distribution through Encounter+.
 
 This project is intended to remain free and non-commercial.
 
