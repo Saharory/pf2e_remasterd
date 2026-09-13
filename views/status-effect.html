@@ -21,16 +21,18 @@
       {% endmarkdown %}
     </div>
 
+    {% if data.valued %}
     <hr>
-
     <div class="checkbox-group">
       <strong style="cursor: pointer;" onclick="updateStage(1, 1)">{{'StatusEffect.Stage'|l}}</strong>&nbsp;
       {% for i in 1...6 %}
+      {% if i <= data.maxStage %}
       <input type="checkbox" onchange="updateStage({{data.stage|default: 0}}, {{i}})" {% if data.stage >= i %}checked{% endif %}>
+      {% endif %}
       {% endfor %}
     </div>
-
     <hr>
+    {% endif %}
 
     {% if descr %}
     {{descr|md}}

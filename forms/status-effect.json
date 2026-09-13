@@ -7,7 +7,8 @@
         {
           "type": "number",
           "title": "StatusEffect.Stage",
-          "attribute": "data.stage"
+          "attribute": "data.stage",
+          "visibleIf": "data.valued == true"
         },
         {
           "title": "Common.Rarity",
@@ -26,13 +27,6 @@
           "attribute": "data.duration"
         },
       ]
-    },
-    {
-      "title": "Common.Description",
-      "type": "group",
-      "fields": [
-        { "type": "textArea", "attribute": "descr", "custom": { "lines": 10 } }
-      ]
-    },
+    }
   ]
 }

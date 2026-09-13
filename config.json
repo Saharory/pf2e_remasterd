@@ -1,6 +1,6 @@
 {
   "statusEffects": {
-    "menuProvider": ["Rule:condition"],
+    "menuProvider": ["StatusEffect:condition"],
     "viewRenderer": "html",
     "collection": {
       "title": "{{name|default: 'Unknown Effect'}} {% if data.stage > 0 %}{{data.stage}}{% endif %}",

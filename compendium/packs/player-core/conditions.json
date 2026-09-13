@@ -105,13 +105,14 @@
     "systemVersion": "1.2.10",
     "name": "Blinded",
     "slug": "blinded-player-core",
-    "descr": "You can't see. All normal terrain is difficult terrain to you. You can't detect anything using vision. You automatically critically fail Perception checks that require you to be able to see, and if vision is your only precise sense, you take a –4 status penalty to Perception checks. You are immune to visual effects. Blinded overrides [Dazzled](/condition/dazzled-player-core).",
+    "descr": "You can't see. All normal terrain is difficult terrain to you. You can't detect anything using vision. You automatically critically fail Perception checks that require you to be able to see, and if vision is your only precise sense, you take a –4 status penalty to Perception checks. You are immune to visual effects. Blinded overrides Dazzled.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -129,7 +130,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/blinded-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#5B5F97"
   },
   {
     "id": "0C44D16F-C507-5443-B74A-86D98D20BFF3",
@@ -143,8 +148,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -162,7 +168,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/broken-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C5A3C"
   },
   {
     "id": "14F9C111-FACB-5EE4-BCE3-22B02EC02C59",
@@ -176,8 +186,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -195,7 +206,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/clumsy-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#9A5B13"
   },
   {
     "id": "46B3DB72-35FD-5E1A-8985-4412F2B7BBE9",
@@ -204,13 +219,14 @@
     "systemVersion": "1.2.10",
     "name": "Concealed",
     "slug": "concealed-player-core",
-    "descr": "You are difficult for one or more creatures to see due to thick fog or some other obscuring feature. You can be concealed to some creatures but not others. While concealed, you can still be [Observed](/condition/observed-player-core), but you're tougher to target. A creature that you're concealed from must succeed at a Flat DC 5 when targeting you with an attack, spell, or other effect. If the check fails, you aren't affected. Area effects aren't subject to this flat check.",
+    "descr": "You are difficult for one or more creatures to see due to thick fog or some other obscuring feature. You can be concealed to some creatures but not others. While concealed, you can still be Observed, but you're tougher to target. A creature that you're concealed from must succeed at a Flat DC 5 when targeting you with an attack, spell, or other effect. If the check fails, you aren't affected. Area effects aren't subject to this flat check.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -228,7 +244,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/concealed-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#4D6D7A"
   },
   {
     "id": "0E32D07E-FB43-5C5E-A477-B77179F16B97",
@@ -237,13 +257,14 @@
     "systemVersion": "1.2.10",
     "name": "Confused",
     "slug": "confused-player-core",
-    "descr": "You don't have your wits about you, and you attack wildly. You are [Off Guard](/condition/off-guard-player-core), you don't treat anyone as your ally (though they might still treat you as theirs), and you can't Delay, Ready, or use reactions.\n\nYou use all your actions to Strike or cast offensive cantrips, though the GM can have you use other actions to facilitate attack, such as draw a weapon, move so target is in reach, and so forth. Your targets are determined randomly by the GM. If you have no other viable targets, you target yourself, automatically hitting but not scoring a critical hit. If it's impossible for you to attack or cast spells, you babble incoherently, wasting your actions.\n\nEach time you take damage from an attack or spell, you can attempt a Flat DC 11 to recover from your confusion and end the condition.",
+    "descr": "You don't have your wits about you, and you attack wildly. You are Off Guard, you don't treat anyone as your ally (though they might still treat you as theirs), and you can't Delay, Ready, or use reactions.\n\nYou use all your actions to Strike or cast offensive cantrips, though the GM can have you use other actions to facilitate attack, such as draw a weapon, move so target is in reach, and so forth. Your targets are determined randomly by the GM. If you have no other viable targets, you target yourself, automatically hitting but not scoring a critical hit. If it's impossible for you to attack or cast spells, you babble incoherently, wasting your actions.\n\nEach time you take damage from an attack or spell, you can attempt a Flat DC 11 to recover from your confusion and end the condition.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -261,7 +282,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/confused-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#6A3D9A"
   },
   {
     "id": "F514F0BA-D68A-5E21-8FE4-77669066D984",
@@ -270,13 +295,14 @@
     "systemVersion": "1.2.10",
     "name": "Controlled",
     "slug": "controlled-player-core",
-    "descr": "You have been commanded, magically dominated, or otherwise had your will subverted. The controller dictates how you act and can make you use any of your actions, including attacks, reactions, or even [Delay](/action/delay-player-core). The controller usually doesn't have to spend their own actions when controlling you.",
+    "descr": "You have been commanded, magically dominated, or otherwise had your will subverted. The controller dictates how you act and can make you use any of your actions, including attacks, reactions, or even Delay. The controller usually doesn't have to spend their own actions when controlling you.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -294,7 +320,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/controlled-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#6A3D9A"
   },
   {
     "id": "B2626102-D3A7-534C-9BE7-A829F576B3ED",
@@ -303,13 +333,14 @@
     "systemVersion": "1.2.10",
     "name": "Dazzled",
     "slug": "dazzled-player-core",
-    "descr": "Your eyes are overstimulated or your vision is swimming. If vision is your only precise sense, all creatures and objects are [Concealed](/condition/concealed-player-core) from you.",
+    "descr": "Your eyes are overstimulated or your vision is swimming. If vision is your only precise sense, all creatures and objects are Concealed from you.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -327,7 +358,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/dazzled-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#B47612"
   },
   {
     "id": "53803C79-F3D4-5492-8360-12B129228BCF",
@@ -336,13 +371,14 @@
     "systemVersion": "1.2.10",
     "name": "Deafened",
     "slug": "deafened-player-core",
-    "descr": "You can't hear. You automatically critically fail Perception checks that require you to be able to hear. You take a –2 status penalty to Perception checks for initiative and checks that involve sound but also rely on other senses. If you perform an action that has the [auditory](/trait/auditory) trait, you must succeed at a Flat DC 5 or the action is lost; attempt the check after spending the action but before any effects are applied. You are immune to auditory effects while deafened.",
+    "descr": "You can't hear. You automatically critically fail Perception checks that require you to be able to hear. You take a –2 status penalty to Perception checks for initiative and checks that involve sound but also rely on other senses. If you perform an action that has the auditory trait, you must succeed at a Flat DC 5 or the action is lost; attempt the check after spending the action but before any effects are applied. You are immune to auditory effects while deafened.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -360,7 +396,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/deafened-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#5B5F97"
   },
   {
     "id": "64067B95-B60C-5106-A0A3-87622FDA4400",
@@ -369,13 +409,14 @@
     "systemVersion": "1.2.10",
     "name": "Doomed",
     "slug": "doomed-player-core",
-    "descr": "Your soul has been gripped by a powerful force that calls you closer to death. Doomed always includes a value. The [Dying](/condition/dying-player-core) value at which you die is reduced by your doomed value. If your maximum dying value is reduced to 0, you instantly die. When you die, you're no longer doomed.\n\nYour doomed value decreases by 1 each time you get a full night's rest.",
+    "descr": "Your soul has been gripped by a powerful force that calls you closer to death. Doomed always includes a value. The Dying value at which you die is reduced by your doomed value. If your maximum dying value is reduced to 0, you instantly die. When you die, you're no longer doomed.\n\nYour doomed value decreases by 1 each time you get a full night's rest.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 4
     },
     "attributes": {
       "remaster": true,
@@ -393,7 +434,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/doomed-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#65131A"
   },
   {
     "id": "48F8FDE2-8A31-53CA-9E8E-B6BB13E0C163",
@@ -407,8 +452,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -426,7 +472,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/drained-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#65131A"
   },
   {
     "id": "BEE5FCCD-D4A9-5F38-9D9A-0CFBC9959BBB",
@@ -435,13 +485,14 @@
     "systemVersion": "1.2.10",
     "name": "Dying",
     "slug": "dying-player-core",
-    "descr": "You are bleeding out or otherwise at death's door. While you have this condition, you are [Unconscious](/condition/unconscious-player-core). Dying always includes a value, and if it ever reaches dying 4, you die. When you're dying, you must attempt a recovery check at the start of your turn each round to determine whether you get better or worse. Your dying condition increases by 1 if you take damage while dying, or by 2 if you take damage from an enemy's critical hit or a critical failure on your save.\n\nIf you lose the dying condition by succeeding at a recovery check and are still at 0 Hit Points, you remain unconscious, but you can wake up as described in that condition. You lose the dying condition automatically and wake up if you ever have 1 Hit Point or more. Any time you lose the dying condition, you gain the [Wounded 1](/condition/wounded-player-core) condition, or increase your wounded condition value by 1 if you already have that condition.",
+    "descr": "You are bleeding out or otherwise at death's door. While you have this condition, you are Unconscious. Dying always includes a value, and if it ever reaches dying 4, you die. When you're dying, you must attempt a recovery check at the start of your turn each round to determine whether you get better or worse. Your dying condition increases by 1 if you take damage while dying, or by 2 if you take damage from an enemy's critical hit or a critical failure on your save.\n\nIf you lose the dying condition by succeeding at a recovery check and are still at 0 Hit Points, you remain unconscious, but you can wake up as described in that condition. You lose the dying condition automatically and wake up if you ever have 1 Hit Point or more. Any time you lose the dying condition, you gain the Wounded 1 condition, or increase your wounded condition value by 1 if you already have that condition.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 4
     },
     "attributes": {
       "remaster": true,
@@ -459,7 +510,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/dying-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#65131A"
   },
   {
     "id": "3D66BD2A-E8A9-5148-9287-CB43139610D5",
@@ -3504,13 +3559,14 @@
     "systemVersion": "1.2.10",
     "name": "Encumbered",
     "slug": "encumbered-player-core",
-    "descr": "You are carrying more weight than you can manage. While you're encumbered, you're [Clumsy 1](/condition/clumsy-player-core) and take a 10-foot penalty to all your Speeds. As with all penalties to your Speed, this can't reduce your Speed below 5 feet.",
+    "descr": "You are carrying more weight than you can manage. While you're encumbered, you're Clumsy 1 and take a 10-foot penalty to all your Speeds. As with all penalties to your Speed, this can't reduce your Speed below 5 feet.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3528,7 +3584,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/encumbered-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C5A3C"
   },
   {
     "id": "A13CDAC7-4316-558A-970F-EDDCC1CFD18B",
@@ -3542,8 +3602,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3561,7 +3622,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/enfeebled-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#9A5B13"
   },
   {
     "id": "6F28DC76-91C0-5B4C-9E81-EF23BF78AC52",
@@ -3570,13 +3635,14 @@
     "systemVersion": "1.2.10",
     "name": "Fascinated",
     "slug": "fascinated-player-core",
-    "descr": "You're compelled to focus your attention on something, distracting you from whatever else is going on around you. You take a –2 status penalty to Perception and skill checks, and you can't use concentrate actions unless they (or their intended consequences) are related to the subject of your fascination, as determined by the GM. For instance, you might be able to [Seek](/action/seek-player-core) and [Recall Knowledge](/action/recall-knowledge-player-core) about the subject, but you likely couldn't cast a spell targeting a different creature. This condition ends if a creature uses hostile actions against you or any of your allies.",
+    "descr": "You're compelled to focus your attention on something, distracting you from whatever else is going on around you. You take a –2 status penalty to Perception and skill checks, and you can't use concentrate actions unless they (or their intended consequences) are related to the subject of your fascination, as determined by the GM. For instance, you might be able to Seek and Recall Knowledge about the subject, but you likely couldn't cast a spell targeting a different creature. This condition ends if a creature uses hostile actions against you or any of your allies.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3594,7 +3660,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/fascinated-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#6A3D9A"
   },
   {
     "id": "1290EFE5-B33A-5A2C-AA10-23C5F233C454",
@@ -3608,8 +3678,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3627,7 +3698,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/fatigued-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#6A5568"
   },
   {
     "id": "A2666061-ADE5-59E2-B825-67F071194DE3",
@@ -3636,13 +3711,14 @@
     "systemVersion": "1.2.10",
     "name": "Fleeing",
     "slug": "fleeing-player-core",
-    "descr": "You're forced to run away due to fear or some other compulsion. On your turn, you must spend each of your actions trying to escape the source of the fleeing condition as expediently as possible (such as by using move actions to flee, or opening doors barring your escape). The source is usually the effect or creature that gave you the condition, though some effects might define something else as the source. You can't [Delay](/action/delay-player-core) or [Ready](/action/ready-player-core) while fleeing.",
+    "descr": "You're forced to run away due to fear or some other compulsion. On your turn, you must spend each of your actions trying to escape the source of the fleeing condition as expediently as possible (such as by using move actions to flee, or opening doors barring your escape). The source is usually the effect or creature that gave you the condition, though some effects might define something else as the source. You can't Delay or Ready while fleeing.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3660,7 +3736,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/fleeing-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#9A5B13"
   },
   {
     "id": "F7EA3B60-64D9-5CA7-86EE-9DDDCE565EB8",
@@ -3669,13 +3749,14 @@
     "systemVersion": "1.2.10",
     "name": "Friendly",
     "slug": "friendly-player-core",
-    "descr": "This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is friendly to a character likes that character. It is likely to agree to [Requests](/action/request-player-core) from that character as long as they are simple, safe, and don't cost too much to fulfill. If the character (or one of their allies) uses hostile actions against the creature, the creature gains a worse attitude condition depending on the severity of the hostile action, as determined by the GM.",
+    "descr": "This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is friendly to a character likes that character. It is likely to agree to Requests from that character as long as they are simple, safe, and don't cost too much to fulfill. If the character (or one of their allies) uses hostile actions against the creature, the creature gains a worse attitude condition depending on the severity of the hostile action, as determined by the GM.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3693,7 +3774,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/friendly-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#2F6B4F"
   },
   {
     "id": "42024738-7A9F-5D12-8627-A325708B2993",
@@ -3707,8 +3792,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3726,7 +3812,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/frightened-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#6A3D9A"
   },
   {
     "id": "768925BC-46F8-51C6-9B83-AA037757768E",
@@ -3735,13 +3825,14 @@
     "systemVersion": "1.2.10",
     "name": "Grabbed",
     "slug": "grabbed-player-core",
-    "descr": "You're held in place by another creature, giving you the [Off Guard](/condition/off-guard-player-core) and [Immobilized](/condition/immobilized-player-core) conditions. If you attempt a manipulate action while grabbed, you must succeed at a Flat DC 5 or it is lost; roll the check after spending the action, but before any effects are applied.",
+    "descr": "You're held in place by another creature, giving you the Off Guard and Immobilized conditions. If you attempt a manipulate action while grabbed, you must succeed at a Flat DC 5 or it is lost; roll the check after spending the action, but before any effects are applied.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3759,7 +3850,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/grabbed-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C2F39"
   },
   {
     "id": "FFB0CB23-559F-5E59-BCEC-32BCBEECF7A3",
@@ -3768,13 +3863,14 @@
     "systemVersion": "1.2.10",
     "name": "Helpful",
     "slug": "helpful-player-core",
-    "descr": "This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is helpful to a character wishes to actively aid that character. It will accept reasonable [Requests](/action/request-player-core) from that character, as long as such requests aren't at the expense of the helpful creature's goals or quality of life. If the character (or one of their allies) uses a hostile action against the creature, the creature gains a worse attitude condition depending on the severity of the hostile action, as determined by the GM.",
+    "descr": "This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is helpful to a character wishes to actively aid that character. It will accept reasonable Requests from that character, as long as such requests aren't at the expense of the helpful creature's goals or quality of life. If the character (or one of their allies) uses a hostile action against the creature, the creature gains a worse attitude condition depending on the severity of the hostile action, as determined by the GM.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3792,7 +3888,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/helpful-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#2F6B4F"
   },
   {
     "id": "5C0302BE-8D98-59E1-A90C-35CAAF711A8C",
@@ -3801,13 +3901,14 @@
     "systemVersion": "1.2.10",
     "name": "Hidden",
     "slug": "hidden-player-core",
-    "descr": "While you're hidden from a creature, that creature knows the space you're in but can't tell precisely where you are. You typically become hidden by using Stealth to [Hide](/action/hide-player-core). When [Seeking](/action/seek-player-core) a creature using only imprecise senses, it remains hidden, rather than [Observed](/condition/observed-player-core). A creature you're hidden from is [Off Guard](/condition/off-guard-player-core) to you, and it must succeed at a Flat DC 11 when targeting you with an attack, spell, or other effect or it fails to affect you. Area effects aren't subject to this flat check.\n\nA creature might be able to use the seek action to try to observe you.",
+    "descr": "While you're hidden from a creature, that creature knows the space you're in but can't tell precisely where you are. You typically become hidden by using Stealth to Hide. When Seeking a creature using only imprecise senses, it remains hidden, rather than Observed. A creature you're hidden from is Off Guard to you, and it must succeed at a Flat DC 11 when targeting you with an attack, spell, or other effect or it fails to affect you. Area effects aren't subject to this flat check.\n\nA creature might be able to use the seek action to try to observe you.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3825,7 +3926,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/hidden-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#276A58"
   },
   {
     "id": "DA18CE9D-C601-56C4-8E9B-15E6D2956D6A",
@@ -3834,13 +3939,14 @@
     "systemVersion": "1.2.10",
     "name": "Hostile",
     "slug": "hostile-player-core",
-    "descr": "This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose on a PC. A creature hostile to a character actively seeks to harm that character. It doesn't necessarily attack, but it won't accept [Requests](/action/request-player-core) from the character.",
+    "descr": "This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose on a PC. A creature hostile to a character actively seeks to harm that character. It doesn't necessarily attack, but it won't accept Requests from the character.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3858,7 +3964,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/hostile-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C2F39"
   },
   {
     "id": "36C33C15-21F6-5A8D-8ED3-B5F114DD733E",
@@ -3867,13 +3977,14 @@
     "systemVersion": "1.2.10",
     "name": "Immobilized",
     "slug": "immobilized-player-core",
-    "descr": "You are incapable of movement. You can't use any actions that have the [move](/trait/move) trait. If you're immobilized by something holding you in place and an external force would move you out of your space, the force must succeed at a check against either the DC of the effect holding you in place or the relevant defense (usually Fortitude DC) of the monster holding you in place.",
+    "descr": "You are incapable of movement. You can't use any actions that have the move trait. If you're immobilized by something holding you in place and an external force would move you out of your space, the force must succeed at a check against either the DC of the effect holding you in place or the relevant defense (usually Fortitude DC) of the monster holding you in place.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3891,7 +4002,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/immobilized-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C2F39"
   },
   {
     "id": "AC5F0782-AE80-56C8-9B89-44A555C0F093",
@@ -3905,8 +4020,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3924,7 +4040,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/indifferent-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#667070"
   },
   {
     "id": "6A564D05-46DD-502D-9048-6CF31BB8C364",
@@ -3933,13 +4053,14 @@
     "systemVersion": "1.2.10",
     "name": "Invisible",
     "slug": "invisible-player-core",
-    "descr": "You can't be seen. You're [Undetected](/condition/undetected-player-core) to everyone. Creatures can [Seek](/action/seek-player-core) to detect you; if a creature succeeds at its Perception check against your Stealth DC, you become [Hidden](/condition/hidden-player-core) to that creature until you [Sneak](/action/sneak-player-core) to become undetected again. If you become invisible while someone can already see you, you start out hidden to them (instead of undetected) until you successfully Sneak. You can't become [Observed](/condition/observed-player-core) while invisible except via special abilities or magic.",
+    "descr": "You can't be seen. You're Undetected to everyone. Creatures can Seek to detect you; if a creature succeeds at its Perception check against your Stealth DC, you become Hidden to that creature until you Sneak to become undetected again. If you become invisible while someone can already see you, you start out hidden to them (instead of undetected) until you successfully Sneak. You can't become Observed while invisible except via special abilities or magic.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3957,7 +4078,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/invisible-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#276A58"
   },
   {
     "id": "8B5AF4E6-63AD-5CBD-8F9F-8AF673CB0D4F",
@@ -3966,13 +4091,14 @@
     "systemVersion": "1.2.10",
     "name": "Observed",
     "slug": "observed-player-core",
-    "descr": "Anything in plain view is observed by you. If a creature takes measures to avoid detection, such as by using Stealth to [Hide](/action/hide-player-core), it can become [Hidden](/condition/hidden-player-core) or [Undetected](/condition/undetected-player-core) instead of observed. If you have another precise sense besides sight, you might be able to observe a creature or object using that sense instead. You can observe a creature with only your precise senses. When [Seeking](/action/seek-player-core) a creature using only imprecise senses, it remains hidden, rather than observed.",
+    "descr": "Anything in plain view is observed by you. If a creature takes measures to avoid detection, such as by using Stealth to Hide, it can become Hidden or Undetected instead of observed. If you have another precise sense besides sight, you might be able to observe a creature or object using that sense instead. You can observe a creature with only your precise senses. When Seeking a creature using only imprecise senses, it remains hidden, rather than observed.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -3990,7 +4116,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/observed-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#276A58"
   },
   {
     "id": "C48BDF0C-E0F9-5678-9BB5-62EE0C488345",
@@ -4004,8 +4134,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -4023,7 +4154,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/off-guard-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C2F39"
   },
   {
     "id": "C0AE5624-712E-51AB-8249-92CD96262711",
@@ -4032,13 +4167,14 @@
     "systemVersion": "1.2.10",
     "name": "Paralyzed",
     "slug": "paralyzed-player-core",
-    "descr": "You're frozen in place. You have the [Off Guard](/condition/off-guard-player-core) condition and can't act except to [Recall Knowledge](/action/recall-knowledge-player-core) and use actions that require only your mind (as determined by the GM). Your senses still function, but only in the areas you can perceive without moving, so you can't [Seek](/action/seek-player-core).",
+    "descr": "You're frozen in place. You have the Off Guard condition and can't act except to Recall Knowledge and use actions that require only your mind (as determined by the GM). Your senses still function, but only in the areas you can perceive without moving, so you can't Seek.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -4056,7 +4192,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/paralyzed-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C2F39"
   },
   {
     "id": "2DD5AE45-53A1-559D-84C3-2EA0092D7FFF",
@@ -4070,8 +4210,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -4089,7 +4230,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/persistent-damage-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#A64224"
   },
   {
     "id": "E254511D-AB1E-501E-8345-CD5AEAE43C17",
@@ -4103,8 +4248,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -4122,7 +4268,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/petrified-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#667070"
   },
   {
     "id": "55C803C7-68C9-5D4B-A129-F8D235F65BB4",
@@ -4131,13 +4281,14 @@
     "systemVersion": "1.2.10",
     "name": "Prone",
     "slug": "prone-player-core",
-    "descr": "You're lying on the ground. You are [Off Guard](/condition/off-guard-player-core) and take a –2 circumstance penalty to attack rolls. The only move actions you can use while you're prone are [Crawl](/action/crawl-player-core) and [Stand](/action/stand-player-core). Standing up ends the prone condition. You can [Take Cover](/action/take-cover-player-core) while prone to hunker down and gain greater cover against ranged attacks, even if you don't have an object to get behind, which grants you a +4 circumstance bonus to AC against ranged attacks (but you remain off-guard).\n\nIf you would be knocked prone while you're [Climbing](/action/climb-player-core) or [Flying](/action/fly-player-core), you fall. You can't be knocked prone when [Swimming](/action/swim-player-core).",
+    "descr": "You're lying on the ground. You are Off Guard and take a –2 circumstance penalty to attack rolls. The only move actions you can use while you're prone are Crawl and Stand. Standing up ends the prone condition. You can Take Cover while prone to hunker down and gain greater cover against ranged attacks, even if you don't have an object to get behind, which grants you a +4 circumstance bonus to AC against ranged attacks (but you remain off-guard).\n\nIf you would be knocked prone while you're Climbing or Flying, you fall. You can't be knocked prone when Swimming.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -4155,7 +4306,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/prone-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C5A3C"
   },
   {
     "id": "EC2019DA-94F4-56CB-AB7B-AC5CFE143276",
@@ -4169,8 +4324,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -4188,7 +4344,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/quickened-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#2F6B4F"
   },
   {
     "id": "A4DB4F02-5D88-517B-8B1F-9BEBB51FAAB5",
@@ -4197,13 +4357,14 @@
     "systemVersion": "1.2.10",
     "name": "Restrained",
     "slug": "restrained-player-core",
-    "descr": "You're tied up and can barely move, or a creature has you pinned. You have the [Off Guard](/condition/off-guard-player-core) and [Immobilized](/condition/immobilized-player-core) conditions, and you can't use any attack or manipulate actions except to attempt to [Escape](/action/escape-player-core) or [Force Open](/action/force-open-player-core) your bonds. Restrained overrides [Grabbed](/condition/grabbed-player-core).",
+    "descr": "You're tied up and can barely move, or a creature has you pinned. You have the Off Guard and Immobilized conditions, and you can't use any attack or manipulate actions except to attempt to Escape or Force Open your bonds. Restrained overrides Grabbed.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -4221,7 +4382,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/restrained-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C2F39"
   },
   {
     "id": "583C4957-220D-5421-AF4D-0336D86DB23B",
@@ -4235,8 +4400,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -4254,7 +4420,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/sickened-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#557A3E"
   },
   {
     "id": "43C72F2F-C56F-573C-8FB3-2FF05512A229",
@@ -4268,8 +4438,9 @@
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -4287,7 +4458,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/slowed-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#6A3D9A"
   },
   {
     "id": "5986BE42-A820-53E6-8924-22F4E7F29206",
@@ -9642,13 +9817,14 @@
     "systemVersion": "1.2.10",
     "name": "Stunned",
     "slug": "stunned-player-core",
-    "descr": "You've become senseless. You can't act. Stunned usually includes a value, which indicates how many total actions you lose, possibly over multiple turns, from being stunned. Each time you regain actions, reduce the number you regain by your stunned value, then reduce your stunned value by the number of actions you lost. For example, if you were stunned 4, you would lose all 3 of your actions on your turn, reducing you to stunned 1; on your next turn, you would lose 1 more action, and then be able to use your remaining 2 actions normally. Stunned might also have a duration instead, such as \"stunned for 1 minute,\" causing you to lose all your actions for the duration.\n\nStunned overrides [Slowed](/condition/slowed-player-core). If the duration of your stunned condition ends while you are slowed, you count the actions lost to the stunned condition toward those lost to being slowed. So, if you were stunned 1 and slowed 2 at the beginning of your turn, you would lose 1 action from stunned, and then lose only 1 additional action by being slowed, so you would still have 1 action remaining to use that turn.",
+    "descr": "You've become senseless. You can't act. Stunned usually includes a value, which indicates how many total actions you lose, possibly over multiple turns, from being stunned. Each time you regain actions, reduce the number you regain by your stunned value, then reduce your stunned value by the number of actions you lost. For example, if you were stunned 4, you would lose all 3 of your actions on your turn, reducing you to stunned 1; on your next turn, you would lose 1 more action, and then be able to use your remaining 2 actions normally. Stunned might also have a duration instead, such as \"stunned for 1 minute,\" causing you to lose all your actions for the duration.\n\nStunned overrides Slowed. If the duration of your stunned condition ends while you are slowed, you count the actions lost to the stunned condition toward those lost to being slowed. So, if you were stunned 1 and slowed 2 at the beginning of your turn, you would lose 1 action from stunned, and then lose only 1 additional action by being slowed, so you would still have 1 action remaining to use that turn.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -9666,7 +9842,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/stunned-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#B47612"
   },
   {
     "id": "8DA32A7E-41A0-5C5F-BB39-4998AD0B53FF",
@@ -9675,13 +9855,14 @@
     "systemVersion": "1.2.10",
     "name": "Stupefied",
     "slug": "stupefied-player-core",
-    "descr": "Your thoughts and instincts are clouded. Stupefied always includes a value. You take a status penalty equal to this value on Intelligence-, Wisdom-, and Charisma-based rolls and DCs, including Will saving throws, spell attack modifiers, spell DCs, and skill checks that use these attribute modifiers. Any time you attempt to [Cast A Spell](/action/cast-a-spell-player-core) while stupefied, the spell is disrupted unless you succeed at a Flat DC resolve(5+current value) with a DC equal to 5 + your stupefied value.",
+    "descr": "Your thoughts and instincts are clouded. Stupefied always includes a value. You take a status penalty equal to this value on Intelligence-, Wisdom-, and Charisma-based rolls and DCs, including Will saving throws, spell attack modifiers, spell DCs, and skill checks that use these attribute modifiers. Any time you attempt to Cast A Spell while stupefied, the spell is disrupted unless you succeed at a Flat DC resolve(5+current value) with a DC equal to 5 + your stupefied value.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -9699,7 +9880,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/stupefied-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#6A3D9A"
   },
   {
     "id": "C14CC796-1562-550A-BB1E-DF2EEA46086E",
@@ -9708,13 +9893,14 @@
     "systemVersion": "1.2.10",
     "name": "Unconscious",
     "slug": "unconscious-player-core",
-    "descr": "You're sleeping or have been knocked out. You can't act. You take a –4 status penalty to AC, Perception, and Reflex saves, and you have the [Blinded](/condition/blinded-player-core) and [Off Guard](/condition/off-guard-player-core) conditions. When you gain this condition, you fall [Prone](/condition/prone-player-core) and drop items you're holding unless the effect states otherwise or the GM determines you're positioned so you wouldn't.\n\nIf you're unconscious because you're [Dying](/condition/dying-player-core), you can't wake up while you have 0 Hit Points. If you are restored to 1 Hit Point or more, you lose the dying and unconscious conditions and can act normally on your next turn.\n\nIf you are unconscious and at 0 Hit Points, but not dying, you return to 1 Hit Point and awaken after sufficient time passes. The GM determines how long you remain unconscious, from a minimum of 10 minutes to several hours. If you are healed, you lose the unconscious condition and can act normally on your next turn.\n\nIf you're unconscious and have more than 1 Hit Point (typically because you are asleep or unconscious due to an effect), you wake up in one of the following ways.\n\nYou take damage, though if the damage reduces you to 0 Hit Points, you remain unconscious and gain the dying condition as normal.\nYou receive healing, other than the natural healing you get from resting.\nSomeone shakes you awake with an [Interact](/action/interact-player-core) action.\nLoud noise around you might wake you. At the start of your turn, you automatically attempt a Perception check against the noise's DC (or the lowest DC if there is more than one noise), waking up if you succeed. If creatures are attempting to stay quiet around you, this Perception check uses their Stealth DCs. Some effects make you sleep so deeply that they don't allow you this Perception check.\nIf you are simply asleep, the GM decides you wake up either because you have had a restful night's sleep or something disrupted that rest.",
+    "descr": "You're sleeping or have been knocked out. You can't act. You take a –4 status penalty to AC, Perception, and Reflex saves, and you have the Blinded and Off Guard conditions. When you gain this condition, you fall Prone and drop items you're holding unless the effect states otherwise or the GM determines you're positioned so you wouldn't.\n\nIf you're unconscious because you're Dying, you can't wake up while you have 0 Hit Points. If you are restored to 1 Hit Point or more, you lose the dying and unconscious conditions and can act normally on your next turn.\n\nIf you are unconscious and at 0 Hit Points, but not dying, you return to 1 Hit Point and awaken after sufficient time passes. The GM determines how long you remain unconscious, from a minimum of 10 minutes to several hours. If you are healed, you lose the unconscious condition and can act normally on your next turn.\n\nIf you're unconscious and have more than 1 Hit Point (typically because you are asleep or unconscious due to an effect), you wake up in one of the following ways.\n\nYou take damage, though if the damage reduces you to 0 Hit Points, you remain unconscious and gain the dying condition as normal.\nYou receive healing, other than the natural healing you get from resting.\nSomeone shakes you awake with an Interact action.\nLoud noise around you might wake you. At the start of your turn, you automatically attempt a Perception check against the noise's DC (or the lowest DC if there is more than one noise), waking up if you succeed. If creatures are attempting to stay quiet around you, this Perception check uses their Stealth DCs. Some effects make you sleep so deeply that they don't allow you this Perception check.\nIf you are simply asleep, the GM decides you wake up either because you have had a restful night's sleep or something disrupted that rest.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -9732,7 +9918,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/unconscious-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#65131A"
   },
   {
     "id": "2ECBEE55-AD13-5DC2-85C7-F1553EA2539D",
@@ -9741,13 +9931,14 @@
     "systemVersion": "1.2.10",
     "name": "Undetected",
     "slug": "undetected-player-core",
-    "descr": "When you are undetected by a creature, that creature can't see you at all, has no idea what space you occupy, and can't target you, though you still can be affected by abilities that target an area. When you're undetected by a creature, that creature is [Off Guard](/condition/off-guard-player-core) to you.\n\nA creature you're undetected by can guess which square you're in to try targeting you. It must pick a square and attempt an attack. This works like targeting a [Hidden](/condition/hidden-player-core) creature (requiring a Flat DC 11), but the flat check and attack roll are rolled in secret by the GM, who doesn't reveal whether the attack missed due to failing the flat check, failing the attack roll, or choosing the wrong square. They can [Seek](/action/seek-player-core) to try to find you.",
+    "descr": "When you are undetected by a creature, that creature can't see you at all, has no idea what space you occupy, and can't target you, though you still can be affected by abilities that target an area. When you're undetected by a creature, that creature is Off Guard to you.\n\nA creature you're undetected by can guess which square you're in to try targeting you. It must pick a square and attempt an attack. This works like targeting a Hidden creature (requiring a Flat DC 11), but the flat check and attack roll are rolled in secret by the GM, who doesn't reveal whether the attack missed due to failing the flat check, failing the attack roll, or choosing the wrong square. They can Seek to try to find you.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -9765,7 +9956,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/undetected-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#276A58"
   },
   {
     "id": "5D3A5D3D-6C9F-5774-A04D-C830E2A273B0",
@@ -9774,13 +9969,14 @@
     "systemVersion": "1.2.10",
     "name": "Unfriendly",
     "slug": "unfriendly-player-core",
-    "descr": "This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is unfriendly to a character dislikes and distrusts that character. The unfriendly creature won't accept [Requests](/action/request-player-core) from the character.",
+    "descr": "This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is unfriendly to a character dislikes and distrusts that character. The unfriendly creature won't accept Requests from the character.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -9798,7 +9994,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/unfriendly-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#9A5B13"
   },
   {
     "id": "3F8CF685-EE57-54B1-94E5-94F44E9B5E39",
@@ -9807,13 +10007,14 @@
     "systemVersion": "1.2.10",
     "name": "Unnoticed",
     "slug": "unnoticed-player-core",
-    "descr": "If you're unnoticed by a creature, that creature has no idea you're present. When you're unnoticed, you're also [Undetected](/condition/undetected-player-core). This matters for abilities that can be used only against targets totally unaware of your presence.",
+    "descr": "If you're unnoticed by a creature, that creature has no idea you're present. When you're unnoticed, you're also Undetected. This matters for abilities that can be used only against targets totally unaware of your presence.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 0,
-      "duration": 0,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": false,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -9831,7 +10032,11 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/unnoticed-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#276A58"
   },
   {
     "id": "F6A69BCC-FDB2-52B6-B4B4-3A45F59D607A",
@@ -9840,13 +10045,14 @@
     "systemVersion": "1.2.10",
     "name": "Wounded",
     "slug": "wounded-player-core",
-    "descr": "You have been seriously injured. If you lose the [Dying](/condition/dying-player-core) condition and do not already have the wounded condition, you become wounded 1. If you already have the wounded condition when you lose the dying condition, your wounded condition value increases by 1. If you gain the dying condition while wounded, increase your dying condition value by your wounded value.\n\nThe wounded condition ends if someone successfully restores Hit Points to you using [Treat Wounds](/action/treat-wounds-player-core), or if you are restored to full Hit Points by any means and rest for 10 minutes.",
+    "descr": "You have been seriously injured. If you lose the Dying condition and do not already have the wounded condition, you become wounded 1. If you already have the wounded condition when you lose the dying condition, your wounded condition value increases by 1. If you gain the dying condition while wounded, increase your dying condition value by your wounded value.\n\nThe wounded condition ends if someone successfully restores Hit Points to you using Treat Wounds, or if you are restored to full Hit Points by any means and rest for 10 minutes.",
     "data": {
       "rarity": "common",
       "traits": [],
       "stage": 1,
-      "duration": -1,
-      "traitLinks": []
+      "traitLinks": [],
+      "valued": true,
+      "maxStage": 6
     },
     "attributes": {
       "remaster": true,
@@ -9864,6 +10070,10 @@
     ],
     "modifiers": [],
     "created": "2026-09-07T00:00:00Z",
-    "modified": "2026-09-07T00:00:00Z"
+    "modified": "2026-09-07T00:00:00Z",
+    "type": "condition",
+    "reference": "/condition/wounded-player-core",
+    "icon": "icons/conditions.png",
+    "color": "#8C2F39"
   }
 ]

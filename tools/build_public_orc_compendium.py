@@ -173,6 +173,78 @@ RICH_TEXT_KEYS = {
     "text",
 }
 
+# The combat tracker must offer the canonical Remaster conditions, not every
+# spell, stance, aura, and item effect stored in ``conditions.json``.  These
+# names are the complete Player Core condition appendix plus the explicit
+# Cursebound condition introduced in Player Core 2.
+CORE_CONDITIONS = {
+    "player-core": {
+        "Blinded", "Broken", "Clumsy", "Concealed", "Confused", "Controlled",
+        "Dazzled", "Deafened", "Doomed", "Drained", "Dying", "Encumbered",
+        "Enfeebled", "Fascinated", "Fatigued", "Fleeing", "Friendly",
+        "Frightened", "Grabbed", "Helpful", "Hidden", "Hostile", "Immobilized",
+        "Indifferent", "Invisible", "Observed", "Off-Guard", "Paralyzed",
+        "Persistent Damage", "Petrified", "Prone", "Quickened", "Restrained",
+        "Sickened", "Slowed", "Stunned", "Stupefied", "Unconscious",
+        "Undetected", "Unfriendly", "Unnoticed", "Wounded",
+    },
+    "player-core-2": {"Cursebound"},
+}
+
+VALUED_CONDITIONS = {
+    "Clumsy", "Cursebound", "Doomed", "Drained", "Dying", "Enfeebled",
+    "Frightened", "Sickened", "Slowed", "Stunned", "Stupefied", "Wounded",
+}
+
+# StatusEffect.icon is an image path, not an SF Symbol name. Use the packaged
+# condition image so the tracker and token view can always resolve it. Color
+# still separates broad families at a glance without changing the rule text.
+CONDITION_ICON = "icons/conditions.png"
+CONDITION_COLORS = {
+    "Blinded": "#5B5F97",
+    "Broken": "#8C5A3C",
+    "Clumsy": "#9A5B13",
+    "Concealed": "#4D6D7A",
+    "Confused": "#6A3D9A",
+    "Controlled": "#6A3D9A",
+    "Cursebound": "#6B2146",
+    "Dazzled": "#B47612",
+    "Deafened": "#5B5F97",
+    "Doomed": "#65131A",
+    "Drained": "#65131A",
+    "Dying": "#65131A",
+    "Encumbered": "#8C5A3C",
+    "Enfeebled": "#9A5B13",
+    "Fascinated": "#6A3D9A",
+    "Fatigued": "#6A5568",
+    "Fleeing": "#9A5B13",
+    "Friendly": "#2F6B4F",
+    "Frightened": "#6A3D9A",
+    "Grabbed": "#8C2F39",
+    "Helpful": "#2F6B4F",
+    "Hidden": "#276A58",
+    "Hostile": "#8C2F39",
+    "Immobilized": "#8C2F39",
+    "Indifferent": "#667070",
+    "Invisible": "#276A58",
+    "Observed": "#276A58",
+    "Off-Guard": "#8C2F39",
+    "Paralyzed": "#8C2F39",
+    "Persistent Damage": "#A64224",
+    "Petrified": "#667070",
+    "Prone": "#8C5A3C",
+    "Quickened": "#2F6B4F",
+    "Restrained": "#8C2F39",
+    "Sickened": "#557A3E",
+    "Slowed": "#6A3D9A",
+    "Stunned": "#B47612",
+    "Stupefied": "#6A3D9A",
+    "Unconscious": "#65131A",
+    "Undetected": "#276A58",
+    "Unfriendly": "#9A5B13",
+    "Unnoticed": "#276A58",
+    "Wounded": "#8C2F39",
+}
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -427,6 +499,28 @@ def dedupe_entity_links(result: dict[str, Any]) -> None:
     visit(result.get("data"))
 
 
+def configure_core_condition(result: dict[str, Any]) -> None:
+    """Mark only canonical Remaster conditions for the combat picker."""
+    attributes = result.get("attributes") or {}
+    source_id = str(attributes.get("sourceId") or "")
+    name = str(result.get("name") or "")
+    if name not in CORE_CONDITIONS.get(source_id, set()):
+        return
+
+    color = CONDITION_COLORS[name]
+    result["type"] = "condition"
+    result["reference"] = f"/condition/{result['slug']}"
+    result["icon"] = CONDITION_ICON
+    result["color"] = color
+    result["descr"] = INTERNAL_MARKDOWN_LINK.sub(r"\1", str(result.get("descr") or ""))
+
+    data = result.setdefault("data", {})
+    data.pop("duration", None)
+    valued = name in VALUED_CONDITIONS
+    data["valued"] = valued
+    data["stage"] = max(1, int(data.get("stage") or 0)) if valued else 0
+    data["maxStage"] = 4 if name in {"Cursebound", "Doomed", "Dying"} else 6
+
 def clean_foundry_markup(value: str) -> str:
     """Convert leftover VTT-only references into readable plain text."""
     text = value
@@ -559,6 +653,9 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         # Keep deity mechanics in Encounter+'s original description field so
         # they render reliably in both the detail view and editor.
         result["descr"] = data["rulesText"]
+
+    if expected_kind == "StatusEffect":
+        configure_core_condition(result)
 
     dedupe_entity_links(result)
 
