@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import zipfile
 from collections import defaultdict
 from pathlib import Path
@@ -47,6 +48,7 @@ SYSTEM_DIRS = {
     "icons",
     "images",
     "lang",
+    "migrations",
     "scripts",
     "styles",
     "themes",
@@ -59,7 +61,11 @@ GENERATED_FILES = {
     "SHA256SUMS.txt",
 }
 
-
+DAMAGE_COMPONENT = re.compile(
+    r"(^|(?P<connector>\s*(?:;|,|\bplus\b|\band\b)\s*))"
+    r"(?P<amount>(?:\d+)?d\d+(?:\s*[+-]\s*\d+)?|\d+)(?=\s|$)",
+    re.IGNORECASE,
+)
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=REPO / "dist")
@@ -89,6 +95,53 @@ def add_bytes(bundle: zipfile.ZipFile, name: str, content: bytes) -> None:
 
 def add_file(bundle: zipfile.ZipFile, source: Path, name: str) -> None:
     add_bytes(bundle, name, source.read_bytes())
+
+
+def parse_damage_parts(value: object) -> list[dict[str, str]]:
+    """Split legacy natural-language damage into editable, explicitly rollable parts."""
+    if not isinstance(value, str) or not value.strip():
+        return []
+
+    text = value.strip()
+    matches = list(DAMAGE_COMPONENT.finditer(text))
+    if not matches:
+        amount, separator, details = text.partition(" ")
+        return [{"name": amount, "details": details if separator else ""}]
+
+    parts: list[dict[str, str]] = []
+    for index, match in enumerate(matches):
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        details = text[match.end("amount") : end].strip()
+        part = {
+            "name": re.sub(r"\s+", "", match.group("amount")),
+            "details": details,
+        }
+        connector = match.group("connector")
+        if parts and connector:
+            token = connector.strip().casefold()
+            part["connector"] = {
+                ";": "; ",
+                ",": ", ",
+                "plus": " plus ",
+                "and": " and ",
+            }[token]
+        parts.append(part)
+
+    return parts
+
+
+def add_creature_damage_parts(record: dict) -> None:
+    if record.get("kind") != "Creature":
+        return
+    attacks = record.get("data", {}).get("attacks", [])
+    if not isinstance(attacks, list):
+        return
+    for attack in attacks:
+        if not isinstance(attack, dict) or isinstance(attack.get("damageParts"), list):
+            continue
+        parts = parse_damage_parts(attack.get("damage"))
+        if parts:
+            attack["damageParts"] = parts
 
 
 def visible_files(directory: Path) -> Iterable[Path]:
@@ -148,6 +201,7 @@ def load_orc_collections() -> tuple[dict[str, list[dict]], dict[str, int]]:
                     source_names.append(f"{name} pg. {page}" if page else name)
                 if source_names:
                     record.setdefault("data", {})["sourceName"] = ", ".join(source_names)
+                add_creature_damage_parts(record)
                 record["systemVersion"] = SYSTEM_VERSION
             collections[path.name].extend(records)
 
@@ -193,6 +247,7 @@ def load_ogl_collections(existing_ids: set[str]) -> tuple[dict[str, list[dict]],
                 source_names.append(f"{name} pg. {page}" if page else name)
             if source_names:
                 record.setdefault("data", {})["sourceName"] = ", ".join(source_names)
+            add_creature_damage_parts(record)
             record["systemVersion"] = SYSTEM_VERSION
         collections[path.name].extend(records)
 

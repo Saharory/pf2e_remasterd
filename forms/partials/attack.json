@@ -41,13 +41,20 @@
           "title": "Common.AttackModifier",
           "type": "number",
           "attribute": "attack",
-        },
-        {
-          "title": "Common.Damage",
-          "type": "text",
-          "attribute": "damage"
         }
       ]
+    },
+    {
+      "title": "Common.Damage",
+      "type": "list",
+      "attribute": "damageParts",
+      "custom": {
+        "itemDetail": "{{details}}"
+      },
+      "form": {
+        "title": "Creature.DamageComponent",
+        "partial": "damage-part"
+      }
     }
   ]
 }
