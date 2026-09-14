@@ -97,6 +97,9 @@
   --tag-purple-color: #54166E;
   --tag-green-color: #3a7a58;
   --tag-orange-color: #98513D;
+  --footer-tag-background: white;
+  --footer-tag-border: var(--tag-color, var(--tag-default-color));
+  --footer-tag-text: var(--tag-color, var(--tag-default-color));
 
   --box-divider-color: black;
   --box-border-color: rgba(0, 0, 0, 0.255);
@@ -141,6 +144,9 @@
     --box-border-color: rgba(255, 255, 255, 0.3);
     --box-background-color: rgba(255, 255, 255, 0.05);
     --box-text-color: white;
+    --footer-tag-background: #26332a;
+    --footer-tag-border: #536158;
+    --footer-tag-text: #cbd2cc;
 
     --pico-h1-color: #f0f1f3;
     --pico-h2-color: #e0e3e7;
@@ -161,6 +167,9 @@
 [data-theme="dark"] {
   --pico-background-color: #101a0d;
   --pico-color: #c2c7d0;
+  --footer-tag-background: #26332a;
+  --footer-tag-border: #536158;
+  --footer-tag-text: #cbd2cc;
 }
 
 h1 {
@@ -991,11 +1000,6 @@ p:last-child {
     color: #d9ddd7;
   }
 
-  .tags .tag {
-    background-color: #26332a;
-    border-color: #536158;
-    color: #cbd2cc;
-  }
 }
 
 .table-responsive {
@@ -1026,14 +1030,14 @@ table td {
 
   .tag {
     display: inline-block;
-    border: 1px solid var(--tag-color);
+    border: 1px solid var(--footer-tag-border);
     border-radius: 0.3rem;
-    background-color: white;
+    background-color: var(--footer-tag-background);
     padding: 0.3rem 0.5rem;
     text-transform: uppercase;
     font-size: 0.6rem;
     font-weight: 600;
-    color: var(--tag-color);
+    color: var(--footer-tag-text);
   }
 }
 img[src*="/icons/actions/"] {
