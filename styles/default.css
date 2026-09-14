@@ -106,6 +106,19 @@
   --box-background-color: rgba(255, 255, 255, 0.9);
   --box-text-color: #4E1B0E;
   --page-border-color: rgba(0, 0, 0, 0.3);
+
+  /* Shared dark palette. Trait and rarity colors intentionally stay separate. */
+  --pf-dark-page: #181716;
+  --pf-dark-surface: #22201f;
+  --pf-dark-raised: #2b2927;
+  --pf-dark-border: #4a4642;
+  --pf-dark-text: #f1ede6;
+  --pf-dark-muted: #b8b0a7;
+  --pf-dark-crimson: #d17a68;
+  --pf-dark-gold: #d2b66f;
+  --pf-dark-link: #68b5d2;
+  --pf-dark-tag: #302d2b;
+  --pf-dark-tag-text: #ddd6cc;
 }
 
 /* colors */
@@ -135,41 +148,90 @@
 /* Automatically enabled if user has Dark mode enabled */
  @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    /* --pico-background-color: #120301; */
-    /* --pico-background-color: #0e160b; */
-    --pico-background-color: #101a0d;
-    --pico-color: #c2c7d0;
+    --pico-background-color: var(--pf-dark-page);
+    --pico-color: var(--pf-dark-text);
+    --dark-red-color: var(--pf-dark-crimson);
+    --yellow-color: var(--pf-dark-gold);
 
-    --box-divider-color: white;
-    --box-border-color: rgba(255, 255, 255, 0.3);
-    --box-background-color: rgba(255, 255, 255, 0.05);
-    --box-text-color: white;
-    --footer-tag-background: #26332a;
-    --footer-tag-border: #536158;
-    --footer-tag-text: #cbd2cc;
+    --box-divider-color: var(--pf-dark-gold);
+    --box-border-color: var(--pf-dark-border);
+    --box-background-color: var(--pf-dark-raised);
+    --box-text-color: var(--pf-dark-text);
+    --page-border-color: var(--pf-dark-border);
+    --footer-tag-background: var(--pf-dark-tag);
+    --footer-tag-border: var(--pf-dark-border);
+    --footer-tag-text: var(--pf-dark-tag-text);
 
-    --pico-h1-color: #f0f1f3;
-    --pico-h2-color: #e0e3e7;
-    --pico-h3-color: #c2c7d0;
-    --pico-h4-color: #b3b9c5;
-    --pico-h5-color: #a4acba;
-    --pico-h6-color: #8891a4;
+    --pico-h1-color: var(--pf-dark-text);
+    --pico-h2-color: var(--pf-dark-crimson);
+    --pico-h3-color: var(--pf-dark-crimson);
+    --pico-h4-color: var(--pf-dark-crimson);
+    --pico-h5-color: var(--pf-dark-crimson);
+    --pico-h6-color: var(--pf-dark-crimson);
 
     .stat-block {
-      background-color: #172119;
-      --pico-background-color: #172119;
+      background-color: var(--pf-dark-surface);
+      --pico-background-color: var(--pf-dark-surface);
     }
+  }
+
+  .header-paper {
+    background-color: var(--pf-dark-raised);
+    background-image: none;
+    border-color: var(--pf-dark-gold);
+    color: var(--pf-dark-text);
+  }
+
+  .header-paper h1 {
+    color: var(--pf-dark-crimson);
+  }
+
+  .header-paper .quote {
+    color: var(--pf-dark-muted);
   }
 }
 
 /* Dark color scheme (Forced) */
 /* Enabled if forced with data-theme="dark" */
 [data-theme="dark"] {
-  --pico-background-color: #101a0d;
-  --pico-color: #c2c7d0;
-  --footer-tag-background: #26332a;
-  --footer-tag-border: #536158;
-  --footer-tag-text: #cbd2cc;
+  --pico-background-color: var(--pf-dark-page);
+  --pico-color: var(--pf-dark-text);
+  --dark-red-color: var(--pf-dark-crimson);
+  --yellow-color: var(--pf-dark-gold);
+  --box-divider-color: var(--pf-dark-gold);
+  --box-border-color: var(--pf-dark-border);
+  --box-background-color: var(--pf-dark-raised);
+  --box-text-color: var(--pf-dark-text);
+  --page-border-color: var(--pf-dark-border);
+  --footer-tag-background: var(--pf-dark-tag);
+  --footer-tag-border: var(--pf-dark-border);
+  --footer-tag-text: var(--pf-dark-tag-text);
+  --pico-h1-color: var(--pf-dark-text);
+  --pico-h2-color: var(--pf-dark-crimson);
+  --pico-h3-color: var(--pf-dark-crimson);
+  --pico-h4-color: var(--pf-dark-crimson);
+  --pico-h5-color: var(--pf-dark-crimson);
+  --pico-h6-color: var(--pf-dark-crimson);
+}
+
+[data-theme="dark"] .stat-block {
+  background-color: var(--pf-dark-surface);
+  --pico-background-color: var(--pf-dark-surface);
+}
+
+[data-theme="dark"] .header-paper {
+  background-color: var(--pf-dark-raised);
+  background-image: none;
+  border-color: var(--pf-dark-gold);
+  color: var(--pf-dark-text);
+}
+
+[data-theme="dark"] .header-paper h1 {
+  color: var(--pf-dark-crimson);
+}
+
+[data-theme="dark"] .header-paper .quote {
+  color: var(--pf-dark-muted);
 }
 
 h1 {
@@ -530,90 +592,90 @@ p:last-child {
   #class .core-page,
   #ancestry .core-page,
   #deity .core-page {
-    background-color: #172119;
-    color: #d7dbd5;
-    border-color: #3a493e;
-    --pico-color: #d7dbd5;
-    --pico-h1-color: #f1e8d8;
-    --pico-h2-color: #e4a18c;
-    --pico-h3-color: #e9ab96;
-    --dark-red-color: #d68a74;
-    --page-border-color: #3a493e;
+    background-color: var(--pf-dark-surface);
+    color: var(--pf-dark-text);
+    border-color: var(--pf-dark-border);
+    --pico-color: var(--pf-dark-text);
+    --pico-h1-color: var(--pf-dark-text);
+    --pico-h2-color: var(--pf-dark-crimson);
+    --pico-h3-color: var(--pf-dark-crimson);
+    --dark-red-color: var(--pf-dark-crimson);
+    --page-border-color: var(--pf-dark-border);
   }
 
   #class .core-page a,
   #ancestry .core-page a,
   #deity .core-page a {
-    --pico-color: #58aed0;
-    --pico-underline: #58aed055;
+    --pico-color: var(--pf-dark-link);
+    --pico-underline: color-mix(in srgb, var(--pf-dark-link) 45%, transparent);
   }
 
   #class .core-page-header,
   #ancestry .core-page-header,
   #deity .core-page-header {
-    background-color: #1c2820;
-    background-image: url('../images/header-paper.jpg');
-    background-blend-mode: multiply;
-    border-bottom-color: #b96b57;
-    color: #f1e8d8;
+    background-color: var(--pf-dark-raised);
+    background-image: none;
+    border-bottom-color: var(--pf-dark-gold);
+    color: var(--pf-dark-text);
   }
 
   #class .core-page-header > *,
   #ancestry .core-page-header > *,
   #deity .core-page-header > * {
-    color: #f1e8d8;
+    color: var(--pf-dark-text);
   }
 
   #class .core-page-summary,
   #ancestry .core-page-summary {
-    border-bottom-color: #8b7465;
-    color: #e1d9cb;
+    border-bottom-color: var(--pf-dark-border);
+    color: var(--pf-dark-muted);
   }
 
   #class .core-facts,
   #ancestry .core-facts {
-    border-top-color: #536158;
-    border-bottom-color: #536158;
+    border-top-color: var(--pf-dark-border);
+    border-bottom-color: var(--pf-dark-border);
   }
 
   #class .core-fact,
   #ancestry .core-fact {
-    border-right-color: #536158;
+    border-right-color: var(--pf-dark-border);
   }
 
   #class .core-section h2,
   #ancestry .core-section h2 {
-    border-bottom-color: #a85f50;
+    border-bottom-color: var(--pf-dark-gold);
   }
 
   #class .core-feature h3,
   #ancestry .core-feature h3 {
-    border-bottom-color: #455349;
+    border-bottom-color: var(--pf-dark-border);
   }
 
   #class .core-advancement th,
   #class .core-advancement td {
-    border-bottom-color: #425047;
-    color: #d7dbd5;
+    border-bottom-color: var(--pf-dark-border);
+    color: var(--pf-dark-text);
   }
 
   #class .core-advancement th {
-    background-color: #26362b;
-    color: #dfa08b;
+    background-color: var(--pf-dark-raised);
+    color: var(--pf-dark-crimson);
+    border-bottom-color: var(--pf-dark-gold);
   }
 
   #class .core-advancement th:first-child,
   #class .core-advancement td:first-child {
-    background-color: #223128;
-    color: #e4a18c;
+    background-color: var(--pf-dark-raised);
+    color: var(--pf-dark-crimson);
   }
 
   #class .core-advancement tbody tr:nth-child(odd) td:not(:first-child) {
-    background-color: #172119;
+    background-color: var(--pf-dark-surface);
   }
 
   #class .core-advancement tbody tr:nth-child(even) td:not(:first-child) {
-    background-color: #1b271e;
+    background-color: var(--pf-dark-page);
   }
 }
 
@@ -657,29 +719,30 @@ p:last-child {
 
 @media only screen and (prefers-color-scheme: dark) {
   .deity-stat-table {
-    border-color: #425047;
+    border-color: var(--pf-dark-border);
   }
 
   .deity-stat-table th,
   .deity-stat-table td {
-    border-bottom-color: #425047;
+    border-bottom-color: var(--pf-dark-border);
   }
 
   .deity-stat-table th {
-    background-color: #223128;
-    color: #e4a18c;
+    background-color: var(--pf-dark-raised);
+    color: var(--pf-dark-crimson);
+    border-bottom-color: var(--pf-dark-gold);
   }
 
   .deity-stat-table tbody tr:nth-child(odd) td {
-    background-color: #172119;
+    background-color: var(--pf-dark-surface);
   }
 
   .deity-stat-table tbody tr:nth-child(even) td {
-    background-color: #1b271e;
+    background-color: var(--pf-dark-page);
   }
 
   .deity-stat-table .deity-emphasis td {
-    box-shadow: inset 3px 0 0 #b96b57;
+    box-shadow: inset 3px 0 0 var(--pf-dark-gold);
   }
 }
 
@@ -707,7 +770,7 @@ p:last-child {
 
   .core-fact {
     border-right: 0;
-    border-bottom: 1px solid #aaa198;
+    border-bottom: 1px solid var(--page-border-color);
   }
 
   .core-fact:last-child {
@@ -880,30 +943,30 @@ p:last-child {
 
 @media only screen and (prefers-color-scheme: dark) {
   .stat-block {
-    background-color: #172119;
-    border-color: #3a493e;
-    color: #d7dbd5;
-    --pico-color: #d7dbd5;
-    --pico-h1-color: #f1e8d8;
-    --pico-h2-color: #e4a18c;
-    --pico-h3-color: #e9ab96;
-    --page-border-color: #3a493e;
+    background-color: var(--pf-dark-surface);
+    border-color: var(--pf-dark-border);
+    color: var(--pf-dark-text);
+    --pico-color: var(--pf-dark-text);
+    --pico-h1-color: var(--pf-dark-text);
+    --pico-h2-color: var(--pf-dark-crimson);
+    --pico-h3-color: var(--pf-dark-crimson);
+    --page-border-color: var(--pf-dark-border);
   }
 
   .stat-block .header {
-    border-bottom-color: #b96b57;
-    color: #f1e8d8;
+    border-bottom-color: var(--pf-dark-gold);
+    color: var(--pf-dark-text);
   }
 
   .stat-block .header > *,
   .stat-block .header h1 {
-    color: #f1e8d8;
-    --pico-color: #f1e8d8;
+    color: var(--pf-dark-text);
+    --pico-color: var(--pf-dark-text);
   }
 
   .stat-block a {
-    --pico-color: #58aed0;
-    --pico-underline: #58aed055;
+    --pico-color: var(--pf-dark-link);
+    --pico-underline: color-mix(in srgb, var(--pf-dark-link) 45%, transparent);
   }
 
   .stat-block strong,
@@ -912,52 +975,57 @@ p:last-child {
   .stat-block h4,
   .stat-block h5,
   .stat-block h6 {
-    color: #e4a18c;
+    color: var(--pf-dark-crimson);
   }
 
   .stat-block hr {
-    background-color: #536158;
+    background-color: var(--pf-dark-border);
   }
 
   .stat-block table:not([class]) th {
-    background-color: #26362b;
-    color: #dfa08b;
+    background-color: var(--pf-dark-raised);
+    color: var(--pf-dark-crimson);
+    border-bottom-color: var(--pf-dark-gold);
   }
 
   .stat-block table:not([class]) th,
   .stat-block table:not([class]) td {
-    border-bottom-color: #425047;
+    border-bottom-color: var(--pf-dark-border);
+  }
+
+  .stat-block table:not([class]) th {
+    border-bottom-color: var(--pf-dark-gold);
   }
 
   .stat-block table:not([class]) tbody tr:nth-child(odd) td:not(:first-child) {
-    background-color: #172119;
+    background-color: var(--pf-dark-surface);
   }
 
   .stat-block table:not([class]) tbody tr:nth-child(even) td:not(:first-child) {
-    background-color: #1b271e;
+    background-color: var(--pf-dark-page);
   }
 
   .stat-block table:not([class]) td:first-child:not(:only-child) {
-    background-color: #223128;
-    color: #e4a18c;
+    background-color: var(--pf-dark-raised);
+    color: var(--pf-dark-crimson);
   }
 
   .stat-block img[src*="icons/actions/"] {
-    filter: invert(88%) sepia(11%) saturate(355%) hue-rotate(334deg) brightness(104%);
+    filter: invert(79%) sepia(33%) saturate(627%) hue-rotate(4deg) brightness(92%) contrast(88%);
   }
 
   #default {
-    background-color: #172119;
-    color: #d7dbd5;
-    --pico-color: #d7dbd5;
-    --pico-h1-color: #f1e8d8;
-    --pico-h2-color: #e4a18c;
-    --pico-h3-color: #e9ab96;
+    background-color: var(--pf-dark-surface);
+    color: var(--pf-dark-text);
+    --pico-color: var(--pf-dark-text);
+    --pico-h1-color: var(--pf-dark-text);
+    --pico-h2-color: var(--pf-dark-crimson);
+    --pico-h3-color: var(--pf-dark-crimson);
   }
 
   #default a {
-    --pico-color: #58aed0;
-    --pico-underline: #58aed055;
+    --pico-color: var(--pf-dark-link);
+    --pico-underline: color-mix(in srgb, var(--pf-dark-link) 45%, transparent);
   }
 
   #default h2,
@@ -966,38 +1034,43 @@ p:last-child {
   #default h5,
   #default h6,
   #default strong {
-    color: #e4a18c;
+    color: var(--pf-dark-crimson);
   }
 
   #default hr {
-    border-color: #536158;
+    border-color: var(--pf-dark-border);
   }
 
   #default table:not([class]) th {
-    background-color: #26362b;
-    color: #dfa08b;
+    background-color: var(--pf-dark-raised);
+    color: var(--pf-dark-crimson);
+    border-bottom-color: var(--pf-dark-gold);
   }
 
   #default table:not([class]) th,
   #default table:not([class]) td {
-    border-bottom-color: #425047;
+    border-bottom-color: var(--pf-dark-border);
+  }
+
+  #default table:not([class]) th {
+    border-bottom-color: var(--pf-dark-gold);
   }
 
   #default table:not([class]) tbody tr:nth-child(odd) td:not(:first-child) {
-    background-color: #172119;
+    background-color: var(--pf-dark-surface);
   }
 
   #default table:not([class]) tbody tr:nth-child(even) td:not(:first-child) {
-    background-color: #1b271e;
+    background-color: var(--pf-dark-page);
   }
 
   #default table:not([class]) td:first-child:not(:only-child) {
-    background-color: #223128;
-    color: #e4a18c;
+    background-color: var(--pf-dark-raised);
+    color: var(--pf-dark-crimson);
   }
 
   footer strong {
-    color: #d9ddd7;
+    color: var(--pf-dark-crimson);
   }
 
 }
@@ -1554,32 +1627,33 @@ img[src*="/icons/actions/"] {
 
 @media only screen and (prefers-color-scheme: dark) {
   .xp-calculator {
-    --xp-paper: #172119;
-    --xp-panel: #1b271e;
-    --xp-panel-alt: #223128;
-    --xp-ink: #d7dbd5;
-    --xp-muted: #aeb7af;
-    --xp-accent: #e4a18c;
-    --xp-line: #425047;
-    --xp-link: #58aed0;
+    --xp-paper: #181716;
+    --xp-panel: #22201f;
+    --xp-panel-alt: #2b2927;
+    --xp-ink: #f1ede6;
+    --xp-muted: #b8b0a7;
+    --xp-accent: #d17a68;
+    --xp-line: #4a4642;
+    --xp-link: #68b5d2;
   }
 
   .xp-header {
-    background-color: #26362b;
+    background-color: var(--xp-panel-alt);
     background-image: none;
-    border-bottom-color: #b96b57;
-    color: #f1e8d8;
+    border-bottom-color: #d2b66f;
+    color: var(--xp-ink);
   }
 
   .xp-calculator thead th {
-    background: #26362b;
-    color: #dfa08b;
+    background: var(--xp-panel-alt);
+    color: var(--xp-accent);
+    border-bottom-color: #d2b66f;
   }
 
   .xp-budget-table .is-current {
-    background: #4c452b;
-    color: #f1e8d8;
-    box-shadow: inset 0 -3px 0 #dfa08b;
+    background: var(--xp-panel-alt);
+    color: var(--xp-ink);
+    box-shadow: inset 0 -3px 0 #d2b66f;
   }
 
   .xp-entry-table tr.has-warning td,
@@ -1590,14 +1664,14 @@ img[src*="/icons/actions/"] {
 
   .xp-button,
   .xp-remove {
-    background: #743f32;
-    border-color: #b96b57;
-    color: #f7f3f0;
+    background: var(--xp-accent);
+    border-color: var(--xp-accent);
+    color: var(--xp-paper);
   }
 
   .xp-button.secondary {
     background: transparent;
-    color: #e4a18c;
+    color: var(--xp-accent);
   }
 }
 
@@ -2486,21 +2560,21 @@ img[src*="/icons/actions/"] {
 
 @media only screen and (prefers-color-scheme: dark) {
   .pf2e-ops {
-    --ops-paper: #101a0d;
-    --ops-panel: #172119;
-    --ops-panel-alt: #223128;
-    --ops-ink: #d7dbd5;
-    --ops-muted: #aeb7af;
-    --ops-accent: #e4a18c;
-    --ops-accent-soft: #26362b;
-    --ops-green: #9ac3a7;
-    --ops-gold: #dbc385;
-    --ops-line: #425047;
-    --ops-link: #58aed0;
+    --ops-paper: #181716;
+    --ops-panel: #22201f;
+    --ops-panel-alt: #2b2927;
+    --ops-ink: #f1ede6;
+    --ops-muted: #b8b0a7;
+    --ops-accent: #d17a68;
+    --ops-accent-soft: #2b2927;
+    --ops-green: #d2b66f;
+    --ops-gold: #d2b66f;
+    --ops-line: #4a4642;
+    --ops-link: #68b5d2;
   }
 
   .ops-header {
-    background-color: #26362b;
+    background-color: var(--ops-panel-alt);
     background-image: none;
   }
 
@@ -2510,12 +2584,224 @@ img[src*="/icons/actions/"] {
   }
 
   .ops-procedure > li > span {
-    background: #743f32;
+    background: var(--ops-accent);
+    color: var(--ops-paper);
   }
 
   .ops-launch {
-    background: #26362b;
+    background: var(--ops-panel-alt);
     border: 1px solid var(--ops-line);
-    border-left: 0.35rem solid #b96b57;
+    border-left: 0.35rem solid var(--ops-accent);
+    color: var(--ops-ink);
   }
+
+  .pf2e-ops .ops-action-cost img,
+  .pf2e-ops .ops-symbol-row img {
+    filter: invert(79%) sepia(33%) saturate(627%) hue-rotate(4deg) brightness(92%) contrast(88%);
+  }
+}
+
+/* Match component surfaces when Encounter+ explicitly forces dark mode. */
+[data-theme="dark"] :is(#class, #ancestry, #deity) .core-page {
+  background-color: var(--pf-dark-surface);
+  color: var(--pf-dark-text);
+  border-color: var(--pf-dark-border);
+  --pico-color: var(--pf-dark-text);
+  --pico-h1-color: var(--pf-dark-text);
+  --pico-h2-color: var(--pf-dark-crimson);
+  --pico-h3-color: var(--pf-dark-crimson);
+  --dark-red-color: var(--pf-dark-crimson);
+  --page-border-color: var(--pf-dark-border);
+}
+
+[data-theme="dark"] :is(#class, #ancestry, #deity) .core-page a,
+[data-theme="dark"] :is(.stat-block, #default) a {
+  --pico-color: var(--pf-dark-link);
+  --pico-underline: color-mix(in srgb, var(--pf-dark-link) 45%, transparent);
+}
+
+[data-theme="dark"] :is(#class, #ancestry, #deity) .core-page-header {
+  background-color: var(--pf-dark-raised);
+  background-image: none;
+  border-bottom-color: var(--pf-dark-gold);
+  color: var(--pf-dark-text);
+}
+
+[data-theme="dark"] :is(#class, #ancestry, #deity) .core-page-header > * {
+  color: var(--pf-dark-text);
+}
+
+[data-theme="dark"] :is(#class, #ancestry) :is(.core-page-summary, .core-facts, .core-fact, .core-feature h3),
+[data-theme="dark"] .deity-stat-table,
+[data-theme="dark"] .deity-stat-table :is(th, td) {
+  border-color: var(--pf-dark-border);
+}
+
+[data-theme="dark"] :is(#class, #ancestry) .core-page-summary {
+  color: var(--pf-dark-muted);
+}
+
+[data-theme="dark"] :is(#class, #ancestry) .core-section h2 {
+  border-bottom-color: var(--pf-dark-gold);
+}
+
+[data-theme="dark"] #class .core-advancement :is(th, td) {
+  border-bottom-color: var(--pf-dark-border);
+  color: var(--pf-dark-text);
+}
+
+[data-theme="dark"] #class .core-advancement th,
+[data-theme="dark"] #class .core-advancement :is(th, td):first-child,
+[data-theme="dark"] .deity-stat-table th {
+  background-color: var(--pf-dark-raised);
+  color: var(--pf-dark-crimson);
+}
+
+[data-theme="dark"] #class .core-advancement th,
+[data-theme="dark"] .deity-stat-table th {
+  border-bottom-color: var(--pf-dark-gold);
+}
+
+[data-theme="dark"] #class .core-advancement tbody tr:nth-child(odd) td:not(:first-child),
+[data-theme="dark"] .deity-stat-table tbody tr:nth-child(odd) td {
+  background-color: var(--pf-dark-surface);
+}
+
+[data-theme="dark"] #class .core-advancement tbody tr:nth-child(even) td:not(:first-child),
+[data-theme="dark"] .deity-stat-table tbody tr:nth-child(even) td {
+  background-color: var(--pf-dark-page);
+}
+
+[data-theme="dark"] .deity-stat-table .deity-emphasis td {
+  box-shadow: inset 3px 0 0 var(--pf-dark-gold);
+}
+
+[data-theme="dark"] .stat-block,
+[data-theme="dark"] #default {
+  background-color: var(--pf-dark-surface);
+  border-color: var(--pf-dark-border);
+  color: var(--pf-dark-text);
+  --pico-color: var(--pf-dark-text);
+  --pico-h1-color: var(--pf-dark-text);
+  --pico-h2-color: var(--pf-dark-crimson);
+  --pico-h3-color: var(--pf-dark-crimson);
+}
+
+[data-theme="dark"] .stat-block .header {
+  border-bottom-color: var(--pf-dark-gold);
+}
+
+[data-theme="dark"] .stat-block .header > *,
+[data-theme="dark"] .stat-block .header h1 {
+  color: var(--pf-dark-text);
+  --pico-color: var(--pf-dark-text);
+}
+
+[data-theme="dark"] :is(.stat-block, #default) :is(h2, h3, h4, h5, h6, strong) {
+  color: var(--pf-dark-crimson);
+}
+
+[data-theme="dark"] .stat-block hr,
+[data-theme="dark"] #default hr {
+  border-color: var(--pf-dark-border);
+  background-color: var(--pf-dark-border);
+}
+
+[data-theme="dark"] :is(.stat-block, #default) table:not([class]) :is(th, td) {
+  border-bottom-color: var(--pf-dark-border);
+}
+
+[data-theme="dark"] :is(.stat-block, #default) table:not([class]) th,
+[data-theme="dark"] :is(.stat-block, #default) table:not([class]) td:first-child:not(:only-child) {
+  background-color: var(--pf-dark-raised);
+  color: var(--pf-dark-crimson);
+}
+
+[data-theme="dark"] :is(.stat-block, #default) table:not([class]) th {
+  border-bottom-color: var(--pf-dark-gold);
+}
+
+[data-theme="dark"] :is(.stat-block, #default) table:not([class]) tbody tr:nth-child(odd) td:not(:first-child) {
+  background-color: var(--pf-dark-surface);
+}
+
+[data-theme="dark"] :is(.stat-block, #default) table:not([class]) tbody tr:nth-child(even) td:not(:first-child) {
+  background-color: var(--pf-dark-page);
+}
+
+[data-theme="dark"] .stat-block img[src*="icons/actions/"],
+[data-theme="dark"] .pf2e-ops :is(.ops-action-cost, .ops-symbol-row) img {
+  filter: invert(79%) sepia(33%) saturate(627%) hue-rotate(4deg) brightness(92%) contrast(88%);
+}
+
+[data-theme="dark"] footer strong {
+  color: var(--pf-dark-crimson);
+}
+
+[data-theme="dark"] .xp-calculator {
+  --xp-paper: #181716;
+  --xp-panel: #22201f;
+  --xp-panel-alt: #2b2927;
+  --xp-ink: #f1ede6;
+  --xp-muted: #b8b0a7;
+  --xp-accent: #d17a68;
+  --xp-line: #4a4642;
+  --xp-link: #68b5d2;
+}
+
+[data-theme="dark"] .xp-header,
+[data-theme="dark"] .xp-calculator thead th {
+  background: var(--xp-panel-alt);
+  background-image: none;
+  border-bottom-color: #d2b66f;
+  color: var(--xp-ink);
+}
+
+[data-theme="dark"] .xp-budget-table .is-current {
+  background: var(--xp-panel-alt);
+  color: var(--xp-ink);
+  box-shadow: inset 0 -3px 0 #d2b66f;
+}
+
+[data-theme="dark"] .xp-button,
+[data-theme="dark"] .xp-remove {
+  background: var(--xp-accent);
+  border-color: var(--xp-accent);
+  color: var(--xp-paper);
+}
+
+[data-theme="dark"] .xp-button.secondary {
+  background: transparent;
+  color: var(--xp-accent);
+}
+
+[data-theme="dark"] .pf2e-ops {
+  --ops-paper: #181716;
+  --ops-panel: #22201f;
+  --ops-panel-alt: #2b2927;
+  --ops-ink: #f1ede6;
+  --ops-muted: #b8b0a7;
+  --ops-accent: #d17a68;
+  --ops-accent-soft: #2b2927;
+  --ops-green: #d2b66f;
+  --ops-gold: #d2b66f;
+  --ops-line: #4a4642;
+  --ops-link: #68b5d2;
+}
+
+[data-theme="dark"] .ops-header,
+[data-theme="dark"] .ops-launch {
+  background-color: var(--ops-panel-alt);
+  background-image: none;
+  color: var(--ops-ink);
+}
+
+[data-theme="dark"] .ops-procedure > li > span {
+  background: var(--ops-accent);
+  color: var(--ops-paper);
+}
+
+[data-theme="dark"] .ops-launch {
+  border: 1px solid var(--ops-line);
+  border-left: 0.35rem solid var(--ops-accent);
 }
