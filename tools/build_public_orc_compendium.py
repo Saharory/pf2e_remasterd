@@ -246,6 +246,161 @@ CONDITION_COLORS = {
     "Wounded": "#8C2F39",
 }
 
+
+ABILITY_MODIFIER_PATHS = (
+    ("Strength modifier", "data.attributes.str"),
+    ("Dexterity modifier", "data.attributes.dex"),
+    ("Constitution modifier", "data.attributes.con"),
+    ("Intelligence modifier", "data.attributes.int"),
+    ("Wisdom modifier", "data.attributes.wis"),
+    ("Charisma modifier", "data.attributes.cha"),
+)
+
+SKILL_MODIFIER_PATHS = (
+    ("Acrobatics", "data.skills.acrobatics"),
+    ("Arcana", "data.skills.arcana"),
+    ("Athletics", "data.skills.athletics"),
+    ("Crafting", "data.skills.crafting"),
+    ("Deception", "data.skills.deception"),
+    ("Diplomacy", "data.skills.diplomacy"),
+    ("Intimidation", "data.skills.intimidation"),
+    ("Lore", "data.skills.lore"),
+    ("Medicine", "data.skills.medicine"),
+    ("Nature", "data.skills.nature"),
+    ("Occultism", "data.skills.occultism"),
+    ("Performance", "data.skills.performance"),
+    ("Religion", "data.skills.religion"),
+    ("Society", "data.skills.society"),
+    ("Stealth", "data.skills.stealth"),
+    ("Survival", "data.skills.survival"),
+    ("Thievery", "data.skills.thievery"),
+)
+
+MENTAL_SKILL_MODIFIER_PATHS = tuple(
+    pair
+    for pair in SKILL_MODIFIER_PATHS
+    if pair[0]
+    in {
+        "Arcana", "Crafting", "Deception", "Diplomacy", "Intimidation",
+        "Lore", "Medicine", "Nature", "Occultism", "Performance",
+        "Religion", "Society", "Survival",
+    }
+)
+
+SAVE_MODIFIER_PATHS = (
+    ("Fortitude save", "data.saves.fortitude"),
+    ("Reflex save", "data.saves.reflex"),
+    ("Will save", "data.saves.will"),
+)
+
+MOVEMENT_MODIFIER_PATHS = (
+    ("Walking Speed", "data.movement.walk"),
+    ("Burrow Speed", "data.movement.burrow"),
+    ("Climb Speed", "data.movement.climb"),
+    ("Fly Speed", "data.movement.fly"),
+    ("Swim Speed", "data.movement.swim"),
+)
+
+
+def additive_modifiers(
+    value: int,
+    paths: tuple[tuple[str, str], ...],
+) -> tuple[tuple[str, str, str, int], ...]:
+    return tuple((label, "add", attribute, value) for label, attribute in paths)
+
+
+OFF_GUARD_MODIFIER = (("Armor Class (Off-Guard)", "add", "data.ac.value", -2),)
+UNCONSCIOUS_MODIFIERS = (
+    ("Armor Class (Unconscious)", "add", "data.ac.value", -4),
+    ("Perception (Unconscious)", "add", "data.perception", -4),
+    ("Reflex save (Unconscious)", "add", "data.saves.reflex", -4),
+) + OFF_GUARD_MODIFIER
+
+ALL_CHECK_AND_DC_PATHS = (
+    ABILITY_MODIFIER_PATHS
+    + (("Armor Class", "data.ac.value"),)
+    + (("Perception", "data.perception"),)
+    + (("Initiative", "data.initiative"),)
+    + (("Class DC", "data.classDC"),)
+    + SAVE_MODIFIER_PATHS
+    + SKILL_MODIFIER_PATHS
+)
+
+CLUMSY_BASE_MODIFIERS = additive_modifiers(
+    -1,
+    (
+        ("Dexterity modifier", "data.attributes.dex"),
+        ("Armor Class", "data.ac.value"),
+        ("Reflex save", "data.saves.reflex"),
+        ("Acrobatics", "data.skills.acrobatics"),
+        ("Stealth", "data.skills.stealth"),
+        ("Thievery", "data.skills.thievery"),
+    ),
+)
+
+# These are native Encounter+ Modifier records expressed as editable starting
+# values. Valued PF2e conditions use their level-1 penalty; the GM can change
+# the values or add another modifier for a higher condition value. We only
+# target direct numeric fields shared by the PF2e creature and character data
+# models. Conditional attack/damage penalties, flat checks, action limits, and
+# Drained's level-based HP reduction remain in the linked rules text because a
+# plain Modifier cannot represent them faithfully.
+CONDITION_MODIFIERS: dict[str, tuple[tuple[str, str, str, int], ...]] = {
+    "Blinded": (
+        ("Perception (vision is the only precise sense)", "add", "data.perception", -4),
+    ),
+    "Clumsy": CLUMSY_BASE_MODIFIERS,
+    "Confused": OFF_GUARD_MODIFIER,
+    "Deafened": (
+        ("Perception (initiative or sound)", "add", "data.perception", -2),
+    ),
+    "Drained": additive_modifiers(
+        -1,
+        (
+            ("Constitution modifier", "data.attributes.con"),
+            ("Fortitude save", "data.saves.fortitude"),
+        ),
+    ),
+    "Dying": UNCONSCIOUS_MODIFIERS,
+    "Encumbered": CLUMSY_BASE_MODIFIERS + additive_modifiers(-10, MOVEMENT_MODIFIER_PATHS),
+    "Enfeebled": additive_modifiers(
+        -1,
+        (
+            ("Strength modifier", "data.attributes.str"),
+            ("Athletics", "data.skills.athletics"),
+        ),
+    ),
+    "Fascinated": additive_modifiers(
+        -2,
+        (("Perception", "data.perception"),) + SKILL_MODIFIER_PATHS,
+    ),
+    "Fatigued": additive_modifiers(
+        -1,
+        (("Armor Class", "data.ac.value"),) + SAVE_MODIFIER_PATHS,
+    ),
+    "Frightened": additive_modifiers(-1, ALL_CHECK_AND_DC_PATHS),
+    "Grabbed": OFF_GUARD_MODIFIER,
+    "Off-Guard": OFF_GUARD_MODIFIER,
+    "Paralyzed": OFF_GUARD_MODIFIER,
+    "Petrified": (("Armor Class (Petrified)", "override", "data.ac.value", 9),),
+    "Prone": OFF_GUARD_MODIFIER,
+    "Restrained": OFF_GUARD_MODIFIER,
+    "Sickened": additive_modifiers(-1, ALL_CHECK_AND_DC_PATHS),
+    "Stupefied": additive_modifiers(
+        -1,
+        (
+            ("Intelligence modifier", "data.attributes.int"),
+            ("Wisdom modifier", "data.attributes.wis"),
+            ("Charisma modifier", "data.attributes.cha"),
+            ("Perception", "data.perception"),
+            ("Will save", "data.saves.will"),
+        )
+        + MENTAL_SKILL_MODIFIER_PATHS,
+    ),
+    "Unconscious": UNCONSCIOUS_MODIFIERS,
+}
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
@@ -520,6 +675,29 @@ def configure_core_condition(result: dict[str, Any]) -> None:
     data["valued"] = valued
     data["stage"] = max(1, int(data.get("stage") or 0)) if valued else 0
     data["maxStage"] = 4 if name in {"Cursebound", "Doomed", "Dying"} else 6
+
+
+    result["modifiers"] = [
+        {
+            "id": str(
+                uuid.uuid5(
+                    uuid.NAMESPACE_URL,
+                    (
+                        f"pf2e-remaster:condition:{name}:{label}:"
+                        f"{mode}:{attribute}:{value}"
+                    ),
+                )
+            ).upper(),
+            "enabled": True,
+            "name": label,
+            "mode": mode,
+            "attribute": attribute,
+            "value": str(value),
+            "scope": "self",
+        }
+        for label, mode, attribute, value in CONDITION_MODIFIERS.get(name, ())
+    ]
+
 
 def clean_foundry_markup(value: str) -> str:
     """Convert leftover VTT-only references into readable plain text."""

@@ -128,7 +128,17 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "6863F1AB-AB0F-523E-8320-4E2655FB543F",
+        "enabled": true,
+        "name": "Perception (vision is the only precise sense)",
+        "mode": "add",
+        "attribute": "data.perception",
+        "value": "-4",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -204,7 +214,62 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "D3E68418-251A-5F3E-8141-86D08E6D8ED4",
+        "enabled": true,
+        "name": "Dexterity modifier",
+        "mode": "add",
+        "attribute": "data.attributes.dex",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "70DA4EAA-9A06-5CC4-A321-2552295DC765",
+        "enabled": true,
+        "name": "Armor Class",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "05D5C2BE-B157-53EA-9701-A2D920C81D55",
+        "enabled": true,
+        "name": "Reflex save",
+        "mode": "add",
+        "attribute": "data.saves.reflex",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "0F1280B9-95B7-5A4F-9174-B315F4E76CD0",
+        "enabled": true,
+        "name": "Acrobatics",
+        "mode": "add",
+        "attribute": "data.skills.acrobatics",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "B89470FE-757E-533E-B209-4C4E6758ED77",
+        "enabled": true,
+        "name": "Stealth",
+        "mode": "add",
+        "attribute": "data.skills.stealth",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "C169DA2B-45F4-5431-A2FA-C5573CEE51A8",
+        "enabled": true,
+        "name": "Thievery",
+        "mode": "add",
+        "attribute": "data.skills.thievery",
+        "value": "-1",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -280,7 +345,17 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "BC6FE73B-F786-5728-B207-D78C3BD54F81",
+        "enabled": true,
+        "name": "Armor Class (Off-Guard)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -394,7 +469,17 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "8E702429-DF45-50D1-9579-586643ECD190",
+        "enabled": true,
+        "name": "Perception (initiative or sound)",
+        "mode": "add",
+        "attribute": "data.perception",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -470,7 +555,26 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "9B918117-76C4-5BF9-BE2A-2B8306BE4A33",
+        "enabled": true,
+        "name": "Constitution modifier",
+        "mode": "add",
+        "attribute": "data.attributes.con",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "89D343F9-CB88-537B-A167-DBCEB09DFCAA",
+        "enabled": true,
+        "name": "Fortitude save",
+        "mode": "add",
+        "attribute": "data.saves.fortitude",
+        "value": "-1",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -508,7 +612,44 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "3F576556-4291-591A-9D7F-B7E79D4DB1E5",
+        "enabled": true,
+        "name": "Armor Class (Unconscious)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-4",
+        "scope": "self"
+      },
+      {
+        "id": "8853B19F-016A-5B60-862C-72D7ED4A76D4",
+        "enabled": true,
+        "name": "Perception (Unconscious)",
+        "mode": "add",
+        "attribute": "data.perception",
+        "value": "-4",
+        "scope": "self"
+      },
+      {
+        "id": "897EA7FD-7BE7-5C6D-877D-4E5E5279F787",
+        "enabled": true,
+        "name": "Reflex save (Unconscious)",
+        "mode": "add",
+        "attribute": "data.saves.reflex",
+        "value": "-4",
+        "scope": "self"
+      },
+      {
+        "id": "BE8845A0-4DA3-5605-87F1-09BD15E6F832",
+        "enabled": true,
+        "name": "Armor Class (Off-Guard)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -3582,7 +3723,107 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "DACC6FCE-4A0D-5C4F-A9DA-639D2F3CE2EF",
+        "enabled": true,
+        "name": "Dexterity modifier",
+        "mode": "add",
+        "attribute": "data.attributes.dex",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "EA1B0A98-036A-5194-923F-3E330FBE78AE",
+        "enabled": true,
+        "name": "Armor Class",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "30A1CA07-050A-55C3-AE5C-12AC320C706B",
+        "enabled": true,
+        "name": "Reflex save",
+        "mode": "add",
+        "attribute": "data.saves.reflex",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "43A861F0-BB19-5AA8-A097-756003295D1C",
+        "enabled": true,
+        "name": "Acrobatics",
+        "mode": "add",
+        "attribute": "data.skills.acrobatics",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "A2251B5A-CF15-571F-AC62-0C7D706021AF",
+        "enabled": true,
+        "name": "Stealth",
+        "mode": "add",
+        "attribute": "data.skills.stealth",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "A1BC6065-B0D2-5AEF-BFAF-C48EEF2F20E1",
+        "enabled": true,
+        "name": "Thievery",
+        "mode": "add",
+        "attribute": "data.skills.thievery",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "2EA0406E-04F3-5A95-8410-B61CCE340C6D",
+        "enabled": true,
+        "name": "Walking Speed",
+        "mode": "add",
+        "attribute": "data.movement.walk",
+        "value": "-10",
+        "scope": "self"
+      },
+      {
+        "id": "9E2D6A0E-B874-5E06-89E3-C0831B0AAE86",
+        "enabled": true,
+        "name": "Burrow Speed",
+        "mode": "add",
+        "attribute": "data.movement.burrow",
+        "value": "-10",
+        "scope": "self"
+      },
+      {
+        "id": "62E73DAA-5F22-50DB-AA5B-5357A1DEB723",
+        "enabled": true,
+        "name": "Climb Speed",
+        "mode": "add",
+        "attribute": "data.movement.climb",
+        "value": "-10",
+        "scope": "self"
+      },
+      {
+        "id": "C4D79CC3-075F-563F-9904-B6E6C6C2E532",
+        "enabled": true,
+        "name": "Fly Speed",
+        "mode": "add",
+        "attribute": "data.movement.fly",
+        "value": "-10",
+        "scope": "self"
+      },
+      {
+        "id": "AEF4D5DE-8BAE-58E3-B2F2-45D0564F37BC",
+        "enabled": true,
+        "name": "Swim Speed",
+        "mode": "add",
+        "attribute": "data.movement.swim",
+        "value": "-10",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -3620,7 +3861,26 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "09CAB622-B617-570D-9037-A33147E147B2",
+        "enabled": true,
+        "name": "Strength modifier",
+        "mode": "add",
+        "attribute": "data.attributes.str",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "EB5A528D-1E99-5FF8-BD18-07307AB32380",
+        "enabled": true,
+        "name": "Athletics",
+        "mode": "add",
+        "attribute": "data.skills.athletics",
+        "value": "-1",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -3658,7 +3918,170 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "86E0B467-58B1-5229-8992-1DF483C31C4B",
+        "enabled": true,
+        "name": "Perception",
+        "mode": "add",
+        "attribute": "data.perception",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "CE466CBC-DD37-5871-A01D-D9B96E2AADE4",
+        "enabled": true,
+        "name": "Acrobatics",
+        "mode": "add",
+        "attribute": "data.skills.acrobatics",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "F2BE1D06-4D1A-51B7-BCBD-6945A23084E1",
+        "enabled": true,
+        "name": "Arcana",
+        "mode": "add",
+        "attribute": "data.skills.arcana",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "4D4A05EE-CCF9-5669-A505-06AA3C06B79A",
+        "enabled": true,
+        "name": "Athletics",
+        "mode": "add",
+        "attribute": "data.skills.athletics",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "4966D392-F0FB-5792-BA94-48269FF3A6B4",
+        "enabled": true,
+        "name": "Crafting",
+        "mode": "add",
+        "attribute": "data.skills.crafting",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "94221EFA-B504-59A3-8A68-D13E512BD92F",
+        "enabled": true,
+        "name": "Deception",
+        "mode": "add",
+        "attribute": "data.skills.deception",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "E69CCD7E-F781-5B96-8657-A41D788E259F",
+        "enabled": true,
+        "name": "Diplomacy",
+        "mode": "add",
+        "attribute": "data.skills.diplomacy",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "06A3FA8C-16DA-5D95-A91F-4B675AF12936",
+        "enabled": true,
+        "name": "Intimidation",
+        "mode": "add",
+        "attribute": "data.skills.intimidation",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "CF810A19-2C0B-5938-A437-51AE0001F977",
+        "enabled": true,
+        "name": "Lore",
+        "mode": "add",
+        "attribute": "data.skills.lore",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "C5C83FAE-2D34-5010-B61B-6D4AEB4D62EE",
+        "enabled": true,
+        "name": "Medicine",
+        "mode": "add",
+        "attribute": "data.skills.medicine",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "B79E14CE-3814-50CC-BA5F-0FBF84310AB9",
+        "enabled": true,
+        "name": "Nature",
+        "mode": "add",
+        "attribute": "data.skills.nature",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "0FC3A5B0-22FC-5D3A-AF8F-6EBB7FDDB63B",
+        "enabled": true,
+        "name": "Occultism",
+        "mode": "add",
+        "attribute": "data.skills.occultism",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "1BFFE6B5-DE41-532A-88FA-7788C8EEF525",
+        "enabled": true,
+        "name": "Performance",
+        "mode": "add",
+        "attribute": "data.skills.performance",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "B62C18D1-DEAE-5360-A352-B3D873270882",
+        "enabled": true,
+        "name": "Religion",
+        "mode": "add",
+        "attribute": "data.skills.religion",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "FD06AB6B-C2A8-56AA-9357-39299B97E596",
+        "enabled": true,
+        "name": "Society",
+        "mode": "add",
+        "attribute": "data.skills.society",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "EA78EC66-A14F-5B82-BBFA-41F183BAC9C2",
+        "enabled": true,
+        "name": "Stealth",
+        "mode": "add",
+        "attribute": "data.skills.stealth",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "FFF32014-2B27-5182-9024-41FF088336C2",
+        "enabled": true,
+        "name": "Survival",
+        "mode": "add",
+        "attribute": "data.skills.survival",
+        "value": "-2",
+        "scope": "self"
+      },
+      {
+        "id": "FAE791A7-F9E2-5533-8770-839AE5B375AE",
+        "enabled": true,
+        "name": "Thievery",
+        "mode": "add",
+        "attribute": "data.skills.thievery",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -3696,7 +4119,44 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "4D0D0710-FF43-57B7-88AA-B1A3B687BC13",
+        "enabled": true,
+        "name": "Armor Class",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "45BB7164-7584-5F3B-A5B3-8861F768C41F",
+        "enabled": true,
+        "name": "Fortitude save",
+        "mode": "add",
+        "attribute": "data.saves.fortitude",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "78F6F254-5F77-5A82-A692-A380A33F7ECF",
+        "enabled": true,
+        "name": "Reflex save",
+        "mode": "add",
+        "attribute": "data.saves.reflex",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "0B3C16EB-3AAC-5A85-B111-E65DCBF6A5B9",
+        "enabled": true,
+        "name": "Will save",
+        "mode": "add",
+        "attribute": "data.saves.will",
+        "value": "-1",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -3810,7 +4270,278 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "4C973817-6278-5E74-ABEA-F5EE5B85EC58",
+        "enabled": true,
+        "name": "Strength modifier",
+        "mode": "add",
+        "attribute": "data.attributes.str",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "28D55DD7-0C13-56EE-A073-BA9921A98358",
+        "enabled": true,
+        "name": "Dexterity modifier",
+        "mode": "add",
+        "attribute": "data.attributes.dex",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "56173B0E-6E25-570C-899C-B656F7343937",
+        "enabled": true,
+        "name": "Constitution modifier",
+        "mode": "add",
+        "attribute": "data.attributes.con",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "E4F659E1-A1FB-5BF4-ABEF-483BAE21E759",
+        "enabled": true,
+        "name": "Intelligence modifier",
+        "mode": "add",
+        "attribute": "data.attributes.int",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "785C595B-FBDD-5FD3-8BB5-E94B6D6BB073",
+        "enabled": true,
+        "name": "Wisdom modifier",
+        "mode": "add",
+        "attribute": "data.attributes.wis",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "6C4DF655-4768-5CC2-A896-D7534C6933E3",
+        "enabled": true,
+        "name": "Charisma modifier",
+        "mode": "add",
+        "attribute": "data.attributes.cha",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "74C7B33F-FE32-5312-9AB2-F78A6FB13879",
+        "enabled": true,
+        "name": "Armor Class",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "0EE98FB4-EDA6-5362-9C87-4B38C92CD8F4",
+        "enabled": true,
+        "name": "Perception",
+        "mode": "add",
+        "attribute": "data.perception",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "35AFED39-2186-5035-9F5C-766CCC851031",
+        "enabled": true,
+        "name": "Initiative",
+        "mode": "add",
+        "attribute": "data.initiative",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "41CE6264-BF04-5F44-A7B2-E9D535876C79",
+        "enabled": true,
+        "name": "Class DC",
+        "mode": "add",
+        "attribute": "data.classDC",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "C3195256-D85A-5CD2-BD8E-BD9573BCE219",
+        "enabled": true,
+        "name": "Fortitude save",
+        "mode": "add",
+        "attribute": "data.saves.fortitude",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "EE2FB17C-3BFE-586B-BEE1-1D08B94C814C",
+        "enabled": true,
+        "name": "Reflex save",
+        "mode": "add",
+        "attribute": "data.saves.reflex",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "219AC71C-57E4-5E7C-B4E2-7F88757EDC40",
+        "enabled": true,
+        "name": "Will save",
+        "mode": "add",
+        "attribute": "data.saves.will",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "FE91BFB9-66EE-52DC-B8A3-DD7655C06DA5",
+        "enabled": true,
+        "name": "Acrobatics",
+        "mode": "add",
+        "attribute": "data.skills.acrobatics",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "783B6043-3223-5669-806C-9AC367C34559",
+        "enabled": true,
+        "name": "Arcana",
+        "mode": "add",
+        "attribute": "data.skills.arcana",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "F2B9F465-C0D5-55ED-B88B-BE5F1128AF5B",
+        "enabled": true,
+        "name": "Athletics",
+        "mode": "add",
+        "attribute": "data.skills.athletics",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "45FC138D-E867-5C8B-82D2-598A16AA5497",
+        "enabled": true,
+        "name": "Crafting",
+        "mode": "add",
+        "attribute": "data.skills.crafting",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "BE09FD87-8330-5BAF-A75B-B87D220F418F",
+        "enabled": true,
+        "name": "Deception",
+        "mode": "add",
+        "attribute": "data.skills.deception",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "ADAAACA7-B2C0-59DA-ADC5-ECB08F993BA9",
+        "enabled": true,
+        "name": "Diplomacy",
+        "mode": "add",
+        "attribute": "data.skills.diplomacy",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "7B54CD60-DE4D-58E3-AD11-90119126E195",
+        "enabled": true,
+        "name": "Intimidation",
+        "mode": "add",
+        "attribute": "data.skills.intimidation",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "60D3B2CA-985B-5C6B-B360-4C16F9248713",
+        "enabled": true,
+        "name": "Lore",
+        "mode": "add",
+        "attribute": "data.skills.lore",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "9A97EC52-569C-5B20-9033-AE1D2F30E4B6",
+        "enabled": true,
+        "name": "Medicine",
+        "mode": "add",
+        "attribute": "data.skills.medicine",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "3C6C1994-7B40-5464-BAC9-A9E348380BDF",
+        "enabled": true,
+        "name": "Nature",
+        "mode": "add",
+        "attribute": "data.skills.nature",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "C7BF1707-706B-5F9C-80D2-272614251353",
+        "enabled": true,
+        "name": "Occultism",
+        "mode": "add",
+        "attribute": "data.skills.occultism",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "183DB06D-22A3-53FE-AFCC-77C1FAC8CE57",
+        "enabled": true,
+        "name": "Performance",
+        "mode": "add",
+        "attribute": "data.skills.performance",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "6EE3FD81-D534-592B-B71D-13668D5639F6",
+        "enabled": true,
+        "name": "Religion",
+        "mode": "add",
+        "attribute": "data.skills.religion",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "6532CACC-BF91-5684-B8CE-7ACFE1A2EB07",
+        "enabled": true,
+        "name": "Society",
+        "mode": "add",
+        "attribute": "data.skills.society",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "CE78AAC5-008A-5347-9E10-4EC193CB9D02",
+        "enabled": true,
+        "name": "Stealth",
+        "mode": "add",
+        "attribute": "data.skills.stealth",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "8DD01915-D8AD-5ECC-BC92-66D3444F5797",
+        "enabled": true,
+        "name": "Survival",
+        "mode": "add",
+        "attribute": "data.skills.survival",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "7E969EE3-FDAF-5516-A520-4FABC3C047A9",
+        "enabled": true,
+        "name": "Thievery",
+        "mode": "add",
+        "attribute": "data.skills.thievery",
+        "value": "-1",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -3848,7 +4579,17 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "9FBEB161-13CA-5906-AB95-A083F91080B6",
+        "enabled": true,
+        "name": "Armor Class (Off-Guard)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -4152,7 +4893,17 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "C9536AED-E7AD-5D78-BB64-EBCF8F941772",
+        "enabled": true,
+        "name": "Armor Class (Off-Guard)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -4190,7 +4941,17 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "4473ABD1-8E2E-523A-B83E-B2B4CA3990F6",
+        "enabled": true,
+        "name": "Armor Class (Off-Guard)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -4266,7 +5027,17 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "71F1C1FE-7601-5E89-8779-C26D4E75702D",
+        "enabled": true,
+        "name": "Armor Class (Petrified)",
+        "mode": "override",
+        "attribute": "data.ac.value",
+        "value": "9",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -4304,7 +5075,17 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "810F6B04-FF18-539B-9755-8186F9529A0A",
+        "enabled": true,
+        "name": "Armor Class (Off-Guard)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -4380,7 +5161,17 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "24D9ECCC-3629-570E-B552-49F778059AAF",
+        "enabled": true,
+        "name": "Armor Class (Off-Guard)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -4418,7 +5209,278 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "56033938-4954-50FE-A468-38431B754C14",
+        "enabled": true,
+        "name": "Strength modifier",
+        "mode": "add",
+        "attribute": "data.attributes.str",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "BB1715C6-EFF8-5F6D-97EA-50DC5DDDC4F9",
+        "enabled": true,
+        "name": "Dexterity modifier",
+        "mode": "add",
+        "attribute": "data.attributes.dex",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "88891CEB-F605-5DFD-92B2-C9157D95951E",
+        "enabled": true,
+        "name": "Constitution modifier",
+        "mode": "add",
+        "attribute": "data.attributes.con",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "7B00CD90-3465-5B37-9CB1-5C592EA86BF6",
+        "enabled": true,
+        "name": "Intelligence modifier",
+        "mode": "add",
+        "attribute": "data.attributes.int",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "E4201045-9553-5253-BEA5-D860D368B79D",
+        "enabled": true,
+        "name": "Wisdom modifier",
+        "mode": "add",
+        "attribute": "data.attributes.wis",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "BA600ABD-4856-5E03-BDCC-C91B02EB874D",
+        "enabled": true,
+        "name": "Charisma modifier",
+        "mode": "add",
+        "attribute": "data.attributes.cha",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "9625B69B-40D5-5265-8865-C0AE305DD2BD",
+        "enabled": true,
+        "name": "Armor Class",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "CC0D2974-EDB5-59F0-9CA9-3276C60E67EF",
+        "enabled": true,
+        "name": "Perception",
+        "mode": "add",
+        "attribute": "data.perception",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "5C6D26D6-5DBD-5F4D-8B1C-7D729E435F62",
+        "enabled": true,
+        "name": "Initiative",
+        "mode": "add",
+        "attribute": "data.initiative",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "106FBEFF-CCA9-548B-B83D-D32FF178E282",
+        "enabled": true,
+        "name": "Class DC",
+        "mode": "add",
+        "attribute": "data.classDC",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "6DEB6C76-2D62-5281-A359-A9EE085FC808",
+        "enabled": true,
+        "name": "Fortitude save",
+        "mode": "add",
+        "attribute": "data.saves.fortitude",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "DBA3CAE4-128A-5925-B276-10420EF14E08",
+        "enabled": true,
+        "name": "Reflex save",
+        "mode": "add",
+        "attribute": "data.saves.reflex",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "18896AEC-7DD6-5F06-8AFB-520DF6DF53E7",
+        "enabled": true,
+        "name": "Will save",
+        "mode": "add",
+        "attribute": "data.saves.will",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "AAF8A7A3-530D-5547-B673-9C3EAC473517",
+        "enabled": true,
+        "name": "Acrobatics",
+        "mode": "add",
+        "attribute": "data.skills.acrobatics",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "4387559B-CCEE-5885-8859-83CB61AE066A",
+        "enabled": true,
+        "name": "Arcana",
+        "mode": "add",
+        "attribute": "data.skills.arcana",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "D48C9457-9494-594F-A420-7CE47153294B",
+        "enabled": true,
+        "name": "Athletics",
+        "mode": "add",
+        "attribute": "data.skills.athletics",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "4F87E7AD-F7D6-5066-A53F-9BB646EAF611",
+        "enabled": true,
+        "name": "Crafting",
+        "mode": "add",
+        "attribute": "data.skills.crafting",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "91F12624-F00B-5B9E-A197-D4170EB13A44",
+        "enabled": true,
+        "name": "Deception",
+        "mode": "add",
+        "attribute": "data.skills.deception",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "E9640A3B-3671-5725-9A8B-58B0CBD1590A",
+        "enabled": true,
+        "name": "Diplomacy",
+        "mode": "add",
+        "attribute": "data.skills.diplomacy",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "15405BE7-8B32-5048-A41D-F745C59E5EAA",
+        "enabled": true,
+        "name": "Intimidation",
+        "mode": "add",
+        "attribute": "data.skills.intimidation",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "66C169C5-CBEA-55DE-BAB1-AFEBAAC173FC",
+        "enabled": true,
+        "name": "Lore",
+        "mode": "add",
+        "attribute": "data.skills.lore",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "2C3AEBAF-B591-5BC7-8F70-BA0B1E00A261",
+        "enabled": true,
+        "name": "Medicine",
+        "mode": "add",
+        "attribute": "data.skills.medicine",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "70D87335-693D-59A9-B8F8-828821AAC5EF",
+        "enabled": true,
+        "name": "Nature",
+        "mode": "add",
+        "attribute": "data.skills.nature",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "CD2794C3-B348-568C-A87E-1333BAC0993C",
+        "enabled": true,
+        "name": "Occultism",
+        "mode": "add",
+        "attribute": "data.skills.occultism",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "02770AFF-7CA4-574C-8C70-A67484BDCDB9",
+        "enabled": true,
+        "name": "Performance",
+        "mode": "add",
+        "attribute": "data.skills.performance",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "D1AC18D9-279E-519E-9693-6FF1E996ED04",
+        "enabled": true,
+        "name": "Religion",
+        "mode": "add",
+        "attribute": "data.skills.religion",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "22D46053-D8CD-5C52-8687-88B7AAF08736",
+        "enabled": true,
+        "name": "Society",
+        "mode": "add",
+        "attribute": "data.skills.society",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "EE178DB7-8D9E-5DCA-97CD-BBB925D628CB",
+        "enabled": true,
+        "name": "Stealth",
+        "mode": "add",
+        "attribute": "data.skills.stealth",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "334D5E4E-1B5A-513C-9873-9CA541DA32E0",
+        "enabled": true,
+        "name": "Survival",
+        "mode": "add",
+        "attribute": "data.skills.survival",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "DE174921-9D75-532C-A7F9-6D63AB42C175",
+        "enabled": true,
+        "name": "Thievery",
+        "mode": "add",
+        "attribute": "data.skills.thievery",
+        "value": "-1",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -9878,7 +10940,170 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "BA2C5F76-D694-513D-984B-CF031B0BC2E3",
+        "enabled": true,
+        "name": "Intelligence modifier",
+        "mode": "add",
+        "attribute": "data.attributes.int",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "145669DF-D33E-59A1-B5E8-BB4DA391308F",
+        "enabled": true,
+        "name": "Wisdom modifier",
+        "mode": "add",
+        "attribute": "data.attributes.wis",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "9514DF74-D9A0-53CB-8D49-313ECA0D7F61",
+        "enabled": true,
+        "name": "Charisma modifier",
+        "mode": "add",
+        "attribute": "data.attributes.cha",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "C29B157B-3941-5270-AF15-FBCBAE28D81E",
+        "enabled": true,
+        "name": "Perception",
+        "mode": "add",
+        "attribute": "data.perception",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "C9FD11C4-036B-5F30-82EF-29A32BECF57B",
+        "enabled": true,
+        "name": "Will save",
+        "mode": "add",
+        "attribute": "data.saves.will",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "6BB0D8D6-7223-50F2-B478-DA4CEE5D35E8",
+        "enabled": true,
+        "name": "Arcana",
+        "mode": "add",
+        "attribute": "data.skills.arcana",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "9EDD56E2-085C-5B2A-B40A-2D7908EA5DFE",
+        "enabled": true,
+        "name": "Crafting",
+        "mode": "add",
+        "attribute": "data.skills.crafting",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "5B8623B8-6307-5A21-8B66-0041F29E2D0F",
+        "enabled": true,
+        "name": "Deception",
+        "mode": "add",
+        "attribute": "data.skills.deception",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "BCACE806-D15B-56BA-9B01-2FAF428D2EC3",
+        "enabled": true,
+        "name": "Diplomacy",
+        "mode": "add",
+        "attribute": "data.skills.diplomacy",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "EDB6BE57-C3EB-5DEE-8191-DD6E864AFA8D",
+        "enabled": true,
+        "name": "Intimidation",
+        "mode": "add",
+        "attribute": "data.skills.intimidation",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "4DBBDB32-B692-54B4-9C53-05B476F53111",
+        "enabled": true,
+        "name": "Lore",
+        "mode": "add",
+        "attribute": "data.skills.lore",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "8D720EAB-2C07-57EC-A267-C68E259EA860",
+        "enabled": true,
+        "name": "Medicine",
+        "mode": "add",
+        "attribute": "data.skills.medicine",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "7A6B8B9F-2FC2-588B-9913-0345485A4B99",
+        "enabled": true,
+        "name": "Nature",
+        "mode": "add",
+        "attribute": "data.skills.nature",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "87C88465-2450-52D7-9DCB-350762165B95",
+        "enabled": true,
+        "name": "Occultism",
+        "mode": "add",
+        "attribute": "data.skills.occultism",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "256F993D-2A0B-5DF4-A8BE-652E0F5BB628",
+        "enabled": true,
+        "name": "Performance",
+        "mode": "add",
+        "attribute": "data.skills.performance",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "F3B9BA05-27B9-5254-8110-DBD70200E4BD",
+        "enabled": true,
+        "name": "Religion",
+        "mode": "add",
+        "attribute": "data.skills.religion",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "80C5806E-CE13-5D23-95D5-0E56FC6FCA07",
+        "enabled": true,
+        "name": "Society",
+        "mode": "add",
+        "attribute": "data.skills.society",
+        "value": "-1",
+        "scope": "self"
+      },
+      {
+        "id": "3DAC3904-D031-5B8C-B925-21BFAD469E68",
+        "enabled": true,
+        "name": "Survival",
+        "mode": "add",
+        "attribute": "data.skills.survival",
+        "value": "-1",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
@@ -9916,7 +11141,44 @@
         "name": "Player Core"
       }
     ],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "id": "872A48F3-97B0-5DD4-B14F-48A648A1E98F",
+        "enabled": true,
+        "name": "Armor Class (Unconscious)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-4",
+        "scope": "self"
+      },
+      {
+        "id": "C306142C-539C-5ACC-9EAF-4CC80388A031",
+        "enabled": true,
+        "name": "Perception (Unconscious)",
+        "mode": "add",
+        "attribute": "data.perception",
+        "value": "-4",
+        "scope": "self"
+      },
+      {
+        "id": "C7AF5E34-CD9F-5838-9BFF-A93ABCAA4325",
+        "enabled": true,
+        "name": "Reflex save (Unconscious)",
+        "mode": "add",
+        "attribute": "data.saves.reflex",
+        "value": "-4",
+        "scope": "self"
+      },
+      {
+        "id": "10E38F4A-5975-560C-B096-227F5006D637",
+        "enabled": true,
+        "name": "Armor Class (Off-Guard)",
+        "mode": "add",
+        "attribute": "data.ac.value",
+        "value": "-2",
+        "scope": "self"
+      }
+    ],
     "created": "2026-09-07T00:00:00Z",
     "modified": "2026-09-07T00:00:00Z",
     "type": "condition",
