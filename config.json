@@ -1,4 +1,9 @@
 {
+  "combat": {
+    "initiative": {
+      "rollFormula": "d20 + @entity.data.initiativeBonus"
+    }
+  },
   "statusEffects": {
     "menuProvider": ["StatusEffect:condition"],
     "viewRenderer": "html",

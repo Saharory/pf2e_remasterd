@@ -20,6 +20,14 @@
       "fields": [
         {
           "type": "picker",
+          "title": "Initiative.SkillForRolls",
+          "detail": "Initiative.SkillForRollsDetail",
+          "defaultValue": "d20 + @entity.data.initiativeBonus",
+          "attribute": "combat.initiative.rollFormula",
+          "attributeType": "InitiativeRollFormula"
+        },
+        {
+          "type": "picker",
           "title": "Auto-Roll Initiative",
           "placeholder": "None",
           "defaultValue": "hostileAndNeutral",
