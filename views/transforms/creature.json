@@ -1,18 +1,6 @@
 {
   "attributes": [
     {
-      "modifiers": [
-        "r/data.attributes.*",
-        "data.ac.value",
-        "data.perception",
-        "data.initiative",
-        "data.classDC",
-        "r/data.saves.*",
-        "r/data.skills.*",
-        "r/data.movement.*"
-      ]
-    },
-    {
       "data.armor": "#{{data.ac.value|integer}}",
       "data.initiativeBonus": "#{% if data.perception %}{{data.perception}}{% else %}{{data.attributes.dex|default: 0}}{% endif %}",
     },
