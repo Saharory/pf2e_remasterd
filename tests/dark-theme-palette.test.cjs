@@ -6,6 +6,7 @@ const test = require('node:test');
 const root = path.resolve(__dirname, '..');
 const stylesheet = fs.readFileSync(path.join(root, 'styles', 'default.css'), 'utf8');
 const pages = fs.readFileSync(path.join(root, 'pages.json'), 'utf8');
+const system = JSON.parse(fs.readFileSync(path.join(root, 'system.json'), 'utf8'));
 
 const palette = {
   page: '#181716',
@@ -46,4 +47,26 @@ test('preserves informational rarity and trait colors', () => {
   assert.match(stylesheet, /\.trait-rarity-rare\s*\{[\s\S]*?var\(--tag-blue-color\)/);
   assert.match(stylesheet, /\.trait-rarity-unique\s*\{[\s\S]*?var\(--tag-purple-color\)/);
   assert.match(stylesheet, /\.trait-size\s*\{[\s\S]*?var\(--tag-green-color\)/);
+});
+
+test('HTML views invalidate cached system styles on every system version', () => {
+  const expectedStylesheet = `styles/default.css?v=${system.version}`;
+  const directViews = [
+    'views/partials/base.html',
+    'views/class.html',
+    'views/deity.html',
+    'views/default.html',
+    'views/ancestry.html',
+  ];
+
+  for (const file of directViews) {
+    const template = fs.readFileSync(path.join(root, file), 'utf8');
+    assert.ok(template.includes(expectedStylesheet), `${file} must load ${expectedStylesheet}`);
+  }
+
+  const standaloneBridge = fs.readFileSync(path.join(root, 'assets/css/custom.css'), 'utf8');
+  assert.ok(
+    standaloneBridge.includes(`../../${expectedStylesheet}`),
+    'standalone pages must load the versioned system stylesheet'
+  );
 });
