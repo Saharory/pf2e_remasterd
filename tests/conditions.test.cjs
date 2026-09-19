@@ -27,7 +27,10 @@ function readJson(file) {
 
 test('combat status menu uses canonical StatusEffect records', () => {
   const config = readJson(path.join(root, 'config.json'));
-  assert.deepEqual(config.statusEffects.menuProvider, ['StatusEffect:condition']);
+  assert.deepEqual(config.statusEffects.menuProvider, [
+    'StatusEffect:initiative',
+    'StatusEffect:condition',
+  ]);
 });
 
 test('the 43 canonical Remaster conditions are picker-ready', () => {

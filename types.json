@@ -295,7 +295,7 @@
     "undead": "CreatureType.Undead",
   },
   "InitiativeRollFormula": {
-    "d20 + @entity.data.initiativeBonus": "Initiative.EachCreature",
+    "d20 + @entity.data.initiativeBonus": "Initiative.EachCombatant",
     "d20 + @entity.data.perception": "Creature.Perception",
     "d20 + @entity.data.skills.acrobatics": "Skill.Acrobatics",
     "d20 + @entity.data.skills.arcana": "Skill.Arcana",
@@ -314,26 +314,6 @@
     "d20 + @entity.data.skills.stealth": "Skill.Stealth",
     "d20 + @entity.data.skills.survival": "Skill.Survival",
     "d20 + @entity.data.skills.thievery": "Skill.Thievery"
-  },
-  "InitiativeSkill": {
-    "perception": "Creature.Perception",
-    "acrobatics": "Skill.Acrobatics",
-    "arcana": "Skill.Arcana",
-    "athletics": "Skill.Athletics",
-    "crafting": "Skill.Crafting",
-    "deception": "Skill.Deception",
-    "diplomacy": "Skill.Diplomacy",
-    "intimidation": "Skill.Intimidation",
-    "lore": "Skill.Lore",
-    "medicine": "Skill.Medicine",
-    "nature": "Skill.Nature",
-    "occultism": "Skill.Occultism",
-    "performance": "Skill.Performance",
-    "religion": "Skill.Religion",
-    "society": "Skill.Society",
-    "stealth": "Skill.Stealth",
-    "survival": "Skill.Survival",
-    "thievery": "Skill.Thievery"
   },
   "Skill": {
     "acrobatics": "Skill.Acrobatics",

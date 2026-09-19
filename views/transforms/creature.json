@@ -2,7 +2,7 @@
   "attributes": [
     {
       "data.armor": "#{{data.ac.value|integer}}",
-      "data.initiativeBonus": "#{% if data.initiativeSkill and data.initiativeSkill != 'perception' and data.initiativeSkill in data.skills %}{{data.skills[data.initiativeSkill]}}{% elif data.perception != null %}{{data.perception}}{% else %}{{data.attributes.dex|default: 0}}{% endif %}",
+      "data.initiativeBonus": "#{% for effect in combatant.effects where effect.enabled != false and effect.type == 'initiative' %}{% if forloop.first %}{% if effect.data.initiativeSkill in data.skills %}{{data.skills[effect.data.initiativeSkill]}}{% elif effect.data.initiativeAttribute in data.attributes %}{{data.attributes[effect.data.initiativeAttribute]}}{% else %}0{% endif %}{% endif %}{% empty %}{% if data.perception != null %}{{data.perception}}{% else %}{{data.attributes.dex|default: 0}}{% endif %}{% endfor %}",
     },
     {
       "inCombatDetail": "{{'Common.AC'|l}} {{data.armor}}",
