@@ -18,6 +18,28 @@ const valued = new Set([
   'Clumsy', 'Cursebound', 'Doomed', 'Drained', 'Dying', 'Enfeebled',
   'Frightened', 'Sickened', 'Slowed', 'Stunned', 'Stupefied', 'Wounded',
 ]);
+const groups = {
+  'Health & Recovery': new Set([
+    'Doomed', 'Drained', 'Dying', 'Persistent Damage', 'Sickened',
+    'Unconscious', 'Wounded',
+  ]),
+  'Actions & Movement': new Set([
+    'Encumbered', 'Grabbed', 'Immobilized', 'Paralyzed', 'Petrified', 'Prone',
+    'Quickened', 'Restrained', 'Slowed', 'Stunned',
+  ]),
+  'Senses & Visibility': new Set([
+    'Blinded', 'Concealed', 'Dazzled', 'Deafened', 'Hidden', 'Invisible',
+    'Observed', 'Undetected', 'Unnoticed',
+  ]),
+  'Mental & Social': new Set([
+    'Confused', 'Controlled', 'Fascinated', 'Fleeing', 'Friendly', 'Frightened',
+    'Helpful', 'Hostile', 'Indifferent', 'Unfriendly',
+  ]),
+  'Penalties & Other': new Set([
+    'Broken', 'Clumsy', 'Cursebound', 'Enfeebled', 'Fatigued', 'Off-Guard',
+    'Stupefied',
+  ]),
+};
 function readJson(file) {
   const source = fs.readFileSync(file, 'utf8');
   // Encounter+ accepts JSON5-style trailing commas in system definitions;
@@ -27,7 +49,10 @@ function readJson(file) {
 
 test('combat status menu uses canonical StatusEffect records', () => {
   const config = readJson(path.join(root, 'config.json'));
-  assert.deepEqual(config.statusEffects.menuProvider, ['StatusEffect:condition']);
+  assert.deepEqual(
+    config.statusEffects.menuProvider,
+    Object.keys(groups).map((group) => `StatusEffect:${group}`)
+  );
 });
 
 test('the 43 canonical Remaster conditions are picker-ready', () => {
@@ -38,9 +63,16 @@ test('the 43 canonical Remaster conditions are picker-ready', () => {
     if (fs.existsSync(file)) records.push(...readJson(file));
   }
 
-  const picker = records.filter((record) => record.type === 'condition');
+  const picker = records.filter((record) => groups[record.type]);
   assert.equal(picker.length, canonical.size);
   assert.deepEqual(new Set(picker.map((record) => record.name)), canonical);
+
+  for (const [group, names] of Object.entries(groups)) {
+    assert.deepEqual(
+      new Set(picker.filter((record) => record.type === group).map((record) => record.name)),
+      names
+    );
+  }
 
   for (const record of picker) {
     assert.equal(record.reference, `/condition/${record.slug}`);

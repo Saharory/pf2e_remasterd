@@ -1,6 +1,12 @@
 {
   "statusEffects": {
-    "menuProvider": ["StatusEffect:condition"],
+    "menuProvider": [
+      "StatusEffect:Health & Recovery",
+      "StatusEffect:Actions & Movement",
+      "StatusEffect:Senses & Visibility",
+      "StatusEffect:Mental & Social",
+      "StatusEffect:Penalties & Other"
+    ],
     "viewRenderer": "html",
     "collection": {
       "title": "{{name|default: 'Unknown Effect'}} {% if data.stage > 0 %}{{data.stage}}{% endif %}",

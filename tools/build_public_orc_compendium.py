@@ -196,6 +196,34 @@ VALUED_CONDITIONS = {
     "Frightened", "Sickened", "Slowed", "Stunned", "Stupefied", "Wounded",
 }
 
+CONDITION_GROUPS = {
+    "Health & Recovery": {
+        "Doomed", "Drained", "Dying", "Persistent Damage", "Sickened",
+        "Unconscious", "Wounded",
+    },
+    "Actions & Movement": {
+        "Encumbered", "Grabbed", "Immobilized", "Paralyzed", "Petrified",
+        "Prone", "Quickened", "Restrained", "Slowed", "Stunned",
+    },
+    "Senses & Visibility": {
+        "Blinded", "Concealed", "Dazzled", "Deafened", "Hidden",
+        "Invisible", "Observed", "Undetected", "Unnoticed",
+    },
+    "Mental & Social": {
+        "Confused", "Controlled", "Fascinated", "Fleeing", "Friendly",
+        "Frightened", "Helpful", "Hostile", "Indifferent", "Unfriendly",
+    },
+    "Penalties & Other": {
+        "Broken", "Clumsy", "Cursebound", "Enfeebled", "Fatigued",
+        "Off-Guard", "Stupefied",
+    },
+}
+CONDITION_GROUP_BY_NAME = {
+    name: group
+    for group, names in CONDITION_GROUPS.items()
+    for name in names
+}
+
 # StatusEffect.icon is an image path, not an SF Symbol name. Use the packaged
 # condition image so the tracker and token view can always resolve it. Color
 # still separates broad families at a glance without changing the rule text.
@@ -508,7 +536,7 @@ def configure_core_condition(result: dict[str, Any]) -> None:
         return
 
     color = CONDITION_COLORS[name]
-    result["type"] = "condition"
+    result["type"] = CONDITION_GROUP_BY_NAME[name]
     result["reference"] = f"/condition/{result['slug']}"
     result["icon"] = CONDITION_ICON
     result["color"] = color
