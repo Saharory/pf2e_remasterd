@@ -1,11 +1,6 @@
 {
-  "combat": {
-    "initiative": {
-      "rollFormula": "d20 + @entity.data.initiativeBonus"
-    }
-  },
   "statusEffects": {
-    "menuProvider": ["StatusEffect:initiative", "StatusEffect:condition"],
+    "menuProvider": ["StatusEffect:condition"],
     "viewRenderer": "html",
     "collection": {
       "title": "{{name|default: 'Unknown Effect'}} {% if data.stage > 0 %}{{data.stage}}{% endif %}",

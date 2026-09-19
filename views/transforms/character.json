@@ -1,7 +1,0 @@
-{
-  "attributes": [
-    {
-      "data.initiativeBonus": "#{% for effect in combatant.effects where effect.enabled != false and effect.type == 'initiative' %}{% if forloop.first %}{% if effect.data.initiativeSkill in data.skills %}{{data.skills[effect.data.initiativeSkill]}}{% elif effect.data.initiativeAttribute in data.attributes %}{{data.attributes[effect.data.initiativeAttribute]}}{% else %}0{% endif %}{% endif %}{% empty %}{% if data.perception != null %}{{data.perception}}{% elif data.initiative != null %}{{data.initiative}}{% else %}{{data.attributes.dex|default: 0}}{% endif %}{% endfor %}"
-    }
-  ]
-}

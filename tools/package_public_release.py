@@ -60,10 +60,6 @@ GENERATED_FILES = {
     "release-summary.json",
     "SHA256SUMS.txt",
 }
-PROJECT_COLLECTION_SOURCES = {
-    "gm-tools.json": ("gm-tools.json", "Tool"),
-    "initiative-effects.json": ("conditions.json", "StatusEffect"),
-}
 
 DAMAGE_COMPONENT = re.compile(
     r"(^|(?P<connector>\s*(?:;|,|\bplus\b|\band\b)\s*))"
@@ -260,21 +256,14 @@ def load_ogl_collections(existing_ids: set[str]) -> tuple[dict[str, list[dict]],
 
 
 def load_project_collections() -> tuple[dict[str, list[dict]], dict[str, int]]:
-    collections: dict[str, list[dict]] = defaultdict(list)
-    for source_name, (collection_name, expected_kind) in PROJECT_COLLECTION_SOURCES.items():
-        records = json.loads((REPO / source_name).read_text(encoding="utf-8"))
-        if not isinstance(records, list):
-            raise ValueError(f"{source_name}: expected a JSON array")
-        for record in records:
-            if record.get("kind") != expected_kind:
-                raise ValueError(f"{source_name}: expected only {expected_kind} records")
-            if (record.get("attributes") or {}).get("license") != "Project-Code":
-                raise ValueError(f"{source_name}: every record must carry the Project-Code marker")
-            record["systemVersion"] = SYSTEM_VERSION
-        collections[collection_name].extend(records)
-
-    counts = {name: len(records) for name, records in sorted(collections.items())}
-    return dict(collections), counts
+    records = json.loads((REPO / "gm-tools.json").read_text(encoding="utf-8"))
+    if not isinstance(records, list):
+        raise ValueError("gm-tools.json: expected a JSON array")
+    for record in records:
+        if (record.get("attributes") or {}).get("license") != "Project-Code":
+            raise ValueError("gm-tools.json: every tool must carry the Project-Code marker")
+        record["systemVersion"] = SYSTEM_VERSION
+    return {"gm-tools.json": records}, {"gm-tools.json": len(records)}
 
 
 def build_system(target: Path) -> tuple[dict[str, int], dict[str, int], dict[str, int]]:
@@ -419,8 +408,7 @@ def main() -> int:
         "oglCollections": ogl_counts,
         "oglRecords": sum(ogl_counts.values()),
         "projectCollections": project_counts,
-        "projectRecords": sum(project_counts.values()),
-        "toolRecords": project_counts.get("gm-tools.json", 0),
+        "toolRecords": sum(project_counts.values()),
         "contentRecords": sum(orc_counts.values()) + sum(ogl_counts.values()),
         "totalRecords": sum(orc_counts.values()) + sum(ogl_counts.values()) + sum(project_counts.values()),
         "installablePackages": 1,

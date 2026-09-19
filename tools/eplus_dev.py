@@ -53,10 +53,6 @@ SYSTEM_DIRS = {
     "themes",
     "views",
 }
-PROJECT_COLLECTION_SOURCES = {
-    "gm-tools.json": ("gm-tools.json", "Tool"),
-    "initiative-effects.json": ("conditions.json", "StatusEffect"),
-}
 COLLECTION_TITLES = {
     "actions": "Actions",
     "afflictions": "Afflictions",
@@ -134,11 +130,6 @@ def sha256(path: Path) -> str:
 
 def definition_files() -> list[Path]:
     files = [REPO / name for name in sorted(SYSTEM_FILES) if name.endswith(".json")]
-    files.extend(
-        REPO / name
-        for name in sorted(PROJECT_COLLECTION_SOURCES)
-        if name not in SYSTEM_FILES
-    )
     for directory in sorted(SYSTEM_DIRS):
         root = REPO / directory
         if root.is_dir():
@@ -255,45 +246,6 @@ def validate_project() -> dict[str, Any]:
             str(tool.get("slug") or "")
             for tool in load_json(REPO / "gm-tools.json")
         }
-        initiative_effects = load_json(REPO / "initiative-effects.json")
-        initiative_skills = set(load_json5(REPO / "types.json").get("Skill", {}))
-        initiative_attributes = {
-            "acrobatics": "dex",
-            "arcana": "int",
-            "athletics": "str",
-            "crafting": "int",
-            "deception": "cha",
-            "diplomacy": "cha",
-            "intimidation": "cha",
-            "lore": "int",
-            "medicine": "wis",
-            "nature": "wis",
-            "occultism": "int",
-            "performance": "cha",
-            "religion": "wis",
-            "society": "int",
-            "stealth": "dex",
-            "survival": "wis",
-            "thievery": "dex",
-        }
-        if {effect.get("data", {}).get("initiativeSkill") for effect in initiative_effects} != initiative_skills:
-            errors.append("initiative-effects.json: effects must cover every PF2E skill exactly once")
-        for effect in initiative_effects:
-            if effect.get("kind") != "StatusEffect" or effect.get("type") != "initiative":
-                errors.append("initiative-effects.json: every record must be an initiative StatusEffect")
-                break
-            if effect.get("modifiers"):
-                errors.append("initiative-effects.json: initiative choices must not use native modifiers")
-                break
-            if (effect.get("attributes") or {}).get("license") != "Project-Code":
-                errors.append("initiative-effects.json: every record must carry the Project-Code marker")
-                break
-            effect_data = effect.get("data") or {}
-            if effect_data.get("initiativeAttribute") != initiative_attributes.get(
-                effect_data.get("initiativeSkill")
-            ):
-                errors.append("initiative-effects.json: initiative skill has the wrong fallback attribute")
-                break
         action_slugs: set[str] = set()
         for actions_file in (REPO / "compendium").glob("**/actions.json"):
             for action in load_json(actions_file):
@@ -394,8 +346,6 @@ def impacted_collections(paths: Iterable[str]) -> list[str]:
         if "compendium" in path.parts and path.suffix == ".json":
             if path.stem in COLLECTION_TITLES:
                 impacted.add(path.stem)
-        if path.name == "initiative-effects.json":
-            impacted.add("conditions")
     if all_collections:
         return ["All compendium views"]
     return [COLLECTION_TITLES.get(name, name) for name in sorted(impacted)]
@@ -483,7 +433,6 @@ def inspect_release(dist: Path) -> dict[str, Any]:
     orc_records = 0
     ogl_records = 0
     tool_records = 0
-    project_records = 0
     orc_ids: set[str] = set()
     collection_counts: dict[str, int] = {}
     if system_path.is_file():
@@ -526,12 +475,8 @@ def inspect_release(dist: Path) -> dict[str, Any]:
                         orc_records += 1
                     elif license_name == "OGL-1.0a":
                         ogl_records += 1
-                    elif license_name == "Project-Code" and name in {
-                        collection for collection, _kind in PROJECT_COLLECTION_SOURCES.values()
-                    }:
-                        project_records += 1
-                        if name == "gm-tools.json":
-                            tool_records += 1
+                    elif license_name == "Project-Code" and name == "gm-tools.json":
+                        tool_records += 1
                     else:
                         errors.append(f"unknown entity license in {name}: {license_name!r}")
                         break
@@ -561,19 +506,15 @@ def inspect_release(dist: Path) -> dict[str, Any]:
     expected_tools = len(load_json(REPO / "gm-tools.json"))
     if tool_records != expected_tools:
         errors.append(f"GM tool record count {tool_records} != expected {expected_tools}")
-    expected_project = sum(len(load_json(REPO / source)) for source in PROJECT_COLLECTION_SOURCES)
-    if project_records != expected_project:
-        errors.append(f"project record count {project_records} != expected {expected_project}")
 
     return {
         "ok": not errors,
         "installablePackages": 1,
         "orcRecords": orc_records,
         "oglRecords": ogl_records,
-        "projectRecords": project_records,
         "toolRecords": tool_records,
         "contentRecords": orc_records + ogl_records,
-        "totalRecords": orc_records + ogl_records + project_records,
+        "totalRecords": orc_records + ogl_records + tool_records,
         "collectionCounts": collection_counts,
         "systemBytes": system_path.stat().st_size if system_path.is_file() else 0,
         "errors": errors,
