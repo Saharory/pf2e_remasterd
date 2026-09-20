@@ -27,14 +27,22 @@ about before updating.
 ## Bookmark the PF2E Operations Center
 
 The Operations Center is designed to run as a compact reference panel over the
-game screen:
+game screen. Set it up once as follows:
 
-1. **Find the Operations Center:** Open **Library → Pages** and select
-   **PF2E Operations Center**.
-2. **Bookmark it:** Open its main/home page and tap the **bookmark** icon in the
-   page toolbar. Bookmark the home page rather than an individual rule page.
-3. **Use it during play:** Return to the game screen, open **Bookmarks**, and
-   select **PF2E Operations Center** to open it in the compact panel.
+1. **Open the system library:** In Encounter+, open **Library**, then select
+   **System** in the left sidebar.
+2. **Find the Operations Center folder:** Under **Content**, expand the
+   **PF2E Operations Center** folder.
+3. **Open its home page:** Inside that folder, select the page named
+   **PF2E Operations Center**. Make sure the page title at the top also says
+   **PF2E Operations Center**; do not open one of the individual reference
+   pages instead.
+4. **Bookmark the home page:** At the top-right of the open Library page, tap
+   the **•••** button to open the page menu, then select **Bookmark**. This adds
+   the Operations Center home page to Encounter+'s **Bookmarks** list.
+5. **Open it during play:** Close the Library and return to the game screen.
+   Open **Bookmarks** and select **PF2E Operations Center**. It will open as a
+   compact reference panel over the game screen.
 
 Use the tiles to navigate. The breadcrumb trail at the top returns to any
 earlier Operations Center section, while explicit rule links open the complete
