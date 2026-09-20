@@ -37,9 +37,11 @@ game screen. Set it up once as follows:
    **PF2E Operations Center**. Make sure the page title at the top also says
    **PF2E Operations Center**; do not open one of the individual reference
    pages instead.
-4. **Bookmark the home page:** At the top-right of the open Library page, tap
-   the **•••** button to open the page menu, then select **Bookmark**. This adds
-   the Operations Center home page to Encounter+'s **Bookmarks** list.
+4. **Bookmark the home page:** At the top of the open Library page, tap the
+   ribbon-shaped **bookmark icon** directly. It is the button that looks like a
+   vertical ribbon with a V-shaped notch at the bottom. There is no extra menu
+   to open. This adds the Operations Center home page to Encounter+'s
+   **Bookmarks** list.
 5. **Open it during play:** Close the Library and return to the game screen.
    Open **Bookmarks** and select **PF2E Operations Center**. It will open as a
    compact reference panel over the game screen.
