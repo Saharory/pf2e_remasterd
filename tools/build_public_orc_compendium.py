@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Any
 
 from foundry_markup import replace_foundry_directives
+from hazard_vehicle_mechanics import supplement as supplement_hazard_vehicle
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -677,6 +678,9 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         # Keep deity mechanics in Encounter+'s original description field so
         # they render reliably in both the detail view and editor.
         result["descr"] = data["rulesText"]
+
+    if expected_kind in {"Hazard", "Vehicle"}:
+        supplement_hazard_vehicle(result, expected_kind)
 
     if expected_kind == "StatusEffect":
         configure_core_condition(result)
