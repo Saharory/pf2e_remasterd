@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "(Bulwark) Serpentstone Breath",
     "slug": "bulwark-serpentstone-breath-monster-core",
-    "descr": "The bulwark breathes a area of green gas. Each creature in the area must attempt a Fortitude DC 34 save. The bulwark can't use Serpentstone Breath again for 1d4 rounds.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature's body hardens, causing it to become [Slowed 1](/condition/slowed-player-core) for 1 round.\n\n**Failure** The creature becomes [Petrified](/condition/petrified-player-core) for 1 minute. It can attempt a new save at the end of each of its turns.\n\n**Critical Failure** The creature becomes petrified permanently.",
+    "descr": "The bulwark breathes a 60-foot cone of green gas. Each creature in the area must attempt a Fortitude DC 34 save. The bulwark can't use Serpentstone Breath again for 1d4 rounds.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature's body hardens, causing it to become Slowed 1 for 1 round.\n\n**Failure** The creature becomes Petrified for 1 minute. It can attempt a new save at the end of each of its turns.\n\n**Critical Failure** The creature becomes petrified permanently.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -62,7 +62,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghost) Corrupting Gaze",
     "slug": "ghost-corrupting-gaze-monster-core",
-    "descr": "The ghost stares at a creature it can see within 30 feet. The target takes 1d6 void] damage + 1d6 per 2 levels with a basic Will save.\n\nA creature that fails its save is also [Stupefied 1](/condition/stupefied-player-core) for 1 minute.\n\nFor DCs, use the high spell DC of the ghost's level.",
+    "descr": "The ghost stares at a creature it can see within 30 feet. The target takes 1d6 void damage + 1d6 per 2 levels with a basic Will save.\n\nA creature that fails its save is also [Stupefied 1](/condition/stupefied-player-core) for 1 minute.\n\nFor DCs, use the high spell DC of the ghost's level.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -372,7 +372,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghost) Telekinetic Assault",
     "slug": "ghost-telekinetic-assault-monster-core",
-    "descr": "The ghost cries out in pain and anguish as small objects and debris fly about in a area. Creatures in this area take 1d6 bludgeoning|options:area-damage] damage + 1d6 per 2 levels, subject to a basic Reflex save.\n\nFor DCs, use the high spell DC of the ghost's level.",
+    "descr": "The ghost cries out in pain and anguish as small objects and debris fly about in a 30-foot emanation. Creatures in this area take 1d6 bludgeoning damage + 1d6 per 2 levels, subject to a basic Reflex save.\n\nFor DCs, use the high spell DC of the ghost's level.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -416,7 +416,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghoul) Consume Flesh",
     "slug": "ghoul-consume-flesh-monster-core",
-    "descr": "**Requirements** The ghoul is adjacent to the corpse of a creature that died within the last hour.\n\n---\n\n**Effect** The ghoul devours a chunk of the corpse and regains (1+(max(0,floor(current value/2))))d6 healing] Hit Points plus 1d6 for every 2 levels it has.\n\nIt can regain Hit Points from any given corpse only once.",
+    "descr": "**Requirements** The ghoul is adjacent to the corpse of a creature that died within the last hour.\n\n---\n\n**Effect** The ghoul devours a chunk of the corpse and regains 1d6 healing Hit Points plus 1d6 for every 2 levels it has.\n\nIt can regain Hit Points from any given corpse only once.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -460,7 +460,7 @@
     "systemVersion": "1.2.10",
     "name": "(Ghoul) Ghoul Whispers",
     "slug": "ghoul-ghoul-whispers-monster-core",
-    "descr": "**Requirements** A [Grabbed](/condition/grabbed-player-core), [Paralyzed](/condition/paralyzed-player-core), [Restrained](/condition/restrained-player-core), or [Unconscious](/condition/unconscious-player-core) creature is within the ghoul's reach\n\n---\n\n**Effect** The ghoul whispers dark thoughts and vile cravings into the creature's ears. The creature must save against the forbidden cravings curse.\n\n**Forbidden Cravings** (curse) A creature can still eat and drink while sickened by this curse\n\n**Saving Throw** Will, using the high spell DC for the ghoul's level\n\n**Stage 1** carrier with no ill effects (1 day)\n\n**Stage 2** 2d6 void] damage and the target is [Sickened 1](/condition/sickened-player-core) until it consumes raw meat (1 day)\n\n**Stage 3** as stage 2\n\n**Stage 4** as stage 2 unless the target has consumed raw meat in the past 24 hours, then it takes 4d6 void] damage and is Sickened 2 until it consumes raw meat;\n\n**Stage 5** if the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul, if not, it returns to stage 4",
+    "descr": "**Requirements** A [Grabbed](/condition/grabbed-player-core), [Paralyzed](/condition/paralyzed-player-core), [Restrained](/condition/restrained-player-core), or [Unconscious](/condition/unconscious-player-core) creature is within the ghoul's reach\n\n---\n\n**Effect** The ghoul whispers dark thoughts and vile cravings into the creature's ears. The creature must save against the forbidden cravings curse.\n\n**Forbidden Cravings** (curse) A creature can still eat and drink while sickened by this curse\n\n**Saving Throw** Will, using the high spell DC for the ghoul's level\n\n**Stage 1** carrier with no ill effects (1 day)\n\n**Stage 2** 2d6 void damage and the target is [Sickened 1](/condition/sickened-player-core) until it consumes raw meat (1 day)\n\n**Stage 3** as stage 2\n\n**Stage 4** as stage 2 unless the target has consumed raw meat in the past 24 hours, then it takes 4d6 void damage and is Sickened 2 until it consumes raw meat;\n\n**Stage 5** if the creature has eaten raw meat in the past 24 hours, it dies and rises as a ghoul, if not, it returns to stage 4",
     "data": {
       "rarity": "common",
       "traits": [
@@ -603,7 +603,7 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Betrayed Revivification",
     "slug": "graveknight-betrayed-revivification-monster-core",
-    "descr": "The graveknight died after being deeply betrayed.\n\nInstead of being immune to a type of energy damage, it is immune to mental damage, its weapons deal 1d6 mental] damage, and its Devastating Blast deals mental damage with a Will saving throw instead of Reflex.",
+    "descr": "The graveknight died after being deeply betrayed.\n\nInstead of being immune to a type of energy damage, it is immune to mental damage, its weapons deal 1d6 mental damage, and its Devastating Blast deals mental damage with a Will saving throw instead of Reflex.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -638,7 +638,7 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Create Grave Squire",
     "slug": "graveknight-create-grave-squire-monster-core",
-    "descr": "The graveknight can gift a piece of their armor to another creature, which becomes their grave squire.\n\nThe graveknight can communicate telepathically with their squire at any distance, see through the squire's senses, and cast [Suggestion](/spell/suggestion-player-core) as a divine innate spell through the telepathic link at will; the squire treats their degree of success as one step worse.\n\nIf the graveknight's main armor is destroyed, the squire's piece expands to cover the squire's body over 1d10 days, after which point it becomes the graveknight's new body.\n\nThe graveknight can have only one squire at a time and must recover the armor piece to create a new squire.",
+    "descr": "The graveknight can gift a piece of their armor to another creature, which becomes their grave squire.\n\nThe graveknight can communicate telepathically with their squire at any distance, see through the squire's senses, and cast Suggestion as a divine innate spell through the telepathic link at will; the squire treats their degree of success as one step worse.\n\nIf the graveknight's main armor is destroyed, the squire's piece expands to cover the squire's body over 1d10 days, after which point it becomes the graveknight's new body.\n\nThe graveknight can have only one squire at a time and must recover the armor piece to create a new squire.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -708,7 +708,7 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Devastating Blast",
     "slug": "graveknight-devastating-blast-monster-core",
-    "descr": "The graveknight unleashes a area of energy. Creatures in the area take limited use area damage for a creature of the graveknight's level with a basic Reflex based on a high DC of the graveknight's level.\n\nThe graveknight can use this ability once every 1d4 rounds.\n\nThis energy damage is of the same type as that of their ruinous weapons, and Devastating Blast gains the associated trait.",
+    "descr": "The graveknight unleashes a 30-foot cone of energy. Creatures in the area take limited use area damage for a creature of the graveknight's level with a basic Reflex based on a high DC of the graveknight's level.\n\nThe graveknight can use this ability once every 1d4 rounds.\n\nThis energy damage is of the same type as that of their ruinous weapons, and Devastating Blast gains the associated trait.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -851,7 +851,7 @@
     "systemVersion": "1.2.10",
     "name": "(Graveknight) Rejuvenation",
     "slug": "graveknight-rejuvenation-monster-core",
-    "descr": "When a graveknight is destroyed, their armor rebuilds their body over the course of 1d10 days—or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.\n\nA graveknight can only be permanently destroyed by obliterating their armor (such as with [Disintegrate](/spell/disintegrate-player-core)), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.",
+    "descr": "When a graveknight is destroyed, their armor rebuilds their body over the course of 1d10 days—or more quickly if the armor is worn by a living host. If the body is destroyed before then, the process restarts.\n\nA graveknight can only be permanently destroyed by obliterating their armor (such as with Disintegrate), transporting it to the Forge of Creation, or throwing it into the heart of a volcano.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1620,7 +1620,7 @@
     "systemVersion": "1.2.10",
     "name": "(Protean) Warpwave",
     "slug": "protean-warpwave-monster-core",
-    "descr": "Many proteans can subject their foes to disorienting alterations perceived in time and space by creating ripples of unstable reality in the environment called warpwaves. When a creature fails its saving throw and is affected by a warpwave, roll 1d8 and consult the table below for the specific effect on that creature. Unless indicated otherwise, a warpwave effect lasts for 1d4 rounds, and a new warpwave effect negates any previous warpwave effect already affecting a creature.\n\n| 1d8 | Warpwave Effect |\n| --- | --- |\n| 1 | [Clumsy 2](/condition/clumsy-player-core) (Clumsy 3 on a critical failure) |\n| 2 | [Confused](/condition/confused-player-core) and gains 4d6 temporary Hit Points |\n| 3 | [Dazzled](/condition/dazzled-player-core) (permanent on a critical failure) |\n| 4 | [Enfeebled 2](/condition/enfeebled-player-core) (Enfeebled 3 on a critical failure) |\n| 5 | [Immobilized](/condition/immobilized-player-core) by filaments of energy |\n| 6 | [Quickened](/condition/quickened-player-core) (Stride, Strike, or Step only) |\n| 7 | [Slowed 1](/condition/slowed-player-core) |\n| 8 | [Stupefied 2](/condition/stupefied-player-core) (Stupefied 3 on a critical failure) |",
+    "descr": "Many proteans can subject their foes to disorienting alterations perceived in time and space by creating ripples of unstable reality in the environment called warpwaves. When a creature fails its saving throw and is affected by a warpwave, roll 1d8 and consult the table below for the specific effect on that creature. Unless indicated otherwise, a warpwave effect lasts for 1d4 rounds, and a new warpwave effect negates any previous warpwave effect already affecting a creature.\n\n| 1d8 | Warpwave Effect |\n| --- | --- |\n| 1 | Clumsy 2 (Clumsy 3 on a critical failure) |\n| 2 | Confused and gains 4d6 temporary Hit Points |\n| 3 | Dazzled (permanent on a critical failure) |\n| 4 | Enfeebled 2 (Enfeebled 3 on a critical failure) |\n| 5 | Immobilized by filaments of energy |\n| 6 | Quickened (Stride, Strike, or Step only) |\n| 7 | Slowed 1 |\n| 8 | Stupefied 2 (Stupefied 3 on a critical failure) |",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1726,7 +1726,7 @@
     "systemVersion": "1.2.10",
     "name": "(Skeleton) Explosive Death",
     "slug": "skeleton-explosive-death-monster-core",
-    "descr": "When the skeleton is destroyed, its bones shatter and explode.\n\nAdjacent creatures take 1d6 slashing] damage per 2 levels (minimum 1d6) with a basic Reflex save against the moderate spell DC for the skeleton's level.",
+    "descr": "When the skeleton is destroyed, its bones shatter and explode.\n\nAdjacent creatures take 1d6 slashing damage per 2 levels (minimum 1d6) with a basic Reflex save against the moderate spell DC for the skeleton's level.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -1916,7 +1916,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Basic) Vampire Vulnerabilities",
     "slug": "vampire-basic-vampire-vulnerabilities-monster-core",
-    "descr": "All vampires possess the following vulnerabilities.\n\n**Compulsions** Vampires are creatures with strange and unknowable compulsions. A typical vampire can't voluntarily cross running water unless they're transported while they hide within their coffin, nor can they enter a private dwelling unless invited in by someone with the authority to do so. At your discretion, vampires might have different compulsions—a pirate vampire might not be able to set foot on solid ground without being invited, for example. The vampire can still be forced to do these things and might be able to overcome their compulsion just as they do their revulsion.\n**Revulsion** A vampire can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a deity with a holy sanctification option. To brandish garlic or a religious symbol, a creature must Interact to do so, and it remains brandished for 1 round (similar to Raising a Shield). If the vampire involuntarily comes within 10 feet of an object of their revulsion, they gain the [Fleeing](/condition/fleeing-player-core) condition, running from the object of their revulsion until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a vampire can attempt a Will DC 25 save as a single action, which has the [concentrate](/trait/concentrate) trait. On a success, they overcome their revulsions for 1d6 rounds (or 1 hour on a critical success).\n**Stake** A wooden stake driven through a vampire's heart drops the vampire to 0 HP and prevents them from healing above 0 HP, even in their coffin. Staking a vampire requires 3 actions and works only if the vampire is [Unconscious](/condition/unconscious-player-core). If the stake is removed, the vampire can heal above 0 HP again, and if they're in their coffin, the 1-hour rest period begins once the stake is removed. If the vampire's head is severed and anointed with holy water while the stake is in place, the vampire is destroyed.\n**Sunlight** If exposed to direct sunlight, a vampire immediately becomes [Slowed 1](/condition/slowed-player-core). The slowed value increases by 1 each time the vampire ends their turn in sunlight, and the condition ends when they're no longer in sunlight. If the vampire loses all their actions in this way, they're destroyed. Due to their supernatural aversion to light, vampires don't cast shadows or show a reflection in mirrors",
+    "descr": "All vampires possess the following vulnerabilities.\n\n**Compulsions** Vampires are creatures with strange and unknowable compulsions. A typical vampire can't voluntarily cross running water unless they're transported while they hide within their coffin, nor can they enter a private dwelling unless invited in by someone with the authority to do so. At your discretion, vampires might have different compulsions—a pirate vampire might not be able to set foot on solid ground without being invited, for example. The vampire can still be forced to do these things and might be able to overcome their compulsion just as they do their revulsion.\n**Revulsion** A vampire can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a deity with a holy sanctification option. To brandish garlic or a religious symbol, a creature must Interact to do so, and it remains brandished for 1 round (similar to Raising a Shield). If the vampire involuntarily comes within 10 feet of an object of their revulsion, they gain the [Fleeing](/condition/fleeing-player-core) condition, running from the object of their revulsion until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a vampire can attempt a Will DC 25 save as a single action, which has the [concentrate](/trait/concentrate) trait. On a success, they overcome their revulsions for 1d6 rounds (or 1 hour on a critical success).\n**Stake** A wooden stake driven through a vampire's heart drops the vampire to 0 HP and prevents them from healing above 0 HP, even in their coffin. Staking a vampire requires 3 actions and works only if the vampire is Unconscious. If the stake is removed, the vampire can heal above 0 HP again, and if they're in their coffin, the 1-hour rest period begins once the stake is removed. If the vampire's head is severed and anointed with holy water while the stake is in place, the vampire is destroyed.\n**Sunlight** If exposed to direct sunlight, a vampire immediately becomes Slowed 1. The slowed value increases by 1 each time the vampire ends their turn in sunlight, and the condition ends when they're no longer in sunlight. If the vampire loses all their actions in this way, they're destroyed. Due to their supernatural aversion to light, vampires don't cast shadows or show a reflection in mirrors",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -2449,7 +2449,7 @@
     "systemVersion": "1.2.10",
     "name": "(Werecreature) Moon Frenzy",
     "slug": "werecreature-moon-frenzy-monster-core",
-    "descr": "When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws by 2.\n\nWhen the moon sets or the sun rises, the werecreature returns to humanoid form and is [Fatigued](/condition/fatigued-player-core) for 2d4 hours.\n\nEffect: Moon Frenzy",
+    "descr": "When a full moon appears in the night sky, the werecreature must enter hybrid form, can't Change Shape thereafter, becomes one size larger, increases its reach by 5 feet, and increases the damage of its jaws by 2.\n\nWhen the moon sets or the sun rises, the werecreature returns to humanoid form and is Fatigued for 2d4 hours.\n\nEffect: Moon Frenzy",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2585,7 +2585,7 @@
     "systemVersion": "1.2.10",
     "name": "(Zombie) Plague-Ridden",
     "slug": "zombie-plague-ridden-monster-core",
-    "descr": "The zombie carries a plague that can create more of its own kind.\n\nThis functions as the [Plague Zombie's](/creature/plague-zombie-monster-core) zombie rot, except at stage 5, the victim rises as another of the zombie's type, rather than a plague zombie.\n\n---\n\n**Zombie Rot**\n\nAn infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.\n\n**Saving Throw** Type:Fortitude. Use the high spell DC for the zombie's level.\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 void] damage (1 day)\n\n**Stage 3** 1d6 void] damage (1 day)\n\n**Stage 4** 1d6 void] damage (1 day)\n\n**Stage 5** dead, rising as another of the zombie's type immediately",
+    "descr": "The zombie carries a plague that can create more of its own kind.\n\nThis functions as the [Plague Zombie's](/creature/plague-zombie-monster-core) zombie rot, except at stage 5, the victim rises as another of the zombie's type, rather than a plague zombie.\n\n---\n\n**Zombie Rot**\n\nAn infected creature can't heal damage it takes from zombie rot until it has been cured of the disease.\n\n**Saving Throw** Type:fortitude. Use the high spell DC for the zombie's level.\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 void damage (1 day)\n\n**Stage 3** 1d6 void damage (1 day)\n\n**Stage 4** 1d6 void damage (1 day)\n\n**Stage 5** dead, rising as another of the zombie's type immediately",
     "data": {
       "rarity": "common",
       "traits": [
@@ -2628,7 +2628,7 @@
     "systemVersion": "1.2.10",
     "name": "(Zombie) Rotting Aura",
     "slug": "zombie-rotting-aura-monster-core",
-    "descr": "10 feet. The zombie emits an aura of rot and disease that causes wounds to fester.\n\nAny living creature that starts its turn within 10 feet of the zombie and is not at full Hit Points takes 1d6 void] damage. This damage increases by 1d6 for every 6 levels the zombie has.",
+    "descr": "10 feet. The zombie emits an aura of rot and disease that causes wounds to fester.\n\nAny living creature that starts its turn within 10 feet of the zombie and is not at full Hit Points takes 1d6 void damage. This damage increases by 1d6 for every 6 levels the zombie has.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -3015,7 +3015,7 @@
     "systemVersion": "1.2.10",
     "name": "Constrict",
     "slug": "constrict-monster-core",
-    "descr": "(0) bludgeoning], basic Fortitude\n\n---\n\nConstrict",
+    "descr": "0 bludgeoning, basic Fortitude\n\n---\n\nConstrict",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -3170,7 +3170,7 @@
     "systemVersion": "1.2.10",
     "name": "Engulf",
     "slug": "engulf-monster-core",
-    "descr": "Reflex, (0) damageType] damage, Escape, Rupture [0]\n\n---\n\nEngulf",
+    "descr": "Reflex, (0) damageType damage, Escape, Rupture [0]\n\n---\n\nEngulf",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -3374,7 +3374,7 @@
     "systemVersion": "1.2.10",
     "name": "Greater Constrict",
     "slug": "greater-constrict-monster-core",
-    "descr": "(0) bludgeoning], basic Fortitude\n\n---\n\nGreaterconstrict",
+    "descr": "0 bludgeoning, basic Fortitude\n\n---\n\nGreaterconstrict",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -4084,7 +4084,7 @@
     "systemVersion": "1.2.10",
     "name": "Swallow Whole",
     "slug": "swallow-whole-monster-core",
-    "descr": "[Listed Size], (0) bludgeoning], Rupture [0]\n\n---\n\nSwallowwhole",
+    "descr": "[Listed Size], 0 bludgeoning, Rupture [0]\n\n---\n\nSwallowwhole",
     "data": {
       "rarity": "common",
       "traits": [

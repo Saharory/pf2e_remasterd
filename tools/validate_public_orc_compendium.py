@@ -14,6 +14,7 @@ from build_public_orc_compendium import (
     canonical_trait_slug,
     parameterized_trait_family,
 )
+from foundry_markup import has_conversion_artifact
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -103,6 +104,23 @@ def inspect(value: Any, location: str, errors: list[str]) -> None:
                 errors.append(f"{location}: banned text marker {marker!r}")
         if EMAIL.search(value):
             errors.append(f"{location}: possible email/private watermark")
+        if has_conversion_artifact(value):
+            errors.append(f"{location}: malformed converted rules text")
+
+
+def inspect_sources(record: dict[str, Any], location: str, errors: list[str]) -> None:
+    sources = record.get("sources")
+    if not isinstance(sources, list) or not sources:
+        errors.append(f"{location}: {record.get('name')} lacks source attribution")
+        return
+    for index, source in enumerate(sources):
+        source_location = f"{location}.sources[{index}]"
+        if not isinstance(source, dict) or not str(source.get("name") or "").strip():
+            errors.append(f"{source_location}: source book name is missing")
+            continue
+        page = source.get("page")
+        if page is not None and (not isinstance(page, int) or isinstance(page, bool) or page <= 0):
+            errors.append(f"{source_location}: source page must be a positive integer")
 
 
 def rich_text_values(value: Any) -> list[str]:
@@ -167,8 +185,7 @@ def main() -> int:
                         errors.append(f"{path}: record lacks a name or slug")
                     if record.get("system") != "pf2e-remaster":
                         errors.append(f"{path}: wrong entity system")
-                    if not isinstance(record.get("sources"), list) or not record["sources"]:
-                        errors.append(f"{path}: {record.get('name')} lacks source attribution")
+                    inspect_sources(record, str(path), errors)
                     if record.get("attributes", {}).get("license") != "ORC-1.0a":
                         errors.append(f"{path}: {record.get('name')} lacks its ORC marker")
                     allowed_deity_rules = (

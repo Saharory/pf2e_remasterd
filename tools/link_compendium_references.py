@@ -30,6 +30,7 @@ REPO = Path(__file__).resolve().parents[1]
 from build_aon_orc_staging import clean_markup as clean_aon_markup
 from build_aon_orc_staging import description as clean_aon_description
 from build_public_orc_compendium import COLLECTION_KIND, STRIP_TOP_LEVEL_DESCRIPTION
+from foundry_markup import has_conversion_artifact, replace_foundry_directives
 from refresh_aon_rule_descriptions import remove_dying_condition_reprints
 
 
@@ -200,6 +201,8 @@ class Target:
     source_id: str
     foundry_id: str
     aon_id: str
+    level: int
+    rank: int
 
     @property
     def route(self) -> str:
@@ -262,26 +265,13 @@ def foundry_markdown_table(value: str) -> str:
     )
 
 
-def clean_foundry_description(value: Any) -> str:
+def clean_foundry_description(
+    value: Any, variables: dict[str, int | float] | None = None
+) -> str:
     """Compatibility cleaner for descriptions produced by the private importer."""
     if not value:
         return ""
-    text = str(value)
-    text = re.sub(r"@UUID\[([^\]]+)\](?:\{([^}]+)\})?", replace_foundry_uuid, text)
-    text = re.sub(r"@Check\[([^\]]+)\](?:\{([^}]+)\})?", replace_foundry_check, text)
-    text = re.sub(r"@Template\[[^\]]+\](?:\{([^}]+)\})?", lambda match: match.group(1) or "area", text)
-    text = re.sub(r"@Damage\[(.*?)\]\{([^}]+)\}", lambda match: match.group(2), text, flags=re.S)
-    text = re.sub(
-        r"@Damage\[([^\]]+(?:\[[^\]]+\])?[^\]]*)\](?:\{([^}]+)\})?",
-        lambda match: match.group(2) or match.group(1).replace("[", " ").replace("]", ""),
-        text,
-    )
-    text = re.sub(r"@(actor|item|target)\.[A-Za-z0-9_.-]+", "current value", text)
-    text = re.sub(
-        r"@Localize\[([^\]]+)\]",
-        lambda match: title_from_code(match.group(1).rsplit(".", 1)[-1]),
-        text,
-    )
+    text = replace_foundry_directives(str(value), variables)
     text = re.sub(
         r"<table\b[^>]*>.*?</table>",
         lambda match: "\n\n" + foundry_markdown_table(match.group(0)) + "\n\n",
@@ -365,6 +355,7 @@ def target_catalog(staging: Path) -> tuple[
             if kind != expected_kind or kind not in ROUTE_BY_KIND or not slug or not name:
                 continue
             attrs = row.get("attributes") or {}
+            data = row.get("data") or {}
             target = Target(
                 kind=kind,
                 name=name,
@@ -372,6 +363,8 @@ def target_catalog(staging: Path) -> tuple[
                 source_id=source_id,
                 foundry_id=str(attrs.get("foundryId") or ""),
                 aon_id=str(attrs.get("aonId") or ""),
+                level=int(data.get("level") or 0),
+                rank=int(data.get("rank") or 0),
             )
             targets.append(target)
             if target.foundry_id:
@@ -732,10 +725,25 @@ def aon_references(
     return refs, unresolved
 
 
-def choose_source_record(records: list[dict[str, Any]], row_name: str) -> dict[str, Any] | None:
+def choose_source_record(
+    records: list[dict[str, Any]], row_name: str, source_id: str = ""
+) -> dict[str, Any] | None:
     if not records:
         return None
     exact = [record for record in records if normalize_name(str(record.get("name") or "")) == normalize_name(row_name)]
+    if source_id and len(exact) > 1:
+        source_label = normalize_name(source_id.replace("-remastered", "").replace("-", " "))
+
+        def source_matches(record: dict[str, Any]) -> bool:
+            system = record.get("system") or {}
+            publication = system.get("publication") or (system.get("details") or {}).get("publication") or {}
+            title = normalize_name(str(publication.get("title") or ""))
+            pack = normalize_name(str(record.get("__pack") or ""))
+            return bool(source_label and (source_label in title or source_label in pack))
+
+        preferred = [record for record in exact if source_matches(record)]
+        if len(preferred) == 1:
+            return preferred[0]
     if len(exact) == 1:
         return exact[0]
     with_description = [record for record in records if description_from_foundry(record)]
@@ -783,7 +791,25 @@ def render_foundry_links(
     by_kind_name: dict[tuple[str, str], list[Target]],
 ) -> tuple[str, int, list[str]]:
     """Clean a Foundry description while protecting resolved internal links."""
-    source_text = description_from_foundry(raw)
+    return render_foundry_text(
+        description_from_foundry(raw),
+        current,
+        source_id,
+        by_foundry,
+        by_aon,
+        by_kind_name,
+    )
+
+
+def render_foundry_text(
+    source_text: str,
+    current: Target,
+    source_id: str,
+    by_foundry: dict[str, list[Target]],
+    by_aon: dict[str, list[Target]],
+    by_kind_name: dict[tuple[str, str], list[Target]],
+) -> tuple[str, int, list[str]]:
+    """Clean any Foundry rich-text field and preserve resolvable links."""
     replacements: dict[str, str] = {}
     unresolved: list[str] = []
     seen: set[str] = set()
@@ -816,8 +842,135 @@ def render_foundry_links(
         return token
 
     annotated = FOUNDRY_REF.sub(replace, source_text)
-    rendered = restore_markers(clean_foundry_description(annotated), replacements)
+    variables = {
+        "@actor.level": current.level,
+        "@actor.system.details.level.value": current.level,
+        "@item.level": current.rank or current.level,
+        "@item.rank": current.rank,
+    }
+    rendered = restore_markers(
+        clean_foundry_description(annotated, variables), replacements
+    )
     return rendered, resolved, unresolved
+
+
+def foundry_embedded_descriptions(raw: dict[str, Any]) -> dict[str, str]:
+    """Index actor-embedded action descriptions by their displayed name."""
+    result: dict[str, str] = {}
+    for item in raw.get("items") or []:
+        if not isinstance(item, dict):
+            continue
+        name = normalize_name(str(item.get("name") or ""))
+        text = description_from_foundry(item)
+        if name and text:
+            result.setdefault(name, text)
+    return result
+
+
+def refresh_foundry_rich_text(
+    data: Any,
+    raw: dict[str, Any],
+    current: Target,
+    source_id: str,
+    by_foundry: dict[str, list[Target]],
+    by_aon: dict[str, list[Target]],
+    by_kind_name: dict[tuple[str, str], list[Target]],
+    foundry_by_name: dict[str, list[dict[str, Any]]],
+) -> tuple[Any, int, list[str]]:
+    """Repair malformed imported actor abilities, routines, and class features."""
+    updated = copy.deepcopy(data)
+    repaired = 0
+    unresolved: list[str] = []
+    if not isinstance(updated, dict):
+        return updated, repaired, unresolved
+
+    embedded = foundry_embedded_descriptions(raw)
+
+    def repair_named_entries(value: Any, candidates: dict[str, str]) -> None:
+        nonlocal repaired
+        if isinstance(value, dict):
+            name = normalize_name(str(value.get("name") or ""))
+            text = value.get("text")
+            source_text = candidates.get(name)
+            if isinstance(text, str) and source_text and has_conversion_artifact(text):
+                rendered, _, missing = render_foundry_text(
+                    source_text,
+                    current,
+                    source_id,
+                    by_foundry,
+                    by_aon,
+                    by_kind_name,
+                )
+                value["text"] = rendered
+                unresolved.extend(missing)
+                repaired += 1
+            for child in value.values():
+                if isinstance(child, (dict, list)):
+                    repair_named_entries(child, candidates)
+        elif isinstance(value, list):
+            for child in value:
+                if isinstance(child, (dict, list)):
+                    repair_named_entries(child, candidates)
+
+    repair_named_entries(updated.get("abilities"), embedded)
+
+    routine = updated.get("routine")
+    raw_routine = str(((raw.get("system") or {}).get("details") or {}).get("routine") or "")
+    if isinstance(routine, str) and raw_routine and has_conversion_artifact(routine):
+        rendered, _, missing = render_foundry_text(
+            raw_routine,
+            current,
+            source_id,
+            by_foundry,
+            by_aon,
+            by_kind_name,
+        )
+        updated["routine"] = rendered
+        unresolved.extend(missing)
+        repaired += 1
+
+    details = (raw.get("system") or {}).get("details") or {}
+    for key in ("disable", "reset"):
+        current_text = updated.get(key)
+        source_text = str(details.get(key) or "")
+        if (
+            isinstance(current_text, str)
+            and source_text
+            and has_conversion_artifact(current_text)
+        ):
+            rendered, _, missing = render_foundry_text(
+                source_text,
+                current,
+                source_id,
+                by_foundry,
+                by_aon,
+                by_kind_name,
+            )
+            updated[key] = rendered
+            unresolved.extend(missing)
+            repaired += 1
+
+    class_features = updated.get("classFeatures")
+    if isinstance(class_features, list):
+        sources: dict[str, str] = {}
+        for feature in class_features:
+            if not isinstance(feature, dict) or not has_conversion_artifact(str(feature.get("text") or "")):
+                continue
+            name = normalize_name(str(feature.get("name") or ""))
+            records = [
+                record
+                for record in foundry_by_name.get(name, [])
+                if description_from_foundry(record)
+                and str(record.get("__pack") or "") == "class-features"
+            ]
+            source = choose_source_record(
+                records, str(feature.get("name") or ""), source_id
+            )
+            if source:
+                sources[name] = description_from_foundry(source)
+        repair_named_entries(class_features, sources)
+
+    return updated, repaired, unresolved
 
 
 def render_aon_links(
@@ -1155,6 +1308,12 @@ def main() -> int:
     targets, by_foundry, by_aon, by_kind_name = target_catalog(args.staging)
     foundry_records, foundry_count = load_foundry_records(args.foundry)
     aon_records, aon_count = load_aon_records(args.aon_reference, args.aon_sources)
+    foundry_by_name: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for records in foundry_records.values():
+        for record in records:
+            name = normalize_name(str(record.get("name") or ""))
+            if name:
+                foundry_by_name[name].append(record)
 
     stats: Counter[str] = Counter()
     unresolved: Counter[str] = Counter()
@@ -1185,6 +1344,8 @@ def main() -> int:
                 source_id=source_id,
                 foundry_id=foundry_id,
                 aon_id=aon_id,
+                level=int((row.get("data") or {}).get("level") or 0),
+                rank=int((row.get("data") or {}).get("rank") or 0),
             )
             updated = text
             fallback_additions: list[tuple[str, str]] = []
@@ -1215,7 +1376,9 @@ def main() -> int:
                         stats["missingAoNSources"] += 1
                 elif foundry_id:
                     raw = choose_source_record(
-                        foundry_records.get(foundry_id, []), str(row.get("name") or "")
+                        foundry_records.get(foundry_id, []),
+                        str(row.get("name") or ""),
+                        source_id,
                     )
                     if raw:
                         stats["matchedFoundrySources"] += 1
@@ -1236,7 +1399,11 @@ def main() -> int:
                     else:
                         stats["renderMismatches"] += 1
                         render_mismatches[f"{provider}:{source_id}:{row.get('name')}"] += 1
-                        if "[/act " in plain or "traits=[[" in plain:
+                        if (
+                            "[/act " in plain
+                            or "traits=[[" in plain
+                            or has_conversion_artifact(plain)
+                        ):
                             updated = rendered
                             stats["repairedMalformedSourceMacros"] += 1
                 elif foundry_id or aon_id:
@@ -1256,6 +1423,35 @@ def main() -> int:
             original_data = row.get("data")
             updated_data = copy.deepcopy(original_data)
             data_additions: list[tuple[str, str]] = []
+            if foundry_id and isinstance(updated_data, (dict, list)):
+                raw = choose_source_record(
+                    foundry_records.get(foundry_id, []),
+                    str(row.get("name") or ""),
+                    source_id,
+                )
+                if raw:
+                    updated_data, repair_count, repair_unresolved = refresh_foundry_rich_text(
+                        updated_data,
+                        raw,
+                        current_target,
+                        source_id,
+                        by_foundry,
+                        by_aon,
+                        by_kind_name,
+                        foundry_by_name,
+                    )
+                    stats["repairedStructuredSourceMacros"] += repair_count
+                    unresolved.update(repair_unresolved)
+
+            if (
+                kind in {"Archetype", "Feat"}
+                and isinstance(updated_data, dict)
+                and has_conversion_artifact(str(updated_data.get("benefits") or ""))
+                and updated
+            ):
+                updated_data["benefits"] = updated
+                stats["repairedStructuredSourceMacros"] += 1
+
             if isinstance(updated_data, (dict, list)):
                 updated_data, data_additions = link_rich_data(
                     updated_data, current_target, by_kind_name, blocked_routes

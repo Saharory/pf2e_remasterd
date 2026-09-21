@@ -97,7 +97,7 @@
         "offensive": [
           {
             "name": "Admonishing Hymn",
-            "text": "The angelic choir raises their voices in song, singing a note that vibrates the very fabric of being. This takes the form of a area within 90 feet that deals 6d6 sonic|options:area-damage] damage (basic Fortitude DC 29 save). A creature who critically fails the save is Deafened for 1 minute. When the angelic chorus is reduced to 2 segments, this area decreases to a area.",
+            "text": "The angelic choir raises their voices in song, singing a note that vibrates the very fabric of being. This takes the form of a 15-foot burst within 90 feet that deals 6d6 sonic damage (basic Fortitude DC 29 save). A creature who critically fails the save is [Deafened](/condition/deafened-player-core) for 1 minute. When the angelic chorus is reduced to 2 segments, this area decreases to a 10-foot burst.",
             "traits": [
               "divine",
               "holy",
@@ -112,7 +112,7 @@
           },
           {
             "name": "Righteous Clamor",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** With sonorous shouts, the angelic chorus lashes out with their fists in a coordinated melee attack against each enemy in a area (basic Reflex DC 29 save). The damage depends on the number of actions\n\n1 1d8 bludgeoning damage plus 1d6 sonic damage\n\n2 2d8+7 bludgeoning damage plus 2d6 sonic damage\n\n3 3d8+10 bludgeoning damage plus 2d6 sonic damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** With sonorous shouts, the angelic chorus lashes out with their fists in a coordinated melee attack against each enemy in a 5-foot emanation (basic Reflex DC 29 save). The damage depends on the number of actions\n\n1 1d8 bludgeoning damage plus 1d6 sonic damage\n\n2 2d8+7 bludgeoning damage plus 2d6 sonic damage\n\n3 3d8+10 bludgeoning damage plus 2d6 sonic damage",
             "traits": [
               "holy",
               "magical"
@@ -248,7 +248,7 @@
         "offensive": [
           {
             "name": "Battering Fists",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The animated army makes a melee attack against each enemy in a area (basic Reflex DC 23 save). The damage dealt depends on the number of actions.\n\n1 (1d8+2) bludgeoning|options:area-damage] damage\n\n2 (2d8+8) bludgeoning|options:area-damage] damage\n\n3 (3d8+10) bludgeoning|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The animated army makes a melee attack against each enemy in a 5-foot emanation (basic Reflex DC 23 save). The damage dealt depends on the number of actions.\n\n1 1d8+2 bludgeoning damage\n\n2 2d8+8 bludgeoning damage\n\n3 3d8+10 bludgeoning damage",
             "traits": [
               "magical"
             ],
@@ -379,7 +379,7 @@
         "offensive": [
           {
             "name": "Barrage of Force",
-            "text": "The apprentice magicians launch shards of pure magic at all creatures in a area within 120 feet. This barrage deals 5d4 force|options:area-damage] damage (basic Reflex DC 19 save). When the clique is reduced to 2 segments, this area decreases to a area.",
+            "text": "The apprentice magicians launch shards of pure magic at all creatures in a 10-foot burst within 120 feet. This barrage deals 5d4 force damage (basic Reflex DC 19 save). When the clique is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [
               "arcane",
               "force"
@@ -393,7 +393,7 @@
           },
           {
             "name": "Sparking Wands",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The apprentice magicians wave wands that shoot out minor bolts of electricity at short range. Each enemy in a area must attempt a basic Reflex DC 19 save. The damage dealt depends on the number of actions.\n\n1 1d8 electricity|options:area-damage] damage\n\n2 (2d8+3) electricity|options:area-damage] damage\n\n3 (2d8+7) electricity|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The apprentice magicians wave wands that shoot out minor bolts of electricity at short range. Each enemy in a 5-foot emanation must attempt a basic Reflex DC 19 save. The damage dealt depends on the number of actions.\n\n1 1d8 electricity damage\n\n2 2d8+3 electricity damage\n\n3 2d8+7 electricity damage",
             "traits": [
               "arcane",
               "electricity"
@@ -516,7 +516,7 @@
         "defensive": [
           {
             "name": "Reactive Attack",
-            "text": "**Trigger** An enemy within 5 feet of the arboreal copse uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using\n\n---\n\n**Effect** The arboreals swing their stone swords. The triggering enemy takes (2d8+9) bludgeoning] damage (basic Reflex DC 25 save). If the creature critically fails their saving throw and the trigger was a manipulate action, the troop disrupts that action.",
+            "text": "**Trigger** An enemy within 5 feet of the arboreal copse uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using\n\n---\n\n**Effect** The arboreals swing their stone swords. The triggering enemy takes 2d8+9 bludgeoning damage (basic Reflex DC 25 save). If the creature critically fails their saving throw and the trigger was a manipulate action, the troop disrupts that action.",
             "traits": [],
             "actions": "reaction"
           },
@@ -540,13 +540,13 @@
           },
           {
             "name": "Shoving Shield Wall",
-            "text": "The arboreal copse Strides. All enemies whose square the copse begins in or passes through during their movement take 5d6 bludgeoning|options:area-damage] damage (basic Fortitude DC 25). On a failed saving throw, the arboreal copse carries the creature along on their shields, moving them in the same distance and direction for the rest of their Stride.",
+            "text": "The arboreal copse Strides. All enemies whose square the copse begins in or passes through during their movement take 5d6 bludgeoning damage (basic Fortitude DC 25). On a failed saving throw, the arboreal copse carries the creature along on their shields, moving them in the same distance and direction for the rest of their Stride.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Sword Bash",
-            "text": "1 to 3\n\n---\n\nThe arboreal copse uses their blunt stone longswords to pummel its foes. Each enemy in a area must attempt a basic Reflex DC 25 save. The damage depends on the number of actions.\n\n1 (1d8+1) bludgeoning|options:area-damage] damage\n\n2 (2d8+9) bludgeoning|options:area-damage] damage\n\n3 (3d8+10) bludgeoning|options:area-damage] damage",
+            "text": "1 to 3\n\n---\n\nThe arboreal copse uses their blunt stone longswords to pummel its foes. Each enemy in a 10-foot emanation must attempt a basic Reflex DC 25 save. The damage depends on the number of actions.\n\n1 1d8+1 bludgeoning damage\n\n2 2d8+9 bludgeoning damage\n\n3 3d8+10 bludgeoning damage",
             "traits": [],
             "actions": "one"
           }
@@ -672,7 +672,7 @@
         "offensive": [
           {
             "name": "Dagger Defense",
-            "text": "1 to 3\n\n---\n\nThe archer regiment draws daggers to attack close-range enemies. Each enemy in a area must attempt a basic Reflex DC 29 save. The damage depends on the number of actions. The archer regiment gains a +1 circumstance bonus to AC until the beginning of their next turn.\n\n1 (2d4+2) piercing|options:area-damage] damage\n\n2 (4d4+12) piercing|options:area-damage] damage\n\n3 (4d4+15) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n---\n\nThe archer regiment draws daggers to attack close-range enemies. Each enemy in a 5-foot emanation must attempt a basic Reflex DC 29 save. The damage depends on the number of actions. The archer regiment gains a +1 circumstance bonus to AC until the beginning of their next turn.\n\n1 2d4+2 piercing damage\n\n2 4d4+12 piercing damage\n\n3 4d4+15 piercing damage",
             "traits": [],
             "actions": "one"
           },
@@ -684,7 +684,7 @@
           },
           {
             "name": "Rain of Arrows",
-            "text": "The archer regiment fires their longbows in a coordinated volley. This volley is either a area within 200 feet that deals 4d8 piercing|options:area-damage] damage or a area within 100 feet that deals 6d8 piercing|options:area-damage] damage. Either effect has a basic Reflex DC 29 save. When the archer regiment is reduced to 2 segments, both areas are reduced by 5 feet.",
+            "text": "The archer regiment fires their longbows in a coordinated volley. This volley is either a 15-foot burst within 200 feet that deals 4d8 piercing damage or a 10-foot burst within 100 feet that deals 6d8 piercing damage. Either effect has a basic Reflex DC 29 save. When the archer regiment is reduced to 2 segments, both areas are reduced by 5 feet.",
             "traits": [],
             "actions": "two"
           }
@@ -813,7 +813,7 @@
           },
           {
             "name": "Archon's Aegis",
-            "text": "**Trigger** An enemy damages an ally of the archon bastion and both are within 15 feet of the archon bastion\n\n---\n\n**Effect** The ally gains resistance 20 to all damage against the triggering damage and the enemy takes (1d8+4) piercing] damage (basic Reflex DC 34 save).\n\nEffect: Archon'S Aegis",
+            "text": "**Trigger** An enemy damages an ally of the archon bastion and both are within 15 feet of the archon bastion\n\n---\n\n**Effect** The ally gains resistance 20 to all damage against the triggering damage and the enemy takes 1d8+4 piercing damage (basic Reflex DC 34 save).\n\nEffect: Archon'S Aegis",
             "traits": [],
             "actions": "reaction"
           },
@@ -839,13 +839,13 @@
           },
           {
             "name": "Living Shields",
-            "text": "The archon bastion grants each ally within a area a +2 circumstance bonus to AC until that ally is no longer within the area or until the start of the archon bastion's next turn, whichever comes first. If the archon bastion uses Archon's Aegis against an attack against one of the shielded allies, the archon bastion gains the resistance and takes the damage rather than the ally.\n\nEffect: Living Shields",
+            "text": "The archon bastion grants each ally within a 5-foot emanation a +2 circumstance bonus to AC until that ally is no longer within the area or until the start of the archon bastion's next turn, whichever comes first. If the archon bastion uses Archon's Aegis against an attack against one of the shielded allies, the archon bastion gains the resistance and takes the damage rather than the ally.\n\nEffect: Living Shields",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Smiting Lances",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The archon bastion engages in a uniform melee attack against each enemy in area (basic Reflex DC 34 save). The damage depends on the number of actions. An unholy creature that fails its save against this effect takes an additional 2d6 spirit|options:area-damage] damage (or 1d6 spirit|options:area-damage] damage for the one-action version).\n\n1 (1d8+4) piercing|options:area-damage] damage\n\n2 (3d8+14) piercing|options:area-damage] damage\n\n3 (4d8+19) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The archon bastion engages in a uniform melee attack against each enemy in 10-foot emanation (basic Reflex DC 34 save). The damage depends on the number of actions. An unholy creature that fails its save against this effect takes an additional 2d6 spirit damage (or 1d6 spirit damage for the one-action version).\n\n1 1d8+4 piercing damage\n\n2 3d8+14 piercing damage\n\n3 4d8+19 piercing damage",
             "traits": [
               "divine",
               "holy"
@@ -983,7 +983,7 @@
         "offensive": [
           {
             "name": "Batrachian Blitz",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The boggard dreadknot pummels each enemy in a area with their clubs, with a basic Reflex DC 26 save. The damage dealt depends on the number of actions.\n\n1 2d6 bludgeoning|options:area-damage] damage\n\n2 (3d6+10) bludgeoning|options:area-damage] damage\n\n3 (4d6+13) bludgeoning|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The boggard dreadknot pummels each enemy in a 5-foot emanation with their clubs, with a basic Reflex DC 26 save. The damage dealt depends on the number of actions.\n\n1 2d6 bludgeoning damage\n\n2 3d6+10 bludgeoning damage\n\n3 4d6+13 bludgeoning damage",
             "traits": [],
             "actions": "one"
           },
@@ -1000,7 +1000,7 @@
           },
           {
             "name": "Javelin Barrage",
-            "text": "The dreadknot draws javelins and launches a coordinated barrage. This barrage is a area within 30 feet that deals 4d6 piercing|options:area-damage] damage (basic Reflex DC 26 save). When the dreadknot is reduced to 2 segments, this area decreases to a area.",
+            "text": "The dreadknot draws javelins and launches a coordinated barrage. This barrage is a 10-foot burst within 30 feet that deals 4d6 piercing damage (basic Reflex DC 26 save). When the dreadknot is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
@@ -1016,7 +1016,7 @@
           },
           {
             "name": "Tongue Lashing",
-            "text": "The dreadknot's giant frogs lash out at each enemy in a area with their tongues, requiring them to succeed at a Reflex DC 26 save or become Grabbed. A creature [grabbed](/condition/grabbed-player-core) in this way isn't Immobilized, but it can't move more than 15 feet from the dreadknot. A creature can sever one of the tongues with a Strike against AC 25 that deals at least 15 slashing damage. This doesn't deal damage to the dreadknot.",
+            "text": "The dreadknot's giant frogs lash out at each enemy in a 15-foot emanation with their tongues, requiring them to succeed at a Reflex DC 26 save or become [Grabbed](/condition/grabbed-player-core). A creature grabbed in this way isn't [Immobilized](/condition/immobilized-player-core), but it can't move more than 15 feet from the dreadknot. A creature can sever one of the tongues with a Strike against AC 25 that deals at least 15 slashing damage. This doesn't deal damage to the dreadknot.",
             "traits": [],
             "actions": "two"
           }
@@ -1173,13 +1173,13 @@
           },
           {
             "name": "Morningstar Massacre",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The boggards execute coordinated melee attacks against each enemy in a area, with a basic Reflex DC 21 save. The damage dealt depends on the number of actions.\n\n1 1d6 untyped|options:area-damage] damage\n\n2 (2d6+7) untyped|options:area-damage] damage\n\n3 (2d6+11) untyped|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The boggards execute coordinated melee attacks against each enemy in a 5-foot emanation, with a basic Reflex DC 21 save. The damage dealt depends on the number of actions.\n\n1 1d6 untyped damage\n\n2 2d6+7 untyped damage\n\n3 2d6+11 untyped damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Sling Barrage",
-            "text": "The dreadknot draws and loads slings to launch a coordinated barrage. This barrage is a area within 50 feet that deals 3d6 bludgeoning|options:area-damage] damage (basic Reflex DC 21 save). When the scouting party is reduced to 2 segments, this area decreases to a area.",
+            "text": "The dreadknot draws and loads slings to launch a coordinated barrage. This barrage is a 10-foot burst within 50 feet that deals 3d6 bludgeoning damage (basic Reflex DC 21 save). When the scouting party is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
@@ -1317,13 +1317,13 @@
         "offensive": [
           {
             "name": "Frenzied Hatchets",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The charau-ka engage in a coordinated melee attack against each enemy in a area (basic Reflex DC 23 save). The damage depends on the number of actions.\n\n1 (1d6+2) slashing|options:area-damage] damage\n\n2 (2d6+10) slashing|options:area-damage] damage\n\n3 (3d6+13) slashing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The charau-ka engage in a coordinated melee attack against each enemy in a 5-foot emanation (basic Reflex DC 23 save). The damage depends on the number of actions.\n\n1 1d6+2 slashing damage\n\n2 2d6+10 slashing damage\n\n3 3d6+13 slashing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Shrieking Charge",
-            "text": "With raucous shrieks, the shrieker crew charges forward. The troop Strides twice. If they move at least 10 feet, the crew deals (3d6+13) slashing|options:area-damage] damage (basic Reflex DC 23 save) to each enemy in a area at the end of the crew's movement. Each target who fails this save is also Deafened for 1 round.",
+            "text": "With raucous shrieks, the shrieker crew charges forward. The troop Strides twice. If they move at least 10 feet, the crew deals 3d6+13 slashing damage (basic Reflex DC 23 save) to each enemy in a 5-foot emanation at the end of the crew's movement. Each target who fails this save is also [Deafened](/condition/deafened-player-core) for 1 round.",
             "traits": [
               "auditory"
             ],
@@ -1331,7 +1331,7 @@
           },
           {
             "name": "Storm of Daggers",
-            "text": "The charau-ka hurl daggers as a ranged attack in the form of a barrage. This barrage is a area within 30 feet that deals 5d4 piercing|options:area-damage] damage (basic Reflex DC 23 save). The range increases by 15 feet if the charau-ka are above their targets. When the shrieker crew is reduced to 2 segments, this area decreases to a area.",
+            "text": "The charau-ka hurl daggers as a ranged attack in the form of a barrage. This barrage is a 10-foot burst within 30 feet that deals 5d4 piercing damage (basic Reflex DC 23 save). The range increases by 15 feet if the charau-ka are above their targets. When the shrieker crew is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           }
@@ -1452,7 +1452,7 @@
         "defensive": [
           {
             "name": "Reactive Sweep",
-            "text": "**Trigger** An enemy within a area uses a manipulate action or a move action, makes a ranged attack, or leaves a square in the area during a move action it's using\n\n---\n\n**Effect** The clockwork infantry lashes out with their halberds. The triggering enemy takes (2d10+10) untyped|options:area-damage] damage (basic Reflex DC 27 save). If the enemy critically fails this saving throw and the trigger was a manipulate action, the damage disrupts that action.",
+            "text": "**Trigger** An enemy within a 10-foot emanation uses a manipulate action or a move action, makes a ranged attack, or leaves a square in the area during a move action it's using\n\n---\n\n**Effect** The clockwork infantry lashes out with their halberds. The triggering enemy takes 2d10+10 untyped damage (basic Reflex DC 27 save). If the enemy critically fails this saving throw and the trigger was a manipulate action, the damage disrupts that action.",
             "traits": [],
             "actions": "reaction"
           },
@@ -1470,7 +1470,7 @@
         "offensive": [
           {
             "name": "Halberd Sweep",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The clockwork infantry engages in a coordinated melee attack against each enemy in a area, with a basic Reflex DC 27 save. The damage depends on the number of actions.\n\n1 (1d10+2) untyped|options:area-damage] damage\n\n2 (2d10+10) untyped|options:area-damage] damage\n\n3 (3d10+12) untyped|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The clockwork infantry engages in a coordinated melee attack against each enemy in a 10-foot emanation, with a basic Reflex DC 27 save. The damage depends on the number of actions.\n\n1 1d10+2 untyped damage\n\n2 2d10+10 untyped damage\n\n3 3d10+12 untyped damage",
             "traits": [],
             "actions": "one"
           },
@@ -1614,19 +1614,19 @@
         "offensive": [
           {
             "name": "Fire Crossbows",
-            "text": "The clockwork runners reload the crossbows built onto their backs, then launch a ranged attack in the form of a volley. This volley is a area within 120 feet that deals 2d8 piercing|options:area-damage] damage (basic Reflex DC 19 save). When the clockwork runners are reduced to 2 segments, this area decreases to a area.",
+            "text": "The clockwork runners reload the crossbows built onto their backs, then launch a ranged attack in the form of a volley. This volley is a 10-foot burst within 120 feet that deals 2d8 piercing damage (basic Reflex DC 19 save). When the clockwork runners are reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Scratch and Bite",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The clockwork runners engage in a pack attack against each enemy in a area, with a basic Reflex DC 19 save. The damage depends on the number of actions.\n\n1 1d8 untyped|options:area-damage] damage\n\n2 (2d8+3) untyped|options:area-damage] damage\n\n3 (2d8+7) untyped|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The clockwork runners engage in a pack attack against each enemy in a 5-foot emanation, with a basic Reflex DC 19 save. The damage depends on the number of actions.\n\n1 1d8 untyped damage\n\n2 2d8+3 untyped damage\n\n3 2d8+7 untyped damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "War Pounce",
-            "text": "**Frequency** once per round\n\n---\n\n**Effect** The clockwork runner pack Strides, ignoring difficult terrain (but not greater difficult terrain). At the end of this movement, each enemy in a area takes 1d8 untyped|options:area-damage] damage (basic Reflex DC 19 save).",
+            "text": "**Frequency** once per round\n\n---\n\n**Effect** The clockwork runner pack Strides, ignoring difficult terrain (but not greater difficult terrain). At the end of this movement, each enemy in a 5-foot emanation takes 1d8 untyped damage (basic Reflex DC 19 save).",
             "traits": [],
             "actions": "one"
           }
@@ -1755,7 +1755,7 @@
         "offensive": [
           {
             "name": "Jaws and Claws",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The pack makes a melee attack against each enemy in a area (basic Reflex DC 22 save). The damage depends on the number of actions.\n\n1 1d6 piercing,1d4[persistent,bleed]|options:area-damage] damage\n\n2 (2d6+4) piercing,2d4[persistent,bleed]|options:area-damage] damage\n\n3 (3d6+6) piercing,2d4[persistent,bleed]|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The pack makes a melee attack against each enemy in a 5-foot emanation (basic Reflex DC 22 save). The damage depends on the number of actions.\n\n1 1d6 piercing, 1d4 persistent bleed damage\n\n2 2d6+4 piercing, 2d4 persistent bleed damage\n\n3 3d6+6 piercing, 2d4 persistent bleed damage",
             "traits": [],
             "actions": "one"
           },
@@ -1766,7 +1766,7 @@
           },
           {
             "name": "Surround Prey",
-            "text": "**Requirements** The deinonychus pack has at least 3 segments\n\n---\n\n**Effect** The pack Strides, positioning its segments so that at least two of them are adjacent to the same creature, and lashes out with its talons. That creature must succeed at a Reflex DC 22 save or take 2d4 persistent,bleed] damage.",
+            "text": "**Requirements** The deinonychus pack has at least 3 segments\n\n---\n\n**Effect** The pack Strides, positioning its segments so that at least two of them are adjacent to the same creature, and lashes out with its talons. That creature must succeed at a Reflex DC 22 save or take 2d4 persistent bleed damage.",
             "traits": [],
             "actions": "two"
           }
@@ -1901,7 +1901,7 @@
         "offensive": [
           {
             "name": "Acid Rain",
-            "text": "The dezullon thicket discharges a cascade of acidic digestive juices as a ranged attack, dealing 6d6 acid|options:area-damage,inflicts:amnesia-venom] damage in a area within 30 feet (basic Reflex DC 33 save) and exposing any creature struck to amnesia venom. When the thicket is reduced to 2 segments, this area decreases to a area.",
+            "text": "The dezullon thicket discharges a cascade of acidic digestive juices as a ranged attack, dealing 6d6 acid damage in a 10-foot burst within 30 feet (basic Reflex DC 33 save) and exposing any creature struck to amnesia venom. When the thicket is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
@@ -1915,7 +1915,7 @@
           },
           {
             "name": "Constrict",
-            "text": "(1d10+6) bludgeoning], basic Fortitude DC 36\n\n---\n\nConstrict",
+            "text": "1d10+6 bludgeoning, basic Fortitude DC 36\n\n---\n\nConstrict",
             "traits": [],
             "actions": "one"
           },
@@ -1929,7 +1929,7 @@
           },
           {
             "name": "Thrashing Vines",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The thicket makes a melee attack against each enemy within a area (basic Reflex DC 33 save). The damage depends on the number of actions.\n\n1 1d8+3 bludgeoning plus 1d6 acid\n\n2 2d8+11 bludgeoning plus 2d6 acid and Mass Improved Grab\n\n3 3d8+12 bludgeoning plus 3d6 acid and Mass Improved Grab",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The thicket makes a melee attack against each enemy within a 5-foot emanation (basic Reflex DC 33 save). The damage depends on the number of actions.\n\n1 1d8+3 bludgeoning plus 1d6 acid\n\n2 2d8+11 bludgeoning plus 2d6 acid and Mass Improved Grab\n\n3 3d8+12 bludgeoning plus 3d6 acid and Mass Improved Grab",
             "traits": [],
             "actions": "one"
           },
@@ -2065,13 +2065,13 @@
         "offensive": [
           {
             "name": "Draconic Onslaught",
-            "text": "1 to 3\n\n---\n\nThe drakes frenzy, lashing out with fangs and tails. Each enemy in a area attempts a basic Reflex DC 30 save. The damage depends on the number of actions.\n\n1 2d8 untyped|options:area-damage] damage\n\n2 (3d8+10) untyped|options:area-damage] damage\n\n3 (4d8+14) untyped|options:area-damage] damage",
+            "text": "1 to 3\n\n---\n\nThe drakes frenzy, lashing out with fangs and tails. Each enemy in a 10-foot emanation attempts a basic Reflex DC 30 save. The damage depends on the number of actions.\n\n1 2d8 untyped damage\n\n2 3d8+10 untyped damage\n\n3 4d8+14 untyped damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Drake Breath",
-            "text": "Certain drakes within the flight bring their breath weapon (or similar ability) to bear, exhaling energy that explodes in a area within 120 feet. This explosion deals 5d6 untyped|options:area-damage] damage (acid, cold, fire, or poison damage); the ability gains the corresponding trait. The drake flight can't choose the same damage type until it uses this ability with a different damage type. When the drakes are reduced to 2 segments, this area decreases to a area.",
+            "text": "Certain drakes within the flight bring their breath weapon (or similar ability) to bear, exhaling energy that explodes in a 15-foot burst within 120 feet. This explosion deals 5d6 untyped damage (acid, cold, fire, or poison damage); the ability gains the corresponding trait. The drake flight can't choose the same damage type until it uses this ability with a different damage type. When the drakes are reduced to 2 segments, this area decreases to a 10-foot burst.",
             "traits": [
               "primal"
             ],
@@ -2204,19 +2204,19 @@
         "offensive": [
           {
             "name": "Bola Hurl",
-            "text": "The dromaars draw bolas and toss them in a area. Each creature in this area takes 3d6 nonlethal bludgeoning damage (basic Reflex DC 21 save). A creature who fails this saving throw is also knocked Prone.",
+            "text": "The dromaars draw bolas and toss them in a 15-foot cone. Each creature in this area takes 3d6 nonlethal bludgeoning damage (basic Reflex DC 21 save). A creature who fails this saving throw is also knocked [Prone](/condition/prone-player-core).",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Charge the Fallen",
-            "text": "The dromaar company Strides up to twice, sweeping with their axes. They deal (2d8+5) slashing|options:area-damage] damage (basic Reflex DC 21 save) to each enemy in a area at the end of their movement. This damage increases by 5 if the target is Prone.",
+            "text": "The dromaar company Strides up to twice, sweeping with their axes. They deal 2d8+5 slashing damage (basic Reflex DC 21 save) to each enemy in a 5-foot emanation at the end of their movement. This damage increases by 5 if the target is Prone.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Disciplined Strikes",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The dromaars coordinate melee attacks with their axes against all enemies in a area (basic Reflex DC 21 save). The damage depends on the number of actions.\n\n1 1d8 slashing|options:area-damage] damage\n\n2 (2d8+5) slashing|options:area-damage] damage\n\n3 (2d8+10) slashing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The dromaars coordinate melee attacks with their axes against all enemies in a 5-foot emanation (basic Reflex DC 21 save). The damage depends on the number of actions.\n\n1 1d8 slashing damage\n\n2 2d8+5 slashing damage\n\n3 2d8+10 slashing damage",
             "traits": [],
             "actions": "one"
           }
@@ -2354,7 +2354,7 @@
         "offensive": [
           {
             "name": "Call Down the Storm",
-            "text": "The druids summon wind and lightning against all creatures in a area within 80 feet. This storm deals 3d10 electricity|options:area-damage] damage (basic Reflex DC 29 save). A creature who fails the save is also pushed 5 feet away from the druid circle. When the druid circle is reduced to 2 segments, this area decreases to a area.",
+            "text": "The druids summon wind and lightning against all creatures in a 10-foot burst within 80 feet. This storm deals 3d10 electricity damage (basic Reflex DC 29 save). A creature who fails the save is also pushed 5 feet away from the druid circle. When the druid circle is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [
               "air",
               "electricity",
@@ -2364,7 +2364,7 @@
           },
           {
             "name": "Sickle and Staff",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The druids strike out in a coordinated melee attack against all enemies in a area with a basic Reflex DC 29 save. The damage dealt depends on the number of actions.\n\n1 2d6 untyped|options:area-damage] damage\n\n2 (4d6+9) untyped|options:area-damage] damage\n\n3 (5d6+13) untyped|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The druids strike out in a coordinated melee attack against all enemies in a 5-foot emanation with a basic Reflex DC 29 save. The damage dealt depends on the number of actions.\n\n1 2d6 untyped damage\n\n2 4d6+9 untyped damage\n\n3 5d6+13 untyped damage",
             "traits": [],
             "actions": "one"
           },
@@ -2495,19 +2495,19 @@
         "offensive": [
           {
             "name": "Bolts from the Blue",
-            "text": "The dwarven longshots reload their crossbows, then launch a ranged attack in the form of a volley. This volley is a area within 120 feet that deals 6d6 piercing|options:area-damage] damage with a basic Reflex DC 26 saving throw. When the dwarven longshot squad is reduced to 2 segments, this area decreases to a area.",
+            "text": "The dwarven longshots reload their crossbows, then launch a ranged attack in the form of a volley. This volley is a 15-foot burst within 120 feet that deals 6d6 piercing damage with a basic Reflex DC 26 saving throw. When the dwarven longshot squad is reduced to 2 segments, this area decreases to a 10-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Brandish Bayonets!",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** Using blades attached to their crossbows, the dwarven longshots engages in a coordinated melee attack against enemies in a area, with a basic Reflex DC 26 save. The damage depends on the number of actions.\n\n1 (1d8+2) piercing|options:area-damage] damage\n\n2 (2d8+11) piercing|options:area-damage] damage\n\n3 (3d8+13) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** Using blades attached to their crossbows, the dwarven longshots engages in a coordinated melee attack against enemies in a 5-foot emanation, with a basic Reflex DC 26 save. The damage depends on the number of actions.\n\n1 1d8+2 piercing damage\n\n2 2d8+11 piercing damage\n\n3 3d8+13 piercing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Hampering Fusillade",
-            "text": "The dwarven longshots fire dozens of bolts in quick succession to slow down advancing enemies. Each creature in a area within 120 feet must attempt a Fortitude DC 26 saving throw. On a failure, a creature takes a –10-foot circumstance penalty to its Speed for 1 minute. Spending an [Interact](/action/interact-player-core) action to remove the bolts ends this penalty.\n\nEffect: Hampering Fusillade",
+            "text": "The dwarven longshots fire dozens of bolts in quick succession to slow down advancing enemies. Each creature in a 30-foot burst within 120 feet must attempt a Fortitude DC 26 saving throw. On a failure, a creature takes a –10-foot circumstance penalty to its Speed for 1 minute. Spending an [Interact](/action/interact-player-core) action to remove the bolts ends this penalty.\n\nEffect: Hampering Fusillade",
             "traits": [],
             "actions": "two"
           }
@@ -2633,19 +2633,19 @@
         "offensive": [
           {
             "name": "Brandish Bayonets!",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** Using blades attached to their rifles, the dwarven longshots engages in a coordinated melee attack against enemies in a area, with a basic Reflex DC 26 save. The damage depends on the number of actions.\n\n1 (1d8+2) piercing|options:area-damage] damage\n\n2 (2d8+11) piercing|options:area-damage] damage\n\n3 (3d8+13) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** Using blades attached to their rifles, the dwarven longshots engages in a coordinated melee attack against enemies in a 5-foot emanation, with a basic Reflex DC 26 save. The damage depends on the number of actions.\n\n1 1d8+2 piercing damage\n\n2 2d8+11 piercing damage\n\n3 3d8+13 piercing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Bullet Smog",
-            "text": "The dwarven longshots fire their rifles in rapid succession to create a cloud of smoke within 120 feet. This cloud is a area and lasts for 1 minute or until it is dispersed by a strong wind, whichever comes first. All creatures within the cloud become Concealed, and all creatures outside the cloud become concealed to creatures within it.",
+            "text": "The dwarven longshots fire their rifles in rapid succession to create a cloud of smoke within 120 feet. This cloud is a 20-foot burst and lasts for 1 minute or until it is dispersed by a strong wind, whichever comes first. All creatures within the cloud become [Concealed](/condition/concealed-player-core), and all creatures outside the cloud become concealed to creatures within it.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Bullets from the Blue",
-            "text": "The dwarven longshots reload their rifles, then launch a ranged attack in the form of a volley. This volley is a area within 120 feet that deals 6d6 untyped|options:area-damage] damage with a basic Reflex DC 26 saving throw. When the dwarven longshot squad is reduced to 2 segments, this area decreases to a area.",
+            "text": "The dwarven longshots reload their rifles, then launch a ranged attack in the form of a volley. This volley is a 15-foot burst within 120 feet that deals 6d6 untyped damage with a basic Reflex DC 26 saving throw. When the dwarven longshot squad is reduced to 2 segments, this area decreases to a 10-foot burst.",
             "traits": [],
             "actions": "two"
           }
@@ -2774,13 +2774,13 @@
         "offensive": [
           {
             "name": "Bolt Salvo",
-            "text": "The first-class infantry draws, loads, and shoots a salvo from their crossbows. The salvo is a area within 120 feet that deals 4d8 piercing|options:area-damage] damage (basic Reflex DC 30 save). When the first-class infantry is reduced to 2 segments, this area decreases to a area.",
+            "text": "The first-class infantry draws, loads, and shoots a salvo from their crossbows. The salvo is a 10-foot burst within 120 feet that deals 4d8 piercing damage (basic Reflex DC 30 save). When the first-class infantry is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "three"
           },
           {
             "name": "Clash of Steel",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The first-class infantry attacks each enemy in a area, with a basic Reflex DC 29 save. The damage depends on the number of actions.\n\n1 (2d6+1) slashing|options:area-damage] damage\n\n2 (4d6+10) slashing|options:area-damage] damage\n\n3 (4d6+18) slashing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The first-class infantry attacks each enemy in a 5-foot emanation, with a basic Reflex DC 29 save. The damage depends on the number of actions.\n\n1 2d6+1 slashing damage\n\n2 4d6+10 slashing damage\n\n3 4d6+18 slashing damage",
             "traits": [],
             "actions": "one"
           },
@@ -2792,7 +2792,7 @@
           },
           {
             "name": "First-class Charge",
-            "text": "The first-class infantry rushes forward with a hunger for battle. They Stride up to twice their Speed. At the end of their movement, each enemy within a area takes (2d6+5) slashing|options:area-damage] damage, with a basic Reflex DC 30 save.",
+            "text": "The first-class infantry rushes forward with a hunger for battle. They Stride up to twice their Speed. At the end of their movement, each enemy within a 5-foot emanation takes 2d6+5 slashing damage, with a basic Reflex DC 30 save.",
             "traits": [],
             "actions": "two"
           }
@@ -2909,7 +2909,7 @@
         "defensive": [
           {
             "name": "Brutal Retaliation",
-            "text": "**Trigger** The fleshwarp amalgam loses a segment due to passing a Hit Point threshold\n\n---\n\n**Effect** The fleshwarp amalgam lashes out in retaliation. Each enemy in a area takes 2d10+6 untyped|options:area-damage] damage (basic Reflex DC 23). A creature who fails the save is also pushed 5 feet away from the amalgam.",
+            "text": "**Trigger** The fleshwarp amalgam loses a segment due to passing a Hit Point threshold\n\n---\n\n**Effect** The fleshwarp amalgam lashes out in retaliation. Each enemy in a 5-foot emanation takes 2d10+6 untyped damage (basic Reflex DC 23). A creature who fails the save is also pushed 5 feet away from the amalgam.",
             "traits": [],
             "actions": "reaction"
           },
@@ -2927,7 +2927,7 @@
         "offensive": [
           {
             "name": "Acid Spray",
-            "text": "The fleshwarp amalgam sprays acid from their various orifices, combining the streams into a powerful spray. This acid spray is a area that deals 3d8 acid|options:area-damage|options:area-effect] damage (basic Reflex DC 23 save) within 60 feet. A creature who critically fails their saving throw takes 1d8 persistent,acid|options:area-damage] damage. When the troop is reduced to 2 segments, this area decreases to a area.",
+            "text": "The fleshwarp amalgam sprays acid from their various orifices, combining the streams into a powerful spray. This acid spray is a 10-foot burst that deals 3d8 acid damage (basic Reflex DC 23 save) within 60 feet. A creature who critically fails their saving throw takes 1d8 persistent acid damage. When the troop is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [
               "acid"
             ],
@@ -2935,7 +2935,7 @@
           },
           {
             "name": "Frenzy of Tentacles and Claws",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The fleshwarps make wild melee attacks against each enemy in a area (basic Reflex DC 23 save). The damage depends on the number of actions.\n\n1 1d10 untyped|options:area-damage] damage\n\n2 (2d10+6) untyped|options:area-damage] damage\n\n3 (2d10+11) untyped|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The fleshwarps make wild melee attacks against each enemy in a 5-foot emanation (basic Reflex DC 23 save). The damage depends on the number of actions.\n\n1 1d10 untyped damage\n\n2 2d10+6 untyped damage\n\n3 2d10+11 untyped damage",
             "traits": [],
             "actions": "one"
           },
@@ -3059,7 +3059,7 @@
         "defensive": [
           {
             "name": "Death From Above",
-            "text": "**Trigger** The gargoyle wing is Flying, and a creature moves into an adjacent square below it\n\n---\n\n**Effect** The gargoyle wing swoops down with their talons. The triggering creature takes (2d8+9) slashing] damage (basic Reflex DC 28 save).",
+            "text": "**Trigger** The gargoyle wing is Flying, and a creature moves into an adjacent square below it\n\n---\n\n**Effect** The gargoyle wing swoops down with their talons. The triggering creature takes 2d8+9 slashing damage (basic Reflex DC 28 save).",
             "traits": [
               "attack"
             ],
@@ -3079,13 +3079,13 @@
         "offensive": [
           {
             "name": "Catch and Release",
-            "text": "The gargoyle wing attempts an Athletics checks to Grapple, comparing the result to the Fortitude DC of a number of Large or smaller creatures in a area equal to the gargoyle wing's remaining number of segments, then Flies up to 40 feet, bringing any successfully Grabbed or [Restrained](/condition/restrained-player-core) creatures along, and Releases them.",
+            "text": "The gargoyle wing attempts an Athletics checks to Grapple, comparing the result to the Fortitude DC of a number of Large or smaller creatures in a 5-foot emanation equal to the gargoyle wing's remaining number of segments, then Flies up to 40 feet, bringing any successfully [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) creatures along, and Releases them.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Raking Swoop",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The gargoyle wing rips and tears with their stony talons at each enemy in a area (basic Reflex DC 28 save). The damage dealt depends on the number of actions.\n\n1 (1d8+2) slashing|options:area-damage] damage\n\n2 (2d8+9) slashing|options:area-damage] damage\n\n3 (3d8+11) slashing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The gargoyle wing rips and tears with their stony talons at each enemy in a 5-foot emanation (basic Reflex DC 28 save). The damage dealt depends on the number of actions.\n\n1 1d8+2 slashing damage\n\n2 2d8+9 slashing damage\n\n3 3d8+11 slashing damage",
             "traits": [],
             "actions": "one"
           }
@@ -3208,7 +3208,7 @@
         "offensive": [
           {
             "name": "Giant Ant Venom",
-            "text": "**Saving Throw** Fortitude DC 24\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d8 poison] damage and Enfeebled 1 (1 round)\n\n**Stage 2** 3d6 poison] damage and Enfeebled 2 (1 round)\n\n**Stage 3** 2d10 poison] damage and Enfeebled 3 (1 round)",
+            "text": "**Saving Throw** Fortitude DC 24\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d8 poison damage and [Enfeebled 1](/condition/enfeebled-player-core) (1 round)\n\n**Stage 2** 3d6 poison damage and Enfeebled 2 (1 round)\n\n**Stage 3** 2d10 poison damage and Enfeebled 3 (1 round)",
             "traits": []
           },
           {
@@ -3225,13 +3225,13 @@
           },
           {
             "name": "Mandible Frenzy",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The army makes a savage bite attack against each enemy in a area (basic Reflex DC 22 save). The damage dealt depends on the number of actions.\n\n1 1d8 slashing|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles\n\n2 (2d8+6) slashing|options:area-damage,grasping-mandibles] damage plus Grasping Mandibles\n\n3 (2d8+11) slashing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The army makes a savage bite attack against each enemy in a 5-foot emanation (basic Reflex DC 22 save). The damage dealt depends on the number of actions.\n\n1 1d8 slashing damage plus Grasping Mandibles\n\n2 2d8+6 slashing damage plus Grasping Mandibles\n\n3 2d8+11 slashing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Overwhelm",
-            "text": "The giant ant army swarms over a Large or larger creature that it has Grabbed, pinning the creature in place and causing it to become Restrained until the start of the giant ant army's next turn or until it Escapes. A creature that begins its turn restrained by the army is repeatedly stung by the clinging ants, automatically taking 2d6 piercing] damage and suffering the effects of giant ant venom.",
+            "text": "The giant ant army swarms over a Large or larger creature that it has Grabbed, pinning the creature in place and causing it to become Restrained until the start of the giant ant army's next turn or until it Escapes. A creature that begins its turn restrained by the army is repeatedly stung by the clinging ants, automatically taking 2d6 piercing damage and suffering the effects of giant ant venom.",
             "traits": [],
             "actions": "two"
           }
@@ -3354,7 +3354,7 @@
         "offensive": [
           {
             "name": "Arcane Explosion",
-            "text": "Aiming the gnome cannons toward the enemy, loading them, and firing them requires the troop's full attention. The cannons fire a area of bright magic within 200 feet that deals (2d12+2) force|options:area-damage] damage (basic Reflex DC 22 save). A creature that fails their save is also Dazzled for 1 round; this is a light and visual effect. The area of the explosion seems to twist and ripple for 1 minute afterward. A creature that attempts to move through the space must succeed at a Will DC 22 save or treat the area as difficult terrain; this is an illusion and visual effect.",
+            "text": "Aiming the gnome cannons toward the enemy, loading them, and firing them requires the troop's full attention. The cannons fire a 15-foot burst of bright magic within 200 feet that deals 2d12+2 force damage (basic Reflex DC 22 save). A creature that fails their save is also [Dazzled](/condition/dazzled-player-core) for 1 round; this is a light and visual effect. The area of the explosion seems to twist and ripple for 1 minute afterward. A creature that attempts to move through the space must succeed at a Will DC 22 save or treat the area as difficult terrain; this is an illusion and visual effect.",
             "traits": [
               "arcane",
               "force"
@@ -3363,13 +3363,13 @@
           },
           {
             "name": "Cannon Vent",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The gnome engineers vent the cannons' energy in a blast that hits all creatures in a area (basic Reflex DC 22 save). The damage depends on the number of actions.\n\n1 (1d6+2) fire|options:area-damage] damage\n\n2 (2d6+8) fire|options:area-damage] damage\n\n3 (3d6+10) fire|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The gnome engineers vent the cannons' energy in a blast that hits all creatures in a 5-foot emanation (basic Reflex DC 22 save). The damage depends on the number of actions.\n\n1 1d6+2 fire damage\n\n2 2d6+8 fire damage\n\n3 3d6+10 fire damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Direct Hit",
-            "text": "The gnomes fire a more mundane round from one of their cannons at a single target within 60 feet, who takes (3d10+6) bludgeoning] damage (basic Reflex DC 22 save). On a failed save, the creature is also pushed 5 feet away from the troop.",
+            "text": "The gnomes fire a more mundane round from one of their cannons at a single target within 60 feet, who takes 3d10+6 bludgeoning damage (basic Reflex DC 22 save). On a failed save, the creature is also pushed 5 feet away from the troop.",
             "traits": [],
             "actions": "two"
           }
@@ -3497,13 +3497,13 @@
         "offensive": [
           {
             "name": "Dogpile",
-            "text": "1 to 3\n\n---\n\nThe goblin rabble engage in as coordinated an attack as they can with their dogslicers, attacking each enemy in a area (basic Reflex DC 18 save). The damage depends on the number of actions. A creature who critically fails their save is also knocked Prone.\n\n1 1d6 slashing|options:area-damage] damage\n\n2 (2d6+4) slashing|options:area-damage] damage\n\n3 (2d6+7) slashing|options:area-damage] damage",
+            "text": "1 to 3\n\n---\n\nThe goblin rabble engage in as coordinated an attack as they can with their dogslicers, attacking each enemy in a 5-foot emanation (basic Reflex DC 18 save). The damage depends on the number of actions. A creature who critically fails their save is also knocked [Prone](/condition/prone-player-core).\n\n1 1d6 slashing damage\n\n2 2d6+4 slashing damage\n\n3 2d6+7 slashing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Hobble Pursuit",
-            "text": "The goblin rabble hamstring and hobble as many enemies as possible. Each enemy in a area must attempt a Reflex DC 18 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes a –5-foot circumstance penalty to their Speeds.\n\n**Failure** The creature takes a –10-foot circumstance penalty to their Speeds and is Slowed 1.\n\n**Critical Failure** The creature takes a –15-foot circumstance penalty to their Speeds and is slowed 1.\n\nEffect: Hobble Pursuit",
+            "text": "The goblin rabble hamstring and hobble as many enemies as possible. Each enemy in a 5-foot emanation must attempt a Reflex DC 18 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes a –5-foot circumstance penalty to their Speeds.\n\n**Failure** The creature takes a –10-foot circumstance penalty to their Speeds and is [Slowed 1](/condition/slowed-player-core).\n\n**Critical Failure** The creature takes a –15-foot circumstance penalty to their Speeds and is slowed 1.\n\nEffect: Hobble Pursuit",
             "traits": [],
             "actions": "two"
           },
@@ -3651,7 +3651,7 @@
           },
           {
             "name": "False Cuts",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The halflings feint with their cards and then lash out with their daggers in a coordinated melee attack against enemies in a area, with a basic Reflex DC 23 save. The damage depends on the number of actions.\n\n1 1d4 piercing,1d4[precision]|options:area-damage] precision damage\n\n2 (2d4+7) piercing,2d4[precision]|options:area-damage] precision damage\n\n3 (3d4+10) piercing,2d4[precision]|options:area-damage] precision damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The halflings feint with their cards and then lash out with their daggers in a coordinated melee attack against enemies in a 5-foot emanation, with a basic Reflex DC 23 save. The damage depends on the number of actions.\n\n1 1d4 piercing, 1d4 precision precision damage\n\n2 2d4+7 piercing, 2d4 precision precision damage\n\n3 3d4+10 piercing, 2d4 precision precision damage",
             "traits": [],
             "actions": "one"
           },
@@ -3805,7 +3805,7 @@
           },
           {
             "name": "Infernal Mauling",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The pack tears into each enemy in a area with their flaming jaws (basic Reflex DC 23 save). The damage dealt depends on the number of actions.\n\n1 1d4 piercing damage plus 1d6 fire damage\n\n2 1d8+7 piercing damage plus 2d6 fire damage\n\n3 2d8+7 piercing damage plus 2d6 fire damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The pack tears into each enemy in a 5-foot emanation with their flaming jaws (basic Reflex DC 23 save). The damage dealt depends on the number of actions.\n\n1 1d4 piercing damage plus 1d6 fire damage\n\n2 1d8+7 piercing damage plus 2d6 fire damage\n\n3 2d8+7 piercing damage plus 2d6 fire damage",
             "traits": [
               "magical",
               "unholy"
@@ -3957,19 +3957,19 @@
         "offensive": [
           {
             "name": "Disciplined Strikes",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The hobgoblins engage in a coordinated melee attack against each enemy in a area, with a basic Reflex DC 25 save. The damage depends on the number of actions.\n\n1 (1d8+2) slashing|options:area-damage] damage\n\n2 (2d8+9) slashing|options:area-damage] damage\n\n3 (3d8+11) slashing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The hobgoblins engage in a coordinated melee attack against each enemy in a 5-foot emanation, with a basic Reflex DC 25 save. The damage depends on the number of actions.\n\n1 1d8+2 slashing damage\n\n2 2d8+9 slashing damage\n\n3 3d8+11 slashing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Overrun",
-            "text": "The hobgoblin veteran regiment marches inexorably forward, crushing enemies in their path. The regiment Strides up to double its Speed and can move through the spaces of Large or smaller creatures, dealing (2d8+9) slashing] damage (basic Reflex DC 25 save) to each creature whose space it enters. The regiment can attempt to Overrun the same creature only once in a single use of Overrun. When the regiment is reduced to 2 segments, the damage decreases to (1d8+2) slashing] damage.",
+            "text": "The hobgoblin veteran regiment marches inexorably forward, crushing enemies in their path. The regiment Strides up to double its Speed and can move through the spaces of Large or smaller creatures, dealing 2d8+9 slashing damage (basic Reflex DC 25 save) to each creature whose space it enters. The regiment can attempt to Overrun the same creature only once in a single use of Overrun. When the regiment is reduced to 2 segments, the damage decreases to 1d8+2 slashing damage.",
             "traits": [],
             "actions": "three"
           },
           {
             "name": "Shortbow Volley",
-            "text": "The hobgoblins draw their shortbows, then launch a ranged attack in the form of a volley. This volley is a area within 60 feet that deals 4d6 piercing|options:area-damage] damage with a basic Reflex DC 25 save. When the regiment is reduced to 2 segments, this area decreases to a area.",
+            "text": "The hobgoblins draw their shortbows, then launch a ranged attack in the form of a volley. This volley is a 10-foot burst within 60 feet that deals 4d6 piercing damage with a basic Reflex DC 25 save. When the regiment is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           }
@@ -4102,7 +4102,7 @@
           },
           {
             "name": "Hasty Traps",
-            "text": "The kobolds hastily prepare a handful of rudimentary traps in their vicinity until the beginning of their next turn. The next creature who moves adjacent to the trap squad triggers a trap and must attempt a Reflex DC 18 save. On a failure, the creature takes 1d4 persistent,bleed] damage (2d4 persistent,bleed] damage on a critical failure). A creature taking persistent bleed damage from Hasty Traps takes a –5-foot enhancement penalty to its Speed. This occurs to as many creatures as the kobold trap squad has segments when it performed the action, but a single creature can trigger only one trap per turn.\n\nEffect: Hasty Traps",
+            "text": "The kobolds hastily prepare a handful of rudimentary traps in their vicinity until the beginning of their next turn. The next creature who moves adjacent to the trap squad triggers a trap and must attempt a Reflex DC 18 save. On a failure, the creature takes 1d4 persistent bleed damage (2d4 persistent bleed damage on a critical failure). A creature taking persistent bleed damage from Hasty Traps takes a –5-foot enhancement penalty to its Speed. This occurs to as many creatures as the kobold trap squad has segments when it performed the action, but a single creature can trigger only one trap per turn.\n\nEffect: Hasty Traps",
             "traits": [
               "manipulate"
             ],
@@ -4110,13 +4110,13 @@
           },
           {
             "name": "Sling Barrage",
-            "text": "The kobolds draw their slings, then launch a ranged barrage of stones. This barrage is a area within 50 feet that deals 3d4 bludgeoning|options:area-damage] damage with a basic Reflex DC 18 save. When the squad is reduced to 2 segments, this area decreases to a area.",
+            "text": "The kobolds draw their slings, then launch a ranged barrage of stones. This barrage is a 10-foot burst within 50 feet that deals 3d4 bludgeoning damage with a basic Reflex DC 18 save. When the squad is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Spear Jabs",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The kobold trap squad engages in a coordinated melee attack against all enemies in a area, with a basic Reflex DC 18 save. The damage depends on the number of actions.\n\n1 1d6 piercing|options:area-damage] damage\n\n2 (2d6+4) piercing|options:area-damage] damage\n\n3 (2d6+7) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The kobold trap squad engages in a coordinated melee attack against all enemies in a 5-foot emanation, with a basic Reflex DC 18 save. The damage depends on the number of actions.\n\n1 1d6 piercing damage\n\n2 2d6+4 piercing damage\n\n3 2d6+7 piercing damage",
             "traits": [],
             "actions": "one"
           }
@@ -4272,13 +4272,13 @@
           },
           {
             "name": "Infected Jaws and Claws",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The leukodaemons unleash an onslaught of blows against each enemy in a area (basic Reflex DC 31 save). The damage depends on the number of actions.\n\n1 (1d10+3) untyped] damage plus daemonic pestilence\n\n2 (3d10+9) untyped] damage plus daemonic pestilence\n\n3 (4d10+12) untyped] damage plus daemonic pestilence",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The leukodaemons unleash an onslaught of blows against each enemy in a 10-foot emanation (basic Reflex DC 31 save). The damage depends on the number of actions.\n\n1 1d10+3 untyped damage plus daemonic pestilence\n\n2 3d10+9 untyped damage plus daemonic pestilence\n\n3 4d10+12 untyped damage plus daemonic pestilence",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Pestilent Wheeze",
-            "text": "The leukodaemons exhale a area of disease-ridden black flies that deal 5d8 piercing|options:area-damage] damage (basic Reflex DC 31 save). A creature that fails the save also becomes Sickened 1 (or Sickened 2 on a critical failure). When the leukodaemon plague is reduced to 2 segments, this area decreases to a area.",
+            "text": "The leukodaemons exhale a 30-foot cone of disease-ridden black flies that deal 5d8 piercing damage (basic Reflex DC 31 save). A creature that fails the save also becomes [Sickened 1](/condition/sickened-player-core) (or Sickened 2 on a critical failure). When the leukodaemon plague is reduced to 2 segments, this area decreases to a 20-foot cone.",
             "traits": [
               "divine",
               "unholy"
@@ -4465,7 +4465,7 @@
         "offensive": [
           {
             "name": "Siphoning Grip",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The lich legion touches all enemies within a area to drain their life (basic Reflex DC 37 save). The damage depends on the number of actions. For each action the lich legion uses, the legion gains 10 temporary Hit Points that last 1 minute.\n\n1 2d8 void|options:area-damage] damage\n\n2 (4d8+11) void|options:area-damage] damage\n\n3 (6d8+13) void|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The lich legion touches all enemies within a 5-foot emanation to drain their life (basic Reflex DC 37 save). The damage depends on the number of actions. For each action the lich legion uses, the legion gains 10 temporary Hit Points that last 1 minute.\n\n1 2d8 void damage\n\n2 4d8+11 void damage\n\n3 6d8+13 void damage",
             "traits": [],
             "actions": "one"
           },
@@ -4601,13 +4601,13 @@
         "offensive": [
           {
             "name": "Crawling Stabs",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The mitflits thrust with their shortswords, coordinated with bites from their giant vermin mounts. All enemies in a area must attempt a basic Reflex DC 18 save. The damage depends on the number of actions.\n\n1 1d6 piercing|options:area-damage] damage\n\n2 (2d6+4) piercing|options:area-damage] damage\n\n3 (2d6+8) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The mitflits thrust with their shortswords, coordinated with bites from their giant vermin mounts. All enemies in a 5-foot emanation must attempt a basic Reflex DC 18 save. The damage depends on the number of actions.\n\n1 1d6 piercing damage\n\n2 2d6+4 piercing damage\n\n3 2d6+8 piercing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Leaping Charge",
-            "text": "The mitflit vermin cavalry Leaps up to 30 feet. If it moves at least 15 feet, the cavalry deals (2d6+4) piercing|options:area-damage] damage (basic Reflex DC 18 save) to each enemy within a area at the end of its movement.",
+            "text": "The mitflit vermin cavalry Leaps up to 30 feet. If it moves at least 15 feet, the cavalry deals 2d6+4 piercing damage (basic Reflex DC 18 save) to each enemy within a 5-foot emanation at the end of its movement.",
             "traits": [],
             "actions": "two"
           },
@@ -4752,19 +4752,19 @@
         "offensive": [
           {
             "name": "Coordinated Maneuvers",
-            "text": "The monk cadre is practiced at putting their foes off-balance. The monks choose Disarm, Grapple, Reposition, or Reposition and attempt an Athletics check to perform that action, comparing the result to the appropriate DC (Fortitude for Grapple and Reposition, Reflex for Disarm and Trip) of each enemy within a area. This can result in a different degree of success for each target.",
+            "text": "The monk cadre is practiced at putting their foes off-balance. The monks choose Disarm, Grapple, Reposition, or Reposition and attempt an Athletics check to perform that action, comparing the result to the appropriate DC (Fortitude for Grapple and Reposition, Reflex for Disarm and Trip) of each enemy within a 5-foot emanation. This can result in a different degree of success for each target.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Pummeling Punches",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The monks perform well-timed coordinated melee attacks against all enemies in a area, with a basic Reflex DC 31 save. The damage depends on the number of actions.\n\n1 2d8 bludgeoning|options:area-damage] damage\n\n2 (4d8+8) bludgeoning|options:area-damage] damage\n\n3 (4d8+16) bludgeoning|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The monks perform well-timed coordinated melee attacks against all enemies in a 5-foot emanation, with a basic Reflex DC 31 save. The damage depends on the number of actions.\n\n1 2d8 bludgeoning damage\n\n2 4d8+8 bludgeoning damage\n\n3 4d8+16 bludgeoning damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Qi Blast",
-            "text": "The monks channel their qi into an explosion of energy that affects all creatures in a area within 60 feet. This explosion deals 6d6 force|options:area-damage] damage with a basic Reflex DC 31 save. When the monk cadre is reduced to 2 segments, this area decreases to a area.",
+            "text": "The monks channel their qi into an explosion of energy that affects all creatures in a 10-foot burst within 60 feet. This explosion deals 6d6 force damage with a basic Reflex DC 31 save. When the monk cadre is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [
               "force",
               "occult"
@@ -4913,13 +4913,13 @@
         "offensive": [
           {
             "name": "Offal Rain",
-            "text": "The ofalth stampede hurls a tremendous amount of rotting trash, which rains down in a area within 60 feet. All creatures in the area take 4d10 bludgeoning|options:area-damage] damage (basic Reflex DC 33 save). Creatures that fail the saving throw are also exposed to wretched weeps. When the troop is reduced to 2 segments, the area decreases to a area.",
+            "text": "The ofalth stampede hurls a tremendous amount of rotting trash, which rains down in a 10-foot burst within 60 feet. All creatures in the area take 4d10 bludgeoning damage (basic Reflex DC 33 save). Creatures that fail the saving throw are also exposed to wretched weeps. When the troop is reduced to 2 segments, the area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Putrid Pummeling",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The ofalths pummel all enemies in a area, with a basic Reflex DC 33 save. The damage depends on the number of actions. Creatures that fail the saving throw are exposed to wretched weeps.\n\n1 (1d12+3) bludgeoning|options:area-damage] damage\n\n2 (3d12+7) bludgeoning|options:area-damage] damage\n\n3 (4d12+10) bludgeoning|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The ofalths pummel all enemies in a 10-foot emanation, with a basic Reflex DC 33 save. The damage depends on the number of actions. Creatures that fail the saving throw are exposed to wretched weeps.\n\n1 1d12+3 bludgeoning damage\n\n2 3d12+7 bludgeoning damage\n\n3 4d12+10 bludgeoning damage",
             "traits": [],
             "actions": "one"
           },
@@ -5049,7 +5049,7 @@
         "interaction": [
           {
             "name": "Clean Vulnerability",
-            "text": "Omoxes embody filth, and they find the concept of cleanliness abhorrent. An omox slime pool subjected to an effect that cleans them takes 4d6 mental] damage. They also take this damage the first time each round a creature damaged by an omox slime pool spends actions cleaning off the resultant filth.",
+            "text": "Omoxes embody filth, and they find the concept of cleanliness abhorrent. An omox slime pool subjected to an effect that cleans them takes 4d6 mental damage. They also take this damage the first time each round a creature damaged by an omox slime pool spends actions cleaning off the resultant filth.",
             "traits": []
           }
         ],
@@ -5081,7 +5081,7 @@
         "offensive": [
           {
             "name": "Slime Barrage",
-            "text": "The omoxes hurl balls of heavy slime in a area within 30 feet. All creatures in the area take 4d6 bludgeoning damage and 2d6 acid damage (basic Reflex DC 35 save). A creature that fails the save is mired in the slime, taking a –10-foot circumstance penalty to its Speeds for 1 minute or until it Escapes; on a critical failure, the creature is also Clumsy 1 for the same duration. When the slime pool is reduced to 2 segments, the area decreases to a area.",
+            "text": "The omoxes hurl balls of heavy slime in a 10-foot burst within 30 feet. All creatures in the area take 4d6 bludgeoning damage and 2d6 acid damage (basic Reflex DC 35 save). A creature that fails the save is mired in the slime, taking a –10-foot circumstance penalty to its Speeds for 1 minute or until it Escapes; on a critical failure, the creature is also [Clumsy 1](/condition/clumsy-player-core) for the same duration. When the slime pool is reduced to 2 segments, the area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
@@ -5093,7 +5093,7 @@
           },
           {
             "name": "Waves of Sludge",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The omoxes attack all enemies in a area with slimy tendrils (basic Reflex DC 35 save). A creature that critically fails this saving throw is also Grabbed by the slime pool. The damage depends on the number of actions.\n\n1 1d6+3 bludgeoning damage plus 1d6 acid damage\n\n2 3d6+12 bludgeoning damage plus 2d6 acid damage\n\n3 4d6+14 bludgeoning damage plus 3d6 acid damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The omoxes attack all enemies in a 5-foot emanation with slimy tendrils (basic Reflex DC 35 save). A creature that critically fails this saving throw is also Grabbed by the slime pool. The damage depends on the number of actions.\n\n1 1d6+3 bludgeoning damage plus 1d6 acid damage\n\n2 3d6+12 bludgeoning damage plus 2d6 acid damage\n\n3 4d6+14 bludgeoning damage plus 3d6 acid damage",
             "traits": [],
             "actions": "one"
           }
@@ -5218,7 +5218,7 @@
         "defensive": [
           {
             "name": "Ferocious Fall",
-            "text": "The orc raiding party is about to lose a segment due to passing a Hit Point threshold\n\n---\n\n**Effect** The dying orc raiders lash out as they fall. Each enemy in a area takes (1d6+2) piercing|options:area-damage] damage (basic Reflex DC 19 save); this occurs before the raiding party loses a segment.",
+            "text": "The orc raiding party is about to lose a segment due to passing a Hit Point threshold\n\n---\n\n**Effect** The dying orc raiders lash out as they fall. Each enemy in a 5-foot emanation takes 1d6+2 piercing damage (basic Reflex DC 19 save); this occurs before the raiding party loses a segment.",
             "traits": [],
             "actions": "reaction"
           },
@@ -5236,19 +5236,19 @@
         "offensive": [
           {
             "name": "Break Through",
-            "text": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** The orc raiders exploit a gap in enemy lines. The orc raiding party Strides twice; it can pass through spaces of Medium or smaller creatures but can't end its movement in them. All enemies whose spaces the orc raiding party passed through or were adjacent to at any point during their movement take (1d6+2) piercing] damage (basic Reflex DC 19 save). A creature who critically fails this save is also pushed 5 feet away from the orc raiding party. Break Through damages each creature only once.",
+            "text": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** The orc raiders exploit a gap in enemy lines. The orc raiding party Strides twice; it can pass through spaces of Medium or smaller creatures but can't end its movement in them. All enemies whose spaces the orc raiding party passed through or were adjacent to at any point during their movement take 1d6+2 piercing damage (basic Reflex DC 19 save). A creature who critically fails this save is also pushed 5 feet away from the orc raiding party. Break Through damages each creature only once.",
             "traits": [],
             "actions": "three"
           },
           {
             "name": "Iron Rain",
-            "text": "The orc raiders launch a multitude of javelins at foes in a deadly volley. This volley is a area within 30 feet that deals 3d6 piercing|options:area-damage] damage with a basic Reflex DC 19 save. When the orc raiding party is reduced to 2 or fewer segments, this area decreases to a area.",
+            "text": "The orc raiders launch a multitude of javelins at foes in a deadly volley. This volley is a 10-foot burst within 30 feet that deals 3d6 piercing damage with a basic Reflex DC 19 save. When the orc raiding party is reduced to 2 or fewer segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Rip Them Up",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The orc raiders batter all enemies in a area with coordinated knuckle dagger strikes (basic Reflex DC 19 save). The damage depends on the number of actions.\n\n1 (1d6+2) piercing|options:area-damage] damage\n\n2 (2d6+5) piercing|options:area-damage] damage\n\n3 (3d6+7) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The orc raiders batter all enemies in a 5-foot emanation with coordinated knuckle dagger strikes (basic Reflex DC 19 save). The damage depends on the number of actions.\n\n1 1d6+2 piercing damage\n\n2 2d6+5 piercing damage\n\n3 3d6+7 piercing damage",
             "traits": [],
             "actions": "one"
           }
@@ -5409,7 +5409,7 @@
         "offensive": [
           {
             "name": "Chaos Flux",
-            "text": "A protean tumult is less organized and more vicious than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to non-protean creatures. A creature that willingly moves into a protean tumult's space takes (1d12+1) untyped] damage (basic Reflex DC 29 save); a creature takes this damage only once per round.",
+            "text": "A protean tumult is less organized and more vicious than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to non-protean creatures. A creature that willingly moves into a protean tumult's space takes 1d12+1 untyped damage (basic Reflex DC 29 save); a creature takes this damage only once per round.",
             "traits": []
           },
           {
@@ -5423,13 +5423,13 @@
           },
           {
             "name": "Claws, Jaws, and Tails",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The tumult viciously attacks each enemy within a area (basic Reflex DC 29 save). The damage depends on the number of actions.\n\n1 (1d12+1) untyped|options:area-damage] damage\n\n2 (2d12+10) untyped|options:area-damage] damage\n\n3 (3d12+11) untyped|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The tumult viciously attacks each enemy within a 5-foot emanation (basic Reflex DC 29 save). The damage depends on the number of actions.\n\n1 1d12+1 untyped damage\n\n2 2d12+10 untyped damage\n\n3 3d12+11 untyped damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Stupefying Swipe",
-            "text": "The protean tumult makes their way across the battlefield. It Strides. At the end of this movement, they lash out at the enemy with tentacles and other blunt body parts, dealing (2d12+10) bludgeoning|options:area-damage] damage in a area (basic Reflex DC 29 save). A creature who fails this save is also Stupefied 2 for 2 rounds (Stupefied 3 on a critical failure).",
+            "text": "The protean tumult makes their way across the battlefield. It Strides. At the end of this movement, they lash out at the enemy with tentacles and other blunt body parts, dealing 2d12+10 bludgeoning damage in a 5-foot emanation (basic Reflex DC 29 save). A creature who fails this save is also [Stupefied 2](/condition/stupefied-player-core) for 2 rounds (Stupefied 3 on a critical failure).",
             "traits": [
               "divine",
               "emotion",
@@ -5579,13 +5579,13 @@
           },
           {
             "name": "Reflective Arrows",
-            "text": "Adjusting to the angle of the sun, the camel riders draw their shortbows, then launch a ranged attack in the form of an arcing volley. This volley is a area within 60 feet that deals 3d6 piercing|options:area-damage] damage (basic Reflex DC 21 save). In areas of bright light, such as outside during the day, the targets take a –1 circumstance penalty to the save. When the camel corps is reduced to 2 segments, this area decreases to a area.\n\nEffect: Reflective Arrows (Penalty)",
+            "text": "Adjusting to the angle of the sun, the camel riders draw their shortbows, then launch a ranged attack in the form of an arcing volley. This volley is a 10-foot burst within 60 feet that deals 3d6 piercing damage (basic Reflex DC 21 save). In areas of bright light, such as outside during the day, the targets take a –1 circumstance penalty to the save. When the camel corps is reduced to 2 segments, this area decreases to a 5-foot burst.\n\nEffect: Reflective Arrows (Penalty)",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Scimitar Assault",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The camel corps engages in a coordinated melee attack against each enemy in a area (basic Reflex DC 21 save). The damage depends on the number of actions.\n\n1 (1d6+1) slashing|options:area-damage] damage\n\n2 (2d6+7) slashing|options:area-damage] damage\n\n3 (2d6+11) slashing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The camel corps engages in a coordinated melee attack against each enemy in a 5-foot emanation (basic Reflex DC 21 save). The damage depends on the number of actions.\n\n1 1d6+1 slashing damage\n\n2 2d6+7 slashing damage\n\n3 2d6+11 slashing damage",
             "traits": [],
             "actions": "one"
           },
@@ -5723,19 +5723,19 @@
         "offensive": [
           {
             "name": "Dirty Tricks",
-            "text": "The ratfolk feint and trip up their foes in a area, attempting a single Thievery check and comparing the result to each target's Reflex DC. On a success, the target is Clumsy 1 (Clumsy 2 on a critical success) until they take an [Interact](/action/interact-player-core) action to remove the condition.",
+            "text": "The ratfolk feint and trip up their foes in a 5-foot emanation, attempting a single Thievery check and comparing the result to each target's Reflex DC. On a success, the target is [Clumsy 1](/condition/clumsy-player-core) (Clumsy 2 on a critical success) until they take an [Interact](/action/interact-player-core) action to remove the condition.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Poisoned Bolts",
-            "text": "The shank squad draws hand crossbows to fire poisoned bolts in a volley. This volley is a area within 60 feet that deals 2d6 piercing damage and 2d6 poison damage with a basic Reflex DC 22 save. When the shank squad is reduced to 2 segments, this area decreases to a area.",
+            "text": "The shank squad draws hand crossbows to fire poisoned bolts in a volley. This volley is a 10-foot burst within 60 feet that deals 2d6 piercing damage and 2d6 poison damage with a basic Reflex DC 22 save. When the shank squad is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Shank 'Em",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The shank squad makes a coordinated attack with shivs and daggers against each enemy in a area, with a basic Reflex DC 22 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage and 1d4 precision damage\n\n2 2d6+3 slashing damage and 2d4 precision damage\n\n3 2d6+6 slashing damage and 3d4 precision damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The shank squad makes a coordinated attack with shivs and daggers against each enemy in a 5-foot emanation, with a basic Reflex DC 22 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage and 1d4 precision damage\n\n2 2d6+3 slashing damage and 2d4 precision damage\n\n3 2d6+6 slashing damage and 3d4 precision damage",
             "traits": [],
             "actions": "one"
           }
@@ -5882,13 +5882,13 @@
           },
           {
             "name": "Bloody Reaping",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The redcaps in the brigade wildly swing their halberds and sickles at each enemy in a area, with a basic Reflex DC 26 save. The damage depends on the number of actions.\n\n1 (1d10+2) slashing|options:area-damage,bloody-reaping-one]\n\n2 (2d10+9) slashing|options:area-damage,bloody-reaping-two]\n\n3 (3d10+10) slashing|options:area-damage,bloody-reaping-three]",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The redcaps in the brigade wildly swing their halberds and sickles at each enemy in a 10-foot emanation, with a basic Reflex DC 26 save. The damage depends on the number of actions.\n\n1 1d10+2 slashing\n\n2 2d10+9 slashing\n\n3 3d10+10 slashing",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Bowl Over and Stomp",
-            "text": "The redcap brigade Strides; they can pass through spaces of Medium or smaller creatures, but can't end their movement in them. All enemies whose spaces the redcap brigade passed through take 4d8 bludgeoning|options:area-damage,bowl-ower-and-stomp] damage and must attempt a Fortitude DC 26 save. Bowl Over and Stomp damages each creature only once.\n\n---\n\n**Critical Success** The creature takes no damage.\n\n**Success** The creature takes half damage. If it is Prone, it also takes 1d6 persistent,bleed] damage.\n\n**Failure** The creature takes full damage, is knocked prone, and takes 2d6 persistent,bleed] damage.\n\n**Critical Failure** The creature takes double damage, is knocked prone, and takes 2d6 persistent,bleed] damage.",
+            "text": "The redcap brigade Strides; they can pass through spaces of Medium or smaller creatures, but can't end their movement in them. All enemies whose spaces the redcap brigade passed through take 4d8 bludgeoning damage and must attempt a Fortitude DC 26 save. Bowl Over and Stomp damages each creature only once.\n\n---\n\n**Critical Success** The creature takes no damage.\n\n**Success** The creature takes half damage. If it is [Prone](/condition/prone-player-core), it also takes 1d6 persistent bleed damage.\n\n**Failure** The creature takes full damage, is knocked prone, and takes 2d6 persistent bleed damage.\n\n**Critical Failure** The creature takes double damage, is knocked prone, and takes 2d6 persistent bleed damage.",
             "traits": [],
             "actions": "two"
           },
@@ -6025,7 +6025,7 @@
         "offensive": [
           {
             "name": "Scree Breath",
-            "text": "The scamp avalanche breathes rocks in a area that deals 1d4 rounds.",
+            "text": "The scamp avalanche breathes rocks in a 15-foot cone that deals 3d6 bludgeoning damage to each creature within the area (basic Reflex DC 21 save). The scamp avalanche can't use Scree Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "earth"
@@ -6034,7 +6034,7 @@
           },
           {
             "name": "Stone Slams",
-            "text": "1 to 3\n\n---\n\nThe scamp avalanche attacks with a flurry of tiny slams. Each enemy in a area must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 bludgeoning damage and 1d4 poison damage\n\n2 2d6+2 bludgeoning damage and 2d4 poison damage\n\n3 2d6+4 bludgeoning damage and 3d4 poison damage",
+            "text": "1 to 3\n\n---\n\nThe scamp avalanche attacks with a flurry of tiny slams. Each enemy in a 5-foot emanation must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 bludgeoning damage and 1d4 poison damage\n\n2 2d6+2 bludgeoning damage and 2d4 poison damage\n\n3 2d6+4 bludgeoning damage and 3d4 poison damage",
             "traits": [],
             "actions": "one"
           }
@@ -6174,7 +6174,7 @@
         "offensive": [
           {
             "name": "Acid Breath",
-            "text": "The scamp flood breathes acid in a area that deals 1d4 rounds.",
+            "text": "The scamp flood breathes acid in a 15-foot cone that deals 3d6 acid damage to each creature within the area (basic Reflex DC 21 save). The scamp flood can't use Acid Breath again for 1d4 rounds.",
             "traits": [
               "acid",
               "arcane"
@@ -6183,7 +6183,7 @@
           },
           {
             "name": "Drenching Claws",
-            "text": "1 to 3\n\n---\n\nThe scamp flood attacks with a flurry of tiny claws. Each enemy in a area must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage and 1d4 acid damage\n\n2 2d6+2 slashing damage and 2d4 acid damage\n\n3 2d6+4 slashing damage and 3d4 acid damage",
+            "text": "1 to 3\n\n---\n\nThe scamp flood attacks with a flurry of tiny claws. Each enemy in a 5-foot emanation must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage and 1d4 acid damage\n\n2 2d6+2 slashing damage and 2d4 acid damage\n\n3 2d6+4 slashing damage and 3d4 acid damage",
             "traits": [],
             "actions": "one"
           }
@@ -6326,13 +6326,13 @@
         "offensive": [
           {
             "name": "Burning Bites",
-            "text": "1 to 3\n\n---\n\nThe scamp inferno attacks with a flurry of tiny teeth and flickering flames. Each enemy in a area must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 piercing damage and 1d4 fire damage\n\n2 2d6+2 piercing damage and 2d4 fire damage\n\n3 2d6+4 piercing damage and 3d4 fire damage",
+            "text": "1 to 3\n\n---\n\nThe scamp inferno attacks with a flurry of tiny teeth and flickering flames. Each enemy in a 5-foot emanation must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 piercing damage and 1d4 fire damage\n\n2 2d6+2 piercing damage and 2d4 fire damage\n\n3 2d6+4 piercing damage and 3d4 fire damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Flame Breath",
-            "text": "The scamp inferno breathes flames in a area that deals 1d4 rounds.",
+            "text": "The scamp inferno breathes flames in a 15-foot cone that deals 3d6 fire damage to each creature within the area (basic Reflex DC 21 save). Creatures that fail the save also take 1d6 persistent fire damage. The scamp inferno can't use Flame Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "fire"
@@ -6473,13 +6473,13 @@
         "offensive": [
           {
             "name": "Metallic Claws",
-            "text": "1 to 3\n\n---\n\nThe scamp shrapnel attacks with a flurry of tiny claws. Each enemy in a area must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage and 1d4 bleed damage\n\n2 2d6+2 slashing damage and 2d4 bleed damage\n\n3 2d6+4 slashing damage and 3d4 bleed damage",
+            "text": "1 to 3\n\n---\n\nThe scamp shrapnel attacks with a flurry of tiny claws. Each enemy in a 5-foot emanation must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage and 1d4 bleed damage\n\n2 2d6+2 slashing damage and 2d4 bleed damage\n\n3 2d6+4 slashing damage and 3d4 bleed damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Shrapnel Breath",
-            "text": "The scamp shrapnel breathes shrapnel in a area that deals 1d4 rounds.",
+            "text": "The scamp shrapnel breathes shrapnel in a 15-foot cone that deals 3d6 slashing damage to each creature within the area (basic Reflex DC 21 save). Creatures that fail the save also take 1d6 bleed damage.The scamp shrapnel can't use Shrapnel Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "metal"
@@ -6619,7 +6619,7 @@
         "offensive": [
           {
             "name": "Pollen Breath",
-            "text": "The scamp tangle breathes pollen in a area that deals 1d4 rounds.",
+            "text": "The scamp tangle breathes pollen in a 15-foot cone that deals 3d6 poison damage to each creature within the area (basic Reflex DC 21 save). The scamp tangle can't use Pollen Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "wood"
@@ -6628,7 +6628,7 @@
           },
           {
             "name": "Thorny Claws",
-            "text": "1 to 3\n\n---\n\nThe scamp tangle attacks with a flurry of tiny claws. Each enemy in a area must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 piercing damage and 1d4 persistent bleed damage\n\n2 2d6+2 piercing damage and 2d4 persistent bleed damage\n\n3 2d6+4 piercing damage and 3d4 persistent bleed damage",
+            "text": "1 to 3\n\n---\n\nThe scamp tangle attacks with a flurry of tiny claws. Each enemy in a 5-foot emanation must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 piercing damage and 1d4 persistent bleed damage\n\n2 2d6+2 piercing damage and 2d4 persistent bleed damage\n\n3 2d6+4 piercing damage and 3d4 persistent bleed damage",
             "traits": [],
             "actions": "one"
           }
@@ -6770,7 +6770,7 @@
         "offensive": [
           {
             "name": "Sirocco Breath",
-            "text": "The scamp whirlwind breathes in a area that deals 1d4 rounds.",
+            "text": "The scamp whirlwind breathes in a 15-foot cone that deals 3d6 slashing damage to each creature within the area (basic Reflex DC 21 save). Creatures that fail the save also get pushed back by 10 feet. The scamp whirlwind can't use Sirocco Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "earth"
@@ -6779,7 +6779,7 @@
           },
           {
             "name": "Sonic Slams",
-            "text": "1 to 3\n\n---\n\nThe scamp whirlwind attacks with a flurry of tiny slams. Each enemy in a area must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 bludgeoning damage and 1d4 sonic damage\n\n2 2d6+2 bludgeoning damage and 2d4 sonic damage\n\n3 2d6+4 bludgeoning damage and 3d4 sonic damage",
+            "text": "1 to 3\n\n---\n\nThe scamp whirlwind attacks with a flurry of tiny slams. Each enemy in a 5-foot emanation must attempt a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d6 bludgeoning damage and 1d4 sonic damage\n\n2 2d6+2 bludgeoning damage and 2d4 sonic damage\n\n3 2d6+4 bludgeoning damage and 3d4 sonic damage",
             "traits": [],
             "actions": "one"
           }
@@ -6902,7 +6902,7 @@
         "defensive": [
           {
             "name": "Reactive Attack",
-            "text": "**Trigger** A creature within a area of the sinswarm uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using\n\n---\n\n**Effect** The sinswarm lashes out at the triggering creature, dealing (2d8+9) piercing] damage (basic Reflex DC 25 save). If the creature critically fails the save and the trigger was a manipulate action, that action is disrupted.",
+            "text": "**Trigger** A creature within a 5-foot emanation of the sinswarm uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using\n\n---\n\n**Effect** The sinswarm lashes out at the triggering creature, dealing 2d8+9 piercing damage (basic Reflex DC 25 save). If the creature critically fails the save and the trigger was a manipulate action, that action is disrupted.",
             "traits": [],
             "actions": "reaction"
           },
@@ -6920,7 +6920,7 @@
         "offensive": [
           {
             "name": "Sinful Assault",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The sinswarm makes a coordinated attack against each enemy in a area, with a basic Reflex DC 25 save. The damage depends on the number of actions.\n\n1 (1d8+2) piercing|options:area-damage] damage\n\n2 (2d8+9) piercing|options:area-damage,sinful-bite] damage plus sinful bite\n\n3 (3d8+11) piercing|options:area-damage,sinful-bite] damage plus sinful bite",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The sinswarm makes a coordinated attack against each enemy in a 5-foot emanation, with a basic Reflex DC 25 save. The damage depends on the number of actions.\n\n1 1d8+2 piercing damage\n\n2 2d8+9 piercing damage plus sinful bite\n\n3 3d8+11 piercing damage plus sinful bite",
             "traits": [],
             "actions": "one"
           },
@@ -7066,13 +7066,13 @@
         "offensive": [
           {
             "name": "Ossuary Storm",
-            "text": "The skeleton mob hurls skulls and fragments of bone in a area within 30 feet. This attack deals 3d6 piercing|options:area-damage] damage (basic Reflex DC 21 save). When the skeleton mob is reduced to 2 segments, this area decreases to a area.",
+            "text": "The skeleton mob hurls skulls and fragments of bone in a 10-foot burst within 30 feet. This attack deals 3d6 piercing damage (basic Reflex DC 21 save). When the skeleton mob is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Rattling Bones",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The skeletons engage using their claws and broken bones to attack each enemy in a area, with a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 (1d4+1) piercing|options:area-damage] damage\n\n2 (2d4+7) piercing|options:area-damage] damage\n\n3 (3d4+10) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The skeletons engage using their claws and broken bones to attack each enemy in a 5-foot emanation, with a basic Reflex DC 21 save. The damage depends on the number of actions.\n\n1 1d4+1 piercing damage\n\n2 2d4+7 piercing damage\n\n3 3d4+10 piercing damage",
             "traits": [],
             "actions": "one"
           }
@@ -7240,7 +7240,7 @@
         "offensive": [
           {
             "name": "Guardians' Curse",
-            "text": "**Frequency** three times per day\n\n---\n\n**Effect** The guardian flock bestows a curse upon all enemies in a area by touching them with their scythes. Each affected creature must attempt a Will DC 33 save.\n\n---\n\n**Critical Success** The target is unaffected and is temporarily immune to Guardians' Curse for 24 hours.\n\n**Success** The target feels a momentary shudder of doom and is Stupefied 1 for 1 minute by the distracting sensation.\n\n**Failure** The target becomes morose and glum as it accepts its own inevitable fate. For 1 hour, the target is Stupefied 2. Each time the target gains the [dying](/condition/dying-player-core) condition, the [stupefied](/condition/stupefied-player-core) condition value increases by 1, to a maximum value of Stupefied 4.\n\n**Critical Failure** As failure, but the effect is permanent.",
+            "text": "**Frequency** three times per day\n\n---\n\n**Effect** The guardian flock bestows a curse upon all enemies in a 5-foot emanation by touching them with their scythes. Each affected creature must attempt a Will DC 33 save.\n\n---\n\n**Critical Success** The target is unaffected and is temporarily immune to Guardians' Curse for 24 hours.\n\n**Success** The target feels a momentary shudder of doom and is [Stupefied 1](/condition/stupefied-player-core) for 1 minute by the distracting sensation.\n\n**Failure** The target becomes morose and glum as it accepts its own inevitable fate. For 1 hour, the target is Stupefied 2. Each time the target gains the [dying](/condition/dying-player-core) condition, the stupefied condition value increases by 1, to a maximum value of Stupefied 4.\n\n**Critical Failure** As failure, but the effect is permanent.",
             "traits": [
               "curse",
               "divine",
@@ -7250,7 +7250,7 @@
           },
           {
             "name": "Harvest the Wicked",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The vanths swing their scythes in a coordinated melee attack. Each enemy in a area must attempt a basic Reflex DC 30 save. The damage depends on the number of actions. The slashing damage is treated as adamantine, cold iron, and silver.\n\n1 1d10+1 slashing damage plus 1d6 shepherd's touch\n\n2 2d10+3 slashing damage plus 3d6 shepherd's touch\n\n3 2d10+7 slashing damage plus 4d6 shepherd's touch",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The vanths swing their scythes in a coordinated melee attack. Each enemy in a 5-foot emanation must attempt a basic Reflex DC 30 save. The damage depends on the number of actions. The slashing damage is treated as adamantine, cold iron, and silver.\n\n1 1d10+1 slashing damage plus 1d6 shepherd's touch\n\n2 2d10+3 slashing damage plus 3d6 shepherd's touch\n\n3 2d10+7 slashing damage plus 4d6 shepherd's touch",
             "traits": [],
             "actions": "one"
           },
@@ -7392,7 +7392,7 @@
         "offensive": [
           {
             "name": "Berserker Strikes",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** Battle axes in hand, the viking guard engages in a coordinated melee attack against enemies in a area, with a basic Reflex DC 27 save. The damage depends on the number of actions.\n\n1 (1d8+3) slashing|options:area-damage] damage\n\n2 (2d8+12) slashing|options:area-damage] damage\n\n3 (3d8+15) slashing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** Battle axes in hand, the viking guard engages in a coordinated melee attack against enemies in a 5-foot emanation, with a basic Reflex DC 27 save. The damage depends on the number of actions.\n\n1 1d8+3 slashing damage\n\n2 2d8+12 slashing damage\n\n3 3d8+15 slashing damage",
             "traits": [],
             "actions": "one"
           },
@@ -7533,7 +7533,7 @@
           },
           {
             "name": "Reactive Attack",
-            "text": "**Trigger** A creature within the vordine legion's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using\n\n---\n\n**Effect** The creature takes (2d8+11) piercing|options:area-damage|traits:[magical](/trait/magical),unholy] damage (basic Reflex DC 26 save); this damage has the magical and [unholy](/trait/unholy) traits. If the creature critically fails its saving throw and the trigger was a manipulate action, the legion disrupts that action.",
+            "text": "**Trigger** A creature within the vordine legion's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using\n\n---\n\n**Effect** The creature takes (2d8+11) piercing damage (basic Reflex DC 26 save); this damage has the magical and [unholy](/trait/unholy) traits. If the creature critically fails its saving throw and the trigger was a manipulate action, the legion disrupts that action.",
             "traits": [],
             "actions": "reaction"
           },
@@ -7551,7 +7551,7 @@
         "offensive": [
           {
             "name": "Burning March",
-            "text": "The vordine legion Strides, leaving an orderly pattern of burning hoofprints in each square they enter. The hoofprints continue to burn for 1 minute. Any creature on the ground that begins its turn in, or enters a square with, burning hoofprints takes 2d8 fire] damage.",
+            "text": "The vordine legion Strides, leaving an orderly pattern of burning hoofprints in each square they enter. The hoofprints continue to burn for 1 minute. Any creature on the ground that begins its turn in, or enters a square with, burning hoofprints takes 2d8 fire damage.",
             "traits": [
               "divine",
               "fire",
@@ -7561,7 +7561,7 @@
           },
           {
             "name": "Impaling Barrage",
-            "text": "The vordine legion releases a hail of tridents. This hail is a area within 40 feet that deals 4d8 piercing|options:area-damage] damage (basic Reflex DC 26 save). Creatures that fail the saving throw are Clumsy 1 until the start of the vordine legion's next turn (Clumsy 2 on a critical failure). When the vordines are reduced to 2 segments, this area decreases to a area.",
+            "text": "The vordine legion releases a hail of tridents. This hail is a 10-foot burst within 40 feet that deals 4d8 piercing damage (basic Reflex DC 26 save). Creatures that fail the saving throw are [Clumsy 1](/condition/clumsy-player-core) until the start of the vordine legion's next turn (Clumsy 2 on a critical failure). When the vordines are reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [
               "magical",
               "unholy"
@@ -7570,7 +7570,7 @@
           },
           {
             "name": "Tines of Dis",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The vordines of the legion make coordinated melee attacks with their tridents. Each enemy within a area must attempt a basic Reflex DC 26 save. The damage depends on the number of actions.\n\n1 (1d8+2) piercing|options:area-damage] damage\n\n2 (2d8+11) piercing|options:area-damage] damage\n\n3 (3d8+14) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The vordines of the legion make coordinated melee attacks with their tridents. Each enemy within a 5-foot emanation must attempt a basic Reflex DC 26 save. The damage depends on the number of actions.\n\n1 1d8+2 piercing damage\n\n2 2d8+11 piercing damage\n\n3 3d8+14 piercing damage",
             "traits": [
               "magical",
               "unholy"
@@ -7697,7 +7697,7 @@
         "defensive": [
           {
             "name": "Final Grudge",
-            "text": "**Trigger** The wight battalion is about to lose a segment due to Hit Point damage\n\n---\n\n**Effect** The wights strike out as they fall. Each enemy in a area takes 2d4 piercing|options:area-damage] damage (basic Reflex DC 25 save). This occurs before the battalion loses a segment.",
+            "text": "**Trigger** The wight battalion is about to lose a segment due to Hit Point damage\n\n---\n\n**Effect** The wights strike out as they fall. Each enemy in a 5-foot emanation takes 2d4 piercing damage (basic Reflex DC 25 save). This occurs before the battalion loses a segment.",
             "traits": [],
             "actions": "reaction"
           },
@@ -7734,7 +7734,7 @@
           },
           {
             "name": "Hateful Daggers",
-            "text": "1 to 3\n\n---\n\nThe wights coordinate melee attacks with the daggers they were buried with. Each enemy within a area attempts a basic Reflex DC 25 save. The damage depends on the number of actions. On a failed save, the creature is also exposed to corrupting spite.\n\n1 2d4 piercing|options:area-damage] damage\n\n2 (4d4+8) piercing|options:area-damage] damage\n\n3 (4d4+14) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n---\n\nThe wights coordinate melee attacks with the daggers they were buried with. Each enemy within a 5-foot emanation attempts a basic Reflex DC 25 save. The damage depends on the number of actions. On a failed save, the creature is also exposed to corrupting spite.\n\n1 2d4 piercing damage\n\n2 4d4+8 piercing damage\n\n3 4d4+14 piercing damage",
             "traits": [],
             "actions": "one"
           }
@@ -7864,13 +7864,13 @@
         "offensive": [
           {
             "name": "Harry Prey",
-            "text": "The wolf pack focuses all their efforts on biting a single adjacent foe, who takes (4d6+8) piercing] damage (basic Reflex DC 21 save). If the creature fails this saving throw, the wolf pack can immediately attempt an Athletics check to Trip the creature.",
+            "text": "The wolf pack focuses all their efforts on biting a single adjacent foe, who takes 4d6+8 piercing damage (basic Reflex DC 21 save). If the creature fails this saving throw, the wolf pack can immediately attempt an Athletics check to Trip the creature.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Pack Hunt",
-            "text": "1 to 3\n\n---\n\nThe wolves work together to fell their opponents. Each enemy within a area attempts a basic Reflex DC 21 save. A creature who is Prone is Clumsy 2 for this attack. The damage depends on the number of actions.\n\n1 (1d6+1) piercing|options:area-damage] damage\n\n2 (2d6+7) piercing|options:area-damage] damage\n\n3 (2d6+11) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n---\n\nThe wolves work together to fell their opponents. Each enemy within a 5-foot emanation attempts a basic Reflex DC 21 save. A creature who is [Prone](/condition/prone-player-core) is [Clumsy 2](/condition/clumsy-player-core) for this attack. The damage depends on the number of actions.\n\n1 1d6+1 piercing damage\n\n2 2d6+7 piercing damage\n\n3 2d6+11 piercing damage",
             "traits": [],
             "actions": "one"
           }
@@ -7999,19 +7999,19 @@
         "offensive": [
           {
             "name": "Club Offensive",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The xulgaths make coordinated melee attacks against each enemy in area, with a basic Reflex DC 21 save. The damage dealt depends on the number of actions.\n\n1 (1d6+1) bludgeoning|options:area-damage] damage\n\n2 (2d6+7) bludgeoning|options:area-damage] damage\n\n3 (2d6+12) bludgeoning|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The xulgaths make coordinated melee attacks against each enemy in 5-foot emanation, with a basic Reflex DC 21 save. The damage dealt depends on the number of actions.\n\n1 1d6+1 bludgeoning damage\n\n2 2d6+7 bludgeoning damage\n\n3 2d6+12 bludgeoning damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Javelin Barrage",
-            "text": "he xulgaths draw javelins and launch a coordinated barrage at range. This barrage is a area within 30 feet that deals 3d6 piercing|options:area-damage] damage (basic Reflex DC 21 save). When the xulgath army is reduced to 2 segments, this area decreases to a area.",
+            "text": "he xulgaths draw javelins and launch a coordinated barrage at range. This barrage is a 10-foot burst within 30 feet that deals 3d6 piercing damage (basic Reflex DC 21 save). When the xulgath army is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Rend Flesh",
-            "text": "The xulgaths concentrate their attacks on a single adjacent enemy, clawing and biting with abandon. That creature takes (3d4+5) slashing] damage (basic Reflex DC 21 save). On a failed save, the creature also takes 1d4 persistent,bleed] damage.",
+            "text": "The xulgaths concentrate their attacks on a single adjacent enemy, clawing and biting with abandon. That creature takes 3d4+5 slashing damage (basic Reflex DC 21 save). On a failed save, the creature also takes 1d4 persistent bleed damage.",
             "traits": [],
             "actions": "two"
           }
@@ -8128,7 +8128,7 @@
         "defensive": [
           {
             "name": "Javelin Barrage",
-            "text": "The xulgaths draw javelins and launch a coordinated barrage at range. This barrage is a area within 30 feet that deals 4d8 piercing|options:area-damage] damage (basic Reflex DC 30 save). When the cavalry is reduced to 2 segments, this area decreases to a area.",
+            "text": "The xulgaths draw javelins and launch a coordinated barrage at range. This barrage is a 10-foot burst within 30 feet that deals 4d8 piercing damage (basic Reflex DC 30 save). When the cavalry is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
@@ -8159,13 +8159,13 @@
           },
           {
             "name": "Spears, Teeth, and Horns",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The cavalry makes a coordinated melee attack against each enemy in area, with a basic Reflex DC 30 save. The damage dealt depends on the number of actions.\n\n1 (2d6+2) piercing|options:area-damage] damage\n\n2 (4d6+10) piercing|options:area-damage] damage\n\n3 (5d6+15) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The cavalry makes a coordinated melee attack against each enemy in 10-foot emanation, with a basic Reflex DC 30 save. The damage dealt depends on the number of actions.\n\n1 2d6+2 piercing damage\n\n2 4d6+10 piercing damage\n\n3 5d6+15 piercing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Trample",
-            "text": "Large or smaller, (2d6+2) bludgeoning], basic Reflex DC 30\n\n---\n\nTrample",
+            "text": "Large or smaller, 2d6+2 bludgeoning, basic Reflex DC 30\n\n---\n\nTrample",
             "traits": [],
             "actions": "three"
           }
@@ -8309,19 +8309,19 @@
           },
           {
             "name": "Mandible Frenzy",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The horde makes a vicious bite attack against each enemy in a area (basic Reflex DC 27 save). The damage dealt depends on the number of actions.\n\n1 (1d8+2) piercing|options:area-damage] damage\n\n2 (2d8+12) piercing|options:area-damage] damage\n\n3 (3d8+15) piercing|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The horde makes a vicious bite attack against each enemy in a 5-foot emanation (basic Reflex DC 27 save). The damage dealt depends on the number of actions.\n\n1 1d8+2 piercing damage\n\n2 2d8+12 piercing damage\n\n3 3d8+15 piercing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Mucus Deluge",
-            "text": "The horde spits a volley of larva-infested mucus as a area within 30 feet. Each creature in the area must succeed at a Reflex DC 27 save or be stuck to the nearest surface, Immobilized until they Escape. Any creature so immobilized is exposed to zecui larvae at the end of each of its turns. When the zecui horde is reduced to 2 segments, this area decreases to a area.",
+            "text": "The horde spits a volley of larva-infested mucus as a 10-foot burst within 30 feet. Each creature in the area must succeed at a Reflex DC 27 save or be stuck to the nearest surface, [Immobilized](/condition/immobilized-player-core) until they Escape. Any creature so immobilized is exposed to zecui larvae at the end of each of its turns. When the zecui horde is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Subterranean Ambush",
-            "text": "**Requirements** The zecui horde has burrowed into an ambush position just beneath a surface of dirt, sand, or a similar loose material\n\n---\n\n**Effect** The horde bursts from the ground and moves up to its Speed. The horde deals (1d8+2) piercing|options:area-damage] damage (basic Reflex DC 29 save) to each enemy in a area at the end of this movement.",
+            "text": "**Requirements** The zecui horde has burrowed into an ambush position just beneath a surface of dirt, sand, or a similar loose material\n\n---\n\n**Effect** The horde bursts from the ground and moves up to its Speed. The horde deals 1d8+2 piercing damage (basic Reflex DC 29 save) to each enemy in a 5-foot emanation at the end of this movement.",
             "traits": [],
             "actions": "one"
           },

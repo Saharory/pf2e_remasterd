@@ -259,7 +259,7 @@
         "defensive": [
           {
             "name": "Destabilized Form",
-            "text": "When the Echo has fewer than 140 Hit Points, his form destabilizes, large chunks disintegrating from his face, limbs, and torso. White moths constantly stream from the missing spaces, creating a area that deals 6d6 mental|options:area-damage] damage with a basic Will DC 34.\n\nAs long as the aura persists, he can dissolve into moths and re-form at another location within 15 feet as a free action at the beginning of each of his turns; this has the occult and [teleportation](/trait/teleportation) traits.",
+            "text": "When the Echo has fewer than 140 Hit Points, his form destabilizes, large chunks disintegrating from his face, limbs, and torso. White moths constantly stream from the missing spaces, creating a 10-foot emanation that deals 6d6 mental damage with a basic Will DC 34.\n\nAs long as the aura persists, he can dissolve into moths and re-form at another location within 15 feet as a free action at the beginning of each of his turns; this has the occult and [teleportation](/trait/teleportation) traits.",
             "traits": []
           },
           {
@@ -289,7 +289,7 @@
           },
           {
             "name": "Reconstitute from Thought",
-            "text": "**Requirements** The Echo is standing on one of the eight large islands of the map, and the island hasn't darkened\n\n---\n\n**Effect** The Echo throws his rope dart into the island and uses it to absorb mental essence from the mindscape, repairing himself. He regains 45 healing] Hit Points and the island turns a desaturated gray for 1 day, preventing future absorption and disabling the [Call Of The Void](/hazard/call-of-the-void-dark-archive) hazard on that island.",
+            "text": "**Requirements** The Echo is standing on one of the eight large islands of the map, and the island hasn't darkened\n\n---\n\n**Effect** The Echo throws his rope dart into the island and uses it to absorb mental essence from the mindscape, repairing himself. He regains 45 healing Hit Points and the island turns a desaturated gray for 1 day, preventing future absorption and disabling the [Call Of The Void](/hazard/call-of-the-void-dark-archive) hazard on that island.",
             "traits": [
               "healing"
             ],
@@ -297,7 +297,7 @@
           },
           {
             "name": "Spindle's Web",
-            "text": "The Echo's spindle revolves faster and faster until it's a blur, lashing red threads in every direction. The threads deal 7d6 slashing damage and 7d6 mental damage to all creatures in a area, with a basic Reflex DC 34. If a creature fails its save, the threads awaken the mindscape anchor within it, affecting it differently based on which anchor that creature used to gain access to the center of the mindscape. (If there is a PC who didn't absorb a mindscape anchor, for instance because there are more than four PCs in the party, then use the anchor of the PC closest to them.)\n\nThe Echo then can't use Spindle's Web for 1d4 rounds.\n\n**Lantern** The lantern outlines the creature with searing Revealing Light that deals 2d6 persistent,fire] damage.**Mirror** The mirror reflects the creature to another location, teleporting them to a clear space within 25 feet of their current location.**Chalice** The chalice drains life force, granting the Echo temporary HP equal to half the damage dealt.**Tome** The tome floods the creature's mind with information; the target is Slowed 1 for 1 round.",
+            "text": "The Echo's spindle revolves faster and faster until it's a blur, lashing red threads in every direction. The threads deal 7d6 slashing damage and 7d6 mental damage to all creatures in a 30-foot emanation, with a basic Reflex DC 34. If a creature fails its save, the threads awaken the mindscape anchor within it, affecting it differently based on which anchor that creature used to gain access to the center of the mindscape. (If there is a PC who didn't absorb a mindscape anchor, for instance because there are more than four PCs in the party, then use the anchor of the PC closest to them.)\n\nThe Echo then can't use Spindle's Web for 1d4 rounds.\n\n**Lantern** The lantern outlines the creature with searing [Revealing Light](/spell/revealing-light-player-core) that deals 2d6 persistent fire damage.**Mirror** The mirror reflects the creature to another location, teleporting them to a clear space within 25 feet of their current location.**Chalice** The chalice drains life force, granting the Echo temporary HP equal to half the damage dealt.**Tome** The tome floods the creature's mind with information; the target is [Slowed 1](/condition/slowed-player-core) for 1 round.",
             "traits": [],
             "actions": "two"
           }
@@ -571,7 +571,7 @@
         "offensive": [
           {
             "name": "Crystal Siphon",
-            "text": "**Requirements** The shadow and the target are both within 40 feet of the crystal that spawned the shadow, and the crystal isn't covered or obstructed\n\n---\n\n**Effect** Shadows in the shape of tendrils curl around the target, drawing out a portion of the target's vitality and siphoning it into the crystal. The target takes 4d6 void] damage (basic Fortitude DC 21). On a failure, they are also Enfeebled 1. This [enfeebled](/condition/enfeebled-player-core) condition is cumulative with other enfeebled conditions from quartz-spawned shadows, to a maximum of enfeebled 4. If Crystal Siphon increases the creature's enfeebled value to 3 or more, the target's shadow is pulled entirely into the shadow's crystal.\n\nWhile the target's shadow is trapped, they feel an Invisible tether linking them to the crystal, and they become Slowed 1 whenever they are more than 40 feet away from it. The enfeebled condition from Crystal Siphon can't be reduced until the crystal is broken; if the crystal is broken, the effect immediately ends.",
+            "text": "**Requirements** The shadow and the target are both within 40 feet of the crystal that spawned the shadow, and the crystal isn't covered or obstructed\n\n---\n\n**Effect** Shadows in the shape of tendrils curl around the target, drawing out a portion of the target's vitality and siphoning it into the crystal. The target takes 4d6 void damage (basic Fortitude DC 21). On a failure, they are also [Enfeebled 1](/condition/enfeebled-player-core). This enfeebled condition is cumulative with other enfeebled conditions from quartz-spawned shadows, to a maximum of enfeebled 4. If Crystal Siphon increases the creature's enfeebled value to 3 or more, the target's shadow is pulled entirely into the shadow's crystal.\n\nWhile the target's shadow is trapped, they feel an [Invisible](/condition/invisible-player-core) tether linking them to the crystal, and they become [Slowed 1](/condition/slowed-player-core) whenever they are more than 40 feet away from it. The enfeebled condition from Crystal Siphon can't be reduced until the crystal is broken; if the crystal is broken, the effect immediately ends.",
             "traits": [
               "death",
               "divine",
@@ -823,7 +823,7 @@
           },
           {
             "name": "Swallow Future",
-            "text": "**Frequency** once per minute\n\n---\n\n**Effect** The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a area of the morrowkin take (6d8+18) mental|options:area-damage] damage depending on their Will DC 39 save. Creatures wearing hope talismans can choose to let their hope talisman break in order to ignore the effect after seeing the result of their Will save.\n\n---\n\n**Critical Success** The creature takes no damage.\n\n**Success** The creature takes half damage and is Doomed 1.\n\n**Failure** The creature takes full damage and is Doomed 2.\n\n**Critical Failure** The creature takes double damage and becomes Doomed 4 (likely causing it to die immediately).",
+            "text": "**Frequency** once per minute\n\n---\n\n**Effect** The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a 30-foot emanation of the morrowkin take 6d8+18 mental damage depending on their Will DC 39 save. Creatures wearing hope talismans can choose to let their hope talisman break in order to ignore the effect after seeing the result of their Will save.\n\n---\n\n**Critical Success** The creature takes no damage.\n\n**Success** The creature takes half damage and is [Doomed 1](/condition/doomed-player-core).\n\n**Failure** The creature takes full damage and is Doomed 2.\n\n**Critical Failure** The creature takes double damage and becomes Doomed 4 (likely causing it to die immediately).",
             "traits": [
               "mental",
               "void"
@@ -979,7 +979,7 @@
           },
           {
             "name": "Spray Blossoms",
-            "text": "The moonflower expels mind-warping petals in a area. Creatures in the area take 1d4 rounds.",
+            "text": "The moonflower expels mind-warping petals in a 30-foot cone. Creatures in the area take 4d6 mental damage and 4d6 poison damage (basic Will DC 26 save). A creature that fails is [Stupefied 2](/condition/stupefied-player-core) for 1 minute, and [Confused](/condition/confused-player-core) for 1 round if it got a critical failure. The moonflower can't Spray Blossoms again for 1d4 rounds.",
             "traits": [
               "mental",
               "plant",

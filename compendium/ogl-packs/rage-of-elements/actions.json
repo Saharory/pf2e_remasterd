@@ -118,7 +118,7 @@
     "systemVersion": "1.2.10",
     "name": "Decompose",
     "slug": "decompose-rage-of-elements",
-    "descr": "**Frequency** once per day\n\n---\n\n**Effect** Void energy seeps out of you, decaying everything within a area and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or [wood](/trait/wood) trait take 1d6 void|options:area-damage] damage with a basic Fortitude save against your class DC or spell DC, whichever is higher.",
+    "descr": "**Frequency** once per day\n\n---\n\n**Effect** Void energy seeps out of you, decaying everything within a 5-foot emanation and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or [wood](/trait/wood) trait take 1d6 void damage with a basic Fortitude save against your class DC or spell DC, whichever is higher.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -265,7 +265,7 @@
     "systemVersion": "1.2.10",
     "name": "Elemental Burst",
     "slug": "elemental-burst-rage-of-elements",
-    "descr": "**Frequency** once per 10 minutes\n\n---\n\nYour eidolon rips off a chunk of elemental matter from their own form and hurls it into a group of foes. Your eidolon loses a number of Hit Points equal to your level. All creatures in a area within 60 feet take (max(6,(current value - 1)))d6|options:area-damage damage with a basic Reflex save against your spell DC. The damage increases by 1d6 for each level you have beyond 7th. The damage's type is either fire damage if your eidolon is a fire elemental, or the same physical damage type as your eidolon's primary unarmed attack if your eidolon isn't a fire elemental. Elemental Burst gains any traits that your eidolon's unarmed attacks gain from elemental core.",
+    "descr": "**Frequency** once per 10 minutes\n\n---\n\nYour eidolon rips off a chunk of elemental matter from their own form and hurls it into a group of foes. Your eidolon loses a number of Hit Points equal to your level. All creatures in a 20-foot burst within 60 feet take 6d6 damage with a basic Reflex save against your spell DC. The damage increases by 1d6 for each level you have beyond 7th. The damage's type is either fire damage if your eidolon is a fire elemental, or the same physical damage type as your eidolon's primary unarmed attack if your eidolon isn't a fire elemental. Elemental Burst gains any traits that your eidolon's unarmed attacks gain from elemental core.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -401,7 +401,7 @@
     "systemVersion": "1.2.10",
     "name": "Elemental Familiar (Fire)",
     "slug": "elemental-familiar-fire-rage-of-elements",
-    "descr": "Your familiar gains the fire [elemental](/trait/elemental) trait.\n\nYour familiar sheds bright light in a 20-foot radius (and dim light for the next 20 feet) and emits warmth. Creatures who remain within a area don't take damage from severe environmental cold.",
+    "descr": "Your familiar gains the fire [elemental](/trait/elemental) trait.\n\nYour familiar sheds bright light in a 20-foot radius (and dim light for the next 20 feet) and emits warmth. Creatures who remain within a 15-foot emanation don't take damage from severe environmental cold.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -617,7 +617,7 @@
     "systemVersion": "1.2.10",
     "name": "Extract Element",
     "slug": "extract-element-rage-of-elements",
-    "descr": "You extract elemental matter from a creature's body to weaken it and take its power for your own. Target a creature within 30 feet that has a trait matching one of your kinetic elements or is made of one of your kinetic elements. The target takes (ceil(current value/2))d4 untyped] damage (with no damage type) and becomes susceptible to your impulses, depending on its Fortitude save against your class DC.\n\n---\n\n**Critical Success** The creature is unaffected\n\n**Success** The creature takes half damage, and you add some of its elemental matter to your kinetic aura. Your impulses bypass any immunity the creature has to their [elemental](/trait/elemental) trait or traits, and the target takes a -1 circumstance penalty to its saves and AC against your impulses. If the target normally has a resistance that would apply to damage from one of your impulses, ignore that resistance; if it normally would be immune to that damage type, it instead has resistance equal to its level to damage from the impulse. You can't target a creature with Extract Element if elemental matter you extracted from it is already in your kinetic aura. These effects last for 5 minutes or until your kinetic aura ends, whichever comes first\n\n**Failure** As success, but the creature takes full damage.\n\n**Critical Failure** As failure, but the creature takes double damage.\n\n---\n\n**Level (+2)** The damage increases by 1d4.",
+    "descr": "You extract elemental matter from a creature's body to weaken it and take its power for your own. Target a creature within 30 feet that has a trait matching one of your kinetic elements or is made of one of your kinetic elements. The target takes 0d4 untyped damage (with no damage type) and becomes susceptible to your impulses, depending on its Fortitude save against your class DC.\n\n---\n\n**Critical Success** The creature is unaffected\n\n**Success** The creature takes half damage, and you add some of its elemental matter to your kinetic aura. Your impulses bypass any immunity the creature has to their [elemental](/trait/elemental) trait or traits, and the target takes a -1 circumstance penalty to its saves and AC against your impulses. If the target normally has a resistance that would apply to damage from one of your impulses, ignore that resistance; if it normally would be immune to that damage type, it instead has resistance equal to its level to damage from the impulse. You can't target a creature with Extract Element if elemental matter you extracted from it is already in your kinetic aura. These effects last for 5 minutes or until your kinetic aura ends, whichever comes first\n\n**Failure** As success, but the creature takes full damage.\n\n**Critical Failure** As failure, but the creature takes double damage.\n\n---\n\n**Level (+2)** The damage increases by 1d4.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -787,7 +787,7 @@
     "systemVersion": "1.2.10",
     "name": "Toxic Touch",
     "slug": "toxic-touch-rage-of-elements",
-    "descr": "**Frequency** once per day\n\n**Requirements** Your most recent action was to [Tumble Through](/action/tumble-through-player-core), and you successfully moved through an enemy's space\n\n---\n\n**Effect** Make a melee unarmed Strike against the enemy whose space you moved through. On a hit, the target takes 1d6 persistent,poison] damage and is [Sickened 1](/condition/sickened-player-core) (or takes 2d6 persistent,poison] and is Sickened 2 on a critical hit).",
+    "descr": "**Frequency** once per day\n\n**Requirements** Your most recent action was to [Tumble Through](/action/tumble-through-player-core), and you successfully moved through an enemy's space\n\n---\n\n**Effect** Make a melee unarmed Strike against the enemy whose space you moved through. On a hit, the target takes 1d6 persistent poison damage and is [Sickened 1](/condition/sickened-player-core) (or takes 2d6 persistent poison and is Sickened 2 on a critical hit).",
     "data": {
       "rarity": "common",
       "traits": [

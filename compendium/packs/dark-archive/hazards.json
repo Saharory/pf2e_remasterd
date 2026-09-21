@@ -36,7 +36,7 @@
       "abilities": [
         {
           "name": "Leap into the Unknown",
-          "text": "**Trigger** A creature enters a square adjacent to the ledge of an island or steps onto one of the red ropes\n\n---\n\n**Effect** The call of the void tugs at the mind of intruders, compelling them to leap off the ledge. The creature must succeed at a Will DC 34 save or Acrobatics DC 32 check to Balance or else drop off the ledge. If the creature falls off, it drops 100 feet, loops through the closed space of the mindscape, and lands in the square it fell from, taking falling damage as normal (usually 50 bludgeoning|options:fall-damage] damage). The call of the void then rolls initiative.",
+          "text": "**Trigger** A creature enters a square adjacent to the ledge of an island or steps onto one of the red ropes\n\n---\n\n**Effect** The call of the void tugs at the mind of intruders, compelling them to leap off the ledge. The creature must succeed at a Will DC 34 save or Acrobatics DC 32 check to [Balance](/action/balance-player-core) or else drop off the ledge. If the creature falls off, it drops 100 feet, loops through the closed space of the mindscape, and lands in the square it fell from, taking falling damage as normal (usually 50 bludgeoning damage). The call of the void then rolls initiative.",
           "traits": [
             "mental"
           ],
@@ -522,7 +522,7 @@
       "abilities": [
         {
           "name": "Painful Transformation",
-          "text": "**Trigger** A creature is reflected in the mirror\n\n---\n\n**Effect** The triggering creature's body is painfully squished, stretched, and distorted to match their reflection. The creature takes (6d10 + 30) force] damage and must attempt a Fortitude DC 39 save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage and is Clumsy 1 and Enfeebled 1 for 1 round.\n\n**Failure** The target takes full damage and is Clumsy 2 and Enfeebled 2 for 4 rounds.\n\n**Critical Failure** The target takes double damage and is clumsy 2 and enfeebled 2 for 1 minute. As long as the creature is clumsy or enfeebled, it additionally takes a –10-foot status penalty to its Speeds.\n\nWhen the effects of this trap end, the triggering creature's transformation ends, and its body reverts to its natural form.",
+          "text": "**Trigger** A creature is reflected in the mirror\n\n---\n\n**Effect** The triggering creature's body is painfully squished, stretched, and distorted to match their reflection. The creature takes 6d10 + 30 force damage and must attempt a Fortitude DC 39 save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage and is [Clumsy 1](/condition/clumsy-player-core) and [Enfeebled 1](/condition/enfeebled-player-core) for 1 round.\n\n**Failure** The target takes full damage and is Clumsy 2 and Enfeebled 2 for 4 rounds.\n\n**Critical Failure** The target takes double damage and is clumsy 2 and enfeebled 2 for 1 minute. As long as the creature is clumsy or enfeebled, it additionally takes a –10-foot status penalty to its Speeds.\n\nWhen the effects of this trap end, the triggering creature's transformation ends, and its body reverts to its natural form.",
           "traits": [
             "attack"
           ],
@@ -597,7 +597,7 @@
       "abilities": [
         {
           "name": "Take a Seat!",
-          "text": "**Trigger** A creature steps on the track\n\n---\n\n**Effect** The chair rockets forward along the track and slams into the triggering creature, dealing (3d8 + 15) bludgeoning] damage. A creature who succeeds at a Reflex DC 22 save takes no damage and moves out of the chair's path into a random adjacent square not containing the track. A creature who fails this saving throw is knocked into the chair's seat and captured by the armrests, becoming Grabbed (Restrained on a critical failure; Escape).",
+          "text": "**Trigger** A creature steps on the track\n\n---\n\n**Effect** The chair rockets forward along the track and slams into the triggering creature, dealing 3d8 + 15 bludgeoning damage. A creature who succeeds at a Reflex DC 22 save takes no damage and moves out of the chair's path into a random adjacent square not containing the track. A creature who fails this saving throw is knocked into the chair's seat and captured by the armrests, becoming [Grabbed](/condition/grabbed-player-core) ([Restrained](/condition/restrained-player-core) on a critical failure; Escape).",
           "traits": [],
           "actions": "reaction"
         }
@@ -665,7 +665,7 @@
         "will": 0
       },
       "disable": "Thievery DC 30 (expert) twice to scratch out the runes, or Dispel Magic (5th rank; counteract DC 30) to counteract the planar runes; Athletics DC 32 to shut the door if it's open (using Athletics only stops the trap, it doesn't fully disable it)",
-      "routine": "(1 action) The trap uses 1 action to blow powerful winds down the hall. Each creature in the hall must attempt a Fortitude DC 32 save with the same results as Gust. If this forced movement would cause a creature to collide with a solid object or fall downstairs or out a window, that creature takes an additional (2d10 + 11) bludgeoning] damage (or 20 bludgeoning|options:fall-damage] damage due to a fall).",
+      "routine": "(1 action) The trap uses 1 action to blow powerful winds down the hall. Each creature in the hall must attempt a Fortitude DC 32 save with the same results as Gust. If this forced movement would cause a creature to collide with a solid object or fall downstairs or out a window, that creature takes an additional (2d10 + 11) bludgeoning damage (or 20 bludgeoning damage due to a fall).",
       "reset": "The trap resets when the door is shut.",
       "abilities": [
         {
@@ -746,7 +746,7 @@
       "abilities": [
         {
           "name": "Drop",
-          "text": "**Trigger** A creature walks onto the illusory floor\n\n---\n\n**Effect** The triggering creature falls through the illusory floor and takes falling damage (typically 20 bludgeoning|options:fall-damage] damage). That creature can use the Grab An Edge reaction to avoid falling. The DC to Climb the walls or Grab An Edge is 20.",
+          "text": "**Trigger** A creature walks onto the illusory floor\n\n---\n\n**Effect** The triggering creature falls through the illusory floor and takes falling damage (typically 20 bludgeoning damage). That creature can use the [Grab An Edge](/action/grab-an-edge-player-core) reaction to avoid falling. The DC to Climb the walls or Grab An Edge is 20.",
           "traits": [],
           "actions": "reaction"
         }
@@ -825,7 +825,7 @@
       "abilities": [
         {
           "name": "False Step",
-          "text": "**Trigger** A creature enters the room and steps onto the floor\n\n**Effect** The creature slips through the floor; it tumbles through an interdimensional void before falling back into the room through the ceiling and landing on the floor. The triggering creature takes 40 bludgeoning|options:fall-damage] damage from the fall. That creature can try to Grab An Edge to avoid falling.",
+          "text": "**Trigger** A creature enters the room and steps onto the floor\n\n**Effect** The creature slips through the floor; it tumbles through an interdimensional void before falling back into the room through the ceiling and landing on the floor. The triggering creature takes 40 bludgeoning damage from the fall. That creature can try to Grab An Edge to avoid falling.",
           "traits": [
             "arcane",
             "teleportation"
@@ -1219,7 +1219,7 @@
       "abilities": [
         {
           "name": "Flip",
-          "text": "**Trigger** A creature steps on a pressure plate\n\n---\n\n**Effect** The floor and adjoining wall rotate up and over on a central axle, tipping the triggering creature into an adjacent featureless room and simultaneously replacing the pressure plate and wall with another set on the same axle. The triggering creature is pushed into an adjoining room, takes 1d8 bludgeoning] damage, and lands Prone. A creature who succeeds at a Reflex DC 19 save takes no damage and rolls out of the way of the trap, returning to the space they were in before stepping on the pressure plate.",
+          "text": "**Trigger** A creature steps on a pressure plate\n\n---\n\n**Effect** The floor and adjoining wall rotate up and over on a central axle, tipping the triggering creature into an adjacent featureless room and simultaneously replacing the pressure plate and wall with another set on the same axle. The triggering creature is pushed into an adjoining room, takes 1d8 bludgeoning damage, and lands [Prone](/condition/prone-player-core). A creature who succeeds at a Reflex DC 19 save takes no damage and rolls out of the way of the trap, returning to the space they were in before stepping on the pressure plate.",
           "traits": [],
           "actions": "reaction"
         }
@@ -1371,7 +1371,7 @@
       "abilities": [
         {
           "name": "Siphon Soul",
-          "text": "**Trigger** A creature touches the window\n\n---\n\n**Effect** The triggering creature takes (8d10+44) void] damage with a basic Will DC 42 save as the window attempts to steal their soul. If this damage would kill the target, the target's soul is trapped inside the window with the effects of Seize Soul.",
+          "text": "**Trigger** A creature touches the window\n\n---\n\n**Effect** The triggering creature takes 8d10+44 void damage with a basic Will DC 42 save as the window attempts to steal their soul. If this damage would kill the target, the target's soul is trapped inside the window with the effects of [Seize Soul](/spell/seize-soul-player-core).",
           "traits": [
             "occult",
             "void"
@@ -1437,7 +1437,7 @@
         "will": 0
       },
       "disable": "Diplomacy DC 32 (master) to quell the fear and calm the pool or Intimidation DC 35 to give the pool something worse to fear; three successes required.",
-      "routine": "(3 actions) Water from the chalice increases the depth of the water by 10 feet for each action. Each time this happens, creatures in the pool are pushed 10 feet down and take 1d6 bludgeoning] damage. As the pool has no bottom, creatures in it can fall down indefinitely; they must Swim up to avoid drowning, but the water is especially choppy, so the Athletics DC is Athletics DC 25. The pool never overflows. Each successful check to Disable reduces the pool's actions by 1, and once the pool is completely Disabled, the water becomes still and the Athletics DC to Swim becomes Athletics DC 10.",
+      "routine": "(3 actions) Water from the chalice increases the depth of the water by 10 feet for each action. Each time this happens, creatures in the pool are pushed 10 feet down and take 1d6 bludgeoning damage. As the pool has no bottom, creatures in it can fall down indefinitely; they must [Swim](/action/swim-player-core) up to avoid drowning, but the water is especially choppy, so the Athletics DC is Athletics DC 25. The pool never overflows. Each successful check to Disable reduces the pool's actions by 1, and once the pool is completely Disabled, the water becomes still and the Athletics DC to Swim becomes Athletics DC 10.",
       "reset": "The trap resets once there are no moving creatures in it.",
       "abilities": [
         {

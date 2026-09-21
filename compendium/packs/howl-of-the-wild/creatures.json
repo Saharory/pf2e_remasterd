@@ -131,7 +131,7 @@
           },
           {
             "name": "Beam of Light",
-            "text": "The alicorn harnesses a powerful burning ray of light from their horn. Creatures in a area take 1d4 rounds.",
+            "text": "The alicorn harnesses a powerful burning ray of light from their horn. Creatures in a 120-foot line take 16d6 fire damage (basic Fortitude DC 36 save). An unholy creature in the area takes an additional 8d6 spirit damage. If the light passes through an area of magical darkness or targets a creature affected by magical darkness, the beam attempts to counteract the darkness (counteract modifier +28, counteract rank 8th). The alicorn can't use its Beam of Light again for 1d4 rounds.",
             "traits": [
               "arcane",
               "concentrate",
@@ -301,7 +301,7 @@
         "offensive": [
           {
             "name": "Final Shake",
-            "text": "**Requirements** The almiraj has a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The almiraj clamps its jaws down on the creature and shakes it vigorously, attempting to finish it off. The creature takes 2d6 bludgeoning] damage and must succeed at a Fortitude DC 20 save or become Enfeebled 1. Small or smaller creatures take a –2 circumstance penalty to their save.",
+            "text": "**Requirements** The almiraj has a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The almiraj clamps its jaws down on the creature and shakes it vigorously, attempting to finish it off. The creature takes 2d6 bludgeoning damage and must succeed at a Fortitude DC 20 save or become [Enfeebled 1](/condition/enfeebled-player-core). Small or smaller creatures take a –2 circumstance penalty to their save.",
             "traits": [],
             "actions": "one"
           },
@@ -437,7 +437,7 @@
           },
           {
             "name": "Inject Potion",
-            "text": "The apothecary bee injects its stored potion into a willing creature within its reach. This deals 1 piercing] damage and grants the recipient the normal effects of drinking the potion.",
+            "text": "The apothecary bee injects its stored potion into a willing creature within its reach. This deals 1 piercing damage and grants the recipient the normal effects of drinking the potion.",
             "traits": [
               "manipulate"
             ],
@@ -933,7 +933,7 @@
         "offensive": [
           {
             "name": "Budding Siphon",
-            "text": "20 feet. A blooming guardian is in a constant state of decomposition; to keep this entropy at bay, the flowers that cover their antlers continually siphon life from the surrounding area. All living creatures that enter or start their turn in the emanation take 6d4 void|options:area-damage] damage (basic Fortitude DC 36 save). At the start of their turn in any round that the blooming guardian deals damage with siphoning buds, they gain 10 temporary Hit Points, plus 2 temporary Hit Points for each creature damaged beyond the first since the blooming guardian's last turn, to a maximum of 20 temporary Hit Points.",
+            "text": "20 feet. A blooming guardian is in a constant state of decomposition; to keep this entropy at bay, the flowers that cover their antlers continually siphon life from the surrounding area. All living creatures that enter or start their turn in the emanation take 6d4 void damage (basic Fortitude DC 36 save). At the start of their turn in any round that the blooming guardian deals damage with siphoning buds, they gain 10 temporary Hit Points, plus 2 temporary Hit Points for each creature damaged beyond the first since the blooming guardian's last turn, to a maximum of 20 temporary Hit Points.",
             "traits": [
               "aura",
               "primal",
@@ -944,7 +944,7 @@
           },
           {
             "name": "Full Bloom",
-            "text": "The flowers on the blooming guardian's antlers bloom, unveiling their brilliance as they eat away at their host. While in this stance, the blooming guardian's Strikes deal an additional 2d4 poison damage plus 5 persistent poison damage; on a hit, a target must succeed at a Fortitude DC 36 save or become Enfeebled 2. The blooming guardian takes 5 persistent,poison] damage as long as it's in Full Bloom.",
+            "text": "The flowers on the blooming guardian's antlers bloom, unveiling their brilliance as they eat away at their host. While in this stance, the blooming guardian's Strikes deal an additional 2d4 poison damage plus 5 persistent poison damage; on a hit, a target must succeed at a Fortitude DC 36 save or become [Enfeebled 2](/condition/enfeebled-player-core). The blooming guardian takes 5 persistent poison damage as long as it's in Full Bloom.",
             "traits": [
               "poison",
               "primal",
@@ -960,7 +960,7 @@
           },
           {
             "name": "Wail of the Forest",
-            "text": "**Requirements** The blooming guardian is in Full Bloom\n\n---\n\n**Effect** The blooming guardian confronts their mortality, causing their flowers to burst and spray their pollen. All creatures in a area take 1d4 rounds.\n\n---\n\n**Critical Success** No effect.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and becomes Drained 1. Creatures that are Enfeebled lose that condition and increase the [drained](/condition/drained-player-core) condition by the same value.\n\n**Critical Failure** As failure, but double damage.",
+            "text": "**Requirements** The blooming guardian is in Full Bloom\n\n---\n\n**Effect** The blooming guardian confronts their mortality, causing their flowers to burst and spray their pollen. All creatures in a 40-foot cone take 10d10 void damage with a Fortitude DC 36 save. The blooming guardian then exits Full Bloom and can't enter it again for 1d4 rounds.\n\n---\n\n**Critical Success** No effect.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and becomes [Drained 1](/condition/drained-player-core). Creatures that are Enfeebled lose that condition and increase the drained condition by the same value.\n\n**Critical Failure** As failure, but double damage.",
             "traits": [
               "primal",
               "void"
@@ -1273,7 +1273,7 @@
           },
           {
             "name": "Storm Nexus",
-            "text": "15 feet. 3d6 untyped|options:area-damage], basic Reflex DC 26 save. The chaos falcon is surrounded by a cloud of volcanic ash, lightning arcing within the cloud as it glows hot in some areas and collects ice in others. A chaos falcon can change the damage type of this aura to cold, electricity, or fire as an action, which has the [concentrate](/trait/concentrate) trait.",
+            "text": "15 feet. 3d6 untyped, basic Reflex DC 26 save. The chaos falcon is surrounded by a cloud of volcanic ash, lightning arcing within the cloud as it glows hot in some areas and collects ice in others. A chaos falcon can change the damage type of this aura to cold, electricity, or fire as an action, which has the [concentrate](/trait/concentrate) trait.",
             "traits": [
               "aura",
               "primal"
@@ -1414,7 +1414,7 @@
         "interaction": [
           {
             "name": "Conduct",
-            "text": "One of the froglets begins to sing, granting one of three effects to the concert frog and all allies within 60 feet until the beginning of the concert frog's next turn.\n\nEffect: Conduct\n\n**Red** Grants a +10-foot status bonus to their Speeds.\n**Blue** Grants a +1 status bonus to AC and Fortitude saving throws.\n**Yellow** Allies gain a +1 status bonus to attack rolls and deal an additional 1d4 sonic] damage on successful melee Strikes as their attacks resonate.",
+            "text": "One of the froglets begins to sing, granting one of three effects to the concert frog and all allies within 60 feet until the beginning of the concert frog's next turn.\n\nEffect: Conduct\n\n**Red** Grants a +10-foot status bonus to their Speeds.\n**Blue** Grants a +1 status bonus to AC and Fortitude saving throws.\n**Yellow** Allies gain a +1 status bonus to attack rolls and deal an additional 1d4 sonic damage on successful melee Strikes as their attacks resonate.",
             "traits": [
               "auditory",
               "mental",
@@ -1560,7 +1560,7 @@
         "offensive": [
           {
             "name": "Crying Cicada Poison",
-            "text": "**Saving Throw** Fortitude DC 19\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison] damage plus Slowed 1 (1 round)\n\n**Stage 2** 1d6 poison damage plus Slowed 2 (1 round)\n\n**Stage 3** 2d6 poison] damage plus slowed 2 and Stupefied 1 (1 round).",
+            "text": "**Saving Throw** Fortitude DC 19\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison damage plus [Slowed 1](/condition/slowed-player-core) (1 round)\n\n**Stage 2** 1d6 poison damage plus Slowed 2 (1 round)\n\n**Stage 3** 2d6 poison damage plus slowed 2 and [Stupefied 1](/condition/stupefied-player-core) (1 round).",
             "traits": [
               "inhaled",
               "poison"
@@ -1568,7 +1568,7 @@
           },
           {
             "name": "Sob",
-            "text": "The crying cicada mimics the noise of a wounded animal or crying child. Non-cicada creatures within a area must attempt a Will DC 19 save or be distressed by the pleas for help. The effect lasts for 1 round, but if the cicada uses this ability again on subsequent rounds, it extends the duration by 1 round for all affected creatures. Once a creature succeeds at any save against Sob, that creature is temporarily immune to Sob for 24 hours.\n\n---\n\n**Success** The creature is unaffected.\n\n**Failure** The creature believes an animal or child needs help somewhere nearby. The creature is Fascinated, and it must spend each of its actions to Seek or move closer to the cicada as expediently as possible, while avoiding obvious dangers. If the creature is adjacent to the cicada, it stays still and doesn't act.",
+            "text": "The crying cicada mimics the noise of a wounded animal or crying child. Non-cicada creatures within a 150-foot emanation must attempt a Will DC 19 save or be distressed by the pleas for help. The effect lasts for 1 round, but if the cicada uses this ability again on subsequent rounds, it extends the duration by 1 round for all affected creatures. Once a creature succeeds at any save against Sob, that creature is temporarily immune to Sob for 24 hours.\n\n---\n\n**Success** The creature is unaffected.\n\n**Failure** The creature believes an animal or child needs help somewhere nearby. The creature is [Fascinated](/condition/fascinated-player-core), and it must spend each of its actions to [Seek](/action/seek-player-core) or move closer to the cicada as expediently as possible, while avoiding obvious dangers. If the creature is adjacent to the cicada, it stays still and doesn't act.",
             "traits": [
               "auditory",
               "emotion",
@@ -1578,7 +1578,7 @@
           },
           {
             "name": "Wing Flurry",
-            "text": "The crying cicada beats its wings together, exposing all creatures within a area to crying cicada poison.",
+            "text": "The crying cicada beats its wings together, exposing all creatures within a 10-foot burst to crying cicada poison.",
             "traits": [],
             "actions": "one"
           }
@@ -1738,7 +1738,7 @@
         "offensive": [
           {
             "name": "Stinging Anemones",
-            "text": "The decapod dinghy's anemones sting any number of creatures they choose among passengers and those the decapod dinghy has Grabbed or Restrained. The stings deal 5d6 poison] damage (basic Fortitude DC 26). On a failed save, that creature is also Enfeebled 2 for 1 hour.",
+            "text": "The decapod dinghy's anemones sting any number of creatures they choose among passengers and those the decapod dinghy has [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core). The stings deal 5d6 poison damage (basic Fortitude DC 26). On a failed save, that creature is also [Enfeebled 2](/condition/enfeebled-player-core) for 1 hour.",
             "traits": [
               "poison"
             ],
@@ -1891,7 +1891,7 @@
         "offensive": [
           {
             "name": "Manticore Venom",
-            "text": "**Saving Throw** Fortitude DC 32\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 3d8 poison] damage and Drained 1 (1 round)\n\n**Stage 2** 4d8 poison] damage and Drained 2 (1 round)\n\n**Stage 3** 5d8 poison] damage and Drained 3 (1 round)",
+            "text": "**Saving Throw** Fortitude DC 32\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 3d8 poison damage and [Drained 1](/condition/drained-player-core) (1 round)\n\n**Stage 2** 4d8 poison damage and Drained 2 (1 round)\n\n**Stage 3** 5d8 poison damage and Drained 3 (1 round)",
             "traits": [
               "poison"
             ]
@@ -2050,7 +2050,7 @@
         "offensive": [
           {
             "name": "Bubble Burst",
-            "text": "**Requirements** The drthak is underwater\n\n---\n\n**Effect** The drthak uses sonic power to push aside water in a area, which then collapses in a crushing torrent. All creatures in the area, other than the drthak, take 3d10 bludgeoning|options:area-damage] damage (basic Fortitude DC 24 save).",
+            "text": "**Requirements** The drthak is underwater\n\n---\n\n**Effect** The drthak uses sonic power to push aside water in a 30-foot emanation, which then collapses in a crushing torrent. All creatures in the area, other than the drthak, take 3d10 bludgeoning damage (basic Fortitude DC 24 save).",
             "traits": [
               "sonic",
               "water"
@@ -2059,7 +2059,7 @@
           },
           {
             "name": "Resonant Jaws",
-            "text": "When the drthak misses a screech Strike against a creature Grabbed or Restrained in its jaws, it deals that creature 2d6 sonic] damage.",
+            "text": "When the drthak misses a screech Strike against a creature Grabbed or [Restrained](/condition/restrained-player-core) in its jaws, it deals that creature 2d6 sonic damage.",
             "traits": []
           }
         ]
@@ -2172,7 +2172,7 @@
         "offensive": [
           {
             "name": "Bite and Gnaw",
-            "text": "Each enemy in the school's space takes 2d8 piercing] damage (basic Reflex DC 19 save)",
+            "text": "Each enemy in the school's space takes 2d8 piercing damage (basic Reflex DC 19 save)",
             "traits": [],
             "actions": "one"
           }
@@ -2308,7 +2308,7 @@
         "defensive": [
           {
             "name": "Spill",
-            "text": "**Requirements** The flynkett is Kettled Up\n\n**Trigger** The flynkett takes physical damage or is knocked Prone\n\n---\n\n**Effect** The flynkett spills the contents of its full skin flaps, releasing its digestive juices in a cloud of acidic vapor that deals 2d8 acid|options:area-damage] damage to all non-flynkett creatures within 20 feet (basic Fortitude DC 18 save). If the flynkett was boiling, the damage is increased to 4d8.",
+            "text": "**Requirements** The flynkett is Kettled Up\n\n**Trigger** The flynkett takes physical damage or is knocked [Prone](/condition/prone-player-core)\n\n---\n\n**Effect** The flynkett spills the contents of its full skin flaps, releasing its digestive juices in a cloud of acidic vapor that deals 2d8 acid damage to all non-flynkett creatures within 20 feet (basic Fortitude DC 18 save). If the flynkett was boiling, the damage is increased to 4d8.",
             "traits": [
               "acid"
             ],
@@ -2613,7 +2613,7 @@
           },
           {
             "name": "Venomous Spit",
-            "text": "The coppermouth unleashes a stream of electrified venom in a area. The venom deals 1d4 rounds.",
+            "text": "The coppermouth unleashes a stream of electrified venom in a 30-foot line. The venom deals 8d6 electricity damage (basic Reflex DC 22) and creatures that take damage from the venom are immediately exposed to coppermouth venom. The copper mouth can't use Venomous Spit again for 1d4 rounds.",
             "traits": [
               "electricity",
               "poison"
@@ -2729,7 +2729,7 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "(2d8) piercing], basic Fortitude DC 21\n\n---\n\nConstrict",
+            "text": "2d8 piercing, basic Fortitude DC 21\n\n---\n\nConstrict",
             "traits": [],
             "actions": "one"
           },
@@ -2874,7 +2874,7 @@
         "offensive": [
           {
             "name": "Vacuum Mouth",
-            "text": "**Requirements** The giant tardigrade doesn't have a target Grabbed\n\n---\n\n**Effect** The giant tardigrade draws in air with its mouth. All creatures in a area must succeed at a Reflex DC 25 save or be pulled adjacent to the giant tardigrade. The tardigrade chooses one creature that failed its save, Grabbing the target in its claws and making a stylet Strike.",
+            "text": "**Requirements** The giant tardigrade doesn't have a target [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The giant tardigrade draws in air with its mouth. All creatures in a 20-foot cone must succeed at a Reflex DC 25 save or be pulled adjacent to the giant tardigrade. The tardigrade chooses one creature that failed its save, Grabbing the target in its claws and making a stylet Strike.",
             "traits": [],
             "actions": "two"
           },
@@ -3010,7 +3010,7 @@
         "defensive": [
           {
             "name": "Grasping Jaws",
-            "text": "Creatures that successfully Escape from the goblin shark's jaws take 1d6 bleed] as the shark's hold tears flesh away.",
+            "text": "Creatures that successfully [Escape](/action/escape-player-core) from the goblin shark's jaws take 1d6 bleed as the shark's hold tears flesh away.",
             "traits": []
           }
         ],
@@ -3283,7 +3283,7 @@
           },
           {
             "name": "Aquatic Feast",
-            "text": "**Requirements** The harbor seal has a Medium or smaller creature [Grabbed](/condition/grabbed-player-core) in its jaws\n\n---\n\n**Effect** The harbor seal Swims up to 10 feet, carrying its grabbed creature along with it dealing 1d8 slashing] damage (basic Fortitude DC 18 save).",
+            "text": "**Requirements** The harbor seal has a Medium or smaller creature [Grabbed](/condition/grabbed-player-core) in its jaws\n\n---\n\n**Effect** The harbor seal Swims up to 10 feet, carrying its grabbed creature along with it dealing 1d8 slashing damage (basic Fortitude DC 18 save).",
             "traits": [],
             "actions": "one"
           },
@@ -3416,7 +3416,7 @@
           },
           {
             "name": "Unbalancing Burrow",
-            "text": "The hardhead mole Burrows up to 20 feet in a straight line, displacing the earth on the surface. Any creature it passes through takes 1d6 bludgeoning] damage (basic Reflex DC 14 save). On a failed save, a creature is knocked Prone. This creates a burrow hole at the beginning and end of the line.",
+            "text": "The hardhead mole Burrows up to 20 feet in a straight line, displacing the earth on the surface. Any creature it passes through takes 1d6 bludgeoning damage (basic Reflex DC 14 save). On a failed save, a creature is knocked [Prone](/condition/prone-player-core). This creates a burrow hole at the beginning and end of the line.",
             "traits": [
               "move"
             ],
@@ -3535,7 +3535,7 @@
         "offensive": [
           {
             "name": "Deshell",
-            "text": "**Requirements** A creature is Grabbed or Restrained in the helicoprion's jaws\n\n---\n\n**Effect** The shark rips into the creature dealing 3d10 slashing] damage (basic Reflex DC 26 save).",
+            "text": "**Requirements** A creature is [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) in the helicoprion's jaws\n\n---\n\n**Effect** The shark rips into the creature dealing 3d10 slashing damage (basic Reflex DC 26 save).",
             "traits": [
               "attack"
             ],
@@ -3543,7 +3543,7 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Huge, (2d10+10) bludgeoning], Rupture 22\n\n---\n\nSwallowwhole",
+            "text": "Huge, 2d10+10 bludgeoning, Rupture 22\n\n---\n\nSwallowwhole",
             "traits": [
               "attack"
             ],
@@ -3686,7 +3686,7 @@
         "offensive": [
           {
             "name": "Arcane Consumption",
-            "text": "The hexmoth attempts to consume the magic of an adjacent magical effect or unattended magic item. It attempts a counteract check against the target with a +16 modifier. On a success, the magical effect ends. A magic item instead becomes a mundane item for 1 round. The hexmoth gains 2d8 healing] Hit Points.",
+            "text": "The hexmoth attempts to consume the magic of an adjacent magical effect or unattended magic item. It attempts a counteract check against the target with a +16 modifier. On a success, the magical effect ends. A magic item instead becomes a mundane item for 1 round. The hexmoth gains 2d8 healing Hit Points.",
             "traits": [],
             "actions": "one"
           },
@@ -3698,7 +3698,7 @@
           },
           {
             "name": "Hexdust Wind",
-            "text": "With a few fierce wingbeats, the hexmoth expels magical scale dust in a area. This deals 1d4 rounds.",
+            "text": "With a few fierce wingbeats, the hexmoth expels magical scale dust in a 30-foot cone. This deals 10d6 untyped damage of the type to which the hexmoth is immune (basic Fortitude DC 23 save). It can't use Hexdust Wind again for 1d4 rounds.",
             "traits": [],
             "actions": "two"
           }
@@ -3819,7 +3819,7 @@
         "offensive": [
           {
             "name": "Arcane Consumption",
-            "text": "The hexworm attempts to consume the magic of an adjacent magical effect or unattended magic item. It attempts a counteract check against the target with a +11 modifier. On a success, the magical effect ends. A magic item instead becomes a mundane item for 1 round. The hexworm gains 2d8 healing] Hit Points.",
+            "text": "The hexworm attempts to consume the magic of an adjacent magical effect or unattended magic item. It attempts a counteract check against the target with a +11 modifier. On a success, the magical effect ends. A magic item instead becomes a mundane item for 1 round. The hexworm gains 2d8 healing Hit Points.",
             "traits": [],
             "actions": "one"
           },
@@ -3964,7 +3964,7 @@
           },
           {
             "name": "Constrict",
-            "text": "(2d6+2) piercing] plus crush throat, basic Fortitude DC 21\n\n---\n\nConstrict",
+            "text": "2d6+2 piercing plus crush throat, basic Fortitude DC 21\n\n---\n\nConstrict",
             "traits": [],
             "actions": "one"
           },
@@ -4418,7 +4418,7 @@
           },
           {
             "name": "Predatory Slam",
-            "text": "**Requirements** The leopard seal is in water\n\n---\n\n**Effect** The leopard seal travels up to 40 feet, ending its movement on land. Enemies adjacent to the leopard seal when it ends its movement take 2d10 bludgeoning] damage (basic Reflex DC 21 save) and are knocked Prone on a failure.",
+            "text": "**Requirements** The leopard seal is in water\n\n---\n\n**Effect** The leopard seal travels up to 40 feet, ending its movement on land. Enemies adjacent to the leopard seal when it ends its movement take 2d10 bludgeoning damage (basic Reflex DC 21 save) and are knocked [Prone](/condition/prone-player-core) on a failure.",
             "traits": [],
             "actions": "two"
           },
@@ -4555,7 +4555,7 @@
         "defensive": [
           {
             "name": "Shell Shock",
-            "text": "**Trigger** A lightning turtle is hit by a melee or an unarmed attack\n\n---\n\n**Effect** The lightning turtle releases some of its stored electrical power, inflicting 7d6 electricity] damage to the creature attacking it.",
+            "text": "**Trigger** A lightning turtle is hit by a melee or an unarmed attack\n\n---\n\n**Effect** The lightning turtle releases some of its stored electrical power, inflicting 7d6 electricity damage to the creature attacking it.",
             "traits": [
               "electricity",
               "nonlethal"
@@ -4566,7 +4566,7 @@
         "offensive": [
           {
             "name": "Healing Pulse",
-            "text": "The lightning turtle releases a pulse of low-intensity electricity from its body to promote healing. This restores 5d8 healing] Hit Points to the turtle and each living ally within 10 feet, including creatures normally immune to electricity. The turtle can't use Healing Pulse again for 1 minute and is temporarily immune to the Healing Pulse of any lightning turtle for 1 minute.",
+            "text": "The lightning turtle releases a pulse of low-intensity electricity from its body to promote healing. This restores 5d8 healing Hit Points to the turtle and each living ally within 10 feet, including creatures normally immune to electricity. The turtle can't use Healing Pulse again for 1 minute and is temporarily immune to the Healing Pulse of any lightning turtle for 1 minute.",
             "traits": [
               "electricity",
               "healing",
@@ -4685,7 +4685,7 @@
         "defensive": [
           {
             "name": "Metal Allergy",
-            "text": "When a magnegor takes damage from a metal weapon or an effect with the [metal](/trait/metal) trait, it takes 5 untyped] additional damage and must succeed at a Flat DC 5 or become Sickened 1. The value of the [sickened](/condition/sickened-player-core) condition increases each time the magnegor fails such a check, to a maximum of 3.",
+            "text": "When a magnegor takes damage from a metal weapon or an effect with the [metal](/trait/metal) trait, it takes 5 untyped additional damage and must succeed at a Flat DC 5 or become [Sickened 1](/condition/sickened-player-core). The value of the sickened condition increases each time the magnegor fails such a check, to a maximum of 3.",
             "traits": []
           }
         ],
@@ -4704,7 +4704,7 @@
           },
           {
             "name": "Wallow",
-            "text": "**Requirements** The magnegor is Prone\n\n---\n\n**Effect** The magnegor rolls on its spine-covered back, up to its Speed, furrowing the earth and crushing any Large or smaller creatures in its path. This deals 4d10 piercing] damage with a basic Reflex DC 24 save; on a failed save, a creature wearing metal armor or made of metal is Restrained by the magnegor's magnetized coat (Escape). For each metal object or piece of equipment a [restrained](/condition/restrained-player-core) creature chooses to leave stuck to the magnegor, it gains a +1 circumstance bonus to its attempts to Escape. A creature that relinquishes all its metal Escapes automatically. The magnegor can move at its full Speed while it has a creature restrained in this way, bringing the creature along.",
+            "text": "**Requirements** The magnegor is [Prone](/condition/prone-player-core)\n\n---\n\n**Effect** The magnegor rolls on its spine-covered back, up to its Speed, furrowing the earth and crushing any Large or smaller creatures in its path. This deals 4d10 piercing damage with a basic Reflex DC 24 save; on a failed save, a creature wearing metal armor or made of metal is [Restrained](/condition/restrained-player-core) by the magnegor's magnetized coat (Escape). For each metal object or piece of equipment a restrained creature chooses to leave stuck to the magnegor, it gains a +1 circumstance bonus to its attempts to Escape. A creature that relinquishes all its metal Escapes automatically. The magnegor can move at its full Speed while it has a creature restrained in this way, bringing the creature along.",
             "traits": [
               "move"
             ],
@@ -4986,7 +4986,7 @@
         "offensive": [
           {
             "name": "Crack Bones",
-            "text": "**Requirements** The majungasaurus has a creature [Grabbed](/condition/grabbed-player-core) in its jaws\n\n---\n\n**Effect** The majungasaurus deals that creature 3d8 bludgeoning] damage (basic Fortitude DC 24 save). A creature that fails this save is Clumsy 1 until it recovers to full Hit Points.",
+            "text": "**Requirements** The majungasaurus has a creature [Grabbed](/condition/grabbed-player-core) in its jaws\n\n---\n\n**Effect** The majungasaurus deals that creature 3d8 bludgeoning damage (basic Fortitude DC 24 save). A creature that fails this save is [Clumsy 1](/condition/clumsy-player-core) until it recovers to full Hit Points.",
             "traits": [],
             "actions": "one"
           }
@@ -5141,7 +5141,7 @@
           },
           {
             "name": "Digest",
-            "text": "**Requirements** The mammoth land star has a target Grabbed\n\n---\n\n**Effect** The mammoth land star extrudes its stomach onto its prey and digests it alive. The target takes (2d12+6) acid] damage and is Drained 1.",
+            "text": "**Requirements** The mammoth land star has a target [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The mammoth land star extrudes its stomach onto its prey and digests it alive. The target takes 2d12+6 acid damage and is [Drained 1](/condition/drained-player-core).",
             "traits": [],
             "actions": "one"
           },
@@ -5161,7 +5161,7 @@
           },
           {
             "name": "Spiny Venom",
-            "text": "**Saving Throw** Fortitude DC 26\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison] and Slowed 1\n\n**Stage 2** 2d6 poison] and Slowed 2\n\n**Stage 3** 2d8 poison] and Paralyzed",
+            "text": "**Saving Throw** Fortitude DC 26\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison and [Slowed 1](/condition/slowed-player-core)\n\n**Stage 2** 2d6 poison and Slowed 2\n\n**Stage 3** 2d8 poison and [Paralyzed](/condition/paralyzed-player-core)",
             "traits": [
               "incapacitation",
               "poison"
@@ -5301,7 +5301,7 @@
         "offensive": [
           {
             "name": "Gold?",
-            "text": "The marp asks for gold from all creatures in a area. Each target must attempt a Will DC 22 save or retrieve and drop gold valuables as a free action.\n\n---\n\n**Critical Success** The target can refuse the request, though they can also choose to willingly hand over any amount of gold. If they do so, they gain a +1 status bonus to the next saving throw they attempt within 1 minute, and they're temporarily immune to Scampering Theft for 1 minute.\n\n**Success** The target can refuse the request.\n\n**Failure** The target must drop coins, gold jewelry, or other objects worth 20 gp.\n\n**Critical Failure** As failure, but 40 gp.",
+            "text": "The marp asks for gold from all creatures in a 30-foot emanation. Each target must attempt a Will DC 22 save or retrieve and drop gold valuables as a free action.\n\n---\n\n**Critical Success** The target can refuse the request, though they can also choose to willingly hand over any amount of gold. If they do so, they gain a +1 status bonus to the next saving throw they attempt within 1 minute, and they're temporarily immune to Scampering Theft for 1 minute.\n\n**Success** The target can refuse the request.\n\n**Failure** The target must drop coins, gold jewelry, or other objects worth 20 gp.\n\n**Critical Failure** As failure, but 40 gp.",
             "traits": [
               "auditory",
               "emotion",
@@ -5623,7 +5623,7 @@
           },
           {
             "name": "Misty Mauling",
-            "text": "**Requirements** The mist bear has a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The mist bear digs its claws into the grabbed creature as it dissipates into mist. The grabbed creature takes 3d8 slashing] damage (basic Fortitude DC 25 save). The mist bear gains the benefits of its Mist Form, Flies up to 10 feet, and then returns to its solid form.",
+            "text": "**Requirements** The mist bear has a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The mist bear digs its claws into the grabbed creature as it dissipates into mist. The grabbed creature takes 3d8 slashing damage (basic Fortitude DC 25 save). The mist bear gains the benefits of its Mist Form, Flies up to 10 feet, and then returns to its solid form.",
             "traits": [
               "concentrate",
               "occult",
@@ -5946,7 +5946,7 @@
         "offensive": [
           {
             "name": "Petty Whispers",
-            "text": "The mocking chorus adopts the voices of its enemies, spreading lies and jeers among would-be allies and tearing apart trusted friends. Creatures in a area of the mocking chorus must attempt a Will DC 37 save. The mocking chorus can't use petty whispers again for 1 minute.\n\n---\n\n**Critical Success** The creature is unaffected and is temporarily immune for 1 day.\n\n**Success** As failure, but the creature takes half damage and is not Confused.\n\n**Failure** The creature takes 12d10 mental|options:area-damage] damage and is confused for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.\n\n**Critical Failure** The creature takes 15d10 mental|options:area-damage] damage and is confused for 1 minute, with no save to end early.",
+            "text": "The mocking chorus adopts the voices of its enemies, spreading lies and jeers among would-be allies and tearing apart trusted friends. Creatures in a 60-foot emanation of the mocking chorus must attempt a Will DC 37 save. The mocking chorus can't use petty whispers again for 1 minute.\n\n---\n\n**Critical Success** The creature is unaffected and is temporarily immune for 1 day.\n\n**Success** As failure, but the creature takes half damage and is not [Confused](/condition/confused-player-core).\n\n**Failure** The creature takes 12d10 mental damage and is confused for 1 minute. It can attempt a new save at the end of each of its turns to end the confusion.\n\n**Critical Failure** The creature takes 15d10 mental damage and is confused for 1 minute, with no save to end early.",
             "traits": [
               "auditory",
               "mental"
@@ -6395,13 +6395,13 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "(2d10+10) bludgeoning], basic Fortitude DC 32\n\n---\n\nConstrict",
+            "text": "2d10+10 bludgeoning, basic Fortitude DC 32\n\n---\n\nConstrict",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Crumbling Earth",
-            "text": "The plated python lets its breath sink into the ground, transforming it to brittle stone within a area. The stone is difficult terrain to all other creatures. Other creatures on the ground in this area when it transforms must succeed at a Reflex DC 29 save or be Immobilized as the stone beneath them crumbles to rubble. A creature [immobilized](/condition/immobilized-player-core) in this way can Escape normally or use three total [Interact](/action/interact-player-core) actions to dig themself free.",
+            "text": "The plated python lets its breath sink into the ground, transforming it to brittle stone within a 30-foot emanation. The stone is difficult terrain to all other creatures. Other creatures on the ground in this area when it transforms must succeed at a Reflex DC 29 save or be [Immobilized](/condition/immobilized-player-core) as the stone beneath them crumbles to rubble. A creature immobilized in this way can [Escape](/action/escape-player-core) normally or use three total [Interact](/action/interact-player-core) actions to dig themself free.",
             "traits": [
               "earth",
               "primal"
@@ -6425,7 +6425,7 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, (3d10+5) acid], Rupture 20\n\n---\n\nThis damage ignores the hardness of [petrified](/condition/petrified-player-core) creatures.\n\nSwallowwhole",
+            "text": "Large, 3d10+5 acid, Rupture 20\n\n---\n\nThis damage ignores the hardness of [petrified](/condition/petrified-player-core) creatures.\n\nSwallowwhole",
             "traits": [
               "attack"
             ],
@@ -6884,7 +6884,7 @@
         "offensive": [
           {
             "name": "Swallow Whole",
-            "text": "Large, (1d12+2) bludgeoning], Rupture 10\n\n---\n\nSwallowwhole",
+            "text": "Large, 1d12+2 bludgeoning, Rupture 10\n\n---\n\nSwallowwhole",
             "traits": [
               "attack"
             ],
@@ -7049,20 +7049,20 @@
         "offensive": [
           {
             "name": "Greater Constrict",
-            "text": "(4d8+3) bludgeoning], basic Fortitude DC 32\n\n---\n\nGreaterconstrict",
+            "text": "4d8+3 bludgeoning, basic Fortitude DC 32\n\n---\n\nGreaterconstrict",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Royal Basilisk Venom",
-            "text": "**Saving Throw** DC 36\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d10 poison] and Clumsy 2 (1 round)\n\n**Stage 2** 3d10 poison] and Clumsy 3 (1 round)\n\n**Stage 3** 4d10 poison], clumsy 3, and Slowed 1 (1 round)",
+            "text": "**Saving Throw** DC 36\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d10 poison and [Clumsy 2](/condition/clumsy-player-core) (1 round)\n\n**Stage 2** 3d10 poison and Clumsy 3 (1 round)\n\n**Stage 3** 4d10 poison, clumsy 3, and [Slowed 1](/condition/slowed-player-core) (1 round)",
             "traits": [
               "poison"
             ]
           },
           {
             "name": "Stone-Hewing Spit",
-            "text": "The royal basilisk spits its poison with immense force, dealing 5d10 acid and 5d8 piercing damage (basic Reflex DC 32 save) to creatures in a area and exposing each creature that took damage to royal basilisk venom. The line penetrates barriers with Hardness of less than 20, ignoring any bonuses they'd provide from cover. The royal basilisk can't use Stone-Hewing Spit again for 1d4 rounds.",
+            "text": "The royal basilisk spits its poison with immense force, dealing 5d10 acid and 5d8 piercing damage (basic Reflex DC 32 save) to creatures in a 240-foot line and exposing each creature that took damage to royal basilisk venom. The line penetrates barriers with Hardness of less than 20, ignoring any bonuses they'd provide from cover. The royal basilisk can't use Stone-Hewing Spit again for 1d4 rounds.",
             "traits": [
               "acid"
             ],
@@ -7070,7 +7070,7 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, (5d10) acid], Rupture 30\n\n---\n\nSwallowwhole",
+            "text": "Large, 5d10 acid, Rupture 30\n\n---\n\nSwallowwhole",
             "traits": [
               "attack"
             ],
@@ -7219,7 +7219,7 @@
         "defensive": [
           {
             "name": "Dreadful Resonance",
-            "text": "60 feet. Each creature that enters or starts its turn in the emanation must succeed at a Fortitude DC 36 save or become Enfeebled 1 (Enfeebled 2 on a critical failure) and take 3d8 sonic] damage.",
+            "text": "60 feet. Each creature that enters or starts its turn in the emanation must succeed at a Fortitude DC 36 save or become [Enfeebled 1](/condition/enfeebled-player-core) (Enfeebled 2 on a critical failure) and take 3d8 sonic damage.",
             "traits": [
               "auditory",
               "aura",
@@ -7260,7 +7260,7 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Huge, (3d10+9) bludgeoning], Rupture 30\n\n---\n\nSwallowwhole",
+            "text": "Huge, 3d10+9 bludgeoning, Rupture 30\n\n---\n\nSwallowwhole",
             "traits": [
               "attack"
             ],
@@ -7405,12 +7405,12 @@
         "offensive": [
           {
             "name": "Junk Nest",
-            "text": "The scroungefeather's nest of sharp metallic junk covers a 15-foot-by-15-foot area. The area is difficult terrain and hazardous terrain to any non-scroungefeather creatures. A creature that moves on the ground through the nest takes 3 piercing] damage for each square of the area it moves into. Scroungefeathers can Take Cover at any point in the nest.",
+            "text": "The scroungefeather's nest of sharp metallic junk covers a 15-foot-by-15-foot area. The area is difficult terrain and hazardous terrain to any non-scroungefeather creatures. A creature that moves on the ground through the nest takes 3 piercing damage for each square of the area it moves into. Scroungefeathers can [Take Cover](/action/take-cover-player-core) at any point in the nest.",
             "traits": []
           },
           {
             "name": "Tossed Scraps",
-            "text": "**Requirements** The scroungefeather has Grabbed Debris\n\n---\n\n**Effect** The scroungefeather flings the debris at a target within 20 feet, making an attack roll with a +12 modifier. On a success, the target takes (2d10+5) bludgeoning] damage.",
+            "text": "**Requirements** The scroungefeather has Grabbed Debris\n\n---\n\n**Effect** The scroungefeather flings the debris at a target within 20 feet, making an attack roll with a +12 modifier. On a success, the target takes 2d10+5 bludgeoning damage.",
             "traits": [],
             "actions": "one"
           },
@@ -7676,7 +7676,7 @@
         "offensive": [
           {
             "name": "Abduct",
-            "text": "The sky fisher reels in a target Grabbed by its tentacles, pulling them into an adjacent space, and then attempts to Swallow them Whole (Large, (3d8+12) acid], Rupture 25). The sky fisher can only use Swallow Whole when using Abduct.",
+            "text": "The sky fisher reels in a target [Grabbed](/condition/grabbed-player-core) by its tentacles, pulling them into an adjacent space, and then attempts to Swallow them Whole (Large, 3d8+12 acid, Rupture 25). The sky fisher can only use Swallow Whole when using Abduct.",
             "traits": [
               "attack"
             ],
@@ -7684,7 +7684,7 @@
           },
           {
             "name": "Enzymic Vent",
-            "text": "The sky fisher vents flesh-eating enzymes into the air, dealing 3d6 persistent acid damage and 3d6 persistent bleed damage in a area (basic Reflex DC 25 save). It can't use Enzymic Vent again for 1d4 rounds.",
+            "text": "The sky fisher vents flesh-eating enzymes into the air, dealing 3d6 persistent acid damage and 3d6 persistent bleed damage in a 20-foot emanation (basic Reflex DC 25 save). It can't use Enzymic Vent again for 1d4 rounds.",
             "traits": [
               "poison"
             ],
@@ -7700,7 +7700,7 @@
           },
           {
             "name": "Sky Fisher Venom",
-            "text": "**Saving Throw** Fortitude DC 25\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 3d6 poison] damage, Clumsy 1, and can't speak above a whisper (1 round)\n\n**Stage 2** 3d8 poison] damage, Clumsy 2, and can't speak (1 round)\n\n**Stage 3** 3d10 poison] damage and Paralyzed (1 round)",
+            "text": "**Saving Throw** Fortitude DC 25\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 3d6 poison damage, [Clumsy 1](/condition/clumsy-player-core), and can't speak above a whisper (1 round)\n\n**Stage 2** 3d8 poison damage, Clumsy 2, and can't speak (1 round)\n\n**Stage 3** 3d10 poison damage and [Paralyzed](/condition/paralyzed-player-core) (1 round)",
             "traits": [
               "poison"
             ]
@@ -7856,7 +7856,7 @@
         "offensive": [
           {
             "name": "Aftershock",
-            "text": "Whenever a soniphak hits with a screech Strike, feedback deals each creature the soniphak has Grabbed or Restrained 1d6 sonic] damage.",
+            "text": "Whenever a soniphak hits with a screech Strike, feedback deals each creature the soniphak has Grabbed or [Restrained](/condition/restrained-player-core) 1d6 sonic damage.",
             "traits": []
           },
           {
@@ -7867,7 +7867,7 @@
           },
           {
             "name": "Shattering Scream",
-            "text": "The soniphak can focus its screech at a stone or rock surface within 60 feet to create an explosion in a area from the point of impact. Creatures in the area take 5d6 piercing|options:area-damage] damage (basic Reflex DC 28 save), and the area becomes difficult terrain due to fragments of loose stone.",
+            "text": "The soniphak can focus its screech at a stone or rock surface within 60 feet to create an explosion in a 15-foot burst from the point of impact. Creatures in the area take 5d6 piercing damage (basic Reflex DC 28 save), and the area becomes difficult terrain due to fragments of loose stone.",
             "traits": [
               "sonic"
             ],
@@ -7993,12 +7993,12 @@
         "offensive": [
           {
             "name": "Seed Spores",
-            "text": "A creature hit by the sporeback frog's tongue Strike takes 1d6 persistent,poison] damage as fungal spores begin to grow.",
+            "text": "A creature hit by the sporeback frog's tongue Strike takes 1d6 persistent poison damage as fungal spores begin to grow.",
             "traits": []
           },
           {
             "name": "Soporific Spores",
-            "text": "The sporeback frog shakes the plants and fungi on its back until they emit a cloud of spores in a area. All creatures in the area must succeed a Fortitude DC 22 save or become Clumsy 2 and Stupefied 2 for 1 minute (Clumsy 3 and Stupefied 3 on a critical failure). This ability can't be used again for 1d4 rounds.",
+            "text": "The sporeback frog shakes the plants and fungi on its back until they emit a cloud of spores in a 20-foot emanation. All creatures in the area must succeed a Fortitude DC 22 save or become [Clumsy 2](/condition/clumsy-player-core) and [Stupefied 2](/condition/stupefied-player-core) for 1 minute (Clumsy 3 and Stupefied 3 on a critical failure). This ability can't be used again for 1d4 rounds.",
             "traits": [
               "mental",
               "poison"
@@ -8150,7 +8150,7 @@
         "offensive": [
           {
             "name": "Vomit Meteorites",
-            "text": "The stargut hydra lurches its entire body, spewing forth chunks of meteorite in a area that deal 1d4 rounds.",
+            "text": "The stargut hydra lurches its entire body, spewing forth chunks of meteorite in a 30-foot cone that deal 5d6 bludgeoning damage to all creatures in the area (basic Reflex DC 25). The area becomes difficult terrain for 1 minute, though a creature can use an [Interact](/action/interact-player-core) action to clear one square of the rubble. The stargut hydra can't Vomit Meteorites for 1d4 rounds.",
             "traits": [],
             "actions": "two"
           }
@@ -8272,14 +8272,14 @@
           },
           {
             "name": "Defensive Spines",
-            "text": "When a creature moves into a space with one or more stonefish, that creature takes 1d4 piercing] damage and is exposed to stonefish venom.",
+            "text": "When a creature moves into a space with one or more stonefish, that creature takes 1d4 piercing damage and is exposed to stonefish venom.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Stonefish Venom",
-            "text": "**Saving Throw** Fortitude DC 16\n\n**Maximum Duration** 3 hours\n\n**Stage 1** Clumsy 1 (1 round)\n\n**Stage 2** Clumsy 2 (10 minutes)\n\n**Stage 3** 3d6 poison] and clumsy 2 (1 hour)",
+            "text": "**Saving Throw** Fortitude DC 16\n\n**Maximum Duration** 3 hours\n\n**Stage 1** [Clumsy 1](/condition/clumsy-player-core) (1 round)\n\n**Stage 2** Clumsy 2 (10 minutes)\n\n**Stage 3** 3d6 poison and clumsy 2 (1 hour)",
             "traits": [
               "poison"
             ]
@@ -8393,7 +8393,7 @@
         "defensive": [
           {
             "name": "Defensive Spines",
-            "text": "When a creature enters the stonefish swarm's space, that creature takes 1d4 piercing] damage and is exposed to stonefish swarm venom.",
+            "text": "When a creature enters the stonefish swarm's space, that creature takes 1d4 piercing damage and is exposed to stonefish swarm venom.",
             "traits": []
           },
           {
@@ -8408,13 +8408,13 @@
         "offensive": [
           {
             "name": "Inject Poison",
-            "text": "Each enemy in the swarm's space takes 2d4 piercing] damage (basic Reflex DC 18 save). Creatures that fail the save are exposed to stonefish swarm venom.",
+            "text": "Each enemy in the swarm's space takes 2d4 piercing damage (basic Reflex DC 18 save). Creatures that fail the save are exposed to stonefish swarm venom.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Stonefish Swarm Venom",
-            "text": "**Saving Throw** Fortitude DC 18\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison] and Clumsy 1 (1 round)\n\n**Stage 2** 1d6 poison and Clumsy 2 (1 round)\n\n**Stage 3** 2d6 poison] damage and clumsy 2 (1 round)",
+            "text": "**Saving Throw** Fortitude DC 18\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison and [Clumsy 1](/condition/clumsy-player-core) (1 round)\n\n**Stage 2** 1d6 poison and Clumsy 2 (1 round)\n\n**Stage 3** 2d6 poison damage and clumsy 2 (1 round)",
             "traits": [
               "poison"
             ]
@@ -8552,7 +8552,7 @@
           },
           {
             "name": "Petrify Vapor",
-            "text": "The stony bat breathes petrifying gas in a area, too thin to harm creatures in the area. However, it petrifies ambient moisture, raining down a cascade of tiny stones onto any creatures in the space directly below the cone. The falling rocks deal 1d4 rounds.",
+            "text": "The stony bat breathes petrifying gas in a 15-foot cone, too thin to harm creatures in the area. However, it petrifies ambient moisture, raining down a cascade of tiny stones onto any creatures in the space directly below the cone. The falling rocks deal 4d6 bludgeoning damage (basic Reflex DC 20). The stony bat can't use Petrify Vapor again for 1d4 rounds.",
             "traits": [
               "earth",
               "primal"
@@ -8812,7 +8812,7 @@
         "defensive": [
           {
             "name": "Static Shock",
-            "text": "**Trigger** A creature touches the storm snake or damages it with an unarmed melee attack or non-reach melee weapon\n\n---\n\n**Effect** The triggering enemy is shocked for 2d8 electricity] damage (basic Fortitude DC 19 save). On a failed save, the target is Stunned 1.",
+            "text": "**Trigger** A creature touches the storm snake or damages it with an unarmed melee attack or non-reach melee weapon\n\n---\n\n**Effect** The triggering enemy is shocked for 2d8 electricity damage (basic Fortitude DC 19 save). On a failed save, the target is [Stunned 1](/condition/stunned-player-core).",
             "traits": [],
             "actions": "reaction"
           }
@@ -8820,13 +8820,13 @@
         "offensive": [
           {
             "name": "Lightning Strike",
-            "text": "The storm snake redirects the lightning it has absorbed from storms, dealing 2d10 electricity] damage to a single target within 20 feet (basic Reflex DC 19 save). On a failure, the target is Dazzled until the end of its next turn.",
+            "text": "The storm snake redirects the lightning it has absorbed from storms, dealing 2d10 electricity damage to a single target within 20 feet (basic Reflex DC 19 save). On a failure, the target is [Dazzled](/condition/dazzled-player-core) until the end of its next turn.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Static Field",
-            "text": "The storm snake gathers all static electricity in the area before releasing it in a area that deals 1d4 rounds.\n\nEffect: Static Field",
+            "text": "The storm snake gathers all static electricity in the area before releasing it in a 30-foot emanation that deals 3d12 electricity damage to all non-plant creatures (Reflex DC 19 save) and grants plant creatures 5 temporary Hit Points that last for 1 minute. Plant life in the area begins to grow significantly faster than the average for plants of their genus; in forests, fields, or otherwise floral locations, this immediately transforms the area into non-magical difficult terrain. The storm snake can't use Static field again for 1d4 rounds.\n\nEffect: Static Field",
             "traits": [],
             "actions": "two"
           }
@@ -9005,7 +9005,7 @@
           },
           {
             "name": "Sun's Touch",
-            "text": "**Saving Throw** Fortitude DC 34\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 6d8 poison] damage and Clumsy 1 (1 round)\n\n**Stage 2** 8d6 poison] damage and Clumsy 2 (1 round)\n\n**Stage 3** 6d10 poison] damage and Fatigued (1 round)",
+            "text": "**Saving Throw** Fortitude DC 34\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 6d8 poison damage and [Clumsy 1](/condition/clumsy-player-core) (1 round)\n\n**Stage 2** 8d6 poison damage and Clumsy 2 (1 round)\n\n**Stage 3** 6d10 poison damage and [Fatigued](/condition/fatigued-player-core) (1 round)",
             "traits": [
               "poison"
             ]
@@ -9020,7 +9020,7 @@
           },
           {
             "name": "Unleash the Sun",
-            "text": "**Requirements** The sunscale serpent is flying\n\n---\n\n**Effect** The sunscale serpent Flies up to its fly Speed, then crashes to the ground, releasing a wave of heat dealing 5d10 fire|options:area-damage] damage to all creatures within a area and searing their eyes with the erupting glory of its scales. Each creature in the area must attempt a Reflex DC 31 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is Dazzled for 1 round.\n\n**Critical Failure** The creature takes full damage, is Blinded for 1 round, and dazzled for 1 minute.",
+            "text": "**Requirements** The sunscale serpent is flying\n\n---\n\n**Effect** The sunscale serpent Flies up to its fly Speed, then crashes to the ground, releasing a wave of heat dealing 5d10 fire damage to all creatures within a 60-foot burst and searing their eyes with the erupting glory of its scales. Each creature in the area must attempt a Reflex DC 31 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Critical Failure** The creature takes full damage, is [Blinded](/condition/blinded-player-core) for 1 round, and dazzled for 1 minute.",
             "traits": [],
             "actions": "three"
           },
@@ -9439,7 +9439,7 @@
         "offensive": [
           {
             "name": "Stylets",
-            "text": "Each enemy in the swarm's space takes 4d8 piercing|options:area-damage] damage (basic Reflex DC 32 save). Creatures that fail their save become Drained 1 or increase their [drained](/condition/drained-player-core) condition by one, to a maximum of drained 4.",
+            "text": "Each enemy in the swarm's space takes 4d8 piercing damage (basic Reflex DC 32 save). Creatures that fail their save become [Drained 1](/condition/drained-player-core) or increase their drained condition by one, to a maximum of drained 4.",
             "traits": [],
             "actions": "one"
           }
@@ -9554,7 +9554,7 @@
         "offensive": [
           {
             "name": "Stomp Pests",
-            "text": "The therizinosaurus stomps about, dealing 5d8 bludgeoning] damage (basic Reflex DC 28 save) to each adjacent creature. Large or smaller creatures who fail their save are also knocked Prone.",
+            "text": "The therizinosaurus stomps about, dealing 5d8 bludgeoning damage (basic Reflex DC 28 save) to each adjacent creature. Large or smaller creatures who fail their save are also knocked [Prone](/condition/prone-player-core).",
             "traits": [],
             "actions": "two"
           },
@@ -9726,13 +9726,13 @@
         "offensive": [
           {
             "name": "Hellfire Blast",
-            "text": "The thruneosaurus channels sulfurous hellfire in one of three ways. The thruneosaurus chooses the effect, but it can't make the same choice in two consecutive rounds.\n\n**Blistering Sun** (divine, fire, unholy) The thruneosaurus ignites an orb of hellfire between its horns that radiates heat in a area, dealing 2d8 persistent,fire] damage.**Choking Fumes** (divine, poison, unholy) The thruneosaurus exhales a area of sulfurous smoke that deals 6d8 poison|options:area-damage] damage (basic Fortitude DC 38 save). Creatures that fail their saves are Sickened 2.**Fiery Beam** (divine, fire, unholy) A area of hellish flame erupts from the thruneosaurus's eyes, dealing 6d10 fire|options:area-damage] damage (basic Reflex DC 38 save).",
+            "text": "The thruneosaurus channels sulfurous hellfire in one of three ways. The thruneosaurus chooses the effect, but it can't make the same choice in two consecutive rounds.\n\n**Blistering Sun** (divine, fire, unholy) The thruneosaurus ignites an orb of hellfire between its horns that radiates heat in a 30-foot emanation, dealing 2d8 persistent fire damage.**Choking Fumes** (divine, poison, unholy) The thruneosaurus exhales a 60-foot cone of sulfurous smoke that deals 6d8 poison damage (basic Fortitude DC 38 save). Creatures that fail their saves are [Sickened 2](/condition/sickened-player-core).**Fiery Beam** (divine, fire, unholy) A 120-foot line of hellish flame erupts from the thruneosaurus's eyes, dealing 6d10 fire damage (basic Reflex DC 38 save).",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Swallow Whole",
-            "text": "Huge, (3d12+10) bludgeoning], Rupture 40\n\n---\n\nSwallowwhole",
+            "text": "Huge, 3d12+10 bludgeoning, Rupture 40\n\n---\n\nSwallowwhole",
             "traits": [
               "attack"
             ],
@@ -9891,7 +9891,7 @@
           },
           {
             "name": "Sweeping Tail",
-            "text": "The titanosaur lashes its tail in a area. Creatures in the area take 8d10 bludgeoning|options:area-damage] damage (basic Reflex DC 38 save). The momentum of the titanosaur's swing then makes it Off Guard until the beginning of its next turn.",
+            "text": "The titanosaur lashes its tail in a 30-foot cone. Creatures in the area take 8d10 bludgeoning damage (basic Reflex DC 38 save). The momentum of the titanosaur's swing then makes it [Off Guard](/condition/off-guard-player-core) until the beginning of its next turn.",
             "traits": [],
             "actions": "two"
           },
@@ -10193,7 +10193,7 @@
         "offensive": [
           {
             "name": "Noxious Exhalation",
-            "text": "The tyrafdir breathes out a noxious mist from all of its mouths, spreading in a area that deals 1d4 rounds.\n\nEffect: Noxious Exhalation",
+            "text": "The tyrafdir breathes out a noxious mist from all of its mouths, spreading in a 20-foot emanation that deals 4d10 poison damage to creatures within the area (basic Reflex DC 24 save). Any creature that fails its save must attempt a Will DC 24 save or gain weakness to mental 10 and a –1 status penalty to Will saves for 24 hours. The tyrafdir can't use Noxious Exhalation again for 1d4 rounds.\n\nEffect: Noxious Exhalation",
             "traits": [],
             "actions": "two"
           }
@@ -10331,7 +10331,7 @@
           },
           {
             "name": "Swarming Bites",
-            "text": "Each enemy in the swarm's space takes (2d6) piercing|options:area-damage] damage (basic Reflex DC 30 save).",
+            "text": "Each enemy in the swarm's space takes (2d6) piercing damage (basic Reflex DC 30 save).",
             "traits": [],
             "actions": "one"
           }
@@ -10659,7 +10659,7 @@
           },
           {
             "name": "Magmatic Reflex",
-            "text": "**Trigger** The warden is targeted with an attack\n\n---\n\n**Effect** The warden issues a spray of magma as they jump away from danger. This spray deals 6d12 fire] damage to all adjacent creatures (basic Reflex DC 42 save). They then Leap or Step away, gaining a +2 circumstance bonus to their AC against the triggering attack.",
+            "text": "**Trigger** The warden is targeted with an attack\n\n---\n\n**Effect** The warden issues a spray of magma as they jump away from danger. This spray deals 6d12 fire damage to all adjacent creatures (basic Reflex DC 42 save). They then [Leap](/action/leap-player-core) or Step away, gaining a +2 circumstance bonus to their AC against the triggering attack.",
             "traits": [],
             "actions": "reaction"
           }
@@ -10667,7 +10667,7 @@
         "offensive": [
           {
             "name": "Bury Beneath Stone",
-            "text": "**Requirements** The warden has a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The warden attempts to wedge a creature they have grabbed in their mandibles within a crack in the earth that opens beneath them. The warden attempts an Athletics check against the grabbed creature's Reflex DC. If they succeed, they bury the creature in the ground. The creature takes Escapes. If the creature is still buried at the end of its turn, it takes 5d10 bludgeoning] damage.",
+            "text": "**Requirements** The warden has a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The warden attempts to wedge a creature they have grabbed in their mandibles within a crack in the earth that opens beneath them. The warden attempts an Athletics check against the grabbed creature's Reflex DC. If they succeed, they bury the creature in the ground. The creature takes 10d10 bludgeoning damage. It is also [Restrained](/condition/restrained-player-core), [Slowed 1](/condition/slowed-player-core), and has to hold its breath or start suffocating until it Escapes. If the creature is still buried at the end of its turn, it takes 5d10 bludgeoning damage.",
             "traits": [
               "attack",
               "primal"
@@ -10681,7 +10681,7 @@
           },
           {
             "name": "Erupting Jump",
-            "text": "The warden draws out a stream of lava, then jumps off the solidifying mass as it cools. The warden Leaps up to twice their Speed. When they land, the force of the impact deals 6d12 bludgeoning|options:area-damage] damage to all creatures within a area with a basic Fortitude DC 42 save. On a critical failure, the creature is also pushed 10 feet away from the warden.",
+            "text": "The warden draws out a stream of lava, then jumps off the solidifying mass as it cools. The warden Leaps up to twice their Speed. When they land, the force of the impact deals 6d12 bludgeoning damage to all creatures within a 15-foot emanation with a basic Fortitude DC 42 save. On a critical failure, the creature is also pushed 10 feet away from the warden.",
             "traits": [
               "primal"
             ],
@@ -10935,7 +10935,7 @@
           },
           {
             "name": "Idyllic Panorama",
-            "text": "**Frequency** once per hour\n\n---\n\n**Effect** The warden creates an area of peaceful calm. This is identical to a 5th-rank Mirage depicting a peaceful meadow or forest, except the area is a area.\n\nWhile within the area of an Idyllic Panorama, the warden has significant control over the senses of creatures within the area and can cast Mislead and 2nd-rank Silence at will.",
+            "text": "**Frequency** once per hour\n\n---\n\n**Effect** The warden creates an area of peaceful calm. This is identical to a 5th-rank [Mirage](/spell/mirage-player-core) depicting a peaceful meadow or forest, except the area is a 200-foot burst.\n\nWhile within the area of an Idyllic Panorama, the warden has significant control over the senses of creatures within the area and can cast [Mislead](/spell/mislead-player-core) and 2nd-rank [Silence](/spell/silence-player-core) at will.",
             "traits": [
               "concentrate",
               "primal"
@@ -11136,7 +11136,7 @@
           },
           {
             "name": "Arctic Embrace",
-            "text": "All creatures in the warden's bioluminescent maelstrom take 10d6 cold] damage (basic Fortitude DC 45 save). On a failure, the creature is also Slowed 1 for 1 round.",
+            "text": "All creatures in the warden's bioluminescent maelstrom take 10d6 cold damage (basic Fortitude DC 45 save). On a failure, the creature is also [Slowed 1](/condition/slowed-player-core) for 1 round.",
             "traits": [
               "cold"
             ],
@@ -11346,7 +11346,7 @@
         "offensive": [
           {
             "name": "Crystal Exhalation",
-            "text": "The warden breathes, creating a storm of ice crystals. All creatures in a area take 4d8 cold damage and 4d8 slashing damage (basic Reflex DC 44 save). On a critical failure, a creature is Immobilized by ice. The warden then can't use Crystal Exhalation for 1d4 rounds.",
+            "text": "The warden breathes, creating a storm of ice crystals. All creatures in a 60-foot cone take 4d8 cold damage and 4d8 slashing damage (basic Reflex DC 44 save). On a critical failure, a creature is [Immobilized](/condition/immobilized-player-core) by ice. The warden then can't use Crystal Exhalation for 1d4 rounds.",
             "traits": [
               "cold",
               "primal"
@@ -11355,7 +11355,7 @@
           },
           {
             "name": "Orogenesis Dive",
-            "text": "The warden flies 240 feet upward in a straight line. As she does so, the ground in a area from her starting point rises into a 120-foot-high rocky pillar topped with a mountainous peak that becomes greater difficult terrain. All other creatures in that burst must succeed at a Fortitude DC 44 save or be Fatigued by the sudden altitude shift. The warden then flies straight downward to the center of the pillar's peak, driving her horns into the stone. As she lands, the newly formed mountains tremble. All other creatures in the area must succeed at a Reflex DC 42 save or plummet off the peaks, falling 120 feet and landing in the nearest square outside the area. The pillar is permanent.",
+            "text": "The warden flies 240 feet upward in a straight line. As she does so, the ground in a 30-foot burst from her starting point rises into a 120-foot-high rocky pillar topped with a mountainous peak that becomes greater difficult terrain. All other creatures in that burst must succeed at a Fortitude DC 44 save or be [Fatigued](/condition/fatigued-player-core) by the sudden altitude shift. The warden then flies straight downward to the center of the pillar's peak, driving her horns into the stone. As she lands, the newly formed mountains tremble. All other creatures in the area must succeed at a Reflex DC 42 save or plummet off the peaks, falling 120 feet and landing in the nearest square outside the area. The pillar is permanent.",
             "traits": [
               "air",
               "earth",
@@ -11376,7 +11376,7 @@
           },
           {
             "name": "Tempest Downdrafts",
-            "text": "**Trigger** The warden Flies\n\n---\n\n**Effects** The warden's flapping wings generate powerful gusts that blow smaller creatures off course. A area, centered on the warden, fills with lightning-pierced winds until the beginning of the warden's next turn. Creatures must succeed at a Reflex DC 42 save to take any move action within the winds; flying creatures use the outcome one degree of success worse than what they roll. Creatures who critically fail are blown 30 feet away from the warden, knocked Prone, and take 4d6 electricity|options:area-damage] damage.",
+            "text": "**Trigger** The warden Flies\n\n---\n\n**Effects** The warden's flapping wings generate powerful gusts that blow smaller creatures off course. A 60-foot emanation, centered on the warden, fills with lightning-pierced winds until the beginning of the warden's next turn. Creatures must succeed at a Reflex DC 42 save to take any move action within the winds; flying creatures use the outcome one degree of success worse than what they roll. Creatures who critically fail are blown 30 feet away from the warden, knocked [Prone](/condition/prone-player-core), and take 4d6 electricity damage.",
             "traits": [
               "air",
               "primal"
@@ -11738,7 +11738,7 @@
           },
           {
             "name": "Fish Fork",
-            "text": "**Requirements** The wereshark critically hit with a trident Strike on their most recent action this turn\n\n---\n\n**Effect** The wereshark digs their trident deep within their target, skewering it before taking a massive bite. The target of the Strike becomes Grabbed (Escape) and takes 1d4 bleed] damage, and the wereshark attempts a jaws Strike against it. The wereshark can't use their trident while they have a creature [grabbed](/condition/grabbed-player-core) with it, but they can pull the trident free with a single action that has the [manipulate](/trait/manipulate) trait.",
+            "text": "**Requirements** The wereshark critically hit with a trident Strike on their most recent action this turn\n\n---\n\n**Effect** The wereshark digs their trident deep within their target, skewering it before taking a massive bite. The target of the Strike becomes [Grabbed](/condition/grabbed-player-core) (Escape) and takes 1d4 bleed damage, and the wereshark attempts a jaws Strike against it. The wereshark can't use their trident while they have a creature grabbed with it, but they can pull the trident free with a single action that has the [manipulate](/trait/manipulate) trait.",
             "traits": [],
             "actions": "one"
           },

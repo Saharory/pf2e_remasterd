@@ -577,7 +577,7 @@
         },
         {
           "name": "Skewering Step",
-          "text": "Two crew members each perform a 3-action activity on their turn to skewer nearby enemies with the clockwork castle's legs. All creatures under or adjacent to the vehicle at the end of the second character's turn take 7d8 piercing] damage (basic Reflex DC 35).",
+          "text": "Two crew members each perform a 3-action activity on their turn to skewer nearby enemies with the clockwork castle's legs. All creatures under or adjacent to the vehicle at the end of the second character's turn take 7d8 piercing damage (basic Reflex DC 35).",
           "traits": [
             "attack"
           ],
@@ -657,7 +657,7 @@
         },
         {
           "name": "Massive Jump",
-          "text": "The pilot engages a spring-driven mechanism that rockets the clockwork hopper into the air, in a grand leap. The vehicle jumps in a straight line in the direction of its current heading without touching the ground, landing in a space of solid ground up to 70 feet forward and up to 30 feet up. Creatures adjacent to the spaces a hopper lands in take 4d10 bludgeoning] damage with a basic Reflex DC 22, and are knocked Prone on a critical failure. The clockwork hopper can't use Massive Jump again for 1 minute. Massive Jump stops working if the clockwork hopper is Broken.",
+          "text": "The pilot engages a spring-driven mechanism that rockets the clockwork hopper into the air, in a grand leap. The vehicle jumps in a straight line in the direction of its current heading without touching the ground, landing in a space of solid ground up to 70 feet forward and up to 30 feet up. Creatures adjacent to the spaces a hopper lands in take 4d10 bludgeoning damage with a basic Reflex DC 22, and are knocked [Prone](/condition/prone-player-core) on a critical failure. The clockwork hopper can't use Massive Jump again for 1 minute. Massive Jump stops working if the clockwork hopper is [Broken](/condition/broken-player-core).",
           "traits": [
             "move",
             "reckless"
@@ -795,7 +795,7 @@
       "abilities": [
         {
           "name": "Volatile Flamethrower",
-          "text": "The pilot performs a three-action activity on their turn to vent alchemical fire out the sides of this vehicle. This requires three flasks of minor alchemist's fire, which the pilot loads into the vent as part of the activity. The pilot must then attempt a Flat DC 5. On a success, creatures adjacent to this vehicle take 1d8 fire] damage (basic Reflex DC 15). On a failure, it backfires, dealing 1d8 fire] damage to the pilot and any passengers, with no save.",
+          "text": "The pilot performs a three-action activity on their turn to vent alchemical fire out the sides of this vehicle. This requires three flasks of minor alchemist's fire, which the pilot loads into the vent as part of the activity. The pilot must then attempt a Flat DC 5. On a success, creatures adjacent to this vehicle take 1d8 fire damage (basic Reflex DC 15). On a failure, it backfires, dealing 1d8 fire damage to the pilot and any passengers, with no save.",
           "traits": [
             "fire"
           ],
@@ -1008,7 +1008,7 @@
       "abilities": [
         {
           "name": "Shard Trail",
-          "text": "A sand diver can only Burrow through sand, using the heat and flame from its alchemical core to slowly dig its way through. The alchemical fumes left behind become trapped belowground as it Burrows, temporarily catalyzing fragments of sand into a glass-like byproduct. Creatures that Burrow through a space this vehicle has Burrowed through within the last 24 hours take 1d12 piercing] damage from the shards (basic Fortitude DC 17). A creature that continues Burrowing through a stretch of the same space the sand diver recently Burrowed through must continue to attempt this save the first time each round that it Burrows through the shards.",
+          "text": "A sand diver can only [Burrow](/action/burrow-player-core) through sand, using the heat and flame from its alchemical core to slowly dig its way through. The alchemical fumes left behind become trapped belowground as it Burrows, temporarily catalyzing fragments of sand into a glass-like byproduct. Creatures that Burrow through a space this vehicle has Burrowed through within the last 24 hours take 1d12 piercing damage from the shards (basic Fortitude DC 17). A creature that continues Burrowing through a stretch of the same space the sand diver recently Burrowed through must continue to attempt this save the first time each round that it Burrows through the shards.",
           "traits": []
         },
         {
@@ -1210,7 +1210,7 @@
       "abilities": [
         {
           "name": "Steam Cloud",
-          "text": "Whenever the steam cart takes collision damage, its engine expels a dense cloud of steam in a area. The steam cart and all creatures in the steam become Concealed, and creatures outside the steam become concealed to creatures within it. The steam dissipates in 1 round.",
+          "text": "Whenever the steam cart takes collision damage, its engine expels a dense cloud of steam in a 5-foot emanation. The steam cart and all creatures in the steam become [Concealed](/condition/concealed-player-core), and creatures outside the steam become concealed to creatures within it. The steam dissipates in 1 round.",
           "traits": []
         }
       ],
@@ -1328,13 +1328,13 @@
       "abilities": [
         {
           "name": "Bolt Blast",
-          "text": "Two crew members each perform a three-action activity on their turn to fire a line of lightning at the end of the second character's turn. This line of lightning erupts from the front of the titanic stomper at an angle of the crew members' choice and deals 5d12 electricity] damage to each creature in a 120-foot line (basic Reflex DC 34). The Bolt Blast stops working if the titanic stomper is Broken.",
+          "text": "Two crew members each perform a three-action activity on their turn to fire a line of lightning at the end of the second character's turn. This line of lightning erupts from the front of the titanic stomper at an angle of the crew members' choice and deals 5d12 electricity damage to each creature in a 120-foot line (basic Reflex DC 34). The Bolt Blast stops working if the titanic stomper is [Broken](/condition/broken-player-core).",
           "traits": [],
           "actions": "three"
         },
         {
           "name": "Electrical Absorption",
-          "text": "**Trigger** The titanic stomper is targeted by, or in the area of, an effect that deals electricity damage\n\n---\n\n**Effect** The pilot uses their reaction to activate the Stasian coils, which funnels the electricity into the titanic stomper's electrical engine. The next time Bolt Blast is used within the next minute, the damage it deals increases to 7d12 electricity] damage.",
+          "text": "**Trigger** The titanic stomper is targeted by, or in the area of, an effect that deals electricity damage\n\n---\n\n**Effect** The pilot uses their reaction to activate the Stasian coils, which funnels the electricity into the titanic stomper's electrical engine. The next time Bolt Blast is used within the next minute, the damage it deals increases to 7d12 electricity damage.",
           "traits": [],
           "actions": "reaction"
         },

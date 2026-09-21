@@ -278,6 +278,40 @@ def extract_field(record: dict[str, Any], key: str) -> str:
     return provider_text(value)
 
 
+def item_price(record: dict[str, Any]) -> str:
+    """Return the explicit price, falling back to the matching item variant.
+
+    AoN's structured feed omits ``price`` for many multi-level items even
+    though each variant's price is present in the record's Markdown. Match the
+    variant whose displayed item level equals the record's base level. Items
+    with no printed price remain blank.
+    """
+    explicit = record.get("price")
+    if explicit == 0:
+        return "0 gp"
+    value = extract_field(record, "price")
+    if value:
+        return value
+
+    markdown = str(record.get("markdown") or "")
+    level = int(record.get("level") or 0)
+    headings = list(
+        re.finditer(
+            r'<title\b[^>]*level="2"[^>]*right="Item\s+(\d+)(?:\+)?"[^>]*>.*?</title>',
+            markdown,
+            flags=re.I | re.S,
+        )
+    )
+    for index, heading in enumerate(headings):
+        if int(heading.group(1)) != level:
+            continue
+        end = headings[index + 1].start() if index + 1 < len(headings) else len(markdown)
+        price = re.search(r"\*\*Price\*\*\s*([^\n<]+)", markdown[heading.end():end], flags=re.I)
+        if price:
+            return provider_text(price.group(1))
+    return ""
+
+
 def split_clauses(value: Any) -> list[str]:
     text = str(value or "").strip()
     if not text:
@@ -432,7 +466,7 @@ def map_item(record: dict[str, Any]) -> tuple[dict[str, Any], str]:
         "rarity": rarity(record),
         "traits": traits(record),
         "category": item_category(record),
-        "price": extract_field(record, "price"),
+        "price": item_price(record),
         "usage": extract_field(record, "usage"),
         "bulk": extract_field(record, "bulk"),
         "ammunition": extract_field(record, "ammunition"),

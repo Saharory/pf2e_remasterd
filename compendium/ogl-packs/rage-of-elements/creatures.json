@@ -466,7 +466,7 @@
         "offensive": [
           {
             "name": "Decompose",
-            "text": "**Frequency** once per day\n\n---\n\n**Effect** Void energy seeps out of the ardande gardener, decaying everything within a area and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or [wood](/trait/wood) trait take 1d6 void|options:area-damage] damage (basic Fortitude DC 16).",
+            "text": "**Frequency** once per day\n\n---\n\n**Effect** Void energy seeps out of the ardande gardener, decaying everything within a 5-foot emanation and causing plants and foliage to age and decompose. Natural difficult terrain is destroyed, and creatures in the area with the plant or [wood](/trait/wood) trait take 1d6 void damage (basic Fortitude DC 16).",
             "traits": [
               "primal",
               "void"
@@ -992,19 +992,19 @@
           },
           {
             "name": "Pummeling Boulders",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The avalanche legion unleashes an onslaught of blows against each enemy in a area (basic Reflex DC 28 save). The damage depends on the number of actions.\n\n1 2d8 bludgeoning|options:area-damage] damage\n\n2 (3d8+8) bludgeoning|options:area-damage] damage\n\n3 (4d8+11) bludgeoning|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The avalanche legion unleashes an onslaught of blows against each enemy in a 5-foot emanation (basic Reflex DC 28 save). The damage depends on the number of actions.\n\n1 2d8 bludgeoning damage\n\n2 (3d8+8) bludgeoning damage\n\n3 (4d8+11) bludgeoning damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Spinning Stones",
-            "text": "The avalanche legion spins in place, kicking up a barrage of stones. Each creature in a area within 30 feet of the troop takes (1d12+8) bludgeoning|options:area-damage] damage (basic Reflex DC 28 save). When the troop is reduced to 2 or fewer segments, this area decreases to a area.",
+            "text": "The avalanche legion spins in place, kicking up a barrage of stones. Each creature in a 10-foot burst within 30 feet of the troop takes (1d12+8) bludgeoning damage (basic Reflex DC 28 save). When the troop is reduced to 2 or fewer segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Trample into the Earth",
-            "text": "The avalanche legion speeds forward, running over creatures with their stone bodies and knocking them down. As Trample; Gargantuan or smaller, 2d8 bludgeoning] damage, basic Reflex DC 28. A creature that critically fails its save is knocked Prone.",
+            "text": "The avalanche legion speeds forward, running over creatures with their stone bodies and knocking them down. As Trample; Gargantuan or smaller, 2d8 bludgeoning damage, basic Reflex DC 28. A creature that critically fails its save is knocked [Prone](/condition/prone-player-core).",
             "traits": [],
             "actions": "three"
           },
@@ -1148,7 +1148,7 @@
         "offensive": [
           {
             "name": "Pummeling Winds",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The blustering gale bashes, batters, and pummels each adjacent enemy (basic Reflex DC 27 save). The damage depends on the number of actions.\n\n1 (1d8+2) bludgeoning] damage\n\n2 (2d8+12) bludgeoning] damage\n\n3 (3d8+15) bludgeoning] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The blustering gale bashes, batters, and pummels each adjacent enemy (basic Reflex DC 27 save). The damage depends on the number of actions.\n\n1 1d8+2 bludgeoning damage\n\n2 2d8+12 bludgeoning damage\n\n3 3d8+15 bludgeoning damage",
             "traits": [],
             "actions": "one"
           },
@@ -1159,7 +1159,7 @@
           },
           {
             "name": "Windstorm",
-            "text": "The blustering gale exhales as a unit, creating a powerful windstorm. This windstorm is a area within 100 feet that deals (3d8+10) bludgeoning|options:area-damage] damage (basic Reflex DC 30 save). Creatures that fail their saving throw are pushed 10 feet in any direction (plus knocked Prone on a critical failure). When the troop is reduced to 2 or fewer segments, this area decreases to a area and the distance pushed decreases to 5 feet.",
+            "text": "The blustering gale exhales as a unit, creating a powerful windstorm. This windstorm is a 10-foot burst within 100 feet that deals (3d8+10) bludgeoning damage (basic Reflex DC 30 save). Creatures that fail their saving throw are pushed 10 feet in any direction (plus knocked [Prone](/condition/prone-player-core) on a critical failure). When the troop is reduced to 2 or fewer segments, this area decreases to a 5-foot burst and the distance pushed decreases to 5 feet.",
             "traits": [
               "air"
             ],
@@ -1324,12 +1324,12 @@
         "offensive": [
           {
             "name": "Freeze and Shatter",
-            "text": "If the boiling spring is destroyed with cold damage, their body freezes over and explodes, sending out a wave of frigid air and ice shards that deal 4d6 piercing damage plus 4d6 cold damage to creatures in a area (basic Reflex DC 36 save).",
+            "text": "If the boiling spring is destroyed with cold damage, their body freezes over and explodes, sending out a wave of frigid air and ice shards that deal 4d6 piercing damage plus 4d6 cold damage to creatures in a 20-foot emanation (basic Reflex DC 36 save).",
             "traits": []
           },
           {
             "name": "Scalding Breath",
-            "text": "The boiling spring breathes out a cloud of steam in a area that deals 1d4 rounds.",
+            "text": "The boiling spring breathes out a cloud of steam in a 30-foot cone that deals 14d6 fire damage to each creature in the area (basic Reflex DC 33 save). The boiling spring can't use Scalding Breath again for 1d4 rounds.",
             "traits": [
               "fire",
               "primal"
@@ -1703,7 +1703,7 @@
         "defensive": [
           {
             "name": "Molten Demise",
-            "text": "When a brass bastion is destroyed, its body explodes in a flurry of elemental flame and superheated brass, dealing 4d6 piercing damage and 4d6 fire damage to creatures in a area (basic Reflex DC 34 save).",
+            "text": "When a brass bastion is destroyed, its body explodes in a flurry of elemental flame and superheated brass, dealing 4d6 piercing damage and 4d6 fire damage to creatures in a 20-foot emanation (basic Reflex DC 34 save).",
             "traits": [
               "arcane",
               "fire"
@@ -1713,7 +1713,7 @@
         "offensive": [
           {
             "name": "Breathe Smoke",
-            "text": "The brass bastion exhales superheated smoke and cinders in a area centered on a corner of its space. The smoke persists for 1 round. Any creature in the area (or that later enters the area) takes 1d4 rounds.",
+            "text": "The brass bastion exhales superheated smoke and cinders in a 10-foot burst centered on a corner of its space. The smoke persists for 1 round. Any creature in the area (or that later enters the area) takes 15d6 fire damage (basic Reflex DC 34 save); on a critical failure, the creature catches fire, taking 2d6 persistent fire damage as well. All creatures in the smoke become [Concealed](/condition/concealed-player-core), and all creatures outside the smoke become concealed to creatures within it. The brass bastion can't Breathe Smoke again for 1d4 rounds.",
             "traits": [
               "arcane",
               "fire"
@@ -1867,13 +1867,13 @@
           },
           {
             "name": "Roast",
-            "text": "The brochmaw turns a skewer over their oven, cooking anything impaled on it. Creatures [Grabbed](/condition/grabbed-player-core) by the brochmaw's skewer take 3d6 fire] damage (basic Fortitude DC 32 save). Creatures who have been Roasted take a –2 circumstance penalty to Fortitude saves against Serve for 1 minute.\n\nEffect: Roast",
+            "text": "The brochmaw turns a skewer over their oven, cooking anything impaled on it. Creatures [Grabbed](/condition/grabbed-player-core) by the brochmaw's skewer take 3d6 fire damage (basic Fortitude DC 32 save). Creatures who have been Roasted take a –2 circumstance penalty to Fortitude saves against Serve for 1 minute.\n\nEffect: Roast",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Serve",
-            "text": "**Requirements** The brochmaw has a creature Grabbed\n\n---\n\n**Effect** The brochmaw eats their hard-earned meal off one of their skewers. The brochmaw bites down on one creature it has grabbed, dealing 12d6 piercing] damage (basic Fortitude DC 32 save); the brochmaw regains Hit Points equal to half the damage dealt. The creature is then freed from the skewer.",
+            "text": "**Requirements** The brochmaw has a creature Grabbed\n\n---\n\n**Effect** The brochmaw eats their hard-earned meal off one of their skewers. The brochmaw bites down on one creature it has grabbed, dealing 12d6 piercing damage (basic Fortitude DC 32 save); the brochmaw regains Hit Points equal to half the damage dealt. The creature is then freed from the skewer.",
             "traits": [],
             "actions": "two"
           },
@@ -2351,7 +2351,7 @@
           },
           {
             "name": "Flash Flood",
-            "text": "Water surges out of the coldmire pond in a area and crashes into nearby creatures, knocking them off their feet. Creatures in the area, as well as any creatures currently sharing the coldmire pond's space, take 4d8 bludgeoning|options:area-damage] damage and are knocked Prone (basic Reflex DC 26 save). Creatures standing inside the coldmire pond treat their result as one step worse.",
+            "text": "Water surges out of the coldmire pond in a 20-foot emanation and crashes into nearby creatures, knocking them off their feet. Creatures in the area, as well as any creatures currently sharing the coldmire pond's space, take 4d8 bludgeoning damage and are knocked [Prone](/condition/prone-player-core) (basic Reflex DC 26 save). Creatures standing inside the coldmire pond treat their result as one step worse.",
             "traits": [
               "primal",
               "water"
@@ -2483,7 +2483,7 @@
         "interaction": [
           {
             "name": "Plasmatic Form",
-            "text": "Unlike other incorporeal creatures, a comozant wyrd can't move into or through solid objects. If a comozant wyrd isn't adjacent to a solid object or surface of its size or larger at the end of its turn, it loses 10 untyped] HP. This HP loss cannot be mitigated or avoided in any way.",
+            "text": "Unlike other incorporeal creatures, a comozant wyrd can't move into or through solid objects. If a comozant wyrd isn't adjacent to a solid object or surface of its size or larger at the end of its turn, it loses 10 untyped HP. This HP loss cannot be mitigated or avoided in any way.",
             "traits": []
           }
         ],
@@ -2502,7 +2502,7 @@
         "offensive": [
           {
             "name": "Leap the Gap",
-            "text": "**Requirements** The comozant wyrd is adjacent to a solid object or surface of its size or larger\n\n---\n\n**Effect** The wyrd Flies up to its Speed in a straight line, ending its movement adjacent to a different solid object or surface of its size or larger; this movement doesn't trigger reactions. The wyrd can move through other creatures during this movement, and all creatures it moves through take 2d12 electricity] damage with a basic Reflex DC 22 save.",
+            "text": "**Requirements** The comozant wyrd is adjacent to a solid object or surface of its size or larger\n\n---\n\n**Effect** The wyrd Flies up to its Speed in a straight line, ending its movement adjacent to a different solid object or surface of its size or larger; this movement doesn't trigger reactions. The wyrd can move through other creatures during this movement, and all creatures it moves through take 2d12 electricity damage with a basic Reflex DC 22 save.",
             "traits": [],
             "actions": "two"
           },
@@ -2959,7 +2959,7 @@
         "offensive": [
           {
             "name": "Downcast",
-            "text": "The despairing pall Flies up to its Speed, then rains gloom and despair in a area straight down. Creatures in the area must succeed at a Will DC 16 save or take a –1 status penalty to attack rolls until the end of the despairing pall's next turn.\n\nEffect: Downcast",
+            "text": "The despairing pall Flies up to its Speed, then rains gloom and despair in a 15-foot line straight down. Creatures in the area must succeed at a Will DC 16 save or take a –1 status penalty to attack rolls until the end of the despairing pall's next turn.\n\nEffect: Downcast",
             "traits": [
               "air",
               "emotion",
@@ -3424,13 +3424,13 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "(1d12+7) bludgeoning], basic Fortitude DC 30\n\n---\n\nConstrict",
+            "text": "1d12+7 bludgeoning, basic Fortitude DC 30\n\n---\n\nConstrict",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Engulf",
-            "text": "Reflex DC 30, (8d10) bludgeoning] damage, Escape, Rupture 20\n\n---\n\nEngulf",
+            "text": "Reflex DC 30, 8d10 bludgeoning damage, Escape, Rupture 20\n\n---\n\nEngulf",
             "traits": [],
             "actions": "two"
           },
@@ -3889,7 +3889,7 @@
           },
           {
             "name": "To the Hilt",
-            "text": "The faydhaan shuyookh makes a melee *jambiya* Strike and buries the blade deep, dealing an extra 3d6 persistent,bleed] damage on a hit (6d6 on a critical hit).",
+            "text": "The faydhaan shuyookh makes a melee *jambiya* Strike and buries the blade deep, dealing an extra 3d6 persistent bleed damage on a hit (6d6 on a critical hit).",
             "traits": [],
             "actions": "one"
           }
@@ -4304,7 +4304,7 @@
           },
           {
             "name": "Gnaw",
-            "text": "**Requirements** The geode is attached to a creature\n\n---\n\n**Effect** The geode deals (1d4+2) bludgeoning] damage to the creature it's attached to (basic Fortitude DC 17 save).",
+            "text": "**Requirements** The geode is attached to a creature\n\n---\n\n**Effect** The geode deals 1d4+2 bludgeoning damage to the creature it's attached to (basic Fortitude DC 17 save).",
             "traits": [],
             "actions": "one"
           }
@@ -4415,7 +4415,7 @@
         "defensive": [
           {
             "name": "Juice Shower",
-            "text": "When a harvest regiment is critically hit or critically fails a save against a damaging effect, sticky fruit juices splash out. This affects all creatures in a area. A splashed creature takes a –10-foot status penalty to its Speeds and everything is Concealed to it. A creature can Interact to clear off the juice.",
+            "text": "When a harvest regiment is critically hit or critically fails a save against a damaging effect, sticky fruit juices splash out. This affects all creatures in a 5-foot emanation. A splashed creature takes a –10-foot status penalty to its Speeds and everything is [Concealed](/condition/concealed-player-core) to it. A creature can Interact to clear off the juice.",
             "traits": []
           },
           {
@@ -4433,13 +4433,13 @@
           },
           {
             "name": "Seed Volley",
-            "text": "The harvest regiment spits an orderly volley of hard seeds drawn from within their bodies. This volley is a area within 120 feet that deals 2d10 bludgeoning|options:area-damage] damage (basic Reflex DC 23 save). When the harvest regiment is reduced to 8 or fewer squares, this area decreases to a area.",
+            "text": "The harvest regiment spits an orderly volley of hard seeds drawn from within their bodies. This volley is a 10-foot burst within 120 feet that deals 2d10 bludgeoning damage (basic Reflex DC 23 save). When the harvest regiment is reduced to 8 or fewer squares, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Shell Smash",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The harvest regiment engages in a coordinated melee attack against each enemy in a area, with a basic Reflex DC 23 save. The damage depends on the number of actions.\n\n1 (1d8+3) bludgeoning|options:area-damage] damage\n\n2 (2d8+9) bludgeoning|options:area-damage] damage\n\n3 (2d8+12) bludgeoning|options:area-damage] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The harvest regiment engages in a coordinated melee attack against each enemy in a 5-foot emanation, with a basic Reflex DC 23 save. The damage depends on the number of actions.\n\n1 (1d8+3) bludgeoning damage\n\n2 (2d8+9) bludgeoning damage\n\n3 (2d8+12) bludgeoning damage",
             "traits": [],
             "actions": "one"
           },
@@ -4617,7 +4617,7 @@
           },
           {
             "name": "Heat of Blazing Wings",
-            "text": "5 feet. 4d6 fire|options:area-damage] damage (basic Reflex DC 31)",
+            "text": "5 feet. 4d6 fire damage (basic Reflex DC 31)",
             "traits": [
               "arcane",
               "aura",
@@ -4628,7 +4628,7 @@
         "offensive": [
           {
             "name": "Burning Grasp",
-            "text": "When the ifrit Grabs or restrains a creature, that creature takes 4d6 fire] damage, and takes 4d6 fire damage at the end of each of its turns until freed.",
+            "text": "When the ifrit Grabs or restrains a creature, that creature takes 4d6 fire damage, and takes 4d6 fire damage at the end of each of its turns until freed.",
             "traits": [
               "fire"
             ]
@@ -5084,7 +5084,7 @@
           },
           {
             "name": "Stone Crush",
-            "text": "The jabali deals (2d6+13) bludgeoning] damage to all creatures within 100 feet that are Grabbed by stone clutch, with a basic Fortitude DC 32 save.",
+            "text": "The jabali deals 2d6+13 bludgeoning damage to all creatures within 100 feet that are [Grabbed](/condition/grabbed-player-core) by stone clutch, with a basic Fortitude DC 32 save.",
             "traits": [
               "arcane",
               "earth"
@@ -5621,7 +5621,7 @@
           },
           {
             "name": "Take Root",
-            "text": "The genie thrusts their weapon into the ground. Plants sprout and grow out of the ground in a area centered on one corner of the kizidhar's square. All squares on the ground in that area are difficult terrain until the kizidhar uses this ability again.",
+            "text": "The genie thrusts their weapon into the ground. Plants sprout and grow out of the ground in a 20-foot burst centered on one corner of the kizidhar's square. All squares on the ground in that area are difficult terrain until the kizidhar uses this ability again.",
             "traits": [
               "arcane",
               "plant",
@@ -5824,7 +5824,7 @@
           },
           {
             "name": "Take Root",
-            "text": "The genie thrusts their weapon into the ground. Plants sprout and grow out of the ground in a area centered on one corner of the kizidhar's square. All squares on the ground in that area are difficult terrain until the kizidhar uses this ability again.",
+            "text": "The genie thrusts their weapon into the ground. Plants sprout and grow out of the ground in a 20-foot burst centered on one corner of the kizidhar's square. All squares on the ground in that area are difficult terrain until the kizidhar uses this ability again.",
             "traits": [
               "arcane",
               "plant",
@@ -5982,14 +5982,14 @@
         "offensive": [
           {
             "name": "Molten Form",
-            "text": "Any creature that hits the lava otter with an unarmed Strike or otherwise touches it takes 1 fire] damage. If a gallon or more of water touches the lava otter, or if it's affected by a water effect, its outer layer of lava hardens to a rocky shell, deactivating its molten form and imposing weakness 5 to bludgeoning damage. Molten form reactivates if the otter swims in lava for 1 minute.",
+            "text": "Any creature that hits the lava otter with an unarmed Strike or otherwise touches it takes 1 fire damage. If a gallon or more of water touches the lava otter, or if it's affected by a water effect, its outer layer of lava hardens to a rocky shell, deactivating its molten form and imposing weakness 5 to bludgeoning damage. Molten form reactivates if the otter swims in lava for 1 minute.",
             "traits": [
               "fire"
             ]
           },
           {
             "name": "Scattering Magma",
-            "text": "**Requirements** The otter is in molten form, and its previous action was a successful jaws Strike\n\n---\n\n**Effect** The otter grips with its jaws and rapidly twists, flinging lava. The otter deals 1d4 fire] damage to all creatures adjacent to it.",
+            "text": "**Requirements** The otter is in molten form, and its previous action was a successful jaws Strike\n\n---\n\n**Effect** The otter grips with its jaws and rapidly twists, flinging lava. The otter deals 1d4 fire damage to all creatures adjacent to it.",
             "traits": [
               "fire"
             ],
@@ -6293,7 +6293,7 @@
         "offensive": [
           {
             "name": "Engulf",
-            "text": "Reflex DC 22, 5d8 bludgeoning] damage, Escape, Rupture 10\n\nA creature Engulfed by the living grove must also attempt a basic Fortitude DC 22 save as it's battered between the thin, tightly packed trunks.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Stunned 1.\n\n**Failure** The creature is Stunned 2.\n\n**Critical Failure** The creature is Stunned 4.\n\n---\n\nEngulf",
+            "text": "Reflex DC 22, 5d8 bludgeoning damage, Escape, Rupture 10\n\nA creature Engulfed by the living grove must also attempt a basic Fortitude DC 22 save as it's battered between the thin, tightly packed trunks.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Stunned 1](/condition/stunned-player-core).\n\n**Failure** The creature is Stunned 2.\n\n**Critical Failure** The creature is Stunned 4.\n\n---\n\nEngulf",
             "traits": [],
             "actions": "two"
           }
@@ -6581,7 +6581,7 @@
         "defensive": [
           {
             "name": "Molten Form",
-            "text": "Any creature that hits the living magma with an unarmed Strike or otherwise touches it takes 10 fire] damage. If a gallon or more of water touches the living magma, or if it's affected by a water effect, its outer layer of lava hardens to a rocky shell, deactivating its molten form and imposing weakness 15 to bludgeoning damage. Molten form reactivates if the living magma swims in lava for 1 minute.",
+            "text": "Any creature that hits the living magma with an unarmed Strike or otherwise touches it takes 10 fire damage. If a gallon or more of water touches the living magma, or if it's affected by a water effect, its outer layer of lava hardens to a rocky shell, deactivating its molten form and imposing weakness 15 to bludgeoning damage. Molten form reactivates if the living magma swims in lava for 1 minute.",
             "traits": [
               "fire"
             ]
@@ -6598,13 +6598,13 @@
         "offensive": [
           {
             "name": "Engulf",
-            "text": "Reflex DC 33, 2d10 bludgeoning,4d6[fire]] damage, Escape, Rupture 25\n\n---\n\nEngulf",
+            "text": "Reflex DC 33, 2d10 bludgeoning, 4d6 fire damage, Escape, Rupture 25\n\n---\n\nEngulf",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Launch Lava",
-            "text": "The living magma hurls an exploding glob of lava up to 120 feet. Each creature in a area takes 7d6 fire|options:area-damage] damage (basic Reflex DC 33 save).",
+            "text": "The living magma hurls an exploding glob of lava up to 120 feet. Each creature in a 10-foot burst takes 7d6 fire damage (basic Reflex DC 33 save).",
             "traits": [
               "fire"
             ],
@@ -6620,7 +6620,7 @@
           },
           {
             "name": "Volcanic Heat",
-            "text": "40 feet. Any creature that enters or starts its turn in the aura takes 15 fire] damage (basic Fortitude DC 33 save). A creature that fails its save is also Enfeebled 1 until it's no longer in the aura.",
+            "text": "40 feet. Any creature that enters or starts its turn in the aura takes 15 fire damage (basic Fortitude DC 33 save). A creature that fails its save is also [Enfeebled 1](/condition/enfeebled-player-core) until it's no longer in the aura.",
             "traits": [
               "aura",
               "fire"
@@ -6762,7 +6762,7 @@
           },
           {
             "name": "Take Root",
-            "text": "**Requirements** The lomori sprout is on the ground\n\n---\n\n**Effect** The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a area within 60 feet of the lomori sprout, dealing Escapes. The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically Escape.",
+            "text": "**Requirements** The lomori sprout is on the ground\n\n---\n\n**Effect** The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a 5-foot burst within 60 feet of the lomori sprout, dealing 4d4 bludgeoning damage (basic Reflex DC 20 save) to creatures in the area; on a failed save, a creature gains the [Immobilized](/condition/immobilized-player-core) condition until it Escapes. The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically Escape.",
             "traits": [],
             "actions": "two"
           },
@@ -6935,7 +6935,7 @@
           },
           {
             "name": "Scream",
-            "text": "The melomach unleashes a guttural, ear-piercing wail. All creatures in a area take 1d4 rounds.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage, is Stunned 1, and is Deafened for 1 minute.\n\n**Critical Failure** The creature takes double damage, is Stunned 3, and is deafened permanently.",
+            "text": "The melomach unleashes a guttural, ear-piercing wail. All creatures in a 120-foot cone take 7d12 sonic damage with a Fortitude DC 32 save.\n\nThe melomach can't Scream again for 1d4 rounds.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage, is [Stunned 1](/condition/stunned-player-core), and is [Deafened](/condition/deafened-player-core) for 1 minute.\n\n**Critical Failure** The creature takes double damage, is Stunned 3, and is deafened permanently.",
             "traits": [
               "primal",
               "sonic"
@@ -7221,7 +7221,7 @@
         "offensive": [
           {
             "name": "Breathe Shrapnel",
-            "text": "The metal scamp breathes a area of jagged metal flakes that deals 1d4 rounds.",
+            "text": "The metal scamp breathes a 15-foot cone of jagged metal flakes that deals (2d4) slashing,(1d4) bleed damage to each creature within the area (basic Reflex DC 17 save).\n\nThe metal scamp can't Breathe Shrapnel again for 1d4 rounds.",
             "traits": [
               "arcane",
               "metal"
@@ -7511,7 +7511,7 @@
           },
           {
             "name": "Insect Swarm",
-            "text": "The first time each day that the moss sloth takes damage from a bludgeoning melee attack, a patch of moss collapses inward, releasing insects that swarm the attacking creature and deal 2d4 piercing] damage (basic Reflex DC 15 save).",
+            "text": "The first time each day that the moss sloth takes damage from a bludgeoning melee attack, a patch of moss collapses inward, releasing insects that swarm the attacking creature and deal 2d4 piercing damage (basic Reflex DC 15 save).",
             "traits": []
           }
         ],
@@ -7665,7 +7665,7 @@
           },
           {
             "name": "Self-Destruct",
-            "text": "When the munsahir is reduced to 0 HP, their armor explodes at the start of their next turn, dealing 5d6 fire|options:area-damage] damage in a area (basic Reflex DC 19).",
+            "text": "When the munsahir is reduced to 0 HP, their armor explodes at the start of their next turn, dealing 5d6 fire damage in a 10-foot emanation (basic Reflex DC 19).",
             "traits": []
           }
         ],
@@ -7678,7 +7678,7 @@
           },
           {
             "name": "Burning Touch",
-            "text": "The munsahir gatecrasher's Strikes deal an extra 1d6 fire damage (included above). When the gatecrasher successfully performs a Grapple or [Shove](/action/shove-player-core) action, they also deal 1d6 fire] damage to their target.",
+            "text": "The munsahir gatecrasher's Strikes deal an extra 1d6 fire damage (included above). When the gatecrasher successfully performs a [Grapple](/action/grapple-player-core) or [Shove](/action/shove-player-core) action, they also deal 1d6 fire damage to their target.",
             "traits": [
               "fire",
               "primal"
@@ -7837,14 +7837,14 @@
           },
           {
             "name": "Self-Destruct",
-            "text": "When the munsahir is reduced to 0 HP, their armor explodes at the start of their next turn, dealing 5d6 fire|options:area-damage] damage in a area (basic Reflex DC 19).",
+            "text": "When the munsahir is reduced to 0 HP, their armor explodes at the start of their next turn, dealing 5d6 fire damage in a 10-foot emanation (basic Reflex DC 19).",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Burning Touch",
-            "text": "The munsahir gatecrasher's Strikes deal an extra 1d6 fire damage (included above). When the gatecrasher successfully performs a Grapple or [Shove](/action/shove-player-core) action, they also deal 1d6 fire] damage to their target.",
+            "text": "The munsahir gatecrasher's Strikes deal an extra 1d6 fire damage (included above). When the gatecrasher successfully performs a [Grapple](/action/grapple-player-core) or [Shove](/action/shove-player-core) action, they also deal 1d6 fire damage to their target.",
             "traits": [
               "fire",
               "primal"
@@ -7852,7 +7852,7 @@
           },
           {
             "name": "Volcanic Hammer",
-            "text": "The trooper makes a warhammer Strike that deals one extra weapon die of damage and 2d6 persistent,fire] damage.",
+            "text": "The trooper makes a warhammer Strike that deals one extra weapon die of damage and 2d6 persistent fire damage.",
             "traits": [],
             "actions": "two"
           }
@@ -8014,7 +8014,7 @@
         "offensive": [
           {
             "name": "Swinging Spear",
-            "text": "The murajau makes a spear Strike. On a hit, the murajau twists their spear to move the target to any space adjacent to the murajau and deals an additional 2d6 bludgeoning] damage as the target smashes into the murajau's thick shell.",
+            "text": "The murajau makes a spear Strike. On a hit, the murajau twists their spear to move the target to any space adjacent to the murajau and deals an additional 2d6 bludgeoning damage as the target smashes into the murajau's thick shell.",
             "traits": [],
             "actions": "two"
           }
@@ -8176,7 +8176,7 @@
           },
           {
             "name": "Engulf (Swarm Form)",
-            "text": "Reflex DC 27, (2d8+6) bludgeoning] damage, Escape, Rupture 18\n\n---\n\nEngulf",
+            "text": "Reflex DC 27, 2d8+6 bludgeoning damage, Escape, Rupture 18\n\n---\n\nEngulf",
             "traits": [],
             "actions": "two"
           },
@@ -8358,7 +8358,7 @@
         "offensive": [
           {
             "name": "Nightwood Roar",
-            "text": "**Frequency** once per hour;\n\n---\n\n**Effect** The guardian roars, snuffing out lights in a area. Ordinary flames and lights are extinguished, and the guardian attempts to counteract any magical light with a +21 counteract modifier and a counteract rank of 5.",
+            "text": "**Frequency** once per hour;\n\n---\n\n**Effect** The guardian roars, snuffing out lights in a 30-foot cone. Ordinary flames and lights are extinguished, and the guardian attempts to counteract any magical light with a +21 counteract modifier and a counteract rank of 5.",
             "traits": [
               "concentrate",
               "darkness",
@@ -8496,7 +8496,7 @@
         "offensive": [
           {
             "name": "Germinate",
-            "text": "A creature hit by the nursery crawler's seed Strike must, on its turn, spend an [Interact](/action/interact-player-core) action to remove the seed; any seeds still implanted at the end of the creature's turn begin to sprout, dealing 1d6 persistent,bleed] damage and rendering the seeded creature [Clumsy](/condition/clumsy-player-core) 1 and Off Guard. Removing a seed after it's sprouted deals 1d4 piercing] damage; removing it before it begins to sprout does no damage. Removed seeds that land in viable soil sprout immediately and grow into new saplings after 1 hour.",
+            "text": "A creature hit by the nursery crawler's seed Strike must, on its turn, spend an [Interact](/action/interact-player-core) action to remove the seed; any seeds still implanted at the end of the creature's turn begin to sprout, dealing 1d6 persistent bleed damage and rendering the seeded creature [Clumsy 1](/condition/clumsy-player-core) and [Off Guard](/condition/off-guard-player-core). Removing a seed after it's sprouted deals 1d4 piercing damage; removing it before it begins to sprout does no damage. Removed seeds that land in viable soil sprout immediately and grow into new saplings after 1 hour.",
             "traits": [
               "plant"
             ]
@@ -8640,7 +8640,7 @@
           },
           {
             "name": "Reactive Grab",
-            "text": "**Trigger** A creature within the olobigonde's reach leaves a square during a move action it's using\n\n**Requirements** The olobigonde doesn't have a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The olobigonde attempts to Grapple the triggering creature with its jaws. On a success, the target also takes 3 piercing] damage (doubled on a critical success).",
+            "text": "**Trigger** A creature within the olobigonde's reach leaves a square during a move action it's using\n\n**Requirements** The olobigonde doesn't have a creature [Grabbed](/condition/grabbed-player-core)\n\n---\n\n**Effect** The olobigonde attempts to [Grapple](/action/grapple-player-core) the triggering creature with its jaws. On a success, the target also takes 3 piercing damage (doubled on a critical success).",
             "traits": [],
             "actions": "reaction"
           }
@@ -8791,7 +8791,7 @@
         "offensive": [
           {
             "name": "Consume Living Metal",
-            "text": "**Requirements** The ore louse is adjacent to a creature that died within the last hour and had the [metal](/trait/metal) trait or was another ore louse\n\n---\n\n**Effect** An ore louse can replenish its health by eating the remains of its kin or a once-living metal creature. The ore louse feasts upon the corpse, regaining 3d6 healing] Hit Points. The ore louse can regain Hit Points from a given corpse only once.",
+            "text": "**Requirements** The ore louse is adjacent to a creature that died within the last hour and had the [metal](/trait/metal) trait or was another ore louse\n\n---\n\n**Effect** An ore louse can replenish its health by eating the remains of its kin or a once-living metal creature. The ore louse feasts upon the corpse, regaining 3d6 healing Hit Points. The ore louse can regain Hit Points from a given corpse only once.",
             "traits": [
               "manipulate"
             ],
@@ -8804,7 +8804,7 @@
           },
           {
             "name": "Rust",
-            "text": "An ore louse's Strikes causes metal to rapidly rust and corrode. If it succeeds at a mandibles or oxidizing spit Strike, the ore louse deals 3d6 untyped] damage (or double damage on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the ore louse hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the attacks, the shield is automatically broken, but no other item is rusted on that attack.",
+            "text": "An ore louse's Strikes causes metal to rapidly rust and corrode. If it succeeds at a mandibles or oxidizing spit Strike, the ore louse deals 3d6 untyped damage (or double damage on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the ore louse hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the attacks, the shield is automatically broken, but no other item is rusted on that attack.",
             "traits": []
           },
           {
@@ -8956,7 +8956,7 @@
         "defensive": [
           {
             "name": "Caustic Rust",
-            "text": "5 feet.\n\nThe oregorger continually leaks tiny fragments of partially digested rust into the air around it. Any creature that ends its turn in the aura takes 2d6 acid] damage with a basic Reflex DC 27 save. A creature that critically fails is also Sickened 1.",
+            "text": "5 feet.\n\nThe oregorger continually leaks tiny fragments of partially digested rust into the air around it. Any creature that ends its turn in the aura takes 2d6 acid damage with a basic Reflex DC 27 save. A creature that critically fails is also [Sickened 1](/condition/sickened-player-core).",
             "traits": [
               "acid",
               "aura"
@@ -9267,7 +9267,7 @@
         "offensive": [
           {
             "name": "Entrancing Shapes",
-            "text": "The pelegox cube rapidly shifts, creating a display of seemingly impossible geometric patterns. Creatures in a area take 9d6 mental|options:area-damage] damage (basic Will DC 29 save). A creature that fails is also Fascinated with the pelegox cube and Stupefied 1 for 1 minute.",
+            "text": "The pelegox cube rapidly shifts, creating a display of seemingly impossible geometric patterns. Creatures in a 60-foot cone take 9d6 mental damage (basic Will DC 29 save). A creature that fails is also [Fascinated](/condition/fascinated-player-core) with the pelegox cube and [Stupefied 1](/condition/stupefied-player-core) for 1 minute.",
             "traits": [
               "mental",
               "occult",
@@ -9277,13 +9277,13 @@
           },
           {
             "name": "Scrambled Strike",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The pelegox cube rearranges to create jutting spikes, attacking each enemy within 10 feet (basic Reflex DC 27 save). The damage depends on the number of actions.\n\n1 2d6 piercing] damage\n\n2 (3d6+10) piercing] damage\n\n3 (5d6+10) piercing] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The pelegox cube rearranges to create jutting spikes, attacking each enemy within 10 feet (basic Reflex DC 27 save). The damage depends on the number of actions.\n\n1 2d6 piercing damage\n\n2 3d6+10 piercing damage\n\n3 5d6+10 piercing damage",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Shard Volley",
-            "text": "The pelegox cube magnetizes fragments of metal at range. This is a area within 30 feet that deals (2d6+10) piercing|options:area-damage] damage (basic Reflex DC 27 save). When the troop is reduced to 2 or fewer segments, this area decreases to a area.",
+            "text": "The pelegox cube magnetizes fragments of metal at range. This is a 10-foot burst within 30 feet that deals (2d6+10) piercing damage (basic Reflex DC 27 save). When the troop is reduced to 2 or fewer segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
@@ -9444,7 +9444,7 @@
           },
           {
             "name": "Elephant Blast",
-            "text": "**Requirements** The picture-in-clouds is in elephant shape\n\n---\n\n**Effect** The picture-in-clouds breathes out a area of air from their cloudy trunk. Creatures in the area must attempt a Fortitude DC 30 save to stand their ground. A creature pushed into a solid object stops moving and takes 4d10 bludgeoning] damage.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is pushed 20 feet.\n\n**Failure** The creature is pushed 40 feet.\n\n**Critical Failure** The creature is pushed 40 feet and knocked Prone.",
+            "text": "**Requirements** The picture-in-clouds is in elephant shape\n\n---\n\n**Effect** The picture-in-clouds breathes out a 30-foot cone of air from their cloudy trunk. Creatures in the area must attempt a Fortitude DC 30 save to stand their ground. A creature pushed into a solid object stops moving and takes 4d10 bludgeoning damage.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is pushed 20 feet.\n\n**Failure** The creature is pushed 40 feet.\n\n**Critical Failure** The creature is pushed 40 feet and knocked [Prone](/condition/prone-player-core).",
             "traits": [],
             "actions": "two"
           },
@@ -9458,7 +9458,7 @@
           },
           {
             "name": "Slicing Wind",
-            "text": "**Requirements** The picture-in-clouds is in sword shape\n\n---\n\n**Effect** The picture-in-clouds spins, forming a whirlwind that deals 5d8 slashing|options:area-damage] damage in a area (basic Reflex DC 30 save).",
+            "text": "**Requirements** The picture-in-clouds is in sword shape\n\n---\n\n**Effect** The picture-in-clouds spins, forming a whirlwind that deals 5d8 slashing damage in a 15-foot emanation (basic Reflex DC 30 save).",
             "traits": [],
             "actions": "one"
           },
@@ -9610,7 +9610,7 @@
           },
           {
             "name": "Secrete Tar",
-            "text": "The pine pangolin secretes a brown, sticky tar within a area, making those squares difficult terrain for 1 minute. Each creature that enters or starts its turn in a tarred square must succeed at a Fortitude DC 25 save or become Immobilized until it Escapes. On a critical failure, the creature falls Prone; [prone](/condition/prone-player-core) creatures take a –2 circumstance penalty to their checks to Escape the tar. The pine pangolin is immune to the effects of its own tar.",
+            "text": "The pine pangolin secretes a brown, sticky tar within a 5-foot emanation, making those squares difficult terrain for 1 minute. Each creature that enters or starts its turn in a tarred square must succeed at a Fortitude DC 25 save or become [Immobilized](/condition/immobilized-player-core) until it Escapes. On a critical failure, the creature falls [Prone](/condition/prone-player-core); prone creatures take a –2 circumstance penalty to their checks to [Escape](/action/escape-player-core) the tar. The pine pangolin is immune to the effects of its own tar.",
             "traits": [
               "plant"
             ],
@@ -9758,7 +9758,7 @@
         "defensive": [
           {
             "name": "Biomagical Feedback",
-            "text": "The quickiron plasm's conductive properties are dangerous to those in physical contact with it. When a creature [Grabbed](/condition/grabbed-player-core) by a quickiron plasm Casts a Spell, that creature takes 5 force] damage per rank of the spell.",
+            "text": "The quickiron plasm's conductive properties are dangerous to those in physical contact with it. When a creature [Grabbed](/condition/grabbed-player-core) by a quickiron plasm Casts a Spell, that creature takes 5 force damage per rank of the spell.",
             "traits": []
           },
           {
@@ -9771,7 +9771,7 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "2d6 bludgeoning], basic Fortitude DC 22\n\n---\n\nConstrict",
+            "text": "2d6 bludgeoning, basic Fortitude DC 22\n\n---\n\nConstrict",
             "traits": [],
             "actions": "one"
           },
@@ -9909,7 +9909,7 @@
         "defensive": [
           {
             "name": "Exploding Guts",
-            "text": "When the rakkatak is critically hit or critically fails a Fortitude save, one of its organs bursts. Roll 1d4 to determine what effect this has.\n\n**1** Trapped noxious gas rushes out. The rakkatak is pushed 10 feet away from the source of the triggering attack or effect.\n\n**2** Pus showers those nearby. Each creature in a area is Sickened 1.\n\n**3** The damage is severe. The rakkatak takes 1d6 persistent,bleed] damage.\n\n**4** Gelatinous rakkatak eggs explode forth and instantly hatch. Each creature in a area takes 1d6 persistent,piercing|options:area-damage] damage from the ravenous larvae.",
+            "text": "When the rakkatak is critically hit or critically fails a Fortitude save, one of its organs bursts. Roll 1d4 to determine what effect this has.\n\n**1** Trapped noxious gas rushes out. The rakkatak is pushed 10 feet away from the source of the triggering attack or effect.\n\n**2** Pus showers those nearby. Each creature in a 5-foot emanation is [Sickened 1](/condition/sickened-player-core).\n\n**3** The damage is severe. The rakkatak takes 1d6 persistent bleed damage.\n\n**4** Gelatinous rakkatak eggs explode forth and instantly hatch. Each creature in a 5-foot emanation takes 1d6 persistent piercing damage from the ravenous larvae.",
             "traits": []
           }
         ],
@@ -9927,7 +9927,7 @@
           },
           {
             "name": "Suck Innards",
-            "text": "**Requirements** A Grabbed, Paralyzed, Restrained, Unconscious, or willing creature is within the rakkatak's reach\n\n---\n\n**Effect** The rakkatak deals 3d6 untyped] damage to the target (basic Fortitude DC 22 save). If the creature takes at least 12 damage, the rakkatak regains 10 healing] HP.",
+            "text": "**Requirements** A [Grabbed](/condition/grabbed-player-core), [Paralyzed](/condition/paralyzed-player-core), [Restrained](/condition/restrained-player-core), [Unconscious](/condition/unconscious-player-core), or willing creature is within the rakkatak's reach\n\n---\n\n**Effect** The rakkatak deals 3d6 untyped damage to the target (basic Fortitude DC 22 save). If the creature takes at least 12 damage, the rakkatak regains 10 healing HP.",
             "traits": [],
             "actions": "one"
           },
@@ -10210,7 +10210,7 @@
         "offensive": [
           {
             "name": "Lightlure",
-            "text": "**Effect** The saltborn stalkers move their luminescent lures in an entrancing light show, drawing nearby creatures into their grasp. Each creature in a area must attempt a Will DC 33 save; regardless of the result of its save, the creature is then temporarily immune to Lightlure for 24 hours.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is Fascinated with the lures and must spend all its actions on its next turn to move closer to them as expediently as possible, avoiding obvious dangers along its path.\n\n**Critical Failure** As failure, but the creature is also Dazzled for 1d4 rounds.",
+            "text": "**Effect** The saltborn stalkers move their luminescent lures in an entrancing light show, drawing nearby creatures into their grasp. Each creature in a 100-foot emanation must attempt a Will DC 33 save; regardless of the result of its save, the creature is then temporarily immune to Lightlure for 24 hours.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is [Fascinated](/condition/fascinated-player-core) with the lures and must spend all its actions on its next turn to move closer to them as expediently as possible, avoiding obvious dangers along its path.\n\n**Critical Failure** As failure, but the creature is also [Dazzled](/condition/dazzled-player-core) for 1d4 rounds.",
             "traits": [
               "concentrate",
               "incapacitation",
@@ -10222,7 +10222,7 @@
           },
           {
             "name": "Saline Crust",
-            "text": "20 feet\n\n---\n\n**Requirements** The saltborn stalkers are in a body of water\n\n---\n\n**Effect** Layers of the saltborn's salty skin flake off to foul the water around them. A creature that ends its turn in the aura takes 2d6 acid] damage with a basic Reflex DC 30 save; creatures with the amphibious or [aquatic](/trait/aquatic) trait are immune.",
+            "text": "20 feet\n\n---\n\n**Requirements** The saltborn stalkers are in a body of water\n\n---\n\n**Effect** Layers of the saltborn's salty skin flake off to foul the water around them. A creature that ends its turn in the aura takes 2d6 acid damage with a basic Reflex DC 30 save; creatures with the amphibious or [aquatic](/trait/aquatic) trait are immune.",
             "traits": [
               "aura",
               "water"
@@ -10230,13 +10230,13 @@
           },
           {
             "name": "Salty Clutch",
-            "text": "**Frequency** once per round\n\n---\n\n**Effect** The stalkers reach out to Grab their foes and drag them underwater. Each enemy in a area must succeed at a Reflex DC 33 save or be Grabbed by the stalkers (or Restrained on a critical success). For the rest of the current turn, the saltborn stalkers can move toward water or in water without ending the grab, carrying any grabbed or [restrained](/condition/restrained-player-core) creatures along with them.",
+            "text": "**Frequency** once per round\n\n---\n\n**Effect** The stalkers reach out to Grab their foes and drag them underwater. Each enemy in a 5-foot emanation must succeed at a Reflex DC 33 save or be [Grabbed](/condition/grabbed-player-core) by the stalkers (or [Restrained](/condition/restrained-player-core) on a critical success). For the rest of the current turn, the saltborn stalkers can move toward water or in water without ending the grab, carrying any grabbed or restrained creatures along with them.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Scour the Bones",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The saltborn stalkers use their teeth and claws to vivisect each enemy within 5 feet (basic Reflex DC 30 save). The damage depends on the number of actions.\n\n1 2d10 slashing] damage\n\n2 (3d10+8) slashing] damage\n\n3 (3d10+16) slashing] damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The saltborn stalkers use their teeth and claws to vivisect each enemy within 5 feet (basic Reflex DC 30 save). The damage depends on the number of actions.\n\n1 2d10 slashing damage\n\n2 3d10+8 slashing damage\n\n3 3d10+16 slashing damage",
             "traits": [],
             "actions": "one"
           },
@@ -10557,7 +10557,7 @@
           },
           {
             "name": "Snapdrake Pollen",
-            "text": "**Saving Throw** Fortitude DC 25;\n\n**Maximum Duration** 8 rounds\n\n**Stage 1** 1d6 poison] damage plus Dazzled 1 (1 round)\n\n**Stage 2** 1d6 poison] damage plus dazzled 1 and Sickened 1 (2 rounds)\n\n**Stage 3** 2d6 poison] damage plus Confused and sickened 1 (2 rounds)",
+            "text": "**Saving Throw** Fortitude DC 25;\n\n**Maximum Duration** 8 rounds\n\n**Stage 1** 1d6 poison damage plus [Dazzled](/condition/dazzled-player-core) 1 (1 round)\n\n**Stage 2** 1d6 poison damage plus dazzled 1 and [Sickened 1](/condition/sickened-player-core) (2 rounds)\n\n**Stage 3** 2d6 poison damage plus [Confused](/condition/confused-player-core) and sickened 1 (2 rounds)",
             "traits": [
               "plant",
               "poison"
@@ -10573,7 +10573,7 @@
           },
           {
             "name": "Spray Pollen",
-            "text": "The snapdrake breathes a blast of pollen in a area. Creatures caught in the blast must succeed at a basic Reflex DC 25 save or be exposed to snapdrake pollen.\n\nThe snapdrake can't use Spray Pollen again for 1d6 rounds.",
+            "text": "The snapdrake breathes a blast of pollen in a 40-foot cone. Creatures caught in the blast must succeed at a basic Reflex DC 25 save or be exposed to snapdrake pollen.\n\nThe snapdrake can't use Spray Pollen again for 1d6 rounds.",
             "traits": [
               "arcane",
               "plant",
@@ -10742,7 +10742,7 @@
           },
           {
             "name": "Glow",
-            "text": "25 feet. The solar crow casts bright light in a area (and dim light for the next 25 feet).",
+            "text": "25 feet. The solar crow casts bright light in a 25-foot emanation (and dim light for the next 25 feet).",
             "traits": [
               "aura",
               "fire",
@@ -10753,7 +10753,7 @@
         "offensive": [
           {
             "name": "Blinding Heat",
-            "text": "The solar crow expands its wings and unleashes blazing hot, blinding light in a area. Each creature in the area takes 1d4 rounds, and its glow aura is deactivated during this time.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage and is Dazzled for 1 round.\n\n**Failure** The creature takes full damage and is Blinded for 1 round.\n\n**Critical Failure** The creature takes double damage and is blinded for 1 minute.",
+            "text": "The solar crow expands its wings and unleashes blazing hot, blinding light in a 120-foot emanation. Each creature in the area takes 9d6 fire damage with a Reflex DC 29 save. The crow can't use Blinding Heat again for 1d4 rounds, and its glow aura is deactivated during this time.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage and is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Failure** The creature takes full damage and is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Critical Failure** The creature takes double damage and is blinded for 1 minute.",
             "traits": [
               "fire",
               "incapacitation",
@@ -10764,7 +10764,7 @@
           },
           {
             "name": "Burning Talons",
-            "text": "A creature [Grabbed](/condition/grabbed-player-core) by the solar crow takes 1d4 persistent,fire] damage. It can't recover from this damage while grabbed by the crow.",
+            "text": "A creature [Grabbed](/condition/grabbed-player-core) by the solar crow takes 1d4 persistent fire damage. It can't recover from this damage while grabbed by the crow.",
             "traits": []
           },
           {
@@ -10903,13 +10903,13 @@
         "offensive": [
           {
             "name": "Incinerating Grasp",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The sootsoldiers reach to constrain each enemy within 5 feet in their fiery clutches (basic Reflex DC 26 save). The damage and additional effects depend on the number of actions.\n\n1 2d8 fire] damage\n\n2 (3d8+7) fire] damage plus Grabbed\n\n3 (4d8+7) fire] damage plus grabbed",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The sootsoldiers reach to constrain each enemy within 5 feet in their fiery clutches (basic Reflex DC 26 save). The damage and additional effects depend on the number of actions.\n\n1 2d8 fire damage\n\n2 3d8+7 fire damage plus [Grabbed](/condition/grabbed-player-core)\n\n3 4d8+7 fire damage plus grabbed",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Seething Flash",
-            "text": "The sootsoldiers reignite and rush across the battlefield, Forming Up and Striding twice. At the end of this movement, a wave of flame and heat pours off the sootsoldiers, dealing 4d8 fire|options:area-damage] damage to other creatures in a area, with a basic Reflex DC 29 save. A creature that critically fails its save is also knocked Prone.",
+            "text": "The sootsoldiers reignite and rush across the battlefield, Forming Up and Striding twice. At the end of this movement, a wave of flame and heat pours off the sootsoldiers, dealing 4d8 fire damage to other creatures in a 10-foot emanation, with a basic Reflex DC 29 save. A creature that critically fails its save is also knocked [Prone](/condition/prone-player-core).",
             "traits": [
               "fire",
               "primal"
@@ -11056,13 +11056,13 @@
         "offensive": [
           {
             "name": "Incinerating Grasp",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The sootsoldiers reach to constrain each enemy within 5 feet in their fiery clutches (basic Reflex DC 26 save). The damage and additional effects depend on the number of actions.\n\n1 2d8 fire] damage\n\n2 (3d8+7) fire] damage plus Grabbed\n\n3 (4d8+7) fire] damage plus grabbed",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The sootsoldiers reach to constrain each enemy within 5 feet in their fiery clutches (basic Reflex DC 26 save). The damage and additional effects depend on the number of actions.\n\n1 2d8 fire damage\n\n2 3d8+7 fire damage plus [Grabbed](/condition/grabbed-player-core)\n\n3 4d8+7 fire damage plus grabbed",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Seething Flash",
-            "text": "The sootsoldiers reignite and rush across the battlefield, Forming Up and Striding twice. At the end of this movement, a wave of flame and heat pours off the sootsoldiers, dealing 4d8 fire|options:area-damage] damage to other creatures in a area, with a basic Reflex DC 29 save. A creature that critically fails its save is also knocked Prone.",
+            "text": "The sootsoldiers reignite and rush across the battlefield, Forming Up and Striding twice. At the end of this movement, a wave of flame and heat pours off the sootsoldiers, dealing 4d8 fire damage to other creatures in a 10-foot emanation, with a basic Reflex DC 29 save. A creature that critically fails its save is also knocked [Prone](/condition/prone-player-core).",
             "traits": [
               "fire",
               "primal"
@@ -11565,7 +11565,7 @@
           },
           {
             "name": "Lifespring Burst",
-            "text": "Once per day, the twins of rowan can strike the ground with their sword, releasing a area of life energy centered on the twins that deals 14d6 vitality|options:area-damage] damage (basic Fortitude DC 30 save); the twins of rowan is immune. The area affected by this burst then becomes greater difficult terrain as vibrant new plant life ruptures through it.",
+            "text": "Once per day, the twins of rowan can strike the ground with their sword, releasing a 30-foot burst of life energy centered on the twins that deals 14d6 vitality damage (basic Fortitude DC 30 save); the twins of rowan is immune. The area affected by this burst then becomes greater difficult terrain as vibrant new plant life ruptures through it.",
             "traits": [
               "plant",
               "primal",
@@ -12156,7 +12156,7 @@
         "interaction": [
           {
             "name": "Nature's Bounty",
-            "text": "Each day, a vegetable lamb grows 1d4 edible flowers (such as artichoke, broccoli, or dandelion) among the green cotton covering its body. These vegetables can be picked without hurting the lamb. A living creature can eat the vegetable with an [Interact](/action/interact-player-core) action to regain (1d6+4) healing] Hit Points.",
+            "text": "Each day, a vegetable lamb grows 1d4 edible flowers (such as artichoke, broccoli, or dandelion) among the green cotton covering its body. These vegetables can be picked without hurting the lamb. A living creature can eat the vegetable with an [Interact](/action/interact-player-core) action to regain (1d6+4) healing Hit Points.",
             "traits": [
               "healing",
               "plant",
@@ -12169,7 +12169,7 @@
         "offensive": [
           {
             "name": "Cottonseed Burst",
-            "text": "The vegetable lamb releases a cloud of cottony green pollen in a area centered on itself. All creatures caught in the burst that need to breathe, apart from the lamb, must succeed at a Fortitude DC 15 save or be Slowed 1 by coughing (Slowed 2 on a critical failure).",
+            "text": "The vegetable lamb releases a cloud of cottony green pollen in a 10-foot burst centered on itself. All creatures caught in the burst that need to breathe, apart from the lamb, must succeed at a Fortitude DC 15 save or be [Slowed 1](/condition/slowed-player-core) by coughing (Slowed 2 on a critical failure).",
             "traits": [],
             "actions": "two"
           }
@@ -12469,7 +12469,7 @@
         "offensive": [
           {
             "name": "Vacuum",
-            "text": "**Requirements** The veldenar doesn't have a creature engulfed\n\n---\n\n**Effect** The veldenar forcefully unlocks then expands its jaws to inhale the air in a area before it, pulling Large or smaller creatures into its cavernous maw. The veldenar Engulfs the creatures in the area (Reflex DC 27, (1d10+10) cold|options:area-damage], Escape, Rupture 25).",
+            "text": "**Requirements** The veldenar doesn't have a creature engulfed\n\n---\n\n**Effect** The veldenar forcefully unlocks then expands its jaws to inhale the air in a 15-foot cone before it, pulling Large or smaller creatures into its cavernous maw. The veldenar Engulfs the creatures in the area (Reflex DC 27, (1d10+10) cold, Escape, Rupture 25).",
             "traits": [
               "air"
             ],
@@ -12605,7 +12605,7 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "(2d4+5) bludgeoning], basic Fortitude DC 21\n\n---\n\nConstrict",
+            "text": "2d4+5 bludgeoning, basic Fortitude DC 21\n\n---\n\nConstrict",
             "traits": [],
             "actions": "one"
           },
@@ -12616,7 +12616,7 @@
           },
           {
             "name": "Unseating Sweep",
-            "text": "The whipping willow attempts to Trip all creatures within a area, making a single Athletics check against all targets' Reflex DCs.",
+            "text": "The whipping willow attempts to [Trip](/action/trip-player-core) all creatures within a 15-foot cone, making a single Athletics check against all targets' Reflex DCs.",
             "traits": [],
             "actions": "two"
           }
@@ -12749,7 +12749,7 @@
         "offensive": [
           {
             "name": "Breathe Pollen",
-            "text": "The wood scamp breathes choking pollen in a area that deals 1d4 rounds.",
+            "text": "The wood scamp breathes choking pollen in a 15-foot cone that deals 2d6 poison damage to each creature within the area (basic Reflex DC 17 save; creatures who don't need to breathe are immune). The wood scamp can't Breathe Pollen again for 1d4 rounds.",
             "traits": [
               "arcane",
               "plant"
@@ -13498,7 +13498,7 @@
           },
           {
             "name": "Magnetic Storm",
-            "text": "**Requirements** The shuyookh's magnetic field is active\n\n---\n\n**Effect** The shuyookh electromagnetically flings razor-sharp metal scraps. Each creature in a area takes 1d4 rounds.",
+            "text": "**Requirements** The shuyookh's magnetic field is active\n\n---\n\n**Effect** The shuyookh electromagnetically flings razor-sharp metal scraps. Each creature in a 30-foot emanation takes 8d6 slashing,3d12 electricity damage, with a basic Fortitude DC 32 save.\n\nThe shuyookh's magnetic field is deactivated for 1d4 rounds.",
             "traits": [
               "arcane"
             ],

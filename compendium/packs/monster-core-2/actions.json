@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "(Divine Warden) Divine Destruction",
     "slug": "divine-warden-divine-destruction-monster-core-2",
-    "descr": "When the divine warden is reduced to 0 HP, it erupts with divine energy in a area, dealing 1d6 spirit|options:area-damage] damage per level. Each creature in the area must attempt a Will DC 0 save with the following outcomes.\n\n---\n\n**Critical Success** The creature takes half damage.\n\n**Success** The creature takes full damage.\n\n**Failure** The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes [Enfeebled 1](/condition/enfeebled-player-core) and [Stupefied 1](/condition/stupefied-player-core) for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.\n\n**Critical Failure** As failure, except the creature becomes Enfeebled 2 and Stupefied 2.",
+    "descr": "When the divine warden is reduced to 0 HP, it erupts with divine energy in a 30-foot emanation, dealing 1d6 spirit damage per level. Each creature in the area must attempt a Will DC 0 save with the following outcomes.\n\n---\n\n**Critical Success** The creature takes half damage.\n\n**Success** The creature takes full damage.\n\n**Failure** The creature takes full damage and becomes temporarily cursed by the patron deity. The creature becomes [Enfeebled 1](/condition/enfeebled-player-core) and [Stupefied 1](/condition/stupefied-player-core) for 1 day; this is a curse effect that uses the Will save DC as the counteract DC.\n\n**Critical Failure** As failure, except the creature becomes Enfeebled 2 and Stupefied 2.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -386,7 +386,7 @@
     "systemVersion": "1.2.10",
     "name": "(Spawning Soulrider) Celestial Flare",
     "slug": "spawning-soulrider-celestial-flare-monster-core-2",
-    "descr": "Each enemy within 30 feet of the soulrider takes 2d6 spirit] damage (basic Will DC 17 save). Creatures that fail the save are [Blinded](/condition/blinded-player-core) for 1 round. The spawning soulrider can't use Celestial Flare again for 1 minute.",
+    "descr": "Each enemy within 30 feet of the soulrider takes 2d6 spirit damage (basic Will DC 17 save). Creatures that fail the save are [Blinded](/condition/blinded-player-core) for 1 round. The spawning soulrider can't use Celestial Flare again for 1 minute.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -536,7 +536,7 @@
     "systemVersion": "1.2.10",
     "name": "(Swarm Strider) Clinging Remnants",
     "slug": "swarm-strider-clinging-remnants-monster-core-2",
-    "descr": "A swarm strider's melee Strikes and ranged Strikes made against targets within their weapon's first range increment deposit biting vermin on the target, dealing 1d4 persistent,piercing] damage, increasing to 2d4 at 5th level, 3d4 at 10th level, 4d4 at 15th level, and 5d4 at 20th level.",
+    "descr": "A swarm strider's melee Strikes and ranged Strikes made against targets within their weapon's first range increment deposit biting vermin on the target, dealing 1d4 persistent piercing damage, increasing to 2d4 at 5th level, 3d4 at 10th level, 4d4 at 15th level, and 5d4 at 20th level.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -650,7 +650,7 @@
     "systemVersion": "1.2.10",
     "name": "(Swarm Strider) Squirming Embrace",
     "slug": "swarm-strider-squirming-embrace-monster-core-2",
-    "descr": "The swarm strider Strides. If they end their movement sharing a space with a creature, they deal 1d6 piercing] damage to the creature, with a basic Reflex save. The save DC is the high spell DC for the swarm strider's level. The damage increases by 1d6 at 4th level and every 3 levels thereafter. The swarm strider can Burrow, Climb, Fly, or Swim instead of Striding if they have the corresponding movement type.",
+    "descr": "The swarm strider Strides. If they end their movement sharing a space with a creature, they deal 1d6 piercing damage to the creature, with a basic Reflex save. The save DC is the high spell DC for the swarm strider's level. The damage increases by 1d6 at 4th level and every 3 levels thereafter. The swarm strider can Burrow, Climb, Fly, or Swim instead of Striding if they have the corresponding movement type.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -956,7 +956,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Nosferatu) Change Shape",
     "slug": "vampire-nosferatu-change-shape-monster-core-2",
-    "descr": "The nosferatu transforms into a swarm of pale-gray rats. They gain a land Speed of 30 feet and a climb Speed of 10 feet, and they become Large. In this swarm form, the nosferatu can take an action to deal each enemy in the swarm's space 2d10 piercing|options:area-damage] damage with a basic Reflex save, with a high DC for the nosferatu's level. A creature that fails its save is also exposed to plague of ancients.\n\n---\n\nChangeshape",
+    "descr": "The nosferatu transforms into a swarm of pale-gray rats. They gain a land Speed of 30 feet and a climb Speed of 10 feet, and they become Large. In this swarm form, the nosferatu can take an action to deal each enemy in the swarm's space 2d10 piercing damage with a basic Reflex save, with a high DC for the nosferatu's level. A creature that fails its save is also exposed to plague of ancients.\n\n---\n\nChangeshape",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1174,7 +1174,7 @@
     "systemVersion": "1.2.10",
     "name": "(Vampire, Nosferatu) Nosferatu Vulnerabilities",
     "slug": "vampire-nosferatu-nosferatu-vulnerabilities-monster-core-2",
-    "descr": "**Revulsion** A nosferatu can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a deity with a holy sanctification option. To brandish garlic or a religious symbol, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the nosferatu involuntarily comes within 10 feet of an object of their revulsion, they gain the [Fleeing](/condition/fleeing-player-core) condition, running from the object of their revulsion until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a nosferatu can attempt a Will DC 25 save as a single action, which has the [concentrate](/trait/concentrate) trait. On a success, they overcome their revulsions for 1d6 rounds (or 1 hour on a critical success).**Stake** A magical wooden stake (such as one affected by a weapon *potency rune*, [Runic Weapon](/spell/runic-weapon-player-core), or similar magic) driven through the nosferatu's heart drops the nosferatu to 0 HP and prevents them from healing above 0 HP, even in their coffin. Staking a nosferatu requires 3 actions and works only if the nosferatu is [Unconscious](/condition/unconscious-player-core). If the stake is removed, the nosferatu can heal above 0 HP again, and if they're in their coffin, the 1-hour rest period begins once the stake is removed. If the nosferatu's head is severed and anointed with [Holy Water](/item/holy-water-gm-core) while the stake is in place, the nosferatu is destroyed.\n\n**Sunlight** If exposed to direct sunlight, a nosferatu immediately becomes [Slowed 1](/condition/slowed-player-core). The slowed value increases by 1 each time the nosferatu ends their turn in sunlight, and the condition ends when they're no longer in sunlight. If the nosferatu loses all their actions in this way, they're destroyed.",
+    "descr": "**Revulsion** A nosferatu can't voluntarily come within 10 feet of brandished garlic or a brandished religious symbol of a deity with a holy sanctification option. To brandish garlic or a religious symbol, a creature must Interact to do so for 1 round (similar to Raising a Shield). If the nosferatu involuntarily comes within 10 feet of an object of their revulsion, they gain the [Fleeing](/condition/fleeing-player-core) condition, running from the object of their revulsion until they end an action beyond 10 feet. After 1 round of being exposed to the subject of their revulsion, a nosferatu can attempt a Will DC 25 save as a single action, which has the [concentrate](/trait/concentrate) trait. On a success, they overcome their revulsions for 1d6 rounds (or 1 hour on a critical success).**Stake** A magical wooden stake (such as one affected by a weapon *potency rune*, Runic Weapon, or similar magic) driven through the nosferatu's heart drops the nosferatu to 0 HP and prevents them from healing above 0 HP, even in their coffin. Staking a nosferatu requires 3 actions and works only if the nosferatu is Unconscious. If the stake is removed, the nosferatu can heal above 0 HP again, and if they're in their coffin, the 1-hour rest period begins once the stake is removed. If the nosferatu's head is severed and anointed with Holy Water while the stake is in place, the nosferatu is destroyed.\n\n**Sunlight** If exposed to direct sunlight, a nosferatu immediately becomes Slowed 1. The slowed value increases by 1 each time the nosferatu ends their turn in sunlight, and the condition ends when they're no longer in sunlight. If the nosferatu loses all their actions in this way, they're destroyed.",
     "data": {
       "rarity": "common",
       "traits": [],

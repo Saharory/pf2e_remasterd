@@ -21,6 +21,8 @@ import uuid
 from pathlib import Path
 from typing import Any
 
+from foundry_markup import replace_foundry_directives
+
 
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE = REPO.parent / "structured-modules"
@@ -551,7 +553,7 @@ def configure_core_condition(result: dict[str, Any]) -> None:
 
 def clean_foundry_markup(value: str) -> str:
     """Convert leftover VTT-only references into readable plain text."""
-    text = value
+    text = replace_foundry_directives(value)
 
     def action(match: re.Match[str]) -> str:
         label = match.group(2)
@@ -576,12 +578,6 @@ def clean_foundry_markup(value: str) -> str:
         text,
         flags=re.I,
     )
-    text = re.sub(r"@Embed\[[^\]]+\](?:\{([^}]+)\})?", lambda m: m.group(1) or "", text)
-    text = re.sub(r"@UUID\[[^\]]+\](?:\{([^}]+)\})?", lambda m: m.group(1) or "referenced entry", text)
-    text = re.sub(r"@Check\[([^\]]+)\](?:\{([^}]+)\})?", lambda m: m.group(2) or m.group(1).split("|")[0], text)
-    text = re.sub(r"@Damage\[([^\]]+)\](?:\{([^}]+)\})?", lambda m: m.group(2) or m.group(1), text)
-    text = re.sub(r"@Template\[[^\]]+\](?:\{([^}]+)\})?", lambda m: m.group(1) or "area", text)
-    text = re.sub(r"@Localize\[([^\]]+)\]", lambda m: title_from_slug(m.group(1).rsplit(".", 1)[-1]), text)
     text = re.sub(r"\bCompendium\.pf2e\.[A-Za-z0-9_-]+\.Item\.", "", text)
     text = re.sub(r"\[\[/[^\]]+\]\](?:\{([^}]+)\})?", lambda m: m.group(1) or "", text)
     text = re.sub(r"[ \t]+\n", "\n", text)

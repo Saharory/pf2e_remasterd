@@ -2046,7 +2046,7 @@
     "systemVersion": "1.2.10",
     "name": "Familiar of Freezing Rime",
     "slug": "familiar-of-freezing-rime-player-core",
-    "descr": "Your familiar is cold to the touch, its breath always visible. When you Cast or Sustain a hex, you can cause ice to form in a area centered on a square of your familiar's space. Those squares are difficult terrain until the start of your next turn.",
+    "descr": "Your familiar is cold to the touch, its breath always visible. When you Cast or Sustain a hex, you can cause ice to form in a 5-foot burst centered on a square of your familiar's space. Those squares are difficult terrain until the start of your next turn.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -4089,7 +4089,7 @@
     "systemVersion": "1.2.10",
     "name": "Patron's Claim",
     "slug": "patron-s-claim-player-core",
-    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** Your familiar's mouth opens impossibly wide before your patron's grasping limb stretches forth from it at a creature within 30 feet, dealing 10d10 spirit] damage with a basic Fortitude save against your spell DC. If the creature fails its save and takes damage, it is also [Drained 2](/condition/drained-player-core) (or Drained 4 on a critical failure) and you regain 1 Focus Point, up to your usual maximum, as your patron grants you additional magic in exchange for your gift of your opponent's spirit.",
+    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** Your familiar's mouth opens impossibly wide before your patron's grasping limb stretches forth from it at a creature within 30 feet, dealing 10d10 spirit damage with a basic Fortitude save against your spell DC. If the creature fails its save and takes damage, it is also [Drained 2](/condition/drained-player-core) (or Drained 4 on a critical failure) and you regain 1 Focus Point, up to your usual maximum, as your patron grants you additional magic in exchange for your gift of your opponent's spirit.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -4125,7 +4125,7 @@
     "systemVersion": "1.2.10",
     "name": "Patron's Presence",
     "slug": "patron-s-presence-player-core",
-    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** A palpable weight extends from your familiar in a area. Enemies who enter or start their turn within the aura must succeed at a Will save against your spell DC or become [Stupefied 2](/condition/stupefied-player-core) as long as they remain within the aura, or Stupefied 3 on a critical failure. The aura lasts until the end of your next turn, but the familiar can Sustain it up to 1 minute.",
+    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** A palpable weight extends from your familiar in a 15-foot emanation. Enemies who enter or start their turn within the aura must succeed at a Will save against your spell DC or become [Stupefied 2](/condition/stupefied-player-core) as long as they remain within the aura, or Stupefied 3 on a critical failure. The aura lasts until the end of your next turn, but the familiar can Sustain it up to 1 minute.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4383,7 +4383,7 @@
     "systemVersion": "1.2.10",
     "name": "Primal Howl",
     "slug": "primal-howl-player-core",
-    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** Your animal companion screeches and howls, empowered with natural magic. All creatures in a area take (floor(current value/2))d6 sonic|options:area-damage] damage for every 2 levels your companion has, with a basic Fortitude save against your spell DC. Creatures that fail become [Frightened 1](/condition/frightened-player-core), and creatures that critically fail become Frightened 2. The fright is an emotion, fear, and mental effect.",
+    "descr": "**Frequency** once per hour\n\n---\n\n**Effect** Your animal companion screeches and howls, empowered with natural magic. All creatures in a 30-foot cone take 0d6 sonic damage for every 2 levels your companion has, with a basic Fortitude save against your spell DC. Creatures that fail become [Frightened 1](/condition/frightened-player-core), and creatures that critically fail become Frightened 2. The fright is an emotion, fear, and mental effect.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -4433,7 +4433,7 @@
     "systemVersion": "1.2.10",
     "name": "Purify Air",
     "slug": "purify-air-player-core",
-    "descr": "**Prerequisites** [Leshy Familiar Secrets](/feat/leshy-familiar-secrets-player-core)\n\nYour familiar recycles air, providing enough oxygen for a Medium creature in areas with stale air, such as a sealed chamber or extradimensional space. If the leshy is within the area of an inhaled poison effect or an effect that relies on smell, creatures within a area from the leshy gain a +2 circumstance bonus to their saving throws against the effect.",
+    "descr": "**Prerequisites** [Leshy Familiar Secrets](/feat/leshy-familiar-secrets-player-core)\n\nYour familiar recycles air, providing enough oxygen for a Medium creature in areas with stale air, such as a sealed chamber or extradimensional space. If the leshy is within the area of an inhaled poison effect or an effect that relies on smell, creatures within a 15-foot emanation from the leshy gain a +2 circumstance bonus to their saving throws against the effect.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -4762,7 +4762,7 @@
     "systemVersion": "1.2.10",
     "name": "Repair",
     "slug": "repair-player-core",
-    "descr": "**Requirements** You are holding or wearing a [Repair Kit](/item/repair-toolkit-player-core)\n\n---\n\nYou spend 10 minutes attempting to fix a damaged item, placing the item on a stable surface and using the repair kit with both hands. The GM sets the DC, but it's usually about the same DC to Repair a given item as it is to Craft it in the first place. You can't Repair a destroyed item.\n\n---\n\n**Critical Success** You restore 10 Hit Points to the item, plus an additional 10 Hit Points per proficiency rank you have in Crafting (a total of 20 HP if you're trained, 30 HP if you're an expert, 40 HP if you're a master, or 50 HP if you're legendary).\n\n**Success** You restore 5 Hit Points to the item, plus an additional 5 per proficiency rank you have in Crafting (for a total of 10 HP if you are trained, 15 HP if you're an expert, 20 HP if you're a master, or 25 HP if you're legendary).\n\n**Critical Failure** You deal 2d6 damage to the item. Apply the item's Hardness to this damage.",
+    "descr": "**Requirements** You are holding or wearing a Repair Kit\n\n---\n\nYou spend 10 minutes attempting to fix a damaged item, placing the item on a stable surface and using the repair kit with both hands. The GM sets the DC, but it's usually about the same DC to Repair a given item as it is to Craft it in the first place. You can't Repair a destroyed item.\n\n---\n\n**Critical Success** You restore 10 Hit Points to the item, plus an additional 10 Hit Points per proficiency rank you have in Crafting (a total of 20 HP if you're trained, 30 HP if you're an expert, 40 HP if you're a master, or 50 HP if you're legendary).\n\n**Success** You restore 5 Hit Points to the item, plus an additional 5 per proficiency rank you have in Crafting (for a total of 10 HP if you are trained, 15 HP if you're an expert, 20 HP if you're a master, or 25 HP if you're legendary).\n\n**Critical Failure** You deal 2d6 damage to the item. Apply the item's Hardness to this damage.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -5396,7 +5396,7 @@
     "systemVersion": "1.2.10",
     "name": "Shed Spirit",
     "slug": "shed-spirit-player-core",
-    "descr": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** Your familiar's spirit exits its body, leaving its empty shell behind, before flying at an enemy within 20 feet and dealing (6+max(0,(ceil((current value -8)/2)*2)))d6 spirit] damage, with a basic Will save against your spell DC. If the familiar dealt damage, it then flies to an ally within 30 feet of the enemy, restoring Hit Points equal to half the damage dealt. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.",
+    "descr": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** Your familiar's spirit exits its body, leaving its empty shell behind, before flying at an enemy within 20 feet and dealing 6d6 spirit damage, with a basic Will save against your spell DC. If the familiar dealt damage, it then flies to an ally within 30 feet of the enemy, restoring Hit Points equal to half the damage dealt. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -5882,7 +5882,7 @@
     "systemVersion": "1.2.10",
     "name": "Stitching Strike",
     "slug": "stitching-strike-player-core",
-    "descr": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** Your familiar unravels into magical fibers that encompass an enemy within 30 feet and deal (6+max(0,(ceil((current value -8)/2)*2)))d6 slashing] damage, with a basic Reflex save against your spell DC. On a failure, the target is also [Immobilized](/condition/immobilized-player-core) for 1 round or until it [Escapes](/action/escape-player-core) against your spell DC. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.",
+    "descr": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** Your familiar unravels into magical fibers that encompass an enemy within 30 feet and deal 6d6 slashing damage, with a basic Reflex save against your spell DC. On a failure, the target is also [Immobilized](/condition/immobilized-player-core) for 1 round or until it [Escapes](/action/escape-player-core) against your spell DC. Your familiar then re-forms in its original square. At 9th level, and every 2 levels thereafter, the attack deals an additional 2d6 damage.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -6475,7 +6475,7 @@
     "systemVersion": "1.2.10",
     "name": "Treat Wounds",
     "slug": "treat-wounds-player-core",
-    "descr": "**Requirements** You're wearing or holding a [Healer'S Toolkit](/item/healer-s-toolkit-player-core).\n\n---\n\nYou spend 10 minutes treating one injured living creature (targeting yourself, if you so choose). The target is then temporarily immune to Treat Wounds actions for 1 hour, but this interval overlaps with the time you spent treating (so a patient can be treated once per hour, not once per 70 minutes).\n\nThe Medicine check DC is usually 15, though the GM might adjust it based on the circumstances, such as treating a patient outside in a storm, or treating magically cursed wounds. If you're an expert in Medicine, you can instead attempt a DC 20 check to increase the Hit Points regained by 10; if you're a master of Medicine, you can instead attempt a DC 30 check to increase the Hit Points regained by 30; and if you're legendary, you can instead attempt a DC 40 check to increase the Hit Points regained by 50. The damage dealt on a critical failure remains the same.\n\nIf you succeed at your check, you can continue treating the target to grant additional healing. If you treat it for a total of 1 hour, double the Hit Points it regains from Treat Wounds.\n\nThe result of your Medicine check determines how many Hit Points the target regains.\n\nTreat Wounds\n\n---\n\n**Critical Success** The target regains 4d8[healing] Hit Points and loses the [Wounded](/condition/wounded-player-core) condition.\n\n**Success** The target regains 2d8[healing] Hit Points, and loses the wounded condition.\n\n**Critical Failure** The target takes 1d8[damage] damage.",
+    "descr": "**Requirements** You're wearing or holding a [Healer'S Toolkit](/item/healer-s-toolkit-player-core).\n\n---\n\nYou spend 10 minutes treating one injured living creature (targeting yourself, if you so choose). The target is then temporarily immune to Treat Wounds actions for 1 hour, but this interval overlaps with the time you spent treating (so a patient can be treated once per hour, not once per 70 minutes).\n\nThe Medicine check DC is usually 15, though the GM might adjust it based on the circumstances, such as treating a patient outside in a storm, or treating magically cursed wounds. If you're an expert in Medicine, you can instead attempt a DC 20 check to increase the Hit Points regained by 10; if you're a master of Medicine, you can instead attempt a DC 30 check to increase the Hit Points regained by 30; and if you're legendary, you can instead attempt a DC 40 check to increase the Hit Points regained by 50. The damage dealt on a critical failure remains the same.\n\nIf you succeed at your check, you can continue treating the target to grant additional healing. If you treat it for a total of 1 hour, double the Hit Points it regains from Treat Wounds.\n\nThe result of your Medicine check determines how many Hit Points the target regains.\n\nTreat Wounds\n\n---\n\n**Critical Success** The target regains 4d8 healing Hit Points and loses the [Wounded](/condition/wounded-player-core) condition.\n\n**Success** The target regains 2d8 healing Hit Points, and loses the wounded condition.\n\n**Critical Failure** The target takes 1d8 damage damage.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -6530,7 +6530,7 @@
     "systemVersion": "1.2.10",
     "name": "Trip",
     "slug": "trip-player-core",
-    "descr": "**Requirements** You have at least one hand free. Your target can't be more than one size larger than you.\n\n---\n\nYou try to knock a creature to the ground. Attempt an Athletics check against the target's Reflex DC.\n\n---\n\n**Critical Success** The target falls, lands [Prone](/condition/prone-player-core), and takes 1d6 bludgeoning] damage.\n\n**Success** The target falls and lands prone.\n\n**Critical Failure** You lose your balance, fall, and land prone.",
+    "descr": "**Requirements** You have at least one hand free. Your target can't be more than one size larger than you.\n\n---\n\nYou try to knock a creature to the ground. Attempt an Athletics check against the target's Reflex DC.\n\n---\n\n**Critical Success** The target falls, lands [Prone](/condition/prone-player-core), and takes 1d6 bludgeoning damage.\n\n**Success** The target falls and lands prone.\n\n**Critical Failure** You lose your balance, fall, and land prone.",
     "data": {
       "rarity": "common",
       "traits": [

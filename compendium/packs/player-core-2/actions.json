@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Basic Finisher",
     "slug": "basic-finisher-player-core-2",
-    "descr": "You make a graceful, deadly attack. Make a Strike; if you hit and your weapon qualifies for [Precise Strike](/feat/precise-strike-player-core-2), you deal the full 1d6 damage from precise strike.",
+    "descr": "You make a graceful, deadly attack. Make a Strike; if you hit and your weapon qualifies for Precise Strike, you deal the full 1d6 damage from precise strike.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -274,7 +274,7 @@
     "systemVersion": "1.2.10",
     "name": "Destructive Vengeance",
     "slug": "destructive-vengeance-player-core-2",
-    "descr": "**Trigger** An enemy in your champion's aura damages you\n\n---\n\n**Effect** Bloodshed begets bloodshed as you drag your enemy toward oblivion. You increase the amount of damage you take by (ternary(gte(current value,19),6,ternary(gte(current value,16),5,ternary(gte(current value,12),4,ternary(gte(current value,9),3,ternary(gte(current value,5),2,1))))))d6, and you deal (ternary(gte(current value,19),6,ternary(gte(current value,16),5,ternary(gte(current value,12),4,ternary(gte(current value,9),3,ternary(gte(current value,5),2,1))))))d6 spirit|options:destructive-vengeance:enemy] damage to the triggering enemy. The damage you take and deal when you use this reaction increases to 2d6 at 5th level, 3d6 at 9th level, 4d6 at 12th level, 5d6 at 16th level, and 6d6 at 19th level.\n\nIn addition, until the end of your next turn, your Strikes against the triggering creature deal 2 extra spirit damage. This extra damage increases to 4 at 9th level and 6 at 16th level.\n\nEffect: Champion'S Extra Damage",
+    "descr": "**Trigger** An enemy in your champion's aura damages you\n\n---\n\n**Effect** Bloodshed begets bloodshed as you drag your enemy toward oblivion. You increase the amount of damage you take by 1d6, and you deal 1d6 spirit damage to the triggering enemy. The damage you take and deal when you use this reaction increases to 2d6 at 5th level, 3d6 at 9th level, 4d6 at 12th level, 5d6 at 16th level, and 6d6 at 19th level.\n\nIn addition, until the end of your next turn, your Strikes against the triggering creature deal 2 extra spirit damage. This extra damage increases to 4 at 9th level and 6 at 16th level.\n\nEffect: Champion'S Extra Damage",
     "data": {
       "rarity": "common",
       "traits": [
@@ -753,7 +753,7 @@
     "systemVersion": "1.2.10",
     "name": "Iron Command",
     "slug": "iron-command-player-core-2",
-    "descr": "**Trigger** An enemy in your champion's aura damages you\n\n---\n\n**Effect** You put an impertinent foe who dared harm you in their proper place. You command your enemy to kneel before you in obedience. If they dare to refuse, they must pay the price in pain and anguish. The enemy must choose one of the following options.\n\n**Kneel** The enemy drops [Prone](/condition/prone-player-core) as a free action.\n\n**Refuse** You deal (ternary(gte(current value,19),6,ternary(gte(current value,16),5,ternary(gte(current value,12),4,ternary(gte(current value,9),3,ternary(gte(current value,5),2,1))))))d6 mental] damage to the enemy. This damage increases to 2d6 at 5th level, 3d6 at 9th level, 4d6 at 12th level, 5d6 at 16th level, and 6d6 at 19th level.\n\nRegardless of which option the enemy chose, your Strikes against it deal 1 extra spirit damage until the end of your next turn. This extra damage increases to 2 at 9th level and 3 at 16th level.\n\nEffect: Champion'S Extra Damage",
+    "descr": "**Trigger** An enemy in your champion's aura damages you\n\n---\n\n**Effect** You put an impertinent foe who dared harm you in their proper place. You command your enemy to kneel before you in obedience. If they dare to refuse, they must pay the price in pain and anguish. The enemy must choose one of the following options.\n\n**Kneel** The enemy drops [Prone](/condition/prone-player-core) as a free action.\n\n**Refuse** You deal 1d6 mental damage to the enemy. This damage increases to 2d6 at 5th level, 3d6 at 9th level, 4d6 at 12th level, 5d6 at 16th level, and 6d6 at 19th level.\n\nRegardless of which option the enemy chose, your Strikes against it deal 1 extra spirit damage until the end of your next turn. This extra damage increases to 2 at 9th level and 3 at 16th level.\n\nEffect: Champion'S Extra Damage",
     "data": {
       "rarity": "common",
       "traits": [
@@ -1681,7 +1681,7 @@
     "systemVersion": "1.2.10",
     "name": "Toxic Skin",
     "slug": "toxic-skin-player-core-2",
-    "descr": "**Frequency** once per hour\n\n**Trigger** A creature touches you, such as by [Grappling](/action/grapple-player-core) you, successfully hitting you with an unarmed attack, or using a touch-range spell against you\n\n---\n\n**Effect** You exude a deadly toxin. The triggering creature takes (ceil(current value/2))d4 poison] damage (basic Fortitude save using your class DC or spell DC, whichever is higher). At 3rd level and every 2 levels thereafter, the damage increases by 1d4.",
+    "descr": "**Frequency** once per hour\n\n**Trigger** A creature touches you, such as by [Grappling](/action/grapple-player-core) you, successfully hitting you with an unarmed attack, or using a touch-range spell against you\n\n---\n\n**Effect** You exude a deadly toxin. The triggering creature takes 0d4 poison damage (basic Fortitude save using your class DC or spell DC, whichever is higher). At 3rd level and every 2 levels thereafter, the damage increases by 1d4.",
     "data": {
       "rarity": "common",
       "traits": [

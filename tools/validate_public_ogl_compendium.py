@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from foundry_markup import has_conversion_artifact
+
 
 REPO = Path(__file__).resolve().parents[1]
 PACK = REPO / "compendium" / "ogl-packs" / "rage-of-elements"
@@ -63,6 +65,23 @@ def inspect(value: Any, location: str, errors: list[str]) -> None:
                 errors.append(f"{location}: banned text marker {marker!r}")
         if EMAIL.search(value):
             errors.append(f"{location}: possible email/private watermark")
+        if has_conversion_artifact(value):
+            errors.append(f"{location}: malformed converted rules text")
+
+
+def inspect_sources(record: dict[str, Any], location: str, errors: list[str]) -> None:
+    sources = record.get("sources")
+    if not isinstance(sources, list) or not sources:
+        errors.append(f"{location}: {record.get('name')} lacks source attribution")
+        return
+    for index, source in enumerate(sources):
+        source_location = f"{location}.sources[{index}]"
+        if not isinstance(source, dict) or not str(source.get("name") or "").strip():
+            errors.append(f"{source_location}: source book name is missing")
+            continue
+        page = source.get("page")
+        if page is not None and (not isinstance(page, int) or isinstance(page, bool) or page <= 0):
+            errors.append(f"{source_location}: source page must be a positive integer")
 
 
 def main() -> int:
@@ -105,6 +124,7 @@ def main() -> int:
         total += len(records)
         for record in records:
             inspect(record, path.name, errors)
+            inspect_sources(record, path.name, errors)
             record_id = str(record.get("id") or "")
             kind = str(record.get("kind") or "")
             kinds[kind] = kinds.get(kind, 0) + 1

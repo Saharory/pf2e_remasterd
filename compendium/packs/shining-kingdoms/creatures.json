@@ -79,7 +79,7 @@
         "defensive": [
           {
             "name": "Smeltable",
-            "text": "If an aurosrath takes 5 or more fire damage from a single attack, the precious metals within their body enter a molten state until the end of their next turn. While in this state, the aurosrath takes a –10-foot status penalty to their Speeds, and their strikes deal an extra 1d6 fire] damage. They also lose their weakness to slashing damage and their resistance to electricity damage. Finally, any creature currently Grabbed or Restrained by the aurosrath loses 1 round of air if it's holding its breath.\n\nEffect: Smeltable",
+            "text": "If an aurosrath takes 5 or more fire damage from a single attack, the precious metals within their body enter a molten state until the end of their next turn. While in this state, the aurosrath takes a –10-foot status penalty to their Speeds, and their strikes deal an extra 1d6 fire damage. They also lose their weakness to slashing damage and their resistance to electricity damage. Finally, any creature currently [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by the aurosrath loses 1 round of air if it's holding its breath.\n\nEffect: Smeltable",
             "traits": []
           },
           {
@@ -91,7 +91,7 @@
         "offensive": [
           {
             "name": "Fetters of Debt",
-            "text": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** The aurosrath bellows a plea for gold, remarking that their foes are overladen. Creatures in a area must succeed at a Will DC 19 save or become Encumbered for 1 minute. The creature is aware that it can immediately end the condition by giving the aurosrath items or treasure worth at least 20 gp. Handing a held item to the aurosrath is a single [Interact](/action/interact-player-core) action. If the aurosrath's hands are full, the item falls in their space, but the condition still ends.",
+            "text": "**Frequency** once per 10 minutes\n\n---\n\n**Effect** The aurosrath bellows a plea for gold, remarking that their foes are overladen. Creatures in a 15-foot emanation must succeed at a Will DC 19 save or become [Encumbered](/condition/encumbered-player-core) for 1 minute. The creature is aware that it can immediately end the condition by giving the aurosrath items or treasure worth at least 20 gp. Handing a held item to the aurosrath is a single [Interact](/action/interact-player-core) action. If the aurosrath's hands are full, the item falls in their space, but the condition still ends.",
             "traits": [
               "auditory",
               "curse",
@@ -241,7 +241,7 @@
         "offensive": [
           {
             "name": "Icy Japes",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The beirans descend on their prey, biting and clawing at each enemy in a area, with a basic Reflex DC 17 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage plus 1 cold damage\n\n2 2d6+2 slashing damage plus 1d4 cold damage\n\n3 2d6+5 cold damage plus 1d4 cold damage",
+            "text": "1 to 3\n\n**Frequency** once per round\n\n---\n\n**Effect** The beirans descend on their prey, biting and clawing at each enemy in a 5-foot emanation, with a basic Reflex DC 17 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage plus 1 cold damage\n\n2 2d6+2 slashing damage plus 1d4 cold damage\n\n3 2d6+5 cold damage plus 1d4 cold damage",
             "traits": [
               "cold"
             ],
@@ -411,7 +411,7 @@
           },
           {
             "name": "Death by 1,000 Papercuts",
-            "text": "The bibliodaemon launches a torrent of sharp papers from the sleeves of their robes. All creatures in a area take 1d4 rounds.",
+            "text": "The bibliodaemon launches a torrent of sharp papers from the sleeves of their robes. All creatures in a 15-foot cone take 9d6 slashing damage (basic Reflex DC 23 save). Creatures that fail their save also take 2d4 bleed damage. The bibliodaemon can't use Death by 1,000 Papercuts again for 1d4 rounds.",
             "traits": [
               "divine"
             ],
@@ -597,14 +597,14 @@
           },
           {
             "name": "Thorny Hide",
-            "text": "A corbayrant's body is covered in jagged spines. Adjacent creatures that hit them with a melee attack, as well as creatures that touch them or hit them with an unarmed attack, take 4d6 piercing] damage and are exposed to thorn paralysis.",
+            "text": "A corbayrant's body is covered in jagged spines. Adjacent creatures that hit them with a melee attack, as well as creatures that touch them or hit them with an unarmed attack, take 4d6 piercing damage and are exposed to thorn paralysis.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Corbayrant Venom",
-            "text": "**Saving Throw** Fortitude DC 37\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 8d6 poison] damage (1 round)\n\n**Stage 2** 9d6 poison] damage (1 round)\n\n**Stage 3** 9d6 poison] damage and Drained 1 (1 round)",
+            "text": "**Saving Throw** Fortitude DC 37\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 8d6 poison damage (1 round)\n\n**Stage 2** 9d6 poison damage (1 round)\n\n**Stage 3** 9d6 poison damage and [Drained 1](/condition/drained-player-core) (1 round)",
             "traits": []
           },
           {
@@ -615,7 +615,7 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, (9d6) piercing] plus thorn paralysis, Rupture 30\n\n---\n\nSwallowwhole",
+            "text": "Large, 9d6 piercing plus thorn paralysis, Rupture 30\n\n---\n\nSwallowwhole",
             "traits": [
               "attack"
             ],
@@ -781,7 +781,7 @@
           },
           {
             "name": "This Is My Reality!",
-            "text": "6d6 spirit|options:area-damage], basic Will DC 30\n\nThe failed prophet exerts control over their crumbling mindscape to inflict harm upon those trapped within. This can take the form of falling debris, natural disasters, or anything else the failed prophet can imagine. No matter the form, each creature currently Paralyzed by the failed prophet's broken mindscape takes spirit damage with a basic Will save. The save DC uses the high spell DC for the failed prophet's level and the unlimited use area damage for the failed prophet's level.",
+            "text": "6d6 spirit, basic Will DC 30\n\nThe failed prophet exerts control over their crumbling mindscape to inflict harm upon those trapped within. This can take the form of falling debris, natural disasters, or anything else the failed prophet can imagine. No matter the form, each creature currently [Paralyzed](/condition/paralyzed-player-core) by the failed prophet's broken mindscape takes spirit damage with a basic Will save. The save DC uses the high spell DC for the failed prophet's level and the unlimited use area damage for the failed prophet's level.",
             "traits": [
               "concentrate"
             ],
@@ -908,13 +908,13 @@
         "offensive": [
           {
             "name": "Chilling Currents",
-            "text": "A goldpebble can cause the temperature of all water within a area centered on itself to plummet for 1 minute. Any creature that starts its turn or enters the affected water takes 2d6 cold|options:area-damage] damage (basic Fortitude DC 19 save).",
+            "text": "A goldpebble can cause the temperature of all water within a 30-foot emanation centered on itself to plummet for 1 minute. Any creature that starts its turn or enters the affected water takes 2d6 cold damage (basic Fortitude DC 19 save).",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Pebblefang Poison",
-            "text": "**Saving Throw** Fortitude DC 21\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 cold] damage (2 rounds)\n\n**Stage 2** 2d6 cold] damage (2 rounds)\n\n**Stage 3** 2d6 cold] damage and Drained 1",
+            "text": "**Saving Throw** Fortitude DC 21\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 cold damage (2 rounds)\n\n**Stage 2** 2d6 cold damage (2 rounds)\n\n**Stage 3** 2d6 cold damage and [Drained 1](/condition/drained-player-core)",
             "traits": [
               "poison"
             ]
@@ -1067,7 +1067,7 @@
           },
           {
             "name": "Fear the Darkness",
-            "text": "**Requirements** The lamp blighter must be in an area of darkness\n\n---\n\n**Effect** The lamp blighter evokes the terror of being unable to see in the dark. Each creature within a area that doesn't have darkvision must succeed at a Will DC 23 save or become Frightened 2.",
+            "text": "**Requirements** The lamp blighter must be in an area of darkness\n\n---\n\n**Effect** The lamp blighter evokes the terror of being unable to see in the dark. Each creature within a 20-foot emanation that doesn't have darkvision must succeed at a Will DC 23 save or become [Frightened 2](/condition/frightened-player-core).",
             "traits": [
               "concentrate",
               "emotion",
@@ -1079,7 +1079,7 @@
           },
           {
             "name": "Snuff the Light",
-            "text": "The lamp blighter extinguishes light sources in a area. They extinguish all non-magical light sources automatically and attempt to extinguish magical light sources with a +16 counteract modifier and a counteract rank of 3. If the lamp blighter successfully extinguishes any light, their next successful claw or shortbow Strike deals 1d6 persistent,fire] damage.",
+            "text": "The lamp blighter extinguishes light sources in a 10-foot emanation. They extinguish all non-magical light sources automatically and attempt to extinguish magical light sources with a +16 counteract modifier and a counteract rank of 3. If the lamp blighter successfully extinguishes any light, their next successful claw or shortbow Strike deals 1d6 persistent fire damage.",
             "traits": [
               "concentrate",
               "fire",
@@ -1203,7 +1203,7 @@
         "offensive": [
           {
             "name": "Death Rattle",
-            "text": "The shroudwing emits a guttural, haunting call that instills a sense of fear almost impossible to shake. Each non-shroudwing creature within a area must attempt a Will DC 18 save. Regardless of the result, creatures are then temporarily immune to Death Rattle for 1 minute.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Off Guard until the start of the shroudwing's next turn.\n\n**Failure** The creature is Frightened 1.\n\n**Critical Failure** The creature is Frightened 2.",
+            "text": "The shroudwing emits a guttural, haunting call that instills a sense of fear almost impossible to shake. Each non-shroudwing creature within a 30-foot emanation must attempt a Will DC 18 save. Regardless of the result, creatures are then temporarily immune to Death Rattle for 1 minute.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Off Guard](/condition/off-guard-player-core) until the start of the shroudwing's next turn.\n\n**Failure** The creature is [Frightened 1](/condition/frightened-player-core).\n\n**Critical Failure** The creature is Frightened 2.",
             "traits": [
               "concentrate",
               "emotion",
@@ -1214,14 +1214,14 @@
           },
           {
             "name": "Grave Blight",
-            "text": "**Saving Throw** Fortitude DC 18\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 persistent,poison] damage every hour, Sickened 1, and can't reduce the value of the [sickened](/condition/sickened-player-core) condition while taking persistent poison damage (1 day)\n\n**Stage 3** 2d6 persistent,poison] damage every hour, Sickened 2, and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)",
+            "text": "**Saving Throw** Fortitude DC 18\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 persistent poison damage every hour, [Sickened 1](/condition/sickened-player-core), and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)\n\n**Stage 3** 2d6 persistent poison damage every hour, Sickened 2, and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)",
             "traits": [
               "disease"
             ]
           },
           {
             "name": "Soul Feeding",
-            "text": "**Requirements** The shroudwing is adjacent to a [dying](/condition/dying-player-core) creature\n\n---\n\n**Effect** The shroudwing attempts to devour the dying creature's soul. The creature must attempt a Will DC 18 save or their dying condition increases by 1 and the shroudwing regains 2d8 healing] Hit Points.",
+            "text": "**Requirements** The shroudwing is adjacent to a [dying](/condition/dying-player-core) creature\n\n---\n\n**Effect** The shroudwing attempts to devour the dying creature's soul. The creature must attempt a Will DC 18 save or their dying condition increases by 1 and the shroudwing regains 2d8 healing Hit Points.",
             "traits": [
               "concentrate",
               "death",
@@ -1373,7 +1373,7 @@
           },
           {
             "name": "Tear Asunder",
-            "text": "**Requirements** The torn quartet has a creature [Grabbed](/condition/grabbed-player-core) or Restrained by at least two limbs\n\n---\n\n**Effect** The creature takes 5d6 slashing] damage for each limb currently grabbing or restraining it (maximum 15d6), with a basic Fortitude DC 30 save. On a critical failure, the creature also loses a random body part, and one of the torn quartet's limbs is now no longer grabbing or restraining it.",
+            "text": "**Requirements** The torn quartet has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by at least two limbs\n\n---\n\n**Effect** The creature takes 5d6 slashing damage for each limb currently grabbing or restraining it (maximum 15d6), with a basic Fortitude DC 30 save. On a critical failure, the creature also loses a random body part, and one of the torn quartet's limbs is now no longer grabbing or restraining it.",
             "traits": [],
             "actions": "one"
           }
@@ -1524,7 +1524,7 @@
           },
           {
             "name": "Vorvorak Bile",
-            "text": "**Saving Throw** Fortitude DC 28\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d8 poison] and Sickened 1 (2 rounds)\n\n**Stage 2** 3d8 poison] and Sickened 2 (2 rounds)\n\n**Stage 3** 4d8 poison] and Sickened 3 (2 rounds)",
+            "text": "**Saving Throw** Fortitude DC 28\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d8 poison and [Sickened 1](/condition/sickened-player-core) (2 rounds)\n\n**Stage 2** 3d8 poison and Sickened 2 (2 rounds)\n\n**Stage 3** 4d8 poison and Sickened 3 (2 rounds)",
             "traits": [
               "poison"
             ]
