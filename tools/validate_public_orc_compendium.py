@@ -75,6 +75,7 @@ ROUTE_BY_KIND = {
     "Rule": "rule",
     "Spell": "spell",
     "StatusEffect": "condition",
+    "Table": "table",
     "Trait": "trait",
     "Vehicle": "vehicle",
 }
@@ -207,6 +208,13 @@ def main() -> int:
                                 errors.append(
                                     f"{path}: probable flattened rule heading in {record.get('name')}: {line[:80]!r}"
                                 )
+                    if kind == "Table":
+                        columns = record.get("columns")
+                        rows = record.get("rows")
+                        if not isinstance(columns, list) or not columns or not isinstance(rows, list) or not rows:
+                            errors.append(f"{path}: malformed native table {record.get('name')}")
+                        elif any(not isinstance(row, list) or len(row) != len(columns) for row in rows):
+                            errors.append(f"{path}: ragged native table {record.get('name')}")
 
     for source_id in sorted(pack_ids):
         notice = PACKS / source_id / "ORC-NOTICE.md"
@@ -340,6 +348,14 @@ def main() -> int:
     for path, record in linked_records:
         displayed_text = [str(record.get("descr") or "")]
         displayed_text.extend(rich_text_values(record.get("data")))
+        if record.get("kind") == "Table":
+            displayed_text.extend(
+                cell
+                for row in record.get("rows", [])
+                if isinstance(row, list)
+                for cell in row
+                if isinstance(cell, str)
+            )
         displayed_text = list(dict.fromkeys(displayed_text))
         destinations = [
             match.groups()

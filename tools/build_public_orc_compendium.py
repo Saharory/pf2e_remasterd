@@ -23,6 +23,7 @@ from typing import Any
 
 from foundry_markup import replace_foundry_directives
 from hazard_vehicle_mechanics import supplement as supplement_hazard_vehicle
+from build_reference_tables import build_tables
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -824,6 +825,13 @@ def build_module(
                 json.dumps(cleaned, ensure_ascii=False, indent=2) + "\n"
             )
             counts[expected_kind] = len(cleaned)
+            if expected_kind == "Rule":
+                tables = build_tables(cleaned, source["id"])
+                if tables:
+                    (output_dir / "tables.json").write_text(
+                        json.dumps(tables, ensure_ascii=False, indent=2) + "\n"
+                    )
+                    counts["Table"] = len(tables)
 
     original_module = json.loads((source_dir / "module.json").read_text())
     module = {

@@ -74,6 +74,7 @@ COLLECTION_TITLES = {
     "rituals": "Rituals",
     "rules": "Rules",
     "spells": "Spells",
+    "tables": "Tables",
     "traits": "Traits",
     "vehicles": "Vehicles",
 }
@@ -100,6 +101,7 @@ LABEL_TO_COLLECTION = {
     "ritual": "rituals",
     "rule": "rules",
     "spell": "spells",
+    "table": "tables",
     "trait": "traits",
     "vehicle": "vehicles",
 }
