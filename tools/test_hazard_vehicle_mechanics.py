@@ -52,8 +52,14 @@ class HazardVehicleMechanicsTests(unittest.TestCase):
             ("vehicle", ("data.price", "data.space.long", "data.pilotingCheck", "data.collisionDamage", "data.abilities")),
         ):
             view = json.loads((ROOT / f"views/{kind}.json").read_text())
+            html_view = (ROOT / f"views/{kind}.html").read_text()
             form = json.loads((ROOT / f"forms/{kind}.json").read_text())
             self.assertIn(f'{kind}-stats.md', json.dumps(view))
+            # Default entities use the HTML renderer. The JSON view alone
+            # must never count as a rendered-sheet regression test.
+            self.assertIn(f'include "{kind}-stats.md"', html_view)
+            self.assertIn('extends "base.html"', html_view)
+            self.assertIn('include "footer.html"', html_view)
             combined = (ROOT / f"views/partials/{kind}-stats.md").read_text() + json.dumps(form)
             for field in fields:
                 self.assertIn(field, combined)
