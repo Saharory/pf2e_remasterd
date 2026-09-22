@@ -30,7 +30,8 @@
       },
       "hp": {
         "value": 50,
-        "details": ""
+        "details": "",
+        "bt": 25
       },
       "hardness": 5,
       "fortitude": 11,
@@ -53,7 +54,8 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "description": "A small clockwork craft carried through the air by the wind."
     },
     "attributes": {
       "remaster": true,
@@ -103,7 +105,8 @@
       },
       "hp": {
         "value": 280,
-        "details": ""
+        "details": "",
+        "bt": 140
       },
       "hardness": 20,
       "fortitude": 30,
@@ -131,7 +134,8 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "description": "An armored sleigh pulled by large creatures."
     },
     "attributes": {
       "remaster": true,
@@ -182,7 +186,8 @@
       },
       "hp": {
         "value": 80,
-        "details": ""
+        "details": "",
+        "bt": 40
       },
       "hardness": 5,
       "fortitude": 13,
@@ -213,7 +218,9 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "weaknesses": "fire 5 until broken",
+      "description": "A compact alchemical balloon with clockwork components."
     },
     "attributes": {
       "remaster": true,
@@ -265,7 +272,8 @@
       },
       "hp": {
         "value": 240,
-        "details": ""
+        "details": "",
+        "bt": 120
       },
       "hardness": 20,
       "fortitude": 28,
@@ -293,7 +301,9 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "weaknesses": "fire 15 until broken",
+      "description": "A flying vessel with alchemical and magical propulsion."
     },
     "attributes": {
       "remaster": true,
@@ -345,7 +355,8 @@
       },
       "hp": {
         "value": 50,
-        "details": ""
+        "details": "",
+        "bt": 25
       },
       "hardness": 5,
       "fortitude": 11,
@@ -373,7 +384,8 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "description": "A clockwork vehicle for transporting equipment."
     },
     "attributes": {
       "remaster": true,
@@ -426,7 +438,8 @@
       },
       "hp": {
         "value": 300,
-        "details": ""
+        "details": "",
+        "bt": 150
       },
       "hardness": 20,
       "fortitude": 34,
@@ -445,7 +458,7 @@
         },
         {
           "name": "Swallow",
-          "text": "Two crew members each perform a 3-action activity on their turn to open the caravan crawler's mouth and eat a Huge or smaller creature adjacent to the vehicle, who must attempt a Fortitude DC 40 save. A creature can choose to fail. On a failure, the creature is swallowed by the cavern crawler, moved into the passenger bay, and knocked Prone. This action fails if the passenger bay is full.",
+          "text": "Two crew members each perform a 3-action activity on their turn to open the caravan crawler's mouth and eat a Huge or smaller creature adjacent to the vehicle, who must attempt a Fortitude DC 40 save. A creature can choose to fail. On a failure, the creature is swallowed by the cavern crawler, moved into the passenger bay, and knocked [Prone](/condition/prone-player-core). This action fails if the passenger bay is full.",
           "traits": [
             "manipulate"
           ],
@@ -461,7 +474,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "immunities": [
+        "precision damage"
+      ],
+      "description": "A magical clockwork vehicle that can burrow through the ground."
     },
     "attributes": {
       "remaster": true,
@@ -512,7 +529,8 @@
       },
       "hp": {
         "value": 230,
-        "details": ""
+        "details": "",
+        "bt": 115
       },
       "hardness": 20,
       "fortitude": 23,
@@ -538,7 +556,9 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "weaknesses": "fire 10 until broken",
+      "description": "A wind-driven catamaran that can move faster with its spinnakers."
     },
     "attributes": {
       "remaster": true,
@@ -589,7 +609,8 @@
       },
       "hp": {
         "value": 80,
-        "details": ""
+        "details": "",
+        "bt": 40
       },
       "hardness": 5,
       "fortitude": 14,
@@ -607,7 +628,9 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "weaknesses": "fire 5 until broken",
+      "description": "A windborne magical craft."
     },
     "attributes": {
       "remaster": true,
@@ -659,7 +682,8 @@
       },
       "hp": {
         "value": 230,
-        "details": ""
+        "details": "",
+        "bt": 115
       },
       "hardness": 20,
       "fortitude": 26,
@@ -692,7 +716,11 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "immunities": [
+        "precision damage"
+      ],
+      "description": "A flying transport powered by alchemical and clockwork systems."
     },
     "attributes": {
       "remaster": true,
@@ -742,7 +770,8 @@
       },
       "hp": {
         "value": 350,
-        "details": ""
+        "details": "",
+        "bt": 175
       },
       "hardness": 20,
       "fortitude": 35,
@@ -760,7 +789,8 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "description": "A large caravan vehicle pulled by many creatures."
     },
     "attributes": {
       "remaster": true,
@@ -811,7 +841,8 @@
       },
       "hp": {
         "value": 50,
-        "details": ""
+        "details": "",
+        "bt": 25
       },
       "hardness": 5,
       "fortitude": 10,
@@ -829,7 +860,9 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "weaknesses": "fire 5 until broken",
+      "description": "A clockwork floating platform intended to conceal its occupants."
     },
     "attributes": {
       "remaster": true,
@@ -881,7 +914,8 @@
       },
       "hp": {
         "value": 330,
-        "details": ""
+        "details": "",
+        "bt": 165
       },
       "hardness": 20,
       "fortitude": 35,
@@ -909,7 +943,8 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "description": "A fortified flying vehicle driven by clockwork, magic, and wind."
     },
     "attributes": {
       "remaster": true,
@@ -961,7 +996,8 @@
       },
       "hp": {
         "value": 280,
-        "details": ""
+        "details": "",
+        "bt": 140
       },
       "hardness": 20,
       "fortitude": 30,
@@ -997,7 +1033,9 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "weaknesses": "fire 10 until broken",
+      "description": "A vessel with alchemical and clockwork systems for underwater travel."
     },
     "attributes": {
       "remaster": true,
@@ -1050,7 +1088,8 @@
       },
       "hp": {
         "value": 360,
-        "details": ""
+        "details": "",
+        "bt": 180
       },
       "hardness": 20,
       "fortitude": 35,
@@ -1087,7 +1126,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "immunities": [
+        "precision damage"
+      ],
+      "description": "A magical clockwork vessel designed to move through icy water."
     },
     "attributes": {
       "remaster": true,
@@ -1138,7 +1181,8 @@
       },
       "hp": {
         "value": 80,
-        "details": ""
+        "details": "",
+        "bt": 40
       },
       "hardness": 5,
       "fortitude": 13,
@@ -1156,7 +1200,9 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "weaknesses": "fire 5",
+      "description": "A wind-driven craft that can travel over ice or water."
     },
     "attributes": {
       "remaster": true,
@@ -1207,7 +1253,8 @@
       },
       "hp": {
         "value": 320,
-        "details": ""
+        "details": "",
+        "bt": 160
       },
       "hardness": 20,
       "fortitude": 34,
@@ -1235,7 +1282,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "immunities": [
+        "precision damage"
+      ],
+      "description": "A magically propelled armored vessel."
     },
     "attributes": {
       "remaster": true,
@@ -1285,7 +1336,8 @@
       },
       "hp": {
         "value": 90,
-        "details": ""
+        "details": "",
+        "bt": 45
       },
       "hardness": 5,
       "fortitude": 14,
@@ -1298,7 +1350,8 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "description": "A wagon equipped for medical use and drawn by a creature."
     },
     "attributes": {
       "remaster": true,
@@ -1350,7 +1403,8 @@
       },
       "hp": {
         "value": 250,
-        "details": ""
+        "details": "",
+        "bt": 125
       },
       "hardness": 20,
       "fortitude": 28,
@@ -1377,7 +1431,8 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "description": "A clockwork vehicle built as a traveling command center."
     },
     "attributes": {
       "remaster": true,
@@ -1430,7 +1485,8 @@
       },
       "hp": {
         "value": 220,
-        "details": ""
+        "details": "",
+        "bt": 110
       },
       "hardness": 20,
       "fortitude": 26,
@@ -1448,7 +1504,8 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "description": "A magically propelled vehicle for ground travel."
     },
     "attributes": {
       "remaster": true,
@@ -1498,7 +1555,8 @@
       },
       "hp": {
         "value": 130,
-        "details": ""
+        "details": "",
+        "bt": 65
       },
       "hardness": 10,
       "fortitude": 18,
@@ -1511,7 +1569,9 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "weaknesses": "fire 10 until broken",
+      "description": "A wind-driven flying craft."
     },
     "attributes": {
       "remaster": true,
@@ -1560,7 +1620,8 @@
       },
       "hp": {
         "value": 300,
-        "details": ""
+        "details": "",
+        "bt": 150
       },
       "hardness": 20,
       "fortitude": 33,
@@ -1583,7 +1644,8 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "description": "A heavy barge drawn by large creatures."
     },
     "attributes": {
       "remaster": true,
@@ -1634,7 +1696,8 @@
       },
       "hp": {
         "value": 300,
-        "details": ""
+        "details": "",
+        "bt": 150
       },
       "hardness": 20,
       "fortitude": 34,
@@ -1643,7 +1706,7 @@
       "abilities": [
         {
           "name": "Frightful",
-          "text": "A creature who is within 100 feet of a siege dragon at the start of its turn must succeed a Will DC 39 save or become Frightened 2. Regardless of the result of the saving throw, the creature is then temporarily immune to this effect for 24 hours.",
+          "text": "A creature who is within 100 feet of a siege dragon at the start of its turn must succeed a Will DC 39 save or become [Frightened 2](/condition/frightened-player-core). Regardless of the result of the saving throw, the creature is then temporarily immune to this effect for 24 hours.",
           "traits": [
             "emotion",
             "fear",
@@ -1661,7 +1724,11 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "immunities": [
+        "precision damage"
+      ],
+      "description": "A clockwork flying vehicle aided by magic and wind."
     },
     "attributes": {
       "remaster": true,
@@ -1711,7 +1778,8 @@
       },
       "hp": {
         "value": 150,
-        "details": ""
+        "details": "",
+        "bt": 75
       },
       "hardness": 15,
       "fortitude": 19,
@@ -1727,7 +1795,9 @@
           "actions": "two"
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "weaknesses": "fire 5 until broken",
+      "description": "A wind-driven boat that can travel faster on its hydrofoil."
     },
     "attributes": {
       "remaster": true,
@@ -1776,7 +1846,8 @@
       },
       "hp": {
         "value": 190,
-        "details": ""
+        "details": "",
+        "bt": 95
       },
       "hardness": 20,
       "fortitude": 25,
@@ -1793,7 +1864,8 @@
           "actions": "three"
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "description": "An armored airborne chariot drawn by flying creatures."
     },
     "attributes": {
       "remaster": true,
@@ -1842,7 +1914,8 @@
       },
       "hp": {
         "value": 250,
-        "details": ""
+        "details": "",
+        "bt": 125
       },
       "hardness": 20,
       "fortitude": 29,
@@ -1869,7 +1942,12 @@
           "actions": "three"
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "An alchemically driven vessel designed for travel through water."
     },
     "attributes": {
       "remaster": true,
@@ -1920,7 +1998,8 @@
       },
       "hp": {
         "value": 320,
-        "details": ""
+        "details": "",
+        "bt": 160
       },
       "hardness": 25,
       "fortitude": 33,
@@ -1932,7 +2011,11 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "immunities": [
+        "precision damage"
+      ],
+      "description": "An alchemical and clockwork vehicle built for assault."
     },
     "attributes": {
       "remaster": true,
@@ -1984,7 +2067,8 @@
       },
       "hp": {
         "value": 30,
-        "details": ""
+        "details": "",
+        "bt": 15
       },
       "hardness": 5,
       "fortitude": 8,
@@ -2007,7 +2091,8 @@
           "label": "clockwork",
           "slug": "clockwork"
         }
-      ]
+      ],
+      "description": "A small clockwork vessel built to carry two people underwater."
     },
     "attributes": {
       "remaster": true,
@@ -2057,7 +2142,8 @@
       },
       "hp": {
         "value": 280,
-        "details": ""
+        "details": "",
+        "bt": 140
       },
       "hardness": 20,
       "fortitude": 32,
@@ -2075,7 +2161,8 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "description": "A clockwork land vehicle that crosses difficult terrain without slowing."
     },
     "attributes": {
       "remaster": true,
@@ -2124,7 +2211,8 @@
       },
       "hp": {
         "value": 120,
-        "details": ""
+        "details": "",
+        "bt": 60
       },
       "hardness": 10,
       "fortitude": 16,
@@ -2142,7 +2230,8 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "description": "A wagon drawn by large creatures."
     },
     "attributes": {
       "remaster": true,

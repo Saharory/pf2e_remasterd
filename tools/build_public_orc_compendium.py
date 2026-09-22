@@ -685,7 +685,11 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
     if expected_kind == "StatusEffect":
         configure_core_condition(result)
 
-    dedupe_entity_links(result)
+    # Hazard and vehicle ability text is an in-play reference. Every explicit
+    # condition or rule reference should stay clickable, including repeated
+    # references at different outcomes of one saving throw.
+    if expected_kind not in {"Hazard", "Vehicle"}:
+        dedupe_entity_links(result)
 
     return result
 

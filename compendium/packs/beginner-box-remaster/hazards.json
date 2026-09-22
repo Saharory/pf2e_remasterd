@@ -38,7 +38,9 @@
           "actions": "reaction"
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "description": "Floor tiles trigger spears aimed across rows of the chamber.",
+      "stealthDC": 20
     },
     "attributes": {
       "remaster": true,
@@ -78,7 +80,8 @@
       },
       "hp": {
         "value": 10,
-        "details": ""
+        "details": "",
+        "bt": 5
       },
       "hardness": 0,
       "saves": {
@@ -97,7 +100,9 @@
           "actions": "reaction"
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "description": "A pressure tile drops stone blocks along the hall.",
+      "stealthDC": 20
     },
     "attributes": {
       "remaster": true,
@@ -137,7 +142,8 @@
       },
       "hp": {
         "value": 15,
-        "details": ""
+        "details": "",
+        "bt": 7
       },
       "hardness": 8,
       "saves": {
@@ -149,7 +155,9 @@
       "routine": "Each turn, the fountain uses 1 action. Roll a 1d10 and look up the result on the following list to determine which action it uses that round.\n\n**1-4 Single Target** The statue spins about and sprays water at a single random target in the room. Roll a 1d4 and count to the number you rolled, starting with the player on your left, to determine which hero gets attacked. The spray is a ranged Strike.**5-7 Corner Spray** The statue spins about, firing a spray of water at each corner of the room that still has a functioning corner mechanism. This hits any creature adjacent to the corner mechanism, dealing 2d6 bludgeoning damage. Each hero must attempt a basic Reflex DC 15, taking no damage on a critical success, half damage on a success, full damage on a failure, and double damage on a critical failure.**8-9 Half Room** The statue spins about, spraying half of the room with water. Roll any die. If the result is even, it sprays the west half; otherwise, it sprays the east half. This deals 2d6 bludgeoning damage to each creature in that half of the room, and each hero must attempt a basic Reflex DC 15 save.**10 Full Room** This works just like the half-room attack, but it targets everyone in the room.",
       "reset": "",
       "abilities": [],
-      "traitLinks": []
+      "traitLinks": [],
+      "stealthDetails": "Notice Perception DC 20 check",
+      "description": "A rotating fountain statue sprays the room while corner mechanisms remain active."
     },
     "attributes": {
       "remaster": true,

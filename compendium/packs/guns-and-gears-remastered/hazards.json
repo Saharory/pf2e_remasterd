@@ -23,7 +23,8 @@
       },
       "hp": {
         "value": 60,
-        "details": ""
+        "details": "",
+        "bt": 30
       },
       "hardness": 15,
       "saves": {
@@ -37,7 +38,7 @@
       "abilities": [
         {
           "name": "Shock",
-          "text": "**Trigger** A creature touches the fence directly or with a tool or weapon\n\n---\n\n**Effect** The fence deals 7d12 electricity damage to the triggering creature (basic Reflex DC 26 save).",
+          "text": "**Trigger** A creature touches the fence directly or with a tool or weapon\n\n**Effect** The fence deals 7d12 electricity damage to the triggering creature (basic Reflex DC 26 save).",
           "traits": [],
           "actions": "reaction"
         }
@@ -55,7 +56,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(expert)",
+      "description": "A concealed coil electrifies a section of fence.",
+      "stealthDC": 40
     },
     "attributes": {
       "remaster": true,
@@ -102,7 +106,8 @@
       },
       "hp": {
         "value": 70,
-        "details": ""
+        "details": "",
+        "bt": 35
       },
       "hardness": 10,
       "saves": {
@@ -116,7 +121,7 @@
       "abilities": [
         {
           "name": "Awaken",
-          "text": "**Trigger** A creature comes within 30 feet of a mannequin\n\n---\n\n**Effect** The mannequins all lurch towards the triggering creature, Striding up to 50 feet, then roll initiative.",
+          "text": "**Trigger** A creature comes within 30 feet of a mannequin\n\n**Effect** The mannequins all lurch towards the triggering creature, Striding up to 50 feet, then roll initiative.",
           "traits": [],
           "actions": "reaction"
         }
@@ -135,6 +140,13 @@
           "slug": "mechanical"
         }
       ],
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "weaknesses": "electricity 20",
+      "description": "Spirits animate clockwork figures that attack creatures approaching them.",
       "attacks": [
         {
           "name": "Clockwork Fist",
@@ -194,7 +206,8 @@
       },
       "hp": {
         "value": 48,
-        "details": ""
+        "details": "",
+        "bt": 24
       },
       "hardness": 12,
       "saves": {
@@ -208,7 +221,7 @@
       "abilities": [
         {
           "name": "Steam Blast",
-          "text": "**Trigger** The trip wire is pulled or severed, typically because a creature walked through the square with the trip wire\n\n---\n\n**Effect** Steam erupts from the pipes, dealing 3d6 bludgeoning damage and 3d6 fire damage (basic Reflex DC 24) to all creatures within 15 feet. Creatures that critically fail their save are knocked Prone.",
+          "text": "**Trigger** The trip wire is pulled or severed, typically because a creature walked through the square with the trip wire\n\n**Effect** Steam erupts from the pipes, dealing 3d6 bludgeoning damage and 3d6 fire damage (basic Reflex DC 24) to all creatures within 15 feet. Creatures that critically fail their save are knocked [Prone](/condition/prone-player-core).",
           "traits": [],
           "actions": "reaction"
         }
@@ -226,7 +239,10 @@
           "label": "steam",
           "slug": "steam"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "description": "A trip wire releases pressurized steam from large pipes.",
+      "stealthDC": 22
     },
     "attributes": {
       "remaster": true,

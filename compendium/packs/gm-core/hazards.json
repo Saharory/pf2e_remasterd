@@ -35,7 +35,7 @@
       "abilities": [
         {
           "name": "Burn It All",
-          "text": "**Trigger** A special condition set by the trap's creator occurs, typically the event of their death.\n\n---\n\n**Effect** Fire rains from the sky in a 100-mile radius, dealing 10d6 fire damage to creatures and objects in the area. Each creature or object can attempt a basic Reflex DC 46 save. Any creature reduced to 0 Hit Points by this damage dies instantly. This is not enough damage to completely burn away a forest or level an entire mountain or city, but it typically kills most creatures in the area.",
+          "text": "**Trigger** A special condition set by the trap's creator occurs, typically the event of their death.\n\n**Effect** Fire rains from the sky in a 100-mile radius, dealing 10d6 fire damage to creatures and objects in the area. Each creature or object can attempt a basic Reflex DC 46 save. Any creature reduced to 0 Hit Points by this damage dies instantly. This is not enough damage to completely burn away a forest or level an entire mountain or city, but it typically kills most creatures in the area.",
           "traits": [
             "death",
             "divine",
@@ -49,7 +49,9 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "stealthDetails": "or detect magic",
+      "description": "A suspended orb threatens a vast area with falling fire when its creator's condition is met."
     },
     "attributes": {
       "remaster": true,
@@ -106,7 +108,7 @@
       "abilities": [
         {
           "name": "Quietus",
-          "text": "**Trigger** A creature moves within 10 feet of the haunted object\n\n---\n\n**Effect** The haunt takes control of the triggering creature, forcing it to attack itself. The creature must attempt a Will DC 29 save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target makes a Strike against itself and automatically hits; the target also becomes Frightened 1.\n\n**Failure** The target makes a Strike against itself and automatically scores a critical hit; the target also becomes Frightened 2.\n\n**Critical Failure** The target attempts a Fortitude save. If the target succeeds, it is subject to the effects of a failure instead. If the target fails, it is reduced to 0 HP and dies",
+          "text": "**Trigger** A creature moves within 10 feet of the haunted object\n\n**Effect** The haunt takes control of the triggering creature, forcing it to attack itself. The creature must attempt a Will DC 29 save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target makes a Strike against itself and automatically hits; the target also becomes [Frightened 1](/condition/frightened-player-core).\n\n**Failure** The target makes a Strike against itself and automatically scores a critical hit; the target also becomes [Frightened 2](/condition/frightened-player-core).\n\n**Critical Failure** The target attempts a Fortitude save. If the target succeeds, it is subject to the effects of a failure instead. If the target fails, it is reduced to 0 HP and dies",
           "traits": [
             "death",
             "emotion",
@@ -123,7 +125,10 @@
           "label": "haunt",
           "slug": "haunt"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "description": "A haunted object turns a nearby creature's violence against itself.",
+      "stealthDC": 31
     },
     "attributes": {
       "remaster": true,
@@ -168,7 +173,8 @@
       },
       "hp": {
         "value": 36,
-        "details": ""
+        "details": "",
+        "bt": 18
       },
       "hardness": 9,
       "saves": {
@@ -178,11 +184,11 @@
       },
       "disable": "Thievery DC 28 (trained) to remove the trapdoor",
       "routine": "",
-      "reset": "The trap still causes creatures to fall forever if they fall in, but the trapdoor must be reset manually for the trap to become Hidden again.",
+      "reset": "The trap still causes creatures to fall forever if they fall in, but the trapdoor must be reset manually for the trap to become [Hidden](/condition/hidden-player-core) again.",
       "abilities": [
         {
           "name": "Infinite Pitfall",
-          "text": "**Trigger** A creature walks onto the trapdoor\n\n---\n\n**Effect** The triggering creature falls in and continues to fall, potentially forever. That creature can try to Grab An Edge to avoid falling. The DC to Climb the walls or Grab an Edge is 26. The pit contains many handholds, so the falling creature can try to Grab an Edge again every 6 seconds. If the creature succeeds, it can start to Climb out from that point (though it might be a very long climb, depending on how far the creature fell). Since the creature falls endlessly, it can rest and even prepare spells while falling, though items dropped while falling are usually lost forever.",
+          "text": "**Trigger** A creature walks onto the trapdoor\n\n**Effect** The triggering creature falls in and continues to fall, potentially forever. That creature can try to Grab An Edge to avoid falling. The DC to Climb the walls or Grab an Edge is 26. The pit contains many handholds, so the falling creature can try to Grab an Edge again every 6 seconds. If the creature succeeds, it can start to Climb out from that point (though it might be a very long climb, depending on how far the creature fell). Since the creature falls endlessly, it can rest and even prepare spells while falling, though items dropped while falling are usually lost forever.",
           "traits": [],
           "actions": "reaction"
         }
@@ -200,7 +206,15 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(or 0 if the trapdoor is disabled or broken) or detect magic",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A concealed iron trapdoor opens over a bottomless, 10-foot-square shaft.",
+      "stealthDC": 30
     },
     "attributes": {
       "remaster": true,
@@ -254,12 +268,12 @@
         "will": 0
       },
       "disable": "Deception DC 28 (expert) twice to confound the haunt with your own deceptions, or Occultism DC 28 (trained) twice to create a ward against the haunt's mental influence",
-      "routine": "(1 action; illusion, incapacitation, occult) The haunt continues to confound victims' senses and inspire them to commit violence against each other. Each creature in the haunt's area must attempt a Will DC 26 save.\n\n---\n\n**Critical Success** The creature is unaffected and temporarily immune for 1 minute.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is Confused for 1 round.\n\n**Critical Failure** The creature is confused for 1 minute.",
+      "routine": "(1 action; illusion, incapacitation, occult) The haunt continues to confound victims' senses and inspire them to commit violence against each other. Each creature in the haunt's area must attempt a Will DC 26 save.\n\n---\n\n**Critical Success** The creature is unaffected and temporarily immune for 1 minute.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is [Confused](/condition/confused-player-core) for 1 round.\n\n**Critical Failure** The creature is confused for 1 minute.",
       "reset": "The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.",
       "abilities": [
         {
           "name": "Unmask",
-          "text": "**Trigger** Two or more creatures enter the haunt's area\n\n---\n\n**Effect** Each creature sees the forms of nearby creatures shift and change, appearing to transform into fiendish or aberrant beings with a thirst for blood. Each creature in the area must attempt a Will DC 30 save. The haunt then rolls initiative.\n\n---\n\n**Critical Success** The creature sees through the illusions entirely and is temporarily immune to the haunt's routine for 1 minute.\n\n**Success** The creature is unaffected by the strange images.\n\n**Failure** The creature believes the illusions to be true; if they become Confused by the haunt's routine, they can't attempt flat checks to end the [confused](/condition/confused-player-core) condition when they take damage.\n\n**Critical Failure** As failure, but the creature is left with a lingering suspicion of others and can't benefit from Aid reactions for 24 hours.",
+          "text": "**Trigger** Two or more creatures enter the haunt's area\n\n**Effect** Each creature sees the forms of nearby creatures shift and change, appearing to transform into fiendish or aberrant beings with a thirst for blood. Each creature in the area must attempt a Will DC 30 save. The haunt then rolls initiative.\n\n**Critical Success** The creature sees through the illusions entirely and is temporarily immune to the haunt's routine for 1 minute.\n\n**Success** The creature is unaffected by the strange images.\n\n**Failure** The creature believes the illusions to be true; if they become [Confused](/condition/confused-player-core) by the haunt's routine, they can't attempt flat checks to end the [confused](/condition/confused-player-core) condition when they take damage.\n\n**Critical Failure** As failure, but the creature is left with a lingering suspicion of others and can't benefit from Aid reactions for 24 hours.",
           "traits": [
             "illusion",
             "occult"
@@ -272,7 +286,9 @@
           "label": "haunt",
           "slug": "haunt"
         }
-      ]
+      ],
+      "stealthDetails": "(expert)",
+      "description": "A haunt makes allies appear to transform into threatening monsters."
     },
     "attributes": {
       "remaster": true,
@@ -329,7 +345,7 @@
       "abilities": [
         {
           "name": "Prelude",
-          "text": "**Trigger** A creature approaches within 30 feet of the orchestra\n\n---\n\n**Effect** The orchestra compels all creatures that can hear it to begin dancing. Each creature must attempt a Will DC 41 save, with the following effects. The haunt then rolls initiative.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Off Guard and cannot use reactions. Additionally, it must spend 1 of its actions each round dancing. Dancing is a move action that allows the creature to Stride up to half its Speed.\n\n**Failure** As success, except the creature must spend 2 of its actions each round dancing.\n\n**Critical Failure** As failure, except the creature must spend 3 of its actions each round dancing.",
+          "text": "**Trigger** A creature approaches within 30 feet of the orchestra\n\n**Effect** The orchestra compels all creatures that can hear it to begin dancing. Each creature must attempt a Will DC 41 save, with the following effects. The haunt then rolls initiative.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Off Guard and cannot use reactions. Additionally, it must spend 1 of its actions each round dancing. Dancing is a move action that allows the creature to Stride up to half its Speed.\n\n**Failure** As success, except the creature must spend 2 of its actions each round dancing.\n\n**Critical Failure** As failure, except the creature must spend 3 of its actions each round dancing.",
           "traits": [
             "auditory",
             "incapacitation",
@@ -343,7 +359,9 @@
           "label": "haunt",
           "slug": "haunt"
         }
-      ]
+      ],
+      "stealthDetails": "(master)",
+      "description": "Unseen music compels listeners to keep dancing until exhausted."
     },
     "attributes": {
       "remaster": true,
@@ -387,7 +405,8 @@
       },
       "hp": {
         "value": 60,
-        "details": "Spout Hardness 8, Spout HP 32 (BT 16)"
+        "details": "Spout Hardness 8, Spout HP 32 (BT 16)",
+        "bt": 30
       },
       "hardness": 15,
       "saves": {
@@ -401,7 +420,7 @@
       "abilities": [
         {
           "name": "Pitfall",
-          "text": "**Trigger** A creature walks onto the trapdoor\n\n---\n\n**Effect** The triggering creature falls in and takes damage from the fall, reduced by 5 feet for falling into the water (typically 12 bludgeoning damage). A creature can [Grab An Edge](/action/grab-an-edge-player-core) to avoid falling. The trapdoor then slams shut, and the hazard rolls initiative.",
+          "text": "**Trigger** A creature walks onto the trapdoor\n\n**Effect** The triggering creature falls in and takes damage from the fall, reduced by 5 feet for falling into the water (typically 12 bludgeoning damage). A creature can [Grab An Edge](/action/grab-an-edge-player-core) to avoid falling. The trapdoor then slams shut, and the hazard rolls initiative.",
           "traits": [],
           "actions": "reaction"
         }
@@ -415,7 +434,14 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(trained); Perception DC 22 (expert) to notice the water spouts once the pit opens",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A trapdoor hides a deep pit that fills through concealed wall spouts."
     },
     "attributes": {
       "remaster": true,
@@ -475,7 +501,7 @@
       "abilities": [
         {
           "name": "Electrocution",
-          "text": "**Trigger** A creature grasps the door latch directly or with a tool\n\n---\n\n**Effect** The trap deals 3d12 electricity damage to the triggering creature (basic Reflex DC 22 save).",
+          "text": "**Trigger** A creature grasps the door latch directly or with a tool\n\n**Effect** The trap deals 3d12 electricity damage to the triggering creature (basic Reflex DC 22 save).",
           "traits": [
             "arcane",
             "electricity"
@@ -496,7 +522,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "description": "An unseen rune on a latch discharges electricity when disturbed.",
+      "stealthDC": 20
     },
     "attributes": {
       "remaster": true,
@@ -555,7 +584,7 @@
       "abilities": [
         {
           "name": "Searing Agony",
-          "text": "**Trigger** A living creature approaches within 10 feet of the remains of a victim of the original fire\n\n---\n\n**Effect** Memories of the pain suffered by the fire's past victims assault the triggering creature's mind. The creature must attempt a Will DC 25 save, and the haunt then rolls initiative.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Sickened 1.\n\n**Failure** The creature is Sickened 2.\n\n**Critical Failure** The creature is Sickened 3, and it is Off Guard for as long as it remains within the haunt's area and for 3 rounds thereafter.",
+          "text": "**Trigger** A living creature approaches within 10 feet of the remains of a victim of the original fire\n\n**Effect** Memories of the pain suffered by the fire's past victims assault the triggering creature's mind. The creature must attempt a Will DC 25 save, and the haunt then rolls initiative.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Sickened 1](/condition/sickened-player-core).\n\n**Failure** The creature is [Sickened 2](/condition/sickened-player-core).\n\n**Critical Failure** The creature is [Sickened 3](/condition/sickened-player-core), and it is Off Guard for as long as it remains within the haunt's area and for 3 rounds thereafter.",
           "traits": [
             "mental"
           ],
@@ -567,7 +596,9 @@
           "label": "haunt",
           "slug": "haunt"
         }
-      ]
+      ],
+      "stealthDetails": "(expert)",
+      "description": "Spectral flames manifest and empower undead within their reach."
     },
     "attributes": {
       "remaster": true,
@@ -626,7 +657,7 @@
       "abilities": [
         {
           "name": "Fireball",
-          "text": "**Trigger** A living creature enters the sensor area\n\n---\n\n**Effect** The rune detonates a [Fireball](/spell/fireball-player-core) centered on the triggering creature's square. This is a 3rd-rank fireball spell that deals 6d6 fire damage (basic Reflex DC 22 save).",
+          "text": "**Trigger** A living creature enters the sensor area\n\n**Effect** The rune detonates a [Fireball](/spell/fireball-player-core) centered on the triggering creature's square. This is a 3rd-rank fireball spell that deals 6d6 fire damage (basic Reflex DC 22 save).",
           "traits": [
             "arcane",
             "fire"
@@ -647,7 +678,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(expert)",
+      "description": "An invisible rune watches the area through a magical sensor and releases fire.",
+      "stealthDC": 24
     },
     "attributes": {
       "remaster": true,
@@ -692,7 +726,8 @@
       },
       "hp": {
         "value": 100,
-        "details": ""
+        "details": "",
+        "bt": 50
       },
       "hardness": 20,
       "saves": {
@@ -706,7 +741,7 @@
       "abilities": [
         {
           "name": "Whirling Blades",
-          "text": "**Trigger** Three or more creatures enter the area of the haunt\n\n---\n\n**Effect** Sharp fragments lift up from the ground and begin to spin in rapid circles taking up one 5-foot square. The haunt rolls initiative.",
+          "text": "**Trigger** Three or more creatures enter the area of the haunt\n\n**Effect** Sharp fragments lift up from the ground and begin to spin in rapid circles taking up one 5-foot square. The haunt rolls initiative.",
           "traits": [],
           "actions": "reaction"
         }
@@ -716,7 +751,15 @@
           "label": "haunt",
           "slug": "haunt"
         }
-      ]
+      ],
+      "stealthDetails": "(expert)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "weaknesses": "vitality 15",
+      "description": "A storm of floating glass and metal cuts creatures in its path."
     },
     "attributes": {
       "remaster": true,
@@ -773,7 +816,7 @@
       "abilities": [
         {
           "name": "Profane Chant",
-          "text": "**Trigger** A creature moves within 10 feet of the section of floor from which the choir can arise\n\n---\n\n**Effect** The choir rises, and its song deals 4d8+18 mental damage to living creatures within 30 feet of the souls' spectral forms. Affected creatures must each attempt a Will DC 24 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage and becomes [Frightened 1](/condition/frightened-player-core).\n\n**Failure** The creature takes full damage and becomes Frightened 2.\n\n**Critical Failure** The creature takes double damage. It also becomes Frightened 3 and [Fleeing](/condition/fleeing-player-core) for 1 round.",
+          "text": "**Trigger** A creature moves within 10 feet of the section of floor from which the choir can arise\n\n**Effect** The choir rises, and its song deals 4d8+18 mental damage to living creatures within 30 feet of the souls' spectral forms. Affected creatures must each attempt a Will DC 24 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage and becomes [Frightened 1](/condition/frightened-player-core).\n\n**Failure** The creature takes full damage and becomes [Frightened 2](/condition/frightened-player-core).\n\n**Critical Failure** The creature takes double damage. It also becomes [Frightened 3](/condition/frightened-player-core) and [Fleeing](/condition/fleeing-player-core) for 1 round.",
           "traits": [
             "auditory",
             "emotion",
@@ -789,7 +832,10 @@
           "label": "haunt",
           "slug": "haunt"
         }
-      ]
+      ],
+      "stealthDetails": "(expert)",
+      "description": "Voices rise from a section of floor; their chant harms and frightens nearby living creatures.",
+      "stealthDC": 20
     },
     "attributes": {
       "remaster": true,
@@ -803,7 +849,8 @@
     ],
     "sources": [
       {
-        "name": "GM Core"
+        "name": "GM Core",
+        "page": 102
       }
     ],
     "modifiers": [],
@@ -847,7 +894,7 @@
       "abilities": [
         {
           "name": "Powder Burst",
-          "text": "**Trigger** The latch is opened or the tube is broken.\n\n---\n\n**Effect** The tube explodes, spraying hallucinogenic powder in a 30-foot cone. Any creature in the cone must succeed at a Will DC 24 save or be confused for 1 round and take a -2 status penalty to Perception checks and saves against mental effects for 1d4 hours. On a critical failure, the penalty is instead -4.\n\nEffect: Powder Burst",
+          "text": "**Trigger** The latch is opened or the tube is broken.\n\n**Effect** The tube explodes, spraying hallucinogenic powder in a 30-foot cone. Any creature in the cone must succeed at a Will DC 24 save or be confused for 1 round and take a -2 status penalty to Perception checks and saves against mental effects for 1d4 hours. On a critical failure, the penalty is instead -4.\n\nEffect: Powder Burst",
           "traits": [
             "mental",
             "poison"
@@ -864,7 +911,15 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(expert)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A powder-filled tube is attached to a latch and bursts when triggered.",
+      "stealthDC": 24
     },
     "attributes": {
       "remaster": true,
@@ -910,7 +965,8 @@
       },
       "hp": {
         "value": 88,
-        "details": "Joint Hardness: 16, Joint HP: 64 (BT 32)"
+        "details": "Joint Hardness: 16, Joint HP: 64 (BT 32)",
+        "bt": 44
       },
       "hardness": 22,
       "saves": {
@@ -924,7 +980,7 @@
       "abilities": [
         {
           "name": "Forbid Entry",
-          "text": "**Trigger** A creature attempts to enter through the entrance.\n\n---\n\n**Effect** The hammer swings down, making a Strike against the triggering creature.",
+          "text": "**Trigger** A creature attempts to enter through the entrance.\n\n**Effect** The hammer swings down, making a Strike against the triggering creature.",
           "traits": [
             "divine"
           ],
@@ -945,6 +1001,14 @@
           "slug": "trap"
         }
       ],
+      "stealthDetails": "(expert)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A concealed hammer swings down at the entrance to strike and repel intruders.",
+      "stealthDC": 30,
       "attacks": [
         {
           "name": "Hammer",
@@ -1002,7 +1066,8 @@
       },
       "hp": {
         "value": 26,
-        "details": ""
+        "details": "",
+        "bt": 13
       },
       "hardness": 0,
       "saves": {
@@ -1016,7 +1081,7 @@
       "abilities": [
         {
           "name": "Ensnare",
-          "text": "**Trigger** A creature that isn't a spider walks into the web\n\n---\n\n**Effect** The web wraps around the triggering creature's body, clinging to their limbs. The triggering creature must succeed at a Reflex DC 20 save or take a –10-foot circumstance penalty to all their Speeds until they Escape the web (DC 20). On a critical failure, the webbing also clings to the creature's face, making them Sickened 1, and they can't attempt to reduce this condition until they Escape the web.",
+          "text": "**Trigger** A creature that isn't a spider walks into the web\n\n**Effect** The web wraps around the triggering creature's body, clinging to their limbs. The triggering creature must succeed at a Reflex DC 20 save or take a –10-foot circumstance penalty to all their Speeds until they Escape the web (DC 20). On a critical failure, the webbing also clings to the creature's face, making them [Sickened 1](/condition/sickened-player-core), and they can't attempt to reduce this condition until they Escape the web.",
           "traits": [],
           "actions": "reaction"
         }
@@ -1026,7 +1091,15 @@
           "label": "environmental",
           "slug": "environmental"
         }
-      ]
+      ],
+      "stealthDetails": "(expert)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "Fine sheets of webbing cover a passage and cling to creatures crossing it.",
+      "stealthDC": 18
     },
     "attributes": {
       "remaster": true,
@@ -1070,7 +1143,8 @@
       },
       "hp": {
         "value": 12,
-        "details": ""
+        "details": "",
+        "bt": 6
       },
       "hardness": 3,
       "saves": {
@@ -1084,7 +1158,7 @@
       "abilities": [
         {
           "name": "Pitfall",
-          "text": "**Trigger** A creature walks onto the trapdoor.\n\n---\n\n**Effect** The triggering creature falls in and takes falling damage (typically 10 bludgeoning damage). That creature can use the [Grab An Edge](/action/grab-an-edge-player-core) reaction to avoid falling.",
+          "text": "**Trigger** A creature walks onto the trapdoor.\n\n**Effect** The triggering creature falls in and takes falling damage (typically 10 bludgeoning damage). That creature can use the [Grab An Edge](/action/grab-an-edge-player-core) reaction to avoid falling.",
           "traits": [],
           "actions": "reaction"
         }
@@ -1098,7 +1172,15 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(or 0 if the trapdoor is disabled or broken)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A wooden trapdoor covers a 10-foot-square, 20-foot-deep pit.",
+      "stealthDC": 18
     },
     "attributes": {
       "remaster": true,
@@ -1157,7 +1239,7 @@
       "abilities": [
         {
           "name": "Curse the Intruders",
-          "text": "**Trigger** The seal on the tomb is broken from the outside.\n\n---\n\n**Effect** Each living creature within 60 feet must succeed at a Will DC 23 save or be subjected to the pharaoh's curse. A cursed creature takes a -2 status penalty to Fortitude saves, and any natural or magical healing it receives is halved. The curse remains until removed by Cleanse Affliction or similar magic.",
+          "text": "**Trigger** The seal on the tomb is broken from the outside.\n\n**Effect** Each living creature within 60 feet must succeed at a Will DC 23 save or be subjected to the pharaoh's curse. A cursed creature takes a -2 status penalty to Fortitude saves, and any natural or magical healing it receives is halved. The curse remains until removed by Cleanse Affliction or similar magic.",
           "traits": [
             "curse",
             "divine"
@@ -1174,7 +1256,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(expert)",
+      "description": "A magical curse waits at an entryway's threshold.",
+      "stealthDC": 25
     },
     "attributes": {
       "remaster": true,
@@ -1233,7 +1318,7 @@
       "abilities": [
         {
           "name": "Into the Great Beyond",
-          "text": "**Trigger** A creature moves within 10 feet of the rift.\n\n---\n\n**Effect** The triggering creature and all creatures within 30 feet of the rift are drawn into another plane. Each creature can attempt a Reflex DC 33 save to avoid this fate.",
+          "text": "**Trigger** A creature moves within 10 feet of the rift.\n\n**Effect** The triggering creature and all creatures within 30 feet of the rift are drawn into another plane. Each creature can attempt a Reflex DC 33 save to avoid this fate.",
           "traits": [
             "occult",
             "teleportation"
@@ -1250,7 +1335,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "description": "An opening to another plane pulls nearby creatures toward it.",
+      "stealthDC": 35
     },
     "attributes": {
       "remaster": true,
@@ -1295,7 +1383,8 @@
       },
       "hp": {
         "value": 56,
-        "details": "to destroy the control panel and disable the trap"
+        "details": "to destroy the control panel and disable the trap",
+        "bt": 28
       },
       "hardness": 14,
       "saves": {
@@ -1309,19 +1398,19 @@
       "abilities": [
         {
           "name": "Dart Volley",
-          "text": "**Trigger** A creature enters the hallway or ends its turn in the hallway\n\n---\n\n**Effect** The trap makes a poisoned dart Strike against the triggering creature, then rolls initiative.",
+          "text": "**Trigger** A creature enters the hallway or ends its turn in the hallway\n\n**Effect** The trap makes a poisoned dart Strike against the triggering creature, then rolls initiative.",
           "traits": [],
           "actions": "reaction"
         },
         {
           "name": "Continuous Barrage",
-          "text": "**Trigger** A creature within the active gallery finishes an action\n\n---\n\n**Effect** The trap makes a poisoned dart Strike against the triggering creature.",
+          "text": "**Trigger** A creature within the active gallery finishes an action\n\n**Effect** The trap makes a poisoned dart Strike against the triggering creature.",
           "traits": [],
           "actions": "free"
         },
         {
           "name": "Flesset Poison",
-          "text": "**Saving Throw** Fortitude DC 22\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison damage and [Clumsy 1](/condition/clumsy-player-core) (1 round)\n\n**Stage 2** 2d6 poison damage and Clumsy 2 (1 round)\n\n**Stage 3** 3d6 poison damage and Clumsy 3 (1 round)",
+          "text": "**Saving Throw** Fortitude DC 22\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison damage and [Clumsy 1](/condition/clumsy-player-core) (1 round)\n\n**Stage 2** 2d6 poison damage and [Clumsy 2](/condition/clumsy-player-core) (1 round)\n\n**Stage 3** 3d6 poison damage and [Clumsy 3](/condition/clumsy-player-core) (1 round)",
           "traits": [
             "poison"
           ]
@@ -1337,6 +1426,13 @@
           "slug": "trap"
         }
       ],
+      "stealthDetails": "(expert) or Perception DC 31 (master) to notice the control panel",
+      "immunities": [
+        "object immunities",
+        "precision damage",
+        "critical hits"
+      ],
+      "description": "Concealed openings along a hall launch poisoned darts from a distant control panel.",
       "attacks": [
         {
           "name": "Poisoned Dart",
@@ -1394,7 +1490,8 @@
       },
       "hp": {
         "value": 24,
-        "details": ""
+        "details": "",
+        "bt": 12
       },
       "hardness": 6,
       "saves": {
@@ -1408,7 +1505,7 @@
       "abilities": [
         {
           "name": "Spring",
-          "text": "**Trigger** A creature tries to unlock or Pick the Lock.\n\n---\n\n**Effect** A spine extends to Strike the triggering creature.",
+          "text": "**Trigger** A creature tries to unlock or Pick the Lock.\n\n**Effect** A spine extends to Strike the triggering creature.",
           "traits": [
             "attack"
           ],
@@ -1416,7 +1513,7 @@
         },
         {
           "name": "Cladis Poison",
-          "text": "**Saving Throw** Fortitude DC 19\n\n**Maximum Duration** 4 hours\n\n**Stage 1** 1d6 poison damage and [Drained 1](/condition/drained-player-core) (1 hour)\n\n**Stage 2** 2d6 poison damage and Drained 2 (1 hour)\n\n**Stage 3** 3d6 poison damage and drained 2 (1 hour)",
+          "text": "**Saving Throw** Fortitude DC 19\n\n**Maximum Duration** 4 hours\n\n**Stage 1** 1d6 poison damage and [Drained 1](/condition/drained-player-core) (1 hour)\n\n**Stage 2** 2d6 poison damage and [Drained 2](/condition/drained-player-core) (1 hour)\n\n**Stage 3** 3d6 poison damage and [drained 2](/condition/drained-player-core) (1 hour)",
           "traits": [
             "poison"
           ]
@@ -1432,6 +1529,14 @@
           "slug": "trap"
         }
       ],
+      "stealthDetails": "(trained)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A poisoned spine is concealed beside a lock's keyhole.",
+      "stealthDC": 17,
       "attacks": [
         {
           "name": "Spine",
@@ -1489,7 +1594,8 @@
       },
       "hp": {
         "value": 30,
-        "details": ""
+        "details": "",
+        "bt": 15
       },
       "hardness": null,
       "saves": {
@@ -1508,7 +1614,7 @@
         },
         {
           "name": "Spore Burst",
-          "text": "**Frequency** once per day\n\n**Trigger** A creature touches the mold, hits it, or damages it\n\n---\n\n**Effect** The mold explodes in a burst of spores and mold clusters, dealing 2d6+6 poison damage to creatures within 10 feet of it, with a basic Fortitude DC 18 save.",
+          "text": "**Frequency** once per day\n\n**Trigger** A creature touches the mold, hits it, or damages it\n\n**Effect** The mold explodes in a burst of spores and mold clusters, dealing 2d6+6 poison damage to creatures within 10 feet of it, with a basic Fortitude DC 18 save.",
           "traits": [
             "poison"
           ],
@@ -1532,7 +1638,16 @@
           "label": "fungus",
           "slug": "fungus"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "weaknesses": "fire 10",
+      "description": "A patch of mold sheds toxic spores when a creature comes close.",
+      "stealthDC": 21
     },
     "attributes": {
       "remaster": true,
@@ -1591,7 +1706,7 @@
       "abilities": [
         {
           "name": "Cursed Metamorphosis",
-          "text": "**Trigger** A creature moves within 30 feet of the glyph without speaking the passphrase in Druidic\n\n---\n\n**Effect** The creature is targeted by Cursed Metamorphosis (Will DC 32 save).",
+          "text": "**Trigger** A creature moves within 30 feet of the glyph without speaking the passphrase in Druidic\n\n**Effect** The creature is targeted by Cursed Metamorphosis (Will DC 32 save).",
           "traits": [
             "primal"
           ],
@@ -1607,7 +1722,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "description": "A magical glyph attempts to change an intruder into an animal.",
+      "stealthDC": 34
     },
     "attributes": {
       "remaster": true,
@@ -1660,12 +1778,12 @@
         "will": 0
       },
       "disable": "Survival DC 18 (trained) to disturb the surface",
-      "routine": "(1 action) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation. A creature in the quicksand can attempt a Athletics DC 20 check to Swim to either raise itself by one step if it's submerged to its neck or worse, or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step. A creature that Swims out of the quicksand escapes the hazard and is Prone in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own Athletics DC 20 check, with the same results as if the creature attempted the check.",
+      "routine": "(1 action) On its initiative, the quicksand pulls down each creature within it. A creature that was submerged up to its waist becomes submerged up to its neck, and a creature that was submerged up to its neck is pulled under and has to hold its breath to avoid suffocation. A creature in the quicksand can attempt a Athletics DC 20 check to Swim to either raise itself by one step if it's submerged to its neck or worse, or to move 5 feet if it's submerged only up to its waist. On a critical failure, the creature is pulled down one step. A creature that Swims out of the quicksand escapes the hazard and is [Prone](/condition/prone-player-core) in a space adjacent to the quicksand patch. Other creatures can Aid the creature, typically by using a rope or similar aid, or attempt to pull the creature out with their own Athletics DC 20 check, with the same results as if the creature attempted the check.",
       "reset": "The hazard still submerges anyone who walks in, but the surface doesn't become hidden again until it settles over the course of 24 hours.",
       "abilities": [
         {
           "name": "Submerge",
-          "text": "**Trigger** A Huge or smaller creature walks onto the quicksand\n\n---\n\n**Effect** The triggering creature sinks into the quicksand up to its waist. The quicksand rolls initiative if it hasn't already.",
+          "text": "**Trigger** A Huge or smaller creature walks onto the quicksand\n\n**Effect** The triggering creature sinks into the quicksand up to its waist. The quicksand rolls initiative if it hasn't already.",
           "traits": [],
           "actions": "free"
         }
@@ -1675,7 +1793,9 @@
           "label": "environmental",
           "slug": "environmental"
         }
-      ]
+      ],
+      "stealthDetails": "(trained) (or -10 and no minimum proficiency if the surface is disturbed)",
+      "description": "A waterlogged patch of sand pulls creatures beneath its surface."
     },
     "attributes": {
       "remaster": true,
@@ -1719,7 +1839,8 @@
       },
       "hp": {
         "value": 44,
-        "details": ""
+        "details": "",
+        "bt": 22
       },
       "hardness": 11,
       "saves": {
@@ -1733,7 +1854,7 @@
       "abilities": [
         {
           "name": "Falling Scythes",
-          "text": "**Trigger** The trip wire is pulled or severed.\n\n---\n\n**Effect** Both blades swing down, each one Striking all creatures under the ceiling grooves.",
+          "text": "**Trigger** The trip wire is pulled or severed.\n\n**Effect** Both blades swing down, each one Striking all creatures under the ceiling grooves.",
           "traits": [],
           "actions": "reaction"
         }
@@ -1748,6 +1869,14 @@
           "slug": "trap"
         }
       ],
+      "stealthDetails": "(trained)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A trip wire releases two blades concealed in ceiling grooves.",
+      "stealthDC": 23,
       "attacks": [
         {
           "name": "Scythe",
@@ -1808,7 +1937,8 @@
       },
       "hp": {
         "value": 20,
-        "details": ""
+        "details": "",
+        "bt": 10
       },
       "hardness": 5,
       "saves": {
@@ -1822,7 +1952,7 @@
       "abilities": [
         {
           "name": "Slam Shut",
-          "text": "**Trigger** Pressure is placed on any floor tile.\n\n---\n\n**Effect** The door falls, closing off the hallway. The stone slab deals 3d8 bludgeoning damage to anyone beneath or adjacent to the slab when it drops and pushes them out of its space in a random direction. A creature that succeeds at a Reflex DC 17 save takes no damage and rolls out of the way in a random direction. On a critical success, they can choose the direction.\n\nLifting the fallen slab requires a successful Athletics DC 25 check.\n\nHitting the floor panels triggers the trap. The slab uses the same AC and saves as the trap, but it has Hardness 12, HP 48 (BT 24).",
+          "text": "**Trigger** Pressure is placed on any floor tile.\n\n**Effect** The door falls, closing off the hallway. The stone slab deals 3d8 bludgeoning damage to anyone beneath or adjacent to the slab when it drops and pushes them out of its space in a random direction. A creature that succeeds at a Reflex DC 17 save takes no damage and rolls out of the way in a random direction. On a critical success, they can choose the direction.\n\nLifting the fallen slab requires a successful Athletics DC 25 check.\n\nHitting the floor panels triggers the trap. The slab uses the same AC and saves as the trap, but it has Hardness 12, HP 48 (BT 24).",
           "traits": [],
           "actions": "reaction"
         }
@@ -1836,7 +1966,15 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "Floor panels trigger a stone slab concealed overhead.",
+      "stealthDC": 17
     },
     "attributes": {
       "remaster": true,
@@ -1880,7 +2018,8 @@
       },
       "hp": {
         "value": 8,
-        "details": ""
+        "details": "",
+        "bt": 4
       },
       "hardness": 0,
       "saves": {
@@ -1894,7 +2033,7 @@
       "abilities": [
         {
           "name": "Snowdrop",
-          "text": "**Trigger** A creature moves beneath where the snowfall is resting.\n\n---\n\n**Effect** Ice and snow fall on the triggering creature, dealing 2d6+3 bludgeoning damage (basic Reflex DC 18 save) and soaking their clothing. Until they change into fresh clothing or spend at least an hour in an area of normal or higher temperature, they treat cold environments as one step colder (for example, mild cold as severe cold).",
+          "text": "**Trigger** A creature moves beneath where the snowfall is resting.\n\n**Effect** Ice and snow fall on the triggering creature, dealing 2d6+3 bludgeoning damage (basic Reflex DC 18 save) and soaking their clothing. Until they change into fresh clothing or spend at least an hour in an area of normal or higher temperature, they treat cold environments as one step colder (for example, mild cold as severe cold).",
           "traits": [],
           "actions": "reaction"
         }
@@ -1904,7 +2043,15 @@
           "label": "environmental",
           "slug": "environmental"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "Unstable snow and ice fall from an elevated surface when disturbed.",
+      "stealthDC": 16
     },
     "attributes": {
       "remaster": true,
@@ -1948,7 +2095,8 @@
       },
       "hp": {
         "value": 32,
-        "details": ""
+        "details": "",
+        "bt": 16
       },
       "hardness": 8,
       "saves": {
@@ -1962,7 +2110,7 @@
       "abilities": [
         {
           "name": "Spear",
-          "text": "**Trigger** Pressure is applied to the floor tile.\n\n---\n\n**Effect** The trap shoots a spear, making a Strike against the creature or object on the floor tile.",
+          "text": "**Trigger** Pressure is applied to the floor tile.\n\n**Effect** The trap shoots a spear, making a Strike against the creature or object on the floor tile.",
           "traits": [
             "attack"
           ],
@@ -1979,6 +2127,14 @@
           "slug": "trap"
         }
       ],
+      "stealthDetails": "(trained)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A pressure-sensitive floor tile activates a spear hidden in a wall socket.",
+      "stealthDC": 20,
       "attacks": [
         {
           "name": "Spear",
@@ -2035,7 +2191,8 @@
       },
       "hp": {
         "value": 50,
-        "details": ""
+        "details": "",
+        "bt": 25
       },
       "hardness": 13,
       "saves": {
@@ -2049,13 +2206,13 @@
       "abilities": [
         {
           "name": "Spectral Impale",
-          "text": "**Trigger** A living creature approaches within 15 feet of the mirror, and the mirror is lit with dim or brighter light.\n\n---\n\n**Effect** Shadowy barbs impale the body of the reflected creature as the haunt makes a shadow barbs Strike.",
+          "text": "**Trigger** A living creature approaches within 15 feet of the mirror, and the mirror is lit with dim or brighter light.\n\n**Effect** Shadowy barbs impale the body of the reflected creature as the haunt makes a shadow barbs Strike.",
           "traits": [],
           "actions": "reaction"
         },
         {
           "name": "Sap Vitality",
-          "text": "A creature hit by the reflection's shadow barbs must attempt a Fortitude DC 22 save as the haunt tries to draw a portion of its vital essence into the mirror. The target is Drained 1 on a failed saving throw, or Drained 2 on a critical failure.",
+          "text": "A creature hit by the reflection's shadow barbs must attempt a Fortitude DC 22 save as the haunt tries to draw a portion of its vital essence into the mirror. The target is [Drained 1](/condition/drained-player-core) on a failed saving throw, or [Drained 2](/condition/drained-player-core) on a critical failure.",
           "traits": []
         },
         {
@@ -2070,6 +2227,14 @@
           "slug": "haunt"
         }
       ],
+      "stealthDetails": "(expert)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A mirror image turns hostile toward the creature it reflects.",
+      "stealthDC": 26,
       "attacks": [
         {
           "name": "Shadow Barbs",
@@ -2126,7 +2291,8 @@
       },
       "hp": {
         "value": 48,
-        "details": "Panel Hardness: 5, Panel HP: 20 (BT 10)"
+        "details": "Panel Hardness: 5, Panel HP: 20 (BT 10)",
+        "bt": 24
       },
       "hardness": 12,
       "saves": {
@@ -2140,7 +2306,7 @@
       "abilities": [
         {
           "name": "Rising Pillar",
-          "text": "**Trigger** A creature steps on one of the trapped floor tiles\n\n---\n\n**Effect** The trap pops up in a grid intersection and makes a spinning blade Strike against one adjacent creature (if any), then rolls initiative.",
+          "text": "**Trigger** A creature steps on one of the trapped floor tiles\n\n**Effect** The trap pops up in a grid intersection and makes a spinning blade Strike against one adjacent creature (if any), then rolls initiative.",
           "traits": [
             "attack"
           ],
@@ -2162,6 +2328,13 @@
           "slug": "trap"
         }
       ],
+      "stealthDetails": "(trained) or Perception DC 26 (expert) to notice the control panel",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "Floor plates raise a concealed pillar of rotating blades.",
       "attacks": [
         {
           "name": "Spinning Blade",
@@ -2233,7 +2406,7 @@
       "abilities": [
         {
           "name": "Summon Monster",
-          "text": "**Trigger** A creature enters the cloud of magical sensors\n\n---\n\n**Effect** This trap summons a specific 1st-level creature, determined when the trap is created. The creature rolls initiative and remains for 2d6 rounds, after which the spell ends and the creature disappears. The creature also disappears if someone disables the trap before the duration expires. The summoned creature can use 3 actions each round and can use reactions, unlike most summoned creatures.",
+          "text": "**Trigger** A creature enters the cloud of magical sensors\n\n**Effect** This trap summons a specific 1st-level creature, determined when the trap is created. The creature rolls initiative and remains for 2d6 rounds, after which the spell ends and the creature disappears. The creature also disappears if someone disables the trap before the duration expires. The summoned creature can use 3 actions each round and can use reactions, unlike most summoned creatures.",
           "traits": [
             "arcane",
             "summon"
@@ -2250,7 +2423,9 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "description": "An unseen magical sensor surrounds a rune that summons a creature."
     },
     "attributes": {
       "remaster": true,
@@ -2294,7 +2469,8 @@
       },
       "hp": {
         "value": 56,
-        "details": ""
+        "details": "",
+        "bt": 28
       },
       "hardness": 0,
       "saves": {
@@ -2308,7 +2484,7 @@
       "abilities": [
         {
           "name": "Snap Shut",
-          "text": "**Trigger** A Small or Medium creature moves into a square that is within reach of the flytrap's hidden jaws\n\n---\n\n**Effect** The flytrap's jaws snap shut, making a jaws Strike against the triggering creature.",
+          "text": "**Trigger** A Small or Medium creature moves into a square that is within reach of the flytrap's hidden jaws\n\n**Effect** The flytrap's jaws snap shut, making a jaws Strike against the triggering creature.",
           "traits": [],
           "actions": "reaction"
         },
@@ -2319,7 +2495,7 @@
         },
         {
           "name": "Titanic Flytrap Toxin",
-          "text": "**Saving Throw** Fortitude DC 21\n\n**Maximum Duration** 4 rounds\n\n**Stage 1** 2d6 poison damage and [Stunned 1](/condition/stunned-player-core) (1 round)\n\n**Stage 2** 3d6 poison damage and Stunned 2 (1 round)\n\n**Stage 3** 4d6 poison damage and [Paralyzed](/condition/paralyzed-player-core) (1 round)",
+          "text": "**Saving Throw** Fortitude DC 21\n\n**Maximum Duration** 4 rounds\n\n**Stage 1** 2d6 poison damage and [Stunned 1](/condition/stunned-player-core) (1 round)\n\n**Stage 2** 3d6 poison damage and [Stunned 2](/condition/stunned-player-core) (1 round)\n\n**Stage 3** 4d6 poison damage and [Paralyzed](/condition/paralyzed-player-core) (1 round)",
           "traits": [
             "contact",
             "poison"
@@ -2332,6 +2508,13 @@
           "slug": "environmental"
         }
       ],
+      "stealthDetails": "(trained)",
+      "immunities": [
+        "mental"
+      ],
+      "resistances": "acid 20, fire 10",
+      "description": "A deceptively small patch of vegetation hides oversized jaws beneath the water.",
+      "stealthDC": 25,
       "attacks": [
         {
           "name": "Jaws",
@@ -2383,7 +2566,8 @@
       },
       "hp": {
         "value": 120,
-        "details": "per junction"
+        "details": "per junction",
+        "bt": 60
       },
       "hardness": 30,
       "saves": {
@@ -2397,7 +2581,7 @@
       "abilities": [
         {
           "name": "Total Decapitation",
-          "text": "**Trigger** A creature attempts to exit the room.\n\n---\n\n**Effect** The saw blade travels along its path, making one Strike against each creature in the room, twisting and varying its height for a maximum chance of beheading its targets.",
+          "text": "**Trigger** A creature attempts to exit the room.\n\n**Effect** The saw blade travels along its path, making one Strike against each creature in the room, twisting and varying its height for a maximum chance of beheading its targets.",
           "traits": [],
           "actions": "reaction"
         },
@@ -2417,6 +2601,14 @@
           "slug": "trap"
         }
       ],
+      "stealthDetails": "(expert)",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A saw blade descends and travels through grooves across the room.",
+      "stealthDC": 43,
       "attacks": [
         {
           "name": "Saw Blade",
@@ -2479,7 +2671,8 @@
       },
       "hp": {
         "value": 56,
-        "details": ""
+        "details": "",
+        "bt": 28
       },
       "hardness": 14,
       "saves": {
@@ -2493,7 +2686,7 @@
       "abilities": [
         {
           "name": "Wheel Spin",
-          "text": "**Trigger** A creature enters the sensor's detection area.\n\n---\n\n**Effect** The wheel begins to spin and rolls initiative.",
+          "text": "**Trigger** A creature enters the sensor's detection area.\n\n**Effect** The wheel begins to spin and rolls initiative.",
           "traits": [],
           "actions": "reaction"
         }
@@ -2511,7 +2704,14 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(expert) to detect the magical sensor; noticing the wheel has a DC of 0",
+      "immunities": [
+        "object immunities",
+        "critical hits",
+        "precision damage"
+      ],
+      "description": "A rune-marked wheel reacts to creatures standing before it."
     },
     "attributes": {
       "remaster": true,

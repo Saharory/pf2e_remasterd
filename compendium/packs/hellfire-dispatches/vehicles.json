@@ -28,14 +28,36 @@
       },
       "hp": {
         "value": 300,
-        "details": ""
+        "details": "",
+        "bt": 150
       },
       "hardness": 20,
       "fortitude": 34,
       "collisionDC": 40,
       "collisionDamage": "14d10",
-      "abilities": [],
-      "traitLinks": []
+      "abilities": [
+        {
+          "name": "Inspiring Presence",
+          "text": "300 feet. The sight of the Andoren navy's flagship bolsters its fleet and its crew. At the beginning of their turns or when they enter the aura, allied creatures on board the ship and allied creatures within a 300-foot-emanation who can see the ship gain a +1 status bonus to attack rolls, damage rolls, and saves against fear for 1 round.",
+          "traits": [
+            "aura",
+            "emotion",
+            "mental",
+            "visual"
+          ]
+        },
+        {
+          "name": "Weapon Mounts",
+          "text": "This vehicle has 6 weapon mounts, three on each side of the vehicle. At purchase, these weapon mounts are initially empty. Installing or uninstalling a weapon into a mount requires 1 day, a successful DC 40 Crafting check, and an appropriate weapon. The weapon mounts can be equipped with Huge or smaller ranged [siege weapons](https://2e.aonprd.com/SiegeWeapons.aspx).",
+          "traits": []
+        }
+      ],
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 20 until broken",
+      "description": "A wind-driven ship with additional abilities and equipment detailed below."
     },
     "attributes": {
       "remaster": true,
@@ -87,14 +109,31 @@
       },
       "hp": {
         "value": 200,
-        "details": ""
+        "details": "",
+        "bt": 100
       },
       "hardness": 20,
       "fortitude": 22,
       "collisionDC": 30,
       "collisionDamage": "8d10",
-      "abilities": [],
-      "traitLinks": []
+      "abilities": [
+        {
+          "name": "Stealthy",
+          "text": "Due to its ebony coloration, a duskwood corvette is difficult to detect under certain conditions. It is [concealed](/condition/concealed-player-core) in dim light.",
+          "traits": []
+        },
+        {
+          "name": "Weapon Mounts",
+          "text": "This vehicle has 2 weapon mounts, one on each side of the vehicle. At purchase, these weapon mounts are initially empty. Installing or uninstalling a weapon into a mount requires 1 day, a successful DC 28 [Crafting](https://2e.aonprd.com/Skills.aspx?ID=37) check, and an appropriate weapon. The weapon mounts can be equipped with Huge or smaller ranged [siege weapons](https://2e.aonprd.com/SiegeWeapons.aspx).",
+          "traits": []
+        }
+      ],
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 15 until broken",
+      "description": "A ship propelled by rowing or sail."
     },
     "attributes": {
       "remaster": true,
@@ -146,14 +185,31 @@
       },
       "hp": {
         "value": 200,
-        "details": ""
+        "details": "",
+        "bt": 100
       },
       "hardness": 20,
       "fortitude": 23,
       "collisionDC": 31,
       "collisionDamage": "9d10",
-      "abilities": [],
-      "traitLinks": []
+      "abilities": [
+        {
+          "name": "Armor of Nessus",
+          "text": "Over the course of 1 minute, the ship's crew lowers spiky metal plates across key sections of the hull. The ship gains a +2 circumstance bonus to its AC and immunity to precision damage. Its collision damage becomes piercing damage. Its weakness to fire is reduced to 5, but its swim Speed is reduced to 15 feet and it can no longer be rowed. The crew can retract the plates by taking another minute.",
+          "traits": []
+        },
+        {
+          "name": "Weapon Mounts",
+          "text": "This vehicle has 2 weapon mounts, one on each side of the vehicle. At purchase, these weapon mounts are initially empty. Installing or uninstalling a weapon into a mount requires 1 day, a successful DC 31 Crafting check, and an appropriate weapon. The weapon mounts can be equipped with Huge or smaller ranged [siege weapons](https://2e.aonprd.com/SiegeWeapons.aspx).",
+          "traits": []
+        }
+      ],
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 15 until broken",
+      "description": "A vessel that can move under sail or by rowing."
     },
     "attributes": {
       "remaster": true,
@@ -205,14 +261,31 @@
       },
       "hp": {
         "value": 110,
-        "details": ""
+        "details": "",
+        "bt": 55
       },
       "hardness": 10,
       "fortitude": 14,
       "collisionDC": 23,
       "collisionDamage": "4d10",
-      "abilities": [],
-      "traitLinks": []
+      "abilities": [
+        {
+          "name": "Maneuverable",
+          "text": "With a full complement of skilled rowers, a rowed speronara can turn swiftly, turn in place, and even row backward. Each 90-degree turn made in less than a vehicle length costs 5 extra feet of movement. It can row backward no faster than half its speed, and it can't turn while rowing backward.",
+          "traits": []
+        },
+        {
+          "name": "Smuggling",
+          "text": "Compartments The speronara can hold up to 20 Bulk of items in secret compartments that require a successful DC 23 Perception check to find.",
+          "traits": []
+        }
+      ],
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 10 until broken",
+      "description": "A wind-driven vessel that travels on the water."
     },
     "attributes": {
       "remaster": true,
@@ -264,14 +337,36 @@
       },
       "hp": {
         "value": 320,
-        "details": ""
+        "details": "",
+        "bt": 160
       },
       "hardness": 18,
       "fortitude": 35,
       "collisionDC": 40,
       "collisionDamage": "14d10",
-      "abilities": [],
-      "traitLinks": []
+      "abilities": [
+        {
+          "name": "Dreadful Aura",
+          "text": "The flagship of the Chelaxian navy exudes a malevolent air. At the beginning of their turns or when they enter the aura, enemy creatures on board the ship and enemy creatures within a 300-foot-emanation who can see the ship must succeed at a DC 39 Will save or become [frightened](/condition/frightened-player-core) 1 (or [frightened 2](/condition/frightened-player-core) on a critical failure). Regardless of the result, the creature is temporarily immune to this aura for 1 minute. However, an enemy creature on board can't reduce its frightened condition below 1 until it is no longer on board.",
+          "traits": [
+            "aura",
+            "emotion",
+            "mental",
+            "visual"
+          ]
+        },
+        {
+          "name": "Weapon Mounts",
+          "text": "This vehicle has 6 weapon mounts, three on each side of the vehicle. At purchase, these weapon mounts are initially empty. Installing or uninstalling a weapon into a mount requires 1 day, a successful DC 40 Crafting check, and an appropriate weapon. The weapon mounts can be equipped with Huge or smaller ranged [siege weapons](https://2e.aonprd.com/SiegeWeapons.aspx).",
+          "traits": []
+        }
+      ],
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "resistances": "fire 20 until broken",
+      "description": "A wind-driven ship with additional abilities detailed below."
     },
     "attributes": {
       "remaster": true,
@@ -323,14 +418,26 @@
       },
       "hp": {
         "value": 60,
-        "details": ""
+        "details": "",
+        "bt": 30
       },
       "hardness": 10,
       "fortitude": 12,
       "collisionDC": 20,
       "collisionDamage": "3d10",
-      "abilities": [],
-      "traitLinks": []
+      "abilities": [
+        {
+          "name": "Submersible",
+          "text": "This vehicle can travel below the surface of the water, usually to a depth of no deeper than 60 feet. Though enclosed, it is not watertight, so crew and passengers must hold their breath or be able to breathe underwater.",
+          "traits": []
+        }
+      ],
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "resistances": "fire 5",
+      "description": "A boat that travels through water under its own power."
     },
     "attributes": {
       "remaster": true,
@@ -382,14 +489,33 @@
       },
       "hp": {
         "value": 150,
-        "details": ""
+        "details": "",
+        "bt": 75
       },
       "hardness": 15,
       "fortitude": 17,
       "collisionDC": 26,
       "collisionDamage": "6d10",
-      "abilities": [],
-      "traitLinks": []
+      "abilities": [
+        {
+          "name": "Unfurl Yellow Sails",
+          "text": "With the pull of a rope, the pilot or one of the crew unfurls the yellow sails that Okeno freebooters are so infamous for. Each enemy creature within a 100-foot emanation who can see the sails must succeed at a DC 26 Will save or become [frightened](/condition/frightened-player-core) 1 (or [frightened 2](/condition/frightened-player-core) on a critical failure). Regardless of the save's results, the creature is temporarily immune to Unfurl Yellow Sails for 24 hours.",
+          "traits": [
+            "emotion",
+            "fear",
+            "manipulate",
+            "mental",
+            "visual"
+          ],
+          "actions": "one"
+        }
+      ],
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 15 until broken",
+      "description": "A wind-driven schooner."
     },
     "attributes": {
       "remaster": true,

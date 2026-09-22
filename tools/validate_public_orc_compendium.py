@@ -352,7 +352,9 @@ def main() -> int:
                 f"{path}: {record.get('name')} links to missing entries {missing[:5]}"
             )
         duplicate_count = len(destinations) - len(set(destinations))
-        if duplicate_count:
+        # Hazard outcomes often repeat the same condition at different values;
+        # each occurrence is a useful in-play link, not a redundant index.
+        if duplicate_count and record.get("kind") not in {"Hazard", "Vehicle"}:
             errors.append(
                 f"{path}: {record.get('name')} repeats {duplicate_count} internal destination links"
             )

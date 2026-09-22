@@ -28,7 +28,8 @@
       },
       "hp": {
         "value": 210,
-        "details": ""
+        "details": "",
+        "bt": 105
       },
       "hardness": 20,
       "fortitude": 22,
@@ -41,7 +42,14 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "critical hits",
+        "object immunities",
+        "precision damage"
+      ],
+      "weaknesses": "fire 15 until broken",
+      "description": "An alchemically assisted flying vessel built to carry a crew and passengers through the air."
     },
     "attributes": {
       "remaster": true,
@@ -54,7 +62,8 @@
     ],
     "sources": [
       {
-        "name": "GM Core"
+        "name": "GM Core",
+        "page": 213
       }
     ],
     "modifiers": [],
@@ -90,7 +99,8 @@
       },
       "hp": {
         "value": 80,
-        "details": ""
+        "details": "",
+        "bt": 40
       },
       "hardness": 10,
       "fortitude": 12,
@@ -114,7 +124,11 @@
           "actions": "two"
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "An enclosed alchemical vessel built for travel underwater."
     },
     "attributes": {
       "remaster": true,
@@ -163,14 +177,19 @@
       },
       "hp": {
         "value": 40,
-        "details": ""
+        "details": "",
+        "bt": 20
       },
       "hardness": 5,
       "fortitude": 8,
       "collisionDC": 16,
       "collisionDamage": "2d8",
       "abilities": [],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A passenger carriage drawn by a pair of large creatures."
     },
     "attributes": {
       "remaster": true,
@@ -219,14 +238,19 @@
       },
       "hp": {
         "value": 14,
-        "details": ""
+        "details": "",
+        "bt": 7
       },
       "hardness": 5,
       "fortitude": 6,
       "collisionDC": 14,
       "collisionDamage": "1d10",
       "abilities": [],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A small load-bearing cart drawn by one large creature."
     },
     "attributes": {
       "remaster": true,
@@ -275,14 +299,19 @@
       },
       "hp": {
         "value": 40,
-        "details": ""
+        "details": "",
+        "bt": 20
       },
       "hardness": 5,
       "fortitude": 9,
       "collisionDC": 18,
       "collisionDamage": "2d10",
       "abilities": [],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A heavy chariot drawn by two large creatures."
     },
     "attributes": {
       "remaster": true,
@@ -331,14 +360,19 @@
       },
       "hp": {
         "value": 14,
-        "details": ""
+        "details": "",
+        "bt": 7
       },
       "hardness": 5,
       "fortitude": 6,
       "collisionDC": 14,
       "collisionDamage": "1d12",
       "abilities": [],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A light chariot drawn by a single creature."
     },
     "attributes": {
       "remaster": true,
@@ -387,7 +421,8 @@
       },
       "hp": {
         "value": 100,
-        "details": ""
+        "details": "",
+        "bt": 50
       },
       "hardness": 10,
       "fortitude": 14,
@@ -400,7 +435,12 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 10 until broken",
+      "description": "A wind-driven boat for travel on the water."
     },
     "attributes": {
       "remaster": true,
@@ -449,7 +489,8 @@
       },
       "hp": {
         "value": 170,
-        "details": ""
+        "details": "",
+        "bt": 85
       },
       "hardness": 15,
       "fortitude": 19,
@@ -462,7 +503,12 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 15 until broken",
+      "description": "A vessel propelled by rowers or wind."
     },
     "attributes": {
       "remaster": true,
@@ -511,7 +557,8 @@
       },
       "hp": {
         "value": 16,
-        "details": ""
+        "details": "",
+        "bt": 8
       },
       "hardness": 0,
       "fortitude": 6,
@@ -524,7 +571,12 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 5",
+      "description": "An unpowered craft carried through the air by the wind."
     },
     "attributes": {
       "remaster": true,
@@ -573,7 +625,8 @@
       },
       "hp": {
         "value": 40,
-        "details": ""
+        "details": "",
+        "bt": 20
       },
       "hardness": 0,
       "fortitude": 8,
@@ -586,7 +639,12 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 10",
+      "description": "A balloon-borne vessel that travels with the wind."
     },
     "attributes": {
       "remaster": true,
@@ -635,7 +693,8 @@
       },
       "hp": {
         "value": 140,
-        "details": ""
+        "details": "",
+        "bt": 70
       },
       "hardness": 15,
       "fortitude": 16,
@@ -648,7 +707,12 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 15 until broken",
+      "description": "A ship that can be propelled by rowing or sail."
     },
     "attributes": {
       "remaster": true,
@@ -697,7 +761,8 @@
       },
       "hp": {
         "value": 16,
-        "details": ""
+        "details": "",
+        "bt": 8
       },
       "hardness": 1,
       "fortitude": 5,
@@ -710,7 +775,11 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A simple floating platform propelled by rowing."
     },
     "attributes": {
       "remaster": true,
@@ -759,7 +828,8 @@
       },
       "hp": {
         "value": 16,
-        "details": ""
+        "details": "",
+        "bt": 8
       },
       "hardness": 5,
       "fortitude": 6,
@@ -772,7 +842,11 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A small boat propelled by oars."
     },
     "attributes": {
       "remaster": true,
@@ -821,7 +895,8 @@
       },
       "hp": {
         "value": 150,
-        "details": ""
+        "details": "",
+        "bt": 75
       },
       "hardness": 15,
       "fortitude": 18,
@@ -834,7 +909,12 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "weaknesses": "fire 15 until broken",
+      "description": "A wind-driven vessel built for extended travel on water."
     },
     "attributes": {
       "remaster": true,
@@ -883,14 +963,21 @@
       },
       "hp": {
         "value": 230,
-        "details": ""
+        "details": "",
+        "bt": 115
       },
       "hardness": 20,
       "fortitude": 23,
       "collisionDC": 31,
       "collisionDamage": "9d10",
       "abilities": [],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "critical hits",
+        "object immunities",
+        "precision damage"
+      ],
+      "description": "A heavy airborne chariot drawn by flying creatures."
     },
     "attributes": {
       "remaster": true,
@@ -939,14 +1026,21 @@
       },
       "hp": {
         "value": 80,
-        "details": ""
+        "details": "",
+        "bt": 40
       },
       "hardness": 15,
       "fortitude": 14,
       "collisionDC": 23,
       "collisionDamage": "5d10",
       "abilities": [],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "critical hits",
+        "object immunities",
+        "precision damage"
+      ],
+      "description": "A light airborne chariot drawn by flying creatures."
     },
     "attributes": {
       "remaster": true,
@@ -995,14 +1089,21 @@
       },
       "hp": {
         "value": 160,
-        "details": ""
+        "details": "",
+        "bt": 80
       },
       "hardness": 15,
       "fortitude": 19,
       "collisionDC": 27,
       "collisionDamage": "7d10",
       "abilities": [],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "critical hits",
+        "object immunities",
+        "precision damage"
+      ],
+      "description": "An airborne chariot drawn by multiple flying creatures."
     },
     "attributes": {
       "remaster": true,
@@ -1051,7 +1152,8 @@
       },
       "hp": {
         "value": 14,
-        "details": ""
+        "details": "",
+        "bt": 7
       },
       "hardness": 5,
       "fortitude": 6,
@@ -1069,7 +1171,11 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A small sled pulled by several creatures."
     },
     "attributes": {
       "remaster": true,
@@ -1118,7 +1224,8 @@
       },
       "hp": {
         "value": 18,
-        "details": ""
+        "details": "",
+        "bt": 9
       },
       "hardness": 5,
       "fortitude": 7,
@@ -1136,7 +1243,11 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A large sleigh pulled by creatures."
     },
     "attributes": {
       "remaster": true,
@@ -1185,7 +1296,8 @@
       },
       "hp": {
         "value": 200,
-        "details": ""
+        "details": "",
+        "bt": 100
       },
       "hardness": 20,
       "fortitude": 28,
@@ -1201,7 +1313,11 @@
           "actions": "three"
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "An alchemical walking vehicle powered by steam."
     },
     "attributes": {
       "remaster": true,
@@ -1250,7 +1366,8 @@
       },
       "hp": {
         "value": 120,
-        "details": ""
+        "details": "",
+        "bt": 60
       },
       "hardness": 10,
       "fortitude": 13,
@@ -1263,7 +1380,11 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A magically assisted alchemical land vehicle."
     },
     "attributes": {
       "remaster": true,
@@ -1312,7 +1433,8 @@
       },
       "hp": {
         "value": 15,
-        "details": ""
+        "details": "",
+        "bt": 7
       },
       "hardness": 5,
       "fortitude": 6,
@@ -1330,7 +1452,11 @@
           "traits": []
         }
       ],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A vehicle propelled by its pilot's pedaling."
     },
     "attributes": {
       "remaster": true,
@@ -1379,14 +1505,19 @@
       },
       "hp": {
         "value": 18,
-        "details": ""
+        "details": "",
+        "bt": 9
       },
       "hardness": 5,
       "fortitude": 7,
       "collisionDC": 15,
       "collisionDamage": "2d6",
       "abilities": [],
-      "traitLinks": []
+      "traitLinks": [],
+      "immunities": [
+        "object immunities"
+      ],
+      "description": "A cargo vehicle pulled by large creatures."
     },
     "attributes": {
       "remaster": true,

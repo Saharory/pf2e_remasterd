@@ -36,7 +36,7 @@
       "abilities": [
         {
           "name": "Leap into the Unknown",
-          "text": "**Trigger** A creature enters a square adjacent to the ledge of an island or steps onto one of the red ropes\n\n---\n\n**Effect** The call of the void tugs at the mind of intruders, compelling them to leap off the ledge. The creature must succeed at a Will DC 34 save or Acrobatics DC 32 check to [Balance](/action/balance-player-core) or else drop off the ledge. If the creature falls off, it drops 100 feet, loops through the closed space of the mindscape, and lands in the square it fell from, taking falling damage as normal (usually 50 bludgeoning damage). The call of the void then rolls initiative.",
+          "text": "**Trigger** A creature enters a square adjacent to the ledge of an island or steps onto one of the red ropes\n\n**Effect** The call of the void tugs at the mind of intruders, compelling them to leap off the ledge. The creature must succeed at a Will DC 34 save or Acrobatics DC 32 check to [Balance](/action/balance-player-core) or else drop off the ledge. If the creature falls off, it drops 100 feet, loops through the closed space of the mindscape, and lands in the square it fell from, taking falling damage as normal (usually 50 bludgeoning damage). The call of the void then rolls initiative.",
           "traits": [
             "mental"
           ],
@@ -52,7 +52,9 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "stealthDetails": "(expert) to notice a slight tugging feeling",
+      "description": "A ledge exerts a supernatural urge to leap into the drop below."
     },
     "attributes": {
       "remaster": true,
@@ -97,7 +99,8 @@
       },
       "hp": {
         "value": 54,
-        "details": "per mirror"
+        "details": "per mirror",
+        "bt": 27
       },
       "hardness": 13,
       "saves": {
@@ -111,7 +114,7 @@
       "abilities": [
         {
           "name": "Spawn Reflection",
-          "text": "**Trigger** A creature is reflected in the mirror\n\n---\n\n**Effect** The mirror creates a Reflection of the triggering creature, which Steps out of the mirror and into the hall. The trap then rolls initiative.",
+          "text": "**Trigger** A creature is reflected in the mirror\n\n**Effect** The mirror creates a Reflection of the triggering creature, which Steps out of the mirror and into the hall. The trap then rolls initiative.",
           "traits": [
             "illusion"
           ],
@@ -127,7 +130,8 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "description": "Opposing mirrors create illusory copies of creatures between them."
     },
     "attributes": {
       "remaster": true,
@@ -188,7 +192,7 @@
       "abilities": [
         {
           "name": "Confounding Misdirection",
-          "text": "**Trigger** A creature passes through the rune-carved doorway or hallway\n\n---\n\n**Effect** The creature is Confused by the illusions and directed back into the room they attempted to exit through another doorway or back to the hallway's beginning. This feels no different to the triggering creature than walking through the doorway or hallway, and onlookers are similarly befuddled. A creature who succeeds at a Will DC 19 save resists this illusion and exits the room or proceeds down the hall without being misdirected.",
+          "text": "**Trigger** A creature passes through the rune-carved doorway or hallway\n\n**Effect** The creature is [Confused](/condition/confused-player-core) by the illusions and directed back into the room they attempted to exit through another doorway or back to the hallway's beginning. This feels no different to the triggering creature than walking through the doorway or hallway, and onlookers are similarly befuddled. A creature who succeeds at a Will DC 19 save resists this illusion and exits the room or proceeds down the hall without being misdirected.",
           "traits": [
             "arcane",
             "illusion",
@@ -214,7 +218,9 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "description": "Runes around a passage make travelers circle back instead of leaving.",
+      "stealthDC": 16
     },
     "attributes": {
       "remaster": true,
@@ -270,12 +276,12 @@
         "will": 0
       },
       "disable": "Thievery DC 28 (trained) to stabilize each wall, or Dispel Magic (4th rank; counteract DC 26) to counteract each wall",
-      "routine": "(4 actions) This trap loses 1 action each round for each wall that has been disabled. Each wall uses 1 action to slam back and forth rapidly, pummeling one creature in the hall with a wall Strike. On a hit, the target is additionally knocked Prone. The walls distribute the attacks as evenly as possible among creatures in the hall, and the Strikes don't apply the trap's multiple attack penalty.",
+      "routine": "(4 actions) This trap loses 1 action each round for each wall that has been disabled. Each wall uses 1 action to slam back and forth rapidly, pummeling one creature in the hall with a wall Strike. On a hit, the target is additionally knocked [Prone](/condition/prone-player-core). The walls distribute the attacks as evenly as possible among creatures in the hall, and the Strikes don't apply the trap's multiple attack penalty.",
       "reset": "The trap resets after 1 hour.",
       "abilities": [
         {
           "name": "Lose Form",
-          "text": "**Trigger** A creature reaches the hall's midpoint\n\n---\n\n**Effect** The hall's walls lose their rigidity, becoming fluid and elastic. The hall becomes difficult terrain, and each creature in the hall is knocked Prone unless they succeed at a Reflex DC 26 save. The trap then rolls initiative.",
+          "text": "**Trigger** A creature reaches the hall's midpoint\n\n**Effect** The hall's walls lose their rigidity, becoming fluid and elastic. The hall becomes difficult terrain, and each creature in the hall is knocked [Prone](/condition/prone-player-core) unless they succeed at a Reflex DC 26 save. The trap then rolls initiative.",
           "traits": [
             "occult"
           ],
@@ -292,6 +298,7 @@
           "slug": "trap"
         }
       ],
+      "description": "The walls of a passage flex inward when someone reaches its midpoint.",
       "attacks": [
         {
           "name": "Wall",
@@ -350,7 +357,8 @@
       },
       "hp": {
         "value": 4,
-        "details": "The mirror can't be damaged while any mirror duplicate is alive"
+        "details": "The mirror can't be damaged while any mirror duplicate is alive",
+        "bt": 2
       },
       "hardness": 1,
       "saves": {
@@ -364,7 +372,7 @@
       "abilities": [
         {
           "name": "Reflection of Malice",
-          "text": "**Trigger** A creature is reflected in the mirror\n\n---\n\n**Effect** The mirror absorbs the creature, replacing it with a malicious mirror duplicate (Reflex DC 34 to avoid being absorbed into the mirror), and rolls initiative.",
+          "text": "**Trigger** A creature is reflected in the mirror\n\n**Effect** The mirror absorbs the creature, replacing it with a malicious mirror duplicate (Reflex DC 34 to avoid being absorbed into the mirror), and rolls initiative.",
           "traits": [
             "arcane",
             "teleportation"
@@ -385,7 +393,9 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(master) to notice it isn't a regular mirror",
+      "description": "A magical mirror replaces viewers with hostile doubles."
     },
     "attributes": {
       "remaster": true,
@@ -447,7 +457,7 @@
       "abilities": [
         {
           "name": "Disorient",
-          "text": "**Trigger** A creature enters the room\n\n---\n\n**Effect** Illusions cause the appearance of the room and the objects inside it to constantly warp, shift, bend, and distort for 1 minute. Each creature in the room while it's distorting must attempt a Perception DC 17 check.\n\n---\n\n**Critical Success** The creature disbelieves the illusions and is unaffected.\n\n**Success** The creature disbelieves the illusions but still sees them. It treats the room as difficult terrain.\n\n**Failure** The creature is fooled by the illusions. It treats the room as difficult terrain and becomes Sickened 1. As long as it remains in the room, it can't reduce its sickened value below 1.\n\n**Critical Failure** As failure, but each time the creature Archive attempts a move action, it must succeed at a Flat DC 5 or they lose the action, and on a critical failure, it also falls Prone.",
+          "text": "**Trigger** A creature enters the room\n\n**Effect** Illusions cause the appearance of the room and the objects inside it to constantly warp, shift, bend, and distort for 1 minute. Each creature in the room while it's distorting must attempt a Perception DC 17 check.\n\n**Critical Success** The creature disbelieves the illusions and is unaffected.\n\n**Success** The creature disbelieves the illusions but still sees them. It treats the room as difficult terrain.\n\n**Failure** The creature is fooled by the illusions. It treats the room as difficult terrain and becomes [Sickened 1](/condition/sickened-player-core). As long as it remains in the room, it can't reduce its sickened value below 1.\n\n**Critical Failure** As failure, but each time the creature Archive attempts a move action, it must succeed at a Flat DC 5 or they lose the action, and on a critical failure, it also falls [Prone](/condition/prone-player-core).",
           "traits": [
             "arcane",
             "illusion",
@@ -474,7 +484,9 @@
           "label": "visual",
           "slug": "visual"
         }
-      ]
+      ],
+      "description": "Illusions make a chamber appear tilted and constantly moving.",
+      "stealthDC": 20
     },
     "attributes": {
       "remaster": true,
@@ -521,7 +533,8 @@
       },
       "hp": {
         "value": 90,
-        "details": ""
+        "details": "",
+        "bt": 45
       },
       "hardness": 24,
       "saves": {
@@ -535,7 +548,7 @@
       "abilities": [
         {
           "name": "Painful Transformation",
-          "text": "**Trigger** A creature is reflected in the mirror\n\n---\n\n**Effect** The triggering creature's body is painfully squished, stretched, and distorted to match their reflection. The creature takes 6d10 + 30 force damage and must attempt a Fortitude DC 39 save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage and is [Clumsy 1](/condition/clumsy-player-core) and [Enfeebled 1](/condition/enfeebled-player-core) for 1 round.\n\n**Failure** The target takes full damage and is Clumsy 2 and Enfeebled 2 for 4 rounds.\n\n**Critical Failure** The target takes double damage and is clumsy 2 and enfeebled 2 for 1 minute. As long as the creature is clumsy or enfeebled, it additionally takes a –10-foot status penalty to its Speeds.\n\nWhen the effects of this trap end, the triggering creature's transformation ends, and its body reverts to its natural form.",
+          "text": "**Trigger** A creature is reflected in the mirror\n\n**Effect** The triggering creature's body is painfully squished, stretched, and distorted to match their reflection. The creature takes 6d10 + 30 force damage and must attempt a Fortitude DC 39 save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage and is [Clumsy 1](/condition/clumsy-player-core) and [Enfeebled 1](/condition/enfeebled-player-core) for 1 round.\n\n**Failure** The target takes full damage and is [Clumsy 2](/condition/clumsy-player-core) and [Enfeebled 2](/condition/enfeebled-player-core) for 4 rounds.\n\n**Critical Failure** The target takes double damage and is [clumsy 2](/condition/clumsy-player-core) and [enfeebled 2](/condition/enfeebled-player-core) for 1 minute. As long as the creature is clumsy or enfeebled, it additionally takes a –10-foot status penalty to its Speeds.\n\nWhen the effects of this trap end, the triggering creature's transformation ends, and its body reverts to its natural form.",
           "traits": [
             "attack"
           ],
@@ -551,7 +564,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "0 to notice the mirror",
+      "description": "A mirror warps a viewer's body to resemble its distorted image.",
+      "stealthDC": 38
     },
     "attributes": {
       "remaster": true,
@@ -596,7 +612,8 @@
       },
       "hp": {
         "value": 54,
-        "details": ""
+        "details": "",
+        "bt": 27
       },
       "hardness": 14,
       "saves": {
@@ -610,7 +627,7 @@
       "abilities": [
         {
           "name": "Take a Seat!",
-          "text": "**Trigger** A creature steps on the track\n\n---\n\n**Effect** The chair rockets forward along the track and slams into the triggering creature, dealing 3d8 + 15 bludgeoning damage. A creature who succeeds at a Reflex DC 22 save takes no damage and moves out of the chair's path into a random adjacent square not containing the track. A creature who fails this saving throw is knocked into the chair's seat and captured by the armrests, becoming [Grabbed](/condition/grabbed-player-core) ([Restrained](/condition/restrained-player-core) on a critical failure; Escape).",
+          "text": "**Trigger** A creature steps on the track\n\n**Effect** The chair rockets forward along the track and slams into the triggering creature, dealing 3d8 + 15 bludgeoning damage. A creature who succeeds at a Reflex DC 22 save takes no damage and moves out of the chair's path into a random adjacent square not containing the track. A creature who fails this saving throw is knocked into the chair's seat and captured by the armrests, becoming [Grabbed](/condition/grabbed-player-core) ([Restrained](/condition/restrained-player-core) on a critical failure; Escape).",
           "traits": [],
           "actions": "reaction"
         }
@@ -624,7 +641,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(0 to notice the chair)",
+      "description": "A concealed mechanism thrusts a chair forward and locks a creature into it.",
+      "stealthDC": 26
     },
     "attributes": {
       "remaster": true,
@@ -683,7 +703,7 @@
       "abilities": [
         {
           "name": "Gust",
-          "text": "**Trigger** A creature opens the door\n\n---\n\n**Effect** The hall is buffeted by powerful winds for as long as the door remains open. A creature must succeed at a Athletics DC 32 check to move toward the door. A creature who fails at this check is pushed back 5 feet and falls Prone.\n\nAdditionally, the triggering creature is blasted by a powerful gust of wind and must attempt a Fortitude DC 32 save. The trap then rolls initiative.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is pushed back 5 feet.\n\n**Failure** The creature is pushed back 10 feet.\n\n**Critical Failure** The creature is pushed back 10 feet and knocked Prone.",
+          "text": "**Trigger** A creature opens the door\n\n**Effect** The hall is buffeted by powerful winds for as long as the door remains open. A creature must succeed at a Athletics DC 32 check to move toward the door. A creature who fails at this check is pushed back 5 feet and falls [Prone](/condition/prone-player-core).\n\nAdditionally, the triggering creature is blasted by a powerful gust of wind and must attempt a Fortitude DC 32 save. The trap then rolls initiative.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is pushed back 5 feet.\n\n**Failure** The creature is pushed back 10 feet.\n\n**Critical Failure** The creature is pushed back 10 feet and knocked [Prone](/condition/prone-player-core).",
           "traits": [
             "air"
           ],
@@ -699,7 +719,8 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "description": "A runed doorway opens onto powerful winds from another plane."
     },
     "attributes": {
       "remaster": true,
@@ -759,7 +780,7 @@
       "abilities": [
         {
           "name": "Drop",
-          "text": "**Trigger** A creature walks onto the illusory floor\n\n---\n\n**Effect** The triggering creature falls through the illusory floor and takes falling damage (typically 20 bludgeoning damage). That creature can use the [Grab An Edge](/action/grab-an-edge-player-core) reaction to avoid falling. The DC to Climb the walls or Grab An Edge is 20.",
+          "text": "**Trigger** A creature walks onto the illusory floor\n\n**Effect** The triggering creature falls through the illusory floor and takes falling damage (typically 20 bludgeoning damage). That creature can use the [Grab An Edge](/action/grab-an-edge-player-core) reaction to avoid falling. The DC to Climb the walls or Grab An Edge is 20.",
           "traits": [],
           "actions": "reaction"
         }
@@ -777,7 +798,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(trained; or 0 if the illusory floor is dispelled)",
+      "description": "An illusory floor hides a long fall into a silenced chamber.",
+      "stealthDC": 23
     },
     "attributes": {
       "remaster": true,
@@ -859,7 +883,9 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "description": "An interdimensional gap drops entrants through the ceiling back into the room.",
+      "stealthDC": 25
     },
     "attributes": {
       "remaster": true,
@@ -920,7 +946,7 @@
       "abilities": [
         {
           "name": "Appear",
-          "text": "**Trigger** A creature views the wall through a mirror's reflection\n\n---\n\n**Effect** A door appears in the mirror's reflection of the wall. The triggering creature can open and manipulate this door only as long as they view it through the mirror and only by succeeding at a Thievery DC 18 check to disable the trap.",
+          "text": "**Trigger** A creature views the wall through a mirror's reflection\n\n**Effect** A door appears in the mirror's reflection of the wall. The triggering creature can open and manipulate this door only as long as they view it through the mirror and only by succeeding at a Thievery DC 18 check to disable the trap.",
           "traits": [
             "arcane",
             "illusion"
@@ -941,7 +967,9 @@
           "label": "visual",
           "slug": "visual"
         }
-      ]
+      ],
+      "description": "A door visible only in a mirror can be manipulated through its reflection.",
+      "stealthDC": 15
     },
     "attributes": {
       "remaster": true,
@@ -989,7 +1017,8 @@
       },
       "hp": {
         "value": 24,
-        "details": ""
+        "details": "",
+        "bt": 12
       },
       "hardness": 6,
       "saves": {
@@ -1003,7 +1032,7 @@
       "abilities": [
         {
           "name": "Tempt",
-          "text": "**Trigger** A creature looks into the mirror\n\n---\n\n**Effect** The triggering creature sees themselves enjoying their deepest desires in the mirror's reflection, becoming Fascinated (Will DC 20 negates). This fascination ends automatically when the mirror is broken or covered up.",
+          "text": "**Trigger** A creature looks into the mirror\n\n**Effect** The triggering creature sees themselves enjoying their deepest desires in the mirror's reflection, becoming [Fascinated](/condition/fascinated-player-core) (Will DC 20 negates). This fascination ends automatically when the mirror is broken or covered up.",
           "traits": [
             "mental",
             "occult",
@@ -1029,7 +1058,10 @@
           "label": "visual",
           "slug": "visual"
         }
-      ]
+      ],
+      "stealthDetails": "(0 to notice the mirror)",
+      "description": "A mirror shows each viewer a tempting vision of what they desire.",
+      "stealthDC": 17
     },
     "attributes": {
       "remaster": true,
@@ -1090,7 +1122,7 @@
       "abilities": [
         {
           "name": "Shrink",
-          "text": "**Trigger** 100 pounds of weight or more is placed on the hallway's floor\n\n---\n\n**Effect** The hall's last 40 feet of walls angle inward, causing the hall to shrink and contract down, reaching 6 inches in height and width at the hall's far end and completely blocking access to the hall's exit door for anything but a Tiny creature Squeezing.",
+          "text": "**Trigger** 100 pounds of weight or more is placed on the hallway's floor\n\n**Effect** The hall's last 40 feet of walls angle inward, causing the hall to shrink and contract down, reaching 6 inches in height and width at the hall's far end and completely blocking access to the hall's exit door for anything but a Tiny creature Squeezing.",
           "traits": [],
           "actions": "reaction"
         }
@@ -1104,7 +1136,9 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "description": "A passage narrows as creatures move toward its far door.",
+      "stealthDC": 18
     },
     "attributes": {
       "remaster": true,
@@ -1148,7 +1182,8 @@
       },
       "hp": {
         "value": 230,
-        "details": "spirit"
+        "details": "spirit",
+        "bt": 115
       },
       "hardness": null,
       "saves": {
@@ -1157,12 +1192,12 @@
         "will": 35
       },
       "disable": "Thievery DC 43 (master) to steal the cloth before the spirit manifests, or Athletics DC 47 to pull the cloth off the spirit after it manifests",
-      "routine": "(3 actions) The spirit uses 3 actions to Step, fly 60 feet, or Strike, in any order. On a successful Strike the spirit's target is Frightened 1, and on a critical success, the target is Frightened 2.",
+      "routine": "(3 actions) The spirit uses 3 actions to Step, fly 60 feet, or Strike, in any order. On a successful Strike the spirit's target is [Frightened 1](/condition/frightened-player-core), and on a critical success, the target is [Frightened 2](/condition/frightened-player-core).",
       "reset": "The haunt is reset when the mirror is covered again.",
       "abilities": [
         {
           "name": "Don Shroud",
-          "text": "**Trigger** A creature enters the area\n\n---\n\n**Effect** The spirit steps out of the mirror, wearing the cloth as a shroud and revealing the mirror. The triggering creature is Frightened 3 unless they succeed at a Will DC 38 save. The haunt then rolls initiative.",
+          "text": "**Trigger** A creature enters the area\n\n**Effect** The spirit steps out of the mirror, wearing the cloth as a shroud and revealing the mirror. The triggering creature is [Frightened 3](/condition/frightened-player-core) unless they succeed at a Will DC 38 save. The haunt then rolls initiative.",
           "traits": [
             "occult"
           ],
@@ -1175,6 +1210,8 @@
           "slug": "haunt"
         }
       ],
+      "resistances": "all damage 20",
+      "description": "A veiled spirit emerges from a mirror to attack nearby creatures.",
       "attacks": [
         {
           "name": "Shrouded Touch",
@@ -1231,7 +1268,8 @@
       },
       "hp": {
         "value": 12,
-        "details": ""
+        "details": "",
+        "bt": 6
       },
       "hardness": 4,
       "saves": {
@@ -1245,7 +1283,7 @@
       "abilities": [
         {
           "name": "Flip",
-          "text": "**Trigger** A creature steps on a pressure plate\n\n---\n\n**Effect** The floor and adjoining wall rotate up and over on a central axle, tipping the triggering creature into an adjacent featureless room and simultaneously replacing the pressure plate and wall with another set on the same axle. The triggering creature is pushed into an adjoining room, takes 1d8 bludgeoning damage, and lands [Prone](/condition/prone-player-core). A creature who succeeds at a Reflex DC 19 save takes no damage and rolls out of the way of the trap, returning to the space they were in before stepping on the pressure plate.",
+          "text": "**Trigger** A creature steps on a pressure plate\n\n**Effect** The floor and adjoining wall rotate up and over on a central axle, tipping the triggering creature into an adjacent featureless room and simultaneously replacing the pressure plate and wall with another set on the same axle. The triggering creature is pushed into an adjoining room, takes 1d8 bludgeoning damage, and lands [Prone](/condition/prone-player-core). A creature who succeeds at a Reflex DC 19 save takes no damage and rolls out of the way of the trap, returning to the space they were in before stepping on the pressure plate.",
           "traits": [],
           "actions": "reaction"
         }
@@ -1259,7 +1297,9 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "description": "Pressure plates rotate sections of a mirrored hall into adjoining rooms.",
+      "stealthDC": 15
     },
     "attributes": {
       "remaster": true,
@@ -1318,7 +1358,7 @@
       "abilities": [
         {
           "name": "Face Your Fear",
-          "text": "**Trigger** A creature moves within 10 feet of the sigil\n\n---\n\n**Effect** All creatures within 120 feet of the sigil are affected by a [Phantasmagoria](/spell/phantasmagoria-player-core) spell (Will DC 40 save).",
+          "text": "**Trigger** A creature moves within 10 feet of the sigil\n\n**Effect** All creatures within 120 feet of the sigil are affected by a [Phantasmagoria](/spell/phantasmagoria-player-core) spell (Will DC 40 save).",
           "traits": [
             "arcane",
             "death",
@@ -1339,7 +1379,10 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(master)",
+      "description": "An arcane mark confronts creatures with their strongest fears.",
+      "stealthDC": 43
     },
     "attributes": {
       "remaster": true,
@@ -1383,7 +1426,8 @@
       },
       "hp": {
         "value": 132,
-        "details": "Hardness 35 (window)"
+        "details": "Hardness 35 (window)",
+        "bt": 66
       },
       "hardness": 35,
       "saves": {
@@ -1397,7 +1441,7 @@
       "abilities": [
         {
           "name": "Siphon Soul",
-          "text": "**Trigger** A creature touches the window\n\n---\n\n**Effect** The triggering creature takes 8d10+44 void damage with a basic Will DC 42 save as the window attempts to steal their soul. If this damage would kill the target, the target's soul is trapped inside the window with the effects of [Seize Soul](/spell/seize-soul-player-core).",
+          "text": "**Trigger** A creature touches the window\n\n**Effect** The triggering creature takes 8d10+44 void damage with a basic Will DC 42 save as the window attempts to steal their soul. If this damage would kill the target, the target's soul is trapped inside the window with the effects of [Seize Soul](/spell/seize-soul-player-core).",
           "traits": [
             "occult",
             "void"
@@ -1410,7 +1454,9 @@
           "label": "haunt",
           "slug": "haunt"
         }
-      ]
+      ],
+      "description": "Spirits imprisoned in a window lash out at those who touch it.",
+      "stealthDC": 51
     },
     "attributes": {
       "remaster": true,
@@ -1468,7 +1514,7 @@
       "abilities": [
         {
           "name": "Downpour",
-          "text": "**Trigger** A creature falls into the pool\n\n---\n\n**Effect** More water pours forth from the chalice. Creatures in the pool become Clumsy 1, and they can't decrease their [clumsy](/condition/clumsy-player-core) condition so long as they remain in the pool. The trap then rolls initiative.",
+          "text": "**Trigger** A creature falls into the pool\n\n**Effect** More water pours forth from the chalice. Creatures in the pool become [Clumsy 1](/condition/clumsy-player-core), and they can't decrease their [clumsy](/condition/clumsy-player-core) condition so long as they remain in the pool. The trap then rolls initiative.",
           "traits": [],
           "actions": "reaction"
         }
@@ -1482,7 +1528,9 @@
           "label": "trap",
           "slug": "trap"
         }
-      ]
+      ],
+      "stealthDetails": "(trained)",
+      "description": "An apparently ordinary pool pulls those who fall in toward impossible depths."
     },
     "attributes": {
       "remaster": true,
