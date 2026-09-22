@@ -65,7 +65,8 @@ compendium entry when the short table reference is not enough.
   its source shows the book and page, and its rule link opens the full context.
   These are look-up tables, not random encounter rolls.
 - A bookmarkable PF2E Operations Center with compact navigation, quick
-  references, an A–Z index, and task-oriented GM guidance
+  references, an A–Z index, task-oriented GM guidance, and narrow-panel
+  selectors for level-based DCs, creature-building benchmarks, and treasure
 - An Encounter XP Planner with party-size budgets, weak/elite adjustments,
   hazards, overrides, rule references, and handoff to Encounter+'s native
   experience-award sheet

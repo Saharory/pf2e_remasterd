@@ -252,6 +252,10 @@ def validate_project() -> dict[str, Any]:
         for actions_file in (REPO / "compendium").glob("**/actions.json"):
             for action in load_json(actions_file):
                 action_slugs.add(str(action.get("slug") or ""))
+        table_slugs: set[str] = set()
+        for tables_file in (REPO / "compendium").glob("**/tables.json"):
+            for table in load_json(tables_file):
+                table_slugs.add(str(table.get("slug") or ""))
         for page in pages:
             slug = str(page.get("slug") or "")
             content = str(page.get("content") or "")
@@ -264,6 +268,9 @@ def validate_project() -> dict[str, Any]:
             for target_slug in re.findall(r'href="/action/([^\"]+)"', content):
                 if target_slug not in action_slugs:
                     errors.append(f"pages.json: {slug} links to unknown action {target_slug}")
+            for target_slug in re.findall(r'href="/table/([^\"]+)"', content):
+                if target_slug not in table_slugs:
+                    errors.append(f"pages.json: {slug} links to unknown table {target_slug}")
     except Exception as exc:
         errors.append(f"metadata validation: {exc}")
 

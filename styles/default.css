@@ -2048,6 +2048,81 @@ img[src*="/icons/actions/"] {
   gap: 0.8rem;
 }
 
+/* Source-backed reference pickers show one row, not a 25-level-wide table. */
+.ops-ref-picker {
+  min-width: 0;
+  margin: 0.9rem 0;
+  padding: 0.8rem;
+  background: var(--ops-panel);
+  border: 1px solid var(--ops-line);
+}
+
+.ops-ref-picker h2 {
+  margin: 0 0 0.6rem;
+  color: var(--ops-accent);
+  font-size: 1.1rem;
+}
+
+.ops-ref-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+  gap: 0.6rem;
+}
+
+.ops-ref-controls label {
+  min-width: 0;
+  color: var(--ops-muted);
+  font-weight: 700;
+}
+
+.ops-ref-controls select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.4rem;
+  margin: 0.2rem 0 0;
+  padding: 0.3rem 0.45rem;
+  background: var(--ops-panel-alt);
+  border: 1px solid var(--ops-line);
+  color: var(--ops-ink);
+  font: inherit;
+}
+
+.ops-ref-values {
+  margin-top: 0.65rem;
+  border-top: 1px solid var(--ops-line);
+}
+
+.ops-ref-row {
+  display: grid;
+  grid-template-columns: minmax(0, 44%) minmax(0, 56%);
+  gap: 0.4rem;
+  padding: 0.45rem 0.1rem;
+  border-bottom: 1px solid var(--ops-line);
+  overflow-wrap: anywhere;
+}
+
+.ops-ref-row strong {
+  color: var(--ops-green);
+}
+
+.ops-ref-row span {
+  min-width: 0;
+}
+
+.ops-ref-source {
+  margin: 0.5rem 0 0;
+  color: var(--ops-muted);
+  font-size: 0.8rem;
+}
+
+.ops-ref-full {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  font-weight: 700;
+}
+
 .ops-symbol-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));

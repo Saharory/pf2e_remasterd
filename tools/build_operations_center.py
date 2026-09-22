@@ -70,6 +70,81 @@ def embedded_xp_script() -> str:
     return (REPO / "scripts" / "xp-calculator.js").read_text(encoding="utf-8")
 
 
+@lru_cache(maxsize=1)
+def embedded_reference_script() -> str:
+    return (REPO / "scripts" / "reference-tables.js").read_text(encoding="utf-8")
+
+
+@lru_cache(maxsize=1)
+def reference_tables() -> dict[str, dict]:
+    tables = {}
+    for source_id in ("gm-core", "player-core"):
+        path = REPO / "compendium" / "packs" / source_id / "tables.json"
+        for record in json.loads(path.read_text(encoding="utf-8")):
+            if record["name"] in tables:
+                raise ValueError(f"duplicate reference table: {record['name']}")
+            tables[record["name"]] = record
+    return tables
+
+
+def full_table(name: str) -> str:
+    record = reference_tables()[name]
+    return (
+        f'<a class="ops-exit-link" href="/table/{html.escape(record["slug"])}">'
+        f'<span>Open Full Table</span><strong>{html.escape(name)}</strong></a>'
+    )
+
+
+def reference_picker(title: str, table_names: list[str], initial_level: str = "1") -> str:
+    """One source-backed row at a time; usable in a narrow bookmark panel."""
+    selected = [reference_tables()[name] for name in table_names]
+    first = selected[0]
+    levels = [row[0] for row in first["rows"]]
+    if initial_level not in levels:
+        raise ValueError(f"{title}: initial level {initial_level} missing")
+    if any([row[0] for row in table["rows"]] != levels for table in selected):
+        raise ValueError(f"{title}: tables do not share level rows")
+    initial_row = next(row for row in first["rows"] if row[0] == initial_level)
+    fields = "".join(
+        f'<div class="ops-ref-row"><strong>{html.escape(column["name"])}</strong>'
+        f'<span>{html.escape(value.replace("**", ""))}</span></div>'
+        for column, value in zip(first["columns"][1:], initial_row[1:])
+    )
+    level_options = "".join(
+        f'<option value="{html.escape(level)}"{(" selected" if level == initial_level else "")}>{html.escape(level)}</option>'
+        for level in levels
+    )
+    stat_control = ""
+    if len(selected) > 1:
+        options = "".join(
+            f'<option value="{index}">{html.escape(table["name"].removeprefix("Creature Building — "))}</option>'
+            for index, table in enumerate(selected)
+        )
+        stat_control = f'<label>Statistic<select data-ops-stat>{options}</select></label>'
+    payload = json.dumps(
+        [{
+            "name": table["name"],
+            "slug": table["slug"],
+            "source": f"{table['sources'][0]['name']} p. {table['sources'][0]['page']}",
+            "headers": [column["name"] for column in table["columns"]],
+            "rows": table["rows"],
+        } for table in selected],
+        ensure_ascii=False,
+        separators=(",", ":"),
+    )
+    if "</script" in payload.casefold():
+        raise ValueError(f"unsafe table content in {title}")
+    return f"""
+  <section class="ops-ref-picker" data-ops-reference>
+    <h2>{html.escape(title)}</h2>
+    <div class="ops-ref-controls"><label>Level<select data-ops-level>{level_options}</select></label>{stat_control}</div>
+    <div class="ops-ref-values" data-ops-values aria-live="polite">{fields}</div>
+    <p class="ops-ref-source" data-ops-source>{html.escape(first['sources'][0]['name'])} p. {first['sources'][0]['page']}</p>
+    <a class="ops-ref-full" data-ops-full href="/table/{html.escape(first['slug'])}">Open full {html.escape(first['name'])} table</a>
+    <script type="application/json" data-ops-payload>{payload}</script>
+  </section>"""
+
+
 def link(slug: str, label: str, *, kind: str = "page") -> str:
     return f'<a href="/{kind}/{html.escape(slug)}">{html.escape(label)}</a>'
 
@@ -553,9 +628,9 @@ def cover_page() -> Page:
     <tr><th>Concealed</th><td>You can locate it, but targeting normally requires a DC 5 flat check.</td></tr>
   </tbody></table></div>
   <aside class="ops-callout ops-callout-warn"><strong>Ask two separate questions</strong><span>Can the acting creature perceive the target well enough to choose it? Is there an unblocked line of effect? A target can be visible but still protected by cover or blocked from an effect.</span></aside>
-  <section class="ops-rule-links"><h2>Full rules</h2><div class="ops-grid">%s</div></section>
+  <section class="ops-rule-links"><h2>Full rules & tables</h2><div class="ops-grid">%s</div></section>
   %s""" % (
-        full_rule("cover-rules-2372", "Cover") + full_rule("hidden-rules-2416", "Hidden") + full_rule("undetected-rules-2417", "Undetected") + full_rule("line-of-effect-rules-2382", "Line of Effect"),
+        full_rule("cover-rules-2372", "Cover") + full_rule("hidden-rules-2416", "Hidden") + full_rule("undetected-rules-2417", "Undetected") + full_rule("line-of-effect-rules-2382", "Line of Effect") + full_table("Cover") + full_table("Detection and Targeting"),
         related([
             ("pf2e-ops-initiative", "Initiative", "Separate Stealth initiative from detection."),
             ("pf2e-ops-movement-positioning", "Movement & positioning", "Resolve spaces, lines, and flanking."),
@@ -620,7 +695,7 @@ def xp_page() -> Page:
   <section class="ops-launch"><div><p class="ops-kicker">INTERACTIVE</p><h2>Calculate the exact encounter</h2><p>Add creatures and hazards, apply weak or elite adjustments, and copy the final value into Encounter+’s native XP award sheet.</p></div><a href="/page/pf2e-ops-xp-planner">Open Compact Planner</a></section>
   <section class="ops-rule-links"><h2>Full rules</h2><div class="ops-grid">%s</div></section>
   %s""" % (
-        full_rule("xp-budget-rules-2717", "XP Budget") + full_rule("choosing-creatures-rules-2718", "Choosing Creatures") + full_rule("different-party-sizes-rules-2719", "Different Party Sizes") + full_rule("xp-awards-rules-2649", "XP Awards"),
+        full_rule("xp-budget-rules-2717", "XP Budget") + full_rule("choosing-creatures-rules-2718", "Choosing Creatures") + full_rule("different-party-sizes-rules-2719", "Different Party Sizes") + full_rule("xp-awards-rules-2649", "XP Awards") + full_table("Encounter XP Budget") + full_table("Creature XP and Role"),
         related([
             ("pf2e-ops-dcs", "DCs at a glance", "Choose improvised and level-based DCs."),
             ("pf2e-ops-ending-encounters", "Ending encounters", "Close the scene and award XP."),
@@ -689,16 +764,18 @@ def dcs_page() -> Page:
   <section class="ops-answer"><h2>Pick the table from the question</h2><p>Use a simple DC when proficiency is the main question. Use a level-based DC when a creature, item, spell, hazard, or other leveled subject sets the difficulty.</p></section>
   <div class="ops-columns"><div class="ops-table-wrap"><table class="ops-table"><thead><tr><th>Proficiency</th><th>Simple DC</th></tr></thead><tbody><tr><th>Untrained</th><td>10</td></tr><tr><th>Trained</th><td>15</td></tr><tr><th>Expert</th><td>20</td></tr><tr><th>Master</th><td>30</td></tr><tr><th>Legendary</th><td>40</td></tr></tbody></table></div>
   <div class="ops-table-wrap"><table class="ops-table"><thead><tr><th>Adjustment</th><th>DC change</th></tr></thead><tbody><tr><th>Incredibly easy</th><td>−10</td></tr><tr><th>Very easy</th><td>−5</td></tr><tr><th>Easy</th><td>−2</td></tr><tr><th>Hard</th><td>+2</td></tr><tr><th>Very hard</th><td>+5</td></tr><tr><th>Incredibly hard</th><td>+10</td></tr></tbody></table></div></div>
+  %s
   <aside class="ops-callout ops-callout-warn"><strong>Adjust for circumstance, not twice for the same fact</strong><span>Start with the correct base DC. Apply a rarity adjustment or difficulty adjustment only when the situation truly differs from the baseline; avoid stacking several labels for one reason.</span></aside>
-  <section class="ops-rule-links"><h2>Full rules</h2><div class="ops-grid">%s</div></section>
+  <section class="ops-rule-links"><h2>Full rules & table</h2><div class="ops-grid">%s</div></section>
   %s""" % (
-        full_rule("simple-dcs-rules-2628", "Simple DCs") + full_rule("level-based-dcs-rules-2629", "Level-Based DCs") + full_rule("adjusting-difficulty-rules-2630", "Adjusting Difficulty"),
+        reference_picker("Level-Based DC", ["DCs by Level"]),
+        full_rule("simple-dcs-rules-2628", "Simple DCs") + full_rule("level-based-dcs-rules-2629", "Level-Based DCs") + full_rule("adjusting-difficulty-rules-2630", "Adjusting Difficulty") + full_table("Spell Rank DCs"),
         related([
             ("pf2e-ops-xp-difficulty", "XP & encounter threat", "Build an encounter around the party."),
             ("pf2e-ops-attacks-damage", "Attacks & damage", "Apply degrees of success to checks."),
         ]),
     )
-    return Page("DCs at a Glance", "pf2e-ops-dcs", "checks-dcs-actions", 1, shell("DCs at a Glance", "Choose the correct base, then make one deliberate adjustment.", body, [("Checks, DCs & Skill Actions", "pf2e-ops-checks-dcs-actions"), ("DCs at a Glance", "pf2e-ops-dcs")]))
+    return Page("DCs at a Glance", "pf2e-ops-dcs", "checks-dcs-actions", 1, shell("DCs at a Glance", "Choose the correct base, then make one deliberate adjustment.", body, [("Checks, DCs & Skill Actions", "pf2e-ops-checks-dcs-actions"), ("DCs at a Glance", "pf2e-ops-dcs")], trailing_html=f"<script>\n{embedded_reference_script()}\n</script>"))
 
 
 def checks_landing() -> Page:
@@ -1093,7 +1170,7 @@ def environment_page() -> Page:
   <aside class="ops-callout ops-callout-warn"><strong>Make the cadence visible</strong><span>Tell players whether danger checks happen per round, minute, hour, or day. Most confusion comes from tracking the DC but not the interval.</span></aside>
   <section class="ops-rule-links"><h2>Full rules</h2><div class="ops-grid">%s</div></section>
   %s""" % (
-        full_rule("environment-rules-2768", "Environment") + full_rule("environmental-damage-rules-2769", "Environmental Damage") + full_rule("falling-rules-2352", "Falling") + full_rule("drowning-and-suffocating-rules-2439", "Drowning and Suffocating") + full_rule("temperature-rules-2820", "Temperature"),
+        full_rule("environment-rules-2768", "Environment") + full_rule("environmental-damage-rules-2769", "Environmental Damage") + full_rule("falling-rules-2352", "Falling") + full_rule("drowning-and-suffocating-rules-2439", "Drowning and Suffocating") + full_rule("temperature-rules-2820", "Temperature") + full_table("Environmental Damage") + full_table("Environmental Features"),
         related([("pf2e-ops-travel-speed", "Travel speed & time", "Move from exposure time to journey progress."), ("pf2e-ops-creatures-hazards", "Creatures & hazards", "Run discrete traps and environmental hazards.")]),
     )
     return Page("Environmental Danger", "pf2e-ops-environment", "exploration-travel", 3, shell("Environmental Danger", "Identify the danger, its interval, the defense, and its consequence.", body, [("Exploration, Travel & Environment", EXPLORATION), ("Environmental Danger", "pf2e-ops-environment")]))
@@ -1205,6 +1282,7 @@ def creatures_landing() -> Page:
             ("pf2e-ops-creature-statblocks", "Read & run a creature", "A scan order for defenses, offense, reactions, and signature abilities.", "AT THE TABLE"),
             ("pf2e-ops-creature-identification", "Identify creatures", "Choose Recall Knowledge skills and reveal actionable facts.", "REVEAL INFO"),
             ("pf2e-ops-adjust-creatures", "Elite, weak & custom adjustments", "Change difficulty without losing the creature’s role.", "TUNE OPPOSITION"),
+            ("pf2e-ops-creature-benchmarks", "Creature-building benchmarks", "Pick a level and statistic; read only that row.", "LEVEL PICKER"),
             ("pf2e-ops-hazards", "Run hazards", "Detect, trigger, disable, damage, reset, and award XP.", "OPERATE"),
             ("pf2e-ops-xp-difficulty", "Encounter difficulty", "Combine creatures and hazards for the actual party size.", "BUILD"),
         ],
@@ -1250,9 +1328,38 @@ def adjust_creatures_page() -> Page:
   <section class="ops-rule-links"><h2>Full rules</h2><div class="ops-grid">%s</div></section>
   %s""" % (
         full_rule("adjusting-creatures-rules-3262", "Adjusting Creatures") + full_rule("building-creatures-rules-2874", "Building Creatures"),
-        related([("pf2e-ops-xp-difficulty", "XP & encounter threat", "Recalculate from adjusted levels."), ("pf2e-ops-creature-statblocks", "Read & run a creature", "Preserve the creature’s tactical identity.")]),
+        related([("pf2e-ops-creature-benchmarks", "Creature-building benchmarks", "Compare one statistic at a selected level."), ("pf2e-ops-xp-difficulty", "XP & encounter threat", "Recalculate from adjusted levels."), ("pf2e-ops-creature-statblocks", "Read & run a creature", "Preserve the creature’s tactical identity.")]),
     )
     return Page("Adjust Creatures", "pf2e-ops-adjust-creatures", "creatures-hazards", 3, shell("Elite, Weak & Custom Adjustments", "Change the challenge while preserving the creature’s tactical purpose.", body, [("Creatures & Hazards", CREATURES), ("Adjust Creatures", "pf2e-ops-adjust-creatures")]))
+
+
+def creature_benchmarks_page() -> Page:
+    names = [
+        "Creature Building — Attribute Modifiers",
+        "Creature Building — Perception",
+        "Creature Building — Skills",
+        "Creature Building — Armor Class",
+        "Creature Building — Saving Throws",
+        "Creature Building — Hit Points",
+        "Creature Building — Resistances and Weaknesses",
+        "Creature Building — Strike Attack Bonus",
+        "Creature Building — Strike Damage",
+        "Creature Building — Spell DC and Attack",
+        "Creature Building — Area Damage",
+    ]
+    body = (
+        '<section class="ops-answer"><h2>Choose one benchmark</h2><p>These are building guidelines, not automatic changes to a creature. Pick its level and the statistic you need; the values below come from the GM Core tables.</p></section>'
+        + reference_picker("Benchmark at This Level", names)
+        + '<aside class="ops-callout">High, moderate, and low are alternatives for that statistic. Choose a value that fits the creature’s role; do not apply every column at once.</aside>'
+        + '<section class="ops-rule-links"><h2>Full rule</h2><div class="ops-grid">'
+        + full_rule("building-creatures-rules-2874", "Building Creatures")
+        + '</div></section>'
+        + related([("pf2e-ops-adjust-creatures", "Elite & weak", "Adjust an existing creature."), ("pf2e-ops-xp-difficulty", "Encounter difficulty", "Check what this level costs.")])
+    )
+    return Page("Creature-Building Benchmarks", "pf2e-ops-creature-benchmarks", "creatures-hazards", 4,
+        shell("Creature-Building Benchmarks", "One level and one statistic at a time in the compact panel.", body,
+              [("Creatures & Hazards", CREATURES), ("Creature-Building Benchmarks", "pf2e-ops-creature-benchmarks")],
+              trailing_html=f"<script>\n{embedded_reference_script()}\n</script>"))
 
 
 def hazards_page() -> Page:
@@ -1265,7 +1372,7 @@ def hazards_page() -> Page:
         full_rule("hazards-rules-2846", "Hazards") + full_rule("detecting-a-hazard-rules-2847", "Detecting a Hazard") + full_rule("disabling-a-hazard-rules-2852", "Disabling a Hazard") + full_rule("hazards-in-combat-rules-2729", "Hazards in Combat"),
         related([("pf2e-ops-xp-difficulty", "XP & encounter threat", "Combine hazard and creature XP."), ("pf2e-ops-environment", "Environmental danger", "Handle broader terrain and exposure risks.")]),
     )
-    return Page("Run Hazards", "pf2e-ops-hazards", "creatures-hazards", 4, shell("Run Hazards", "Detect, trigger, respond, reset, and award without losing the fiction.", body, [("Creatures & Hazards", CREATURES), ("Run Hazards", "pf2e-ops-hazards")]))
+    return Page("Run Hazards", "pf2e-ops-hazards", "creatures-hazards", 5, shell("Run Hazards", "Detect, trigger, respond, reset, and award without losing the fiction.", body, [("Creatures & Hazards", CREATURES), ("Run Hazards", "pf2e-ops-hazards")]))
 
 
 def magic_landing() -> Page:
@@ -1322,7 +1429,7 @@ def counteracting_page() -> Page:
   <aside class="ops-callout"><strong>A failed check can still counteract a weaker effect</strong><span>Always compare ranks after determining the degree. “Failure” is not automatically no effect.</span></aside>
   <section class="ops-rule-links"><h2>Full rules</h2><div class="ops-grid">%s</div></section>
   %s""" % (
-        full_rule("counteracting-rules-2250", "Counteracting"),
+        full_rule("counteracting-rules-2250", "Counteracting") + full_table("Counteract Results by Rank"),
         related([("pf2e-ops-dcs", "DCs at a glance", "Choose a level-based DC when no source DC exists."), ("pf2e-ops-casting-spells", "Cast & resolve a spell", "Track the effect that remains or ends.")]),
     )
     return Page("Counteracting", "pf2e-ops-counteracting", "magic-rituals", 3, shell("Counteracting", "Find rank, modifier, DC, degree, and the maximum rank affected.", body, [("Magic, Counteracting & Rituals", MAGIC), ("Counteracting", "pf2e-ops-counteracting")]))
@@ -1394,7 +1501,7 @@ def shields_items_page() -> Page:
   <aside class="ops-callout"><strong>Repair restores HP; it does not raise maximum HP</strong><span>Once restored above its Broken Threshold, an item stops being broken. A destroyed item generally cannot be repaired by the normal Repair action.</span></aside>
   <section class="ops-rule-links"><h2>Full rules & actions</h2><div class="ops-grid">%s%s%s</div></section>
   %s""" % (
-        full_rule("shields-rules-2180", "Shields") + full_rule("item-damage-rules-2160", "Item Damage"),
+        full_rule("shields-rules-2180", "Shields") + full_rule("item-damage-rules-2160", "Item Damage") + full_table("Material Hardness, HP, and BT"),
         full_entry("action", "raise-a-shield-player-core", "Raise a Shield"),
         full_entry("action", "repair-player-core", "Repair"),
         related([("pf2e-ops-crafting-repair", "Crafting & repair", "Run the complete Repair and Craft procedures."), ("pf2e-ops-damage-defenses", "Damage defenses", "Apply immunity, weakness, and resistance.")]),
@@ -1405,14 +1512,16 @@ def shields_items_page() -> Page:
 def treasure_rewards_page() -> Page:
     body = """
   <section class="ops-answer"><h2>Budget across a level, not one room at a time</h2><ol><li>Use Treasure by Level for the party’s expected permanent items, consumables, and currency.</li><li>Place rewards where they make sense in the adventure: carried, guarded, granted, discovered, or earned.</li><li>Track what the party actually receives and adjust later rewards if they miss, sell, or cannot use major items.</li><li>Keep story access and rare options separate from raw gp value.</li></ol></section>
+  %s
   <div class="ops-table-wrap"><table class="ops-table"><thead><tr><th>Reward type</th><th>Use it for…</th></tr></thead><tbody><tr><th>Permanent item</th><td>Meaningful capability that remains part of the party’s toolkit.</td></tr><tr><th>Consumable</th><td>Flexible short-term power and experimentation without permanent build pressure.</td></tr><tr><th>Currency</th><td>Player choice, services, formulas, crafting materials, and routine purchases.</td></tr><tr><th>Access, favors, or property</th><td>Narrative rewards whose value is not captured only by a price.</td></tr><tr><th>Accomplishment XP</th><td>Progress for goals and discoveries independent of defeating creatures.</td></tr></tbody></table></div>
   <aside class="ops-callout"><strong>Adjust for party size</strong><span>The published treasure table assumes four PCs. Add or remove treasure proportionally and favor useful choices over exact coin-by-coin correction.</span></aside>
   <section class="ops-rule-links"><h2>Full rules</h2><div class="ops-grid">%s</div></section>
   %s""" % (
+        reference_picker("Party Treasure at This Level", ["Party Treasure by Level"]),
         full_rule("treasure-by-level-rules-2656", "Treasure by Level") + full_rule("adjusting-treasure-rules-2764", "Adjusting Treasure") + full_rule("treasure-for-new-characters-rules-2662", "Treasure for New Characters") + full_rule("rewards-rules-2647", "Rewards"),
         related([("pf2e-ops-shopping-services", "Shopping & services", "Turn currency and access into purchases."), ("pf2e-ops-advancement", "Advancement", "Award encounter and accomplishment XP.")]),
     )
-    return Page("Treasure & Rewards", "pf2e-ops-treasure-rewards", "equipment-treasure", 4, shell("Treasure & Rewards", "Track the level-wide budget while placing rewards where the fiction supports them.", body, [("Equipment, Treasure & Rewards", EQUIPMENT), ("Treasure & Rewards", "pf2e-ops-treasure-rewards")]))
+    return Page("Treasure & Rewards", "pf2e-ops-treasure-rewards", "equipment-treasure", 4, shell("Treasure & Rewards", "Track the level-wide budget while placing rewards where the fiction supports them.", body, [("Equipment, Treasure & Rewards", EQUIPMENT), ("Treasure & Rewards", "pf2e-ops-treasure-rewards")], trailing_html=f"<script>\n{embedded_reference_script()}\n</script>"))
 
 
 def party_landing() -> Page:
@@ -1627,6 +1736,7 @@ def pages() -> list[Page]:
         creature_statblocks_page(),
         creature_identification_page(),
         adjust_creatures_page(),
+        creature_benchmarks_page(),
         hazards_page(),
         magic_landing(),
         casting_spells_page(),
@@ -1674,7 +1784,7 @@ def groups() -> list[dict[str, object]]:
 @lru_cache(maxsize=1)
 def available_entry_slugs() -> dict[str, set[str]]:
     """Index bundled compendium targets used by Operations Center exit links."""
-    route_files = {"rule": "rules.json", "action": "actions.json", "condition": "conditions.json"}
+    route_files = {"rule": "rules.json", "action": "actions.json", "condition": "conditions.json", "table": "tables.json"}
     available = {route: set() for route in route_files}
     for route, filename in route_files.items():
         for path in sorted((REPO / "compendium").glob(f"**/{filename}")):
@@ -1697,7 +1807,7 @@ def validate(page_records: list[dict[str, object]], group_records: list[dict[str
         errors.append("duplicate page slug")
 
     internal_pattern = re.compile(r'href="/page/([^"]+)"')
-    entry_pattern = re.compile(r'href="/(rule|action|condition)/([^"]+)"')
+    entry_pattern = re.compile(r'href="/(rule|action|condition|table)/([^"]+)"')
     entry_slugs = available_entry_slugs()
     for page in page_records:
         slug = str(page["slug"])
