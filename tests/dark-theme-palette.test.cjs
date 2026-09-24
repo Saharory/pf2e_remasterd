@@ -49,6 +49,11 @@ test('preserves informational rarity and trait colors', () => {
   assert.match(stylesheet, /\.trait-size\s*\{[\s\S]*?var\(--tag-green-color\)/);
 });
 
+test('wraps trait and footer tags instead of shrinking compact sheets', () => {
+  assert.match(stylesheet, /\.traits\s*\{[\s\S]*?display:\s*flex;[\s\S]*?flex-wrap:\s*wrap;/);
+  assert.match(stylesheet, /\.tags\s*\{[\s\S]*?display:\s*flex;[\s\S]*?flex-wrap:\s*wrap;/);
+});
+
 test('HTML views invalidate cached system styles on every system version', () => {
   const expectedStylesheet = `styles/default.css?v=${system.version}`;
   const directViews = [

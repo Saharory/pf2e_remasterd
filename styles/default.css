@@ -812,6 +812,9 @@ p:last-child {
 }
 
 .traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem;
   margin-bottom: 0.1rem;
 
   .trait {
@@ -1099,6 +1102,7 @@ table td {
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 
   .tag {
