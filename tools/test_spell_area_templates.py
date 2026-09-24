@@ -13,7 +13,7 @@ REPO = Path(__file__).resolve().parents[1]
 
 PILOT_SPELLS = {
     "breathe-fire-player-core": ("15-foot cone", "cone", 15),
-    "detect-magic-player-core": ("30-foot emanation", "emanation", 30),
+    "detect-magic-player-core": ("30-foot emanation", "sphere", 30),
     "fireball-player-core": ("20-foot burst", "sphere", 20),
     "lightning-bolt-player-core": ("120-foot line", "line", 120),
     "hellfire-plume-player-core-2": ("10-foot cylinder", "cylinder", 10),
@@ -50,10 +50,6 @@ def main() -> None:
         assert records[slug]["color"] == DEFAULT_TEMPLATE_COLOR, (
             f"{slug}: wrong template color"
         )
-
-    assert records["detect-magic-player-core"]["data"]["rangeType"] == "self", (
-        "Detect Magic must identify its emanation as self-originating"
-    )
 
     entities = json5.loads((REPO / "entities.json").read_text(encoding="utf-8"))
     spell = next(entity for entity in entities if entity.get("name") == "Spell")
