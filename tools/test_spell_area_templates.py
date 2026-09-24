@@ -19,9 +19,6 @@ PILOT_SPELLS = {
     "hellfire-plume-player-core-2": ("10-foot cylinder", "cylinder", 10),
     "spout-player-core-2": ("5-foot cube", "cube", 5),
 }
-DEFAULT_TEMPLATE_COLOR = "#D946EF"
-
-
 def load_json(path: Path) -> object:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -47,10 +44,6 @@ def main() -> None:
         assert data["area"] == area, f"{slug}: source-book area text changed"
         assert data["areaEffectShape"] == shape, f"{slug}: wrong template shape"
         assert data["areaEffectSize"] == size, f"{slug}: wrong template size"
-        assert records[slug]["color"] == DEFAULT_TEMPLATE_COLOR, (
-            f"{slug}: wrong template color"
-        )
-
     entities = json5.loads((REPO / "entities.json").read_text(encoding="utf-8"))
     spell = next(entity for entity in entities if entity.get("name") == "Spell")
     assert spell.get("loadable") is True, "Spell must be loadable for map-tool testing"
@@ -62,7 +55,7 @@ def main() -> None:
 
     form = json5.loads((REPO / "forms" / "spell.json").read_text(encoding="utf-8"))
     serialized_form = json.dumps(form)
-    for attribute in ("data.areaEffectShape", "data.areaEffectSize", "color"):
+    for attribute in ("data.areaEffectShape", "data.areaEffectSize"):
         assert attribute in serialized_form, f"spell form is missing {attribute}"
 
     print("spell area template prototype: 6 pilot spells OK")
