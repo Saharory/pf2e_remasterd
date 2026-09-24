@@ -24,6 +24,7 @@ from build_public_orc_compendium import (
     normalize_trait_arrays,
     normalize_trait_routes,
 )
+from spell_area_templates import configure_spell_area_template
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -73,6 +74,8 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         add_trait_links(data)
     if isinstance(data, dict) and expected_kind in {"Ancestry", "Class"}:
         data["summary"] = ""
+    if expected_kind == "Spell":
+        configure_spell_area_template(result)
     dedupe_entity_links(result)
     return result
 
