@@ -86,6 +86,32 @@
           "attribute": "data.area"
         },
         {
+          "title": "Spell.AreaTemplate",
+          "type": "form",
+          "text": "{{data.areaEffectSize}} ft. {{data.areaEffectShape|map: 'AreaEffectShape'}}",
+          "form": {
+            "title": "Spell.AreaTemplate",
+            "sections": [
+              {
+                "title": "AreaEffect.Shape",
+                "type": "picker",
+                "attribute": "data.areaEffectShape",
+                "attributeType": "AreaEffectShape"
+              },
+              {
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "AreaEffect.SizeWithUnit",
+                    "type": "decimal",
+                    "attribute": "data.areaEffectSize"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
           "title": "Spell.Targets",
           "attribute": "data.targets"
         },
