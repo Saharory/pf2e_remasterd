@@ -49,6 +49,19 @@ TABLES: dict[str, list[tuple[str, str, int]]] = {
     ],
 }
 
+# (source rule slug, native table title, zero-based table index in that rule)
+#
+# Encounter+ identifies a genuine roll table by a dice expression in the first
+# column header and result ranges in that column's cells. Unlike TABLES above,
+# these records intentionally opt into the app's native table roller.
+ROLL_TABLES: dict[str, list[tuple[str, str, int]]] = {
+    "gm-core": [
+        ("random-encounters-rules-3114", "Random Encounter Type", 1),
+        ("running-hexploration-rules-3110", "Random Terrain Type", 0),
+        ("running-hexploration-rules-3110", "Random Terrain Feature", 1),
+    ],
+}
+
 # These rule sections begin on page 52, but the printed tables are on page 53.
 PRINTED_TABLE_PAGES = {
     "DCs by Level": 53,
@@ -117,6 +130,25 @@ def make_table(rule: dict, name: str, headers: list[str], rows: list[list[str]])
     return result
 
 
+def make_roll_table(rule: dict, name: str, headers: list[str], rows: list[list[str]]) -> dict:
+    """Build a native Encounter+ roll table from a published dice-range table."""
+    if not re.fullmatch(r"\d*d\d+", headers[0], flags=re.I):
+        raise ValueError(f"roll table {name} does not begin with a dice formula: {headers[0]!r}")
+    normalized_rows = copy.deepcopy(rows)
+    for row in normalized_rows:
+        # Module Packer documents ASCII ranges. Normalizing the typographic
+        # source dash makes the app's range parser independent of punctuation.
+        row[0] = row[0].replace("–", "-").replace("—", "-")
+    result = make_table(rule, name, headers, normalized_rows)
+    result["descr"] = (
+        f"Roll {headers[0]} and use the matching result range. "
+        f"[Open the full rule](/rule/{rule['slug']}) for context."
+    )
+    result["rollMode"] = "normal"
+    result["tags"] = ["table", "rollable", rule["attributes"]["sourceId"]]
+    return result
+
+
 def detection_table(rules: dict[str, dict]) -> dict:
     """A short index of the published detection rules, not a new rule set."""
     overview = rules["perception-and-detection-rules-2277"]
@@ -154,6 +186,13 @@ def build_tables(records: list[dict], source_id: str) -> list[dict]:
         else:
             table = make_table(rule, name, headers, rows)
         result.append(table)
+    for slug, name, index in ROLL_TABLES.get(source_id, []):
+        rule = rules[slug]
+        tables = markdown_tables(rule.get("descr") or "")
+        if index >= len(tables):
+            raise ValueError(f"missing roll table {index} from {source_id}/{slug}")
+        headers, rows = tables[index]
+        result.append(make_roll_table(rule, name, headers, rows))
     if source_id == "player-core":
         # All six linked rules must exist in the published compendium.
         for slug in (
@@ -176,7 +215,7 @@ def main() -> None:
         source = json.loads(source_path.read_text(encoding="utf-8"))
         source["counts"]["Table"] = len(tables)
         source_path.write_text(json.dumps(source, ensure_ascii=False, indent=2) + "\n")
-        print(f"{source_id}: {len(tables)} reference tables")
+        print(f"{source_id}: {len(tables)} native tables")
 
 
 if __name__ == "__main__":

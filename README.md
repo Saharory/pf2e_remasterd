@@ -64,6 +64,9 @@ compendium entry when the short table reference is not enough.
   counteract results. Open **Library → System → Tables** and select a table;
   its source shows the book and page, and its rule link opens the full context.
   These are look-up tables, not random encounter rolls.
+- 3 genuine native roll tables from *GM Core*: Random Encounter Type, Random
+  Terrain Type, and Random Terrain Feature. Their dice formula and result
+  ranges drive Encounter+'s built-in **Roll** button.
 - A bookmarkable PF2E Operations Center with compact navigation, quick
   references, an A–Z index, task-oriented GM guidance, and narrow-panel
   selectors for level-based DCs, creature-building benchmarks, and treasure

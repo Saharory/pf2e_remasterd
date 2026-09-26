@@ -22,7 +22,7 @@ class ReferenceTableTests(unittest.TestCase):
         ])
 
     def test_curated_tables_match_published_rules_and_sources(self) -> None:
-        for source_id, expected_count in (("gm-core", 21), ("player-core", 3)):
+        for source_id, expected_count in (("gm-core", 24), ("player-core", 3)):
             with self.subTest(source_id=source_id):
                 path = PACKS / source_id
                 rules = json.loads((path / "rules.json").read_text())
@@ -33,12 +33,37 @@ class ReferenceTableTests(unittest.TestCase):
                 self.assertTrue(all(table["sources"][0].get("page") for table in saved))
                 self.assertTrue(all(table["attributes"]["license"] == "ORC-1.0a" for table in saved))
 
+    def test_roll_tables_encode_dice_ranges_for_the_native_roller(self) -> None:
+        gm = {table["name"]: table for table in json.loads((PACKS / "gm-core/tables.json").read_text())}
+        expected = {
+            "Random Encounter Type": ("1d10", set(range(1, 11))),
+            "Random Terrain Type": ("1d20", set(range(1, 21))),
+            "Random Terrain Feature": ("1d20", set(range(1, 21))),
+        }
+        for name, (formula, outcomes) in expected.items():
+            with self.subTest(name=name):
+                table = gm[name]
+                self.assertEqual(table["columns"][0]["name"], formula)
+                self.assertEqual(table["rollMode"], "normal")
+                self.assertIn("rollable", table["tags"])
+                covered = set()
+                for row in table["rows"]:
+                    bounds = [int(value) for value in row[0].split("-", 1)]
+                    if len(bounds) == 1:
+                        covered.add(bounds[0])
+                    else:
+                        covered.update(range(bounds[0], bounds[1] + 1))
+                self.assertEqual(covered, outcomes)
+
     def test_key_numbers_and_detection_links(self) -> None:
         gm = {table["name"]: table for table in json.loads((PACKS / "gm-core/tables.json").read_text())}
         player = {table["name"]: table for table in json.loads((PACKS / "player-core/tables.json").read_text())}
         self.assertIn(["20", "40"], gm["DCs by Level"]["rows"])
         self.assertEqual(gm["Simple DCs"]["sources"][0]["page"], 53)
         self.assertIn(["Extreme", "160", "40"], gm["Encounter XP Budget"]["rows"])
+        self.assertIn(["6-7", "Hazard"], gm["Random Encounter Type"]["rows"])
+        self.assertEqual(gm["Random Encounter Type"]["sources"][0]["page"], 209)
+        self.assertEqual(gm["Random Terrain Type"]["sources"][0]["page"], 207)
         self.assertIn(["Thin wood", "3", "12", "6", "Chair, club, sapling, wooden shield"],
                       gm["Material Hardness, HP, and BT"]["rows"])
         self.assertIn(["Standard", "+2 to AC, Reflex, Stealth", "Yes"], player["Cover"]["rows"])

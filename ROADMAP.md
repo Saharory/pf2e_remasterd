@@ -27,6 +27,11 @@ The PF2E implementation should:
 - add a compact roller to the Operations Center after native rolling is proven
   in the app's small reference panel.
 
+Implementation status: an initial native prototype now contains the three
+licensed *GM Core* tables for Random Encounter Type, Random Terrain Type, and
+Random Terrain Feature. Validate their Roll-button behavior in Encounter+
+before expanding the set or adding the compact Operations Center roller.
+
 Good candidates include licensed random encounter or danger tables, random
 terrain features, treasure categories, precious stones and art objects, and
 other GM-facing random-result tables. Existing DC, encounter-budget, creature-
@@ -140,4 +145,3 @@ panel and link back to the complete sourced rule.
   host-controlled permission for it.
 - **Manual templates for ambiguous spells:** leave these spells unchanged.
   Quick Load is only useful when the spatial result can be generated safely.
-
