@@ -1,0 +1,143 @@
+# PF2E Remaster and Web Client Roadmap
+
+Last reviewed: 2026-09-27
+
+This is the decision record for work discovered while comparing the PF2E
+system and community web client with the official Encounter+ repositories,
+especially the [official 5e system](https://github.com/encounterplus/dnd5e),
+[Module Packer](https://github.com/encounterplus/module-packer), the older app
+source, support tools, and the current web client.
+
+## Confirmed next work
+
+### 1. Genuine rollable tables
+
+The 24 PF2E tables already in the system are sourced **reference/look-up
+tables**. They do not roll a random result. Encounter+'s native `Table` entity
+and Module Packer also support actual roll tables whose rows cover dice ranges.
+The official 5e system ships many examples.
+
+The PF2E implementation should:
+
+- use native Encounter+ table records and dice ranges;
+- produce a one-click random result rather than merely displaying rows;
+- give every table a clear source, book, and page when a page is known;
+- use only content whose distribution is permitted by the relevant license;
+- start with a small, useful set rather than importing every possible table;
+- add a compact roller to the Operations Center after native rolling is proven
+  in the app's small reference panel.
+
+Good candidates include licensed random encounter or danger tables, random
+terrain features, treasure categories, precious stones and art objects, and
+other GM-facing random-result tables. Existing DC, encounter-budget, creature-
+building, treasure-by-level, cover, detection, and counteract tables should
+remain reference tables because they are not random outcomes.
+
+### 2. Complete data audit
+
+Continue auditing all entity families, not only hazards and vehicles, for:
+
+- complete mechanics rather than abbreviated imports;
+- book-like field order and readable HTML views;
+- source book and page, or the book alone when no reliable page is available;
+- GP price/value where the source supplies one;
+- working internal links for referenced conditions, actions, traits, spells,
+  items, and rules;
+- current errata and Remaster wording;
+- correct licensing and attribution for each source pack.
+
+Hazard and vehicle sheets received this treatment already; that does not prove
+that every other entity family is complete.
+
+### 3. Faster spell access
+
+Area-template loading now works for safe, fixed spatial spell entries, but
+finding a spell still depends on Library search or bookmarks. Investigate a
+compact favorites/prepared-spells launcher or another quick-access workflow.
+Do not add a launcher until the app/web-client data available for a player's
+actual spell list is understood. Spells without a safe fixed area should remain
+normal spell records with no forced template.
+
+### 4. Keep following upstream compatibility work
+
+Continue reviewing official system, package, and web-client changes before
+each release. Reuse official migrations, manifest conventions, validation,
+and packaging behavior where appropriate instead of maintaining avoidable
+fork-only machinery.
+
+## Additional source-backed possibilities
+
+These are proven capabilities or useful authoring options, but are not yet
+approved as the next implementation task.
+
+### Dice links inside pages and records
+
+Module Packer supports links such as `[Roll](/roll/1d20)`. These can turn
+formulae in rules, tools, or roll-table results into native Encounter+ rolls.
+Use them selectively where the formula is unambiguous; do not turn every number
+in prose into a roll.
+
+### Optional modules containing maps and encounters
+
+Module Packer can package maps, encounters, pages, and related assets. Future
+adventures or book-specific play material can therefore be distributed as
+optional modules instead of bloating the core PF2E system.
+
+### Automatically generated roll tables from authored modules
+
+Module Packer's `create-roll-tables` option can convert properly authored dice-
+range tables into Encounter+ roll tables. This could be useful for future
+optional content modules after the native PF2E prototype is validated.
+
+### Shop and equipment browsers
+
+Module Packer includes a shop-table format with category and subcategory rows.
+A compact, filterable equipment/shop reference with prices is technically
+possible. It should be treated as a later usability project, not mixed into the
+initial roll-table task.
+
+### Load actions for supported entity types
+
+The official 5e entity definitions demonstrate native load actions for spells,
+vehicles, characters, monsters, and NPCs. PF2E spell loading now uses this for
+area templates. Other load actions should only be added when they produce a
+clear Encounter+ map or encounter behavior rather than merely duplicating a
+Library record.
+
+### HTML/JavaScript GM tools
+
+The Operations Center and Encounter XP Planner prove that compact interactive
+tools can live inside the system. Additional selectors or calculators are
+possible, but only when they remain usable in Encounter+'s narrow bookmark
+panel and link back to the complete sourced rule.
+
+## Completed source-backed improvements
+
+- Native PF2E entity forms and views, including book-style hazard and vehicle
+  stat blocks.
+- Sources, pages, GP values, errata corrections, and internal links for the
+  data families already audited.
+- Twenty-four sourced native reference tables and compact Operations Center
+  selectors.
+- Encounter XP Planner and bookmarkable Operations Center.
+- Safe structured spell-area templates, including radius mapping for
+  emanations where Encounter+ cannot express a distinct emanation type.
+- Compact entity views that retain their theme and resize text to fit the host
+  Library/search panel.
+- Packaging, validation, release inspection, update manifests, and migrations.
+
+## Deliberately closed or deferred ideas
+
+- **Per-token initiative-skill overrides:** the status-effect experiment was
+  unreliable and was reverted. Library creatures retain Perception by default.
+- **Rule automation and effect durations:** the system supplies references and
+  display data; the GM remains responsible for modifiers and timing.
+- **Virtual 3D dice in the web client:** rejected because recreating the app's
+  renderer and server behavior is too much maintenance for the benefit.
+- **Persistent/saved player area templates:** unnecessary for previews and
+  unsafe to publish to the shared map without an explicit GM permission.
+- **Player-published area templates:** reconsider only if Encounter+ exposes a
+  host-controlled permission for it.
+- **Manual templates for ambiguous spells:** leave these spells unchanged.
+  Quick Load is only useful when the spatial result can be generated safely.
+
