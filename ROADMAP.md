@@ -1,6 +1,6 @@
 # PF2E Remaster and Web Client Roadmap
 
-Last reviewed: 2026-09-27
+Last reviewed: 2026-09-28
 
 This is the decision record for work discovered while comparing the PF2E
 system and community web client with the official Encounter+ repositories,
@@ -10,7 +10,7 @@ source, support tools, and the current web client.
 
 ## Confirmed next work
 
-### 1. Genuine rollable tables — ready for app testing
+### 1. Genuine rollable tables — complete
 
 The 24 PF2E tables already in the system are sourced **reference/look-up
 tables**. They do not roll a random result. Encounter+'s native `Table` entity
@@ -29,8 +29,8 @@ The PF2E implementation should:
 Implementation status: 30 licensed, source-backed tables now use Encounter+'s
 native roller. The Operations Center has a compact Random Tables page grouped
 by use, with contextual shortcuts from hexploration, crafting, and treasure.
-The page is included automatically in the A–Z index. Broad app-level testing
-of the expanded set remains before the next stable package.
+The page is included automatically in the A–Z index. The expanded set was
+app-tested and published in system version 1.701.9.
 
 Existing DC, encounter-budget, creature-building, treasure-by-level, cover,
 detection, and counteract tables remain reference tables because they are not
@@ -52,14 +52,15 @@ Continue auditing all entity families, not only hazards and vehicles, for:
 Hazard and vehicle sheets received this treatment already; that does not prove
 that every other entity family is complete.
 
-### 3. Faster spell access
+### 3. Creature spell access
 
-Area-template loading now works for safe, fixed spatial spell entries, but
-finding a spell still depends on Library search or bookmarks. Investigate a
-compact favorites/prepared-spells launcher or another quick-access workflow.
-Do not add a launcher until the app/web-client data available for a player's
-actual spell list is understood. Spells without a safe fixed area should remain
-normal spell records with no forced template.
+Area-template loading now works for safe, fixed spatial spell entries. The
+existing Library search is already a good global spell finder, so do not add a
+duplicate launcher. Creature imports currently omit their embedded spell lists;
+the Goblin War Chanter is the first prototype with structured spell ranks and
+links to seven full spell records. App-test that form and presentation before
+expanding the conversion to every spellcasting creature. Spells without a safe
+fixed area remain normal spell records with no forced template.
 
 ### 4. Keep following upstream compatibility work
 
@@ -96,8 +97,14 @@ optional content modules after the native PF2E prototype is validated.
 
 Module Packer includes a shop-table format with category and subcategory rows.
 A compact, filterable equipment/shop reference with prices is technically
-possible. It should be treated as a later usability project, not mixed into the
-initial roll-table task.
+possible. The default filter must follow the actual market rules rather than
+showing every priced item: common, priced items at or below the settlement
+level are the normal stock; the settlement's highest-level stock is limited;
+items above that level require special ordering or GM placement; and uncommon
+items only become normal stock when the buyer or settlement meets their Access
+entry. Rare and unique items must not appear as routine shop inventory. The
+item data supports level, rarity, category, Price, source, and page where known;
+explicit Access text can be extracted from item descriptions when present.
 
 ### Load actions for supported entity types
 
