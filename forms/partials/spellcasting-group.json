@@ -1,0 +1,29 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Common.Details",
+          "attribute": "label"
+        }
+      ]
+    },
+    {
+      "title": "Entity.Spell.many",
+      "type": "list",
+      "attribute": "spells",
+      "attributeType": "Spell",
+      "custom": {
+        "map": {
+          "rank": "data.rank"
+        },
+        "itemDetail": "{{reference}}"
+      },
+      "form": {
+        "title": "Entity.Spell",
+        "partial": "spellcasting-spell"
+      }
+    }
+  ]
+}

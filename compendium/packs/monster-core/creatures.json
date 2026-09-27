@@ -31459,6 +31459,60 @@
     "slug": "goblin-war-chanter-monster-core",
     "descr": "",
     "data": {
+      "spellcasting": [
+        {
+          "name": "Occult Spontaneous Spells",
+          "spellAttack": 7,
+          "spellDC": 17,
+          "spellGroups": [
+            {
+              "label": "1st (2 slots)",
+              "spells": [
+                {
+                  "name": "Bless",
+                  "rank": 1,
+                  "reference": "/spell/bless-player-core"
+                },
+                {
+                  "name": "Soothe",
+                  "rank": 1,
+                  "reference": "/spell/soothe-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (1st)",
+              "spells": [
+                {
+                  "name": "Courageous Anthem",
+                  "rank": 1,
+                  "reference": "/spell/courageous-anthem-player-core"
+                },
+                {
+                  "name": "Figment",
+                  "rank": 1,
+                  "reference": "/spell/figment-player-core"
+                },
+                {
+                  "name": "Message",
+                  "rank": 1,
+                  "reference": "/spell/message-player-core"
+                },
+                {
+                  "name": "Telekinetic Hand",
+                  "rank": 1,
+                  "reference": "/spell/telekinetic-hand-player-core"
+                },
+                {
+                  "name": "Telekinetic Projectile",
+                  "rank": 1,
+                  "reference": "/spell/telekinetic-projectile-player-core"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "level": 1,
       "rarity": "common",
       "size": "small",

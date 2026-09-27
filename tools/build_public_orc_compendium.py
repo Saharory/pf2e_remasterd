@@ -24,6 +24,7 @@ from typing import Any
 from foundry_markup import replace_foundry_directives
 from hazard_vehicle_mechanics import supplement as supplement_hazard_vehicle
 from build_reference_tables import build_tables
+from creature_spellcasting import configure_creature_spellcasting
 from spell_area_templates import configure_spell_area_template
 
 
@@ -689,6 +690,9 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
 
     if expected_kind == "Spell":
         configure_spell_area_template(result)
+
+    if expected_kind == "Creature":
+        configure_creature_spellcasting(result)
 
     # Hazard and vehicle ability text is an in-play reference. Every explicit
     # condition or rule reference should stay clickable, including repeated

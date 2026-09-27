@@ -1,0 +1,30 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Spell.Name",
+          "attribute": "name"
+        },
+        {
+          "title": "Spell.Rank",
+          "type": "number",
+          "attribute": "rank"
+        }
+      ]
+    },
+    {
+      "title": "Reference",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "reference",
+          "attributeType": "Spell"
+        }
+      ]
+    }
+  ]
+}
