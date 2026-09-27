@@ -276,33 +276,10 @@
         {
           "title": "Creature.Rituals",
           "type": "form",
+          "attribute": "data.rituals",
           "text": "{{data.rituals.type}}",
           "form": {
-            "sections": [
-              {
-                "type": "group",
-                "fields": [
-                  {
-                    "placeholder": "Common.Type",
-                    "attribute": "data.rituals.type"
-                  },
-                ]
-              },
-              {
-                "type": "group",
-                "fields": [
-                  {
-                    "title": "Ritual.DC",
-                    "attribute": "data.rituals.dc"
-                  },
-                  {
-                    "title": "Creatures.Rituals",
-                    "type": "textArea",
-                    "attribute": "data.rituals.text"
-                  },
-                ]
-              },
-            ]
+            "partial": "rituals"
           }
         }
       ]

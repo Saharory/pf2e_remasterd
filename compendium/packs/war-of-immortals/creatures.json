@@ -450,6 +450,81 @@
           "label": "spirit",
           "slug": "spirit"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Cursed Metamorphosis",
+                  "rank": 6,
+                  "reference": "/spell/cursed-metamorphosis-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Magic Passage",
+                  "rank": 5,
+                  "reference": "/spell/magic-passage-player-core"
+                },
+                {
+                  "name": "Wall of Stone",
+                  "rank": 5,
+                  "reference": "/spell/wall-of-stone-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Creation",
+                  "rank": 4,
+                  "reference": "/spell/creation-player-core",
+                  "details": "×2"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (6th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 6,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Prestidigitation",
+                  "rank": 6,
+                  "reference": "/spell/prestidigitation-player-core"
+                },
+                {
+                  "name": "Tangle Vine",
+                  "rank": 6,
+                  "reference": "/spell/tangle-vine-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 31,
+          "spellAttack": 0
+        }
       ]
     },
     "attributes": {
@@ -1040,6 +1115,190 @@
           "label": "unholy",
           "slug": "unholy"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Prepared Spells",
+          "spellGroups": [
+            {
+              "label": "6th (3 slots)",
+              "spells": [
+                {
+                  "name": "Chain Lightning",
+                  "rank": 6,
+                  "reference": "/spell/chain-lightning-player-core"
+                },
+                {
+                  "name": "Dominate",
+                  "rank": 6,
+                  "reference": "/spell/dominate-player-core"
+                },
+                {
+                  "name": "Vampiric Exsanguination",
+                  "rank": 6,
+                  "reference": "/spell/vampiric-exsanguination-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th (4 slots)",
+              "spells": [
+                {
+                  "name": "Howling Blizzard",
+                  "rank": 5,
+                  "reference": "/spell/howling-blizzard-player-core"
+                },
+                {
+                  "name": "Howling Blizzard",
+                  "rank": 5,
+                  "reference": "/spell/howling-blizzard-player-core"
+                },
+                {
+                  "name": "Toxic Cloud",
+                  "rank": 5,
+                  "reference": "/spell/toxic-cloud-player-core"
+                },
+                {
+                  "name": "Wall of Ice",
+                  "rank": 5,
+                  "reference": "/spell/wall-of-ice-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th (4 slots)",
+              "spells": [
+                {
+                  "name": "Dispel Magic",
+                  "rank": 4,
+                  "reference": "/spell/dispel-magic-player-core"
+                },
+                {
+                  "name": "Fire Shield",
+                  "rank": 4,
+                  "reference": "/spell/fire-shield-player-core"
+                },
+                {
+                  "name": "Fly",
+                  "rank": 4,
+                  "reference": "/spell/fly-player-core"
+                },
+                {
+                  "name": "Translocate",
+                  "rank": 4,
+                  "reference": "/spell/translocate-player-core"
+                }
+              ]
+            },
+            {
+              "label": "3rd (4 slots)",
+              "spells": [
+                {
+                  "name": "Blindness",
+                  "rank": 3,
+                  "reference": "/spell/blindness-player-core"
+                },
+                {
+                  "name": "Force Barrage",
+                  "rank": 3,
+                  "reference": "/spell/force-barrage-player-core"
+                },
+                {
+                  "name": "Locate",
+                  "rank": 3,
+                  "reference": "/spell/locate-player-core"
+                },
+                {
+                  "name": "Vampiric Feast",
+                  "rank": 3,
+                  "reference": "/spell/vampiric-feast-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd (4 slots)",
+              "spells": [
+                {
+                  "name": "Blur",
+                  "rank": 2,
+                  "reference": "/spell/blur-player-core"
+                },
+                {
+                  "name": "False Vitality",
+                  "rank": 2,
+                  "reference": "/spell/false-vitality-player-core"
+                },
+                {
+                  "name": "Resist Energy",
+                  "rank": 2,
+                  "reference": "/spell/resist-energy-player-core"
+                },
+                {
+                  "name": "See the Unseen",
+                  "rank": 2,
+                  "reference": "/spell/see-the-unseen-player-core"
+                }
+              ]
+            },
+            {
+              "label": "1st (4 slots)",
+              "spells": [
+                {
+                  "name": "Enfeeble",
+                  "rank": 1,
+                  "reference": "/spell/enfeeble-player-core"
+                },
+                {
+                  "name": "Enfeeble",
+                  "rank": 1,
+                  "reference": "/spell/enfeeble-player-core"
+                },
+                {
+                  "name": "Fleet Step",
+                  "rank": 1,
+                  "reference": "/spell/fleet-step-player-core"
+                },
+                {
+                  "name": "Sure Strike",
+                  "rank": 1,
+                  "reference": "/spell/sure-strike-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (6th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 6,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Frostbite",
+                  "rank": 6,
+                  "reference": "/spell/frostbite-player-core"
+                },
+                {
+                  "name": "Message",
+                  "rank": 6,
+                  "reference": "/spell/message-player-core"
+                },
+                {
+                  "name": "Shield",
+                  "rank": 6,
+                  "reference": "/spell/shield-player-core"
+                },
+                {
+                  "name": "Telekinetic Hand",
+                  "rank": 6,
+                  "reference": "/spell/telekinetic-hand-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 36,
+          "spellAttack": 26
+        }
       ]
     },
     "attributes": {
@@ -1476,6 +1735,35 @@
         {
           "label": "mythic",
           "slug": "mythic"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "10th",
+              "spells": [
+                {
+                  "name": "Cataclysm",
+                  "rank": 10,
+                  "reference": "/spell/cataclysm-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (4th)",
+              "spells": [
+                {
+                  "name": "Unfettered Movement",
+                  "rank": 4,
+                  "reference": "/spell/unfettered-movement-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 46,
+          "spellAttack": 0
         }
       ]
     },
@@ -2144,7 +2432,125 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "10th",
+              "spells": [
+                {
+                  "name": "Manifestation",
+                  "rank": 10,
+                  "reference": "/spell/manifestation-player-core"
+                },
+                {
+                  "name": "Dominate",
+                  "rank": 10,
+                  "reference": "/spell/dominate-player-core"
+                },
+                {
+                  "name": "Shadow Blast",
+                  "rank": 10,
+                  "reference": "/spell/shadow-blast-player-core",
+                  "details": "×2"
+                }
+              ]
+            },
+            {
+              "label": "9th",
+              "spells": [
+                {
+                  "name": "Overwhelming Presence",
+                  "rank": 9,
+                  "reference": "/spell/overwhelming-presence-player-core"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Divine Decree",
+                  "rank": 7,
+                  "reference": "/spell/divine-decree-player-core",
+                  "details": "×2"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Mislead",
+                  "rank": 6,
+                  "reference": "/spell/mislead-player-core",
+                  "details": "×3"
+                },
+                {
+                  "name": "Repulsion",
+                  "rank": 6,
+                  "reference": "/spell/repulsion-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Translocate",
+                  "rank": 5,
+                  "reference": "/spell/translocate-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (10th)",
+              "spells": [
+                {
+                  "name": "Daze",
+                  "rank": 10,
+                  "reference": "/spell/daze-player-core"
+                },
+                {
+                  "name": "Figment",
+                  "rank": 10,
+                  "reference": "/spell/figment-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (6th)",
+              "spells": [
+                {
+                  "name": "Truesight",
+                  "rank": 6,
+                  "reference": "/spell/truesight-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 44,
+          "spellAttack": 0
+        }
+      ],
+      "rituals": {
+        "type": "Rituals",
+        "ritualGroups": [
+          {
+            "label": "1st",
+            "rituals": [
+              {
+                "name": "Demonic Pact",
+                "rank": 1,
+                "reference": "/ritual/demonic-pact-monster-core"
+              }
+            ]
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2381,6 +2787,149 @@
         {
           "label": "mythic",
           "slug": "mythic"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Occult Innate Spells",
+          "spellGroups": [
+            {
+              "label": "8th",
+              "spells": [
+                {
+                  "name": "Dream Council",
+                  "rank": 8,
+                  "reference": "/spell/dream-council-player-core-2"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Retrocognition",
+                  "rank": 7,
+                  "reference": "/spell/retrocognition-player-core"
+                },
+                {
+                  "name": "Warp Mind",
+                  "rank": 7,
+                  "reference": "/spell/warp-mind-player-core"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Phantasmal Calamity",
+                  "rank": 6,
+                  "reference": "/spell/phantasmal-calamity-player-core"
+                },
+                {
+                  "name": "Repulsion",
+                  "rank": 6,
+                  "reference": "/spell/repulsion-player-core"
+                },
+                {
+                  "name": "Scrying",
+                  "rank": 6,
+                  "reference": "/spell/scrying-player-core"
+                },
+                {
+                  "name": "Teleport",
+                  "rank": 6,
+                  "reference": "/spell/teleport-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Sending",
+                  "rank": 5,
+                  "reference": "/spell/sending-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Nightmare",
+                  "rank": 4,
+                  "reference": "/spell/nightmare-player-core"
+                },
+                {
+                  "name": "Read Omens",
+                  "rank": 4,
+                  "reference": "/spell/read-omens-player-core"
+                },
+                {
+                  "name": "Darkness",
+                  "rank": 4,
+                  "reference": "/spell/darkness-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Invisibility",
+                  "rank": 4,
+                  "reference": "/spell/invisibility-player-core"
+                },
+                {
+                  "name": "Web",
+                  "rank": 4,
+                  "reference": "/spell/web-player-core-2",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Dream Message",
+                  "rank": 3,
+                  "reference": "/spell/dream-message-player-core"
+                },
+                {
+                  "name": "Mind Reading",
+                  "rank": 3,
+                  "reference": "/spell/mind-reading-player-core"
+                },
+                {
+                  "name": "Fear",
+                  "rank": 3,
+                  "reference": "/spell/fear-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "See the Unseen",
+                  "rank": 2,
+                  "reference": "/spell/see-the-unseen-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Constant (7th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 7,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 36,
+          "spellAttack": 28
         }
       ]
     },

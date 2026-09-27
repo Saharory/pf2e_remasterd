@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Common.Details",
+          "attribute": "label"
+        }
+      ]
+    },
+    {
+      "title": "Creature.Rituals",
+      "type": "list",
+      "attribute": "rituals",
+      "attributeType": "Ritual",
+      "custom": {
+        "itemDetail": "{{reference}}"
+      },
+      "form": {
+        "title": "Entity.Ritual",
+        "partial": "ritual-entry"
+      }
+    }
+  ]
+}

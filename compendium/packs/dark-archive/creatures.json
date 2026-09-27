@@ -142,6 +142,36 @@
           "label": "aberration",
           "slug": "aberration"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Occult Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Warp Mind",
+                  "rank": 7,
+                  "reference": "/spell/warp-mind-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Flicker",
+                  "rank": 4,
+                  "reference": "/spell/flicker-player-core",
+                  "details": "×2"
+                }
+              ]
+            }
+          ],
+          "spellDC": 33,
+          "spellAttack": 25
+        }
       ]
     },
     "attributes": {
@@ -460,6 +490,105 @@
         {
           "label": "human",
           "slug": "human"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Prepared Spells",
+          "spellGroups": [
+            {
+              "label": "4th (3 slots)",
+              "spells": [
+                {
+                  "name": "Grasping Earth",
+                  "rank": 4,
+                  "reference": "/spell/grasping-earth-rage-of-elements"
+                },
+                {
+                  "name": "Life-Draining Roots",
+                  "rank": 4,
+                  "reference": "/spell/life-draining-roots-rage-of-elements"
+                },
+                {
+                  "name": "Unfettered Movement",
+                  "rank": 4,
+                  "reference": "/spell/unfettered-movement-player-core"
+                }
+              ]
+            },
+            {
+              "label": "3rd (3 slots)",
+              "spells": [
+                {
+                  "name": "Heal",
+                  "rank": 3,
+                  "reference": "/spell/heal-player-core"
+                },
+                {
+                  "name": "Lightning Bolt",
+                  "rank": 3,
+                  "reference": "/spell/lightning-bolt-player-core"
+                },
+                {
+                  "name": "Tempest Cloak",
+                  "rank": 3,
+                  "reference": "/spell/tempest-cloak-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "2nd (3 slots)",
+              "spells": [
+                {
+                  "name": "Entangling Flora",
+                  "rank": 2,
+                  "reference": "/spell/entangling-flora-player-core"
+                },
+                {
+                  "name": "One with Plants",
+                  "rank": 2,
+                  "reference": "/spell/one-with-plants-player-core"
+                },
+                {
+                  "name": "Revealing Light",
+                  "rank": 2,
+                  "reference": "/spell/revealing-light-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (4th)",
+              "spells": [
+                {
+                  "name": "Frostbite",
+                  "rank": 4,
+                  "reference": "/spell/frostbite-player-core"
+                },
+                {
+                  "name": "Guidance",
+                  "rank": 4,
+                  "reference": "/spell/guidance-player-core"
+                },
+                {
+                  "name": "Light",
+                  "rank": 4,
+                  "reference": "/spell/light-player-core"
+                },
+                {
+                  "name": "Message",
+                  "rank": 4,
+                  "reference": "/spell/message-player-core"
+                },
+                {
+                  "name": "Tangle Vine",
+                  "rank": 4,
+                  "reference": "/spell/tangle-vine-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 26,
+          "spellAttack": 18
         }
       ]
     },

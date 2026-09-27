@@ -349,7 +349,96 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "9th",
+              "spells": [
+                {
+                  "name": "Cleanse Air",
+                  "rank": 9,
+                  "reference": "/spell/cleanse-air-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Humanoid Form",
+                  "rank": 7,
+                  "reference": "/spell/humanoid-form-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Airlift",
+                  "rank": 4,
+                  "reference": "/spell/airlift-rage-of-elements",
+                  "details": "at will"
+                },
+                {
+                  "name": "Vapor Form",
+                  "rank": 4,
+                  "reference": "/spell/vapor-form-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Voice on the Breeze",
+                  "rank": 4,
+                  "reference": "/spell/voice-on-the-breeze-rage-of-elements",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Air Bubble",
+                  "rank": 1,
+                  "reference": "/spell/air-bubble-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 40,
+          "spellAttack": 32
+        }
+      ],
+      "rituals": {
+        "type": "Rituals",
+        "ritualGroups": [
+          {
+            "label": "8th",
+            "rituals": [
+              {
+                "name": "Control Weather",
+                "rank": 8,
+                "reference": "/ritual/control-weather-player-core"
+              }
+            ]
+          },
+          {
+            "label": "6th",
+            "rituals": [
+              {
+                "name": "Sky Signs",
+                "rank": 6,
+                "reference": "/ritual/sky-signs-rage-of-elements"
+              }
+            ]
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -496,6 +585,65 @@
         {
           "label": "humanoid",
           "slug": "humanoid"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Heal",
+                  "rank": 1,
+                  "reference": "/spell/heal-player-core"
+                },
+                {
+                  "name": "Tailwind",
+                  "rank": 1,
+                  "reference": "/spell/tailwind-player-core"
+                },
+                {
+                  "name": "Wall of Shrubs",
+                  "rank": 1,
+                  "reference": "/spell/wall-of-shrubs-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (1st)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 1,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Know the Way",
+                  "rank": 1,
+                  "reference": "/spell/know-the-way-player-core"
+                },
+                {
+                  "name": "Take Root",
+                  "rank": 1,
+                  "reference": "/spell/take-root-rage-of-elements"
+                },
+                {
+                  "name": "Tangle Vine",
+                  "rank": 1,
+                  "reference": "/spell/tangle-vine-player-core"
+                },
+                {
+                  "name": "Timber",
+                  "rank": 1,
+                  "reference": "/spell/timber-rage-of-elements"
+                }
+              ]
+            }
+          ],
+          "spellDC": 17,
+          "spellAttack": 9
         }
       ]
     },
@@ -656,6 +804,56 @@
         {
           "label": "metal",
           "slug": "metal"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Magnetic Attraction",
+                  "rank": 5,
+                  "reference": "/spell/magnetic-attraction-rage-of-elements"
+                },
+                {
+                  "name": "Magnetic Repulsion",
+                  "rank": 5,
+                  "reference": "/spell/magnetic-repulsion-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Magnetic Acceleration",
+                  "rank": 3,
+                  "reference": "/spell/magnetic-acceleration-rage-of-elements",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (5th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 5,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Read Aura",
+                  "rank": 5,
+                  "reference": "/spell/read-aura-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 29,
+          "spellAttack": 0
         }
       ]
     },
@@ -880,7 +1078,116 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "9th",
+              "spells": [
+                {
+                  "name": "Cleanse Air",
+                  "rank": 9,
+                  "reference": "/spell/cleanse-air-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "8th",
+              "spells": [
+                {
+                  "name": "Flame Vortex",
+                  "rank": 8,
+                  "reference": "/spell/flame-vortex-impossible-magic-spell-spell-2705"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Humanoid Form",
+                  "rank": 7,
+                  "reference": "/spell/humanoid-form-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Geyser",
+                  "rank": 5,
+                  "reference": "/spell/geyser-impossible-magic-spell-spell-2717"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Airlift",
+                  "rank": 4,
+                  "reference": "/spell/airlift-rage-of-elements",
+                  "details": "at will"
+                },
+                {
+                  "name": "Vapor Form",
+                  "rank": 4,
+                  "reference": "/spell/vapor-form-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Voice on the Breeze",
+                  "rank": 4,
+                  "reference": "/spell/voice-on-the-breeze-rage-of-elements",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Air Bubble",
+                  "rank": 1,
+                  "reference": "/spell/air-bubble-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 40,
+          "spellAttack": 32
+        }
+      ],
+      "rituals": {
+        "type": "Rituals",
+        "ritualGroups": [
+          {
+            "label": "8th",
+            "rituals": [
+              {
+                "name": "Control Weather",
+                "rank": 8,
+                "reference": "/ritual/control-weather-player-core"
+              }
+            ]
+          },
+          {
+            "label": "6th",
+            "rituals": [
+              {
+                "name": "Sky Signs",
+                "rank": 6,
+                "reference": "/ritual/sky-signs-rage-of-elements"
+              }
+            ]
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1587,7 +1894,116 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "9th",
+              "spells": [
+                {
+                  "name": "Cleanse Air",
+                  "rank": 9,
+                  "reference": "/spell/cleanse-air-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "8th",
+              "spells": [
+                {
+                  "name": "Frigid Flurry",
+                  "rank": 8,
+                  "reference": "/spell/frigid-flurry-impossible-magic-spell-spell-2713"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Humanoid Form",
+                  "rank": 7,
+                  "reference": "/spell/humanoid-form-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Howling Blizzard",
+                  "rank": 5,
+                  "reference": "/spell/howling-blizzard-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Airlift",
+                  "rank": 4,
+                  "reference": "/spell/airlift-rage-of-elements",
+                  "details": "at will"
+                },
+                {
+                  "name": "Vapor Form",
+                  "rank": 4,
+                  "reference": "/spell/vapor-form-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Voice on the Breeze",
+                  "rank": 4,
+                  "reference": "/spell/voice-on-the-breeze-rage-of-elements",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Air Bubble",
+                  "rank": 1,
+                  "reference": "/spell/air-bubble-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 40,
+          "spellAttack": 32
+        }
+      ],
+      "rituals": {
+        "type": "Rituals",
+        "ritualGroups": [
+          {
+            "label": "8th",
+            "rituals": [
+              {
+                "name": "Control Weather",
+                "rank": 8,
+                "reference": "/ritual/control-weather-player-core"
+              }
+            ]
+          },
+          {
+            "label": "6th",
+            "rituals": [
+              {
+                "name": "Sky Signs",
+                "rank": 6,
+                "reference": "/ritual/sky-signs-rage-of-elements"
+              }
+            ]
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2698,6 +3114,25 @@
           "label": "elemental",
           "slug": "elemental"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Chromatic Ray (Release Light)",
+                  "rank": 5,
+                  "details": "Release Light"
+                }
+              ]
+            }
+          ],
+          "spellDC": 29,
+          "spellAttack": 21
+        }
       ]
     },
     "attributes": {
@@ -2840,6 +3275,41 @@
         {
           "label": "elemental",
           "slug": "elemental"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "Cantrips (2nd)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 2,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Figment",
+                  "rank": 2,
+                  "reference": "/spell/figment-player-core",
+                  "details": "Chiming, Clinking, or Rattling Sounds Only"
+                },
+                {
+                  "name": "Light",
+                  "rank": 2,
+                  "reference": "/spell/light-player-core"
+                },
+                {
+                  "name": "Telekinetic Hand",
+                  "rank": 2,
+                  "reference": "/spell/telekinetic-hand-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 17,
+          "spellAttack": 9
         }
       ]
     },
@@ -3696,7 +4166,116 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "9th",
+              "spells": [
+                {
+                  "name": "Cleanse Air",
+                  "rank": 9,
+                  "reference": "/spell/cleanse-air-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "8th",
+              "spells": [
+                {
+                  "name": "Chain Lightning",
+                  "rank": 8,
+                  "reference": "/spell/chain-lightning-player-core"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Humanoid Form",
+                  "rank": 7,
+                  "reference": "/spell/humanoid-form-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Pressure Zone",
+                  "rank": 5,
+                  "reference": "/spell/pressure-zone-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Airlift",
+                  "rank": 4,
+                  "reference": "/spell/airlift-rage-of-elements",
+                  "details": "at will"
+                },
+                {
+                  "name": "Vapor Form",
+                  "rank": 4,
+                  "reference": "/spell/vapor-form-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Voice on the Breeze",
+                  "rank": 4,
+                  "reference": "/spell/voice-on-the-breeze-rage-of-elements",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Air Bubble",
+                  "rank": 1,
+                  "reference": "/spell/air-bubble-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 40,
+          "spellAttack": 32
+        }
+      ],
+      "rituals": {
+        "type": "Rituals",
+        "ritualGroups": [
+          {
+            "label": "8th",
+            "rituals": [
+              {
+                "name": "Control Weather",
+                "rank": 8,
+                "reference": "/ritual/control-weather-player-core"
+              }
+            ]
+          },
+          {
+            "label": "6th",
+            "rituals": [
+              {
+                "name": "Sky Signs",
+                "rank": 6,
+                "reference": "/ritual/sky-signs-rage-of-elements"
+              }
+            ]
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3916,6 +4495,144 @@
         {
           "label": "water",
           "slug": "water"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Interplanar Teleport",
+                  "rank": 7,
+                  "reference": "/spell/interplanar-teleport-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Planar Palace",
+                  "rank": 7,
+                  "reference": "/spell/planar-palace-player-core"
+                },
+                {
+                  "name": "Hydraulic Torrent",
+                  "rank": 7,
+                  "reference": "/spell/hydraulic-torrent-player-core"
+                },
+                {
+                  "name": "Summon Elemental",
+                  "rank": 7,
+                  "reference": "/spell/summon-elemental-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Control Water",
+                  "rank": 5,
+                  "reference": "/spell/control-water-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Howling Blizzard",
+                  "rank": 5,
+                  "reference": "/spell/howling-blizzard-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Mirage",
+                  "rank": 5,
+                  "reference": "/spell/mirage-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Vapor Form",
+                  "rank": 4,
+                  "reference": "/spell/vapor-form-player-core"
+                },
+                {
+                  "name": "Invisibility",
+                  "rank": 4,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "×2"
+                },
+                {
+                  "name": "Hydraulic Push",
+                  "rank": 4,
+                  "reference": "/spell/hydraulic-push-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Befitting Attire",
+                  "rank": 2,
+                  "reference": "/spell/befitting-attire-impossible-magic-spell-spell-2634",
+                  "details": "at will"
+                },
+                {
+                  "name": "Invisibility",
+                  "rank": 2,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "See the Unseen",
+                  "rank": 2,
+                  "reference": "/spell/see-the-unseen-player-core"
+                },
+                {
+                  "name": "Water Breathing",
+                  "rank": 2,
+                  "reference": "/spell/water-breathing-player-core"
+                },
+                {
+                  "name": "Create Water",
+                  "rank": 2,
+                  "reference": "/spell/create-water-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (7th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 7,
+                  "reference": "/spell/detect-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (7th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 7,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 34,
+          "spellAttack": 26
         }
       ]
     },
@@ -4195,6 +4912,103 @@
         {
           "label": "genie",
           "slug": "genie"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Invisibility",
+                  "rank": 2,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Translate",
+                  "rank": 2,
+                  "reference": "/spell/translate-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Cleanse Cuisine",
+                  "rank": 1,
+                  "reference": "/spell/cleanse-cuisine-player-core"
+                },
+                {
+                  "name": "Heal",
+                  "rank": 1,
+                  "reference": "/spell/heal-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (1st)",
+              "spells": [
+                {
+                  "name": "Electric Arc",
+                  "rank": 1,
+                  "reference": "/spell/electric-arc-player-core",
+                  "details": "Attuned Element"
+                },
+                {
+                  "name": "Frostbite",
+                  "rank": 1,
+                  "reference": "/spell/frostbite-player-core",
+                  "details": "Attuned Element"
+                },
+                {
+                  "name": "Guidance",
+                  "rank": 1,
+                  "reference": "/spell/guidance-player-core"
+                },
+                {
+                  "name": "Ignition",
+                  "rank": 1,
+                  "reference": "/spell/ignition-player-core",
+                  "details": "Attuned Element"
+                },
+                {
+                  "name": "Needle Darts",
+                  "rank": 1,
+                  "reference": "/spell/needle-darts-rage-of-elements",
+                  "details": "Attuned Element"
+                },
+                {
+                  "name": "Prestidigitation",
+                  "rank": 1,
+                  "reference": "/spell/prestidigitation-player-core"
+                },
+                {
+                  "name": "Scatter Scree",
+                  "rank": 1,
+                  "reference": "/spell/scatter-scree-player-core-2",
+                  "details": "Attuned Element"
+                },
+                {
+                  "name": "Summon Instrument",
+                  "rank": 1,
+                  "reference": "/spell/summon-instrument-player-core"
+                },
+                {
+                  "name": "Tangle Vine",
+                  "rank": 1,
+                  "reference": "/spell/tangle-vine-player-core",
+                  "details": "Attuned Element"
+                }
+              ]
+            }
+          ],
+          "spellDC": 18,
+          "spellAttack": 10
         }
       ]
     },
@@ -4680,6 +5494,88 @@
           "label": "genie",
           "slug": "genie"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Interplanar Teleport",
+                  "rank": 7,
+                  "reference": "/spell/interplanar-teleport-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Volcanic Eruption",
+                  "rank": 7,
+                  "reference": "/spell/volcanic-eruption-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Fire's Pathway",
+                  "rank": 5,
+                  "reference": "/spell/fire-s-pathway-rage-of-elements"
+                },
+                {
+                  "name": "Fireball",
+                  "rank": 5,
+                  "reference": "/spell/fireball-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Invisibility",
+                  "rank": 2,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "×2"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (7th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 7,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Ignition",
+                  "rank": 7,
+                  "reference": "/spell/ignition-player-core"
+                },
+                {
+                  "name": "Illuminate",
+                  "rank": 7,
+                  "reference": "/spell/illuminate-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 35,
+          "spellAttack": 27
+        }
       ]
     },
     "attributes": {
@@ -4905,6 +5801,83 @@
           "label": "genie",
           "slug": "genie"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Interplanar Teleport",
+                  "rank": 7,
+                  "reference": "/spell/interplanar-teleport-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Pressure Zone",
+                  "rank": 5,
+                  "reference": "/spell/pressure-zone-rage-of-elements"
+                },
+                {
+                  "name": "Nightmare",
+                  "rank": 5,
+                  "reference": "/spell/nightmare-player-core",
+                  "details": "×2"
+                },
+                {
+                  "name": "Illusory Creature",
+                  "rank": 5,
+                  "reference": "/spell/illusory-creature-player-core"
+                },
+                {
+                  "name": "Illusory Object",
+                  "rank": 5,
+                  "reference": "/spell/illusory-object-player-core"
+                },
+                {
+                  "name": "Sleep",
+                  "rank": 5,
+                  "reference": "/spell/sleep-player-core",
+                  "details": "×2"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Vapor Form",
+                  "rank": 4,
+                  "reference": "/spell/vapor-form-player-core"
+                },
+                {
+                  "name": "Ill Omen",
+                  "rank": 4,
+                  "reference": "/spell/ill-omen-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (5th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 5,
+                  "reference": "/spell/detect-magic-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 30,
+          "spellAttack": 22
+        }
       ]
     },
     "attributes": {
@@ -5120,6 +6093,98 @@
         {
           "label": "genie",
           "slug": "genie"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "8th",
+              "spells": [
+                {
+                  "name": "Earthquake",
+                  "rank": 8,
+                  "reference": "/spell/earthquake-player-core"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Interplanar Teleport",
+                  "rank": 7,
+                  "reference": "/spell/interplanar-teleport-player-core",
+                  "details": "To Astral Plane, Elemental Planes, or the Universe Only"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Petrify",
+                  "rank": 6,
+                  "reference": "/spell/petrify-player-core"
+                },
+                {
+                  "name": "Mountain Resilience",
+                  "rank": 6,
+                  "reference": "/spell/mountain-resilience-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Wall of Stone",
+                  "rank": 5,
+                  "reference": "/spell/wall-of-stone-player-core"
+                },
+                {
+                  "name": "Illusory Disguise",
+                  "rank": 5,
+                  "reference": "/spell/illusory-disguise-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Shape Stone",
+                  "rank": 4,
+                  "reference": "/spell/shape-stone-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (6th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 6,
+                  "reference": "/spell/detect-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 32,
+          "spellAttack": 24
         }
       ]
     },
@@ -5354,6 +6419,108 @@
         {
           "label": "wood",
           "slug": "wood"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Interplanar Teleport",
+                  "rank": 7,
+                  "reference": "/spell/interplanar-teleport-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Read Omens",
+                  "rank": 4,
+                  "reference": "/spell/read-omens-player-core"
+                },
+                {
+                  "name": "Invisibility",
+                  "rank": 4,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "×2"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (5th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 5,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Know the Way",
+                  "rank": 5,
+                  "reference": "/spell/know-the-way-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 28,
+          "spellAttack": 20
+        },
+        {
+          "name": "All Made One Spells",
+          "spellGroups": [
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Fireball",
+                  "rank": 3,
+                  "reference": "/spell/fireball-player-core"
+                },
+                {
+                  "name": "Lightning Bolt",
+                  "rank": 3,
+                  "reference": "/spell/lightning-bolt-player-core"
+                },
+                {
+                  "name": "Noxious Metals",
+                  "rank": 3,
+                  "reference": "/spell/noxious-metals-rage-of-elements"
+                },
+                {
+                  "name": "One with Stone",
+                  "rank": 3,
+                  "reference": "/spell/one-with-stone-player-core"
+                },
+                {
+                  "name": "Wall of Thorns",
+                  "rank": 3,
+                  "reference": "/spell/wall-of-thorns-player-core"
+                },
+                {
+                  "name": "Wall of Water",
+                  "rank": 3
+                }
+              ]
+            }
+          ],
+          "spellDC": 28,
+          "spellAttack": 20
         }
       ]
     },
@@ -5658,6 +6825,84 @@
           "label": "wood",
           "slug": "wood"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Interplanar Teleport",
+                  "rank": 7,
+                  "reference": "/spell/interplanar-teleport-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Nature's Pathway",
+                  "rank": 5,
+                  "reference": "/spell/nature-s-pathway-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Entangling Flora",
+                  "rank": 2,
+                  "reference": "/spell/entangling-flora-player-core",
+                  "details": "×2"
+                },
+                {
+                  "name": "Invisibility",
+                  "rank": 2,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "×2"
+                },
+                {
+                  "name": "One with Plants",
+                  "rank": 2,
+                  "reference": "/spell/one-with-plants-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (3rd)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 3,
+                  "reference": "/spell/detect-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (6th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 6,
+                  "reference": "/spell/truespeech-player-core"
+                },
+                {
+                  "name": "Speak with Plants",
+                  "rank": 6,
+                  "reference": "/spell/speak-with-plants-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 22,
+          "spellAttack": 14
+        }
       ]
     },
     "attributes": {
@@ -5860,6 +7105,99 @@
         {
           "label": "wood",
           "slug": "wood"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Interplanar Teleport",
+                  "rank": 7,
+                  "reference": "/spell/interplanar-teleport-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Lignify",
+                  "rank": 6,
+                  "reference": "/spell/lignify-rage-of-elements"
+                },
+                {
+                  "name": "Nature's Pathway",
+                  "rank": 6,
+                  "reference": "/spell/nature-s-pathway-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Invisibility",
+                  "rank": 6,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "×2"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Wooden Double",
+                  "rank": 3,
+                  "reference": "/spell/wooden-double-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Entangling Flora",
+                  "rank": 2,
+                  "reference": "/spell/entangling-flora-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "One with Plants",
+                  "rank": 2,
+                  "reference": "/spell/one-with-plants-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (6th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 6,
+                  "reference": "/spell/detect-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (6th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 6,
+                  "reference": "/spell/truespeech-player-core"
+                },
+                {
+                  "name": "Speak with Plants",
+                  "rank": 6,
+                  "reference": "/spell/speak-with-plants-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 30,
+          "spellAttack": 22
         }
       ]
     },
@@ -6169,6 +7507,69 @@
         {
           "label": "spirit",
           "slug": "spirit"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Occult Innate Spells",
+          "spellGroups": [
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Dominate",
+                  "rank": 6,
+                  "reference": "/spell/dominate-player-core",
+                  "details": "Echo the Past"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Illusory Scene",
+                  "rank": 5,
+                  "reference": "/spell/illusory-scene-player-core",
+                  "details": "Echo the Past"
+                },
+                {
+                  "name": "Invoke Spirits",
+                  "rank": 5,
+                  "reference": "/spell/invoke-spirits-player-core",
+                  "details": "Echo the Past"
+                },
+                {
+                  "name": "Wall of Stone",
+                  "rank": 5,
+                  "reference": "/spell/wall-of-stone-player-core",
+                  "details": "Echo the Past"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "One with Stone",
+                  "rank": 3,
+                  "reference": "/spell/one-with-stone-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (7th)",
+              "spells": [
+                {
+                  "name": "Daze",
+                  "rank": 7,
+                  "reference": "/spell/daze-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 34,
+          "spellAttack": 26
         }
       ]
     },
@@ -7246,6 +8647,25 @@
         {
           "label": "metal",
           "slug": "metal"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Magnetic Attraction",
+                  "rank": 2,
+                  "reference": "/spell/magnetic-attraction-rage-of-elements"
+                }
+              ]
+            }
+          ],
+          "spellDC": 17,
+          "spellAttack": 9
         }
       ]
     },
@@ -11253,6 +12673,25 @@
           "label": "talos",
           "slug": "talos"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "Cantrips (1st)",
+              "spells": [
+                {
+                  "name": "Detect Metal",
+                  "rank": 1,
+                  "reference": "/spell/detect-metal-rage-of-elements"
+                }
+              ]
+            }
+          ],
+          "spellDC": 14,
+          "spellAttack": 6
+        }
       ]
     },
     "attributes": {
@@ -11406,6 +12845,35 @@
         {
           "label": "water",
           "slug": "water"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Wall of Water",
+                  "rank": 3,
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (4th)",
+              "spells": [
+                {
+                  "name": "Spout",
+                  "rank": 4,
+                  "reference": "/spell/spout-player-core-2"
+                }
+              ]
+            }
+          ],
+          "spellDC": 25,
+          "spellAttack": 17
         }
       ]
     },
@@ -11840,6 +13308,308 @@
           "label": "elemental",
           "slug": "elemental"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Prepared Spells",
+          "spellGroups": [
+            {
+              "label": "9th (3 slots)",
+              "spells": [
+                {
+                  "name": "Disintegrate",
+                  "rank": 9,
+                  "reference": "/spell/disintegrate-player-core"
+                },
+                {
+                  "name": "Disintegrate",
+                  "rank": 9,
+                  "reference": "/spell/disintegrate-player-core"
+                },
+                {
+                  "name": "Heaving Earth",
+                  "rank": 9,
+                  "reference": "/spell/heaving-earth-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "8th (3 slots)",
+              "spells": [
+                {
+                  "name": "Earthquake",
+                  "rank": 8,
+                  "reference": "/spell/earthquake-player-core"
+                },
+                {
+                  "name": "Earthquake",
+                  "rank": 8,
+                  "reference": "/spell/earthquake-player-core"
+                },
+                {
+                  "name": "Mountain Resilience",
+                  "rank": 8,
+                  "reference": "/spell/mountain-resilience-player-core"
+                }
+              ]
+            },
+            {
+              "label": "7th (3 slots)",
+              "spells": [
+                {
+                  "name": "Fly",
+                  "rank": 7,
+                  "reference": "/spell/fly-player-core"
+                },
+                {
+                  "name": "Haste",
+                  "rank": 7,
+                  "reference": "/spell/haste-player-core"
+                },
+                {
+                  "name": "Haste",
+                  "rank": 7,
+                  "reference": "/spell/haste-player-core"
+                }
+              ]
+            },
+            {
+              "label": "6th (3 slots)",
+              "spells": [
+                {
+                  "name": "Pave Ground",
+                  "rank": 6,
+                  "reference": "/spell/pave-ground-rage-of-elements"
+                },
+                {
+                  "name": "Petrify",
+                  "rank": 6,
+                  "reference": "/spell/petrify-player-core"
+                },
+                {
+                  "name": "Wall of Force",
+                  "rank": 6,
+                  "reference": "/spell/wall-of-force-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th (4 slots)",
+              "spells": [
+                {
+                  "name": "Blazing Fissure",
+                  "rank": 5,
+                  "reference": "/spell/blazing-fissure-impossible-magic-spell-spell-2638"
+                },
+                {
+                  "name": "Creation",
+                  "rank": 5,
+                  "reference": "/spell/creation-player-core"
+                },
+                {
+                  "name": "See the Unseen",
+                  "rank": 5,
+                  "reference": "/spell/see-the-unseen-player-core"
+                },
+                {
+                  "name": "Engrave Memory",
+                  "rank": 5,
+                  "reference": "/spell/engrave-memory-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "4th (2 slots)",
+              "spells": [
+                {
+                  "name": "Clairvoyance",
+                  "rank": 4,
+                  "reference": "/spell/clairvoyance-player-core"
+                },
+                {
+                  "name": "Grasping Earth",
+                  "rank": 4,
+                  "reference": "/spell/grasping-earth-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "3rd (3 slots)",
+              "spells": [
+                {
+                  "name": "One with Stone",
+                  "rank": 3,
+                  "reference": "/spell/one-with-stone-player-core"
+                },
+                {
+                  "name": "One with Stone",
+                  "rank": 3,
+                  "reference": "/spell/one-with-stone-player-core"
+                },
+                {
+                  "name": "Mending",
+                  "rank": 3,
+                  "reference": "/spell/mending-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd (3 slots)",
+              "spells": [
+                {
+                  "name": "Knock",
+                  "rank": 2,
+                  "reference": "/spell/knock-player-core"
+                },
+                {
+                  "name": "Magnetic Attraction",
+                  "rank": 2,
+                  "reference": "/spell/magnetic-attraction-rage-of-elements"
+                },
+                {
+                  "name": "Magnetic Repulsion",
+                  "rank": 2,
+                  "reference": "/spell/magnetic-repulsion-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "1st (3 slots)",
+              "spells": [
+                {
+                  "name": "Ant Haul",
+                  "rank": 1,
+                  "reference": "/spell/ant-haul-player-core"
+                },
+                {
+                  "name": "Quick Sort",
+                  "rank": 1,
+                  "reference": "/spell/quick-sort-impossible-magic-spell-spell-2797"
+                },
+                {
+                  "name": "Quick Sort",
+                  "rank": 1,
+                  "reference": "/spell/quick-sort-impossible-magic-spell-spell-2797"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (10th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 10,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Read Aura",
+                  "rank": 10,
+                  "reference": "/spell/read-aura-player-core"
+                },
+                {
+                  "name": "Scatter Scree",
+                  "rank": 10,
+                  "reference": "/spell/scatter-scree-player-core-2"
+                },
+                {
+                  "name": "Sigil",
+                  "rank": 10,
+                  "reference": "/spell/sigil-player-core"
+                },
+                {
+                  "name": "Telekinetic Hand",
+                  "rank": 10,
+                  "reference": "/spell/telekinetic-hand-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 50,
+          "spellAttack": 42
+        },
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "10th",
+              "spells": [
+                {
+                  "name": "Wall of Stone",
+                  "rank": 10,
+                  "reference": "/spell/wall-of-stone-player-core"
+                },
+                {
+                  "name": "Summon Elemental",
+                  "rank": 10,
+                  "reference": "/spell/summon-elemental-player-core",
+                  "details": "Earth Only"
+                }
+              ]
+            },
+            {
+              "label": "8th",
+              "spells": [
+                {
+                  "name": "Petrify",
+                  "rank": 8,
+                  "reference": "/spell/petrify-player-core"
+                },
+                {
+                  "name": "Scrying",
+                  "rank": 8,
+                  "reference": "/spell/scrying-player-core"
+                },
+                {
+                  "name": "Teleport",
+                  "rank": 8,
+                  "reference": "/spell/teleport-player-core"
+                },
+                {
+                  "name": "Speak with Stones",
+                  "rank": 8,
+                  "reference": "/spell/speak-with-stones-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Translocate",
+                  "rank": 8,
+                  "reference": "/spell/translocate-player-core"
+                },
+                {
+                  "name": "Shatter",
+                  "rank": 8,
+                  "reference": "/spell/shatter-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Shape Stone",
+                  "rank": 4,
+                  "reference": "/spell/shape-stone-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Translocate",
+                  "rank": 4,
+                  "reference": "/spell/translocate-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Earthbind",
+                  "rank": 4,
+                  "reference": "/spell/earthbind-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 50,
+          "spellAttack": 42
+        }
       ]
     },
     "attributes": {
@@ -12051,6 +13821,91 @@
         {
           "label": "elemental",
           "slug": "elemental"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Petrify",
+                  "rank": 7,
+                  "reference": "/spell/petrify-player-core"
+                },
+                {
+                  "name": "Wall of Stone",
+                  "rank": 7,
+                  "reference": "/spell/wall-of-stone-player-core"
+                },
+                {
+                  "name": "Summon Elemental",
+                  "rank": 7,
+                  "reference": "/spell/summon-elemental-player-core",
+                  "details": "Earth Only"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Scrying",
+                  "rank": 6,
+                  "reference": "/spell/scrying-player-core"
+                },
+                {
+                  "name": "Speak with Stones",
+                  "rank": 6,
+                  "reference": "/spell/speak-with-stones-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Translocate",
+                  "rank": 5,
+                  "reference": "/spell/translocate-player-core"
+                },
+                {
+                  "name": "Shatter",
+                  "rank": 5,
+                  "reference": "/spell/shatter-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Shape Stone",
+                  "rank": 4,
+                  "reference": "/spell/shape-stone-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Translocate",
+                  "rank": 4,
+                  "reference": "/spell/translocate-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Earthbind",
+                  "rank": 4,
+                  "reference": "/spell/earthbind-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 34,
+          "spellAttack": 26
         }
       ]
     },
@@ -12785,6 +14640,45 @@
           "label": "wood",
           "slug": "wood"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Oaken Resilience",
+                  "rank": 2,
+                  "reference": "/spell/oaken-resilience-player-core",
+                  "details": "Self Only"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Verdant Sprout",
+                  "rank": 1
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (1st)",
+              "spells": [
+                {
+                  "name": "Tangle Vine",
+                  "rank": 1,
+                  "reference": "/spell/tangle-vine-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 15,
+          "spellAttack": 7
+        }
       ]
     },
     "attributes": {
@@ -13158,7 +15052,116 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "9th",
+              "spells": [
+                {
+                  "name": "Cleanse Air",
+                  "rank": 9,
+                  "reference": "/spell/cleanse-air-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "8th",
+              "spells": [
+                {
+                  "name": "Field of Life",
+                  "rank": 8,
+                  "reference": "/spell/field-of-life-player-core"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Humanoid Form",
+                  "rank": 7,
+                  "reference": "/spell/humanoid-form-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Airlift",
+                  "rank": 4,
+                  "reference": "/spell/airlift-rage-of-elements",
+                  "details": "at will"
+                },
+                {
+                  "name": "Petal Storm",
+                  "rank": 4,
+                  "reference": "/spell/petal-storm-impossible-magic-spell-spell-2786"
+                },
+                {
+                  "name": "Vapor Form",
+                  "rank": 4,
+                  "reference": "/spell/vapor-form-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Speak with Plants",
+                  "rank": 4,
+                  "reference": "/spell/speak-with-plants-player-core"
+                },
+                {
+                  "name": "Voice on the Breeze",
+                  "rank": 4,
+                  "reference": "/spell/voice-on-the-breeze-rage-of-elements",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Air Bubble",
+                  "rank": 1,
+                  "reference": "/spell/air-bubble-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 40,
+          "spellAttack": 32
+        }
+      ],
+      "rituals": {
+        "type": "Rituals",
+        "ritualGroups": [
+          {
+            "label": "8th",
+            "rituals": [
+              {
+                "name": "Control Weather",
+                "rank": 8,
+                "reference": "/ritual/control-weather-player-core"
+              }
+            ]
+          },
+          {
+            "label": "6th",
+            "rituals": [
+              {
+                "name": "Sky Signs",
+                "rank": 6,
+                "reference": "/ritual/sky-signs-rage-of-elements"
+              }
+            ]
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13333,6 +15336,95 @@
         {
           "label": "metal",
           "slug": "metal"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Interplanar Teleport",
+                  "rank": 7,
+                  "reference": "/spell/interplanar-teleport-player-core",
+                  "details": "at will; To Astral Plane, Elemental Planes, or Universe only"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Clad In Metal",
+                  "rank": 5,
+                  "reference": "/spell/clad-in-metal-rage-of-elements",
+                  "details": "Can Choose Uncommon Metals"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Mercurial Stride",
+                  "rank": 4,
+                  "reference": "/spell/mercurial-stride-rage-of-elements"
+                },
+                {
+                  "name": "Weapon Storm",
+                  "rank": 4,
+                  "reference": "/spell/weapon-storm-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Invisibility",
+                  "rank": 2,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "×2"
+                },
+                {
+                  "name": "Magnetic Attraction",
+                  "rank": 2,
+                  "reference": "/spell/magnetic-attraction-rage-of-elements",
+                  "details": "at will"
+                },
+                {
+                  "name": "Magnetic Repulsion",
+                  "rank": 2,
+                  "reference": "/spell/magnetic-repulsion-rage-of-elements",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (4th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 4,
+                  "reference": "/spell/detect-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 26,
+          "spellAttack": 18
         }
       ]
     },
@@ -13530,6 +15622,100 @@
         {
           "label": "genie",
           "slug": "genie"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Interplanar Teleport",
+                  "rank": 7,
+                  "reference": "/spell/interplanar-teleport-player-core",
+                  "details": "at will; To Astral Plane, Elemental Planes, or Universe only"
+                },
+                {
+                  "name": "Weapon Storm",
+                  "rank": 7,
+                  "reference": "/spell/weapon-storm-player-core"
+                },
+                {
+                  "name": "Enthrall",
+                  "rank": 7,
+                  "reference": "/spell/enthrall-player-core"
+                },
+                {
+                  "name": "Clad In Metal",
+                  "rank": 7,
+                  "reference": "/spell/clad-in-metal-rage-of-elements",
+                  "details": "Can Choose Uncommon and Rare Metals"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Wall of Metal",
+                  "rank": 6,
+                  "reference": "/spell/wall-of-metal-rage-of-elements"
+                },
+                {
+                  "name": "Mercurial Stride",
+                  "rank": 6,
+                  "reference": "/spell/mercurial-stride-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Magnetic Acceleration",
+                  "rank": 5,
+                  "reference": "/spell/magnetic-acceleration-rage-of-elements",
+                  "details": "at will"
+                },
+                {
+                  "name": "Invisibility",
+                  "rank": 5,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "×2"
+                },
+                {
+                  "name": "Magnetic Attraction",
+                  "rank": 5,
+                  "reference": "/spell/magnetic-attraction-rage-of-elements",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (7th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 7,
+                  "reference": "/spell/detect-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 32,
+          "spellAttack": 24
         }
       ]
     },

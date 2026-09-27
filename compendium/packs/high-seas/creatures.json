@@ -635,11 +635,6 @@
             "text": "**Two Actions** **Requirements** A creature within 25 feet is holding the dedalon’s coveted item (see above); **Effect** The dedalon’s body momentarily elongates, their arm snaking unnaturally toward the target. The dedalon makes a flogging arm Strike against the required creature. On a success, they can attempt to Disarm their coveted item from the required creature (increasing the degree of success by one if the Strike was a critical success). The Disarm attempt neither applies nor counts toward the dedalon’s multiple attack penalty.",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Repulsion, Translocate, Truesight, Truespeech, Vampiric Exsanguination",
-            "traits": []
           }
         ]
       },
@@ -668,7 +663,84 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Translocate",
+                  "rank": 4,
+                  "reference": "/spell/translocate-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Repulsion",
+                  "rank": 6,
+                  "reference": "/spell/repulsion-player-core",
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Vampiric Exsanguination",
+                  "rank": 7,
+                  "reference": "/spell/vampiric-exsanguination-player-core",
+                  "details": "×2"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (6th)",
+              "spells": [
+                {
+                  "name": "Truesight",
+                  "rank": 6,
+                  "reference": "/spell/truesight-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 30
+        }
+      ],
+      "rituals": {
+        "type": "Rituals",
+        "ritualGroups": [
+          {
+            "label": "1st",
+            "rituals": [
+              {
+                "name": "Demonic Pact",
+                "rank": 1,
+                "reference": "/ritual/demonic-pact-monster-core"
+              }
+            ]
+          }
+        ],
+        "dc": 30
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1460,11 +1532,6 @@
             "text": "**Single Action** (Attack) Medium, 2d8+6 bludgeoning, Rupture 20. Due to their fluidity, a pelagiadaemon can use Swallow Whole to absorb a creature they have grabbed or restrained by their tentacle. The pelagiadaemon's stomach is a tumultuous space like a roiling ocean, and creatures take a –2 circumstance penalty to attack rolls while swallowed.\n\n## Pelagic Temptations\n\nSailors have been known to summon pelagiadaemons to ask them for the hidden secrets of the ocean's deepest depths, from sunken ships filled with treasure to the locations of long-lost Azlanti ruins. This comes at a cost, as pelagiadaemons are no fools, carefully weaving in seeds of deception within their truthful responses. Hopeful to encourage rash decisions by stoking greed, pelagiadaemons volunteer the swiftest routes to their desires, just leaving out that it's often the most lethal one.\n\n While savvy sailors take note and parse the answers before acting upon the daemon's advice, others are wooed by their urgencies, failing to heed the legends of countless tragedies from before their time. As for the pelagiadaemons, so what if some treasure escapes every now and then? These are acceptable sacrifices in exchange for the numbers of sailors who have succumbed to watery graves in the ocean's depths.",
             "traits": [],
             "actions": "one"
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Aqueous Orb, Control Water, Crashing Wave, Grasp of the Deep, Hungry Depths",
-            "traits": []
           }
         ]
       },
@@ -1492,6 +1559,62 @@
         {
           "label": "unholy",
           "slug": "unholy"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Aqueous Orb",
+                  "rank": 3,
+                  "reference": "/spell/aqueous-orb-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Crashing Wave",
+                  "rank": 3,
+                  "reference": "/spell/crashing-wave-player-core-2",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Control Water",
+                  "rank": 5,
+                  "reference": "/spell/control-water-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Grasp of the Deep",
+                  "rank": 6,
+                  "reference": "/spell/grasp-of-the-deep-rage-of-elements"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Hungry Depths",
+                  "rank": 7,
+                  "reference": "/spell/hungry-depths-rage-of-elements"
+                }
+              ]
+            }
+          ],
+          "spellDC": 28
         }
       ]
     },
@@ -1647,11 +1770,6 @@
             "text": "**Two Actions** (Auditory, Incapacitation, Mental, Occult, Sonic) **Effect** The scylla lets out an ear-piercing screech in a 30-foot emanation, dealing 4d10 mental damage and 4d10 sonic damage. Each creature in the area must attempt a DC 36 Will save. The scylla can't use Tortured Screech again for 1d4 rounds.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is stunned 2.\n\n**Critical Failure** The creature double damage and is stunned 3.\n\n## Fortunate Flora And Fauna\n\nContrary to what many assume, a devastation or lack of sea life isn't a sign of nearby scyllas. In fact, it's often a sign of the opposite. Once found, scyllas are significant deterrents to most sailors and seafarers who have heard even a rumor of their presence. This lack of intrusion allows sea life in these parts of the ocean to flourish. Reefs, fish, coral, and many other marine flora and fauna will seek out the locations of scyllas to establish their safe homes. The more biodiversity in a location, the more likely to find a scylla, or even larger groups of scyllas, within their depths.",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Control Water, Dominate, Illusory Object, Illusory Scene, Mist, See the Unseen, Slither, Truespeech, Veil of Privacy",
-            "traits": []
           }
         ]
       },
@@ -1672,7 +1790,124 @@
           "label": "amphibious",
           "slug": "amphibious"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Occult Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Illusory Object",
+                  "rank": 2,
+                  "reference": "/spell/illusory-object-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Mist",
+                  "rank": 2,
+                  "reference": "/spell/mist-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Control Water",
+                  "rank": 5,
+                  "reference": "/spell/control-water-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Illusory Scene",
+                  "rank": 6,
+                  "reference": "/spell/illusory-scene-player-core",
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 7,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            },
+            {
+              "label": "8th",
+              "spells": [
+                {
+                  "name": "Dominate",
+                  "rank": 8,
+                  "reference": "/spell/dominate-player-core",
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "9th",
+              "spells": [
+                {
+                  "name": "Slither",
+                  "rank": 9,
+                  "reference": "/spell/slither-player-core",
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "Constant (2nd)",
+              "spells": [
+                {
+                  "name": "See the Unseen",
+                  "rank": 2,
+                  "reference": "/spell/see-the-unseen-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (3rd)",
+              "spells": [
+                {
+                  "name": "Veil of Privacy",
+                  "rank": 3,
+                  "reference": "/spell/veil-of-privacy-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 36,
+          "spellAttack": 28
+        }
+      ],
+      "rituals": {
+        "type": "Occult Rituals",
+        "ritualGroups": [
+          {
+            "label": "8th",
+            "rituals": [
+              {
+                "name": "Control Weather",
+                "rank": 8,
+                "reference": "/ritual/control-weather-player-core",
+                "details": "doesn’t require a secondary caster"
+              }
+            ]
+          }
+        ],
+        "dc": 36
+      }
     },
     "attributes": {
       "remaster": true,

@@ -697,11 +697,6 @@
             "name": "Phantom Flames",
             "text": "The aso berang's flames are as much spectral as physical. Whenever an aso berang deals fire damage, they can have that damage be spirit damage instead. The aso berang's flames never burn plants or objects unless the aso berang wishes it.\n\n## Enimty of Witches\n\nThe first aso berang and ancestor of all aso berangs, Ganas Buti Rajah, faced the witch armies of Rani Randa, the Queen of Witches and Tanggal. Now, Ganas Buti Rajah’s descendants uphold the tradition of stewardship: protecting the forests and cleansing the lands of magic they judge evil.",
             "traits": []
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Cleanse Affliction, Nature's Pathway, Share Life",
-            "traits": []
           }
         ]
       },
@@ -717,6 +712,45 @@
         {
           "label": "spirit",
           "slug": "spirit"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Share Life",
+                  "rank": 2,
+                  "reference": "/spell/share-life-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Cleanse Affliction",
+                  "rank": 4,
+                  "reference": "/spell/cleanse-affliction-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Nature's Pathway",
+                  "rank": 5,
+                  "reference": "/spell/nature-s-pathway-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 32
         }
       ]
     },
@@ -1575,11 +1609,6 @@
             "text": "**Single Action** (Mental, Visual) **Requirements** The ijhyeojin's previous action was a successful claw Strike against the target; **Effect** The ijhyeojin copies the countenance of the target, imprinting it perfectly onto their own blank face. While only their face changes, creatures must Seek them and succeed at a DC 34 Will save to distinguish them visually from the original creature. The sakhil keeps the same visage for 24 hours or until they steal another.\n\n## Fatal Feud\n\nIjhyeojins regard all joseung sajas as brainwashed servants of the Boneyard who need to be “awakened” from their sense of duty through fear. Despite their perception of themselves as liberators, ijhyeojins delight in watching a joseung saja unravel completely as they become consumed and reborn as faceless sakhils by their own fear.",
             "traits": [],
             "actions": "one"
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Invisibility, Rewrite Memory, Truespeech",
-            "traits": []
           }
         ]
       },
@@ -1603,6 +1632,46 @@
         {
           "label": "unholy",
           "slug": "unholy"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Invisibility",
+                  "rank": 2,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "at will; self only"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Rewrite Memory",
+                  "rank": 4,
+                  "reference": "/spell/rewrite-memory-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 34
         }
       ]
     },
@@ -1758,11 +1827,6 @@
             "name": "Storm Veil",
             "text": "The imugi twists any nearby precipitation into a swirling veil of sleet and wind. They gain concealment when in any form of mist or rain.\n\n## Imperial Ascension\n\nThe ritual an imugi undergoes to become a true dragon releases a burst of overwhelming magic. Characters exposed to this burst might find their minds filled with lost techniques or abilities that the imugi has encountered over its long life, allowing them to gain access to uncommon or rare character options, suddenly understand formulas to craft items, or immediately retrain along a new path.",
             "traits": []
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Detect Magic, Fly, Water Breathing",
-            "traits": []
           }
         ]
       },
@@ -1786,6 +1850,39 @@
         {
           "label": "water",
           "slug": "water"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "Cantrips (4th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 4,
+                  "reference": "/spell/detect-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Fly",
+                  "rank": 4,
+                  "reference": "/spell/fly-player-core"
+                },
+                {
+                  "name": "Water Breathing",
+                  "rank": 4,
+                  "reference": "/spell/water-breathing-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 25
         }
       ]
     },
@@ -2200,11 +2297,6 @@
             "name": "Spirit Touch",
             "text": "A joseung saja's Strikes all have the effects of a ghost touch property rune and deal an extra 3d6 void damage to living creatures and 3d6 vitality damage to undead.\n\n## Death-Long Career\n\nEven after atoning for their sins and regaining their memories, some souls choose to retain their titles as joseung sajas. These experienced reapers hunt ijhyeojin, former joseung sajas who have abandoned their posts. To joseung sajas, an ijhyeojin is no more than just another soul overstaying its welcome in the world of the living.",
             "traits": []
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Invisibility, Talking Corpse, Translocate, Truespeech",
-            "traits": []
           }
         ]
       },
@@ -2224,6 +2316,55 @@
         {
           "label": "psychopomp",
           "slug": "psychopomp"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Invisibility",
+                  "rank": 2,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "at will; self only"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Talking Corpse",
+                  "rank": 4,
+                  "reference": "/spell/talking-corpse-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Translocate",
+                  "rank": 5,
+                  "reference": "/spell/translocate-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 34
         }
       ]
     },
@@ -2362,11 +2503,6 @@
             "text": "**Single Action** (Attack) Huge, 3d12+7 bludgeoning, Rupture 30\n\n## Change of Heart\n\nIn extremely rare circumstances and for their own mysterious reasons, a kun might sacrifice some of their power to undergo a permanent, onetime transformation. In a final dramatic act, the kun flings themself up and out of the ocean, allowing the sun to fully wash over them. In the process, the kun transforms from a hateful fish into a noble and curious bird called a peng",
             "traits": [],
             "actions": "one"
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Control Water, Darkness, Wall of Ice",
-            "traits": []
           }
         ]
       },
@@ -2394,6 +2530,41 @@
         {
           "label": "unholy",
           "slug": "unholy"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Control Water",
+                  "rank": 5,
+                  "reference": "/spell/control-water-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Darkness",
+                  "rank": 7,
+                  "reference": "/spell/darkness-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Wall of Ice",
+                  "rank": 7,
+                  "reference": "/spell/wall-of-ice-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 32
         }
       ]
     },
@@ -2517,11 +2688,6 @@
             "name": "Separated Body",
             "text": "A manananggal typically resembles a living humanoid. They don't appear as an aberration at first glance and receive a +4 status bonus to their Deception DC when Impersonating a humanoid. At any time, but especially at night, a manananggal can, as a 3-action activity with the [manipulate](/trait/manipulate) trait, rip their upper torso from their bottom half, leaving the lower torso limp and helpless but allowing the upper torso to fly free. A manananggal can separate their body at any time, but they risk further damage if they do so during the day. The manananggal's upper and lower halves share the same pool of HP. If its lower half is damaged, the manananggal is immediately aware of the attack. Each minute a manananggal remains separated after sunrise and before sunset, it takes 2d6 points of damage until it reattaches its upper and lower torsos or is destroyed, whichever comes first.\n\n## Grim Blades\n\nMinatan folktales have it that a forgotten demigod created the first manananggals by bisecting the torso of a human with a divine knife. The demigod then cut into the human's shoulders and drove a pair of bat wings into their back, birthing the first manananggal. The divine power of the demigod's knife still resonates in every manananggal and makes each of the aberrations susceptible to cuts from similar weapons. Communities dealing with a manananggal's terror train with light blades and other slashing weapons to cut the monsters from the sky.",
             "traits": []
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Darkness, Enfeeble, Fear, Light, Sleep",
-            "traits": []
           }
         ]
       },
@@ -2541,6 +2707,66 @@
         {
           "label": "tanggal",
           "slug": "tanggal"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Occult Innate Spells",
+          "spellGroups": [
+            {
+              "label": "Cantrips (4th)",
+              "spells": [
+                {
+                  "name": "Light",
+                  "rank": 4,
+                  "reference": "/spell/light-player-core"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Enfeeble",
+                  "rank": 1,
+                  "reference": "/spell/enfeeble-player-core",
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Darkness",
+                  "rank": 2,
+                  "reference": "/spell/darkness-player-core",
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Fear",
+                  "rank": 3,
+                  "reference": "/spell/fear-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Sleep",
+                  "rank": 4,
+                  "reference": "/spell/sleep-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 26
         }
       ]
     },
@@ -2975,11 +3201,6 @@
             "name": "Windslice",
             "text": "Pengs can move in any wind with easy grace. A peng ignores difficult terrain caused by wind and doesn't need to Maneuver in Flight in high winds.\n\n## Clear Direction\n\nMost pengs on Golarion are seen in the skies of southern Tian Xia. Pengs hardly ever roost or even stop to rest, and they're almost always spotted heading in a southerly trajectory. According to pengs themselves, they have no destination: they're headed south, and even they don't know why. Some whimsical pengs claim that they're in pursuit of a dream they once had in a life they lived long before this one.",
             "traits": []
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Gust of Wind, Howling Blizzard, Wall of Wind",
-            "traits": []
           }
         ]
       },
@@ -3007,6 +3228,46 @@
         {
           "label": "holy",
           "slug": "holy"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Gust of Wind",
+                  "rank": 1,
+                  "reference": "/spell/gust-of-wind-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Wall of Wind",
+                  "rank": 3,
+                  "reference": "/spell/wall-of-wind-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Howling Blizzard",
+                  "rank": 5,
+                  "reference": "/spell/howling-blizzard-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 32
         }
       ]
     },
@@ -3147,11 +3408,6 @@
             "text": "**Three Actions** Medium or smaller, claw, DC 26\n\n## Pixiu Dimorphism\n\nMale and female pixius have notable differences (though, just like natural animals, individuals with the traits of both exist). Males have a golden coat and mane, while females have a blue overcoat. While most pixius have one horn, females with two horns aren't uncommon; curiously, no male pixius with two horns have ever been documented.",
             "traits": [],
             "actions": "three"
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Cleanse Affliction",
-            "traits": []
           }
         ]
       },
@@ -3167,6 +3423,25 @@
         {
           "label": "dragon",
           "slug": "dragon"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Cleanse Affliction",
+                  "rank": 4,
+                  "reference": "/spell/cleanse-affliction-player-core",
+                  "details": "×3"
+                }
+              ]
+            }
+          ],
+          "spellDC": 26
         }
       ]
     },

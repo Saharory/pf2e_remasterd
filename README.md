@@ -68,6 +68,10 @@ compendium entry when the short table reference is not enough.
   cover travel, gems and art objects, crafting and other inspiration prompts,
   ability and spell results, creature effects, and magic items. Their dice
   formulae and result ranges drive Encounter+'s built-in **Roll** button.
+- Complete source-derived spellcasting for 685 creatures, including prepared,
+  spontaneous, innate, and focus spell groups plus rituals. Available records
+  open directly from the creature sheet, and supported fixed-area spells retain
+  their Encounter+ map-template load action.
 - A bookmarkable PF2E Operations Center with compact navigation, quick
   references, an A–Z index, task-oriented GM guidance, and narrow-panel
   selectors for level-based DCs, creature-building benchmarks, treasure, and

@@ -1429,11 +1429,6 @@
             "name": "Rebuking Strike",
             "text": "**Single Action to Three Actions** **Frequency** once per round; **Effect** The regiment strikes with their longswords against enemies in a 5-foot emanation (DC 26 basic Reflex save). Damage dealt depends on the number of actions. If a creature critically fails the Reflex save while affected by the regiment's Denounce Divinity, it is unable to reduce its stupefied or [frightened](/condition/frightened-player-core) condition by any means for 1 round.\n**Single Action** 1d8+2 slashing damage\n **Two Actions** 2d8+11 slashing damage\n **Three Actions** 3d8+13 slashing damage.",
             "traits": []
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Detect Magic, Ring of Truth",
-            "traits": []
           }
         ]
       },
@@ -1457,6 +1452,35 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Occult Innate Spells",
+          "spellGroups": [
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Ring of Truth",
+                  "rank": 3,
+                  "reference": "/spell/ring-of-truth-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 5,
+                  "reference": "/spell/detect-magic-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 26
         }
       ]
     },
@@ -1586,11 +1610,6 @@
             "name": "Storm of Agony",
             "text": "**Single Action to Three Actions** (Divine, unholy) **Frequency** once per round; **Effect** The scourge lashes with barbed chains against enemies in a 10-foot emanation (DC 33 basic Reflex save). The damage depends on the number of actions. A creature that critically fails is also knocked prone.\n**Single Action** 1d8 piercing plus 1d6 spirit and 1d4 persistent bleed\n[two-actions] 3d8+6 piercing plus 1d6 spirit and 1d6 persistent bleed\n[three-actions] 4d8+9 piercing plus 1d6 spirit and 1d8 persistent bleed",
             "traits": []
-          },
-          {
-            "name": "Spellcasting",
-            "text": "Chilling Darkness, Fear",
-            "traits": []
           }
         ]
       },
@@ -1618,6 +1637,36 @@
         {
           "label": "velstrac",
           "slug": "velstrac"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Fear",
+                  "rank": 3,
+                  "reference": "/spell/fear-player-core",
+                  "details": "×2"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Chilling Darkness",
+                  "rank": 5,
+                  "reference": "/spell/chilling-darkness-player-core",
+                  "details": "×2"
+                }
+              ]
+            }
+          ],
+          "spellDC": 35
         }
       ]
     },

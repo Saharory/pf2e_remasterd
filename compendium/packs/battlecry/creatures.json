@@ -147,7 +147,135 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Zealous Conviction",
+                  "rank": 6,
+                  "reference": "/spell/zealous-conviction-player-core"
+                },
+                {
+                  "name": "Clear Mind",
+                  "rank": 6,
+                  "reference": "/spell/clear-mind-player-core"
+                },
+                {
+                  "name": "Noise Blast",
+                  "rank": 6,
+                  "reference": "/spell/noise-blast-player-core"
+                },
+                {
+                  "name": "Heal",
+                  "rank": 6,
+                  "reference": "/spell/heal-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Breath of Life",
+                  "rank": 5,
+                  "reference": "/spell/breath-of-life-player-core"
+                },
+                {
+                  "name": "Noise Blast",
+                  "rank": 5,
+                  "reference": "/spell/noise-blast-player-core"
+                },
+                {
+                  "name": "Heal",
+                  "rank": 5,
+                  "reference": "/spell/heal-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Cleanse Affliction",
+                  "rank": 4,
+                  "reference": "/spell/cleanse-affliction-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Clear Mind",
+                  "rank": 4,
+                  "reference": "/spell/clear-mind-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Noise Blast",
+                  "rank": 4,
+                  "reference": "/spell/noise-blast-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Counter Performance",
+                  "rank": 3,
+                  "reference": "/spell/counter-performance-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (6th)",
+              "spells": [
+                {
+                  "name": "Courageous Anthem",
+                  "rank": 6,
+                  "reference": "/spell/courageous-anthem-player-core"
+                },
+                {
+                  "name": "Uplifting Overture",
+                  "rank": 6,
+                  "reference": "/spell/uplifting-overture-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 19,
+          "spellAttack": 24
+        }
+      ],
+      "rituals": {
+        "type": "Rituals",
+        "ritualGroups": [
+          {
+            "label": "1st",
+            "rituals": [
+              {
+                "name": "Angelic Messenger",
+                "rank": 1,
+                "reference": "/ritual/angelic-messenger-monster-core"
+              }
+            ]
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -422,6 +550,100 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Prepared Spells",
+          "spellGroups": [
+            {
+              "label": "3rd (2 slots)",
+              "spells": [
+                {
+                  "name": "Fireball",
+                  "rank": 3,
+                  "reference": "/spell/fireball-player-core"
+                },
+                {
+                  "name": "Wall of Wind",
+                  "rank": 3,
+                  "reference": "/spell/wall-of-wind-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd (3 slots)",
+              "spells": [
+                {
+                  "name": "Blazing Bolt",
+                  "rank": 2,
+                  "reference": "/spell/blazing-bolt-player-core"
+                },
+                {
+                  "name": "Entangling Flora",
+                  "rank": 2,
+                  "reference": "/spell/entangling-flora-player-core"
+                },
+                {
+                  "name": "Laughing Fit",
+                  "rank": 2,
+                  "reference": "/spell/laughing-fit-player-core"
+                }
+              ]
+            },
+            {
+              "label": "1st (3 slots)",
+              "spells": [
+                {
+                  "name": "Dizzying Colors",
+                  "rank": 1,
+                  "reference": "/spell/dizzying-colors-player-core"
+                },
+                {
+                  "name": "Hydraulic Push",
+                  "rank": 1,
+                  "reference": "/spell/hydraulic-push-player-core"
+                },
+                {
+                  "name": "Sleep",
+                  "rank": 1,
+                  "reference": "/spell/sleep-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (3rd)",
+              "spells": [
+                {
+                  "name": "Electric Arc",
+                  "rank": 3,
+                  "reference": "/spell/electric-arc-player-core"
+                },
+                {
+                  "name": "Ignition",
+                  "rank": 3,
+                  "reference": "/spell/ignition-player-core"
+                },
+                {
+                  "name": "Light",
+                  "rank": 3,
+                  "reference": "/spell/light-player-core"
+                },
+                {
+                  "name": "Prestidigitation",
+                  "rank": 3,
+                  "reference": "/spell/prestidigitation-player-core"
+                },
+                {
+                  "name": "Telekinetic Projectile",
+                  "rank": 3,
+                  "reference": "/spell/telekinetic-projectile-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 22,
+          "spellAttack": 15
         }
       ]
     },
@@ -879,6 +1101,51 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Share Life",
+                  "rank": 2,
+                  "reference": "/spell/share-life-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (8th)",
+              "spells": [
+                {
+                  "name": "Divine Lance",
+                  "rank": 8,
+                  "reference": "/spell/divine-lance-player-core"
+                },
+                {
+                  "name": "Message",
+                  "rank": 8,
+                  "reference": "/spell/message-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Constant (5th)",
+              "spells": [
+                {
+                  "name": "Truespeech",
+                  "rank": 5,
+                  "reference": "/spell/truespeech-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 34,
+          "spellAttack": 26
         }
       ]
     },
@@ -2396,6 +2663,105 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Prepared Spells",
+          "spellGroups": [
+            {
+              "label": "6th (3 slots)",
+              "spells": [
+                {
+                  "name": "Chain Lightning",
+                  "rank": 6,
+                  "reference": "/spell/chain-lightning-player-core"
+                },
+                {
+                  "name": "Howling Blizzard",
+                  "rank": 6,
+                  "reference": "/spell/howling-blizzard-player-core"
+                },
+                {
+                  "name": "Tangling Creepers",
+                  "rank": 6,
+                  "reference": "/spell/tangling-creepers-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th (3 slots)",
+              "spells": [
+                {
+                  "name": "Control Water",
+                  "rank": 5,
+                  "reference": "/spell/control-water-player-core"
+                },
+                {
+                  "name": "Howling Blizzard",
+                  "rank": 5,
+                  "reference": "/spell/howling-blizzard-player-core"
+                },
+                {
+                  "name": "Toxic Cloud",
+                  "rank": 5,
+                  "reference": "/spell/toxic-cloud-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th (3 slots)",
+              "spells": [
+                {
+                  "name": "Hydraulic Torrent",
+                  "rank": 4,
+                  "reference": "/spell/hydraulic-torrent-player-core"
+                },
+                {
+                  "name": "Lightning Bolt",
+                  "rank": 4,
+                  "reference": "/spell/lightning-bolt-player-core"
+                },
+                {
+                  "name": "Speak with Plants",
+                  "rank": 4,
+                  "reference": "/spell/speak-with-plants-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (6th)",
+              "spells": [
+                {
+                  "name": "Caustic Blast",
+                  "rank": 6,
+                  "reference": "/spell/caustic-blast-player-core"
+                },
+                {
+                  "name": "Frostbite",
+                  "rank": 6,
+                  "reference": "/spell/frostbite-player-core"
+                },
+                {
+                  "name": "Know the Way",
+                  "rank": 6,
+                  "reference": "/spell/know-the-way-player-core"
+                },
+                {
+                  "name": "Stabilize",
+                  "rank": 6,
+                  "reference": "/spell/stabilize-player-core"
+                },
+                {
+                  "name": "Tangle Vine",
+                  "rank": 6,
+                  "reference": "/spell/tangle-vine-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 32,
+          "spellAttack": 26
+        }
       ]
     },
     "attributes": {
@@ -3686,6 +4052,70 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Occult Spontaneous Spells",
+          "spellGroups": [
+            {
+              "label": "4th (2 slots)",
+              "spells": [
+                {
+                  "name": "Confusion",
+                  "rank": 4,
+                  "reference": "/spell/confusion-player-core"
+                },
+                {
+                  "name": "Force Barrage",
+                  "rank": 4,
+                  "reference": "/spell/force-barrage-player-core"
+                }
+              ]
+            },
+            {
+              "label": "3rd (3 slots)",
+              "spells": [
+                {
+                  "name": "Paralyze",
+                  "rank": 3,
+                  "reference": "/spell/paralyze-player-core"
+                },
+                {
+                  "name": "Slow",
+                  "rank": 3,
+                  "reference": "/spell/slow-player-core"
+                },
+                {
+                  "name": "Force Barrage",
+                  "rank": 3,
+                  "reference": "/spell/force-barrage-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (4th)",
+              "spells": [
+                {
+                  "name": "Daze",
+                  "rank": 4,
+                  "reference": "/spell/daze-player-core"
+                },
+                {
+                  "name": "Figment",
+                  "rank": 4,
+                  "reference": "/spell/figment-player-core"
+                },
+                {
+                  "name": "Telekinetic Projectile",
+                  "rank": 4,
+                  "reference": "/spell/telekinetic-projectile-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 23,
+          "spellAttack": 20
+        }
       ]
     },
     "attributes": {
@@ -4322,6 +4752,36 @@
           "label": "unholy",
           "slug": "unholy"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "7th",
+              "spells": [
+                {
+                  "name": "Dispel Magic",
+                  "rank": 7,
+                  "reference": "/spell/dispel-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Translocate",
+                  "rank": 5,
+                  "reference": "/spell/translocate-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 34,
+          "spellAttack": 0
+        }
       ]
     },
     "attributes": {
@@ -4498,6 +4958,265 @@
           "label": "unholy",
           "slug": "unholy"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Prepared Spells",
+          "spellGroups": [
+            {
+              "label": "9th (3 slots)",
+              "spells": [
+                {
+                  "name": "Falling Stars",
+                  "rank": 9,
+                  "reference": "/spell/falling-stars-player-core"
+                },
+                {
+                  "name": "Massacre",
+                  "rank": 9,
+                  "reference": "/spell/massacre-player-core"
+                },
+                {
+                  "name": "Phantasmagoria",
+                  "rank": 9,
+                  "reference": "/spell/phantasmagoria-player-core"
+                }
+              ]
+            },
+            {
+              "label": "8th (4 slots)",
+              "spells": [
+                {
+                  "name": "Arctic Rift",
+                  "rank": 8,
+                  "reference": "/spell/arctic-rift-player-core"
+                },
+                {
+                  "name": "Arctic Rift",
+                  "rank": 8,
+                  "reference": "/spell/arctic-rift-player-core"
+                },
+                {
+                  "name": "Desiccate",
+                  "rank": 8,
+                  "reference": "/spell/desiccate-player-core"
+                },
+                {
+                  "name": "Earthquake",
+                  "rank": 8,
+                  "reference": "/spell/earthquake-player-core"
+                }
+              ]
+            },
+            {
+              "label": "7th (4 slots)",
+              "spells": [
+                {
+                  "name": "Eclipse Burst",
+                  "rank": 7,
+                  "reference": "/spell/eclipse-burst-player-core"
+                },
+                {
+                  "name": "Eclipse Burst",
+                  "rank": 7,
+                  "reference": "/spell/eclipse-burst-player-core"
+                },
+                {
+                  "name": "Vampiric Exsanguination",
+                  "rank": 7,
+                  "reference": "/spell/vampiric-exsanguination-player-core"
+                },
+                {
+                  "name": "Warp Mind",
+                  "rank": 7,
+                  "reference": "/spell/warp-mind-player-core"
+                }
+              ]
+            },
+            {
+              "label": "6th (4 slots)",
+              "spells": [
+                {
+                  "name": "Chain Lightning",
+                  "rank": 6,
+                  "reference": "/spell/chain-lightning-player-core"
+                },
+                {
+                  "name": "Chain Lightning",
+                  "rank": 6,
+                  "reference": "/spell/chain-lightning-player-core"
+                },
+                {
+                  "name": "Never Mind",
+                  "rank": 6,
+                  "reference": "/spell/never-mind-player-core"
+                },
+                {
+                  "name": "Vampiric Exsanguination",
+                  "rank": 6,
+                  "reference": "/spell/vampiric-exsanguination-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th (4 slots)",
+              "spells": [
+                {
+                  "name": "Howling Blizzard",
+                  "rank": 5,
+                  "reference": "/spell/howling-blizzard-player-core"
+                },
+                {
+                  "name": "Howling Blizzard",
+                  "rank": 5,
+                  "reference": "/spell/howling-blizzard-player-core"
+                },
+                {
+                  "name": "Toxic Cloud",
+                  "rank": 5,
+                  "reference": "/spell/toxic-cloud-player-core"
+                },
+                {
+                  "name": "Wall of Ice",
+                  "rank": 5,
+                  "reference": "/spell/wall-of-ice-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th (4 slots)",
+              "spells": [
+                {
+                  "name": "Dispel Magic",
+                  "rank": 4,
+                  "reference": "/spell/dispel-magic-player-core"
+                },
+                {
+                  "name": "Fire Shield",
+                  "rank": 4,
+                  "reference": "/spell/fire-shield-player-core"
+                },
+                {
+                  "name": "Fly",
+                  "rank": 4,
+                  "reference": "/spell/fly-player-core"
+                },
+                {
+                  "name": "Translocate",
+                  "rank": 4,
+                  "reference": "/spell/translocate-player-core"
+                }
+              ]
+            },
+            {
+              "label": "3rd (4 slots)",
+              "spells": [
+                {
+                  "name": "Blindness",
+                  "rank": 3,
+                  "reference": "/spell/blindness-player-core"
+                },
+                {
+                  "name": "Force Barrage",
+                  "rank": 3,
+                  "reference": "/spell/force-barrage-player-core"
+                },
+                {
+                  "name": "Locate",
+                  "rank": 3,
+                  "reference": "/spell/locate-player-core"
+                },
+                {
+                  "name": "Vampiric Feast",
+                  "rank": 3,
+                  "reference": "/spell/vampiric-feast-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd (4 slots)",
+              "spells": [
+                {
+                  "name": "Blur",
+                  "rank": 2,
+                  "reference": "/spell/blur-player-core"
+                },
+                {
+                  "name": "False Vitality",
+                  "rank": 2,
+                  "reference": "/spell/false-vitality-player-core"
+                },
+                {
+                  "name": "Resist Energy",
+                  "rank": 2,
+                  "reference": "/spell/resist-energy-player-core"
+                },
+                {
+                  "name": "See the Unseen",
+                  "rank": 2,
+                  "reference": "/spell/see-the-unseen-player-core"
+                }
+              ]
+            },
+            {
+              "label": "1st (4 slots)",
+              "spells": [
+                {
+                  "name": "Enfeeble",
+                  "rank": 1,
+                  "reference": "/spell/enfeeble-player-core"
+                },
+                {
+                  "name": "Enfeeble",
+                  "rank": 1,
+                  "reference": "/spell/enfeeble-player-core"
+                },
+                {
+                  "name": "Fleet Step",
+                  "rank": 1,
+                  "reference": "/spell/fleet-step-player-core"
+                },
+                {
+                  "name": "Grim Tendrils",
+                  "rank": 1,
+                  "reference": "/spell/grim-tendrils-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (9th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 9,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Frostbite",
+                  "rank": 9,
+                  "reference": "/spell/frostbite-player-core"
+                },
+                {
+                  "name": "Message",
+                  "rank": 9,
+                  "reference": "/spell/message-player-core"
+                },
+                {
+                  "name": "Shield",
+                  "rank": 9,
+                  "reference": "/spell/shield-player-core"
+                },
+                {
+                  "name": "Telekinetic Hand",
+                  "rank": 9,
+                  "reference": "/spell/telekinetic-hand-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 40,
+          "spellAttack": 35
+        }
       ]
     },
     "attributes": {
@@ -4650,6 +5369,46 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Speak with Animals",
+                  "rank": 2,
+                  "reference": "/spell/speak-with-animals-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Vanishing Tracks",
+                  "rank": 1,
+                  "reference": "/spell/vanishing-tracks-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (2nd)",
+              "spells": [
+                {
+                  "name": "Prestidigitation",
+                  "rank": 2,
+                  "reference": "/spell/prestidigitation-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 18,
+          "spellAttack": 0
         }
       ]
     },
@@ -5129,7 +5888,63 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "8th",
+              "spells": [
+                {
+                  "name": "Toxic Cloud",
+                  "rank": 8,
+                  "reference": "/spell/toxic-cloud-player-core"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Control Water",
+                  "rank": 5,
+                  "reference": "/spell/control-water-player-core"
+                },
+                {
+                  "name": "Translocate",
+                  "rank": 5,
+                  "reference": "/spell/translocate-player-core",
+                  "details": "at will"
+                },
+                {
+                  "name": "Create Water",
+                  "rank": 5,
+                  "reference": "/spell/create-water-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 38,
+          "spellAttack": 0
+        }
+      ],
+      "rituals": {
+        "type": "Rituals",
+        "ritualGroups": [
+          {
+            "label": "1st",
+            "rituals": [
+              {
+                "name": "Demonic Pact",
+                "rank": 1,
+                "reference": "/ritual/demonic-pact-monster-core"
+              }
+            ]
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5459,6 +6274,25 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "Constant (4th)",
+              "spells": [
+                {
+                  "name": "Unfettered Movement",
+                  "rank": 4,
+                  "reference": "/spell/unfettered-movement-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 29,
+          "spellAttack": 0
         }
       ]
     },
@@ -6061,6 +6895,35 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "One with Stone",
+                  "rank": 3,
+                  "reference": "/spell/one-with-stone-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (3rd)",
+              "spells": [
+                {
+                  "name": "Scatter Scree",
+                  "rank": 3,
+                  "reference": "/spell/scatter-scree-player-core-2"
+                }
+              ]
+            }
+          ],
+          "spellDC": 21,
+          "spellAttack": 15
+        }
       ]
     },
     "attributes": {
@@ -6209,6 +7072,30 @@
         {
           "label": "water",
           "slug": "water"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Acid Grip",
+                  "rank": 2,
+                  "reference": "/spell/acid-grip-player-core"
+                },
+                {
+                  "name": "Create Water",
+                  "rank": 2,
+                  "reference": "/spell/create-water-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 21,
+          "spellAttack": 15
         }
       ]
     },
@@ -6362,6 +7249,40 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Fireball",
+                  "rank": 3,
+                  "reference": "/spell/fireball-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (3rd)",
+              "spells": [
+                {
+                  "name": "Daze",
+                  "rank": 3,
+                  "reference": "/spell/daze-player-core"
+                },
+                {
+                  "name": "Ignition",
+                  "rank": 3,
+                  "reference": "/spell/ignition-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 21,
+          "spellAttack": 15
+        }
       ]
     },
     "attributes": {
@@ -6509,6 +7430,35 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Leaden Steps",
+                  "rank": 1,
+                  "reference": "/spell/leaden-steps-player-core-2"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (3rd)",
+              "spells": [
+                {
+                  "name": "Live Wire",
+                  "rank": 3,
+                  "reference": "/spell/live-wire-player-core-2"
+                }
+              ]
+            }
+          ],
+          "spellDC": 21,
+          "spellAttack": 15
+        }
       ]
     },
     "attributes": {
@@ -6654,6 +7604,36 @@
         {
           "label": "wood",
           "slug": "wood"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Oaken Resilience",
+                  "rank": 2,
+                  "reference": "/spell/oaken-resilience-player-core",
+                  "details": "Self Only"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (3rd)",
+              "spells": [
+                {
+                  "name": "Tangle Vine",
+                  "rank": 3,
+                  "reference": "/spell/tangle-vine-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 21,
+          "spellAttack": 15
         }
       ]
     },
@@ -6805,6 +7785,30 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Arcane Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Blur",
+                  "rank": 2,
+                  "reference": "/spell/blur-player-core"
+                },
+                {
+                  "name": "Gust of Wind",
+                  "rank": 2,
+                  "reference": "/spell/gust-of-wind-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 21,
+          "spellAttack": 15
         }
       ]
     },
@@ -7282,6 +8286,64 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "6th",
+              "spells": [
+                {
+                  "name": "Holy Light",
+                  "rank": 6,
+                  "reference": "/spell/holy-light-player-core",
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Translocate",
+                  "rank": 5,
+                  "reference": "/spell/translocate-player-core"
+                },
+                {
+                  "name": "Locate",
+                  "rank": 5,
+                  "reference": "/spell/locate-player-core",
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Translocate",
+                  "rank": 4,
+                  "reference": "/spell/translocate-player-core",
+                  "details": "at will"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Invisibility",
+                  "rank": 2,
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 33,
+          "spellAttack": 26
+        }
       ]
     },
     "attributes": {
@@ -7604,6 +8666,26 @@
         {
           "label": "unholy",
           "slug": "unholy"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Translocate",
+                  "rank": 4,
+                  "reference": "/spell/translocate-player-core",
+                  "details": "at will"
+                }
+              ]
+            }
+          ],
+          "spellDC": 26,
+          "spellAttack": 0
         }
       ]
     },

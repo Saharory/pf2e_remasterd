@@ -1,0 +1,37 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Common.Type",
+          "attribute": "type"
+        },
+        {
+          "title": "Ritual.DC",
+          "type": "number",
+          "attribute": "dc"
+        }
+      ]
+    },
+    {
+      "title": "Creature.Rituals",
+      "type": "list",
+      "attribute": "ritualGroups",
+      "form": {
+        "title": "Creature.Rituals",
+        "partial": "ritual-group"
+      }
+    },
+    {
+      "title": "Common.Description",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "text"
+        }
+      ]
+    }
+  ]
+}

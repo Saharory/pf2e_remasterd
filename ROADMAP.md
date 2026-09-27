@@ -52,15 +52,18 @@ Continue auditing all entity families, not only hazards and vehicles, for:
 Hazard and vehicle sheets received this treatment already; that does not prove
 that every other entity family is complete.
 
-### 3. Creature spell access
+### 3. Creature spell access — complete
 
 Area-template loading now works for safe, fixed spatial spell entries. The
 existing Library search is already a good global spell finder, so do not add a
-duplicate launcher. Creature imports currently omit their embedded spell lists;
-the Goblin War Chanter is the first prototype with structured spell ranks and
-links to seven full spell records. App-test that form and presentation before
-expanding the conversion to every spellcasting creature. Spells without a safe
-fixed area remain normal spell records with no forced template.
+duplicate launcher. Complete source-derived spellcasting is now included for
+685 creatures: 6,145 spell-list entries and 145 rituals preserve their casting
+groups, ranks, slots, DCs, attacks, focus points, at-will/constant notes, and
+uses. All available spells and rituals link to their full library records and
+therefore inherit the existing safe fixed-area load behavior. Six legacy OGL
+names whose records are not distributed in the Remaster system remain visible
+as plain text instead of opening dead links. Spells without a safe fixed area
+remain normal spell records with no forced template.
 
 ### 4. Keep following upstream compatibility work
 

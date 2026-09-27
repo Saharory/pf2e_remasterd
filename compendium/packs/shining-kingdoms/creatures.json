@@ -270,6 +270,36 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Chilling Spray",
+                  "rank": 2,
+                  "reference": "/spell/chilling-spray-player-core-2",
+                  "details": "×3"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (2nd)",
+              "spells": [
+                {
+                  "name": "Frostbite",
+                  "rank": 2,
+                  "reference": "/spell/frostbite-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 17,
+          "spellAttack": 0
+        }
       ]
     },
     "attributes": {
@@ -453,6 +483,90 @@
         {
           "label": "unholy",
           "slug": "unholy"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Divine Innate Spells",
+          "spellGroups": [
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Dull Ambition",
+                  "rank": 4,
+                  "reference": "/spell/dull-ambition-player-core-2"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Crisis of Faith",
+                  "rank": 3,
+                  "reference": "/spell/crisis-of-faith-player-core"
+                },
+                {
+                  "name": "Dispel Magic",
+                  "rank": 3,
+                  "reference": "/spell/dispel-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Dispel Magic",
+                  "rank": 2,
+                  "reference": "/spell/dispel-magic-player-core"
+                },
+                {
+                  "name": "Silence",
+                  "rank": 2,
+                  "reference": "/spell/silence-player-core"
+                }
+              ]
+            },
+            {
+              "label": "1st",
+              "spells": [
+                {
+                  "name": "Command",
+                  "rank": 1,
+                  "reference": "/spell/command-player-core"
+                },
+                {
+                  "name": "Enfeeble",
+                  "rank": 1,
+                  "reference": "/spell/enfeeble-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (4th)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 4,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Divine Lance",
+                  "rank": 4,
+                  "reference": "/spell/divine-lance-player-core"
+                },
+                {
+                  "name": "Sigil",
+                  "rank": 4,
+                  "reference": "/spell/sigil-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 26,
+          "spellAttack": 18
         }
       ]
     },
@@ -802,6 +916,145 @@
           "label": "construct",
           "slug": "construct"
         }
+      ],
+      "spellcasting": [
+        {
+          "name": "Occult Spontaneous Spells",
+          "spellGroups": [
+            {
+              "label": "5th (3 slots)",
+              "spells": [
+                {
+                  "name": "Invoke Spirits",
+                  "rank": 5,
+                  "reference": "/spell/invoke-spirits-player-core"
+                },
+                {
+                  "name": "Shadow Blast",
+                  "rank": 5,
+                  "reference": "/spell/shadow-blast-player-core"
+                },
+                {
+                  "name": "Telekinetic Haul",
+                  "rank": 5,
+                  "reference": "/spell/telekinetic-haul-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th (4 slots)",
+              "spells": [
+                {
+                  "name": "Confusion",
+                  "rank": 4,
+                  "reference": "/spell/confusion-player-core"
+                },
+                {
+                  "name": "Translocate",
+                  "rank": 4,
+                  "reference": "/spell/translocate-player-core"
+                },
+                {
+                  "name": "Vision of Death",
+                  "rank": 4,
+                  "reference": "/spell/vision-of-death-player-core"
+                }
+              ]
+            },
+            {
+              "label": "3rd (4 slots)",
+              "spells": [
+                {
+                  "name": "Locate",
+                  "rank": 3,
+                  "reference": "/spell/locate-player-core"
+                },
+                {
+                  "name": "Paralyze",
+                  "rank": 3,
+                  "reference": "/spell/paralyze-player-core"
+                },
+                {
+                  "name": "Force Barrage",
+                  "rank": 3,
+                  "reference": "/spell/force-barrage-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd (4 slots)",
+              "spells": [
+                {
+                  "name": "Paranoia",
+                  "rank": 2,
+                  "reference": "/spell/paranoia-player-core"
+                },
+                {
+                  "name": "Stupefy",
+                  "rank": 2,
+                  "reference": "/spell/stupefy-player-core"
+                },
+                {
+                  "name": "Telekinetic Maneuver",
+                  "rank": 2,
+                  "reference": "/spell/telekinetic-maneuver-player-core"
+                }
+              ]
+            },
+            {
+              "label": "1st (5 slots)",
+              "spells": [
+                {
+                  "name": "Ill Omen",
+                  "rank": 1,
+                  "reference": "/spell/ill-omen-player-core"
+                },
+                {
+                  "name": "Item Facade",
+                  "rank": 1,
+                  "reference": "/spell/item-facade-player-core"
+                },
+                {
+                  "name": "Phantasmal Minion",
+                  "rank": 1,
+                  "reference": "/spell/phantasmal-minion-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (5th)",
+              "spells": [
+                {
+                  "name": "Daze",
+                  "rank": 5,
+                  "reference": "/spell/daze-player-core"
+                },
+                {
+                  "name": "Figment",
+                  "rank": 5,
+                  "reference": "/spell/figment-player-core"
+                },
+                {
+                  "name": "Shield",
+                  "rank": 5,
+                  "reference": "/spell/shield-player-core"
+                },
+                {
+                  "name": "Telekinetic Hand",
+                  "rank": 5,
+                  "reference": "/spell/telekinetic-hand-player-core"
+                },
+                {
+                  "name": "Telekinetic Projectile",
+                  "rank": 5,
+                  "reference": "/spell/telekinetic-projectile-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 27,
+          "spellAttack": 19
+        }
       ]
     },
     "attributes": {
@@ -1102,6 +1355,75 @@
         {
           "label": "fey",
           "slug": "fey"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Darkness",
+                  "rank": 4,
+                  "reference": "/spell/darkness-player-core"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Blindness",
+                  "rank": 3,
+                  "reference": "/spell/blindness-player-core"
+                },
+                {
+                  "name": "Dispel Magic",
+                  "rank": 3,
+                  "reference": "/spell/dispel-magic-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Floating Flame",
+                  "rank": 2,
+                  "reference": "/spell/floating-flame-player-core"
+                }
+              ]
+            },
+            {
+              "label": "Cantrips (3rd)",
+              "spells": [
+                {
+                  "name": "Detect Magic",
+                  "rank": 3,
+                  "reference": "/spell/detect-magic-player-core"
+                },
+                {
+                  "name": "Ignition",
+                  "rank": 3,
+                  "reference": "/spell/ignition-player-core"
+                },
+                {
+                  "name": "Prestidigitation",
+                  "rank": 3,
+                  "reference": "/spell/prestidigitation-player-core"
+                },
+                {
+                  "name": "Shield",
+                  "rank": 3,
+                  "reference": "/spell/shield-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 24,
+          "spellAttack": 16
         }
       ]
     },
@@ -1543,6 +1865,70 @@
         {
           "label": "beast",
           "slug": "beast"
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Primal Innate Spells",
+          "spellGroups": [
+            {
+              "label": "5th",
+              "spells": [
+                {
+                  "name": "Control Water",
+                  "rank": 5,
+                  "reference": "/spell/control-water-player-core"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "spells": [
+                {
+                  "name": "Hydraulic Torrent",
+                  "rank": 4,
+                  "reference": "/spell/hydraulic-torrent-player-core"
+                },
+                {
+                  "name": "Mirage",
+                  "rank": 4,
+                  "reference": "/spell/mirage-player-core"
+                }
+              ]
+            },
+            {
+              "label": "3rd",
+              "spells": [
+                {
+                  "name": "Aqueous Orb",
+                  "rank": 3,
+                  "reference": "/spell/aqueous-orb-player-core"
+                },
+                {
+                  "name": "Slow",
+                  "rank": 3,
+                  "reference": "/spell/slow-player-core"
+                }
+              ]
+            },
+            {
+              "label": "2nd",
+              "spells": [
+                {
+                  "name": "Mist",
+                  "rank": 2,
+                  "reference": "/spell/mist-player-core"
+                },
+                {
+                  "name": "Vanishing Tracks",
+                  "rank": 2,
+                  "reference": "/spell/vanishing-tracks-player-core"
+                }
+              ]
+            }
+          ],
+          "spellDC": 26,
+          "spellAttack": 0
         }
       ]
     },
