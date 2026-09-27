@@ -10,7 +10,7 @@ source, support tools, and the current web client.
 
 ## Confirmed next work
 
-### 1. Genuine rollable tables
+### 1. Genuine rollable tables — ready for app testing
 
 The 24 PF2E tables already in the system are sourced **reference/look-up
 tables**. They do not roll a random result. Encounter+'s native `Table` entity
@@ -23,20 +23,18 @@ The PF2E implementation should:
 - produce a one-click random result rather than merely displaying rows;
 - give every table a clear source, book, and page when a page is known;
 - use only content whose distribution is permitted by the relevant license;
-- start with a small, useful set rather than importing every possible table;
-- add a compact roller to the Operations Center after native rolling is proven
-  in the app's small reference panel.
+- include only true dice-result tables, not every static look-up table;
+- expose the useful set through a compact Operations Center page.
 
-Implementation status: an initial native prototype now contains the three
-licensed *GM Core* tables for Random Encounter Type, Random Terrain Type, and
-Random Terrain Feature. Validate their Roll-button behavior in Encounter+
-before expanding the set or adding the compact Operations Center roller.
+Implementation status: 30 licensed, source-backed tables now use Encounter+'s
+native roller. The Operations Center has a compact Random Tables page grouped
+by use, with contextual shortcuts from hexploration, crafting, and treasure.
+The page is included automatically in the A–Z index. Broad app-level testing
+of the expanded set remains before the next stable package.
 
-Good candidates include licensed random encounter or danger tables, random
-terrain features, treasure categories, precious stones and art objects, and
-other GM-facing random-result tables. Existing DC, encounter-budget, creature-
-building, treasure-by-level, cover, detection, and counteract tables should
-remain reference tables because they are not random outcomes.
+Existing DC, encounter-budget, creature-building, treasure-by-level, cover,
+detection, and counteract tables remain reference tables because they are not
+random outcomes.
 
 ### 2. Complete data audit
 

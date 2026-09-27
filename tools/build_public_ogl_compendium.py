@@ -24,6 +24,7 @@ from build_public_orc_compendium import (
     normalize_trait_arrays,
     normalize_trait_routes,
 )
+from build_reference_tables import build_tables
 from spell_area_templates import configure_spell_area_template
 
 
@@ -112,6 +113,7 @@ def main() -> int:
     args.output.mkdir(parents=True)
 
     counts: dict[str, int] = {}
+    module_records: list[dict[str, Any]] = []
     for path in sorted(args.source.glob("*.json")):
         expected_kind = COLLECTION_KIND.get(path.name)
         if expected_kind is None:
@@ -125,6 +127,14 @@ def main() -> int:
                 json.dumps(cleaned, ensure_ascii=False, indent=2) + "\n"
             )
             counts[expected_kind] = len(cleaned)
+            module_records.extend(cleaned)
+
+    tables = build_tables(module_records, source["id"])
+    if tables:
+        (args.output / "tables.json").write_text(
+            json.dumps(tables, ensure_ascii=False, indent=2) + "\n"
+        )
+        counts["Table"] = len(tables)
 
     original_module = json.loads((args.source / "module.json").read_text())
     module = {

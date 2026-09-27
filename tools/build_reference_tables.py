@@ -11,11 +11,13 @@ import copy
 import json
 import re
 import uuid
+from dataclasses import dataclass
 from pathlib import Path
 
 
 REPO = Path(__file__).resolve().parents[1]
 PACKS = REPO / "compendium" / "packs"
+OGL_PACKS = REPO / "compendium" / "ogl-packs"
 NAMESPACE = uuid.UUID("cc23cc69-3bc8-4df1-8605-a82bf1114c86")
 
 # (source rule slug, native table title, zero-based table index in that rule)
@@ -49,16 +51,69 @@ TABLES: dict[str, list[tuple[str, str, int]]] = {
     ],
 }
 
-# (source rule slug, native table title, zero-based table index in that rule)
-#
+@dataclass(frozen=True)
+class RollTableSpec:
+    kind: str
+    slug: str
+    name: str
+    table_index: int = 0
+    section_index: int = 0
+
+
 # Encounter+ identifies a genuine roll table by a dice expression in the first
-# column header and result ranges in that column's cells. Unlike TABLES above,
-# these records intentionally opt into the app's native table roller.
-ROLL_TABLES: dict[str, list[tuple[str, str, int]]] = {
+# column header and result ranges in that column's cells. These are the actual
+# random-result tables embedded in the licensed records we distribute. Lookup
+# tables and generated item lists are intentionally absent.
+ROLL_TABLES: dict[str, list[RollTableSpec]] = {
+    "battlecry": [
+        RollTableSpec("Rule", "what-do-the-heroes-do-rules-3436", "War Situation — Strategic", 0),
+        RollTableSpec("Rule", "what-do-the-heroes-do-rules-3436", "War Situation — Operational", 1),
+        RollTableSpec("Rule", "what-do-the-heroes-do-rules-3436", "War Situation — Tactical", 2),
+    ],
+    "dark-archive": [
+        RollTableSpec("Feat", "eerie-proclamation-dark-archive", "Eerie Proclamation Failure"),
+        RollTableSpec("Rule", "quirks-rules-3509", "Deviant Ability Quirk"),
+    ],
     "gm-core": [
-        ("random-encounters-rules-3114", "Random Encounter Type", 1),
-        ("running-hexploration-rules-3110", "Random Terrain Type", 0),
-        ("running-hexploration-rules-3110", "Random Terrain Feature", 1),
+        RollTableSpec("Rule", "random-encounters-rules-3114", "Random Encounter Type", 1),
+        RollTableSpec("Rule", "running-hexploration-rules-3110", "Random Terrain Type", 0),
+        RollTableSpec("Rule", "running-hexploration-rules-3110", "Random Terrain Feature", 1),
+        RollTableSpec("Rule", "gems-rules-3228", "Lesser Semiprecious Stones", 0, 0),
+        RollTableSpec("Rule", "gems-rules-3228", "Moderate Semiprecious Stones", 0, 1),
+        RollTableSpec("Rule", "gems-rules-3228", "Greater Semiprecious Stones", 0, 2),
+        RollTableSpec("Rule", "gems-rules-3228", "Lesser Precious Stones", 0, 3),
+        RollTableSpec("Rule", "gems-rules-3228", "Moderate Precious Stones", 0, 4),
+        RollTableSpec("Rule", "gems-rules-3228", "Greater Precious Stones", 0, 5),
+        RollTableSpec("Rule", "art-objects-rules-3229", "Minor Art Object", 0, 0),
+        RollTableSpec("Rule", "art-objects-rules-3229", "Lesser Art Object", 0, 1),
+        RollTableSpec("Rule", "art-objects-rules-3229", "Moderate Art Object", 0, 2),
+        RollTableSpec("Rule", "art-objects-rules-3229", "Greater Art Object", 0, 3),
+        RollTableSpec("Rule", "art-objects-rules-3229", "Major Art Object", 0, 4),
+        RollTableSpec("Item", "madcap-top-gm-core", "Madcap Top Effect"),
+    ],
+    "guns-and-gears-remastered": [
+        RollTableSpec("Item", "lucky-draw-bandolier-guns-and-gears-remastered", "Lucky Draw Bandolier Ammunition"),
+        RollTableSpec("Item", "pistol-of-wonder-guns-and-gears-remastered", "Pistol of Wonder Effect"),
+    ],
+    "howl-of-the-wild": [
+        RollTableSpec("Feat", "portents-of-the-haruspex-howl-of-the-wild", "Portents of the Haruspex Damage"),
+    ],
+    "monster-core": [
+        RollTableSpec("Action", "protean-warpwave-monster-core", "Protean Warpwave Effect"),
+    ],
+    "player-core": [
+        RollTableSpec("Spell", "creative-splash-player-core", "Creative Splash Color"),
+    ],
+    "player-core-2": [
+        RollTableSpec("Feat", "signature-crafting-player-core-2", "Signature Crafting Quirk"),
+        RollTableSpec("Spell", "chthonian-wrath-player-core-2", "Chthonian Wrath Realm"),
+    ],
+    "treasure-vault-remastered": [
+        RollTableSpec("Rule", "crafting-downtime-events-rules-1920", "Crafting Downtime Event"),
+    ],
+    "rage-of-elements": [
+        RollTableSpec("Item", "octopus-potion-lesser-rage-of-elements", "Octopus Potion Added Effect"),
+        RollTableSpec("Spell", "rainbow-fumarole-rage-of-elements", "Rainbow Fumarole Color"),
     ],
 }
 
@@ -73,6 +128,15 @@ PRINTED_TABLE_PAGES = {
 TABLE_LINE = re.compile(r"^\|.*\|$")
 SEPARATOR = re.compile(r"^:?-{3,}:?$")
 BOLD = re.compile(r"^\*\*(.*?)\*\*$")
+DICE = re.compile(r"^(?P<count>\d*)d(?P<sides>\d+|%)$", re.I)
+
+ENTRY_ROUTE = {
+    "Action": "action",
+    "Feat": "feat",
+    "Item": "item",
+    "Rule": "rule",
+    "Spell": "spell",
+}
 
 
 def markdown_tables(description: str) -> list[tuple[list[str], list[list[str]]]]:
@@ -114,9 +178,9 @@ def make_table(rule: dict, name: str, headers: list[str], rows: list[list[str]])
         "descr": f"[Open the full rule](/rule/{rule['slug']}) for context. Reference table; entries are not random outcomes.",
         "sources": copy.deepcopy(rule["sources"]),
         "attributes": {
-            "remaster": True,
+            "remaster": rule["attributes"].get("remaster", True),
             "sourceId": source_id,
-            "license": "ORC-1.0a",
+            "license": rule["attributes"]["license"],
         },
         "tags": ["table", "reference", source_id],
         "columns": [
@@ -130,19 +194,52 @@ def make_table(rule: dict, name: str, headers: list[str], rows: list[list[str]])
     return result
 
 
+def normalize_formula(value: str) -> str:
+    match = DICE.fullmatch(value.strip())
+    if not match:
+        raise ValueError(f"invalid roll-table dice formula: {value!r}")
+    count = match.group("count") or "1"
+    sides = "100" if match.group("sides") == "%" else match.group("sides")
+    return f"{count}d{sides}"
+
+
+def roll_table_sections(
+    headers: list[str], rows: list[list[str]]
+) -> list[tuple[list[str], list[list[str]]]]:
+    """Split book tables that repeat a dice header for several value tiers."""
+    sections: list[tuple[list[str], list[list[str]]]] = []
+    current_headers = headers
+    current_rows: list[list[str]] = []
+    for row in rows:
+        next_headers = [BOLD.sub(r"\1", cell) for cell in row]
+        if len(row) == len(headers) and DICE.fullmatch(next_headers[0].strip()):
+            if not current_rows:
+                raise ValueError(f"empty roll-table section before {next_headers!r}")
+            sections.append((current_headers, current_rows))
+            current_headers = next_headers
+            current_rows = []
+        else:
+            current_rows.append(row)
+    if not current_rows:
+        raise ValueError("roll table ends with an empty section")
+    sections.append((current_headers, current_rows))
+    return sections
+
+
 def make_roll_table(rule: dict, name: str, headers: list[str], rows: list[list[str]]) -> dict:
     """Build a native Encounter+ roll table from a published dice-range table."""
-    if not re.fullmatch(r"\d*d\d+", headers[0], flags=re.I):
-        raise ValueError(f"roll table {name} does not begin with a dice formula: {headers[0]!r}")
+    formula = normalize_formula(headers[0])
+    headers = [formula, *headers[1:]]
     normalized_rows = copy.deepcopy(rows)
     for row in normalized_rows:
         # Module Packer documents ASCII ranges. Normalizing the typographic
         # source dash makes the app's range parser independent of punctuation.
         row[0] = row[0].replace("–", "-").replace("—", "-")
     result = make_table(rule, name, headers, normalized_rows)
+    route = ENTRY_ROUTE[rule["kind"]]
     result["descr"] = (
-        f"Roll {headers[0]} and use the matching result range. "
-        f"[Open the full rule](/rule/{rule['slug']}) for context."
+        f"Roll {formula} and use the matching result range. "
+        f"[Open the source entry](/{route}/{rule['slug']}) for context."
     )
     result["rollMode"] = "normal"
     result["tags"] = ["table", "rollable", rule["attributes"]["sourceId"]]
@@ -168,9 +265,14 @@ def detection_table(rules: dict[str, dict]) -> dict:
 
 
 def build_tables(records: list[dict], source_id: str) -> list[dict]:
-    if source_id not in TABLES and source_id != "player-core":
+    if source_id not in TABLES and source_id not in ROLL_TABLES and source_id != "player-core":
         return []
     rules = {record["slug"]: record for record in records if record.get("kind") == "Rule"}
+    entities = {
+        (record.get("kind"), record.get("slug")): record
+        for record in records
+        if record.get("kind") and record.get("slug")
+    }
     result = []
     for slug, name, index in TABLES.get(source_id, []):
         rule = rules[slug]
@@ -186,13 +288,21 @@ def build_tables(records: list[dict], source_id: str) -> list[dict]:
         else:
             table = make_table(rule, name, headers, rows)
         result.append(table)
-    for slug, name, index in ROLL_TABLES.get(source_id, []):
-        rule = rules[slug]
-        tables = markdown_tables(rule.get("descr") or "")
-        if index >= len(tables):
-            raise ValueError(f"missing roll table {index} from {source_id}/{slug}")
-        headers, rows = tables[index]
-        result.append(make_roll_table(rule, name, headers, rows))
+    for spec in ROLL_TABLES.get(source_id, []):
+        entity = entities[(spec.kind, spec.slug)]
+        tables = markdown_tables(entity.get("descr") or "")
+        if spec.table_index >= len(tables):
+            raise ValueError(
+                f"missing roll table {spec.table_index} from {source_id}/{spec.slug}"
+            )
+        headers, rows = tables[spec.table_index]
+        sections = roll_table_sections(headers, rows)
+        if spec.section_index >= len(sections):
+            raise ValueError(
+                f"missing roll-table section {spec.section_index} from {source_id}/{spec.slug}"
+            )
+        section_headers, section_rows = sections[spec.section_index]
+        result.append(make_roll_table(entity, spec.name, section_headers, section_rows))
     if source_id == "player-core":
         # All six linked rules must exist in the published compendium.
         for slug in (
@@ -206,16 +316,34 @@ def build_tables(records: list[dict], source_id: str) -> list[dict]:
 
 
 def main() -> None:
-    for source_id in TABLES:
+    summary_path = REPO / "compendium" / "summary.json"
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    ogl_summary_path = REPO / "compendium" / "ogl-summary.json"
+    ogl_summary = json.loads(ogl_summary_path.read_text(encoding="utf-8"))
+    for source_id in sorted(set(TABLES) | set(ROLL_TABLES)):
         pack = PACKS / source_id
-        rules = json.loads((pack / "rules.json").read_text(encoding="utf-8"))
-        tables = build_tables(rules, source_id)
+        if not pack.is_dir():
+            pack = OGL_PACKS / source_id
+        records: list[dict] = []
+        for path in sorted(pack.glob("*.json")):
+            if path.name in {"manifest.json", "module.json", "source.json", "tables.json"}:
+                continue
+            value = json.loads(path.read_text(encoding="utf-8"))
+            if isinstance(value, list):
+                records.extend(record for record in value if isinstance(record, dict))
+        tables = build_tables(records, source_id)
         (pack / "tables.json").write_text(json.dumps(tables, ensure_ascii=False, indent=2) + "\n")
         source_path = pack / "source.json"
         source = json.loads(source_path.read_text(encoding="utf-8"))
         source["counts"]["Table"] = len(tables)
         source_path.write_text(json.dumps(source, ensure_ascii=False, indent=2) + "\n")
+        if pack.parent == PACKS:
+            summary[source_id]["Table"] = len(tables)
+        else:
+            ogl_summary[source_id]["Table"] = len(tables)
         print(f"{source_id}: {len(tables)} native tables")
+    summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n")
+    ogl_summary_path.write_text(json.dumps(ogl_summary, ensure_ascii=False, indent=2) + "\n")
 
 
 if __name__ == "__main__":

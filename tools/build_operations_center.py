@@ -78,8 +78,7 @@ def embedded_reference_script() -> str:
 @lru_cache(maxsize=1)
 def reference_tables() -> dict[str, dict]:
     tables = {}
-    for source_id in ("gm-core", "player-core"):
-        path = REPO / "compendium" / "packs" / source_id / "tables.json"
+    for path in sorted((REPO / "compendium").glob("**/tables.json")):
         for record in json.loads(path.read_text(encoding="utf-8")):
             if record["name"] in tables:
                 raise ValueError(f"duplicate reference table: {record['name']}")
@@ -93,6 +92,32 @@ def full_table(name: str) -> str:
         f'<a class="ops-exit-link" href="/table/{html.escape(record["slug"])}">'
         f'<span>Open Full Table</span><strong>{html.escape(name)}</strong></a>'
     )
+
+
+def roll_table_link(name: str) -> str:
+    record = reference_tables()[name]
+    if "rollable" not in record.get("tags", []):
+        raise ValueError(f"Operations Center roller is not a roll table: {name}")
+    source = record["sources"][0]
+    attribution = source["name"]
+    if source.get("page"):
+        attribution += f" p. {source['page']}"
+    formula = record["columns"][0]["name"]
+    return (
+        f'<a href="/table-roll/{html.escape(record["slug"])}">'
+        f'<strong>{html.escape(name)}</strong>'
+        f'<span>Roll {html.escape(formula)} · {html.escape(attribution)}</span></a>'
+    )
+
+
+def roll_table_group(title: str, description: str, names: list[str]) -> str:
+    links = "".join(roll_table_link(name) for name in names)
+    return f"""
+  <details class="ops-disclosure ops-action-disclosure">
+    <summary><span>{html.escape(title)}</span><span>{len(names)} rollers</span></summary>
+    <p>{html.escape(description)}</p>
+    <div class="ops-link-list">{links}</div>
+  </details>"""
 
 
 def reference_picker(title: str, table_names: list[str], initial_level: str = "1") -> str:
@@ -432,6 +457,7 @@ def home_page() -> Page:
             card("pf2e-ops-turns-actions", "Turns & actions", "Three actions, reactions, free actions, and MAP.", "AT THE TABLE"),
             card("pf2e-ops-cover-visibility", "Cover & visibility", "Cover bonuses, detection states, targeting, and line of effect.", "AT THE TABLE"),
             card("pf2e-ops-dcs", "DCs at a glance", "Simple DCs, level-based DCs, and difficulty adjustments.", "QUICK TABLE"),
+            card("pf2e-ops-random-tables", "Random tables", "Open a sourced table and use Encounter+'s native roller.", "ROLL & GENERATE"),
             card("pf2e-ops-skill-actions", "Skill actions", "Find the right action by what the character is trying to do.", "ACTION FINDER"),
             card("pf2e-ops-xp-difficulty", "XP & encounter threat", "Build for party size, judge threat, and award XP.", "PLAN & AWARD"),
             card("pf2e-ops-recovery", "Dying & recovery", "Recovery checks, dying changes, wounded, and Hero Points.", "URGENT"),
@@ -1229,8 +1255,10 @@ def crafting_repair_page() -> Page:
   <section class="ops-answer"><h2>Craft an item</h2><ol><li>Confirm level, rarity or access, required proficiency, tools or workshop, and any special feat.</li><li>Supply raw materials worth at least half the Price.</li><li>Spend 2 setup days, or 1 day with the formula, then attempt the Crafting check.</li><li>On success, pay the remainder immediately or spend more days reducing it using Earn Income values.</li></ol></section>
   <section class="ops-answer"><h2>Repair an item</h2><p>With a repair kit, spend 10 minutes and attempt the item’s Repair DC. A success restores Hit Points based on Crafting proficiency; a critical failure damages the item. An item above its Broken Threshold stops being broken.</p></section>
   <aside class="ops-callout"><strong>Formula means speed, not permission</strong><span>A formula reduces setup time, but the crafter still needs access to an uncommon or rarer item and must meet every other requirement.</span></aside>
+  %s
   <section class="ops-rule-links"><h2>Full rules & actions</h2><div class="ops-grid">%s%s%s</div></section>
   %s""" % (
+        roll_table_group("Optional crafting inspiration", "Use these only when the relevant rule calls for a random downtime event or quirk.", ["Crafting Downtime Event", "Signature Crafting Quirk"]),
         full_rule("crafting-items-rules-3157", "Crafting Items"),
         full_entry("action", "craft-player-core", "Craft"),
         full_entry("action", "repair-player-core", "Repair"),
@@ -1519,7 +1547,7 @@ def treasure_rewards_page() -> Page:
   %s""" % (
         reference_picker("Party Treasure at This Level", ["Party Treasure by Level"]),
         full_rule("treasure-by-level-rules-2656", "Treasure by Level") + full_rule("adjusting-treasure-rules-2764", "Adjusting Treasure") + full_rule("treasure-for-new-characters-rules-2662", "Treasure for New Characters") + full_rule("rewards-rules-2647", "Rewards"),
-        related([("pf2e-ops-shopping-services", "Shopping & services", "Turn currency and access into purchases."), ("pf2e-ops-advancement", "Advancement", "Award encounter and accomplishment XP.")]),
+        related([("pf2e-ops-random-tables", "Random treasure tables", "Roll gems, art objects, and other sourced random results."), ("pf2e-ops-shopping-services", "Shopping & services", "Turn currency and access into purchases."), ("pf2e-ops-advancement", "Advancement", "Award encounter and accomplishment XP.")]),
     )
     return Page("Treasure & Rewards", "pf2e-ops-treasure-rewards", "equipment-treasure", 4, shell("Treasure & Rewards", "Track the level-wide budget while placing rewards where the fiction supports them.", body, [("Equipment, Treasure & Rewards", EQUIPMENT), ("Treasure & Rewards", "pf2e-ops-treasure-rewards")], trailing_html=f"<script>\n{embedded_reference_script()}\n</script>"))
 
@@ -1602,6 +1630,7 @@ def subsystems_landing() -> Page:
             ("pf2e-ops-research-infiltration", "Research & infiltration", "Use discovery thresholds or preparation and Awareness.", "COMPLEX OBJECTIVE"),
             ("pf2e-ops-reputation", "Reputation", "Track a group’s evolving relationship over the campaign.", "RELATIONSHIPS"),
             ("pf2e-ops-hexploration-vehicles", "Hexploration & vehicles", "Structure journeys, exploration days, pilots, and moving encounters.", "TRAVEL"),
+            ("pf2e-ops-random-tables", "Random tables", "Open only genuine dice-result tables in Encounter+'s native roller.", "ROLL & GENERATE"),
         ],
     )
 
@@ -1672,12 +1701,29 @@ def hexploration_vehicles_page() -> Page:
     body = """
   <div class="ops-table-wrap"><table class="ops-table"><thead><tr><th>Mode</th><th>Track first</th><th>Switch modes when…</th></tr></thead><tbody><tr><th>Hexploration</th><td>Day, hex, travel Speed, hexploration activities, terrain, weather, supplies, and discoveries.</td><td>A location, encounter, hazard, or meaningful local choice needs scene-level play.</td></tr><tr><th>Vehicle travel</th><td>Pilot, vehicle Speed, heading, passengers, cargo, HP, Broken Threshold, and collision risks.</td><td>Precise position, attacks, boarding, collisions, or loss of control makes initiative matter.</td></tr></tbody></table></div>
   <section class="ops-answer"><h2>Journey rhythm</h2><ol><li>Choose route and daily activities.</li><li>Advance time and position.</li><li>Apply terrain, weather, supply, and navigation consequences.</li><li>Reveal discoveries and switch to a focused scene.</li><li>Return to the journey only after immediate choices are resolved.</li></ol></section>
+  %s
   <section class="ops-rule-links"><h2>Full rules</h2><div class="ops-grid">%s</div></section>
   %s""" % (
+        roll_table_group("Travel generators", "Roll only when uncertainty improves the journey; authored terrain and encounters still take priority.", ["Random Encounter Type", "Random Terrain Type", "Random Terrain Feature"]),
         full_rule("hexploration-rules-3103", "Hexploration") + full_rule("running-hexploration-rules-3110", "Running Hexploration") + full_rule("vehicles-rules-3116", "Vehicles") + full_rule("vehicles-in-combat-rules-3132", "Vehicles in Combat"),
         related([("pf2e-ops-travel-speed", "Travel speed", "Convert movement into hourly and daily progress."), ("pf2e-ops-environment", "Environmental danger", "Apply terrain, weather, and exposure.")]),
     )
     return Page("Hexploration & Vehicles", "pf2e-ops-hexploration-vehicles", "gm-subsystems", 6, shell("Hexploration & Vehicles", "Track day-scale movement, then zoom into scenes when precise choices matter.", body, [("GM Subsystems & Campaign Tools", SUBSYSTEMS), ("Hexploration & Vehicles", "pf2e-ops-hexploration-vehicles")]))
+
+
+def random_tables_page() -> Page:
+    body = """
+  <section class="ops-intro ops-callout"><strong>These are genuine random-result tables.</strong><span>Select a table to open Encounter+'s native roller and roll history. Static references such as DCs, encounter budgets, and treasure by level remain look-up tables elsewhere in the Operations Center.</span></section>
+  %s%s%s%s%s
+  %s""" % (
+        roll_table_group("Travel & exploration", "Generate an encounter category, terrain type, or terrain feature when the journey needs an uncertain prompt.", ["Random Encounter Type", "Random Terrain Type", "Random Terrain Feature"]),
+        roll_table_group("Treasure", "Generate a specific gem or art object from the value tier already chosen for the reward.", ["Lesser Semiprecious Stones", "Moderate Semiprecious Stones", "Greater Semiprecious Stones", "Lesser Precious Stones", "Moderate Precious Stones", "Greater Precious Stones", "Minor Art Object", "Lesser Art Object", "Moderate Art Object", "Greater Art Object", "Major Art Object"]),
+        roll_table_group("Downtime & inspiration", "Resolve published random crafting events, quirks, and war-situation prompts.", ["Crafting Downtime Event", "Signature Crafting Quirk", "Deviant Ability Quirk", "War Situation — Strategic", "War Situation — Operational", "War Situation — Tactical"]),
+        roll_table_group("Abilities, spells & creatures", "Use the die result required by the named ability, spell, or creature effect.", ["Eerie Proclamation Failure", "Portents of the Haruspex Damage", "Protean Warpwave Effect", "Creative Splash Color", "Chthonian Wrath Realm", "Rainbow Fumarole Color"]),
+        roll_table_group("Magic items", "Resolve the random effect or selection specified by the item.", ["Madcap Top Effect", "Lucky Draw Bandolier Ammunition", "Pistol of Wonder Effect", "Octopus Potion Added Effect"]),
+        related([("pf2e-ops-hexploration-vehicles", "Hexploration & vehicles", "Use travel generators in the context of a journey."), ("pf2e-ops-treasure-rewards", "Treasure & rewards", "Choose a level-appropriate reward before rolling its details."), ("pf2e-ops-crafting-repair", "Crafting & repair", "Use crafting events and quirks with the complete procedure.")]),
+    )
+    return Page("Random Tables", "pf2e-ops-random-tables", "gm-subsystems", 7, shell("Random Tables", "Open a sourced PF2E table in Encounter+'s native roller.", body, [("GM Subsystems & Campaign Tools", SUBSYSTEMS), ("Random Tables", "pf2e-ops-random-tables")]))
 
 
 def index_page(indexed_pages: list[Page]) -> Page:
@@ -1760,6 +1806,7 @@ def pages() -> list[Page]:
         research_infiltration_page(),
         reputation_page(),
         hexploration_vehicles_page(),
+        random_tables_page(),
     ]
     return [*primary, index_page(primary)]
 
@@ -1808,6 +1855,7 @@ def validate(page_records: list[dict[str, object]], group_records: list[dict[str
 
     internal_pattern = re.compile(r'href="/page/([^"]+)"')
     entry_pattern = re.compile(r'href="/(rule|action|condition|table)/([^"]+)"')
+    roll_table_pattern = re.compile(r'href="/table-roll/([^"]+)"')
     entry_slugs = available_entry_slugs()
     for page in page_records:
         slug = str(page["slug"])
@@ -1820,6 +1868,9 @@ def validate(page_records: list[dict[str, object]], group_records: list[dict[str
         for route, target in entry_pattern.findall(content):
             if target not in entry_slugs[route]:
                 errors.append(f"{slug}: unresolved {route} entry {target}")
+        for target in roll_table_pattern.findall(content):
+            if target not in entry_slugs["table"]:
+                errors.append(f"{slug}: unresolved roll table {target}")
         if slug != HOME and f'href="/page/{HOME}"' not in content:
             errors.append(f"{slug}: missing Home breadcrumb")
         for match in re.finditer(r'<a class="ops-card"[^>]+href="([^"]+)"', content):

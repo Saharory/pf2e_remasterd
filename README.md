@@ -54,7 +54,7 @@ compendium entry when the short table reference is not enough.
 
 - A complete Encounter+ game system with Remaster-specific entity types,
   forms, views, character sheets, creature presentation, and light/dark themes
-- 17,992 rules, actions, creatures, hazards, spells, items, feats, character
+- 18,022 rules, actions, creatures, hazards, spells, items, feats, character
   options, traits, languages, deities, domains, vehicles, and other compendium
   entries
 - Internal links between related rules and entries, including parameterized
@@ -64,12 +64,14 @@ compendium entry when the short table reference is not enough.
   counteract results. Open **Library → System → Tables** and select a table;
   its source shows the book and page, and its rule link opens the full context.
   These are look-up tables, not random encounter rolls.
-- 3 genuine native roll tables from *GM Core*: Random Encounter Type, Random
-  Terrain Type, and Random Terrain Feature. Their dice formula and result
-  ranges drive Encounter+'s built-in **Roll** button.
+- 30 genuine native roll tables drawn from the licensed source packs. They
+  cover travel, gems and art objects, crafting and other inspiration prompts,
+  ability and spell results, creature effects, and magic items. Their dice
+  formulae and result ranges drive Encounter+'s built-in **Roll** button.
 - A bookmarkable PF2E Operations Center with compact navigation, quick
   references, an A–Z index, task-oriented GM guidance, and narrow-panel
-  selectors for level-based DCs, creature-building benchmarks, and treasure
+  selectors for level-based DCs, creature-building benchmarks, treasure, and
+  a sourced Random Tables page that opens Encounter+'s native table roller.
 - An Encounter XP Planner with party-size budgets, weak/elite adjustments,
   hazards, overrides, rule references, and handoff to Encounter+'s native
   experience-award sheet

@@ -176,6 +176,79 @@
     ]
   },
   {
+    "id": "272E9562-B98B-5F9C-9691-AE14EDB9A6F0",
+    "kind": "Table",
+    "system": "pf2e-remaster",
+    "systemVersion": "1.2.10",
+    "name": "Creative Splash Color",
+    "slug": "creative-splash-color-player-core",
+    "descr": "Roll 1d4 and use the matching result range. [Open the source entry](/spell/creative-splash-player-core) for context.",
+    "sources": [
+      {
+        "name": "Player Core"
+      }
+    ],
+    "attributes": {
+      "remaster": true,
+      "sourceId": "player-core",
+      "license": "ORC-1.0a"
+    },
+    "tags": [
+      "table",
+      "rollable",
+      "player-core"
+    ],
+    "columns": [
+      {
+        "name": "1d4",
+        "size": 0.25,
+        "align": null
+      },
+      {
+        "name": "Color",
+        "size": 0.25,
+        "align": null
+      },
+      {
+        "name": "Failure",
+        "size": 0.25,
+        "align": null
+      },
+      {
+        "name": "Critical Failure",
+        "size": 0.25,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "1",
+        "White",
+        "Dazzled for 1 round",
+        "Dazzled for 1 minute"
+      ],
+      [
+        "2",
+        "Red",
+        "Enfeebled 1 for 1 round",
+        "Enfeebled 2 for 1 round"
+      ],
+      [
+        "3",
+        "Yellow",
+        "Frightened 1",
+        "Frightened 2"
+      ],
+      [
+        "4",
+        "Blue",
+        "Clumsy 1 for 1 round",
+        "Clumsy 2 for 1 round"
+      ]
+    ],
+    "rollMode": "normal"
+  },
+  {
     "id": "8A8F75E1-5FFB-56CF-9041-ED2B58D304F1",
     "kind": "Table",
     "system": "pf2e-remaster",

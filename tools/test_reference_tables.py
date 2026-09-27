@@ -2,13 +2,38 @@
 """Regression checks for source-backed Encounter+ reference tables."""
 
 import json
+import re
 import sys
 import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_reference_tables import PACKS, build_tables, markdown_tables
+from build_reference_tables import OGL_PACKS, PACKS, build_tables, markdown_tables
+
+
+EXPECTED_ORC_TABLES = {
+    "battlecry": 3,
+    "dark-archive": 2,
+    "gm-core": 36,
+    "guns-and-gears-remastered": 2,
+    "howl-of-the-wild": 1,
+    "monster-core": 1,
+    "player-core": 4,
+    "player-core-2": 2,
+    "treasure-vault-remastered": 1,
+}
+
+
+def records_in(pack: Path) -> list[dict]:
+    records = []
+    for path in sorted(pack.glob("*.json")):
+        if path.name in {"manifest.json", "module.json", "source.json", "tables.json"}:
+            continue
+        value = json.loads(path.read_text())
+        if isinstance(value, list):
+            records.extend(record for record in value if isinstance(record, dict))
+    return records
 
 
 class ReferenceTableTests(unittest.TestCase):
@@ -22,38 +47,50 @@ class ReferenceTableTests(unittest.TestCase):
         ])
 
     def test_curated_tables_match_published_rules_and_sources(self) -> None:
-        for source_id, expected_count in (("gm-core", 24), ("player-core", 3)):
+        for source_id, expected_count in EXPECTED_ORC_TABLES.items():
             with self.subTest(source_id=source_id):
                 path = PACKS / source_id
-                rules = json.loads((path / "rules.json").read_text())
                 saved = json.loads((path / "tables.json").read_text())
-                self.assertEqual(saved, build_tables(rules, source_id))
+                self.assertEqual(saved, build_tables(records_in(path), source_id))
                 self.assertEqual(len(saved), expected_count)
                 self.assertEqual(len({table["id"] for table in saved}), expected_count)
-                self.assertTrue(all(table["sources"][0].get("page") for table in saved))
+                self.assertTrue(all(table["sources"][0].get("name") for table in saved))
                 self.assertTrue(all(table["attributes"]["license"] == "ORC-1.0a" for table in saved))
 
+        ogl = OGL_PACKS / "rage-of-elements"
+        saved = json.loads((ogl / "tables.json").read_text())
+        self.assertEqual(saved, build_tables(records_in(ogl), "rage-of-elements"))
+        self.assertEqual(len(saved), 2)
+        self.assertTrue(all(table["attributes"]["license"] == "OGL-1.0a" for table in saved))
+
     def test_roll_tables_encode_dice_ranges_for_the_native_roller(self) -> None:
-        gm = {table["name"]: table for table in json.loads((PACKS / "gm-core/tables.json").read_text())}
-        expected = {
-            "Random Encounter Type": ("1d10", set(range(1, 11))),
-            "Random Terrain Type": ("1d20", set(range(1, 21))),
-            "Random Terrain Feature": ("1d20", set(range(1, 21))),
-        }
-        for name, (formula, outcomes) in expected.items():
-            with self.subTest(name=name):
-                table = gm[name]
-                self.assertEqual(table["columns"][0]["name"], formula)
-                self.assertEqual(table["rollMode"], "normal")
-                self.assertIn("rollable", table["tags"])
+        roll_tables = []
+        for source_id in EXPECTED_ORC_TABLES:
+            roll_tables.extend(
+                table
+                for table in json.loads((PACKS / source_id / "tables.json").read_text())
+                if "rollable" in table.get("tags", [])
+            )
+        roll_tables.extend(json.loads((OGL_PACKS / "rage-of-elements/tables.json").read_text()))
+        self.assertEqual(len(roll_tables), 30)
+        self.assertEqual(len({table["name"] for table in roll_tables}), 30)
+
+        for table in roll_tables:
+            with self.subTest(name=table["name"]):
+                formula = table["columns"][0]["name"]
+                match = re.fullmatch(r"(?:1)?d(\d+)", formula)
+                self.assertIsNotNone(match)
+                outcomes = set(range(1, int(match.group(1)) + 1))
                 covered = set()
                 for row in table["rows"]:
                     bounds = [int(value) for value in row[0].split("-", 1)]
-                    if len(bounds) == 1:
-                        covered.add(bounds[0])
-                    else:
-                        covered.update(range(bounds[0], bounds[1] + 1))
+                    values = {bounds[0]} if len(bounds) == 1 else set(range(bounds[0], bounds[1] + 1))
+                    self.assertFalse(covered & values, f"overlapping ranges in {table['name']}")
+                    covered.update(values)
                 self.assertEqual(covered, outcomes)
+                self.assertEqual(table["rollMode"], "normal")
+                self.assertIn("rollable", table["tags"])
+                self.assertTrue(table["sources"][0].get("name"))
 
     def test_key_numbers_and_detection_links(self) -> None:
         gm = {table["name"]: table for table in json.loads((PACKS / "gm-core/tables.json").read_text())}

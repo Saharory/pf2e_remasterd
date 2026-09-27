@@ -164,6 +164,7 @@ def main() -> int:
         "Ritual": 3,
         "Rule": 1,
         "Spell": 120,
+        "Table": 2,
     }
     if kinds != expected:
         errors.append(f"unexpected OGL entity counts: {kinds}")

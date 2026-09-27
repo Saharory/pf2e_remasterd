@@ -807,6 +807,7 @@ def build_module(
     output_dir.mkdir(parents=True, exist_ok=True)
     counts: dict[str, int] = {}
     excluded = 0
+    module_records: list[dict[str, Any]] = []
 
     for path in sorted(source_dir.glob("*.json")):
         expected_kind = COLLECTION_KIND.get(path.name)
@@ -829,13 +830,17 @@ def build_module(
                 json.dumps(cleaned, ensure_ascii=False, indent=2) + "\n"
             )
             counts[expected_kind] = len(cleaned)
-            if expected_kind == "Rule":
-                tables = build_tables(cleaned, source["id"])
-                if tables:
-                    (output_dir / "tables.json").write_text(
-                        json.dumps(tables, ensure_ascii=False, indent=2) + "\n"
-                    )
-                    counts["Table"] = len(tables)
+            module_records.extend(cleaned)
+
+    # Roll tables can originate in rules, feats, spells, actions, or items.
+    # Generate them only after every collection has been sanitized so a full
+    # rebuild produces the same tables as the checked-in public packs.
+    tables = build_tables(module_records, source["id"])
+    if tables:
+        (output_dir / "tables.json").write_text(
+            json.dumps(tables, ensure_ascii=False, indent=2) + "\n"
+        )
+        counts["Table"] = len(tables)
 
     original_module = json.loads((source_dir / "module.json").read_text())
     module = {
