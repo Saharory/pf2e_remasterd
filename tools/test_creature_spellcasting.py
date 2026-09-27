@@ -51,6 +51,8 @@ def main() -> int:
     view = (REPO / "views/partials/spellcasting.md").read_text(encoding="utf-8")
     if "spell.reference" not in view or "spellGroups" not in view:
         raise SystemExit("spellcasting view does not render linked spell groups")
+    if "{% elsif" in view or "{% elseif" in view:
+        raise SystemExit("spellcasting view uses a template tag unsupported by Encounter+")
 
     print(f"Validated {linked} linked spells on Goblin War Chanter")
     return 0
