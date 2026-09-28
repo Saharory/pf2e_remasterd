@@ -16,7 +16,6 @@ import argparse
 import copy
 import json
 import re
-import shutil
 import uuid
 from pathlib import Path
 from typing import Any
@@ -25,6 +24,7 @@ from foundry_markup import replace_foundry_directives
 from hazard_vehicle_mechanics import supplement as supplement_hazard_vehicle
 from build_reference_tables import build_tables
 from creature_spellcasting import configure_creature_spellcasting
+from creature_ability_glossary import configure_creature_abilities
 from spell_area_templates import configure_spell_area_template
 
 
@@ -34,6 +34,7 @@ DEFAULT_OUTPUT = REPO / "compendium" / "packs"
 SOURCE_CATALOG = REPO / "compendium" / "sources.json"
 ROOT_NOTICE = REPO / "compendium" / "ORC-NOTICE.md"
 COMMUNITY_USE_NOTICE = REPO / "COMMUNITY-USE-NOTICE.md"
+CONFLICT_COPY = re.compile(r"^(?P<stem>.+) (?P<copy>[2-9]\d*)(?P<suffix>\.[^.]+)$")
 
 COLLECTION_KIND = {
     "actions.json": "Action",
@@ -691,6 +692,9 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
     if expected_kind == "Spell":
         configure_spell_area_template(result)
 
+    if expected_kind in {"Action", "Creature"}:
+        configure_creature_abilities(result)
+
     if expected_kind == "Creature":
         configure_creature_spellcasting(result)
 
@@ -758,6 +762,24 @@ def module_community_use_notice() -> str:
     )
 
 
+def remove_generated_conflict_copies(root: Path) -> int:
+    """Remove macOS sync conflict copies from the generated-pack directory."""
+    removed = 0
+    if not root.exists():
+        return removed
+    for path in sorted(root.rglob("*")):
+        if not path.is_file():
+            continue
+        match = CONFLICT_COPY.match(path.name)
+        if not match:
+            continue
+        canonical = path.with_name(match.group("stem") + match.group("suffix"))
+        if canonical.is_file():
+            path.unlink()
+            removed += 1
+    return removed
+
+
 def aggregate_notice(catalog: dict[str, dict[str, Any]]) -> str:
     attributions: list[str] = []
     for source in catalog.values():
@@ -812,6 +834,7 @@ def build_module(
     counts: dict[str, int] = {}
     excluded = 0
     module_records: list[dict[str, Any]] = []
+    written: set[str] = set()
 
     for path in sorted(source_dir.glob("*.json")):
         expected_kind = COLLECTION_KIND.get(path.name)
@@ -833,6 +856,7 @@ def build_module(
             (output_dir / path.name).write_text(
                 json.dumps(cleaned, ensure_ascii=False, indent=2) + "\n"
             )
+            written.add(path.name)
             counts[expected_kind] = len(cleaned)
             module_records.extend(cleaned)
 
@@ -844,6 +868,7 @@ def build_module(
         (output_dir / "tables.json").write_text(
             json.dumps(tables, ensure_ascii=False, indent=2) + "\n"
         )
+        written.add("tables.json")
         counts["Table"] = len(tables)
 
     original_module = json.loads((source_dir / "module.json").read_text())
@@ -880,6 +905,17 @@ def build_module(
     )
     (output_dir / "ORC-NOTICE.md").write_text(module_notice(source))
     (output_dir / "COMMUNITY-USE-NOTICE.md").write_text(module_community_use_notice())
+    written.update({"module.json", "source.json", "ORC-NOTICE.md", "COMMUNITY-USE-NOTICE.md"})
+    managed = set(COLLECTION_KIND) | {
+        "module.json",
+        "source.json",
+        "ORC-NOTICE.md",
+        "COMMUNITY-USE-NOTICE.md",
+    }
+    for filename in managed - written:
+        stale = output_dir / filename
+        if stale.is_file():
+            stale.unlink()
     return counts
 
 
@@ -891,9 +927,8 @@ def main() -> int:
 
     trait_catalog = canonical_trait_catalog(args.source, catalog)
 
-    if args.output.exists():
-        shutil.rmtree(args.output)
-    args.output.mkdir(parents=True)
+    args.output.mkdir(parents=True, exist_ok=True)
+    remove_generated_conflict_copies(args.output)
 
     summary: dict[str, dict[str, int]] = {}
     for source_id, source in catalog.items():
@@ -910,6 +945,7 @@ def main() -> int:
     summary_path = args.output.parent / "summary.json"
     summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n")
     ROOT_NOTICE.write_text(aggregate_notice(catalog))
+    remove_generated_conflict_copies(args.output)
 
     total = sum(sum(counts.values()) for counts in summary.values())
     print(f"Built {len(summary)} ORC modules with {total} records in {args.output}")

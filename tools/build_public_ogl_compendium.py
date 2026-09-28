@@ -23,8 +23,10 @@ from build_public_orc_compendium import (
     load_catalog,
     normalize_trait_arrays,
     normalize_trait_routes,
+    remove_generated_conflict_copies,
 )
 from build_reference_tables import build_tables
+from creature_ability_glossary import configure_creature_abilities
 from creature_spellcasting import configure_creature_spellcasting
 from spell_area_templates import configure_spell_area_template
 
@@ -78,6 +80,8 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         data["summary"] = ""
     if expected_kind == "Spell":
         configure_spell_area_template(result)
+    if expected_kind in {"Action", "Creature"}:
+        configure_creature_abilities(result)
     if expected_kind == "Creature":
         configure_creature_spellcasting(result)
     dedupe_entity_links(result)
@@ -111,12 +115,12 @@ def main() -> int:
     # OGL entries link into the single canonical trait catalog.
     canonical_trait_catalog(args.source.parent, load_catalog())
 
-    if args.output.exists():
-        shutil.rmtree(args.output)
-    args.output.mkdir(parents=True)
+    args.output.mkdir(parents=True, exist_ok=True)
+    remove_generated_conflict_copies(args.output)
 
     counts: dict[str, int] = {}
     module_records: list[dict[str, Any]] = []
+    written: set[str] = set()
     for path in sorted(args.source.glob("*.json")):
         expected_kind = COLLECTION_KIND.get(path.name)
         if expected_kind is None:
@@ -129,6 +133,7 @@ def main() -> int:
             (args.output / path.name).write_text(
                 json.dumps(cleaned, ensure_ascii=False, indent=2) + "\n"
             )
+            written.add(path.name)
             counts[expected_kind] = len(cleaned)
             module_records.extend(cleaned)
 
@@ -137,6 +142,7 @@ def main() -> int:
         (args.output / "tables.json").write_text(
             json.dumps(tables, ensure_ascii=False, indent=2) + "\n"
         )
+        written.add("tables.json")
         counts["Table"] = len(tables)
 
     original_module = json.loads((args.source / "module.json").read_text())
@@ -174,6 +180,18 @@ def main() -> int:
     )
     shutil.copyfile(LICENSE_TEXT, args.output / "OGL-1.0a.txt")
     (args.output / "COMMUNITY-USE-NOTICE.md").write_text(community_use_notice())
+    written.update({"module.json", "source.json", "OGL-1.0a.txt", "COMMUNITY-USE-NOTICE.md"})
+    managed = set(COLLECTION_KIND) | {
+        "module.json",
+        "source.json",
+        "OGL-1.0a.txt",
+        "COMMUNITY-USE-NOTICE.md",
+    }
+    for filename in managed - written:
+        stale = args.output / filename
+        if stale.is_file():
+            stale.unlink()
+    remove_generated_conflict_copies(args.output)
 
     summary_path = args.output.parents[1] / "ogl-summary.json"
     summary_path.write_text(

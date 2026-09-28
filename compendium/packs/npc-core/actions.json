@@ -84,7 +84,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist) Blazing Gate",
     "slug": "martial-artist-blazing-gate-npc-core",
-    "descr": "**Requirements** The grandmaster has a target [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core)\n\n---\n\n**Effect** The grandmaster tosses their target upwards and electrocutes them with a qi-infused double palm strike as they land. The target becomes [Prone](/condition/prone-player-core), loses the grabbed or restrained condition, and takes 5d6 bludgeoning damage and 2d8 persistent electricity damage (basic Fortitude DC 38 save).",
+    "descr": "**Requirements** The grandmaster has a target [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core)\n\n**Effect** The grandmaster tosses their target upwards and electrocutes them with a qi-infused double palm strike as they land. The target becomes [Prone](/condition/prone-player-core), loses the grabbed or restrained condition, and takes 5d6 bludgeoning damage and 2d8 persistent electricity damage (basic Fortitude DC 38 save).",
     "data": {
       "rarity": "common",
       "traits": [
@@ -219,7 +219,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist) Defensive Side Kick",
     "slug": "martial-artist-defensive-side-kick-npc-core",
-    "descr": "**Trigger** A creature within the black belt's reach uses a move action\n\n---\n\n**Effect** The black belt makes a fist Strike designed to intercept and create distance. This Strike does not count towards the black belt's multiple attack penalty, and the black belt's multiple attack penalty doesn't apply to this Strike. On a successful hit, the target is pushed 5 feet away.",
+    "descr": "**Trigger** A creature within the black belt's reach uses a move action\n\n**Effect** The black belt makes a fist Strike designed to intercept and create distance. This Strike does not count towards the black belt's multiple attack penalty, and the black belt's multiple attack penalty doesn't apply to this Strike. On a successful hit, the target is pushed 5 feet away.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -255,7 +255,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist) Kiai!",
     "slug": "martial-artist-kiai-npc-core",
-    "descr": "**Frequency** once per turn\n\n**Requirements** The martial student attempts a Strike\n\n---\n\n**Effect** The martial student shouts to startle their adversary. If the Strike is successful, the target becomes [Frightened 1](/condition/frightened-player-core).",
+    "descr": "**Frequency** once per turn\n\n**Requirements** The martial student attempts a Strike\n\n**Effect** The martial student shouts to startle their adversary. If the Strike is successful, the target becomes [Frightened 1](/condition/frightened-player-core).",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -291,7 +291,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist, Dirty Fighting) Concealed Spikes",
     "slug": "martial-artist-dirty-fighting-concealed-spikes-npc-core",
-    "descr": "**Trigger** The martial artist critically succeeds on an unarmed Strike\n\n---\n\n**Effect** Tiny spikes in the martial artist's gloves or footwear deal an additional 1d6 persistent bleed damage.",
+    "descr": "**Trigger** The martial artist critically succeeds on an unarmed Strike\n\n**Effect** Tiny spikes in the martial artist's gloves or footwear deal an additional 1d6 persistent bleed damage.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -493,7 +493,7 @@
     "systemVersion": "1.2.10",
     "name": "(Martial Artist, Grandmaster) Solar Surge",
     "slug": "martial-artist-grandmaster-solar-surge-npc-core",
-    "descr": "The grandmaster unleashes a qi wave as bright as the sun. All creatures within a 50-foot radius of the grandmaster who can see must attempt a Reflex DC 38 save, including the grandmaster themself.\n\n---\n\n**Critical Success** The creature is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Success** The creature is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Failure** The creature is blinded for 1 day.\n\n**Critical Failure** The creature is permanently blinded.",
+    "descr": "The grandmaster unleashes a qi wave as bright as the sun. All creatures within a 50-foot radius of the grandmaster who can see must attempt a Reflex DC 38 save, including the grandmaster themself.\n\n**Critical Success** The creature is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Success** The creature is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Failure** The creature is blinded for 1 day.\n\n**Critical Failure** The creature is permanently blinded.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -628,7 +628,7 @@
     "systemVersion": "1.2.10",
     "name": "(Retired) Still Got It!",
     "slug": "retired-still-got-it-npc-core",
-    "descr": "**Frequency** once per encounter\n\n**Requirements** The retired creature is in a combat encounter and has either made a critical hit or is in the second round of their encounter\n\n---\n\n**Effect** The retired creature gains temporary Hit Points equal to its level that last until the end of the encounter. The retired creature also suppresses the effects of being rusty until the end of the encounter.\n\n---\n\nEffect: Still Got It!",
+    "descr": "**Frequency** once per encounter\n\n**Requirements** The retired creature is in a combat encounter and has either made a critical hit or is in the second round of their encounter\n\n**Effect** The retired creature gains temporary Hit Points equal to its level that last until the end of the encounter. The retired creature also suppresses the effects of being rusty until the end of the encounter.\n\nEffect: Still Got It!",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -707,7 +707,7 @@
     "systemVersion": "1.2.10",
     "name": "Change Formation",
     "slug": "change-formation-npc-core",
-    "descr": "Changeformation",
+    "descr": "The troop reconfigures to assume one of the formations below they know. Using this action again ends any previous formation, and the troop can also use this action to revert to its default formation, ending any benefits and drawbacks.\n\n- **Loose** Members of the troop fan out to cover more ground. **Benefit** Any weaknesses the troop has to area and splash damage are suppressed. **Drawback** Enemies' saving throws against the troop's damaging effects are one degree of success better than they roll.\n- **Marching Column** This formation traverses long distances more rapidly. **Benefit** The troop gains a +10 foot circumstance bonus to all its Speeds. **Drawback** The troop is [Off-Guard](/condition/off-guard-player-core) and takes a –2 penalty to Reflex saves.\n- **Turtle Shell** The troop interlocks their shields. Only a group with shields can use this formation. **Benefit** The troop gains a +2 circumstance bonus to AC against ranged attacks and to Reflex saves. **Drawback** The troop takes a –10-foot penalty to all its Speeds.\n- **Wedge** The troop aligns itself behind a powerful commander. **Benefit** The troop chooses an adjacent allied creature without the troop trait to fall in behind. Each time the chosen creature Strides, the troop follows as a free action, Striding to keep the chosen creature adjacent. **Drawback** The troop loses some of their autonomy. They're slowed 1 and can't voluntarily move away from their leader.",
     "data": {
       "rarity": "common",
       "traits": [
@@ -757,7 +757,7 @@
     "systemVersion": "1.2.10",
     "name": "Troop Defenses",
     "slug": "troop-defenses-npc-core",
-    "descr": "Troopdefenses",
+    "descr": "Troops are composed of many individuals, represented by four \"segments\" on a battle grid. Each segment is 10 feet on each side and as tall as the individual members of the troop. Segments must remain contiguous. Each one has to share at least 5 feet of one of its edges with another segment—being adjacent on a diagonal isn't sufficient! You can measure flanking, cover, and the like using the center of any segment.\n\nA troop has two Hit Point thresholds in its HP entry and loses segments as it crosses thresholds. Typically, the higher threshold is at 2/3 of the troop's maximum Hit Points and the lower is at 1/3 of its maximum. Once the troop drops below the higher threshold, it loses one segment, leaving three segments (12 squares) remaining and setting the first threshold as the troop's new maximum Hit Points. This repeats when the troop drops below the lower threshold, leaving two segments (8 squares). At 0 Hit Points, the troop disperses entirely, with the few remaining members surrendering, [Fleeing](/condition/fleeing-player-core), or easily dispatched, as determined by the GM. Typically the creature who caused the troop to lose a segment decides which to remove, or the GM decides when a specific creature wasn't responsible. To restore lost segments and maximum Hit Points, a troop needs to spend downtime to use long-term treatment on casualties or recruit new members to replace the fallen.\n\nTroops are typically immune to non-damaging effects that target a single creature, such as a [Charm](/spell/charm-player-core) spell or the [Demoralize](/action/demoralize-player-core) action. An ability that can target 5 or more creatures can target an entire segment, increasing to two segments if it can target 10 or more creatures and to the entire troop if it can target 20 or more creatures. An ability that affects all creatures in a certain range affects all segments in range (make any checks or saves separately for each segment). As examples, an 8th rank *charm* spell (with 10 targets) can affect two segments, and an ability that Demoralizes all creatures within 30 feet of you would affect all segments that are fully within that range. A non-damaging ability that would prevent a segment from acting, cause them to flee, or otherwise make them unable to function as part of the troop for a round or more removes the segment entirely. The troop loses a number of HP required to bring it to the next threshold. If an ability both deals damage and has a non-damaging effect, apply the damage then the rest of the effect.",
     "data": {
       "rarity": "common",
       "traits": [],
@@ -792,7 +792,7 @@
     "systemVersion": "1.2.10",
     "name": "Troop Movement",
     "slug": "troop-movement-npc-core",
-    "descr": "Troopmovement",
+    "descr": "Whenever a troop moves, you move one of its segments and the other segments follow behind it. At the end of the movement, you can group the other segments adjacent to the one you moved as you see fit, provided none of them moves farther than the moving segment. If you choose not to move the troop any distance, you can instead reshape the position of all the segments as long as one stays in place.",
     "data": {
       "rarity": "common",
       "traits": [],

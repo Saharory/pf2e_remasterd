@@ -145,6 +145,10 @@
       "title": "Creature.InteractionAbilities",
       "type": "list",
       "attribute": "data.abilities.interaction",
+      "custom": {
+        "itemTitle": "{{name}}",
+        "itemDetail": "{{text}}"
+      },
       "form": {
         "title": "Creature.Ability",
         "partial": "ability"
@@ -231,6 +235,10 @@
       "title": "Creature.AutomaticOrRactiveAbilities",
       "type": "list",
       "attribute": "data.abilities.defensive",
+      "custom": {
+        "itemTitle": "{{name}}",
+        "itemDetail": "{{text}}"
+      },
       "form": {
         "title": "Creature.Ability",
         "partial": "ability"
@@ -264,6 +272,10 @@
       "title": "Creature.Spellcasting",
       "type": "list",
       "attribute": "data.spellcasting",
+      "custom": {
+        "itemTitle": "{{name}}",
+        "itemDetail": "{% if spellDC %}DC {{spellDC}} • {% endif %}{% for group in spellGroups %}{{group.label}}{% if not forloop.last %}, {% endif %}{% endfor %}"
+      },
       "form": {
         "title": "Creature.Spellcasting",
         "partial": "spellcasting"
@@ -288,6 +300,10 @@
       "title": "Creature.OffensiveOrProactiveAbilities",
       "type": "list",
       "attribute": "data.abilities.offensive",
+      "custom": {
+        "itemTitle": "{{name}}",
+        "itemDetail": "{{text}}"
+      },
       "form": {
         "title": "Creature.Ability",
         "partial": "ability"

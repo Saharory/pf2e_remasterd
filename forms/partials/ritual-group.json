@@ -15,7 +15,8 @@
       "attribute": "rituals",
       "attributeType": "Ritual",
       "custom": {
-        "itemDetail": "{{reference}}"
+        "itemTitle": "{{name}}",
+        "itemDetail": "{{rank|ordinal}} rank{% if details %} • {{details}}{% endif %}"
       },
       "form": {
         "title": "Entity.Ritual",

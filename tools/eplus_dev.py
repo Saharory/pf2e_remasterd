@@ -288,6 +288,7 @@ def validate_project() -> dict[str, Any]:
     for script in (
         "validate_public_orc_compendium.py",
         "validate_public_ogl_compendium.py",
+        "test_creature_editability.py",
         "test_creature_spellcasting.py",
         "test_spell_area_templates.py",
     ):

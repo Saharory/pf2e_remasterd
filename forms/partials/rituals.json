@@ -18,6 +18,10 @@
       "title": "Creature.Rituals",
       "type": "list",
       "attribute": "ritualGroups",
+      "custom": {
+        "itemTitle": "{{label}}",
+        "itemDetail": "{% for ritual in rituals %}{{ritual.name}}{% if not forloop.last %}, {% endif %}{% endfor %}"
+      },
       "form": {
         "title": "Creature.Rituals",
         "partial": "ritual-group"
