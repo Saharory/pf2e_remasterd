@@ -105,8 +105,8 @@ def main() -> int:
         if section.get("attribute")
     }
     for attribute in required_lists:
-        if sections.get(attribute, {}).get("custom", {}).get("itemDetail") != "{{text}}":
-            raise SystemExit(f"ability list lacks an editable text preview: {attribute}")
+        if sections.get(attribute, {}).get("custom", {}).get("itemDetail"):
+            raise SystemExit(f"ability list should remain name-only: {attribute}")
 
     spellcasting = form("partials/spellcasting.json")
     spell_groups = next(
