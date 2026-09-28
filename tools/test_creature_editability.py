@@ -10,6 +10,7 @@ from pathlib import Path
 import json5
 
 from creature_ability_glossary import GLOSSARY, GLOSSARY_ROUTES
+from creature_senses import SENSE_ROUTES, link_shared_senses
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -53,7 +54,16 @@ def main() -> int:
     by_slug = {record["slug"]: record for record in creatures}
     ability_count = 0
     shared_reference_count = 0
+    sense_reference_count = 0
     for creature in creatures:
+        senses = str(creature.get("data", {}).get("senses") or "")
+        if re.search(r"(?:^|;\s*)(?:Recall Knowledge|Languages)\b", senses, re.I):
+            raise SystemExit(f"creature metadata remains embedded in senses: {creature['slug']}")
+        if link_shared_senses(senses) != senses:
+            raise SystemExit(f"creature shared sense is not linked: {creature['slug']}")
+        sense_reference_count += sum(
+            int(route in senses) for _, route in SENSE_ROUTES
+        )
         for entries in creature.get("data", {}).get("abilities", {}).values():
             for ability in entries or []:
                 ability_count += 1
@@ -77,6 +87,8 @@ def main() -> int:
         raise SystemExit("creature shared-rule references are unexpectedly incomplete")
 
     moon_hag = by_slug["moon-hag-monster-core-2"]
+    if moon_hag["data"].get("senses") != "[Darkvision](/action/darkvision-monster-core)":
+        raise SystemExit("Moon Hag senses are not separated and linked")
     abilities = {
         ability["name"]: ability
         for entries in moon_hag["data"]["abilities"].values()
@@ -145,10 +157,17 @@ def main() -> int:
 
     ability_view = (REPO / "views/partials/ability.md").read_text(encoding="utf-8")
     attack_view = (REPO / "views/partials/attack.md").read_text(encoding="utf-8")
+    creature_view = (REPO / "views/partials/creature-primary.md").read_text(encoding="utf-8")
     if "ability.reference" not in ability_view:
         raise SystemExit("shared creature ability names are not linked")
     if "/trait/{{trait}}" not in ability_view or "/trait/{{trait}}" not in attack_view:
         raise SystemExit("creature ability or attack traits are not linked")
+    if (
+        "/action/recall-knowledge-player-core" not in creature_view
+        or "data.recallKnowledge.dc" not in creature_view
+        or "data.languages" not in creature_view
+    ):
+        raise SystemExit("creature identity fields are not separated in the stat block")
 
     creature_form = form("creature.json")
     required_lists = {
@@ -182,7 +201,7 @@ def main() -> int:
     print(
         f"Validated {ability_count} editable creature abilities, "
         f"{shared_reference_count} shared-rule links, {len(GLOSSARY)} shared rules, "
-        "and spell/ritual editor previews"
+        f"{sense_reference_count} linked senses, and spell/ritual editor previews"
     )
     return 0
 

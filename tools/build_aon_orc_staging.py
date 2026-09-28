@@ -722,8 +722,6 @@ def map_creature(record: dict[str, Any]) -> tuple[dict[str, Any], str]:
         "recallKnowledgeText": f"DC {rk['dc']}" + (f" ({', '.join(skill.title() for skill in rk['skills'])})" if rk["skills"] else ""),
         "languagesText": ", ".join(list_of(record.get("language"))),
     }
-    reference = [value for value in [data["senses"], f"Recall Knowledge {data['recallKnowledgeText']}", f"Languages {data['languagesText']}" if data["languagesText"] else ""] if value]
-    data["senses"] = "; ".join(reference)
     return data, ""
 
 

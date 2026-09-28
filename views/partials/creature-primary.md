@@ -1,5 +1,13 @@
 {% if data.perception %}
-**{{'Creature.Perception'|l}}** [{{data.perception|signed}}](roll "{{'Creature.Perception'|l}}"); {{data.senses}}
+**{{'Creature.Perception'|l}}** [{{data.perception|signed}}](roll "{{'Creature.Perception'|l}}"){% if data.senses %}; {{data.senses}}{% endif %}
+{% endif %}
+
+{% if data.recallKnowledge.dc %}
+[**{{'Creature.RecallKnowledge'|l}}**](/action/recall-knowledge-player-core) DC {{data.recallKnowledge.dc}}{% if data.recallKnowledge.skills %} ({% for skill in data.recallKnowledge.skills %}{{skill|map: 'Skill'}}{% if not forloop.last %}, {% endif %}{% endfor %}){% endif %}
+{% endif %}
+
+{% if data.languages %}
+**{{'Creature.Languages'|l}}** {% for language in data.languages %}{{language|map: 'Language'}}{% if not forloop.last %}, {% endif %}{% endfor %}
 {% endif %}
 
 {% if data.skills %}
