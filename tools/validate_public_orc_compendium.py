@@ -367,13 +367,27 @@ def main() -> int:
             errors.append(
                 f"{path}: {record.get('name')} links to missing entries {missing[:5]}"
             )
-        duplicate_count = len(destinations) - len(set(destinations))
-        # Hazard outcomes often repeat the same condition at different values;
-        # each occurrence is a useful in-play link, not a redundant index.
-        if duplicate_count and record.get("kind") not in {"Hazard", "Vehicle"}:
-            errors.append(
-                f"{path}: {record.get('name')} repeats {duplicate_count} internal destination links"
+        # A route can legitimately appear in more than one structured field. For
+        # example, separate creature abilities can each instruct the GM to Fly.
+        # Only flag repeated destinations inside the same rich-text field, where
+        # they usually indicate that the source-link cleanup failed to dedupe it.
+        # Hazard outcomes often repeat conditions at different values inside one
+        # field, and every occurrence remains useful during play.
+        if record.get("kind") not in {"Hazard", "Vehicle"}:
+            duplicate_count = sum(
+                len(field_destinations) - len(set(field_destinations))
+                for value in displayed_text
+                if (
+                    field_destinations := [
+                        match.groups() for match in INTERNAL_LINK.finditer(value)
+                    ]
+                )
             )
+            if duplicate_count:
+                errors.append(
+                    f"{path}: {record.get('name')} repeats {duplicate_count} "
+                    "internal destination links inside individual text fields"
+                )
 
     dying_rule = next(
         (rule for rule in by_kind.get("Rule", []) if rule.get("slug") == "dying-rules-2325"),

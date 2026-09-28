@@ -90,8 +90,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -204,19 +205,19 @@
                   "name": "Cleanse Affliction",
                   "rank": 4,
                   "reference": "/spell/cleanse-affliction-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Clear Mind",
                   "rank": 4,
                   "reference": "/spell/clear-mind-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Noise Blast",
                   "rank": 4,
                   "reference": "/spell/noise-blast-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -227,7 +228,7 @@
                   "name": "Counter Performance",
                   "rank": 3,
                   "reference": "/spell/counter-performance-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -369,8 +370,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -500,8 +502,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -516,7 +519,7 @@
           },
           {
             "name": "Clique Spellcasting",
-            "text": "When the apprentice magician clique Casts a Spell, its members pool their arcane power into the spell. A creature who critically fails their save against the spell or whom the clique hits with a critical spell attack is also Stupefied 1 for 1 minute.",
+            "text": "When the apprentice magician clique Casts a Spell, its members pool their arcane power into the spell. A creature who critically fails their save against the spell or whom the clique hits with a critical spell attack is also [Stupefied 1](/condition/stupefied-player-core) for 1 minute.",
             "traits": []
           },
           {
@@ -749,8 +752,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -762,7 +766,7 @@
           },
           {
             "name": "Shoving Shield Wall",
-            "text": "The arboreal copse Strides. All enemies whose square the copse begins in or passes through during their movement take 5d6 bludgeoning damage (basic Fortitude DC 25). On a failed saving throw, the arboreal copse carries the creature along on their shields, moving them in the same distance and direction for the rest of their Stride.",
+            "text": "The arboreal copse Strides. All enemies whose square the copse begins in or passes through during their movement take 5d6 bludgeoning damage (basic Fortitude DC 25). On a failed saving throw, the arboreal copse carries the creature along on their shields, moving them in the same distance and direction for the rest of their [Stride](/action/stride-player-core).",
             "traits": [],
             "actions": "two"
           },
@@ -887,8 +891,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -1046,8 +1051,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -1114,7 +1120,7 @@
                   "name": "Share Life",
                   "rank": 2,
                   "reference": "/spell/share-life-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1243,8 +1249,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -1256,7 +1263,7 @@
           },
           {
             "name": "Chorus of Croaks",
-            "text": "The boggard dreadknot unleashes a chorus of terrifying croaks. Any non-boggard within 30 feet becomes Frightened 1 unless they succeed at a Will DC 26 save; those who critically succeed are temporarily immune for 1 minute.",
+            "text": "The boggard dreadknot unleashes a chorus of terrifying croaks. Any non-boggard within 30 feet becomes [Frightened 1](/condition/frightened-player-core) unless they succeed at a Will DC 26 save; those who critically succeed are temporarily immune for 1 minute.",
             "traits": [
               "auditory",
               "emotion",
@@ -1283,7 +1290,7 @@
           },
           {
             "name": "Tongue Lashing",
-            "text": "The dreadknot's giant frogs lash out at each enemy in a 15-foot emanation with their tongues, requiring them to succeed at a Reflex DC 26 save or become [Grabbed](/condition/grabbed-player-core). A creature grabbed in this way isn't [Immobilized](/condition/immobilized-player-core), but it can't move more than 15 feet from the dreadknot. A creature can sever one of the tongues with a Strike against AC 25 that deals at least 15 slashing damage. This doesn't deal damage to the dreadknot.",
+            "text": "The dreadknot's giant frogs lash out at each enemy in a 15-foot emanation with their tongues, requiring them to succeed at a Reflex DC 26 save or become [Grabbed](/condition/grabbed-player-core). A creature grabbed in this way isn't [Immobilized](/condition/immobilized-player-core), but it can't move more than 15 feet from the dreadknot. A creature can sever one of the tongues with a [Strike](/action/strike-player-core) against AC 25 that deals at least 15 slashing damage. This doesn't deal damage to the dreadknot.",
             "traits": [],
             "actions": "two"
           }
@@ -1416,14 +1423,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
           {
             "name": "Chorus of Croaks",
-            "text": "The boggard scouting party unleashes a chorus of terrifying croaks. Any non-boggard within 30 feet becomes Frightened 1 unless they succeed at a Will DC 21 save; those who critically succeed are temporarily immune for 1 minute.",
+            "text": "The boggard scouting party unleashes a chorus of terrifying croaks. Any non-boggard within 30 feet becomes [Frightened 1](/condition/frightened-player-core) unless they succeed at a Will DC 21 save; those who critically succeed are temporarily immune for 1 minute.",
             "traits": [
               "auditory",
               "emotion",
@@ -1434,7 +1442,7 @@
           },
           {
             "name": "Coordinated Tongue Pull",
-            "text": "**Frequency** once per round; **Effect** Several boggards use their tongues to grapple an enemy within 10 feet to pull them closer. The target must attempt a Reflex DC 21 save. On a failure, they are Grabbed and pulled 5 feet closer to the scouting party. A creature [grabbed](/condition/grabbed-player-core) in this way isn't Immobilized, but it can't move more than 10 feet from the scouting party. A creature can sever one of the tongues with a Strike against AC 21 that deals at least 5 slashing damage. This doesn't damage the scouting party.",
+            "text": "**Frequency** once per round; **Effect** Several boggards use their tongues to grapple an enemy within 10 feet to pull them closer. The target must attempt a Reflex DC 21 save. On a failure, they are [Grabbed](/condition/grabbed-player-core) and pulled 5 feet closer to the scouting party. A creature grabbed in this way isn't [Immobilized](/condition/immobilized-player-core), but it can't move more than 10 feet from the scouting party. A creature can sever one of the tongues with a [Strike](/action/strike-player-core) against AC 21 that deals at least 5 slashing damage. This doesn't damage the scouting party.",
             "traits": [],
             "actions": "one"
           },
@@ -1577,8 +1585,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -1730,8 +1739,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -1874,8 +1884,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -2015,8 +2026,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -2146,8 +2158,9 @@
         "defensive": [
           {
             "name": "Regeneration",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Regrowth",
@@ -2161,8 +2174,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -2174,7 +2188,7 @@
           },
           {
             "name": "Amnesia Venom",
-            "text": "**Saving Throw** Fortitude DC 33\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** Clumsy 1 (1 round)\n\n**Stage 2** Clumsy 2 (1 round)\n\n**Stage 3** Confused, Off Guard, and Clumsy 3 (1 round)\n\n**Stage 4** as Stage 3 and permanently forget the last hour (1 round)",
+            "text": "**Saving Throw** Fortitude DC 33\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** [Clumsy 1](/condition/clumsy-player-core) (1 round)\n\n**Stage 2** Clumsy 2 (1 round)\n\n**Stage 3** [Confused](/condition/confused-player-core), [Off Guard](/condition/off-guard-player-core), and Clumsy 3 (1 round)\n\n**Stage 4** as Stage 3 and permanently forget the last hour (1 round)",
             "traits": [
               "mental",
               "poison"
@@ -2182,9 +2196,10 @@
           },
           {
             "name": "Constrict",
-            "text": "1d10+6 bludgeoning, basic Fortitude DC 36 (see [Constrict](/action/constrict-monster-core))",
+            "text": "1d10+6 bludgeoning, basic Fortitude DC 36",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Root",
@@ -2202,7 +2217,7 @@
           },
           {
             "name": "Mass Improved Grab",
-            "text": "**Trigger** A creature fails or critically fails their Reflex save against the dezullon thicket's Thrashing Vines; **Effect** The dezullon thicket attempts an Athletics check to Grapple the triggering creature. A dezullon thicket can Grapple as many creatures as it has remaining segments, though it needs to spend an action to extend the duration on subsequent rounds. These attempts neither apply nor count toward the creature's multiple attack penalty.",
+            "text": "**Trigger** A creature fails or critically fails their Reflex save against the dezullon thicket's Thrashing Vines; **Effect** The dezullon thicket attempts an Athletics check to [Grapple](/action/grapple-player-core) the triggering creature. A dezullon thicket can Grapple as many creatures as it has remaining segments, though it needs to spend an action to extend the duration on subsequent rounds. These attempts neither apply nor count toward the creature's multiple attack penalty.",
             "traits": [],
             "actions": "free"
           }
@@ -2325,8 +2340,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -2464,8 +2480,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -2477,7 +2494,7 @@
           },
           {
             "name": "Charge the Fallen",
-            "text": "The dromaar company Strides up to twice, sweeping with their axes. They deal 2d8+5 slashing damage (basic Reflex DC 21 save) to each enemy in a 5-foot emanation at the end of their movement. This damage increases by 5 if the target is Prone.",
+            "text": "The dromaar company Strides up to twice, sweeping with their axes. They deal 2d8+5 slashing damage (basic Reflex DC 21 save) to each enemy in a 5-foot emanation at the end of their movement. This damage increases by 5 if the target is [Prone](/condition/prone-player-core).",
             "traits": [],
             "actions": "two"
           },
@@ -2614,8 +2631,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -2854,8 +2872,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -2992,8 +3011,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -3123,7 +3143,7 @@
         "defensive": [
           {
             "name": "No Retreat",
-            "text": "These soldiers have been extensively trained to hold their ground no matter the situation. If any effect would force the first-class infantry to move, reduce the distance by 10 feet. Any time they would be affected by the [Fleeing](/condition/fleeing-player-core) condition, the first-class infantry is instead Slowed 2 for the same duration.",
+            "text": "These soldiers have been extensively trained to hold their ground no matter the situation. If any effect would force the first-class infantry to move, reduce the distance by 10 feet. Any time they would be affected by the [Fleeing](/condition/fleeing-player-core) condition, the first-class infantry is instead [Slowed 2](/condition/slowed-player-core) for the same duration.",
             "traits": []
           },
           {
@@ -3133,8 +3153,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -3158,7 +3179,7 @@
           },
           {
             "name": "First-class Charge",
-            "text": "The first-class infantry rushes forward with a hunger for battle. They Stride up to twice their Speed. At the end of their movement, each enemy within a 5-foot emanation takes 2d6+5 slashing damage, with a basic Reflex DC 30 save.",
+            "text": "The first-class infantry rushes forward with a hunger for battle. They [Stride](/action/stride-player-core) up to twice their Speed. At the end of their movement, each enemy within a 5-foot emanation takes 2d6+5 slashing damage, with a basic Reflex DC 30 save.",
             "traits": [],
             "actions": "two"
           }
@@ -3286,8 +3307,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -3438,14 +3460,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
           {
             "name": "Catch and Release",
-            "text": "The gargoyle wing attempts an Athletics checks to Grapple, comparing the result to the Fortitude DC of a number of Large or smaller creatures in a 5-foot emanation equal to the gargoyle wing's remaining number of segments, then Flies up to 40 feet, bringing any successfully [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) creatures along, and Releases them.",
+            "text": "The gargoyle wing attempts an Athletics checks to [Grapple](/action/grapple-player-core), comparing the result to the Fortitude DC of a number of Large or smaller creatures in a 5-foot emanation equal to the gargoyle wing's remaining number of segments, then Flies up to 40 feet, bringing any successfully [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) creatures along, and Releases them.",
             "traits": [],
             "actions": "two"
           },
@@ -3567,8 +3590,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -3579,13 +3603,13 @@
           },
           {
             "name": "Grasping Mandibles",
-            "text": "**Requirements** The giant ant army's last action was a Mandible Frenzy that at least one creature failed their save against or the giant ant army has at least one creature [Grabbed](/condition/grabbed-player-core) or Restrained; **Effect** If used after Grasping Mandibles, the giant ant army can attempt an Athletics check to Grapple, comparing the result to the Fortitude DC of each creature who failed its saving throw, up to as many creatures as the giant ant army has remaining segments. The giant any army can instead use Grasping Mandibles to choose one creature it's grabbing or restraining to automatically extend that condition to the end of the army's next turn.",
+            "text": "**Requirements** The giant ant army's last action was a Mandible Frenzy that at least one creature failed their save against or the giant ant army has at least one creature [Grabbed](/condition/grabbed-player-core) or Restrained; **Effect** If used after Grasping Mandibles, the giant ant army can attempt an Athletics check to [Grapple](/action/grapple-player-core), comparing the result to the Fortitude DC of each creature who failed its saving throw, up to as many creatures as the giant ant army has remaining segments. The giant any army can instead use Grasping Mandibles to choose one creature it's grabbing or restraining to automatically extend that condition to the end of the army's next turn.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Haul Away",
-            "text": "**Requirements** The giant ant army has at least one creature [Restrained](/condition/restrained-player-core); **Effect** The army Strides up to its Speed, carrying any restrained creatures with it. If the creature is Gargantuan, the giant ant army is Encumbered.",
+            "text": "**Requirements** The giant ant army has at least one creature [Restrained](/condition/restrained-player-core); **Effect** The army Strides up to its Speed, carrying any restrained creatures with it. If the creature is Gargantuan, the giant ant army is [Encumbered](/condition/encumbered-player-core).",
             "traits": [],
             "actions": "one"
           },
@@ -3597,7 +3621,7 @@
           },
           {
             "name": "Overwhelm",
-            "text": "The giant ant army swarms over a Large or larger creature that it has Grabbed, pinning the creature in place and causing it to become Restrained until the start of the giant ant army's next turn or until it Escapes. A creature that begins its turn restrained by the army is repeatedly stung by the clinging ants, automatically taking 2d6 piercing damage and suffering the effects of giant ant venom.",
+            "text": "The giant ant army swarms over a Large or larger creature that it has [Grabbed](/condition/grabbed-player-core), pinning the creature in place and causing it to become [Restrained](/condition/restrained-player-core) until the start of the giant ant army's next turn or until it Escapes. A creature that begins its turn restrained by the army is repeatedly stung by the clinging ants, automatically taking 2d6 piercing damage and suffering the effects of giant ant venom.",
             "traits": [],
             "actions": "two"
           }
@@ -3713,8 +3737,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -3856,8 +3881,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -3875,7 +3901,7 @@
           },
           {
             "name": "Rush and Steal",
-            "text": "Quickly moving in with grasping hands, the goblin rabble take what they can. The goblin rabble Strides up to twice their Speed. During this movement, the goblins Interact to pick up an unattended object no larger than 2 Bulk or attempt to Steal an item from a creature they are adjacent to; the goblins can pick up or Steal as many objects as they have remaining segments in any combination.",
+            "text": "Quickly moving in with grasping hands, the goblin rabble take what they can. The goblin rabble Strides up to twice their Speed. During this movement, the goblins [Interact](/action/interact-player-core) to pick up an unattended object no larger than 2 Bulk or attempt to [Steal](/action/steal-player-core) an item from a creature they are adjacent to; the goblins can pick up or Steal as many objects as they have remaining segments in any combination.",
             "traits": [],
             "actions": "two"
           }
@@ -3997,8 +4023,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -4023,7 +4050,7 @@
           },
           {
             "name": "Troop Harrowing",
-            "text": "When the halfling lucky draw Casts a Spell that targets a single creature, some of the constituent members can perform a focused Harrow reading on the target as part of Casting the Spell. The lucky draw attempts an Occultism skill check against the target's Will DC. On a success, the target takes a –1 status penalty to their saving throw or AC against the spell (–2 on a critical success). If the lucky draw critically fails this check, their reading portends bad news for the halflings and they become Frightened 2.",
+            "text": "When the halfling lucky draw Casts a Spell that targets a single creature, some of the constituent members can perform a focused Harrow reading on the target as part of Casting the Spell. The lucky draw attempts an Occultism skill check against the target's Will DC. On a success, the target takes a –1 status penalty to their saving throw or AC against the spell (–2 on a critical success). If the lucky draw critically fails this check, their reading portends bad news for the halflings and they become [Frightened 2](/condition/frightened-player-core).",
             "traits": [
               "mental",
               "occult"
@@ -4207,7 +4234,7 @@
         "defensive": [
           {
             "name": "Hellish Revenge",
-            "text": "**Trigger** The hell hound pack is critically hit by a Strike or spell attack; **Effect** The hell hound pack's Hellfire Breath recharges. They can immediately use it as part of this reaction.",
+            "text": "**Trigger** The hell hound pack is critically hit by a [Strike](/action/strike-player-core) or spell attack; **Effect** The hell hound pack's Hellfire Breath recharges. They can immediately use it as part of this reaction.",
             "traits": [],
             "actions": "reaction"
           },
@@ -4218,8 +4245,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -4375,12 +4403,13 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           },
           {
             "name": "Watchful",
-            "text": "The hobgoblin regiment is trained to guard from all sides with shields at the ready. The hobgoblin regiment can't be made Off Guard by flanking creatures of the troop's level or lower.",
+            "text": "The hobgoblin regiment is trained to guard from all sides with shields at the ready. The hobgoblin regiment can't be made [Off Guard](/condition/off-guard-player-core) by flanking creatures of the troop's level or lower.",
             "traits": []
           }
         ],
@@ -4519,14 +4548,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
           {
             "name": "Group Scamper",
-            "text": "**Frequency** once per round; **Effect** The kobolds Stride up to their Speed plus 5 feet and gain a +2 circumstance bonus to AC against reactions triggered by this movement. If they end this movement with at least 1 segment adjacent to any enemy, the squad is Off Guard until the beginning of its next turn.",
+            "text": "**Frequency** once per round; **Effect** The kobolds [Stride](/action/stride-player-core) up to their Speed plus 5 feet and gain a +2 circumstance bonus to AC against reactions triggered by this movement. If they end this movement with at least 1 segment adjacent to any enemy, the squad is [Off Guard](/condition/off-guard-player-core) until the beginning of its next turn.",
             "traits": [],
             "actions": "one"
           },
@@ -4688,14 +4718,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
           {
             "name": "Daemonic Pestilence",
-            "text": "The leukodaemon plague can telepathically communicate with the afflicted creature at any distance on the same plane\n\n**Saving Throw** Fortitude DC 34\n\n**Stage 1** carrier (1 day)\n\n**Stage 2** Drained 1 (1 day)\n\n**Stage 3** Drained 2 (1 day)\n\n**Stage 4** drained 2 (1 day)\n\n**Stage 5** Drained 3 (1 week)\n\n**Stage 6** dead",
+            "text": "The leukodaemon plague can telepathically communicate with the afflicted creature at any distance on the same plane\n\n**Saving Throw** Fortitude DC 34\n\n**Stage 1** carrier (1 day)\n\n**Stage 2** [Drained 1](/condition/drained-player-core) (1 day)\n\n**Stage 3** Drained 2 (1 day)\n\n**Stage 4** drained 2 (1 day)\n\n**Stage 5** Drained 3 (1 week)\n\n**Stage 6** dead",
             "traits": [
               "disease"
             ]
@@ -4774,7 +4805,7 @@
                   "name": "Translocate",
                   "rank": 5,
                   "reference": "/spell/translocate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -4887,13 +4918,14 @@
         "defensive": [
           {
             "name": "Frightful Presence",
-            "text": "60 feet. Will DC 37 (see [Frightful Presence](/action/frightful-presence-monster-core))",
+            "text": "60 feet. Will DC 37",
             "traits": [
               "aura",
               "emotion",
               "fear",
               "mental"
-            ]
+            ],
+            "reference": "/action/frightful-presence-monster-core"
           },
           {
             "name": "Mass Rejuvenation",
@@ -4913,13 +4945,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           },
           {
             "name": "Void Healing",
-            "text": "(see [Void Healing](/action/void-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/void-healing-monster-core"
           }
         ],
         "offensive": [
@@ -5313,8 +5347,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -5337,7 +5372,7 @@
           },
           {
             "name": "Vengeful Wrath",
-            "text": "As long as it's not Frightened, the mitflit vermin cavalry gains a +2 status bonus to the DC of its Crawling Stabs ability against creatures that have previously damaged or tormented it.",
+            "text": "As long as it's not [Frightened](/condition/frightened-player-core), the mitflit vermin cavalry gains a +2 status bonus to the DC of its Crawling Stabs ability against creatures that have previously damaged or tormented it.",
             "traits": [
               "emotion",
               "mental"
@@ -5382,7 +5417,7 @@
                   "name": "Speak with Animals",
                   "rank": 2,
                   "reference": "/spell/speak-with-animals-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -5504,14 +5539,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
           {
             "name": "Coordinated Maneuvers",
-            "text": "The monk cadre is practiced at putting their foes off-balance. The monks choose Disarm, Grapple, Reposition, or Reposition and attempt an Athletics check to perform that action, comparing the result to the appropriate DC (Fortitude for Grapple and Reposition, Reflex for Disarm and Trip) of each enemy within a 5-foot emanation. This can result in a different degree of success for each target.",
+            "text": "The monk cadre is practiced at putting their foes off-balance. The monks choose Disarm, [Grapple](/action/grapple-player-core), [Reposition](/action/reposition-player-core), or Reposition and attempt an Athletics check to perform that action, comparing the result to the appropriate DC (Fortitude for Grapple and Reposition, Reflex for Disarm and [Trip](/action/trip-player-core)) of each enemy within a 5-foot emanation. This can result in a different degree of success for each target.",
             "traits": [],
             "actions": "two"
           },
@@ -5652,11 +5688,12 @@
           },
           {
             "name": "Stench",
-            "text": "30 feet. Fortitude DC 33 (see [Stench](/action/stench-monster-core))",
+            "text": "30 feet. Fortitude DC 33",
             "traits": [
               "aura",
               "olfactory"
-            ]
+            ],
+            "reference": "/action/stench-monster-core"
           },
           {
             "name": "Troop Defenses",
@@ -5665,8 +5702,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -5684,7 +5722,7 @@
           },
           {
             "name": "Wretched Weeps",
-            "text": "**Saving Throw** Fortitude DC 36\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 2d4 persistent bleed every hour and Enfeebled 1 (1 day)\n\n**Stage 3** 2d6 persistent bleed every hour and Enfeebled 2 (1 day)",
+            "text": "**Saving Throw** Fortitude DC 36\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 2d4 persistent bleed every hour and [Enfeebled 1](/condition/enfeebled-player-core) (1 day)\n\n**Stage 3** 2d6 persistent bleed every hour and Enfeebled 2 (1 day)",
             "traits": [
               "disease"
             ]
@@ -5833,8 +5871,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -5846,13 +5885,13 @@
           },
           {
             "name": "Smothering Grasp",
-            "text": "**Requirements** The omox slime pool has a creature [Grabbed](/condition/grabbed-player-core) or Restrained; **Effect** Omox slime flows onto the creature, completely covering it. The creature must then succeed at a Fortitude DC 38 save or it becomes Blinded and must hold its breath or begin suffocating. These effects last as long as the omoxes have the creature grabbed or restrained.\n\nEffect: Remaining Air",
+            "text": "**Requirements** The omox slime pool has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core); **Effect** Omox slime flows onto the creature, completely covering it. The creature must then succeed at a Fortitude DC 38 save or it becomes [Blinded](/condition/blinded-player-core) and must hold its breath or begin suffocating. These effects last as long as the omoxes have the creature grabbed or restrained.\n\n[Effect: Remaining Air](/condition/effect-remaining-air-player-core)",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Waves of Sludge",
-            "text": "1 to 3\n\n**Frequency** once per round; **Effect** The omoxes attack all enemies in a 5-foot emanation with slimy tendrils (basic Reflex DC 35 save). A creature that critically fails this saving throw is also Grabbed by the slime pool. The damage depends on the number of actions.\n\n1 1d6+3 bludgeoning damage plus 1d6 acid damage\n\n2 3d6+12 bludgeoning damage plus 2d6 acid damage\n\n3 4d6+14 bludgeoning damage plus 3d6 acid damage",
+            "text": "1 to 3\n\n**Frequency** once per round; **Effect** The omoxes attack all enemies in a 5-foot emanation with slimy tendrils (basic Reflex DC 35 save). A creature that critically fails this saving throw is also [Grabbed](/condition/grabbed-player-core) by the slime pool. The damage depends on the number of actions.\n\n1 1d6+3 bludgeoning damage plus 1d6 acid damage\n\n2 3d6+12 bludgeoning damage plus 2d6 acid damage\n\n3 4d6+14 bludgeoning damage plus 3d6 acid damage",
             "traits": [],
             "actions": "one"
           }
@@ -5915,13 +5954,13 @@
                   "name": "Translocate",
                   "rank": 5,
                   "reference": "/spell/translocate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Create Water",
                   "rank": 5,
                   "reference": "/spell/create-water-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -6044,8 +6083,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -6185,7 +6225,7 @@
         "interaction": [
           {
             "name": "Entropy Sense",
-            "text": "A protean tumult can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. Veil Of Privacy prevents a creature from being detected via entropy sense automatically (without a counteract check).",
+            "text": "A protean tumult can anticipate the most likely presence of a creature through a supernatural insight into chaotic probabilities and chance. This grants it the ability to sense creatures within the listed range. [Veil Of Privacy](/spell/veil-of-privacy-player-core) prevents a creature from being detected via entropy sense automatically (without a counteract check).",
             "traits": [
               "divine",
               "prediction"
@@ -6200,12 +6240,13 @@
           },
           {
             "name": "Fast Healing 8",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           },
           {
             "name": "Protean Anatomy 12",
-            "text": "A protean's vital organs shift and change shape and position constantly. Immediately after the protean takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first. The protean is immune to polymorph effects unless it is a willing target. If Blinded or Deafened, the protean automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.\n\nEffect: Protean Anatomy",
+            "text": "A protean's vital organs shift and change shape and position constantly. Immediately after the protean takes acid, electricity, or sonic damage, it gains the listed amount of resistance to that damage type. This lasts for 1 hour or until the next time the protean takes damage of one of the other types (in which case its resistance changes to match that type), whichever comes first. The protean is immune to polymorph effects unless it is a willing target. If [Blinded](/condition/blinded-player-core) or [Deafened](/condition/deafened-player-core), the protean automatically recovers at the end of its next turn as new sensory organs grow to replace the compromised ones.\n\nEffect: Protean Anatomy",
             "traits": [
               "divine"
             ]
@@ -6217,8 +6258,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -6229,7 +6271,7 @@
           },
           {
             "name": "Chaos Strike",
-            "text": "**Frequency** once per round; **Effect** The protean tumult chooses adamantine, cold iron, or silver; the damage dealt by its Claws, Jaws, and Tails is treated as that material for 1 minute or until it uses Chaos Strike again.",
+            "text": "**Frequency** once per round; **Effect** The protean tumult chooses adamantine, cold iron, or silver; the damage dealt by its Claws, Jaws, and Tails is treated as that material for 1 minute or until it uses Chaos [Strike](/action/strike-player-core) again.",
             "traits": [
               "divine",
               "morph"
@@ -6395,14 +6437,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
           {
             "name": "Dust Storm",
-            "text": "**Requirements** The camel corps is in a desert or similar region; **Effect** The camel corps Steps, whipping up sand into a short-lived storm that obscures the surrounding region. Until the end of their next turn, the camel corps is Concealed from all creatures more than 15 feet away, and all creatures more than 15 feet away are concealed to the camel corps.",
+            "text": "**Requirements** The camel corps is in a desert or similar region; **Effect** The camel corps Steps, whipping up sand into a short-lived storm that obscures the surrounding region. Until the end of their next turn, the camel corps is [Concealed](/condition/concealed-player-core) from all creatures more than 15 feet away, and all creatures more than 15 feet away are concealed to the camel corps.",
             "traits": [],
             "actions": "one"
           },
@@ -6550,8 +6593,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -6684,12 +6728,13 @@
         "defensive": [
           {
             "name": "Fast Healing",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           },
           {
             "name": "Divine Revulsion",
-            "text": "If a redcap brigade sees a creature brandish a religious symbol of a deity (which requires an [Interact](/action/interact-player-core) action by that creature) or cast a divine spell while wearing a religious symbol, the troop must attempt a Will DC 26 save. They then become temporarily immune to all brandished religious symbols for 10 minutes.\n\n**Critical Success** The troop is unaffected.\n\n**Success** The troop is Frightened 1.\n\n**Failure** The troop is Frightened 2.\n\n**Critical Failure** The troop is Frightened 3.",
+            "text": "If a redcap brigade sees a creature brandish a religious symbol of a deity (which requires an [Interact](/action/interact-player-core) action by that creature) or cast a divine spell while wearing a religious symbol, the troop must attempt a Will DC 26 save. They then become temporarily immune to all brandished religious symbols for 10 minutes.\n\n**Critical Success** The troop is unaffected.\n\n**Success** The troop is [Frightened 1](/condition/frightened-player-core).\n\n**Failure** The troop is Frightened 2.\n\n**Critical Failure** The troop is Frightened 3.",
             "traits": [
               "emotion",
               "fear",
@@ -6703,8 +6748,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -6842,8 +6888,9 @@
         "defensive": [
           {
             "name": "Fast Healing (While Underground)",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           },
           {
             "name": "Troop Defenses",
@@ -6852,8 +6899,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -7020,8 +7068,9 @@
         "defensive": [
           {
             "name": "Fast Healing (While Underwater)",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           },
           {
             "name": "Troop Defenses",
@@ -7030,8 +7079,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -7196,8 +7246,9 @@
         "defensive": [
           {
             "name": "Fast Healing (While Touching Fire)",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           },
           {
             "name": "Troop Defenses",
@@ -7206,8 +7257,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -7377,8 +7429,9 @@
         "defensive": [
           {
             "name": "Fast Healing (While Touching Metal)",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           },
           {
             "name": "Troop Defenses",
@@ -7387,8 +7440,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -7552,8 +7606,9 @@
         "defensive": [
           {
             "name": "Fast Healing (While Touching Plants or Trees)",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           },
           {
             "name": "Troop Defenses",
@@ -7562,8 +7617,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -7733,8 +7789,9 @@
         "defensive": [
           {
             "name": "Fast Healing (In Open Air)",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           },
           {
             "name": "Troop Defenses",
@@ -7743,8 +7800,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -7917,8 +7975,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -7930,7 +7989,7 @@
           },
           {
             "name": "Sinful Bite",
-            "text": "A creature bitten by a sinspawn must attempt a Will DC 28 save as it is assailed by sinful thoughts. The sinswarm can't inflict the same sin effect on multiple targets in the same round until it has inflicted all seven sins at least once.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Sickened 1.\n\n**Failure** The creature is Sickened 2.\n\n**Critical Failure** The creature is sickened 2 and takes one of the following additional effects, chosen by the GM:\n\nEnfeebled 2 for 1 minute (envy)\n\nDrained 1 (gluttony)\n\nClumsy 2 for 1 minute (greed)\n\nStupefied 2 for 1 minute (lust)\n\nClumsy 1 and Enfeebled 1 for 1 minute (pride)\n\n–10-foot status penalty to all Speeds for 1 minute (sloth) Effect: Sinful Bite\n\ndrained 1 and enfeebled 1 for 1 minute (wrath)",
+            "text": "A creature bitten by a sinspawn must attempt a Will DC 28 save as it is assailed by sinful thoughts. The sinswarm can't inflict the same sin effect on multiple targets in the same round until it has inflicted all seven sins at least once.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Sickened 1](/condition/sickened-player-core).\n\n**Failure** The creature is Sickened 2.\n\n**Critical Failure** The creature is sickened 2 and takes one of the following additional effects, chosen by the GM:\n\n[Enfeebled 2](/condition/enfeebled-player-core) for 1 minute (envy)\n\n[Drained 1](/condition/drained-player-core) (gluttony)\n\n[Clumsy 2](/condition/clumsy-player-core) for 1 minute (greed)\n\n[Stupefied 2](/condition/stupefied-player-core) for 1 minute (lust)\n\nClumsy 1 and Enfeebled 1 for 1 minute (pride)\n\n–10-foot status penalty to all Speeds for 1 minute (sloth) Effect: Sinful Bite\n\ndrained 1 and enfeebled 1 for 1 minute (wrath)",
             "traits": [
               "arcane",
               "emotion",
@@ -8058,13 +8117,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           },
           {
             "name": "Void Healing",
-            "text": "(see [Void Healing](/action/void-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/void-healing-monster-core"
           }
         ],
         "offensive": [
@@ -8214,17 +8275,18 @@
         "defensive": [
           {
             "name": "Frightful Presence",
-            "text": "20 feet. Will DC 30 (see [Frightful Presence](/action/frightful-presence-monster-core))",
+            "text": "20 feet. Will DC 30",
             "traits": [
               "aura",
               "emotion",
               "fear",
               "mental"
-            ]
+            ],
+            "reference": "/action/frightful-presence-monster-core"
           },
           {
             "name": "Reactive Relocation",
-            "text": "**Trigger** A creature hits the guardian flock with an attack roll; **Effect** After the attack roll is resolved, the troop pools dimensional magic to rapidly change their position. They cast 4th-rank Translocate, except their range is limited to 40 feet.",
+            "text": "**Trigger** A creature hits the guardian flock with an attack roll; **Effect** After the attack roll is resolved, the troop pools dimensional magic to rapidly change their position. They cast 4th-rank [Translocate](/spell/translocate-player-core), except their range is limited to 40 feet.",
             "traits": [
               "teleportation"
             ],
@@ -8237,8 +8299,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -8325,7 +8388,7 @@
                   "name": "Translocate",
                   "rank": 4,
                   "reference": "/spell/translocate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -8336,7 +8399,7 @@
                   "name": "Invisibility",
                   "rank": 2,
                   "reference": "/spell/invisibility-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -8447,8 +8510,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -8460,13 +8524,13 @@
           },
           {
             "name": "Guard Charge",
-            "text": "The viking guard designates an ally it can see to be its charge. The charge gains a +2 circumstance bonus to their AC, Reflex saves, and saves against fear when they are adjacent to the viking guard. Further, this allows the viking guard to use its Sacrifice and Shield Wall actions. A viking guard can have only one charge at a time, and if it designates a new charge, the old one loses all benefits. If the viking guard's charge is reduced to 0 Hit Points, the viking guard must succeed at a Will DC 30 save or become Frightened 2; this is an emotion, fear, and mental effect.",
+            "text": "The viking guard designates an ally it can see to be its charge. The charge gains a +2 circumstance bonus to their AC, Reflex saves, and saves against fear when they are adjacent to the viking guard. Further, this allows the viking guard to use its Sacrifice and Shield Wall actions. A viking guard can have only one charge at a time, and if it designates a new charge, the old one loses all benefits. If the viking guard's charge is reduced to 0 Hit Points, the viking guard must succeed at a Will DC 30 save or become [Frightened 2](/condition/frightened-player-core); this is an emotion, fear, and mental effect.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Shield Wall",
-            "text": "**Requirements** The viking guard has a charge, and that creature is adjacent to the viking guard; **Effect** Raising shields, the viking guard Strides up to twice its Speed as it protects its charge. The viking guard gains a +2 circumstance bonus to its AC against reactions triggered by this movement. The viking guard's charge can Stride the same distance as a reaction, moving with the troop to maintain the bonuses from Guard Charge during this movement.",
+            "text": "**Requirements** The viking guard has a charge, and that creature is adjacent to the viking guard; **Effect** Raising shields, the viking guard Strides up to twice its Speed as it protects its charge. The viking guard gains a +2 circumstance bonus to its AC against reactions triggered by this movement. The viking guard's charge can [Stride](/action/stride-player-core) the same distance as a reaction, moving with the troop to maintain the bonuses from Guard Charge during this movement.",
             "traits": []
           }
         ]
@@ -8606,8 +8670,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -8679,7 +8744,7 @@
                   "name": "Translocate",
                   "rank": 4,
                   "reference": "/spell/translocate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -8795,13 +8860,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           },
           {
             "name": "Void Healing",
-            "text": "(see [Void Healing](/action/void-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/void-healing-monster-core"
           }
         ],
         "offensive": [
@@ -8939,14 +9006,15 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
           {
             "name": "Harry Prey",
-            "text": "The wolf pack focuses all their efforts on biting a single adjacent foe, who takes 4d6+8 piercing damage (basic Reflex DC 21 save). If the creature fails this saving throw, the wolf pack can immediately attempt an Athletics check to Trip the creature.",
+            "text": "The wolf pack focuses all their efforts on biting a single adjacent foe, who takes 4d6+8 piercing damage (basic Reflex DC 21 save). If the creature fails this saving throw, the wolf pack can immediately attempt an Athletics check to [Trip](/action/trip-player-core) the creature.",
             "traits": [],
             "actions": "two"
           },
@@ -9061,21 +9129,24 @@
         "defensive": [
           {
             "name": "Stench",
-            "text": "30 feet. Fortitude DC 24 (see [Stench](/action/stench-monster-core))",
+            "text": "30 feet. Fortitude DC 24",
             "traits": [
               "aura",
               "olfactory"
-            ]
+            ],
+            "reference": "/action/stench-monster-core"
           },
           {
             "name": "Troop Defenses",
-            "text": "(see [Troop Defenses](/action/troop-defenses-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -9216,11 +9287,12 @@
           },
           {
             "name": "Stench",
-            "text": "30 feet. Fortitude DC 33 (see [Stench](/action/stench-monster-core))",
+            "text": "30 feet. Fortitude DC 33",
             "traits": [
               "aura",
               "olfactory"
-            ]
+            ],
+            "reference": "/action/stench-monster-core"
           },
           {
             "name": "Troop Defenses",
@@ -9229,8 +9301,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -9247,9 +9320,10 @@
           },
           {
             "name": "Trample",
-            "text": "Large or smaller, 2d6+2 bludgeoning, basic Reflex DC 30 (see [Trample](/action/trample-monster-core))",
+            "text": "Large or smaller, 2d6+2 bludgeoning, basic Reflex DC 30",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -9378,8 +9452,9 @@
           },
           {
             "name": "Troop Movement",
-            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ],
         "offensive": [
@@ -9397,7 +9472,7 @@
           },
           {
             "name": "Mucus Deluge",
-            "text": "The horde spits a volley of larva-infested mucus as a 10-foot burst within 30 feet. Each creature in the area must succeed at a Reflex DC 27 save or be stuck to the nearest surface, [Immobilized](/condition/immobilized-player-core) until they Escape. Any creature so immobilized is exposed to zecui larvae at the end of each of its turns. When the zecui horde is reduced to 2 segments, this area decreases to a 5-foot burst.",
+            "text": "The horde spits a volley of larva-infested mucus as a 10-foot burst within 30 feet. Each creature in the area must succeed at a Reflex DC 27 save or be stuck to the nearest surface, [Immobilized](/condition/immobilized-player-core) until they [Escape](/action/escape-player-core). Any creature so immobilized is exposed to zecui larvae at the end of each of its turns. When the zecui horde is reduced to 2 segments, this area decreases to a 5-foot burst.",
             "traits": [],
             "actions": "two"
           },
@@ -9409,7 +9484,7 @@
           },
           {
             "name": "Zecui Larvae",
-            "text": "**Saving Throw** Fortitude DC 30\n\n**Stage 1** visible lumps as the larvae move but no ill effect (1 day)\n\n**Stage 2** Drained 1 (1 day)\n\n**Stage 3** Drained 2 (1 day)\n\n**Stage 4** Drained 3 and controlled by the zecui larva (1 day)\n\n**Stage 5** the creature dies and an adult Zecui can emerge from the corpse as an [Interact](/action/interact-player-core) action.",
+            "text": "**Saving Throw** Fortitude DC 30\n\n**Stage 1** visible lumps as the larvae move but no ill effect (1 day)\n\n**Stage 2** [Drained 1](/condition/drained-player-core) (1 day)\n\n**Stage 3** Drained 2 (1 day)\n\n**Stage 4** Drained 3 and controlled by the zecui larva (1 day)\n\n**Stage 5** the creature dies and an adult [Zecui](/creature/zecui-monster-core) can emerge from the corpse as an [Interact](/action/interact-player-core) action.",
             "traits": [
               "disease"
             ]

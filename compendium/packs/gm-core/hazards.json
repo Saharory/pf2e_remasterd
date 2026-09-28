@@ -188,7 +188,7 @@
       "abilities": [
         {
           "name": "Infinite Pitfall",
-          "text": "**Trigger** A creature walks onto the trapdoor\n\n**Effect** The triggering creature falls in and continues to fall, potentially forever. That creature can try to Grab An Edge to avoid falling. The DC to Climb the walls or Grab an Edge is 26. The pit contains many handholds, so the falling creature can try to Grab an Edge again every 6 seconds. If the creature succeeds, it can start to Climb out from that point (though it might be a very long climb, depending on how far the creature fell). Since the creature falls endlessly, it can rest and even prepare spells while falling, though items dropped while falling are usually lost forever.",
+          "text": "**Trigger** A creature walks onto the trapdoor\n\n**Effect** The triggering creature falls in and continues to fall, potentially forever. That creature can try to [Grab An Edge](/action/grab-an-edge-player-core) to avoid falling. The DC to Climb the walls or Grab an Edge is 26. The pit contains many handholds, so the falling creature can try to Grab an Edge again every 6 seconds. If the creature succeeds, it can start to Climb out from that point (though it might be a very long climb, depending on how far the creature fell). Since the creature falls endlessly, it can rest and even prepare spells while falling, though items dropped while falling are usually lost forever.",
           "traits": [],
           "actions": "reaction"
         }
@@ -268,7 +268,7 @@
         "will": 0
       },
       "disable": "Deception DC 28 (expert) twice to confound the haunt with your own deceptions, or Occultism DC 28 (trained) twice to create a ward against the haunt's mental influence",
-      "routine": "(1 action; illusion, incapacitation, occult) The haunt continues to confound victims' senses and inspire them to commit violence against each other. Each creature in the haunt's area must attempt a Will DC 26 save.\n\n---\n\n**Critical Success** The creature is unaffected and temporarily immune for 1 minute.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is [Confused](/condition/confused-player-core) for 1 round.\n\n**Critical Failure** The creature is confused for 1 minute.",
+      "routine": "(1 action; illusion, incapacitation, occult) The haunt continues to confound victims' senses and inspire them to commit violence against each other. Each creature in the haunt's area must attempt a Will DC 26 save.\n\n---\n\n**Critical Success** The creature is unaffected and temporarily immune for 1 minute.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is [Confused](/condition/confused-player-core) for 1 round.\n\n**Critical Failure** The creature is [confused](/condition/confused-player-core) for 1 minute.",
       "reset": "The haunt deactivates 1 minute after all creatures leave the area but resets immediately thereafter.",
       "abilities": [
         {
@@ -345,7 +345,7 @@
       "abilities": [
         {
           "name": "Prelude",
-          "text": "**Trigger** A creature approaches within 30 feet of the orchestra\n\n**Effect** The orchestra compels all creatures that can hear it to begin dancing. Each creature must attempt a Will DC 41 save, with the following effects. The haunt then rolls initiative.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Off Guard and cannot use reactions. Additionally, it must spend 1 of its actions each round dancing. Dancing is a move action that allows the creature to Stride up to half its Speed.\n\n**Failure** As success, except the creature must spend 2 of its actions each round dancing.\n\n**Critical Failure** As failure, except the creature must spend 3 of its actions each round dancing.",
+          "text": "**Trigger** A creature approaches within 30 feet of the orchestra\n\n**Effect** The orchestra compels all creatures that can hear it to begin dancing. Each creature must attempt a Will DC 41 save, with the following effects. The haunt then rolls initiative.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Off Guard](/condition/off-guard-player-core) and cannot use reactions. Additionally, it must spend 1 of its actions each round dancing. Dancing is a move action that allows the creature to Stride up to half its Speed.\n\n**Failure** As success, except the creature must spend 2 of its actions each round dancing.\n\n**Critical Failure** As failure, except the creature must spend 3 of its actions each round dancing.",
           "traits": [
             "auditory",
             "incapacitation",
@@ -584,7 +584,7 @@
       "abilities": [
         {
           "name": "Searing Agony",
-          "text": "**Trigger** A living creature approaches within 10 feet of the remains of a victim of the original fire\n\n**Effect** Memories of the pain suffered by the fire's past victims assault the triggering creature's mind. The creature must attempt a Will DC 25 save, and the haunt then rolls initiative.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Sickened 1](/condition/sickened-player-core).\n\n**Failure** The creature is [Sickened 2](/condition/sickened-player-core).\n\n**Critical Failure** The creature is [Sickened 3](/condition/sickened-player-core), and it is Off Guard for as long as it remains within the haunt's area and for 3 rounds thereafter.",
+          "text": "**Trigger** A living creature approaches within 10 feet of the remains of a victim of the original fire\n\n**Effect** Memories of the pain suffered by the fire's past victims assault the triggering creature's mind. The creature must attempt a Will DC 25 save, and the haunt then rolls initiative.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Sickened 1](/condition/sickened-player-core).\n\n**Failure** The creature is [Sickened 2](/condition/sickened-player-core).\n\n**Critical Failure** The creature is [Sickened 3](/condition/sickened-player-core), and it is [Off Guard](/condition/off-guard-player-core) for as long as it remains within the haunt's area and for 3 rounds thereafter.",
           "traits": [
             "mental"
           ],
@@ -736,7 +736,7 @@
         "will": 22
       },
       "disable": "Thievery DC 35 (master) to precisely adjust the blades so that they destroy each other, or Religion DC 38 (expert) to weaken the haunt; four successes are required to disable it",
-      "routine": "(3 actions) The tornado of blades uses 3 actions to move, traveling up to 30 feet with each action and dealing 2d10+10 slashing damage. Each creature in its path must attempt a Reflex DC 33.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage plus 1d10 bleed.\n\n**Critical Failure** The creature takes double damage and 1d10 bleed. It also becomes [Wounded 1](/condition/wounded-player-core) (or increases its wounded value by 1, if it is already wounded).\n\nEach successful check to disable this hazard reduces the haunt's movement by 30 feet, and the fourth success disables it completely.",
+      "routine": "(3 actions) The tornado of blades uses 3 actions to move, traveling up to 30 feet with each action and dealing 2d10+10 slashing damage. Each creature in its path must attempt a Reflex DC 33.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage plus 1d10 bleed.\n\n**Critical Failure** The creature takes double damage and 1d10 bleed. It also becomes [Wounded 1](/condition/wounded-player-core) (or increases its [wounded](/condition/wounded-player-core) value by 1, if it is already [wounded](/condition/wounded-player-core)).\n\nEach successful check to disable this hazard reduces the haunt's movement by 30 feet, and the fourth success disables it completely.",
       "reset": "The haunt draws jagged shards back into its area over the course of an hour, after which it can trigger again.",
       "abilities": [
         {
@@ -1081,7 +1081,7 @@
       "abilities": [
         {
           "name": "Ensnare",
-          "text": "**Trigger** A creature that isn't a spider walks into the web\n\n**Effect** The web wraps around the triggering creature's body, clinging to their limbs. The triggering creature must succeed at a Reflex DC 20 save or take a –10-foot circumstance penalty to all their Speeds until they Escape the web (DC 20). On a critical failure, the webbing also clings to the creature's face, making them [Sickened 1](/condition/sickened-player-core), and they can't attempt to reduce this condition until they Escape the web.",
+          "text": "**Trigger** A creature that isn't a spider walks into the web\n\n**Effect** The web wraps around the triggering creature's body, clinging to their limbs. The triggering creature must succeed at a Reflex DC 20 save or take a –10-foot circumstance penalty to all their Speeds until they [Escape](/action/escape-player-core) the web (DC 20). On a critical failure, the webbing also clings to the creature's face, making them [Sickened 1](/condition/sickened-player-core), and they can't attempt to reduce this condition until they Escape the web.",
           "traits": [],
           "actions": "reaction"
         }
@@ -1239,7 +1239,7 @@
       "abilities": [
         {
           "name": "Curse the Intruders",
-          "text": "**Trigger** The seal on the tomb is broken from the outside.\n\n**Effect** Each living creature within 60 feet must succeed at a Will DC 23 save or be subjected to the pharaoh's curse. A cursed creature takes a -2 status penalty to Fortitude saves, and any natural or magical healing it receives is halved. The curse remains until removed by Cleanse Affliction or similar magic.",
+          "text": "**Trigger** The seal on the tomb is broken from the outside.\n\n**Effect** Each living creature within 60 feet must succeed at a Will DC 23 save or be subjected to the pharaoh's curse. A cursed creature takes a -2 status penalty to Fortitude saves, and any natural or magical healing it receives is halved. The curse remains until removed by [Cleanse Affliction](/spell/cleanse-affliction-player-core) or similar magic.",
           "traits": [
             "curse",
             "divine"
@@ -1706,7 +1706,7 @@
       "abilities": [
         {
           "name": "Cursed Metamorphosis",
-          "text": "**Trigger** A creature moves within 30 feet of the glyph without speaking the passphrase in Druidic\n\n**Effect** The creature is targeted by Cursed Metamorphosis (Will DC 32 save).",
+          "text": "**Trigger** A creature moves within 30 feet of the glyph without speaking the passphrase in Druidic\n\n**Effect** The creature is targeted by [Cursed Metamorphosis](/spell/cursed-metamorphosis-player-core) (Will DC 32 save).",
           "traits": [
             "primal"
           ],
@@ -2490,7 +2490,7 @@
         },
         {
           "name": "Devour",
-          "text": "The target is trapped by the flytrap's jaws, gaining the [Grabbed](/condition/grabbed-player-core) condition until it Escapes. Additionally, it is exposed to the titanic flytrap toxin from the hundreds of tiny hairs that line the inside of its leaves. If the flytrap's jaws Strike was a critical success, the target takes a –2 circumstance penalty to its saving throws against this poison. At the end of each of the target's turns that it remains grabbed, the target takes 3d6 acid damage.",
+          "text": "The target is trapped by the flytrap's jaws, gaining the [Grabbed](/condition/grabbed-player-core) condition until it Escapes. Additionally, it is exposed to the titanic flytrap toxin from the hundreds of tiny hairs that line the inside of its leaves. If the flytrap's jaws Strike was a critical success, the target takes a –2 circumstance penalty to its saving throws against this poison. At the end of each of the target's turns that it remains [grabbed](/condition/grabbed-player-core), the target takes 3d6 acid damage.",
           "traits": []
         },
         {

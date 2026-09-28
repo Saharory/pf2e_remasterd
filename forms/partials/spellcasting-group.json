@@ -19,7 +19,7 @@
           "rank": "data.rank"
         },
         "itemTitle": "{{name}}",
-        "itemDetail": "{{rank|ordinal}} rank{% if details %} • {{details}}{% endif %}"
+        "itemDetail": "{{rank|ordinal}} rank{% if atWill %} • at will{% endif %}{% if details %} • {{details}}{% endif %}"
       },
       "form": {
         "title": "Entity.Spell",

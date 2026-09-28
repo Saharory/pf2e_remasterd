@@ -493,18 +493,18 @@ def canonical_trait_catalog(
 
 
 def dedupe_entity_links(result: dict[str, Any]) -> None:
-    """Keep only the first link to each destination in one displayed entry.
+    """Keep only the first link to each destination in each rich-text field.
 
     Identical mirrored text (notably deity ``descr`` and ``rulesText``) is
-    rewritten identically instead of treating the storage copy as a second
-    displayed mention.
+    still rewritten identically. Separate creature abilities must each retain
+    the references needed to understand them without scanning another block.
     """
-    seen: set[str] = set()
     rewritten: dict[str, str] = {}
 
     def dedupe_text(value: str) -> str:
         if value in rewritten:
             return rewritten[value]
+        seen: set[str] = set()
 
         def replace(match: re.Match[str]) -> str:
             label, route = match.groups()

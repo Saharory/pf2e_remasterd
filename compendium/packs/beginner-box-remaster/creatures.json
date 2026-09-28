@@ -76,13 +76,13 @@
         "offensive": [
           {
             "name": "Deep Plunge",
-            "text": "The brine shark dives straight down into the water, swimming up to 100 feet in a straight vertical line. It can use this ability while Grabbing a creature.",
+            "text": "The brine shark dives straight down into the water, swimming up to 100 feet in a straight vertical line. It can use this ability while [Grabbing](/condition/grabbed-player-core) a creature.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Grab",
-            "text": "When the brine shark succeeds at its jaws Strike, it can use this action immediately after to attempt to Grapple the target. This Grapple doesn't apply or count toward the shark's multiple attack penalty.",
+            "text": "When the brine shark succeeds at its jaws [Strike](/action/strike-player-core), it can use this action immediately after to attempt to [Grapple](/action/grapple-player-core) the target. This Grapple doesn't apply or count toward the shark's multiple attack penalty.",
             "traits": [],
             "actions": "one"
           }
@@ -363,7 +363,7 @@
         "offensive": [
           {
             "name": "Darkening Poison",
-            "text": "The next time the hunter deals damage with a shortsword Strike, the target must succeed at a Fortitude DC 16 save or take 1d8 poison damage and treat all creatures as [Concealed](/condition/concealed-player-core) for 1 round.",
+            "text": "The next time the hunter deals damage with a shortsword [Strike](/action/strike-player-core), the target must succeed at a Fortitude DC 16 save or take 1d8 poison damage and treat all creatures as [Concealed](/condition/concealed-player-core) for 1 round.",
             "traits": [
               "poison"
             ],
@@ -401,7 +401,7 @@
                   "name": "See the Unseen",
                   "rank": 2,
                   "reference": "/spell/see-the-unseen-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -538,7 +538,7 @@
         "offensive": [
           {
             "name": "Darkening Poison",
-            "text": "The next time the skulker deals damage with a dagger Strike, the target must succeed at a Fortitude DC 16 save or take 1d8 poison damage and treat all creatures as [Concealed](/condition/concealed-player-core) for 1 round.",
+            "text": "The next time the skulker deals damage with a dagger [Strike](/action/strike-player-core), the target must succeed at a Fortitude DC 16 save or take 1d8 poison damage and treat all creatures as [Concealed](/condition/concealed-player-core) for 1 round.",
             "traits": [
               "poison"
             ],
@@ -673,7 +673,7 @@
         "defensive": [
           {
             "name": "Fetid Fumes",
-            "text": "A cloud of smoke surrounds the cinder rat. All creatures within 5 feet, including the cinder rat, gain the Concealed condition from this smoke. A creature that comes within 5 feet of the cinder rat or begins its turn within 5 feet must succeed at a Fortitude DC 22 save or take a -1 status penalty to all checks and DCs for 1 round *(Use Sickened 1)*.",
+            "text": "A cloud of smoke surrounds the cinder rat. All creatures within 5 feet, including the cinder rat, gain the [Concealed](/condition/concealed-player-core) condition from this smoke. A creature that comes within 5 feet of the cinder rat or begins its turn within 5 feet must succeed at a Fortitude DC 22 save or take a -1 status penalty to all checks and DCs for 1 round *(Use [Sickened 1](/condition/sickened-player-core))*.",
             "traits": []
           }
         ],
@@ -2469,7 +2469,7 @@
         "defensive": [
           {
             "name": "Death Frenzy",
-            "text": "When the reefclaw is reduced to 0 hit points it can spend this reaction to make a claw Strike before dying.",
+            "text": "When the reefclaw is reduced to 0 hit points it can spend this reaction to make a claw [Strike](/action/strike-player-core) before dying.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2483,14 +2483,14 @@
           },
           {
             "name": "Reefclaw Venom",
-            "text": "A target that takes slashing damage from the reefclaw's claw Strike must succeed at a Fortitude DC 17 save or take 1d6 poison damage.",
+            "text": "A target that takes slashing damage from the reefclaw's claw [Strike](/action/strike-player-core) must succeed at a Fortitude DC 17 save or take 1d6 poison damage.",
             "traits": [
               "poison"
             ]
           },
           {
             "name": "Grab",
-            "text": "When the reeflclaw succeeds at its claw Strike, it can use this action immediately after to attempt to Grapple the target. This Grapple doesn't apply or count toward the reefclaw's multiple attack penalty.",
+            "text": "When the reeflclaw succeeds at its claw [Strike](/action/strike-player-core), it can use this action immediately after to attempt to [Grapple](/action/grapple-player-core) the target. This Grapple doesn't apply or count toward the reefclaw's multiple attack penalty.",
             "traits": [],
             "actions": "one"
           }
@@ -2612,7 +2612,7 @@
         "offensive": [
           {
             "name": "Filth Wave",
-            "text": "The sewer ooze unleashes a wave of filth, covering all creatures within 20 feet of itself. Each creature in the area must succeed at a Reflex DC 17 save or take 1d4 acid damage and a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls over and gains the [Prone](/condition/prone-player-core) condition). A creature can Interact to clean someone off. This decreases the Speed penalty to -5 feet after 1 action, or to no penalty after 2 actions. After using Filth Wave, the ooze can't use it again for 1 minute.",
+            "text": "The sewer ooze unleashes a wave of filth, covering all creatures within 20 feet of itself. Each creature in the area must succeed at a Reflex DC 17 save or take 1d4 acid damage and a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls over and gains the [Prone](/condition/prone-player-core) condition). A creature can [Interact](/action/interact-player-core) to clean someone off. This decreases the Speed penalty to -5 feet after 1 action, or to no penalty after 2 actions. After using Filth Wave, the ooze can't use it again for 1 minute.",
             "traits": [],
             "actions": "one"
           }
@@ -2752,7 +2752,7 @@
           },
           {
             "name": "Terrifying Charge",
-            "text": "The giant Strides and makes a horns Strike with a +4 circumstance bonus to damage.\n\nIf the strike hits, the giant attempts to Demoralize the target.",
+            "text": "The giant Strides and makes a horns [Strike](/action/strike-player-core) with a +4 circumstance bonus to damage.\n\nIf the strike hits, the giant attempts to Demoralize the target.",
             "traits": [],
             "actions": "two"
           }
@@ -2893,7 +2893,7 @@
           },
           {
             "name": "Knockdown",
-            "text": "When the sod hound succeeds at its jaws Strike, it can use this action immediately after to attempt to Trip the target. This Trip doesn't apply or count toward the sod hound's multiple attack penalty.",
+            "text": "When the sod hound succeeds at its jaws [Strike](/action/strike-player-core), it can use this action immediately after to attempt to [Trip](/action/trip-player-core) the target. This Trip doesn't apply or count toward the sod hound's multiple attack penalty.",
             "traits": [],
             "actions": "one"
           }
@@ -3009,7 +3009,7 @@
         "defensive": [
           {
             "name": "Slink",
-            "text": "If a creature ends its movement adjacent to the viper or within the viper's space, the viper can use its reaction to Stride, Climb, or Swim up to 10 feet. It must end its movement in a location that isn't within 5 feet of a foe. This movement doesn't trigger reactions.",
+            "text": "If a creature ends its movement adjacent to the viper or within the viper's space, the viper can use its reaction to [Stride](/action/stride-player-core), [Climb](/action/climb-player-core), or [Swim](/action/swim-player-core) up to 10 feet. It must end its movement in a location that isn't within 5 feet of a foe. This movement doesn't trigger reactions.",
             "traits": [],
             "actions": "reaction"
           }
@@ -3131,7 +3131,7 @@
         "offensive": [
           {
             "name": "Circling Attack",
-            "text": "The zephyr hawk flies up to half its Speed, makes two wing Strikes, then flies up to half its Speed again to return to its original location. The second half of this movement doesn't trigger reactions like Reactive Strike. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -8 multiple attack penalty.",
+            "text": "The zephyr hawk flies up to half its Speed, makes two wing Strikes, then flies up to half its Speed again to return to its original location. The second half of this movement doesn't trigger reactions like Reactive [Strike](/action/strike-player-core). The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -8 multiple attack penalty.",
             "traits": [],
             "actions": "two"
           }

@@ -88,7 +88,7 @@
         "defensive": [
           {
             "name": "Green Glow",
-            "text": "20 feet.\n\nAn abysium horror constantly emanates a powerful energy toxic to life. This radiation sheds dim light in the area. Any creature beginning its turn in the aura must attempt a Fortitude DC 27 save, becoming Sickened 1 on a failure or Sickened 2 on a critical failure. Once out of the aura, an affected creature's [sickened](/condition/sickened-player-core) condition automatically decreases by 1 at the beginning of each of its turns.",
+            "text": "20 feet.\n\nAn abysium horror constantly emanates a powerful energy toxic to life. This radiation sheds dim light in the area. Any creature beginning its turn in the aura must attempt a Fortitude DC 27 save, becoming [Sickened 1](/condition/sickened-player-core) on a failure or Sickened 2 on a critical failure. Once out of the aura, an affected creature's sickened condition automatically decreases by 1 at the beginning of each of its turns.",
             "traits": [
               "aura",
               "poison",
@@ -97,16 +97,17 @@
           },
           {
             "name": "Heavy",
-            "text": "As long as it is immobile, the elemental can't be forcibly moved or knocked Prone. If it takes a move action, it loses this immunity until the start of its next turn.",
+            "text": "As long as it is immobile, the elemental can't be forcibly moved or knocked [Prone](/condition/prone-player-core). If it takes a move action, it loses this immunity until the start of its next turn.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Trample",
-            "text": "Large or smaller, claw, basic Reflex DC 27 (see [Trample](/action/trample-monster-core))",
+            "text": "Large or smaller, claw, basic Reflex DC 27",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -276,8 +277,9 @@
         "defensive": [
           {
             "name": "Regeneration 15 (Deactivated by Earthbane)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Blessed by the Winds",
@@ -289,7 +291,7 @@
           },
           {
             "name": "Earthbane",
-            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes Stunned 2 and Clumsy 2.",
+            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes [Stunned 2](/condition/stunned-player-core) and [Clumsy 2](/condition/clumsy-player-core).",
             "traits": []
           },
           {
@@ -318,7 +320,7 @@
           },
           {
             "name": "Storm Strikes Twice",
-            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt Strike against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
+            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt [Strike](/action/strike-player-core) against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
             "traits": [
               "air",
               "teleportation"
@@ -371,7 +373,7 @@
                   "name": "Humanoid Form",
                   "rank": 7,
                   "reference": "/spell/humanoid-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -382,19 +384,19 @@
                   "name": "Airlift",
                   "rank": 4,
                   "reference": "/spell/airlift-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Vapor Form",
                   "rank": 4,
                   "reference": "/spell/vapor-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Voice on the Breeze",
                   "rank": 4,
                   "reference": "/spell/voice-on-the-breeze-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -405,7 +407,7 @@
                   "name": "Air Bubble",
                   "rank": 1,
                   "reference": "/spell/air-bubble-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -773,7 +775,7 @@
         "offensive": [
           {
             "name": "Iron Grief",
-            "text": "If the asp casts Magnetic Acceleration while charged with grief, it can either heighten the spell to 5th rank or target up to three creatures instead of one, rolling separately against each. After casting the spell, the asp is no longer charged with grief.",
+            "text": "If the asp casts [Magnetic Acceleration](/spell/magnetic-acceleration-rage-of-elements) while charged with grief, it can either heighten the spell to 5th rank or target up to three creatures instead of one, rolling separately against each. After casting the spell, the asp is no longer charged with grief.",
             "traits": []
           },
           {
@@ -832,7 +834,7 @@
                   "name": "Magnetic Acceleration",
                   "rank": 3,
                   "reference": "/spell/magnetic-acceleration-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1005,8 +1007,9 @@
         "defensive": [
           {
             "name": "Regeneration 15 (Deactivated by Earthbane)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Blessed by the Winds",
@@ -1018,7 +1021,7 @@
           },
           {
             "name": "Earthbane",
-            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes Stunned 2 and Clumsy 2.",
+            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes [Stunned 2](/condition/stunned-player-core) and [Clumsy 2](/condition/clumsy-player-core).",
             "traits": []
           },
           {
@@ -1047,7 +1050,7 @@
           },
           {
             "name": "Storm Strikes Twice",
-            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt Strike against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
+            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt [Strike](/action/strike-player-core) against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
             "traits": [
               "air",
               "teleportation"
@@ -1110,7 +1113,7 @@
                   "name": "Humanoid Form",
                   "rank": 7,
                   "reference": "/spell/humanoid-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1131,19 +1134,19 @@
                   "name": "Airlift",
                   "rank": 4,
                   "reference": "/spell/airlift-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Vapor Form",
                   "rank": 4,
                   "reference": "/spell/vapor-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Voice on the Breeze",
                   "rank": 4,
                   "reference": "/spell/voice-on-the-breeze-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1154,7 +1157,7 @@
                   "name": "Air Bubble",
                   "rank": 1,
                   "reference": "/spell/air-bubble-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -1275,26 +1278,28 @@
         "interaction": [
           {
             "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           },
           {
             "name": "Earthbound",
-            "text": "When not touching solid ground, the avalanche legion is Slowed 1.",
+            "text": "When not touching solid ground, the avalanche legion is [Slowed 1](/condition/slowed-player-core).",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Troop Defenses",
-            "text": "(see [Troop Defenses](/action/troop-defenses-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           }
         ],
         "offensive": [
           {
             "name": "Earth Glide",
-            "text": "The avalanche legion can Burrow through any earthen matter, including rock. When it does so, the legion moves at its full burrow Speed, leaving no tunnels or signs of its passing.",
+            "text": "The avalanche legion can [Burrow](/action/burrow-player-core) through any earthen matter, including rock. When it does so, the legion moves at its full [burrow Speed](/rule/burrow-speed-rules-2348), leaving no tunnels or signs of its passing.",
             "traits": []
           },
           {
@@ -1437,7 +1442,7 @@
         "defensive": [
           {
             "name": "Bullying Bluster",
-            "text": "30 feet. The blustering gale constantly unleashes a tirade of insults and aggressive taunts. Each enemy who enters or starts their turn in the aura must succeed at a Will DC 30 save or become Stupefied 1 for as long as they remain within the aura (Stupefied 2 on a critical failure). The troop's members are collectively able to mimic a few curse words or insults in every language, allowing their Bullying Bluster to affect any creature who understands a language. A creature who succeeds at its save is temporarily immune for 1 hour. The blustering gale can activate or deactivate the aura with a free action, which has the [concentrate](/trait/concentrate) trait.",
+            "text": "30 feet. The blustering gale constantly unleashes a tirade of insults and aggressive taunts. Each enemy who enters or starts their turn in the aura must succeed at a Will DC 30 save or become [Stupefied 1](/condition/stupefied-player-core) for as long as they remain within the aura (Stupefied 2 on a critical failure). The troop's members are collectively able to mimic a few curse words or insults in every language, allowing their Bullying Bluster to affect any creature who understands a language. A creature who succeeds at its save is temporarily immune for 1 hour. The blustering gale can activate or deactivate the aura with a free action, which has the [concentrate](/trait/concentrate) trait.",
             "traits": [
               "auditory",
               "aura",
@@ -1448,8 +1453,9 @@
           },
           {
             "name": "Troop Defenses",
-            "text": "(see [Troop Defenses](/action/troop-defenses-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           }
         ],
         "offensive": [
@@ -1621,7 +1627,7 @@
           },
           {
             "name": "Sweltering Heat",
-            "text": "25 feet. The boiling spring radiates heat, raising the air temperature around them. A creature that starts its turn in the emanation must succeed at a Fortitude DC 33 save or become Fatigued while it remains in the area; creatures immune to environmental heat effects or with any fire resistance are immune.",
+            "text": "25 feet. The boiling spring radiates heat, raising the air temperature around them. A creature that starts its turn in the emanation must succeed at a Fortitude DC 33 save or become [Fatigued](/condition/fatigued-player-core) while it remains in the area; creatures immune to environmental heat effects or with any fire resistance are immune.",
             "traits": [
               "aura",
               "fire"
@@ -1821,8 +1827,9 @@
         "defensive": [
           {
             "name": "Regeneration 15 (Deactivated by Earthbane)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Blessed by the Winds",
@@ -1834,7 +1841,7 @@
           },
           {
             "name": "Earthbane",
-            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes Stunned 2 and Clumsy 2.",
+            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes [Stunned 2](/condition/stunned-player-core) and [Clumsy 2](/condition/clumsy-player-core).",
             "traits": []
           },
           {
@@ -1863,7 +1870,7 @@
           },
           {
             "name": "Storm Strikes Twice",
-            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt Strike against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
+            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt [Strike](/action/strike-player-core) against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
             "traits": [
               "air",
               "teleportation"
@@ -1926,7 +1933,7 @@
                   "name": "Humanoid Form",
                   "rank": 7,
                   "reference": "/spell/humanoid-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1947,19 +1954,19 @@
                   "name": "Airlift",
                   "rank": 4,
                   "reference": "/spell/airlift-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Vapor Form",
                   "rank": 4,
                   "reference": "/spell/vapor-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Voice on the Breeze",
                   "rank": 4,
                   "reference": "/spell/voice-on-the-breeze-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1970,7 +1977,7 @@
                   "name": "Air Bubble",
                   "rank": 1,
                   "reference": "/spell/air-bubble-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -2278,7 +2285,7 @@
         "offensive": [
           {
             "name": "Marinade",
-            "text": "A creature taking persistent fire damage from the brochmaw's hot oil Strike is more readily cooked, taking a –2 circumstance penalty to Fortitude saves against Roast for as long as it is taking persistent fire damage.",
+            "text": "A creature taking persistent fire damage from the brochmaw's hot oil [Strike](/action/strike-player-core) is more readily cooked, taking a –2 circumstance penalty to Fortitude saves against Roast for as long as it is taking persistent fire damage.",
             "traits": []
           },
           {
@@ -2289,20 +2296,21 @@
           },
           {
             "name": "Serve",
-            "text": "**Requirements** The brochmaw has a creature Grabbed; **Effect** The brochmaw eats their hard-earned meal off one of their skewers. The brochmaw bites down on one creature it has grabbed, dealing 12d6 piercing damage (basic Fortitude DC 32 save); the brochmaw regains Hit Points equal to half the damage dealt. The creature is then freed from the skewer.",
+            "text": "**Requirements** The brochmaw has a creature [Grabbed](/condition/grabbed-player-core); **Effect** The brochmaw eats their hard-earned meal off one of their skewers. The brochmaw bites down on one creature it has grabbed, dealing 12d6 piercing damage (basic Fortitude DC 32 save); the brochmaw regains Hit Points equal to half the damage dealt. The creature is then freed from the skewer.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Skewer Master",
-            "text": "The skewers of a brochmaw are more than long enough to hold multiple creatures. A brochmaw can have up to three creatures Grabbed on its skewer, and it can still make Strikes with its skewer even if it has creatures grabbed, though it can't target creatures it has grabbed.",
+            "text": "The skewers of a brochmaw are more than long enough to hold multiple creatures. A brochmaw can have up to three creatures [Grabbed](/condition/grabbed-player-core) on its skewer, and it can still make Strikes with its skewer even if it has creatures grabbed, though it can't target creatures it has grabbed.",
             "traits": []
           },
           {
             "name": "Improved Grab",
-            "text": "(see [Improved Grab](/action/improved-grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "free"
+            "actions": "free",
+            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -2443,12 +2451,13 @@
         "defensive": [
           {
             "name": "All-Around Vision",
-            "text": "(see [All-Around Vision](/action/all-around-vision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/all-around-vision-monster-core"
           },
           {
             "name": "Shift Mood",
-            "text": "The capritellix rotates the segments of their face, changing their personality and demeanor. Until they Shift their Mood again, the capritellix gains a +4 status bonus to a certain skill and to their Will DC against that skill, as well as a specific occult innate spell they can cast at will (9th rank, DC 38).\n\n**Angry** Intimidation, Dominate\n\n**Gregarious** Performance, Uncontrollable Dance\n\n**Serene** Diplomacy, Suggestion\n\n**Sly** Deception, Warp Mind",
+            "text": "The capritellix rotates the segments of their face, changing their personality and demeanor. Until they Shift their Mood again, the capritellix gains a +4 status bonus to a certain skill and to their Will DC against that skill, as well as a specific occult innate spell they can cast at will (9th rank, DC 38).\n\n**Angry** Intimidation, [Dominate](/spell/dominate-player-core)\n\n**Gregarious** Performance, [Uncontrollable Dance](/spell/uncontrollable-dance-player-core)\n\n**Serene** Diplomacy, [Suggestion](/spell/suggestion-player-core)\n\n**Sly** Deception, [Warp Mind](/spell/warp-mind-player-core)",
             "traits": [],
             "actions": "one"
           }
@@ -2462,20 +2471,21 @@
           },
           {
             "name": "Plentiful Metals",
-            "text": "Each of the capritellix's levitating hands is made of a different precious metal. Each time a capritellix makes a metal hand Strike, they choose whether the hand they use is adamantine, cold iron, dawnsilver, orichalcum, silver, or any other solid precious metal.",
+            "text": "Each of the capritellix's levitating hands is made of a different precious metal. Each time a capritellix makes a metal hand [Strike](/action/strike-player-core), they choose whether the hand they use is adamantine, cold iron, dawnsilver, orichalcum, silver, or any other solid precious metal.",
             "traits": []
           },
           {
             "name": "Whirling Hands",
-            "text": "**Trigger** A creature starts its turn in the capritellix's melee reach; **Effect** The capritellix makes a metal hand Strike against the creature.",
+            "text": "**Trigger** A creature starts its turn in the capritellix's melee reach; **Effect** The capritellix makes a metal hand [Strike](/action/strike-player-core) against the creature.",
             "traits": [],
             "actions": "free"
           },
           {
             "name": "Push 20 feet",
-            "text": "(see [Push](/action/push-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/push-monster-core"
           }
         ]
       },
@@ -2606,7 +2616,7 @@
         "interaction": [
           {
             "name": "Top-Heavy",
-            "text": "While the carved beast is not Dug In, its unwieldy design leaves it vulnerable to falling over. The DC of any attempt to knock the carved beast Prone is reduced by 5, and the beast takes a –5 status penalty to any check or save it attempts to resist being knocked prone. Additionally, whenever the beast fails to Trip opponents with its roots Strike, it critically fails instead. If successfully Shoved by an opponent, the beast must succeed at a Reflex DC 20 save or fall prone.",
+            "text": "While the carved beast is not Dug In, its unwieldy design leaves it vulnerable to falling over. The DC of any attempt to knock the carved beast [Prone](/condition/prone-player-core) is reduced by 5, and the beast takes a –5 status penalty to any check or save it attempts to resist being knocked prone. Additionally, whenever the beast fails to [Trip](/action/trip-player-core) opponents with its roots [Strike](/action/strike-player-core), it critically fails instead. If successfully Shoved by an opponent, the beast must succeed at a Reflex DC 20 save or fall prone.",
             "traits": []
           }
         ],
@@ -2614,15 +2624,16 @@
         "offensive": [
           {
             "name": "Dig In",
-            "text": "The carved beast digs its roots into the ground for better protection and purchase. While Dug In, the carved beast can't Stride nor use its roots Strike; however, this also negates the effects of top-heavy, grants the beast a +2 status bonus to its AC and Fortitude saves, and increases the damage of its statue Strike by 1d8. The carved beast can spend an action on its turn to end the effect; alternatively, the effect ends when the carved beast is moved by force, such as via a successful Shove attack.",
+            "text": "The carved beast digs its roots into the ground for better protection and purchase. While Dug In, the carved beast can't [Stride](/action/stride-player-core) nor use its roots [Strike](/action/strike-player-core); however, this also negates the effects of top-heavy, grants the beast a +2 status bonus to its AC and Fortitude saves, and increases the damage of its statue Strike by 1d8. The carved beast can spend an action on its turn to end the effect; alternatively, the effect ends when the carved beast is moved by force, such as via a successful [Shove](/action/shove-player-core) attack.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Knockdown",
-            "text": "(see [Knockdown](/action/knockdown-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/knockdown-monster-core"
           }
         ]
       },
@@ -2755,13 +2766,14 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "1d6 bludgeoning plus 1d6 cold, basic Fortitude DC 25 (see [Constrict](/action/constrict-monster-core))",
+            "text": "1d6 bludgeoning plus 1d6 cold, basic Fortitude DC 25",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Drag Below",
-            "text": "**Requirements** The coldmire pond occupies the same space as a target it has Grabbed; **Effect** The coldmire pond pulls the target below the surface. The target must succeed at a Reflex DC 26 save or fall Prone and begin drowning.",
+            "text": "**Requirements** The coldmire pond occupies the same space as a target it has [Grabbed](/condition/grabbed-player-core); **Effect** The coldmire pond pulls the target below the surface. The target must succeed at a Reflex DC 26 save or fall [Prone](/condition/prone-player-core) and begin drowning.",
             "traits": [],
             "actions": "two"
           },
@@ -2906,7 +2918,7 @@
         "defensive": [
           {
             "name": "Illuminating Flames",
-            "text": "30 feet. The comozant wyrd sheds bright light in the emanation and dim light for another 30 feet. Heatless flames similar to the wyrd's own surround any creature in the emanation. A visible creature can't become Concealed while in the emanation, and an [Invisible](/condition/invisible-player-core) creature becomes concealed rather than undetected. The wyrd can communicate empathically with any non-mindless creature affected by illuminating flames, even if they don't share a language.",
+            "text": "30 feet. The comozant wyrd sheds bright light in the emanation and dim light for another 30 feet. Heatless flames similar to the wyrd's own surround any creature in the emanation. A visible creature can't become [Concealed](/condition/concealed-player-core) while in the emanation, and an [Invisible](/condition/invisible-player-core) creature becomes concealed rather than undetected. The wyrd can communicate empathically with any non-mindless creature affected by illuminating flames, even if they don't share a language.",
             "traits": [
               "aura",
               "electricity",
@@ -3061,8 +3073,9 @@
         "interaction": [
           {
             "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           }
         ],
         "defensive": [
@@ -3091,9 +3104,10 @@
           },
           {
             "name": "Trample",
-            "text": "Large or smaller, leg, basic Reflex DC 29 (see [Trample](/action/trample-monster-core))",
+            "text": "Large or smaller, leg, basic Reflex DC 29",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -3254,7 +3268,7 @@
           },
           {
             "name": "Sink into Stone",
-            "text": "The spikes fired from a cullitox's tail phase into stone, pinning enemies in place. Enemies standing on or adjacent to a stone surface who are struck by a critical hit on a tail spike Strike are Immobilized. The DC to Escape is 17.",
+            "text": "The spikes fired from a cullitox's tail phase into stone, pinning enemies in place. Enemies standing on or adjacent to a stone surface who are struck by a critical hit on a tail spike [Strike](/action/strike-player-core) are Immobilized. The DC to [Escape](/action/escape-player-core) is 17.",
             "traits": []
           }
         ]
@@ -3419,7 +3433,7 @@
         "defensive": [
           {
             "name": "Duskflow",
-            "text": "**Trigger** The despairing pall is damaged by a melee Strike; **Effect** Darkness billows out from the despairing pall, covering its attacker in inky shadow. The despairing pall immediately Steps up to 15 feet in any direction. If the despairing pall took the triggering damage due to a reaction it provoked by moving, it can then finish the movement. For one round, the triggering attacker is cloaked in darkness and perceives light as one step lower (bright light becomes dim light, for example), affecting its ability to sense creatures and objects accordingly.",
+            "text": "**Trigger** The despairing pall is damaged by a melee [Strike](/action/strike-player-core); **Effect** Darkness billows out from the despairing pall, covering its attacker in inky shadow. The despairing pall immediately Steps up to 15 feet in any direction. If the despairing pall took the triggering damage due to a reaction it provoked by moving, it can then finish the movement. For one round, the triggering attacker is cloaked in darkness and perceives light as one step lower (bright light becomes dim light, for example), affecting its ability to sense creatures and objects accordingly.",
             "traits": [
               "darkness"
             ],
@@ -3565,7 +3579,7 @@
         "offensive": [
           {
             "name": "Overflow",
-            "text": "The dewdrop jelly flattens its bell and shoots forward, Flying or Swimming twice in a straight line toward its target and attempting a tentacle Strike. On a success, the dewdrop attaches to the target's face, covering its mouth in the suspended water of its gelatinous body. If the target cannot breathe water, it begins to drown. The DC to Escape is 16.",
+            "text": "The dewdrop jelly flattens its bell and shoots forward, Flying or Swimming twice in a straight line toward its target and attempting a tentacle [Strike](/action/strike-player-core). On a success, the dewdrop attaches to the target's face, covering its mouth in the suspended water of its gelatinous body. If the target cannot breathe water, it begins to drown. The DC to [Escape](/action/escape-player-core) is 16.",
             "traits": [
               "move"
             ],
@@ -3706,14 +3720,15 @@
         "interaction": [
           {
             "name": "Tremorsense 120 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           }
         ],
         "defensive": [
           {
             "name": "Dust Eternal",
-            "text": "30 feet. Dust swirls about the outcrop, rendering everything within its aura (including the outcrop) Concealed. In addition, the dust at the outcrop's base creates difficult terrain on the ground within the aura. The outcrop can activate or deactivate this aura using a single action, which has the [concentrate](/trait/concentrate) trait.",
+            "text": "30 feet. Dust swirls about the outcrop, rendering everything within its aura (including the outcrop) [Concealed](/condition/concealed-player-core). In addition, the dust at the outcrop's base creates difficult terrain on the ground within the aura. The outcrop can activate or deactivate this aura using a single action, which has the [concentrate](/trait/concentrate) trait.",
             "traits": [
               "aura",
               "earth"
@@ -3721,7 +3736,7 @@
           },
           {
             "name": "Unstoppable",
-            "text": "The elder outcrop's [slowed](/condition/slowed-player-core) condition can't exceed Slowed 1, and it ignores penalties to its Speeds and the [Immobilized](/condition/immobilized-player-core) condition.",
+            "text": "The elder outcrop's slowed condition can't exceed [Slowed 1](/condition/slowed-player-core), and it ignores penalties to its Speeds and the [Immobilized](/condition/immobilized-player-core) condition.",
             "traits": []
           }
         ],
@@ -3735,7 +3750,7 @@
           },
           {
             "name": "Earth Glide",
-            "text": "The elder outcrop can Burrow through any earthen matter, including rock. When it does so, the elder outcrop moves at its full burrow Speed, leaving no tunnels or signs of its passing.",
+            "text": "The elder outcrop can [Burrow](/action/burrow-player-core) through any earthen matter, including rock. When it does so, the elder outcrop moves at its full [burrow Speed](/rule/burrow-speed-rules-2348), leaving no tunnels or signs of its passing.",
             "traits": []
           },
           {
@@ -3748,7 +3763,7 @@
           },
           {
             "name": "Stone Grip",
-            "text": "Great fingers of stone arise to grasp up to two Medium or smaller creatures on the ground in the outcrop's aura. Each target must succeed at a Reflex DC 33 save or be Grabbed by the stone hand (or Restrained on a critical failure; Escape). A creature [grabbed](/condition/grabbed-player-core) or restrained by a stone hand at the end of its turn becomes Slowed 1 or increases its existing slowed condition by 1. When a creature is unable to act due to the slowed condition from this effect, the creature is permanently Petrified.",
+            "text": "Great fingers of stone arise to grasp up to two Medium or smaller creatures on the ground in the outcrop's aura. Each target must succeed at a Reflex DC 33 save or be Grabbed by the stone hand (or Restrained on a critical failure; [Escape](/action/escape-player-core)). A creature [grabbed](/condition/grabbed-player-core) or restrained by a stone hand at the end of its turn becomes Slowed 1 or increases its existing slowed condition by 1. When a creature is unable to act due to the slowed condition from this effect, the creature is permanently Petrified.",
             "traits": [
               "earth",
               "incapacitation",
@@ -3758,15 +3773,17 @@
           },
           {
             "name": "Throw Rock",
-            "text": "(see [Throw Rock](/action/throw-rock-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/throw-rock-monster-core"
           },
           {
             "name": "Knockdown",
-            "text": "(see [Knockdown](/action/knockdown-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/knockdown-monster-core"
           }
         ]
       },
@@ -3887,22 +3904,25 @@
         "defensive": [
           {
             "name": "Regeneration 15 (Deactivated by Fire)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           }
         ],
         "offensive": [
           {
             "name": "Constrict",
-            "text": "1d12+7 bludgeoning, basic Fortitude DC 30 (see [Constrict](/action/constrict-monster-core))",
+            "text": "1d12+7 bludgeoning, basic Fortitude DC 30",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Engulf",
-            "text": "Reflex DC 30, 8d10 bludgeoning damage, Escape, Rupture 20 (see [Engulf](/action/engulf-monster-core))",
+            "text": "Reflex DC 30, 8d10 bludgeoning damage, [Escape](/action/escape-player-core), Rupture 20",
             "traits": [],
-            "actions": "two"
+            "actions": "two",
+            "reference": "/action/engulf-monster-core"
           },
           {
             "name": "Entangling Growth",
@@ -3915,9 +3935,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -4093,8 +4114,9 @@
         "defensive": [
           {
             "name": "Regeneration 15 (Deactivated by Earthbane)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Blessed by the Winds",
@@ -4106,7 +4128,7 @@
           },
           {
             "name": "Earthbane",
-            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes Stunned 2 and Clumsy 2.",
+            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes [Stunned 2](/condition/stunned-player-core) and [Clumsy 2](/condition/clumsy-player-core).",
             "traits": []
           },
           {
@@ -4135,7 +4157,7 @@
           },
           {
             "name": "Storm Strikes Twice",
-            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt Strike against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
+            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt [Strike](/action/strike-player-core) against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
             "traits": [
               "air",
               "teleportation"
@@ -4198,7 +4220,7 @@
                   "name": "Humanoid Form",
                   "rank": 7,
                   "reference": "/spell/humanoid-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -4219,19 +4241,19 @@
                   "name": "Airlift",
                   "rank": 4,
                   "reference": "/spell/airlift-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Vapor Form",
                   "rank": 4,
                   "reference": "/spell/vapor-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Voice on the Breeze",
                   "rank": 4,
                   "reference": "/spell/voice-on-the-breeze-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -4242,7 +4264,7 @@
                   "name": "Air Bubble",
                   "rank": 1,
                   "reference": "/spell/air-bubble-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -4425,8 +4447,9 @@
           },
           {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [
@@ -4468,7 +4491,7 @@
           },
           {
             "name": "To the Hilt",
-            "text": "The faydhaan shuyookh makes a melee *jambiya* Strike and buries the blade deep, dealing an extra 3d6 persistent bleed damage on a hit (6d6 on a critical hit).",
+            "text": "The faydhaan shuyookh makes a melee *jambiya* [Strike](/action/strike-player-core) and buries the blade deep, dealing an extra 3d6 persistent bleed damage on a hit (6d6 on a critical hit).",
             "traits": [],
             "actions": "one"
           }
@@ -4508,7 +4531,7 @@
                   "name": "Interplanar Teleport",
                   "rank": 7,
                   "reference": "/spell/interplanar-teleport-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Planar Palace",
@@ -4534,19 +4557,19 @@
                   "name": "Control Water",
                   "rank": 5,
                   "reference": "/spell/control-water-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Howling Blizzard",
                   "rank": 5,
                   "reference": "/spell/howling-blizzard-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Truespeech",
                   "rank": 5,
                   "reference": "/spell/truespeech-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Mirage",
@@ -4573,7 +4596,7 @@
                   "name": "Hydraulic Push",
                   "rank": 4,
                   "reference": "/spell/hydraulic-push-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -4584,13 +4607,13 @@
                   "name": "Befitting Attire",
                   "rank": 2,
                   "reference": "/spell/befitting-attire-impossible-magic-spell-spell-2634",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Invisibility",
                   "rank": 2,
                   "reference": "/spell/invisibility-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "See the Unseen",
@@ -4606,7 +4629,7 @@
                   "name": "Create Water",
                   "rank": 2,
                   "reference": "/spell/create-water-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -4738,7 +4761,7 @@
           },
           {
             "name": "Swoop",
-            "text": "The ferrous butterfly Flies up to its Speed and makes a wing Strike at any point during that movement.",
+            "text": "The ferrous butterfly Flies up to its Speed and makes a wing [Strike](/action/strike-player-core) at any point during that movement.",
             "traits": [],
             "actions": "two"
           }
@@ -4878,13 +4901,14 @@
           },
           {
             "name": "Change Shape",
-            "text": "The gennayn transforms into a Tiny elemental or animal. This doesn't affect the gennayn's statistics, but it could change the damage type of their Strikes. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "The gennayn transforms into a Tiny elemental or animal. This doesn't affect the gennayn's statistics, but it could change the damage type of their Strikes.",
             "traits": [
               "arcane",
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Little Wish",
@@ -4925,13 +4949,13 @@
                   "name": "Invisibility",
                   "rank": 2,
                   "reference": "/spell/invisibility-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Translate",
                   "rank": 2,
                   "reference": "/spell/translate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -5104,15 +5128,16 @@
         "interaction": [
           {
             "name": "Tremorsense (Imprecise) 30 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           }
         ],
         "defensive": [],
         "offensive": [
           {
             "name": "Attach",
-            "text": "The geode Leaps up to 15 feet and makes a crystal teeth Strike. If it hits a creature larger than itself, it can attach to that creature. Doing so is like Grabbing the creature (Escape), but the geode moves with that creature rather than holding it in place. The geode is Off Guard while attached. If the geode is killed or pushed away while attached to a creature, that creature takes 1 persistent bleed damage. Escaping the attached geode or removing the geode in other ways doesn't cause bleed damage.",
+            "text": "The geode Leaps up to 15 feet and makes a crystal teeth [Strike](/action/strike-player-core). If it hits a creature larger than itself, it can attach to that creature. Doing so is like Grabbing the creature ([Escape](/action/escape-player-core)), but the geode moves with that creature rather than holding it in place. The geode is Off Guard while attached. If the geode is killed or pushed away while attached to a creature, that creature takes 1 persistent bleed damage. Escaping the attached geode or removing the geode in other ways doesn't cause bleed damage.",
             "traits": [],
             "actions": "two"
           },
@@ -5229,13 +5254,14 @@
         "defensive": [
           {
             "name": "Juice Shower",
-            "text": "When a harvest regiment is critically hit or critically fails a save against a damaging effect, sticky fruit juices splash out. This affects all creatures in a 5-foot emanation. A splashed creature takes a –10-foot status penalty to its Speeds and everything is [Concealed](/condition/concealed-player-core) to it. A creature can Interact to clear off the juice.",
+            "text": "When a harvest regiment is critically hit or critically fails a save against a damaging effect, sticky fruit juices splash out. This affects all creatures in a 5-foot emanation. A splashed creature takes a –10-foot status penalty to its Speeds and everything is [Concealed](/condition/concealed-player-core) to it. A creature can [Interact](/action/interact-player-core) to clear off the juice.",
             "traits": []
           },
           {
             "name": "Troop Defenses",
-            "text": "(see [Troop Defenses](/action/troop-defenses-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           }
         ],
         "offensive": [
@@ -5413,14 +5439,15 @@
         "interaction": [
           {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [
           {
             "name": "Exploit Regret",
-            "text": "**Trigger** A creature fails an attack against the shuyookh; **Effect** The shuyookh asks the triggering creature if it wishes it had hit. If the creature indicates yes, the shuyookh takes damage as if the attack had hit and the expression of regret makes the shuyookh Quickened for 1d4 rounds; they can use their extra action to Fly, Stride, or Strike.",
+            "text": "**Trigger** A creature fails an attack against the shuyookh; **Effect** The shuyookh asks the triggering creature if it wishes it had hit. If the creature indicates yes, the shuyookh takes damage as if the attack had hit and the expression of regret makes the shuyookh Quickened for 1d4 rounds; they can use their extra action to [Fly](/action/fly-player-core), [Stride](/action/stride-player-core), or [Strike](/action/strike-player-core).",
             "traits": [
               "arcane",
               "auditory",
@@ -5459,7 +5486,7 @@
           },
           {
             "name": "Combat Grab",
-            "text": "**Requirements** The ifrit shuyookh has a hand free; **Effect** The shuyookh makes a melee Strike. If the Strike hits, the target is Grabbed in the shuyookh's free hand.",
+            "text": "**Requirements** The ifrit shuyookh has a hand free; **Effect** The shuyookh makes a melee [Strike](/action/strike-player-core). If the Strike hits, the target is [Grabbed](/condition/grabbed-player-core) in the shuyookh's free hand.",
             "traits": [],
             "actions": "one"
           },
@@ -5506,7 +5533,7 @@
                   "name": "Interplanar Teleport",
                   "rank": 7,
                   "reference": "/spell/interplanar-teleport-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Volcanic Eruption",
@@ -5527,7 +5554,7 @@
                   "name": "Fireball",
                   "rank": 5,
                   "reference": "/spell/fireball-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -5729,7 +5756,7 @@
         "defensive": [
           {
             "name": "Naturally Invisible",
-            "text": "The jaathoom is Invisible at all times. They can become visible or return to invisibility as a single action, which has the [concentrate](/trait/concentrate) trait.",
+            "text": "The jaathoom is [Invisible](/condition/invisible-player-core) at all times. They can become visible or return to invisibility as a single action, which has the [concentrate](/trait/concentrate) trait.",
             "traits": []
           },
           {
@@ -5745,12 +5772,13 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "(see [Change Shape](/action/change-shape-monster-core))",
+            "text": "",
             "traits": [
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Hurricane Blast",
@@ -5770,7 +5798,7 @@
           },
           {
             "name": "Ominous Dreams",
-            "text": "The jaathoom sends a prophetic dream into the mind of a sleeping creature within 60 feet. An unwilling creature can avoid the vision if it succeeds at a Will DC 32 save. The jaathoom chooses the dream's subject but not its exact events. The target sees a brief vision of its future related to that subject, with the effect of augury. If the result is bad or mixed, the creature is Frightened 2 and doesn't start to recover from being frightened until it wakes.",
+            "text": "The jaathoom sends a prophetic dream into the mind of a sleeping creature within 60 feet. An unwilling creature can avoid the vision if it succeeds at a Will DC 32 save. The jaathoom chooses the dream's subject but not its exact events. The target sees a brief vision of its future related to that subject, with the effect of augury. If the result is bad or mixed, the creature is [Frightened 2](/condition/frightened-player-core) and doesn't start to recover from being frightened until it wakes.",
             "traits": [
               "mental",
               "prediction"
@@ -5813,7 +5841,7 @@
                   "name": "Interplanar Teleport",
                   "rank": 7,
                   "reference": "/spell/interplanar-teleport-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -6009,35 +6037,38 @@
         "interaction": [
           {
             "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           },
           {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [],
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "The jabali transforms into a Small or Medium earth elemental or land animal, typically a camel or dog. This doesn't affect the shuyookh's statistics, but it could change the damage type of their Strikes. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "The jabali transforms into a Small or Medium earth elemental or land animal, typically a camel or dog. This doesn't affect the shuyookh's statistics, but it could change the damage type of their Strikes.",
             "traits": [
               "arcane",
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Earth Glide",
-            "text": "The jabali can Burrow through dirt and stone at their full burrow Speed, leaving no tunnels or signs of their passing.",
+            "text": "The jabali can [Burrow](/action/burrow-player-core) through dirt and stone at their full [burrow Speed](/rule/burrow-speed-rules-2348), leaving no tunnels or signs of their passing.",
             "traits": []
           },
           {
             "name": "Earthen Control",
-            "text": "When the shuyookh casts Wall Of Stone, the edges can pass through creatures, which are shunted to the side of the wall opposite that edge.",
+            "text": "When the shuyookh casts [Wall Of Stone](/spell/wall-of-stone-player-core), the edges can pass through creatures, which are shunted to the side of the wall opposite that edge.",
             "traits": []
           },
           {
@@ -6049,7 +6080,7 @@
           },
           {
             "name": "Stone Clutch",
-            "text": "When the jabali Pushes a creature into a stone barrier, the surface grips it with fingers of stone. The target must succeed at a Reflex DC 30 save or become Grabbed by the surface (Escape).",
+            "text": "When the jabali Pushes a creature into a stone barrier, the surface grips it with fingers of stone. The target must succeed at a Reflex DC 30 save or become Grabbed by the surface ([Escape](/action/escape-player-core)).",
             "traits": [
               "arcane",
               "earth"
@@ -6066,9 +6097,10 @@
           },
           {
             "name": "Push 15 feet",
-            "text": "(see [Push](/action/push-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/push-monster-core"
           }
         ]
       },
@@ -6132,7 +6164,7 @@
                   "name": "Mountain Resilience",
                   "rank": 6,
                   "reference": "/spell/mountain-resilience-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -6158,7 +6190,7 @@
                   "name": "Shape Stone",
                   "rank": 4,
                   "reference": "/spell/shape-stone-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -6332,14 +6364,15 @@
         "interaction": [
           {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [
           {
             "name": "Commanding Presence",
-            "text": "20 feet. A creature that enters the aura must succeed at a Will DC 26 save or be Frightened 2 (Frightened 3 on a critical failure), and is then temporarily immune for 1 minute. A genie (with the exception of another jann) takes a –4 circumstance penalty to their save.",
+            "text": "20 feet. A creature that enters the aura must succeed at a Will DC 26 save or be [Frightened 2](/condition/frightened-player-core) (Frightened 3 on a critical failure), and is then temporarily immune for 1 minute. A genie (with the exception of another jann) takes a –4 circumstance penalty to their save.",
             "traits": [
               "aura",
               "emotion",
@@ -6356,19 +6389,20 @@
         "offensive": [
           {
             "name": "All Made One",
-            "text": "The jann shuyookh calls upon all the elements that make up their being and chooses one. They gain an additional arcane spell they can cast at will and empower their Strikes with the element, dealing an extra 1d6 damage of the listed type. These benefits last until the shuyookh uses this ability again.\n\nAir: Lightning Bolt, 1d6 electricity;\nEarth: One With Stone, 1d6 bludgeoning;\nFire: Fireball, 1d6 fire;\nMetal: Noxious Metals, 1d6 electricity;\nWater: Wall Of Water, 1d6 bludgeoning;\nWood: Wall Of Thorns, 1d6 piercing.",
+            "text": "The jann shuyookh calls upon all the elements that make up their being and chooses one. They gain an additional arcane spell they can cast at will and empower their Strikes with the element, dealing an extra 1d6 damage of the listed type. These benefits last until the shuyookh uses this ability again.\n\nAir: [Lightning Bolt](/spell/lightning-bolt-player-core), 1d6 electricity;\nEarth: [One With Stone](/spell/one-with-stone-player-core), 1d6 bludgeoning;\nFire: [Fireball](/spell/fireball-player-core), 1d6 fire;\nMetal: [Noxious Metals](/spell/noxious-metals-rage-of-elements), 1d6 electricity;\nWater: Wall Of Water, 1d6 bludgeoning;\nWood: [Wall Of Thorns](/spell/wall-of-thorns-player-core), 1d6 piercing.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Change Shape",
-            "text": "The jann transforms into a Small or Medium elemental or animal. This doesn't affect the gennayn's statistics, but it could change the damage type of their Strikes. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "The jann transforms into a Small or Medium elemental or animal. This doesn't affect the gennayn's statistics, but it could change the damage type of their Strikes.",
             "traits": [
               "arcane",
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Wanderer's Wish",
@@ -6432,7 +6466,7 @@
                   "name": "Interplanar Teleport",
                   "rank": 7,
                   "reference": "/spell/interplanar-teleport-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -6627,7 +6661,7 @@
         "offensive": [
           {
             "name": "Fold Form",
-            "text": "The kinzaruk swiftly unfolds and refolds its body into a new shape chosen from the options of Animal Form. This grants it the movement Speeds and Strikes of the chosen form, but none of the other benefits. Its attack bonus is unchanged, and its damage bonus is +3. The kinzaruk can return to its natural form by taking this action again, and automatically returns if it falls Unconscious.",
+            "text": "The kinzaruk swiftly unfolds and refolds its body into a new shape chosen from the options of [Animal Form](/spell/animal-form-player-core). This grants it the movement Speeds and Strikes of the chosen form, but none of the other benefits. Its attack bonus is unchanged, and its damage bonus is +3. The kinzaruk can return to its natural form by taking this action again, and automatically returns if it falls [Unconscious](/condition/unconscious-player-core).",
             "traits": [
               "concentrate",
               "polymorph",
@@ -6759,21 +6793,23 @@
         "interaction": [
           {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [],
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "The kizidhar transforms into a Small or Medium wood elemental or plant creature. This doesn't affect the kizidhar's statistics, but it could change the damage type of their Strikes. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "The kizidhar transforms into a Small or Medium wood elemental or plant creature. This doesn't affect the kizidhar's statistics, but it could change the damage type of their Strikes.",
             "traits": [
               "arcane",
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Parting the Trees",
@@ -6837,7 +6873,7 @@
                   "name": "Interplanar Teleport",
                   "rank": 7,
                   "reference": "/spell/interplanar-teleport-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -6848,7 +6884,7 @@
                   "name": "Nature's Pathway",
                   "rank": 5,
                   "reference": "/spell/nature-s-pathway-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -7018,13 +7054,14 @@
         "defensive": [
           {
             "name": "Shield Block",
-            "text": "(see [Shield Block](/action/shield-block-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/shield-block-monster-core"
           },
           {
             "name": "Sprout Shield",
-            "text": "**Trigger** An enemy hits the kizidhar shuyookh with a melee Strike; **Requirements** The kizidhar shuyookh doesn't have a shield raised; **Effect** The shuyookh can use Sculpt Wood to create a duskwood shield if they don't already have one. The shuyookh then Raises their Shield. The circumstance bonus from the shield applies to their AC against the triggering attack.",
+            "text": "**Trigger** An enemy hits the kizidhar shuyookh with a melee [Strike](/action/strike-player-core); **Requirements** The kizidhar shuyookh doesn't have a shield raised; **Effect** The shuyookh can use Sculpt Wood to create a duskwood shield if they don't already have one. The shuyookh then Raises their Shield. The circumstance bonus from the shield applies to their AC against the triggering attack.",
             "traits": [],
             "actions": "reaction"
           }
@@ -7032,12 +7069,13 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "The kizidhar transforms into a Small or Medium wood elemental or plant creature. This doesn't affect the kizidhar's statistics, but it could change the damage type of their Strikes. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "The kizidhar transforms into a Small or Medium wood elemental or plant creature. This doesn't affect the kizidhar's statistics, but it could change the damage type of their Strikes.",
             "traits": [
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Manipulative Wish",
@@ -7059,7 +7097,7 @@
           },
           {
             "name": "Seed of Ambition",
-            "text": "**Frequency** once per round;; **Effect** The kizidhar plants a desire for greatness in the mind of a creature within 50 feet. The target must attempt a Will DC 30 save. On a failure, until the end of its next turn, the target can't Delay, Ready, or use reactions. Instead, it must use all its actions to Strike or cast the highest rank of spell available to it using spell slots or Focus Points, or take actions to facilitate doing so, such as drawing a weapon or moving toward an enemy. The target must focus its attacks either on the kizidhar or on the opponent it perceives to be the biggest threat. This effect ends if the kizidhar uses Seed of Ambition again.",
+            "text": "**Frequency** once per round;; **Effect** The kizidhar plants a desire for greatness in the mind of a creature within 50 feet. The target must attempt a Will DC 30 save. On a failure, until the end of its next turn, the target can't Delay, Ready, or use reactions. Instead, it must use all its actions to [Strike](/action/strike-player-core) or cast the highest rank of spell available to it using spell slots or Focus Points, or take actions to facilitate doing so, such as drawing a weapon or moving toward an enemy. The target must focus its attacks either on the kizidhar or on the opponent it perceives to be the biggest threat. This effect ends if the kizidhar uses Seed of Ambition again.",
             "traits": [
               "auditory",
               "emotion",
@@ -7118,7 +7156,7 @@
                   "name": "Interplanar Teleport",
                   "rank": 7,
                   "reference": "/spell/interplanar-teleport-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -7134,7 +7172,7 @@
                   "name": "Nature's Pathway",
                   "rank": 6,
                   "reference": "/spell/nature-s-pathway-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Invisibility",
@@ -7161,7 +7199,7 @@
                   "name": "Entangling Flora",
                   "rank": 2,
                   "reference": "/spell/entangling-flora-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "One with Plants",
@@ -7312,7 +7350,7 @@
         "interaction": [
           {
             "name": "Below the Crust",
-            "text": "A lava otter can Sneak at its full Speed in lava.",
+            "text": "A lava otter can [Sneak](/action/sneak-player-core) at its full Speed in lava.",
             "traits": []
           }
         ],
@@ -7320,14 +7358,14 @@
         "offensive": [
           {
             "name": "Molten Form",
-            "text": "Any creature that hits the lava otter with an unarmed Strike or otherwise touches it takes 1 fire damage. If a gallon or more of water touches the lava otter, or if it's affected by a water effect, its outer layer of lava hardens to a rocky shell, deactivating its molten form and imposing weakness 5 to bludgeoning damage. Molten form reactivates if the otter swims in lava for 1 minute.",
+            "text": "Any creature that hits the lava otter with an unarmed [Strike](/action/strike-player-core) or otherwise touches it takes 1 fire damage. If a gallon or more of water touches the lava otter, or if it's affected by a water effect, its outer layer of lava hardens to a rocky shell, deactivating its molten form and imposing weakness 5 to bludgeoning damage. Molten form reactivates if the otter swims in lava for 1 minute.",
             "traits": [
               "fire"
             ]
           },
           {
             "name": "Scattering Magma",
-            "text": "**Requirements** The otter is in molten form, and its previous action was a successful jaws Strike; **Effect** The otter grips with its jaws and rapidly twists, flinging lava. The otter deals 1d4 fire damage to all creatures adjacent to it.",
+            "text": "**Requirements** The otter is in molten form, and its previous action was a successful jaws [Strike](/action/strike-player-core); **Effect** The otter grips with its jaws and rapidly twists, flinging lava. The otter deals 1d4 fire damage to all creatures adjacent to it.",
             "traits": [
               "fire"
             ],
@@ -7458,8 +7496,9 @@
         "interaction": [
           {
             "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           },
           {
             "name": "Antiques",
@@ -7471,12 +7510,12 @@
         "offensive": [
           {
             "name": "Bury",
-            "text": "Any creature hit by the locus's ancient stone Strike is partially buried in a tide of earth and rock, becoming Immobilized (Escape).",
+            "text": "Any creature hit by the locus's ancient stone [Strike](/action/strike-player-core) is partially buried in a tide of earth and rock, becoming Immobilized ([Escape](/action/escape-player-core)).",
             "traits": []
           },
           {
             "name": "Echo the Past",
-            "text": "The locus calls forth a remnant of the past civilization to impart a lesson or control the present. Using this ability again ends any previous manifestation. The locus casts one of the following occult innate spells (DC 34) for the listed purpose.\n\n***Dominate*** The dominated creature takes on the role of a historical figure or someone in the social hierarchy (such as high priest) from the locus's civilization.\n\n***Illusory Scene*** The scene reenacts a historical event from the locus's civilization.\n\n***Invoke Spirits*** The spirits are drawn from the locus's memories of people from their civilization.\n\n***Wall Of Stone*** The locus recreates the wall of a building from their civilization, complete with decorations.",
+            "text": "The locus calls forth a remnant of the past civilization to impart a lesson or control the present. Using this ability again ends any previous manifestation. The locus casts one of the following occult innate spells (DC 34) for the listed purpose.\n\n***[Dominate](/spell/dominate-player-core)*** The dominated creature takes on the role of a historical figure or someone in the social hierarchy (such as high priest) from the locus's civilization.\n\n***[Illusory Scene](/spell/illusory-scene-player-core)*** The scene reenacts a historical event from the locus's civilization.\n\n***[Invoke Spirits](/spell/invoke-spirits-player-core)*** The spirits are drawn from the locus's memories of people from their civilization.\n\n***[Wall Of Stone](/spell/wall-of-stone-player-core)*** The locus recreates the wall of a building from their civilization, complete with decorations.",
             "traits": [],
             "actions": "two"
           }
@@ -7681,12 +7720,13 @@
         "interaction": [
           {
             "name": "Tremorsense 30 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           },
           {
             "name": "Defensive Camouflage",
-            "text": "The living grove can Hide in natural environments even if it doesn't have cover. While Hiding, its root system is safely covered in dirt, granting the grove a +3 status bonus to AC. A critical hit cracks this protective layer of earth to disperse in the wind, ending the effect.",
+            "text": "The living grove can [Hide](/action/hide-player-core) in natural environments even if it doesn't have cover. While Hiding, its root system is safely covered in dirt, granting the grove a +3 status bonus to AC. A critical hit cracks this protective layer of earth to disperse in the wind, ending the effect.",
             "traits": []
           }
         ],
@@ -7694,9 +7734,10 @@
         "offensive": [
           {
             "name": "Engulf",
-            "text": "Reflex DC 22, 5d8 bludgeoning damage, Escape, Rupture 10\n\nA creature Engulfed by the living grove must also attempt a basic Fortitude DC 22 save as it's battered between the thin, tightly packed trunks.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Stunned 1](/condition/stunned-player-core).\n\n**Failure** The creature is Stunned 2.\n\n**Critical Failure** The creature is Stunned 4. (see [Engulf](/action/engulf-monster-core))",
+            "text": "Reflex DC 22, 5d8 bludgeoning damage, [Escape](/action/escape-player-core), Rupture 10\n\nA creature Engulfed by the living grove must also attempt a basic Fortitude DC 22 save as it's battered between the thin, tightly packed trunks.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Stunned 1](/condition/stunned-player-core).\n\n**Failure** The creature is Stunned 2.\n\n**Critical Failure** The creature is Stunned 4.",
             "traits": [],
-            "actions": "two"
+            "actions": "two",
+            "reference": "/action/engulf-monster-core"
           }
         ]
       },
@@ -7849,7 +7890,7 @@
           },
           {
             "name": "Magnetic Disarm",
-            "text": "The living lodestone attempts to Disarm a metal weapon from a creature within its magnetic field. On a critical success, the weapon is either pushed to just outside the aura if the polarity is negative or is pulled to the lodestone and sticks to it if the polarity is positive. An item stuck to the lodestone can be wrenched free with an [Interact](/action/interact-player-core) action.",
+            "text": "The living lodestone attempts to [Disarm](/action/disarm-player-core) a metal weapon from a creature within its magnetic field. On a critical success, the weapon is either pushed to just outside the aura if the polarity is negative or is pulled to the lodestone and sticks to it if the polarity is positive. An item stuck to the lodestone can be wrenched free with an [Interact](/action/interact-player-core) action.",
             "traits": [
               "primal"
             ],
@@ -7982,14 +8023,14 @@
         "defensive": [
           {
             "name": "Molten Form",
-            "text": "Any creature that hits the living magma with an unarmed Strike or otherwise touches it takes 10 fire damage. If a gallon or more of water touches the living magma, or if it's affected by a water effect, its outer layer of lava hardens to a rocky shell, deactivating its molten form and imposing weakness 15 to bludgeoning damage. Molten form reactivates if the living magma swims in lava for 1 minute.",
+            "text": "Any creature that hits the living magma with an unarmed [Strike](/action/strike-player-core) or otherwise touches it takes 10 fire damage. If a gallon or more of water touches the living magma, or if it's affected by a water effect, its outer layer of lava hardens to a rocky shell, deactivating its molten form and imposing weakness 15 to bludgeoning damage. Molten form reactivates if the living magma swims in lava for 1 minute.",
             "traits": [
               "fire"
             ]
           },
           {
             "name": "Trap Weapon",
-            "text": "**Frequency** once per round; **Trigger** A creature hits the living magma with a melee weapon; **Effect** The living magma attempts an Athletics check against the triggering creature's Athletics DC. On a success, the living magma traps the weapon in its body and pulls it from the attacker's grasp. A creature can Interact to retrieve the weapon, but the attempt fails unless the creature succeeds at an Athletics check against the living magma's Fortitude DC (typically 36). If the living magma uses Engulf, it also absorbs all trapped weapons, rendering them unreachable until it dies.",
+            "text": "**Frequency** once per round; **Trigger** A creature hits the living magma with a melee weapon; **Effect** The living magma attempts an Athletics check against the triggering creature's Athletics DC. On a success, the living magma traps the weapon in its body and pulls it from the attacker's grasp. A creature can [Interact](/action/interact-player-core) to retrieve the weapon, but the attempt fails unless the creature succeeds at an Athletics check against the living magma's Fortitude DC (typically 36). If the living magma uses Engulf, it also absorbs all trapped weapons, rendering them unreachable until it dies.",
             "traits": [
               "fire"
             ],
@@ -7999,9 +8040,10 @@
         "offensive": [
           {
             "name": "Engulf",
-            "text": "Reflex DC 33, 2d10 bludgeoning, 4d6 fire damage, Escape, Rupture 25 (see [Engulf](/action/engulf-monster-core))",
+            "text": "Reflex DC 33, 2d10 bludgeoning, 4d6 fire damage, [Escape](/action/escape-player-core), Rupture 25",
             "traits": [],
-            "actions": "two"
+            "actions": "two",
+            "reference": "/action/engulf-monster-core"
           },
           {
             "name": "Launch Lava",
@@ -8150,7 +8192,7 @@
         "defensive": [
           {
             "name": "Scurry",
-            "text": "**Trigger** A creature the lomori sprout can observe attacks the sprout;; **Effect** After the attack resolves, the lomori sprout can Stride up to their speed. This movement doesn't trigger reactions from the triggering creature.",
+            "text": "**Trigger** A creature the lomori sprout can observe attacks the sprout;; **Effect** After the attack resolves, the lomori sprout can [Stride](/action/stride-player-core) up to their speed. This movement doesn't trigger reactions from the triggering creature.",
             "traits": [],
             "actions": "reaction"
           }
@@ -8163,15 +8205,16 @@
           },
           {
             "name": "Take Root",
-            "text": "**Requirements** The lomori sprout is on the ground; **Effect** The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a 5-foot burst within 60 feet of the lomori sprout, dealing 4d4 bludgeoning damage (basic Reflex DC 20 save) to creatures in the area; on a failed save, a creature gains the [Immobilized](/condition/immobilized-player-core) condition until it Escapes. The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically Escape.",
+            "text": "**Requirements** The lomori sprout is on the ground; **Effect** The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a 5-foot burst within 60 feet of the lomori sprout, dealing 4d4 bludgeoning damage (basic Reflex DC 20 save) to creatures in the area; on a failed save, a creature gains the [Immobilized](/condition/immobilized-player-core) condition until it Escapes. The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically [Escape](/action/escape-player-core).",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Knockdown",
-            "text": "(see [Knockdown](/action/knockdown-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/knockdown-monster-core"
           }
         ]
       },
@@ -8313,20 +8356,20 @@
         "defensive": [
           {
             "name": "Heavy",
-            "text": "As long as it is immobile, the elemental can't be forcibly moved or knocked Prone. If it takes a move action, it loses this immunity until the start of its next turn.",
+            "text": "As long as it is immobile, the elemental can't be forcibly moved or knocked [Prone](/condition/prone-player-core). If it takes a move action, it loses this immunity until the start of its next turn.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Lightning Punch",
-            "text": "The melomach makes a fist Strike, then makes a lightning Strike against a different creature within 120 feet of the fist Strike's target. Both Strikes count toward the melomach's multiple attack penalty, but it doesn't increase until after both attacks are made.",
+            "text": "The melomach makes a fist [Strike](/action/strike-player-core), then makes a lightning Strike against a different creature within 120 feet of the fist Strike's target. Both Strikes count toward the melomach's multiple attack penalty, but it doesn't increase until after both attacks are made.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Rhythmic Stomp",
-            "text": "**Frequency** once per round; **Effect** The melomach's footsteps raise a clanging sound through their body to create a brief musical phrase. The melomach Strides, then generates the effect of one of the following bard composition cantrips at 7th rank: Allegro, Dirge Of Doom (adds the [fear](/trait/fear) trait), or Triple Time.",
+            "text": "**Frequency** once per round; **Effect** The melomach's footsteps raise a clanging sound through their body to create a brief musical phrase. The melomach Strides, then generates the effect of one of the following bard composition cantrips at 7th rank: [Allegro](/spell/allegro-player-core), [Dirge Of Doom](/spell/dirge-of-doom-player-core) (adds the [fear](/trait/fear) trait), or [Triple Time](/spell/triple-time-player-core).",
             "traits": [
               "emotion",
               "mental",
@@ -8478,13 +8521,14 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "The mercurial takes on the appearance of any Small or Medium humanoid. This transformation allows for significant detail and can reproduce the features of a specific individual, but the mercurial retains a shiny, liquid-metal appearance that renders the transformation unsuitable as a disguise unless they're impersonating another mercurial. It doesn't change the mercurial's Speed or the attack and damage bonuses of their Strikes, but it does allow them to transform their limbs into metal tools or melee weapons, potentially changing the damage type dealt by their Strikes. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "The mercurial takes on the appearance of any Small or Medium humanoid. This transformation allows for significant detail and can reproduce the features of a specific individual, but the mercurial retains a shiny, liquid-metal appearance that renders the transformation unsuitable as a disguise unless they're impersonating another mercurial. It doesn't change the mercurial's Speed or the attack and damage bonuses of their Strikes, but it does allow them to transform their limbs into metal tools or melee weapons, potentially changing the damage type dealt by their Strikes.",
             "traits": [
               "concentrate",
               "polymorph",
               "primal"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Metallurgic Adaptation",
@@ -8615,8 +8659,9 @@
         "defensive": [
           {
             "name": "Fast Healing 2 (While Touching Metal)",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           }
         ],
         "offensive": [
@@ -8789,7 +8834,7 @@
           },
           {
             "name": "Rust Cloud",
-            "text": "A metal wisp is constantly surrounded by a cloud of rust flakes that cause it to be Concealed from creatures more than 5 feet away from it.",
+            "text": "A metal wisp is constantly surrounded by a cloud of rust flakes that cause it to be [Concealed](/condition/concealed-player-core) from creatures more than 5 feet away from it.",
             "traits": []
           }
         ],
@@ -8926,8 +8971,9 @@
         "defensive": [
           {
             "name": "Regeneration 5 (Deactivated by Fire)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Insect Swarm",
@@ -9077,7 +9123,7 @@
         "defensive": [
           {
             "name": "Heat of the Forge",
-            "text": "10 feet. An munsahir's skin radiates heat like a forge's fire. A creature that starts its turn in the area must succeed at a Fortitude DC 19 save or become Fatigued while it remains in the area. Creatures immune to environmental heat effects or with any fire resistance are immune.",
+            "text": "10 feet. An munsahir's skin radiates heat like a forge's fire. A creature that starts its turn in the area must succeed at a Fortitude DC 19 save or become [Fatigued](/condition/fatigued-player-core) while it remains in the area. Creatures immune to environmental heat effects or with any fire resistance are immune.",
             "traits": [
               "aura",
               "fire"
@@ -9092,7 +9138,7 @@
         "offensive": [
           {
             "name": "Blazing Rush",
-            "text": "The gatecrasher Strides up to double their Speed in a straight line. They can pass through enemy spaces and make a hammer gauntlet Strike against each creature they move through. Blazing Rush can't be used again for 1d4 rounds.",
+            "text": "The gatecrasher Strides up to double their Speed in a straight line. They can pass through enemy spaces and make a hammer gauntlet [Strike](/action/strike-player-core) against each creature they move through. Blazing Rush can't be used again for 1d4 rounds.",
             "traits": [],
             "actions": "two"
           },
@@ -9243,7 +9289,7 @@
         "defensive": [
           {
             "name": "Heat of the Forge",
-            "text": "10 feet. An munsahir's skin radiates heat like a forge's fire. A creature that starts its turn in the area must succeed at a Fortitude DC 20 save or become Fatigued while it remains in the area. Creatures immune to environmental heat effects or with any fire resistance are immune.",
+            "text": "10 feet. An munsahir's skin radiates heat like a forge's fire. A creature that starts its turn in the area must succeed at a Fortitude DC 20 save or become [Fatigued](/condition/fatigued-player-core) while it remains in the area. Creatures immune to environmental heat effects or with any fire resistance are immune.",
             "traits": [
               "aura",
               "fire"
@@ -9251,9 +9297,10 @@
           },
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           },
           {
             "name": "Self-Destruct",
@@ -9272,7 +9319,7 @@
           },
           {
             "name": "Volcanic Hammer",
-            "text": "The trooper makes a warhammer Strike that deals one extra weapon die of damage and 2d6 persistent fire damage.",
+            "text": "The trooper makes a warhammer [Strike](/action/strike-player-core) that deals one extra weapon die of damage and 2d6 persistent fire damage.",
             "traits": [],
             "actions": "two"
           }
@@ -9421,7 +9468,7 @@
           },
           {
             "name": "Retract",
-            "text": "The murajau fully retreats into their shell, gaining greater cover; the bonus to Stealth applies only if the murajau is undetected. While in their shell, the murajau can't see outside and takes a –2 circumstance penalty to auditory Perception checks. The only move actions the murajau can take are to Stand or Step. The murajau can come back out as a single action.",
+            "text": "The murajau fully retreats into their shell, gaining greater cover; the bonus to Stealth applies only if the murajau is undetected. While in their shell, the murajau can't see outside and takes a –2 circumstance penalty to auditory Perception checks. The only move actions the murajau can take are to Stand or [Step](/action/step-player-core). The murajau can come back out as a single action.",
             "traits": [],
             "actions": "two"
           },
@@ -9434,7 +9481,7 @@
         "offensive": [
           {
             "name": "Swinging Spear",
-            "text": "The murajau makes a spear Strike. On a hit, the murajau twists their spear to move the target to any space adjacent to the murajau and deals an additional 2d6 bludgeoning damage as the target smashes into the murajau's thick shell.",
+            "text": "The murajau makes a spear [Strike](/action/strike-player-core). On a hit, the murajau twists their spear to move the target to any space adjacent to the murajau and deals an additional 2d6 bludgeoning damage as the target smashes into the murajau's thick shell.",
             "traits": [],
             "actions": "two"
           }
@@ -9566,8 +9613,9 @@
         "defensive": [
           {
             "name": "Swarm Mind",
-            "text": "(see [Swarm Mind](/action/swarm-mind-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/swarm-mind-monster-core"
           },
           {
             "name": "Electromagnetic Dispersal",
@@ -9578,7 +9626,7 @@
         "offensive": [
           {
             "name": "Barrier Form",
-            "text": "**Requirements** The nanoshard swarm is in swarm form; **Effect** The nanoshard swarm forms a continuous 6-inch-thick solid wall, up to 60 feet long and 10 feet high, originating from any one square in its current space. The wall can follow any path, with each 5 feet being placed on the border between squares. It doesn't need to stand vertically, so it can form a bridge or set of stairs, for example. The wall must be formed in an unbroken open space where its edges don't pass through any creatures or objects.\n\nA single 5-foot-by-5-foot section of the wall can be destroyed by dealing 18 points of damage to it, which also reduces the swarm's total Hit Points. A nanoshard swarm can't be knocked Prone or forcibly moved while in barrier form, nor can it voluntarily move. A nanoshard swarm in barrier form can originate tendril attacks from any square of its wall.",
+            "text": "**Requirements** The nanoshard swarm is in swarm form; **Effect** The nanoshard swarm forms a continuous 6-inch-thick solid wall, up to 60 feet long and 10 feet high, originating from any one square in its current space. The wall can follow any path, with each 5 feet being placed on the border between squares. It doesn't need to stand vertically, so it can form a bridge or set of stairs, for example. The wall must be formed in an unbroken open space where its edges don't pass through any creatures or objects.\n\nA single 5-foot-by-5-foot section of the wall can be destroyed by dealing 18 points of damage to it, which also reduces the swarm's total Hit Points. A nanoshard swarm can't be knocked [Prone](/condition/prone-player-core) or forcibly moved while in barrier form, nor can it voluntarily move. A nanoshard swarm in barrier form can originate tendril attacks from any square of its wall.",
             "traits": [
               "concentrate",
               "polymorph"
@@ -9587,7 +9635,7 @@
           },
           {
             "name": "Battle Form",
-            "text": "**Requirements** The nanoshard swarm is in swarm form; **Effect** The nanoshard swarm coalesces into a Huge shape that looks like a humanoid or beast and can hold items. In battle form, its Speed is 15 feet, it's Clumsy 1, and it has the following Strike.\n\n**Melee** 1 limb (reach 20 feet), **Damage** 4d8+9 bludgeoning",
+            "text": "**Requirements** The nanoshard swarm is in swarm form; **Effect** The nanoshard swarm coalesces into a Huge shape that looks like a humanoid or beast and can hold items. In battle form, its Speed is 15 feet, it's [Clumsy 1](/condition/clumsy-player-core), and it has the following [Strike](/action/strike-player-core).\n\n**Melee** 1 limb (reach 20 feet), **Damage** 4d8+9 bludgeoning",
             "traits": [
               "concentrate",
               "polymorph"
@@ -9596,9 +9644,10 @@
           },
           {
             "name": "Engulf (Swarm Form)",
-            "text": "Reflex DC 27, 2d8+6 bludgeoning damage, Escape, Rupture 18 (see [Engulf](/action/engulf-monster-core))",
+            "text": "Reflex DC 27, 2d8+6 bludgeoning damage, [Escape](/action/escape-player-core), Rupture 18",
             "traits": [],
-            "actions": "two"
+            "actions": "two",
+            "reference": "/action/engulf-monster-core"
           },
           {
             "name": "Swarm Form",
@@ -9741,7 +9790,7 @@
         "defensive": [
           {
             "name": "Fire-fueled Rage",
-            "text": "When a nightwood guardian takes fire damage, they become enraged. The guardian gains 15 temporary Hit Points, deals 2 additional damage with melee Strikes, and has a –1 penalty to AC. They can't Raise their Shield or use actions with the [concentrate](/trait/concentrate) trait except for Seek. This effect ends when the nightwood guardian no longer observes any fire for 1 round or when they fall Unconscious, whichever comes first.\n\nEffect: Rage",
+            "text": "When a nightwood guardian takes fire damage, they become enraged. The guardian gains 15 temporary Hit Points, deals 2 additional damage with melee Strikes, and has a –1 penalty to AC. They can't Raise their Shield or use actions with the [concentrate](/trait/concentrate) trait except for [Seek](/action/seek-player-core). This effect ends when the nightwood guardian no longer observes any fire for 1 round or when they fall [Unconscious](/condition/unconscious-player-core), whichever comes first.\n\nEffect: Rage",
             "traits": []
           },
           {
@@ -9754,24 +9803,27 @@
           },
           {
             "name": "Light Blindness",
-            "text": "(see [Light Blindness](/action/light-blindness-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/light-blindness-monster-core"
           },
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           },
           {
             "name": "Shield Block",
-            "text": "(see [Shield Block](/action/shield-block-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/shield-block-monster-core"
           },
           {
             "name": "Shield Eyes",
-            "text": "When a nightwood guardian has their shield raised, they protect their eyes, losing the Blinded and [Dazzled](/condition/dazzled-player-core) conditions from light blindness and other light effects.",
+            "text": "When a nightwood guardian has their shield raised, they protect their eyes, losing the [Blinded](/condition/blinded-player-core) and [Dazzled](/condition/dazzled-player-core) conditions from light blindness and other light effects.",
             "traits": []
           }
         ],
@@ -9916,7 +9968,7 @@
         "offensive": [
           {
             "name": "Germinate",
-            "text": "A creature hit by the nursery crawler's seed Strike must, on its turn, spend an [Interact](/action/interact-player-core) action to remove the seed; any seeds still implanted at the end of the creature's turn begin to sprout, dealing 1d6 persistent bleed damage and rendering the seeded creature [Clumsy 1](/condition/clumsy-player-core) and [Off Guard](/condition/off-guard-player-core). Removing a seed after it's sprouted deals 1d4 piercing damage; removing it before it begins to sprout does no damage. Removed seeds that land in viable soil sprout immediately and grow into new saplings after 1 hour.",
+            "text": "A creature hit by the nursery crawler's seed [Strike](/action/strike-player-core) must, on its turn, spend an [Interact](/action/interact-player-core) action to remove the seed; any seeds still implanted at the end of the creature's turn begin to sprout, dealing 1d6 persistent bleed damage and rendering the seeded creature [Clumsy 1](/condition/clumsy-player-core) and [Off Guard](/condition/off-guard-player-core). Removing a seed after it's sprouted deals 1d4 piercing damage; removing it before it begins to sprout does no damage. Removed seeds that land in viable soil sprout immediately and grow into new saplings after 1 hour.",
             "traits": [
               "plant"
             ]
@@ -10047,13 +10099,13 @@
         "offensive": [
           {
             "name": "Ambush",
-            "text": "**Trigger** A target creature passes within 20 feet of the olobigonde's hiding place and has not detected the olobigonde; **Effect** The olobigonde lunges out of its hiding place, Swims directly toward the triggering creature, and makes a jaws Strike against it. The target creature is Off Guard to this attack.",
+            "text": "**Trigger** A target creature passes within 20 feet of the olobigonde's hiding place and has not detected the olobigonde; **Effect** The olobigonde lunges out of its hiding place, Swims directly toward the triggering creature, and makes a jaws [Strike](/action/strike-player-core) against it. The target creature is [Off Guard](/condition/off-guard-player-core) to this attack.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Decomposing Toxin",
-            "text": "A living creature struck by an olobigonde's jaws Strike must succeed at a Fortitude DC 15 save or become Enfeebled 1 and take 1d6 poison,persistent] damage (or Enfeebled 2 with 2d6 poison,persistent] damage on a critical failure). The [enfeebled](/condition/enfeebled-player-core) condition ends when the persistent damage does. A creature currently affected by decomposing toxin doesn't need to save again.",
+            "text": "A living creature struck by an olobigonde's jaws [Strike](/action/strike-player-core) must succeed at a Fortitude DC 15 save or become Enfeebled 1 and take 1d6 poison,persistent] damage (or Enfeebled 2 with 2d6 poison,persistent] damage on a critical failure). The [enfeebled](/condition/enfeebled-player-core) condition ends when the persistent damage does. A creature currently affected by decomposing toxin doesn't need to save again.",
             "traits": [
               "poison"
             ]
@@ -10219,17 +10271,17 @@
           },
           {
             "name": "Metal Snack",
-            "text": "An ore louse gains 5 temporary Hit Points each time its mandibles Strike either damages or breaks a metal item using its rust ability, or if it hits a creature that has the metal trait or is made of metal.",
+            "text": "An ore louse gains 5 temporary Hit Points each time its mandibles [Strike](/action/strike-player-core) either damages or breaks a metal item using its rust ability, or if it hits a creature that has the metal trait or is made of metal.",
             "traits": []
           },
           {
             "name": "Rust",
-            "text": "An ore louse's Strikes causes metal to rapidly rust and corrode. If it succeeds at a mandibles or oxidizing spit Strike, the ore louse deals 3d6 untyped damage (or double damage on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the ore louse hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the attacks, the shield is automatically broken, but no other item is rusted on that attack.",
+            "text": "An ore louse's Strikes causes metal to rapidly rust and corrode. If it succeeds at a mandibles or oxidizing spit [Strike](/action/strike-player-core), the ore louse deals 3d6 untyped damage (or double damage on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the ore louse hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the attacks, the shield is automatically broken, but no other item is rusted on that attack.",
             "traits": []
           },
           {
             "name": "Water Stride",
-            "text": "The ore louse can stand and move on the surface of water or other liquids without falling through. The ore louse can go underwater if it wishes, but it must Swim to do so.",
+            "text": "The ore louse can stand and move on the surface of water or other liquids without falling through. The ore louse can go underwater if it wishes, but it must [Swim](/action/swim-player-core) to do so.",
             "traits": []
           }
         ]
@@ -10523,8 +10575,9 @@
         "defensive": [
           {
             "name": "Regeneration 10 (Deactivated by Fire)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           }
         ],
         "offensive": [
@@ -10535,7 +10588,7 @@
           },
           {
             "name": "Painted Dance",
-            "text": "The stag shakes the wooden plating along its body in a cacophonous clatter that sets its painted patterns dancing. All creatures within 60 feet of the painted stag who can see or hear it must attempt a Will DC 28 save; a creature [Grabbed](/condition/grabbed-player-core) by the stag takes a –4 circumstance penalty to its save. Regardless of the result of its save, each creature is temporarily immune for 1 hour.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Fascinated by the painted stag for 1 round.\n\n**Failure** The creature is Stunned 2 and fascinated by the painted stag for as long as it's stunned.\n\n**Critical Failure** As failure, except Stunned 4.",
+            "text": "The stag shakes the wooden plating along its body in a cacophonous clatter that sets its painted patterns dancing. All creatures within 60 feet of the painted stag who can see or hear it must attempt a Will DC 28 save; a creature [Grabbed](/condition/grabbed-player-core) by the stag takes a –4 circumstance penalty to its save. Regardless of the result of its save, each creature is temporarily immune for 1 hour.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Fascinated](/condition/fascinated-player-core) by the painted stag for 1 round.\n\n**Failure** The creature is [Stunned 2](/condition/stunned-player-core) and fascinated by the painted stag for as long as it's stunned.\n\n**Critical Failure** As failure, except Stunned 4.",
             "traits": [
               "auditory",
               "mental",
@@ -10547,9 +10600,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -10664,12 +10718,13 @@
         "interaction": [
           {
             "name": "Telepathy 30 feet",
-            "text": "(see [Telepathy](/action/telepathy-monster-core))",
+            "text": "",
             "traits": [
               "aura",
               "magical",
               "mental"
-            ]
+            ],
+            "reference": "/action/telepathy-monster-core"
           },
           {
             "name": "Metalsense",
@@ -10680,8 +10735,9 @@
         "defensive": [
           {
             "name": "Troop Defenses",
-            "text": "(see [Troop Defenses](/action/troop-defenses-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           }
         ],
         "offensive": [
@@ -10870,7 +10926,7 @@
           },
           {
             "name": "Feather Storm",
-            "text": "**Requirements** The picture-in-clouds is in eagle shape; **Effect** The picture-in-clouds Flies 125 feet, flapping their wings and creating a barrier along their path. This barrier has the effects of Wall Of Wind (Fortitude DC 30) and lasts until the end of the picture-in-clouds's next turn.",
+            "text": "**Requirements** The picture-in-clouds is in eagle shape; **Effect** The picture-in-clouds Flies 125 feet, flapping their wings and creating a barrier along their path. This barrier has the effects of [Wall Of Wind](/spell/wall-of-wind-player-core) (Fortitude DC 30) and lasts until the end of the picture-in-clouds's next turn.",
             "traits": [
               "move"
             ],
@@ -10889,9 +10945,10 @@
           },
           {
             "name": "Push 15 feet",
-            "text": "(see [Push](/action/push-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/push-monster-core"
           }
         ]
       },
@@ -11022,7 +11079,7 @@
         "offensive": [
           {
             "name": "Roll Up",
-            "text": "The pine pangolin falls Prone, closes up its scales, and rolls into a ball. While Rolled Up, the pangolin gains resistance 10 to physical damage and total immunity to falling damage from heights of 50 feet or less. The only action the pine pangolin can take is to Stand, and the effects of Roll Up end once the pangolin Stands.",
+            "text": "The pine pangolin falls [Prone](/condition/prone-player-core), closes up its scales, and rolls into a ball. While Rolled Up, the pangolin gains resistance 10 to physical damage and total immunity to falling damage from heights of 50 feet or less. The only action the pine pangolin can take is to Stand, and the effects of Roll Up end once the pangolin Stands.",
             "traits": [
               "move"
             ],
@@ -11038,9 +11095,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -11191,15 +11249,17 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "2d6 bludgeoning, basic Fortitude DC 22 (see [Constrict](/action/constrict-monster-core))",
+            "text": "2d6 bludgeoning, basic Fortitude DC 22",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -11336,7 +11396,7 @@
         "offensive": [
           {
             "name": "Predator's Stare",
-            "text": "The rakkatak turns its grotesque yet mesmerizing eyes upon one creature it can see within 30 feet. That creature must succeed at a Will DC 22 save or become Fascinated with the rakkatak. While fascinated, the creature must spend at least 1 action each round moving closer to the rakkatak as expediently as possible, and can't intentionally move away from it. The fascination ends after 1 minute or when the rakkatak uses Predator's Stare again, whichever comes first.",
+            "text": "The rakkatak turns its grotesque yet mesmerizing eyes upon one creature it can see within 30 feet. That creature must succeed at a Will DC 22 save or become [Fascinated](/condition/fascinated-player-core) with the rakkatak. While fascinated, the creature must spend at least 1 action each round moving closer to the rakkatak as expediently as possible, and can't intentionally move away from it. The fascination ends after 1 minute or when the rakkatak uses Predator's Stare again, whichever comes first.",
             "traits": [
               "concentrate",
               "emotion",
@@ -11353,9 +11413,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -11474,7 +11535,7 @@
         "interaction": [
           {
             "name": "Heavy",
-            "text": "As long as it is immobile, the elemental can't be forcibly moved or knocked Prone. If it takes a move action, it loses this immunity until the start of its next turn.",
+            "text": "As long as it is immobile, the elemental can't be forcibly moved or knocked [Prone](/condition/prone-player-core). If it takes a move action, it loses this immunity until the start of its next turn.",
             "traits": []
           },
           {
@@ -11491,23 +11552,24 @@
           },
           {
             "name": "Rust Cloud",
-            "text": "A rust scarab whose carapace is broken is constantly surrounded by a cloud of rust flakes that cause it to be Concealed from creatures more than 5 feet away from it.",
+            "text": "A rust scarab whose carapace is broken is constantly surrounded by a cloud of rust flakes that cause it to be [Concealed](/condition/concealed-player-core) from creatures more than 5 feet away from it.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Tetanus",
-            "text": "**Saving Throw** Fortitude DC 19\n\n**Onset** 1 week\n\n**Stage 1** Clumsy 1 (1 week)\n\n**Stage 2** Clumsy 2 and can't speak (1 day)\n\n**Stage 3** Paralyzed with spasms (1 day)\n\n**Stage 4** death",
+            "text": "**Saving Throw** Fortitude DC 19\n\n**Onset** 1 week\n\n**Stage 1** [Clumsy 1](/condition/clumsy-player-core) (1 week)\n\n**Stage 2** Clumsy 2 and can't speak (1 day)\n\n**Stage 3** [Paralyzed](/condition/paralyzed-player-core) with spasms (1 day)\n\n**Stage 4** death",
             "traits": [
               "disease"
             ]
           },
           {
             "name": "Trample",
-            "text": "Medium or smaller, claw, basic Reflex DC 23 (see [Trample](/action/trample-monster-core))",
+            "text": "Medium or smaller, claw, basic Reflex DC 23",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -11623,8 +11685,9 @@
         "defensive": [
           {
             "name": "Troop Defenses",
-            "text": "**Thresholds** 160 (3 segments), 80 (2 segments) (see [Troop Defenses](/action/troop-defenses-npc-core))",
-            "traits": []
+            "text": "**Thresholds** 160 (3 segments), 80 (2 segments)",
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           }
         ],
         "offensive": [
@@ -11662,7 +11725,7 @@
           },
           {
             "name": "Troop Movement",
-            "text": "Whenever the saltborn stalkers Stride or Swim, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move. This works just like a Gargantuan creature moving; for instance, if any of the stalkers' squares enter difficult terrain, the extra movement cost applies to the whole troop.",
+            "text": "Whenever the saltborn stalkers [Stride](/action/stride-player-core) or [Swim](/action/swim-player-core), they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move. This works just like a Gargantuan creature moving; for instance, if any of the stalkers' squares enter difficult terrain, the extra movement cost applies to the whole troop.",
             "traits": []
           }
         ]
@@ -11806,17 +11869,17 @@
         "offensive": [
           {
             "name": "Phase Blade",
-            "text": "A skymetal striker's inubrix fangs Strike ignores damage resistance from metal armor's armor specialization effects and the circumstance bonus to AC from metal shields, and it doesn't trigger the Shield Block reaction from a metal shield.",
+            "text": "A skymetal striker's inubrix fangs [Strike](/action/strike-player-core) ignores damage resistance from metal armor's armor specialization effects and the circumstance bonus to AC from metal shields, and it doesn't trigger the Shield Block reaction from a metal shield.",
             "traits": []
           },
           {
             "name": "Temporal Stutter",
-            "text": "A creature not already affected by temporal stutter that takes damage from a skymetal striker's orichalcum fangs Strike must attempt a Fortitude DC 25 save.\n\n**Success** The target is Quickened until the end of its next turn.\n\n**Failure** The target is Slowed 1 until the end of its next turn.\n\n**Critical Failure** The target is Slowed 2 until the end of its next turn.",
+            "text": "A creature not already affected by temporal stutter that takes damage from a skymetal striker's orichalcum fangs [Strike](/action/strike-player-core) must attempt a Fortitude DC 25 save.\n\n**Success** The target is [Quickened](/condition/quickened-player-core) until the end of its next turn.\n\n**Failure** The target is [Slowed 1](/condition/slowed-player-core) until the end of its next turn.\n\n**Critical Failure** The target is Slowed 2 until the end of its next turn.",
             "traits": []
           },
           {
             "name": "Two-Headed Assault",
-            "text": "The skymetal striker makes one inubrix fangs Strike and one orichalcum fangs Strike, each against a different creature. Its multiple attack penalty increases only after all the attacks are made.",
+            "text": "The skymetal striker makes one inubrix fangs [Strike](/action/strike-player-core) and one orichalcum fangs Strike, each against a different creature. Its multiple attack penalty increases only after all the attacks are made.",
             "traits": [],
             "actions": "two"
           }
@@ -11954,7 +12017,7 @@
         "defensive": [
           {
             "name": "Alluring Scent",
-            "text": "30 feet.\n\nA creature that enters the emanation must attempt a Will DC 25 save. On a failure, the target is Fascinated by the snapdrake and must use at least 1 action on its next turn to Stride closer to the snapdrake. On a success, the target is immune to the snapdrake's alluring scent for 1 hour.",
+            "text": "30 feet.\n\nA creature that enters the emanation must attempt a Will DC 25 save. On a failure, the target is [Fascinated](/condition/fascinated-player-core) by the snapdrake and must use at least 1 action on its next turn to [Stride](/action/stride-player-core) closer to the snapdrake. On a success, the target is immune to the snapdrake's alluring scent for 1 hour.",
             "traits": [
               "aura",
               "olfactory",
@@ -11964,9 +12027,10 @@
           },
           {
             "name": "Attack of Opportunity",
-            "text": "Tail scythe only (see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "Tail scythe only",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           }
         ],
         "offensive": [
@@ -12003,9 +12067,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -12153,7 +12218,7 @@
         "defensive": [
           {
             "name": "Glinting Wing",
-            "text": "**Trigger** A creature within 120 feet attempts to target the solar crow; **Effect** The solar crow defensively repositions a wing to shine light into the attacker's eyes. The target is Dazzled for the duration of the triggering effect, granting the solar crow concealment against it.",
+            "text": "**Trigger** A creature within 120 feet attempts to target the solar crow; **Effect** The solar crow defensively repositions a wing to shine light into the attacker's eyes. The target is [Dazzled](/condition/dazzled-player-core) for the duration of the triggering effect, granting the solar crow concealment against it.",
             "traits": [
               "light",
               "visual"
@@ -12189,14 +12254,15 @@
           },
           {
             "name": "Snatch",
-            "text": "A solar crow can Fly at half Speed while it has a creature Grabbed or Restrained in its talons, carrying that creature along with it.",
+            "text": "A solar crow can [Fly](/action/fly-player-core) at half Speed while it has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) in its talons, carrying that creature along with it.",
             "traits": []
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -12316,8 +12382,9 @@
           },
           {
             "name": "Troop Defenses",
-            "text": "(see [Troop Defenses](/action/troop-defenses-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           }
         ],
         "offensive": [
@@ -12343,7 +12410,7 @@
           },
           {
             "name": "Troop Movement",
-            "text": "Whenever the sootsoldiers Stride, they first Form Up as a free action to condense into a 20-foot-by-20- foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any of the sootsoldiers' squares enters difficult terrain, the extra movement cost applies to the whole troop.",
+            "text": "Whenever the sootsoldiers [Stride](/action/stride-player-core), they first Form Up as a free action to condense into a 20-foot-by-20- foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any of the sootsoldiers' squares enters difficult terrain, the extra movement cost applies to the whole troop.",
             "traits": []
           }
         ]
@@ -12469,8 +12536,9 @@
           },
           {
             "name": "Troop Defenses",
-            "text": "(see [Troop Defenses](/action/troop-defenses-npc-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           }
         ],
         "offensive": [
@@ -12496,7 +12564,7 @@
           },
           {
             "name": "Troop Movement",
-            "text": "Whenever the sootsoldiers Stride, they first Form Up as a free action to condense into a 20-foot-by-20- foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any of the sootsoldiers' squares enters difficult terrain, the extra movement cost applies to the whole troop.",
+            "text": "Whenever the sootsoldiers [Stride](/action/stride-player-core), they first Form Up as a free action to condense into a 20-foot-by-20- foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any of the sootsoldiers' squares enters difficult terrain, the extra movement cost applies to the whole troop.",
             "traits": []
           }
         ]
@@ -12644,7 +12712,7 @@
         "defensive": [
           {
             "name": "Reflective Defense",
-            "text": "**Frequency** once per round; **Trigger** A creature within 30 feet targets the talos gadgeteer, and they can see the attacker; **Requirements** The talos is in dim or bright light; **Effect** The talos gadgeteer reflects light off their metallic skin and into the enemy's eyes; it must succeed at a Reflex DC 14 save or be Dazzled until the end of the talos's next turn.",
+            "text": "**Frequency** once per round; **Trigger** A creature within 30 feet targets the talos gadgeteer, and they can see the attacker; **Requirements** The talos is in dim or bright light; **Effect** The talos gadgeteer reflects light off their metallic skin and into the enemy's eyes; it must succeed at a Reflex DC 14 save or be [Dazzled](/condition/dazzled-player-core) until the end of the talos's next turn.",
             "traits": [],
             "actions": "reaction"
           }
@@ -12817,7 +12885,7 @@
         "offensive": [
           {
             "name": "Listless Saliva",
-            "text": "The tantriog's essence is imbued with their endless ennui. Any creature hit by the tantriog's beak or spitball Strikes must succeed at a Will DC 24 save or become Stunned 1 (Stunned 2 on a critical failure).",
+            "text": "The tantriog's essence is imbued with their endless ennui. Any creature hit by the tantriog's beak or spitball Strikes must succeed at a Will DC 24 save or become [Stunned 1](/condition/stunned-player-core) (Stunned 2 on a critical failure).",
             "traits": [
               "emotion",
               "mental"
@@ -13027,7 +13095,7 @@
         "offensive": [
           {
             "name": "Follow-Up Combo",
-            "text": "The twins of rowan makes a rapier Strike, followed by two fist Strikes, all against the same target. These attacks all count toward the twins' multiple attack penalty, but the penalty doesn't increase until after the twins make their attacks.",
+            "text": "The twins of rowan makes a rapier [Strike](/action/strike-player-core), followed by two fist Strikes, all against the same target. These attacks all count toward the twins' multiple attack penalty, but the penalty doesn't increase until after the twins make their attacks.",
             "traits": [],
             "actions": "two"
           },
@@ -13043,9 +13111,10 @@
           },
           {
             "name": "Throw Stump",
-            "text": "Can also be used to throw stumps and logs. (see [Throw Rock](/action/throw-rock-monster-core))",
+            "text": "Can also be used to throw stumps and logs.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/throw-rock-monster-core"
           }
         ]
       },
@@ -13219,16 +13288,18 @@
         "interaction": [
           {
             "name": "Tremorsense (Imprecise) 120 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           },
           {
             "name": "Telepathy 300 feet",
-            "text": "(see [Telepathy](/action/telepathy-monster-core))",
+            "text": "",
             "traits": [
               "aura",
               "magical"
-            ]
+            ],
+            "reference": "/action/telepathy-monster-core"
           },
           {
             "name": "+2 Status to Recall Knowledge About Earth",
@@ -13237,7 +13308,7 @@
           },
           {
             "name": "Craft Crystal Wand",
-            "text": "**Frequency** twice per day; **Effect** The vault builder spends 10 minutes creating a magic wand out of radioactive green crystal, containing any 8th-rank or lower earth spell of their choice. The wand can be used by other creatures, but it crumbles to sand at the end of the day and has no monetary value. The vault builder can expend both daily uses to instead make a *+3 greater striking Major Staff of Earth*.",
+            "text": "**Frequency** twice per day; **Effect** The vault builder spends 10 minutes creating a magic wand out of radioactive green crystal, containing any 8th-rank or lower earth spell of their choice. The wand can be used by other creatures, but it crumbles to sand at the end of the day and has no monetary value. The vault builder can expend both daily uses to instead make a *+3 greater striking [Major Staff of Earth](/item/staff-of-earth-major-treasure-vault-remastered)*.",
             "traits": [
               "exploration"
             ]
@@ -13261,15 +13332,16 @@
           },
           {
             "name": "Attack of Opportunity",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           }
         ],
         "offensive": [
           {
             "name": "Constraining Crystal",
-            "text": "When the vault builder deals damage with a claw Strike, glowing green crystals cluster at the site of the attack. The target must succeed at a Fortitude DC 31 save or become Clumsy 1 for 1 hour (or Clumsy 2 on a critical failure). If the creature is already clumsy due to constraining crystal, additional failures increase that clumsy value instead, to a maximum of clumsy 4. A target that fails its save while clumsy 4 is Petrified with an unlimited duration.",
+            "text": "When the vault builder deals damage with a claw [Strike](/action/strike-player-core), glowing green crystals cluster at the site of the attack. The target must succeed at a Fortitude DC 31 save or become [Clumsy 1](/condition/clumsy-player-core) for 1 hour (or Clumsy 2 on a critical failure). If the creature is already clumsy due to constraining crystal, additional failures increase that clumsy value instead, to a maximum of clumsy 4. A target that fails its save while clumsy 4 is [Petrified](/condition/petrified-player-core) with an unlimited duration.",
             "traits": [
               "earth",
               "magical"
@@ -13286,7 +13358,7 @@
           },
           {
             "name": "Earth Glide",
-            "text": "The vault builder can Burrow through any earthen matter, including rock. When they do so, the vault builder moves at their full burrow Speed, leaving no tunnels or signs of their passing.",
+            "text": "The vault builder can [Burrow](/action/burrow-player-core) through any earthen matter, including rock. When they do so, the vault builder moves at their full [burrow Speed](/rule/burrow-speed-rules-2348), leaving no tunnels or signs of their passing.",
             "traits": []
           }
         ]
@@ -13568,7 +13640,7 @@
                   "name": "Speak with Stones",
                   "rank": 8,
                   "reference": "/spell/speak-with-stones-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Translocate",
@@ -13579,7 +13651,7 @@
                   "name": "Shatter",
                   "rank": 8,
                   "reference": "/spell/shatter-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -13590,19 +13662,19 @@
                   "name": "Shape Stone",
                   "rank": 4,
                   "reference": "/spell/shape-stone-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Translocate",
                   "rank": 4,
                   "reference": "/spell/translocate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Earthbind",
                   "rank": 4,
                   "reference": "/spell/earthbind-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -13742,16 +13814,18 @@
         "interaction": [
           {
             "name": "Tremorsense (Imprecise) 120 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           },
           {
             "name": "Telepathy 300 feet",
-            "text": "(see [Telepathy](/action/telepathy-monster-core))",
+            "text": "",
             "traits": [
               "aura",
               "magical"
-            ]
+            ],
+            "reference": "/action/telepathy-monster-core"
           },
           {
             "name": "+2 Status to Recall Knowledge About Earth",
@@ -13774,15 +13848,16 @@
         "defensive": [
           {
             "name": "Attack of Opportunity",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           }
         ],
         "offensive": [
           {
             "name": "Constraining Crystal",
-            "text": "When the vault keeper deals damage with a claw Strike, glowing green crystals cluster at the site of the attack. The target must succeed at a Fortitude DC 31 save or become Clumsy 1 for 1 hour (or Clumsy 2 on a critical failure). If the creature is already clumsy due to constraining crystal, additional failures increase that clumsy value instead, to a maximum of clumsy 4.",
+            "text": "When the vault keeper deals damage with a claw [Strike](/action/strike-player-core), glowing green crystals cluster at the site of the attack. The target must succeed at a Fortitude DC 31 save or become [Clumsy 1](/condition/clumsy-player-core) for 1 hour (or Clumsy 2 on a critical failure). If the creature is already clumsy due to constraining crystal, additional failures increase that clumsy value instead, to a maximum of clumsy 4.",
             "traits": [
               "earth",
               "magical"
@@ -13799,7 +13874,7 @@
           },
           {
             "name": "Slashing Surge",
-            "text": "The vault keeper Strides or Climbs and makes two claw Strikes at any point during that movement. Each Strike must target a different creature. The multiple attack penalty doesn't increase until after both attacks.",
+            "text": "The vault keeper Strides or Climbs and makes two claw Strikes at any point during that movement. Each [Strike](/action/strike-player-core) must target a different creature. The multiple attack penalty doesn't increase until after both attacks.",
             "traits": [],
             "actions": "two"
           }
@@ -13860,7 +13935,7 @@
                   "name": "Speak with Stones",
                   "rank": 6,
                   "reference": "/spell/speak-with-stones-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -13876,7 +13951,7 @@
                   "name": "Shatter",
                   "rank": 5,
                   "reference": "/spell/shatter-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -13887,19 +13962,19 @@
                   "name": "Shape Stone",
                   "rank": 4,
                   "reference": "/spell/shape-stone-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Translocate",
                   "rank": 4,
                   "reference": "/spell/translocate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Earthbind",
                   "rank": 4,
                   "reference": "/spell/earthbind-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -14162,22 +14237,23 @@
         "defensive": [
           {
             "name": "Naturally Invisible",
-            "text": "The veiled current is Invisible at all times. When they take a hostile action of any kind, the veiled current is Hidden instead of undetected as the vague outline of their humanoid form becomes faintly visible until the start of their next turn.",
+            "text": "The veiled current is [Invisible](/condition/invisible-player-core) at all times. When they take a hostile action of any kind, the veiled current is [Hidden](/condition/hidden-player-core) instead of undetected as the vague outline of their humanoid form becomes faintly visible until the start of their next turn.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Envelop",
-            "text": "**Requirements** The veiled current begins their turn with a target of their size or smaller Grabbed; **Effect** The veiled current maintains the Grab and coalesces around the creature, stretching themself into a semisolid veil that smothers the creature within. This thereafter has the same effect as if the veiled current had Engulfed the creature (DC 26, 1d8+8 bludgeoning, Escape, Rupture 17). As engulfing a creature is a hostile action, the veiled current is Hidden instead of undetected every round it has a creature engulfed.",
+            "text": "**Requirements** The veiled current begins their turn with a target of their size or smaller Grabbed; **Effect** The veiled current maintains the Grab and coalesces around the creature, stretching themself into a semisolid veil that smothers the creature within. This thereafter has the same effect as if the veiled current had Engulfed the creature (DC 26, 1d8+8 bludgeoning, [Escape](/action/escape-player-core), Rupture 17). As engulfing a creature is a hostile action, the veiled current is Hidden instead of undetected every round it has a creature engulfed.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -14298,18 +14374,20 @@
         "defensive": [
           {
             "name": "All-Around Vision",
-            "text": "(see [All-Around Vision](/action/all-around-vision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/all-around-vision-monster-core"
           },
           {
             "name": "Attack of Opportunity",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           },
           {
             "name": "Natural Invisibility",
-            "text": "A veldenar is naturally Invisible and only becomes visible when using a hostile action. Creatures it has engulfed remain visible within it, albeit slightly blurred by the veldenar's translucent skin.",
+            "text": "A veldenar is naturally [Invisible](/condition/invisible-player-core) and only becomes visible when using a hostile action. Creatures it has engulfed remain visible within it, albeit slightly blurred by the veldenar's translucent skin.",
             "traits": []
           },
           {
@@ -14324,7 +14402,7 @@
         "offensive": [
           {
             "name": "Vacuum",
-            "text": "**Requirements** The veldenar doesn't have a creature engulfed; **Effect** The veldenar forcefully unlocks then expands its jaws to inhale the air in a 15-foot cone before it, pulling Large or smaller creatures into its cavernous maw. The veldenar Engulfs the creatures in the area (Reflex DC 27, (1d10+10) cold, Escape, Rupture 25).",
+            "text": "**Requirements** The veldenar doesn't have a creature engulfed; **Effect** The veldenar forcefully unlocks then expands its jaws to inhale the air in a 15-foot cone before it, pulling Large or smaller creatures into its cavernous maw. The veldenar Engulfs the creatures in the area (Reflex DC 27, (1d10+10) cold, [Escape](/action/escape-player-core), Rupture 25).",
             "traits": [
               "air"
             ],
@@ -14452,7 +14530,7 @@
         "interaction": [
           {
             "name": "Grounded",
-            "text": "When saving against an effect attempting to knock them Prone, a whipping willow achieves one degree of success better than what they rolled. Additionally, the willow doesn't fall prone on a critical failure to Trip an opponent.",
+            "text": "When saving against an effect attempting to knock them [Prone](/condition/prone-player-core), a whipping willow achieves one degree of success better than what they rolled. Additionally, the willow doesn't fall prone on a critical failure to [Trip](/action/trip-player-core) an opponent.",
             "traits": []
           }
         ],
@@ -14460,13 +14538,14 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "2d4+5 bludgeoning, basic Fortitude DC 21 (see [Constrict](/action/constrict-monster-core))",
+            "text": "2d4+5 bludgeoning, basic Fortitude DC 21",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Strangling Vines",
-            "text": "When a whipping willow hits a creature with their whip Strike, they can choose to Grab and begin strangling the creature. The target is suffocating and can't speak as long as it's strangled.",
+            "text": "When a whipping willow hits a creature with their whip [Strike](/action/strike-player-core), they can choose to Grab and begin strangling the creature. The target is suffocating and can't speak as long as it's strangled.",
             "traits": []
           },
           {
@@ -14979,8 +15058,9 @@
         "defensive": [
           {
             "name": "Regeneration 15 (Deactivated by Earthbane)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Blessed by the Winds",
@@ -14992,7 +15072,7 @@
           },
           {
             "name": "Earthbane",
-            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes Stunned 2 and Clumsy 2.",
+            "text": "An anemos's regeneration is suppressed for 1 round if the anemos is affected by an earth effect, or for as long as they are in contact with the ground and 1 round thereafter. If an anemos is submerged in at least 1 inch of mud, dirt, or stone, the anemos's aura deactivates, and the anemos becomes [Stunned 2](/condition/stunned-player-core) and [Clumsy 2](/condition/clumsy-player-core).",
             "traits": []
           },
           {
@@ -15021,7 +15101,7 @@
           },
           {
             "name": "Storm Strikes Twice",
-            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt Strike against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
+            "text": "The anemos throws a thunderbolt, then becomes a wind that carries them in an instant to the bolt's location to attack again. They make a ranged thunderbolt [Strike](/action/strike-player-core) against a creature within their first range increment, teleport to the creature's location as a gust of wind, then grasp the thrown thunderbolt and make a melee thunderbolt Strike against a creature within reach. Their multiple attack penalty doesn't increase until they've made both attacks.",
             "traits": [
               "air",
               "teleportation"
@@ -15084,7 +15164,7 @@
                   "name": "Humanoid Form",
                   "rank": 7,
                   "reference": "/spell/humanoid-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -15095,7 +15175,7 @@
                   "name": "Airlift",
                   "rank": 4,
                   "reference": "/spell/airlift-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Petal Storm",
@@ -15106,7 +15186,7 @@
                   "name": "Vapor Form",
                   "rank": 4,
                   "reference": "/spell/vapor-form-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Speak with Plants",
@@ -15117,7 +15197,7 @@
                   "name": "Voice on the Breeze",
                   "rank": 4,
                   "reference": "/spell/voice-on-the-breeze-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -15128,7 +15208,7 @@
                   "name": "Air Bubble",
                   "rank": 1,
                   "reference": "/spell/air-bubble-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -15277,8 +15357,9 @@
         "interaction": [
           {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [
@@ -15296,7 +15377,7 @@
         "offensive": [
           {
             "name": "Blinding Reflection",
-            "text": "**Frequency** once per round; **Requirements** The zuhra is in dim or bright light; **Effect** The zuhra briefly reshapes part of their metallic body into a concave surface to reflect the surrounding light into the eyes of a creature within 30 feet. The target must attempt a Reflex DC 26 save. It's then temporarily immune for 1 hour.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is Dazzled until the start of the zuhra's next turn.\n\n**Failure** The target is Blinded until the start of the zuhra's next turn.",
+            "text": "**Frequency** once per round; **Requirements** The zuhra is in dim or bright light; **Effect** The zuhra briefly reshapes part of their metallic body into a concave surface to reflect the surrounding light into the eyes of a creature within 30 feet. The target must attempt a Reflex DC 26 save. It's then temporarily immune for 1 hour.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is [Dazzled](/condition/dazzled-player-core) until the start of the zuhra's next turn.\n\n**Failure** The target is [Blinded](/condition/blinded-player-core) until the start of the zuhra's next turn.",
             "traits": [
               "arcane",
               "light"
@@ -15305,13 +15386,14 @@
           },
           {
             "name": "Change Shape",
-            "text": "The zuhra transforms into a Small or Medium metal elemental or animal. This doesn't affect the zuhra's statistics, but it could change the damage type of their Strikes. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "The zuhra transforms into a Small or Medium metal elemental or animal. This doesn't affect the zuhra's statistics, but it could change the damage type of their Strikes.",
             "traits": [
               "arcane",
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           }
         ]
       },
@@ -15349,7 +15431,8 @@
                   "name": "Interplanar Teleport",
                   "rank": 7,
                   "reference": "/spell/interplanar-teleport-player-core",
-                  "details": "at will; To Astral Plane, Elemental Planes, or Universe only"
+                  "atWill": true,
+                  "details": "To Astral Plane, Elemental Planes, or Universe only"
                 }
               ]
             },
@@ -15392,13 +15475,13 @@
                   "name": "Magnetic Attraction",
                   "rank": 2,
                   "reference": "/spell/magnetic-attraction-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Magnetic Repulsion",
                   "rank": 2,
                   "reference": "/spell/magnetic-repulsion-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -15544,8 +15627,9 @@
         "interaction": [
           {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [
@@ -15572,13 +15656,14 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "The zuhra transforms into a Small or Medium metal elemental or animal. This doesn't affect the zuhra's statistics, but it could change the damage type of their Strikes. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "The zuhra transforms into a Small or Medium metal elemental or animal. This doesn't affect the zuhra's statistics, but it could change the damage type of their Strikes.",
             "traits": [
               "arcane",
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Magnetic Reposition",
@@ -15635,7 +15720,8 @@
                   "name": "Interplanar Teleport",
                   "rank": 7,
                   "reference": "/spell/interplanar-teleport-player-core",
-                  "details": "at will; To Astral Plane, Elemental Planes, or Universe only"
+                  "atWill": true,
+                  "details": "To Astral Plane, Elemental Planes, or Universe only"
                 },
                 {
                   "name": "Weapon Storm",
@@ -15677,7 +15763,7 @@
                   "name": "Magnetic Acceleration",
                   "rank": 5,
                   "reference": "/spell/magnetic-acceleration-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Invisibility",
@@ -15689,7 +15775,7 @@
                   "name": "Magnetic Attraction",
                   "rank": 5,
                   "reference": "/spell/magnetic-attraction-rage-of-elements",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },

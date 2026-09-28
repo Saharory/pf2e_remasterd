@@ -93,7 +93,7 @@
         "offensive": [
           {
             "name": "Spring Forward",
-            "text": "**Two Actions** The animated bamboo figure jumps up to 30 feet and makes two fist Strikes against different targets. It can use Knockdown following this activity, attempting to Trip each creature struck.",
+            "text": "**Two Actions** The animated bamboo figure jumps up to 30 feet and makes two fist Strikes against different targets. It can use Knockdown following this activity, attempting to [Trip](/action/trip-player-core) each creature struck.",
             "traits": [],
             "actions": "two"
           }
@@ -233,7 +233,7 @@
         "offensive": [
           {
             "name": "Attach Line",
-            "text": "**Single Action** (Manipulate) The animated kite gives its line to an adjacent ally with a free hand. The kite remains attached until the creature releases it or the kite flies more than 60 feet away. A creature between them can also sever the line with a successful Strike against AC 13 that deals any amount of slashing damage.",
+            "text": "**Single Action** (Manipulate) The animated kite gives its line to an adjacent ally with a free hand. The kite remains attached until the creature releases it or the kite flies more than 60 feet away. A creature between them can also sever the line with a successful [Strike](/action/strike-player-core) against AC 13 that deals any amount of slashing damage.",
             "traits": [],
             "actions": "one"
           },
@@ -524,7 +524,7 @@
         "offensive": [
           {
             "name": "Horn Toss",
-            "text": "**Two Actions** The aoyin Strides and makes a horn Strike. If the Strike hits, the target is flung 20 feet in a direction of the aoyin's choice.",
+            "text": "**Two Actions** The aoyin Strides and makes a horn [Strike](/action/strike-player-core). If the Strike hits, the target is flung 20 feet in a direction of the aoyin's choice.",
             "traits": [],
             "actions": "two"
           },
@@ -683,13 +683,13 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "**Single Action** (Concentrate, Divine, Polymorph) The aso berang takes the appearance of any Medium or Small humanoid creature. In this form, the aso berang can't use their tusk Strikes, and their claw Strike becomes a fist Strike that deals bludgeoning damage and loses the [reach](/trait/reach) trait.",
+            "text": "**Single Action** (Concentrate, Divine, Polymorph) The aso berang takes the appearance of any Medium or Small humanoid creature. In this form, the aso berang can't use their tusk Strikes, and their claw [Strike](/action/strike-player-core) becomes a fist Strike that deals bludgeoning damage and loses the [reach](/trait/reach) trait.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Cleanse the Forest",
-            "text": "**Three Actions** (Divine) The aso berang dashes to attack each nearby enemy so quickly that it's impossible to tell they've moved at all, save for a slight flicker in their outline. The aso berang Strides adjacent to an enemy and attempts a melee Strike. If successful, the aso berang can Stride and attempt to Strike a different enemy. If this second attack is successful, they can Stride and attempt to Strike a third enemy. Once they fail a Strike (or upon succeeding at their third Strike), the aso berang Strides back to the space where they began.",
+            "text": "**Three Actions** (Divine) The aso berang dashes to attack each nearby enemy so quickly that it's impossible to tell they've moved at all, save for a slight flicker in their outline. The aso berang Strides adjacent to an enemy and attempts a melee [Strike](/action/strike-player-core). If successful, the aso berang can [Stride](/action/stride-player-core) and attempt to Strike a different enemy. If this second attack is successful, they can Stride and attempt to Strike a third enemy. Once they fail a Strike (or upon succeeding at their third Strike), the aso berang Strides back to the space where they began.",
             "traits": [],
             "actions": "three"
           },
@@ -725,7 +725,7 @@
                   "name": "Share Life",
                   "rank": 2,
                   "reference": "/spell/share-life-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1016,7 +1016,7 @@
         "defensive": [
           {
             "name": "Elemental Expulsion",
-            "text": "**Reaction** **Requirements** The mantis has an [elemental](/trait/elemental) trait from Color Shift **Trigger** It's damaged by a weapon Strike; **Effect** Elemental energy pushes back against the blow, giving the attacker a –2 status penalty to attack rolls until the beginning of its next turn. If the weapon contains material that matches the mantis's trait (such as earth for a thrown rock or fire for a lit torch), the mantis gains resistance 10 to all damage from this Strike.",
+            "text": "**Reaction** **Requirements** The mantis has an [elemental](/trait/elemental) trait from Color Shift **Trigger** It's damaged by a weapon [Strike](/action/strike-player-core); **Effect** Elemental energy pushes back against the blow, giving the attacker a –2 status penalty to attack rolls until the beginning of its next turn. If the weapon contains material that matches the mantis's trait (such as earth for a thrown rock or fire for a lit torch), the mantis gains resistance 10 to all damage from this Strike.",
             "traits": [],
             "actions": "reaction"
           },
@@ -1160,7 +1160,7 @@
           },
           {
             "name": "Subsumed Traits",
-            "text": "After it finishes digesting a full meal, the gau cho rong will gain a trait from that creature until the next time it's full. Gau cho rongs that gain the [animal](/trait/animal) trait have scent out to 60 feet as an imprecise sense, while those with the amphibious or [aquatic](/trait/aquatic) trait gain a swim speed of 25 feet. Humanoid hollow bears gain the Reactive Strike reaction. Traits like fire add that damage type to a gau cho rong's resistances. Other traits have effects at the GM's discretion.",
+            "text": "After it finishes digesting a full meal, the gau cho rong will gain a trait from that creature until the next time it's full. Gau cho rongs that gain the [animal](/trait/animal) trait have scent out to 60 feet as an imprecise sense, while those with the amphibious or [aquatic](/trait/aquatic) trait gain a swim speed of 25 feet. Humanoid hollow bears gain the Reactive [Strike](/action/strike-player-core) reaction. Traits like fire add that damage type to a gau cho rong's resistances. Other traits have effects at the GM's discretion.",
             "traits": []
           }
         ],
@@ -1168,13 +1168,13 @@
         "offensive": [
           {
             "name": "Ambush",
-            "text": "**Single Action** **Requirements** The gau cho rong is hiding and a creature that hasn't detected it is within 20 feet; **Effect** The gau cho rong Strides toward the creature. Once the creature is in reach, the gau cho rong makes a Strike against it. The target creature is off-guard to this attack.",
+            "text": "**Single Action** **Requirements** The gau cho rong is hiding and a creature that hasn't detected it is within 20 feet; **Effect** The gau cho rong Strides toward the creature. Once the creature is in reach, the gau cho rong makes a [Strike](/action/strike-player-core) against it. The target creature is off-guard to this attack.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Devour",
-            "text": "**Single Action** **Requirements** The gau cho rong's last action was a successful jaws Strike; **Effect** The target takes 1d6 persistent bleed damage. The gau cho rong gains some knowledge from the creature's blood, learning how to understand and speak all languages that creature knows for 1 minute, which it does in a distorted version of the target's voice. During that time, the gau cho rong also gains a +2 circumstance bonus to Intimidation checks to Demoralize that creature.\n\n## Subsumed Traits\n\nPhysical changes from creatures they've devoured are visible in markings on the gau cho rong's loose hide and even in the shape of its bony frame, granting different hollow bears slightly different abilities even among the same group. It's possible that unique, older, or more powerful gau cho rongs might gain permanent abilities from digesting certain creatures.",
+            "text": "**Single Action** **Requirements** The gau cho rong's last action was a successful jaws [Strike](/action/strike-player-core); **Effect** The target takes 1d6 persistent bleed damage. The gau cho rong gains some knowledge from the creature's blood, learning how to understand and speak all languages that creature knows for 1 minute, which it does in a distorted version of the target's voice. During that time, the gau cho rong also gains a +2 circumstance bonus to Intimidation checks to Demoralize that creature.\n\n## Subsumed Traits\n\nPhysical changes from creatures they've devoured are visible in markings on the gau cho rong's loose hide and even in the shape of its bony frame, granting different hollow bears slightly different abilities even among the same group. It's possible that unique, older, or more powerful gau cho rongs might gain permanent abilities from digesting certain creatures.",
             "traits": [],
             "actions": "one"
           }
@@ -1451,7 +1451,7 @@
         "offensive": [
           {
             "name": "Hopping Strike",
-            "text": "**Two Actions** The hopping head Leaps 15 feet and makes one spring Strike at any point during that movement, dealing an additional 1d6 bludgeoning damage.",
+            "text": "**Two Actions** The hopping head Leaps 15 feet and makes one spring [Strike](/action/strike-player-core) at any point during that movement, dealing an additional 1d6 bludgeoning damage.",
             "traits": [],
             "actions": "two"
           }
@@ -1606,7 +1606,7 @@
           },
           {
             "name": "Swipe Countenance",
-            "text": "**Single Action** (Mental, Visual) **Requirements** The ijhyeojin's previous action was a successful claw Strike against the target; **Effect** The ijhyeojin copies the countenance of the target, imprinting it perfectly onto their own blank face. While only their face changes, creatures must Seek them and succeed at a DC 34 Will save to distinguish them visually from the original creature. The sakhil keeps the same visage for 24 hours or until they steal another.\n\n## Fatal Feud\n\nIjhyeojins regard all joseung sajas as brainwashed servants of the Boneyard who need to be “awakened” from their sense of duty through fear. Despite their perception of themselves as liberators, ijhyeojins delight in watching a joseung saja unravel completely as they become consumed and reborn as faceless sakhils by their own fear.",
+            "text": "**Single Action** (Mental, Visual) **Requirements** The ijhyeojin's previous action was a successful claw [Strike](/action/strike-player-core) against the target; **Effect** The ijhyeojin copies the countenance of the target, imprinting it perfectly onto their own blank face. While only their face changes, creatures must [Seek](/action/seek-player-core) them and succeed at a DC 34 Will save to distinguish them visually from the original creature. The sakhil keeps the same visage for 24 hours or until they steal another.\n\n## Fatal Feud\n\nIjhyeojins regard all joseung sajas as brainwashed servants of the Boneyard who need to be “awakened” from their sense of duty through fear. Despite their perception of themselves as liberators, ijhyeojins delight in watching a joseung saja unravel completely as they become consumed and reborn as faceless sakhils by their own fear.",
             "traits": [],
             "actions": "one"
           }
@@ -1645,7 +1645,8 @@
                   "name": "Invisibility",
                   "rank": 2,
                   "reference": "/spell/invisibility-player-core",
-                  "details": "at will; self only"
+                  "atWill": true,
+                  "details": "self only"
                 }
               ]
             },
@@ -1656,7 +1657,7 @@
                   "name": "Rewrite Memory",
                   "rank": 4,
                   "reference": "/spell/rewrite-memory-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1805,7 +1806,7 @@
         "defensive": [
           {
             "name": "Parental Wrath",
-            "text": "**Reaction** **Trigger** A creature damages the imugi's chosen koi egg or ends its turn within 40 feet of the egg **Effect** The imugi Strides or Swims toward the triggering creature. If they end their movement within reach of the creature, they can attempt a melee Strike against it.",
+            "text": "**Reaction** **Trigger** A creature damages the imugi's chosen koi egg or ends its turn within 40 feet of the egg **Effect** The imugi Strides or Swims toward the triggering creature. If they end their movement within reach of the creature, they can attempt a melee [Strike](/action/strike-player-core) against it.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2001,7 +2002,7 @@
         "offensive": [
           {
             "name": "Blinding Ink",
-            "text": "A creature critically struck by the inkdrop's pseudopod is blinded by the ink until it clears its eyes using an Interact action.",
+            "text": "A creature critically struck by the inkdrop's pseudopod is blinded by the ink until it clears its eyes using an [Interact](/action/interact-player-core) action.",
             "traits": []
           },
           {
@@ -2126,7 +2127,7 @@
         "defensive": [
           {
             "name": "Scurrying Retreat",
-            "text": "**Reaction** **Trigger** The jiidon takes damage from a Strike **Requirements** They're currently transformed into in a humanoid form; Effect The jiidon reverts to their rat form and Climbs or Strides. They can't resume humanoid form for 1 minute.",
+            "text": "**Reaction** **Trigger** The jiidon takes damage from a [Strike](/action/strike-player-core) **Requirements** They're currently transformed into in a humanoid form; Effect The jiidon reverts to their rat form and Climbs or Strides. They can't resume humanoid form for 1 minute.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2145,7 +2146,7 @@
           },
           {
             "name": "Tactical Gnaw",
-            "text": "**Two Actions** The jiidon uses their nearly indestructible teeth to chew through even the toughest armor, leaving an opponent vulnerable. The jiidon makes a jaws Strike. On a successful attack, if the target is wearing armor with Hardness 10 or lower, the armor becomes broken. This Strike doesn't further damage armor that's already broken.\n\n## Playing a Jiidon\n\nWhile jiidons don't have ancestral rules [in this book](/rule/in-this-book-rules-2089), a player interested in creating a jiidon character can use the beastkin versatile heritage to emulate a jiidon who has obtained a permanent humanoid form. The player should work with the GM to determine who the jiidon is imitating and what complications this might have.",
+            "text": "**Two Actions** The jiidon uses their nearly indestructible teeth to chew through even the toughest armor, leaving an opponent vulnerable. The jiidon makes a jaws [Strike](/action/strike-player-core). On a successful attack, if the target is wearing armor with Hardness 10 or lower, the armor becomes broken. This Strike doesn't further damage armor that's already broken.\n\n## Playing a Jiidon\n\nWhile jiidons don't have ancestral rules [in this book](/rule/in-this-book-rules-2089), a player interested in creating a jiidon character can use the beastkin versatile heritage to emulate a jiidon who has obtained a permanent humanoid form. The player should work with the GM to determine who the jiidon is imitating and what complications this might have.",
             "traits": [],
             "actions": "two"
           }
@@ -2329,7 +2330,8 @@
                   "name": "Invisibility",
                   "rank": 2,
                   "reference": "/spell/invisibility-player-core",
-                  "details": "at will; self only"
+                  "atWill": true,
+                  "details": "self only"
                 }
               ]
             },
@@ -2481,7 +2483,7 @@
         "defensive": [
           {
             "name": "Spite",
-            "text": "**Reaction** **Trigger** A creature within reach of the kun's tail uses an action to heal or help anyone else **Effect** The kun bats the triggering creature away with their tail, making a tail Strike against the creature. On a hit, the action is disrupted and the creature is pushed 10 feet.",
+            "text": "**Reaction** **Trigger** A creature within reach of the kun's tail uses an action to heal or help anyone else **Effect** The kun bats the triggering creature away with their tail, making a tail [Strike](/action/strike-player-core) against the creature. On a hit, the action is disrupted and the creature is pushed 10 feet.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2495,7 +2497,7 @@
           },
           {
             "name": "Heart of Darkness",
-            "text": "Whenever the kun makes a jaws Strike from within an area of darkness, their jaws deals an additional 2d6 spirit damage and gains the [unholy](/trait/unholy) trait.",
+            "text": "Whenever the kun makes a jaws [Strike](/action/strike-player-core) from within an area of darkness, their jaws deals an additional 2d6 spirit damage and gains the [unholy](/trait/unholy) trait.",
             "traits": []
           },
           {
@@ -2543,7 +2545,7 @@
                   "name": "Control Water",
                   "rank": 5,
                   "reference": "/spell/control-water-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -2554,7 +2556,7 @@
                   "name": "Darkness",
                   "rank": 7,
                   "reference": "/spell/darkness-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Wall of Ice",
@@ -2893,13 +2895,13 @@
         "interaction": [
           {
             "name": "Viper Tail",
-            "text": "**Reaction** **Trigger** A creature within 15 feet of the nue leaves a square during a move action it's using or moves into a square that would cause the nue to become flanked; **Effect** The nue whips around and attempts a tail Strike against the triggering creature. This Strike doesn't count toward the nue's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
+            "text": "**Reaction** **Trigger** A creature within 15 feet of the nue leaves a square during a move action it's using or moves into a square that would cause the nue to become flanked; **Effect** The nue whips around and attempts a tail [Strike](/action/strike-player-core) against the triggering creature. This Strike doesn't count toward the nue's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Viper Tail",
-            "text": "**Reaction** **Trigger** A creature within 15 feet of the nue leaves a square during a move action it's using or moves into a square that would cause the nue to become flanked; **Effect** The nue whips around and attempts a tail Strike against the triggering creature. This Strike doesn't count toward the nue's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
+            "text": "**Reaction** **Trigger** A creature within 15 feet of the nue leaves a square during a move action it's using or moves into a square that would cause the nue to become flanked; **Effect** The nue whips around and attempts a tail [Strike](/action/strike-player-core) against the triggering creature. This Strike doesn't count toward the nue's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2908,7 +2910,7 @@
         "offensive": [
           {
             "name": "Cloud Form",
-            "text": "**Single Action** (Concentrate, Polymorph) The nue changes its shape into that of a dark storm cloud. In Cloud Form, the nue is concealed, gains a 60-foot fly Speed, gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise, and can't make attacks, though it can use its howl abilities. The nue can Dismiss this effect.",
+            "text": "**Single Action** (Concentrate, Polymorph) The nue changes its shape into that of a dark storm cloud. In Cloud Form, the nue is concealed, gains a 60-foot [fly Speed](/rule/fly-speed-rules-2350), gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise, and can't make attacks, though it can use its howl abilities. The nue can Dismiss this effect.",
             "traits": [],
             "actions": "one"
           },
@@ -3241,7 +3243,7 @@
                   "name": "Gust of Wind",
                   "rank": 1,
                   "reference": "/spell/gust-of-wind-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -3252,7 +3254,7 @@
                   "name": "Wall of Wind",
                   "rank": 3,
                   "reference": "/spell/wall-of-wind-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -3399,7 +3401,7 @@
         "offensive": [
           {
             "name": "Devour Wealth",
-            "text": "**Single Action** **Requirements** The pixiu's previous action was a successful jaws Strike; **Effect** The pixiu swallows up to 2d12 gold pieces on the target's person and gains temporary Hit Points equal to the amount devoured. These temporary Hit Points last for 1 minute.",
+            "text": "**Single Action** **Requirements** The pixiu's previous action was a successful jaws [Strike](/action/strike-player-core); **Effect** The pixiu swallows up to 2d12 gold pieces on the target's person and gains temporary Hit Points equal to the amount devoured. These temporary Hit Points last for 1 minute.",
             "traits": [],
             "actions": "one"
           },
@@ -3618,7 +3620,7 @@
           },
           {
             "name": "Ghostly Grasp",
-            "text": "A shui gui can Grapple corporeal creatures despite being incorporeal. The shui gui uses its Athletics check to Grapple as normal but can't use Athletics for other actions that require corporeal contact, like Force Open or Trip.\n\n## Soul Reservoir\n\nA site with a history of drownings can be the result of a single shui gui curse being passed down through the years, but particularly dangerous sites with repeated natural drownings can develop complex hauntings. In addition to the ghosts struggling to drown the next victim, other undead gather and haunts develop under the dark, still water.",
+            "text": "A shui gui can [Grapple](/action/grapple-player-core) corporeal creatures despite being incorporeal. The shui gui uses its Athletics check to Grapple as normal but can't use Athletics for other actions that require corporeal contact, like Force Open or [Trip](/action/trip-player-core).\n\n## Soul Reservoir\n\nA site with a history of drownings can be the result of a single shui gui curse being passed down through the years, but particularly dangerous sites with repeated natural drownings can develop complex hauntings. In addition to the ghosts struggling to drown the next victim, other undead gather and haunts develop under the dark, still water.",
             "traits": []
           }
         ]

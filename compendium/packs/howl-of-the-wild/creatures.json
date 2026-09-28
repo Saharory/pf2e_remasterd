@@ -104,11 +104,6 @@
             "name": "Wild Empathy",
             "text": "The alicorn has an empathic connection to the creatures of the natural world that. The alicorn can use Diplomacy to Make An Impression on animals and to make very simple Requests of them.",
             "traits": []
-          },
-          {
-            "name": "At-Will Spells",
-            "text": "(see [At-Will Spells](/action/at-will-spells-monster-core))",
-            "traits": []
           }
         ],
         "defensive": [
@@ -212,7 +207,7 @@
                   "name": "Gentle Landing",
                   "rank": 1,
                   "reference": "/spell/gentle-landing-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -343,7 +338,7 @@
         "defensive": [
           {
             "name": "Frightful Presence",
-            "text": "5 feet. Will DC 22\n\nFrightfulpresence Creatures that critically fail are also Fleeing for 1 round.",
+            "text": "5 feet. Will DC 22\n\nFrightfulpresence Creatures that critically fail are also [Fleeing](/condition/fleeing-player-core) for 1 round.",
             "traits": [
               "aura",
               "emotion",
@@ -353,7 +348,7 @@
           },
           {
             "name": "Reactive Strike (Horn only)",
-            "text": "Reactivestrike\n\n[Fleeing](/condition/fleeing-player-core) creatures take an additional 1d6 persistent bleed damage. On a critical hit, the target is knocked Prone.",
+            "text": "Reactivestrike\n\n[Fleeing](/condition/fleeing-player-core) creatures take an additional 1d6 persistent bleed damage. On a critical hit, the target is knocked [Prone](/condition/prone-player-core).",
             "traits": [],
             "actions": "reaction"
           }
@@ -367,13 +362,13 @@
           },
           {
             "name": "Goring Charge",
-            "text": "The almiraj lowers its head and moves with ferocity toward its selected prey. The almiraj Strides twice. If it ends its movement within melee reach of at least one enemy, it makes a horn Strike against that enemy. This Strike deals an additional 1d6 persistent bleed damage.",
+            "text": "The almiraj lowers its head and moves with ferocity toward its selected prey. The almiraj Strides twice. If it ends its movement within melee reach of at least one enemy, it makes a horn [Strike](/action/strike-player-core) against that enemy. This Strike deals an additional 1d6 persistent bleed damage.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Into the Earth",
-            "text": "**Requirements** The almiraj has a Medium or smaller creature Grabbed; **Effect** The almiraj attempts to flee with its meal, burrowing into the ground. The grabbed creature must succeed at a Reflex DC 20 save or be dragged beneath the ground as the almiraj Burrows up to its Speed. If the target succeeds at its save, it Escapes and the almiraj continues burrowing as normal; if it fails, the grabbed creature must hold its breath or begin suffocating under the dirt.",
+            "text": "**Requirements** The almiraj has a Medium or smaller creature [Grabbed](/condition/grabbed-player-core); **Effect** The almiraj attempts to flee with its meal, burrowing into the ground. The grabbed creature must succeed at a Reflex DC 20 save or be dragged beneath the ground as the almiraj Burrows up to its Speed. If the target succeeds at its save, it Escapes and the almiraj continues burrowing as normal; if it fails, the grabbed creature must hold its breath or begin suffocating under the dirt.",
             "traits": [],
             "actions": "one"
           }
@@ -505,7 +500,7 @@
           },
           {
             "name": "Internal Cauldron",
-            "text": "With an appropriate diet, an apothecary bee will create a potion of 6th level or lower every two weeks. Most often, this is a Healing Potion (Moderate). Each apothecary bee can store only one completed potion at a time. Unused potions can generally be harvested from an apothecary bee with a successful Nature DC 23 or Survival DC 23 check.",
+            "text": "With an appropriate diet, an apothecary bee will create a potion of 6th level or lower every two weeks. Most often, this is a [Healing Potion (Moderate)](/item/healing-potion-moderate-gm-core). Each apothecary bee can store only one completed potion at a time. Unused potions can generally be harvested from an apothecary bee with a successful Nature DC 23 or Survival DC 23 check.",
             "traits": []
           },
           {
@@ -517,7 +512,7 @@
         "defensive": [
           {
             "name": "Smoke Susceptibility",
-            "text": "An apothecary bee is Slowed 1 if it starts its turn in heavy smoke.",
+            "text": "An apothecary bee is [Slowed 1](/condition/slowed-player-core) if it starts its turn in heavy smoke.",
             "traits": []
           }
         ],
@@ -657,7 +652,7 @@
         "defensive": [
           {
             "name": "Dread Gaze",
-            "text": "**Trigger** A creature ends a move action within 30 feet of the ascendant griffon; **Effect** The ascendant griffon turns its head to stare down the triggering creature, and attempts to Demoralize it. This use of Demoralize has the [visual](/trait/visual) trait rather than the [auditory](/trait/auditory) trait, and the griffon does not take a penalty on its check for not sharing a language.",
+            "text": "**Trigger** A creature ends a move action within 30 feet of the ascendant griffon; **Effect** The ascendant griffon turns its head to stare down the triggering creature, and attempts to [Demoralize](/action/demoralize-player-core) it. This use of Demoralize has the [visual](/trait/visual) trait rather than the [auditory](/trait/auditory) trait, and the griffon does not take a penalty on its check for not sharing a language.",
             "traits": [],
             "actions": "reaction"
           }
@@ -665,24 +660,24 @@
         "offensive": [
           {
             "name": "Carry Off",
-            "text": "An ascendant griffon can Fly at full speed with a creature [Grabbed](/condition/grabbed-player-core) in its talons, moving that creature along with it.",
+            "text": "An ascendant griffon can [Fly](/action/fly-player-core) at full speed with a creature [Grabbed](/condition/grabbed-player-core) in its talons, moving that creature along with it.",
             "traits": []
           },
           {
             "name": "Disembowel",
-            "text": "**Requirements** The ascendant griffon has a creature Grabbed in its talons; **Effect** The griffon makes a beak Strike to rip at the flesh of its prey. If the Strike hits, that creature becomes Drained 1 (or increases its drained value by 1, to a maximum of 4).",
+            "text": "**Requirements** The ascendant griffon has a creature [Grabbed](/condition/grabbed-player-core) in its talons; **Effect** The griffon makes a beak [Strike](/action/strike-player-core) to rip at the flesh of its prey. If the Strike hits, that creature becomes [Drained 1](/condition/drained-player-core) (or increases its drained value by 1, to a maximum of 4).",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Razor-Edged Flight",
-            "text": "The ascendant griffon glides violently forward, Flying twice. It makes a wing Strike at any point during the movement against up to two different targets; if either of these attacks is a critical hit, the target also takes 2d6 persistent bleed damage.",
+            "text": "The ascendant griffon glides violently forward, Flying twice. It makes a wing [Strike](/action/strike-player-core) at any point during the movement against up to two different targets; if either of these attacks is a critical hit, the target also takes 2d6 persistent bleed damage.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Terrifying Screech",
-            "text": "The ascendant griffon unleashes a fearsome cry that strikes terror into its prey. Each creature within 100 feet must attempt a Will DC 30 save. Regardless of the result, creatures are temporarily immune for 1 minute.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Frightened 1.\n\n**Failure** The creature is Frightened 2.\n\n**Critical Failure** The creature is frightened 2 and Fleeing for 1 round.",
+            "text": "The ascendant griffon unleashes a fearsome cry that strikes terror into its prey. Each creature within 100 feet must attempt a Will DC 30 save. Regardless of the result, creatures are temporarily immune for 1 minute.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Frightened 1](/condition/frightened-player-core).\n\n**Failure** The creature is Frightened 2.\n\n**Critical Failure** The creature is frightened 2 and [Fleeing](/condition/fleeing-player-core) for 1 round.",
             "traits": [
               "auditory",
               "emotion",
@@ -693,9 +688,10 @@
           },
           {
             "name": "Improved Grab",
-            "text": "(see [Improved Grab](/action/improved-grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "free"
+            "actions": "free",
+            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -829,13 +825,7 @@
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "At-Will Spells",
-            "text": "(see [At-Will Spells](/action/at-will-spells-monster-core))",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Spell Reflection",
@@ -858,7 +848,7 @@
           },
           {
             "name": "Paired Spikes",
-            "text": "The barded manticore flings two spikes from their tail, targeting up to two creatures within 20 feet of each other. They make a separate ranged Strike against each creature, which counts as a single Strike for the barded manticore's multiple attack penalty, and the penalty doesn't increase until they've made both Strikes. If the manticore targeted only one creature and hits, that creature takes normal damage for a single spike, but also gains weakness 15 to electricity damage until the spikes are removed with an [Interact](/action/interact-player-core) action.",
+            "text": "The barded manticore flings two spikes from their tail, targeting up to two creatures within 20 feet of each other. They make a separate ranged [Strike](/action/strike-player-core) against each creature, which counts as a single Strike for the barded manticore's multiple attack penalty, and the penalty doesn't increase until they've made both Strikes. If the manticore targeted only one creature and hits, that creature takes normal damage for a single spike, but also gains weakness 15 to electricity damage until the spikes are removed with an [Interact](/action/interact-player-core) action.",
             "traits": [],
             "actions": "one"
           }
@@ -924,13 +914,13 @@
                   "name": "Impaling Spike",
                   "rank": 5,
                   "reference": "/spell/impaling-spike-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Lightning Bolt",
                   "rank": 5,
                   "reference": "/spell/lightning-bolt-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -941,7 +931,7 @@
                   "name": "One with Stone",
                   "rank": 3,
                   "reference": "/spell/one-with-stone-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1106,13 +1096,13 @@
           },
           {
             "name": "Goring Charge",
-            "text": "The blooming guardian Strides twice and makes an antlers Strike after either Stride. If the Strike hits, the blooming guardian deals an extra 2d12 bludgeoning damage, and the target takes a –2 circumstance penalty to its next Fortitude save against blossom siphon.",
+            "text": "The blooming guardian Strides twice and makes an antlers [Strike](/action/strike-player-core) after either [Stride](/action/stride-player-core). If the Strike hits, the blooming guardian deals an extra 2d12 bludgeoning damage, and the target takes a –2 circumstance penalty to its next Fortitude save against blossom siphon.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Wail of the Forest",
-            "text": "**Requirements** The blooming guardian is in Full Bloom; **Effect** The blooming guardian confronts their mortality, causing their flowers to burst and spray their pollen. All creatures in a 40-foot cone take 10d10 void damage with a Fortitude DC 36 save. The blooming guardian then exits Full Bloom and can't enter it again for 1d4 rounds.\n\n**Critical Success** No effect.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and becomes [Drained 1](/condition/drained-player-core). Creatures that are Enfeebled lose that condition and increase the drained condition by the same value.\n\n**Critical Failure** As failure, but double damage.",
+            "text": "**Requirements** The blooming guardian is in Full Bloom; **Effect** The blooming guardian confronts their mortality, causing their flowers to burst and spray their pollen. All creatures in a 40-foot cone take 10d10 void damage with a Fortitude DC 36 save. The blooming guardian then exits Full Bloom and can't enter it again for 1d4 rounds.\n\n**Critical Success** No effect.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and becomes [Drained 1](/condition/drained-player-core). Creatures that are [Enfeebled](/condition/enfeebled-player-core) lose that condition and increase the drained condition by the same value.\n\n**Critical Failure** As failure, but double damage.",
             "traits": [
               "primal",
               "void"
@@ -1270,19 +1260,19 @@
         "offensive": [
           {
             "name": "Headbutt",
-            "text": "**Trigger** A creature ends a move action within reach of the carnotaurus's horn Strike; **Effect** The carnotaurus makes a horn Strike against the triggering creature.",
+            "text": "**Trigger** A creature ends a move action within reach of the carnotaurus's horn [Strike](/action/strike-player-core); **Effect** The carnotaurus makes a horn Strike against the triggering creature.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Powerful Charge",
-            "text": "The carnotaurus lowers its horns and surges toward a foe. It Strides twice, then makes a horn Strike. If it moved at least 20 feet from its starting position, the Strike's damage is increased to 2d12+9 and knocks the target Prone if successful.",
+            "text": "The carnotaurus lowers its horns and surges toward a foe. It Strides twice, then makes a horn [Strike](/action/strike-player-core). If it moved at least 20 feet from its starting position, the Strike's damage is increased to 2d12+9 and knocks the target [Prone](/condition/prone-player-core) if successful.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Vicious Mauling",
-            "text": "The carnotaurus's jaws Strike deals an additional 1d8 persistent bleed damage to Prone targets.",
+            "text": "The carnotaurus's jaws [Strike](/action/strike-player-core) deals an additional 1d8 persistent bleed damage to [Prone](/condition/prone-player-core) targets.",
             "traits": []
           }
         ]
@@ -1426,7 +1416,7 @@
         "interaction": [
           {
             "name": "Storm Bolt",
-            "text": "The chaos falcon's bolt Strike always deals the damage type of their storm nexus aura.",
+            "text": "The chaos falcon's bolt [Strike](/action/strike-player-core) always deals the damage type of their storm nexus aura.",
             "traits": []
           },
           {
@@ -1449,7 +1439,7 @@
           },
           {
             "name": "Flash Storm",
-            "text": "Water condenses around the ash particles in the chaos falcon's 15-foot aura, pelting everything beneath it with driving rain. Creatures in that area must succeed at a Reflex DC 26 save or be pushed 20 feet down, falling Prone if they start or end this movement on the ground.",
+            "text": "Water condenses around the ash particles in the chaos falcon's 15-foot aura, pelting everything beneath it with driving rain. Creatures in that area must succeed at a Reflex DC 26 save or be pushed 20 feet down, falling [Prone](/condition/prone-player-core) if they start or end this movement on the ground.",
             "traits": [
               "air",
               "primal",
@@ -1894,7 +1884,7 @@
         "interaction": [
           {
             "name": "All Aboard",
-            "text": "A decapod dinghy can carry up to 30 Bulk of creatures or unattended items on their back, such as five Medium creatures. The anemones' gentle hold on the passengers is sufficient in most situations, but while in combat, those passengers are Slowed 1 if they want to take other actions while remaining on the decapod dinghy's back.",
+            "text": "A decapod dinghy can carry up to 30 Bulk of creatures or unattended items on their back, such as five Medium creatures. The anemones' gentle hold on the passengers is sufficient in most situations, but while in combat, those passengers are [Slowed 1](/condition/slowed-player-core) if they want to take other actions while remaining on the decapod dinghy's back.",
             "traits": []
           },
           {
@@ -1916,7 +1906,7 @@
           },
           {
             "name": "Protect Passenger",
-            "text": "**Trigger** An enemy within 20 feet damages one of the decapod dinghy's passengers; **Effect** The decapod dinghy's anemones lash out for a tentacle Strike against the triggering creature.",
+            "text": "**Trigger** An enemy within 20 feet damages one of the decapod dinghy's passengers; **Effect** The decapod dinghy's anemones lash out for a tentacle [Strike](/action/strike-player-core) against the triggering creature.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2069,7 +2059,7 @@
         "defensive": [
           {
             "name": "Indomitable Beast",
-            "text": "**Frequency** once per day; **Trigger** The desert manticore is reduced to 0 HP; **Effect** The desert manticore avoids being knocked out and remains at 1 HP, then can make a stinger Strike against a creature in its reach.",
+            "text": "**Frequency** once per day; **Trigger** The desert manticore is reduced to 0 HP; **Effect** The desert manticore avoids being knocked out and remains at 1 HP, then can make a stinger [Strike](/action/strike-player-core) against a creature in its reach.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2223,12 +2213,12 @@
           },
           {
             "name": "Pull Under",
-            "text": "The drthak can Swim at half Speed while it has a creature [Grabbed](/condition/grabbed-player-core) or Restrained in its jaws, carrying the creature along with it.",
+            "text": "The drthak can [Swim](/action/swim-player-core) at half Speed while it has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) in its jaws, carrying the creature along with it.",
             "traits": []
           },
           {
             "name": "Sensitive Echolocation",
-            "text": "The drthak can use its hearing as a precise sense with the listed range. If the drthak takes sonic damage beyond its resistance, its senses are overloaded and all creatures are Concealed from it for 1 round.",
+            "text": "The drthak can use its hearing as a precise sense with the listed range. If the drthak takes sonic damage beyond its resistance, its senses are overloaded and all creatures are [Concealed](/condition/concealed-player-core) from it for 1 round.",
             "traits": []
           }
         ],
@@ -2245,7 +2235,7 @@
           },
           {
             "name": "Resonant Jaws",
-            "text": "When the drthak misses a screech Strike against a creature Grabbed or [Restrained](/condition/restrained-player-core) in its jaws, it deals that creature 2d6 sonic damage.",
+            "text": "When the drthak misses a screech [Strike](/action/strike-player-core) against a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) in its jaws, it deals that creature 2d6 sonic damage.",
             "traits": []
           }
         ]
@@ -2350,7 +2340,7 @@
         "interaction": [
           {
             "name": "Sunless Sight",
-            "text": "While in bright light, the fangtooth fish school is Blinded and Slowed 1.",
+            "text": "While in bright light, the fangtooth fish school is [Blinded](/condition/blinded-player-core) and [Slowed 1](/condition/slowed-player-core).",
             "traits": []
           }
         ],
@@ -2486,7 +2476,7 @@
           },
           {
             "name": "Kettle Up",
-            "text": "The flynkett uses its skin flaps to form a crude kettle. While Kettled Up, the flynkett can't use its claw Strike or take move actions. If the flynkett has been Kettled Up for 1 minute or longer, and its kettle is full of water (usually due to the flynkett being in the rain), the flynkett's kettle begins to boil, emitting a piercing whistle that causes all creatures within 30 feet to take a –2 penalty to Perception checks to hear sources other than the flynkett; this is an auditory effect. The flynkett can stop Kettling Up as a free action.",
+            "text": "The flynkett uses its skin flaps to form a crude kettle. While Kettled Up, the flynkett can't use its claw [Strike](/action/strike-player-core) or take move actions. If the flynkett has been Kettled Up for 1 minute or longer, and its kettle is full of water (usually due to the flynkett being in the rain), the flynkett's kettle begins to boil, emitting a piercing whistle that causes all creatures within 30 feet to take a –2 penalty to Perception checks to hear sources other than the flynkett; this is an auditory effect. The flynkett can stop Kettling Up as a free action.",
             "traits": [],
             "actions": "two"
           }
@@ -2647,7 +2637,7 @@
         "offensive": [
           {
             "name": "Terrifying Display",
-            "text": "The ghost ape beats their chest in a terrifying display. Creatures within 30 feet must succeed a Will DC 20 save or become Frightened 1 (or Frightened 2 on a critical failure). While a creature is frightened by this ability, it's Off Guard to the ape. On a success, the creature is temporarily immune for 1 minute.",
+            "text": "The ghost ape beats their chest in a terrifying display. Creatures within 30 feet must succeed a Will DC 20 save or become [Frightened 1](/condition/frightened-player-core) (or Frightened 2 on a critical failure). While a creature is frightened by this ability, it's [Off Guard](/condition/off-guard-player-core) to the ape. On a success, the creature is temporarily immune for 1 minute.",
             "traits": [
               "auditory",
               "emotion",
@@ -2783,7 +2773,7 @@
         "offensive": [
           {
             "name": "Coppermouth Venom",
-            "text": "**Saving Throw** Fortitude DC 25\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison and 1d6 electricity (1 round)\n\n**Stage 2** 2d6 poison and 1d6 electricity and Clumsy 1 (1 round)\n\n**Stage 3** 2d6 poison and 2d6 electricity and Clumsy 2",
+            "text": "**Saving Throw** Fortitude DC 25\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison and 1d6 electricity (1 round)\n\n**Stage 2** 2d6 poison and 1d6 electricity and [Clumsy 1](/condition/clumsy-player-core) (1 round)\n\n**Stage 3** 2d6 poison and 2d6 electricity and Clumsy 2",
             "traits": [
               "electricity",
               "poison"
@@ -2907,7 +2897,7 @@
         "interaction": [
           {
             "name": "Sunless Sight",
-            "text": "In an area of bright light, the giant fangtooth is Blinded and Slowed 1.",
+            "text": "In an area of bright light, the giant fangtooth is [Blinded](/condition/blinded-player-core) and [Slowed 1](/condition/slowed-player-core).",
             "traits": []
           }
         ],
@@ -2915,9 +2905,10 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "2d8 piercing, basic Fortitude DC 21 (see [Constrict](/action/constrict-monster-core))",
+            "text": "2d8 piercing, basic Fortitude DC 21",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Deep Puncture",
@@ -3052,7 +3043,7 @@
         "defensive": [
           {
             "name": "Tun State",
-            "text": "**Trigger** The tardigrade would be reduced to 0 Hit Points or would die due to starvation, suffocation, or similar environmental causes; **Frequency** once per week; **Requirements** The tardigrade isn't already in tun state; **Effect** The giant tardigrade doesn't die but instead remains at 1 Hit Point and curls into a dry ball, called a tun. While in this tun state, the giant tardigrade is Unconscious, doesn't need to eat, drink, or breathe, and doubles its resistance to 20. It remains in tun state indefinitely until covered in significant amounts of water, at which point it begins to rehydrate, gaining regeneration 5. The regeneration persists until it reaches maximum Hit Points. The giant tardigrade then exits its tun state.",
+            "text": "**Trigger** The tardigrade would be reduced to 0 Hit Points or would die due to starvation, suffocation, or similar environmental causes; **Frequency** once per week; **Requirements** The tardigrade isn't already in tun state; **Effect** The giant tardigrade doesn't die but instead remains at 1 Hit Point and curls into a dry ball, called a tun. While in this tun state, the giant tardigrade is [Unconscious](/condition/unconscious-player-core), doesn't need to eat, drink, or breathe, and doubles its resistance to 20. It remains in tun state indefinitely until covered in significant amounts of water, at which point it begins to rehydrate, gaining regeneration 5. The regeneration persists until it reaches maximum Hit Points. The giant tardigrade then exits its tun state.",
             "traits": [],
             "actions": "free"
           }
@@ -3060,15 +3051,16 @@
         "offensive": [
           {
             "name": "Vacuum Mouth",
-            "text": "**Requirements** The giant tardigrade doesn't have a target [Grabbed](/condition/grabbed-player-core); **Effect** The giant tardigrade draws in air with its mouth. All creatures in a 20-foot cone must succeed at a Reflex DC 25 save or be pulled adjacent to the giant tardigrade. The tardigrade chooses one creature that failed its save, Grabbing the target in its claws and making a stylet Strike.",
+            "text": "**Requirements** The giant tardigrade doesn't have a target [Grabbed](/condition/grabbed-player-core); **Effect** The giant tardigrade draws in air with its mouth. All creatures in a 20-foot cone must succeed at a Reflex DC 25 save or be pulled adjacent to the giant tardigrade. The tardigrade chooses one creature that failed its save, Grabbing the target in its claws and making a stylet [Strike](/action/strike-player-core).",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -3203,15 +3195,16 @@
         "offensive": [
           {
             "name": "Lunging Bite",
-            "text": "The goblin shark dashes forward and extends its jaws bite a creature. It swims up to 10 feet in a straight line and makes a jaws Strike with a reach of 10 feet.",
+            "text": "The goblin shark dashes forward and extends its jaws bite a creature. It swims up to 10 feet in a straight line and makes a jaws [Strike](/action/strike-player-core) with a reach of 10 feet.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -3324,9 +3317,10 @@
         "defensive": [
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           },
           {
             "name": "Three-Headed",
@@ -3342,7 +3336,7 @@
           },
           {
             "name": "Three-Headed Strike",
-            "text": "The greater chimera makes a Strike with each of its heads, each at a –2 penalty and targeting a different creature. These Strikes count as only one attack for the greater chimera's multiple attack penalty, and the penalty doesn't increase until after it has made all three attacks.",
+            "text": "The greater chimera makes a [Strike](/action/strike-player-core) with each of its heads, each at a –2 penalty and targeting a different creature. These Strikes count as only one attack for the greater chimera's multiple attack penalty, and the penalty doesn't increase until after it has made all three attacks.",
             "traits": [],
             "actions": "two"
           }
@@ -3475,9 +3469,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -3586,7 +3581,7 @@
         "defensive": [
           {
             "name": "Burrowing Retreat",
-            "text": "**Trigger** The hardhead mole is hit by a Strike; **Effect** The hardhead mole immediately Burrows to a burrow hole if there is one within 20 feet. This movement doesn't trigger reactions.",
+            "text": "**Trigger** The hardhead mole is hit by a [Strike](/action/strike-player-core); **Effect** The hardhead mole immediately Burrows to a burrow hole if there is one within 20 feet. This movement doesn't trigger reactions.",
             "traits": [],
             "actions": "reaction"
           }
@@ -3729,17 +3724,19 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Huge, 2d10+10 bludgeoning, Rupture 22 (see [Swallow Whole](/action/swallow-whole-monster-core))",
+            "text": "Huge, 2d10+10 bludgeoning, Rupture 22",
             "traits": [
               "attack"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Improved Grab",
-            "text": "(see [Improved Grab](/action/improved-grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "free"
+            "actions": "free",
+            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -3858,7 +3855,7 @@
         "interaction": [
           {
             "name": "Arcanosense",
-            "text": "A hexmoth can sense sources of magic at the listed range as though it has a 4th-rank Detect Magic constant innate spell.",
+            "text": "A hexmoth can sense sources of magic at the listed range as though it has a 4th-rank [Detect Magic](/spell/detect-magic-player-core) constant innate spell.",
             "traits": []
           }
         ],
@@ -3991,7 +3988,7 @@
         "interaction": [
           {
             "name": "Arcanosense",
-            "text": "A hexworm can sense sources of magic at the listed range as though it has a 4th-rank Detect Magic constant innate spell.",
+            "text": "A hexworm can sense sources of magic at the listed range as though it has a 4th-rank [Detect Magic](/spell/detect-magic-player-core) constant innate spell.",
             "traits": []
           }
         ],
@@ -4131,39 +4128,41 @@
         "defensive": [
           {
             "name": "Hold Tight",
-            "text": "**Trigger** A creature [Grabbed](/condition/grabbed-player-core) by the holdfast's jaws takes damage from another creature's Strike; **Effect** The holdfast Constricts the creature in its jaws.",
+            "text": "**Trigger** A creature [Grabbed](/condition/grabbed-player-core) by the holdfast's jaws takes damage from another creature's [Strike](/action/strike-player-core); **Effect** The holdfast Constricts the creature in its jaws.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Lithe",
-            "text": "A holdfast treats any tight space it can barely fit its head in or wider as difficult terrain and doesn't need to Squeeze to move through it.",
+            "text": "A holdfast treats any tight space it can barely fit its head in or wider as difficult terrain and doesn't need to [Squeeze](/action/squeeze-player-core) to move through it.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Burst from Below",
-            "text": "The holdfast Burrows and then Strikes. If the holdfast began this movement Hidden, it remains hidden until after this ability's Strike.",
+            "text": "The holdfast Burrows and then Strikes. If the holdfast began this movement [Hidden](/condition/hidden-player-core), it remains hidden until after this ability's [Strike](/action/strike-player-core).",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Constrict",
-            "text": "2d6+2 piercing plus crush throat, basic Fortitude DC 21 (see [Constrict](/action/constrict-monster-core))",
+            "text": "2d6+2 piercing plus crush throat, basic Fortitude DC 21",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Crush Throat",
-            "text": "When a creature fails a save against the holdfast's Constrict, the creature's throat is held tight, stopping them from speaking as long as they're Grabbed. This prevents the creature from casting spells with vocal incantations, as well as from using many sonic or auditory abilities.",
+            "text": "When a creature fails a save against the holdfast's Constrict, the creature's throat is held tight, stopping them from speaking as long as they're [Grabbed](/condition/grabbed-player-core). This prevents the creature from casting spells with vocal incantations, as well as from using many sonic or auditory abilities.",
             "traits": []
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -4280,7 +4279,7 @@
         "defensive": [
           {
             "name": "Flexible Dodge",
-            "text": "**Requirements** The hooplamander is Unfurled; **Trigger** The hooplamander is targeted by a Strike; **Effect** The hooplamander gains a +2 circumstance bonus to AC against the triggering attack and enters its Wheels Up stance.",
+            "text": "**Requirements** The hooplamander is Unfurled; **Trigger** The hooplamander is targeted by a [Strike](/action/strike-player-core); **Effect** The hooplamander gains a +2 circumstance bonus to AC against the triggering attack and enters its Wheels Up stance.",
             "traits": [],
             "actions": "reaction"
           }
@@ -4288,19 +4287,19 @@
         "offensive": [
           {
             "name": "Rollout Trample",
-            "text": "**Requirements** The hooplamander is Wheels Up; **Effect** As Trample (Large or smaller, ridged tail, basic Reflex DC 22), except targets that critically fail their Reflex save are Stunned 1, and the hooplamander Unfurls at the end of its movement.",
+            "text": "**Requirements** The hooplamander is Wheels Up; **Effect** As Trample (Large or smaller, ridged tail, basic Reflex DC 22), except targets that critically fail their Reflex save are [Stunned 1](/condition/stunned-player-core), and the hooplamander Unfurls at the end of its movement.",
             "traits": [],
             "actions": "three"
           },
           {
             "name": "Unfurl",
-            "text": "**Requirements** The hooplamander is Wheels Up; **Effect** The hooplamander releases its tail, Leaping up to 20 feet as it exits its wheeled shape and unfurls to land on its four legs.",
+            "text": "**Requirements** The hooplamander is Wheels Up; **Effect** The hooplamander releases its tail, [Leaping](/action/leap-player-core) up to 20 feet as it exits its wheeled shape and unfurls to land on its four legs.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Wheels Up",
-            "text": "**Requirements** The hooplamander is Unfurled; **Effect** The hooplamander Leaps and then rolls into its wheeled form. Any creature within 5 feet must succeed at a Reflex DC 22 save or be Off Guard for one round. While it's Wheels Up, the hooplamander can't make Strikes and its Speed increases to 40 feet.",
+            "text": "**Requirements** The hooplamander is Unfurled; **Effect** The hooplamander [Leaps](/action/leap-player-core) and then rolls into its wheeled form. Any creature within 5 feet must succeed at a Reflex DC 22 save or be [Off Guard](/condition/off-guard-player-core) for one round. While it's Wheels Up, the hooplamander can't make Strikes and its Speed increases to 40 feet.",
             "traits": [
               "stance"
             ],
@@ -4432,7 +4431,7 @@
         "defensive": [
           {
             "name": "Fearless Rush",
-            "text": "**Trigger** The karkadann becomes Frightened; **Effect** The karkadann reduces their frightened value by 1 (to a minimum of 0). The karkadann then Strides toward an enemy.",
+            "text": "**Trigger** The karkadann becomes [Frightened](/condition/frightened-player-core); **Effect** The karkadann reduces their frightened value by 1 (to a minimum of 0). The karkadann then Strides toward an enemy.",
             "traits": [],
             "actions": "reaction"
           }
@@ -4445,15 +4444,16 @@
           },
           {
             "name": "Impaling Charge",
-            "text": "The karkadann Strides twice, then Strikes with their horn. If the Strike hits, it also deals 1d10 persistent bleed damage.",
+            "text": "The karkadann Strides twice, then Strikes with their horn. If the [Strike](/action/strike-player-core) hits, it also deals 1d10 persistent bleed damage.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Trample",
-            "text": "Medium or smaller, hoof, basic Reflex DC 25 (see [Trample](/action/trample-monster-core))",
+            "text": "Medium or smaller, hoof, basic Reflex DC 25",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -4651,9 +4651,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -4931,7 +4932,7 @@
           },
           {
             "name": "Wallow",
-            "text": "**Requirements** The magnegor is [Prone](/condition/prone-player-core); **Effect** The magnegor rolls on its spine-covered back, up to its Speed, furrowing the earth and crushing any Large or smaller creatures in its path. This deals 4d10 piercing damage with a basic Reflex DC 24 save; on a failed save, a creature wearing metal armor or made of metal is [Restrained](/condition/restrained-player-core) by the magnegor's magnetized coat (Escape). For each metal object or piece of equipment a restrained creature chooses to leave stuck to the magnegor, it gains a +1 circumstance bonus to its attempts to Escape. A creature that relinquishes all its metal Escapes automatically. The magnegor can move at its full Speed while it has a creature restrained in this way, bringing the creature along.",
+            "text": "**Requirements** The magnegor is [Prone](/condition/prone-player-core); **Effect** The magnegor rolls on its spine-covered back, up to its Speed, furrowing the earth and crushing any Large or smaller creatures in its path. This deals 4d10 piercing damage with a basic Reflex DC 24 save; on a failed save, a creature wearing metal armor or made of metal is [Restrained](/condition/restrained-player-core) by the magnegor's magnetized coat ([Escape](/action/escape-player-core)). For each metal object or piece of equipment a restrained creature chooses to leave stuck to the magnegor, it gains a +1 circumstance bonus to its attempts to Escape. A creature that relinquishes all its metal Escapes automatically. The magnegor can move at its full Speed while it has a creature restrained in this way, bringing the creature along.",
             "traits": [
               "move"
             ],
@@ -5060,7 +5061,7 @@
           },
           {
             "name": "Uncanny Climber",
-            "text": "A magnetic gecko's feet allow it to climb virtually any surface, no matter how slick or sheer. If a gecko attempts an Athletics check to Climb and critically fails, it gets a failure instead.",
+            "text": "A magnetic gecko's feet allow it to climb virtually any surface, no matter how slick or sheer. If a gecko attempts an Athletics check to [Climb](/action/climb-player-core) and critically fails, it gets a failure instead.",
             "traits": []
           }
         ],
@@ -5080,7 +5081,7 @@
           },
           {
             "name": "Static Cling",
-            "text": "If the gecko hits Small or smaller creature with its tongue, and the target is made of metal or is wearing metallic armor, the gecko's tongue latches on to the creature. The creature must attempt a Reflex DC 17 save or become Grabbed. While the gecko is Grabbing a creature in this way, it can attempt an Athletics check against the target's Fortitude DC to pull the creature to a space adjacent to the gecko. A creature [grabbed](/condition/grabbed-player-core) in this way can Escape normally.",
+            "text": "If the gecko hits Small or smaller creature with its tongue, and the target is made of metal or is wearing metallic armor, the gecko's tongue latches on to the creature. The creature must attempt a Reflex DC 17 save or become [Grabbed](/condition/grabbed-player-core). While the gecko is Grabbing a creature in this way, it can attempt an Athletics check against the target's Fortitude DC to pull the creature to a space adjacent to the gecko. A creature grabbed in this way can [Escape](/action/escape-player-core) normally.",
             "traits": []
           }
         ]
@@ -5200,7 +5201,7 @@
         "interaction": [
           {
             "name": "Frightened Prey",
-            "text": "[Frightened](/condition/frightened-player-core) creatures are Off Guard to a majungasaurus.",
+            "text": "[Frightened](/condition/frightened-player-core) creatures are [Off Guard](/condition/off-guard-player-core) to a majungasaurus.",
             "traits": []
           },
           {
@@ -5338,8 +5339,9 @@
         "defensive": [
           {
             "name": "Regeneration 20 (reduced by 4 for each missing limb)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Limb Regrowth",
@@ -5382,7 +5384,7 @@
           },
           {
             "name": "Pry",
-            "text": "**Requirements** The mammoth land star has a target Grabbed that is wearing armor; **Effect** The mammoth land star makes a feet Strike against a creature it has grabbed. If that Strike hits and the creature is wearing armor with Hardness 12 or lower, the armor is broken. This Strike doesn't further damage armor that's already broken.",
+            "text": "**Requirements** The mammoth land star has a target [Grabbed](/condition/grabbed-player-core) that is wearing armor; **Effect** The mammoth land star makes a feet [Strike](/action/strike-player-core) against a creature it has grabbed. If that Strike hits and the creature is wearing armor with Hardness 12 or lower, the armor is broken. This Strike doesn't further damage armor that's already broken.",
             "traits": [],
             "actions": "one"
           },
@@ -5396,9 +5398,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -5520,7 +5523,7 @@
         "defensive": [
           {
             "name": "Panicked Withdrawal",
-            "text": "**Trigger** The marp takes damage from a melee Strike; **Effect** The marp drops any items held in their hands, then Climbs or Strides up to 15 feet.",
+            "text": "**Trigger** The marp takes damage from a melee [Strike](/action/strike-player-core); **Effect** The marp drops any items held in their hands, then Climbs or Strides up to 15 feet.",
             "traits": [],
             "actions": "reaction"
           }
@@ -5661,14 +5664,15 @@
         "interaction": [
           {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [
           {
             "name": "Visage Strike",
-            "text": "**Trigger** A creature adjacent to the mirror wolf's visages damages mirror wolf's ally; **Effect** The mirror wolf teleports to the visage's spot, destroying the visage, and makes a jaws Strike.",
+            "text": "**Trigger** A creature adjacent to the mirror wolf's visages damages mirror wolf's ally; **Effect** The mirror wolf teleports to the visage's spot, destroying the visage, and makes a jaws [Strike](/action/strike-player-core).",
             "traits": [],
             "actions": "reaction"
           }
@@ -5684,7 +5688,7 @@
           },
           {
             "name": "Bonded Strike",
-            "text": "**Requirements** The mirror wolf is currently Bonded with a Mortal; **Effect** The mirror wolf makes a jaws Strike. If this attack hits, the bonded mortal can spend their reaction to Strike the same target.",
+            "text": "**Requirements** The mirror wolf is currently Bonded with a Mortal; **Effect** The mirror wolf makes a jaws [Strike](/action/strike-player-core). If this attack hits, the bonded mortal can spend their reaction to Strike the same target.",
             "traits": [],
             "actions": "two"
           },
@@ -5703,15 +5707,16 @@
           },
           {
             "name": "Strafing Strike",
-            "text": "The mirror wolf makes a jaws Strike against a creature within range. The mirror wolf can then Stride and make a second jaws Strike against the same creature.",
+            "text": "The mirror wolf makes a jaws [Strike](/action/strike-player-core) against a creature within range. The mirror wolf can then [Stride](/action/stride-player-core) and make a second jaws Strike against the same creature.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Knockdown",
-            "text": "(see [Knockdown](/action/knockdown-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/knockdown-monster-core"
           }
         ]
       },
@@ -5856,7 +5861,7 @@
         "interaction": [
           {
             "name": "Mist Form",
-            "text": "Over the course of a minute, a mist bear can transmute its form into a cloud of ethereal vapor. In this state it has resistance 10 to physical damage, is immune to precision damage, and can't use any actions with the attack or [manipulate](/trait/manipulate) trait. It has a fly Speed of 10 feet and can slip through tiny cracks. The mist bear can return to solid form as a single action.",
+            "text": "Over the course of a minute, a mist bear can transmute its form into a cloud of ethereal vapor. In this state it has resistance 10 to physical damage, is immune to precision damage, and can't use any actions with the attack or [manipulate](/trait/manipulate) trait. It has a [fly Speed](/rule/fly-speed-rules-2350) of 10 feet and can slip through tiny cracks. The mist bear can return to solid form as a single action.",
             "traits": [
               "concentrate",
               "exploration",
@@ -5869,7 +5874,7 @@
         "offensive": [
           {
             "name": "Clouded Charge",
-            "text": "The mist bear Strides twice. During this movement, wisps of ethereal smoke trail from its body, making it Concealed. The mist bear then Strikes. The target is Off Guard to this attack if the bear moved at least 20 feet.",
+            "text": "The mist bear Strides twice. During this movement, wisps of ethereal smoke trail from its body, making it [Concealed](/condition/concealed-player-core). The mist bear then Strikes. The target is [Off Guard](/condition/off-guard-player-core) to this attack if the bear moved at least 20 feet.",
             "traits": [
               "concentrate",
               "occult",
@@ -6017,7 +6022,7 @@
         "offensive": [
           {
             "name": "Hammerhead",
-            "text": "The mjolgat rears upon its hind leg to crush an enemy with its jagged crest of bone. The mjolgat makes a bone crest Strike; on a hit, the mjolgat deals an extra die of damage. This counts as two attacks when calculating the mjolgat's multiple attack penalty",
+            "text": "The mjolgat rears upon its hind leg to crush an enemy with its jagged crest of bone. The mjolgat makes a bone crest [Strike](/action/strike-player-core); on a hit, the mjolgat deals an extra die of damage. This counts as two attacks when calculating the mjolgat's multiple attack penalty",
             "traits": [
               "attack"
             ],
@@ -6025,7 +6030,7 @@
           },
           {
             "name": "Punch-Drunk",
-            "text": "If the mjolgat critically fails a bone crest Strike, it becomes Stunned 1 and Stupefied 1 for 1 round.",
+            "text": "If the mjolgat critically fails a bone crest [Strike](/action/strike-player-core), it becomes [Stunned 1](/condition/stunned-player-core) and [Stupefied 1](/condition/stupefied-player-core) for 1 round.",
             "traits": []
           },
           {
@@ -6035,7 +6040,7 @@
           },
           {
             "name": "Shrieking Slam",
-            "text": "The mjolgat lets out a terrifying screech before bashing its head into the ground. Creatures within 30 feet of the mjolgat must attempt a Will DC 21 save. Regardless of the result of the save, they are then immune to Shrieking Slam.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is Frightened 1.\n\n**Failure** The target is Frightened 2.\n\n**Critical Failure** The target is Frightened 3 and Fleeing for 1 round.",
+            "text": "The mjolgat lets out a terrifying screech before bashing its head into the ground. Creatures within 30 feet of the mjolgat must attempt a Will DC 21 save. Regardless of the result of the save, they are then immune to Shrieking Slam.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is [Frightened 1](/condition/frightened-player-core).\n\n**Failure** The target is Frightened 2.\n\n**Critical Failure** The target is Frightened 3 and [Fleeing](/condition/fleeing-player-core) for 1 round.",
             "traits": [
               "auditory",
               "emotion",
@@ -6169,8 +6174,9 @@
         "defensive": [
           {
             "name": "All-Around Vision",
-            "text": "(see [All-Around Vision](/action/all-around-vision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/all-around-vision-monster-core"
           },
           {
             "name": "Hydra Regeneration",
@@ -6189,14 +6195,15 @@
           },
           {
             "name": "Reactive Heads",
-            "text": "A hydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the hydra must use a different head for each Reactive Strike it makes. Whenever one of the hydra's heads is severed, the hydra loses 1 of its extra reactions per round.",
+            "text": "A hydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the hydra must use a different head for each Reactive [Strike](/action/strike-player-core) it makes. Whenever one of the hydra's heads is severed, the hydra loses 1 of its extra reactions per round.",
             "traits": []
           },
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           }
         ],
         "offensive": [
@@ -6338,7 +6345,7 @@
         "interaction": [
           {
             "name": "Sensitive Echolocation",
-            "text": "The morthak can use its hearing as a precise sense with the listed range. If the morthak takes sonic damage beyond its resistance, its senses are overloaded and all creatures are Concealed from it for 1 round.",
+            "text": "The morthak can use its hearing as a precise sense with the listed range. If the morthak takes sonic damage beyond its resistance, its senses are overloaded and all creatures are [Concealed](/condition/concealed-player-core) from it for 1 round.",
             "traits": []
           }
         ],
@@ -6346,13 +6353,13 @@
         "offensive": [
           {
             "name": "Auditory Swipe",
-            "text": "**Trigger** A creature within the morthak's reach uses an auditory action; **Effect** The morthak makes a claw Strike against the triggering creature.",
+            "text": "**Trigger** A creature within the morthak's reach uses an auditory action; **Effect** The morthak makes a claw [Strike](/action/strike-player-core) against the triggering creature.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Shattering Scrape",
-            "text": "The morthak makes a claw Strike against a creature wearing stone or metal armor. If the Strike hits and the armor's Hardness is 12 or lower, that armor is broken.",
+            "text": "The morthak makes a claw [Strike](/action/strike-player-core) against a creature wearing stone or metal armor. If the Strike hits and the armor's Hardness is 12 or lower, that armor is broken.",
             "traits": [
               "sonic"
             ],
@@ -6492,17 +6499,12 @@
             "name": "Spectral Mount",
             "text": "A pale horse can accept a corporeal rider, but such a rider is left behind if the pale horse passes through a creature or object.",
             "traits": []
-          },
-          {
-            "name": "At-Will Spells",
-            "text": "(see [At-Will Spells](/action/at-will-spells-monster-core))",
-            "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Aura of Despair",
-            "text": "30 feet. A living creature that begins its turn in the aura must succeed at a Will DC 27 save or become Slowed 1. A creature is temporarily immune to the aura for 1 hour if it critically succeeds.",
+            "text": "30 feet. A living creature that begins its turn in the aura must succeed at a Will DC 27 save or become [Slowed 1](/condition/slowed-player-core). A creature is temporarily immune to the aura for 1 hour if it critically succeeds.",
             "traits": [
               "aura",
               "emotion",
@@ -6511,14 +6513,15 @@
           },
           {
             "name": "Void Healing",
-            "text": "(see [Void Healing](/action/void-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/void-healing-monster-core"
           }
         ],
         "offensive": [
           {
             "name": "Spectral Charge",
-            "text": "The pale horse Flies twice and then makes a horn Strike. The pale horse can move through creatures.",
+            "text": "The pale horse Flies twice and then makes a horn [Strike](/action/strike-player-core). The pale horse can move through creatures.",
             "traits": [],
             "actions": "two"
           }
@@ -6584,7 +6587,7 @@
                   "name": "Darkness",
                   "rank": 2,
                   "reference": "/spell/darkness-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             }
@@ -6697,9 +6700,10 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "2d10+10 bludgeoning, basic Fortitude DC 32 (see [Constrict](/action/constrict-monster-core))",
+            "text": "2d10+10 bludgeoning, basic Fortitude DC 32",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Crumbling Earth",
@@ -6712,7 +6716,7 @@
           },
           {
             "name": "Petrify Prey",
-            "text": "**Requirements** The plated python has a creature [Grabbed](/condition/grabbed-player-core); **Trigger** The plated python begins its turn; **Effect** The python's breath seeps into the grabbed creature. That creature must attempt a Fortitude DC 32 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature's body hardens and stiffens, causing it to become Slowed 1 for 1 round.\n\n**Failure** The creature is Petrified for 1 round and Swallowed Whole.\n\n**Critical Failure** The creature is petrified permanently and Swallowed Whole.",
+            "text": "**Requirements** The plated python has a creature [Grabbed](/condition/grabbed-player-core); **Trigger** The plated python begins its turn; **Effect** The python's breath seeps into the grabbed creature. That creature must attempt a Fortitude DC 32 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature's body hardens and stiffens, causing it to become [Slowed 1](/condition/slowed-player-core) for 1 round.\n\n**Failure** The creature is [Petrified](/condition/petrified-player-core) for 1 round and Swallowed Whole.\n\n**Critical Failure** The creature is petrified permanently and Swallowed Whole.",
             "traits": [
               "earth",
               "incapacitation",
@@ -6722,12 +6726,12 @@
           },
           {
             "name": "Stone Tunnel",
-            "text": "When a plated python burrows through ground, it petrifies and destroys the material in front of it, leaving a 5-foot diameter tunnel in its wake. A plated python doesn't need to Squeeze to pass through any space at least that wide.",
+            "text": "When a plated python burrows through ground, it petrifies and destroys the material in front of it, leaving a 5-foot diameter tunnel in its wake. A plated python doesn't need to [Squeeze](/action/squeeze-player-core) to pass through any space at least that wide.",
             "traits": []
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, 3d10+5 acid, Rupture 20\n\nThis damage ignores the hardness of [petrified](/condition/petrified-player-core) creatures.",
+            "text": "Large, 3d10+5 acid, Rupture 20\n\nThis damage ignores the hardness of petrified creatures.",
             "traits": [
               "attack"
             ],
@@ -6735,15 +6739,16 @@
           },
           {
             "name": "Towering Bite",
-            "text": "The plated python lunges to its full length, making a jaws Strike with a reach of 60 feet. If the Strike hits, its target is Grabbed and pulled to an empty space adjacent to the plated python. The python can attack through any material it can burrow through, leaving a stone tunnel as normal.",
+            "text": "The plated python lunges to its full length, making a jaws [Strike](/action/strike-player-core) with a reach of 60 feet. If the Strike hits, its target is [Grabbed](/condition/grabbed-player-core) and pulled to an empty space adjacent to the plated python. The python can attack through any material it can burrow through, leaving a stone tunnel as normal.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -6860,8 +6865,9 @@
         "defensive": [
           {
             "name": "All-Around Vision",
-            "text": "(see [All-Around Vision](/action/all-around-vision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/all-around-vision-monster-core"
           },
           {
             "name": "Hydra Regeneration",
@@ -6886,14 +6892,15 @@
           },
           {
             "name": "Reactive Heads",
-            "text": "A hydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the hydra must use a different head for each Reactive Strike it makes. Whenever one of the hydra's heads is severed, the hydra loses 1 of its extra reactions per round.",
+            "text": "A hydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the hydra must use a different head for each Reactive [Strike](/action/strike-player-core) it makes. Whenever one of the hydra's heads is severed, the hydra loses 1 of its extra reactions per round.",
             "traits": []
           },
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           }
         ],
         "offensive": [
@@ -7156,7 +7163,7 @@
         "interaction": [
           {
             "name": "Extradimensional Gullet",
-            "text": "The rift chameleon's innards exist partially on the Ethereal Plane, allowing it to swallow any number of creatures, even ones larger than itself. Creatures that Escape or cut themselves free from the chameleon's stomach reappear in the Universe adjacent to the rift chameleon's position. Creatures cannot escape from the rift chameleon's gullet using teleportation effects unless those effects can also cross planar boundaries.",
+            "text": "The rift chameleon's innards exist partially on the Ethereal Plane, allowing it to swallow any number of creatures, even ones larger than itself. Creatures that [Escape](/action/escape-player-core) or cut themselves free from the chameleon's stomach reappear in the Universe adjacent to the rift chameleon's position. Creatures cannot escape from the rift chameleon's gullet using teleportation effects unless those effects can also cross planar boundaries.",
             "traits": [
               "extradimensional"
             ]
@@ -7174,27 +7181,29 @@
         "defensive": [
           {
             "name": "All-Around Vision",
-            "text": "(see [All-Around Vision](/action/all-around-vision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/all-around-vision-monster-core"
           },
           {
             "name": "Ethereal Camouflage",
-            "text": "A rift chameleon can Hide, even if it doesn't have cover, but it cannot be Concealed from creatures on the Ethereal Plane.",
+            "text": "A rift chameleon can [Hide](/action/hide-player-core), even if it doesn't have cover, but it cannot be [Concealed](/condition/concealed-player-core) from creatures on the Ethereal Plane.",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Swallow Whole",
-            "text": "Large, 1d12+2 bludgeoning, Rupture 10 (see [Swallow Whole](/action/swallow-whole-monster-core))",
+            "text": "Large, 1d12+2 bludgeoning, Rupture 10",
             "traits": [
               "attack"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Tongue Pull",
-            "text": "Any creature hit by the rift chameleon's tongue is pulled adjacent to the chameleon. The creature is Off Guard to the next Strike the rift chameleon makes against it this round.",
+            "text": "Any creature hit by the rift chameleon's tongue is pulled adjacent to the chameleon. The creature is [Off Guard](/condition/off-guard-player-core) to the next [Strike](/action/strike-player-core) the rift chameleon makes against it this round.",
             "traits": []
           }
         ]
@@ -7336,12 +7345,12 @@
         "defensive": [
           {
             "name": "Crowned Royalty",
-            "text": "The royal basilisk's crown is firmly attached to its head but can be Disarmed as though it were a held item. Without a crown, the royal basilisk's mastery over poison is weakened enough that it loses its miasmatic shroud. The royal basilisk can equip a crown within its tail's reach as an [Interact](/action/interact-player-core) action. A royal basilisk's crown is normally made of iron and enables the basilisk to use miasmatic shroud, but crowns made of other, more exotic materials might confer different abilities.",
+            "text": "The royal basilisk's crown is firmly attached to its head but can be [Disarmed](/action/disarm-player-core) as though it were a held item. Without a crown, the royal basilisk's mastery over poison is weakened enough that it loses its miasmatic shroud. The royal basilisk can equip a crown within its tail's reach as an [Interact](/action/interact-player-core) action. A royal basilisk's crown is normally made of iron and enables the basilisk to use miasmatic shroud, but crowns made of other, more exotic materials might confer different abilities.",
             "traits": []
           },
           {
             "name": "Miasmatic Shroud",
-            "text": "15 feet. The poison in the breath of the royal basilisk makes the air around it a haze, concealing it from all creatures outside the aura, but it cannot use this concealment to Hide or Sneak. When a creature ends its turn within the aura, it is exposed to royal basilisk venom.",
+            "text": "15 feet. The poison in the breath of the royal basilisk makes the air around it a haze, concealing it from all creatures outside the aura, but it cannot use this concealment to Hide or [Sneak](/action/sneak-player-core). When a creature ends its turn within the aura, it is exposed to royal basilisk venom.",
             "traits": [
               "aura",
               "poison"
@@ -7351,9 +7360,10 @@
         "offensive": [
           {
             "name": "Greater Constrict",
-            "text": "4d8+3 bludgeoning, basic Fortitude DC 32 (see [Greater Constrict](/action/greater-constrict-monster-core))",
+            "text": "4d8+3 bludgeoning, basic Fortitude DC 32",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/greater-constrict-monster-core"
           },
           {
             "name": "Royal Basilisk Venom",
@@ -7372,15 +7382,16 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, 5d10 acid, Rupture 30 (see [Swallow Whole](/action/swallow-whole-monster-core))",
+            "text": "Large, 5d10 acid, Rupture 30",
             "traits": [
               "attack"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Wrap in Coils",
-            "text": "**Requirements** A Large or smaller creature is Grabbed or Restrained in the royal basilisk's jaws; **Effect** The royal basilisk moves the creature into its coils, freeing its jaws to make attacks, then uses Greater Constrict against the creature. The royal basilisk's coils can hold as many creatures as will fit in its space.",
+            "text": "**Requirements** A Large or smaller creature is [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) in the royal basilisk's jaws; **Effect** The royal basilisk moves the creature into its coils, freeing its jaws to make attacks, then uses Greater Constrict against the creature. The royal basilisk's coils can hold as many creatures as will fit in its space.",
             "traits": [],
             "actions": "one"
           }
@@ -7530,7 +7541,7 @@
           },
           {
             "name": "Enthralling Call",
-            "text": "1 mile. Each non-rumindrol creature that enters or starts its turn within the emanation must succeed at a Will DC 26 save or become Fascinated. The creature then becomes temporarily immune to this effect for 1 day (1 hour on a critical failure). Any creature [fascinated](/condition/fascinated-player-core) in this way will attempt to find the source of the rumindrol's cry, mindlessly wandering towards it.",
+            "text": "1 mile. Each non-rumindrol creature that enters or starts its turn within the emanation must succeed at a Will DC 26 save or become [Fascinated](/condition/fascinated-player-core). The creature then becomes temporarily immune to this effect for 1 day (1 hour on a critical failure). Any creature fascinated in this way will attempt to find the source of the rumindrol's cry, mindlessly wandering towards it.",
             "traits": [
               "auditory",
               "aura",
@@ -7542,7 +7553,7 @@
         "offensive": [
           {
             "name": "Entropic Cry",
-            "text": "The rumindrol focuses its sonic emanations on a creature it's aware of within the area of its enthralling call aura. The target must attempt a Fortitude DC 31 save.\n\n**Critical Success** The creature becomes temporarily immune to Entropic Cry for 1 hour.\n\n**Success** The target is Sickened 1.\n\n**Failure** The target is Sickened 2.\n\n**Critical Failure** The target is sickened 2, Enfeebled 1, and Stupefied 1.",
+            "text": "The rumindrol focuses its sonic emanations on a creature it's aware of within the area of its enthralling call aura. The target must attempt a Fortitude DC 31 save.\n\n**Critical Success** The creature becomes temporarily immune to Entropic Cry for 1 hour.\n\n**Success** The target is [Sickened 1](/condition/sickened-player-core).\n\n**Failure** The target is Sickened 2.\n\n**Critical Failure** The target is sickened 2, [Enfeebled 1](/condition/enfeebled-player-core), and [Stupefied 1](/condition/stupefied-player-core).",
             "traits": [
               "auditory",
               "incapacitation"
@@ -7557,20 +7568,21 @@
           },
           {
             "name": "Inexorable",
-            "text": "The rumindrol recovers from the Paralyzed, Slowed, and [Stunned](/condition/stunned-player-core) conditions at the end of its turn. It's also immune to penalties to its Speeds and the [Immobilized](/condition/immobilized-player-core) condition, and it ignores difficult terrain and greater difficult terrain.",
+            "text": "The rumindrol recovers from the [Paralyzed](/condition/paralyzed-player-core), [Slowed](/condition/slowed-player-core), and [Stunned](/condition/stunned-player-core) conditions at the end of its turn. It's also immune to penalties to its Speeds and the [Immobilized](/condition/immobilized-player-core) condition, and it ignores difficult terrain and greater difficult terrain.",
             "traits": []
           },
           {
             "name": "Swallow Whole",
-            "text": "Huge, 3d10+9 bludgeoning, Rupture 30 (see [Swallow Whole](/action/swallow-whole-monster-core))",
+            "text": "Huge, 3d10+9 bludgeoning, Rupture 30",
             "traits": [
               "attack"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Thrash",
-            "text": "The rumindrol attempts individual Strikes against each creature in its reach. It can attempt up to one jaws Strike and any number of leg Strikes. Each attack counts toward the rumindrol's multiple attack penalty, but the penalty doesn't increase until after it makes all the attacks.",
+            "text": "The rumindrol attempts individual Strikes against each creature in its reach. It can attempt up to one jaws [Strike](/action/strike-player-core) and any number of leg Strikes. Each attack counts toward the rumindrol's multiple attack penalty, but the penalty doesn't increase until after it makes all the attacks.",
             "traits": [
               "attack"
             ],
@@ -7578,15 +7590,17 @@
           },
           {
             "name": "Trample",
-            "text": "Huge or smaller, leg, basic Reflex DC 36 (see [Trample](/action/trample-monster-core))",
+            "text": "Huge or smaller, leg, basic Reflex DC 36",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           },
           {
             "name": "Improved Grab",
-            "text": "(see [Improved Grab](/action/improved-grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "free"
+            "actions": "free",
+            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -7718,7 +7732,7 @@
           },
           {
             "name": "Grab Debris",
-            "text": "**Requirements** The scroungefeather is in its nest or another environment rich with debris; **Effect** The scroungefeather uses an [Interact](/action/interact-player-core) action to grab an item with its beak, selected randomly; roll 1d4 to determine the type of debris. The scroungefeather gains access to the listed abilities until it uses Tossed Scraps to discard the debris or until it Releases the debris. The scroungefeather can't use its beak attack while it is using its beak to Grab Debris.\n\n| d4 | Item | Effect |\n| --- | --- | --- |\n| 1 | Armor scrap | The scroungefeather gains a +2 circumstance bonus to its AC. |\n| 2 | Shattered blade | The scroungefeather gains a broken blade melee Strike with a +12 attack modifier that deals 2d10+6 slashing damage. |\n| 3 | Unexploded bomb | When the scroungefeather throws this with Tossed Scraps, all the damage is fire damage, and the bomb also deals 3 fire splash damage. |\n| 4 | Faulty wand | The scroungefeather gains a magic bolt ranged Strike witha +14 attack modifier that deals 2d6+6 force damage. |",
+            "text": "**Requirements** The scroungefeather is in its nest or another environment rich with debris; **Effect** The scroungefeather uses an [Interact](/action/interact-player-core) action to grab an item with its beak, selected randomly; roll 1d4 to determine the type of debris. The scroungefeather gains access to the listed abilities until it uses Tossed Scraps to discard the debris or until it Releases the debris. The scroungefeather can't use its beak attack while it is using its beak to Grab Debris.\n\n| d4 | Item | Effect |\n| --- | --- | --- |\n| 1 | Armor scrap | The scroungefeather gains a +2 circumstance bonus to its AC. |\n| 2 | Shattered blade | The scroungefeather gains a broken blade melee [Strike](/action/strike-player-core) with a +12 attack modifier that deals 2d10+6 slashing damage. |\n| 3 | Unexploded bomb | When the scroungefeather throws this with Tossed Scraps, all the damage is fire damage, and the bomb also deals 3 fire splash damage. |\n| 4 | Faulty wand | The scroungefeather gains a magic bolt ranged Strike witha +14 attack modifier that deals 2d6+6 force damage. |",
             "traits": [],
             "actions": "one"
           }
@@ -7835,7 +7849,7 @@
           },
           {
             "name": "Telepathic Link",
-            "text": "A rider who would tame a shotalashu for a mount must first form a telepathic link with it. Establishing this link require spending a week with the desired mount and succeeding at a Occultism DC 21 check. Any creature with telepathic capabilities, such as telepathy, touch telepathy, empathic sense, or the ability to cast spells such as Telepathy, gains a +4 circumstance bonus to this check. This link remains and neither can form a new link until one member dies. The shock of a partner dying leaves the survivor Stupefied 2 for 24 hours and prevents forming a new link for at least a month.",
+            "text": "A rider who would tame a shotalashu for a mount must first form a telepathic link with it. Establishing this link require spending a week with the desired mount and succeeding at a Occultism DC 21 check. Any creature with telepathic capabilities, such as telepathy, touch telepathy, empathic sense, or the ability to cast spells such as [Telepathy](/spell/telepathy-player-core), gains a +4 circumstance bonus to this check. This link remains and neither can form a new link until one member dies. The shock of a partner dying leaves the survivor [Stupefied 2](/condition/stupefied-player-core) for 24 hours and prevents forming a new link for at least a month.",
             "traits": [
               "mental",
               "occult"
@@ -7851,7 +7865,7 @@
           },
           {
             "name": "Telepathic Pounce",
-            "text": "The shotalashu hunts by pinning its foes with its mind. One creature within 30 feet must attempt a Will DC 18 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes a –5 foot status penalty to its Speeds for one round.\n\n**Failure** The creature takes a –10 foot status penalty to its Speeds for one round. The shotalashu can then Leap.\n\n**Critical Failure** The creature is Off Guard and Immobilized for one round. The shotalashu can Leap.",
+            "text": "The shotalashu hunts by pinning its foes with its mind. One creature within 30 feet must attempt a Will DC 18 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes a –5 foot status penalty to its Speeds for one round.\n\n**Failure** The creature takes a –10 foot status penalty to its Speeds for one round. The shotalashu can then [Leap](/action/leap-player-core).\n\n**Critical Failure** The creature is [Off Guard](/condition/off-guard-player-core) and [Immobilized](/condition/immobilized-player-core) for one round. The shotalashu can Leap.",
             "traits": [
               "mental",
               "occult"
@@ -7971,7 +7985,7 @@
         "defensive": [
           {
             "name": "Transparency",
-            "text": "Unless it has fed recently, the sky fisher is naturally Invisible. Using non-hostile actions does not cause the sky fisher to become Hidden. When it takes a hostile action of any kind, the sky fisher is hidden instead of Undetected until the start of its next turn, as the vague outline of its many tendrils temporarily becomes faintly visible.",
+            "text": "Unless it has fed recently, the sky fisher is naturally [Invisible](/condition/invisible-player-core). Using non-hostile actions does not cause the sky fisher to become [Hidden](/condition/hidden-player-core). When it takes a hostile action of any kind, the sky fisher is hidden instead of [Undetected](/condition/undetected-player-core) until the start of its next turn, as the vague outline of its many tendrils temporarily becomes faintly visible.",
             "traits": []
           }
         ],
@@ -8009,9 +8023,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -8145,12 +8160,12 @@
         "interaction": [
           {
             "name": "Sensitive Echolocation",
-            "text": "The soniphak can use its hearing as a precise sense with the listed range. If the soniphak takes sonic damage beyond its resistance, its senses are overloaded and all creatures are Concealed from it for 1 round.",
+            "text": "The soniphak can use its hearing as a precise sense with the listed range. If the soniphak takes sonic damage beyond its resistance, its senses are overloaded and all creatures are [Concealed](/condition/concealed-player-core) from it for 1 round.",
             "traits": []
           },
           {
             "name": "Snatch",
-            "text": "The soniphak can Fly at half Speed with a creature [Grabbed](/condition/grabbed-player-core) or Restrained in its claws, carrying that creature along with it.",
+            "text": "The soniphak can [Fly](/action/fly-player-core) at half Speed with a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) in its claws, carrying that creature along with it.",
             "traits": []
           }
         ],
@@ -8158,12 +8173,12 @@
         "offensive": [
           {
             "name": "Aftershock",
-            "text": "Whenever a soniphak hits with a screech Strike, feedback deals each creature the soniphak has Grabbed or [Restrained](/condition/restrained-player-core) 1d6 sonic damage.",
+            "text": "Whenever a soniphak hits with a screech [Strike](/action/strike-player-core), feedback deals each creature the soniphak has [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) 1d6 sonic damage.",
             "traits": []
           },
           {
             "name": "Disruptive Screech",
-            "text": "**Trigger** A creature within 30 feet of the soniphak uses an auditory action; **Effect** The soniphak makes a screech Strike against the triggering creature. This disrupts a triggering concentrate action if the Strike is a critical hit.",
+            "text": "**Trigger** A creature within 30 feet of the soniphak uses an auditory action; **Effect** The soniphak makes a screech [Strike](/action/strike-player-core) against the triggering creature. This disrupts a triggering concentrate action if the Strike is a critical hit.",
             "traits": [],
             "actions": "reaction"
           },
@@ -8295,7 +8310,7 @@
         "offensive": [
           {
             "name": "Seed Spores",
-            "text": "A creature hit by the sporeback frog's tongue Strike takes 1d6 persistent poison damage as fungal spores begin to grow.",
+            "text": "A creature hit by the sporeback frog's tongue [Strike](/action/strike-player-core) takes 1d6 persistent poison damage as fungal spores begin to grow.",
             "traits": []
           },
           {
@@ -8412,15 +8427,16 @@
         "interaction": [
           {
             "name": "Skymetal Metamorphosis",
-            "text": "Each stargut hydra has at least one metamorphosis resulting from consuming a specific skymetal and internalizing its properties. If you give a stargut hydra more than one metamorphosis, you should consider increasing its level and changing its statistics.\n\n**Adamantine** The stargut hydra's Strikes bypass Hardness and are treated as adamantine. The stargut hydra gains resistance 10 to physical damage (except adamantine).\n\n**Abysium** (aura, poison) The stargut hydra emits an aura of nauseating radiation from the abysium in its body. Any creature that begins its turn within 30 feet of the stargut hydra is Sickened 1.\n\n**Djezet** (magical) The stargut hydra gains a +2 status bonus to saves against magic.\n\n**Inubrix** The stargut hydra's Strikes ignore resistance to damage from metal armor's armor specialization effects and do not trigger the Shield Block reaction or reactions from armor property runes.\n\n**Noqual** The stargut hydra's Strikes and abilities gain a +2 status bonus to damage against creatures with the ability to Cast a Spell.\n\n**Orichalcum** When the stargut hydra has only two heads remaining, it is Quickened. It can use the extra action only to Stride or Strike.\n\n**Siccatite** After the stargut hydra takes fire damage, it becomes superheated, gaining immunity to fire and weakness 10 to cold. While superheated, cold damage can be used to cauterize a stump. After the stargut hydra takes cold damage, it becomes chilled, gaining immunity to cold and weakness 10 to fire.",
+            "text": "Each stargut hydra has at least one metamorphosis resulting from consuming a specific skymetal and internalizing its properties. If you give a stargut hydra more than one metamorphosis, you should consider increasing its level and changing its statistics.\n\n**Adamantine** The stargut hydra's Strikes bypass Hardness and are treated as adamantine. The stargut hydra gains resistance 10 to physical damage (except adamantine).\n\n**Abysium** (aura, poison) The stargut hydra emits an aura of nauseating radiation from the abysium in its body. Any creature that begins its turn within 30 feet of the stargut hydra is [Sickened 1](/condition/sickened-player-core).\n\n**Djezet** (magical) The stargut hydra gains a +2 status bonus to saves against magic.\n\n**Inubrix** The stargut hydra's Strikes ignore resistance to damage from metal armor's armor specialization effects and do not trigger the Shield Block reaction or reactions from armor property runes.\n\n**Noqual** The stargut hydra's Strikes and abilities gain a +2 status bonus to damage against creatures with the ability to Cast a Spell.\n\n**Orichalcum** When the stargut hydra has only two heads remaining, it is [Quickened](/condition/quickened-player-core). It can use the extra action only to [Stride](/action/stride-player-core) or [Strike](/action/strike-player-core).\n\n**Siccatite** After the stargut hydra takes fire damage, it becomes superheated, gaining immunity to fire and weakness 10 to cold. While superheated, cold damage can be used to cauterize a stump. After the stargut hydra takes cold damage, it becomes chilled, gaining immunity to cold and weakness 10 to fire.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "All-Around Vision",
-            "text": "(see [All-Around Vision](/action/all-around-vision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/all-around-vision-monster-core"
           },
           {
             "name": "Hydra Regeneration",
@@ -8434,14 +8450,15 @@
           },
           {
             "name": "Reactive Heads",
-            "text": "A stargut hydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the hydra must use a different head for each Reactive Strike it makes. Whenever one of the hydra's heads is severed, the hydra loses 1 of its extra reactions per round.",
+            "text": "A stargut hydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the hydra must use a different head for each Reactive [Strike](/action/strike-player-core) it makes. Whenever one of the hydra's heads is severed, the hydra loses 1 of its extra reactions per round.",
             "traits": []
           },
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           },
           {
             "name": "Stargut Hydra Heads",
@@ -8845,7 +8862,7 @@
         "offensive": [
           {
             "name": "Petrify Body Part",
-            "text": "The stony bat breathes a puff of petrifying gas onto an adjacent creature, targeting a specific body part. The target must succeed at a Fortitude DC 20 save or be partially petrified for 1 minute, with an effect varying with the body part targeted.\n\n**Face** The creature's face stiffens and a film of stone partially blocks its vision. It is Dazzled.\n**Hand** One of the creature's hands is petrified. It cannot Release items from that hand or use the hand for fine manipulation. Attack rolls with weapons held in that hand take a –2 status penalty.\n**Leg** A patch of the creature's leg becomes inflexible and heavy. It takes a –10 status penalty to its Speed. If all of the creature's legs become petrified in this way, the creature's Speed is reduced down to 5 feet. At the GM's discretion, a creature with movement that doesn't rely on legs, such as creatures that Fly with wings, don't take a penalty to these other Speeds.",
+            "text": "The stony bat breathes a puff of petrifying gas onto an adjacent creature, targeting a specific body part. The target must succeed at a Fortitude DC 20 save or be partially petrified for 1 minute, with an effect varying with the body part targeted.\n\n**Face** The creature's face stiffens and a film of stone partially blocks its vision. It is [Dazzled](/condition/dazzled-player-core).\n**Hand** One of the creature's hands is petrified. It cannot Release items from that hand or use the hand for fine manipulation. Attack rolls with weapons held in that hand take a –2 status penalty.\n**Leg** A patch of the creature's leg becomes inflexible and heavy. It takes a –10 status penalty to its Speed. If all of the creature's legs become petrified in this way, the creature's Speed is reduced down to 5 feet. At the GM's discretion, a creature with movement that doesn't rely on legs, such as creatures that [Fly](/action/fly-player-core) with wings, don't take a penalty to these other Speeds.",
             "traits": [
               "earth",
               "primal"
@@ -8967,15 +8984,16 @@
         "interaction": [
           {
             "name": "Cliff Climber",
-            "text": "A stony goat can trot across the steepest cliffs. It doesn't need to attempt Climb checks to scale inclines, and it isn't Off Guard while Climbing an incline. It ignores difficult terrain caused by rocks, rubble, and uneven ground made of earth and stone.",
+            "text": "A stony goat can trot across the steepest cliffs. It doesn't need to attempt [Climb](/action/climb-player-core) checks to scale inclines, and it isn't [Off Guard](/condition/off-guard-player-core) while Climbing an incline. It ignores difficult terrain caused by rocks, rubble, and uneven ground made of earth and stone.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "All-Around Vision",
-            "text": "(see [All-Around Vision](/action/all-around-vision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/all-around-vision-monster-core"
           },
           {
             "name": "Self-Petrify",
@@ -8989,7 +9007,7 @@
         "offensive": [
           {
             "name": "Overhead Leap",
-            "text": "The stony goat Leaps up to 12 feet vertically and 20 feet horizontally; this movement doesn't trigger reactions.",
+            "text": "The stony goat [Leaps](/action/leap-player-core) up to 12 feet vertically and 20 feet horizontally; this movement doesn't trigger reactions.",
             "traits": [
               "move"
             ],
@@ -8997,13 +9015,13 @@
           },
           {
             "name": "Shove and Run",
-            "text": "The stony goat attempts to Shove the nearest creature and then Strides with a +20-foot circumstance bonus to Speed.",
+            "text": "The stony goat attempts to [Shove](/action/shove-player-core) the nearest creature and then Strides with a +20-foot circumstance bonus to Speed.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Stone Bolt",
-            "text": "**Trigger** The stony goat loses the Petrified condition; **Effect** The stony goat's first instinct is to escape. It Strides with a +20 circumstance bonus to its Speed.",
+            "text": "**Trigger** The stony goat loses the [Petrified](/condition/petrified-player-core) condition; **Effect** The stony goat's first instinct is to escape. It Strides with a +20 circumstance bonus to its Speed.",
             "traits": [],
             "actions": "reaction"
           }
@@ -9272,16 +9290,18 @@
         "interaction": [
           {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [
           {
             "name": "Reactive Strike (Tail Only)",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           }
         ],
         "offensive": [
@@ -9295,13 +9315,13 @@
           },
           {
             "name": "Bonded Strike",
-            "text": "**Requirements** The sunscale serpent is currently Bonded with a Mortal; **Effect** The sunscale serpent makes a jaws Strike. If this attack hits, the bonded mortal can spend their reaction to Strike the same target.",
+            "text": "**Requirements** The sunscale serpent is currently Bonded with a Mortal; **Effect** The sunscale serpent makes a jaws [Strike](/action/strike-player-core). If this attack hits, the bonded mortal can spend their reaction to Strike the same target.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Sun's Heat",
-            "text": "The sunscale serpent Flies up to its fly Speed. All creatures directly below the spaces it moves through must succeed at a Fortitude DC 31 save or be exposed to sun's touch poison. The serpent cannot fly further than 60 feet above the target or the poison becomes too dispersed in the fall to take effect.",
+            "text": "The sunscale serpent Flies up to its [fly Speed](/rule/fly-speed-rules-2350). All creatures directly below the spaces it moves through must succeed at a Fortitude DC 31 save or be exposed to sun's touch poison. The serpent cannot fly further than 60 feet above the target or the poison becomes too dispersed in the fall to take effect.",
             "traits": [],
             "actions": "two"
           },
@@ -9314,29 +9334,32 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, 2d10+9 force and 2d10 fire, Rupture 32 (see [Swallow Whole](/action/swallow-whole-monster-core))",
+            "text": "Large, 2d10+9 force and 2d10 fire, Rupture 32",
             "traits": [
               "attack"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Unleash the Sun",
-            "text": "**Requirements** The sunscale serpent is flying; **Effect** The sunscale serpent Flies up to its fly Speed, then crashes to the ground, releasing a wave of heat dealing 5d10 fire damage to all creatures within a 60-foot burst and searing their eyes with the erupting glory of its scales. Each creature in the area must attempt a Reflex DC 31 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Critical Failure** The creature takes full damage, is [Blinded](/condition/blinded-player-core) for 1 round, and dazzled for 1 minute.",
+            "text": "**Requirements** The sunscale serpent is flying; **Effect** The sunscale serpent Flies up to its [fly Speed](/rule/fly-speed-rules-2350), then crashes to the ground, releasing a wave of heat dealing 5d10 fire damage to all creatures within a 60-foot burst and searing their eyes with the erupting glory of its scales. Each creature in the area must attempt a Reflex DC 31 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Critical Failure** The creature takes full damage, is [Blinded](/condition/blinded-player-core) for 1 round, and dazzled for 1 minute.",
             "traits": [],
             "actions": "three"
           },
           {
             "name": "Improved Grab",
-            "text": "(see [Improved Grab](/action/improved-grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "free"
+            "actions": "free",
+            "reference": "/action/improved-grab-monster-core"
           },
           {
             "name": "Push",
-            "text": "(see [Push](/action/push-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/push-monster-core"
           }
         ]
       },
@@ -9460,7 +9483,7 @@
         "interaction": [
           {
             "name": "Warm Brain",
-            "text": "**Requirements** The swordfish is in cold water; **Trigger** The swordfish rolls initiative; **Effect** The swordfish Seeks or Swims.",
+            "text": "**Requirements** The swordfish is in cold water; **Trigger** The swordfish rolls initiative; **Effect** The swordfish [Seeks](/action/seek-player-core) or [Swims](/action/swim-player-core).",
             "traits": [],
             "actions": "reaction"
           }
@@ -9619,7 +9642,7 @@
         "offensive": [
           {
             "name": "Concussive Gem",
-            "text": "On a critical hit on a gem spit Strike, the target must succeed at a Fortitude DC 22 save or become Stunned 1.",
+            "text": "On a critical hit on a gem spit [Strike](/action/strike-player-core), the target must succeed at a Fortitude DC 22 save or become [Stunned 1](/condition/stunned-player-core).",
             "traits": []
           },
           {
@@ -9644,9 +9667,10 @@
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -10025,14 +10049,15 @@
         "defensive": [
           {
             "name": "Frightful Presence",
-            "text": "90 feet. Will DC 38 (see [Frightful Presence](/action/frightful-presence-monster-core))",
+            "text": "90 feet. Will DC 38",
             "traits": [
               "aura",
               "divine",
               "emotion",
               "fear",
               "mental"
-            ]
+            ],
+            "reference": "/action/frightful-presence-monster-core"
           },
           {
             "name": "Instinctive Teleportation",
@@ -10053,17 +10078,19 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Huge, 3d12+10 bludgeoning, Rupture 40 (see [Swallow Whole](/action/swallow-whole-monster-core))",
+            "text": "Huge, 3d12+10 bludgeoning, Rupture 40",
             "traits": [
               "attack"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Trample",
-            "text": "Huge or smaller, foot, basic Reflex DC 38 (see [Trample](/action/trample-monster-core))",
+            "text": "Huge or smaller, foot, basic Reflex DC 38",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -10194,7 +10221,7 @@
         "interaction": [
           {
             "name": "Majestic Presence",
-            "text": "90 feet. Creatures of Huge size or smaller that enter the aura must attempt a Will DC 38 save. Regardless of the result of the saving throw, the creature is temporarily immune to the titanosaur's Majestic Presence for 1 hour.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is Fascinated by the titanosaur for 1 round.\n\n**Failure** The creature is fascinated for 2 rounds.\n\n**Critical Failure** The creature is fascinated for 1 minute.",
+            "text": "90 feet. Creatures of Huge size or smaller that enter the aura must attempt a Will DC 38 save. Regardless of the result of the saving throw, the creature is temporarily immune to the titanosaur's Majestic Presence for 1 hour.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Fascinated](/condition/fascinated-player-core) by the titanosaur for 1 round.\n\n**Failure** The creature is fascinated for 2 rounds.\n\n**Critical Failure** The creature is fascinated for 1 minute.",
             "traits": [
               "aura",
               "emotion",
@@ -10218,9 +10245,10 @@
           },
           {
             "name": "Trample",
-            "text": "Huge or smaller, foot, basic Reflex DC 38 (see [Trample](/action/trample-monster-core))",
+            "text": "Huge or smaller, foot, basic Reflex DC 38",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -10355,7 +10383,7 @@
         "offensive": [
           {
             "name": "Running Attack",
-            "text": "The troodon Strides and makes a claw Strike at any point during that movement.",
+            "text": "The troodon Strides and makes a claw [Strike](/action/strike-player-core) at any point during that movement.",
             "traits": [],
             "actions": "two"
           }
@@ -10474,17 +10502,19 @@
         "defensive": [
           {
             "name": "All-Around Vision",
-            "text": "(see [All-Around Vision](/action/all-around-vision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/all-around-vision-monster-core"
           },
           {
             "name": "Hydra Regeneration",
-            "text": "On a failure the tyrafdir grows two illusory heads.\n\nThe hydra has regeneration equal to 3 × the number of heads it has. If a hydra's body is missing any heads and the remaining stumps have not been cauterized, the hydra attempts a Fortitude DC 31 save after it regains Hit Points from regeneration. On a success, one uncauterized stump regrows two heads; on a critical success, two uncauterized stumps regrow into two heads each. The hydra can never grow more than double the number of heads it ordinarily has. The hydra's regeneration only fully deactivates if all its heads are severed and all stumps are cauterized, at which point it dies. (see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "On a failure the tyrafdir grows two illusory heads.\n\nThe hydra has regeneration equal to 3 × the number of heads it has. If a hydra's body is missing any heads and the remaining stumps have not been cauterized, the hydra attempts a Fortitude DC 31 save after it regains Hit Points from regeneration. On a success, one uncauterized stump regrows two heads; on a critical success, two uncauterized stumps regrow into two heads each. The hydra can never grow more than double the number of heads it ordinarily has. The hydra's regeneration only fully deactivates if all its heads are severed and all stumps are cauterized, at which point it dies.",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Deceptive Heads",
-            "text": "A tyrafdir is cunning, if unintelligent, using illusions of regrown heads to confuse and harry opponents. When a tyrafdir fails, but does not critically fail, its Fortitude save to regrow a head, a phantasm materializes to mimic the regrowth. This creates two deceptive heads that function differently than real heads. The tyrafdir gains a deceptive jaws Strike as long as it has at least one deceptive head. Any creature that attacks a deceptive head or uses the [Seek](/action/seek-player-core) action to examine it can attempt to disbelieve the illusion (Will DC 27 save).",
+            "text": "A tyrafdir is cunning, if unintelligent, using illusions of regrown heads to confuse and harry opponents. When a tyrafdir fails, but does not critically fail, its Fortitude save to regrow a head, a phantasm materializes to mimic the regrowth. This creates two deceptive heads that function differently than real heads. The tyrafdir gains a deceptive jaws [Strike](/action/strike-player-core) as long as it has at least one deceptive head. Any creature that attacks a deceptive head or uses the [Seek](/action/seek-player-core) action to examine it can attempt to disbelieve the illusion (Will DC 27 save).",
             "traits": [
               "illusion"
             ]
@@ -10496,14 +10526,15 @@
           },
           {
             "name": "Reactive Heads",
-            "text": "A hydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the hydra must use a different head for each Reactive Strike it makes. Whenever one of the hydra's heads is severed, the hydra loses 1 of its extra reactions per round.",
+            "text": "A hydra gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the hydra must use a different head for each Reactive [Strike](/action/strike-player-core) it makes. Whenever one of the hydra's heads is severed, the hydra loses 1 of its extra reactions per round.",
             "traits": []
           },
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           },
           {
             "name": "Tyrafdir Heads",
@@ -10626,13 +10657,13 @@
         "defensive": [
           {
             "name": "Feel No Pain",
-            "text": "**Trigger** The vibrant pup swarm is critically hit by a Strike; **Effect** The worker pups become insensitive to pain and leap to the front. The swarm gains 10 temporary Hit Points that last for 1 round.",
+            "text": "**Trigger** The vibrant pup swarm is critically hit by a [Strike](/action/strike-player-core); **Effect** The worker pups become insensitive to pain and leap to the front. The swarm gains 10 temporary Hit Points that last for 1 round.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Reflective Skin",
-            "text": "10 feet. Other creatures in the aura are Dazzled. The aura automatically activates when the swarm is in bright light and deactivates in dim light or darkness.",
+            "text": "10 feet. Other creatures in the aura are [Dazzled](/condition/dazzled-player-core). The aura automatically activates when the swarm is in bright light and deactivates in dim light or darkness.",
             "traits": [
               "aura",
               "light",
@@ -11042,13 +11073,15 @@
         "interaction": [
           {
             "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "(see [Tremorsense](/action/tremorsense-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/tremorsense-monster-core"
           },
           {
             "name": "Darkvision",
-            "text": "(see [Darkvision](/action/darkvision-player-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/darkvision-player-core"
           },
           {
             "name": "Voice of Nature",
@@ -11069,7 +11102,7 @@
           },
           {
             "name": "Magmatic Reflex",
-            "text": "**Trigger** The warden is targeted with an attack; **Effect** The warden issues a spray of magma as they jump away from danger. This spray deals 6d12 fire damage to all adjacent creatures (basic Reflex DC 42 save). They then [Leap](/action/leap-player-core) or Step away, gaining a +2 circumstance bonus to their AC against the triggering attack.",
+            "text": "**Trigger** The warden is targeted with an attack; **Effect** The warden issues a spray of magma as they jump away from danger. This spray deals 6d12 fire damage to all adjacent creatures (basic Reflex DC 42 save). They then [Leap](/action/leap-player-core) or [Step](/action/step-player-core) away, gaining a +2 circumstance bonus to their AC against the triggering attack.",
             "traits": [],
             "actions": "reaction"
           }
@@ -11086,12 +11119,12 @@
           },
           {
             "name": "Called to Depths",
-            "text": "The depths call to the warden, especially as they move through the air. When they Long Jump, they can use any unused movement from the Long Jump to Burrow. Additionally, the warden can Burrow through any earthen matter, including rock. When they do so, they move at their full burrow Speed.",
+            "text": "The depths call to the warden, especially as they move through the air. When they [Long Jump](/action/long-jump-player-core), they can use any unused movement from the Long Jump to [Burrow](/action/burrow-player-core). Additionally, the warden can Burrow through any earthen matter, including rock. When they do so, they move at their full [burrow Speed](/rule/burrow-speed-rules-2348).",
             "traits": []
           },
           {
             "name": "Erupting Jump",
-            "text": "The warden draws out a stream of lava, then jumps off the solidifying mass as it cools. The warden Leaps up to twice their Speed. When they land, the force of the impact deals 6d12 bludgeoning damage to all creatures within a 15-foot emanation with a basic Fortitude DC 42 save. On a critical failure, the creature is also pushed 10 feet away from the warden.",
+            "text": "The warden draws out a stream of lava, then jumps off the solidifying mass as it cools. The warden [Leaps](/action/leap-player-core) up to twice their Speed. When they land, the force of the impact deals 6d12 bludgeoning damage to all creatures within a 15-foot emanation with a basic Fortitude DC 42 save. On a critical failure, the creature is also pushed 10 feet away from the warden.",
             "traits": [
               "primal"
             ],
@@ -11099,7 +11132,7 @@
           },
           {
             "name": "Obsidian Cage",
-            "text": "Rapidly cooling obsidian clings to the target's body and stiffens around their limbs. The target must attempt a Reflex DC 42 save. On a failure, the target is Immobilized until they Escape. On a critical failure, the target is Off Guard for as long as they remain immobilized.",
+            "text": "Rapidly cooling obsidian clings to the target's body and stiffens around their limbs. The target must attempt a Reflex DC 42 save. On a failure, the target is Immobilized until they [Escape](/action/escape-player-core). On a critical failure, the target is Off Guard for as long as they remain immobilized.",
             "traits": []
           },
           {
@@ -11272,13 +11305,15 @@
         "interaction": [
           {
             "name": "Greater Darkvision",
-            "text": "(see [Greater Darkvision](/action/greater-darkvision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/greater-darkvision-monster-core"
           },
           {
             "name": "Scent (Imprecise) 1 mile",
-            "text": "(see [Scent](/action/scent-player-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/scent-player-core"
           },
           {
             "name": "Voice of Nature",
@@ -11291,14 +11326,10 @@
             "traits": []
           },
           {
-            "name": "At-Will Spells",
-            "text": "(see [At-Will Spells](/action/at-will-spells-monster-core))",
-            "traits": []
-          },
-          {
             "name": "Constant Spells",
-            "text": "(see [Constant Spells](/action/constant-spells-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/constant-spells-monster-core"
           }
         ],
         "defensive": [
@@ -11354,7 +11385,7 @@
           },
           {
             "name": "Magical Pounce",
-            "text": "The warden Strides up to his Speed, Leaps up to his Speed, or casts Translocate; at the end of that movement, the warden Strikes. If the warden began this action Hidden, he remains hidden until after this ability's Strike.",
+            "text": "The warden Strides up to his Speed, Leaps up to his Speed, or casts [Translocate](/spell/translocate-player-core); at the end of that movement, the warden Strikes. If the warden began this action [Hidden](/condition/hidden-player-core), he remains hidden until after this ability's [Strike](/action/strike-player-core).",
             "traits": [],
             "actions": "one"
           },
@@ -11409,7 +11440,7 @@
                   "name": "Translocate",
                   "rank": 4,
                   "reference": "/spell/translocate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -11566,13 +11597,15 @@
         "interaction": [
           {
             "name": "Scent (Imprecise) 200 feet",
-            "text": "(see [Scent](/action/scent-player-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/scent-player-core"
           },
           {
             "name": "Darkvision",
-            "text": "(see [Darkvision](/action/darkvision-player-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/darkvision-player-core"
           },
           {
             "name": "Voice of Nature",
@@ -11593,7 +11626,7 @@
           },
           {
             "name": "Bioluminescent Maelstrom",
-            "text": "30 feet. Will DC 45\n\nThe warden's wrath conjures a dazzling storm around them that makes the area difficult terrain. Creatures that enter the storm must attempt a Will save. A creature that succeeds at this save is temporarily immune to the luring visuals for 24 hours.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is Dazzled for 1 round, and for the first action on its next turn, the creature must use a single action to move as close to the warden as possible.\n\n**Critical Failure** The creature is dazzled for as long as it remains in the aura. Whenever the creature begins its turn within the aura, the creature must use the first action of its turn to move as close to the warden as possible. It can attempt a new save at the end of its turn, ending this effect on a success.",
+            "text": "30 feet. Will DC 45\n\nThe warden's wrath conjures a dazzling storm around them that makes the area difficult terrain. Creatures that enter the storm must attempt a Will save. A creature that succeeds at this save is temporarily immune to the luring visuals for 24 hours.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is [Dazzled](/condition/dazzled-player-core) for 1 round, and for the first action on its next turn, the creature must use a single action to move as close to the warden as possible.\n\n**Critical Failure** The creature is dazzled for as long as it remains in the aura. Whenever the creature begins its turn within the aura, the creature must use the first action of its turn to move as close to the warden as possible. It can attempt a new save at the end of its turn, ending this effect on a success.",
             "traits": [
               "aura",
               "primal",
@@ -11605,7 +11638,7 @@
         "offensive": [
           {
             "name": "All Are One",
-            "text": "**Frequency** once per turn; **Effect** The warden attracts organisms that extend their influence. The area of bioluminescent maelstrom and the reach of their tentacle Strike increase by 10 feet for 1 minute, to a maximum of an additional 30 feet.",
+            "text": "**Frequency** once per turn; **Effect** The warden attracts organisms that extend their influence. The area of bioluminescent maelstrom and the reach of their tentacle [Strike](/action/strike-player-core) increase by 10 feet for 1 minute, to a maximum of an additional 30 feet.",
             "traits": [],
             "actions": "one"
           },
@@ -11787,13 +11820,15 @@
         "interaction": [
           {
             "name": "Scent (Imprecise) 60 feet",
-            "text": "(see [Scent](/action/scent-player-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/scent-player-core"
           },
           {
             "name": "Darkvision",
-            "text": "(see [Darkvision](/action/darkvision-player-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/darkvision-player-core"
           },
           {
             "name": "Stormsight",
@@ -11841,7 +11876,7 @@
           },
           {
             "name": "Song of the Skies",
-            "text": "The warden trills a cheerful birdsong, granting a boon to all allies within 60 feet and evoking the freedom of flight. For the next minute, affected allies gain Unfettered Movement, a fly speed of 60 feet, and treat creatures on the ground as Off Guard when they are airborne.",
+            "text": "The warden trills a cheerful birdsong, granting a boon to all allies within 60 feet and evoking the freedom of flight. For the next minute, affected allies gain [Unfettered Movement](/spell/unfettered-movement-player-core), a fly speed of 60 feet, and treat creatures on the ground as [Off Guard](/condition/off-guard-player-core) when they are airborne.",
             "traits": [
               "air",
               "auditory",
@@ -12054,13 +12089,14 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "Medium human with fist +11 for 1d4+6 bludgeoning,\n\nor\n\nLarge moose with antler and hoof +11 for 1d8+6 bludgeoning. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "Medium human with fist +11 for 1d4+6 bludgeoning,\n\nor\n\nLarge moose with antler and hoof +11 for 1d8+6 bludgeoning.",
             "traits": [
               "concentrate",
               "polymorph",
               "primal"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Curse of the Weremoose",
@@ -12080,7 +12116,7 @@
           },
           {
             "name": "Thundering Charge",
-            "text": "The weremoose Strides twice and then makes an antler Strike. A Medium or smaller creature damaged by this attack must succeed at a Fortitude DC 17 save or be Stunned 1.",
+            "text": "The weremoose Strides twice and then makes an antler [Strike](/action/strike-player-core). A Medium or smaller creature damaged by this attack must succeed at a Fortitude DC 17 save or be [Stunned 1](/condition/stunned-player-core).",
             "traits": [],
             "actions": "two"
           }
@@ -12231,21 +12267,23 @@
         "defensive": [
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           }
         ],
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "Medium human with fist +14 for 1d4+7 bludgeoning,\n\nor Large shark with jaws +14 for 1d12+7 piercing, no land Speed, and swim Speed 40 feet.\n\nThe wereshark doesn't have the [amphibious](/trait/amphibious) trait in human or shark form and has the [aquatic](/trait/aquatic) trait in shark form. (see [Change Shape](/action/change-shape-monster-core))",
+            "text": "Medium human with fist +14 for 1d4+7 bludgeoning,\n\nor Large shark with jaws +14 for 1d12+7 piercing, no land Speed, and [swim Speed](/rule/swim-speed-rules-2351) 40 feet.\n\nThe wereshark doesn't have the [amphibious](/trait/amphibious) trait in human or shark form and has the [aquatic](/trait/aquatic) trait in shark form.",
             "traits": [
               "concentrate",
               "polymorph",
               "primal"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Curse of the Wereshark",
@@ -12257,7 +12295,7 @@
           },
           {
             "name": "Fish Fork",
-            "text": "**Requirements** The wereshark critically hit with a trident Strike on their most recent action this turn; **Effect** The wereshark digs their trident deep within their target, skewering it before taking a massive bite. The target of the Strike becomes [Grabbed](/condition/grabbed-player-core) (Escape) and takes 1d4 bleed damage, and the wereshark attempts a jaws Strike against it. The wereshark can't use their trident while they have a creature grabbed with it, but they can pull the trident free with a single action that has the [manipulate](/trait/manipulate) trait.",
+            "text": "**Requirements** The wereshark critically hit with a trident [Strike](/action/strike-player-core) on their most recent action this turn; **Effect** The wereshark digs their trident deep within their target, skewering it before taking a massive bite. The target of the Strike becomes [Grabbed](/condition/grabbed-player-core) ([Escape](/action/escape-player-core)) and takes 1d4 bleed damage, and the wereshark attempts a jaws Strike against it. The wereshark can't use their trident while they have a creature grabbed with it, but they can pull the trident free with a single action that has the [manipulate](/trait/manipulate) trait.",
             "traits": [],
             "actions": "one"
           },

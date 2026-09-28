@@ -114,7 +114,7 @@
       "abilities": [
         {
           "name": "Spawn Reflection",
-          "text": "**Trigger** A creature is reflected in the mirror\n\n**Effect** The mirror creates a Reflection of the triggering creature, which Steps out of the mirror and into the hall. The trap then rolls initiative.",
+          "text": "**Trigger** A creature is reflected in the mirror\n\n**Effect** The mirror creates a [Reflection](/trait/reflection) of the triggering creature, which Steps out of the mirror and into the hall. The trap then rolls initiative.",
           "traits": [
             "illusion"
           ],
@@ -457,7 +457,7 @@
       "abilities": [
         {
           "name": "Disorient",
-          "text": "**Trigger** A creature enters the room\n\n**Effect** Illusions cause the appearance of the room and the objects inside it to constantly warp, shift, bend, and distort for 1 minute. Each creature in the room while it's distorting must attempt a Perception DC 17 check.\n\n**Critical Success** The creature disbelieves the illusions and is unaffected.\n\n**Success** The creature disbelieves the illusions but still sees them. It treats the room as difficult terrain.\n\n**Failure** The creature is fooled by the illusions. It treats the room as difficult terrain and becomes [Sickened 1](/condition/sickened-player-core). As long as it remains in the room, it can't reduce its sickened value below 1.\n\n**Critical Failure** As failure, but each time the creature Archive attempts a move action, it must succeed at a Flat DC 5 or they lose the action, and on a critical failure, it also falls [Prone](/condition/prone-player-core).",
+          "text": "**Trigger** A creature enters the room\n\n**Effect** Illusions cause the appearance of the room and the objects inside it to constantly warp, shift, bend, and distort for 1 minute. Each creature in the room while it's distorting must attempt a Perception DC 17 check.\n\n**Critical Success** The creature disbelieves the illusions and is unaffected.\n\n**Success** The creature disbelieves the illusions but still sees them. It treats the room as difficult terrain.\n\n**Failure** The creature is fooled by the illusions. It treats the room as difficult terrain and becomes [Sickened 1](/condition/sickened-player-core). As long as it remains in the room, it can't reduce its [sickened](/condition/sickened-player-core) value below 1.\n\n**Critical Failure** As failure, but each time the creature Archive attempts a move action, it must succeed at a Flat DC 5 or they lose the action, and on a critical failure, it also falls [Prone](/condition/prone-player-core).",
           "traits": [
             "arcane",
             "illusion",
@@ -548,7 +548,7 @@
       "abilities": [
         {
           "name": "Painful Transformation",
-          "text": "**Trigger** A creature is reflected in the mirror\n\n**Effect** The triggering creature's body is painfully squished, stretched, and distorted to match their reflection. The creature takes 6d10 + 30 force damage and must attempt a Fortitude DC 39 save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage and is [Clumsy 1](/condition/clumsy-player-core) and [Enfeebled 1](/condition/enfeebled-player-core) for 1 round.\n\n**Failure** The target takes full damage and is [Clumsy 2](/condition/clumsy-player-core) and [Enfeebled 2](/condition/enfeebled-player-core) for 4 rounds.\n\n**Critical Failure** The target takes double damage and is [clumsy 2](/condition/clumsy-player-core) and [enfeebled 2](/condition/enfeebled-player-core) for 1 minute. As long as the creature is clumsy or enfeebled, it additionally takes a –10-foot status penalty to its Speeds.\n\nWhen the effects of this trap end, the triggering creature's transformation ends, and its body reverts to its natural form.",
+          "text": "**Trigger** A creature is reflected in the mirror\n\n**Effect** The triggering creature's body is painfully squished, stretched, and distorted to match their reflection. The creature takes 6d10 + 30 force damage and must attempt a Fortitude DC 39 save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half damage and is [Clumsy 1](/condition/clumsy-player-core) and [Enfeebled 1](/condition/enfeebled-player-core) for 1 round.\n\n**Failure** The target takes full damage and is [Clumsy 2](/condition/clumsy-player-core) and [Enfeebled 2](/condition/enfeebled-player-core) for 4 rounds.\n\n**Critical Failure** The target takes double damage and is [clumsy 2](/condition/clumsy-player-core) and [enfeebled 2](/condition/enfeebled-player-core) for 1 minute. As long as the creature is [clumsy](/condition/clumsy-player-core) or [enfeebled](/condition/enfeebled-player-core), it additionally takes a –10-foot status penalty to its Speeds.\n\nWhen the effects of this trap end, the triggering creature's transformation ends, and its body reverts to its natural form.",
           "traits": [
             "attack"
           ],

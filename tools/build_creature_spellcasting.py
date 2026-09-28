@@ -169,8 +169,6 @@ def spell_flags(spell: dict[str, Any]) -> tuple[bool, bool, list[str]]:
         at_will = True
     elif maximum > 1:
         details.append(f"×{maximum}")
-    if at_will:
-        details.insert(0, "at will")
     return at_will, constant, details
 
 
@@ -178,13 +176,15 @@ def linked_entry(
     spell: dict[str, Any], indexes: dict[str, Any], rank: int
 ) -> tuple[dict[str, Any], bool]:
     reference = resolve_foundry_spell(spell, indexes)
-    _, _, details = spell_flags(spell)
+    at_will, _, details = spell_flags(spell)
     result: dict[str, Any] = {
         "name": reference["name"] if reference else str(spell.get("name") or "Unknown spell"),
         "rank": rank,
     }
     if reference:
         result["reference"] = reference["route"]
+    if at_will:
+        result["atWill"] = True
     if details:
         result["details"] = "; ".join(dict.fromkeys(details))
     return result, reference is not None
@@ -381,6 +381,15 @@ def aon_spellcasting(
                 else:
                     stats["unresolved"] += 1
                 qualifiers = [value.strip() for value in QUALIFIER.findall(tail)]
+                at_will = any(AT_WILL.search(value) for value in qualifiers)
+                qualifiers = [
+                    AT_WILL.sub("", value).strip(" ;,")
+                    for value in qualifiers
+                    if not (AT_WILL.fullmatch(value.strip()) or CONSTANT.fullmatch(value.strip()))
+                ]
+                qualifiers = [value for value in qualifiers if value]
+                if at_will:
+                    item["atWill"] = True
                 if qualifiers:
                     item["details"] = "; ".join(qualifiers)
                 entries.append(item)

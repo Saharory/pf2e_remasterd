@@ -45,6 +45,7 @@ def main() -> int:
 
     unresolved: set[tuple[str, str]] = set()
     linked = 0
+    at_will = 0
     spell_count = 0
     ritual_count = 0
     for slug, configured in CREATURE_SPELLCASTING.items():
@@ -65,6 +66,10 @@ def main() -> int:
         ]
         spell_count += len(entries)
         for entry in entries:
+            if entry.get("atWill"):
+                at_will += 1
+                if "at will" in str(entry.get("details") or "").casefold():
+                    raise SystemExit(f"at-will spell duplicates its display label: {slug}: {entry['name']}")
             reference = entry.get("reference")
             if not reference:
                 unresolved.add((slug, entry["name"]))
@@ -119,6 +124,22 @@ def main() -> int:
     casting = goblin["data"]["spellcasting"][0]
     if casting.get("spellDC") != 17 or casting.get("spellAttack") != 7:
         raise SystemExit("Goblin War Chanter sanity check failed")
+    if at_will < 500:
+        raise SystemExit("creature at-will spell markers are unexpectedly incomplete")
+    for creature in creatures:
+        if any(
+            spell.get("atWill")
+            for casting in creature.get("data", {}).get("spellcasting", [])
+            for group in casting.get("spellGroups", [])
+            for spell in group.get("spells", [])
+        ):
+            ability_names = {
+                ability.get("name")
+                for entries in creature.get("data", {}).get("abilities", {}).values()
+                for ability in entries or []
+            }
+            if "At-Will Spells" in ability_names:
+                raise SystemExit(f"creature repeats at-will casting as an ability: {creature['slug']}")
 
     group_form = json.loads(
         (REPO / "forms/partials/spellcasting-group.json").read_text(encoding="utf-8")
@@ -137,10 +158,23 @@ def main() -> int:
     ]
     if any("{% elsif" in view or "{% elseif" in view for view in views):
         raise SystemExit("creature views use a template tag unsupported by Encounter+")
+    if "[at will](/action/at-will-spells-monster-core)" not in views[0]:
+        raise SystemExit("at-will spell labels do not link to their shared rule")
+
+    spell_form = json.loads(
+        (REPO / "forms/partials/spellcasting-spell.json").read_text(encoding="utf-8")
+    )
+    spell_form_attributes = {
+        field.get("attribute")
+        for section in spell_form.get("sections", [])
+        for field in section.get("fields", [])
+    }
+    if "atWill" not in spell_form_attributes:
+        raise SystemExit("at-will spell state is not editable")
 
     print(
         f"Validated {linked} linked spell/ritual references on "
-        f"{len(CREATURE_SPELLCASTING)} creatures; "
+        f"{len(CREATURE_SPELLCASTING)} creatures, {at_will} at-will spells; "
         f"{len(unresolved)} legacy references remain display-only"
     )
     return 0

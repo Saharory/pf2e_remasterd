@@ -67,13 +67,28 @@ GLOSSARY_ROUTES = {
     "Wavesense": "/action/wavesense-monster-core",
 }
 
-GLOSSARY_LABELS = {
-    "AllAroundVision": "All-Around Vision",
-    "AtWillSpells": "At-Will Spells",
-    "AttackOfOpportunity": "Reactive Strike",
-    "LowLightVision": "Low-Light Vision",
-    "NegativeHealing": "Void Healing",
-}
+INLINE_MECHANIC_ROUTES = (
+    ("burrow Speed", "/rule/burrow-speed-rules-2348"),
+    ("climb Speed", "/rule/climb-speed-rules-2349"),
+    ("fly Speed", "/rule/fly-speed-rules-2350"),
+    ("swim Speed", "/rule/swim-speed-rules-2351"),
+    ("Burrow", "/action/burrow-player-core"),
+    ("Climb", "/action/climb-player-core"),
+    ("Crawl", "/action/crawl-player-core"),
+    ("Escape", "/action/escape-player-core"),
+    ("Fly", "/action/fly-player-core"),
+    ("Grapple", "/action/grapple-player-core"),
+    ("Interact", "/action/interact-player-core"),
+    ("Leap", "/action/leap-player-core"),
+    ("Reposition", "/action/reposition-player-core"),
+    ("Seek", "/action/seek-player-core"),
+    ("Shove", "/action/shove-player-core"),
+    ("Step", "/action/step-player-core"),
+    ("Stride", "/action/stride-player-core"),
+    ("Strike", "/action/strike-player-core"),
+    ("Swim", "/action/swim-player-core"),
+    ("Trip", "/action/trip-player-core"),
+)
 
 
 def normalize(value: str) -> str:
@@ -85,10 +100,37 @@ GLOSSARY_BY_KEY = {normalize(code): text for code, text in GLOSSARY.items()}
 GLOSSARY_CODES_BY_TEXT = {normalize(text): code for code, text in GLOSSARY.items()}
 
 
-def glossary_label(code: str) -> str:
-    if code in GLOSSARY_LABELS:
-        return GLOSSARY_LABELS[code]
-    return re.sub(r"(?<=[a-z])(?=[A-Z])", " ", code)
+def link_inline_mechanics(value: str) -> str:
+    """Add conservative AoN-style links for capitalized core actions and Speeds."""
+    text = value
+    linked_routes = set(re.findall(r"\[[^\]]+\]\((/[^)]+)\)", text))
+    for label, route in INLINE_MECHANIC_ROUTES:
+        if route in linked_routes:
+            continue
+        protected = [
+            (match.start(), match.end())
+            for match in re.finditer(r"\[[^\]]+\]\([^)]+\)", text)
+        ]
+        pattern = re.compile(rf"(?<![\w]){re.escape(label)}(?![\w])")
+        match = next(
+            (
+                candidate
+                for candidate in pattern.finditer(text)
+                if not any(
+                    candidate.start() < end and candidate.end() > start
+                    for start, end in protected
+                )
+            ),
+            None,
+        )
+        if match:
+            text = (
+                text[: match.start()]
+                + f"[{match.group(0)}]({route})"
+                + text[match.end() :]
+            )
+            linked_routes.add(route)
+    return text
 
 
 def compact_stat_block_sections(value: str) -> str:
@@ -115,6 +157,16 @@ def compact_stat_block_sections(value: str) -> str:
         result += separator + part
         previous_label = current_label
     return result.strip()
+
+
+def remove_duplicate_tail(name: str, value: str) -> str:
+    paragraphs = [part.strip() for part in value.split("\n\n") if part.strip()]
+    if paragraphs and normalize(paragraphs[-1]) in {
+        normalize(name),
+        normalize("Effect " + name),
+    }:
+        paragraphs.pop()
+    return "\n\n".join(paragraphs)
 
 
 def expanded_text(name: str, value: str) -> str:
@@ -156,18 +208,40 @@ def creature_ability_text(name: str, value: str) -> str:
     code = direct_code or tail_code
 
     if code and code in GLOSSARY_ROUTES:
-        specific = "" if direct_code else compact_stat_block_sections("\n\n---\n\n".join(parts[:-1]))
-        label = glossary_label(code)
-        reference = f"(see [{label}]({GLOSSARY_ROUTES[code]}))"
-        return f"{specific} {reference}".strip()
+        specific = (
+            ""
+            if direct_code
+            else remove_duplicate_tail(
+                name, compact_stat_block_sections("\n\n---\n\n".join(parts[:-1]))
+            )
+        )
+        return link_inline_mechanics(specific)
 
     # Some legacy glossary entries have no standalone public reference. A
     # creature-specific prefix already contains everything the stat block
     # needs, so discard only its duplicate glossary tail. A bare token still
     # needs the complete rule because there is nowhere useful to link.
     if tail_code and not direct_code:
-        return compact_stat_block_sections("\n\n---\n\n".join(parts[:-1]))
-    return compact_stat_block_sections(expanded_text(name, text))
+        return link_inline_mechanics(
+            remove_duplicate_tail(
+                name, compact_stat_block_sections("\n\n---\n\n".join(parts[:-1]))
+            )
+        )
+    return link_inline_mechanics(
+        remove_duplicate_tail(name, compact_stat_block_sections(expanded_text(name, text)))
+    )
+
+
+def creature_ability_reference(value: str) -> str:
+    """Return the shared Action linked by a creature ability, when available."""
+    text = str(value or "").strip()
+    parts = [part.strip() for part in SEPARATOR.split(text)]
+    code = GLOSSARY_CODES_BY_KEY.get(normalize(text)) or GLOSSARY_CODES_BY_TEXT.get(
+        normalize(text)
+    )
+    if code is None and parts:
+        code = GLOSSARY_CODES_BY_KEY.get(normalize(parts[-1]))
+    return GLOSSARY_ROUTES.get(code or "", "")
 
 
 def configure_creature_abilities(entity: dict[str, Any]) -> int:
@@ -195,5 +269,9 @@ def configure_creature_abilities(entity: dict[str, Any]) -> int:
             updated = creature_ability_text(str(ability.get("name") or ""), original)
             if updated != original:
                 ability["text"] = updated
+                changed += 1
+            reference = creature_ability_reference(original)
+            if reference and ability.get("reference") != reference:
+                ability["reference"] = reference
                 changed += 1
     return changed

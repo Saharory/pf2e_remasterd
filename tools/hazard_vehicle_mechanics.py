@@ -56,11 +56,35 @@ def link_condition_mentions(text: str) -> str:
         part if index % 2 else CONDITION_MENTIONS.sub(linked, part)
         for index, part in enumerate(MARKDOWN_LINKS.split(text))
     )
-    return "".join(
+    linked_values = "".join(
         part if index % 2 else VALUED_MENTIONS.sub(
             lambda match: f"[{match.group()}]({VALUED_CONDITION_ROUTES[match.group(1).lower()]})", part
         )
         for index, part in enumerate(MARKDOWN_LINKS.split(linked_names))
+    )
+
+    # If the source explicitly linked a valued condition once, keep later
+    # lowercase mentions clickable too (for example “Clumsy 1 … clumsy
+    # condition”). These repeats are often the exact adjudication reference a
+    # GM needs, and hazards deliberately do not deduplicate them.
+    repeated: dict[str, str] = {}
+    for label, route in re.findall(r"\[([^\]]+)\]((?:\(/condition/[^)]+\)))", linked_values):
+        base = re.sub(r"\s+\d+\s*$", "", label).strip()
+        repeated[base.casefold()] = route[1:-1]
+
+    def link_repeats(part: str) -> str:
+        for label, route in sorted(repeated.items(), key=lambda item: -len(item[0])):
+            part = re.sub(
+                rf"(?<![\w/]){re.escape(label)}(?![\w])",
+                lambda match: f"[{match.group()}]({route})",
+                part,
+                flags=re.I,
+            )
+        return part
+
+    return "".join(
+        part if index % 2 else link_repeats(part)
+        for index, part in enumerate(MARKDOWN_LINKS.split(linked_values))
     )
 
 

@@ -808,6 +808,7 @@ def render_foundry_text(
     by_foundry: dict[str, list[Target]],
     by_aon: dict[str, list[Target]],
     by_kind_name: dict[tuple[str, str], list[Target]],
+    preserve_repeated: bool = False,
 ) -> tuple[str, int, list[str]]:
     """Clean any Foundry rich-text field and preserve resolvable links."""
     replacements: dict[str, str] = {}
@@ -833,7 +834,7 @@ def render_foundry_text(
         if target is None:
             unresolved.append(f"Foundry:{visible or raw_target}")
             return visible
-        if target.route == current.route or target.route in seen:
+        if target.route == current.route or (not preserve_repeated and target.route in seen):
             return visible
         seen.add(target.route)
         token = marker(len(replacements))
@@ -892,7 +893,7 @@ def refresh_foundry_rich_text(
             name = normalize_name(str(value.get("name") or ""))
             text = value.get("text")
             source_text = candidates.get(name)
-            if isinstance(text, str) and source_text and has_conversion_artifact(text):
+            if isinstance(text, str) and source_text:
                 rendered, _, missing = render_foundry_text(
                     source_text,
                     current,
@@ -900,10 +901,19 @@ def refresh_foundry_rich_text(
                     by_foundry,
                     by_aon,
                     by_kind_name,
+                    preserve_repeated=True,
                 )
-                value["text"] = rendered
-                unresolved.extend(missing)
-                repaired += 1
+                # The old importer flattened valid UUID links as well as
+                # malformed macros. Restore the source-authored links whenever
+                # the visible text is otherwise identical, while refusing to
+                # overwrite a GM's edited wording.
+                if (
+                    has_conversion_artifact(text)
+                    or strip_internal_links(rendered) == strip_internal_links(text)
+                ) and rendered != text:
+                    value["text"] = rendered
+                    unresolved.extend(missing)
+                    repaired += 1
             for child in value.values():
                 if isinstance(child, (dict, list)):
                     repair_named_entries(child, candidates)
@@ -924,6 +934,7 @@ def refresh_foundry_rich_text(
             by_foundry,
             by_aon,
             by_kind_name,
+            preserve_repeated=True,
         )
         updated["routine"] = rendered
         unresolved.extend(missing)
@@ -945,6 +956,7 @@ def refresh_foundry_rich_text(
                 by_foundry,
                 by_aon,
                 by_kind_name,
+                preserve_repeated=True,
             )
             updated[key] = rendered
             unresolved.extend(missing)

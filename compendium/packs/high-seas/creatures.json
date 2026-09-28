@@ -113,7 +113,7 @@
         "defensive": [
           {
             "name": "Blood Wake",
-            "text": "(aura, divine, emotion, fear, mental) 30 feet. The churning water around the bone ship tinges red with seeping blood. A living creature that enters water in the aura sees visions of itself drowning in the blood and must attempt a DC 37 Will save. On a failure, the creature becomes frightened 2 (frightened 4 on a critical failure) and stunned 1, and it takes a –4 status penalty to Athletics checks to Swim. Regardless of the result of its saving throw, the creature is temporarily immune for 1 hour.",
+            "text": "(aura, divine, emotion, fear, mental) 30 feet. The churning water around the bone ship tinges red with seeping blood. A living creature that enters water in the aura sees visions of itself drowning in the blood and must attempt a DC 37 Will save. On a failure, the creature becomes frightened 2 (frightened 4 on a critical failure) and stunned 1, and it takes a –4 status penalty to Athletics checks to [Swim](/action/swim-player-core). Regardless of the result of its saving throw, the creature is temporarily immune for 1 hour.",
             "traits": []
           },
           {
@@ -131,7 +131,7 @@
           },
           {
             "name": "Chain Shot",
-            "text": "**Single Action** The bone ship makes a special bone cannon Strike, firing a chain made of bones. A creature hit by this Strike is grabbed by the chain (Escape DC 41). The bone ship can use [Interact](/action/interact-player-core) actions to reel in a [grabbed](/condition/grabbed-player-core) creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.",
+            "text": "**Single Action** The bone ship makes a special bone cannon [Strike](/action/strike-player-core), firing a chain made of bones. A creature hit by this Strike is grabbed by the chain ([Escape](/action/escape-player-core) DC 41). The bone ship can use [Interact](/action/interact-player-core) actions to reel in a [grabbed](/condition/grabbed-player-core) creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.",
             "traits": [],
             "actions": "one"
           },
@@ -143,13 +143,13 @@
           },
           {
             "name": "Keelhaul",
-            "text": "**Three Actions** As Trample (Huge or smaller, hull, DC 43), but the bone ship Swims up to double its swim Speed instead of Striding, and each creature that fails its save is also dragged under the ship. The GM places each creature dragged along in an underwater space adjacent to the bone ship at the end of the ship's movement.",
+            "text": "**Three Actions** As Trample (Huge or smaller, hull, DC 43), but the bone ship Swims up to double its [swim Speed](/rule/swim-speed-rules-2351) instead of Striding, and each creature that fails its save is also dragged under the ship. The GM places each creature dragged along in an underwater space adjacent to the bone ship at the end of the ship's movement.",
             "traits": [],
             "actions": "three"
           },
           {
             "name": "Press-Gang Soul",
-            "text": "**Single Action** (Divine) The bone ship casts _seize soul_. The target must have died due to the bone ship's assault or from drowning. The creature's soul becomes part of the ghostly crew. A new soul gem grows on the ship, and the bone ship is quickened for 1 minute. It can use the extra action only to Strike or Swim.",
+            "text": "**Single Action** (Divine) The bone ship casts _seize soul_. The target must have died due to the bone ship's assault or from drowning. The creature's soul becomes part of the ghostly crew. A new soul gem grows on the ship, and the bone ship is quickened for 1 minute. It can use the extra action only to [Strike](/action/strike-player-core) or [Swim](/action/swim-player-core).",
             "traits": [],
             "actions": "one"
           },
@@ -285,7 +285,7 @@
         "offensive": [
           {
             "name": "Capuchin’s Curse",
-            "text": "(Curse, divine) If a capuchin damages a creature with its jaws Strike, the creature gains both a blessing and a curse that last for 1d6 hours. While the blessing doubles the amount of time that the affected creature can hold its breath, the curse imposes a quickened version of the capuchin’s moisture dependency, inflicting 1d6 damage every 10 minutes the cursed creature goes without water. A cursed creature can fully immerse itself in water as a 3-action activity and attempt a DC 17 Fortitude save, ending both the blessing and the curse on a success.\n\n## Coral Capuchin Nests\n\nThe largest known coral capuchin nests are found around the Shackles and coastlines of the Mwangi Expanse. Preferring saltwater oceans over freshwater rivers or inlets for hunting, coral capuchins stake out territories within reach of shipping lanes and places frequented by humanoids. A nest's treasure hoard usually includes small valuables, such as gems, coins, and jewelry—anything waterproof they can easily abscond with.",
+            "text": "(Curse, divine) If a capuchin damages a creature with its jaws [Strike](/action/strike-player-core), the creature gains both a blessing and a curse that last for 1d6 hours. While the blessing doubles the amount of time that the affected creature can hold its breath, the curse imposes a quickened version of the capuchin’s moisture dependency, inflicting 1d6 damage every 10 minutes the cursed creature goes without water. A cursed creature can fully immerse itself in water as a 3-action activity and attempt a DC 17 Fortitude save, ending both the blessing and the curse on a success.\n\n## Coral Capuchin Nests\n\nThe largest known coral capuchin nests are found around the Shackles and coastlines of the Mwangi Expanse. Preferring saltwater oceans over freshwater rivers or inlets for hunting, coral capuchins stake out territories within reach of shipping lanes and places frequented by humanoids. A nest's treasure hoard usually includes small valuables, such as gems, coins, and jewelry—anything waterproof they can easily abscond with.",
             "traits": []
           }
         ]
@@ -632,7 +632,7 @@
         "offensive": [
           {
             "name": "Disarming Tendrils",
-            "text": "**Two Actions** **Requirements** A creature within 25 feet is holding the dedalon’s coveted item (see above); **Effect** The dedalon’s body momentarily elongates, their arm snaking unnaturally toward the target. The dedalon makes a flogging arm Strike against the required creature. On a success, they can attempt to Disarm their coveted item from the required creature (increasing the degree of success by one if the Strike was a critical success). The Disarm attempt neither applies nor counts toward the dedalon’s multiple attack penalty.",
+            "text": "**Two Actions** **Requirements** A creature within 25 feet is holding the dedalon’s coveted item (see above); **Effect** The dedalon’s body momentarily elongates, their arm snaking unnaturally toward the target. The dedalon makes a flogging arm [Strike](/action/strike-player-core) against the required creature. On a success, they can attempt to Disarm their coveted item from the required creature (increasing the degree of success by one if the Strike was a critical success). The Disarm attempt neither applies nor counts toward the dedalon’s multiple attack penalty.",
             "traits": [],
             "actions": "two"
           }
@@ -675,7 +675,7 @@
                   "name": "Translocate",
                   "rank": 4,
                   "reference": "/spell/translocate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1339,7 +1339,7 @@
           },
           {
             "name": "Repel Boarders!",
-            "text": "**Single Action** The naval crew chooses a single direction and smashes into its enemies to push them in that direction. The troop attempts one Athletics check to Shove and compares the result to the Fortitude DC of all enemies that are adjacent to the troop and in the chosen direction. The direction can be straight or diagonal, and the GM determines which enemies can be affected. If at least one enemy was moved, the troop can Stride to follow as described in Shove; the troop can move any number of its segments when it does, and this Stride doesn’t trigger reactions.",
+            "text": "**Single Action** The naval crew chooses a single direction and smashes into its enemies to push them in that direction. The troop attempts one Athletics check to [Shove](/action/shove-player-core) and compares the result to the Fortitude DC of all enemies that are adjacent to the troop and in the chosen direction. The direction can be straight or diagonal, and the GM determines which enemies can be affected. If at least one enemy was moved, the troop can [Stride](/action/stride-player-core) to follow as described in Shove; the troop can move any number of its segments when it does, and this Stride doesn’t trigger reactions.",
             "traits": [],
             "actions": "one"
           },
@@ -1572,13 +1572,13 @@
                   "name": "Aqueous Orb",
                   "rank": 3,
                   "reference": "/spell/aqueous-orb-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Crashing Wave",
                   "rank": 3,
                   "reference": "/spell/crashing-wave-player-core-2",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1589,7 +1589,7 @@
                   "name": "Control Water",
                   "rank": 5,
                   "reference": "/spell/control-water-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1749,7 +1749,7 @@
         "offensive": [
           {
             "name": "Churning Charybdis",
-            "text": "**Three Actions** (Concentrate, manipulate, occult, summon, water) **Frequency** once per hour; **Effect** The scylla calls their companion charybdis, which appears within 60 feet as a churning whirlpool of water and teeth that fills a 15-foot burst. Creatures in the area when it forms or who end their turn there take 4d12 bludgeoning damage and must attempt a DC 38 Reflex saving throw. In a significant body of water, the charybdis is stronger, increasing the damage to 5d12. The charybdis remains for 10 minutes. The scylla can Dismiss this effect.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is grabbed by the charybdis (Escape DC 38).\n\n**Critical Failure** As a failure, but the creature takes double damage and is restrained instead.",
+            "text": "**Three Actions** (Concentrate, manipulate, occult, summon, water) **Frequency** once per hour; **Effect** The scylla calls their companion charybdis, which appears within 60 feet as a churning whirlpool of water and teeth that fills a 15-foot burst. Creatures in the area when it forms or who end their turn there take 4d12 bludgeoning damage and must attempt a DC 38 Reflex saving throw. In a significant body of water, the charybdis is stronger, increasing the damage to 5d12. The charybdis remains for 10 minutes. The scylla can Dismiss this effect.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is grabbed by the charybdis ([Escape](/action/escape-player-core) DC 38).\n\n**Critical Failure** As a failure, but the creature takes double damage and is restrained instead.",
             "traits": [],
             "actions": "three"
           },
@@ -1802,13 +1802,13 @@
                   "name": "Illusory Object",
                   "rank": 2,
                   "reference": "/spell/illusory-object-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Mist",
                   "rank": 2,
                   "reference": "/spell/mist-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -1819,7 +1819,7 @@
                   "name": "Control Water",
                   "rank": 5,
                   "reference": "/spell/control-water-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -2022,7 +2022,7 @@
         "offensive": [
           {
             "name": "Ingest Magic",
-            "text": "**Two Actions** (Primal) A silt frog can eat spells and magical effects, removing them from a creature. The silt frog makes a jaws Strike. If the Strike hits and deals damage, the frog attempts to ingest the highest spell or magical effect currently affecting the target, using the result of its Strike as a counteract check. If the silt frog successfully counteracts the effect, it ingests the magic, regaining 10 Hit Points. Regardless of the result, the silt frog can't use Ingest Magic again for 1d4 rounds.",
+            "text": "**Two Actions** (Primal) A silt frog can eat spells and magical effects, removing them from a creature. The silt frog makes a jaws [Strike](/action/strike-player-core). If the Strike hits and deals damage, the frog attempts to ingest the highest spell or magical effect currently affecting the target, using the result of its Strike as a counteract check. If the silt frog successfully counteracts the effect, it ingests the magic, regaining 10 Hit Points. Regardless of the result, the silt frog can't use Ingest Magic again for 1d4 rounds.",
             "traits": [],
             "actions": "two"
           },

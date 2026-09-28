@@ -88,12 +88,13 @@
         "defensive": [
           {
             "name": "Regeneration 10 (Deactivated by Piercing)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Destabilizing Field",
-            "text": "40 feet. A creature that begins its turn within the area feels its body begin to stretch and must succeed at a Fortitude DC 33 save or become destabilized. A destabilized creature emits a 10-foot destabilizing field aura and becomes Sickened 1. The destabilization ends when the creature is no longer sickened. A creature that succeeds at its saving throw against the aura is temporarily immune to all destabilizing fields for 1 minute.",
+            "text": "40 feet. A creature that begins its turn within the area feels its body begin to stretch and must succeed at a Fortitude DC 33 save or become destabilized. A destabilized creature emits a 10-foot destabilizing field aura and becomes [Sickened 1](/condition/sickened-player-core). The destabilization ends when the creature is no longer sickened. A creature that succeeds at its saving throw against the aura is temporarily immune to all destabilizing fields for 1 minute.",
             "traits": [
               "aura",
               "occult"
@@ -101,7 +102,7 @@
           },
           {
             "name": "Displace",
-            "text": "**Trigger** The amalgamite is hit by a Strike; **Effect** The amalgamite Relocates or Transposes themself with another creature. If the amalgamite successfully changes location, they and any Transposed creature take half damage from the triggering Strike.",
+            "text": "**Trigger** The amalgamite is hit by a [Strike](/action/strike-player-core); **Effect** The amalgamite Relocates or Transposes themself with another creature. If the amalgamite successfully changes location, they and any Transposed creature take half damage from the triggering Strike.",
             "traits": [],
             "actions": "reaction"
           }
@@ -294,26 +295,27 @@
           },
           {
             "name": "Reactive Strike (Special)",
-            "text": "The Echo has reach 15 for the purpose of determining when Reactive Strike triggers and when making Reactive Strikes. (see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "The Echo has reach 15 for the purpose of determining when Reactive [Strike](/action/strike-player-core) triggers and when making Reactive Strikes.",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           }
         ],
         "offensive": [
           {
             "name": "Astral Spindel Implement",
-            "text": "The Echo carries a drop spindle that constantly spins red astral thread, which is both his thaumaturgic implement and weapon. If his *rope dart* is lost or broken, he can re-form it with an [Interact](/action/interact-player-core) action. If he critically succeeds at a *rope dart* Strike, overwhelming thoughts and figments flow down the thread into the target's mind. The target becomes Confused for 1 round.",
+            "text": "The Echo carries a drop spindle that constantly spins red astral thread, which is both his thaumaturgic implement and weapon. If his *rope dart* is lost or broken, he can re-form it with an [Interact](/action/interact-player-core) action. If he critically succeeds at a *rope dart* [Strike](/action/strike-player-core), overwhelming thoughts and figments flow down the thread into the target's mind. The target becomes [Confused](/condition/confused-player-core) for 1 round.",
             "traits": []
           },
           {
             "name": "Astral Thread Control",
-            "text": "**Frequency** once per round; **Requirements** The Echo's previous action was a successful thrown rope dart Strike; **Effect** The Echo flicks his wrist and makes a follow-up thrown rope dart Strike at a different target within 30 feet of the first target, using the same multiple attack penalty as his previous Strike. Regardless of whether his attack hits, he then retrieves the weapon.",
+            "text": "**Frequency** once per round; **Requirements** The Echo's previous action was a successful thrown rope dart [Strike](/action/strike-player-core); **Effect** The Echo flicks his wrist and makes a follow-up thrown rope dart Strike at a different target within 30 feet of the first target, using the same multiple attack penalty as his previous Strike. Regardless of whether his attack hits, he then retrieves the weapon.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Contingency Oathday-Nine-Rova",
-            "text": "**Frequency** once per day; **Trigger** The Echo's turn begins and he's stunned, slowed, Confused, Controlled, Immobilized, Grabbed, Paralyzed, Restrained, or otherwise can't act; **Effect** The Echo has set up numerous contingencies in the event he's compromised. Talismans on his body shatter, counteracting the triggering effect. The Echo can use this free action even if he can't act.",
+            "text": "**Frequency** once per day; **Trigger** The Echo's turn begins and he's stunned, slowed, [Confused](/condition/confused-player-core), [Controlled](/condition/controlled-player-core), [Immobilized](/condition/immobilized-player-core), [Grabbed](/condition/grabbed-player-core), [Paralyzed](/condition/paralyzed-player-core), [Restrained](/condition/restrained-player-core), or otherwise can't act; **Effect** The Echo has set up numerous contingencies in the event he's compromised. Talismans on his body shatter, counteracting the triggering effect. The Echo can use this free action even if he can't act.",
             "traits": [],
             "actions": "free"
           },
@@ -467,7 +469,7 @@
         "offensive": [
           {
             "name": "Ascension is Near",
-            "text": "**Frequency** once per ascension ritual; **Effect** Mitera activates the moonflower link with her followers. Any followers within 30 feet who failed their saving throw against the moonflower tea become Sickened 1. Anyone who critically failed and did not receive an antidote explodes (this is about half of Mitera's congregation if the PCs didn't successfully administer the antidote). If anyone's body explodes, Mitera gains 30 temporary HP and is Quickened for 3 rounds; she can use this additional action each round only for Strike and [Stride](/action/stride-player-core) actions.",
+            "text": "**Frequency** once per ascension ritual; **Effect** Mitera activates the moonflower link with her followers. Any followers within 30 feet who failed their saving throw against the moonflower tea become [Sickened 1](/condition/sickened-player-core). Anyone who critically failed and did not receive an antidote explodes (this is about half of Mitera's congregation if the PCs didn't successfully administer the antidote). If anyone's body explodes, Mitera gains 30 temporary HP and is [Quickened](/condition/quickened-player-core) for 3 rounds; she can use this additional action each round only for [Strike](/action/strike-player-core) and [Stride](/action/stride-player-core) actions.",
             "traits": [
               "auditory",
               "concentrate",
@@ -710,7 +712,7 @@
           },
           {
             "name": "Slink in Shadows",
-            "text": "The shadow can Hide or end its Sneak in a creature's or object's shadow.",
+            "text": "The shadow can [Hide](/action/hide-player-core) or end its [Sneak](/action/sneak-player-core) in a creature's or object's shadow.",
             "traits": []
           }
         ]
@@ -825,7 +827,7 @@
         "offensive": [
           {
             "name": "Reflection Routine",
-            "text": "Each reflection has 2 actions which it uses to Step, Stride, or Strike (in any combination). Reflections can act on the same turn they're created.",
+            "text": "Each reflection has 2 actions which it uses to [Step](/action/step-player-core), [Stride](/action/stride-player-core), or [Strike](/action/strike-player-core) (in any combination). Reflections can act on the same turn they're created.",
             "traits": [
               "magical",
               "trap"
@@ -931,7 +933,7 @@
         "interaction": [
           {
             "name": "Disgusted by Food",
-            "text": "The morrowkin eats dreams and potential, not food. A creature that spends an action to brandish food at the morrowkin automatically makes the creature [Sickened](/condition/sickened-player-core) 1 (or increases its sickened value by 1, to a maximum of sickened 6), decreasing the morrowkin's AC, attack rolls, saves, skills, and ability DCs accordingly, as normal for the sickened condition. The morrowkin can't retch to reduce its sickened condition.",
+            "text": "The morrowkin eats dreams and potential, not food. A creature that spends an action to brandish food at the morrowkin automatically makes the creature [Sickened 1](/condition/sickened-player-core) (or increases its sickened value by 1, to a maximum of sickened 6), decreasing the morrowkin's AC, attack rolls, saves, skills, and ability DCs accordingly, as normal for the sickened condition. The morrowkin can't retch to reduce its sickened condition.",
             "traits": []
           },
           {
@@ -944,7 +946,7 @@
         "offensive": [
           {
             "name": "Drain Potential",
-            "text": "The morrowkin tries to drain the motivation from its target, who must attempt a Fortitude DC 31 save. If the target fails, it is Doomed 1 (Doomed 2 on a critical failure) and must roll twice and use the worse result on all checks for 1 minute. Creatures wearing a hope talisman are unaffected.",
+            "text": "The morrowkin tries to drain the motivation from its target, who must attempt a Fortitude DC 31 save. If the target fails, it is [Doomed 1](/condition/doomed-player-core) (Doomed 2 on a critical failure) and must roll twice and use the worse result on all checks for 1 minute. Creatures wearing a hope talisman are unaffected.",
             "traits": [
               "misfortune",
               "void"
@@ -1090,8 +1092,9 @@
         "defensive": [
           {
             "name": "Fast Healing 10",
-            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/fast-healing-monster-core"
           }
         ],
         "offensive": [
@@ -1118,17 +1121,19 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, 2d10 + 10 bludgeoning and 2d6 acid, Rupture 21 (see [Swallow Whole](/action/swallow-whole-monster-core))",
+            "text": "Large, 2d10 + 10 bludgeoning and 2d6 acid, Rupture 21",
             "traits": [
               "attack"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Grab",
-            "text": "(see [Grab](/action/grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/grab-monster-core"
           }
         ]
       },

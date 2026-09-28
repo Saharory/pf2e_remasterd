@@ -132,8 +132,9 @@
         "defensive": [
           {
             "name": "Regeneration",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Electrified Rebirth",
@@ -358,7 +359,7 @@
         "offensive": [
           {
             "name": "Bond with Mortals",
-            "text": "**Frequency** once per day; **Effect** The Immortal Trickster forms a bond with a mortal creature. While the bond exists, the mortals bonded to the Immortal Trickster increase their current and maximum Hit Points by 10 and gain a +2 status bonus to their attack and damage rolls, as well as to skill checks they make using Deception, Stealth, or Thievery. The Immortal Trickster can communicate telepathically with any of his bonded mortals as long as both beings are on the same plane. Each week that they are bonded to the Trickster, the bonded mortals increase their doomed value by 1; their doomed value cannot be increased above 3 by this ability and their doomed value cannot decrease while they remain bonded to the Trickster. The Immortal Trickster can be bonded with up to six mortals at a time, and they can take this action again to end the bond or to form a new bond. The bond also ends if the mortal dies. Whenever one of his bonded mortals dies, the Immortal Trickster becomes Drained 1 or increases the value of his [drained](/condition/drained-player-core) condition by 1, and the Trickster gains a +2 status bonus on the next attack roll or skill check he attempts.",
+            "text": "**Frequency** once per day; **Effect** The Immortal Trickster forms a bond with a mortal creature. While the bond exists, the mortals bonded to the Immortal Trickster increase their current and maximum Hit Points by 10 and gain a +2 status bonus to their attack and damage rolls, as well as to skill checks they make using Deception, Stealth, or Thievery. The Immortal Trickster can communicate telepathically with any of his bonded mortals as long as both beings are on the same plane. Each week that they are bonded to the Trickster, the bonded mortals increase their doomed value by 1; their doomed value cannot be increased above 3 by this ability and their doomed value cannot decrease while they remain bonded to the Trickster. The Immortal Trickster can be bonded with up to six mortals at a time, and they can take this action again to end the bond or to form a new bond. The bond also ends if the mortal dies. Whenever one of his bonded mortals dies, the Immortal Trickster becomes [Drained 1](/condition/drained-player-core) or increases the value of his drained condition by 1, and the Trickster gains a +2 status bonus on the next attack roll or skill check he attempts.",
             "traits": [
               "mental",
               "primal"
@@ -367,7 +368,7 @@
           },
           {
             "name": "Change Shape",
-            "text": "The Immortal Trickster takes on the appearance of a coyote, fox, or raven. In areas where another Tiny or Small animal is known for wiliness and trickery, the Immortal Trickster can assume that animal's shape instead. While transformed, the Immortal Trickster loses his innate spells, attacks, and special actions, but doesn't otherwise change his statistics and can still speak. In fox or coyote form, the Immortal Trickster's size changes to Tiny (for a fox) or Small (for a coyote), his Speed increases to 35 feet, and he gains a bite (+23 to hit for 2d6+4 piercing damage). In raven form, he is Tiny, gains a fly Speed of 25 feet, and gains a beak (agile, +23 to-hit for 2d4+4 piercing damage).",
+            "text": "The Immortal Trickster takes on the appearance of a coyote, fox, or raven. In areas where another Tiny or Small animal is known for wiliness and trickery, the Immortal Trickster can assume that animal's shape instead. While transformed, the Immortal Trickster loses his innate spells, attacks, and special actions, but doesn't otherwise change his statistics and can still speak. In fox or coyote form, the Immortal Trickster's size changes to Tiny (for a fox) or Small (for a coyote), his Speed increases to 35 feet, and he gains a bite (+23 to hit for 2d6+4 piercing damage). In raven form, he is Tiny, gains a [fly Speed](/rule/fly-speed-rules-2350) of 25 feet, and gains a beak (agile, +23 to-hit for 2d4+4 piercing damage).",
             "traits": [
               "concentrate",
               "polymorph"
@@ -384,7 +385,7 @@
           },
           {
             "name": "Cunning Escape",
-            "text": "**Frequency** once per day; **Effect** The Immortal Trickster trades places with one of his sensory animals (see trickster's network, above). The animal appears in the square the Trickster is currently occupying and the Trickster teleports to the animal's original location with all of his possessions. If a creature has witnessed the Trickster's Change Shape, they must succeed at a Perception DC 38 check to Sense Motive or be fooled into thinking that the Trickster has simply changed shape into an animal instead of teleported.",
+            "text": "**Frequency** once per day; **Effect** The Immortal Trickster trades places with one of his sensory animals (see trickster's network, above). The animal appears in the square the Trickster is currently occupying and the Trickster teleports to the animal's original location with all of his possessions. If a creature has witnessed the Trickster's Change Shape, they must succeed at a Perception DC 38 check to [Sense Motive](/action/sense-motive-player-core) or be fooled into thinking that the Trickster has simply changed shape into an animal instead of teleported.",
             "traits": [
               "concentrate",
               "teleportation"
@@ -404,9 +405,10 @@
           },
           {
             "name": "Pull",
-            "text": "(see [Pull](/action/pull-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/pull-monster-core"
           },
           {
             "name": "Recharge Spell",
@@ -416,9 +418,10 @@
           },
           {
             "name": "Push",
-            "text": "(see [Push](/action/push-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/push-monster-core"
           }
         ]
       },
@@ -644,8 +647,9 @@
         "defensive": [
           {
             "name": "All-Around Vision",
-            "text": "(see [All-Around Vision](/action/all-around-vision-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/all-around-vision-monster-core"
           },
           {
             "name": "Hazard Immunity",
@@ -674,9 +678,10 @@
           },
           {
             "name": "Constrict",
-            "text": "3d6+12 bludgeoning, basic Fortitude DC 32 (see [Constrict](/action/constrict-monster-core))",
+            "text": "3d6+12 bludgeoning, basic Fortitude DC 32",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Mythic Power",
@@ -691,15 +696,16 @@
           },
           {
             "name": "Skittering Assault",
-            "text": "The gogiteth Strides three times. Once per Stride, it can attempt a leg Strike against a creature in its reach at any point during the Stride; it must make each attack against a different creature, but it doesn't apply its multiple attack penalty until after making all its Strikes. If any of the Strikes result in a critical failure, Skittering Assault ends.",
+            "text": "The gogiteth Strides three times. Once per [Stride](/action/stride-player-core), it can attempt a leg [Strike](/action/strike-player-core) against a creature in its reach at any point during the Stride; it must make each attack against a different creature, but it doesn't apply its multiple attack penalty until after making all its Strikes. If any of the Strikes result in a critical failure, Skittering Assault ends.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Improved Grab",
-            "text": "(see [Improved Grab](/action/improved-grab-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "free"
+            "actions": "free",
+            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -837,12 +843,12 @@
         "offensive": [
           {
             "name": "Deadly Striker",
-            "text": "A mythic striker deals an additional 1d6 precision damage on its next Strike whenever it uses an action to Stride 10 or more feet (or to Burrow, Climb, or Fly 10 or more feet).",
+            "text": "A mythic striker deals an additional 1d6 precision damage on its next [Strike](/action/strike-player-core) whenever it uses an action to [Stride](/action/stride-player-core) 10 or more feet (or to [Burrow](/action/burrow-player-core), [Climb](/action/climb-player-core), or [Fly](/action/fly-player-core) 10 or more feet).",
             "traits": []
           },
           {
             "name": "Flying Strafe",
-            "text": "The griffon Flies up to its fly Speed and makes two talon Strikes at any point during that movement. Each Strike must target a different creature. The attacks take the normal multiple attack penalty.",
+            "text": "The griffon Flies up to its [fly Speed](/rule/fly-speed-rules-2350) and makes two talon Strikes at any point during that movement. Each [Strike](/action/strike-player-core) must target a different creature. The attacks take the normal multiple attack penalty.",
             "traits": [],
             "actions": "two"
           },
@@ -859,7 +865,7 @@
           },
           {
             "name": "Pounce",
-            "text": "The griffon Strides and makes a talon Strike at the end of that movement. If the griffon began this action Hidden, it remains hidden until after the attack.",
+            "text": "The griffon Strides and makes a talon [Strike](/action/strike-player-core) at the end of that movement. If the griffon began this action [Hidden](/condition/hidden-player-core), it remains hidden until after the attack.",
             "traits": [],
             "actions": "one"
           },
@@ -876,7 +882,7 @@
           },
           {
             "name": "Unimpeded",
-            "text": "**Cost** 1 Mythic Point; **Effect** The Mythic Griffon automatically ends one effect that would give it a circumstance penalty to Speed. When it attempts to Escape an effect that has it Immobilized, Grabbed, or Restrained, it automatically succeeds.",
+            "text": "**Cost** 1 Mythic Point; **Effect** The Mythic Griffon automatically ends one effect that would give it a circumstance penalty to Speed. When it attempts to [Escape](/action/escape-player-core) an effect that has it [Immobilized](/condition/immobilized-player-core), [Grabbed](/condition/grabbed-player-core), or [Restrained](/condition/restrained-player-core), it automatically succeeds.",
             "traits": [],
             "actions": "one"
           }
@@ -1042,13 +1048,14 @@
           },
           {
             "name": "Frightful Presence",
-            "text": "60 feet. Will DC 29 (see [Frightful Presence](/action/frightful-presence-monster-core))",
+            "text": "60 feet. Will DC 29",
             "traits": [
               "aura",
               "emotion",
               "fear",
               "mental"
-            ]
+            ],
+            "reference": "/action/frightful-presence-monster-core"
           },
           {
             "name": "Mythic Resilience (Reflex and Will)",
@@ -1064,8 +1071,9 @@
           },
           {
             "name": "Void Healing",
-            "text": "(see [Void Healing](/action/void-healing-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/void-healing-monster-core"
           }
         ],
         "offensive": [
@@ -1082,7 +1090,7 @@
           },
           {
             "name": "Siphon Life",
-            "text": "A lich's form draws forth life from those who come into contact with it. When the lich damages a living creature with an unarmed attack, the lich gains 5 temporary Hit Points and the creature must succeed at a Fortitude DC 34 save or become Drained 1.\n\nIf the lich is Grabbed or Restrained at the start of its turn, each creature grabbing or restraining it must succeed at a Fortitude save or become drained 1. If the lich siphons a creature's life again, the drained value increase by 1, to a maximum of Drained 4.",
+            "text": "A lich's form draws forth life from those who come into contact with it. When the lich damages a living creature with an unarmed attack, the lich gains 5 temporary Hit Points and the creature must succeed at a Fortitude DC 34 save or become [Drained 1](/condition/drained-player-core).\n\nIf the lich is [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) at the start of its turn, each creature grabbing or restraining it must succeed at a Fortitude save or become drained 1. If the lich siphons a creature's life again, the drained value increase by 1, to a maximum of Drained 4.",
             "traits": []
           },
           {
@@ -1407,28 +1415,29 @@
         "interaction": [
           {
             "name": "Titanic Might",
-            "text": "A mythic brute ignores size limitations when performing actions like Grapple or Trip.",
+            "text": "A mythic brute ignores size limitations when performing actions like [Grapple](/action/grapple-player-core) or [Trip](/action/trip-player-core).",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Mythic Ferocity",
-            "text": "**Cost** 1 Mythic Point; **Trigger** The monster is reduced to 0 HP; **Effect** The monster avoids being knocked out and remains at half its maximum HP, but its wounded value increases by 1. When it is Wounded 3, it can no longer use this ability.",
+            "text": "**Cost** 1 Mythic Point; **Trigger** The monster is reduced to 0 HP; **Effect** The monster avoids being knocked out and remains at half its maximum HP, but its wounded value increases by 1. When it is [Wounded 3](/condition/wounded-player-core), it can no longer use this ability.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           }
         ],
         "offensive": [
           {
             "name": "Bellowing Command",
-            "text": "The ogre boss issues a command to hasten their fellows. Each ogre ally who hears and understands this command becomes Quickened until the end of that ally's next turn but can use the extra action only to Step or Stride.",
+            "text": "The ogre boss issues a command to hasten their fellows. Each ogre ally who hears and understands this command becomes [Quickened](/condition/quickened-player-core) until the end of that ally's next turn but can use the extra action only to [Step](/action/step-player-core) or [Stride](/action/stride-player-core).",
             "traits": [
               "auditory",
               "emotion",
@@ -1451,7 +1460,7 @@
           },
           {
             "name": "Sweeping Hook",
-            "text": "**Trigger** The ogre boss successfully Trips a creature using an ogre hook; **Effect** The ogre boss makes an ogre hook Strike against the creature they tripped.",
+            "text": "**Trigger** The ogre boss successfully [Trips](/action/trip-player-core) a creature using an ogre hook; **Effect** The ogre boss makes an ogre hook [Strike](/action/strike-player-core) against the creature they tripped.",
             "traits": [],
             "actions": "reaction"
           }
@@ -1634,18 +1643,20 @@
         "defensive": [
           {
             "name": "Regeneration",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Frightful Presence",
-            "text": "300 feet. Will DC 46 (see [Frightful Presence](/action/frightful-presence-monster-core))",
+            "text": "300 feet. Will DC 46",
             "traits": [
               "aura",
               "emotion",
               "fear",
               "mental"
-            ]
+            ],
+            "reference": "/action/frightful-presence-monster-core"
           },
           {
             "name": "Legendary Vigor",
@@ -1669,9 +1680,10 @@
           },
           {
             "name": "Reactive Strike",
-            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
+            "text": "",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           },
           {
             "name": "Undying Myth",
@@ -1688,13 +1700,13 @@
           },
           {
             "name": "Destructive Frenzy",
-            "text": "The Oliphaunt of Jandelay makes two tusk Strikes, two foot Strikes, and one trunk Strike in any order.",
+            "text": "The Oliphaunt of Jandelay makes two tusk Strikes, two foot Strikes, and one trunk [Strike](/action/strike-player-core) in any order.",
             "traits": [],
             "actions": "three"
           },
           {
             "name": "Devastating Launch",
-            "text": "**Cost** 1 Mythic Point; **Effect** The Oliphaunt of Jandelay buries its tusks into the ground in a 15-foot burst centered within 20 feet of it, collecting everything in that area, including any creature currently Grabbed by its tusk attack, and flinging it all up to 120 feet away. Everything lands in a 30-foot burst, dealing 12d6 bludgeoning damage to each creature in the area (basic Reflex DC 51 save). This damage also applies to any creatures, vehicles, or objects the Oliphaunt flung as well. A creature in the area being flung that succeeds or critically succeeds on their Reflex save remains in the square they started in. Anything launched by the Oliphaunt lands in a square in the burst as determined by the GM.",
+            "text": "**Cost** 1 Mythic Point; **Effect** The Oliphaunt of Jandelay buries its tusks into the ground in a 15-foot burst centered within 20 feet of it, collecting everything in that area, including any creature currently [Grabbed](/condition/grabbed-player-core) by its tusk attack, and flinging it all up to 120 feet away. Everything lands in a 30-foot burst, dealing 12d6 bludgeoning damage to each creature in the area (basic Reflex DC 51 save). This damage also applies to any creatures, vehicles, or objects the Oliphaunt flung as well. A creature in the area being flung that succeeds or critically succeeds on their Reflex save remains in the square they started in. Anything launched by the Oliphaunt lands in a square in the burst as determined by the GM.",
             "traits": [],
             "actions": "two"
           },
@@ -1705,9 +1717,10 @@
           },
           {
             "name": "Trample",
-            "text": "Huge or smaller, foot, basic Reflex DC 46\n\nWhen the Oliphaunt of Jandelay Tramples, it can Stride up to triple its Speed, and any creature that fails or critically fails the Reflex save is knocked Prone. (see [Trample](/action/trample-monster-core))",
+            "text": "Huge or smaller, foot, basic Reflex DC 46\n\nWhen the Oliphaunt of Jandelay Tramples, it can [Stride](/action/stride-player-core) up to triple its Speed, and any creature that fails or critically fails the Reflex save is knocked [Prone](/condition/prone-player-core).",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           },
           {
             "name": "Trumpeting Blast",
@@ -1893,7 +1906,7 @@
           },
           {
             "name": "Thought Slips Away",
-            "text": "The sublime breath's ephemeral lightness makes them impossible to grasp. They use their Performance modifier to Escape, Tumble Through, High Jump, or Long Jump. When they Leap, High Jump, or Long Jump, the movement does not provoke reactions.",
+            "text": "The sublime breath's ephemeral lightness makes them impossible to grasp. They use their Performance modifier to [Escape](/action/escape-player-core), [Tumble Through](/action/tumble-through-player-core), [High Jump](/action/high-jump-player-core), or [Long Jump](/action/long-jump-player-core). When they [Leap](/action/leap-player-core), High Jump, or Long Jump, the movement does not provoke reactions.",
             "traits": []
           }
         ],
@@ -1930,7 +1943,7 @@
           },
           {
             "name": "Change Shape",
-            "text": "The sublime breath can take on the appearance of any Medium or Large humanoid creature. This doesn't change their Speed or their attack and damage bonuses with their Strikes, but might change the damage type their Strikes deal.\n\nThe sublime breath instinctively takes on the appearance an observer finds most inspiring. The first time they become observed, they use Change Shape as a free action, even if they were unaware they were being observed, they take on a specific appearance reflecting the Hidden desires, hopes, artistic inclinations, or similar deep-seated emotions of a single observer. As long as the sublime breath can be observed by this creature and maintains this shape, the observer gains a +1 circumstance bonus to Crafting and Performance checks and takes a –1 circumstance penalty to Will saves against the sublime breath or to any check or DC that would attempt to capture or restrain them, such as attempts to Grapple or the DC of a [Paralyze](/spell/paralyze-player-core) spell.",
+            "text": "The sublime breath can take on the appearance of any Medium or Large humanoid creature. This doesn't change their Speed or their attack and damage bonuses with their Strikes, but might change the damage type their Strikes deal.\n\nThe sublime breath instinctively takes on the appearance an observer finds most inspiring. The first time they become observed, they use Change Shape as a free action, even if they were unaware they were being observed, they take on a specific appearance reflecting the [Hidden](/condition/hidden-player-core) desires, hopes, artistic inclinations, or similar deep-seated emotions of a single observer. As long as the sublime breath can be observed by this creature and maintains this shape, the observer gains a +1 circumstance bonus to Crafting and Performance checks and takes a –1 circumstance penalty to Will saves against the sublime breath or to any check or DC that would attempt to capture or restrain them, such as attempts to [Grapple](/action/grapple-player-core) or the DC of a [Paralyze](/spell/paralyze-player-core) spell.",
             "traits": [
               "concentrate",
               "divine",
@@ -1940,7 +1953,7 @@
           },
           {
             "name": "Hours Go By",
-            "text": "A sublime breath's presence can allow artists and artisans to work almost effortlessly in a state of perfect flow. The sublime breath encourages a single creature within 60 feet, who becomes Quickened. They can spend the extra action only to Sustain a spell or other ability.",
+            "text": "A sublime breath's presence can allow artists and artisans to work almost effortlessly in a state of perfect flow. The sublime breath encourages a single creature within 60 feet, who becomes [Quickened](/condition/quickened-player-core). They can spend the extra action only to Sustain a spell or other ability.",
             "traits": [
               "emotion",
               "mental"
@@ -2120,18 +2133,20 @@
         "defensive": [
           {
             "name": "Regeneration (Deactivated by Sloughstone Weapons)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Frightful Presence",
-            "text": "150 feet. Will DC 45 (see [Frightful Presence](/action/frightful-presence-monster-core))",
+            "text": "150 feet. Will DC 45",
             "traits": [
               "aura",
               "emotion",
               "fear",
               "mental"
-            ]
+            ],
+            "reference": "/action/frightful-presence-monster-core"
           },
           {
             "name": "Mythic Immunity",
@@ -2169,7 +2184,7 @@
           },
           {
             "name": "Leap into the Fray",
-            "text": "Verex-That-Was Leaps up to 20 feet horizontally and up to 10 feet vertically and then makes one claw Strike, one jaws Strike, and one tail Strike in any order. If Verex-That-Was spends 1 Mythic Point as part of this action, he doubles the distances he can Leap and each creature he lands adjacent to is Off Guard until the end of his turn.",
+            "text": "Verex-That-Was Leaps up to 20 feet horizontally and up to 10 feet vertically and then makes one claw [Strike](/action/strike-player-core), one jaws Strike, and one tail Strike in any order. If Verex-That-Was spends 1 Mythic Point as part of this action, he doubles the distances he can [Leap](/action/leap-player-core) and each creature he lands adjacent to is [Off Guard](/condition/off-guard-player-core) until the end of his turn.",
             "traits": [],
             "actions": "three"
           },
@@ -2180,11 +2195,12 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Huge, 4d10+10 bludgeoning, Rupture 50 (see [Swallow Whole](/action/swallow-whole-monster-core))",
+            "text": "Huge, 4d10+10 bludgeoning, Rupture 50",
             "traits": [
               "attack"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Symphony of Pain",
@@ -2377,7 +2393,7 @@
           },
           {
             "name": "Suffocated by a Thousand Breaths",
-            "text": "30 feet. Vulot's breath-stealing influence radiates out from their body, causing victims to feel like they are being smothered. Any creature that starts its turn within the aura must attempt a Fortitude DC 41 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes short of breath and is Off Guard until the beginning of its next turn.\n\n**Failure** The creature finds it very difficult to catch its breath. It can't speak or use auditory actions until the beginning of its next turn; this prevents it from casting spells that don't have the [subtle](/trait/subtle) trait.\n\n**Critical Failure** All the air immediately leaves the creature's lungs and it begins to suffocate. When it succeeds at the saving throw to regain consciousness at the end of its turn, it becomes Fatigued until it gets a full night's rest.",
+            "text": "30 feet. Vulot's breath-stealing influence radiates out from their body, causing victims to feel like they are being smothered. Any creature that starts its turn within the aura must attempt a Fortitude DC 41 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes short of breath and is [Off Guard](/condition/off-guard-player-core) until the beginning of its next turn.\n\n**Failure** The creature finds it very difficult to catch its breath. It can't speak or use auditory actions until the beginning of its next turn; this prevents it from casting spells that don't have the [subtle](/trait/subtle) trait.\n\n**Critical Failure** All the air immediately leaves the creature's lungs and it begins to suffocate. When it succeeds at the saving throw to regain consciousness at the end of its turn, it becomes [Fatigued](/condition/fatigued-player-core) until it gets a full night's rest.",
             "traits": [
               "aura",
               "incapacitation"
@@ -2392,13 +2408,13 @@
           },
           {
             "name": "Steal Face",
-            "text": "**Cost** 1 Mythic Point; **Effect** Vulot makes a claw Strike. On a hit, Vulot attempts a Deception check against the target's Will DC to steal that creature's face; on a critical hit, Vulot treats the result of their Deception check as one degree of success higher. On a success, Vulot steals the target's face for 1d4 rounds (1 minute on a critical success); a creature whose face has been stolen isn't considered an ally by any creature.",
+            "text": "**Cost** 1 Mythic Point; **Effect** Vulot makes a claw [Strike](/action/strike-player-core). On a hit, Vulot attempts a Deception check against the target's Will DC to steal that creature's face; on a critical hit, Vulot treats the result of their Deception check as one degree of success higher. On a success, Vulot steals the target's face for 1d4 rounds (1 minute on a critical success); a creature whose face has been stolen isn't considered an ally by any creature.",
             "traits": [],
             "actions": "two"
           },
           {
             "name": "Steal Thoughts",
-            "text": "Vulot's mental attacks can confuse and disorient. A creature struck by Vulot's thought spike must attempt a Will DC 44 save. A creature [stupefied](/condition/stupefied-player-core) by this effect is Off Guard to Vulot's Steal Face ability.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes Stupefied 1 for 1 round.\n\n**Failure** The creature becomes stupefied 1 for 1 minute. If it's already stupefied, its stupefied value increases by 1 instead (to a maximum of stupefied 4).\n\n**Critical Failure** As failure, plus the creature is Confused for 1 minute.",
+            "text": "Vulot's mental attacks can confuse and disorient. A creature struck by Vulot's thought spike must attempt a Will DC 44 save. A creature stupefied by this effect is [Off Guard](/condition/off-guard-player-core) to Vulot's Steal Face ability.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes [Stupefied 1](/condition/stupefied-player-core) for 1 round.\n\n**Failure** The creature becomes stupefied 1 for 1 minute. If it's already stupefied, its stupefied value increases by 1 instead (to a maximum of stupefied 4).\n\n**Critical Failure** As failure, plus the creature is [Confused](/condition/confused-player-core) for 1 minute.",
             "traits": [
               "emotion",
               "mental"
@@ -2502,7 +2518,7 @@
                   "name": "Translocate",
                   "rank": 5,
                   "reference": "/spell/translocate-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -2711,7 +2727,7 @@
           },
           {
             "name": "Webbed Conveyance",
-            "text": "**Requirements** The Weaver is within 15 feet of a creature [Paralyzed](/condition/paralyzed-player-core) in her nightmare cocoon; **Effect** The Weaver grabs the paralyzed target, webs them to her back or one of her legs, and then Strides. As long as the creature is Immobilized by the Weaver's nightmare cocoon, it shares the Weaver's space and moves with her. The DC to Escape the nightmare cocoon increases to 36.",
+            "text": "**Requirements** The Weaver is within 15 feet of a creature [Paralyzed](/condition/paralyzed-player-core) in her nightmare cocoon; **Effect** The Weaver grabs the paralyzed target, webs them to her back or one of her legs, and then Strides. As long as the creature is Immobilized by the Weaver's nightmare cocoon, it shares the Weaver's space and moves with her. The DC to [Escape](/action/escape-player-core) the nightmare cocoon increases to 36.",
             "traits": [
               "manipulate"
             ]
@@ -2725,8 +2741,9 @@
           },
           {
             "name": "Regeneration (Deactivated by Bright Light)",
-            "text": "(see [Regeneration](/action/regeneration-monster-core))",
-            "traits": []
+            "text": "",
+            "traits": [],
+            "reference": "/action/regeneration-monster-core"
           },
           {
             "name": "Adopted Brood",
@@ -2756,7 +2773,7 @@
           },
           {
             "name": "Nightmare Cocoon",
-            "text": "A creature struck by the Weaver's web Strike must succeed at a Reflex DC 34 save or become Immobilized (Escape). If the Weaver spends 1 Mythic Point as a free action when a creature fails this save, the creature is also Paralyzed, experiencing terrible nightmares of their deepest-held anxieties. The Weaver can view these dreams using a [Sustain](/action/sustain-player-core) action, which imparts a –2 circumstance penalty to any Will saves the target attempts against the Weaver's spells until the beginning of the Weaver's next turn. At the end of a paralyzed victim's turn, they can attempt a Will DC 34 save to end the paralyzed condition (though they are still immobilized until they Escape).",
+            "text": "A creature struck by the Weaver's web [Strike](/action/strike-player-core) must succeed at a Reflex DC 34 save or become Immobilized ([Escape](/action/escape-player-core)). If the Weaver spends 1 Mythic Point as a free action when a creature fails this save, the creature is also Paralyzed, experiencing terrible nightmares of their deepest-held anxieties. The Weaver can view these dreams using a [Sustain](/action/sustain-player-core) action, which imparts a –2 circumstance penalty to any Will saves the target attempts against the Weaver's spells until the beginning of the Weaver's next turn. At the end of a paralyzed victim's turn, they can attempt a Will DC 34 save to end the paralyzed condition (though they are still immobilized until they Escape).",
             "traits": [
               "incapacitation",
               "mental"
@@ -2764,7 +2781,7 @@
           },
           {
             "name": "Weaver Venom",
-            "text": "**Saving Throw** DC 34\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d10 poison (1 round)\n\n**Stage 2** 2d10 poison and Slowed 1 (2 rounds)\n\n**Stage 3** 3d10 poison and Slowed 2 (1 round)\n\n**Stage 4** 4d10 poison (1 round) and the target permanently forgets the Weaver exists, including any previous mention of her.",
+            "text": "**Saving Throw** DC 34\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d10 poison (1 round)\n\n**Stage 2** 2d10 poison and [Slowed 1](/condition/slowed-player-core) (2 rounds)\n\n**Stage 3** 3d10 poison and Slowed 2 (1 round)\n\n**Stage 4** 4d10 poison (1 round) and the target permanently forgets the Weaver exists, including any previous mention of her.",
             "traits": [
               "poison"
             ]
@@ -2850,7 +2867,7 @@
                   "name": "Sending",
                   "rank": 5,
                   "reference": "/spell/sending-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -2871,7 +2888,7 @@
                   "name": "Darkness",
                   "rank": 4,
                   "reference": "/spell/darkness-player-core",
-                  "details": "at will"
+                  "atWill": true
                 },
                 {
                   "name": "Invisibility",
@@ -2882,7 +2899,7 @@
                   "name": "Web",
                   "rank": 4,
                   "reference": "/spell/web-player-core-2",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
@@ -2913,7 +2930,7 @@
                   "name": "See the Unseen",
                   "rank": 2,
                   "reference": "/spell/see-the-unseen-player-core",
-                  "details": "at will"
+                  "atWill": true
                 }
               ]
             },
