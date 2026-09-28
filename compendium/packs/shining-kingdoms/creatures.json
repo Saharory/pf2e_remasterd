@@ -84,14 +84,14 @@
           },
           {
             "name": "Void Healing",
-            "text": "A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.",
+            "text": "(see [Void Healing](/action/void-healing-monster-core))",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Fetters of Debt",
-            "text": "**Frequency** once per 10 minutes\n\n**Effect** The aurosrath bellows a plea for gold, remarking that their foes are overladen. Creatures in a 15-foot emanation must succeed at a Will DC 19 save or become [Encumbered](/condition/encumbered-player-core) for 1 minute. The creature is aware that it can immediately end the condition by giving the aurosrath items or treasure worth at least 20 gp. Handing a held item to the aurosrath is a single [Interact](/action/interact-player-core) action. If the aurosrath's hands are full, the item falls in their space, but the condition still ends.",
+            "text": "**Frequency** once per 10 minutes; **Effect** The aurosrath bellows a plea for gold, remarking that their foes are overladen. Creatures in a 15-foot emanation must succeed at a Will DC 19 save or become [Encumbered](/condition/encumbered-player-core) for 1 minute. The creature is aware that it can immediately end the condition by giving the aurosrath items or treasure worth at least 20 gp. Handing a held item to the aurosrath is a single [Interact](/action/interact-player-core) action. If the aurosrath's hands are full, the item falls in their space, but the condition still ends.",
             "traits": [
               "auditory",
               "curse",
@@ -220,12 +220,12 @@
         "defensive": [
           {
             "name": "Troop Defenses",
-            "text": "Troops are composed of many individuals, represented by four \"segments\" on a battle grid. Each segment is 10 feet on each side and as tall as the individual members of the troop. Segments must remain contiguous. Each one has to share at least 5 feet of one of its edges with another segment—being adjacent on a diagonal isn't sufficient! You can measure flanking, cover, and the like using the center of any segment.\n\nA troop has two Hit Point thresholds in its HP entry and loses segments as it crosses thresholds. Typically, the higher threshold is at 2/3 of the troop's maximum Hit Points and the lower is at 1/3 of its maximum. Once the troop drops below the higher threshold, it loses one segment, leaving three segments (12 squares) remaining and setting the first threshold as the troop's new maximum Hit Points. This repeats when the troop drops below the lower threshold, leaving two segments (8 squares). At 0 Hit Points, the troop disperses entirely, with the few remaining members surrendering, [Fleeing](/condition/fleeing-player-core), or easily dispatched, as determined by the GM. Typically the creature who caused the troop to lose a segment decides which to remove, or the GM decides when a specific creature wasn't responsible. To restore lost segments and maximum Hit Points, a troop needs to spend downtime to use long-term treatment on casualties or recruit new members to replace the fallen.\n\nTroops are typically immune to non-damaging effects that target a single creature, such as a [Charm](/spell/charm-player-core) spell or the [Demoralize](/action/demoralize-player-core) action. An ability that can target 5 or more creatures can target an entire segment, increasing to two segments if it can target 10 or more creatures and to the entire troop if it can target 20 or more creatures. An ability that affects all creatures in a certain range affects all segments in range (make any checks or saves separately for each segment). As examples, an 8th rank *charm* spell (with 10 targets) can affect two segments, and an ability that Demoralizes all creatures within 30 feet of you would affect all segments that are fully within that range. A non-damaging ability that would prevent a segment from acting, cause them to flee, or otherwise make them unable to function as part of the troop for a round or more removes the segment entirely. The troop loses a number of HP required to bring it to the next threshold. If an ability both deals damage and has a non-damaging effect, apply the damage then the rest of the effect.",
+            "text": "(see [Troop Defenses](/action/troop-defenses-npc-core))",
             "traits": []
           },
           {
             "name": "Troop Movement",
-            "text": "Whenever a troop moves, you move one of its segments and the other segments follow behind it. At the end of the movement, you can group the other segments adjacent to the one you moved as you see fit, provided none of them moves farther than the moving segment. If you choose not to move the troop any distance, you can instead reshape the position of all the segments as long as one stays in place.",
+            "text": "(see [Troop Movement](/action/troop-movement-npc-core))",
             "traits": []
           },
           {
@@ -241,7 +241,7 @@
         "offensive": [
           {
             "name": "Icy Japes",
-            "text": "1 to 3\n\n**Frequency** once per round\n\n**Effect** The beirans descend on their prey, biting and clawing at each enemy in a 5-foot emanation, with a basic Reflex DC 17 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage plus 1 cold damage\n\n2 2d6+2 slashing damage plus 1d4 cold damage\n\n3 2d6+5 cold damage plus 1d4 cold damage",
+            "text": "1 to 3\n\n**Frequency** once per round; **Effect** The beirans descend on their prey, biting and clawing at each enemy in a 5-foot emanation, with a basic Reflex DC 17 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage plus 1 cold damage\n\n2 2d6+2 slashing damage plus 1d4 cold damage\n\n3 2d6+5 cold damage plus 1d4 cold damage",
             "traits": [
               "cold"
             ],
@@ -412,7 +412,7 @@
         "interaction": [
           {
             "name": "Thoughtsense",
-            "text": "The bibliodaemon is aware of non-mindless creatures within 60 feet as an imprecise sense.\n\nThoughtsense allows a monster to sense all non-mindless creatures at the listed range.",
+            "text": "The bibliodaemon is aware of non-mindless creatures within 60 feet as an imprecise sense.",
             "traits": [
               "mental"
             ]
@@ -431,7 +431,7 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "The bibliodaemon can take on the appearance of any Small or Medium humanoid. This doesn't change their Speed or their attack and damage modifiers with their Strikes, but it might change the damage type their claw Strikes deal (typically to bludgeoning).\n\nThe monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the [Impersonate](/action/impersonate-player-core) use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.",
+            "text": "The bibliodaemon can take on the appearance of any Small or Medium humanoid. This doesn't change their Speed or their attack and damage modifiers with their Strikes, but it might change the damage type their claw Strikes deal (typically to bludgeoning). (see [Change Shape](/action/change-shape-monster-core))",
             "traits": [
               "concentrate",
               "divine",
@@ -449,7 +449,7 @@
           },
           {
             "name": "Inevitable Delays",
-            "text": "**Requirements** The bibliodaemon's last action was a successful Strike that dealt damage\n\n**Effect** The bibliodaemon intuits the next actions the creature they just damaged will take and explains how it doesn't have the proper clearance to perform those actions. The creature must succeed at a Will DC 23 save or become Slowed 1.",
+            "text": "**Requirements** The bibliodaemon's last action was a successful Strike that dealt damage; **Effect** The bibliodaemon intuits the next actions the creature they just damaged will take and explains how it doesn't have the proper clearance to perform those actions. The creature must succeed at a Will DC 23 save or become Slowed 1.",
             "traits": [
               "auditory",
               "concentrate",
@@ -700,7 +700,7 @@
         "defensive": [
           {
             "name": "Regeneration 20 (deactivated by cold)",
-            "text": "This monster regains the listed number of Hit Points each round at the beginning of its turn. Its [Dying](/condition/dying-player-core) condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.",
+            "text": "(see [Regeneration](/action/regeneration-monster-core))",
             "traits": []
           },
           {
@@ -729,7 +729,7 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, 9d6 piercing plus thorn paralysis, Rupture 30\n\nThe monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.\n\nA swallowed creature is [Grabbed](/condition/grabbed-player-core), is [Slowed 1](/condition/slowed-player-core), and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim [Escapes](/action/escape-player-core) this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is [Off-Guard](/condition/off-guard-player-core) against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.\n\n[Effect: Engulf and Swallow Whole](/condition/effect-engulf-and-swallow-whole-monster-core)\n\nIf the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.",
+            "text": "Large, 9d6 piercing plus thorn paralysis, Rupture 30 (see [Swallow Whole](/action/swallow-whole-monster-core))",
             "traits": [
               "attack"
             ],
@@ -889,7 +889,7 @@
         "offensive": [
           {
             "name": "Greedy Grab",
-            "text": "**Requirements** The failed prophet's last action was a successful fist Strike that dealt damage\n\n**Effect** The failed prophet attempts a Thievery check against the target's Reflex DC. On a success, the failed prophet pilfers coins and gems from the target with a total value as indicated in the table, to a maximum of what the target is carrying. Valuables in unlocked containers on the target's person can be taken just as easily as those carried. On a critical success, the failed prophet steals double that amount. The failed prophet gains a number of temporary Hit Points equal to the value stolen that last for 1 minute.\n\n| Level | Value Stolen |\n| --- | --- |\n| 10–12 | 5d10 gp |\n| 13–15 | 6d10 gp |\n| 16–18 | 7d10 gp |\n| 19–20 | 8d10 gp |",
+            "text": "**Requirements** The failed prophet's last action was a successful fist Strike that dealt damage; **Effect** The failed prophet attempts a Thievery check against the target's Reflex DC. On a success, the failed prophet pilfers coins and gems from the target with a total value as indicated in the table, to a maximum of what the target is carrying. Valuables in unlocked containers on the target's person can be taken just as easily as those carried. On a critical success, the failed prophet steals double that amount. The failed prophet gains a number of temporary Hit Points equal to the value stolen that last for 1 minute.\n\n| Level | Value Stolen |\n| --- | --- |\n| 10–12 | 5d10 gp |\n| 13–15 | 6d10 gp |\n| 16–18 | 7d10 gp |\n| 19–20 | 8d10 gp |",
             "traits": [],
             "actions": "one"
           },
@@ -1312,7 +1312,7 @@
         "offensive": [
           {
             "name": "Eye Pluck",
-            "text": "**Frequency** once per round\n\n**Requirements** The lamp blighter's last action was a successful claw Strike against a creature with eyes\n\n**Effect** The lamp blighter attempts to pluck out one of the required creature's eyes. The target must attempt a Fortitude DC 21 save. On a failure, the target takes 4 persistent bleed damage and is Dazzled for 1 round. On a critical failure, the target's eye is also severely damaged, taking a –4 circumstance penalty on all sight-based Perception checks until the target returns to full Hit Points or the wound is otherwise healed (by magic such as Sound Body or Regenerate). If all a creature's eyes are severely damaged in this way, that creature is Blinded for the same duration.",
+            "text": "**Frequency** once per round; **Requirements** The lamp blighter's last action was a successful claw Strike against a creature with eyes; **Effect** The lamp blighter attempts to pluck out one of the required creature's eyes. The target must attempt a Fortitude DC 21 save. On a failure, the target takes 4 persistent bleed damage and is Dazzled for 1 round. On a critical failure, the target's eye is also severely damaged, taking a –4 circumstance penalty on all sight-based Perception checks until the target returns to full Hit Points or the wound is otherwise healed (by magic such as Sound Body or Regenerate). If all a creature's eyes are severely damaged in this way, that creature is Blinded for the same duration.",
             "traits": [
               "manipulate"
             ],
@@ -1320,7 +1320,7 @@
           },
           {
             "name": "Fear the Darkness",
-            "text": "**Requirements** The lamp blighter must be in an area of darkness\n\n**Effect** The lamp blighter evokes the terror of being unable to see in the dark. Each creature within a 20-foot emanation that doesn't have darkvision must succeed at a Will DC 23 save or become [Frightened 2](/condition/frightened-player-core).",
+            "text": "**Requirements** The lamp blighter must be in an area of darkness; **Effect** The lamp blighter evokes the terror of being unable to see in the dark. Each creature within a 20-foot emanation that doesn't have darkvision must succeed at a Will DC 23 save or become [Frightened 2](/condition/frightened-player-core).",
             "traits": [
               "concentrate",
               "emotion",
@@ -1543,7 +1543,7 @@
           },
           {
             "name": "Soul Feeding",
-            "text": "**Requirements** The shroudwing is adjacent to a [dying](/condition/dying-player-core) creature\n\n**Effect** The shroudwing attempts to devour the dying creature's soul. The creature must attempt a Will DC 18 save or their dying condition increases by 1 and the shroudwing regains 2d8 healing Hit Points.",
+            "text": "**Requirements** The shroudwing is adjacent to a [dying](/condition/dying-player-core) creature; **Effect** The shroudwing attempts to devour the dying creature's soul. The creature must attempt a Will DC 18 save or their dying condition increases by 1 and the shroudwing regains 2d8 healing Hit Points.",
             "traits": [
               "concentrate",
               "death",
@@ -1666,7 +1666,7 @@
           },
           {
             "name": "Reactive Strike",
-            "text": "**Trigger** A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.\n\n**Effect** The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
+            "text": "(see [Reactive Strike](/action/reactive-strike-monster-core))",
             "traits": [],
             "actions": "reaction"
           },
@@ -1677,7 +1677,7 @@
           },
           {
             "name": "Void Healing",
-            "text": "A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.",
+            "text": "(see [Void Healing](/action/void-healing-monster-core))",
             "traits": []
           }
         ],
@@ -1695,7 +1695,7 @@
           },
           {
             "name": "Tear Asunder",
-            "text": "**Requirements** The torn quartet has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by at least two limbs\n\n**Effect** The creature takes 5d6 slashing damage for each limb currently grabbing or restraining it (maximum 15d6), with a basic Fortitude DC 30 save. On a critical failure, the creature also loses a random body part, and one of the torn quartet's limbs is now no longer grabbing or restraining it.",
+            "text": "**Requirements** The torn quartet has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by at least two limbs; **Effect** The creature takes 5d6 slashing damage for each limb currently grabbing or restraining it (maximum 15d6), with a basic Fortitude DC 30 save. On a critical failure, the creature also loses a random body part, and one of the torn quartet's limbs is now no longer grabbing or restraining it.",
             "traits": [],
             "actions": "one"
           }
@@ -1833,7 +1833,7 @@
           },
           {
             "name": "Sweeping Tail",
-            "text": "**Trigger** A creature within reach of the vorvorak's tail uses a move action or leaves a square during a move action it's using\n\n**Effect** The vorvorak attempts a tail Strike against the triggering creature. If the attack is a critical hit, the vorvorak disrupts the action.",
+            "text": "**Trigger** A creature within reach of the vorvorak's tail uses a move action or leaves a square during a move action it's using; **Effect** The vorvorak attempts a tail Strike against the triggering creature. If the attack is a critical hit, the vorvorak disrupts the action.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2029,7 +2029,7 @@
         "defensive": [
           {
             "name": "Void Healing",
-            "text": "A creature with void healing draws health from void energy rather than vitality energy. It is damaged by vitality damage and is not healed by vitality healing effects. It does not take void damage, and it is healed by void effects that heal undead.",
+            "text": "(see [Void Healing](/action/void-healing-monster-core))",
             "traits": []
           }
         ],
@@ -2050,7 +2050,7 @@
           },
           {
             "name": "Wall Blend",
-            "text": "**Requirements** The walcofinde is manifested using Structural Possession and isn't observed by any enemies\n\n**Effect** Until the next time they act, the walcofinde's manifestation changes their visual appearance to match the surrounding wall. They have an automatic result of 31 on their Stealth checks to Hide.",
+            "text": "**Requirements** The walcofinde is manifested using Structural Possession and isn't observed by any enemies; **Effect** Until the next time they act, the walcofinde's manifestation changes their visual appearance to match the surrounding wall. They have an automatic result of 31 on their Stealth checks to Hide.",
             "traits": [
               "concentrate"
             ],
@@ -2058,7 +2058,7 @@
           },
           {
             "name": "Wall Glide",
-            "text": "**Requirements** The walcofinde is manifested using Structural Possession\n\n**Effect** The walcofinde's manifestation Strides, submerging into the wall and reemerging from the wall at the end of their movement. If the walcofinde takes 2 actions to Wall Glide, their manifestation can Stride twice before reemerging. In either case, they can move only within walls that are within 100 feet of their sealed chamber.",
+            "text": "**Requirements** The walcofinde is manifested using Structural Possession; **Effect** The walcofinde's manifestation Strides, submerging into the wall and reemerging from the wall at the end of their movement. If the walcofinde takes 2 actions to Wall Glide, their manifestation can Stride twice before reemerging. In either case, they can move only within walls that are within 100 feet of their sealed chamber.",
             "traits": [
               "concentrate"
             ],

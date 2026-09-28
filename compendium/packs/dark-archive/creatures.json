@@ -88,7 +88,7 @@
         "defensive": [
           {
             "name": "Regeneration 10 (Deactivated by Piercing)",
-            "text": "This monster regains the listed number of Hit Points each round at the beginning of its turn. Its [Dying](/condition/dying-player-core) condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.",
+            "text": "(see [Regeneration](/action/regeneration-monster-core))",
             "traits": []
           },
           {
@@ -101,7 +101,7 @@
           },
           {
             "name": "Displace",
-            "text": "**Trigger** The amalgamite is hit by a Strike\n\n**Effect** The amalgamite Relocates or Transposes themself with another creature. If the amalgamite successfully changes location, they and any Transposed creature take half damage from the triggering Strike.",
+            "text": "**Trigger** The amalgamite is hit by a Strike; **Effect** The amalgamite Relocates or Transposes themself with another creature. If the amalgamite successfully changes location, they and any Transposed creature take half damage from the triggering Strike.",
             "traits": [],
             "actions": "reaction"
           }
@@ -294,7 +294,7 @@
           },
           {
             "name": "Reactive Strike (Special)",
-            "text": "The Echo has reach 15 for the purpose of determining when Reactive Strike triggers and when making Reactive Strikes.\n\n**Trigger** A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.\n\n**Effect** The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
+            "text": "The Echo has reach 15 for the purpose of determining when Reactive Strike triggers and when making Reactive Strikes. (see [Reactive Strike](/action/reactive-strike-monster-core))",
             "traits": [],
             "actions": "reaction"
           }
@@ -307,19 +307,19 @@
           },
           {
             "name": "Astral Thread Control",
-            "text": "**Frequency** once per round\n\n**Requirements** The Echo's previous action was a successful thrown rope dart Strike\n\n**Effect** The Echo flicks his wrist and makes a follow-up thrown rope dart Strike at a different target within 30 feet of the first target, using the same multiple attack penalty as his previous Strike. Regardless of whether his attack hits, he then retrieves the weapon.",
+            "text": "**Frequency** once per round; **Requirements** The Echo's previous action was a successful thrown rope dart Strike; **Effect** The Echo flicks his wrist and makes a follow-up thrown rope dart Strike at a different target within 30 feet of the first target, using the same multiple attack penalty as his previous Strike. Regardless of whether his attack hits, he then retrieves the weapon.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Contingency Oathday-Nine-Rova",
-            "text": "**Frequency** once per day\n\n**Trigger** The Echo's turn begins and he's stunned, slowed, Confused, Controlled, Immobilized, Grabbed, Paralyzed, Restrained, or otherwise can't act\n\n**Effect** The Echo has set up numerous contingencies in the event he's compromised. Talismans on his body shatter, counteracting the triggering effect. The Echo can use this free action even if he can't act.",
+            "text": "**Frequency** once per day; **Trigger** The Echo's turn begins and he's stunned, slowed, Confused, Controlled, Immobilized, Grabbed, Paralyzed, Restrained, or otherwise can't act; **Effect** The Echo has set up numerous contingencies in the event he's compromised. Talismans on his body shatter, counteracting the triggering effect. The Echo can use this free action even if he can't act.",
             "traits": [],
             "actions": "free"
           },
           {
             "name": "Reconstitute from Thought",
-            "text": "**Requirements** The Echo is standing on one of the eight large islands of the map, and the island hasn't darkened\n\n**Effect** The Echo throws his rope dart into the island and uses it to absorb mental essence from the mindscape, repairing himself. He regains 45 healing Hit Points and the island turns a desaturated gray for 1 day, preventing future absorption and disabling the [Call Of The Void](/hazard/call-of-the-void-dark-archive) hazard on that island.",
+            "text": "**Requirements** The Echo is standing on one of the eight large islands of the map, and the island hasn't darkened; **Effect** The Echo throws his rope dart into the island and uses it to absorb mental essence from the mindscape, repairing himself. He regains 45 healing Hit Points and the island turns a desaturated gray for 1 day, preventing future absorption and disabling the [Call Of The Void](/hazard/call-of-the-void-dark-archive) hazard on that island.",
             "traits": [
               "healing"
             ],
@@ -467,7 +467,7 @@
         "offensive": [
           {
             "name": "Ascension is Near",
-            "text": "**Frequency** once per ascension ritual\n\n**Effect** Mitera activates the moonflower link with her followers. Any followers within 30 feet who failed their saving throw against the moonflower tea become Sickened 1. Anyone who critically failed and did not receive an antidote explodes (this is about half of Mitera's congregation if the PCs didn't successfully administer the antidote). If anyone's body explodes, Mitera gains 30 temporary HP and is Quickened for 3 rounds; she can use this additional action each round only for Strike and [Stride](/action/stride-player-core) actions.",
+            "text": "**Frequency** once per ascension ritual; **Effect** Mitera activates the moonflower link with her followers. Any followers within 30 feet who failed their saving throw against the moonflower tea become Sickened 1. Anyone who critically failed and did not receive an antidote explodes (this is about half of Mitera's congregation if the PCs didn't successfully administer the antidote). If anyone's body explodes, Mitera gains 30 temporary HP and is Quickened for 3 rounds; she can use this additional action each round only for Strike and [Stride](/action/stride-player-core) actions.",
             "traits": [
               "auditory",
               "concentrate",
@@ -700,7 +700,7 @@
         "offensive": [
           {
             "name": "Crystal Siphon",
-            "text": "**Requirements** The shadow and the target are both within 40 feet of the crystal that spawned the shadow, and the crystal isn't covered or obstructed\n\n**Effect** Shadows in the shape of tendrils curl around the target, drawing out a portion of the target's vitality and siphoning it into the crystal. The target takes 4d6 void damage (basic Fortitude DC 21). On a failure, they are also [Enfeebled 1](/condition/enfeebled-player-core). This enfeebled condition is cumulative with other enfeebled conditions from quartz-spawned shadows, to a maximum of enfeebled 4. If Crystal Siphon increases the creature's enfeebled value to 3 or more, the target's shadow is pulled entirely into the shadow's crystal.\n\nWhile the target's shadow is trapped, they feel an [Invisible](/condition/invisible-player-core) tether linking them to the crystal, and they become [Slowed 1](/condition/slowed-player-core) whenever they are more than 40 feet away from it. The enfeebled condition from Crystal Siphon can't be reduced until the crystal is broken; if the crystal is broken, the effect immediately ends.",
+            "text": "**Requirements** The shadow and the target are both within 40 feet of the crystal that spawned the shadow, and the crystal isn't covered or obstructed; **Effect** Shadows in the shape of tendrils curl around the target, drawing out a portion of the target's vitality and siphoning it into the crystal. The target takes 4d6 void damage (basic Fortitude DC 21). On a failure, they are also [Enfeebled 1](/condition/enfeebled-player-core). This enfeebled condition is cumulative with other enfeebled conditions from quartz-spawned shadows, to a maximum of enfeebled 4. If Crystal Siphon increases the creature's enfeebled value to 3 or more, the target's shadow is pulled entirely into the shadow's crystal.\n\nWhile the target's shadow is trapped, they feel an [Invisible](/condition/invisible-player-core) tether linking them to the crystal, and they become [Slowed 1](/condition/slowed-player-core) whenever they are more than 40 feet away from it. The enfeebled condition from Crystal Siphon can't be reduced until the crystal is broken; if the crystal is broken, the effect immediately ends.",
             "traits": [
               "death",
               "divine",
@@ -952,7 +952,7 @@
           },
           {
             "name": "Swallow Future",
-            "text": "**Frequency** once per minute\n\n**Effect** The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a 30-foot emanation of the morrowkin take 6d8+18 mental damage depending on their Will DC 39 save. Creatures wearing hope talismans can choose to let their hope talisman break in order to ignore the effect after seeing the result of their Will save.\n\n**Critical Success** The creature takes no damage.\n\n**Success** The creature takes half damage and is [Doomed 1](/condition/doomed-player-core).\n\n**Failure** The creature takes full damage and is Doomed 2.\n\n**Critical Failure** The creature takes double damage and becomes Doomed 4 (likely causing it to die immediately).",
+            "text": "**Frequency** once per minute; **Effect** The morrowkin inhales and draws forth the future deeds of all creatures around it. All creatures within a 30-foot emanation of the morrowkin take 6d8+18 mental damage depending on their Will DC 39 save. Creatures wearing hope talismans can choose to let their hope talisman break in order to ignore the effect after seeing the result of their Will save.\n\n**Critical Success** The creature takes no damage.\n\n**Success** The creature takes half damage and is [Doomed 1](/condition/doomed-player-core).\n\n**Failure** The creature takes full damage and is Doomed 2.\n\n**Critical Failure** The creature takes double damage and becomes Doomed 4 (likely causing it to die immediately).",
             "traits": [
               "mental",
               "void"
@@ -1090,14 +1090,14 @@
         "defensive": [
           {
             "name": "Fast Healing 10",
-            "text": "A monster with this ability regains the given number of Hit Points each round at the beginning of its turn.",
+            "text": "(see [Fast Healing](/action/fast-healing-monster-core))",
             "traits": []
           }
         ],
         "offensive": [
           {
             "name": "Pod Prison",
-            "text": "**Requirements** A creature is swallowed by the moonflower\n\n**Effect** The moonflower wraps the swallowed creature in a cocoon and extrudes it into an adjacent square. The creature continues to be Swallowed Whole and takes half damage from any damage dealt to the cocoon. Once the cocoon is Ruptured, it deflates and decays.",
+            "text": "**Requirements** A creature is swallowed by the moonflower; **Effect** The moonflower wraps the swallowed creature in a cocoon and extrudes it into an adjacent square. The creature continues to be Swallowed Whole and takes half damage from any damage dealt to the cocoon. Once the cocoon is Ruptured, it deflates and decays.",
             "traits": [],
             "actions": "free"
           },
@@ -1118,7 +1118,7 @@
           },
           {
             "name": "Swallow Whole",
-            "text": "Large, 2d10 + 10 bludgeoning and 2d6 acid, Rupture 21\n\nThe monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an Athletics check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.\n\nA swallowed creature is [Grabbed](/condition/grabbed-player-core), is [Slowed 1](/condition/slowed-player-core), and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim [Escapes](/action/escape-player-core) this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is [Off-Guard](/condition/off-guard-player-core) against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.\n\n[Effect: Engulf and Swallow Whole](/condition/effect-engulf-and-swallow-whole-monster-core)\n\nIf the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.",
+            "text": "Large, 2d10 + 10 bludgeoning and 2d6 acid, Rupture 21 (see [Swallow Whole](/action/swallow-whole-monster-core))",
             "traits": [
               "attack"
             ],
@@ -1126,7 +1126,7 @@
           },
           {
             "name": "Grab",
-            "text": "**Requirements** The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature Grabbed or [Restrained](/condition/restrained-player-core)\n\n**Effect** If used after a Strike, the monster attempts to Grapple the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.\n\nThe monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.",
+            "text": "(see [Grab](/action/grab-monster-core))",
             "traits": [],
             "actions": "one"
           }

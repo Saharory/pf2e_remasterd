@@ -11,13 +11,110 @@ from typing import Any
 GLOSSARY_PATH = Path(__file__).with_name("creature-ability-glossary.json")
 GLOSSARY: dict[str, str] = json.loads(GLOSSARY_PATH.read_text(encoding="utf-8"))
 SEPARATOR = re.compile(r"\n\s*---\s*\n")
+PARAGRAPH_SEPARATOR = re.compile(r"\n\s*---\s*\n|\n{2,}")
+
+# Creature stat blocks intentionally summarize these shared rules. The complete
+# explanation lives in the linked Action entry, mirroring the way the printed
+# bestiaries use page references instead of repeating the glossary in every
+# creature. A few legacy glossary names point to their remastered equivalents.
+GLOSSARY_ROUTES = {
+    "AllAroundVision": "/action/all-around-vision-monster-core",
+    "AquaticAmbush": "/action/aquatic-ambush-monster-core",
+    "AtWillSpells": "/action/at-will-spells-monster-core",
+    "AttackOfOpportunity": "/action/reactive-strike-monster-core",
+    "Aura": "/action/aura-monster-core",
+    "Buck": "/action/buck-monster-core",
+    "ChangeFormation": "/action/change-formation-npc-core",
+    "ChangeShape": "/action/change-shape-monster-core",
+    "ConstantSpells": "/action/constant-spells-monster-core",
+    "Constrict": "/action/constrict-monster-core",
+    "Coven": "/action/coven-monster-core",
+    "Darkvision": "/action/darkvision-player-core",
+    "Disease": "/action/disease-monster-core",
+    "Engulf": "/action/engulf-monster-core",
+    "FastHealing": "/action/fast-healing-monster-core",
+    "Ferocity": "/action/ferocity-monster-core",
+    "FrightfulPresence": "/action/frightful-presence-monster-core",
+    "Grab": "/action/grab-monster-core",
+    "GreaterConstrict": "/action/greater-constrict-monster-core",
+    "GreaterDarkvision": "/action/greater-darkvision-monster-core",
+    "ImprovedGrab": "/action/improved-grab-monster-core",
+    "ImprovedKnockdown": "/action/improved-knockdown-monster-core",
+    "ImprovedPush": "/action/improved-push-monster-core",
+    "Knockdown": "/action/knockdown-monster-core",
+    "Lifesense": "/action/lifesense-monster-core",
+    "LightBlindness": "/action/light-blindness-monster-core",
+    "LowLightVision": "/action/low-light-vision-monster-core",
+    "NegativeHealing": "/action/void-healing-monster-core",
+    "Poison": "/action/poison-monster-core",
+    "Pull": "/action/pull-monster-core",
+    "Push": "/action/push-monster-core",
+    "ReactiveStrike": "/action/reactive-strike-monster-core",
+    "Regeneration": "/action/regeneration-monster-core",
+    "Rend": "/action/rend-monster-core",
+    "RetributiveStrike": "/action/retributive-strike-player-core-2",
+    "Scent": "/action/scent-player-core",
+    "ShieldBlock": "/action/shield-block-monster-core",
+    "Stench": "/action/stench-monster-core",
+    "SwallowWhole": "/action/swallow-whole-monster-core",
+    "SwarmMind": "/action/swarm-mind-monster-core",
+    "Telepathy": "/action/telepathy-monster-core",
+    "ThrowRock": "/action/throw-rock-monster-core",
+    "Trample": "/action/trample-monster-core",
+    "Tremorsense": "/action/tremorsense-monster-core",
+    "TroopDefenses": "/action/troop-defenses-npc-core",
+    "TroopMovement": "/action/troop-movement-npc-core",
+    "Wavesense": "/action/wavesense-monster-core",
+}
+
+GLOSSARY_LABELS = {
+    "AllAroundVision": "All-Around Vision",
+    "AtWillSpells": "At-Will Spells",
+    "AttackOfOpportunity": "Reactive Strike",
+    "LowLightVision": "Low-Light Vision",
+    "NegativeHealing": "Void Healing",
+}
 
 
 def normalize(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", value.casefold())
 
 
+GLOSSARY_CODES_BY_KEY = {normalize(code): code for code in GLOSSARY}
 GLOSSARY_BY_KEY = {normalize(code): text for code, text in GLOSSARY.items()}
+GLOSSARY_CODES_BY_TEXT = {normalize(text): code for code, text in GLOSSARY.items()}
+
+
+def glossary_label(code: str) -> str:
+    if code in GLOSSARY_LABELS:
+        return GLOSSARY_LABELS[code]
+    return re.sub(r"(?<=[a-z])(?=[A-Z])", " ", code)
+
+
+def compact_stat_block_sections(value: str) -> str:
+    """Keep an ability's setup labels and Effect in one readable paragraph."""
+    parts = [part.strip() for part in PARAGRAPH_SEPARATOR.split(value)]
+    if len(parts) < 2:
+        return value.strip()
+
+    inline_labels = {"cost", "frequency", "trigger", "requirement", "requirements", "effect"}
+
+    def leading_label(part: str) -> str:
+        match = re.match(r"\*\*([^*]+)\*\*", part)
+        return normalize(match.group(1)) if match else ""
+
+    result = parts[0]
+    previous_label = leading_label(parts[0])
+    for part in parts[1:]:
+        current_label = leading_label(part)
+        separator = (
+            "; "
+            if previous_label in inline_labels and current_label in inline_labels
+            else "\n\n"
+        )
+        result += separator + part
+        previous_label = current_label
+    return result.strip()
 
 
 def expanded_text(name: str, value: str) -> str:
@@ -48,6 +145,31 @@ def expanded_text(name: str, value: str) -> str:
     return text
 
 
+def creature_ability_text(name: str, value: str) -> str:
+    """Keep creature-specific text and link out to reusable shared rules."""
+    text = str(value or "").strip()
+    parts = [part.strip() for part in SEPARATOR.split(text)]
+    direct_code = GLOSSARY_CODES_BY_KEY.get(normalize(text)) or GLOSSARY_CODES_BY_TEXT.get(
+        normalize(text)
+    )
+    tail_code = GLOSSARY_CODES_BY_KEY.get(normalize(parts[-1])) if parts else None
+    code = direct_code or tail_code
+
+    if code and code in GLOSSARY_ROUTES:
+        specific = "" if direct_code else compact_stat_block_sections("\n\n---\n\n".join(parts[:-1]))
+        label = glossary_label(code)
+        reference = f"(see [{label}]({GLOSSARY_ROUTES[code]}))"
+        return f"{specific} {reference}".strip()
+
+    # Some legacy glossary entries have no standalone public reference. A
+    # creature-specific prefix already contains everything the stat block
+    # needs, so discard only its duplicate glossary tail. A bare token still
+    # needs the complete rule because there is nowhere useful to link.
+    if tail_code and not direct_code:
+        return compact_stat_block_sections("\n\n---\n\n".join(parts[:-1]))
+    return compact_stat_block_sections(expanded_text(name, text))
+
+
 def configure_creature_abilities(entity: dict[str, Any]) -> int:
     """Apply editable, complete ability text to an Action or Creature."""
     changed = 0
@@ -70,7 +192,7 @@ def configure_creature_abilities(entity: dict[str, Any]) -> int:
             if not isinstance(ability, dict):
                 continue
             original = str(ability.get("text") or "")
-            updated = expanded_text(str(ability.get("name") or ""), original)
+            updated = creature_ability_text(str(ability.get("name") or ""), original)
             if updated != original:
                 ability["text"] = updated
                 changed += 1
