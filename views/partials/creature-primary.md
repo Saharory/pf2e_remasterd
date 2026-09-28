@@ -7,7 +7,7 @@
 {% endif %}
 
 {% if data.languages %}
-**{{'Creature.Languages'|l}}** {% for language in data.languages %}{{language|map: 'Language'}}{% if not forloop.last %}, {% endif %}{% endfor %}
+**{{'Creature.Languages'|l}}** {% for language in data.languages %}{{language|map: 'Language'}}{% if not forloop.last %}, {% endif %}{% endfor %}{% if data.languagesDetails %}; {{data.languagesDetails}}{% endif %}
 {% endif %}
 
 {% if data.skills %}

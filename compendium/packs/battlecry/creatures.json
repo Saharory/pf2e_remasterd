@@ -63,7 +63,8 @@
       },
       "movement": {
         "walk": 30,
-        "fly": 40
+        "fly": 40,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -149,6 +150,7 @@
           "slug": "troop"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -345,14 +347,32 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {
         "area-damage": 8,
         "splash-damage": 8
       },
       "resistances": {},
       "movement": {
-        "walk": 20
+        "walk": 20,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -407,7 +427,8 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "hardness": 10
     },
     "attributes": {
       "remaster": true,
@@ -489,7 +510,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -720,7 +742,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "area-damage": 10,
@@ -733,7 +755,8 @@
         "piercing": 8
       },
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -878,7 +901,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -1027,7 +1051,8 @@
       "resistances": {},
       "movement": {
         "walk": 30,
-        "fly": 60
+        "fly": 60,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -1109,6 +1134,7 @@
           "slug": "troop"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -1227,7 +1253,7 @@
         "boggard",
         "common"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "area-damage": 10,
@@ -1236,7 +1262,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "swim": 25
+        "swim": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -1410,7 +1437,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "swim": 25
+        "swim": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -1563,7 +1591,7 @@
         "draconic",
         "mwangi"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 8,
@@ -1572,7 +1600,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "climb": 25
+        "climb": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -1703,7 +1732,24 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {
         "area-damage": 10,
         "electricity": 10,
@@ -1711,10 +1757,11 @@
         "orichalcum": 10
       },
       "resistances": {
-        "physical": 5
+        "physical": "5 (except Adamantine, Orichalcum)"
       },
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -1855,7 +1902,24 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {
         "area-damage": 5,
         "electricity": 5,
@@ -1865,7 +1929,8 @@
       "resistances": {},
       "movement": {
         "walk": 30,
-        "climb": 20
+        "climb": 20,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -2005,7 +2070,7 @@
         "stealth": 15
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 6,
@@ -2013,7 +2078,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 30
+        "walk": 30,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -2140,7 +2206,7 @@
         "stealth": 29
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "area-damage": 15,
@@ -2150,7 +2216,8 @@
         "acid": 20
       },
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -2310,7 +2377,7 @@
       "languages": [
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Paralyzed",
         "Sleep"
@@ -2327,7 +2394,8 @@
       },
       "movement": {
         "walk": 25,
-        "fly": 50
+        "fly": 50,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -2467,7 +2535,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -2618,7 +2687,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -2859,7 +2929,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 20
+        "walk": 20,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -2998,7 +3069,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 20
+        "walk": 20,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -3135,7 +3207,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -3280,7 +3353,8 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Acid"
+        "Acid",
+        "Mental"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -3288,7 +3362,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 30
+        "walk": 30,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -3355,7 +3430,8 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "languagesDetails": "(cant speak any language)"
     },
     "attributes": {
       "remaster": true,
@@ -3435,11 +3511,12 @@
         "splash-damage": 10
       },
       "resistances": {
-        "physical": 10
+        "physical": "10 (except Adamantine)"
       },
       "movement": {
         "walk": 25,
-        "fly": 40
+        "fly": 40,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -3568,7 +3645,7 @@
         "survival": 15
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 7,
@@ -3577,7 +3654,8 @@
       "resistances": {},
       "movement": {
         "walk": 40,
-        "climb": 20
+        "climb": 20,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -3716,7 +3794,7 @@
         "fey",
         "gnomish"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "area-damage": 8,
@@ -3724,7 +3802,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -3868,7 +3947,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -4010,7 +4090,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -4215,7 +4296,7 @@
       "languages": [
         "diabolic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Fire"
       ],
@@ -4226,7 +4307,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 40
+        "walk": 40,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -4303,7 +4385,8 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "languagesDetails": "(cant speak any language)"
     },
     "attributes": {
       "remaster": true,
@@ -4384,7 +4467,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -4535,7 +4619,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -4678,7 +4763,7 @@
       "languages": [
         "daemonic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), plaguesense (imprecise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -4691,7 +4776,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "fly": 40
+        "fly": 40,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -4784,6 +4870,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -4910,7 +4997,8 @@
         "cold": 15
       },
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -5334,7 +5422,8 @@
       "resistances": {},
       "movement": {
         "walk": 15,
-        "climb": 15
+        "climb": 15,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -5526,7 +5615,8 @@
       "resistances": {},
       "movement": {
         "walk": 35,
-        "climb": 20
+        "climb": 20,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -5669,7 +5759,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 30
+        "walk": 30,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -5839,7 +5930,8 @@
       "movement": {
         "walk": 40,
         "climb": 20,
-        "swim": 80
+        "swim": 80,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -5928,6 +6020,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -6064,7 +6157,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -6205,7 +6299,7 @@
         "protean",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), entropy sense (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 10,
@@ -6218,7 +6312,8 @@
       "movement": {
         "walk": 25,
         "fly": 30,
-        "swim": 25
+        "swim": 25,
+        "other": "troop movement, unfettered movement"
       },
       "attacks": [],
       "abilities": {
@@ -6418,7 +6513,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 35
+        "walk": 35,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -6580,7 +6676,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -6712,7 +6809,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "area-damage": 10,
@@ -6720,7 +6817,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 50
+        "walk": 50,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -6865,7 +6963,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet, smoke vision",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -6880,7 +6978,8 @@
       "movement": {
         "walk": 20,
         "burrow": 20,
-        "fly": 25
+        "fly": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -7060,7 +7159,8 @@
       "movement": {
         "walk": 20,
         "fly": 25,
-        "swim": 25
+        "swim": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -7216,7 +7316,7 @@
       "languages": [
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Fire",
         "Bleed",
@@ -7232,7 +7332,8 @@
       "resistances": {},
       "movement": {
         "walk": 20,
-        "fly": 25
+        "fly": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -7421,7 +7522,8 @@
       },
       "movement": {
         "walk": 20,
-        "fly": 25
+        "fly": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -7598,7 +7700,8 @@
       "resistances": {},
       "movement": {
         "walk": 20,
-        "fly": 25
+        "fly": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -7760,7 +7863,7 @@
       "languages": [
         "sussuran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), fog vision",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -7775,7 +7878,8 @@
       "movement": {
         "walk": 20,
         "burrow": 20,
-        "fly": 40
+        "fly": 40,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -7938,7 +8042,7 @@
         "aklo",
         "thassilonian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), sin [scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Controlled"
       ],
@@ -7950,7 +8054,8 @@
         "mental": 10
       },
       "movement": {
-        "walk": 30
+        "walk": 30,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -8090,7 +8195,8 @@
         "Disease",
         "Paralyzed",
         "Poison",
-        "Unconscious"
+        "Unconscious",
+        "Mental"
       ],
       "weaknesses": {
         "area-damage": 7,
@@ -8104,7 +8210,8 @@
         "slashing": 7
       },
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -8252,7 +8359,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Lifesense](/action/lifesense-monster-core) 60 feet",
+      "senses": "[Lifesense](/action/lifesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -8267,7 +8374,8 @@
       },
       "movement": {
         "walk": 25,
-        "fly": 40
+        "fly": 40,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -8486,7 +8594,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -8642,11 +8751,12 @@
         "holy": 10
       },
       "resistances": {
-        "physical": 10,
+        "physical": "10 (except Silver)",
         "poison": 10
       },
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -8733,6 +8843,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -8836,7 +8947,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -8985,7 +9097,7 @@
         "survival": 15
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 5,
@@ -8993,7 +9105,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 35
+        "walk": 35,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -9121,7 +9234,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -9265,7 +9379,7 @@
         "draconic",
         "sakvroth"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 15,
@@ -9273,7 +9387,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 30
+        "walk": 30,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -9439,7 +9554,8 @@
       "movement": {
         "walk": 30,
         "burrow": 20,
-        "climb": 20
+        "climb": 20,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {

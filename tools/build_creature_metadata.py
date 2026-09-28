@@ -1,0 +1,182 @@
+#!/usr/bin/env python3
+"""Build deterministic creature metadata omitted by the original converter."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+from collections import defaultdict
+from pathlib import Path
+from typing import Any, Iterable
+
+
+REPO = Path(__file__).resolve().parents[1]
+DEFAULT_STAGING = REPO.parent / "structured-modules"
+DEFAULT_FOUNDRY = REPO.parent / "foundry-pf2e" / "packs" / "pf2e"
+DEFAULT_OUTPUT = REPO / "tools" / "creature-metadata.json"
+
+SENSE_NAMES = {
+    "greater-darkvision": "Greater Darkvision",
+    "low-light-vision": "Low-Light Vision",
+    "motion-sense": "Motion Sense",
+    "see-invisibility": "See Invisibility",
+}
+
+# Foundry intentionally stores these in the trait rather than repeating them
+# on every actor. A printed stat block still needs the complete list.
+TRAIT_IMMUNITIES = {
+    "mindless": {"mental"},
+    "swarm": {"grabbed", "prone", "restrained"},
+    "construct": {
+        "bleed", "death-effects", "disease", "doomed", "drained",
+        "fatigued", "healing", "mental", "nonlethal-attacks", "paralyzed",
+        "poison", "sickened", "spirit", "unconscious", "vitality", "void",
+    },
+}
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--staging", type=Path, default=DEFAULT_STAGING)
+    parser.add_argument("--foundry", type=Path, default=DEFAULT_FOUNDRY)
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    return parser.parse_args()
+
+
+def title(value: str) -> str:
+    return " ".join(part.capitalize() for part in value.replace("_", "-").split("-"))
+
+
+def clean_text(value: Any) -> str:
+    if not isinstance(value, str):
+        return ""
+    text = re.sub(r"<[^>]+>", "", value)
+    text = re.sub(r"@UUID\[[^]]+\]\{([^}]+)\}", r"\1", text)
+    text = re.sub(r"@\w+\[[^]]+\](?:\{([^}]+)\})?", lambda m: m.group(1) or "", text)
+    return " ".join(text.replace("&nbsp;", " ").split()).strip(" ;")
+
+
+def format_sense(sense: dict[str, Any]) -> str:
+    kind = str(sense.get("type") or "")
+    value = SENSE_NAMES.get(kind, title(kind))
+    acuity = str(sense.get("acuity") or "")
+    if acuity:
+        value += f" ({acuity})"
+    distance = sense.get("range")
+    if distance:
+        value += f" {distance} feet"
+    return value
+
+
+def format_defense(entry: dict[str, Any], include_value: bool) -> tuple[str, int | str]:
+    kind = str(entry.get("type") or "")
+    value: int | str = int(entry.get("value") or 0) if include_value else title(kind)
+    qualifiers: list[str] = []
+    exceptions = entry.get("exceptions") or []
+    if exceptions:
+        qualifiers.append("except " + ", ".join(title(str(item)) for item in exceptions))
+    double_vs = entry.get("doubleVs") or []
+    if double_vs:
+        qualifiers.append("double vs. " + ", ".join(title(str(item)) for item in double_vs))
+    if include_value and qualifiers:
+        value = f"{value} ({'; '.join(qualifiers)})"
+    elif not include_value and qualifiers:
+        value = f"{value} ({'; '.join(qualifiers)})"
+    return kind, value
+
+
+def actor_metadata(actor: dict[str, Any]) -> dict[str, Any]:
+    system = actor.get("system", {})
+    perception = system.get("perception", {}) if isinstance(system.get("perception"), dict) else {}
+    attributes = system.get("attributes", {}) if isinstance(system.get("attributes"), dict) else {}
+    details = system.get("details", {}) if isinstance(system.get("details"), dict) else {}
+    traits_data = system.get("traits", {}) if isinstance(system.get("traits"), dict) else {}
+    traits = {str(value) for value in traits_data.get("value", [])}
+
+    senses = [format_sense(value) for value in perception.get("senses", []) if isinstance(value, dict)]
+    perception_details = clean_text(perception.get("details"))
+    if perception_details:
+        senses.append(perception_details)
+
+    explicit: list[str] = []
+    for value in attributes.get("immunities") or []:
+        if isinstance(value, dict) and value.get("type"):
+            _, rendered = format_defense(value, False)
+            explicit.append(str(rendered))
+    for trait in traits:
+        explicit.extend(title(value) for value in TRAIT_IMMUNITIES.get(trait, set()))
+
+    saves = system.get("saves", {}) if isinstance(system.get("saves"), dict) else {}
+    save_details = []
+    for key, label in (("fortitude", "Fortitude"), ("reflex", "Reflex"), ("will", "Will")):
+        save = saves.get(key, {}) if isinstance(saves.get(key), dict) else {}
+        value = clean_text(save.get("saveDetail"))
+        if value:
+            save_details.append(f"{label} {value}")
+
+    languages = details.get("languages", {}) if isinstance(details.get("languages"), dict) else {}
+    speed = attributes.get("speed", {}) if isinstance(attributes.get("speed"), dict) else {}
+    hardness = attributes.get("hardness")
+    hardness_value = hardness.get("value") if isinstance(hardness, dict) else None
+
+    result: dict[str, Any] = {
+        "senses": ", ".join(dict.fromkeys(filter(None, senses))),
+        "languages": list(dict.fromkeys(str(value) for value in languages.get("value", []))),
+        "languagesDetails": clean_text(languages.get("details")),
+        "acDetails": clean_text((attributes.get("ac") or {}).get("details")) if isinstance(attributes.get("ac"), dict) else "",
+        "hpDetails": clean_text((attributes.get("hp") or {}).get("details")) if isinstance(attributes.get("hp"), dict) else "",
+        "savesDetails": "; ".join(save_details),
+        "immunities": sorted(dict.fromkeys(explicit), key=str.casefold),
+        "weaknesses": {},
+        "resistances": {},
+        "movementOther": clean_text(speed.get("details")),
+    }
+    if hardness_value:
+        result["hardness"] = int(hardness_value)
+    for field in ("weaknesses", "resistances"):
+        for entry in attributes.get(field) or []:
+            if not isinstance(entry, dict) or not entry.get("type"):
+                continue
+            key, value = format_defense(entry, True)
+            result[field][key] = value
+    return {
+        key: value
+        for key, value in result.items()
+        if key == "languages" or value not in (None, "", [], {})
+    }
+
+
+def actor_index(foundry: Path) -> dict[str, list[dict[str, Any]]]:
+    result: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for path in sorted(foundry.rglob("*.json")):
+        value = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(value, dict) and value.get("type") == "npc" and value.get("_id"):
+            result[str(value["_id"])].append(value)
+    return result
+
+
+def staging_creatures(staging: Path) -> Iterable[dict[str, Any]]:
+    for path in sorted(staging.glob("*/creatures.json")):
+        yield from json.loads(path.read_text(encoding="utf-8"))
+
+
+def main() -> int:
+    args = parse_args()
+    actors = actor_index(args.foundry)
+    catalog: dict[str, dict[str, Any]] = {}
+    for creature in staging_creatures(args.staging):
+        foundry_id = str(creature.get("attributes", {}).get("foundryId") or "")
+        candidates = actors.get(foundry_id, [])
+        if not candidates:
+            continue
+        actor = next((value for value in candidates if value.get("name") == creature.get("name")), candidates[0])
+        catalog[str(creature["slug"])] = actor_metadata(actor)
+    payload = {"stats": {"creatures": len(catalog)}, "creatures": dict(sorted(catalog.items()))}
+    args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps(payload["stats"], sort_keys=True))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

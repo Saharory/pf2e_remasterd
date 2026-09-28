@@ -153,6 +153,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -254,10 +255,27 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {
-        "physical": 20,
+        "physical": "20 (except Vorpal Adamantine)",
         "spells": 20
       },
       "movement": {
@@ -404,7 +422,7 @@
         "adlet",
         "common"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Cold"
       ],
@@ -687,6 +705,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -981,7 +1000,7 @@
       "languages": [
         "common"
       ],
-      "senses": "[Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -1293,7 +1312,7 @@
         "empyrean",
         "protean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), entropy sense (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -1303,7 +1322,8 @@
       "movement": {
         "walk": 25,
         "fly": 25,
-        "swim": 25
+        "swim": 25,
+        "other": "unfettered movement"
       },
       "attacks": [
         {
@@ -1433,6 +1453,7 @@
           "slug": "protean"
         }
       ],
+      "languagesDetails": "Telepathy touch only",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -1557,7 +1578,7 @@
         "athletics": 17
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -1719,7 +1740,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "fire": 15,
@@ -1827,7 +1848,8 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "languagesDetails": "Muan cant speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -1895,13 +1917,17 @@
         "stealth": 1
       },
       "languages": [],
-      "senses": "Motion Sense 60 feet",
+      "senses": "Motion Sense (precise) 60 feet",
       "immunities": [
         "Acid",
         "Critical Hits",
         "Precision",
         "Unconscious",
-        "Visual"
+        "Visual",
+        "Mental",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 3,
@@ -2032,7 +2058,7 @@
         "stealth": 12
       },
       "languages": [],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Petrified"
       ],
@@ -2286,6 +2312,7 @@
           "slug": "light"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -2421,7 +2448,7 @@
       ],
       "weaknesses": {},
       "resistances": {
-        "all-damage": 5
+        "all-damage": "5 (except Force, Ghost Touch, Spirit, Void; double vs. Non Magical)"
       },
       "movement": {
         "fly": 40
@@ -2491,6 +2518,7 @@
           "slug": "incorporeal"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -2606,7 +2634,24 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {},
       "movement": {
@@ -2699,7 +2744,8 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "hardness": 15
     },
     "attributes": {
       "remaster": true,
@@ -2765,7 +2811,24 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {},
       "movement": {
@@ -2834,7 +2897,8 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "hardness": 10
     },
     "attributes": {
       "remaster": true,
@@ -2902,7 +2966,26 @@
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Precision"
+        "Precision",
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 3,
@@ -2960,7 +3043,8 @@
           "label": "swarm",
           "slug": "swarm"
         }
-      ]
+      ],
+      "hardness": 3
     },
     "attributes": {
       "remaster": true,
@@ -3027,7 +3111,24 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {},
       "movement": {
@@ -3106,7 +3207,8 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "hardness": 14
     },
     "attributes": {
       "remaster": true,
@@ -3435,6 +3537,7 @@
           "slug": "aquatic"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -3564,7 +3667,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {
         "axe-vulnerability": 10,
@@ -3656,6 +3759,7 @@
           "slug": "wood"
         }
       ],
+      "languagesDetails": "speak with plants",
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -3777,7 +3881,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "axe-vulnerability": 5,
@@ -3964,9 +4068,10 @@
         "athletics": 23
       },
       "languages": [],
-      "senses": "Bloodsense 120 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "Bloodsense (precise) 120 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
-        "Visual"
+        "Visual",
+        "Mental"
       ],
       "weaknesses": {},
       "resistances": {
@@ -4152,7 +4257,7 @@
         "common",
         "jotun"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -4555,7 +4660,7 @@
         "sakvroth",
         "thassilonian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), true sin [scent](/action/scent-monster-core) (precise) 60 feet",
       "immunities": [
         "Controlled"
       ],
@@ -4914,7 +5019,7 @@
         "diabolic",
         "shadowtongue"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core)",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), painsight",
       "immunities": [
         "Cold"
       ],
@@ -5016,6 +5121,7 @@
           "slug": "velstrac"
         }
       ],
+      "languagesDetails": "can't speak any language",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -5151,7 +5257,7 @@
         "holy": 10
       },
       "resistances": {
-        "physical": 10
+        "physical": "10 (except Silver)"
       },
       "movement": {
         "walk": 15
@@ -5251,6 +5357,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Arcane Innate Spells",
@@ -5390,7 +5497,7 @@
         "stealth": 6
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -5514,7 +5621,7 @@
       "languages": [
         "aklo"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 80 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 80 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -5714,7 +5821,8 @@
         "Paralyzed",
         "Poison",
         "Unconscious",
-        "Bleed"
+        "Bleed",
+        "Mental"
       ],
       "weaknesses": {},
       "resistances": {
@@ -5874,7 +5982,7 @@
         "survival": 17
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -6044,13 +6152,14 @@
         "common",
         "jotun"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
       "movement": {
         "walk": 30,
-        "swim": 30
+        "swim": 30,
+        "other": "15 while waterlogged"
       },
       "attacks": [
         {
@@ -6209,7 +6318,7 @@
         "common",
         "shadowtongue"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core)",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), fearsense (precise) 60 feet",
       "immunities": [
         "Disease",
         "Paralyzed",
@@ -6218,7 +6327,7 @@
       ],
       "weaknesses": {},
       "resistances": {
-        "all-damage": 10
+        "all-damage": "10 (except Force, Ghost Touch, Vitality; double vs. Non Magical)"
       },
       "movement": {
         "walk": 40
@@ -6395,7 +6504,7 @@
         "common",
         "diabolic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet, Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, Truesight (precise) 60 feet",
       "immunities": [
         "Curse",
         "Disease",
@@ -6554,6 +6663,7 @@
           "slug": "spirit"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -6726,7 +6836,7 @@
         "survival": 10
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -6865,7 +6975,7 @@
       "languages": [
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), snow vision",
       "immunities": [
         "Bleed",
         "Cold",
@@ -6879,7 +6989,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "burrow": 20
+        "burrow": 20,
+        "other": "ice burrow only"
       },
       "attacks": [
         {
@@ -7015,7 +7126,7 @@
         "diabolic",
         "jotun"
       ],
-      "senses": "Bloodsense 90 feet, [Darkvision](/action/darkvision-monster-core)",
+      "senses": "Bloodsense (imprecise) 90 feet, [Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed"
       ],
@@ -7333,7 +7444,7 @@
         "aklo",
         "common"
       ],
-      "senses": "Bloodsense 60 feet, [Darkvision](/action/darkvision-monster-core)",
+      "senses": "Bloodsense (imprecise) 60 feet, [Darkvision](/action/darkvision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -7524,7 +7635,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 5
@@ -7789,6 +7900,7 @@
           "slug": "mental"
         }
       ],
+      "languagesDetails": "telepathy 100 feet, universal language",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -7901,10 +8013,13 @@
         "stealth": 11
       },
       "languages": [],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Precision",
-        "Swarm Mind"
+        "Swarm Mind",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -8048,7 +8163,7 @@
         "fey",
         "gnomish"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 3
@@ -8343,6 +8458,7 @@
           "slug": "monitor"
         }
       ],
+      "languagesDetails": "envisioning",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -8711,7 +8827,7 @@
         "caligni",
         "sakvroth"
       ],
-      "senses": "Echolocation 60 feet",
+      "senses": "Echolocation (precise) 60 feet",
       "immunities": [
         "Visual"
       ],
@@ -8876,7 +8992,7 @@
         "common",
         "jotun"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Electricity"
       ],
@@ -9078,7 +9194,7 @@
         "survival": 6
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -9205,7 +9321,7 @@
         "survival": 6
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), treasure sense (imprecise) 500 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -9282,6 +9398,7 @@
           "slug": "beast"
         }
       ],
+      "languagesDetails": "carbuncle empathy 30 feet",
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -9386,7 +9503,7 @@
         "athletics": 27
       },
       "languages": [],
-      "senses": "Motion Sense 240 feet",
+      "senses": "Motion Sense (precise) 240 feet",
       "immunities": [
         "Acid",
         "Critical Hits",
@@ -9395,7 +9512,8 @@
         "Slashing",
         "Sonic",
         "Unconscious",
-        "Visual"
+        "Visual",
+        "Mental"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -9726,7 +9844,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -9843,6 +9961,7 @@
           "slug": "psychopomp"
         }
       ],
+      "languagesDetails": "Telepathy 120 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -10321,10 +10440,27 @@
         "common"
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {
-        "physical": 10
+        "physical": "10 (except Adamantine)"
       },
       "movement": {
         "walk": 25,
@@ -10408,7 +10544,8 @@
           "label": "construct",
           "slug": "construct"
         }
-      ]
+      ],
+      "languagesDetails": "One other language the champion knew in life usually jistkan, Telepathy 60 feet"
     },
     "attributes": {
       "remaster": true,
@@ -10483,7 +10620,7 @@
         "draconic",
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, smoke vision",
       "immunities": [
         "Fire",
         "Paralyzed",
@@ -10735,7 +10872,7 @@
         "draconic",
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, smoke vision",
       "immunities": [
         "Fire",
         "Paralyzed",
@@ -11130,7 +11267,7 @@
         "draconic",
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, smoke vision",
       "immunities": [
         "Fire",
         "Paralyzed",
@@ -11392,7 +11529,7 @@
         "draconic",
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, smoke vision",
       "immunities": [
         "Fire",
         "Paralyzed",
@@ -11858,7 +11995,7 @@
         "draconic",
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, smoke vision",
       "immunities": [
         "Fire",
         "Paralyzed",
@@ -12100,7 +12237,7 @@
         "draconic",
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, smoke vision",
       "immunities": [
         "Fire",
         "Paralyzed",
@@ -12443,13 +12580,30 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {
         "electricity": 15,
         "orichalcum": 15
       },
       "resistances": {
-        "physical": 15
+        "physical": "15 (except Adamantine, Orichalcum)"
       },
       "movement": {
         "walk": 40,
@@ -12629,13 +12783,30 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {
         "electricity": 10,
         "orichalcum": 10
       },
       "resistances": {
-        "physical": 5
+        "physical": "5 (except Adamantine, Orichalcum)"
       },
       "movement": {
         "walk": 25
@@ -12904,16 +13075,34 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {
         "electricity": 5,
         "orichalcum": 5
       },
       "resistances": {
-        "physical": 5
+        "physical": "5 (except Adamantine, Orichalcum)"
       },
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "+2 vs. Disarm"
       },
       "attacks": [
         {
@@ -13067,8 +13256,25 @@
         "acrobatics": 5
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
-      "immunities": [],
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {
         "electricity": 2,
         "orichalcum": 2
@@ -13201,10 +13407,13 @@
         "stealth": 8
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Precision",
-        "Swarm Mind"
+        "Swarm Mind",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -13325,7 +13534,7 @@
         "stealth": 10
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Grabbed",
         "Precision",
@@ -13472,7 +13681,7 @@
         "draconic",
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Dazzled",
         "Paralyzed",
@@ -13686,7 +13895,7 @@
         "draconic",
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Dazzled",
         "Paralyzed",
@@ -14058,7 +14267,7 @@
         "draconic",
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Dazzled",
         "Paralyzed",
@@ -14280,7 +14489,7 @@
         "draconic",
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Dazzled",
         "Paralyzed",
@@ -14716,7 +14925,7 @@
         "draconic",
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Dazzled",
         "Paralyzed",
@@ -14928,7 +15137,7 @@
         "draconic",
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Dazzled",
         "Paralyzed",
@@ -15248,7 +15457,7 @@
       ],
       "weaknesses": {},
       "resistances": {
-        "all-damage": 2
+        "all-damage": "2 (except Force, Ghost Touch, Spirit; double vs. Non Magical)"
       },
       "movement": {
         "walk": 40
@@ -15329,6 +15538,7 @@
           "slug": "spirit"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -15545,6 +15755,7 @@
           "slug": "shadow"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -15642,7 +15853,7 @@
         "empyrean",
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet, [Wavesense](/action/wavesense-monster-core) 100 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet, [Wavesense](/action/wavesense-monster-core) (imprecise) 100 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -15652,7 +15863,8 @@
       "movement": {
         "walk": 50,
         "fly": 50,
-        "swim": 40
+        "swim": 40,
+        "other": "water walk"
       },
       "attacks": [
         {
@@ -15782,6 +15994,7 @@
           "slug": "water"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -15967,7 +16180,7 @@
         "aklo",
         "common"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -16152,7 +16365,7 @@
         "aklo",
         "common"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 120 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 120 feet",
       "immunities": [
         "Cold"
       ],
@@ -16354,7 +16567,7 @@
         "aklo",
         "common"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -16619,7 +16832,7 @@
         "draconic",
         "empyrean"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core)",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), (+36 to sense motive)",
       "immunities": [
         "Fire"
       ],
@@ -16627,7 +16840,7 @@
         "holy": 15
       },
       "resistances": {
-        "physical": 15
+        "physical": "15 (except Silver)"
       },
       "movement": {
         "walk": 30,
@@ -16747,6 +16960,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "indominable oration, telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -17014,6 +17228,7 @@
           "slug": "dream"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -17336,7 +17551,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, fearsense (imprecise) 60 feet",
       "immunities": [
         "Fear Effects",
         "Paralyzed",
@@ -17493,6 +17708,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 90 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -17596,7 +17812,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, fearsense (imprecise) 60 feet",
       "immunities": [
         "Fear Effects",
         "Paralyzed",
@@ -17742,6 +17958,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 90 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Occult Prepared Spells",
@@ -17997,7 +18214,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, fearsense (precise) 60 feet",
       "immunities": [
         "Fear Effects",
         "Paralyzed",
@@ -18163,6 +18380,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 90 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -18271,7 +18489,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, fearsense (precise) 60 feet",
       "immunities": [
         "Fear Effects",
         "Paralyzed",
@@ -18426,6 +18644,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 90 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Occult Prepared Spells",
@@ -18731,7 +18950,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet, fearsense (imprecise) 60 feet",
       "immunities": [
         "Fear Effects",
         "Paralyzed",
@@ -18879,6 +19098,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 60 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -18982,7 +19202,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet, fearsense (imprecise) 60 feet",
       "immunities": [
         "Fear Effects",
         "Paralyzed",
@@ -19119,6 +19339,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 60 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Occult Prepared Spells",
@@ -19343,7 +19564,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "fly": 60
+        "fly": 60,
+        "other": "swiftness"
       },
       "attacks": [
         {
@@ -19461,6 +19683,7 @@
           "slug": "elemental"
         }
       ],
+      "languagesDetails": "cant speak any language, Telepathy 100, Truespeech",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -19602,7 +19825,7 @@
         "draconic",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), planar sight 120 feet",
       "immunities": [
         "Death Effects",
         "Polymorph",
@@ -19880,8 +20103,25 @@
         "thievery": 15
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
-      "immunities": [],
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {},
       "movement": {
@@ -20029,7 +20269,24 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {},
       "movement": {
@@ -20316,6 +20573,7 @@
           "slug": "aberration"
         }
       ],
+      "languagesDetails": "Two other languages, Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -20403,7 +20661,7 @@
         "common",
         "fey"
       ],
-      "senses": "",
+      "senses": "[tremorsense](/action/tremorsense-monster-core) (imprecise) within their entire bound home",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 4
@@ -20887,6 +21145,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy (touch)",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -21022,7 +21281,7 @@
         "draconic",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -21100,6 +21359,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Speak with animals, Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -21434,7 +21694,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Lifesense](/action/lifesense-monster-core) 120 feet",
+      "senses": "[Lifesense](/action/lifesense-monster-core) (precise) 120 feet",
       "immunities": [],
       "weaknesses": {
         "fire": 10
@@ -21530,7 +21790,8 @@
           "label": "plant",
           "slug": "plant"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language, Telepathy 100 feet"
     },
     "attributes": {
       "remaster": true,
@@ -21690,7 +21951,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -21756,7 +22018,7 @@
         "stealth": 7
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), web sense",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -21890,7 +22152,7 @@
         "common",
         "fey"
       ],
-      "senses": "",
+      "senses": "[tremorsense](/action/tremorsense-monster-core) (imprecise) within their entire bound yard",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 5
@@ -22078,7 +22340,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet, detect magic",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -22266,7 +22528,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -22412,7 +22674,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -22423,7 +22685,8 @@
       "resistances": {},
       "movement": {
         "walk": 50,
-        "burrow": 30
+        "burrow": 30,
+        "other": "earth glide"
       },
       "attacks": [
         {
@@ -22769,7 +23032,7 @@
         "athletics": 17
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -22930,7 +23193,7 @@
         "common",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -23043,6 +23306,7 @@
           "slug": "titan"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -23252,7 +23516,8 @@
           "label": "fire",
           "slug": "fire"
         }
-      ]
+      ],
+      "languagesDetails": "can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -23318,7 +23583,7 @@
         "survival": 11
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -23453,7 +23718,7 @@
         "diabolic",
         "shadowtongue"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), Truesight 5 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), Truesight (precise) 5 feet, painsight",
       "immunities": [
         "Cold",
         "Fear Effects",
@@ -23610,6 +23875,7 @@
           "slug": "velstrac"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -23777,7 +24043,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 120 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 120 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -23789,7 +24055,8 @@
       },
       "movement": {
         "walk": 25,
-        "fly": 40
+        "fly": 40,
+        "other": "unfettered movement"
       },
       "attacks": [
         {
@@ -24127,6 +24394,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy touch",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -24252,7 +24520,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 60 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -24595,7 +24863,7 @@
         "diabolic",
         "shadowtongue"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core)",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), painsight",
       "immunities": [
         "Cold"
       ],
@@ -24910,6 +25178,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -25069,7 +25338,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Bleed",
         "Disease",
@@ -25079,7 +25348,7 @@
       ],
       "weaknesses": {},
       "resistances": {
-        "all-damage": 10
+        "all-damage": "10 (except Force, Ghost Touch, Spirit; double vs. Non Magical)"
       },
       "movement": {
         "walk": 35
@@ -25192,6 +25461,7 @@
           "slug": "spirit"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -25315,7 +25585,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Precision",
-        "Swarm Mind"
+        "Swarm Mind",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -25461,7 +25734,7 @@
         "holy": 10
       },
       "resistances": {
-        "physical": 10
+        "physical": "10 (except Silver)"
       },
       "movement": {
         "walk": 25,
@@ -25588,6 +25861,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -26071,7 +26345,7 @@
       "languages": [
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Bleed",
         "Fire",
@@ -26147,7 +26421,8 @@
           "label": "fire",
           "slug": "fire"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -26214,11 +26489,15 @@
         "acrobatics": 15
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [
         "Critical Hits",
         "Precision",
-        "Swarm Mind"
+        "Swarm Mind",
+        "Mental",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 7,
@@ -26363,7 +26642,7 @@
       "languages": [
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -26521,7 +26800,8 @@
         "Fire",
         "Paralyzed",
         "Poison",
-        "Unconscious"
+        "Unconscious",
+        "Mental"
       ],
       "weaknesses": {
         "vitality": 3
@@ -26859,7 +27139,7 @@
         "common",
         "protean"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -27254,7 +27534,8 @@
           "label": "spirit",
           "slug": "spirit"
         }
-      ]
+      ],
+      "languagesDetails": "Telepathy 60 feet"
     },
     "attributes": {
       "remaster": true,
@@ -27439,6 +27720,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Plus two others, Speaker of the skies",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -27565,10 +27847,11 @@
         "splash-damage": 8
       },
       "resistances": {
-        "all-damage": 10
+        "all-damage": "10 (except Force, Ghost Touch, Spirit, Vitality; double vs. Non Magical)"
       },
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -27720,13 +28003,14 @@
         "stealth": 3
       },
       "languages": [],
-      "senses": "Motion Sense 60 feet",
+      "senses": "Motion Sense (precise) 60 feet",
       "immunities": [
         "Acid",
         "Critical Hits",
         "Precision",
         "Unconscious",
-        "Visual"
+        "Visual",
+        "Mental"
       ],
       "weaknesses": {
         "slashing": 5
@@ -27871,7 +28155,7 @@
         "stealth": 7
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -28003,7 +28287,7 @@
         "stealth": 10
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -28136,7 +28420,7 @@
         "stealth": 8
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -28253,7 +28537,7 @@
       "immunities": [],
       "weaknesses": {},
       "resistances": {
-        "physical": 3
+        "physical": "3 (except Bludgeoning)"
       },
       "movement": {
         "walk": 25,
@@ -28386,7 +28670,7 @@
         "stealth": 12
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -28512,7 +28796,7 @@
         "stealth": 9
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Wavesense](/action/wavesense-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -28633,7 +28917,7 @@
         "athletics": 6
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -28758,7 +29042,7 @@
         "stealth": 7
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -28892,7 +29176,8 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Critical Hits",
-        "Precision"
+        "Precision",
+        "Mental"
       ],
       "weaknesses": {
         "piercing": 5,
@@ -29024,7 +29309,7 @@
         "stealth": 7
       },
       "languages": [],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "salt": 5
@@ -29151,7 +29436,7 @@
         "athletics": 6
       },
       "languages": [],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) (precise) 30 feet",
       "immunities": [
         "Visual"
       ],
@@ -29280,7 +29565,7 @@
         "stealth": 13
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -29405,7 +29690,7 @@
         "survival": 6
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -29569,7 +29854,7 @@
         "common",
         "girtablilu"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -29903,7 +30188,7 @@
         "common",
         "girtablilu"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -30196,6 +30481,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -30358,7 +30644,7 @@
         "common",
         "goblin"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -30433,7 +30719,8 @@
           "label": "goblin",
           "slug": "goblin"
         }
-      ]
+      ],
+      "languagesDetails": "snake empathy"
     },
     "attributes": {
       "remaster": true,
@@ -30506,7 +30793,7 @@
         "common",
         "goblin"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -30599,7 +30886,8 @@
           "label": "mutant",
           "slug": "mutant"
         }
-      ]
+      ],
+      "languagesDetails": "snake empathy"
     },
     "attributes": {
       "remaster": true,
@@ -30671,7 +30959,23 @@
       ],
       "senses": "",
       "immunities": [
-        "Acid"
+        "Acid",
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -30748,6 +31052,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "can't speak any language",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -30881,7 +31186,7 @@
         "athletics": 18
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 90 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 90 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -30892,7 +31197,8 @@
       "resistances": {},
       "movement": {
         "walk": 30,
-        "burrow": 20
+        "burrow": 20,
+        "other": "earth glide"
       },
       "attacks": [
         {
@@ -31736,7 +32042,7 @@
         "fey",
         "wildsong"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), plantsense 60 feet",
       "immunities": [],
       "weaknesses": {
         "axe-vulnerability": 20,
@@ -31866,6 +32172,7 @@
           "slug": "plant"
         }
       ],
+      "languagesDetails": "Green tongue",
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -32064,7 +32371,7 @@
       "languages": [
         "sakvroth"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 2
@@ -32238,7 +32545,7 @@
         "aklo",
         "grioth"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), Echolocation 20 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), Echolocation (precise) 20 feet",
       "immunities": [
         "Cold"
       ],
@@ -32364,6 +32671,7 @@
           "slug": "humanoid"
         }
       ],
+      "languagesDetails": "Telepathy 30 feet",
       "spellcasting": [
         {
           "name": "Divine Prepared Spells",
@@ -32559,7 +32867,7 @@
         "aklo",
         "grioth"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), Echolocation 20 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), Echolocation (precise) 20 feet",
       "immunities": [
         "Cold"
       ],
@@ -32675,6 +32983,7 @@
           "slug": "humanoid"
         }
       ],
+      "languagesDetails": "telepathy 30 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -32789,14 +33098,14 @@
       "languages": [
         "common"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Disease"
       ],
       "weaknesses": {},
       "resistances": {
         "fire": 10,
-        "physical": 10
+        "physical": "10 (except Bludgeoning)"
       },
       "movement": {
         "walk": 35,
@@ -32884,7 +33193,8 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -33293,7 +33603,7 @@
         "stealth": 2
       },
       "languages": [],
-      "senses": "Motion Sense 30 feet",
+      "senses": "Motion Sense (precise) 30 feet",
       "immunities": [
         "Acid",
         "Bleed",
@@ -33516,7 +33826,8 @@
           "label": "aberration",
           "slug": "aberration"
         }
-      ]
+      ],
+      "languagesDetails": "telepathy (touch)"
     },
     "attributes": {
       "remaster": true,
@@ -33757,7 +34068,7 @@
         "common",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -33766,7 +34077,8 @@
       "resistances": {},
       "movement": {
         "walk": 60,
-        "fly": 60
+        "fly": 60,
+        "other": "unfettered movement"
       },
       "attacks": [
         {
@@ -33890,6 +34202,7 @@
           "slug": "titan"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -34196,14 +34509,14 @@
       "languages": [
         "diabolic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "holy": 5
       },
       "resistances": {
         "fire": 10,
-        "physical": 5
+        "physical": "5 (except Silver)"
       },
       "movement": {
         "walk": 25
@@ -34313,7 +34626,8 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language, Fiendish telepathy 100 feet"
     },
     "attributes": {
       "remaster": true,
@@ -34380,10 +34694,13 @@
         "athletics": 12
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 15 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 15 feet",
       "immunities": [
         "Precision",
-        "Swarm Mind"
+        "Swarm Mind",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -34524,7 +34841,7 @@
         "fey",
         "utopian"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 10
@@ -34735,7 +35052,7 @@
         "fey",
         "utopian"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 15
@@ -35193,7 +35510,7 @@
         "survival": 11
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -35335,7 +35652,7 @@
       "languages": [
         "muan"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, branchlocation (precise) 30 feet",
       "immunities": [
         "Bleed"
       ],
@@ -35343,7 +35660,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "swim": 30
+        "swim": 30,
+        "other": "walk through plants"
       },
       "attacks": [
         {
@@ -35428,7 +35746,8 @@
           "label": "plant",
           "slug": "plant"
         }
-      ]
+      ],
+      "languagesDetails": "can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -35495,7 +35814,7 @@
       "languages": [
         "common"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -35586,7 +35905,8 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -35865,7 +36185,7 @@
       "languages": [
         "muan"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 40 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 40 feet",
       "immunities": [
         "Bleed"
       ],
@@ -35874,7 +36194,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 30
+        "walk": 30,
+        "other": "walk through plants"
       },
       "attacks": [
         {
@@ -35944,7 +36265,8 @@
           "label": "plant",
           "slug": "plant"
         }
-      ]
+      ],
+      "languagesDetails": "can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -36016,7 +36338,7 @@
         "diabolic",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Sleep",
         "Paralyzed"
@@ -36206,7 +36528,7 @@
       ],
       "weaknesses": {},
       "resistances": {
-        "all-damage": 5
+        "all-damage": "5 (except Force, Ghost Touch, Spirit, Vitality; double vs. Non Magical)"
       },
       "movement": {
         "fly": 25
@@ -36296,7 +36618,8 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "languagesDetails": "One other language"
     },
     "attributes": {
       "remaster": true,
@@ -36483,6 +36806,7 @@
           "slug": "aberration"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -36750,7 +37074,8 @@
           "label": "spirit",
           "slug": "spirit"
         }
-      ]
+      ],
+      "languagesDetails": "telepathy 30 feet"
     },
     "attributes": {
       "remaster": true,
@@ -36830,7 +37155,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 30
+        "walk": 30,
+        "other": "ice passage"
       },
       "attacks": [
         {
@@ -37021,7 +37347,7 @@
       "languages": [
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 120 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 120 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -37256,7 +37582,8 @@
       "movement": {
         "walk": 25,
         "burrow": 20,
-        "swim": 60
+        "swim": 60,
+        "other": "ice burrow only"
       },
       "attacks": [
         {
@@ -37542,7 +37869,7 @@
         "athletics": 15
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -37677,7 +38004,7 @@
         "empyrean",
         "protean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), entropy sense (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -37687,7 +38014,8 @@
       "movement": {
         "walk": 25,
         "fly": 25,
-        "swim": 25
+        "swim": 25,
+        "other": "unfettered movement"
       },
       "attacks": [
         {
@@ -37834,6 +38162,7 @@
           "slug": "protean"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -38081,7 +38410,8 @@
           "label": "amphibious",
           "slug": "amphibious"
         }
-      ]
+      ],
+      "languagesDetails": "Telepathy 30 feet"
     },
     "attributes": {
       "remaster": true,
@@ -38158,7 +38488,7 @@
         "diabolic",
         "shadowtongue"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core)",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), painsight",
       "immunities": [
         "Cold"
       ],
@@ -38413,7 +38743,7 @@
         "jotun",
         "sussuran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), stormsight",
       "immunities": [
         "Electricity"
       ],
@@ -38423,7 +38753,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "fly": 40
+        "fly": 40,
+        "other": "storm passage"
       },
       "attacks": [
         {
@@ -38532,6 +38863,7 @@
           "slug": "humanoid"
         }
       ],
+      "languagesDetails": "Voice of the storm",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -38755,7 +39087,8 @@
       "resistances": {},
       "movement": {
         "walk": 30,
-        "climb": 30
+        "climb": 30,
+        "other": "stone step"
       },
       "attacks": [
         {
@@ -38929,7 +39262,7 @@
         "empyrean",
         "protean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), entropy sense (imprecise) 120 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -38940,7 +39273,8 @@
       "movement": {
         "walk": 40,
         "fly": 50,
-        "swim": 40
+        "swim": 40,
+        "other": "unfettered movement"
       },
       "attacks": [
         {
@@ -39108,6 +39442,7 @@
           "slug": "protean"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -39428,6 +39763,7 @@
           "slug": "humanoid"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -39585,7 +39921,7 @@
         "petran",
         "shadowtongue"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -40310,7 +40646,7 @@
         "empyrean",
         "utopian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Fear Effects"
       ],
@@ -40451,6 +40787,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -40737,7 +41074,7 @@
         "draconic",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), See Invisibility",
+      "senses": "[Darkvision](/action/darkvision-monster-core), See Invisibility, warp sense",
       "immunities": [
         "Poison"
       ],
@@ -40863,6 +41200,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -41048,7 +41386,7 @@
         "fey",
         "thalassic"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 5
@@ -41192,7 +41530,7 @@
         "survival": 18
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -41369,7 +41707,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Fear Effects"
@@ -41532,6 +41870,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -41825,6 +42164,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "speak with animals, telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -42284,6 +42624,7 @@
           "slug": "wood"
         }
       ],
+      "languagesDetails": "Speak with plants, Telepathy 50 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -42687,6 +43028,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -42807,7 +43149,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "climb": 25
+        "climb": 25,
+        "other": "climb on stone only"
       },
       "attacks": [
         {
@@ -43026,7 +43369,8 @@
       "resistances": {},
       "movement": {
         "walk": 30,
-        "climb": 30
+        "climb": 30,
+        "other": "climb on stone only"
       },
       "attacks": [
         {
@@ -43152,6 +43496,7 @@
           "slug": "nymph"
         }
       ],
+      "languagesDetails": "Speak with stones",
       "spellcasting": [
         {
           "name": "Primal Prepared Spells",
@@ -43487,7 +43832,7 @@
         "fey",
         "thalassic"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 10
@@ -43714,7 +44059,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -43918,13 +44263,29 @@
       ],
       "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core)",
       "immunities": [
-        "Fire"
+        "Fire",
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
       ],
       "weaknesses": {
         "holy": 5
       },
       "resistances": {
-        "physical": 5
+        "physical": "5 (except Silver)"
       },
       "movement": {
         "walk": 30,
@@ -44056,6 +44417,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "rituals": {
         "type": "Rituals",
         "ritualGroups": [
@@ -44137,7 +44499,7 @@
         "stealth": 5
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -44148,7 +44510,8 @@
       "resistances": {},
       "movement": {
         "walk": 20,
-        "burrow": 20
+        "burrow": 20,
+        "other": "earth glide"
       },
       "attacks": [
         {
@@ -44276,7 +44639,8 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "fly": 50
+        "fly": 50,
+        "other": "swiftness"
       },
       "attacks": [
         {
@@ -44415,7 +44779,7 @@
       "languages": [
         "common"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 30 feet",
       "immunities": [
         "Bleed",
         "Death Effects",
@@ -44532,6 +44896,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Can't speak any language",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -44844,7 +45209,7 @@
         "athletics": 16
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Bleed",
         "Fire",
@@ -45007,7 +45372,7 @@
         "chthonian",
         "common"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), blood [scent](/action/scent-monster-core)",
       "immunities": [],
       "weaknesses": {
         "fire": 5
@@ -45181,7 +45546,7 @@
         "elven",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [
         "Fire"
       ],
@@ -45189,7 +45554,7 @@
         "cold-iron": 15
       },
       "resistances": {
-        "physical": 10
+        "physical": "10 (except Slashing)"
       },
       "movement": {
         "walk": 30,
@@ -45406,7 +45771,7 @@
         "stealth": 15
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -45544,7 +45909,7 @@
         "common",
         "daemonic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Death Effects"
       ],
@@ -45671,6 +46036,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -45817,7 +46183,8 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "fly": 100
+        "fly": 100,
+        "other": "swiftness"
       },
       "attacks": [
         {
@@ -45974,7 +46341,7 @@
         "aklo",
         "common"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (precise) 30 feet",
       "immunities": [
         "Cold"
       ],
@@ -46057,7 +46424,8 @@
           "label": "fungus",
           "slug": "fungus"
         }
-      ]
+      ],
+      "languagesDetails": "Mi go"
     },
     "attributes": {
       "remaster": true,
@@ -46128,7 +46496,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 10
@@ -46420,7 +46788,7 @@
       "languages": [
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), mist vision",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -46691,6 +47059,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -46875,7 +47244,8 @@
       "movement": {
         "walk": 25,
         "fly": 20,
-        "swim": 30
+        "swim": 30,
+        "other": "swamp stride"
       },
       "attacks": [
         {
@@ -46982,6 +47352,7 @@
           "slug": "beast"
         }
       ],
+      "languagesDetails": "speak with animals",
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -47450,7 +47821,7 @@
         "intimidation": 8
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -47752,7 +48123,7 @@
         "munavri",
         "sakvroth"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), light blindness",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -47831,6 +48202,7 @@
           "slug": "munavri"
         }
       ],
+      "languagesDetails": "Telepathy 30 feet (munavris only)",
       "spellcasting": [
         {
           "name": "Occult Spontaneous Spells",
@@ -48123,7 +48495,7 @@
       "languages": [
         "sakvroth"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "slashing": 5
@@ -48204,7 +48576,8 @@
           "label": "fungus",
           "slug": "fungus"
         }
-      ]
+      ],
+      "languagesDetails": "Telepathy 100 feet (myceloids and those afflicted by purple pox only)"
     },
     "attributes": {
       "remaster": true,
@@ -48451,7 +48824,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -48590,7 +48963,7 @@
       "languages": [
         "aklo"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 120 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 120 feet, taste fear, vestigial eyes",
       "immunities": [
         "Precision"
       ],
@@ -48762,7 +49135,7 @@
         "diabolic",
         "necril"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 60 feet",
       "immunities": [
         "Cold",
         "Death Effects",
@@ -48924,6 +49297,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -49052,7 +49426,7 @@
         "empyrean",
         "protean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), entropy sense (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -49062,7 +49436,8 @@
       "movement": {
         "walk": 25,
         "fly": 30,
-        "swim": 25
+        "swim": 25,
+        "other": "unfettered movement"
       },
       "attacks": [
         {
@@ -49336,7 +49711,7 @@
       "languages": [
         "aklo"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Thoughtsense 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Thoughtsense (precise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -49429,7 +49804,8 @@
           "label": "dream",
           "slug": "dream"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -49503,7 +49879,7 @@
         "common",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "unholy": 15
@@ -49612,6 +49988,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -49789,7 +50166,7 @@
         "fey",
         "thalassic"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 3
@@ -50117,6 +50494,7 @@
           "slug": "vampire"
         }
       ],
+      "languagesDetails": "Telepathy 60 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -50392,6 +50770,7 @@
           "slug": "vampire"
         }
       ],
+      "languagesDetails": "Telepathy 60 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -50673,7 +51052,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 100 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 100 feet",
       "immunities": [
         "Disease",
         "Fear Effects"
@@ -50768,6 +51147,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy 60 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -50980,6 +51360,7 @@
           "slug": "amphibious"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -51143,7 +51524,7 @@
         "common",
         "daemonic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Death Effects"
       ],
@@ -51280,6 +51661,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -51434,7 +51816,7 @@
         "athletics": 13
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), web sense",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -51695,6 +52077,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -52002,7 +52385,7 @@
         "diabolic",
         "shadowtongue"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core)",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), painsight, sense portal",
       "immunities": [
         "Cold"
       ],
@@ -52129,6 +52512,7 @@
           "slug": "velstrac"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -52403,7 +52787,7 @@
         "common",
         "fey"
       ],
-      "senses": "",
+      "senses": "[tremorsense](/action/tremorsense-monster-core) (imprecise) within their entire bound granary or storeroom",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 5
@@ -52692,6 +53076,7 @@
           "slug": "shadow"
         }
       ],
+      "languagesDetails": "cant speak any languages, Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -52962,6 +53347,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "cant speak any languages, Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -53133,7 +53519,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Lifesense](/action/lifesense-monster-core) 120 feet, [Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Lifesense](/action/lifesense-monster-core) (precise) 120 feet, [Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 10
@@ -53222,6 +53608,7 @@
           "slug": "fey"
         }
       ],
+      "languagesDetails": "Can't speak any language, Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -53373,7 +53760,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Lifesense](/action/lifesense-monster-core) 120 feet, [Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Lifesense](/action/lifesense-monster-core) (precise) 120 feet, [Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 10
@@ -53458,7 +53845,8 @@
           "label": "summoned",
           "slug": "summoned"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language, Telepathy 100 feet"
     },
     "attributes": {
       "remaster": true,
@@ -53648,6 +54036,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -53786,7 +54175,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Fear Effects",
         "Poison"
@@ -53913,6 +54302,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet, Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -54230,7 +54620,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Immobilized",
         "Paralyzed",
@@ -54506,7 +54896,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Immobilized",
         "Paralyzed",
@@ -54923,7 +55313,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Immobilized",
         "Paralyzed",
@@ -55239,7 +55629,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Immobilized",
         "Paralyzed",
@@ -55741,7 +56131,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Immobilized",
         "Paralyzed",
@@ -55990,7 +56380,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Immobilized",
         "Paralyzed",
@@ -56337,7 +56727,7 @@
         "common",
         "daemonic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Fear Effects"
@@ -56482,6 +56872,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -56650,7 +57041,7 @@
         "stealth": 11
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -56793,7 +57184,24 @@
         "common"
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {
         "fire": 2
       },
@@ -56877,7 +57285,8 @@
           "label": "humanoid",
           "slug": "humanoid"
         }
-      ]
+      ],
+      "languagesDetails": "one language their creator speaks"
     },
     "attributes": {
       "remaster": true,
@@ -56948,7 +57357,24 @@
         "common"
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {
         "fire": 3
       },
@@ -57023,6 +57449,7 @@
           "slug": "humanoid"
         }
       ],
+      "languagesDetails": "two languages their creator speaks",
       "spellcasting": [
         {
           "name": "Arcane Prepared Spells",
@@ -57149,7 +57576,7 @@
       "languages": [
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [
         "Acid"
       ],
@@ -57247,7 +57674,8 @@
           "label": "plant",
           "slug": "plant"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -57420,6 +57848,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "speak with animals, truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -57586,11 +58015,28 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {
         "mental": 15,
-        "physical": 15
+        "physical": "15 (except Adamantine)"
       },
       "movement": {
         "walk": 30,
@@ -57672,6 +58118,7 @@
           "slug": "construct"
         }
       ],
+      "languagesDetails": "any one ancient language (such as Jistkan)",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -57910,6 +58357,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -58125,10 +58573,13 @@
         "stealth": 8
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Precision",
-        "Swarm Mind"
+        "Swarm Mind",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 3,
@@ -58253,10 +58704,13 @@
         "thievery": 10
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [
         "Swarm Mind",
-        "Precision"
+        "Precision",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -58393,7 +58847,7 @@
         "necril",
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, smoke vision, soulsense 60 feet",
       "immunities": [
         "Bleed",
         "Death Effects",
@@ -58674,7 +59128,7 @@
         "athletics": 28
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), soulsense 60 feet",
       "immunities": [
         "Bleed",
         "Death Effects",
@@ -58868,7 +59322,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 90 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 90 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet, status sight",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -59124,7 +59578,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 90 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 90 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet, status sight",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -59526,7 +59980,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 120 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 120 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet, status sight",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -59792,7 +60246,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 120 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 120 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet, status sight",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -60265,7 +60719,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 60 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet, status sight",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -60517,7 +60971,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 60 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet, status sight",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -60873,7 +61327,7 @@
         "draconic",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -61149,7 +61603,7 @@
         "draconic",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -61552,7 +62006,7 @@
         "draconic",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -61833,7 +62287,7 @@
         "draconic",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -62301,7 +62755,7 @@
         "draconic",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -62547,7 +63001,7 @@
         "draconic",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Death Effects",
         "Paralyzed",
@@ -62879,7 +63333,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense 60 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense (imprecise) 60 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Paralyzed",
         "Sleep"
@@ -63028,7 +63482,8 @@
           "label": "dragon",
           "slug": "dragon"
         }
-      ]
+      ],
+      "languagesDetails": "Seven additional common languages"
     },
     "attributes": {
       "remaster": true,
@@ -63103,7 +63558,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense 60 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense (imprecise) 60 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Paralyzed",
         "Sleep"
@@ -63242,6 +63697,7 @@
           "slug": "dragon"
         }
       ],
+      "languagesDetails": "Seven additional common languages",
       "spellcasting": [
         {
           "name": "Arcane Prepared Spells",
@@ -63475,7 +63931,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense 60 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense (imprecise) 60 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Paralyzed",
         "Sleep"
@@ -63632,7 +64088,8 @@
           "label": "dragon",
           "slug": "dragon"
         }
-      ]
+      ],
+      "languagesDetails": "All common languages, 5 additional languages"
     },
     "attributes": {
       "remaster": true,
@@ -63707,7 +64164,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense 60 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense (imprecise) 60 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Paralyzed",
         "Sleep"
@@ -63854,6 +64311,7 @@
           "slug": "dragon"
         }
       ],
+      "languagesDetails": "All common languages, 5 additional languages",
       "spellcasting": [
         {
           "name": "Arcane Prepared Spells",
@@ -64147,7 +64605,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense 60 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense (imprecise) 60 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Paralyzed",
         "Sleep"
@@ -64279,7 +64737,8 @@
           "label": "dragon",
           "slug": "dragon"
         }
-      ]
+      ],
+      "languagesDetails": "Five additional common languages"
     },
     "attributes": {
       "remaster": true,
@@ -64354,7 +64813,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense 60 feet, [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Magicsense (imprecise) 60 feet, [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Paralyzed",
         "Sleep"
@@ -64476,6 +64935,7 @@
           "slug": "dragon"
         }
       ],
+      "languagesDetails": "Five additional common languages",
       "spellcasting": [
         {
           "name": "Arcane Prepared Spells",
@@ -64668,7 +65128,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 15
@@ -64678,7 +65138,8 @@
       },
       "movement": {
         "walk": 25,
-        "swim": 50
+        "swim": 50,
+        "other": "water walk"
       },
       "attacks": [
         {
@@ -64904,7 +65365,7 @@
         "chthonian",
         "mwangi"
       ],
-      "senses": "Echolocation 20 feet, [Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "Echolocation (precise) 20 feet, [Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -65082,7 +65543,7 @@
         "diabolic",
         "shadowtongue"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core)",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), painsight",
       "immunities": [
         "Cold"
       ],
@@ -65417,6 +65878,7 @@
           "slug": "wood"
         }
       ],
+      "languagesDetails": "Speak with plants, Telepathy 150 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -65572,7 +66034,7 @@
         "empyrean",
         "samsaran"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -65759,7 +66221,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -65770,7 +66232,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "burrow": 50
+        "burrow": 50,
+        "other": "earth glide"
       },
       "attacks": [
         {
@@ -65895,7 +66358,7 @@
       "languages": [
         "aklo"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 120 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 120 feet",
       "immunities": [
         "Death Effects",
         "Drained"
@@ -65904,7 +66367,7 @@
         "holy": 10
       },
       "resistances": {
-        "physical": 5
+        "physical": "5 (except Adamantine)"
       },
       "movement": {
         "walk": 30,
@@ -66144,7 +66607,7 @@
         "survival": 5
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -66398,6 +66861,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -66571,7 +67035,8 @@
         "Disease",
         "Paralyzed",
         "Poison",
-        "Unconscious"
+        "Unconscious",
+        "Mental"
       ],
       "weaknesses": {
         "vitality": 1
@@ -66879,7 +67344,8 @@
           "label": "shade",
           "slug": "shade"
         }
-      ]
+      ],
+      "languagesDetails": "any one spoken in life (such as common)"
     },
     "attributes": {
       "remaster": true,
@@ -67718,7 +68184,8 @@
           "label": "shade",
           "slug": "shade"
         }
-      ]
+      ],
+      "languagesDetails": "any one spoken in life (such as common)"
     },
     "attributes": {
       "remaster": true,
@@ -69263,7 +69730,8 @@
           "label": "shade",
           "slug": "shade"
         }
-      ]
+      ],
+      "languagesDetails": "any one spoken in life (such as common)"
     },
     "attributes": {
       "remaster": true,
@@ -69346,7 +69814,8 @@
       },
       "movement": {
         "walk": 25,
-        "fly": 35
+        "fly": 35,
+        "other": "swift steps, tenebral form"
       },
       "attacks": [
         {
@@ -69714,7 +70183,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 20
+        "walk": 20,
+        "other": "flatten"
       },
       "attacks": [
         {
@@ -69857,7 +70327,7 @@
       "languages": [
         "aklo"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet, [Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Blinded",
         "Controlled",
@@ -70149,6 +70619,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy (touch)",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -70272,7 +70743,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -70363,6 +70834,7 @@
           "slug": "psychopomp"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -70546,7 +71018,7 @@
         "athletics": 12
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "fire": 6
@@ -70789,6 +71261,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "speak with animals",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -70937,7 +71410,7 @@
         "aklo",
         "sakvroth"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Echolocation 40 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Echolocation (precise) 40 feet",
       "immunities": [
         "Death Effects",
         "Disease",
@@ -71112,7 +71585,8 @@
         "Paralyzed",
         "Poison",
         "Unconscious",
-        "Bleed"
+        "Bleed",
+        "Mental"
       ],
       "weaknesses": {},
       "resistances": {
@@ -71338,7 +71812,8 @@
         "slashing": 10
       },
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -71487,10 +71962,13 @@
         "aklo",
         "common"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Precision",
-        "Swarm Mind"
+        "Swarm Mind",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -71700,7 +72178,7 @@
         "stealth": 16
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -71836,12 +72314,13 @@
         "stealth": 6
       },
       "languages": [],
-      "senses": "Motion Sense 60 feet",
+      "senses": "Motion Sense (precise) 60 feet",
       "immunities": [
         "Critical Hits",
         "Precision",
         "Unconscious",
-        "Visual"
+        "Visual",
+        "Mental"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -71968,14 +72447,15 @@
         "stealth": 10
       },
       "languages": [],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Acid",
         "Bleed",
         "Critical Hits",
         "Precision",
         "Unconscious",
-        "Visual"
+        "Visual",
+        "Mental"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -72129,7 +72609,7 @@
       "languages": [
         "sussuran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -72378,6 +72858,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -72631,7 +73112,8 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "languagesDetails": "can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -73853,7 +74335,7 @@
         "athletics": 0
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -73978,7 +74460,7 @@
         "athletics": 23
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -74137,7 +74619,24 @@
       },
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {},
       "movement": {
@@ -74210,7 +74709,8 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "hardness": 10
     },
     "attributes": {
       "remaster": true,
@@ -74276,10 +74776,13 @@
         "stealth": 17
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [
         "Precision",
-        "Swarm Mind"
+        "Swarm Mind",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 7,
@@ -74421,7 +74924,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), heed the fettered (imprecise) 120 feet",
       "immunities": [
         "Confused",
         "Fear Effects"
@@ -74521,6 +75024,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -74737,10 +75241,27 @@
         "common"
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {
-        "physical": 5
+        "physical": "5 (except Adamantine)"
       },
       "movement": {
         "walk": 30,
@@ -74822,6 +75343,7 @@
           "slug": "construct"
         }
       ],
+      "languagesDetails": "One other language the stalker knew in life usually jistkan, Telepathy 60 feet",
       "spellcasting": [
         {
           "name": "Arcane Innate Spells",
@@ -75007,7 +75529,8 @@
           "label": "holy",
           "slug": "holy"
         }
-      ]
+      ],
+      "languagesDetails": "Telepathy 60 feet"
     },
     "attributes": {
       "remaster": true,
@@ -75162,6 +75685,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "telepathy 60 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -75258,7 +75782,7 @@
         "jotun",
         "sussuran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), stormsight",
       "immunities": [
         "Electricity"
       ],
@@ -75268,7 +75792,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "fly": 40
+        "fly": 40,
+        "other": "storm passage"
       },
       "attacks": [
         {
@@ -75371,6 +75896,7 @@
           "slug": "humanoid"
         }
       ],
+      "languagesDetails": "Voice of the storm",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -75579,7 +76105,7 @@
       "languages": [
         "pyric"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Bleed",
         "Fire",
@@ -75719,7 +76245,7 @@
         "common",
         "strix"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -75868,7 +76394,7 @@
         "common",
         "strix"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -76024,7 +76550,7 @@
         "jotun",
         "petran"
       ],
-      "senses": "",
+      "senses": "gemsight",
       "immunities": [
         "Paralyzed",
         "Petrified",
@@ -76034,7 +76560,7 @@
         "cold-iron": 5
       },
       "resistances": {
-        "physical": 10
+        "physical": "10 (except Adamantine)"
       },
       "movement": {
         "walk": 25
@@ -76619,7 +77145,7 @@
         "aklo",
         "necril"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Death Effects",
         "Drained"
@@ -76853,7 +77379,24 @@
       },
       "languages": [],
       "senses": "",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {},
       "movement": {
@@ -77038,7 +77581,7 @@
         "diabolic",
         "necril"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease",
@@ -77183,6 +77726,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -77790,7 +78334,7 @@
         "draconic",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), fingers upon the loom (precise) 60 feet",
       "immunities": [],
       "weaknesses": {
         "unholy": 10
@@ -77799,7 +78343,8 @@
         "cold": 10
       },
       "movement": {
-        "walk": 30
+        "walk": 30,
+        "other": "dancer across the heavens, unfettered movement"
       },
       "attacks": [
         {
@@ -77877,6 +78422,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -78036,7 +78582,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 100 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 100 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -78136,7 +78682,8 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -78201,7 +78748,7 @@
         "athletics": 8
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -78331,7 +78878,7 @@
         "athletics": 12
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -78487,7 +79034,7 @@
         "common",
         "daemonic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Death Effects"
       ],
@@ -78620,6 +79167,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -78786,7 +79334,7 @@
         "common",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -78924,6 +79472,7 @@
           "slug": "titan"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -79191,6 +79740,7 @@
           "slug": "monitor"
         }
       ],
+      "languagesDetails": "envisioning",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -79336,10 +79886,13 @@
         "sakvroth",
         "shadowtongue"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Precision",
-        "Swarm Mind"
+        "Swarm Mind",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 15,
@@ -79559,7 +80112,7 @@
         "common",
         "jotun"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -79755,7 +80308,7 @@
       "languages": [
         "muan"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Bleed"
       ],
@@ -79764,7 +80317,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 40
+        "walk": 40,
+        "other": "walk through plants"
       },
       "attacks": [
         {
@@ -79830,7 +80384,8 @@
           "label": "plant",
           "slug": "plant"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -79900,7 +80455,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {
         "mental": 10
@@ -80086,7 +80641,7 @@
         "jotun",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Death Effects"
       ],
@@ -80635,6 +81190,7 @@
           "slug": "wood"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -80724,7 +81280,7 @@
         "thievery": 5
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -80840,7 +81396,7 @@
         "survival": 4
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -80963,10 +81519,13 @@
         "survival": 7
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Swarm Mind",
-        "Precision"
+        "Precision",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -81094,7 +81653,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "climb": 20
+        "climb": 20,
+        "other": "jungle passage"
       },
       "attacks": [
         {
@@ -81319,7 +81879,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "climb": 20
+        "climb": 20,
+        "other": "jungle passage"
       },
       "attacks": [
         {
@@ -81450,7 +82011,7 @@
         "survival": 6
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "electricity": 8,
@@ -81598,7 +82159,22 @@
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Mental"
+        "Mental",
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -81657,6 +82233,7 @@
           "slug": "construct"
         }
       ],
+      "hardness": 8,
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -81932,7 +82509,7 @@
         "stealth": 19
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -82086,7 +82663,8 @@
         "Paralyzed",
         "Poison",
         "Unconscious",
-        "Bleed"
+        "Bleed",
+        "Mental"
       ],
       "weaknesses": {},
       "resistances": {
@@ -82261,7 +82839,7 @@
         "common",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Bleed",
         "Death Effects",
@@ -82276,7 +82854,7 @@
       },
       "resistances": {
         "cold": 15,
-        "physical": 15
+        "physical": "15 (except Bludgeoning)"
       },
       "movement": {
         "walk": 50,
@@ -82766,7 +83344,7 @@
       "languages": [
         "common"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 30 feet",
       "immunities": [
         "Bleed",
         "Death Effects",
@@ -82893,7 +83471,8 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -83447,7 +84026,7 @@
         "empyrean",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 60 feet, Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet, Truesight (precise) 60 feet",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 10,
@@ -83457,7 +84036,8 @@
       "movement": {
         "walk": 30,
         "burrow": 40,
-        "climb": 20
+        "climb": 20,
+        "other": "earth glide"
       },
       "attacks": [
         {
@@ -83577,6 +84157,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -83725,7 +84306,7 @@
         "diabolic",
         "necril"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease",
@@ -83743,7 +84324,8 @@
       },
       "movement": {
         "walk": 25,
-        "burrow": 60
+        "burrow": 60,
+        "other": "fly"
       },
       "attacks": [
         {
@@ -83902,6 +84484,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -84152,6 +84735,7 @@
           "slug": "monitor"
         }
       ],
+      "languagesDetails": "ravenspeaker, truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -84313,7 +84897,7 @@
         "fey",
         "vanara"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -84496,7 +85080,7 @@
         "diabolic",
         "necril"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (precise) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease",
@@ -84662,6 +85246,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -85048,7 +85633,7 @@
         "stealth": 12
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 5,
@@ -85056,7 +85641,8 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 40
+        "walk": 40,
+        "other": "troop movement"
       },
       "attacks": [],
       "abilities": {
@@ -85191,7 +85777,7 @@
         "empyrean",
         "utopian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), locate target",
       "immunities": [
         "Disease",
         "Fear Effects",
@@ -85396,7 +85982,7 @@
         "draconic",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 120 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 120 feet",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 20,
@@ -85501,6 +86087,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "speak with animals, speak with plants, tongues",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -85737,7 +86324,7 @@
         "stealth": 4
       },
       "languages": [],
-      "senses": "Motion Sense 60 feet",
+      "senses": "Motion Sense (precise) 60 feet",
       "immunities": [
         "Acid",
         "Critical Hits",
@@ -85745,7 +86332,8 @@
         "Precision",
         "Slashing",
         "Unconscious",
-        "Visual"
+        "Visual",
+        "Mental"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -86034,6 +86622,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -86289,10 +86878,13 @@
         "stealth": 11
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Swarm Mind",
-        "Precision"
+        "Precision",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -86423,7 +87015,7 @@
         "stealth": 24
       },
       "languages": [],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -86587,7 +87179,7 @@
         "common",
         "vishkanyan"
       ],
-      "senses": "[Low Light Vision](/action/low-light-vision-monster-core)",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -86865,6 +87457,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -87131,7 +87724,8 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -87289,6 +87883,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "speak with animals, tongues",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -87444,7 +88039,7 @@
         "common",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 60 feet",
       "immunities": [
         "Bleed",
         "Death Effects",
@@ -87456,7 +88051,7 @@
       ],
       "weaknesses": {},
       "resistances": {
-        "all-damage": 10
+        "all-damage": "10 (except Force, Ghost Touch, Spirit, Vitality; double vs. Non Magical)"
       },
       "movement": {
         "fly": 60
@@ -87733,7 +88328,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -87803,7 +88399,7 @@
       "languages": [
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), mist vision",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -88108,7 +88704,7 @@
         "aklo",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
       "immunities": [],
       "weaknesses": {
         "cold": 20,
@@ -88202,7 +88798,8 @@
           "label": "plant",
           "slug": "plant"
         }
-      ]
+      ],
+      "languagesDetails": "Can't speak any language"
     },
     "attributes": {
       "remaster": true,
@@ -88279,7 +88876,7 @@
         "empyrean",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, (+23 to Sense Motive)",
       "immunities": [
         "Confused",
         "Paralyzed",
@@ -88437,6 +89034,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -88604,7 +89202,7 @@
         "empyrean",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, (+23 to Sense Motive)",
       "immunities": [
         "Confused",
         "Paralyzed",
@@ -88751,6 +89349,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Prepared Spells",
@@ -89051,7 +89650,7 @@
         "empyrean",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, (+30 to Sense Motive)",
       "immunities": [
         "Confused",
         "Paralyzed",
@@ -89225,6 +89824,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -89413,7 +90013,7 @@
         "empyrean",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, (+30 to Sense Motive)",
       "immunities": [
         "Confused",
         "Paralyzed",
@@ -89576,6 +90176,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Prepared Spells",
@@ -89940,7 +90541,7 @@
         "empyrean",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, (+17 to Sense Motive)",
       "immunities": [
         "Confused",
         "Paralyzed",
@@ -90088,6 +90689,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -90230,7 +90832,7 @@
         "empyrean",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, (+17 to Sense Motive)",
       "immunities": [
         "Confused",
         "Paralyzed",
@@ -90367,6 +90969,7 @@
           "slug": "occult"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Prepared Spells",
@@ -90694,6 +91297,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -90828,7 +91432,7 @@
         "fey",
         "jotun"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), See Invisibility",
+      "senses": "[Darkvision](/action/darkvision-monster-core), See Invisibility, snow vision",
       "immunities": [
         "Cold",
         "Emotion"
@@ -90840,7 +91444,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "climb": 25
+        "climb": 25,
+        "other": "ice climb only"
       },
       "attacks": [
         {
@@ -91282,6 +91887,7 @@
           "slug": "humanoid"
         }
       ],
+      "languagesDetails": "One or more planar languages, Truespeech",
       "spellcasting": [
         {
           "name": "Arcane Innate Spells",
@@ -91448,7 +92054,8 @@
         "Paralyzed",
         "Poison",
         "Unconscious",
-        "Bleed"
+        "Bleed",
+        "Mental"
       ],
       "weaknesses": {},
       "resistances": {
@@ -91602,11 +92209,14 @@
         "common",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
       "immunities": [
         "Precision",
         "Swarm Mind",
-        "Unconscious"
+        "Unconscious",
+        "Grabbed",
+        "Prone",
+        "Restrained"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -91901,7 +92511,24 @@
         "common"
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
-      "immunities": [],
+      "immunities": [
+        "Bleed",
+        "Death Effects",
+        "Disease",
+        "Doomed",
+        "Drained",
+        "Fatigued",
+        "Healing",
+        "Mental",
+        "Nonlethal Attacks",
+        "Paralyzed",
+        "Poison",
+        "Sickened",
+        "Spirit",
+        "Unconscious",
+        "Vitality",
+        "Void"
+      ],
       "weaknesses": {},
       "resistances": {},
       "movement": {
@@ -91961,7 +92588,8 @@
           "label": "wyrwood",
           "slug": "wyrwood"
         }
-      ]
+      ],
+      "languagesDetails": "Plus one regional language"
     },
     "attributes": {
       "remaster": true,
@@ -92037,7 +92665,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [
         "Fear Effects"
       ],
@@ -92048,7 +92676,8 @@
       "movement": {
         "walk": 40,
         "climb": 20,
-        "fly": 40
+        "fly": 40,
+        "other": "fly"
       },
       "attacks": [
         {
@@ -92167,6 +92796,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -92309,7 +92939,7 @@
         "draconic",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Thoughtsense 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Thoughtsense (imprecise) 60 feet",
       "immunities": [
         "Electricity",
         "Fire"
@@ -92435,6 +93065,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -92666,7 +93297,7 @@
         "draconic",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), detect magic",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 5,
@@ -92775,6 +93406,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -92932,7 +93564,7 @@
         "holy": 5
       },
       "resistances": {
-        "physical": 5,
+        "physical": "5 (except Silver)",
         "poison": 5
       },
       "movement": {
@@ -93026,6 +93658,7 @@
           "slug": "unholy"
         }
       ],
+      "languagesDetails": "telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -93174,7 +93807,7 @@
         "draconic",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
       "immunities": [],
       "weaknesses": {
         "cold-iron": 15,
@@ -93259,6 +93892,7 @@
           "slug": "holy"
         }
       ],
+      "languagesDetails": "Truespeech",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -93709,6 +94343,7 @@
           "slug": "spirit"
         }
       ],
+      "languagesDetails": "Telepathy 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",

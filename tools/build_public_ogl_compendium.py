@@ -29,6 +29,7 @@ from build_reference_tables import build_tables
 from creature_ability_glossary import configure_creature_abilities
 from creature_senses import configure_creature_senses
 from creature_spellcasting import configure_creature_spellcasting
+from creature_metadata import configure_creature_metadata
 from spell_area_templates import configure_spell_area_template
 
 
@@ -84,6 +85,7 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
     if expected_kind in {"Action", "Creature"}:
         configure_creature_abilities(result)
     if expected_kind == "Creature":
+        configure_creature_metadata(result)
         configure_creature_senses(result)
         configure_creature_spellcasting(result)
     dedupe_entity_links(result)

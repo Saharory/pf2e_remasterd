@@ -130,6 +130,44 @@ def main() -> int:
         if expected not in abilities["Moonlight's Kiss"]["text"]:
             raise SystemExit(f"Moon Hag is missing AoN-style inline reference: {expected}")
 
+    army_ants = by_slug["army-ant-swarm-monster-core"]
+    if "[Scent](/action/scent-monster-core) (imprecise) 30 feet" not in army_ants["data"]["senses"]:
+        raise SystemExit("Army Ant Swarm is missing its scent acuity")
+    if not {"Grabbed", "Precision", "Prone", "Restrained", "Swarm Mind"}.issubset(
+        set(army_ants["data"].get("immunities") or [])
+    ):
+        raise SystemExit("Army Ant Swarm is missing explicit or swarm immunities")
+
+    bone_prophet = by_slug["bone-prophet-monster-core"]
+    if "(imprecise) 30 feet" not in bone_prophet["data"].get("senses", ""):
+        raise SystemExit("Bone Prophet is missing its scent acuity")
+    if bone_prophet["data"].get("languagesDetails") != "Telepathy 100 feet":
+        raise SystemExit("Bone Prophet is missing its language details")
+
+    adamantine_dragon = by_slug["adamantine-dragon-adult-spellcaster-monster-core"]
+    dragon_senses = adamantine_dragon["data"].get("senses", "")
+    if "[Scent](/action/scent-monster-core) (imprecise) 60 feet" not in dragon_senses or "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 90 feet" not in dragon_senses:
+        raise SystemExit("Adamantine Dragon is missing structured sense acuity")
+
+    animated_armor = by_slug["animated-armor-monster-core"]
+    if animated_armor["data"].get("hardness") != 9:
+        raise SystemExit("Animated Armor is missing Hardness")
+    if not {"Mental", "Vitality", "Void"}.issubset(set(animated_armor["data"].get("immunities") or [])):
+        raise SystemExit("Animated Armor is missing construct immunities")
+
+    zombie = by_slug["zombie-shambler-monster-core"]
+    if "Mental" not in zombie["data"].get("immunities", []):
+        raise SystemExit("Zombie Shambler is missing its mindless immunity")
+
+    for creature in creatures:
+        data = creature.get("data", {})
+        traits = set(data.get("traits") or [])
+        immunities = {str(value).casefold() for value in data.get("immunities") or []}
+        if "mindless" in traits and "mental" not in immunities:
+            raise SystemExit(f"mindless creature is missing Mental immunity: {creature['slug']}")
+        if "swarm" in traits and not {"grabbed", "prone", "restrained"}.issubset(immunities):
+            raise SystemExit(f"swarm creature is missing condition immunities: {creature['slug']}")
+
     bibliodaemon = by_slug["bibliodaemon-shining-kingdoms"]
     thoughtsense = next(
         ability
@@ -170,6 +208,12 @@ def main() -> int:
         raise SystemExit("creature identity fields are not separated in the stat block")
 
     creature_form = form("creature.json")
+    creature_fields = field_attributes(creature_form)
+    if not {"data.hardness", "data.languagesDetails"}.issubset(creature_fields):
+        raise SystemExit("creature editor does not expose restored metadata")
+    secondary_view = (REPO / "views/partials/creature-secondary.md").read_text(encoding="utf-8")
+    if "data.hardness" not in secondary_view:
+        raise SystemExit("creature view does not render Hardness")
     required_lists = {
         "data.abilities.interaction",
         "data.abilities.defensive",
