@@ -85,6 +85,19 @@
           "attribute": "data.skills",
           "attributeType": "Skill"
         },
+        {
+          "title": "Skill.Lore",
+          "type": "list",
+          "attribute": "data.loreSkills",
+          "custom": {
+            "itemTitle": "{{name}}",
+            "itemDetail": "{{value|signed}}"
+          },
+          "form": {
+            "title": "Skill.Lore",
+            "partial": "lore-skill"
+          }
+        },
       ]
     },
     {

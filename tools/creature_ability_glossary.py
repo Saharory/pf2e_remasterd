@@ -68,6 +68,9 @@ GLOSSARY_ROUTES = {
 }
 
 INLINE_MECHANIC_ROUTES = (
+    ("basic Reflex save", "/rule/basic-saving-throws-rules-2297"),
+    ("basic Fortitude save", "/rule/basic-saving-throws-rules-2297"),
+    ("basic Will save", "/rule/basic-saving-throws-rules-2297"),
     ("burrow Speed", "/rule/burrow-speed-rules-2348"),
     ("climb Speed", "/rule/climb-speed-rules-2349"),
     ("fly Speed", "/rule/fly-speed-rules-2350"),
@@ -88,6 +91,7 @@ INLINE_MECHANIC_ROUTES = (
     ("Strike", "/action/strike-player-core"),
     ("Swim", "/action/swim-player-core"),
     ("Trip", "/action/trip-player-core"),
+    ("cone", "/rule/cone-rules-2386"),
 )
 
 

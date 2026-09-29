@@ -39,8 +39,7 @@
       "skills": {
         "arcana": 27,
         "athletics": 22,
-        "occultism": 27,
-        "lore": 27
+        "occultism": 27
       },
       "languages": [
         "aklo",
@@ -144,6 +143,12 @@
           "slug": "aberration"
         }
       ],
+      "loreSkills": [
+        {
+          "name": "Lore (Any One Subcategory)",
+          "value": 27
+        }
+      ],
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -238,8 +243,7 @@
         "athletics": 25,
         "nature": 25,
         "occultism": 25,
-        "religion": 25,
-        "lore": 30
+        "religion": 25
       },
       "languages": [
         "common",
@@ -352,6 +356,12 @@
           "label": "humanoid",
           "slug": "humanoid"
         }
+      ],
+      "loreSkills": [
+        {
+          "name": "Esoteric Lore",
+          "value": 30
+        }
       ]
     },
     "attributes": {
@@ -416,8 +426,7 @@
         "diplomacy": 18,
         "nature": 18,
         "religion": 18,
-        "society": 16,
-        "lore": 16
+        "society": 16
       },
       "languages": [
         "common"
@@ -492,6 +501,12 @@
         {
           "label": "human",
           "slug": "human"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Ludovica Lore",
+          "value": 16
         }
       ],
       "spellcasting": [
@@ -926,7 +941,12 @@
             "reach-10",
             "unarmed"
           ],
-          "damage": "3d8 + 14 slashing"
+          "damage": "3d8 + 14 slashing",
+          "effects": [
+            {
+              "name": "Drain Potential"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -1073,7 +1093,13 @@
           "traits": [
             "reach-15"
           ],
-          "damage": "2d10+10 piercing"
+          "damage": "2d10+10 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Root",
@@ -1111,7 +1137,7 @@
           },
           {
             "name": "Spray Blossoms",
-            "text": "The moonflower expels mind-warping petals in a 30-foot cone. Creatures in the area take 4d6 mental damage and 4d6 poison damage (basic Will DC 26 save). A creature that fails is [Stupefied 2](/condition/stupefied-player-core) for 1 minute, and [Confused](/condition/confused-player-core) for 1 round if it got a critical failure. The moonflower can't Spray Blossoms again for 1d4 rounds.",
+            "text": "The moonflower expels mind-warping petals in a 30-foot [cone](/rule/cone-rules-2386). Creatures in the area take 4d6 mental damage and 4d6 poison damage (basic Will DC 26 save). A creature that fails is [Stupefied 2](/condition/stupefied-player-core) for 1 minute, and [Confused](/condition/confused-player-core) for 1 round if it got a critical failure. The moonflower can't Spray Blossoms again for 1d4 rounds.",
             "traits": [
               "mental",
               "plant",
@@ -1127,13 +1153,6 @@
             ],
             "actions": "one",
             "reference": "/action/swallow-whole-monster-core"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },

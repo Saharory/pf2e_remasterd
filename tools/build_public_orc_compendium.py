@@ -694,11 +694,12 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
     if expected_kind == "Spell":
         configure_spell_area_template(result)
 
-    if expected_kind in {"Action", "Creature"}:
+    if expected_kind == "Action":
         configure_creature_abilities(result)
 
     if expected_kind == "Creature":
         configure_creature_metadata(result)
+        configure_creature_abilities(result)
         configure_creature_senses(result)
         configure_creature_spellcasting(result)
 

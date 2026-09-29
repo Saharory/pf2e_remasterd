@@ -197,8 +197,7 @@
         "performance": 38,
         "religion": 31,
         "stealth": 36,
-        "survival": 33,
-        "lore": 33
+        "survival": 33
       },
       "languages": [
         "common",
@@ -354,6 +353,12 @@
         }
       ],
       "languagesDetails": "truespeech",
+      "loreSkills": [
+        {
+          "name": "Planar Lore",
+          "value": 33
+        }
+      ],
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -717,8 +722,7 @@
         "acrobatics": 21,
         "arcana": 21,
         "nature": 19,
-        "survival": 21,
-        "lore": 19
+        "survival": 21
       },
       "languages": [
         "common",
@@ -808,6 +812,12 @@
         {
           "label": "metal",
           "slug": "metal"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Psychology Lore",
+          "value": 19
         }
       ],
       "spellcasting": [
@@ -929,8 +939,7 @@
         "performance": 38,
         "religion": 31,
         "stealth": 36,
-        "survival": 33,
-        "lore": 33
+        "survival": 33
       },
       "languages": [
         "common",
@@ -1086,6 +1095,12 @@
         }
       ],
       "languagesDetails": "truespeech",
+      "loreSkills": [
+        {
+          "name": "Planar Lore",
+          "value": 33
+        }
+      ],
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -1261,7 +1276,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -1281,12 +1296,6 @@
       "attacks": [],
       "abilities": {
         "interaction": [
-          {
-            "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          },
           {
             "name": "Earthbound",
             "text": "When not touching solid ground, the avalanche legion is [Slowed 1](/condition/slowed-player-core).",
@@ -1648,7 +1657,7 @@
           },
           {
             "name": "Scalding Breath",
-            "text": "The boiling spring breathes out a cloud of steam in a 30-foot cone that deals 14d6 fire damage to each creature in the area (basic Reflex DC 33 save). The boiling spring can't use Scalding Breath again for 1d4 rounds.",
+            "text": "The boiling spring breathes out a cloud of steam in a 30-foot [cone](/rule/cone-rules-2386) that deals 14d6 fire damage to each creature in the area (basic Reflex DC 33 save). The boiling spring can't use Scalding Breath again for 1d4 rounds.",
             "traits": [
               "fire",
               "primal"
@@ -1753,8 +1762,7 @@
         "performance": 38,
         "religion": 31,
         "stealth": 36,
-        "survival": 33,
-        "lore": 33
+        "survival": 33
       },
       "languages": [
         "common",
@@ -1910,6 +1918,12 @@
         }
       ],
       "languagesDetails": "truespeech",
+      "loreSkills": [
+        {
+          "name": "Planar Lore",
+          "value": 33
+        }
+      ],
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -2256,8 +2270,7 @@
       "skills": {
         "athletics": 28,
         "intimidation": 21,
-        "survival": 24,
-        "lore": 24
+        "survival": 24
       },
       "languages": [
         "common",
@@ -2287,7 +2300,13 @@
           "traits": [
             "reach-15"
           ],
-          "damage": "3d10+8 piercing"
+          "damage": "3d10+8 piercing",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Hot Oil",
@@ -2295,7 +2314,12 @@
           "actions": "one",
           "attack": 25,
           "traits": [],
-          "damage": "3d6+7 fire; 3 fire; 1d8 fire"
+          "damage": "3d6+7 fire; 3 fire; 1d8 fire",
+          "effects": [
+            {
+              "name": "Marinade"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -2323,13 +2347,6 @@
             "name": "Skewer Master",
             "text": "The skewers of a brochmaw are more than long enough to hold multiple creatures. A brochmaw can have up to three creatures [Grabbed](/condition/grabbed-player-core) on its skewer, and it can still make Strikes with its skewer even if it has creatures grabbed, though it can't target creatures it has grabbed.",
             "traits": []
-          },
-          {
-            "name": "Improved Grab",
-            "text": "",
-            "traits": [],
-            "actions": "free",
-            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -2349,6 +2366,12 @@
         {
           "label": "fire",
           "slug": "fire"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Cooking Lore",
+          "value": 24
         }
       ]
     },
@@ -2418,8 +2441,7 @@
         "diplomacy": 32,
         "intimidation": 32,
         "performance": 32,
-        "society": 30,
-        "lore": 30
+        "society": 30
       },
       "languages": [
         "talican"
@@ -2451,7 +2473,16 @@
             "magical",
             "reach-15"
           ],
-          "damage": "3d8+14 bludgeoning; 1d12 electricity"
+          "damage": "3d8+14 bludgeoning; 1d12 electricity",
+          "effects": [
+            {
+              "name": "Plentiful Metals"
+            },
+            {
+              "name": "Push",
+              "reference": "/action/push-monster-core"
+            }
+          ]
         },
         {
           "name": "Eye Beam",
@@ -2526,7 +2557,13 @@
           "slug": "metal"
         }
       ],
-      "languagesDetails": "plus one language for each of their mouths; telepathy 100 feet"
+      "languagesDetails": "plus one language for each of their mouths; telepathy 100 feet",
+      "loreSkills": [
+        {
+          "name": "Plane of Metal Lore",
+          "value": 30
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2618,7 +2655,13 @@
           "traits": [
             "shove"
           ],
-          "damage": "2d8+5 bludgeoning"
+          "damage": "2d8+5 bludgeoning",
+          "effects": [
+            {
+              "name": "Knockdown",
+              "reference": "/action/knockdown-monster-core"
+            }
+          ]
         },
         {
           "name": "Roots",
@@ -2647,13 +2690,6 @@
             "text": "The carved beast digs its roots into the ground for better protection and purchase. While Dug In, the carved beast can't [Stride](/action/stride-player-core) nor use its roots [Strike](/action/strike-player-core); however, this also negates the effects of top-heavy, grants the beast a +2 status bonus to its AC and Fortitude saves, and increases the damage of its statue Strike by 1d8. The carved beast can spend an action on its turn to end the effect; alternatively, the effect ends when the carved beast is moved by force, such as via a successful [Shove](/action/shove-player-core) attack.",
             "traits": [],
             "actions": "one"
-          },
-          {
-            "name": "Knockdown",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/knockdown-monster-core"
           }
         ]
       },
@@ -2771,7 +2807,13 @@
           "actions": "one",
           "attack": 20,
           "traits": [],
-          "damage": "2d8+9 bludgeoning"
+          "damage": "2d8+9 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -3053,7 +3095,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -3091,14 +3133,7 @@
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Crystal Refraction",
@@ -3236,7 +3271,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 60 feet, [Darkvision](/action/darkvision-monster-core)",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet, [Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -3266,7 +3301,12 @@
           "actions": "one",
           "attack": 10,
           "traits": [],
-          "damage": "1d6+5 piercing"
+          "damage": "1d6+5 piercing",
+          "effects": [
+            {
+              "name": "Sink Into Stone"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -3702,7 +3742,7 @@
         "fey",
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 120 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -3725,7 +3765,13 @@
           "traits": [
             "reach-15"
           ],
-          "damage": "3d10+14 bludgeoning"
+          "damage": "3d10+14 bludgeoning",
+          "effects": [
+            {
+              "name": "Knockdown",
+              "reference": "/action/knockdown-monster-core"
+            }
+          ]
         },
         {
           "name": "Rock",
@@ -3735,18 +3781,16 @@
           "traits": [
             "brutal"
           ],
-          "damage": "3d6+14 bludgeoning"
+          "damage": "3d6+14 bludgeoning",
+          "effects": [
+            {
+              "name": "Call Of Earth"
+            }
+          ]
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "Tremorsense 120 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Dust Eternal",
@@ -3799,13 +3843,6 @@
             "traits": [],
             "actions": "one",
             "reference": "/action/throw-rock-monster-core"
-          },
-          {
-            "name": "Knockdown",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/knockdown-monster-core"
           }
         ]
       },
@@ -3918,7 +3955,13 @@
           "traits": [
             "reach-20"
           ],
-          "damage": "2d12+7 bludgeoning"
+          "damage": "2d12+7 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -3954,13 +3997,6 @@
               "plant",
               "primal"
             ]
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -4056,8 +4092,7 @@
         "performance": 38,
         "religion": 31,
         "stealth": 36,
-        "survival": 33,
-        "lore": 33
+        "survival": 33
       },
       "languages": [
         "common",
@@ -4213,6 +4248,12 @@
         }
       ],
       "languagesDetails": "truespeech",
+      "loreSkills": [
+        {
+          "name": "Planar Lore",
+          "value": 33
+        }
+      ],
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -4401,7 +4442,7 @@
         "talican",
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 60 feet, detect magic, (+25 to Sense Motive)",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet, detect magic, (+25 to Sense Motive)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -4772,7 +4813,12 @@
           "traits": [
             "finesse"
           ],
-          "damage": "1 bleed; 1d4+2 slashing"
+          "damage": "1 bleed; 1d4+2 slashing",
+          "effects": [
+            {
+              "name": "A Thousand Cuts"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -5127,7 +5173,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -5146,18 +5192,16 @@
           "actions": "one",
           "attack": 9,
           "traits": [],
-          "damage": "1d4+4 piercing"
+          "damage": "1d4+4 piercing",
+          "effects": [
+            {
+              "name": "Attach"
+            }
+          ]
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "Tremorsense (Imprecise) 30 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          }
-        ],
+        "interaction": [],
         "defensive": [],
         "offensive": [
           {
@@ -6008,7 +6052,7 @@
         "common",
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -6049,7 +6093,16 @@
             "reach-10",
             "unarmed"
           ],
-          "damage": "2d6+13 bludgeoning"
+          "damage": "2d6+13 bludgeoning",
+          "effects": [
+            {
+              "name": "Push",
+              "reference": "/action/push-monster-core"
+            },
+            {
+              "name": "Stone Clutch"
+            }
+          ]
         },
         {
           "name": "Rock",
@@ -6064,12 +6117,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          },
           {
             "name": "Constant Spells",
             "text": "",
@@ -6360,7 +6407,12 @@
             "magical",
             "sweep"
           ],
-          "damage": "2d6+12 slashing"
+          "damage": "2d6+12 slashing",
+          "effects": [
+            {
+              "name": "All Made One"
+            }
+          ]
         },
         {
           "name": "Fist",
@@ -6373,7 +6425,12 @@
             "nonlethal",
             "unarmed"
           ],
-          "damage": "1d8+9 bludgeoning"
+          "damage": "1d8+9 bludgeoning",
+          "effects": [
+            {
+              "name": "All Made One"
+            }
+          ]
         },
         {
           "name": "Composite Longbow",
@@ -6387,7 +6444,12 @@
             "reload-0",
             "volley-30"
           ],
-          "damage": "2d8+9 piercing"
+          "damage": "2d8+9 piercing",
+          "effects": [
+            {
+              "name": "All Made One"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -7497,13 +7559,12 @@
       },
       "skills": {
         "athletics": 26,
-        "society": 25,
-        "lore": 29
+        "society": 25
       },
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -7537,17 +7598,16 @@
             "earth",
             "magical"
           ],
-          "damage": "3d8+16 bludgeoning"
+          "damage": "3d8+16 bludgeoning",
+          "effects": [
+            {
+              "name": "Bury"
+            }
+          ]
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          },
           {
             "name": "Antiques",
             "text": "A lithic locus contains at least one magic item. Any such antiques are durable, permanent items that were part of the locus's site and typify their culture. The locus receives the benefits of such an item as if wearing or holding it and can activate it. A lithic locus typically has an item of their level.",
@@ -7597,6 +7657,12 @@
         }
       ],
       "languagesDetails": "plus one ancient language",
+      "loreSkills": [
+        {
+          "name": "One Ancient Civilization Lore",
+          "value": 29
+        }
+      ],
       "spellcasting": [
         {
           "name": "Occult Innate Spells",
@@ -7732,7 +7798,7 @@
         "arboreal",
         "muan"
       ],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -7767,12 +7833,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Tremorsense 30 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          },
           {
             "name": "Defensive Camouflage",
             "text": "The living grove can [Hide](/action/hide-player-core) in natural environments even if it doesn't have cover. While Hiding, its root system is safely covered in dirt, granting the grove a +3 status bonus to AC. A critical hit cracks this protective layer of earth to disperse in the wind, ending the effect.",
@@ -8207,8 +8267,7 @@
         "athletics": 7,
         "crafting": 10,
         "nature": 10,
-        "stealth": 11,
-        "lore": 11
+        "stealth": 11
       },
       "languages": [
         "muan",
@@ -8236,7 +8295,13 @@
             "disarm",
             "finesse"
           ],
-          "damage": "2d6 slashing"
+          "damage": "2d6 slashing",
+          "effects": [
+            {
+              "name": "Knockdown",
+              "reference": "/action/knockdown-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -8260,13 +8325,6 @@
             "text": "**Requirements** The lomori sprout is on the ground; **Effect** The lomori sprout plants themself in the ground. Grasping roots erupt from the ground in a 5-foot burst within 60 feet of the lomori sprout, dealing 4d4 bludgeoning damage (basic Reflex DC 20 save) to creatures in the area; on a failed save, a creature gains the [Immobilized](/condition/immobilized-player-core) condition until it Escapes. The roots also make the area difficult terrain for 1 minute, after which they decompose into fertile mulch; the area is no longer difficult terrain, and any creatures still immobilized by the roots automatically [Escape](/action/escape-player-core).",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Knockdown",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/knockdown-monster-core"
           }
         ]
       },
@@ -8290,6 +8348,12 @@
         {
           "label": "wood",
           "slug": "wood"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Gardening Lore",
+          "value": 11
         }
       ]
     },
@@ -8431,7 +8495,7 @@
           },
           {
             "name": "Scream",
-            "text": "The melomach unleashes a guttural, ear-piercing wail. All creatures in a 120-foot cone take 7d12 sonic damage with a Fortitude DC 32 save.\n\nThe melomach can't Scream again for 1d4 rounds.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage, is [Stunned 1](/condition/stunned-player-core), and is [Deafened](/condition/deafened-player-core) for 1 minute.\n\n**Critical Failure** The creature takes double damage, is Stunned 3, and is deafened permanently.",
+            "text": "The melomach unleashes a guttural, ear-piercing wail. All creatures in a 120-foot [cone](/rule/cone-rules-2386) take 7d12 sonic damage with a Fortitude DC 32 save.\n\nThe melomach can't Scream again for 1d4 rounds.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage, is [Stunned 1](/condition/stunned-player-core), and is [Deafened](/condition/deafened-player-core) for 1 minute.\n\n**Critical Failure** The creature takes double damage, is Stunned 3, and is deafened permanently.",
             "traits": [
               "primal",
               "sonic"
@@ -8521,8 +8585,7 @@
       "skills": {
         "acrobatics": 8,
         "deception": 10,
-        "diplomacy": 8,
-        "lore": 8
+        "diplomacy": 8
       },
       "languages": [
         "common",
@@ -8610,6 +8673,12 @@
         {
           "label": "metal",
           "slug": "metal"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Plane of Metal Lore",
+          "value": 8
         }
       ]
     },
@@ -8719,7 +8788,7 @@
         "offensive": [
           {
             "name": "Breathe Shrapnel",
-            "text": "The metal scamp breathes a 15-foot cone of jagged metal flakes that deals (2d4) slashing,(1d4) bleed damage to each creature within the area (basic Reflex DC 17 save).\n\nThe metal scamp can't Breathe Shrapnel again for 1d4 rounds.",
+            "text": "The metal scamp breathes a 15-foot [cone](/rule/cone-rules-2386) of jagged metal flakes that deals (2d4) slashing,(1d4) bleed damage to each creature within the area (basic Reflex DC 17 save).\n\nThe metal scamp can't Breathe Shrapnel again for 1d4 rounds.",
             "traits": [
               "arcane",
               "metal"
@@ -8826,8 +8895,7 @@
         "will": 6
       },
       "skills": {
-        "athletics": 6,
-        "lore": 4
+        "athletics": 6
       },
       "languages": [
         "talican"
@@ -8914,6 +8982,16 @@
         {
           "label": "metal",
           "slug": "metal"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Mining Lore",
+          "value": 4
+        },
+        {
+          "name": "Plane of Metal Lore",
+          "value": 4
         }
       ]
     },
@@ -9129,8 +9207,7 @@
       },
       "skills": {
         "athletics": 10,
-        "crafting": 12,
-        "lore": 10
+        "crafting": 12
       },
       "languages": [
         "common",
@@ -9228,6 +9305,12 @@
           "label": "humanoid",
           "slug": "humanoid"
         }
+      ],
+      "loreSkills": [
+        {
+          "name": "Plane of Fire Lore",
+          "value": 10
+        }
       ]
     },
     "attributes": {
@@ -9294,8 +9377,7 @@
       "skills": {
         "athletics": 12,
         "crafting": 11,
-        "stealth": 12,
-        "lore": 11
+        "stealth": 12
       },
       "languages": [
         "common",
@@ -9401,6 +9483,12 @@
           "label": "humanoid",
           "slug": "humanoid"
         }
+      ],
+      "loreSkills": [
+        {
+          "name": "Plane of Fire Lore",
+          "value": 11
+        }
       ]
     },
     "attributes": {
@@ -9466,14 +9554,13 @@
       "skills": {
         "athletics": 14,
         "diplomacy": 11,
-        "survival": 13,
-        "lore": 13
+        "survival": 13
       },
       "languages": [
         "common",
         "thalassic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -9490,7 +9577,13 @@
           "traits": [
             "versatile-p"
           ],
-          "damage": "1d6+9 bludgeoning"
+          "damage": "1d6+9 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Spear",
@@ -9557,6 +9650,12 @@
         {
           "label": "humanoid",
           "slug": "humanoid"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Talisman Lore",
+          "value": 13
         }
       ]
     },
@@ -9801,8 +9900,7 @@
       },
       "skills": {
         "acrobatics": 23,
-        "intimidation": 21,
-        "lore": 15
+        "intimidation": 21
       },
       "languages": [
         "fey",
@@ -9886,7 +9984,7 @@
         "offensive": [
           {
             "name": "Nightwood Roar",
-            "text": "**Frequency** once per hour;; **Effect** The guardian roars, snuffing out lights in a 30-foot cone. Ordinary flames and lights are extinguished, and the guardian attempts to counteract any magical light with a +21 counteract modifier and a counteract rank of 5.",
+            "text": "**Frequency** once per hour;; **Effect** The guardian roars, snuffing out lights in a 30-foot [cone](/rule/cone-rules-2386). Ordinary flames and lights are extinguished, and the guardian attempts to counteract any magical light with a +21 counteract modifier and a counteract rank of 5.",
             "traits": [
               "concentrate",
               "darkness",
@@ -9915,6 +10013,12 @@
         {
           "label": "wood",
           "slug": "wood"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Nightwood Lore",
+          "value": 15
         }
       ]
     },
@@ -10015,7 +10119,12 @@
           "actions": "one",
           "attack": 8,
           "traits": [],
-          "damage": "1d6+3 piercing"
+          "damage": "1d6+3 piercing",
+          "effects": [
+            {
+              "name": "Germinate"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -10123,7 +10232,7 @@
         "survival": 7
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -10140,7 +10249,12 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "1d8+3 piercing"
+          "damage": "1d8+3 piercing",
+          "effects": [
+            {
+              "name": "Decomposing Toxin"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -10268,7 +10382,7 @@
         "athletics": 12
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 120 feet, metal [scent](/action/scent-monster-core) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Wavesense](/action/wavesense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet, metal [scent](/action/scent-monster-core) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -10286,7 +10400,15 @@
           "traits": [
             "finesse"
           ],
-          "damage": "2d8+4 piercing"
+          "damage": "2d8+4 piercing",
+          "effects": [
+            {
+              "name": "Metal Snack"
+            },
+            {
+              "name": "Rust"
+            }
+          ]
         },
         {
           "name": "Leg",
@@ -10297,7 +10419,13 @@
             "finesse",
             "reach-10"
           ],
-          "damage": "2d8+4 bludgeoning"
+          "damage": "2d8+4 bludgeoning",
+          "effects": [
+            {
+              "name": "Knockdown",
+              "reference": "/action/knockdown-monster-core"
+            }
+          ]
         },
         {
           "name": "Oxidizing Spit",
@@ -10305,7 +10433,12 @@
           "actions": "one",
           "attack": 14,
           "traits": [],
-          "damage": "2d8 acid"
+          "damage": "2d8 acid",
+          "effects": [
+            {
+              "name": "Rust"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -10460,7 +10593,12 @@
             "adamantine",
             "reach-10"
           ],
-          "damage": "2d12+12 piercing"
+          "damage": "2d12+12 piercing",
+          "effects": [
+            {
+              "name": "Devour Metal"
+            }
+          ]
         },
         {
           "name": "Claw",
@@ -10616,7 +10754,13 @@
           "actions": "one",
           "attack": 20,
           "traits": [],
-          "damage": "2d12+7 piercing"
+          "damage": "2d12+7 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Hooves",
@@ -10654,13 +10798,6 @@
               "visual"
             ],
             "actions": "two"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -10758,7 +10895,7 @@
       "languages": [
         "talican"
       ],
-      "senses": "metalsense (imprecise) 60 feet",
+      "senses": "metalsense ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 10,
@@ -10801,7 +10938,7 @@
         "offensive": [
           {
             "name": "Entrancing Shapes",
-            "text": "The pelegox cube rapidly shifts, creating a display of seemingly impossible geometric patterns. Creatures in a 60-foot cone take 9d6 mental damage (basic Will DC 29 save). A creature that fails is also [Fascinated](/condition/fascinated-player-core) with the pelegox cube and [Stupefied 1](/condition/stupefied-player-core) for 1 minute.",
+            "text": "The pelegox cube rapidly shifts, creating a display of seemingly impossible geometric patterns. Creatures in a 60-foot [cone](/rule/cone-rules-2386) take 9d6 mental damage (basic Will DC 29 save). A creature that fails is also [Fascinated](/condition/fascinated-player-core) with the pelegox cube and [Stupefied 1](/condition/stupefied-player-core) for 1 minute.",
             "traits": [
               "mental",
               "occult",
@@ -10942,7 +11079,13 @@
             "finesse",
             "reach-20"
           ],
-          "damage": "3d10+10 bludgeoning"
+          "damage": "3d10+10 bludgeoning",
+          "effects": [
+            {
+              "name": "Push",
+              "reference": "/action/push-monster-core"
+            }
+          ]
         },
         {
           "name": "Lightning Lash",
@@ -10980,7 +11123,7 @@
           },
           {
             "name": "Elephant Blast",
-            "text": "**Requirements** The picture-in-clouds is in elephant shape; **Effect** The picture-in-clouds breathes out a 30-foot cone of air from their cloudy trunk. Creatures in the area must attempt a Fortitude DC 30 save to stand their ground. A creature pushed into a solid object stops moving and takes 4d10 bludgeoning damage.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is pushed 20 feet.\n\n**Failure** The creature is pushed 40 feet.\n\n**Critical Failure** The creature is pushed 40 feet and knocked [Prone](/condition/prone-player-core).",
+            "text": "**Requirements** The picture-in-clouds is in elephant shape; **Effect** The picture-in-clouds breathes out a 30-foot [cone](/rule/cone-rules-2386) of air from their cloudy trunk. Creatures in the area must attempt a Fortitude DC 30 save to stand their ground. A creature pushed into a solid object stops moving and takes 4d10 bludgeoning damage.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is pushed 20 feet.\n\n**Failure** The creature is pushed 40 feet.\n\n**Critical Failure** The creature is pushed 40 feet and knocked [Prone](/condition/prone-player-core).",
             "traits": [],
             "actions": "two"
           },
@@ -11130,7 +11273,13 @@
           "actions": "one",
           "attack": 17,
           "traits": [],
-          "damage": "2d8+3 bludgeoning"
+          "damage": "2d8+3 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -11152,13 +11301,6 @@
               "plant"
             ],
             "actions": "one"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -11277,7 +11419,13 @@
             "reach-10",
             "unarmed"
           ],
-          "damage": "2d6+6 bludgeoning"
+          "damage": "2d6+6 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -11313,13 +11461,6 @@
             "traits": [],
             "actions": "one",
             "reference": "/action/constrict-monster-core"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -11431,7 +11572,13 @@
           "actions": "one",
           "attack": 15,
           "traits": [],
-          "damage": "2d8+7 piercing"
+          "damage": "2d8+7 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Leg",
@@ -11470,13 +11617,6 @@
             "text": "**Requirements** A [Grabbed](/condition/grabbed-player-core), [Paralyzed](/condition/paralyzed-player-core), [Restrained](/condition/restrained-player-core), [Unconscious](/condition/unconscious-player-core), or willing creature is within the rakkatak's reach; **Effect** The rakkatak deals 3d6 untyped damage to the target (basic Fortitude DC 22 save). If the creature takes at least 12 damage, the rakkatak regains 10 healing HP.",
             "traits": [],
             "actions": "one"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -11560,8 +11700,7 @@
         "will": 11
       },
       "skills": {
-        "athletics": 13,
-        "lore": 11
+        "athletics": 13
       },
       "languages": [
         "talican"
@@ -11589,7 +11728,12 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "2d8+6 slashing"
+          "damage": "2d8+6 slashing",
+          "effects": [
+            {
+              "name": "Tetanus"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -11650,6 +11794,12 @@
         {
           "label": "metal",
           "slug": "metal"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Plane of Metal Lore",
+          "value": 11
         }
       ]
     },
@@ -11718,8 +11868,7 @@
         "athletics": 27,
         "intimidation": 22,
         "nature": 22,
-        "stealth": 26,
-        "lore": 22
+        "stealth": 26
       },
       "languages": [
         "thalassic"
@@ -11817,6 +11966,16 @@
           "label": "water",
           "slug": "water"
         }
+      ],
+      "loreSkills": [
+        {
+          "name": "Plane of Water Lore",
+          "value": 22
+        },
+        {
+          "name": "Warfare Lore",
+          "value": 22
+        }
       ]
     },
     "attributes": {
@@ -11911,7 +12070,12 @@
             "finesse",
             "reach-10"
           ],
-          "damage": "2d10+6 slashing"
+          "damage": "2d10+6 slashing",
+          "effects": [
+            {
+              "name": "Phase Blade"
+            }
+          ]
         },
         {
           "name": "Orichalcum Fangs",
@@ -11922,7 +12086,12 @@
             "finesse",
             "reach-10"
           ],
-          "damage": "2d12+6 slashing"
+          "damage": "2d12+6 slashing",
+          "effects": [
+            {
+              "name": "Temporal Stutter"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -12060,7 +12229,16 @@
           "actions": "one",
           "attack": 14,
           "traits": [],
-          "damage": "2d12+4 piercing"
+          "damage": "2d12+4 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            },
+            {
+              "name": "Snapdrake Pollen"
+            }
+          ]
         },
         {
           "name": "Tail Scythe",
@@ -12120,20 +12298,13 @@
           },
           {
             "name": "Spray Pollen",
-            "text": "The snapdrake breathes a blast of pollen in a 40-foot cone. Creatures caught in the blast must succeed at a basic Reflex DC 25 save or be exposed to snapdrake pollen.\n\nThe snapdrake can't use Spray Pollen again for 1d6 rounds.",
+            "text": "The snapdrake breathes a blast of pollen in a 40-foot [cone](/rule/cone-rules-2386). Creatures caught in the blast must succeed at a basic Reflex DC 25 save or be exposed to snapdrake pollen.\n\nThe snapdrake can't use Spray Pollen again for 1d6 rounds.",
             "traits": [
               "arcane",
               "plant",
               "poison"
             ],
             "actions": "two"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -12226,8 +12397,7 @@
         "acrobatics": 22,
         "athletics": 22,
         "deception": 21,
-        "nature": 19,
-        "lore": 18
+        "nature": 19
       },
       "languages": [
         "pyric"
@@ -12268,7 +12438,13 @@
             "finesse",
             "unarmed"
           ],
-          "damage": "2d6 fire; 1d10+8 slashing"
+          "damage": "2d6 fire; 1d10+8 slashing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -12320,13 +12496,6 @@
             "name": "Snatch",
             "text": "A solar crow can [Fly](/action/fly-player-core) at half Speed while it has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) in its talons, carrying that creature along with it.",
             "traits": []
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -12346,6 +12515,12 @@
         {
           "label": "fire",
           "slug": "fire"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Sun Lore",
+          "value": 18
         }
       ]
     },
@@ -12412,8 +12587,7 @@
       "skills": {
         "acrobatics": 21,
         "athletics": 21,
-        "nature": 18,
-        "lore": 18
+        "nature": 18
       },
       "languages": [
         "pyric"
@@ -12501,6 +12675,16 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "loreSkills": [
+        {
+          "name": "Plane of Fire Lore",
+          "value": 18
+        },
+        {
+          "name": "Warfare Lore",
+          "value": 18
+        }
       ]
     },
     "attributes": {
@@ -12567,8 +12751,7 @@
       "skills": {
         "acrobatics": 21,
         "athletics": 21,
-        "nature": 18,
-        "lore": 18
+        "nature": 18
       },
       "languages": [
         "pyric"
@@ -12655,6 +12838,16 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Plane of Fire Lore",
+          "value": 18
+        },
+        {
+          "name": "Warfare Lore",
+          "value": 18
         }
       ]
     },
@@ -12892,8 +13085,7 @@
       "skills": {
         "deception": 16,
         "diplomacy": 14,
-        "performance": 14,
-        "lore": 15
+        "performance": 14
       },
       "languages": [
         "thalassic"
@@ -12927,7 +13119,12 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "5d4+5 piercing"
+          "damage": "5d4+5 piercing",
+          "effects": [
+            {
+              "name": "Listless Saliva"
+            }
+          ]
         },
         {
           "name": "Spitball",
@@ -12935,7 +13132,12 @@
           "actions": "one",
           "attack": 13,
           "traits": [],
-          "damage": "4d6+5 bludgeoning"
+          "damage": "4d6+5 bludgeoning",
+          "effects": [
+            {
+              "name": "Listless Saliva"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -12979,6 +13181,16 @@
         {
           "label": "water",
           "slug": "water"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Art Lore",
+          "value": 15
+        },
+        {
+          "name": "Cooking Lore",
+          "value": 17
         }
       ],
       "spellcasting": [
@@ -13083,7 +13295,7 @@
         "fey",
         "muan"
       ],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Bleed",
         "Blinded",
@@ -13276,14 +13488,13 @@
         "crafting": 44,
         "nature": 37,
         "stealth": 41,
-        "thievery": 39,
-        "lore": 42
+        "thievery": 39
       },
       "languages": [
         "orvian",
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 120 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -13313,7 +13524,12 @@
             "magical",
             "unarmed"
           ],
-          "damage": "5d10+12 slashing"
+          "damage": "5d10+12 slashing",
+          "effects": [
+            {
+              "name": "Constraining Crystal"
+            }
+          ]
         },
         {
           "name": "Crystal Wand",
@@ -13353,12 +13569,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Tremorsense (Imprecise) 120 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          },
           {
             "name": "Telepathy 300 feet",
             "text": "",
@@ -13416,7 +13626,7 @@
           },
           {
             "name": "Crystal Burst",
-            "text": "An explosion of razor-sharp splinters deals 1d4 rounds.",
+            "text": "An explosion of razor-sharp splinters deals 24d6 piercing damage in a 30-foot burst within 120 feet, with a DC 46 [basic Reflex save](/rule/basic-saving-throws-rules-2297). The vault keeper can't use Crystal Burst again for 1d4 rounds.",
             "traits": [
               "arcane",
               "earth"
@@ -13449,6 +13659,20 @@
         }
       ],
       "languagesDetails": "telepathy 300 feet",
+      "loreSkills": [
+        {
+          "name": "Architecture Lore",
+          "value": 42
+        },
+        {
+          "name": "Engineering Lore",
+          "value": 42
+        },
+        {
+          "name": "Planar Lore",
+          "value": 42
+        }
+      ],
       "spellcasting": [
         {
           "name": "Arcane Prepared Spells",
@@ -13817,14 +14041,13 @@
         "athletics": 26,
         "crafting": 26,
         "nature": 24,
-        "thievery": 24,
-        "lore": 28
+        "thievery": 24
       },
       "languages": [
         "orvian",
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 120 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -13852,7 +14075,12 @@
             "magical",
             "unarmed"
           ],
-          "damage": "3d10+10 slashing"
+          "damage": "3d10+10 slashing",
+          "effects": [
+            {
+              "name": "Constraining Crystal"
+            }
+          ]
         },
         {
           "name": "Crystal Wand",
@@ -13880,12 +14108,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Tremorsense (Imprecise) 120 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          },
           {
             "name": "Telepathy 300 feet",
             "text": "",
@@ -13933,7 +14155,7 @@
           },
           {
             "name": "Crystal Burst",
-            "text": "An explosion of razor-sharp splinters deals 1d4 rounds.",
+            "text": "An explosion of razor-sharp splinters deals 15d6 piercing damage in a 30-foot burst within 120 feet, with a DC 35 [basic Reflex save](/rule/basic-saving-throws-rules-2297). The vault keeper can't use Crystal Burst again for 1d4 rounds.",
             "traits": [
               "arcane",
               "earth"
@@ -13967,6 +14189,12 @@
         }
       ],
       "languagesDetails": "telepathy 300 feet",
+      "loreSkills": [
+        {
+          "name": "Planar Lore",
+          "value": 28
+        }
+      ],
       "spellcasting": [
         {
           "name": "Arcane Innate Spells",
@@ -14471,7 +14699,7 @@
         "offensive": [
           {
             "name": "Vacuum",
-            "text": "**Requirements** The veldenar doesn't have a creature engulfed; **Effect** The veldenar forcefully unlocks then expands its jaws to inhale the air in a 15-foot cone before it, pulling Large or smaller creatures into its cavernous maw. The veldenar Engulfs the creatures in the area (Reflex DC 27, (1d10+10) cold, [Escape](/action/escape-player-core), Rupture 25).",
+            "text": "**Requirements** The veldenar doesn't have a creature engulfed; **Effect** The veldenar forcefully unlocks then expands its jaws to inhale the air in a 15-foot [cone](/rule/cone-rules-2386) before it, pulling Large or smaller creatures into its cavernous maw. The veldenar Engulfs the creatures in the area (Reflex DC 27, (1d10+10) cold, [Escape](/action/escape-player-core), Rupture 25).",
             "traits": [
               "air"
             ],
@@ -14592,7 +14820,12 @@
             "reach-15",
             "trip"
           ],
-          "damage": "2d8+5 bludgeoning"
+          "damage": "2d8+5 bludgeoning",
+          "effects": [
+            {
+              "name": "Strangling Vines"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -14619,7 +14852,7 @@
           },
           {
             "name": "Unseating Sweep",
-            "text": "The whipping willow attempts to [Trip](/action/trip-player-core) all creatures within a 15-foot cone, making a single Athletics check against all targets' Reflex DCs.",
+            "text": "The whipping willow attempts to [Trip](/action/trip-player-core) all creatures within a 15-foot [cone](/rule/cone-rules-2386), making a single Athletics check against all targets' Reflex DCs.",
             "traits": [],
             "actions": "two"
           }
@@ -14743,7 +14976,12 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "1d6 piercing"
+          "damage": "1d6 piercing",
+          "effects": [
+            {
+              "name": "Thorn Puncture"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -14752,7 +14990,7 @@
         "offensive": [
           {
             "name": "Breathe Pollen",
-            "text": "The wood scamp breathes choking pollen in a 15-foot cone that deals 2d6 poison damage to each creature within the area (basic Reflex DC 17 save; creatures who don't need to breathe are immune). The wood scamp can't Breathe Pollen again for 1d4 rounds.",
+            "text": "The wood scamp breathes choking pollen in a 15-foot [cone](/rule/cone-rules-2386) that deals 2d6 poison damage to each creature within the area (basic Reflex DC 17 save; creatures who don't need to breathe are immune). The wood scamp can't Breathe Pollen again for 1d4 rounds.",
             "traits": [
               "arcane",
               "plant"
@@ -14892,8 +15130,7 @@
       },
       "skills": {
         "athletics": 7,
-        "stealth": 6,
-        "lore": 4
+        "stealth": 6
       },
       "languages": [
         "muan"
@@ -14977,6 +15214,12 @@
           "label": "wood",
           "slug": "wood"
         }
+      ],
+      "loreSkills": [
+        {
+          "name": "Plane of Wood Lore",
+          "value": 4
+        }
       ]
     },
     "attributes": {
@@ -15047,8 +15290,7 @@
         "performance": 38,
         "religion": 31,
         "stealth": 36,
-        "survival": 33,
-        "lore": 33
+        "survival": 33
       },
       "languages": [
         "common",
@@ -15204,6 +15446,12 @@
         }
       ],
       "languagesDetails": "truespeech",
+      "loreSkills": [
+        {
+          "name": "Planar Lore",
+          "value": 33
+        }
+      ],
       "spellcasting": [
         {
           "name": "Divine Innate Spells",

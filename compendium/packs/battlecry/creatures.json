@@ -1591,7 +1591,7 @@
         "draconic",
         "mwangi"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 8,
@@ -2070,7 +2070,7 @@
         "stealth": 15
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 6,
@@ -2377,7 +2377,7 @@
       "languages": [
         "draconic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Paralyzed",
         "Sleep"
@@ -2557,7 +2557,7 @@
         "offensive": [
           {
             "name": "Bola Hurl",
-            "text": "The dromaars draw bolas and toss them in a 15-foot cone. Each creature in this area takes 3d6 nonlethal bludgeoning damage (basic Reflex DC 21 save). A creature who fails this saving throw is also knocked [Prone](/condition/prone-player-core).",
+            "text": "The dromaars draw bolas and toss them in a 15-foot [cone](/rule/cone-rules-2386). Each creature in this area takes 3d6 nonlethal bludgeoning damage (basic Reflex DC 21 save). A creature who fails this saving throw is also knocked [Prone](/condition/prone-player-core).",
             "traits": [],
             "actions": "one"
           },
@@ -2725,7 +2725,7 @@
           },
           {
             "name": "Troop Spellcasting",
-            "text": "When the druid circle Casts a Spell, its constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone. When Casting a Spell that has an area of a burst, cone, or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.",
+            "text": "When the druid circle Casts a Spell, its constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone. When Casting a Spell that has an area of a burst, [cone](/rule/cone-rules-2386), or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.",
             "traits": []
           }
         ]
@@ -3193,8 +3193,7 @@
         "will": 20
       },
       "skills": {
-        "athletics": 27,
-        "lore": 24
+        "athletics": 27
       },
       "languages": [
         "common"
@@ -3278,6 +3277,12 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Warfare Lore",
+          "value": 24
         }
       ]
     },
@@ -3645,7 +3650,7 @@
         "survival": 15
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 7,
@@ -4296,7 +4301,7 @@
       "languages": [
         "diabolic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Fire"
       ],
@@ -4763,7 +4768,7 @@
       "languages": [
         "daemonic"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), plaguesense (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), plaguesense ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -4825,7 +4830,7 @@
           },
           {
             "name": "Pestilent Wheeze",
-            "text": "The leukodaemons exhale a 30-foot cone of disease-ridden black flies that deal 5d8 piercing damage (basic Reflex DC 31 save). A creature that fails the save also becomes [Sickened 1](/condition/sickened-player-core) (or Sickened 2 on a critical failure). When the leukodaemon plague is reduced to 2 segments, this area decreases to a 20-foot cone.",
+            "text": "The leukodaemons exhale a 30-foot [cone](/rule/cone-rules-2386) of disease-ridden black flies that deal 5d8 piercing damage (basic Reflex DC 31 save). A creature that fails the save also becomes [Sickened 1](/condition/sickened-player-core) (or Sickened 2 on a critical failure). When the leukodaemon plague is reduced to 2 segments, this area decreases to a 20-foot cone.",
             "traits": [
               "divine",
               "unholy"
@@ -5053,7 +5058,7 @@
           },
           {
             "name": "Steady Troop Spellcasting",
-            "text": "When the lich legion Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone. When Casting a Spell that has an area of a burst, cone, or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.\n\nIf a reaction would disrupt the lich legion's [spellcasting](/action/spellcasting-player-core) action, the lich legion attempts a Flat DC 12. On a success, the action isn't disrupted.",
+            "text": "When the lich legion Casts a Spell, their constituent members combine their efforts into casting a more powerful version of the spell than any one member could achieve alone. When Casting a Spell that has an area of a burst, [cone](/rule/cone-rules-2386), or line and doesn't have a duration, increase the area of that spell. Add 5 feet to the radius of a burst that normally has a radius of at least 10 feet (a burst with a smaller radius is not affected). Add 5 feet to the length of a cone or line that is normally 15 feet long or smaller, and add 10 feet to the length of a larger cone or line.\n\nIf a reaction would disrupt the lich legion's [spellcasting](/action/spellcasting-player-core) action, the lich legion attempts a Flat DC 12. On a success, the action isn't disrupted.",
             "traits": []
           }
         ]
@@ -6299,7 +6304,7 @@
         "protean",
         "empyrean"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), entropy sense (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), entropy sense ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 10,
@@ -6963,7 +6968,7 @@
       "languages": [
         "petran"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet, smoke vision",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet, smoke vision",
       "immunities": [
         "Bleed",
         "Paralyzed",
@@ -7006,7 +7011,7 @@
         "offensive": [
           {
             "name": "Scree Breath",
-            "text": "The scamp avalanche breathes rocks in a 15-foot cone that deals 3d6 bludgeoning damage to each creature within the area (basic Reflex DC 21 save). The scamp avalanche can't use Scree Breath again for 1d4 rounds.",
+            "text": "The scamp avalanche breathes rocks in a 15-foot [cone](/rule/cone-rules-2386) that deals 3d6 bludgeoning damage to each creature within the area (basic Reflex DC 21 save). The scamp avalanche can't use Scree Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "earth"
@@ -7187,7 +7192,7 @@
         "offensive": [
           {
             "name": "Acid Breath",
-            "text": "The scamp flood breathes acid in a 15-foot cone that deals 3d6 acid damage to each creature within the area (basic Reflex DC 21 save). The scamp flood can't use Acid Breath again for 1d4 rounds.",
+            "text": "The scamp flood breathes acid in a 15-foot [cone](/rule/cone-rules-2386) that deals 3d6 acid damage to each creature within the area (basic Reflex DC 21 save). The scamp flood can't use Acid Breath again for 1d4 rounds.",
             "traits": [
               "acid",
               "arcane"
@@ -7372,7 +7377,7 @@
           },
           {
             "name": "Flame Breath",
-            "text": "The scamp inferno breathes flames in a 15-foot cone that deals 3d6 fire damage to each creature within the area (basic Reflex DC 21 save). Creatures that fail the save also take 1d6 persistent fire damage. The scamp inferno can't use Flame Breath again for 1d4 rounds.",
+            "text": "The scamp inferno breathes flames in a 15-foot [cone](/rule/cone-rules-2386) that deals 3d6 fire damage to each creature within the area (basic Reflex DC 21 save). Creatures that fail the save also take 1d6 persistent fire damage. The scamp inferno can't use Flame Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "fire"
@@ -7556,7 +7561,7 @@
           },
           {
             "name": "Shrapnel Breath",
-            "text": "The scamp shrapnel breathes shrapnel in a 15-foot cone that deals 3d6 slashing damage to each creature within the area (basic Reflex DC 21 save). Creatures that fail the save also take 1d6 bleed damage.The scamp shrapnel can't use Shrapnel Breath again for 1d4 rounds.",
+            "text": "The scamp shrapnel breathes shrapnel in a 15-foot [cone](/rule/cone-rules-2386) that deals 3d6 slashing damage to each creature within the area (basic Reflex DC 21 save). Creatures that fail the save also take 1d6 bleed damage.The scamp shrapnel can't use Shrapnel Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "metal"
@@ -7728,7 +7733,7 @@
         "offensive": [
           {
             "name": "Pollen Breath",
-            "text": "The scamp tangle breathes pollen in a 15-foot cone that deals 3d6 poison damage to each creature within the area (basic Reflex DC 21 save). The scamp tangle can't use Pollen Breath again for 1d4 rounds.",
+            "text": "The scamp tangle breathes pollen in a 15-foot [cone](/rule/cone-rules-2386) that deals 3d6 poison damage to each creature within the area (basic Reflex DC 21 save). The scamp tangle can't use Pollen Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "wood"
@@ -7912,7 +7917,7 @@
         "offensive": [
           {
             "name": "Sirocco Breath",
-            "text": "The scamp whirlwind breathes in a 15-foot cone that deals 3d6 slashing damage to each creature within the area (basic Reflex DC 21 save). Creatures that fail the save also get pushed back by 10 feet. The scamp whirlwind can't use Sirocco Breath again for 1d4 rounds.",
+            "text": "The scamp whirlwind breathes in a 15-foot [cone](/rule/cone-rules-2386) that deals 3d6 slashing damage to each creature within the area (basic Reflex DC 21 save). Creatures that fail the save also get pushed back by 10 feet. The scamp whirlwind can't use Sirocco Breath again for 1d4 rounds.",
             "traits": [
               "arcane",
               "earth"
@@ -8042,7 +8047,7 @@
         "aklo",
         "thassilonian"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), sin [scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), sin [scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Controlled"
       ],
@@ -8350,8 +8355,7 @@
         "intimidation": 24,
         "occultism": 22,
         "religion": 22,
-        "stealth": 27,
-        "lore": 24
+        "stealth": 27
       },
       "languages": [
         "chthonian",
@@ -8359,7 +8363,7 @@
         "empyrean",
         "requian"
       ],
-      "senses": "[Lifesense](/action/lifesense-monster-core) (imprecise) 60 feet",
+      "senses": "[Lifesense](/action/lifesense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Death Effects",
         "Disease"
@@ -8456,6 +8460,12 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Boneyard Lore",
+          "value": 24
         }
       ],
       "spellcasting": [
@@ -8734,8 +8744,7 @@
         "acrobatics": 22,
         "athletics": 24,
         "intimidation": 22,
-        "religion": 19,
-        "lore": 22
+        "religion": 19
       },
       "languages": [
         "common",
@@ -8844,6 +8853,12 @@
         }
       ],
       "languagesDetails": "Telepathy 100 feet",
+      "loreSkills": [
+        {
+          "name": "Warfare Lore",
+          "value": 22
+        }
+      ],
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -9097,7 +9112,7 @@
         "survival": 15
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 5,
@@ -9372,14 +9387,13 @@
       },
       "skills": {
         "athletics": 27,
-        "intimidation": 24,
-        "lore": 24
+        "intimidation": 24
       },
       "languages": [
         "draconic",
         "sakvroth"
       ],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {
         "area-damage": 15,
@@ -9471,6 +9485,12 @@
         {
           "label": "xulgath",
           "slug": "xulgath"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Dinosaur Lore",
+          "value": 24
         }
       ]
     },

@@ -245,6 +245,8 @@ def _render_check(body: str, label: str) -> str:
         return f"{basic}{statistic} DC 37 or your class/spell DC, whichever is higher".strip()
     if dc.startswith("resolve(") and dc.endswith(")"):
         dc = dc[len("resolve("):-1]
+    if basic and dc:
+        return f"DC {_humanize_variables(dc)} basic {statistic}"
     return f"{basic}{statistic}{' DC ' + _humanize_variables(dc) if dc else ''}".strip()
 
 

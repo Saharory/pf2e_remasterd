@@ -82,6 +82,12 @@ def main() -> int:
                         raise SystemExit(
                             f"creature repeats linked shared rule {code}: {creature['slug']}: {name}"
                         )
+        for attack in creature.get("data", {}).get("attacks", []):
+            shared_reference_count += sum(
+                int(bool(effect.get("reference")))
+                for effect in attack.get("effects", [])
+                if isinstance(effect, dict)
+            )
 
     if shared_reference_count < 1500:
         raise SystemExit("creature shared-rule references are unexpectedly incomplete")
@@ -131,7 +137,7 @@ def main() -> int:
             raise SystemExit(f"Moon Hag is missing AoN-style inline reference: {expected}")
 
     army_ants = by_slug["army-ant-swarm-monster-core"]
-    if "[Scent](/action/scent-monster-core) (imprecise) 30 feet" not in army_ants["data"]["senses"]:
+    if "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet" not in army_ants["data"]["senses"]:
         raise SystemExit("Army Ant Swarm is missing its scent acuity")
     if not {"Grabbed", "Precision", "Prone", "Restrained", "Swarm Mind"}.issubset(
         set(army_ants["data"].get("immunities") or [])
@@ -139,15 +145,41 @@ def main() -> int:
         raise SystemExit("Army Ant Swarm is missing explicit or swarm immunities")
 
     bone_prophet = by_slug["bone-prophet-monster-core"]
-    if "(imprecise) 30 feet" not in bone_prophet["data"].get("senses", ""):
+    if "([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet" not in bone_prophet["data"].get("senses", ""):
         raise SystemExit("Bone Prophet is missing its scent acuity")
     if bone_prophet["data"].get("languagesDetails") != "Telepathy 100 feet":
         raise SystemExit("Bone Prophet is missing its language details")
 
-    adamantine_dragon = by_slug["adamantine-dragon-adult-spellcaster-monster-core"]
-    dragon_senses = adamantine_dragon["data"].get("senses", "")
-    if "[Scent](/action/scent-monster-core) (imprecise) 60 feet" not in dragon_senses or "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 90 feet" not in dragon_senses:
+    adamantine_dragon = by_slug["adamantine-dragon-young-monster-core"]
+    dragon_data = adamantine_dragon["data"]
+    dragon_senses = dragon_data.get("senses", "")
+    if "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet" not in dragon_senses or "[Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet" not in dragon_senses:
         raise SystemExit("Adamantine Dragon is missing structured sense acuity")
+    if any(
+        ability.get("name", "").startswith("Tremorsense")
+        for ability in dragon_data["abilities"]["interaction"]
+    ):
+        raise SystemExit("Adamantine Dragon repeats Tremorsense as an interaction ability")
+    if dragon_data.get("resistances", {}).get("physical") != "10 (except adamantine)":
+        raise SystemExit("Adamantine Dragon is missing its printed physical resistance")
+    dragon_abilities = {
+        ability["name"]: ability
+        for entries in dragon_data["abilities"].values()
+        for ability in entries
+    }
+    avalanche = str(dragon_abilities.get("Avalanche Breath", {}).get("text") or "")
+    for phrase in ("8d8 bludgeoning", "30-foot [cone]", "DC 28 [basic Reflex save]", "1d4 rounds"):
+        if phrase not in avalanche:
+            raise SystemExit(f"Adamantine Dragon Avalanche Breath is incomplete: {phrase}")
+    attacks = {attack["name"]: attack for attack in dragon_data["attacks"]}
+    if attacks["Jaws"].get("effects") != [{"name": "Grab", "reference": "/action/grab-monster-core"}]:
+        raise SystemExit("Adamantine Dragon Grab is not attached to its jaws Strike")
+    if attacks["Claw"].get("effects") != [{"name": "Knockdown", "reference": "/action/knockdown-monster-core"}]:
+        raise SystemExit("Adamantine Dragon Knockdown is not attached to its claw Strike")
+    if "Grab" in dragon_abilities or "Knockdown" in dragon_abilities:
+        raise SystemExit("Adamantine Dragon repeats its Strike effects as separate abilities")
+    if dragon_data.get("loreSkills") != [{"name": "Mining Lore", "value": 16}]:
+        raise SystemExit("Adamantine Dragon is missing its named Lore skill")
 
     animated_armor = by_slug["animated-armor-monster-core"]
     if animated_armor["data"].get("hardness") != 9:
@@ -204,16 +236,27 @@ def main() -> int:
         "/action/recall-knowledge-player-core" not in creature_view
         or "data.recallKnowledge.dc" not in creature_view
         or "data.languages" not in creature_view
+        or "/rule/languages-rules-2080" not in creature_view
+        or "/rule/skills-rules-2276" not in creature_view
     ):
         raise SystemExit("creature identity fields are not separated in the stat block")
 
+    secondary_view = (REPO / "views/partials/creature-secondary.md").read_text(encoding="utf-8")
+    if "/rule/immunity-rules-2313" not in secondary_view or "/rule/resistance-rules-2318" not in secondary_view:
+        raise SystemExit("creature defenses are missing quick-rule links")
+
     creature_form = form("creature.json")
     creature_fields = field_attributes(creature_form)
-    if not {"data.hardness", "data.languagesDetails"}.issubset(creature_fields):
+    if not {"data.hardness", "data.languagesDetails", "data.loreSkills"}.issubset(creature_fields):
         raise SystemExit("creature editor does not expose restored metadata")
-    secondary_view = (REPO / "views/partials/creature-secondary.md").read_text(encoding="utf-8")
     if "data.hardness" not in secondary_view:
         raise SystemExit("creature view does not render Hardness")
+
+    attack_form = form("partials/attack.json")
+    if "effects" not in {
+        str(section.get("attribute")) for section in attack_form.get("sections", [])
+    }:
+        raise SystemExit("attack editor does not expose linked Strike effects")
     required_lists = {
         "data.abilities.interaction",
         "data.abilities.defensive",

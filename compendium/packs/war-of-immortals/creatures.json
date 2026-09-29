@@ -621,7 +621,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "3d10+12 piercing"
+          "damage": "3d10+12 piercing",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Leg",
@@ -701,13 +707,6 @@
             "text": "The gogiteth Strides three times. Once per [Stride](/action/stride-player-core), it can attempt a leg [Strike](/action/strike-player-core) against a creature in its reach at any point during the Stride; it must make each attack against a different creature, but it doesn't apply its multiple attack penalty until after making all its Strikes. If any of the Strikes result in a critical failure, Skittering Assault ends.",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Improved Grab",
-            "text": "",
-            "traits": [],
-            "actions": "free",
-            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -798,7 +797,7 @@
         "survival": 9
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -1015,7 +1014,12 @@
             "finesse",
             "magical"
           ],
-          "damage": "4d8 void"
+          "damage": "4d8 void",
+          "effects": [
+            {
+              "name": "Lich Siphon Life"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -1555,7 +1559,7 @@
       "languages": [
         "aklo"
       ],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 120 feet",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet",
       "immunities": [
         "Clumsy",
         "Cold",
@@ -1595,7 +1599,13 @@
             "reach-20",
             "unarmed"
           ],
-          "damage": "4d10+22 piercing"
+          "damage": "4d10+22 piercing",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Foot",
@@ -1608,7 +1618,13 @@
             "reach-15",
             "unarmed"
           ],
-          "damage": "4d6+22 bludgeoning"
+          "damage": "4d6+22 bludgeoning",
+          "effects": [
+            {
+              "name": "Improved Knockdown",
+              "reference": "/action/improved-knockdown-monster-core"
+            }
+          ]
         },
         {
           "name": "Trunk",
@@ -1728,7 +1744,7 @@
           },
           {
             "name": "Trumpeting Blast",
-            "text": "The Oliphaunt of Jandelay emits a cacophonous blast from its trunk in a 120-foot cone. Each creature in the area must attempt a Fortitude DC 49 save. If the Oliphaunt spends 1 Mythic Point as part of the activity, the DC becomes 51 and the damage dice are increased to d12s. The Oliphaunt of Jandelay can't use Trumpeting Blast again for 1d4 rounds.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes 7d10 sonic damage and is [Deafened](/condition/deafened-player-core) for 1 round.\n\n**Failure** The creature takes 14d10 sonic damage, is [Slowed 1](/condition/slowed-player-core) for 2 rounds, and is deafened for 2 rounds.\n\n**Critical Failure** The creature takes 28d10 sonic damage, is Slowed 2 for 2 rounds, and is deafened for 4 rounds.",
+            "text": "The Oliphaunt of Jandelay emits a cacophonous blast from its trunk in a 120-foot [cone](/rule/cone-rules-2386). Each creature in the area must attempt a Fortitude DC 49 save. If the Oliphaunt spends 1 Mythic Point as part of the activity, the DC becomes 51 and the damage dice are increased to d12s. The Oliphaunt of Jandelay can't use Trumpeting Blast again for 1d4 rounds.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes 7d10 sonic damage and is [Deafened](/condition/deafened-player-core) for 1 round.\n\n**Failure** The creature takes 14d10 sonic damage, is [Slowed 1](/condition/slowed-player-core) for 2 rounds, and is deafened for 2 rounds.\n\n**Critical Failure** The creature takes 28d10 sonic damage, is Slowed 2 for 2 rounds, and is deafened for 4 rounds.",
             "traits": [
               "sonic"
             ],
@@ -2062,7 +2078,7 @@
         "common",
         "orcish"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight (precise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Truesight ([precise](/rule/precise-senses-rules-2406)) 60 feet",
       "immunities": [
         "Acid",
         "Death Effects",
@@ -2094,7 +2110,12 @@
             "unarmed",
             "unholy"
           ],
-          "damage": "5d10+22 slashing"
+          "damage": "5d10+22 slashing",
+          "effects": [
+            {
+              "name": "Bloodboils"
+            }
+          ]
         },
         {
           "name": "Jaws",
@@ -2107,7 +2128,16 @@
             "unarmed",
             "unholy"
           ],
-          "damage": "4d12+22 piercing"
+          "damage": "4d12+22 piercing",
+          "effects": [
+            {
+              "name": "Bloodboils"
+            },
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Tail",
@@ -2120,7 +2150,12 @@
             "reach-20",
             "unholy"
           ],
-          "damage": "3d8+22 bludgeoning"
+          "damage": "3d8+22 bludgeoning",
+          "effects": [
+            {
+              "name": "Bloodboils"
+            }
+          ]
         },
         {
           "name": "Teeth",
@@ -2345,7 +2380,12 @@
             "mental",
             "unholy"
           ],
-          "damage": "4d6+14 mental"
+          "damage": "4d6+14 mental",
+          "effects": [
+            {
+              "name": "Steal Thoughts"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -2660,7 +2700,7 @@
         "jotun",
         "sakvroth"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 120 feet, [all-around vision](/action/all-around-vision-monster-core), greater web sense",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet, [all-around vision](/action/all-around-vision-monster-core), greater web sense",
       "immunities": [
         "Mental",
         "Poison"
@@ -2685,7 +2725,12 @@
             "magical",
             "reach-10"
           ],
-          "damage": "2d8+16 piercing"
+          "damage": "2d8+16 piercing",
+          "effects": [
+            {
+              "name": "Weaver Venom"
+            }
+          ]
         },
         {
           "name": "Tarsal Claw",
@@ -2696,7 +2741,13 @@
             "magical",
             "reach-15"
           ],
-          "damage": "2d6+16 slashing"
+          "damage": "2d6+16 slashing",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Web",
@@ -2707,7 +2758,12 @@
             "magical",
             "nonlethal"
           ],
-          "damage": "4d4+10 bludgeoning"
+          "damage": "4d4+10 bludgeoning",
+          "effects": [
+            {
+              "name": "Nightmare Cocoon"
+            }
+          ]
         }
       ],
       "abilities": {

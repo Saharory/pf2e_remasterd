@@ -41,8 +41,7 @@
       "skills": {
         "athletics": 13,
         "intimidation": 12,
-        "stealth": 10,
-        "lore": 12
+        "stealth": 10
       },
       "languages": [
         "common",
@@ -71,7 +70,13 @@
           "traits": [
             "reach-10"
           ],
-          "damage": "2d6+5 bludgeoning"
+          "damage": "2d6+5 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -130,6 +135,12 @@
         {
           "label": "unholy",
           "slug": "unholy"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Mercantile Lore",
+          "value": 12
         }
       ]
     },
@@ -371,11 +382,10 @@
         "diplomacy": 16,
         "intimidation": 16,
         "society": 18,
-        "stealth": 16,
-        "lore": 16
+        "stealth": 16
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), Thoughtsense (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), Thoughtsense ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Death Effects"
       ],
@@ -446,7 +456,7 @@
           },
           {
             "name": "Death by 1,000 Papercuts",
-            "text": "The bibliodaemon launches a torrent of sharp papers from the sleeves of their robes. All creatures in a 15-foot cone take 9d6 slashing damage (basic Reflex DC 23 save). Creatures that fail their save also take 2d4 bleed damage. The bibliodaemon can't use Death by 1,000 Papercuts again for 1d4 rounds.",
+            "text": "The bibliodaemon launches a torrent of sharp papers from the sleeves of their robes. All creatures in a 15-foot [cone](/rule/cone-rules-2386) take 9d6 slashing damage (basic Reflex DC 23 save). Creatures that fail their save also take 2d4 bleed damage. The bibliodaemon can't use Death by 1,000 Papercuts again for 1d4 rounds.",
             "traits": [
               "divine"
             ],
@@ -488,6 +498,12 @@
         {
           "label": "unholy",
           "slug": "unholy"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Legal Lore",
+          "value": 16
         }
       ],
       "spellcasting": [
@@ -646,7 +662,7 @@
         "fey",
         "muan"
       ],
-      "senses": "blindsight (precise) 100 feet",
+      "senses": "blindsight ([precise](/rule/precise-senses-rules-2406)) 100 feet",
       "immunities": [
         "Blinded",
         "Visual"
@@ -669,7 +685,13 @@
           "actions": "one",
           "attack": 32,
           "traits": [],
-          "damage": "3d12+18 piercing"
+          "damage": "3d12+18 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Stinger",
@@ -679,7 +701,12 @@
           "traits": [
             "reach-15"
           ],
-          "damage": "3d10+15 piercing"
+          "damage": "3d10+15 piercing",
+          "effects": [
+            {
+              "name": "Corbayrant Venom"
+            }
+          ]
         },
         {
           "name": "Spine",
@@ -689,7 +716,12 @@
           "traits": [
             "propulsive"
           ],
-          "damage": "3d6+15 piercing"
+          "damage": "3d6+15 piercing",
+          "effects": [
+            {
+              "name": "Thorn Paralysis"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -836,14 +868,13 @@
       "skills": {
         "diplomacy": 20,
         "occultism": 23,
-        "thievery": 23,
-        "lore": 26
+        "thievery": 23
       },
       "languages": [
         "common",
         "dwarven"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), wealthsense (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), wealthsense ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
         "Death Effects",
@@ -882,7 +913,12 @@
             "magical",
             "reach-10"
           ],
-          "damage": "2d10+11 bludgeoning"
+          "damage": "2d10+11 bludgeoning",
+          "effects": [
+            {
+              "name": "Greedy Grab"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -919,7 +955,7 @@
           },
           {
             "name": "This Is My Reality!",
-            "text": "6d6 spirit, basic Will DC 30\n\nThe failed prophet exerts control over their crumbling mindscape to inflict harm upon those trapped within. This can take the form of falling debris, natural disasters, or anything else the failed prophet can imagine. No matter the form, each creature currently [Paralyzed](/condition/paralyzed-player-core) by the failed prophet's broken mindscape takes spirit damage with a basic Will save. The save DC uses the high spell DC for the failed prophet's level and the unlimited use area damage for the failed prophet's level.",
+            "text": "6d6 spirit, basic Will DC 30\n\nThe failed prophet exerts control over their crumbling mindscape to inflict harm upon those trapped within. This can take the form of falling debris, natural disasters, or anything else the failed prophet can imagine. No matter the form, each creature currently [Paralyzed](/condition/paralyzed-player-core) by the failed prophet's broken mindscape takes spirit damage with a [basic Will save](/rule/basic-saving-throws-rules-2297). The save DC uses the high spell DC for the failed prophet's level and the unlimited use area damage for the failed prophet's level.",
             "traits": [
               "concentrate"
             ],
@@ -939,6 +975,12 @@
         {
           "label": "construct",
           "slug": "construct"
+        }
+      ],
+      "loreSkills": [
+        {
+          "name": "Mercantile Lore",
+          "value": 26
         }
       ],
       "spellcasting": [
@@ -1146,7 +1188,7 @@
       "languages": [
         "common"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Low-Light Vision](/action/low-light-vision-monster-core), [Wavesense](/action/wavesense-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Low-Light Vision](/action/low-light-vision-monster-core), [Wavesense](/action/wavesense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [],
       "weaknesses": {
         "electricity": 5
@@ -1165,7 +1207,12 @@
           "actions": "one",
           "attack": 15,
           "traits": [],
-          "damage": "1d8 cold; 1d8+5 piercing"
+          "damage": "1d8 cold; 1d8+5 piercing",
+          "effects": [
+            {
+              "name": "Pebblefang Poison"
+            }
+          ]
         },
         {
           "name": "Tail",
@@ -1176,7 +1223,13 @@
             "agile",
             "reach-10"
           ],
-          "damage": "2d6+5 bludgeoning"
+          "damage": "2d6+5 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -1530,7 +1583,13 @@
           "traits": [
             "reach-10"
           ],
-          "damage": "2d8+5 piercing"
+          "damage": "2d8+5 piercing",
+          "effects": [
+            {
+              "name": "Knockdown",
+              "reference": "/action/knockdown-monster-core"
+            }
+          ]
         },
         {
           "name": "Talon",
@@ -1540,7 +1599,12 @@
           "traits": [
             "agile"
           ],
-          "damage": "2d6+5 bludgeoning"
+          "damage": "2d6+5 bludgeoning",
+          "effects": [
+            {
+              "name": "Grave Blight"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -1678,7 +1742,13 @@
             "magical",
             "reach-15"
           ],
-          "damage": "3d8+13 bludgeoning"
+          "damage": "3d8+13 bludgeoning",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -1849,7 +1919,12 @@
           "actions": "one",
           "attack": 17,
           "traits": [],
-          "damage": "2d12+6 acid"
+          "damage": "2d12+6 acid",
+          "effects": [
+            {
+              "name": "Vorvorak Bile"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -2026,7 +2101,7 @@
         "common",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Bleed",
         "Death Effects",
@@ -2051,7 +2126,13 @@
           "actions": "one",
           "attack": 9,
           "traits": [],
-          "damage": "1d8+3 bludgeoning"
+          "damage": "1d8+3 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {

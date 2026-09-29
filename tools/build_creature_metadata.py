@@ -10,6 +10,9 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any, Iterable
 
+from build_creature_ability_glossary import html_to_markdown
+from foundry_markup import replace_foundry_directives
+
 
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_STAGING = REPO.parent / "structured-modules"
@@ -34,6 +37,20 @@ TRAIT_IMMUNITIES = {
         "poison", "sickened", "spirit", "unconscious", "vitality", "void",
     },
 }
+
+# The current Foundry Monster Core actors omit the physical resistance printed
+# for adamantine dragons. Keep this small published-stat correction explicit so
+# regenerating the catalog does not silently remove an important defense.
+PUBLISHED_OVERRIDES = {
+    "adamantine-dragon-young-monster-core": {"resistances": {"physical": "10 (except adamantine)"}},
+    "adamantine-dragon-young-spellcaster-monster-core": {"resistances": {"physical": "10 (except adamantine)"}},
+    "adamantine-dragon-adult-monster-core": {"resistances": {"physical": "15 (except adamantine)"}},
+    "adamantine-dragon-adult-spellcaster-monster-core": {"resistances": {"physical": "15 (except adamantine)"}},
+    "adamantine-dragon-ancient-monster-core": {"resistances": {"physical": "20 (except adamantine)"}},
+    "adamantine-dragon-ancient-spellcaster-monster-core": {"resistances": {"physical": "20 (except adamantine)"}},
+}
+
+TRUNCATED_RECHARGE_TEXT = re.compile(r"\bdeals\s+1d4 rounds\b", re.I)
 
 
 def parse_args() -> argparse.Namespace:
@@ -86,7 +103,7 @@ def format_defense(entry: dict[str, Any], include_value: bool) -> tuple[str, int
     return kind, value
 
 
-def actor_metadata(actor: dict[str, Any]) -> dict[str, Any]:
+def actor_metadata(actor: dict[str, Any], creature: dict[str, Any]) -> dict[str, Any]:
     system = actor.get("system", {})
     perception = system.get("perception", {}) if isinstance(system.get("perception"), dict) else {}
     attributes = system.get("attributes", {}) if isinstance(system.get("attributes"), dict) else {}
@@ -120,6 +137,40 @@ def actor_metadata(actor: dict[str, Any]) -> dict[str, Any]:
     hardness = attributes.get("hardness")
     hardness_value = hardness.get("value") if isinstance(hardness, dict) else None
 
+    attack_effects: dict[str, list[str]] = {}
+    lore_skills: list[dict[str, Any]] = []
+    actor_abilities: dict[str, str] = {}
+    for item in actor.get("items") or []:
+        if not isinstance(item, dict):
+            continue
+        item_system = item.get("system") or {}
+        item_name = str(item.get("name") or "")
+        if item.get("type") == "melee":
+            effects = (item_system.get("attackEffects") or {}).get("value") or []
+            if effects:
+                attack_effects[item_name.casefold()] = [str(value) for value in effects]
+        elif item.get("type") == "lore":
+            modifier = (item_system.get("mod") or {}).get("value")
+            if item_name and modifier is not None:
+                lore_skills.append({"name": item_name, "value": int(modifier)})
+        elif item.get("type") == "action":
+            description = (item_system.get("description") or {}).get("value")
+            if item_name and description:
+                actor_abilities[item_name.casefold()] = html_to_markdown(
+                    replace_foundry_directives(str(description))
+                )
+
+    ability_text: dict[str, str] = {}
+    creature_abilities = (creature.get("data") or {}).get("abilities") or {}
+    for entries in creature_abilities.values():
+        for ability in entries or []:
+            if not isinstance(ability, dict):
+                continue
+            original = str(ability.get("text") or "")
+            corrected = actor_abilities.get(str(ability.get("name") or "").casefold(), "")
+            if corrected and TRUNCATED_RECHARGE_TEXT.search(original):
+                ability_text[str(ability.get("name") or "")] = corrected
+
     result: dict[str, Any] = {
         "senses": ", ".join(dict.fromkeys(filter(None, senses))),
         "languages": list(dict.fromkeys(str(value) for value in languages.get("value", []))),
@@ -131,6 +182,9 @@ def actor_metadata(actor: dict[str, Any]) -> dict[str, Any]:
         "weaknesses": {},
         "resistances": {},
         "movementOther": clean_text(speed.get("details")),
+        "attackEffects": attack_effects,
+        "loreSkills": lore_skills,
+        "abilityText": ability_text,
     }
     if hardness_value:
         result["hardness"] = int(hardness_value)
@@ -171,7 +225,14 @@ def main() -> int:
         if not candidates:
             continue
         actor = next((value for value in candidates if value.get("name") == creature.get("name")), candidates[0])
-        catalog[str(creature["slug"])] = actor_metadata(actor)
+        slug = str(creature["slug"])
+        metadata = actor_metadata(actor, creature)
+        for field, supplied in PUBLISHED_OVERRIDES.get(slug, {}).items():
+            if isinstance(supplied, dict):
+                metadata.setdefault(field, {}).update(supplied)
+            else:
+                metadata[field] = supplied
+        catalog[slug] = metadata
     payload = {"stats": {"creatures": len(catalog)}, "creatures": dict(sorted(catalog.items()))}
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(payload["stats"], sort_keys=True))

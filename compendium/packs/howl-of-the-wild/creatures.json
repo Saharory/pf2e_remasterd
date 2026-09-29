@@ -50,7 +50,7 @@
         "empyrean",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Poison"
       ],
@@ -292,7 +292,7 @@
         "survival": 8
       },
       "languages": [],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 40 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 40 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -319,7 +319,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "2d6+7 piercing"
+          "damage": "2d6+7 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Claw",
@@ -452,7 +458,7 @@
         "thievery": 15
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), potionsight (precise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), potionsight ([precise](/rule/precise-senses-rules-2406)) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -599,7 +605,7 @@
         "survival": 22
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 120 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -636,7 +642,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "4d6+10 piercing"
+          "damage": "4d6+10 piercing",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Feather",
@@ -685,13 +697,6 @@
               "mental"
             ],
             "actions": "one"
-          },
-          {
-            "name": "Improved Grab",
-            "text": "",
-            "traits": [],
-            "actions": "free",
-            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -779,7 +784,7 @@
         "common",
         "mwangi"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [],
       "weaknesses": {
         "electricity": 15
@@ -1027,7 +1032,7 @@
       "languages": [
         "fey"
       ],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 40 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 40 feet",
       "immunities": [],
       "weaknesses": {
         "fire": 15
@@ -1053,7 +1058,13 @@
           "actions": "one",
           "attack": 26,
           "traits": [],
-          "damage": "4d10+5 bludgeoning"
+          "damage": "4d10+5 bludgeoning",
+          "effects": [
+            {
+              "name": "Improved Knockdown",
+              "reference": "/action/improved-knockdown-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -1102,7 +1113,7 @@
           },
           {
             "name": "Wail of the Forest",
-            "text": "**Requirements** The blooming guardian is in Full Bloom; **Effect** The blooming guardian confronts their mortality, causing their flowers to burst and spray their pollen. All creatures in a 40-foot cone take 10d10 void damage with a Fortitude DC 36 save. The blooming guardian then exits Full Bloom and can't enter it again for 1d4 rounds.\n\n**Critical Success** No effect.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and becomes [Drained 1](/condition/drained-player-core). Creatures that are [Enfeebled](/condition/enfeebled-player-core) lose that condition and increase the drained condition by the same value.\n\n**Critical Failure** As failure, but double damage.",
+            "text": "**Requirements** The blooming guardian is in Full Bloom; **Effect** The blooming guardian confronts their mortality, causing their flowers to burst and spray their pollen. All creatures in a 40-foot [cone](/rule/cone-rules-2386) take 10d10 void damage with a Fortitude DC 36 save. The blooming guardian then exits Full Bloom and can't enter it again for 1d4 rounds.\n\n**Critical Success** No effect.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and becomes [Drained 1](/condition/drained-player-core). Creatures that are [Enfeebled](/condition/enfeebled-player-core) lose that condition and increase the drained condition by the same value.\n\n**Critical Failure** As failure, but double damage.",
             "traits": [
               "primal",
               "void"
@@ -1224,7 +1235,7 @@
         "survival": 14
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -1241,7 +1252,12 @@
             "reach-15",
             "unarmed"
           ],
-          "damage": "2d10+9 piercing"
+          "damage": "2d10+9 piercing",
+          "effects": [
+            {
+              "name": "Vicious Mauling"
+            }
+          ]
         },
         {
           "name": "Horn",
@@ -1410,7 +1426,12 @@
           "actions": "one",
           "attack": 23,
           "traits": [],
-          "damage": "6d6 untyped"
+          "damage": "6d6 untyped",
+          "effects": [
+            {
+              "name": "Storm Bolt"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -1713,7 +1734,12 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "1d6+4 bludgeoning"
+          "damage": "1d6+4 bludgeoning",
+          "effects": [
+            {
+              "name": "Crying Cicada Poison"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -1843,7 +1869,7 @@
       "languages": [
         "thalassic"
       ],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet, [Wavesense](/action/wavesense-monster-core) (imprecise) 30 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet, [Wavesense](/action/wavesense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Poison"
       ],
@@ -1878,7 +1904,13 @@
             "reach-20",
             "unarmed"
           ],
-          "damage": "5d6 poison"
+          "damage": "5d6 poison",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -2013,7 +2045,7 @@
         "kelish",
         "osiriani"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Poison"
       ],
@@ -2032,7 +2064,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "4d8+10 piercing"
+          "damage": "4d8+10 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Claw",
@@ -2053,7 +2091,12 @@
           "traits": [
             "reach-10"
           ],
-          "damage": "3d6+10 piercing"
+          "damage": "3d6+10 piercing",
+          "effects": [
+            {
+              "name": "Manticore Venom"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -2166,7 +2209,7 @@
         "survival": 13
       },
       "languages": [],
-      "senses": "Echolocation (precise) 120 feet, sensitive echolocation (precise) 120 feet",
+      "senses": "Echolocation ([precise](/rule/precise-senses-rules-2406)) 120 feet, sensitive echolocation ([precise](/rule/precise-senses-rules-2406)) 120 feet",
       "immunities": [
         "Visual"
       ],
@@ -2187,7 +2230,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "2d8+4 piercing"
+          "damage": "2d8+4 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Screech",
@@ -2197,7 +2246,12 @@
           "traits": [
             "sonic"
           ],
-          "damage": "4d6 sonic"
+          "damage": "4d6 sonic",
+          "effects": [
+            {
+              "name": "Resonant Jaws"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -2320,7 +2374,7 @@
         "athletics": 5
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 120 feet, [Wavesense](/action/wavesense-monster-core) (precise) 15 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet, [Wavesense](/action/wavesense-monster-core) ([precise](/rule/precise-senses-rules-2406)) 15 feet",
       "immunities": [
         "Precision",
         "Swarm Mind",
@@ -2581,7 +2635,7 @@
       "languages": [
         "aklo"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -2737,7 +2791,7 @@
         "survival": 15
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet, greater electrolocation 20 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet, greater electrolocation 20 feet",
       "immunities": [
         "Electricity"
       ],
@@ -2758,7 +2812,12 @@
             "electricity",
             "finesse"
           ],
-          "damage": "2d8+6 piercing; 1d4 electricity"
+          "damage": "2d8+6 piercing; 1d4 electricity",
+          "effects": [
+            {
+              "name": "Coppermouth Venom"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -2881,7 +2940,7 @@
         "athletics": 14
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 120 feet, [Wavesense](/action/wavesense-monster-core) (precise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet, [Wavesense](/action/wavesense-monster-core) ([precise](/rule/precise-senses-rules-2406)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -2895,7 +2954,16 @@
           "actions": "one",
           "attack": 15,
           "traits": [],
-          "damage": "2d8+5 piercing"
+          "damage": "2d8+5 piercing",
+          "effects": [
+            {
+              "name": "Deep Puncture"
+            },
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -3006,7 +3074,7 @@
         "survival": 18
       },
       "languages": [],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -3034,7 +3102,13 @@
             "agile",
             "reach-10"
           ],
-          "damage": "3d6+6 slashing"
+          "damage": "3d6+6 slashing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -3056,16 +3130,9 @@
         "offensive": [
           {
             "name": "Vacuum Mouth",
-            "text": "**Requirements** The giant tardigrade doesn't have a target [Grabbed](/condition/grabbed-player-core); **Effect** The giant tardigrade draws in air with its mouth. All creatures in a 20-foot cone must succeed at a Reflex DC 25 save or be pulled adjacent to the giant tardigrade. The tardigrade chooses one creature that failed its save, Grabbing the target in its claws and making a stylet [Strike](/action/strike-player-core).",
+            "text": "**Requirements** The giant tardigrade doesn't have a target [Grabbed](/condition/grabbed-player-core); **Effect** The giant tardigrade draws in air with its mouth. All creatures in a 20-foot [cone](/rule/cone-rules-2386) must succeed at a Reflex DC 25 save or be pulled adjacent to the giant tardigrade. The tardigrade chooses one creature that failed its save, Grabbing the target in its claws and making a stylet [Strike](/action/strike-player-core).",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -3153,7 +3220,7 @@
         "survival": 10
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 100 feet, blood scent, electrolocation 20 feet",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 100 feet, blood [scent](/action/scent-monster-core), electrolocation 20 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -3169,7 +3236,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "2d8+6 piercing"
+          "damage": "2d8+6 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -3203,13 +3276,6 @@
             "text": "The goblin shark dashes forward and extends its jaws bite a creature. It swims up to 10 feet in a straight line and makes a jaws [Strike](/action/strike-player-core) with a reach of 10 feet.",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -3296,7 +3362,7 @@
         "stealth": 27
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -3425,7 +3491,7 @@
         "stealth": 8
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 20 feet, whisker sense 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 20 feet, whisker sense 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -3442,7 +3508,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "1d8+4 piercing"
+          "damage": "1d8+4 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -3471,13 +3543,6 @@
             "text": "**Requirements** The harbor seal has a Medium or smaller creature [Grabbed](/condition/grabbed-player-core) in its jaws; **Effect** The harbor seal Swims up to 10 feet, carrying its grabbed creature along with it dealing 1d8 slashing damage (basic Fortitude DC 18 save).",
             "traits": [],
             "actions": "one"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -3559,7 +3624,7 @@
         "survival": 6
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -3689,7 +3754,7 @@
         "survival": 15
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 100 feet, blood scent",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 100 feet, blood [scent](/action/scent-monster-core)",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -3706,7 +3771,13 @@
             "reach-10",
             "unarmed"
           ],
-          "damage": "2d10+12 slashing; 1d8 bleed"
+          "damage": "2d10+12 slashing; 1d8 bleed",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -3735,13 +3806,6 @@
             ],
             "actions": "one",
             "reference": "/action/swallow-whole-monster-core"
-          },
-          {
-            "name": "Improved Grab",
-            "text": "",
-            "traits": [],
-            "actions": "free",
-            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -3828,7 +3892,7 @@
         "stealth": 14
       },
       "languages": [],
-      "senses": "arcanosense (precise) 120 feet",
+      "senses": "arcanosense ([precise](/rule/precise-senses-rules-2406)) 120 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -3845,7 +3909,12 @@
           "actions": "one",
           "attack": 13,
           "traits": [],
-          "damage": "2d10+9 piercing"
+          "damage": "2d10+9 piercing",
+          "effects": [
+            {
+              "name": "Arcane Consumption"
+            }
+          ]
         },
         {
           "name": "Hexbolt",
@@ -3886,7 +3955,7 @@
           },
           {
             "name": "Hexdust Wind",
-            "text": "With a few fierce wingbeats, the hexmoth expels magical scale dust in a 30-foot cone. This deals 10d6 untyped damage of the type to which the hexmoth is immune (basic Fortitude DC 23 save). It can't use Hexdust Wind again for 1d4 rounds.",
+            "text": "With a few fierce wingbeats, the hexmoth expels magical scale dust in a 30-foot [cone](/rule/cone-rules-2386). This deals 10d6 untyped damage of the type to which the hexmoth is immune (basic Fortitude DC 23 save). It can't use Hexdust Wind again for 1d4 rounds.",
             "traits": [],
             "actions": "two"
           }
@@ -3970,7 +4039,7 @@
         "stealth": 9
       },
       "languages": [],
-      "senses": "arcanosense (precise) 60 feet",
+      "senses": "arcanosense ([precise](/rule/precise-senses-rules-2406)) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {
@@ -3986,7 +4055,12 @@
           "actions": "one",
           "attack": 8,
           "traits": [],
-          "damage": "2d6+2 piercing"
+          "damage": "2d6+2 piercing",
+          "effects": [
+            {
+              "name": "Arcane Consumption"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -4097,7 +4171,7 @@
         "stealth": 12
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet, [Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet, [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -4114,7 +4188,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "2d6+5 piercing"
+          "damage": "2d6+5 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Talon",
@@ -4161,13 +4241,6 @@
             "name": "Crush Throat",
             "text": "When a creature fails a save against the holdfast's Constrict, the creature's throat is held tight, stopping them from speaking as long as they're [Grabbed](/condition/grabbed-player-core). This prevents the creature from casting spells with vocal incantations, as well as from using many sonic or auditory abilities.",
             "traits": []
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -4249,7 +4322,7 @@
         "stealth": 10
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -4398,7 +4471,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Poison"
       ],
@@ -4593,7 +4666,7 @@
         "stealth": 10
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 40 feet, whisker sense 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 40 feet, whisker sense 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -4610,7 +4683,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "2d8+6 piercing"
+          "damage": "2d8+6 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Tail",
@@ -4654,13 +4733,6 @@
             "text": "**Requirements** The leopard seal is in water; **Effect** The leopard seal travels up to 40 feet, ending its movement on land. Enemies adjacent to the leopard seal when it ends its movement take 2d10 bludgeoning damage (basic Reflex DC 21 save) and are knocked [Prone](/condition/prone-player-core) on a failure.",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -5055,7 +5127,12 @@
             "finesse",
             "reach-10"
           ],
-          "damage": "2d4 electricity"
+          "damage": "2d4 electricity",
+          "effects": [
+            {
+              "name": "Static Cling"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -5172,7 +5249,7 @@
         "stealth": 16
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -5189,7 +5266,13 @@
             "reach-15",
             "unarmed"
           ],
-          "damage": "2d8+6 piercing"
+          "damage": "2d8+6 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Foot",
@@ -5310,7 +5393,7 @@
         "survival": 18
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) (precise) 100 feet, [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
+      "senses": "[Scent](/action/scent-monster-core) ([precise](/rule/precise-senses-rules-2406)) 100 feet, [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Mental"
       ],
@@ -5329,7 +5412,13 @@
             "agile",
             "reach-10"
           ],
-          "damage": "1d4+6 bludgeoning"
+          "damage": "1d4+6 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Limb Spines",
@@ -5339,7 +5428,12 @@
           "traits": [
             "reach-10"
           ],
-          "damage": "2d8+6 piercing"
+          "damage": "2d8+6 piercing",
+          "effects": [
+            {
+              "name": "Spiny Venom"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -5403,13 +5497,6 @@
               "incapacitation",
               "poison"
             ]
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -5500,7 +5587,7 @@
         "common",
         "fey"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), goldsense (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), goldsense ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -5641,7 +5728,7 @@
       "languages": [
         "common"
       ],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Disease",
         "Paralyzed",
@@ -5665,7 +5752,13 @@
             "magical",
             "unarmed"
           ],
-          "damage": "2d8+8 force"
+          "damage": "2d8+8 force",
+          "effects": [
+            {
+              "name": "Knockdown",
+              "reference": "/action/knockdown-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -5718,13 +5811,6 @@
             "text": "The mirror wolf makes a jaws [Strike](/action/strike-player-core) against a creature within range. The mirror wolf can then [Stride](/action/stride-player-core) and make a second jaws Strike against the same creature.",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Knockdown",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/knockdown-monster-core"
           }
         ]
       },
@@ -5836,7 +5922,7 @@
         "survival": 15
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -5863,7 +5949,13 @@
             "agile",
             "unarmed"
           ],
-          "damage": "2d8+8 slashing"
+          "damage": "2d8+8 slashing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -5987,7 +6079,7 @@
         "survival": 10
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), orescent (precise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), orescent ([precise](/rule/precise-senses-rules-2406)) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -6138,7 +6230,7 @@
         "performance": 35
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Auditory",
         "Sonic"
@@ -6306,7 +6398,7 @@
         "stealth": 12
       },
       "languages": [],
-      "senses": "Echolocation (precise) 90 feet, sensitive echolocation (precise) 90 feet",
+      "senses": "Echolocation ([precise](/rule/precise-senses-rules-2406)) 90 feet, sensitive echolocation ([precise](/rule/precise-senses-rules-2406)) 90 feet",
       "immunities": [
         "Visual"
       ],
@@ -6461,7 +6553,7 @@
         "fey",
         "necril"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) (imprecise) 90 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 90 feet",
       "immunities": [
         "Bleed",
         "Death Effects",
@@ -6693,7 +6785,13 @@
             "reach-15",
             "unarmed"
           ],
-          "damage": "3d10+10 piercing"
+          "damage": "3d10+10 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Tail",
@@ -6754,13 +6852,6 @@
             "text": "The plated python lunges to its full length, making a jaws [Strike](/action/strike-player-core) with a reach of 60 feet. If the Strike hits, its target is [Grabbed](/condition/grabbed-player-core) and pulled to an empty space adjacent to the plated python. The python can attack through any material it can burrow through, leaving a stone tunnel as normal.",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -6842,7 +6933,7 @@
         "survival": 29
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -6859,7 +6950,12 @@
           "traits": [
             "reach-15"
           ],
-          "damage": "3d12+14 piercing"
+          "damage": "3d12+14 piercing",
+          "effects": [
+            {
+              "name": "Chromatic Explosion"
+            }
+          ]
         },
         {
           "name": "Spittle",
@@ -6869,7 +6965,12 @@
           "traits": [
             "acid"
           ],
-          "damage": "1d12 acid"
+          "damage": "1d12 acid",
+          "effects": [
+            {
+              "name": "Chromatic Explosion"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -7000,7 +7101,7 @@
         "athletics": 8
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -7024,7 +7125,13 @@
           "traits": [
             "agile"
           ],
-          "damage": "1d6+4 bludgeoning"
+          "damage": "1d6+4 bludgeoning",
+          "effects": [
+            {
+              "name": "Knockdown",
+              "reference": "/action/knockdown-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -7131,7 +7238,7 @@
       "languages": [
         "aklo"
       ],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -7148,7 +7255,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "1d10+4 piercing"
+          "damage": "1d10+4 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Tail",
@@ -7168,7 +7281,12 @@
           "traits": [
             "reach-10"
           ],
-          "damage": ""
+          "damage": "",
+          "effects": [
+            {
+              "name": "Tongue Pull"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -7306,7 +7424,7 @@
         "survival": 25
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 120 feet, [Tremorsense](/action/tremorsense-monster-core) (precise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet, [Tremorsense](/action/tremorsense-monster-core) ([precise](/rule/precise-senses-rules-2406)) 60 feet",
       "immunities": [
         "Poison"
       ],
@@ -7329,7 +7447,16 @@
             "reach-10",
             "unarmed"
           ],
-          "damage": "4d10+11 piercing"
+          "damage": "4d10+11 piercing",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            },
+            {
+              "name": "Royal Basilisk Venom"
+            }
+          ]
         },
         {
           "name": "Tail",
@@ -7350,7 +7477,12 @@
           "traits": [
             "poison"
           ],
-          "damage": "5d10 poison"
+          "damage": "5d10 poison",
+          "effects": [
+            {
+              "name": "Royal Basilisk Venom"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -7489,7 +7621,7 @@
         "survival": 25
       },
       "languages": [],
-      "senses": "Motion Sense (precise) 120 feet",
+      "senses": "Motion Sense ([precise](/rule/precise-senses-rules-2406)) 120 feet",
       "immunities": [],
       "weaknesses": {
         "cold": 10
@@ -7512,7 +7644,13 @@
             "reach-15",
             "unarmed"
           ],
-          "damage": "3d12+15 piercing"
+          "damage": "3d12+15 piercing",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Leg",
@@ -7607,13 +7745,6 @@
             "traits": [],
             "actions": "three",
             "reference": "/action/trample-monster-core"
-          },
-          {
-            "name": "Improved Grab",
-            "text": "",
-            "traits": [],
-            "actions": "free",
-            "reference": "/action/improved-grab-monster-core"
           }
         ]
       },
@@ -7992,7 +8123,16 @@
             "agile",
             "reach-30"
           ],
-          "damage": "2d8+8 bludgeoning"
+          "damage": "2d8+8 bludgeoning",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            },
+            {
+              "name": "Sky Fisher Venom"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -8035,13 +8175,6 @@
             "traits": [
               "poison"
             ]
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -8125,7 +8258,7 @@
       "languages": [
         "draconic"
       ],
-      "senses": "Echolocation (precise) 120 feet, sensitive echolocation (precise) 120 feet",
+      "senses": "Echolocation ([precise](/rule/precise-senses-rules-2406)) 120 feet, sensitive echolocation ([precise](/rule/precise-senses-rules-2406)) 120 feet",
       "immunities": [
         "Visual"
       ],
@@ -8158,7 +8291,13 @@
             "agile",
             "unarmed"
           ],
-          "damage": "3d6+9 slashing"
+          "damage": "3d6+9 slashing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Screech",
@@ -8168,7 +8307,12 @@
           "traits": [
             "sonic"
           ],
-          "damage": "6d6 sonic"
+          "damage": "6d6 sonic",
+          "effects": [
+            {
+              "name": "Aftershock"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -8306,7 +8450,13 @@
           "traits": [
             "unarmed"
           ],
-          "damage": "2d8+6 piercing"
+          "damage": "2d8+6 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Tongue",
@@ -8316,7 +8466,12 @@
           "traits": [
             "reach-15"
           ],
-          "damage": ""
+          "damage": "",
+          "effects": [
+            {
+              "name": "Seed Spores"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -8417,7 +8572,7 @@
         "survival": 18
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -8484,7 +8639,7 @@
         "offensive": [
           {
             "name": "Vomit Meteorites",
-            "text": "The stargut hydra lurches its entire body, spewing forth chunks of meteorite in a 30-foot cone that deal 5d6 bludgeoning damage to all creatures in the area (basic Reflex DC 25). The area becomes difficult terrain for 1 minute, though a creature can use an [Interact](/action/interact-player-core) action to clear one square of the rubble. The stargut hydra can't Vomit Meteorites for 1d4 rounds.",
+            "text": "The stargut hydra lurches its entire body, spewing forth chunks of meteorite in a 30-foot [cone](/rule/cone-rules-2386) that deal 5d6 bludgeoning damage to all creatures in the area (basic Reflex DC 25). The area becomes difficult terrain for 1 minute, though a creature can use an [Interact](/action/interact-player-core) action to clear one square of the rubble. The stargut hydra can't Vomit Meteorites for 1d4 rounds.",
             "traits": [],
             "actions": "two"
           }
@@ -8593,7 +8748,12 @@
           "actions": "one",
           "attack": 6,
           "traits": [],
-          "damage": "1d4+2 piercing"
+          "damage": "1d4+2 piercing",
+          "effects": [
+            {
+              "name": "Stonefish Venom"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -8845,7 +9005,7 @@
         "stealth": 11
       },
       "languages": [],
-      "senses": "Echolocation (precise) 30 feet",
+      "senses": "Echolocation ([precise](/rule/precise-senses-rules-2406)) 30 feet",
       "immunities": [
         "Petrified"
       ],
@@ -8865,7 +9025,12 @@
             "finesse",
             "unarmed"
           ],
-          "damage": "2d8+2 piercing"
+          "damage": "2d8+2 piercing",
+          "effects": [
+            {
+              "name": "Stone Feast"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -8889,7 +9054,7 @@
           },
           {
             "name": "Petrify Vapor",
-            "text": "The stony bat breathes petrifying gas in a 15-foot cone, too thin to harm creatures in the area. However, it petrifies ambient moisture, raining down a cascade of tiny stones onto any creatures in the space directly below the cone. The falling rocks deal 4d6 bludgeoning damage (basic Reflex DC 20). The stony bat can't use Petrify Vapor again for 1d4 rounds.",
+            "text": "The stony bat breathes petrifying gas in a 15-foot [cone](/rule/cone-rules-2386), too thin to harm creatures in the area. However, it petrifies ambient moisture, raining down a cascade of tiny stones onto any creatures in the space directly below the cone. The falling rocks deal 4d6 bludgeoning damage (basic Reflex DC 20). The stony bat can't use Petrify Vapor again for 1d4 rounds.",
             "traits": [
               "earth",
               "primal"
@@ -9263,7 +9428,7 @@
         "common",
         "draconic"
       ],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 100 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 100 feet",
       "immunities": [
         "Disease",
         "Paralyzed",
@@ -9289,7 +9454,13 @@
             "reach-10",
             "unarmed"
           ],
-          "damage": "3d8+11 force"
+          "damage": "3d8+11 force",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Tail",
@@ -9301,7 +9472,13 @@
             "magical",
             "reach-15"
           ],
-          "damage": "3d6+11 force"
+          "damage": "3d6+11 force",
+          "effects": [
+            {
+              "name": "Push",
+              "reference": "/action/push-monster-core"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -9364,20 +9541,6 @@
             "text": "**Requirements** The sunscale serpent is flying; **Effect** The sunscale serpent Flies up to its [fly Speed](/rule/fly-speed-rules-2350), then crashes to the ground, releasing a wave of heat dealing 5d10 fire damage to all creatures within a 60-foot burst and searing their eyes with the erupting glory of its scales. Each creature in the area must attempt a Reflex DC 31 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Critical Failure** The creature takes full damage, is [Blinded](/condition/blinded-player-core) for 1 round, and dazzled for 1 minute.",
             "traits": [],
             "actions": "three"
-          },
-          {
-            "name": "Improved Grab",
-            "text": "",
-            "traits": [],
-            "actions": "free",
-            "reference": "/action/improved-grab-monster-core"
-          },
-          {
-            "name": "Push",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/push-monster-core"
           }
         ]
       },
@@ -9600,7 +9763,7 @@
         "survival": 13
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, [Tremorsense](/action/tremorsense-monster-core) (imprecise) 40 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet, [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 40 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -9618,7 +9781,13 @@
             "agile",
             "unarmed"
           ],
-          "damage": "2d6+4 piercing"
+          "damage": "2d6+4 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Claw",
@@ -9637,7 +9806,12 @@
           "actions": "one",
           "attack": 15,
           "traits": [],
-          "damage": "2d8+6 bludgeoning"
+          "damage": "2d8+6 bludgeoning",
+          "effects": [
+            {
+              "name": "Concussive Gem"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -9683,13 +9857,6 @@
               "sonic"
             ],
             "actions": "one"
-          },
-          {
-            "name": "Grab",
-            "text": "",
-            "traits": [],
-            "actions": "one",
-            "reference": "/action/grab-monster-core"
           }
         ]
       },
@@ -9771,7 +9938,7 @@
         "survival": 21
       },
       "languages": [],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) (imprecise) 30 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Precision",
         "Swarm Mind"
@@ -9892,7 +10059,7 @@
         "survival": 17
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -9909,7 +10076,12 @@
             "reach-20",
             "unarmed"
           ],
-          "damage": "2d12+7 slashing"
+          "damage": "2d12+7 slashing",
+          "effects": [
+            {
+              "name": "Winnowing Claws"
+            }
+          ]
         }
       ],
       "abilities": {
@@ -10024,7 +10196,7 @@
         "common",
         "diabolic"
       ],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Fire"
       ],
@@ -10048,7 +10220,13 @@
             "reach-20",
             "unarmed"
           ],
-          "damage": "3d12+16 piercing"
+          "damage": "3d12+16 piercing",
+          "effects": [
+            {
+              "name": "Grab",
+              "reference": "/action/grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Foot",
@@ -10091,7 +10269,7 @@
         "offensive": [
           {
             "name": "Hellfire Blast",
-            "text": "The thruneosaurus channels sulfurous hellfire in one of three ways. The thruneosaurus chooses the effect, but it can't make the same choice in two consecutive rounds.\n\n**Blistering Sun** (divine, fire, unholy) The thruneosaurus ignites an orb of hellfire between its horns that radiates heat in a 30-foot emanation, dealing 2d8 persistent fire damage.**Choking Fumes** (divine, poison, unholy) The thruneosaurus exhales a 60-foot cone of sulfurous smoke that deals 6d8 poison damage (basic Fortitude DC 38 save). Creatures that fail their saves are [Sickened 2](/condition/sickened-player-core).**Fiery Beam** (divine, fire, unholy) A 120-foot line of hellish flame erupts from the thruneosaurus's eyes, dealing 6d10 fire damage (basic Reflex DC 38 save).",
+            "text": "The thruneosaurus channels sulfurous hellfire in one of three ways. The thruneosaurus chooses the effect, but it can't make the same choice in two consecutive rounds.\n\n**Blistering Sun** (divine, fire, unholy) The thruneosaurus ignites an orb of hellfire between its horns that radiates heat in a 30-foot emanation, dealing 2d8 persistent fire damage.**Choking Fumes** (divine, poison, unholy) The thruneosaurus exhales a 60-foot [cone](/rule/cone-rules-2386) of sulfurous smoke that deals 6d8 poison damage (basic Fortitude DC 38 save). Creatures that fail their saves are [Sickened 2](/condition/sickened-player-core).**Fiery Beam** (divine, fire, unholy) A 120-foot line of hellish flame erupts from the thruneosaurus's eyes, dealing 6d10 fire damage (basic Reflex DC 38 save).",
             "traits": [],
             "actions": "two"
           },
@@ -10207,7 +10385,7 @@
         "athletics": 34
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -10223,7 +10401,13 @@
           "traits": [
             "reach-30"
           ],
-          "damage": "3d8+16 bludgeoning"
+          "damage": "3d8+16 bludgeoning",
+          "effects": [
+            {
+              "name": "Improved Knockdown",
+              "reference": "/action/improved-knockdown-monster-core"
+            }
+          ]
         },
         {
           "name": "Foot",
@@ -10259,7 +10443,7 @@
           },
           {
             "name": "Sweeping Tail",
-            "text": "The titanosaur lashes its tail in a 30-foot cone. Creatures in the area take 8d10 bludgeoning damage (basic Reflex DC 38 save). The momentum of the titanosaur's swing then makes it [Off Guard](/condition/off-guard-player-core) until the beginning of its next turn.",
+            "text": "The titanosaur lashes its tail in a 30-foot [cone](/rule/cone-rules-2386). Creatures in the area take 8d10 bludgeoning damage (basic Reflex DC 38 save). The momentum of the titanosaur's swing then makes it [Off Guard](/condition/off-guard-player-core) until the beginning of its next turn.",
             "traits": [],
             "actions": "two"
           },
@@ -10358,7 +10542,7 @@
         "survival": 7
       },
       "languages": [],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 30 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -10493,7 +10677,7 @@
         "survival": 22
       },
       "languages": [],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Mental"
       ],
@@ -10653,7 +10837,7 @@
         "athletics": 16
       },
       "languages": [],
-      "senses": "[Tremorsense](/action/tremorsense-monster-core) (precise) 60 feet",
+      "senses": "[Tremorsense](/action/tremorsense-monster-core) ([precise](/rule/precise-senses-rules-2406)) 60 feet",
       "immunities": [
         "Precision",
         "Swarm Mind",
@@ -11028,11 +11212,10 @@
       "skills": {
         "athletics": 42,
         "intimidation": 37,
-        "stealth": 37,
-        "lore": 35
+        "stealth": 37
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) (imprecise) 60 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Fire"
       ],
@@ -11069,7 +11252,13 @@
             "magical",
             "reach-15"
           ],
-          "damage": "4d10+22 bludgeoning"
+          "damage": "4d10+22 bludgeoning",
+          "effects": [
+            {
+              "name": "Improved Grab",
+              "reference": "/action/improved-grab-monster-core"
+            }
+          ]
         },
         {
           "name": "Chirp",
@@ -11089,23 +11278,16 @@
           "traits": [
             "magical"
           ],
-          "damage": "4d8+13 fire; 2d6 fire"
+          "damage": "4d8+13 fire; 2d6 fire",
+          "effects": [
+            {
+              "name": "Obsidian Cage"
+            }
+          ]
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Tremorsense (Imprecise) 60 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/tremorsense-monster-core"
-          },
-          {
-            "name": "Darkvision",
-            "text": "",
-            "traits": [],
-            "reference": "/action/darkvision-monster-core"
-          },
           {
             "name": "Voice of Nature",
             "text": "Though the Wardens of the Wild do not speak in words, they can communicate complex concepts flawlessly and wordlessly with any animal, beast, plant, or other creature of the natural world through prolonged eye contact. Sapient creatures with strong ties to the natural world, such as animal instinct barbarians or druids who speak the Wildsong, can somewhat understand a Warden of the Wild, though the meaning can be vague.",
@@ -11192,7 +11374,13 @@
           "slug": "earth"
         }
       ],
-      "languagesDetails": "voice of nature"
+      "languagesDetails": "voice of nature",
+      "loreSkills": [
+        {
+          "name": "Subterranean Lore",
+          "value": 35
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11266,7 +11454,7 @@
         "thievery": 40
       },
       "languages": [],
-      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [scent](/action/scent-monster-core) (imprecise) 1 mile",
+      "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 1 mile",
       "immunities": [],
       "weaknesses": {},
       "resistances": {},
@@ -11328,18 +11516,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Greater Darkvision",
-            "text": "",
-            "traits": [],
-            "reference": "/action/greater-darkvision-monster-core"
-          },
-          {
-            "name": "Scent (Imprecise) 1 mile",
-            "text": "",
-            "traits": [],
-            "reference": "/action/scent-monster-core"
-          },
           {
             "name": "Voice of Nature",
             "text": "Though the Wardens of the Wild do not speak in words, they can communicate complex concepts flawlessly and wordlessly with any animal, beast, plant, or other creature of the natural world through prolonged eye contact. Sapient creatures with strong ties to the natural world, such as animal instinct barbarians or druids who speak the Wildsong, can somewhat understand a Warden of the Wild, though the meaning can be vague.",
@@ -11576,7 +11752,7 @@
         "survival": 42
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 200 feet",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 200 feet",
       "immunities": [
         "Controlled",
         "Emotion",
@@ -11616,23 +11792,16 @@
             "magical",
             "unarmed"
           ],
-          "damage": "4d10+16 bludgeoning"
+          "damage": "4d10+16 bludgeoning",
+          "effects": [
+            {
+              "name": "Grasp Of The Deep"
+            }
+          ]
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Scent (Imprecise) 200 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/scent-monster-core"
-          },
-          {
-            "name": "Darkvision",
-            "text": "",
-            "traits": [],
-            "reference": "/action/darkvision-monster-core"
-          },
           {
             "name": "Voice of Nature",
             "text": "Though the Wardens of the Wild do not speak in words, they can communicate complex concepts flawlessly and wordlessly with any animal, beast, plant, or other creature of the natural world through prolonged eye contact. Sapient creatures with strong ties to the natural world, such as animal instinct barbarians or druids who speak the Wildsong, can somewhat understand a Warden of the Wild, though the meaning can be vague.",
@@ -11787,11 +11956,10 @@
         "diplomacy": 34,
         "medicine": 38,
         "nature": 40,
-        "survival": 38,
-        "lore": 38
+        "survival": 38
       },
       "languages": [],
-      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet, stormsight",
+      "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet, stormsight",
       "immunities": [
         "Electricity"
       ],
@@ -11847,18 +12015,6 @@
       "abilities": {
         "interaction": [
           {
-            "name": "Scent (Imprecise) 60 feet",
-            "text": "",
-            "traits": [],
-            "reference": "/action/scent-monster-core"
-          },
-          {
-            "name": "Darkvision",
-            "text": "",
-            "traits": [],
-            "reference": "/action/darkvision-monster-core"
-          },
-          {
             "name": "Stormsight",
             "text": "Wind, precipitation, and clouds don't impair the warden's vision; she ignores the [Concealed](/condition/concealed-player-core) condition from storms, mist, precipitation, and the like.",
             "traits": []
@@ -11884,7 +12040,7 @@
         "offensive": [
           {
             "name": "Crystal Exhalation",
-            "text": "The warden breathes, creating a storm of ice crystals. All creatures in a 60-foot cone take 4d8 cold damage and 4d8 slashing damage (basic Reflex DC 44 save). On a critical failure, a creature is [Immobilized](/condition/immobilized-player-core) by ice. The warden then can't use Crystal Exhalation for 1d4 rounds.",
+            "text": "The warden breathes, creating a storm of ice crystals. All creatures in a 60-foot [cone](/rule/cone-rules-2386) take 4d8 cold damage and 4d8 slashing damage (basic Reflex DC 44 save). On a critical failure, a creature is [Immobilized](/condition/immobilized-player-core) by ice. The warden then can't use Crystal Exhalation for 1d4 rounds.",
             "traits": [
               "cold",
               "primal"
@@ -11942,6 +12098,16 @@
         }
       ],
       "languagesDetails": "voice of nature",
+      "loreSkills": [
+        {
+          "name": "Bird Lore",
+          "value": 38
+        },
+        {
+          "name": "Mountain Lore",
+          "value": 38
+        }
+      ],
       "spellcasting": [
         {
           "name": "Primal Innate Spells",
@@ -12055,7 +12221,7 @@
       "languages": [
         "common"
       ],
-      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) (imprecise) 60 feet",
+      "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [],
       "weaknesses": {
         "silver": 5
@@ -12252,7 +12418,7 @@
       "languages": [
         "common"
       ],
-      "senses": "[Scent](/action/scent-monster-core) (imprecise) 100 feet, blood scent",
+      "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 100 feet, blood [scent](/action/scent-monster-core)",
       "immunities": [],
       "weaknesses": {
         "silver": 5
@@ -12266,7 +12432,12 @@
           "actions": "one",
           "attack": 14,
           "traits": [],
-          "damage": "1d8+7 piercing"
+          "damage": "1d8+7 piercing",
+          "effects": [
+            {
+              "name": "Fish Fork"
+            }
+          ]
         },
         {
           "name": "Trident",
@@ -12276,7 +12447,12 @@
           "traits": [
             "thrown-20"
           ],
-          "damage": "1d8+7 piercing"
+          "damage": "1d8+7 piercing",
+          "effects": [
+            {
+              "name": "Fish Fork"
+            }
+          ]
         }
       ],
       "abilities": {

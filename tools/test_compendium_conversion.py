@@ -61,6 +61,12 @@ class FoundryMarkupTests(unittest.TestCase):
             "20-foot burst",
         )
 
+    def test_basic_save_uses_book_order(self) -> None:
+        self.assertEqual(
+            replace_foundry_directives("(@Check[reflex|dc:28|basic] save)"),
+            "(DC 28 basic Reflex save)",
+        )
+
 
 class ItemPriceTests(unittest.TestCase):
     def test_variant_price_fallback_matches_base_level(self) -> None:
