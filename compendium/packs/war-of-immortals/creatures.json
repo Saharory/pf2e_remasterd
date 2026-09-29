@@ -48,12 +48,12 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), stormsight",
       "immunities": [
-        "Death Effects",
-        "Disease",
-        "Drained",
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Drained](/condition/drained-player-core)",
         "Electricity",
         "Fear Effects",
-        "Paralyzed"
+        "[Paralyzed](/condition/paralyzed-player-core)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -313,8 +313,8 @@
       ],
       "senses": "",
       "immunities": [
-        "Disease",
-        "Paralyzed"
+        "[Disease](/trait/disease)",
+        "[Paralyzed](/condition/paralyzed-player-core)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -374,7 +374,8 @@
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Confounding Theft",
@@ -436,7 +437,7 @@
       },
       "languagesText": "Common",
       "recallKnowledgeText": "DC 38 (Nature, Occultism, Society)",
-      "items": "Wandering Pipe",
+      "items": "[Wandering Pipe](/item/wandering-pipe-war-of-immortals)",
       "traitLinks": [
         {
           "label": "beast",
@@ -990,11 +991,11 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Death Effects",
-        "Disease",
-        "Paralyzed",
-        "Poison",
-        "Unconscious",
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Unconscious](/condition/unconscious-player-core)",
         "Bleed"
       ],
       "weaknesses": {},
@@ -1116,7 +1117,7 @@
       "languagesText": "Aklo, Chthonian, Common, Diabolic, Draconic, Elven, Necril, Sakvroth",
       "recallKnowledgeText": "DC 35 (Religion)",
       "sanctification": "unholy",
-      "items": "Staff of Fire (Greater), Invisibility Potion, Scroll of Teleport (Rank 6)",
+      "items": "[Staff of Fire (Greater)](/item/staff-of-fire-greater-gm-core), [Invisibility Potion](/item/invisibility-potion-gm-core), Scroll of Teleport (Rank 6)",
       "traitLinks": [
         {
           "label": "mythic",
@@ -1481,7 +1482,7 @@
       },
       "languagesText": "Common, Jotun",
       "recallKnowledgeText": "DC 28 (Society)",
-      "items": "Javelin, Gut-Ripper, Breastplate",
+      "items": "[Javelin](/item/javelin-player-core) (6), [Gut-Ripper](/item/gut-ripper-war-of-immortals), [Breastplate](/item/breastplate-player-core)",
       "traitLinks": [
         {
           "label": "giant",
@@ -1563,16 +1564,16 @@
       "immunities": [
         "Clumsy",
         "Cold",
-        "Disease",
-        "Drained",
+        "[Disease](/trait/disease)",
+        "[Drained](/condition/drained-player-core)",
         "Enfeebled",
-        "Mental",
-        "Paralyzed",
+        "[Mental](/trait/mental)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
         "Persistent Damage",
         "Petrified",
-        "Poison",
+        "[Poison](/trait/poison)",
         "Polymorph",
-        "Prone",
+        "[Prone](/condition/prone-player-core)",
         "Slowed",
         "Stunned",
         "Stupefied"
@@ -1970,7 +1971,8 @@
               "divine",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Hours Go By",
@@ -1996,7 +1998,7 @@
       },
       "languagesText": "Common, Fey",
       "recallKnowledgeText": "DC 27 (Nature)",
-      "items": "Immaculate Instrument",
+      "items": "[Immaculate Instrument](/item/immaculate-instrument-war-of-immortals)",
       "traitLinks": [
         {
           "label": "fey",
@@ -2081,10 +2083,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), Truesight ([precise](/rule/precise-senses-rules-2406)) 60 feet",
       "immunities": [
         "Acid",
-        "Death Effects",
-        "Disease",
-        "Mental",
-        "Poison"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Mental](/trait/mental)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "holy": 20
@@ -2345,7 +2347,7 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), many eyes in many places, truesight",
       "immunities": [
-        "Mental"
+        "[Mental](/trait/mental)"
       ],
       "weaknesses": {
         "cold-iron": 10,
@@ -2702,8 +2704,8 @@
       ],
       "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet, [all-around vision](/action/all-around-vision-monster-core), greater web sense",
       "immunities": [
-        "Mental",
-        "Poison"
+        "[Mental](/trait/mental)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {},
       "resistances": {

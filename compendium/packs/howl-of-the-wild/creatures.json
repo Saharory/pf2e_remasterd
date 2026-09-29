@@ -52,7 +52,7 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
-        "Poison"
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -350,7 +350,8 @@
               "emotion",
               "fear",
               "mental"
-            ]
+            ],
+            "reference": "/action/frightful-presence-monster-core"
           },
           {
             "name": "Reactive Strike (Horn only)",
@@ -532,7 +533,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 23 (Nature)",
-      "items": "Healing Potion (Moderate)",
+      "items": "[Healing Potion (Moderate)](/item/healing-potion-moderate-gm-core)",
       "traitLinks": [
         {
           "label": "animal",
@@ -1080,7 +1081,8 @@
             "name": "Buck",
             "text": "Reflex DC 36",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/buck-monster-core"
           }
         ],
         "offensive": [
@@ -1709,7 +1711,7 @@
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Poison"
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -1871,7 +1873,7 @@
       ],
       "senses": "[Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet, [Wavesense](/action/wavesense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
-        "Poison"
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "bludgeoning": 5
@@ -2047,7 +2049,7 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
-        "Poison"
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -2378,9 +2380,9 @@
       "immunities": [
         "Precision",
         "Swarm Mind",
-        "Grabbed",
-        "Prone",
-        "Restrained"
+        "[Grabbed](/condition/grabbed-player-core)",
+        "[Prone](/condition/prone-player-core)",
+        "[Restrained](/condition/restrained-player-core)"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -2682,7 +2684,7 @@
         "defensive": [
           {
             "name": "Ghost Stance",
-            "text": "The ghost ape phases partially out of existence, its form blurring and becoming difficult to pinpoint. While in this stance, they are Concealed to any creature that isn't adjacent to them. They can't use this concealment to Hide or Sneak. They also gain resistance 5 to physical damage. If the ghost ape takes force damage, this stance ends and they can't reenter it for 1d3 rounds.",
+            "text": "The ghost ape phases partially out of existence, its form blurring and becoming difficult to pinpoint. While in this stance, they are Concealed to any creature that isn't adjacent to them. They can't use this [concealment](/condition/concealed-player-core) to Hide or Sneak. They also gain resistance 5 to physical damage. If the ghost ape takes force damage, this stance ends and they can't reenter it for 1d3 rounds.",
             "traits": [
               "concentrate",
               "illusion",
@@ -3536,7 +3538,8 @@
             "name": "Aquatic Ambush",
             "text": "40 feet.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/aquatic-ambush-monster-core"
           },
           {
             "name": "Aquatic Feast",
@@ -4473,7 +4476,7 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
-        "Poison"
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -4726,7 +4729,8 @@
             "name": "Aquatic Ambush",
             "text": "50 feet.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/aquatic-ambush-monster-core"
           },
           {
             "name": "Predatory Slam",
@@ -5395,7 +5399,7 @@
       "languages": [],
       "senses": "[Scent](/action/scent-monster-core) ([precise](/rule/precise-senses-rules-2406)) 100 feet, [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
-        "Mental"
+        "[Mental](/trait/mental)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -5730,14 +5734,14 @@
       ],
       "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
-        "Disease",
-        "Paralyzed",
-        "Poison",
+        "[Disease](/trait/disease)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
         "Precision"
       ],
       "weaknesses": {},
       "resistances": {
-        "all-damage": "7 (except Force, Ghost Touch, Spirit, Vitality; double vs. Non Magical)"
+        "all-damage": "7 (except Force, Ghost Touch, [Spirit](/trait/spirit), [Vitality](/trait/vitality); double vs. Non Magical)"
       },
       "movement": {
         "walk": 35
@@ -6233,7 +6237,7 @@
       "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Auditory",
-        "Sonic"
+        "[Sonic](/trait/sonic)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -6556,16 +6560,16 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Lifesense](/action/lifesense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 90 feet",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Mental",
-        "Paralyzed",
-        "Poison",
-        "Unconscious"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Mental](/trait/mental)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {},
       "resistances": {
-        "all-damage": "10 (except Force, Ghost Touch, Vitality; double vs. Non Magical)"
+        "all-damage": "10 (except Force, Ghost Touch, [Vitality](/trait/vitality); double vs. Non Magical)"
       },
       "movement": {
         "fly": 45
@@ -6845,7 +6849,8 @@
             "traits": [
               "attack"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Towering Bite",
@@ -7426,7 +7431,7 @@
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet, [Tremorsense](/action/tremorsense-monster-core) ([precise](/rule/precise-senses-rules-2406)) 60 feet",
       "immunities": [
-        "Poison"
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -7495,7 +7500,7 @@
           },
           {
             "name": "Miasmatic Shroud",
-            "text": "15 feet. The poison in the breath of the royal basilisk makes the air around it a haze, concealing it from all creatures outside the aura, but it cannot use this concealment to Hide or [Sneak](/action/sneak-player-core). When a creature ends its turn within the aura, it is exposed to royal basilisk venom.",
+            "text": "15 feet. The poison in the breath of the royal basilisk makes the air around it a haze, concealing it from all creatures outside the aura, but it cannot use this [concealment](/condition/concealed-player-core) to Hide or [Sneak](/action/sneak-player-core). When a creature ends its turn within the aura, it is exposed to royal basilisk venom.",
             "traits": [
               "aura",
               "poison"
@@ -8869,9 +8874,9 @@
       "immunities": [
         "Precision",
         "Swarm Mind",
-        "Grabbed",
-        "Prone",
-        "Restrained"
+        "[Grabbed](/condition/grabbed-player-core)",
+        "[Prone](/condition/prone-player-core)",
+        "[Restrained](/condition/restrained-player-core)"
       ],
       "weaknesses": {
         "area-damage": 3,
@@ -9430,14 +9435,14 @@
       ],
       "senses": "[Low-Light Vision](/action/low-light-vision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 100 feet",
       "immunities": [
-        "Disease",
-        "Paralyzed",
-        "Poison",
+        "[Disease](/trait/disease)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
         "Precision"
       ],
       "weaknesses": {},
       "resistances": {
-        "all-damage": "14 (except Force, Ghost Touch, Spirit, Vitality; double vs. Non Magical)"
+        "all-damage": "14 (except Force, Ghost Touch, [Spirit](/trait/spirit), [Vitality](/trait/vitality); double vs. Non Magical)"
       },
       "movement": {
         "walk": 40,
@@ -10198,7 +10203,7 @@
       ],
       "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
-        "Fire"
+        "[Fire](/trait/fire)"
       ],
       "weaknesses": {
         "holy": 15
@@ -10679,7 +10684,7 @@
       "languages": [],
       "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
-        "Mental"
+        "[Mental](/trait/mental)"
       ],
       "weaknesses": {
         "cold-iron": 10
@@ -10841,9 +10846,9 @@
       "immunities": [
         "Precision",
         "Swarm Mind",
-        "Grabbed",
-        "Prone",
-        "Restrained"
+        "[Grabbed](/condition/grabbed-player-core)",
+        "[Prone](/condition/prone-player-core)",
+        "[Restrained](/condition/restrained-player-core)"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -11217,13 +11222,13 @@
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
-        "Fire"
+        "[Fire](/trait/fire)"
       ],
       "weaknesses": {
         "cold": 20
       },
       "resistances": {
-        "physical": "10 (except Adamantine)",
+        "physical": "10 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))",
         "sonic": 20
       },
       "movement": {
@@ -11558,7 +11563,8 @@
               "polymorph",
               "primal"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Forest Passage",
@@ -11756,8 +11762,8 @@
       "immunities": [
         "Controlled",
         "Emotion",
-        "Mental",
-        "Poison",
+        "[Mental](/trait/mental)",
+        "[Poison](/trait/poison)",
         "Precision"
       ],
       "weaknesses": {
@@ -12326,7 +12332,7 @@
       },
       "languagesText": "Common",
       "recallKnowledgeText": "DC 18 (Nature, Society)",
-      "items": "Greataxe, Hatchet, Scale Mail",
+      "items": "[Greataxe](/item/greataxe-player-core), [Hatchet](/item/hatchet-player-core) (2), [Scale Mail](/item/scale-mail-player-core)",
       "traitLinks": [
         {
           "label": "beast",
@@ -12524,7 +12530,7 @@
       },
       "languagesText": "Common",
       "recallKnowledgeText": "DC 19 (Nature, Society)",
-      "items": "Trident, Studded Leather Armor",
+      "items": "[Trident](/item/trident-player-core), [Studded Leather Armor](/item/studded-leather-armor-player-core)",
       "traitLinks": [
         {
           "label": "beast",

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -21,6 +22,31 @@ TRAIT_IMMUNITIES = {
     ],
 }
 GLOSSARY_ROUTES_BY_KEY = {normalize(key): value for key, value in GLOSSARY_ROUTES.items()}
+DEFENSE_VALUE_ROUTES = (
+    ("Nonlethal Attacks", "/rule/nonlethal-attacks-rules-2311"),
+    ("Death Effects", "/rule/death-effects-rules-2331"),
+    ("Unconscious", "/condition/unconscious-player-core"),
+    ("Restrained", "/condition/restrained-player-core"),
+    ("Paralyzed", "/condition/paralyzed-player-core"),
+    ("Fatigued", "/condition/fatigued-player-core"),
+    ("Sickened", "/condition/sickened-player-core"),
+    ("Grabbed", "/condition/grabbed-player-core"),
+    ("Drained", "/condition/drained-player-core"),
+    ("Doomed", "/condition/doomed-player-core"),
+    ("Prone", "/condition/prone-player-core"),
+    ("Adamantine", "https://2e.aonprd.com/Equipment.aspx?ID=2855"),
+    ("Disease", "/trait/disease"),
+    ("Healing", "/trait/healing"),
+    ("Mental", "/trait/mental"),
+    ("Poison", "/trait/poison"),
+    ("Sleep", "/trait/sleep"),
+    ("Sonic", "/trait/sonic"),
+    ("Spirit", "/trait/spirit"),
+    ("Vitality", "/trait/vitality"),
+    ("Void", "/trait/void"),
+    ("Fire", "/trait/fire"),
+    ("Radiation", "https://2e.aonprd.com/Traits.aspx?ID=421"),
+)
 
 
 def title(value: str) -> str:
@@ -38,6 +64,22 @@ def merge_unique(existing: list[Any], supplied: list[Any]) -> list[Any]:
     return result
 
 
+def link_defense_value(value: Any) -> Any:
+    if not isinstance(value, str):
+        return value
+    text = value
+    for label, route in DEFENSE_VALUE_ROUTES:
+        if route in text:
+            continue
+        text = re.sub(
+            rf"(?<![\w\[])({re.escape(label)})(?![\w])",
+            lambda match: f"[{match.group(0)}]({route})",
+            text,
+            flags=re.I,
+        )
+    return text
+
+
 def configure_creature_metadata(entity: dict[str, Any]) -> bool:
     if entity.get("kind") != "Creature":
         return False
@@ -53,6 +95,15 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
     if derived:
         data["immunities"] = merge_unique(data.get("immunities") or [], derived)
     if not metadata:
+        data["immunities"] = [
+            link_defense_value(value) for value in data.get("immunities") or []
+        ]
+        for field in ("weaknesses", "resistances"):
+            values = data.get(field)
+            if isinstance(values, dict):
+                data[field] = {
+                    key: link_defense_value(value) for key, value in values.items()
+                }
         return json.dumps(data, sort_keys=True) != before
     if metadata.get("senses"):
         data["senses"] = metadata["senses"]
@@ -81,6 +132,20 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
         supplied = str(metadata["movementOther"])
         if supplied.casefold() not in current.casefold():
             movement["other"] = "; ".join(filter(None, (current, supplied)))
+    if metadata.get("movement"):
+        data.setdefault("movement", {}).update(metadata["movement"])
+    if metadata.get("items"):
+        data["items"] = metadata["items"]
+
+    data["immunities"] = [
+        link_defense_value(value) for value in data.get("immunities") or []
+    ]
+    for field in ("weaknesses", "resistances"):
+        values = data.get(field)
+        if isinstance(values, dict):
+            data[field] = {
+                key: link_defense_value(value) for key, value in values.items()
+            }
 
     ability_text = metadata.get("abilityText") or {}
     abilities = data.get("abilities") or {}
@@ -90,6 +155,34 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
                 replacement = ability_text.get(str(ability.get("name") or ""))
                 if replacement:
                     ability["text"] = replacement
+        remove_names = set(metadata.get("removeAbilities") or [])
+        if remove_names:
+            for category, entries in abilities.items():
+                if isinstance(entries, list):
+                    abilities[category] = [
+                        ability
+                        for ability in entries
+                        if str(ability.get("name") or "") not in remove_names
+                    ]
+        for name, destination in (metadata.get("abilityCategories") or {}).items():
+            selected = None
+            for category, entries in abilities.items():
+                if not isinstance(entries, list):
+                    continue
+                for index, ability in enumerate(entries):
+                    if str(ability.get("name") or "") == name:
+                        selected = entries.pop(index)
+                        break
+                if selected is not None:
+                    break
+            if selected is not None:
+                abilities.setdefault(destination, []).append(selected)
+
+    attack_types = metadata.get("attackTypes") or {}
+    for index, attack in enumerate(data.get("attacks") or []):
+        supplied = attack_types.get(str(index))
+        if supplied:
+            attack["type"] = supplied
 
     linked_attack_abilities: set[str] = set()
     attack_effects = metadata.get("attackEffects") or {}

@@ -46,21 +46,21 @@
       "senses": "[darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "bleed",
-        "death effects",
-        "disease",
-        "doomed",
-        "drained",
-        "fatigued",
-        "healing",
-        "mental",
-        "nonlethal attacks",
-        "paralyzed",
-        "poison",
-        "sickened",
-        "spirit",
-        "unconscious",
-        "vitality",
-        "void"
+        "[death effects](/rule/death-effects-rules-2331)",
+        "[disease](/trait/disease)",
+        "[doomed](/condition/doomed-player-core)",
+        "[drained](/condition/drained-player-core)",
+        "[fatigued](/condition/fatigued-player-core)",
+        "[healing](/trait/healing)",
+        "[mental](/trait/mental)",
+        "[nonlethal attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[paralyzed](/condition/paralyzed-player-core)",
+        "[poison](/trait/poison)",
+        "[sickened](/condition/sickened-player-core)",
+        "[spirit](/trait/spirit)",
+        "[unconscious](/condition/unconscious-player-core)",
+        "[vitality](/trait/vitality)",
+        "[void](/trait/void)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -93,7 +93,7 @@
         "offensive": [
           {
             "name": "Spring Forward",
-            "text": "**Two Actions** The animated bamboo figure jumps up to 30 feet and makes two fist Strikes against different targets. It can use Knockdown following this activity, attempting to [Trip](/action/trip-player-core) each creature struck.",
+            "text": "The animated bamboo figure jumps up to 30 feet and makes two fist Strikes against different targets. It can use Knockdown following this activity, attempting to [Trip](/action/trip-player-core) each creature struck.",
             "traits": [],
             "actions": "two"
           }
@@ -187,21 +187,21 @@
       "senses": "[darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "bleed",
-        "death effects",
-        "disease",
-        "doomed",
-        "drained",
-        "fatigued",
-        "healing",
-        "mental",
-        "nonlethal attacks",
-        "paralyzed",
-        "poison",
-        "sickened",
-        "spirit",
-        "unconscious",
-        "vitality",
-        "void"
+        "[death effects](/rule/death-effects-rules-2331)",
+        "[disease](/trait/disease)",
+        "[doomed](/condition/doomed-player-core)",
+        "[drained](/condition/drained-player-core)",
+        "[fatigued](/condition/fatigued-player-core)",
+        "[healing](/trait/healing)",
+        "[mental](/trait/mental)",
+        "[nonlethal attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[paralyzed](/condition/paralyzed-player-core)",
+        "[poison](/trait/poison)",
+        "[sickened](/condition/sickened-player-core)",
+        "[spirit](/trait/spirit)",
+        "[unconscious](/condition/unconscious-player-core)",
+        "[vitality](/trait/vitality)",
+        "[void](/trait/void)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -233,13 +233,15 @@
         "offensive": [
           {
             "name": "Attach Line",
-            "text": "**Single Action** (Manipulate) The animated kite gives its line to an adjacent ally with a free hand. The kite remains attached until the creature releases it or the kite flies more than 60 feet away. A creature between them can also sever the line with a successful [Strike](/action/strike-player-core) against AC 13 that deals any amount of slashing damage.",
-            "traits": [],
+            "text": "The animated kite gives its line to an adjacent ally with a free hand. The kite remains attached until the creature releases it or the kite flies more than 60 feet away. A creature between them can also sever the line with a successful [Strike](/action/strike-player-core) against AC 13 that deals any amount of slashing damage.",
+            "traits": [
+              "manipulate"
+            ],
             "actions": "one"
           },
           {
             "name": "Sawing Line",
-            "text": "**Two Actions** **Requirements** The animated kite has its line attached to an ally; **Effect** Each creature along the line between the kite and its ally takes 1d6 slashing damage (DC 16 [basic Reflex save](/rule/basic-saving-throws-rules-2297)).",
+            "text": "**Requirements** The animated kite has its line attached to an ally; **Effect** Each creature along the line between the kite and its ally takes 1d6 slashing damage (DC 16 [basic Reflex save](/rule/basic-saving-throws-rules-2297)).",
             "traits": [],
             "actions": "two"
           }
@@ -333,21 +335,21 @@
       "senses": "[darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "bleed",
-        "death effects",
-        "disease",
-        "doomed",
-        "drained",
-        "fatigued",
-        "healing",
-        "mental",
-        "nonlethal attacks",
-        "paralyzed",
-        "poison",
-        "sickened",
-        "spirit",
-        "unconscious",
-        "vitality",
-        "void"
+        "[death effects](/rule/death-effects-rules-2331)",
+        "[disease](/trait/disease)",
+        "[doomed](/condition/doomed-player-core)",
+        "[drained](/condition/drained-player-core)",
+        "[fatigued](/condition/fatigued-player-core)",
+        "[healing](/trait/healing)",
+        "[mental](/trait/mental)",
+        "[nonlethal attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[paralyzed](/condition/paralyzed-player-core)",
+        "[poison](/trait/poison)",
+        "[sickened](/condition/sickened-player-core)",
+        "[spirit](/trait/spirit)",
+        "[unconscious](/condition/unconscious-player-core)",
+        "[vitality](/trait/vitality)",
+        "[void](/trait/void)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -378,15 +380,20 @@
         "offensive": [
           {
             "name": "Spit Wine",
-            "text": "**Two Actions** (Water) The wine vessel opens its mouth and blows a stream of wine in a 15-foot line, dealing 2d8 bludgeoning damage (DC 19 [basic Reflex save](/rule/basic-saving-throws-rules-2297)).",
-            "traits": [],
+            "text": "The wine vessel opens its mouth and blows a stream of wine in a 15-foot line, dealing 2d8 bludgeoning damage (DC 19 [basic Reflex save](/rule/basic-saving-throws-rules-2297)).",
+            "traits": [
+              "water"
+            ],
             "actions": "two"
           },
           {
             "name": "Swallow Whole",
-            "text": "**Single Action** (Attack) Medium, 2d8+4 bludgeoning plus wine-soaked, Rupture 10",
-            "traits": [],
-            "actions": "one"
+            "text": "Medium, 2d8+4 bludgeoning plus wine-soaked, Rupture 10",
+            "traits": [
+              "attack"
+            ],
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           },
           {
             "name": "Wine-Soaked",
@@ -516,15 +523,17 @@
         "interaction": [
           {
             "name": "Bloodsense",
-            "text": "An aoyin can detect exposed blood as a precise sense at the listed range, including from creatures taking persistent bleed damage.",
-            "traits": []
+            "text": "60 feet, low-light vision, scent (precise) 30 feet\n\n**Languages**\n\n**Skills**\nAthletics +21, Stealth +18, Survival +19\n\n**Str** +7\n\n**Dex** +4\n\n**Con** +6\n\n**Int** -4\n\n**Wis** +3\n\n**Cha** -2\n\n**Bloodsense** An aoyin can detect exposed blood as a precise sense at the listed range, including from creatures taking persistent bleed damage.",
+            "traits": [
+              "precise"
+            ]
           }
         ],
         "defensive": [],
         "offensive": [
           {
             "name": "Horn Toss",
-            "text": "**Two Actions** The aoyin Strides and makes a horn [Strike](/action/strike-player-core). If the Strike hits, the target is flung 20 feet in a direction of the aoyin's choice.",
+            "text": "The aoyin Strides and makes a horn [Strike](/action/strike-player-core). If the Strike hits, the target is flung 20 feet in a direction of the aoyin's choice.",
             "traits": [],
             "actions": "two"
           },
@@ -535,9 +544,10 @@
           },
           {
             "name": "Trample",
-            "text": "**Three Actions** Medium, hoof, DC 29\n\n## Adyin Horns\n\nThe horns of an aoyin are a potent material for crafting magical items that induce a frenzied state or blood loss, much like in tales about the beast's calls. Each horn, of which an aoyin normally has four, can be used as 60 gp worth of materials for items like a _[wounding](/item/wounding-gm-core)_ rune.",
+            "text": "Medium, hoof, DC 29\n\n## Adyin Horns\n\nThe horns of an aoyin are a potent material for crafting magical items that induce a frenzied state or blood loss, much like in tales about the beast's calls. Each horn, of which an aoyin normally has four, can be used as 60 gp worth of materials for items like a _wounding_ rune.",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -683,14 +693,21 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "**Single Action** (Concentrate, Divine, Polymorph) The aso berang takes the appearance of any Medium or Small humanoid creature. In this form, the aso berang can't use their tusk Strikes, and their claw [Strike](/action/strike-player-core) becomes a fist Strike that deals bludgeoning damage and loses the [reach](/trait/reach) trait.",
-            "traits": [],
-            "actions": "one"
+            "text": "The aso berang takes the appearance of any Medium or Small humanoid creature. In this form, the aso berang can't use their tusk Strikes, and their claw [Strike](/action/strike-player-core) becomes a fist Strike that deals bludgeoning damage and loses the reach trait.",
+            "traits": [
+              "concentrate",
+              "divine",
+              "polymorph"
+            ],
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Cleanse the Forest",
-            "text": "**Three Actions** (Divine) The aso berang dashes to attack each nearby enemy so quickly that it's impossible to tell they've moved at all, save for a slight flicker in their outline. The aso berang Strides adjacent to an enemy and attempts a melee [Strike](/action/strike-player-core). If successful, the aso berang can [Stride](/action/stride-player-core) and attempt to Strike a different enemy. If this second attack is successful, they can Stride and attempt to Strike a third enemy. Once they fail a Strike (or upon succeeding at their third Strike), the aso berang Strides back to the space where they began.",
-            "traits": [],
+            "text": "The aso berang dashes to attack each nearby enemy so quickly that it's impossible to tell they've moved at all, save for a slight flicker in their outline. The aso berang Strides adjacent to an enemy and attempts a melee [Strike](/action/strike-player-core). If successful, the aso berang can [Stride](/action/stride-player-core) and attempt to Strike a different enemy. If this second attack is successful, they can Stride and attempt to Strike a third enemy. Once they fail a Strike (or upon succeeding at their third Strike), the aso berang Strides back to the space where they began.",
+            "traits": [
+              "divine"
+            ],
             "actions": "three"
           },
           {
@@ -852,26 +869,40 @@
         "defensive": [
           {
             "name": "Eclipse Aura",
-            "text": "(aura, darkness, occult) 100 feet. Light and shadows morph strangely around the bul-gae. Non-magical bright light is reduced to dim light within the aura. When a creature attempts an action within the aura that has the [light](/trait/light) trait, it must attempt a DC 34 Will save. On a failure, the action is disrupted.",
-            "traits": []
+            "text": "100 feet. Light and shadows morph strangely around the bul-gae. Non-magical bright light is reduced to dim light within the aura. When a creature attempts an action within the aura that has the light trait, it must attempt a DC 34 Will save. On a failure, the action is disrupted.",
+            "traits": [
+              "aura",
+              "darkness",
+              "occult"
+            ]
           },
           {
             "name": "Solar Flare",
-            "text": "(fire, occult) **Trigger** The bul-gae takes damage; **Effect** The bul-gae releases a solar flare in a 30-foot emanation. Each creature in the area takes 6d8 fire damage (DC 34 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). On a critical failure, a creature also takes 2d10 persistent fire damage. After using this ability, the bul-gae's flames cool, and they can't use Solar Flare again until after they've used their Lunar Burst ability.",
-            "traits": []
+            "text": "**Trigger** The bul-gae takes damage; **Effect** The bul-gae releases a solar flare in a 30-foot emanation. Each creature in the area takes 6d8 fire damage (DC 34 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). On a critical failure, a creature also takes 2d10 persistent fire damage. After using this ability, the bul-gae's flames cool, and they can't use Solar Flare again until after they've used their Lunar Burst ability.",
+            "traits": [
+              "fire",
+              "occult"
+            ]
           },
           {
             "name": "Lunar Burst",
-            "text": "**Two Actions** (Cold, Occult) The bul-gae releases a blast of otherworldly frost that deals 6d8 cold damage to each creature in a 10-foot emanation (DC 34 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). On a critical failure, a creature also becomes slowed 2 for 1 round. After using this ability, the bul-gae's flames heat up and they can't use Lunar Burst again until after they've used their Solar Flare reaction.",
-            "traits": [],
+            "text": "The bul-gae releases a blast of otherworldly frost that deals 6d8 cold damage to each creature in a 10-foot emanation (DC 34 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). On a critical failure, a creature also becomes slowed 2 for 1 round. After using this ability, the bul-gae's flames heat up and they can't use Lunar Burst again until after they've used their Solar Flare reaction.",
+            "traits": [
+              "cold",
+              "occult"
+            ],
             "actions": "two"
           }
         ],
         "offensive": [
           {
             "name": "Shadow Leap",
-            "text": "**Single Action** (Occult, Shadow, Teleportation) **Requirement** The bul-gae is in dim light or darkness; **Effect** The bul-gae dives into a shadow and reappears from a shadow within 40 feet.",
-            "traits": [],
+            "text": "**Requirement** The bul-gae is in dim light or darkness; **Effect** The bul-gae dives into a shadow and reappears from a shadow within 40 feet.",
+            "traits": [
+              "occult",
+              "shadow",
+              "teleportation"
+            ],
             "actions": "one"
           },
           {
@@ -1009,20 +1040,20 @@
         "interaction": [
           {
             "name": "Floral Camouflage",
-            "text": "When Hiding, the five-color orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures [concealed](/condition/concealed-player-core).",
+            "text": "When Hiding, the five-color orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures concealed.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Elemental Expulsion",
-            "text": "**Reaction** **Requirements** The mantis has an [elemental](/trait/elemental) trait from Color Shift **Trigger** It's damaged by a weapon [Strike](/action/strike-player-core); **Effect** Elemental energy pushes back against the blow, giving the attacker a –2 status penalty to attack rolls until the beginning of its next turn. If the weapon contains material that matches the mantis's trait (such as earth for a thrown rock or fire for a lit torch), the mantis gains resistance 10 to all damage from this Strike.",
+            "text": "**Requirements** The mantis has an elemental trait from Color Shift **Trigger** It's damaged by a weapon [Strike](/action/strike-player-core); **Effect** Elemental energy pushes back against the blow, giving the attacker a –2 status penalty to attack rolls until the beginning of its next turn. If the weapon contains material that matches the mantis's trait (such as earth for a thrown rock or fire for a lit torch), the mantis gains resistance 10 to all damage from this Strike.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Color Shift",
-            "text": "**Single Action** **Frequency** once per round; **Effect** The mantis attunes itself to one of five elements, changing color accordingly (yellow for earth, red for fire, white for metal, black for water, or green for wood). It gains that trait and a +2 status bonus to saving throws against effects with that trait until the beginning of its next turn. If the mantis uses Color Shift on its next turn, it must choose a different color.",
+            "text": "**Frequency** once per round; **Effect** The mantis attunes itself to one of five elements, changing color accordingly (yellow for earth, red for fire, white for metal, black for water, or green for wood). It gains that trait and a +2 status bonus to saving throws against effects with that trait until the beginning of its next turn. If the mantis uses Color Shift on its next turn, it must choose a different color.",
             "traits": [],
             "actions": "one"
           }
@@ -1030,7 +1061,7 @@
         "offensive": [
           {
             "name": "Harvesting Limbs",
-            "text": "**Two Actions** The mantis makes two leg attacks. If both attacks hit, the mantis gains 10 temporary Hit Points, and the target must succeed at a DC 27 Fortitude saving throw or become drained 1 (drained 2 on a critical failure). The [drained](/condition/drained-player-core) condition ends when the mantis is reduced to 0 Hit Points.",
+            "text": "The mantis makes two leg attacks. If both attacks hit, the mantis gains 10 temporary Hit Points, and the target must succeed at a DC 27 Fortitude saving throw or become drained 1 (drained 2 on a critical failure). The drained condition ends when the mantis is reduced to 0 Hit Points.",
             "traits": [],
             "actions": "two"
           },
@@ -1160,7 +1191,7 @@
           },
           {
             "name": "Subsumed Traits",
-            "text": "After it finishes digesting a full meal, the gau cho rong will gain a trait from that creature until the next time it's full. Gau cho rongs that gain the [animal](/trait/animal) trait have scent out to 60 feet as an imprecise sense, while those with the amphibious or [aquatic](/trait/aquatic) trait gain a swim speed of 25 feet. Humanoid hollow bears gain the Reactive [Strike](/action/strike-player-core) reaction. Traits like fire add that damage type to a gau cho rong's resistances. Other traits have effects at the GM's discretion.",
+            "text": "After it finishes digesting a full meal, the gau cho rong will gain a trait from that creature until the next time it's full. Gau cho rongs that gain the animal trait have scent out to 60 feet as an imprecise sense, while those with the amphibious or aquatic trait gain a swim speed of 25 feet. Humanoid hollow bears gain the Reactive [Strike](/action/strike-player-core) reaction. Traits like fire add that damage type to a gau cho rong's resistances. Other traits have effects at the GM's discretion.",
             "traits": []
           }
         ],
@@ -1168,13 +1199,13 @@
         "offensive": [
           {
             "name": "Ambush",
-            "text": "**Single Action** **Requirements** The gau cho rong is hiding and a creature that hasn't detected it is within 20 feet; **Effect** The gau cho rong Strides toward the creature. Once the creature is in reach, the gau cho rong makes a [Strike](/action/strike-player-core) against it. The target creature is off-guard to this attack.",
+            "text": "**Requirements** The gau cho rong is hiding and a creature that hasn't detected it is within 20 feet; **Effect** The gau cho rong Strides toward the creature. Once the creature is in reach, the gau cho rong makes a [Strike](/action/strike-player-core) against it. The target creature is off-guard to this attack.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Devour",
-            "text": "**Single Action** **Requirements** The gau cho rong's last action was a successful jaws [Strike](/action/strike-player-core); **Effect** The target takes 1d6 persistent bleed damage. The gau cho rong gains some knowledge from the creature's blood, learning how to understand and speak all languages that creature knows for 1 minute, which it does in a distorted version of the target's voice. During that time, the gau cho rong also gains a +2 circumstance bonus to Intimidation checks to Demoralize that creature.\n\n## Subsumed Traits\n\nPhysical changes from creatures they've devoured are visible in markings on the gau cho rong's loose hide and even in the shape of its bony frame, granting different hollow bears slightly different abilities even among the same group. It's possible that unique, older, or more powerful gau cho rongs might gain permanent abilities from digesting certain creatures.",
+            "text": "**Requirements** The gau cho rong's last action was a successful jaws [Strike](/action/strike-player-core); **Effect** The target takes 1d6 persistent bleed damage. The gau cho rong gains some knowledge from the creature's blood, learning how to understand and speak all languages that creature knows for 1 minute, which it does in a distorted version of the target's voice. During that time, the gau cho rong also gains a +2 circumstance bonus to Intimidation checks to Demoralize that creature.\n\n## Subsumed Traits\n\nPhysical changes from creatures they've devoured are visible in markings on the gau cho rong's loose hide and even in the shape of its bony frame, granting different hollow bears slightly different abilities even among the same group. It's possible that unique, older, or more powerful gau cho rongs might gain permanent abilities from digesting certain creatures.",
             "traits": [],
             "actions": "one"
           }
@@ -1297,7 +1328,7 @@
         "interaction": [
           {
             "name": "Floral Camouflage",
-            "text": "When Hiding, the giant orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures [concealed](/condition/concealed-player-core).",
+            "text": "When Hiding, the giant orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures concealed.",
             "traits": []
           }
         ],
@@ -1305,7 +1336,7 @@
         "offensive": [
           {
             "name": "Barbed Limbs",
-            "text": "**Two Actions** The giant orchid mantis makes two leg Strikes. If it hits the same creature with both attacks, that creature is grabbed until the end of the mantis's next turn.",
+            "text": "The giant orchid mantis makes two leg Strikes. If it hits the same creature with both attacks, that creature is grabbed until the end of the mantis's next turn.",
             "traits": [],
             "actions": "two"
           },
@@ -1403,21 +1434,21 @@
       "senses": "[darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "bleed",
-        "death effects",
-        "disease",
-        "doomed",
-        "drained",
-        "fatigued",
-        "healing",
-        "nonlethal attacks",
-        "paralyzed",
-        "poison",
-        "sickened",
-        "unconscious",
-        "vitality",
-        "void",
-        "Mental",
-        "Spirit"
+        "[death effects](/rule/death-effects-rules-2331)",
+        "[disease](/trait/disease)",
+        "[doomed](/condition/doomed-player-core)",
+        "[drained](/condition/drained-player-core)",
+        "[fatigued](/condition/fatigued-player-core)",
+        "[healing](/trait/healing)",
+        "[nonlethal attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[paralyzed](/condition/paralyzed-player-core)",
+        "[poison](/trait/poison)",
+        "[sickened](/condition/sickened-player-core)",
+        "[unconscious](/condition/unconscious-player-core)",
+        "[vitality](/trait/vitality)",
+        "[void](/trait/void)",
+        "[Mental](/trait/mental)",
+        "[Spirit](/trait/spirit)"
       ],
       "weaknesses": {
         "electricity": 2,
@@ -1453,7 +1484,7 @@
         "offensive": [
           {
             "name": "Hopping Strike",
-            "text": "**Two Actions** The hopping head Leaps 15 feet and makes one spring [Strike](/action/strike-player-core) at any point during that movement, dealing an additional 1d6 bludgeoning damage.",
+            "text": "The hopping head Leaps 15 feet and makes one spring [Strike](/action/strike-player-core) at any point during that movement, dealing an additional 1d6 bludgeoning damage.",
             "traits": [],
             "actions": "two"
           }
@@ -1594,7 +1625,7 @@
         "defensive": [
           {
             "name": "Forgotten Presence",
-            "text": "**Reaction** **Trigger** The ijhyeojin critically succeeds at a saving throw against a spell **Effect** The ijhyeojin redirects the triggering spell to a new target other than its caster. If the ijhyeojin is wearing that target's face, the new target takes a –2 circumstance penalty to this saving throw.",
+            "text": "**Trigger** The ijhyeojin critically succeeds at a saving throw against a spell **Effect** The ijhyeojin redirects the triggering spell to a new target other than its caster. If the ijhyeojin is wearing that target's face, the new target takes a –2 circumstance penalty to this saving throw.",
             "traits": [],
             "actions": "reaction"
           }
@@ -1602,14 +1633,21 @@
         "offensive": [
           {
             "name": "Overwrite Memory",
-            "text": "**Two Actions** (Emotion, Fear, Mental) The ijhyeojin alters the memories of a target within 30 feet, insinuating their faceless visage in the place of others. The target must attempt a DC 34 Will save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is frightened 1 and treats no one as an ally for as long as it's frightened.\n\n**Failure** The target is frightened 2 and is confused for as long as it's frightened.\n\n**Critical Failure** The target is frightened 4 and confused for as long as it's frightened. If the target is a joseung saja, they instead realize the fear of being forgotten and become an ijhyeojin.",
-            "traits": [],
+            "text": "The ijhyeojin alters the memories of a target within 30 feet, insinuating their faceless visage in the place of others. The target must attempt a DC 34 Will save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is frightened 1 and treats no one as an ally for as long as it's frightened.\n\n**Failure** The target is frightened 2 and is confused for as long as it's frightened.\n\n**Critical Failure** The target is frightened 4 and confused for as long as it's frightened. If the target is a joseung saja, they instead realize the fear of being forgotten and become an ijhyeojin.",
+            "traits": [
+              "emotion",
+              "fear",
+              "mental"
+            ],
             "actions": "two"
           },
           {
             "name": "Swipe Countenance",
-            "text": "**Single Action** (Mental, Visual) **Requirements** The ijhyeojin's previous action was a successful claw [Strike](/action/strike-player-core) against the target; **Effect** The ijhyeojin copies the countenance of the target, imprinting it perfectly onto their own blank face. While only their face changes, creatures must [Seek](/action/seek-player-core) them and succeed at a DC 34 Will save to distinguish them visually from the original creature. The sakhil keeps the same visage for 24 hours or until they steal another.\n\n## Fatal Feud\n\nIjhyeojins regard all joseung sajas as brainwashed servants of the Boneyard who need to be “awakened” from their sense of duty through fear. Despite their perception of themselves as liberators, ijhyeojins delight in watching a joseung saja unravel completely as they become consumed and reborn as faceless sakhils by their own fear.",
-            "traits": [],
+            "text": "**Requirements** The ijhyeojin's previous action was a successful claw [Strike](/action/strike-player-core) against the target; **Effect** The ijhyeojin copies the countenance of the target, imprinting it perfectly onto their own blank face. While only their face changes, creatures must [Seek](/action/seek-player-core) them and succeed at a DC 34 Will save to distinguish them visually from the original creature. The sakhil keeps the same visage for 24 hours or until they steal another.\n\n## Fatal Feud\n\nIjhyeojins regard all joseung sajas as brainwashed servants of the Boneyard who need to be “awakened” from their sense of duty through fear. Despite their perception of themselves as liberators, ijhyeojins delight in watching a joseung saja unravel completely as they become consumed and reborn as faceless sakhils by their own fear.",
+            "traits": [
+              "mental",
+              "visual"
+            ],
             "actions": "one"
           }
         ]
@@ -1754,8 +1792,8 @@
       ],
       "senses": "[darkvision](/action/darkvision-monster-core), [scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
-        "paralyzed",
-        "sleep"
+        "[paralyzed](/condition/paralyzed-player-core)",
+        "[sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "poison": 5
@@ -1801,14 +1839,14 @@
         "interaction": [
           {
             "name": "Nesting",
-            "text": "By coiling around a butterfly koi egg for 1 minute, the imugi designates it as their chosen heir, which grants the imugi the effects of a constant [status](/spell/status-player-core) spell on that egg. If the egg is destroyed or otherwise made nonviable, the imugi can choose a new koi egg with this ability after 1 week.",
+            "text": "By coiling around a butterfly koi egg for 1 minute, the imugi designates it as their chosen heir, which grants the imugi the effects of a constant status spell on that egg. If the egg is destroyed or otherwise made nonviable, the imugi can choose a new koi egg with this ability after 1 week.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Parental Wrath",
-            "text": "**Reaction** **Trigger** A creature damages the imugi's chosen koi egg or ends its turn within 40 feet of the egg **Effect** The imugi Strides or Swims toward the triggering creature. If they end their movement within reach of the creature, they can attempt a melee [Strike](/action/strike-player-core) against it.",
+            "text": "**Trigger** A creature damages the imugi's chosen koi egg or ends its turn within 40 feet of the egg **Effect** The imugi Strides or Swims toward the triggering creature. If they end their movement within reach of the creature, they can attempt a melee [Strike](/action/strike-player-core) against it.",
             "traits": [],
             "actions": "reaction"
           }
@@ -1816,19 +1854,23 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "**Single Action** 2d8+4 bludgeoning, DC 25",
+            "text": "2d8+4 bludgeoning, DC 25",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Floodwaters",
-            "text": "**Two Actions** (primal, water) Waters rush forth in a 60-foot line, dealing 4d6 bludgeoning damage (DC 25 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Creatures that fail the save and aren't grabbed by the imugi are pushed 10 feet away.",
-            "traits": [],
+            "text": "Waters rush forth in a 60-foot line, dealing 4d6 bludgeoning damage (DC 25 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Creatures that fail the save and aren't grabbed by the imugi are pushed 10 feet away.",
+            "traits": [
+              "primal",
+              "water"
+            ],
             "actions": "two"
           },
           {
             "name": "Storm Veil",
-            "text": "The imugi twists any nearby precipitation into a swirling veil of sleet and wind. They gain concealment when in any form of mist or rain.\n\n## Imperial Ascension\n\nThe ritual an imugi undergoes to become a true dragon releases a burst of overwhelming magic. Characters exposed to this burst might find their minds filled with lost techniques or abilities that the imugi has encountered over its long life, allowing them to gain access to uncommon or rare character options, suddenly understand formulas to craft items, or immediately retrain along a new path.",
+            "text": "The imugi twists any nearby precipitation into a swirling veil of sleet and wind. They gain [concealment](/condition/concealed-player-core) when in any form of mist or rain.\n\n## Imperial Ascension\n\nThe ritual an imugi undergoes to become a true dragon releases a burst of overwhelming magic. Characters exposed to this burst might find their minds filled with lost techniques or abilities that the imugi has encountered over its long life, allowing them to gain access to uncommon or rare character options, suddenly understand formulas to craft items, or immediately retrain along a new path.",
             "traits": []
           }
         ]
@@ -1960,23 +2002,23 @@
       "senses": "[darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "critical hits",
-        "mental",
+        "[mental](/trait/mental)",
         "precision",
-        "spirit",
-        "unconscious",
-        "vitality",
-        "void",
+        "[spirit](/trait/spirit)",
+        "[unconscious](/condition/unconscious-player-core)",
+        "[vitality](/trait/vitality)",
+        "[void](/trait/void)",
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Doomed",
-        "Drained",
-        "Fatigued",
-        "Healing",
-        "Nonlethal Attacks",
-        "Paralyzed",
-        "Poison",
-        "Sickened"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Doomed](/condition/doomed-player-core)",
+        "[Drained](/condition/drained-player-core)",
+        "[Fatigued](/condition/fatigued-player-core)",
+        "[Healing](/trait/healing)",
+        "[Nonlethal Attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sickened](/condition/sickened-player-core)"
       ],
       "weaknesses": {
         "cold": 5,
@@ -2020,7 +2062,7 @@
           },
           {
             "name": "Ink Blot",
-            "text": "**Single Action** The inkdrop leaves a pattern it remembers over a square foot of surface. If there's existing non-magical ink on the surface, the inkdrop erases the non- magical ink.",
+            "text": "The inkdrop leaves a pattern it remembers over a square foot of surface. If there's existing non-magical ink on the surface, the inkdrop erases the non- magical ink.",
             "traits": [],
             "actions": "one"
           }
@@ -2140,7 +2182,7 @@
         "defensive": [
           {
             "name": "Scurrying Retreat",
-            "text": "**Reaction** **Trigger** The jiidon takes damage from a [Strike](/action/strike-player-core) **Requirements** They're currently transformed into in a humanoid form; Effect The jiidon reverts to their rat form and Climbs or Strides. They can't resume humanoid form for 1 minute.",
+            "text": "**Trigger** The jiidon takes damage from a [Strike](/action/strike-player-core) **Requirements** They're currently transformed into in a humanoid form; Effect The jiidon reverts to their rat form and Climbs or Strides. They can't resume humanoid form for 1 minute.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2148,18 +2190,22 @@
         "offensive": [
           {
             "name": "Consumed Fragments",
-            "text": "**Single Action** (Concentrate, Polymorph, Primal) The jiidon takes on the form of any Medium or Small humanoid creature whose fingernails or similar fragments they've consumed within the last week, gaining the effects of a 3rd-rank _[illusory disguise](/spell/illusory-disguise-player-core)_ spell to impersonate the creature for 8 hours; this is a polymorph effect rather than an illusion effect. Once a jiidon has transformed into a creature in this way, they must eat that creature's fingernails again to transform into it again. If a jiidon consumes the nails of a specific humanoid three nights in a row, they can take the form of that humanoid at will but can't use this ability to imitate any other humanoid thereafter.",
-            "traits": [],
+            "text": "The jiidon takes on the form of any Medium or Small humanoid creature whose fingernails or similar fragments they've consumed within the last week, gaining the effects of a 3rd-rank _illusory disguise_ spell to impersonate the creature for 8 hours; this is a polymorph effect rather than an illusion effect. Once a jiidon has transformed into a creature in this way, they must eat that creature's fingernails again to transform into it again. If a jiidon consumes the nails of a specific humanoid three nights in a row, they can take the form of that humanoid at will but can't use this ability to imitate any other humanoid thereafter.",
+            "traits": [
+              "concentrate",
+              "polymorph",
+              "primal"
+            ],
             "actions": "one"
           },
           {
             "name": "Sneak Attack",
-            "text": "The jiidon deals an additional 1d6 precision damage to [off-guard](/condition/off-guard-player-core) creatures.",
+            "text": "The jiidon deals an additional 1d6 precision damage to off-guard creatures.",
             "traits": []
           },
           {
             "name": "Tactical Gnaw",
-            "text": "**Two Actions** The jiidon uses their nearly indestructible teeth to chew through even the toughest armor, leaving an opponent vulnerable. The jiidon makes a jaws [Strike](/action/strike-player-core). On a successful attack, if the target is wearing armor with Hardness 10 or lower, the armor becomes broken. This Strike doesn't further damage armor that's already broken.\n\n## Playing a Jiidon\n\nWhile jiidons don't have ancestral rules [in this book](/rule/in-this-book-rules-2089), a player interested in creating a jiidon character can use the beastkin versatile heritage to emulate a jiidon who has obtained a permanent humanoid form. The player should work with the GM to determine who the jiidon is imitating and what complications this might have.",
+            "text": "The jiidon uses their nearly indestructible teeth to chew through even the toughest armor, leaving an opponent vulnerable. The jiidon makes a jaws [Strike](/action/strike-player-core). On a successful attack, if the target is wearing armor with Hardness 10 or lower, the armor becomes broken. This Strike doesn't further damage armor that's already broken.\n\n## Playing a Jiidon\n\nWhile jiidons don't have ancestral rules in this book, a player interested in creating a jiidon character can use the beastkin versatile heritage to emulate a jiidon who has obtained a permanent humanoid form. The player should work with the GM to determine who the jiidon is imitating and what complications this might have.",
             "traits": [],
             "actions": "two"
           }
@@ -2262,8 +2308,8 @@
       ],
       "senses": "[darkvision](/action/darkvision-monster-core), [lifesense](/action/lifesense-monster-core) 60 feet",
       "immunities": [
-        "death effects",
-        "disease"
+        "[death effects](/rule/death-effects-rules-2331)",
+        "[disease](/trait/disease)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -2291,19 +2337,24 @@
         "offensive": [
           {
             "name": "Reap Memory",
-            "text": "**Two Actions** (Incapacitation, Mental) The joseung saja looks into the eyes of a creature within 30 feet and removes inconvenient or painful memories that are preventing it from moving on to death. The target is aware that the joseung saja attempted to alter its memory and can attempt a Will save to resist. Willing targets receive the effects of a critical failure.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes 2d10 mental damage and is stupefied 2 for 1 round.\n\n**Failure** The target takes 4d10 mental damage and is stupefied 2 for 1 week.\n\n**Critical Failure** The target loses all painful emotions and memories, leaving an indistinct haze. If the target is an ijhyeojin, then all of their memories are reaped and they become a joseung saja.",
-            "traits": [],
+            "text": "The joseung saja looks into the eyes of a creature within 30 feet and removes inconvenient or painful memories that are preventing it from moving on to death. The target is aware that the joseung saja attempted to alter its memory and can attempt a Will save to resist. Willing targets receive the effects of a critical failure.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes 2d10 mental damage and is stupefied 2 for 1 round.\n\n**Failure** The target takes 4d10 mental damage and is stupefied 2 for 1 week.\n\n**Critical Failure** The target loses all painful emotions and memories, leaving an indistinct haze. If the target is an ijhyeojin, then all of their memories are reaped and they become a joseung saja.",
+            "traits": [
+              "incapacitation",
+              "mental"
+            ],
             "actions": "two"
           },
           {
             "name": "Reap Souls",
-            "text": "**Reaction** (Death) **Trigger** The joseung saja brings a target to 0 Hit Points or successfully Strikes a target with the [dying](/condition/dying-player-core) condition; **Effect** The target must succeed at a DC 34 Will save or immediately die. A reaped creature can't be return to life or become undead except by a 9th-rank or higher ritual.",
-            "traits": [],
+            "text": "**Trigger** The joseung saja brings a target to 0 Hit Points or successfully Strikes a target with the dying condition; **Effect** The target must succeed at a DC 34 Will save or immediately die. A reaped creature can't be return to life or become undead except by a 9th-rank or higher ritual.",
+            "traits": [
+              "death"
+            ],
             "actions": "reaction"
           },
           {
             "name": "Shifting Form",
-            "text": "**Single Action** The joseung saja is incorporeal until the end of their next turn. While they're incorporeal, they have resistance 10 to all damage (except force, void, and [ghost touch](/item/ghost-touch-gm-core) weapons).",
+            "text": "The joseung saja is incorporeal until the end of their next turn. While they're incorporeal, they have resistance 10 to all damage (except force, void, and ghost touch weapons).",
             "traits": [],
             "actions": "one"
           },
@@ -2496,7 +2547,7 @@
         "defensive": [
           {
             "name": "Spite",
-            "text": "**Reaction** **Trigger** A creature within reach of the kun's tail uses an action to heal or help anyone else **Effect** The kun bats the triggering creature away with their tail, making a tail [Strike](/action/strike-player-core) against the creature. On a hit, the action is disrupted and the creature is pushed 10 feet.",
+            "text": "**Trigger** A creature within reach of the kun's tail uses an action to heal or help anyone else **Effect** The kun bats the triggering creature away with their tail, making a tail [Strike](/action/strike-player-core) against the creature. On a hit, the action is disrupted and the creature is pushed 10 feet.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2504,20 +2555,27 @@
         "offensive": [
           {
             "name": "Funnel",
-            "text": "**Two Actions** (Cold, Primal, Water) The kun inhales violently, sucking in heat and all creatures in the water in a 60-foot [cone](/rule/cone-rules-2386). Creatures take 10d8 cold damage and must attempt a DC 33 Fortitude save. The kun can't Funnel again for 1d4 rounds.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is pulled 30 feet toward the kun.\n\n**Critical Failure** The creature takes double damage and is pulled 60 feet toward the kun.",
-            "traits": [],
+            "text": "The kun inhales violently, sucking in heat and all creatures in the water in a 60-foot [cone](/rule/cone-rules-2386). Creatures take 10d8 cold damage and must attempt a DC 33 Fortitude save. The kun can't Funnel again for 1d4 rounds.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is pulled 30 feet toward the kun.\n\n**Critical Failure** The creature takes double damage and is pulled 60 feet toward the kun.",
+            "traits": [
+              "cold",
+              "primal",
+              "water"
+            ],
             "actions": "two"
           },
           {
             "name": "Heart of Darkness",
-            "text": "Whenever the kun makes a jaws [Strike](/action/strike-player-core) from within an area of darkness, their jaws deals an additional 2d6 spirit damage and gains the [unholy](/trait/unholy) trait.",
+            "text": "Whenever the kun makes a jaws [Strike](/action/strike-player-core) from within an area of darkness, their jaws deals an additional 2d6 spirit damage and gains the unholy trait.",
             "traits": []
           },
           {
             "name": "Swallow Whole",
-            "text": "**Single Action** (Attack) Huge, 3d12+7 bludgeoning, Rupture 30\n\n## Change of Heart\n\nIn extremely rare circumstances and for their own mysterious reasons, a kun might sacrifice some of their power to undergo a permanent, onetime transformation. In a final dramatic act, the kun flings themself up and out of the ocean, allowing the sun to fully wash over them. In the process, the kun transforms from a hateful fish into a noble and curious bird called a peng",
-            "traits": [],
-            "actions": "one"
+            "text": "Huge, 3d12+7 bludgeoning, Rupture 30\n\n## Change of Heart\n\nIn extremely rare circumstances and for their own mysterious reasons, a kun might sacrifice some of their power to undergo a permanent, onetime transformation. In a final dramatic act, the kun flings themself up and out of the ocean, allowing the sun to fully wash over them. In the process, the kun transforms from a hateful fish into a noble and curious bird called a peng",
+            "traits": [
+              "attack"
+            ],
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           }
         ]
       },
@@ -2695,13 +2753,13 @@
         "offensive": [
           {
             "name": "Blood Drain",
-            "text": "**Single Action** **Requirements** The manananggal has a creature [grabbed](/condition/grabbed-player-core); **Effect** The manananggal drives their tongue into the grabbed creature to drink its blood. This deals 4d6 damage, and the manananggal gains temporary Hit Points equal to the damage dealt. A creature whose blood is drained by a manananggal is drained 1 until it receives healing (of any kind or amount).",
+            "text": "**Requirements** The manananggal has a creature grabbed; **Effect** The manananggal drives their tongue into the grabbed creature to drink its blood. This deals 4d6 damage, and the manananggal gains temporary Hit Points equal to the damage dealt. A creature whose blood is drained by a manananggal is drained 1 until it receives healing (of any kind or amount).",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Separated Body",
-            "text": "A manananggal typically resembles a living humanoid. They don't appear as an aberration at first glance and receive a +4 status bonus to their Deception DC when Impersonating a humanoid. At any time, but especially at night, a manananggal can, as a 3-action activity with the [manipulate](/trait/manipulate) trait, rip their upper torso from their bottom half, leaving the lower torso limp and helpless but allowing the upper torso to fly free. A manananggal can separate their body at any time, but they risk further damage if they do so during the day. The manananggal's upper and lower halves share the same pool of HP. If its lower half is damaged, the manananggal is immediately aware of the attack. Each minute a manananggal remains separated after sunrise and before sunset, it takes 2d6 points of damage until it reattaches its upper and lower torsos or is destroyed, whichever comes first.\n\n## Grim Blades\n\nMinatan folktales have it that a forgotten demigod created the first manananggals by bisecting the torso of a human with a divine knife. The demigod then cut into the human's shoulders and drove a pair of bat wings into their back, birthing the first manananggal. The divine power of the demigod's knife still resonates in every manananggal and makes each of the aberrations susceptible to cuts from similar weapons. Communities dealing with a manananggal's terror train with light blades and other slashing weapons to cut the monsters from the sky.",
+            "text": "A manananggal typically resembles a living humanoid. They don't appear as an aberration at first glance and receive a +4 status bonus to their Deception DC when Impersonating a humanoid. At any time, but especially at night, a manananggal can, as a 3-action activity with the manipulate trait, rip their upper torso from their bottom half, leaving the lower torso limp and helpless but allowing the upper torso to fly free. A manananggal can separate their body at any time, but they risk further damage if they do so during the day. The manananggal's upper and lower halves share the same pool of HP. If its lower half is damaged, the manananggal is immediately aware of the attack. Each minute a manananggal remains separated after sunrise and before sunset, it takes 2d6 points of damage until it reattaches its upper and lower torsos or is destroyed, whichever comes first.\n\n## Grim Blades\n\nMinatan folktales have it that a forgotten demigod created the first manananggals by bisecting the torso of a human with a divine knife. The demigod then cut into the human's shoulders and drove a pair of bat wings into their back, birthing the first manananggal. The divine power of the demigod's knife still resonates in every manananggal and makes each of the aberrations susceptible to cuts from similar weapons. Communities dealing with a manananggal's terror train with light blades and other slashing weapons to cut the monsters from the sky.",
             "traits": []
           }
         ]
@@ -2908,13 +2966,13 @@
         "interaction": [
           {
             "name": "Viper Tail",
-            "text": "**Reaction** **Trigger** A creature within 15 feet of the nue leaves a square during a move action it's using or moves into a square that would cause the nue to become flanked; **Effect** The nue whips around and attempts a tail [Strike](/action/strike-player-core) against the triggering creature. This Strike doesn't count toward the nue's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
+            "text": "**Trigger** A creature within 15 feet of the nue leaves a square during a move action it's using or moves into a square that would cause the nue to become flanked; **Effect** The nue whips around and attempts a tail [Strike](/action/strike-player-core) against the triggering creature. This Strike doesn't count toward the nue's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
             "traits": [],
             "actions": "reaction"
           },
           {
             "name": "Viper Tail",
-            "text": "**Reaction** **Trigger** A creature within 15 feet of the nue leaves a square during a move action it's using or moves into a square that would cause the nue to become flanked; **Effect** The nue whips around and attempts a tail [Strike](/action/strike-player-core) against the triggering creature. This Strike doesn't count toward the nue's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
+            "text": "**Trigger** A creature within 15 feet of the nue leaves a square during a move action it's using or moves into a square that would cause the nue to become flanked; **Effect** The nue whips around and attempts a tail [Strike](/action/strike-player-core) against the triggering creature. This Strike doesn't count toward the nue's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.",
             "traits": [],
             "actions": "reaction"
           }
@@ -2923,20 +2981,29 @@
         "offensive": [
           {
             "name": "Cloud Form",
-            "text": "**Single Action** (Concentrate, Polymorph) The nue changes its shape into that of a dark storm cloud. In Cloud Form, the nue is concealed, gains a 60-foot [fly Speed](/rule/fly-speed-rules-2350), gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise, and can't make attacks, though it can use its howl abilities. The nue can Dismiss this effect.",
-            "traits": [],
+            "text": "The nue changes its shape into that of a dark storm cloud. In Cloud Form, the nue is concealed, gains a 60-foot [fly Speed](/rule/fly-speed-rules-2350), gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise, and can't make attacks, though it can use its howl abilities. The nue can Dismiss this effect.",
+            "traits": [
+              "concentrate",
+              "polymorph"
+            ],
             "actions": "one"
           },
           {
             "name": "Monstrous Howl",
-            "text": "**Two Actions** (Auditory, Mental, Void) The nue lets out an eerie howl that rattles creatures' very souls. Creatures within 60 feet must attempt a DC 27 Will save (DC 29 at night). They're then temporarily immune to Monstrous Howl for 10 minutes.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes 2d8 persistent void damage.\n\n**Failure** As success, plus the target is drained 1.\n\n**Critical Failure** As success, plus the target is drained 2 and stunned 1.",
-            "traits": [],
+            "text": "The nue lets out an eerie howl that rattles creatures' very souls. Creatures within 60 feet must attempt a DC 27 Will save (DC 29 at night). They're then temporarily immune to Monstrous Howl for 10 minutes.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes 2d8 persistent void damage.\n\n**Failure** As success, plus the target is drained 1.\n\n**Critical Failure** As success, plus the target is drained 2 and stunned 1.",
+            "traits": [
+              "auditory",
+              "mental",
+              "void"
+            ],
             "actions": "two"
           },
           {
             "name": "Thundering Howl",
-            "text": "**Two Actions** (Electricity) **Effect** The nue howls to the sky, calling down a bolt of lightning that strikes the creature closest to the nue, to a maximum range of 60 feet. The bolt deals 12d6 electricity damage (DC 27 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). The nue then can't use Thundering Howl for 1d4 round\n\n## Curse of the Nue\n\nEven in death, a nue's spirit can bring disaster to those around it. One way to suppress the curse is to perform burial rites and build a mound over the nue's tomb. Another is to avoid the curse entirely by setting the corpse adrift down a river or burying it far away. The curse itself is said to enact its wrath through possession; some believe this is how a nue is created.",
-            "traits": [],
+            "text": "**Effect** The nue howls to the sky, calling down a bolt of lightning that strikes the creature closest to the nue, to a maximum range of 60 feet. The bolt deals 12d6 electricity damage (DC 27 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). The nue then can't use Thundering Howl for 1d4 round\n\n## Curse of the Nue\n\nEven in death, a nue's spirit can bring disaster to those around it. One way to suppress the curse is to perform burial rites and build a mound over the nue's tomb. Another is to avoid the curse entirely by setting the corpse adrift down a river or burying it far away. The curse itself is said to enact its wrath through possession; some believe this is how a nue is created.",
+            "traits": [
+              "electricity"
+            ],
             "actions": "two"
           }
         ]
@@ -3025,9 +3092,9 @@
       "immunities": [
         "precision",
         "swarm mind",
-        "Grabbed",
-        "Prone",
-        "Restrained"
+        "[Grabbed](/condition/grabbed-player-core)",
+        "[Prone](/condition/prone-player-core)",
+        "[Restrained](/condition/restrained-player-core)"
       ],
       "weaknesses": {
         "area": 5,
@@ -3048,7 +3115,7 @@
         "interaction": [
           {
             "name": "Floral Camouflage",
-            "text": "When Hiding, the orchid mantis swarm is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures [concealed](/condition/concealed-player-core).",
+            "text": "When Hiding, the orchid mantis swarm is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures concealed.",
             "traits": []
           }
         ],
@@ -3056,14 +3123,17 @@
         "offensive": [
           {
             "name": "Biting Blossoms",
-            "text": "**Single Action** Each enemy in the swarm's space takes 3d6 piercing damage (DC 24 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Creatures that fail this save also take 1d4 persistent bleed damage.",
+            "text": "Each enemy in the swarm's space takes 3d6 piercing damage (DC 24 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Creatures that fail this save also take 1d4 persistent bleed damage.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Drifting Petals",
-            "text": "**Two Actions** (Mental, Visual) The swarm Flies. Each creature whose space it moves through must attempt a DC 24 Will save or be transfixed by their blossom-like bodies.\n\n**Critical Success** No effect.\n\n**Success** The creature is dazzled for 1 round.\n\n**Failure** The creature is dazzled and stupefied 1 for 1 round.\n\n**Critical Failure** The creature is blinded and stupefied 2 for 1 round.",
-            "traits": [],
+            "text": "The swarm Flies. Each creature whose space it moves through must attempt a DC 24 Will save or be transfixed by their blossom-like bodies.\n\n**Critical Success** No effect.\n\n**Success** The creature is dazzled for 1 round.\n\n**Failure** The creature is dazzled and stupefied 1 for 1 round.\n\n**Critical Failure** The creature is blinded and stupefied 2 for 1 round.",
+            "traits": [
+              "mental",
+              "visual"
+            ],
             "actions": "two"
           }
         ]
@@ -3204,15 +3274,23 @@
         "defensive": [
           {
             "name": "Calm Weather Aura",
-            "text": "(air, aura, primal) 1 mile. The ambient weather around a peng is always lightly cloudy with a pleasant breeze, and the temperature is pleasantly warm for the season. Another creature that attempts to alter the weather within this aura; otherwise, the effect is disrupted. The peng can activate or deactivate this aura as a single action with the [concentrate](/trait/concentrate) trait.",
-            "traits": []
+            "text": "1 mile. The ambient weather around a peng is always lightly cloudy with a pleasant breeze, and the temperature is pleasantly warm for the season. Another creature that attempts to alter the weather within this aura; otherwise, the effect is disrupted. The peng can activate or deactivate this aura as a single action with the concentrate trait.",
+            "traits": [
+              "air",
+              "aura",
+              "primal"
+            ]
           }
         ],
         "offensive": [
           {
             "name": "Flap Wings",
-            "text": "**Two Actions** (Air, Cold, Primal) The peng beats their wings to create a mighty burst of frosty air and push away foes. Each creature within 10 feet of the peng takes 4d6 bludgeoning and 4d6 cold damage (DC 32 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Creatures that fail their save are pushed away 10 feet; creatures that critically fail are pushed away 20 feet and knocked prone.",
-            "traits": [],
+            "text": "The peng beats their wings to create a mighty burst of frosty air and push away foes. Each creature within 10 feet of the peng takes 4d6 bludgeoning and 4d6 cold damage (DC 32 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Creatures that fail their save are pushed away 10 feet; creatures that critically fail are pushed away 20 feet and knocked prone.",
+            "traits": [
+              "air",
+              "cold",
+              "primal"
+            ],
             "actions": "two"
           },
           {
@@ -3397,15 +3475,19 @@
         "interaction": [
           {
             "name": "Goldsense",
-            "text": "The pixiu can detect the presence, location, and approximate value of gold within 120 feet.",
-            "traits": []
+            "text": "120 feet\n\n**Languages**\nDraconic\n\n**Skills**\nAcrobatics +14, Athletics +18, Religion +16\n\n**Str** +6\n\n**Dex** +2\n\n**Con** +6\n\n**Int** -2\n\n**Wis** +4\n\n**Cha** +4\n\n**Goldsense** The pixiu can detect the presence, location, and approximate value of gold within 120 feet.",
+            "traits": [
+              "precise"
+            ]
           }
         ],
         "defensive": [
           {
             "name": "Good Fortune",
-            "text": "**Reaction** (fortune) **Trigger** The pixiu, or an ally within 30 feet, is about to attempt a saving throw but hasn't rolled yet; **Frequency** once per hour; **Effect** That creature rolls the triggering saving throw twice and takes the better result.",
-            "traits": [],
+            "text": "**Trigger** The pixiu, or an ally within 30 feet, is about to attempt a saving throw but hasn't rolled yet; **Frequency** once per hour; **Effect** That creature rolls the triggering saving throw twice and takes the better result.",
+            "traits": [
+              "fortune"
+            ],
             "actions": "reaction"
           },
           {
@@ -3417,15 +3499,16 @@
         "offensive": [
           {
             "name": "Devour Wealth",
-            "text": "**Single Action** **Requirements** The pixiu's previous action was a successful jaws [Strike](/action/strike-player-core); **Effect** The pixiu swallows up to 2d12 gold pieces on the target's person and gains temporary Hit Points equal to the amount devoured. These temporary Hit Points last for 1 minute.",
+            "text": "**Requirements** The pixiu's previous action was a successful jaws [Strike](/action/strike-player-core); **Effect** The pixiu swallows up to 2d12 gold pieces on the target's person and gains temporary Hit Points equal to the amount devoured. These temporary Hit Points last for 1 minute.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Trample",
-            "text": "**Three Actions** Medium or smaller, claw, DC 26\n\n## Pixiu Dimorphism\n\nMale and female pixius have notable differences (though, just like natural animals, individuals with the traits of both exist). Males have a golden coat and mane, while females have a blue overcoat. While most pixius have one horn, females with two horns aren't uncommon; curiously, no male pixius with two horns have ever been documented.",
+            "text": "Medium or smaller, claw, DC 26\n\n## Pixiu Dimorphism\n\nMale and female pixius have notable differences (though, just like natural animals, individuals with the traits of both exist). Males have a golden coat and mane, while females have a blue overcoat. While most pixius have one horn, females with two horns aren't uncommon; curiously, no male pixius with two horns have ever been documented.",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -3545,12 +3628,12 @@
       ],
       "senses": "[darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "death effects",
-        "disease",
-        "paralyzed",
-        "poison",
+        "[death effects](/rule/death-effects-rules-2331)",
+        "[disease](/trait/disease)",
+        "[paralyzed](/condition/paralyzed-player-core)",
+        "[poison](/trait/poison)",
         "precision",
-        "unconscious"
+        "[unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {
         "fire": 10
@@ -3611,26 +3694,31 @@
         "defensive": [
           {
             "name": "Rejuvenation",
-            "text": "(divine) When the shui gui is destroyed, it reforms after 2d4 days within the body of water it's bound to, fully healing. It can be permanently destroyed if the body of the shui gui who originally died in the water can be found and laid to rest.\n**",
-            "traits": []
+            "text": "When the shui gui is destroyed, it reforms after 2d4 days within the body of water it's bound to, fully healing. It can be permanently destroyed if the body of the shui gui who originally died in the water can be found and laid to rest.\n**",
+            "traits": [
+              "divine"
+            ]
           },
           {
             "name": "Ti Sh-on",
-            "text": "**Reaction** (death, divine) **Trigger** A creature [grabbed](/condition/grabbed-player-core) by the shui gui dies of suffocation **Effect** Ripping the spirit of its drowned victim out of the target's body, the shui gui enters the corpse to take the original owner's place. The shui gui then returns to life at the edge of its body of water as if it had been the target of a successful _[resurrect](/ritual/resurrect-player-core)_ ritual, except it has the appearance of the target rather than its original body. After a week, the spirit of the drowned creature becomes a shui gui. The new spirit can't be raised from the dead by normal magical means until they've been destroyed as a shui gui.",
-            "traits": [],
+            "text": "**Trigger** A creature grabbed by the shui gui dies of suffocation **Effect** Ripping the spirit of its drowned victim out of the target's body, the shui gui enters the corpse to take the original owner's place. The shui gui then returns to life at the edge of its body of water as if it had been the target of a successful _resurrect_ ritual, except it has the appearance of the target rather than its original body. After a week, the spirit of the drowned creature becomes a shui gui. The new spirit can't be raised from the dead by normal magical means until they've been destroyed as a shui gui.",
+            "traits": [
+              "death",
+              "divine"
+            ],
             "actions": "reaction"
           }
         ],
         "offensive": [
           {
             "name": "Drag Under",
-            "text": "**Single Action** The shui gui Swims at half Speed, along with any creature it has grabbed.",
+            "text": "The shui gui Swims at half Speed, along with any creature it has grabbed.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Drown the Living",
-            "text": "**Single Action** **Requirements** The target must be holding its breath and be grabbed by the shui gui; **Effect** The shui gui tightens its grip. The target must succeed at a DC 24 Fortitude save or immediately lose 1d4 actions worth of air (or twice that on a critical failure).",
+            "text": "**Requirements** The target must be holding its breath and be grabbed by the shui gui; **Effect** The shui gui tightens its grip. The target must succeed at a DC 24 Fortitude save or immediately lose 1d4 actions worth of air (or twice that on a critical failure).",
             "traits": [],
             "actions": "one"
           },
@@ -3754,22 +3842,22 @@
       ],
       "senses": "[darkvision](/action/darkvision-monster-core), [tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 100 feet",
       "immunities": [
-        "death effects",
-        "disease",
-        "doomed",
-        "drained",
-        "fatigued",
-        "healing",
-        "nonlethal attacks",
-        "paralyzed",
-        "poison",
-        "sickened",
-        "unconscious",
-        "vitality",
-        "void",
+        "[death effects](/rule/death-effects-rules-2331)",
+        "[disease](/trait/disease)",
+        "[doomed](/condition/doomed-player-core)",
+        "[drained](/condition/drained-player-core)",
+        "[fatigued](/condition/fatigued-player-core)",
+        "[healing](/trait/healing)",
+        "[nonlethal attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[paralyzed](/condition/paralyzed-player-core)",
+        "[poison](/trait/poison)",
+        "[sickened](/condition/sickened-player-core)",
+        "[unconscious](/condition/unconscious-player-core)",
+        "[vitality](/trait/vitality)",
+        "[void](/trait/void)",
         "Bleed",
-        "Mental",
-        "Spirit"
+        "[Mental](/trait/mental)",
+        "[Spirit](/trait/spirit)"
       ],
       "weaknesses": {
         "electricity": 15,
@@ -3814,13 +3902,14 @@
         "offensive": [
           {
             "name": "Constrict",
-            "text": "**Single Action** 4d10+4 bludgeoning, DC 40",
+            "text": "4d10+4 bludgeoning, DC 40",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Rescue",
-            "text": "**Single Action** The caterpillar carriage absorbs a willing construct within its reach. That construct doesn't exist separately until the caterpillar carriage releases it as an [Interact](/action/interact-player-core) action or is destroyed.",
+            "text": "The caterpillar carriage absorbs a willing construct within its reach. That construct doesn't exist separately until the caterpillar carriage releases it as an [Interact](/action/interact-player-core) action or is destroyed.",
             "traits": [],
             "actions": "one"
           },
@@ -3831,9 +3920,10 @@
           },
           {
             "name": "Trample",
-            "text": "**Three Actions** Huge or smaller, wheel, DC 40",
+            "text": "Huge or smaller, wheel, DC 40",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "reference": "/action/trample-monster-core"
           }
         ]
       },
@@ -3935,8 +4025,8 @@
       ],
       "senses": "[darkvision](/action/darkvision-monster-core), [scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet",
       "immunities": [
-        "disease",
-        "poison"
+        "[disease](/trait/disease)",
+        "[poison](/trait/poison)"
       ],
       "weaknesses": {
         "mental": 20
@@ -3986,8 +4076,12 @@
         "defensive": [
           {
             "name": "Bitter Breath",
-            "text": "(aura, disease, poison) 90 feet. If a creature ends its turn in the aura, it's exposed to the Great Flood's flood breath disease.",
-            "traits": []
+            "text": "90 feet. If a creature ends its turn in the aura, it's exposed to the Great Flood's flood breath disease.",
+            "traits": [
+              "aura",
+              "disease",
+              "poison"
+            ]
           },
           {
             "name": "Coordinated Actions",
@@ -4000,27 +4094,26 @@
             "traits": []
           },
           {
-            "name": "Reactive Strike",
-            "text": "**Reaction**",
-            "traits": [],
-            "actions": "reaction"
-          },
-          {
             "name": "Flood Breath",
-            "text": "(disease, poison) **Saving Throw** DC 42 Fortitude; **Stage 1** drained 1 (1 day); **Stage 2** drained 2 (1 day); **Stage 3** drained 2 and doomed 1 (1 day); **Stage 4** You die and your body collapses, releasing a cloud of toxin. Any creature within 10 feet of your death is exposed to flood breath (1 day)",
-            "traits": []
+            "text": "**Saving Throw** DC 42 Fortitude; **Stage 1** drained 1 (1 day); **Stage 2** drained 2 (1 day); **Stage 3** drained 2 and doomed 1 (1 day); **Stage 4** You die and your body collapses, releasing a cloud of toxin. Any creature within 10 feet of your death is exposed to flood breath (1 day)",
+            "traits": [
+              "disease",
+              "poison"
+            ]
           }
         ],
         "offensive": [
           {
             "name": "Great Wave",
-            "text": "**Two Actions** (water) **Frequency** once per day; **Effect** The Great Flood gathers all nearby water and floods a mile burst. Any creature in the area must succeed at a DC 42 Reflex save or be moved up to 60 feet in a direction of the Great Flood's choice. The area remains flooded with 30-foot-deep water for 1 hour or until the Great Flood dies, then drains naturally.",
-            "traits": [],
+            "text": "**Frequency** once per day; **Effect** The Great Flood gathers all nearby water and floods a mile burst. Any creature in the area must succeed at a DC 42 Reflex save or be moved up to 60 feet in a direction of the Great Flood's choice. The area remains flooded with 30-foot-deep water for 1 hour or until the Great Flood dies, then drains naturally.",
+            "traits": [
+              "water"
+            ],
             "actions": "two"
           },
           {
             "name": "Nine-Jawed Frenzy",
-            "text": "**Two Actions** **Requirements** It's the Great Flood's second turn in the round (see Coordinated Actions); **Effect** The Great Flood Strides or Swims twice, moving through smaller creatures' spaces freely. Each creature they move through or are adjacent to takes 4d8+20 piercing damage (DC 42 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Creatures that fail the save are also exposed to flood breath.\n\n## A Terrible Sense of Humor\n\nA scholar who debated the Great Flood once recorded the following deadpan exchange, serving more as an example of the creature's infamous jokes than providing any actual knowledge.\n\n**Scholar:** “What lord or power do you answer to?”\n **The Great Flood:** “We don't have a lord.”\n **Scholar:** “Then which of your nine faces is your leader?”\n **The Great Flood:** “We don't have a leader.”\n **Scholar:** “Then how do you resolve your disputes?”\n **The Great Flood:** “We don't have disputes.”\n\n## Influence the Flood\n\nConvincing the Great Flood to spare an area can be handled with the influence subsystem, treating the heads as individuals to be swayed. Many of the heads will follow each other's leads, although which and how is a good thing to learn with Discover.\n\n## Passing Judgment\n\nThere are no exact criteria or written rules that drive the Great Flood’s decisions. It’s a matter of aesthetics, opinion, and which head ends up leading the discussion. Generally, however, settlements at odds with their natural surroundings will be treated more harshly.",
+            "text": "**Requirements** It's the Great Flood's second turn in the round (see Coordinated Actions); **Effect** The Great Flood Strides or Swims twice, moving through smaller creatures' spaces freely. Each creature they move through or are adjacent to takes 4d8+20 piercing damage (DC 42 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Creatures that fail the save are also exposed to flood breath.\n\n## A Terrible Sense of Humor\n\nA scholar who debated the Great Flood once recorded the following deadpan exchange, serving more as an example of the creature's infamous jokes than providing any actual knowledge.\n\n**Scholar:** “What lord or power do you answer to?”\n **The Great Flood:** “We don't have a lord.”\n **Scholar:** “Then which of your nine faces is your leader?”\n **The Great Flood:** “We don't have a leader.”\n **Scholar:** “Then how do you resolve your disputes?”\n **The Great Flood:** “We don't have disputes.”\n\n## Influence the Flood\n\nConvincing the Great Flood to spare an area can be handled with the influence subsystem, treating the heads as individuals to be swayed. Many of the heads will follow each other's leads, although which and how is a good thing to learn with Discover.\n\n## Passing Judgment\n\nThere are no exact criteria or written rules that drive the Great Flood’s decisions. It’s a matter of aesthetics, opinion, and which head ends up leading the discussion. Generally, however, settlements at odds with their natural surroundings will be treated more harshly.",
             "traits": [],
             "actions": "two"
           }
@@ -4153,29 +4246,42 @@
         "interaction": [
           {
             "name": "Goldsense",
-            "text": "The yeongno can detect the presence, location, and approximate value of gold within 120 feet.\n\n**Items**\nwooden pipe",
-            "traits": []
+            "text": "120 feet\n\n**Languages**\nDiabolic, Draconic, Empyrean, Tien; telepathy 100 feet\n\n**Skills**\nAthletics +17, Diplomacy +15, Religion +15, Society +15, Stealth +13\n\n**Str** +6\n\n**Dex** +2\n\n**Con** +4\n\n**Int** +2\n\n**Wis** +6\n\n**Cha** +4\n\n**Goldsense** The yeongno can detect the presence, location, and approximate value of gold within 120 feet.\n\n**Items**\nwooden pipe",
+            "traits": [
+              "precise"
+            ]
           }
         ],
         "defensive": [],
         "offensive": [
           {
             "name": "Fortune's Favor",
-            "text": "**Three Actions** (Curse, Divine, Incapacitation, Polymorph) **Frequency** once per day; **Effect** A target creature within 30 feet must succeed at a DC 25 Will save or gain the effects of cursed metamorphosis, being polymorphed into a pig whose girth is determined by the target's wealth. After 24 hours, the target can end this effect using a [Dismiss](/action/dismiss-player-core) action, at which point the yeongno becomes aware that the effect has ended. A yeongno can use Fortune's Favor only if no targets are currently under its effects.",
-            "traits": [],
+            "text": "**Frequency** once per day; **Effect** A target creature within 30 feet must succeed at a DC 25 Will save or gain the effects of cursed metamorphosis, being polymorphed into a pig whose girth is determined by the target's wealth. After 24 hours, the target can end this effect using a Dismiss action, at which point the yeongno becomes aware that the effect has ended. A yeongno can use Fortune's Favor only if no targets are currently under its effects.",
+            "traits": [
+              "curse",
+              "divine",
+              "incapacitation",
+              "polymorph"
+            ],
             "actions": "three"
           },
           {
             "name": "Money is Pain",
-            "text": "**Two Actions** (Divine, Mental) **Requirements** The target is carrying at least 100 gp worth of precious metals; **Effect** The yeongno crushes a creature it can see with the weight of their wealth. Apparitions of gold coins approximating the wealth of the target materialize and pummel the target from all sides. The target attempts a DC 25 Will save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is slowed 1 for 1 round.\n\n**Failure** The target takes 3d6 persistent mental damage and is slowed 1 as long as the damage continues. The effect immediately ends if they're carrying less than 100 gp worth of precious metals.\n\n**Critical Failure** As failure, except any flat checks to remove the persistent damage automatically fail.",
-            "traits": [],
+            "text": "**Requirements** The target is carrying at least 100 gp worth of precious metals; **Effect** The yeongno crushes a creature it can see with the weight of their wealth. Apparitions of gold coins approximating the wealth of the target materialize and pummel the target from all sides. The target attempts a DC 25 Will save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is slowed 1 for 1 round.\n\n**Failure** The target takes 3d6 persistent mental damage and is slowed 1 as long as the damage continues. The effect immediately ends if they're carrying less than 100 gp worth of precious metals.\n\n**Critical Failure** As failure, except any flat checks to remove the persistent damage automatically fail.",
+            "traits": [
+              "divine",
+              "mental"
+            ],
             "actions": "two"
           },
           {
             "name": "Swallow Whole",
-            "text": "**Single Action** (Attack) Medium, 3d6+6 bludgeoning, Rupture 20\n\n## Gultton's Redemption\n\nYeongno eat the corrupt and wealthy as a symbolic means of consuming their own greed. While yeongno aspire to ascend from their current existence, they also actively sabotage other creatures hoping to do the same. They feel particularly threatened by imugi, whom the yeongno believe would take their spots in heaven.",
-            "traits": [],
-            "actions": "one"
+            "text": "Medium, 3d6+6 bludgeoning, Rupture 20\n\n## Gultton's Redemption\n\nYeongno eat the corrupt and wealthy as a symbolic means of consuming their own greed. While yeongno aspire to ascend from their current existence, they also actively sabotage other creatures hoping to do the same. They feel particularly threatened by imugi, whom the yeongno believe would take their spots in heaven.",
+            "traits": [
+              "attack"
+            ],
+            "actions": "one",
+            "reference": "/action/swallow-whole-monster-core"
           }
         ]
       },

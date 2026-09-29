@@ -92,11 +92,38 @@ INLINE_MECHANIC_ROUTES = (
     ("Swim", "/action/swim-player-core"),
     ("Trip", "/action/trip-player-core"),
     ("cone", "/rule/cone-rules-2386"),
+    ("concealment", "/condition/concealed-player-core"),
 )
+
+ACTION_LABEL = re.compile(
+    r"^\s*\*\*(?:free action|reaction|single action|one action|two actions|three actions)\*\*\s*",
+    re.I,
+)
+LEADING_TRAITS = re.compile(r"^\s*\(([^()\n]+)\)\s*")
 
 
 def normalize(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", value.casefold())
+
+
+def trait_code(value: str) -> str:
+    label = re.sub(r"\[([^]]+)\]\([^)]+\)", r"\1", value).strip()
+    code = re.sub(r"[^a-z0-9]+", "-", label.casefold()).strip("-")
+    return re.sub(r"^(reach|range-increment)-.*$", r"\1", code)
+
+
+def extract_leading_metadata(value: str) -> tuple[str, list[str]]:
+    """Remove prose that duplicates the native action icon and trait chips."""
+    text = ACTION_LABEL.sub("", str(value or ""), count=1)
+    match = LEADING_TRAITS.match(text)
+    traits: list[str] = []
+    if match:
+        for raw in match.group(1).split(","):
+            code = trait_code(raw)
+            if code and code not in traits:
+                traits.append(code)
+        text = text[match.end():]
+    return text.strip(), traits
 
 
 GLOSSARY_CODES_BY_KEY = {normalize(code): code for code in GLOSSARY}
@@ -236,7 +263,7 @@ def creature_ability_text(name: str, value: str) -> str:
     )
 
 
-def creature_ability_reference(value: str) -> str:
+def creature_ability_reference(value: str, name: str = "") -> str:
     """Return the shared Action linked by a creature ability, when available."""
     text = str(value or "").strip()
     parts = [part.strip() for part in SEPARATOR.split(text)]
@@ -245,6 +272,8 @@ def creature_ability_reference(value: str) -> str:
     )
     if code is None and parts:
         code = GLOSSARY_CODES_BY_KEY.get(normalize(parts[-1]))
+    if code is None and name:
+        code = GLOSSARY_CODES_BY_KEY.get(normalize(name))
     return GLOSSARY_ROUTES.get(code or "", "")
 
 
@@ -270,12 +299,22 @@ def configure_creature_abilities(entity: dict[str, Any]) -> int:
             if not isinstance(ability, dict):
                 continue
             original = str(ability.get("text") or "")
-            updated = creature_ability_text(str(ability.get("name") or ""), original)
+            name = str(ability.get("name") or "")
+            cleaned, parsed_traits = extract_leading_metadata(original)
+            current_traits = list(ability.get("traits") or [])
+            merged_traits = list(dict.fromkeys([*current_traits, *parsed_traits]))
+            if merged_traits != current_traits:
+                ability["traits"] = merged_traits
+                changed += 1
+            updated = creature_ability_text(name, cleaned)
             if updated != original:
                 ability["text"] = updated
                 changed += 1
-            reference = creature_ability_reference(original)
+            reference = creature_ability_reference(original, name)
             if reference and ability.get("reference") != reference:
                 ability["reference"] = reference
+                changed += 1
+            if normalize(name) == "attackofopportunity" and reference == GLOSSARY_ROUTES["AttackOfOpportunity"]:
+                ability["name"] = "Reactive Strike"
                 changed += 1
     return changed

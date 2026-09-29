@@ -47,9 +47,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -208,9 +208,9 @@
       "immunities": [
         "Bleed",
         "Electricity",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -581,7 +581,7 @@
       },
       "languagesText": "Common, Muan",
       "recallKnowledgeText": "DC 15 (Society)",
-      "items": "Shortbow, Sickle, Glowing Lantern Fruit, Arrows",
+      "items": "[Shortbow](/item/shortbow-player-core), [Sickle](/item/sickle-player-core), [Glowing Lantern Fruit](/item/glowing-lantern-fruit-rage-of-elements)",
       "traitLinks": [
         {
           "label": "ardande",
@@ -733,7 +733,7 @@
       "immunities": [],
       "weaknesses": {},
       "resistances": {
-        "physical": "10 (except Adamantine)"
+        "physical": "10 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))"
       },
       "movement": {
         "walk": 20,
@@ -950,9 +950,9 @@
       "immunities": [
         "Bleed",
         "Electricity",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -1279,9 +1279,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -1337,7 +1337,8 @@
           {
             "name": "Troop Movement",
             "text": "Whenever the avalanche legion Strides or Burrows, it first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to its respective Speed. This works just like a Gargantuan creature moving; for instance, if any square of the legion enters difficult terrain, the extra movement cost applies to all the elementals.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ]
       },
@@ -1437,9 +1438,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -1483,7 +1484,8 @@
           {
             "name": "Troop Movement",
             "text": "Whenever a troop Flies or Strides, it first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the whole troop.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           },
           {
             "name": "Windstorm",
@@ -1590,10 +1592,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), steam vision",
       "immunities": [
         "Bleed",
-        "Fire",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Fire](/trait/fire)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "cold": 15
@@ -1773,9 +1775,9 @@
       "immunities": [
         "Bleed",
         "Electricity",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -2100,27 +2102,27 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Fire",
-        "Sleep",
-        "Poison",
-        "Vitality",
-        "Void",
-        "Death Effects",
-        "Disease",
-        "Doomed",
-        "Drained",
-        "Fatigued",
-        "Healing",
-        "Mental",
-        "Nonlethal Attacks",
-        "Sickened",
-        "Spirit",
-        "Unconscious"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Fire](/trait/fire)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)",
+        "[Vitality](/trait/vitality)",
+        "[Void](/trait/void)",
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Doomed](/condition/doomed-player-core)",
+        "[Drained](/condition/drained-player-core)",
+        "[Fatigued](/condition/fatigued-player-core)",
+        "[Healing](/trait/healing)",
+        "[Mental](/trait/mental)",
+        "[Nonlethal Attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[Sickened](/condition/sickened-player-core)",
+        "[Spirit](/trait/spirit)",
+        "[Unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {},
       "resistances": {
-        "physical": "15 (except Adamantine)",
+        "physical": "15 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))",
         "spells": "15 (except Water)"
       },
       "movement": {
@@ -2191,7 +2193,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 37 (Arcana)",
-      "items": "Falchion",
+      "items": "[Falchion](/item/falchion-player-core)",
       "traitLinks": [
         {
           "label": "construct",
@@ -2279,10 +2281,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Fire",
-        "Sleep",
-        "Poison"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Fire](/trait/fire)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "cold": 15
@@ -2449,14 +2451,14 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
         "electricity": 10,
-        "physical": "10 (except Adamantine)"
+        "physical": "10 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))"
       },
       "movement": {
         "fly": 60
@@ -2634,9 +2636,9 @@
       "senses": "",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "axe-vulnerability": 5,
@@ -2788,9 +2790,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -2943,10 +2945,10 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Disease",
+        "[Disease](/trait/disease)",
         "Electricity",
-        "Paralyzed",
-        "Poison",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
         "Precision"
       ],
       "weaknesses": {},
@@ -3098,9 +3100,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "sonic": 10
@@ -3274,9 +3276,9 @@
       "senses": "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet, [Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -3458,9 +3460,9 @@
       "immunities": [
         "Bleed",
         "Electricity",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -3603,9 +3605,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -3745,9 +3747,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -3932,9 +3934,9 @@
       "senses": "",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "axe-vulnerability": 10,
@@ -4103,9 +4105,9 @@
       "immunities": [
         "Bleed",
         "Electricity",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -4545,7 +4547,8 @@
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Diplomatic Wish",
@@ -4792,9 +4795,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -5176,9 +5179,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -5356,7 +5359,8 @@
           {
             "name": "Troop Movement",
             "text": "Whenever the harvest regiment Strides, they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ]
       },
@@ -5465,7 +5469,7 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Fire"
+        "[Fire](/trait/fire)"
       ],
       "weaknesses": {
         "cold": 15,
@@ -5552,7 +5556,8 @@
               "concentrate",
               "polymorph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/change-shape-monster-core"
           },
           {
             "name": "Combat Grab",
@@ -5577,7 +5582,7 @@
       },
       "languagesText": "Common, Pyric",
       "recallKnowledgeText": "DC 37 (Arcana)",
-      "items": "Scimitar, Breastplate",
+      "items": "[Scimitar](/item/scimitar-player-core), [Breastplate](/item/breastplate-player-core)",
       "traitLinks": [
         {
           "label": "elemental",
@@ -6055,9 +6060,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -6188,7 +6193,7 @@
       },
       "languagesText": "Common, Petran",
       "recallKnowledgeText": "DC 35 (Arcana)",
-      "items": "Falchion",
+      "items": "[Falchion](/item/falchion-player-core)",
       "traitLinks": [
         {
           "label": "earth",
@@ -6512,7 +6517,7 @@
       },
       "languagesText": "Common, Muan, Petran, Pyric, Sussuran, Talican, Thalassic",
       "recallKnowledgeText": "DC 28 (Arcana)",
-      "items": "Scimitar, Composite Longbow",
+      "items": "[Scimitar](/item/scimitar-player-core), [Composite Longbow](/item/composite-longbow-player-core)",
       "traitLinks": [
         {
           "label": "air",
@@ -6725,9 +6730,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -6938,7 +6943,7 @@
       },
       "languagesText": "Common, Muan",
       "recallKnowledgeText": "DC 24 (Arcana, Nature)",
-      "items": "Staff, Wooden Shield",
+      "items": "[Staff](/item/staff-player-core)",
       "traitLinks": [
         {
           "label": "elemental",
@@ -7223,7 +7228,7 @@
       },
       "languagesText": "Common, Muan",
       "recallKnowledgeText": "DC 33 (Arcana, Nature)",
-      "items": "Spear, Wooden Shield",
+      "items": "[Spear](/item/spear-player-core)",
       "traitLinks": [
         {
           "label": "elemental",
@@ -7406,10 +7411,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Fire",
-        "Sleep",
-        "Poison"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Fire](/trait/fire)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "cold": 3
@@ -7567,21 +7572,21 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Vitality",
-        "Void",
-        "Death Effects",
-        "Disease",
-        "Doomed",
-        "Drained",
-        "Fatigued",
-        "Healing",
-        "Mental",
-        "Nonlethal Attacks",
-        "Sickened",
-        "Spirit",
-        "Unconscious"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Vitality](/trait/vitality)",
+        "[Void](/trait/void)",
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Doomed](/condition/doomed-player-core)",
+        "[Drained](/condition/drained-player-core)",
+        "[Fatigued](/condition/fatigued-player-core)",
+        "[Healing](/trait/healing)",
+        "[Mental](/trait/mental)",
+        "[Nonlethal Attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[Sickened](/condition/sickened-player-core)",
+        "[Spirit](/trait/spirit)",
+        "[Unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -7667,40 +7672,6 @@
         {
           "name": "Occult Innate Spells",
           "spellGroups": [
-            {
-              "label": "6th",
-              "spells": [
-                {
-                  "name": "Dominate",
-                  "rank": 6,
-                  "reference": "/spell/dominate-player-core",
-                  "details": "Echo the Past"
-                }
-              ]
-            },
-            {
-              "label": "5th",
-              "spells": [
-                {
-                  "name": "Illusory Scene",
-                  "rank": 5,
-                  "reference": "/spell/illusory-scene-player-core",
-                  "details": "Echo the Past"
-                },
-                {
-                  "name": "Invoke Spirits",
-                  "rank": 5,
-                  "reference": "/spell/invoke-spirits-player-core",
-                  "details": "Echo the Past"
-                },
-                {
-                  "name": "Wall of Stone",
-                  "rank": 5,
-                  "reference": "/spell/wall-of-stone-player-core",
-                  "details": "Echo the Past"
-                }
-              ]
-            },
             {
               "label": "3rd",
               "spells": [
@@ -7801,9 +7772,9 @@
       "senses": "[Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Sleep",
-        "Poison"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "axe-vulnerability": 5,
@@ -7942,9 +7913,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -8104,10 +8075,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Fire",
-        "Sleep",
-        "Poison"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Fire](/trait/fire)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "cold": 15
@@ -8429,9 +8400,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -8594,9 +8565,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -8664,7 +8635,7 @@
       },
       "languagesText": "Common, Talican",
       "recallKnowledgeText": "DC 16 (Arcana)",
-      "items": "Shuriken",
+      "items": "[Shuriken](/item/shuriken-player-core) (5)",
       "traitLinks": [
         {
           "label": "elemental",
@@ -8751,9 +8722,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -8904,9 +8875,9 @@
       "immunities": [
         "Bleed",
         "Electricity",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -9063,9 +9034,9 @@
       "senses": "",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "fire": 4,
@@ -9215,7 +9186,7 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Fire"
+        "[Fire](/trait/fire)"
       ],
       "weaknesses": {
         "cold": 5
@@ -9385,7 +9356,7 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Fire"
+        "[Fire](/trait/fire)"
       ],
       "weaknesses": {
         "cold": 5
@@ -9469,7 +9440,7 @@
       },
       "languagesText": "Common, Pyric",
       "recallKnowledgeText": "DC 20 (Arcana, Society)",
-      "items": "Warhammer, Dueling Pistol, Breastplate, Rounds (Dueling Pistol)",
+      "items": "[Warhammer](/item/warhammer-player-core), [Dueling Pistol](/item/dueling-pistol-guns-and-gears-remastered), [Breastplate](/item/breastplate-player-core)",
       "traitLinks": [
         {
           "label": "elemental",
@@ -9595,7 +9566,7 @@
         },
         {
           "name": "Spear",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 14,
           "traits": [
@@ -9613,12 +9584,6 @@
             "traits": []
           },
           {
-            "name": "Retract",
-            "text": "The murajau fully retreats into their shell, gaining greater cover; the bonus to Stealth applies only if the murajau is undetected. While in their shell, the murajau can't see outside and takes a –2 circumstance penalty to auditory Perception checks. The only move actions the murajau can take are to Stand or [Step](/action/step-player-core). The murajau can come back out as a single action.",
-            "traits": [],
-            "actions": "two"
-          },
-          {
             "name": "Talisman Faithful",
             "text": "A murajau can affix talismans to their shell as though it were heavy armor, and they can affix up to three talismans to it at a time instead of one.",
             "traits": []
@@ -9628,6 +9593,12 @@
           {
             "name": "Swinging Spear",
             "text": "The murajau makes a spear [Strike](/action/strike-player-core). On a hit, the murajau twists their spear to move the target to any space adjacent to the murajau and deals an additional 2d6 bludgeoning damage as the target smashes into the murajau's thick shell.",
+            "traits": [],
+            "actions": "two"
+          },
+          {
+            "name": "Retract",
+            "text": "The murajau fully retreats into their shell, gaining greater cover; the bonus to Stealth applies only if the murajau is undetected. While in their shell, the murajau can't see outside and takes a –2 circumstance penalty to auditory Perception checks. The only move actions the murajau can take are to Stand or [Step](/action/step-player-core). The murajau can come back out as a single action.",
             "traits": [],
             "actions": "two"
           }
@@ -9641,7 +9612,7 @@
       },
       "languagesText": "Common, Thalassic",
       "recallKnowledgeText": "DC 20 (Society)",
-      "items": "Spear, Mesmerizing Opal, Potency Crystal, Shark Tooth Charm",
+      "items": "[Spear](/item/spear-player-core) (3), [Mesmerizing Opal](/item/mesmerizing-opal-gm-core), [Potency Crystal](/item/potency-crystal-gm-core), [Shark Tooth Charm](/item/shark-tooth-charm-gm-core)",
       "traitLinks": [
         {
           "label": "amphibious",
@@ -9730,14 +9701,14 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)",
         "Swarm Mind",
         "Precision",
-        "Grabbed",
-        "Prone",
-        "Restrained"
+        "[Grabbed](/condition/grabbed-player-core)",
+        "[Prone](/condition/prone-player-core)",
+        "[Restrained](/condition/restrained-player-core)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -10000,7 +9971,7 @@
       },
       "languagesText": "Fey, Jotun, Muan",
       "recallKnowledgeText": "DC 28",
-      "items": "Club, Elemental Wooden Shield",
+      "items": "[Club](/item/club-player-core)",
       "traitLinks": [
         {
           "label": "giant",
@@ -10091,9 +10062,9 @@
       "senses": "",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Sleep",
-        "Poison"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "axe-vulnerability": 5,
@@ -10569,9 +10540,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), rust vision",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -10734,9 +10705,9 @@
       "senses": "",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "axe-vulnerability": 10,
@@ -10961,7 +10932,8 @@
           {
             "name": "Troop Movement",
             "text": "Whenever the troop Flies, it first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any square of the troop enters difficult terrain, the extra movement cost applies to the entire troop.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ]
       },
@@ -11059,9 +11031,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -11242,9 +11214,9 @@
       "languages": [],
       "senses": "",
       "immunities": [
-        "Poison",
-        "Paralyzed",
-        "Sleep",
+        "[Poison](/trait/poison)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Sleep](/trait/sleep)",
         "Bleed"
       ],
       "weaknesses": {
@@ -11396,9 +11368,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), magic [scent](/action/scent-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)",
         "Critical Hits",
         "Precision"
       ],
@@ -11552,10 +11524,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Fire",
-        "Sleep",
-        "Poison"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Fire](/trait/fire)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "cold": 5
@@ -11708,9 +11680,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), rust vision",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -11876,9 +11848,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -11937,7 +11909,8 @@
           {
             "name": "Troop Movement",
             "text": "Whenever the saltborn stalkers [Stride](/action/stride-player-core) or [Swim](/action/swim-player-core), they first Form Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then move. This works just like a Gargantuan creature moving; for instance, if any of the stalkers' squares enter difficult terrain, the extra movement cost applies to the whole troop.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ]
       },
@@ -12049,9 +12022,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -12208,9 +12181,9 @@
       "senses": "",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "axe-vulnerability": 10,
@@ -12267,7 +12240,7 @@
             ]
           },
           {
-            "name": "Attack of Opportunity",
+            "name": "Reactive Strike",
             "text": "Tail scythe only",
             "traits": [],
             "actions": "reaction",
@@ -12405,10 +12378,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Fire",
-        "Sleep",
-        "Poison"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Fire](/trait/fire)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -12458,7 +12431,7 @@
         "defensive": [
           {
             "name": "Glinting Wing",
-            "text": "**Trigger** A creature within 120 feet attempts to target the solar crow; **Effect** The solar crow defensively repositions a wing to shine light into the attacker's eyes. The target is [Dazzled](/condition/dazzled-player-core) for the duration of the triggering effect, granting the solar crow concealment against it.",
+            "text": "**Trigger** A creature within 120 feet attempts to target the solar crow; **Effect** The solar crow defensively repositions a wing to shine light into the attacker's eyes. The target is [Dazzled](/condition/dazzled-player-core) for the duration of the triggering effect, granting the solar crow [concealment](/condition/concealed-player-core) against it.",
             "traits": [
               "light",
               "visual"
@@ -12595,10 +12568,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Fire",
-        "Sleep",
-        "Poison"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Fire](/trait/fire)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -12650,7 +12623,8 @@
           {
             "name": "Troop Movement",
             "text": "Whenever the sootsoldiers [Stride](/action/stride-player-core), they first Form Up as a free action to condense into a 20-foot-by-20- foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any of the sootsoldiers' squares enters difficult terrain, the extra movement cost applies to the whole troop.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ]
       },
@@ -12759,10 +12733,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Fire",
-        "Sleep",
-        "Poison"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Fire](/trait/fire)",
+        "[Sleep](/trait/sleep)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -12814,7 +12788,8 @@
           {
             "name": "Troop Movement",
             "text": "Whenever the sootsoldiers [Stride](/action/stride-player-core), they first Form Up as a free action to condense into a 20-foot-by-20- foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any of the sootsoldiers' squares enters difficult terrain, the extra movement cost applies to the whole troop.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-movement-npc-core"
           }
         ]
       },
@@ -12986,7 +12961,7 @@
       },
       "languagesText": "Common, Talican",
       "recallKnowledgeText": "DC 15 (Society)",
-      "items": "Light Hammer, Leather Armor, Artisan's Tools, Formula Book (Blank), Blast Boots (Lesser), Explosive Mine (Lesser), Ablative Armor Plating (Lesser)",
+      "items": "[Light Hammer](/item/light-hammer-player-core) (3), [Leather Armor](/item/leather-armor-player-core), Artisan's Tools, [Formula Book (Blank)](/item/formula-book-blank-player-core), [Blast Boots (Lesser)](/item/blast-boots-lesser-guns-and-gears-remastered), [Explosive Mine (Lesser)](/item/explosive-mine-lesser-guns-and-gears-remastered) (3), [Ablative Armor Plating (Lesser)](/item/ablative-armor-plating-lesser-guns-and-gears-remastered)",
       "traitLinks": [
         {
           "label": "human",
@@ -13300,9 +13275,9 @@
         "Bleed",
         "Blinded",
         "Dazzled",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "axe-vulnerability": 15,
@@ -13497,18 +13472,18 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep",
-        "Radiation"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)",
+        "[Radiation](https://2e.aonprd.com/Traits.aspx?ID=421)"
       ],
       "weaknesses": {},
       "resistances": {
-        "physical": "20 (except Adamantine)"
+        "physical": "20 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))"
       },
       "movement": {
         "walk": 35,
-        "burrow": 35,
+        "burrow": 25,
         "climb": 35,
         "other": "earth glide"
       },
@@ -13598,17 +13573,7 @@
         ],
         "defensive": [
           {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
-            "name": "+4 Status to All Saves vs. Earth",
-            "text": "",
-            "traits": []
-          },
-          {
-            "name": "Attack of Opportunity",
+            "name": "Reactive Strike",
             "text": "",
             "traits": [],
             "actions": "reaction",
@@ -14050,14 +14015,14 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 120 feet",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep",
-        "Radiation"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)",
+        "[Radiation](https://2e.aonprd.com/Traits.aspx?ID=421)"
       ],
       "weaknesses": {},
       "resistances": {
-        "physical": "15 (except Adamantine)"
+        "physical": "15 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))"
       },
       "movement": {
         "walk": 35,
@@ -14137,7 +14102,7 @@
         ],
         "defensive": [
           {
-            "name": "Attack of Opportunity",
+            "name": "Reactive Strike",
             "text": "",
             "traits": [],
             "actions": "reaction",
@@ -14349,9 +14314,9 @@
       "senses": "",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "fire": 3,
@@ -14498,9 +14463,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -14676,7 +14641,7 @@
             "reference": "/action/all-around-vision-monster-core"
           },
           {
-            "name": "Attack of Opportunity",
+            "name": "Reactive Strike",
             "text": "",
             "traits": [],
             "actions": "reaction",
@@ -14796,9 +14761,9 @@
       "senses": "",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "fire": 5,
@@ -14953,9 +14918,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "fire": 3,
@@ -15138,9 +15103,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "axe-vulnerability": 2,
@@ -15301,9 +15266,9 @@
       "immunities": [
         "Bleed",
         "Electricity",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -15724,7 +15689,7 @@
       },
       "languagesText": "Common, Talican",
       "recallKnowledgeText": "DC 26 (Arcana)",
-      "items": "Spiked Chain",
+      "items": "[Spiked Chain](/item/spiked-chain-player-core)",
       "traitLinks": [
         {
           "label": "elemental",
@@ -16018,7 +15983,7 @@
       },
       "languagesText": "Common, Talican",
       "recallKnowledgeText": "DC 31 (Arcana)",
-      "items": "Spiked Chain",
+      "items": "[Spiked Chain](/item/spiked-chain-player-core)",
       "traitLinks": [
         {
           "label": "elemental",

@@ -48,6 +48,17 @@ PUBLISHED_OVERRIDES = {
     "adamantine-dragon-adult-spellcaster-monster-core": {"resistances": {"physical": "15 (except adamantine)"}},
     "adamantine-dragon-ancient-monster-core": {"resistances": {"physical": "20 (except adamantine)"}},
     "adamantine-dragon-ancient-spellcaster-monster-core": {"resistances": {"physical": "20 (except adamantine)"}},
+    "murajau-rage-of-elements": {
+        "attackTypes": {"2": "ranged"},
+        "abilityCategories": {"Retract": "offensive"},
+    },
+    "vault-builder-rage-of-elements": {
+        "movement": {"burrow": 25},
+        "removeAbilities": [
+            "+1 Status to All Saves vs. Magic",
+            "+4 Status to All Saves vs. Earth",
+        ],
+    },
 }
 
 TRUNCATED_RECHARGE_TEXT = re.compile(r"\bdeals\s+1d4 rounds\b", re.I)
@@ -72,6 +83,28 @@ def clean_text(value: Any) -> str:
     text = re.sub(r"@UUID\[[^]]+\]\{([^}]+)\}", r"\1", text)
     text = re.sub(r"@\w+\[[^]]+\](?:\{([^}]+)\})?", lambda m: m.group(1) or "", text)
     return " ".join(text.replace("&nbsp;", " ").split()).strip(" ;")
+
+
+def normalized_name(value: str) -> str:
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", value.casefold()).split())
+
+
+def item_route_index(staging: Path) -> dict[str, str]:
+    candidates: dict[str, list[tuple[int, str]]] = defaultdict(list)
+    preferred = {"player-core": 4, "gm-core": 3, "player-core-2": 2}
+    for path in sorted(staging.glob("*/items.json")):
+        source = path.parent.name
+        for record in json.loads(path.read_text(encoding="utf-8")):
+            name = str(record.get("name") or "")
+            slug = str(record.get("slug") or "")
+            if name and slug:
+                candidates[normalized_name(name)].append(
+                    (preferred.get(source, 1), f"/item/{slug}")
+                )
+    return {
+        key: max(values, key=lambda value: (value[0], value[1]))[1]
+        for key, values in candidates.items()
+    }
 
 
 def format_sense(sense: dict[str, Any]) -> str:
@@ -103,7 +136,9 @@ def format_defense(entry: dict[str, Any], include_value: bool) -> tuple[str, int
     return kind, value
 
 
-def actor_metadata(actor: dict[str, Any], creature: dict[str, Any]) -> dict[str, Any]:
+def actor_metadata(
+    actor: dict[str, Any], creature: dict[str, Any], item_routes: dict[str, str]
+) -> dict[str, Any]:
     system = actor.get("system", {})
     perception = system.get("perception", {}) if isinstance(system.get("perception"), dict) else {}
     attributes = system.get("attributes", {}) if isinstance(system.get("attributes"), dict) else {}
@@ -140,6 +175,7 @@ def actor_metadata(actor: dict[str, Any], creature: dict[str, Any]) -> dict[str,
     attack_effects: dict[str, list[str]] = {}
     lore_skills: list[dict[str, Any]] = []
     actor_abilities: dict[str, str] = {}
+    carried_items: list[str] = []
     for item in actor.get("items") or []:
         if not isinstance(item, dict):
             continue
@@ -159,6 +195,21 @@ def actor_metadata(actor: dict[str, Any], creature: dict[str, Any]) -> dict[str,
                 actor_abilities[item_name.casefold()] = html_to_markdown(
                     replace_foundry_directives(str(description))
                 )
+        elif item.get("type") in {
+            "armor", "backpack", "consumable", "equipment", "treasure", "weapon"
+        }:
+            route = item_routes.get(normalized_name(item_name), "")
+            label = f"[{item_name}]({route})" if route else item_name
+            quantity = item_system.get("quantity", 1)
+            if isinstance(quantity, dict):
+                quantity = quantity.get("value", 1)
+            try:
+                count = int(quantity or 1)
+            except (TypeError, ValueError):
+                count = 1
+            if count > 1:
+                label += f" ({count})"
+            carried_items.append(label)
 
     ability_text: dict[str, str] = {}
     creature_abilities = (creature.get("data") or {}).get("abilities") or {}
@@ -185,6 +236,7 @@ def actor_metadata(actor: dict[str, Any], creature: dict[str, Any]) -> dict[str,
         "attackEffects": attack_effects,
         "loreSkills": lore_skills,
         "abilityText": ability_text,
+        "items": ", ".join(carried_items),
     }
     if hardness_value:
         result["hardness"] = int(hardness_value)
@@ -218,6 +270,7 @@ def staging_creatures(staging: Path) -> Iterable[dict[str, Any]]:
 def main() -> int:
     args = parse_args()
     actors = actor_index(args.foundry)
+    item_routes = item_route_index(args.staging)
     catalog: dict[str, dict[str, Any]] = {}
     for creature in staging_creatures(args.staging):
         foundry_id = str(creature.get("attributes", {}).get("foundryId") or "")
@@ -226,7 +279,7 @@ def main() -> int:
             continue
         actor = next((value for value in candidates if value.get("name") == creature.get("name")), candidates[0])
         slug = str(creature["slug"])
-        metadata = actor_metadata(actor, creature)
+        metadata = actor_metadata(actor, creature, item_routes)
         for field, supplied in PUBLISHED_OVERRIDES.get(slug, {}).items():
             if isinstance(supplied, dict):
                 metadata.setdefault(field, {}).update(supplied)

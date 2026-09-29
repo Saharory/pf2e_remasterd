@@ -87,7 +87,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 210 (4 segments); **Thresholds** 140 (3 segments), 70 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -349,21 +350,21 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Doomed",
-        "Drained",
-        "Fatigued",
-        "Healing",
-        "Mental",
-        "Nonlethal Attacks",
-        "Paralyzed",
-        "Poison",
-        "Sickened",
-        "Spirit",
-        "Unconscious",
-        "Vitality",
-        "Void"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Doomed](/condition/doomed-player-core)",
+        "[Drained](/condition/drained-player-core)",
+        "[Fatigued](/condition/fatigued-player-core)",
+        "[Healing](/trait/healing)",
+        "[Mental](/trait/mental)",
+        "[Nonlethal Attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sickened](/condition/sickened-player-core)",
+        "[Spirit](/trait/spirit)",
+        "[Unconscious](/condition/unconscious-player-core)",
+        "[Vitality](/trait/vitality)",
+        "[Void](/trait/void)"
       ],
       "weaknesses": {
         "area-damage": 8,
@@ -386,7 +387,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 120 (4 segments); **Thresholds** 80 (3 segments), 40 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -520,7 +522,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 75 (4 segments); **Thresholds** 50 (3 segments), 25 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -771,7 +774,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 150 (4 segments); **Thresholds** 100 (3 segments), 50 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -911,7 +915,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 210;**Thresholds** 140 (3 segments), 70 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -1072,7 +1077,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 300 (4 segments); **Thresholds** 200 (3 segments), 100 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -1272,7 +1278,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 180 (4 segments); **Thresholds** 120 (3 segments), 60 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -1447,7 +1454,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -1610,7 +1618,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 135 (4 segments); **Thresholds** 90 (3 segments), 45 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -1734,21 +1743,21 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Doomed",
-        "Drained",
-        "Fatigued",
-        "Healing",
-        "Mental",
-        "Nonlethal Attacks",
-        "Paralyzed",
-        "Poison",
-        "Sickened",
-        "Spirit",
-        "Unconscious",
-        "Vitality",
-        "Void"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Doomed](/condition/doomed-player-core)",
+        "[Drained](/condition/drained-player-core)",
+        "[Fatigued](/condition/fatigued-player-core)",
+        "[Healing](/trait/healing)",
+        "[Mental](/trait/mental)",
+        "[Nonlethal Attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sickened](/condition/sickened-player-core)",
+        "[Spirit](/trait/spirit)",
+        "[Unconscious](/condition/unconscious-player-core)",
+        "[Vitality](/trait/vitality)",
+        "[Void](/trait/void)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -1757,7 +1766,7 @@
         "orichalcum": 10
       },
       "resistances": {
-        "physical": "5 (except Adamantine, Orichalcum)"
+        "physical": "5 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855), Orichalcum)"
       },
       "movement": {
         "walk": 25,
@@ -1782,7 +1791,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 195 (4 segments); **Thresholds** 130 (3 segments), 65 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -1904,21 +1914,21 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Doomed",
-        "Drained",
-        "Fatigued",
-        "Healing",
-        "Mental",
-        "Nonlethal Attacks",
-        "Paralyzed",
-        "Poison",
-        "Sickened",
-        "Spirit",
-        "Unconscious",
-        "Vitality",
-        "Void"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Doomed](/condition/doomed-player-core)",
+        "[Drained](/condition/drained-player-core)",
+        "[Fatigued](/condition/fatigued-player-core)",
+        "[Healing](/trait/healing)",
+        "[Mental](/trait/mental)",
+        "[Nonlethal Attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sickened](/condition/sickened-player-core)",
+        "[Spirit](/trait/spirit)",
+        "[Unconscious](/condition/unconscious-player-core)",
+        "[Vitality](/trait/vitality)",
+        "[Void](/trait/void)"
       ],
       "weaknesses": {
         "area-damage": 5,
@@ -1945,7 +1955,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 75 (4 segments); **Thresholds** 50 (3 segments), 25 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -2088,7 +2099,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 120 (4 segments); **Thresholds** 80 (3 segments), 40 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -2237,7 +2249,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 180 (4 segments); **Thresholds** 180 (3 segments), 90 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -2379,8 +2392,8 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
-        "Paralyzed",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -2404,7 +2417,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 240 (4 segments), **Thresholds** 160 (3 segments), 80 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -2545,7 +2559,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -2697,7 +2712,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 210 (4 segments); **Thresholds** 140 (3 segments), 70 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -2939,7 +2955,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 180 (4 segments); **Thresholds** 120 (3 segments), 60 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -3079,7 +3096,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 180 (4 segments); **Thresholds** 120 (3 segments), 60 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -3221,7 +3239,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 240 (4 segments); **Thresholds** 160 (3 segments), 80 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -3359,7 +3378,7 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Acid",
-        "Mental"
+        "[Mental](/trait/mental)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -3383,7 +3402,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 135 (4 segments); **Thresholds** 90 (3 segments), 45 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -3516,7 +3536,7 @@
         "splash-damage": 10
       },
       "resistances": {
-        "physical": "10 (except Adamantine)"
+        "physical": "10 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))"
       },
       "movement": {
         "walk": 25,
@@ -3538,7 +3558,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 150 (4 segments); **Thresholds** 100 (3 segments), 50 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -3669,7 +3690,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 120 (4 segments); **Thresholds** 80 (3 segments), 40 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -3817,7 +3839,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 120 (4 segments); **Thresholds** 80 (3 segments), 40 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -3962,7 +3985,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 60 (4 segments); **Thresholds** 40 (3 segments), 20 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -4105,7 +4129,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 135 (4 segments); **Thresholds** 90 (3 segments), 45 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -4303,7 +4328,7 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), [Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
-        "Fire"
+        "[Fire](/trait/fire)"
       ],
       "weaknesses": {
         "area-damage": 8,
@@ -4328,7 +4353,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 135 (4 segments); **Thresholds** 90 (3 segments), 45 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -4488,7 +4514,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 150 (4 segments); **Thresholds** 100 (3 segments), 50 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -4634,7 +4661,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 60 (4 segments); **Thresholds** 40 (3 segments), 20 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -4770,8 +4798,8 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), plaguesense ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
-        "Death Effects",
-        "Disease"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)"
       ],
       "weaknesses": {
         "area-damage": 15,
@@ -4805,7 +4833,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 255 (4 segments); **Thresholds** 170 (3 segments), 85 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -4989,10 +5018,10 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Poison",
-        "Unconscious"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Poison](/trait/poison)",
+        "[Unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {
         "area-damage": 15,
@@ -5034,7 +5063,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 330 (4 segments); **Thresholds** 220 (3 segments), 110 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -5437,7 +5467,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 60 (4 segments), **Thresholds** 40 (3 segments), 20 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -5630,7 +5661,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 270 (4 segments); **Thresholds** 180 (3 segments), 90 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -5755,8 +5787,8 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Disease",
-        "Poison"
+        "[Disease](/trait/disease)",
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "area-damage": 15,
@@ -5794,7 +5826,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 270 (4 segments), filth wallow; **Thresholds** 180 (3 segments), 90 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -5921,8 +5954,8 @@
       "immunities": [
         "Acid",
         "Critical Hits",
-        "Disease",
-        "Poison",
+        "[Disease](/trait/disease)",
+        "[Poison](/trait/poison)",
         "Precision"
       ],
       "weaknesses": {
@@ -5964,7 +5997,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 315 (4 segments); **Thresholds** 210 (3 segments), 105 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -6178,7 +6212,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 75 (4 segments); **Thresholds** 50 (3 segments), 25 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -6354,7 +6389,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 210 (4 segments); **Thresholds** 140 (3 segments), 70 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -6534,7 +6570,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -6691,7 +6728,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 120 (4 segments); **Thresholds** 80 (3 segments), 40 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -6847,7 +6885,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 165 (4 segments); **Thresholds** 110 (3 segments), 55 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -6971,9 +7010,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet, smoke vision",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 8,
@@ -6999,7 +7038,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -7148,9 +7188,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 8,
@@ -7180,7 +7220,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -7323,11 +7364,11 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
-        "Fire",
+        "[Fire](/trait/fire)",
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 8,
@@ -7359,7 +7400,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -7514,9 +7556,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 8,
@@ -7543,7 +7585,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -7692,9 +7735,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 8,
@@ -7721,7 +7764,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -7871,9 +7915,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), fog vision",
       "immunities": [
         "Bleed",
-        "Paralyzed",
-        "Poison",
-        "Sleep"
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "area-damage": 8,
@@ -7905,7 +7949,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -8081,7 +8126,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 150 (4 segments); **Thresholds** 100 (3 segments), 50 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -8196,12 +8242,12 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Paralyzed",
-        "Poison",
-        "Unconscious",
-        "Mental"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Unconscious](/condition/unconscious-player-core)",
+        "[Mental](/trait/mental)"
       ],
       "weaknesses": {
         "area-damage": 7,
@@ -8225,7 +8271,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 240 (4 segments); **Thresholds** 160 (3 segments), 80 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -8365,8 +8412,8 @@
       ],
       "senses": "[Lifesense](/action/lifesense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
-        "Death Effects",
-        "Disease"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)"
       ],
       "weaknesses": {
         "area-damage": 12,
@@ -8407,7 +8454,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 240 (4 segments); **Thresholds** 160 (3 segments), 80 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -8625,7 +8673,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 195 (4 segments); **Thresholds** 130 (3 segments), 65 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -8752,7 +8801,7 @@
       ],
       "senses": "[Greater Darkvision](/action/greater-darkvision-monster-core)",
       "immunities": [
-        "Fire"
+        "[Fire](/trait/fire)"
       ],
       "weaknesses": {
         "area-damage": 10,
@@ -8785,7 +8834,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 180 (4 segments); **Thresholds** 120 (3 segments), 60 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -8983,7 +9033,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 150 (4 segments); **Thresholds** 100 (3 segments), 50 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -9130,7 +9181,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 90 (4 segments); **Thresholds** 60 (3 segments), 30 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -9426,7 +9478,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 240 (4 segments); **Thresholds** 160 (3 segments), 80 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",
@@ -9584,7 +9637,8 @@
           {
             "name": "Troop Defenses",
             "text": "**HP** 195 (4 segments); **Thresholds** 130 (3 segments), 65 (2 segments)",
-            "traits": []
+            "traits": [],
+            "reference": "/action/troop-defenses-npc-core"
           },
           {
             "name": "Troop Movement",

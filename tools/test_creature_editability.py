@@ -21,6 +21,13 @@ def normalize(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", value.casefold())
 
 
+def linked_labels(values: list) -> set[str]:
+    return {
+        re.sub(r"\[([^]]+)\]\([^)]+\)", r"\1", str(value)).casefold()
+        for value in values
+    }
+
+
 def records(name: str) -> list[dict]:
     result: list[dict] = []
     for base in (REPO / "compendium" / "packs", REPO / "compendium" / "ogl-packs"):
@@ -136,11 +143,87 @@ def main() -> int:
         if expected not in abilities["Moonlight's Kiss"]["text"]:
             raise SystemExit(f"Moon Hag is missing AoN-style inline reference: {expected}")
 
+    murajau = by_slug["murajau-rage-of-elements"]
+    murajau_data = murajau["data"]
+    expected_items = "[Spear](/item/spear-player-core) (3), [Mesmerizing Opal](/item/mesmerizing-opal-gm-core), [Potency Crystal](/item/potency-crystal-gm-core), [Shark Tooth Charm](/item/shark-tooth-charm-gm-core)"
+    if murajau_data.get("items") != expected_items:
+        raise SystemExit("Murajau item links or quantities are incomplete")
+    if murajau_data["attacks"][2].get("type") != "ranged":
+        raise SystemExit("Murajau thrown spear is not a ranged Strike")
+    if any(ability.get("name") == "Retract" for ability in murajau_data["abilities"]["defensive"]):
+        raise SystemExit("Murajau Retract is still classified as defensive")
+    if not any(ability.get("name") == "Retract" for ability in murajau_data["abilities"]["offensive"]):
+        raise SystemExit("Murajau Retract is missing from its active abilities")
+
+    lithic = by_slug["lithic-locus-rage-of-elements"]
+    lithic_spells = {
+        spell["name"]
+        for casting in lithic["data"].get("spellcasting", [])
+        for group in casting.get("spellGroups", [])
+        for spell in group.get("spells", [])
+    }
+    if lithic_spells != {"One with Stone", "Daze"}:
+        raise SystemExit("Lithic Locus repeats Echo the Past spells in innate spellcasting")
+    if any(
+        ability.get("name", "").startswith("Tremorsense")
+        for ability in lithic["data"]["abilities"]["interaction"]
+    ):
+        raise SystemExit("Lithic Locus repeats Tremorsense as an interaction ability")
+
+    solar = by_slug["solar-crow-rage-of-elements"]
+    solar_abilities = {
+        ability["name"]: ability
+        for entries in solar["data"]["abilities"].values()
+        for ability in entries
+    }
+    if "[concealment](/condition/concealed-player-core)" not in solar_abilities["Glinting Wing"]["text"]:
+        raise SystemExit("Solar Crow Glinting Wing is missing its concealment link")
+
+    vault = by_slug["vault-builder-rage-of-elements"]
+    vault_data = vault["data"]
+    vault_abilities = {
+        ability["name"]: ability
+        for entries in vault_data["abilities"].values()
+        for ability in entries
+    }
+    if vault_data.get("movement", {}).get("burrow") != 25:
+        raise SystemExit("Vault Builder has the wrong burrow Speed")
+    expected_resistance = "20 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))"
+    if vault_data.get("resistances", {}).get("physical") != expected_resistance:
+        raise SystemExit("Vault Builder physical resistance lacks its adamantine exception link")
+    if vault_abilities.get("Reactive Strike", {}).get("reference") != "/action/reactive-strike-monster-core":
+        raise SystemExit("Vault Builder does not use the remastered Reactive Strike reference")
+    if "+1 Status to All Saves vs. Magic" in vault_abilities or "+4 Status to All Saves vs. Earth" in vault_abilities:
+        raise SystemExit("Vault Builder repeats save details as empty abilities")
+
+    executor = by_slug["adult-executor-dragon-draconic-codex-creature-creature-4139"]
+    executor_abilities = {
+        ability["name"]: ability
+        for entries in executor["data"]["abilities"].values()
+        for ability in entries
+    }
+    aura = executor_abilities.get("Aura of Authority", {})
+    if "temporarily immune" not in aura.get("text", "") or aura.get("traits") != ["aura", "emotion", "mental"]:
+        raise SystemExit("Adult Executor Dragon Aura of Authority is incomplete")
+    expected_executor_traits = {
+        "Rage of the Divine": ["divine", "sanctified", "spirit"],
+        "Change Shape": ["concentrate", "divine", "polymorph"],
+        "Divine Utterance": ["divine", "sonic"],
+    }
+    for name, traits in expected_executor_traits.items():
+        ability = executor_abilities.get(name, {})
+        if ability.get("traits") != traits or re.match(
+            r"\*\*(?:Reaction|Single Action|Two Actions)\*\*",
+            ability.get("text", ""),
+            re.I,
+        ):
+            raise SystemExit(f"Adult Executor Dragon action metadata is not structured: {name}")
+
     army_ants = by_slug["army-ant-swarm-monster-core"]
     if "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet" not in army_ants["data"]["senses"]:
         raise SystemExit("Army Ant Swarm is missing its scent acuity")
-    if not {"Grabbed", "Precision", "Prone", "Restrained", "Swarm Mind"}.issubset(
-        set(army_ants["data"].get("immunities") or [])
+    if not {"grabbed", "precision", "prone", "restrained", "swarm mind"}.issubset(
+        linked_labels(army_ants["data"].get("immunities") or [])
     ):
         raise SystemExit("Army Ant Swarm is missing explicit or swarm immunities")
 
@@ -160,7 +243,7 @@ def main() -> int:
         for ability in dragon_data["abilities"]["interaction"]
     ):
         raise SystemExit("Adamantine Dragon repeats Tremorsense as an interaction ability")
-    if dragon_data.get("resistances", {}).get("physical") != "10 (except adamantine)":
+    if dragon_data.get("resistances", {}).get("physical") != "10 (except [adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))":
         raise SystemExit("Adamantine Dragon is missing its printed physical resistance")
     dragon_abilities = {
         ability["name"]: ability
@@ -184,17 +267,17 @@ def main() -> int:
     animated_armor = by_slug["animated-armor-monster-core"]
     if animated_armor["data"].get("hardness") != 9:
         raise SystemExit("Animated Armor is missing Hardness")
-    if not {"Mental", "Vitality", "Void"}.issubset(set(animated_armor["data"].get("immunities") or [])):
+    if not {"mental", "vitality", "void"}.issubset(linked_labels(animated_armor["data"].get("immunities") or [])):
         raise SystemExit("Animated Armor is missing construct immunities")
 
     zombie = by_slug["zombie-shambler-monster-core"]
-    if "Mental" not in zombie["data"].get("immunities", []):
+    if "mental" not in linked_labels(zombie["data"].get("immunities", [])):
         raise SystemExit("Zombie Shambler is missing its mindless immunity")
 
     for creature in creatures:
         data = creature.get("data", {})
         traits = set(data.get("traits") or [])
-        immunities = {str(value).casefold() for value in data.get("immunities") or []}
+        immunities = linked_labels(data.get("immunities") or [])
         if "mindless" in traits and "mental" not in immunities:
             raise SystemExit(f"mindless creature is missing Mental immunity: {creature['slug']}")
         if "swarm" in traits and not {"grabbed", "prone", "restrained"}.issubset(immunities):
@@ -238,12 +321,30 @@ def main() -> int:
         or "data.languages" not in creature_view
         or "/rule/languages-rules-2080" not in creature_view
         or "/rule/skills-rules-2276" not in creature_view
+        or "/rule/{{key}}-skill-player-core" not in creature_view
+        or "/rule/lore-skill-player-core" not in creature_view
+        or "/language/{{language}}" not in creature_view
     ):
         raise SystemExit("creature identity fields are not separated in the stat block")
 
     secondary_view = (REPO / "views/partials/creature-secondary.md").read_text(encoding="utf-8")
     if "/rule/immunity-rules-2313" not in secondary_view or "/rule/resistance-rules-2318" not in secondary_view:
         raise SystemExit("creature defenses are missing quick-rule links")
+    if (
+        "[{{immunity|lowercase}}](/rule/immunity-rules-2313)" in secondary_view
+        or "[{{ key|map: 'Damage'|lowercase }}](/rule/resistance-rules-2318)" in secondary_view
+    ):
+        raise SystemExit("individual creature defenses still point to a generic category rule")
+    if "trait contains 'versatile-'" not in attack_view or "trait contains 'thrown-'" not in attack_view:
+        raise SystemExit("parameterized attack traits do not link to their canonical references")
+
+    skill_rules = {
+        rule["slug"]
+        for rule in records("rules.json")
+        if rule.get("slug", "").endswith("-skill-player-core")
+    }
+    if len(skill_rules) != 17:
+        raise SystemExit("individual Player Core skill quick references are incomplete")
 
     creature_form = form("creature.json")
     creature_fields = field_attributes(creature_form)

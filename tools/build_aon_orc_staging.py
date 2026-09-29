@@ -619,34 +619,57 @@ def parse_attacks(raw: str) -> list[dict[str, Any]]:
     return attacks
 
 
-def find_ability(raw: str, name: str, next_names: list[str]) -> tuple[str, str]:
+def find_ability(raw: str, name: str, next_names: list[str]) -> tuple[str, str, list[str]]:
     escaped = re.escape(name)
-    marker = (
-        rf"(?:(?:\*\*)?\[\*\*{escaped}\*\*\]\([^)]+\)(?:\*\*)?"
-        rf"|\*\*(?:\[)?{escaped}(?:\]\([^)]+\))?\*\*"
-        rf"|(?<![\w]){escaped}\s+(?=<actions\b))"
+    marker = "|".join(
+        (
+            rf"(?:\*\*)?\[\*\*{escaped}\*\*\]\([^)]+\)(?:\*\*)?",
+            rf"\*\*(?:\[)?{escaped}(?:\]\([^)]+\))?\*\*",
+            rf"(?<![\w]){escaped}\s+(?=<actions\b|\()",
+        )
     )
     start = re.search(marker, raw, flags=re.I)
     if not start:
-        return "", ""
+        return "", "", []
     end = len(raw)
     section_end = re.search(r"\n\s*---\s*\n", raw[start.end():])
     if section_end:
         end = start.end() + section_end.start()
     for next_name in next_names:
         next_escaped = re.escape(next_name)
-        next_marker = (
-            rf"(?:(?:\*\*)?\[\*\*{next_escaped}\*\*\]\([^)]+\)(?:\*\*)?"
-            rf"|\*\*(?:\[)?{next_escaped}(?:\]\([^)]+\))?\*\*"
-            rf"|(?<![\w]){next_escaped}\s+(?=<actions\b))"
+        next_marker = "|".join(
+            (
+                rf"(?:\*\*)?\[\*\*{next_escaped}\*\*\]\([^)]+\)(?:\*\*)?",
+                rf"\*\*(?:\[)?{next_escaped}(?:\]\([^)]+\))?\*\*",
+                rf"(?<![\w]){next_escaped}\s+(?=<actions\b|\()",
+            )
         )
         candidate = re.search(next_marker, raw[start.end():], flags=re.I)
         if candidate:
             end = min(end, start.end() + candidate.start())
     fragment = raw[start.end():end]
-    action_match = re.search(r"<actions\b[^>]*string=\"([^\"]*)\"[^>]*/>", fragment, flags=re.I)
+    action_match = re.match(
+        r"\s*<actions\b[^>]*string=\"([^\"]*)\"[^>]*/>\s*",
+        fragment,
+        flags=re.I,
+    )
     codes = action_codes(action_match.group(1) if action_match else "")
-    return clean_markup(fragment).strip(), (codes[0] if len(codes) == 1 else "")
+    if action_match:
+        fragment = fragment[action_match.end():]
+    trait_block = re.match(
+        r"\s*\(((?:\[[^\]]+\]\(/Traits\.aspx[^)]*\)(?:,\s*)?)+)\)\s*",
+        fragment,
+        flags=re.I,
+    )
+    traits = []
+    if trait_block:
+        for label in re.findall(r"\[([^\]]+)\]\(/Traits\.aspx[^)]*\)", trait_block.group(1), flags=re.I):
+            code = slugify(label)
+            code = re.sub(r"^(reach|range-increment)-.*$", r"\1", code)
+            if code and code not in traits:
+                traits.append(code)
+        fragment = fragment[trait_block.end():]
+    return clean_markup(fragment).strip(), (codes[0] if len(codes) == 1 else ""), traits
 
 
 def map_creature(record: dict[str, Any]) -> tuple[dict[str, Any], str]:
@@ -666,14 +689,16 @@ def map_creature(record: dict[str, Any]) -> tuple[dict[str, Any], str]:
         for value in list_of(record.get("creature_ability"))
     ]
     for index, name in enumerate(ability_names):
-        text, actions = find_ability(statblock, name, [other for other in ability_names if other != name])
+        text, actions, ability_traits = find_ability(
+            statblock, name, [other for other in ability_names if other != name]
+        )
         if not text:
             continue
         position = statblock.casefold().find(name.casefold())
         first_break = statblock.find("---")
         second_break = statblock.find("---", first_break + 3) if first_break >= 0 else -1
         bucket = "interaction" if first_break < 0 or position < first_break else ("defensive" if second_break < 0 or position < second_break else "offensive")
-        entry: dict[str, Any] = {"name": name, "text": text, "traits": []}
+        entry: dict[str, Any] = {"name": name, "text": text, "traits": ability_traits}
         if actions:
             entry["actions"] = actions
         abilities[bucket].append(entry)

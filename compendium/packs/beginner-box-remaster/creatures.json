@@ -47,8 +47,8 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Poison",
-        "Sleep"
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -215,7 +215,8 @@
           {
             "name": "Light Blindness",
             "text": "When first exposed to bright light, the caligni can't see until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a Flat DC 11. Light doesn't blind them again for 1 hour.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/light-blindness-monster-core"
           }
         ],
         "defensive": [
@@ -241,7 +242,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 15 (Society)",
-      "items": "Dagger, Mace",
+      "items": "[Dagger](/item/dagger-player-core), [Mace](/item/mace-player-core)",
       "traitLinks": [
         {
           "label": "caligni",
@@ -350,7 +351,8 @@
           {
             "name": "Light Blindness",
             "text": "When first exposed to bright light, the caligni can't see until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a Flat DC 11. Light doesn't blind them again for 1 hour.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/light-blindness-monster-core"
           },
           {
             "name": "Sneak Attack",
@@ -384,7 +386,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 19 (Society)",
-      "items": "Shortsword, Leather Armor",
+      "items": "[Shortsword](/item/shortsword-player-core) (2), [Leather Armor](/item/leather-armor-player-core)",
       "traitLinks": [
         {
           "label": "caligni",
@@ -530,7 +532,8 @@
           {
             "name": "Light Blindness",
             "text": "When first exposed to bright light, the caligni can't see until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a Flat DC 11. Light doesn't blind them again for 1 hour.",
-            "traits": []
+            "traits": [],
+            "reference": "/action/light-blindness-monster-core"
           }
         ],
         "defensive": [
@@ -564,7 +567,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 16 (Society)",
-      "items": "Dagger",
+      "items": "[Dagger](/item/dagger-player-core)",
       "traitLinks": [
         {
           "label": "caligni",
@@ -643,9 +646,9 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
         "Bleed",
-        "Fire",
-        "Poison",
-        "Sleep"
+        "[Fire](/trait/fire)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {
         "cold": 5
@@ -821,7 +824,7 @@
       },
       "languagesText": "Draconic",
       "recallKnowledgeText": "DC 16 (Society)",
-      "items": "Staff, Eggshell Necklace, Iron Key",
+      "items": "[Staff](/item/staff-player-core), Eggshell Necklace, Iron Key",
       "traitLinks": [
         {
           "label": "humanoid",
@@ -1015,7 +1018,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 16 (Society)",
-      "items": "Staff",
+      "items": "[Staff](/item/staff-player-core)",
       "traitLinks": [
         {
           "label": "humanoid",
@@ -1209,7 +1212,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 16 (Society)",
-      "items": "Staff",
+      "items": "[Staff](/item/staff-player-core)",
       "traitLinks": [
         {
           "label": "humanoid",
@@ -1403,7 +1406,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 16 (Society)",
-      "items": "Staff",
+      "items": "[Staff](/item/staff-player-core)",
       "traitLinks": [
         {
           "label": "humanoid",
@@ -1597,7 +1600,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 16 (Society)",
-      "items": "Staff",
+      "items": "[Staff](/item/staff-player-core)",
       "traitLinks": [
         {
           "label": "humanoid",
@@ -1791,7 +1794,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 16 (Society)",
-      "items": "Staff",
+      "items": "[Staff](/item/staff-player-core)",
       "traitLinks": [
         {
           "label": "humanoid",
@@ -1990,7 +1993,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 15 (Society)",
-      "items": "Crossbow, Shortsword, Leather Armor, Bolts",
+      "items": "[Crossbow](/item/crossbow-player-core), [Shortsword](/item/shortsword-player-core), [Leather Armor](/item/leather-armor-player-core)",
       "traitLinks": [
         {
           "label": "humanoid",
@@ -2128,7 +2131,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 16 (Society)",
-      "items": "Shortsword, Spear, Leather Armor, Spike Trap",
+      "items": "[Shortsword](/item/shortsword-player-core), [Spear](/item/spear-player-core) (3), [Leather Armor](/item/leather-armor-player-core), Spike Trap",
       "traitLinks": [
         {
           "label": "humanoid",
@@ -2256,7 +2259,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 13 (Society)",
-      "items": "Spear, Leather Armor",
+      "items": "[Spear](/item/spear-player-core), [Leather Armor](/item/leather-armor-player-core)",
       "traitLinks": [
         {
           "label": "humanoid",
@@ -2403,7 +2406,7 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 14 (Nature)",
-      "items": "Shortbow, Shortsword, Arrows",
+      "items": "[Shortbow](/item/shortbow-player-core), [Shortsword](/item/shortsword-player-core)",
       "traitLinks": [
         {
           "label": "fey",
@@ -2523,7 +2526,8 @@
             "name": "Constrict",
             "text": "If the reefclaw has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core), it can spend one action to crush them in its coils. The creature takes 1d6 bludgeoning damage depending on its basic Fortitude DC 17 save.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "reference": "/action/constrict-monster-core"
           },
           {
             "name": "Reefclaw Venom",
@@ -2619,8 +2623,8 @@
       "immunities": [
         "Acid",
         "Critical Hits",
-        "Unconscious",
-        "Mental"
+        "[Unconscious](/condition/unconscious-player-core)",
+        "[Mental](/trait/mental)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -2741,11 +2745,11 @@
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
-        "Poison",
-        "Unconscious",
+        "[Poison](/trait/poison)",
+        "[Unconscious](/condition/unconscious-player-core)",
         "Bleed",
-        "Void",
-        "Mental"
+        "[Void](/trait/void)",
+        "[Mental](/trait/mental)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -2807,7 +2811,7 @@
       "languagesText": "",
       "recallKnowledgeText": "DC 18 (Religion)",
       "sanctification": "unholy",
-      "items": "Greataxe, Half Plate",
+      "items": "[Greataxe](/item/greataxe-player-core), [Half Plate](/item/half-plate-player-core)",
       "traitLinks": [
         {
           "label": "mindless",
@@ -2895,8 +2899,8 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), crystal sense 60 feet",
       "immunities": [
         "Bleed",
-        "Poison",
-        "Sleep"
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -3149,8 +3153,8 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Poison",
-        "Sleep"
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)"
       ],
       "weaknesses": {},
       "resistances": {},

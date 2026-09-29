@@ -50,11 +50,11 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Paralyzed",
-        "Poison",
-        "Unconscious"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {},
       "resistances": {},
@@ -387,7 +387,7 @@
       "languages": [],
       "senses": "[Darkvision](/action/darkvision-monster-core), Thoughtsense ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
-        "Death Effects"
+        "[Death Effects](/rule/death-effects-rules-2331)"
       ],
       "weaknesses": {
         "holy": 10
@@ -745,7 +745,8 @@
             "name": "Reactive Strike",
             "text": "**Trigger** A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.\n\nYou lash out at a foe that leaves an opening. Make a melee [Strike](/action/strike-player-core) against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "reference": "/action/reactive-strike-monster-core"
           },
           {
             "name": "Thorny Hide",
@@ -877,21 +878,21 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), wealthsense ([imprecise](/rule/imprecise-senses-rules-2407)) 60 feet",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Doomed",
-        "Drained",
-        "Fatigued",
-        "Healing",
-        "Mental",
-        "Nonlethal Attacks",
-        "Paralyzed",
-        "Poison",
-        "Sickened",
-        "Spirit",
-        "Unconscious",
-        "Vitality",
-        "Void"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Doomed](/condition/doomed-player-core)",
+        "[Drained](/condition/drained-player-core)",
+        "[Fatigued](/condition/fatigued-player-core)",
+        "[Healing](/trait/healing)",
+        "[Mental](/trait/mental)",
+        "[Nonlethal Attacks](/rule/nonlethal-attacks-rules-2311)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sickened](/condition/sickened-player-core)",
+        "[Spirit](/trait/spirit)",
+        "[Unconscious](/condition/unconscious-player-core)",
+        "[Vitality](/trait/vitality)",
+        "[Void](/trait/void)"
       ],
       "weaknesses": {
         "spirit": 10
@@ -1427,7 +1428,7 @@
       },
       "languagesText": "Aklo, Common, Fey",
       "recallKnowledgeText": "DC 22 (Nature)",
-      "items": "Shortbow, Arrows",
+      "items": "[Shortbow](/item/shortbow-player-core)",
       "traitLinks": [
         {
           "label": "fey",
@@ -1717,11 +1718,11 @@
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Paralyzed",
-        "Poison",
-        "Unconscious"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {
         "slashing": 10
@@ -1880,7 +1881,7 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), [Low-Light Vision](/action/low-light-vision-monster-core)",
       "immunities": [
-        "Poison"
+        "[Poison](/trait/poison)"
       ],
       "weaknesses": {
         "cold": 10
@@ -2104,12 +2105,12 @@
       "senses": "[Darkvision](/action/darkvision-monster-core), [Tremorsense](/action/tremorsense-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet",
       "immunities": [
         "Bleed",
-        "Death Effects",
-        "Disease",
-        "Paralyzed",
-        "Poison",
-        "Sleep",
-        "Unconscious"
+        "[Death Effects](/rule/death-effects-rules-2331)",
+        "[Disease](/trait/disease)",
+        "[Paralyzed](/condition/paralyzed-player-core)",
+        "[Poison](/trait/poison)",
+        "[Sleep](/trait/sleep)",
+        "[Unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {
         "vitality": 5

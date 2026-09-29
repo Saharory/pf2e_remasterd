@@ -45,6 +45,7 @@ EXPECTED_DISPLAY_ONLY = {
     ("urdefhan-tormentor-monster-core-2", "Daemonic Pact"),
     ("wood-scamp-rage-of-elements", "Verdant Sprout"),
 }
+ABILITY_GRANTED_SPELL_QUALIFIERS = {"echo the past"}
 
 
 def parse_args() -> argparse.Namespace:
@@ -172,6 +173,12 @@ def spell_flags(spell: dict[str, Any]) -> tuple[bool, bool, list[str]]:
     return at_will, constant, details
 
 
+def is_ability_granted_spell(spell: dict[str, Any]) -> bool:
+    """Keep spells listed inside a bespoke ability out of the casting summary."""
+    _, _, details = spell_flags(spell)
+    return any(normalize_name(value) in ABILITY_GRANTED_SPELL_QUALIFIERS for value in details)
+
+
 def linked_entry(
     spell: dict[str, Any], indexes: dict[str, Any], rank: int
 ) -> tuple[dict[str, Any], bool]:
@@ -226,7 +233,14 @@ def actor_spellcasting(
         entry_id = str(entry.get("_id") or "")
         system = entry.get("system", {})
         mode = str(system.get("prepared", {}).get("value") or "")
-        entry_spells = sorted(by_location.get(entry_id, []), key=lambda item: int(item.get("sort") or 0))
+        entry_spells = sorted(
+            (
+                spell
+                for spell in by_location.get(entry_id, [])
+                if not is_ability_granted_spell(spell)
+            ),
+            key=lambda item: int(item.get("sort") or 0),
+        )
         slots = system.get("slots") or {}
         grouped: dict[tuple[str, int], list[dict[str, Any]]] = defaultdict(list)
 

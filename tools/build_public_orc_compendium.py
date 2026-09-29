@@ -28,6 +28,7 @@ from creature_metadata import configure_creature_metadata
 from creature_ability_glossary import configure_creature_abilities
 from creature_senses import configure_creature_senses
 from spell_area_templates import configure_spell_area_template
+from skill_references import skill_reference_records
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -846,6 +847,8 @@ def build_module(
         if expected_kind is None:
             continue
         records = trait_records if expected_kind == "Trait" else json.loads(path.read_text())
+        if expected_kind == "Rule" and source["id"] == "player-core":
+            records = [*records, *skill_reference_records()]
         if not isinstance(records, list):
             raise ValueError(f"{path} must contain a JSON array")
         cleaned: list[dict[str, Any]] = []
