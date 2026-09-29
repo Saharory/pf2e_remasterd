@@ -1,24 +1,21 @@
 ---
 name: encounterplus-development
-description: Design or implement Encounter+ system entities, forms, views, packages, native rolls, load actions, or GM tools.
+description: Develop Encounter+ entities, forms, views, packages, or GM tools when changing system structure or native integration.
 ---
 
-Use `ROADMAP.md` when the task needs an existing product decision and
-`STATUS.md` when it needs the latest handoff. Do not restate those files here.
+Consult `ROADMAP.md` only for product decisions and `STATUS.md` only for the
+latest handoff.
 
 Establish the supported Encounter+ mechanism before inventing a parallel one.
 Inspect the current official repositories already available beside this project
-when entity schemas, package formats, forms, views, migrations, or native app
-behavior are uncertain. Distinguish app-owned behavior from system/package
-behavior and report when the public interface cannot express a requested
-feature safely.
+when schemas, package formats, migrations, or native behavior are uncertain.
+Distinguish app-owned behavior from system/package behavior; report when the
+public interface cannot express a feature safely.
 
 Keep compact panels useful at Encounter+'s narrow embedded width. Prefer
 structured editable fields and internal routes over duplicated prose or custom
-JavaScript. Use map load behavior only when placement has an unambiguous native
-representation.
+JavaScript. Use map loading only when placement has a clear native form.
 
-Extend the relevant existing test domain and finish with the repository's
-canonical check command. Native Encounter+ testing remains a separate result:
-record it as pending or verified in `STATUS.md` rather than treating a package
-build as proof of app behavior.
+Extend the closest regression, run focused checks while iterating, and run the
+canonical check once at completion. Record native-app testing separately in
+`STATUS.md`; a package build is not proof of app behavior.
