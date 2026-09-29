@@ -89,10 +89,18 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.txt
 ```
 
-Validate the source and build the installable system:
+Python 3.12+, Node.js 22+, and the Python development dependency are required.
+There is one maintained source-check entry point; it runs the content,
+generator, template, and lightweight UI regressions:
 
 ```sh
 .venv/bin/python tools/eplus_dev.py check --json
+```
+
+Build and inspect an installable system only when package verification is
+needed:
+
+```sh
 .venv/bin/python tools/package_public_release.py
 .venv/bin/python tools/eplus_dev.py inspect-release --json
 ```

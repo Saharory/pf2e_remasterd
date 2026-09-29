@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -168,6 +169,34 @@ def run_validator(script: str) -> tuple[bool, str]:
     return result.returncode == 0, lines[-1] if lines else script
 
 
+def run_node_tests() -> tuple[bool, str]:
+    node = os.environ.get("NODE") or shutil.which("node")
+    tests = sorted((REPO / "tests").glob("*.test.cjs"))
+    if not node:
+        return False, "Node.js is required for the system UI regression suite"
+    result = subprocess.run(
+        [node, "--test", *(str(path) for path in tests)],
+        cwd=REPO,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        check=False,
+    )
+    if result.returncode == 0:
+        return True, f"Validated {len(tests)} system UI regression files"
+    lines = [line.strip() for line in result.stdout.splitlines() if line.strip()]
+    failure = next(
+        (
+            line
+            for line in reversed(lines)
+            if (line.startswith("✖") or line.startswith("not ok"))
+            and "failing tests:" not in line.casefold()
+        ),
+        None,
+    )
+    return False, failure or (lines[-1] if lines else "system UI regressions failed")
+
+
 def validate_project() -> dict[str, Any]:
     errors: list[str] = []
     parsed = 0
@@ -288,14 +317,22 @@ def validate_project() -> dict[str, Any]:
     for script in (
         "validate_public_orc_compendium.py",
         "validate_public_ogl_compendium.py",
+        "test_compendium_conversion.py",
         "test_creature_editability.py",
         "test_creature_spellcasting.py",
+        "test_hazard_vehicle_mechanics.py",
+        "test_reference_tables.py",
         "test_spell_area_templates.py",
     ):
         ok, message = run_validator(script)
         validators[script] = message
         if not ok:
             errors.append(f"{script}: {message}")
+
+    ok, message = run_node_tests()
+    validators["system-ui-regressions"] = message
+    if not ok:
+        errors.append(f"system-ui-regressions: {message}")
 
     return {
         "ok": not errors,

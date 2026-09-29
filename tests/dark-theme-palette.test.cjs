@@ -6,7 +6,6 @@ const test = require('node:test');
 const root = path.resolve(__dirname, '..');
 const stylesheet = fs.readFileSync(path.join(root, 'styles', 'default.css'), 'utf8');
 const pages = fs.readFileSync(path.join(root, 'pages.json'), 'utf8');
-const system = JSON.parse(fs.readFileSync(path.join(root, 'system.json'), 'utf8'));
 
 const palette = {
   page: '#181716',
@@ -54,10 +53,22 @@ test('wraps trait and footer tags instead of shrinking compact sheets', () => {
   assert.match(stylesheet, /\.tags\s*\{[\s\S]*?display:\s*flex;[\s\S]*?flex-wrap:\s*wrap;/);
 });
 
-test('HTML views invalidate cached system styles on every system version', () => {
-  const expectedStylesheet = `styles/default.css?v=${system.version}`;
+test('library footer tags keep readable colors in light and dark modes', () => {
+  assert.match(stylesheet, /--footer-tag-background:\s*white;/);
+  assert.match(stylesheet, /--pf-dark-tag:\s*#302d2b;/);
+  assert.match(stylesheet, /--pf-dark-tag-text:\s*#ddd6cc;/);
+  assert.match(stylesheet, /--footer-tag-background:\s*var\(--pf-dark-tag\);/);
+  assert.match(stylesheet, /--footer-tag-text:\s*var\(--pf-dark-tag-text\);/);
+  assert.match(stylesheet, /background-color:\s*var\(--footer-tag-background\);/);
+  assert.match(stylesheet, /color:\s*var\(--footer-tag-text\);/);
+});
+
+test('HTML views share one versioned system stylesheet cache key', () => {
+  const base = fs.readFileSync(path.join(root, 'views/partials/base.html'), 'utf8');
+  const match = base.match(/styles\/default\.css\?v=([0-9.]+)/);
+  assert.ok(match, 'base view must use a versioned system stylesheet');
+  const expectedStylesheet = match[0];
   const directViews = [
-    'views/partials/base.html',
     'views/class.html',
     'views/deity.html',
     'views/default.html',

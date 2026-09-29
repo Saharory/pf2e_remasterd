@@ -10,6 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_reference_tables import OGL_PACKS, PACKS, build_tables, markdown_tables
+from build_operations_center import REPO, groups, pages, reference_picker, reference_tables, validate
 
 
 EXPECTED_ORC_TABLES = {
@@ -106,6 +107,41 @@ class ReferenceTableTests(unittest.TestCase):
         self.assertIn(["Standard", "+2 to AC, Reflex, Stealth", "Yes"], player["Cover"]["rows"])
         self.assertEqual(player["Detection and Targeting"]["rows"][1][2], "DC 11")
         self.assertIn("/rule/hidden-rules-2416", player["Detection and Targeting"]["rows"][1][0])
+
+    def test_operations_center_picker_is_compact_and_source_backed(self) -> None:
+        markup = reference_picker("DC", ["DCs by Level"], "20")
+        payload = json.loads(
+            re.search(
+                r'<script type="application/json" data-ops-payload>(.*?)</script>',
+                markup,
+            ).group(1)
+        )
+        self.assertEqual(payload[0]["rows"], reference_tables()["DCs by Level"]["rows"])
+        self.assertIn('<span>40</span>', markup)
+        self.assertIn("/table/dcs-by-level-gm-core", markup)
+        self.assertNotIn("<table", markup)
+
+    def test_operations_center_creature_picker_covers_all_benchmarks(self) -> None:
+        names = [name for name in reference_tables() if name.startswith("Creature Building — ")]
+        markup = reference_picker("Benchmarks", names)
+        self.assertEqual(markup.count("data-ops-reference>"), 1)
+        self.assertIn("data-ops-stat", markup)
+        self.assertIn('value="–1"', markup)
+        self.assertIn('value="24"', markup)
+
+    def test_generated_operations_pages_keep_valid_table_routes(self) -> None:
+        generated = [page.record() for page in pages()]
+        validate(generated, groups())
+        saved = json.loads((REPO / "pages.json").read_text())
+        self.assertEqual(saved, generated)
+        creature = next(
+            page for page in saved if page["slug"] == "pf2e-ops-creature-benchmarks"
+        )
+        self.assertIn("data-ops-reference", creature["content"])
+        self.assertIn(
+            "/table/creature-building-attribute-modifiers-gm-core",
+            creature["content"],
+        )
 
 
 if __name__ == "__main__":
