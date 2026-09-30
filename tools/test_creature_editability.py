@@ -189,7 +189,7 @@ def main() -> int:
     }
     if vault_data.get("movement", {}).get("burrow") != 25:
         raise SystemExit("Vault Builder has the wrong burrow Speed")
-    expected_resistance = "20 (except [Adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))"
+    expected_resistance = "20 (except [Adamantine](/item/adamantine-chunk-gm-core))"
     if vault_data.get("resistances", {}).get("physical") != expected_resistance:
         raise SystemExit("Vault Builder physical resistance lacks its adamantine exception link")
     if vault_abilities.get("Reactive Strike", {}).get("reference") != "/action/reactive-strike-monster-core":
@@ -244,7 +244,7 @@ def main() -> int:
         for ability in dragon_data["abilities"]["interaction"]
     ):
         raise SystemExit("Adamantine Dragon repeats Tremorsense as an interaction ability")
-    if dragon_data.get("resistances", {}).get("physical") != "10 (except [adamantine](https://2e.aonprd.com/Equipment.aspx?ID=2855))":
+    if dragon_data.get("resistances", {}).get("physical") != "10 (except [adamantine](/item/adamantine-chunk-gm-core))":
         raise SystemExit("Adamantine Dragon is missing its printed physical resistance")
     dragon_abilities = {
         ability["name"]: ability
@@ -333,6 +333,8 @@ def main() -> int:
         or "/language/{{language}}" not in creature_view
     ):
         raise SystemExit("creature identity fields are not separated in the stat block")
+    if "[{{skill.name}}](/rule/lore-skill-player-core)" in creature_view:
+        raise SystemExit("named Lore specialties must not link to the generic Lore rule")
 
     secondary_view = (REPO / "views/partials/creature-secondary.md").read_text(encoding="utf-8")
     if "/rule/immunity-rules-2313" not in secondary_view or "/rule/resistance-rules-2318" not in secondary_view:
@@ -368,12 +370,22 @@ def main() -> int:
                     )
 
     skill_rules = {
-        rule["slug"]
+        rule["slug"]: rule
         for rule in records("rules.json")
         if rule.get("slug", "").endswith("-skill-player-core")
     }
     if len(skill_rules) != 17:
         raise SystemExit("individual Player Core skill quick references are incomplete")
+    for slug, rule in skill_rules.items():
+        description = str(rule.get("descr") or "")
+        if (
+            len(description) < 200
+            or "Complete " in description
+            or re.search(r"\]\(https?://", description)
+            or rule.get("attributes", {}).get("contentOrigin") != "Player Core (ORC)"
+            or rule.get("data", {}).get("referenceUrl")
+        ):
+            raise SystemExit(f"skill reference is not imported Player Core content: {slug}")
 
     creature_form = form("creature.json")
     creature_fields = field_attributes(creature_form)

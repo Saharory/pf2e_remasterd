@@ -173,6 +173,26 @@ TRAIT_SLUG_ALIASES: dict[str, str] = dict(GENERIC_TRAIT_SLUG_ALIASES)
 CANONICAL_TRAIT_SLUGS: set[str] = set()
 
 TRAIT_ROUTE = re.compile(r"(/trait/)([a-z0-9-]+)")
+EXTERNAL_REFERENCE_ROUTES = (
+    (
+        re.compile(r"\[([^]]+)\]\(https://2e\.aonprd\.com/Equipment\.aspx\?ID=2855\)", re.I),
+        r"[\1](/item/adamantine-chunk-gm-core)",
+    ),
+    (
+        re.compile(r"\[([^]]+)\]\(https://2e\.aonprd\.com/Skills\.aspx\?ID=37\)", re.I),
+        r"[\1](/rule/crafting-skill-player-core)",
+    ),
+    (
+        re.compile(r"\[([^]]+)\]\(https://2e\.aonprd\.com/SiegeWeapons\.aspx\)", re.I),
+        r"[\1](/rule/siege-weapons-rules-1622)",
+    ),
+    # The legacy Radiation trait page explicitly has no supplied description.
+    # Keep the value, but do not create a fake rule or send users to the web.
+    (
+        re.compile(r"\[([^]]+)\]\(https://2e\.aonprd\.com/Traits\.aspx\?ID=421\)", re.I),
+        r"\1",
+    ),
+)
 INTERNAL_MARKDOWN_LINK = re.compile(r"\[([^\]]+)\]\((/[a-z-]+/[^)\s]+)\)")
 RICH_TEXT_KEYS = {
     "classDescription",
@@ -347,6 +367,12 @@ def normalize_trait_routes(value: str) -> str:
         return match.group(1) + canonical_trait_slug(match.group(2))
 
     return TRAIT_ROUTE.sub(replace, value)
+
+
+def normalize_external_reference_routes(value: str) -> str:
+    for pattern, replacement in EXTERNAL_REFERENCE_ROUTES:
+        value = pattern.sub(replacement, value)
+    return value
 
 
 def normalize_trait_values(traits: list[str]) -> list[str]:
@@ -604,7 +630,9 @@ def scrub_tree(value: Any) -> Any:
     if isinstance(value, list):
         return [scrub_tree(child) for child in value]
     if isinstance(value, str):
-        return normalize_trait_routes(clean_foundry_markup(value))
+        return normalize_external_reference_routes(
+            normalize_trait_routes(clean_foundry_markup(value))
+        )
     return value
 
 
@@ -707,7 +735,12 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
     # Hazard and vehicle ability text is an in-play reference. Every explicit
     # condition or rule reference should stay clickable, including repeated
     # references at different outcomes of one saving throw.
-    if expected_kind not in {"Hazard", "Vehicle"}:
+    is_skill_reference = (
+        expected_kind == "Rule"
+        and isinstance(data, dict)
+        and data.get("type") == "skill"
+    )
+    if expected_kind not in {"Hazard", "Vehicle"} and not is_skill_reference:
         dedupe_entity_links(result)
 
     return result

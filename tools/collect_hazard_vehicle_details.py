@@ -80,6 +80,20 @@ def ability_entries(markdown: str) -> list[dict[str, Any]]:
                 text,
                 flags=re.I,
             )
+        text = re.sub(
+            r"\[([^]]+)\]\(https://2e\.aonprd\.com/Skills\.aspx\?ID=37\)",
+            r"[\1](/rule/crafting-skill-player-core)",
+            text,
+            flags=re.I,
+        )
+        text = re.sub(
+            r"\[([^]]+)\]\(https://2e\.aonprd\.com/SiegeWeapons\.aspx\)",
+            r"[\1](/rule/siege-weapons-rules-1622)",
+            text,
+            flags=re.I,
+        )
+        if re.search(r"\]\(https?://", text, flags=re.I):
+            raise ValueError(f"vehicle ability has no imported Encounter+ reference: {name}")
         if name and text:
             entry: dict[str, Any] = {"name": name, "text": text, "traits": []}
             action = re.match(r"^\*\*(Single Action|Two Actions|Three Actions|Reaction|Free Action)\*\*\s*", text, flags=re.I)

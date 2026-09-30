@@ -17,6 +17,7 @@ PACK = REPO / "compendium" / "ogl-packs" / "rage-of-elements"
 ORC_PACKS = REPO / "compendium" / "packs"
 UUID = re.compile(r"^[0-9A-F]{8}-[0-9A-F]{4}-[1-5][0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$")
 EMAIL = re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.I)
+EXTERNAL_MARKDOWN_LINK = re.compile(r"\[[^\]]+\]\(https?://[^)]+\)", re.I)
 BANNED_KEYS = {
     "rawText",
     "foundryId",
@@ -67,6 +68,8 @@ def inspect(value: Any, location: str, errors: list[str]) -> None:
             errors.append(f"{location}: possible email/private watermark")
         if has_conversion_artifact(value):
             errors.append(f"{location}: malformed converted rules text")
+        if EXTERNAL_MARKDOWN_LINK.search(value):
+            errors.append(f"{location}: gameplay reference must use an in-app entity")
 
 
 def inspect_sources(record: dict[str, Any], location: str, errors: list[str]) -> None:

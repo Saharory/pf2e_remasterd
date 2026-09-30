@@ -23,6 +23,7 @@ from build_public_orc_compendium import (
     load_catalog,
     normalize_trait_arrays,
     normalize_trait_routes,
+    normalize_external_reference_routes,
     remove_generated_conflict_copies,
 )
 from build_reference_tables import build_tables
@@ -57,7 +58,9 @@ def scrub_tree(value: Any) -> Any:
     if isinstance(value, list):
         return [scrub_tree(child) for child in value]
     if isinstance(value, str):
-        return normalize_trait_routes(clean_foundry_markup(value))
+        return normalize_external_reference_routes(
+            normalize_trait_routes(clean_foundry_markup(value))
+        )
     return value
 
 

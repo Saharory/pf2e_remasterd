@@ -1,20 +1,20 @@
 # Current status
 
-Last updated: 2026-09-29
+Last updated: 2026-10-01
 
 - Branch: `remaster-community-base`
 - Package version: `1.701.9` (unchanged since the last published release)
-- Latest completed local work: the creature-stat audit now includes individual
-  skill/language/defense/item links, item quantities, corrected attack and
-  ability placement, nonduplicated ability-granted spells, and structured AoN
-  action/trait metadata. Murajau, Lithic Locus, Solar Crow, Vault Builder, and
-  Adult Executor Dragon are covered by focused regressions.
+- Latest completed local work: named Lore specialties remain plain stat values,
+  while the Lore heading and all 17 general skills open imported, ORC-licensed
+  Player Core records. Gameplay references no longer send users to web pages;
+  known Adamantine, Crafting, and siege-weapon links resolve in-app, and the
+  undescribed legacy Radiation trait remains honest plain text.
 - Automated baseline: the public ORC/OGL packs, package definitions, creature
   links and spellcasting, area templates, and maintained UI regressions pass
   through `python3 tools/eplus_dev.py check --json`.
-- Native-app verification still required: import `dist/test/pf2e-remaster.system`
-  and check the reviewed creature pages, especially the new individual quick
-  links and parameterized Versatile/Thrown trait destinations.
+- Native-app verification still required: build/import the next test package
+  and check a creature with a named Lore specialty, each linked skill page,
+  Adamantine resistance exceptions, and the linked vehicle weapon-mount rules.
 - Current product priority: continue the complete data audit and review upstream
   Encounter+ compatibility before releases. See `ROADMAP.md` for accepted,
   deferred, and completed feature decisions.

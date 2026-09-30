@@ -80,6 +80,7 @@ ROUTE_BY_KIND = {
     "Vehicle": "vehicle",
 }
 INTERNAL_LINK = re.compile(r"\[[^\]]+\]\(/([a-z-]+)/([^)\s]+)\)")
+EXTERNAL_MARKDOWN_LINK = re.compile(r"\[[^\]]+\]\(https?://[^)]+\)", re.I)
 RICH_TEXT_KEYS = {
     "classDescription",
     "classFeaturesText",
@@ -107,6 +108,8 @@ def inspect(value: Any, location: str, errors: list[str]) -> None:
             errors.append(f"{location}: possible email/private watermark")
         if has_conversion_artifact(value):
             errors.append(f"{location}: malformed converted rules text")
+        if EXTERNAL_MARKDOWN_LINK.search(value):
+            errors.append(f"{location}: gameplay reference must use an in-app entity")
 
 
 def inspect_sources(record: dict[str, Any], location: str, errors: list[str]) -> None:
@@ -373,7 +376,12 @@ def main() -> int:
         # they usually indicate that the source-link cleanup failed to dedupe it.
         # Hazard outcomes often repeat conditions at different values inside one
         # field, and every occurrence remains useful during play.
-        if record.get("kind") not in {"Hazard", "Vehicle"}:
+        is_skill_reference = (
+            record.get("kind") == "Rule"
+            and isinstance(record.get("data"), dict)
+            and record["data"].get("type") == "skill"
+        )
+        if record.get("kind") not in {"Hazard", "Vehicle"} and not is_skill_reference:
             duplicate_count = sum(
                 len(field_destinations) - len(set(field_destinations))
                 for value in displayed_text

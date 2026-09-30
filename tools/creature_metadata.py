@@ -34,7 +34,7 @@ DEFENSE_VALUE_ROUTES = (
     ("Drained", "/condition/drained-player-core"),
     ("Doomed", "/condition/doomed-player-core"),
     ("Prone", "/condition/prone-player-core"),
-    ("Adamantine", "https://2e.aonprd.com/Equipment.aspx?ID=2855"),
+    ("Adamantine", "/item/adamantine-chunk-gm-core"),
     ("Disease", "/trait/disease"),
     ("Healing", "/trait/healing"),
     ("Mental", "/trait/mental"),
@@ -45,7 +45,6 @@ DEFENSE_VALUE_ROUTES = (
     ("Vitality", "/trait/vitality"),
     ("Void", "/trait/void"),
     ("Fire", "/trait/fire"),
-    ("Radiation", "https://2e.aonprd.com/Traits.aspx?ID=421"),
 )
 
 
