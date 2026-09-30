@@ -5,12 +5,14 @@ from __future__ import annotations
 
 import unittest
 import sys
+import tempfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_aon_orc_staging import item_price
 from foundry_markup import has_conversion_artifact, replace_foundry_directives
+from package_public_release import clear_owned_output
 
 
 class FoundryMarkupTests(unittest.TestCase):
@@ -86,6 +88,26 @@ class ItemPriceTests(unittest.TestCase):
 
     def test_zero_price_is_preserved(self) -> None:
         self.assertEqual(item_price({"price": 0}), "0 gp")
+
+
+class ReleaseOutputTests(unittest.TestCase):
+    def test_cleanup_removes_generated_conflict_copies_only(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            output = Path(temporary)
+            generated = {
+                "manifest.json",
+                "manifest 2.json",
+                "release-summary 3.json",
+                "SHA256SUMS 12.txt",
+                "pf2e-remaster 2.system",
+            }
+            for name in [*generated, "notes 2.txt"]:
+                (output / name).write_text(name, encoding="utf-8")
+
+            clear_owned_output(output)
+
+            self.assertFalse(any((output / name).exists() for name in generated))
+            self.assertTrue((output / "notes 2.txt").is_file())
 
 
 if __name__ == "__main__":

@@ -60,6 +60,9 @@ GENERATED_FILES = {
     "release-summary.json",
     "SHA256SUMS.txt",
 }
+CONFLICT_COPY = re.compile(
+    r"^(?P<stem>.+) (?P<copy>(?:[2-9]|[1-9]\d+))(?P<suffix>\.[^.]+)$"
+)
 
 DAMAGE_COMPONENT = re.compile(
     r"(^|(?P<connector>\s*(?:;|,|\bplus\b|\band\b)\s*))"
@@ -357,8 +360,16 @@ def build_directory_archive(directory: Path, target: Path) -> None:
 
 def clear_owned_output(output: Path) -> None:
     for path in output.iterdir() if output.exists() else []:
+        conflict = CONFLICT_COPY.match(path.name)
+        canonical = (
+            f"{conflict.group('stem')}{conflict.group('suffix')}"
+            if conflict
+            else ""
+        )
         if path.is_file() and (
-            path.suffix in {".system", ".module"} or path.name in GENERATED_FILES
+            path.suffix in {".system", ".module"}
+            or path.name in GENERATED_FILES
+            or canonical in GENERATED_FILES
         ):
             path.unlink()
 
