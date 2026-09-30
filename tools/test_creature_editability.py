@@ -9,6 +9,7 @@ from pathlib import Path
 
 import json5
 
+from build_public_orc_compendium import parameterized_trait_family
 from creature_ability_glossary import GLOSSARY, GLOSSARY_ROUTES
 from creature_senses import SENSE_ROUTES, link_shared_senses
 
@@ -313,7 +314,13 @@ def main() -> int:
     creature_view = (REPO / "views/partials/creature-primary.md").read_text(encoding="utf-8")
     if "ability.reference" not in ability_view:
         raise SystemExit("shared creature ability names are not linked")
-    if "/trait/{{trait}}" not in ability_view or "/trait/{{trait}}" not in attack_view:
+    if (
+        "/trait/{{trait}}" not in ability_view
+        or (
+            "/trait/{{trait}}" not in attack_view
+            and "/trait/{% if trait" not in attack_view
+        )
+    ):
         raise SystemExit("creature ability or attack traits are not linked")
     if (
         "/action/recall-knowledge-player-core" not in creature_view
@@ -335,8 +342,30 @@ def main() -> int:
         or "[{{ key|map: 'Damage'|lowercase }}](/rule/resistance-rules-2318)" in secondary_view
     ):
         raise SystemExit("individual creature defenses still point to a generic category rule")
-    if "trait contains 'versatile-'" not in attack_view or "trait contains 'thrown-'" not in attack_view:
-        raise SystemExit("parameterized attack traits do not link to their canonical references")
+    if " contains " in attack_view:
+        raise SystemExit("creature attack view uses an unsupported template expression")
+
+    trait_slugs = {record["slug"] for record in records("traits.json")}
+    attack_trait_routes: dict[str, str] = {}
+    for expression, destination in re.findall(
+        r"\{% if ([^%]+) %\}([a-z][a-z0-9-]*)\{% else %\}",
+        attack_view,
+    ):
+        for slug in re.findall(r"trait == '([^']+)'", expression):
+            attack_trait_routes[slug] = destination
+    for creature in creatures:
+        for attack in creature.get("data", {}).get("attacks", []):
+            for trait in attack.get("traits", []):
+                slug = str(trait).strip().casefold().replace("_", "-").replace(" ", "-")
+                family = parameterized_trait_family(slug)
+                if family and (
+                    attack_trait_routes.get(slug) != family
+                    or family not in trait_slugs
+                ):
+                    raise SystemExit(
+                        f"parameterized attack trait has no canonical destination: "
+                        f"{creature['slug']}: {slug}"
+                    )
 
     skill_rules = {
         rule["slug"]
