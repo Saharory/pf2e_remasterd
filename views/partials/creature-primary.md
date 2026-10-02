@@ -3,7 +3,7 @@
 {% endif %}
 
 {% if data.recallKnowledge.dc %}
-[**{{'Creature.RecallKnowledge'|l}}**](/action/recall-knowledge-player-core) DC {{data.recallKnowledge.dc}}{% if data.recallKnowledge.skills %} ({% for skill in data.recallKnowledge.skills %}[{{skill|map: 'Skill'}}](/rule/{{skill}}-skill-player-core){% if not forloop.last %}, {% endif %}{% endfor %}){% endif %}
+[**{{'Creature.RecallKnowledge'|l}}**](/action/recall-knowledge-player-core){% if data.recallKnowledge.subject %}—[{{data.recallKnowledge.subject|map: 'Trait'}}](/trait/{{data.recallKnowledge.subject}}){% endif %}{% if data.recallKnowledge.skills %} ({% for skill in data.recallKnowledge.skills %}[{{skill|map: 'Skill'}}](/rule/{{skill}}-skill-player-core){% if not forloop.last %}, {% endif %}{% endfor %}){% endif %}: DC {{data.recallKnowledge.dc}}
 {% endif %}
 
 {% if data.languages %}

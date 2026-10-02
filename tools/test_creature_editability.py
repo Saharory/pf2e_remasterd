@@ -181,6 +181,7 @@ def main() -> int:
         raise SystemExit("Solar Crow Glinting Wing is missing its concealment link")
     if solar["data"].get("recallKnowledge") != {
         "dc": 27,
+        "subject": "elemental",
         "skills": ["arcana", "nature"],
     }:
         raise SystemExit("Solar Crow has the wrong elemental Recall Knowledge skills")
@@ -205,6 +206,7 @@ def main() -> int:
         raise SystemExit("Vault Builder has the wrong burrow Speed")
     if vault_data.get("recallKnowledge") != {
         "dc": 51,
+        "subject": "elemental",
         "skills": ["arcana", "nature"],
     }:
         raise SystemExit("Vault Builder has the wrong elemental Recall Knowledge skills")
@@ -376,6 +378,7 @@ def main() -> int:
     if (
         "/action/recall-knowledge-player-core" not in creature_view
         or "data.recallKnowledge.dc" not in creature_view
+        or "/trait/{{data.recallKnowledge.subject}}" not in creature_view
         or "data.languages" not in creature_view
         or "/rule/languages-rules-2080" not in creature_view
         or "/rule/skills-rules-2276" not in creature_view
@@ -457,7 +460,12 @@ def main() -> int:
 
     creature_form = form("creature.json")
     creature_fields = field_attributes(creature_form)
-    if not {"data.hardness", "data.languagesDetails", "data.loreSkills"}.issubset(creature_fields):
+    if not {
+        "data.hardness",
+        "data.languagesDetails",
+        "data.loreSkills",
+        "data.recallKnowledge.subject",
+    }.issubset(creature_fields):
         raise SystemExit("creature editor does not expose restored metadata")
     if "data.hardness" not in secondary_view:
         raise SystemExit("creature view does not render Hardness")

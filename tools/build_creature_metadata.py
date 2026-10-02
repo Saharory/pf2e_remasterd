@@ -53,14 +53,22 @@ PUBLISHED_OVERRIDES = {
         "abilityCategories": {"Retract": "offensive"},
     },
     "solar-crow-rage-of-elements": {
-        "recallKnowledge": {"dc": 27, "skills": ["arcana", "nature"]},
+        "recallKnowledge": {
+            "dc": 27,
+            "subject": "elemental",
+            "skills": ["arcana", "nature"],
+        },
         "attackTraits": {
             "0": ["finesse"],
             "1": ["agile", "finesse"],
         },
     },
     "vault-builder-rage-of-elements": {
-        "recallKnowledge": {"dc": 51, "skills": ["arcana", "nature"]},
+        "recallKnowledge": {
+            "dc": 51,
+            "subject": "elemental",
+            "skills": ["arcana", "nature"],
+        },
         "movement": {"burrow": 25},
         "attackTraits": {
             "0": ["agile", "finesse", "magical"],
