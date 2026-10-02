@@ -34,7 +34,7 @@ DEFENSE_VALUE_ROUTES = (
     ("Drained", "/condition/drained-player-core"),
     ("Doomed", "/condition/doomed-player-core"),
     ("Prone", "/condition/prone-player-core"),
-    ("Adamantine", "/item/adamantine-chunk-gm-core"),
+    ("Adamantine", "/item/adamantine-weapon-gm-core"),
     ("Disease", "/trait/disease"),
     ("Healing", "/trait/healing"),
     ("Mental", "/trait/mental"),
@@ -79,6 +79,22 @@ def link_defense_value(value: Any) -> Any:
     return text
 
 
+def link_language_details(value: Any) -> Any:
+    """Link shared communication abilities without changing custom notes."""
+    if not isinstance(value, str):
+        return value
+    route = GLOSSARY_ROUTES_BY_KEY.get(normalize("Telepathy"), "")
+    if not route or route in value:
+        return value
+    return re.sub(
+        r"(?<![\w\[])(telepathy)(?![\w])",
+        lambda match: f"[{match.group(0).title()}]({route})",
+        value,
+        count=1,
+        flags=re.I,
+    )
+
+
 def configure_creature_metadata(entity: dict[str, Any]) -> bool:
     if entity.get("kind") != "Creature":
         return False
@@ -94,6 +110,8 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
     if derived:
         data["immunities"] = merge_unique(data.get("immunities") or [], derived)
     if not metadata:
+        if data.get("languagesDetails"):
+            data["languagesDetails"] = link_language_details(data["languagesDetails"])
         data["immunities"] = [
             link_defense_value(value) for value in data.get("immunities") or []
         ]
@@ -106,10 +124,12 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
         return json.dumps(data, sort_keys=True) != before
     if metadata.get("senses"):
         data["senses"] = metadata["senses"]
+    if metadata.get("recallKnowledge"):
+        data["recallKnowledge"] = metadata["recallKnowledge"]
     if "languages" in metadata:
         data["languages"] = metadata["languages"]
     if metadata.get("languagesDetails"):
-        data["languagesDetails"] = metadata["languagesDetails"]
+        data["languagesDetails"] = link_language_details(metadata["languagesDetails"])
     if metadata.get("loreSkills"):
         data["loreSkills"] = metadata["loreSkills"]
         skills = data.get("skills")
@@ -178,10 +198,14 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
                 abilities.setdefault(destination, []).append(selected)
 
     attack_types = metadata.get("attackTypes") or {}
+    attack_traits = metadata.get("attackTraits") or {}
     for index, attack in enumerate(data.get("attacks") or []):
         supplied = attack_types.get(str(index))
         if supplied:
             attack["type"] = supplied
+        supplied_traits = attack_traits.get(str(index))
+        if supplied_traits:
+            attack["traits"] = supplied_traits
 
     linked_attack_abilities: set[str] = set()
     attack_effects = metadata.get("attackEffects") or {}

@@ -89,7 +89,7 @@
           },
           {
             "name": "Undermine",
-            "text": "**Requirements** The sapper squad is underground; **Effect** The sappers deploy explosive charges to displace the earth above them. The surface area within 15 feet directly above the sappers' spaces becomes difficult terrain until the start of their next turn. Any creature already in the area takes 1d6 bludgeoning damage (DC 18 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). On a critical failure, the creature also falls prone.",
+            "text": "**Requirements** The sapper squad is underground; **Effect** The sappers deploy explosive charges to displace the [earth](/trait/earth) above them. The surface area within 15 feet directly above the sappers' spaces becomes difficult terrain until the start of their next turn. Any creature already in the area takes 1d6 bludgeoning damage (DC 18 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). On a critical failure, the creature also falls prone.",
             "traits": [],
             "actions": "three"
           }
@@ -215,7 +215,7 @@
         "defensive": [
           {
             "name": "Crushing Despair",
-            "text": "10 feet, DC 24. Enemy creatures that enter or begin their turn in the area must attempt a Will save. Regardless of the result of the saving throw, the creature is then temporarily immune to the aura for 1 minute.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is frightened 1.\n\n**Failure** The creature is frightened 1 and can’t use reactions for 1 round.\n\n**Critical Failure** As failure, and the creature slowed 1 as it sobs uncontrollably.",
+            "text": "10 feet, DC 24. Enemy creatures that enter or begin their turn in the area must attempt a Will save. Regardless of the result of the saving throw, the creature is then temporarily immune to the aura for 1 minute.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature is frightened 1.\n\n **Failure** The creature is frightened 1 and can’t use reactions for 1 round.\n\n **Critical Failure** As failure, and the creature [slowed](/condition/slowed-player-core) 1 as it sobs uncontrollably.",
             "traits": [
               "aura",
               "divine",
@@ -878,7 +878,7 @@
           },
           {
             "name": "Pacify",
-            "text": "The unit's Whirling Onslaught gains the nonlethal trait until the end of their next turn.",
+            "text": "The unit's Whirling Onslaught gains the [nonlethal](/trait/nonlethal) trait until the end of their next turn.",
             "traits": [],
             "actions": "one"
           },
@@ -889,7 +889,7 @@
           },
           {
             "name": "You're Coming with Us",
-            "text": "**Trigger** The unit Strides; **Requirements** The unit has one or more creatures grabbed or restrained; **Effect** Before moving any of its segments, the unit attempts a single Athletics check against the Fortitude DC of all creatures it has grabbed or restrained. On a success, the creature is moved alongside the unit, moving the same distance and direction until the end of the unit's current turn. The unit can't move a total number of creatures greater than double its current number of segments.",
+            "text": "**Trigger** The unit Strides; **Requirements** The unit has one or more creatures [grabbed](/condition/grabbed-player-core) or restrained; **Effect** Before moving any of its segments, the unit attempts a single Athletics check against the Fortitude DC of all creatures it has grabbed or restrained. On a success, the creature is moved alongside the unit, moving the same distance and direction until the end of the unit's current turn. The unit can't move a total number of creatures greater than double its current number of segments.",
             "traits": [],
             "actions": "free"
           }
@@ -1315,7 +1315,7 @@
         "offensive": [
           {
             "name": "Subservience",
-            "text": "An ort mob can be commandeered by any non-ort devil within 60 feet of it with a single action, which has the auditory and concentrate traits. The devil picks one of the following commands, and the ort mob follows it to the best of their ability. The command and its effects end once the commander is out of the mob's sight or when a new command is issued by the same or another devil.\n\n- **Hustle** The mob gains a +10-foot circumstance bonus to its Speed until the command ends.\n- **Kill** The mob moves adjacent to one target singled out by its commander and spends all its available actions to use Grasping Claws until the target is dead or the command ends. The targeted creature takes a –1 circumstance penalty to its Reflex save against Grasping Claws and it takes an additional 1d6 slashing damage from the attack.\n- **Rally** The mob moves so that it shares a space with its commander. The commander doesn't treat the mob's spaces as difficult terrain and gains lesser cover while it's in the mob's spaces until the command ends.\n- **Work** The mob performs drudge work dictated by its commander. Faceless Horde An ort mob is less organized than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to other creatures.",
+            "text": "An ort mob can be commandeered by any non-ort devil within 60 feet of it with a single action, which has the auditory and [concentrate](/trait/concentrate) traits. The devil picks one of the following commands, and the ort mob follows it to the best of their ability. The command and its effects end once the commander is out of the mob's sight or when a new command is issued by the same or another devil.\n\n- **Hustle** The mob gains a +10-foot circumstance bonus to its Speed until the command ends.\n- **Kill** The mob moves adjacent to one target singled out by its commander and spends all its available actions to use Grasping Claws until the target is dead or the command ends. The targeted creature takes a –1 circumstance penalty to its Reflex save against Grasping Claws and it takes an additional 1d6 slashing damage from the attack.\n- **Rally** The mob moves so that it shares a space with its commander. The commander doesn't treat the mob's spaces as difficult terrain and gains lesser cover while it's in the mob's spaces until the command ends.\n- **Work** The mob performs drudge work dictated by its commander. Faceless Horde An ort mob is less organized than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to other creatures.",
             "traits": []
           },
           {
@@ -1451,7 +1451,7 @@
         "defensive": [
           {
             "name": "Nonbelievers",
-            "text": "When attempting a saving throw against a spell or effect with the divine trait, a Pure Legion regiment gets an outcome one degree better than the result of their roll. However, the regiment can't ever be a willing target for helpful divine spells.",
+            "text": "When attempting a saving throw against a spell or effect with the [divine](/trait/divine) trait, a Pure Legion regiment gets an outcome one degree better than the result of their roll. However, the regiment can't ever be a willing target for helpful divine spells.",
             "traits": []
           }
         ],
@@ -1464,7 +1464,7 @@
           },
           {
             "name": "Denounce Divinity",
-            "text": "**Frequency** once per day; **Effect** With one voice, the Pure Legion regiment decries the authority of a single deity of their choice, forcing all worshippers of that deity within a 30-foot emanation to attempt a DC 28 Will save. Regardless of the result of the saving throw, a creature is temporarily immune to Denounce Divinity for 24 hours.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature becomes stupefied 1 for 1 hour, with the flat check from stupefied for Casting a Spell applying exclusively to spells from the divine tradition.\n\n**Failure** As success, but the creature is stupefied 2.\n\n**Critical Failure** As success, but the creature is stupefied 3 and frightened 1 as their faith is shaken to its core.",
+            "text": "**Frequency** once per day; **Effect** With one voice, the Pure Legion regiment decries the authority of a single deity of their choice, forcing all worshippers of that deity within a 30-foot emanation to attempt a DC 28 Will save. Regardless of the result of the saving throw, a creature is temporarily immune to Denounce Divinity for 24 hours.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature becomes stupefied 1 for 1 hour, with the flat check from stupefied for Casting a Spell applying exclusively to spells from the [divine](/trait/divine) tradition.\n\n **Failure** As success, but the creature is stupefied 2.\n\n **Critical Failure** As success, but the creature is stupefied 3 and frightened 1 as their faith is shaken to its core.",
             "traits": [
               "auditory",
               "linguistic",
@@ -1474,7 +1474,7 @@
           },
           {
             "name": "Rebuking Strike",
-            "text": "**Frequency** once per round; **Effect** The regiment strikes with their longswords against enemies in a 5-foot emanation (DC 26 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Damage dealt depends on the number of actions. If a creature critically fails the Reflex save while affected by the regiment's Denounce Divinity, it is unable to reduce its stupefied or frightened condition by any means for 1 round.\n**Single Action** 1d8+2 slashing damage\n **Two Actions** 2d8+11 slashing damage\n **Three Actions** 3d8+13 slashing damage.",
+            "text": "**Frequency** once per round; **Effect** The regiment strikes with their longswords against enemies in a 5-foot emanation (DC 26 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Damage dealt depends on the number of actions. If a creature critically fails the Reflex save while affected by the regiment's Denounce Divinity, it is unable to reduce its stupefied or [frightened](/condition/frightened-player-core) condition by any means for 1 round.\n**Single Action** 1d8+2 slashing damage\n **Two Actions** 2d8+11 slashing damage\n **Three Actions** 3d8+13 slashing damage.",
             "traits": []
           }
         ]
@@ -1629,7 +1629,7 @@
         "interaction": [
           {
             "name": "Painsight",
-            "text": "Each member of a sacristan scourge automatically knows whether a creature they can see has any of the doomed, dying, and wounded conditions, as well as the value of those conditions.",
+            "text": "Each member of a sacristan scourge automatically knows whether a creature they can see has any of the doomed, dying, and [wounded](/condition/wounded-player-core) conditions, as well as the value of those conditions.",
             "traits": [
               "divine"
             ]
@@ -1663,7 +1663,7 @@
           },
           {
             "name": "Shadow Scream",
-            "text": "**Frequency** once per hour; **Effect** The sacristans open their mouths in unison to unleash a chorus of ghastly wailing infused with the mind-shattering darkness of the Netherworld. This creates a 30-foot emanation of darkness and pandemonium around it that's impenetrable even to creatures with darkvision (but not greater darkvision). They can Sustain Shadow Scream for up to 1 minute. Non-velstrac creatures in the area when the ability is used, as well as those that enter or start their turn in the area, must attempt a DC 33 Will save.\n\n**Critical Success** The creature is unaffected and is temporarily immune for 24 hours.\n\n**Success** The creature is deafened for 1 round.\n\n**Failure** The creature is confused and deafened for 1 round.\n\n**Critical Failure** The creature takes 60 mental damage and is confused and deafened for 1 round.",
+            "text": "**Frequency** once per hour; **Effect** The sacristans open their mouths in unison to unleash a chorus of ghastly wailing infused with the mind-shattering darkness of the Netherworld. This creates a 30-foot emanation of darkness and pandemonium around it that's impenetrable even to creatures with darkvision (but not greater darkvision). They can Sustain Shadow Scream for up to 1 minute. Non-velstrac creatures in the area when the ability is used, as well as those that enter or start their turn in the area, must attempt a DC 33 Will save.\n\n **Critical Success** The creature is unaffected and is temporarily immune for 24 hours.\n\n **Success** The creature is deafened for 1 round.\n\n **Failure** The creature is confused and deafened for 1 round.\n\n **Critical Failure** The creature takes 60 mental damage and is confused and deafened for 1 round.",
             "traits": [
               "aura",
               "concentrate",
@@ -1976,7 +1976,7 @@
           },
           {
             "name": "Wrath of Asmodeus",
-            "text": "The champions channel the infernal power of Hell itself into their strikes. If their next action is a Massacre that deals damage to at least one creature, all creatures that take damage from Massacre must also attempt a DC 27 Will save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is frightened 1.\n\n**Failure** The creature is frightened 2.\n\n**Critical Failure** The creature is frightened 2, becomes stupefied 2 for 1 round, and takes 1d6 persistent fire damage.",
+            "text": "The champions channel the infernal power of Hell itself into their strikes. If their next action is a Massacre that deals damage to at least one creature, all creatures that take damage from Massacre must also attempt a DC 27 Will save.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature is frightened 1.\n\n **Failure** The creature is frightened 2.\n\n **Critical Failure** The creature is frightened 2, becomes stupefied 2 for 1 round, and takes 1d6 persistent fire damage.",
             "traits": [
               "divine",
               "emotion",
@@ -2111,7 +2111,7 @@
           },
           {
             "name": "Undercover",
-            "text": "By spending 2 hours preparing disguises, performing reconnaissance, and the like, the infiltrators can convincingly impersonate any troop unit of their level or lower that has the humanoid trait. Alternatively, they can disguise themselves as a mixed assortment of humanoid noncombatants who don't obviously form a cohesive unit. This functions as the Impersonate action with the infiltrators gaining a +2 circumstance bonus to their Deception DC. Infiltrators can't use Undercover to appear as specific individuals, nor can they impersonate groups that require resources unavailable to them, at the GM's discretion (impersonating a cavalry unit without access to mounts, for example).",
+            "text": "By spending 2 hours preparing disguises, performing reconnaissance, and the like, the infiltrators can convincingly impersonate any troop unit of their level or lower that has the [humanoid](/trait/humanoid) trait. Alternatively, they can disguise themselves as a mixed assortment of humanoid noncombatants who don't obviously form a cohesive unit. This functions as the [Impersonate](/action/impersonate-player-core) action with the infiltrators gaining a +2 circumstance bonus to their Deception DC. Infiltrators can't use Undercover to appear as specific individuals, nor can they impersonate groups that require resources unavailable to them, at the GM's discretion (impersonating a cavalry unit without access to mounts, for example).",
             "traits": [
               "concentrate",
               "exploration",

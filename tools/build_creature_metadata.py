@@ -52,12 +52,32 @@ PUBLISHED_OVERRIDES = {
         "attackTypes": {"2": "ranged"},
         "abilityCategories": {"Retract": "offensive"},
     },
+    "solar-crow-rage-of-elements": {
+        "recallKnowledge": {"dc": 27, "skills": ["arcana", "nature"]},
+        "attackTraits": {
+            "0": ["finesse"],
+            "1": ["agile", "finesse"],
+        },
+    },
     "vault-builder-rage-of-elements": {
+        "recallKnowledge": {"dc": 51, "skills": ["arcana", "nature"]},
         "movement": {"burrow": 25},
+        "attackTraits": {
+            "0": ["agile", "finesse", "magical"],
+            "3": ["earth", "finesse", "magical", "range-increment-100"],
+        },
         "removeAbilities": [
             "+1 Status to All Saves vs. Magic",
             "+4 Status to All Saves vs. Earth",
         ],
+    },
+    "adult-executor-dragon-draconic-codex-creature-creature-4139": {
+        "savesDetails": "+2 status to all saves vs. [divine](/trait/divine)",
+        "weaknesses": {"divine-sanctification": 10},
+        "attackTraits": {
+            "0": ["magical", "reach-10", "sanctified"],
+            "2": ["magical", "reach-15", "sanctified"],
+        },
     },
 }
 
@@ -274,18 +294,22 @@ def main() -> int:
     catalog: dict[str, dict[str, Any]] = {}
     for creature in staging_creatures(args.staging):
         foundry_id = str(creature.get("attributes", {}).get("foundryId") or "")
-        candidates = actors.get(foundry_id, [])
-        if not candidates:
-            continue
-        actor = next((value for value in candidates if value.get("name") == creature.get("name")), candidates[0])
         slug = str(creature["slug"])
-        metadata = actor_metadata(actor, creature, item_routes)
+        candidates = actors.get(foundry_id, [])
+        metadata: dict[str, Any] = {}
+        if candidates:
+            actor = next(
+                (value for value in candidates if value.get("name") == creature.get("name")),
+                candidates[0],
+            )
+            metadata = actor_metadata(actor, creature, item_routes)
         for field, supplied in PUBLISHED_OVERRIDES.get(slug, {}).items():
             if isinstance(supplied, dict):
                 metadata.setdefault(field, {}).update(supplied)
             else:
                 metadata[field] = supplied
-        catalog[slug] = metadata
+        if metadata:
+            catalog[slug] = metadata
     payload = {"stats": {"creatures": len(catalog)}, "creatures": dict(sorted(catalog.items()))}
     args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(payload["stats"], sort_keys=True))

@@ -48,6 +48,35 @@ EXPECTED_DISPLAY_ONLY = {
 ABILITY_GRANTED_SPELL_QUALIFIERS = {"echo the past"}
 
 
+def compact_repeated_spells(spells: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Collapse identical prepared slots into one editable ``×N`` entry."""
+    compacted: list[dict[str, Any]] = []
+    positions: dict[tuple[Any, ...], int] = {}
+    counts: dict[tuple[Any, ...], int] = {}
+    for spell in spells:
+        key = (
+            spell.get("name"),
+            spell.get("rank"),
+            spell.get("reference"),
+            bool(spell.get("atWill")),
+            spell.get("details"),
+        )
+        if key not in positions:
+            positions[key] = len(compacted)
+            counts[key] = 1
+            compacted.append(dict(spell))
+            continue
+        counts[key] += 1
+
+    for key, count in counts.items():
+        if count < 2:
+            continue
+        entry = compacted[positions[key]]
+        details = str(entry.get("details") or "")
+        entry["details"] = "; ".join(filter(None, (details, f"×{count}")))
+    return compacted
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--staging", type=Path, default=DEFAULT_STAGING)
@@ -306,7 +335,12 @@ def actor_spellcasting(
             else:
                 slot = slots.get(f"slot{rank}") or {}
                 label = group_label(mode, rank, int(slot.get("max") or 0))
-            spell_groups.append({"label": label, "spells": grouped[(kind, rank)]})
+            spell_groups.append(
+                {
+                    "label": label,
+                    "spells": compact_repeated_spells(grouped[(kind, rank)]),
+                }
+            )
 
         if not spell_groups:
             continue
@@ -480,25 +514,23 @@ def main() -> int:
     actors = actor_index(args.foundry)
     aon_records = aon_index(args.aon)
     catalog: dict[str, dict[str, Any]] = {}
-    totals = defaultdict(int)
 
     for creature in staging_creatures(args.staging):
         attributes = creature.get("attributes", {})
         foundry_id = str(attributes.get("foundryId") or "")
         spellcasting: list[dict[str, Any]] = []
         rituals: dict[str, Any] | None = None
-        stats: dict[str, int] = {"linked": 0, "unresolved": 0, "spells": 0, "rituals": 0}
         if foundry_id and foundry_id in actors:
             candidates = actors[foundry_id]
             actor = next(
                 (value for value in candidates if value.get("name") == creature.get("name")),
                 candidates[0],
             )
-            spellcasting, rituals, stats = actor_spellcasting(actor, indexes)
+            spellcasting, rituals, _ = actor_spellcasting(actor, indexes)
         else:
             aon_id = str(attributes.get("aonId") or "")
             if aon_id in aon_records:
-                spellcasting, rituals, stats = aon_spellcasting(aon_records[aon_id], indexes)
+                spellcasting, rituals, _ = aon_spellcasting(aon_records[aon_id], indexes)
         if not spellcasting and not rituals:
             continue
         value: dict[str, Any] = {}
@@ -507,9 +539,27 @@ def main() -> int:
         if rituals:
             value["rituals"] = rituals
         catalog[str(creature["slug"])] = value
-        totals["creatures"] += 1
-        for key, count in stats.items():
-            totals[key] += count
+
+    # Report the compact entries that users actually receive, rather than raw
+    # prepared slots consumed while building the catalog.
+    totals = defaultdict(int)
+    totals["creatures"] = len(catalog)
+    for configured in catalog.values():
+        entries = [
+            spell
+            for casting in configured.get("spellcasting", [])
+            for group in casting.get("spellGroups", [])
+            for spell in group.get("spells", [])
+        ]
+        ritual_entries = [
+            ritual
+            for group in configured.get("rituals", {}).get("ritualGroups", [])
+            for ritual in group.get("rituals", [])
+        ]
+        totals["spells"] += len(entries)
+        totals["rituals"] += len(ritual_entries)
+        for entry in [*entries, *ritual_entries]:
+            totals["linked" if entry.get("reference") else "unresolved"] += 1
 
     output = {
         "stats": dict(sorted(totals.items())),

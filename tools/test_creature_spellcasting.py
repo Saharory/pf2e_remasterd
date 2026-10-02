@@ -40,7 +40,7 @@ def main() -> int:
 
     if len(CREATURE_SPELLCASTING) < 680:
         raise SystemExit("creature spellcasting catalog is unexpectedly incomplete")
-    if CATALOG_STATS.get("spells", 0) < 6100 or CATALOG_STATS.get("rituals", 0) < 140:
+    if CATALOG_STATS.get("spells", 0) < 6000 or CATALOG_STATS.get("rituals", 0) < 140:
         raise SystemExit("creature spell or ritual totals are unexpectedly incomplete")
 
     unresolved: set[tuple[str, str]] = set()
@@ -65,6 +65,22 @@ def main() -> int:
             for spell in group.get("spells", [])
         ]
         spell_count += len(entries)
+        for casting in configured.get("spellcasting", []):
+            for group in casting.get("spellGroups", []):
+                identities = [
+                    (
+                        spell.get("name"),
+                        spell.get("rank"),
+                        spell.get("reference"),
+                        bool(spell.get("atWill")),
+                        spell.get("details"),
+                    )
+                    for spell in group.get("spells", [])
+                ]
+                if len(identities) != len(set(identities)):
+                    raise SystemExit(
+                        f"duplicate creature spell entry was not compacted: {slug}: {group.get('label')}"
+                    )
         for entry in entries:
             if entry.get("atWill"):
                 at_will += 1
@@ -169,8 +185,8 @@ def main() -> int:
         for section in spell_form.get("sections", [])
         for field in section.get("fields", [])
     }
-    if "atWill" not in spell_form_attributes:
-        raise SystemExit("at-will spell state is not editable")
+    if not {"atWill", "details"}.issubset(spell_form_attributes):
+        raise SystemExit("at-will and repeated-spell details must remain editable")
 
     print(
         f"Validated {linked} linked spell/ritual references on "

@@ -179,6 +179,20 @@ def main() -> int:
     }
     if "[concealment](/condition/concealed-player-core)" not in solar_abilities["Glinting Wing"]["text"]:
         raise SystemExit("Solar Crow Glinting Wing is missing its concealment link")
+    if solar["data"].get("recallKnowledge") != {
+        "dc": 27,
+        "skills": ["arcana", "nature"],
+    }:
+        raise SystemExit("Solar Crow has the wrong elemental Recall Knowledge skills")
+    if [attack.get("traits") for attack in solar["data"].get("attacks", [])] != [
+        ["finesse"],
+        ["agile", "finesse"],
+    ]:
+        raise SystemExit("Solar Crow natural Strikes retain the incorrect unarmed trait")
+    solar_outcomes = str(solar_abilities["Blinding Heat"].get("text") or "")
+    for label in ("Critical Success", "Success", "Failure", "Critical Failure"):
+        if f"\u2003**{label}**" not in solar_outcomes:
+            raise SystemExit(f"Solar Crow outcome is not grouped under Blinding Heat: {label}")
 
     vault = by_slug["vault-builder-rage-of-elements"]
     vault_data = vault["data"]
@@ -189,11 +203,37 @@ def main() -> int:
     }
     if vault_data.get("movement", {}).get("burrow") != 25:
         raise SystemExit("Vault Builder has the wrong burrow Speed")
-    expected_resistance = "20 (except [Adamantine](/item/adamantine-chunk-gm-core))"
+    if vault_data.get("recallKnowledge") != {
+        "dc": 51,
+        "skills": ["arcana", "nature"],
+    }:
+        raise SystemExit("Vault Builder has the wrong elemental Recall Knowledge skills")
+    if vault_data.get("languagesDetails") != "[Telepathy](/action/telepathy-monster-core) 300 feet":
+        raise SystemExit("Vault Builder telepathy is not linked to its internal rule")
+    expected_resistance = "20 (except [Adamantine](/item/adamantine-weapon-gm-core))"
     if vault_data.get("resistances", {}).get("physical") != expected_resistance:
         raise SystemExit("Vault Builder physical resistance lacks its adamantine exception link")
     if vault_abilities.get("Reactive Strike", {}).get("reference") != "/action/reactive-strike-monster-core":
         raise SystemExit("Vault Builder does not use the remastered Reactive Strike reference")
+    craft_text = str(vault_abilities.get("Craft Crystal Wand", {}).get("text") or "")
+    for expected in (
+        "[earth](/trait/earth)",
+        "[greater striking](/item/striking-greater-gm-core)",
+    ):
+        if expected not in craft_text:
+            raise SystemExit(f"Vault Builder Craft Crystal Wand is missing: {expected}")
+    shard = next(attack for attack in vault_data["attacks"] if attack["name"] == "Crystal Shard")
+    if shard.get("traits") != ["earth", "finesse", "magical", "range-increment-100"]:
+        raise SystemExit("Vault Builder crystal shard is missing finesse or its range increment")
+    prepared = vault_data["spellcasting"][0]["spellGroups"]
+    prepared_spells = {
+        (spell["name"], spell.get("details"))
+        for group in prepared
+        for spell in group["spells"]
+    }
+    for repeated in (("Disintegrate", "×2"), ("Earthquake", "×2"), ("Haste", "×2")):
+        if repeated not in prepared_spells:
+            raise SystemExit(f"Vault Builder prepared spell is not compacted: {repeated[0]}")
     if "+1 Status to All Saves vs. Magic" in vault_abilities or "+4 Status to All Saves vs. Earth" in vault_abilities:
         raise SystemExit("Vault Builder repeats save details as empty abilities")
 
@@ -219,6 +259,17 @@ def main() -> int:
             re.I,
         ):
             raise SystemExit(f"Adult Executor Dragon action metadata is not structured: {name}")
+    executor_data = executor["data"]
+    sanctification = str(executor_abilities["Divine Sanctification"].get("text") or "")
+    if "[holy](/trait/holy)" not in sanctification or "[unholy](/trait/unholy)" not in sanctification:
+        raise SystemExit("Adult Executor Dragon sanctification choices are not linked")
+    if executor_data.get("saves", {}).get("details") != "+2 status to all saves vs. [divine](/trait/divine)":
+        raise SystemExit("Adult Executor Dragon is missing its divine save bonus")
+    if executor_data.get("weaknesses", {}).get("divine-sanctification") != 10:
+        raise SystemExit("Adult Executor Dragon is missing its opposing sanctification weakness")
+    executor_attacks = {attack["name"]: attack for attack in executor_data["attacks"]}
+    if "reach-10" not in executor_attacks["jaws"]["traits"] or "reach-15" not in executor_attacks["tail"]["traits"]:
+        raise SystemExit("Adult Executor Dragon reach values are incomplete")
 
     army_ants = by_slug["army-ant-swarm-monster-core"]
     if "[Scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet" not in army_ants["data"]["senses"]:
@@ -231,7 +282,7 @@ def main() -> int:
     bone_prophet = by_slug["bone-prophet-monster-core"]
     if "([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet" not in bone_prophet["data"].get("senses", ""):
         raise SystemExit("Bone Prophet is missing its scent acuity")
-    if bone_prophet["data"].get("languagesDetails") != "Telepathy 100 feet":
+    if bone_prophet["data"].get("languagesDetails") != "[Telepathy](/action/telepathy-monster-core) 100 feet":
         raise SystemExit("Bone Prophet is missing its language details")
 
     adamantine_dragon = by_slug["adamantine-dragon-young-monster-core"]
@@ -244,7 +295,7 @@ def main() -> int:
         for ability in dragon_data["abilities"]["interaction"]
     ):
         raise SystemExit("Adamantine Dragon repeats Tremorsense as an interaction ability")
-    if dragon_data.get("resistances", {}).get("physical") != "10 (except [adamantine](/item/adamantine-chunk-gm-core))":
+    if dragon_data.get("resistances", {}).get("physical") != "10 (except [adamantine](/item/adamantine-weapon-gm-core))":
         raise SystemExit("Adamantine Dragon is missing its printed physical resistance")
     dragon_abilities = {
         ability["name"]: ability
@@ -346,6 +397,13 @@ def main() -> int:
         raise SystemExit("individual creature defenses still point to a generic category rule")
     if " contains " in attack_view:
         raise SystemExit("creature attack view uses an unsupported template expression")
+    for route_fragment in (
+        "range-and-reach-rules-2379",
+        "trait == 'reach-10'",
+        "trait == 'reach-15'",
+    ):
+        if route_fragment not in attack_view:
+            raise SystemExit(f"creature attack view is missing parameterized routing: {route_fragment}")
 
     trait_slugs = {record["slug"] for record in records("traits.json")}
     attack_trait_routes: dict[str, str] = {}
@@ -386,6 +444,16 @@ def main() -> int:
             or rule.get("data", {}).get("referenceUrl")
         ):
             raise SystemExit(f"skill reference is not imported Player Core content: {slug}")
+
+    items = {record["slug"]: record for record in records("items.json")}
+    adamantine_weapon = items.get("adamantine-weapon-gm-core", {})
+    if (
+        adamantine_weapon.get("name") != "Adamantine Weapon"
+        or adamantine_weapon.get("data", {}).get("subcategory") != "preciousMaterialWeapon"
+        or adamantine_weapon.get("attributes", {}).get("contentOrigin") != "GM Core (ORC)"
+        or re.search(r"\]\(https?://", str(adamantine_weapon.get("descr") or ""))
+    ):
+        raise SystemExit("Adamantine Weapon is not an imported internal GM Core reference")
 
     creature_form = form("creature.json")
     creature_fields = field_attributes(creature_form)

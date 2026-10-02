@@ -107,7 +107,7 @@
         "offensive": [
           {
             "name": "Divine Protection",
-            "text": "**Frequency** once per day; **Effect** The abbot beseeches their deity to protect someone in their charge, attempting a Religion DC 25 check. If it succeeds, a divine [Sanctuary](/spell/sanctuary-player-core) spell affects one of the abbot's allies within 60 feet. The Will DC is 17.",
+            "text": "**Frequency** once per day; **Effect** The abbot beseeches their deity to protect someone in their charge, attempting a Religion DC 25 check. If it succeeds, a [divine](/trait/divine) [Sanctuary](/spell/sanctuary-player-core) spell affects one of the abbot's allies within 60 feet. The Will DC is 17.",
             "traits": [
               "concentrate"
             ],
@@ -471,22 +471,8 @@
                 {
                   "name": "Heal",
                   "rank": 1,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 1,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 1,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 1,
-                  "reference": "/spell/heal-player-core"
+                  "reference": "/spell/heal-player-core",
+                  "details": "×4"
                 },
                 {
                   "name": "Sanctuary",
@@ -4668,7 +4654,7 @@
         "offensive": [
           {
             "name": "False Blessing",
-            "text": "The blasphemer attempts a Religion DC 15 check to attempt to cast the 1st-rank spell their deity grants to clerics ([Phantom Pain](/spell/phantom-pain-player-core) for Zon-Kuthon). The spell must take 1, 2, or 3 actions to Cast. The blasphemer can use twisted faith to roll Deception DC 15 instead if they have a witness, as normal.\n\n**Critical Success** The blasphemer successfully Casts the Spell, then is [Stunned](/condition/stunned-player-core) with a value equal to the number of actions the spell takes – 1.\n\n**Success** As critical success, plus the blasphemer takes 1d6 mental damage.\n\n**Failure** The blasphemer fails to Cast the Spell and takes 1d6 mental damage.\n\n**Critical Failure** The blasphemer fails to Cast the Spell, takes 2d6 mental damage, and is Stunned 1.",
+            "text": "The blasphemer attempts a Religion DC 15 check to attempt to cast the 1st-rank spell their deity grants to clerics ([Phantom Pain](/spell/phantom-pain-player-core) for Zon-Kuthon). The spell must take 1, 2, or 3 actions to Cast. The blasphemer can use twisted faith to roll Deception DC 15 instead if they have a witness, as normal.\n\n **Critical Success** The blasphemer successfully Casts the Spell, then is [Stunned](/condition/stunned-player-core) with a value equal to the number of actions the spell takes – 1.\n\n **Success** As critical success, plus the blasphemer takes 1d6 mental damage.\n\n **Failure** The blasphemer fails to Cast the Spell and takes 1d6 mental damage.\n\n **Critical Failure** The blasphemer fails to Cast the Spell, takes 2d6 mental damage, and is Stunned 1.",
             "traits": [
               "manipulate"
             ],
@@ -6900,7 +6886,7 @@
           },
           {
             "name": "Smite",
-            "text": "The champion chooses one enemy they can see. Their Strikes against that enemy gain a +4 status bonus to damage, or +8 if the target is unholy.\n\nThis benefit lasts until the start of the champion's next turn, but if the target takes a hostile action against the champion or one of their allies, the duration is extended until the end of the target's next turn (this can be extended indefinitely if the target keeps taking hostile actions on subsequent rounds).",
+            "text": "The champion chooses one enemy they can see. Their Strikes against that enemy gain a +4 status bonus to damage, or +8 if the target is [unholy](/trait/unholy).\n\nThis benefit lasts until the start of the champion's next turn, but if the target takes a hostile action against the champion or one of their allies, the duration is extended until the end of the target's next turn (this can be extended indefinitely if the target keeps taking hostile actions on subsequent rounds).",
             "traits": [
               "concentrate"
             ],
@@ -8197,7 +8183,7 @@
         "offensive": [
           {
             "name": "Sow Doubt",
-            "text": "The conspiracist argues that their enemies have been hoodwinked into attacking them by nefarious powers. The conspiracist attempts a single Deception check against the Will DCs of all enemies that can hear them.\n\n**Critical Success** The enemy fully believes the conspiracist, becoming [Stupefied 2](/condition/stupefied-player-core) for 1 minute. If the creature was already stupefied 2, they become [Controlled](/condition/controlled-player-core) by the conspiracist until the end of the encounter.\n\n**Success** The enemy has trouble disbelieving the conspiracist's logic, becoming Stupefied 1 for 1 minute. If they're already stupefied 1, they become stupefied 2.\n\n**Failure** The enemy is unconvinced, but a seed of doubt remains.\n\n**Critical Failure** The enemy sees through the conspiracist's act, becoming immune to Sow Doubt for 24 hours.",
+            "text": "The conspiracist argues that their enemies have been hoodwinked into attacking them by nefarious powers. The conspiracist attempts a single Deception check against the Will DCs of all enemies that can hear them.\n\n **Critical Success** The enemy fully believes the conspiracist, becoming [Stupefied 2](/condition/stupefied-player-core) for 1 minute. If the creature was already stupefied 2, they become [Controlled](/condition/controlled-player-core) by the conspiracist until the end of the encounter.\n\n **Success** The enemy has trouble disbelieving the conspiracist's logic, becoming Stupefied 1 for 1 minute. If they're already stupefied 1, they become stupefied 2.\n\n **Failure** The enemy is unconvinced, but a seed of doubt remains.\n\n **Critical Failure** The enemy sees through the conspiracist's act, becoming immune to Sow Doubt for 24 hours.",
             "traits": [
               "auditory",
               "concentrate",
@@ -8833,7 +8819,7 @@
         "offensive": [
           {
             "name": "No Peeking!",
-            "text": "The jester blows chalk or face powder in an adjacent enemy's face. The target must make a Fortitude DC 29 saving throw.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Failure** target is dazzled and [Off Guard](/condition/off-guard-player-core) for 1 round.\n\n**Critical Failure** The target is [Blinded](/condition/blinded-player-core) for 1 round.",
+            "text": "The jester blows chalk or face powder in an adjacent enemy's face. The target must make a Fortitude DC 29 saving throw.\n\n **Critical Success** The target is unaffected.\n\n **Success** The target is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n **Failure** target is dazzled and [Off Guard](/condition/off-guard-player-core) for 1 round.\n\n **Critical Failure** The target is [Blinded](/condition/blinded-player-core) for 1 round.",
             "traits": [],
             "actions": "one"
           },
@@ -9631,7 +9617,7 @@
         "offensive": [
           {
             "name": "Gather Converts",
-            "text": "With a short emotional phrase, the cult leader tries to sway the public to do their bidding. The cult leader tries to convince up to four bystanders in a crowd to cause a commotion, turn against a person or group, leave the area, protect the cult leader, or calm down. The cult leader attempts a single Deception check against the highest Perception DC among the targets.\n\n**Critical Success** The targets believe the lie and act as directed for 1 minute. Additionally, one bystander remains by the cult leader's side, influenced enough to join the cult. All other targets become wise to the cult leader after 1 minute, at which point their attitude toward the leader worsens by one step.\n\n**Success** As a critical success, but no bystander joins the cult permanently.\n\n**Critical Failure** The crowd is unmoved and unamused, and their attitude toward the cult leader worsens by one step.",
+            "text": "With a short emotional phrase, the cult leader tries to sway the public to do their bidding. The cult leader tries to convince up to four bystanders in a crowd to cause a commotion, turn against a person or group, leave the area, protect the cult leader, or calm down. The cult leader attempts a single Deception check against the highest Perception DC among the targets.\n\n **Critical Success** The targets believe the lie and act as directed for 1 minute. Additionally, one bystander remains by the cult leader's side, influenced enough to join the cult. All other targets become wise to the cult leader after 1 minute, at which point their attitude toward the leader worsens by one step.\n\n **Success** As a critical success, but no bystander joins the cult permanently.\n\n **Critical Failure** The crowd is unmoved and unamused, and their attitude toward the cult leader worsens by one step.",
             "traits": [
               "auditory",
               "concentrate",
@@ -10074,7 +10060,7 @@
         "interaction": [
           {
             "name": "Incurable Curse",
-            "text": "The curse monger is permanently [Clumsy 1](/condition/clumsy-player-core), [Drained 1](/condition/drained-player-core), [Enfeebled 1](/condition/enfeebled-player-core), or [Stupefied 1](/condition/stupefied-player-core) by a curse that can't be removed from them in any way. The GM chooses the condition and decides whether the curse is arcane, divine, occult, or primal.",
+            "text": "The curse monger is permanently [Clumsy 1](/condition/clumsy-player-core), [Drained 1](/condition/drained-player-core), [Enfeebled 1](/condition/enfeebled-player-core), or [Stupefied 1](/condition/stupefied-player-core) by a curse that can't be removed from them in any way. The GM chooses the condition and decides whether the curse is arcane, [divine](/trait/divine), occult, or primal.",
             "traits": [
               "curse"
             ]
@@ -10088,7 +10074,7 @@
           },
           {
             "name": "Cursed Aura",
-            "text": "30 feet. The very earth and air around the curse monger are poisoned by the curses that burden their soul. Any creature who enters or starts their turn in the aura must succeed at a Will DC 31 save or be [Doomed 1](/condition/doomed-player-core) (or Doomed 2 on a critical failure). Regardless of the result of its save, the creature is then temporarily immune for 1 hour.",
+            "text": "30 feet. The very [earth](/trait/earth) and air around the curse monger are poisoned by the curses that burden their soul. Any creature who enters or starts their turn in the aura must succeed at a Will DC 31 save or be [Doomed 1](/condition/doomed-player-core) (or Doomed 2 on a critical failure). Regardless of the result of its save, the creature is then temporarily immune for 1 hour.",
             "traits": [
               "aura",
               "curse",
@@ -11120,7 +11106,7 @@
         "interaction": [
           {
             "name": "Mark of Fate",
-            "text": "A creature that slays the deific vessel must succeed at a Will DC 35 save or be visibly marked as anathema to Urgathoa. It gains weakness 10 to unholy and takes a –2 circumstance penalty to Charisma-based skill checks against followers of Urgathoa. Creatures attempting to [Gather Information](/action/gather-information-player-core) about or [Track](/action/track-player-core) the marked creature gain a +2 circumstance bonus to their checks.\n\nThe mark can't be hidden and can be removed only by participating in an [atone](/ritual/atone-player-core) ritual led by a worshipper of Urgathoa who is 12th level or higher.",
+            "text": "A creature that slays the deific vessel must succeed at a Will DC 35 save or be visibly marked as anathema to Urgathoa. It gains weakness 10 to [unholy](/trait/unholy) and takes a –2 circumstance penalty to Charisma-based skill checks against followers of Urgathoa. Creatures attempting to [Gather Information](/action/gather-information-player-core) about or [Track](/action/track-player-core) the marked creature gain a +2 circumstance bonus to their checks.\n\nThe mark can't be hidden and can be removed only by participating in an [atone](/ritual/atone-player-core) ritual led by a worshipper of Urgathoa who is 12th level or higher.",
             "traits": [
               "curse",
               "divine"
@@ -11137,7 +11123,7 @@
           },
           {
             "name": "Shattered Vessel",
-            "text": "When the deific vessel dies, the divine power barely contained within their form explodes outward, dealing 6d8 spirit damage to each creature in a 30-foot emanation with a basic Reflex DC 33 save.",
+            "text": "When the deific vessel dies, the [divine](/trait/divine) power barely contained within their form explodes outward, dealing 6d8 spirit damage to each creature in a 30-foot emanation with a basic Reflex DC 33 save.",
             "traits": [
               "divine",
               "unholy"
@@ -11787,7 +11773,7 @@
           },
           {
             "name": "Imbue Righteousness",
-            "text": "The warrior imbues a weapon they wield with holy energy. Until the start of their next turn, their Strikes with that weapon gain the [holy](/trait/holy) trait and deal an additional 1d6 spirit damage to unholy creatures.",
+            "text": "The warrior imbues a weapon they wield with holy energy. Until the start of their next turn, their Strikes with that weapon gain the [holy](/trait/holy) trait and deal an additional 1d6 spirit damage to [unholy](/trait/unholy) creatures.",
             "traits": [
               "divine",
               "holy"
@@ -12057,12 +12043,8 @@
                 {
                   "name": "Fear",
                   "rank": 1,
-                  "reference": "/spell/fear-player-core"
-                },
-                {
-                  "name": "Fear",
-                  "rank": 1,
-                  "reference": "/spell/fear-player-core"
+                  "reference": "/spell/fear-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Fleet Step",
@@ -12289,12 +12271,8 @@
                 {
                   "name": "Fireball",
                   "rank": 3,
-                  "reference": "/spell/fireball-player-core"
-                },
-                {
-                  "name": "Fireball",
-                  "rank": 3,
-                  "reference": "/spell/fireball-player-core"
+                  "reference": "/spell/fireball-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Haste",
@@ -15012,12 +14990,8 @@
                 {
                   "name": "Quandary",
                   "rank": 8,
-                  "reference": "/spell/quandary-player-core"
-                },
-                {
-                  "name": "Quandary",
-                  "rank": 8,
-                  "reference": "/spell/quandary-player-core"
+                  "reference": "/spell/quandary-player-core",
+                  "details": "×2"
                 }
               ]
             },
@@ -15027,12 +15001,8 @@
                 {
                   "name": "Chain Lightning",
                   "rank": 7,
-                  "reference": "/spell/chain-lightning-player-core"
-                },
-                {
-                  "name": "Chain Lightning",
-                  "rank": 7,
-                  "reference": "/spell/chain-lightning-player-core"
+                  "reference": "/spell/chain-lightning-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Project Image",
@@ -15147,12 +15117,8 @@
                 {
                   "name": "Fleet Step",
                   "rank": 1,
-                  "reference": "/spell/fleet-step-player-core"
-                },
-                {
-                  "name": "Fleet Step",
-                  "rank": 1,
-                  "reference": "/spell/fleet-step-player-core"
+                  "reference": "/spell/fleet-step-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Sure Strike",
@@ -17239,7 +17205,7 @@
         "offensive": [
           {
             "name": "Overambitious Spell",
-            "text": "**Frequency** once per day; **Effect** The exuberant apprentice's teacher has told them they're not ready for this spell, but desperate times call for desperate measures. The exuberant apprentice attempts to cast [Fireball](/spell/fireball-player-core) as a 3rd-rank arcane spell but must first attempt a Flat DC 11.\n\n**Critical Success** The spell is cast flawlessly and heightened to 4th rank. The apprentice is [Stunned 2](/condition/stunned-player-core) from sheer shock.\n\n**Success** Nothing goes wrong, and the spell is cast normally.\n\n**Failure** The spell fizzles and creates only a harmless puff of smoke.\n\n**Critical Failure** Academic ablaze! The apprentice takes 6d6 fire damage as the magic backfires",
+            "text": "**Frequency** once per day; **Effect** The exuberant apprentice's teacher has told them they're not ready for this spell, but desperate times call for desperate measures. The exuberant apprentice attempts to cast [Fireball](/spell/fireball-player-core) as a 3rd-rank arcane spell but must first attempt a Flat DC 11.\n\n **Critical Success** The spell is cast flawlessly and heightened to 4th rank. The apprentice is [Stunned 2](/condition/stunned-player-core) from sheer shock.\n\n **Success** Nothing goes wrong, and the spell is cast normally.\n\n **Failure** The spell fizzles and creates only a harmless puff of smoke.\n\n **Critical Failure** Academic ablaze! The apprentice takes 6d6 fire damage as the magic backfires",
             "traits": [
               "arcane"
             ],
@@ -17995,7 +17961,7 @@
         "offensive": [
           {
             "name": "Fiendish Contract",
-            "text": "The fiend caller spends 1 day of downtime setting up a bargain between a mortal creature and a fiend the fiend caller knows well. The fiend caller attempts a Legal Lore check against the higher of the fiend's Legal Lore or Legal Lore.\n\n**Success** The mortal party receives one favor from the fiend, or the fiend becomes the mortal's minion for 1d4 days if they're on the same plane. Alternatively, if the GM allows the option, the mortal can receive a bargained contract of the fiend's level or lower.\n\n**Failure** The fiend caller fails to strike the bargain.\n\n**Critical Failure** The process fails, and the magical backlash makes the fiend caller Drained 2.",
+            "text": "The fiend caller spends 1 day of downtime setting up a bargain between a mortal creature and a fiend the fiend caller knows well. The fiend caller attempts a Legal Lore check against the higher of the fiend's Legal Lore or Legal Lore.\n\n **Success** The mortal party receives one favor from the fiend, or the fiend becomes the mortal's minion for 1d4 days if they're on the same plane. Alternatively, if the GM allows the option, the mortal can receive a bargained contract of the fiend's level or lower.\n\n **Failure** The fiend caller fails to strike the bargain.\n\n **Critical Failure** The process fails, and the magical backlash makes the fiend caller Drained 2.",
             "traits": [
               "downtime",
               "occult"
@@ -21272,7 +21238,7 @@
         "interaction": [
           {
             "name": "Big Boom Gun",
-            "text": "Developed by a goblin weaponsmith who missed the \"hand\" part of \"hand cannon,\" this comically oversized gun has a heavily reinforced barrel and is loaded with a worrisome quantity of gunpowder. This hand cannon is a martial weapon instead of a simple weapon. It has the [fatal d12](/trait/fatal) trait and a range increment of 20 feet. It also has the following modified critical failure condition.\n\n**Critical Failure** The attack misses, the weapon misfires, and you take 1d12 fire damage as it explodes in your face.",
+            "text": "Developed by a goblin weaponsmith who missed the \"hand\" part of \"hand cannon,\" this comically oversized gun has a heavily reinforced barrel and is loaded with a worrisome quantity of gunpowder. This hand cannon is a martial weapon instead of a simple weapon. It has the [fatal d12](/trait/fatal) trait and a range increment of 20 feet. It also has the following modified critical failure condition.\n\n **Critical Failure** The attack misses, the weapon misfires, and you take 1d12 fire damage as it explodes in your face.",
             "traits": []
           }
         ],
@@ -21287,7 +21253,7 @@
         "offensive": [
           {
             "name": "Fireworks Barrage",
-            "text": "**Requirements** The goblin scavenger has a free hand; **Effect** The goblin scavenger draws a bundle of fireworks and launches them toward a point within 60 feet, where they explode, dealing 1d10 fire, 1d10 sonic damage in a 10-foot burst. Every creature in the area must attempt a Reflex DC 21 save.\n\n**Critical Success** The creature is unaffected. The goblin scavenger realizes that's because a firework fell at their feet and takes 2 fire damage when it explodes in their face.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is [Dazzled](/condition/dazzled-player-core) and [Deafened](/condition/deafened-player-core) for 1 round.\n\n**Critical Failure** As failure, except the creature is also [Stunned 1](/condition/stunned-player-core).",
+            "text": "**Requirements** The goblin scavenger has a free hand; **Effect** The goblin scavenger draws a bundle of fireworks and launches them toward a point within 60 feet, where they explode, dealing 1d10 fire, 1d10 sonic damage in a 10-foot burst. Every creature in the area must attempt a Reflex DC 21 save.\n\n **Critical Success** The creature is unaffected. The goblin scavenger realizes that's because a firework fell at their feet and takes 2 fire damage when it explodes in their face.\n\n **Success** The creature takes half damage.\n\n **Failure** The creature takes full damage and is [Dazzled](/condition/dazzled-player-core) and [Deafened](/condition/deafened-player-core) for 1 round.\n\n **Critical Failure** As failure, except the creature is also [Stunned 1](/condition/stunned-player-core).",
             "traits": [
               "manipulate"
             ],
@@ -21481,7 +21447,7 @@
           "slug": "humanoid"
         }
       ],
-      "languagesDetails": "telepathy 100 feet (with eidolon only)",
+      "languagesDetails": "[Telepathy](/action/telepathy-monster-core) 100 feet (with eidolon only)",
       "spellcasting": [
         {
           "name": "Primal Spontaneous Spells",
@@ -21796,12 +21762,8 @@
                 {
                   "name": "Fear",
                   "rank": 1,
-                  "reference": "/spell/fear-player-core"
-                },
-                {
-                  "name": "Fear",
-                  "rank": 1,
-                  "reference": "/spell/fear-player-core"
+                  "reference": "/spell/fear-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Ill Omen",
@@ -22241,7 +22203,7 @@
           },
           {
             "name": "One-Millimeter Punch",
-            "text": "2 or 3\n\nThe grandmaster makes a single, carefully controlled unarmed [Strike](/action/strike-player-core) that deals 2 additional dice of damage, or 4 additional dice if the grandmaster spent 3 actions. If this damages the target, the grandmaster can choose to make the target attempt a Fortitude DC 38 save.\n\n**Critical Success** The target is unaffected.\n\n**Success** The target is pushed back 5 feet.\n\n**Failure** The target is pushed back 10 feet.\n\n**Critical Failure** The target is pushed back 10 feet for each action the grandmaster spent on One-Millimeter Punch.",
+            "text": "2 or 3\n\nThe grandmaster makes a single, carefully controlled unarmed [Strike](/action/strike-player-core) that deals 2 additional dice of damage, or 4 additional dice if the grandmaster spent 3 actions. If this damages the target, the grandmaster can choose to make the target attempt a Fortitude DC 38 save.\n\n **Critical Success** The target is unaffected.\n\n **Success** The target is pushed back 5 feet.\n\n **Failure** The target is pushed back 10 feet.\n\n **Critical Failure** The target is pushed back 10 feet for each action the grandmaster spent on One-Millimeter Punch.",
             "traits": [],
             "actions": "two"
           },
@@ -23499,12 +23461,8 @@
                 {
                   "name": "Telekinetic Maneuver",
                   "rank": 2,
-                  "reference": "/spell/telekinetic-maneuver-player-core"
-                },
-                {
-                  "name": "Telekinetic Maneuver",
-                  "rank": 2,
-                  "reference": "/spell/telekinetic-maneuver-player-core"
+                  "reference": "/spell/telekinetic-maneuver-player-core",
+                  "details": "×2"
                 }
               ]
             },
@@ -23514,12 +23472,8 @@
                 {
                   "name": "Enfeeble",
                   "rank": 1,
-                  "reference": "/spell/enfeeble-player-core"
-                },
-                {
-                  "name": "Enfeeble",
-                  "rank": 1,
-                  "reference": "/spell/enfeeble-player-core"
+                  "reference": "/spell/enfeeble-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Sure Strike",
@@ -24145,7 +24099,7 @@
         "offensive": [
           {
             "name": "Mesmerizing Tale",
-            "text": "The yarnspinner weaves a long-winded but captivating narrative that enchants those nearby. Any creature that's in a 20-foot emanation or starts its turn in the aura must attempt a Will DC 24 save. The Mesmerizing Tale lasts until the end of the yarnspinner's next turn, but can be Sustained. The first time the yarnspinner Sustains the aura on subsequent rounds, the aura expands by 10 feet, to a maximum of 60 feet.\n\n**Critical Success** The creature is unaffected, and is temporarily immune for 24 hours.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature becomes [Fascinated](/condition/fascinated-player-core) with the yarnspinner until the start of its next turn, and must spend all its actions to move closer to the yarnspinner and listen to the tale.",
+            "text": "The yarnspinner weaves a long-winded but captivating narrative that enchants those nearby. Any creature that's in a 20-foot emanation or starts its turn in the aura must attempt a Will DC 24 save. The Mesmerizing Tale lasts until the end of the yarnspinner's next turn, but can be Sustained. The first time the yarnspinner Sustains the aura on subsequent rounds, the aura expands by 10 feet, to a maximum of 60 feet.\n\n **Critical Success** The creature is unaffected, and is temporarily immune for 24 hours.\n\n **Success** The creature is unaffected.\n\n **Failure** The creature becomes [Fascinated](/condition/fascinated-player-core) with the yarnspinner until the start of its next turn, and must spend all its actions to move closer to the yarnspinner and listen to the tale.",
             "traits": [
               "auditory",
               "aura",
@@ -25373,27 +25327,8 @@
                 {
                   "name": "Heal",
                   "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
+                  "reference": "/spell/heal-player-core",
+                  "details": "×5"
                 },
                 {
                   "name": "Vision of Death",
@@ -25408,12 +25343,8 @@
                 {
                   "name": "Holy Light",
                   "rank": 4,
-                  "reference": "/spell/holy-light-player-core"
-                },
-                {
-                  "name": "Holy Light",
-                  "rank": 4,
-                  "reference": "/spell/holy-light-player-core"
+                  "reference": "/spell/holy-light-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Vital Beacon",
@@ -26413,22 +26344,8 @@
                 {
                   "name": "Heal",
                   "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
+                  "reference": "/spell/heal-player-core",
+                  "details": "×4"
                 },
                 {
                   "name": "Vital Beacon",
@@ -26443,12 +26360,8 @@
                 {
                   "name": "Cleanse Affliction",
                   "rank": 4,
-                  "reference": "/spell/cleanse-affliction-player-core"
-                },
-                {
-                  "name": "Cleanse Affliction",
-                  "rank": 4,
-                  "reference": "/spell/cleanse-affliction-player-core"
+                  "reference": "/spell/cleanse-affliction-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Mountain Resilience",
@@ -27059,7 +26972,7 @@
           },
           {
             "name": "Request Document",
-            "text": "The infernal registrar makes a request to summon a copy of any infernal contract a specific creature has signed. They must know enough information to specifically identify the individual who signed. The infernal registrar attempts a Legal Lore check with a DC equal to a hard DC of the level of the creature in question. The infernal registrar will never promise a successful use of this ability in the agreements they make. Each agreement is typically for one attempt. Any copy summoned is simply a copy, has no impact on the original contract if destroyed or altered, and will vanish if taken more than 20 feet from the infernal registrar.\n\n**Critical Success** A copy of the contract appears before the infernal registrar after 10 minutes.\n\n**Success** A copy of the contract appears before the infernal registrar after 1 hour.\n\n**Failure** The attempt fails, but the infernal registrar can try again after 24 hours.\n\n**Critical Failure** The attempt fails, and the infernal registrar can't try again for the named creature for 1 year.",
+            "text": "The infernal registrar makes a request to summon a copy of any infernal contract a specific creature has signed. They must know enough information to specifically identify the individual who signed. The infernal registrar attempts a Legal Lore check with a DC equal to a hard DC of the level of the creature in question. The infernal registrar will never promise a successful use of this ability in the agreements they make. Each agreement is typically for one attempt. Any copy summoned is simply a copy, has no impact on the original contract if destroyed or altered, and will vanish if taken more than 20 feet from the infernal registrar.\n\n **Critical Success** A copy of the contract appears before the infernal registrar after 10 minutes.\n\n **Success** A copy of the contract appears before the infernal registrar after 1 hour.\n\n **Failure** The attempt fails, but the infernal registrar can try again after 24 hours.\n\n **Critical Failure** The attempt fails, and the infernal registrar can't try again for the named creature for 1 year.",
             "traits": [
               "concentrate",
               "divine"
@@ -29389,7 +29302,7 @@
         "defensive": [
           {
             "name": "Sinkhole",
-            "text": "**Requirements** The earth diver is burrowed beneath a Medium or smaller creature aboveground; **Effect** The earth diver creates a small sinkhole under the creature, who must attempt a Reflex DC 20 save. Regardless of the result, the target's space becomes difficult terrain.\n\n**Failure** The creature falls into the sinkhole and is [Restrained](/condition/restrained-player-core) until it Escapes.\n\n**Critical Failure** As failure, and the creature takes 2d8 bludgeoning damage.",
+            "text": "**Requirements** The [earth](/trait/earth) diver is burrowed beneath a Medium or smaller creature aboveground; **Effect** The earth diver creates a small sinkhole under the creature, who must attempt a Reflex DC 20 save. Regardless of the result, the target's space becomes difficult terrain.\n\n **Failure** The creature falls into the sinkhole and is [Restrained](/condition/restrained-player-core) until it Escapes.\n\n **Critical Failure** As failure, and the creature takes 2d8 bludgeoning damage.",
             "traits": [],
             "actions": "two"
           }
@@ -29397,7 +29310,7 @@
         "offensive": [
           {
             "name": "Pick Smash",
-            "text": "The kobold earth diver smashes their pick into the ground, sending debris exploding in a 5-foot emanation. All creatures and unattended objects in range take 3d6 bludgeoning damage with a basic Reflex DC 20 save. A creature that is [Restrained](/condition/restrained-player-core) by an earth diver's Sinkhole takes an additional 1d6 bludgeoning damage.",
+            "text": "The kobold [earth](/trait/earth) diver smashes their pick into the ground, sending debris exploding in a 5-foot emanation. All creatures and unattended objects in range take 3d6 bludgeoning damage with a basic Reflex DC 20 save. A creature that is [Restrained](/condition/restrained-player-core) by an earth diver's Sinkhole takes an additional 1d6 bludgeoning damage.",
             "traits": [],
             "actions": "two"
           }
@@ -31852,12 +31765,8 @@
                 {
                   "name": "Invisibility",
                   "rank": 2,
-                  "reference": "/spell/invisibility-player-core"
-                },
-                {
-                  "name": "Invisibility",
-                  "rank": 2,
-                  "reference": "/spell/invisibility-player-core"
+                  "reference": "/spell/invisibility-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Mist",
@@ -34429,7 +34338,7 @@
           },
           {
             "name": "Kinetic Aura",
-            "text": "10 feet. Pieces of rock and earth float in the aura. The aura must be active for the guardian to use impulse actions, and deactivates if the guardian uses an overflow impulse, is knocked out, or Dismisses it. The guardian can Channel Elements to reactivate it.",
+            "text": "10 feet. Pieces of rock and [earth](/trait/earth) float in the aura. The aura must be active for the guardian to use impulse actions, and deactivates if the guardian uses an overflow impulse, is knocked out, or Dismisses it. The guardian can Channel Elements to reactivate it.",
             "traits": [
               "aura",
               "earth",
@@ -34472,7 +34381,7 @@
           },
           {
             "name": "Tremor",
-            "text": "The mountain guardian stomps on natural earth or stone, causing a localized tremor. All creatures in a 10-foot burst within 30 feet take 3d10 bludgeoning damage with a basic Fortitude DC 24 save. A creature that critically fails is knocked [Prone](/condition/prone-player-core). Earth and stone in the area is difficult terrain until the start of the mountain guardian's next turn.",
+            "text": "The mountain guardian stomps on natural [earth](/trait/earth) or stone, causing a localized tremor. All creatures in a 10-foot burst within 30 feet take 3d10 bludgeoning damage with a basic Fortitude DC 24 save. A creature that critically fails is knocked [Prone](/condition/prone-player-core). Earth and stone in the area is difficult terrain until the start of the mountain guardian's next turn.",
             "traits": [
               "concentrate",
               "earth",
@@ -36306,7 +36215,7 @@
         "offensive": [
           {
             "name": "Chant of Dominance",
-            "text": "**Effect** Orc war drummers lead the other skullcrushers in a holy chant extolling their superiority in battle. Any creature damaged by the skullcrushers this turn also takes 1d6 persistent spirit damage.",
+            "text": "**Effect** Orc war drummers lead the other skullcrushers in a [holy](/trait/holy) chant extolling their superiority in battle. Any creature damaged by the skullcrushers this turn also takes 1d6 persistent spirit damage.",
             "traits": [
               "divine",
               "holy",
@@ -38498,27 +38407,14 @@
                 {
                   "name": "Heal",
                   "rank": 3,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 3,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 3,
-                  "reference": "/spell/heal-player-core"
+                  "reference": "/spell/heal-player-core",
+                  "details": "×3"
                 },
                 {
                   "name": "Cleanse Affliction",
                   "rank": 3,
-                  "reference": "/spell/cleanse-affliction-player-core"
-                },
-                {
-                  "name": "Cleanse Affliction",
-                  "rank": 3,
-                  "reference": "/spell/cleanse-affliction-player-core"
+                  "reference": "/spell/cleanse-affliction-player-core",
+                  "details": "×2"
                 }
               ]
             },
@@ -38528,12 +38424,8 @@
                 {
                   "name": "Clear Mind",
                   "rank": 2,
-                  "reference": "/spell/clear-mind-player-core"
-                },
-                {
-                  "name": "Clear Mind",
-                  "rank": 2,
-                  "reference": "/spell/clear-mind-player-core"
+                  "reference": "/spell/clear-mind-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Peaceful Rest",
@@ -38553,12 +38445,8 @@
                 {
                   "name": "Cleanse Cuisine",
                   "rank": 1,
-                  "reference": "/spell/cleanse-cuisine-player-core"
-                },
-                {
-                  "name": "Cleanse Cuisine",
-                  "rank": 1,
-                  "reference": "/spell/cleanse-cuisine-player-core"
+                  "reference": "/spell/cleanse-cuisine-player-core",
+                  "details": "×2"
                 }
               ]
             },
@@ -38880,7 +38768,7 @@
         "offensive": [
           {
             "name": "Fascinating Speech",
-            "text": "The political upstart begins a rousing speech which they can Sustain up to 1 minute. Any creature within 30 feet that can hear the speech, must attempt a Will DC 17 save.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature is [Fascinated](/condition/fascinated-player-core) with the upstart for 1 round.\n\n**Critical Failure** The creature is fascinated with the upstart as long as the speech lasts.",
+            "text": "The political upstart begins a rousing speech which they can Sustain up to 1 minute. Any creature within 30 feet that can hear the speech, must attempt a Will DC 17 save.\n\n **Success** The creature is unaffected.\n\n **Failure** The creature is [Fascinated](/condition/fascinated-player-core) with the upstart for 1 round.\n\n **Critical Failure** The creature is fascinated with the upstart as long as the speech lasts.",
             "traits": [
               "auditory",
               "concentrate",
@@ -39094,37 +38982,14 @@
                 {
                   "name": "Heal",
                   "rank": 3,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 3,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 3,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 3,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 3,
-                  "reference": "/spell/heal-player-core"
+                  "reference": "/spell/heal-player-core",
+                  "details": "×5"
                 },
                 {
                   "name": "Holy Light",
                   "rank": 3,
-                  "reference": "/spell/holy-light-player-core"
-                },
-                {
-                  "name": "Holy Light",
-                  "rank": 3,
-                  "reference": "/spell/holy-light-player-core"
+                  "reference": "/spell/holy-light-player-core",
+                  "details": "×2"
                 }
               ]
             },
@@ -39687,7 +39552,7 @@
         "offensive": [
           {
             "name": "No Hard Feelings",
-            "text": "The propagandist offers amnesty and other benefits to all who choose to join them. All enemies who can hear the propagandist must attempt a Will DC 19 save. If any of the propagandist's allies is currently benefiting from one of the propagandist's bard composition spells, any enemy who is aware of that takes a –2 circumstance penalty to the save.\n\n**Critical Success** The creature sees through the propagandist's pitch and is temporarily immune for 24 hours.\n\n**Success** The creature is unaffected.\n\n**Failure** The creature's conviction stumbles. Until the end of its next turn, the creature must succeed at a Flat DC 5 to target the propagandist with a hostile action.\n\n**Critical Failure** The creature finds the propagandist's offer too good to pass up, switching sides in the combat and instantly gaining any benefits the propagandist is currently granting their allies. At the end of each of its turns, the creature can attempt another Will DC 19 save to snap out of it and rejoin their allies.",
+            "text": "The propagandist offers amnesty and other benefits to all who choose to join them. All enemies who can hear the propagandist must attempt a Will DC 19 save. If any of the propagandist's allies is currently benefiting from one of the propagandist's bard composition spells, any enemy who is aware of that takes a –2 circumstance penalty to the save.\n\n **Critical Success** The creature sees through the propagandist's pitch and is temporarily immune for 24 hours.\n\n **Success** The creature is unaffected.\n\n **Failure** The creature's conviction stumbles. Until the end of its next turn, the creature must succeed at a Flat DC 5 to target the propagandist with a hostile action.\n\n **Critical Failure** The creature finds the propagandist's offer too good to pass up, switching sides in the combat and instantly gaining any benefits the propagandist is currently granting their allies. At the end of each of its turns, the creature can attempt another Will DC 19 save to snap out of it and rejoin their allies.",
             "traits": [
               "auditory",
               "concentrate",
@@ -40132,7 +39997,7 @@
         "interaction": [
           {
             "name": "Puppet Type",
-            "text": "**Smart Puppet** The smart puppet is covered in runes that give it occult power. It makes a ranged [Strike](/action/strike-player-core) against a creature within 30 feet at a +15 attack modifier. A successful Strike deals 2d6 mental damage.**Strong Puppet** The strong puppet wields a tiny sword and shield. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d8 slashing damage. In addition, the strong puppet gains a +1 circumstance bonus to AC for 1 round.**Swift Puppet** The swift puppet wields two tiny daggers. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d4 piercing damage. If the swift puppet hits a creature that was hit by another puppet this round, its Strike deals an additional 1d4 precision damage.\n\n**Fiend Puppet** The puppet makes a ranged Strike against a creature within 30 feet for 1d10 spirit damage, plus 1d4 spirit damage if the target is holy.**Poisoner Puppet** The puppet makes a melee Strike with a tiny syringe of poison against a creature whose space it shares, dealing 1d4 piercing damage plus 1d6 persistent poison damage.**Undead Puppet** The puppet makes a melee Strike against a creature whose space it shares, dealing 2d8 void damage and making the target [Frightened 1](/condition/frightened-player-core) (or Frightened 2 on a critical hit).",
+            "text": "**Smart Puppet** The smart puppet is covered in runes that give it occult power. It makes a ranged [Strike](/action/strike-player-core) against a creature within 30 feet at a +15 attack modifier. A successful Strike deals 2d6 mental damage.**Strong Puppet** The strong puppet wields a tiny sword and shield. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d8 slashing damage. In addition, the strong puppet gains a +1 circumstance bonus to AC for 1 round.**Swift Puppet** The swift puppet wields two tiny daggers. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d4 piercing damage. If the swift puppet hits a creature that was hit by another puppet this round, its Strike deals an additional 1d4 precision damage.\n\n**Fiend Puppet** The puppet makes a ranged Strike against a creature within 30 feet for 1d10 spirit damage, plus 1d4 spirit damage if the target is [holy](/trait/holy).**Poisoner Puppet** The puppet makes a melee Strike with a tiny syringe of poison against a creature whose space it shares, dealing 1d4 piercing damage plus 1d6 persistent poison damage.**Undead Puppet** The puppet makes a melee Strike against a creature whose space it shares, dealing 2d8 void damage and making the target [Frightened 1](/condition/frightened-player-core) (or Frightened 2 on a critical hit).",
             "traits": []
           }
         ],
@@ -40270,7 +40135,7 @@
         "offensive": [
           {
             "name": "Manipulate Puppets",
-            "text": "The puppeteer pulls at invisible strings to control their puppets. Each puppet Strides up to 30 feet. Each puppet can then make a [Strike](/action/strike-player-core) as described below. Each attack counts towards the puppeteer's multiple attack penalty, but their penalty does not increase until all attacks have been made.\n\n**Smart Puppet** The smart puppet is covered in runes that give it occult power. It makes a ranged Strike against a creature within 30 feet at a +15 attack modifier. A successful Strike deals 2d6 mental damage.**Strong Puppet** The strong puppet wields a tiny sword and shield. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d8 slashing damage. In addition, the strong puppet gains a +1 circumstance bonus to AC for 1 round.**Swift Puppet** The swift puppet wields two tiny daggers. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d4 piercing damage. If the swift puppet hits a creature that was hit by another puppet this round, its Strike deals an additional 1d4 precision damage.\n\n**Alternative Puppets**\n\nThis alternate set of villainous puppets Strikes with a +15 attack modifier.\n\n**Fiend Puppet** The puppet makes a ranged Strike against a creature within 30 feet for 1d10 spirit damage, plus 1d4 spirit damage if the target is holy.**Poisoner Puppet** The puppet makes a melee Strike with a tiny syringe of poison against a creature whose space it shares, dealing 1d4 piercing damage plus 1d6 persistent poison damage.**Undead Puppet** The puppet makes a melee Strike against a creature whose space it shares, dealing 2d8 void damage and making the target [Frightened 1](/condition/frightened-player-core) (or Frightened 2 on a critical hit).",
+            "text": "The puppeteer pulls at invisible strings to control their puppets. Each puppet Strides up to 30 feet. Each puppet can then make a [Strike](/action/strike-player-core) as described below. Each attack counts towards the puppeteer's multiple attack penalty, but their penalty does not increase until all attacks have been made.\n\n**Smart Puppet** The smart puppet is covered in runes that give it occult power. It makes a ranged Strike against a creature within 30 feet at a +15 attack modifier. A successful Strike deals 2d6 mental damage.**Strong Puppet** The strong puppet wields a tiny sword and shield. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d8 slashing damage. In addition, the strong puppet gains a +1 circumstance bonus to AC for 1 round.**Swift Puppet** The swift puppet wields two tiny daggers. It makes a melee Strike against a creature whose space it shares at a +15 attack modifier. A successful Strike deals 2d4 piercing damage. If the swift puppet hits a creature that was hit by another puppet this round, its Strike deals an additional 1d4 precision damage.\n\n**Alternative Puppets**\n\nThis alternate set of villainous puppets Strikes with a +15 attack modifier.\n\n**Fiend Puppet** The puppet makes a ranged Strike against a creature within 30 feet for 1d10 spirit damage, plus 1d4 spirit damage if the target is [holy](/trait/holy).**Poisoner Puppet** The puppet makes a melee Strike with a tiny syringe of poison against a creature whose space it shares, dealing 1d4 piercing damage plus 1d6 persistent poison damage.**Undead Puppet** The puppet makes a melee Strike against a creature whose space it shares, dealing 2d8 void damage and making the target [Frightened 1](/condition/frightened-player-core) (or Frightened 2 on a critical hit).",
             "traits": [
               "concentrate",
               "manipulate",
@@ -40964,7 +40829,7 @@
           },
           {
             "name": "Reckless Alchemy",
-            "text": "The reckless scientist attempts to combine two alchemical grenades or two elixirs of life into one item. They can [Interact](/action/interact-player-core) to draw the items if necessary. They attempt a Crafting DC 22 check, destroying both component items to create one new item.\n\n**Success** The new item has the full effect of both component items, and the reckless scientist can Activate it. If they don't Activate it before the end of their turn, the item explodes (as critical failure).\n\n**Failure** The new item is inert.\n\n**Critical Failure** The unstable item explodes, dealing 3d6 piercing damage to the reckless scientist.",
+            "text": "The reckless scientist attempts to combine two alchemical grenades or two elixirs of life into one item. They can [Interact](/action/interact-player-core) to draw the items if necessary. They attempt a Crafting DC 22 check, destroying both component items to create one new item.\n\n **Success** The new item has the full effect of both component items, and the reckless scientist can Activate it. If they don't Activate it before the end of their turn, the item explodes (as critical failure).\n\n **Failure** The new item is inert.\n\n **Critical Failure** The unstable item explodes, dealing 3d6 piercing damage to the reckless scientist.",
             "traits": [
               "concentrate",
               "manipulate"
@@ -42641,7 +42506,7 @@
         "offensive": [
           {
             "name": "Divine Frenzy",
-            "text": "**Requirements** The sibyl isn't [Fatigued](/condition/fatigued-player-core) or in a frenzy; **Effect** The sibyl enters into a divine frenzy that lasts 1 minute. The sibyl can't voluntarily stop frenzying. While in a divine frenzy, the sibyl takes a –2 penalty to Perception checks and Will saves and gains a +2 status bonus to their spell DC and spell attack modifier. During a divine frenzy, the sibyl can't use actions with the [concentrate](/trait/concentrate) trait unless they're Casting a Spell or Seeking. The frenzy lasts for 1 minute, until the sibyl falls [Unconscious](/condition/unconscious-player-core), or the encounter ends, whichever comes first. The sibyl can't voluntarily end the frenzy.",
+            "text": "**Requirements** The sibyl isn't [Fatigued](/condition/fatigued-player-core) or in a frenzy; **Effect** The sibyl enters into a [divine](/trait/divine) frenzy that lasts 1 minute. The sibyl can't voluntarily stop frenzying. While in a divine frenzy, the sibyl takes a –2 penalty to Perception checks and Will saves and gains a +2 status bonus to their spell DC and spell attack modifier. During a divine frenzy, the sibyl can't use actions with the [concentrate](/trait/concentrate) trait unless they're Casting a Spell or Seeking. The frenzy lasts for 1 minute, until the sibyl falls [Unconscious](/condition/unconscious-player-core), or the encounter ends, whichever comes first. The sibyl can't voluntarily end the frenzy.",
             "traits": [
               "concentrate",
               "divine",
@@ -48075,27 +47940,8 @@
                 {
                   "name": "Heal",
                   "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
-                },
-                {
-                  "name": "Heal",
-                  "rank": 5,
-                  "reference": "/spell/heal-player-core"
+                  "reference": "/spell/heal-player-core",
+                  "details": "×5"
                 },
                 {
                   "name": "Translocate",
@@ -48504,12 +48350,8 @@
                 {
                   "name": "Earthbind",
                   "rank": 3,
-                  "reference": "/spell/earthbind-player-core"
-                },
-                {
-                  "name": "Earthbind",
-                  "rank": 3,
-                  "reference": "/spell/earthbind-player-core"
+                  "reference": "/spell/earthbind-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Slow",
@@ -48529,12 +48371,8 @@
                 {
                   "name": "One with Plants",
                   "rank": 2,
-                  "reference": "/spell/one-with-plants-player-core"
-                },
-                {
-                  "name": "One with Plants",
-                  "rank": 2,
-                  "reference": "/spell/one-with-plants-player-core"
+                  "reference": "/spell/one-with-plants-player-core",
+                  "details": "×2"
                 }
               ]
             },
@@ -48544,12 +48382,8 @@
                 {
                   "name": "Gentle Landing",
                   "rank": 1,
-                  "reference": "/spell/gentle-landing-player-core"
-                },
-                {
-                  "name": "Gentle Landing",
-                  "rank": 1,
-                  "reference": "/spell/gentle-landing-player-core"
+                  "reference": "/spell/gentle-landing-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Ventriloquism",
@@ -48910,7 +48744,7 @@
           },
           {
             "name": "Hunter of Virtue",
-            "text": "Whenever the tripkee fiend keeper critically hits an unholy creature, they reduce the value of their [Stupefied](/condition/stupefied-player-core) condition by 1.",
+            "text": "Whenever the tripkee fiend keeper critically hits an [unholy](/trait/unholy) creature, they reduce the value of their [Stupefied](/condition/stupefied-player-core) condition by 1.",
             "traits": []
           }
         ],
@@ -48924,7 +48758,7 @@
           },
           {
             "name": "Harness Wickedness",
-            "text": "**Requirements** The tripkee fiend keeper isn't stupefied; **Effect** The tripkee fiend keeper allows a portion of the fiendish power they have absorbed to flow through their body. For the next minute, the tripkee fiend keeper's Strikes deal an additional die of damage and gain the [unholy](/trait/unholy) trait. The tripkee fiend keeper also gains 10 temporary Hit Points, a +5-foot status bonus to Speed for the duration, and weakness 5 to holy. At the end of the duration, the tripkee fiend keeper is [Stupefied 1](/condition/stupefied-player-core) for 1 hour.",
+            "text": "**Requirements** The tripkee fiend keeper isn't stupefied; **Effect** The tripkee fiend keeper allows a portion of the fiendish power they have absorbed to flow through their body. For the next minute, the tripkee fiend keeper's Strikes deal an additional die of damage and gain the [unholy](/trait/unholy) trait. The tripkee fiend keeper also gains 10 temporary Hit Points, a +5-foot status bonus to Speed for the duration, and weakness 5 to [holy](/trait/holy). At the end of the duration, the tripkee fiend keeper is [Stupefied 1](/condition/stupefied-player-core) for 1 hour.",
             "traits": [
               "concentrate",
               "divine",
@@ -52200,12 +52034,8 @@
                 {
                   "name": "Sunburst",
                   "rank": 8,
-                  "reference": "/spell/sunburst-player-core"
-                },
-                {
-                  "name": "Sunburst",
-                  "rank": 8,
-                  "reference": "/spell/sunburst-player-core"
+                  "reference": "/spell/sunburst-player-core",
+                  "details": "×2"
                 }
               ]
             },
@@ -52225,12 +52055,8 @@
                 {
                   "name": "Volcanic Eruption",
                   "rank": 7,
-                  "reference": "/spell/volcanic-eruption-player-core"
-                },
-                {
-                  "name": "Volcanic Eruption",
-                  "rank": 7,
-                  "reference": "/spell/volcanic-eruption-player-core"
+                  "reference": "/spell/volcanic-eruption-player-core",
+                  "details": "×2"
                 }
               ]
             },
@@ -52240,12 +52066,8 @@
                 {
                   "name": "Chain Lightning",
                   "rank": 6,
-                  "reference": "/spell/chain-lightning-player-core"
-                },
-                {
-                  "name": "Chain Lightning",
-                  "rank": 6,
-                  "reference": "/spell/chain-lightning-player-core"
+                  "reference": "/spell/chain-lightning-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Floating Flame",
@@ -52265,12 +52087,8 @@
                 {
                   "name": "Fireball",
                   "rank": 5,
-                  "reference": "/spell/fireball-player-core"
-                },
-                {
-                  "name": "Fireball",
-                  "rank": 5,
-                  "reference": "/spell/fireball-player-core"
+                  "reference": "/spell/fireball-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Magic Passage",
@@ -52290,22 +52108,14 @@
                 {
                   "name": "Fly",
                   "rank": 4,
-                  "reference": "/spell/fly-player-core"
-                },
-                {
-                  "name": "Fly",
-                  "rank": 4,
-                  "reference": "/spell/fly-player-core"
+                  "reference": "/spell/fly-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Unfettered Movement",
                   "rank": 4,
-                  "reference": "/spell/unfettered-movement-player-core"
-                },
-                {
-                  "name": "Unfettered Movement",
-                  "rank": 4,
-                  "reference": "/spell/unfettered-movement-player-core"
+                  "reference": "/spell/unfettered-movement-player-core",
+                  "details": "×2"
                 }
               ]
             },
@@ -52315,12 +52125,8 @@
                 {
                   "name": "Earthbind",
                   "rank": 3,
-                  "reference": "/spell/earthbind-player-core"
-                },
-                {
-                  "name": "Earthbind",
-                  "rank": 3,
-                  "reference": "/spell/earthbind-player-core"
+                  "reference": "/spell/earthbind-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Haste",
@@ -52605,22 +52411,8 @@
                 {
                   "name": "Harm",
                   "rank": 2,
-                  "reference": "/spell/harm-player-core"
-                },
-                {
-                  "name": "Harm",
-                  "rank": 2,
-                  "reference": "/spell/harm-player-core"
-                },
-                {
-                  "name": "Harm",
-                  "rank": 2,
-                  "reference": "/spell/harm-player-core"
-                },
-                {
-                  "name": "Harm",
-                  "rank": 2,
-                  "reference": "/spell/harm-player-core"
+                  "reference": "/spell/harm-player-core",
+                  "details": "×4"
                 },
                 {
                   "name": "See the Unseen",

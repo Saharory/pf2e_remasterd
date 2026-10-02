@@ -68,6 +68,7 @@ GLOSSARY_ROUTES = {
 }
 
 INLINE_MECHANIC_ROUTES = (
+    ("greater striking", "/item/striking-greater-gm-core"),
     ("basic Reflex save", "/rule/basic-saving-throws-rules-2297"),
     ("basic Fortitude save", "/rule/basic-saving-throws-rules-2297"),
     ("basic Will save", "/rule/basic-saving-throws-rules-2297"),
@@ -91,6 +92,10 @@ INLINE_MECHANIC_ROUTES = (
     ("Strike", "/action/strike-player-core"),
     ("Swim", "/action/swim-player-core"),
     ("Trip", "/action/trip-player-core"),
+    ("holy", "/trait/holy"),
+    ("unholy", "/trait/unholy"),
+    ("divine", "/trait/divine"),
+    ("earth", "/trait/earth"),
     ("cone", "/rule/cone-rules-2386"),
     ("concealment", "/condition/concealed-player-core"),
 )
@@ -100,6 +105,9 @@ ACTION_LABEL = re.compile(
     re.I,
 )
 LEADING_TRAITS = re.compile(r"^\s*\(([^()\n]+)\)\s*")
+DEGREE_OUTCOME = re.compile(
+    r"(?m)^(?!\u2003)(\*\*(?:Critical Success|Success|Failure|Critical Failure)\*\*)"
+)
 
 
 def normalize(value: str) -> str:
@@ -162,6 +170,11 @@ def link_inline_mechanics(value: str) -> str:
             )
             linked_routes.add(route)
     return text
+
+
+def indent_degree_outcomes(value: str) -> str:
+    """Visually group saving-throw outcomes beneath their owning ability."""
+    return DEGREE_OUTCOME.sub("\u2003\\1", value)
 
 
 def compact_stat_block_sections(value: str) -> str:
@@ -306,7 +319,7 @@ def configure_creature_abilities(entity: dict[str, Any]) -> int:
             if merged_traits != current_traits:
                 ability["traits"] = merged_traits
                 changed += 1
-            updated = creature_ability_text(name, cleaned)
+            updated = indent_degree_outcomes(creature_ability_text(name, cleaned))
             if updated != original:
                 ability["text"] = updated
                 changed += 1

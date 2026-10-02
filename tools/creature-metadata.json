@@ -1,6 +1,6 @@
 {
   "stats": {
-    "creatures": 1477
+    "creatures": 1478
   },
   "creatures": {
     "aapoph-granitescale-monster-core": {
@@ -375,6 +375,24 @@
         "fire": 10
       },
       "items": "[Spear](/item/spear-player-core) (2)"
+    },
+    "adult-executor-dragon-draconic-codex-creature-creature-4139": {
+      "savesDetails": "+2 status to all saves vs. [divine](/trait/divine)",
+      "weaknesses": {
+        "divine-sanctification": 10
+      },
+      "attackTraits": {
+        "0": [
+          "magical",
+          "reach-10",
+          "sanctified"
+        ],
+        "2": [
+          "magical",
+          "reach-15",
+          "sanctified"
+        ]
+      }
     },
     "advisor-npc-core": {
       "languages": [
@@ -19271,7 +19289,23 @@
           "name": "Sun Lore",
           "value": 18
         }
-      ]
+      ],
+      "recallKnowledge": {
+        "dc": 27,
+        "skills": [
+          "arcana",
+          "nature"
+        ]
+      },
+      "attackTraits": {
+        "0": [
+          "finesse"
+        ],
+        "1": [
+          "agile",
+          "finesse"
+        ]
+      }
     },
     "soniphak-howl-of-the-wild": {
       "senses": "Echolocation (precise) 120 feet, sensitive echolocation (precise) 120 feet",
@@ -22219,8 +22253,28 @@
       "abilityText": {
         "Crystal Burst": "An explosion of razor-sharp splinters deals 24d6 piercing damage in a 30-foot burst within 120 feet, with a DC 46 basic Reflex save. The vault keeper can't use Crystal Burst again for 1d4 rounds."
       },
+      "recallKnowledge": {
+        "dc": 51,
+        "skills": [
+          "arcana",
+          "nature"
+        ]
+      },
       "movement": {
         "burrow": 25
+      },
+      "attackTraits": {
+        "0": [
+          "agile",
+          "finesse",
+          "magical"
+        ],
+        "3": [
+          "earth",
+          "finesse",
+          "magical",
+          "range-increment-100"
+        ]
       },
       "removeAbilities": [
         "+1 Status to All Saves vs. Magic",

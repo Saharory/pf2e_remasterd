@@ -124,7 +124,7 @@
           },
           {
             "name": "Skeleton Crew",
-            "text": "The bone ship is compelled not by a single mind but by the collective consciousness of dead sailors' souls. The ship is immune to mental effects that target only a specific number of creatures. It's still subject to mental effects that affect all creatures in an area. Any creature that tries to communicate with the ship via telepathy or read its thoughts hears the dying screams and gasps of the crew, and is targeted with a 9th-rank _warp mind_spell (DC 41).\nThe ship animates skeletal crew members out of its own bones, arming them with rusty old cutlasses or other armaments so they can attack anyone who comes next to the ship. These entities have appearances matching those the bound souls had in life but aren't truly individuals; anything that targets them targets the bone ship they're a part of.\nHundreds of soul gems decorate the ship's exterior, each holding one soul. These gems can hold souls of creatures whose level was 16th or lower, and they have no value. If the ship is destroyed, all these gems shatter, freeing the souls within.",
+            "text": "The bone ship is compelled not by a single mind but by the collective consciousness of dead sailors' souls. The ship is immune to mental effects that target only a specific number of creatures. It's still subject to mental effects that affect all creatures in an area. Any creature that tries to communicate with the ship via telepathy or read its thoughts hears the dying screams and gasps of the crew, and is targeted with a 9th-rank _[warp mind](/spell/warp-mind-player-core)_spell (DC 41).\nThe ship animates skeletal crew members out of its own bones, arming them with rusty old cutlasses or other armaments so they can attack anyone who comes next to the ship. These entities have appearances matching those the bound souls had in life but aren't truly individuals; anything that targets them targets the bone ship they're a part of.\nHundreds of soul gems decorate the ship's exterior, each holding one soul. These gems can hold souls of creatures whose level was 16th or lower, and they have no value. If the ship is destroyed, all these gems shatter, freeing the souls within.",
             "traits": [
               "divine",
               "unholy"
@@ -140,13 +140,13 @@
           },
           {
             "name": "Chain Shot",
-            "text": "The bone ship makes a special bone cannon [Strike](/action/strike-player-core), firing a chain made of bones. A creature hit by this Strike is grabbed by the chain ([Escape](/action/escape-player-core) DC 41). The bone ship can use [Interact](/action/interact-player-core) actions to reel in a grabbed creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.",
+            "text": "The bone ship makes a special bone cannon [Strike](/action/strike-player-core), firing a chain made of bones. A creature hit by this Strike is grabbed by the chain ([Escape](/action/escape-player-core) DC 41). The bone ship can use [Interact](/action/interact-player-core) actions to reel in a [grabbed](/condition/grabbed-player-core) creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Crew's Call",
-            "text": "The crew lets out an anguished cry in unison. This is a _wails of the damned_ spell in a 100-foot emanation (DC 39). In addition, any creature within 5 feet of the ship is automatically grabbed by the crew. The ship can't use Crew's Call again for 1d4+1 rounds.",
+            "text": "The crew lets out an anguished cry in unison. This is a _[wails of the damned](/spell/wails-of-the-damned-player-core)_ spell in a 100-foot emanation (DC 39). In addition, any creature within 5 feet of the ship is automatically grabbed by the crew. The ship can't use Crew's Call again for 1d4+1 rounds.",
             "traits": [
               "divine"
             ],
@@ -465,7 +465,7 @@
           },
           {
             "name": "Electric Eel Shock",
-            "text": "**Requirements** The coral juggernaut has a creature grabbed or restrained; **Effect** The electric eels that live within the coral juggernaut unleash jolting waves of electricity. The required creature takes 4d8 electricity damage and must attempt a DC 28 [basic Fortitude save](/rule/basic-saving-throws-rules-2297). On a failure the creature is also stunned 1 for 1 round (stunned 2 for 1 round on a critical failure).",
+            "text": "**Requirements** The coral juggernaut has a creature [grabbed](/condition/grabbed-player-core) or restrained; **Effect** The electric eels that live within the coral juggernaut unleash jolting waves of electricity. The required creature takes 4d8 electricity damage and must attempt a DC 28 [basic Fortitude save](/rule/basic-saving-throws-rules-2297). On a failure the creature is also stunned 1 for 1 round (stunned 2 for 1 round on a critical failure).",
             "traits": [
               "electricity",
               "incapacitation"
@@ -474,7 +474,7 @@
           },
           {
             "name": "Riptide Silt",
-            "text": "The coral juggernaut unleashes a powerful wave of silt and water that rises from the ground 30 feet away and surges back toward the juggernaut in a straight line. Each creature in the wave’s path must attempt a DC 25 Reflex save.\n\n**Critical Success** The creature avoids the wave and is unaffected.\n\n**Success** The creature is off-guard until the end of its next turn due to the wave’s force.\n\n**Failure** The creature is swept into a square adjacent to the juggernaut and is off-guard until the end of its next turn.\n\n**Critical Failure** As failure, and the creature is also slammed against the juggernaut, taking 2d6 bludgeoning damage, and falls prone.",
+            "text": "The coral juggernaut unleashes a powerful wave of silt and water that rises from the ground 30 feet away and surges back toward the juggernaut in a straight line. Each creature in the wave’s path must attempt a DC 25 Reflex save.\n\n **Critical Success** The creature avoids the wave and is unaffected.\n\n **Success** The creature is off-guard until the end of its next turn due to the wave’s force.\n\n **Failure** The creature is swept into a square adjacent to the juggernaut and is off-guard until the end of its next turn.\n\n **Critical Failure** As failure, and the creature is also slammed against the juggernaut, taking 2d6 bludgeoning damage, and falls prone.",
             "traits": [],
             "actions": "two"
           },
@@ -644,7 +644,7 @@
           },
           {
             "name": "Change Shape",
-            "text": "The dedalon takes on the appearance of a Medium humanoid. This doesn’t change their Speeds or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal (typically to bludgeoning). They lose any unarmed attacks with the reach trait.",
+            "text": "The dedalon takes on the appearance of a Medium humanoid. This doesn’t change their Speeds or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal (typically to bludgeoning). They lose any unarmed attacks with the [reach](/trait/reach) trait.",
             "traits": [
               "concentrate",
               "divine",
@@ -903,7 +903,7 @@
           },
           {
             "name": "Discorporate",
-            "text": "**Requirements** The flotsam terror is in water; **Effect** The rubbish and detritus of the flotsam terror’s tangled body breaks apart into a swarming mass of broken bones and debris. While discorporated, the flotsam terror occupies a 10-foot space; gains the swarm trait; gains immunity to grabbed, prone, and restrained; loses its land Speed; and can no longer make Strikes. A discorporated flotsam terror can Dismiss this ability to reconstitute, choosing an unoccupied square of its discorporated form to reconstitute in.\n\n## Lost At Sea\n\nMost of a flotsam terror is composed of splintered wood and nails from a ship, but anything and everything on board can find its way into this mass. When something valuable is lost at sea and can't be recovered from the shipwreck, it might have been swept up into a flotsam terror as it formed from the unsettled spirits of the wreck. Many flotsam terrors hide small valuables like jewelry, silverware, coins, and precious gemstones tangled up within their other wreckage.",
+            "text": "**Requirements** The flotsam terror is in water; **Effect** The rubbish and detritus of the flotsam terror’s tangled body breaks apart into a swarming mass of broken bones and debris. While discorporated, the flotsam terror occupies a 10-foot space; gains the [swarm](/trait/swarm) trait; gains immunity to grabbed, prone, and restrained; loses its land Speed; and can no longer make Strikes. A discorporated flotsam terror can Dismiss this ability to reconstitute, choosing an unoccupied square of its discorporated form to reconstitute in.\n\n## Lost At Sea\n\nMost of a flotsam terror is composed of splintered wood and nails from a ship, but anything and everything on board can find its way into this mass. When something valuable is lost at sea and can't be recovered from the shipwreck, it might have been swept up into a flotsam terror as it formed from the unsettled spirits of the wreck. Many flotsam terrors hide small valuables like jewelry, silverware, coins, and precious gemstones tangled up within their other wreckage.",
             "traits": [
               "manipulate"
             ],
@@ -1813,7 +1813,7 @@
         "offensive": [
           {
             "name": "Churning Charybdis",
-            "text": "**Frequency** once per hour; **Effect** The scylla calls their companion charybdis, which appears within 60 feet as a churning whirlpool of water and teeth that fills a 15-foot burst. Creatures in the area when it forms or who end their turn there take 4d12 bludgeoning damage and must attempt a DC 38 Reflex saving throw. In a significant body of water, the charybdis is stronger, increasing the damage to 5d12. The charybdis remains for 10 minutes. The scylla can Dismiss this effect.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is grabbed by the charybdis ([Escape](/action/escape-player-core) DC 38).\n\n**Critical Failure** As a failure, but the creature takes double damage and is restrained instead.",
+            "text": "**Frequency** once per hour; **Effect** The scylla calls their companion charybdis, which appears within 60 feet as a churning whirlpool of water and teeth that fills a 15-foot burst. Creatures in the area when it forms or who end their turn there take 4d12 bludgeoning damage and must attempt a DC 38 Reflex saving throw. In a significant body of water, the charybdis is stronger, increasing the damage to 5d12. The charybdis remains for 10 minutes. The scylla can Dismiss this effect.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature takes half damage.\n\n **Failure** The creature takes full damage and is grabbed by the charybdis ([Escape](/action/escape-player-core) DC 38).\n\n **Critical Failure** As a failure, but the creature takes double damage and is restrained instead.",
             "traits": [
               "concentrate",
               "manipulate",
@@ -1832,7 +1832,7 @@
           },
           {
             "name": "Hurl and Whirl",
-            "text": "**Requirements** The scylla has a creature grabbed or restrained, and there's an active charybdis within 30 feet; **Effect** The scylla attempts an Athletics check against the required creature's Fortitude DC. If they succeed, that creature is thrown into a free space in the charybdis, immediately taking the effects of a failed save against it. On a critical success, the creature takes the effects of a critically failed save instead.",
+            "text": "**Requirements** The scylla has a creature [grabbed](/condition/grabbed-player-core) or restrained, and there's an active charybdis within 30 feet; **Effect** The scylla attempts an Athletics check against the required creature's Fortitude DC. If they succeed, that creature is thrown into a free space in the charybdis, immediately taking the effects of a failed save against it. On a critical success, the creature takes the effects of a critically failed save instead.",
             "traits": [
               "attack"
             ],
@@ -1840,7 +1840,7 @@
           },
           {
             "name": "Tortured Screech",
-            "text": "**Effect** The scylla lets out an ear-piercing screech in a 30-foot emanation, dealing 4d10 mental damage and 4d10 sonic damage. Each creature in the area must attempt a DC 36 Will save. The scylla can't use Tortured Screech again for 1d4 rounds.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage.\n\n**Failure** The creature takes full damage and is stunned 2.\n\n**Critical Failure** The creature double damage and is stunned 3.\n\n## Fortunate Flora And Fauna\n\nContrary to what many assume, a devastation or lack of sea life isn't a sign of nearby scyllas. In fact, it's often a sign of the opposite. Once found, scyllas are significant deterrents to most sailors and seafarers who have heard even a rumor of their presence. This lack of intrusion allows sea life in these parts of the ocean to flourish. Reefs, fish, coral, and many other marine flora and fauna will seek out the locations of scyllas to establish their safe homes. The more biodiversity in a location, the more likely to find a scylla, or even larger groups of scyllas, within their depths.",
+            "text": "**Effect** The scylla lets out an ear-piercing screech in a 30-foot emanation, dealing 4d10 mental damage and 4d10 sonic damage. Each creature in the area must attempt a DC 36 Will save. The scylla can't use Tortured Screech again for 1d4 rounds.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature takes half damage.\n\n **Failure** The creature takes full damage and is stunned 2.\n\n **Critical Failure** The creature double damage and is stunned 3.\n\n## Fortunate Flora And Fauna\n\nContrary to what many assume, a devastation or lack of sea life isn't a sign of nearby scyllas. In fact, it's often a sign of the opposite. Once found, scyllas are significant deterrents to most sailors and seafarers who have heard even a rumor of their presence. This lack of intrusion allows sea life in these parts of the ocean to flourish. Reefs, fish, coral, and many other marine flora and fauna will seek out the locations of scyllas to establish their safe homes. The more biodiversity in a location, the more likely to find a scylla, or even larger groups of scyllas, within their depths.",
             "traits": [
               "auditory",
               "incapacitation",

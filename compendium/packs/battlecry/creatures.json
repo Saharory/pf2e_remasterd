@@ -1104,7 +1104,7 @@
           },
           {
             "name": "Smiting Lances",
-            "text": "1 to 3\n\n**Frequency** once per round; **Effect** The archon bastion engages in a uniform melee attack against each enemy in 10-foot emanation (basic Reflex DC 34 save). The damage depends on the number of actions. An unholy creature that fails its save against this effect takes an additional 2d6 spirit damage (or 1d6 spirit damage for the one-action version).\n\n1 1d8+4 piercing damage\n\n2 3d8+14 piercing damage\n\n3 4d8+19 piercing damage",
+            "text": "1 to 3\n\n**Frequency** once per round; **Effect** The archon bastion engages in a uniform melee attack against each enemy in 10-foot emanation (basic Reflex DC 34 save). The damage depends on the number of actions. An [unholy](/trait/unholy) creature that fails its save against this effect takes an additional 2d6 spirit damage (or 1d6 spirit damage for the one-action version).\n\n1 1d8+4 piercing damage\n\n2 3d8+14 piercing damage\n\n3 4d8+19 piercing damage",
             "traits": [
               "divine",
               "holy"
@@ -1766,7 +1766,7 @@
         "orichalcum": 10
       },
       "resistances": {
-        "physical": "5 (except [Adamantine](/item/adamantine-chunk-gm-core), Orichalcum)"
+        "physical": "5 (except [Adamantine](/item/adamantine-weapon-gm-core), Orichalcum)"
       },
       "movement": {
         "walk": 25,
@@ -3536,7 +3536,7 @@
         "splash-damage": 10
       },
       "resistances": {
-        "physical": "10 (except [Adamantine](/item/adamantine-chunk-gm-core))"
+        "physical": "10 (except [Adamantine](/item/adamantine-weapon-gm-core))"
       },
       "movement": {
         "walk": 25,
@@ -4004,7 +4004,7 @@
           },
           {
             "name": "Hobble Pursuit",
-            "text": "The goblin rabble hamstring and hobble as many enemies as possible. Each enemy in a 5-foot emanation must attempt a Reflex DC 18 save.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes a –5-foot circumstance penalty to their Speeds.\n\n**Failure** The creature takes a –10-foot circumstance penalty to their Speeds and is [Slowed 1](/condition/slowed-player-core).\n\n**Critical Failure** The creature takes a –15-foot circumstance penalty to their Speeds and is slowed 1.",
+            "text": "The goblin rabble hamstring and hobble as many enemies as possible. Each enemy in a 5-foot emanation must attempt a Reflex DC 18 save.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature takes a –5-foot circumstance penalty to their Speeds.\n\n **Failure** The creature takes a –10-foot circumstance penalty to their Speeds and is [Slowed 1](/condition/slowed-player-core).\n\n **Critical Failure** The creature takes a –15-foot circumstance penalty to their Speeds and is slowed 1.",
             "traits": [],
             "actions": "two"
           },
@@ -4904,7 +4904,7 @@
           "slug": "unholy"
         }
       ],
-      "languagesDetails": "Telepathy 100 feet",
+      "languagesDetails": "[Telepathy](/action/telepathy-monster-core) 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -5146,12 +5146,8 @@
                 {
                   "name": "Arctic Rift",
                   "rank": 8,
-                  "reference": "/spell/arctic-rift-player-core"
-                },
-                {
-                  "name": "Arctic Rift",
-                  "rank": 8,
-                  "reference": "/spell/arctic-rift-player-core"
+                  "reference": "/spell/arctic-rift-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Desiccate",
@@ -5171,12 +5167,8 @@
                 {
                   "name": "Eclipse Burst",
                   "rank": 7,
-                  "reference": "/spell/eclipse-burst-player-core"
-                },
-                {
-                  "name": "Eclipse Burst",
-                  "rank": 7,
-                  "reference": "/spell/eclipse-burst-player-core"
+                  "reference": "/spell/eclipse-burst-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Vampiric Exsanguination",
@@ -5196,12 +5188,8 @@
                 {
                   "name": "Chain Lightning",
                   "rank": 6,
-                  "reference": "/spell/chain-lightning-player-core"
-                },
-                {
-                  "name": "Chain Lightning",
-                  "rank": 6,
-                  "reference": "/spell/chain-lightning-player-core"
+                  "reference": "/spell/chain-lightning-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Never Mind",
@@ -5221,12 +5209,8 @@
                 {
                   "name": "Howling Blizzard",
                   "rank": 5,
-                  "reference": "/spell/howling-blizzard-player-core"
-                },
-                {
-                  "name": "Howling Blizzard",
-                  "rank": 5,
-                  "reference": "/spell/howling-blizzard-player-core"
+                  "reference": "/spell/howling-blizzard-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Toxic Cloud",
@@ -5321,12 +5305,8 @@
                 {
                   "name": "Enfeeble",
                   "rank": 1,
-                  "reference": "/spell/enfeeble-player-core"
-                },
-                {
-                  "name": "Enfeeble",
-                  "rank": 1,
-                  "reference": "/spell/enfeeble-player-core"
+                  "reference": "/spell/enfeeble-player-core",
+                  "details": "×2"
                 },
                 {
                   "name": "Fleet Step",
@@ -6059,7 +6039,7 @@
           "slug": "unholy"
         }
       ],
-      "languagesDetails": "Telepathy 100 feet",
+      "languagesDetails": "[Telepathy](/action/telepathy-monster-core) 100 feet",
       "spellcasting": [
         {
           "name": "Divine Innate Spells",
@@ -6875,7 +6855,7 @@
           },
           {
             "name": "Divine Revulsion",
-            "text": "If a redcap brigade sees a creature brandish a religious symbol of a deity (which requires an [Interact](/action/interact-player-core) action by that creature) or cast a divine spell while wearing a religious symbol, the troop must attempt a Will DC 26 save. They then become temporarily immune to all brandished religious symbols for 10 minutes.\n\n**Critical Success** The troop is unaffected.\n\n**Success** The troop is [Frightened 1](/condition/frightened-player-core).\n\n**Failure** The troop is Frightened 2.\n\n**Critical Failure** The troop is Frightened 3.",
+            "text": "If a redcap brigade sees a creature brandish a religious symbol of a deity (which requires an [Interact](/action/interact-player-core) action by that creature) or cast a [divine](/trait/divine) spell while wearing a religious symbol, the troop must attempt a Will DC 26 save. They then become temporarily immune to all brandished religious symbols for 10 minutes.\n\n **Critical Success** The troop is unaffected.\n\n **Success** The troop is [Frightened 1](/condition/frightened-player-core).\n\n **Failure** The troop is Frightened 2.\n\n **Critical Failure** The troop is Frightened 3.",
             "traits": [
               "emotion",
               "fear",
@@ -6910,7 +6890,7 @@
           },
           {
             "name": "Bowl Over and Stomp",
-            "text": "The redcap brigade Strides; they can pass through spaces of Medium or smaller creatures, but can't end their movement in them. All enemies whose spaces the redcap brigade passed through take 4d8 bludgeoning damage and must attempt a Fortitude DC 26 save. Bowl Over and Stomp damages each creature only once.\n\n**Critical Success** The creature takes no damage.\n\n**Success** The creature takes half damage. If it is [Prone](/condition/prone-player-core), it also takes 1d6 persistent bleed damage.\n\n**Failure** The creature takes full damage, is knocked prone, and takes 2d6 persistent bleed damage.\n\n**Critical Failure** The creature takes double damage, is knocked prone, and takes 2d6 persistent bleed damage.",
+            "text": "The redcap brigade Strides; they can pass through spaces of Medium or smaller creatures, but can't end their movement in them. All enemies whose spaces the redcap brigade passed through take 4d8 bludgeoning damage and must attempt a Fortitude DC 26 save. Bowl Over and Stomp damages each creature only once.\n\n **Critical Success** The creature takes no damage.\n\n **Success** The creature takes half damage. If it is [Prone](/condition/prone-player-core), it also takes 1d6 persistent bleed damage.\n\n **Failure** The creature takes full damage, is knocked prone, and takes 2d6 persistent bleed damage.\n\n **Critical Failure** The creature takes double damage, is knocked prone, and takes 2d6 persistent bleed damage.",
             "traits": [],
             "actions": "two"
           },
@@ -8145,7 +8125,7 @@
           },
           {
             "name": "Sinful Bite",
-            "text": "A creature bitten by a sinspawn must attempt a Will DC 28 save as it is assailed by sinful thoughts. The sinswarm can't inflict the same sin effect on multiple targets in the same round until it has inflicted all seven sins at least once.\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Sickened 1](/condition/sickened-player-core).\n\n**Failure** The creature is Sickened 2.\n\n**Critical Failure** The creature is sickened 2 and takes one of the following additional effects, chosen by the GM:\n\n[Enfeebled 2](/condition/enfeebled-player-core) for 1 minute (envy)\n\n[Drained 1](/condition/drained-player-core) (gluttony)\n\n[Clumsy 2](/condition/clumsy-player-core) for 1 minute (greed)\n\n[Stupefied 2](/condition/stupefied-player-core) for 1 minute (lust)\n\nClumsy 1 and Enfeebled 1 for 1 minute (pride)\n\n–10-foot status penalty to all Speeds for 1 minute (sloth) Effect: Sinful Bite\n\ndrained 1 and enfeebled 1 for 1 minute (wrath)",
+            "text": "A creature bitten by a sinspawn must attempt a Will DC 28 save as it is assailed by sinful thoughts. The sinswarm can't inflict the same sin effect on multiple targets in the same round until it has inflicted all seven sins at least once.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature is [Sickened 1](/condition/sickened-player-core).\n\n **Failure** The creature is Sickened 2.\n\n **Critical Failure** The creature is sickened 2 and takes one of the following additional effects, chosen by the GM:\n\n[Enfeebled 2](/condition/enfeebled-player-core) for 1 minute (envy)\n\n[Drained 1](/condition/drained-player-core) (gluttony)\n\n[Clumsy 2](/condition/clumsy-player-core) for 1 minute (greed)\n\n[Stupefied 2](/condition/stupefied-player-core) for 1 minute (lust)\n\nClumsy 1 and Enfeebled 1 for 1 minute (pride)\n\n–10-foot status penalty to all Speeds for 1 minute (sloth) Effect: Sinful Bite\n\ndrained 1 and enfeebled 1 for 1 minute (wrath)",
             "traits": [
               "arcane",
               "emotion",
@@ -8467,7 +8447,7 @@
         "offensive": [
           {
             "name": "Guardians' Curse",
-            "text": "**Frequency** three times per day; **Effect** The guardian flock bestows a curse upon all enemies in a 5-foot emanation by touching them with their scythes. Each affected creature must attempt a Will DC 33 save.\n\n**Critical Success** The target is unaffected and is temporarily immune to Guardians' Curse for 24 hours.\n\n**Success** The target feels a momentary shudder of doom and is [Stupefied 1](/condition/stupefied-player-core) for 1 minute by the distracting sensation.\n\n**Failure** The target becomes morose and glum as it accepts its own inevitable fate. For 1 hour, the target is Stupefied 2. Each time the target gains the [dying](/condition/dying-player-core) condition, the stupefied condition value increases by 1, to a maximum value of Stupefied 4.\n\n**Critical Failure** As failure, but the effect is permanent.",
+            "text": "**Frequency** three times per day; **Effect** The guardian flock bestows a curse upon all enemies in a 5-foot emanation by touching them with their scythes. Each affected creature must attempt a Will DC 33 save.\n\n **Critical Success** The target is unaffected and is temporarily immune to Guardians' Curse for 24 hours.\n\n **Success** The target feels a momentary shudder of doom and is [Stupefied 1](/condition/stupefied-player-core) for 1 minute by the distracting sensation.\n\n **Failure** The target becomes morose and glum as it accepts its own inevitable fate. For 1 hour, the target is Stupefied 2. Each time the target gains the [dying](/condition/dying-player-core) condition, the stupefied condition value increases by 1, to a maximum value of Stupefied 4.\n\n **Critical Failure** As failure, but the effect is permanent.",
             "traits": [
               "curse",
               "divine",
@@ -8902,7 +8882,7 @@
           "slug": "unholy"
         }
       ],
-      "languagesDetails": "Telepathy 100 feet",
+      "languagesDetails": "[Telepathy](/action/telepathy-monster-core) 100 feet",
       "loreSkills": [
         {
           "name": "Warfare Lore",

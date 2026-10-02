@@ -37,6 +37,9 @@ DEFAULT_OUTPUT = REPO / "compendium" / "packs"
 SOURCE_CATALOG = REPO / "compendium" / "sources.json"
 ROOT_NOTICE = REPO / "compendium" / "ORC-NOTICE.md"
 COMMUNITY_USE_NOTICE = REPO / "COMMUNITY-USE-NOTICE.md"
+CORE_REFERENCE_ITEMS = json.loads(
+    (REPO / "tools" / "data" / "gm-core-reference-items.json").read_text(encoding="utf-8")
+)
 CONFLICT_COPY = re.compile(r"^(?P<stem>.+) (?P<copy>[2-9]\d*)(?P<suffix>\.[^.]+)$")
 
 COLLECTION_KIND = {
@@ -118,6 +121,7 @@ PARAMETERIZED_TRAIT_NAMES = {
     "hefty": "Hefty",
     "integrated": "Integrated",
     "jousting": "Jousting",
+    "reach": "Reach",
     "scatter": "Scatter",
     "shield-throw": "Shield Throw",
     "thrown": "Thrown",
@@ -138,6 +142,7 @@ PARAMETERIZED_TRAIT_PATTERNS = (
     (re.compile(r"hefty-\d+$"), "hefty"),
     (re.compile(r"integrated-.+$"), "integrated"),
     (re.compile(r"jousting-d\d+$"), "jousting"),
+    (re.compile(r"reach-\d+(?:-feet)?$"), "reach"),
     (re.compile(r"scatter-\d+$"), "scatter"),
     (re.compile(r"shield-throw-\d+$"), "shield-throw"),
     (re.compile(r"thrown-\d+(?:-feet)?$"), "thrown"),
@@ -176,7 +181,7 @@ TRAIT_ROUTE = re.compile(r"(/trait/)([a-z0-9-]+)")
 EXTERNAL_REFERENCE_ROUTES = (
     (
         re.compile(r"\[([^]]+)\]\(https://2e\.aonprd\.com/Equipment\.aspx\?ID=2855\)", re.I),
-        r"[\1](/item/adamantine-chunk-gm-core)",
+        r"[\1](/item/adamantine-weapon-gm-core)",
     ),
     (
         re.compile(r"\[([^]]+)\]\(https://2e\.aonprd\.com/Skills\.aspx\?ID=37\)", re.I),
@@ -882,6 +887,8 @@ def build_module(
         records = trait_records if expected_kind == "Trait" else json.loads(path.read_text())
         if expected_kind == "Rule" and source["id"] == "player-core":
             records = [*records, *skill_reference_records()]
+        if expected_kind == "Item" and source["id"] == "gm-core":
+            records = [*records, *CORE_REFERENCE_ITEMS]
         if not isinstance(records, list):
             raise ValueError(f"{path} must contain a JSON array")
         cleaned: list[dict[str, Any]] = []
