@@ -21,6 +21,32 @@ TRAIT_IMMUNITIES = {
         "Poison", "Sickened", "Spirit", "Unconscious", "Vitality", "Void",
     ],
 }
+# GM Core's Creature Identification Skills table. Recall Knowledge subjects
+# are creature classifications, so they are derived from the actor's imported
+# traits instead of maintained as one-off creature overrides.
+CREATURE_IDENTIFICATION_SKILLS = {
+    "aberration": ("occultism",),
+    "animal": ("nature",),
+    "astral": ("occultism",),
+    "beast": ("arcana", "nature"),
+    "celestial": ("religion",),
+    "construct": ("arcana", "crafting"),
+    "dragon": ("arcana",),
+    "dream": ("occultism",),
+    "elemental": ("arcana", "nature"),
+    "ethereal": ("occultism",),
+    "fey": ("nature",),
+    "fiend": ("religion",),
+    "fungus": ("nature",),
+    "humanoid": ("society",),
+    "monitor": ("religion",),
+    "ooze": ("occultism",),
+    "plant": ("nature",),
+    "shade": ("religion",),
+    "spirit": ("occultism",),
+    "time": ("occultism",),
+    "undead": ("religion",),
+}
 GLOSSARY_ROUTES_BY_KEY = {normalize(key): value for key, value in GLOSSARY_ROUTES.items()}
 DEFENSE_VALUE_ROUTES = (
     ("Nonlethal Attacks", "/rule/nonlethal-attacks-rules-2311"),
@@ -95,6 +121,28 @@ def link_language_details(value: Any) -> Any:
     )
 
 
+def configure_recall_knowledge(data: dict[str, Any]) -> None:
+    """Derive every official identification subject from imported traits."""
+    recall = data.get("recallKnowledge")
+    if not isinstance(recall, dict) or not recall.get("dc"):
+        return
+
+    subjects = [
+        str(trait).casefold()
+        for trait in data.get("traits") or []
+        if str(trait).casefold() in CREATURE_IDENTIFICATION_SKILLS
+    ]
+    recall.pop("subject", None)
+    if subjects:
+        recall["subjects"] = list(dict.fromkeys(subjects))
+        if not recall.get("skills"):
+            recall["skills"] = list(dict.fromkeys(
+                skill
+                for subject in recall["subjects"]
+                for skill in CREATURE_IDENTIFICATION_SKILLS[subject]
+            ))
+
+
 def configure_creature_metadata(entity: dict[str, Any]) -> bool:
     if entity.get("kind") != "Creature":
         return False
@@ -110,6 +158,7 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
     if derived:
         data["immunities"] = merge_unique(data.get("immunities") or [], derived)
     if not metadata:
+        configure_recall_knowledge(data)
         if data.get("languagesDetails"):
             data["languagesDetails"] = link_language_details(data["languagesDetails"])
         data["immunities"] = [
@@ -126,6 +175,7 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
         data["senses"] = metadata["senses"]
     if metadata.get("recallKnowledge"):
         data["recallKnowledge"] = metadata["recallKnowledge"]
+    configure_recall_knowledge(data)
     if "languages" in metadata:
         data["languages"] = metadata["languages"]
     if metadata.get("languagesDetails"):

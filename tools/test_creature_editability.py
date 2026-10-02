@@ -11,6 +11,7 @@ import json5
 
 from build_public_orc_compendium import parameterized_trait_family
 from creature_ability_glossary import GLOSSARY, GLOSSARY_ROUTES
+from creature_metadata import CREATURE_IDENTIFICATION_SKILLS
 from creature_senses import SENSE_ROUTES, link_shared_senses
 
 
@@ -155,6 +156,8 @@ def main() -> int:
         raise SystemExit("Murajau Retract is still classified as defensive")
     if not any(ability.get("name") == "Retract" for ability in murajau_data["abilities"]["offensive"]):
         raise SystemExit("Murajau Retract is missing from its active abilities")
+    if murajau_data.get("recallKnowledge", {}).get("subjects") != ["humanoid"]:
+        raise SystemExit("Murajau is missing its Humanoid Recall Knowledge subject")
 
     lithic = by_slug["lithic-locus-rage-of-elements"]
     lithic_spells = {
@@ -181,7 +184,7 @@ def main() -> int:
         raise SystemExit("Solar Crow Glinting Wing is missing its concealment link")
     if solar["data"].get("recallKnowledge") != {
         "dc": 27,
-        "subject": "elemental",
+        "subjects": ["elemental"],
         "skills": ["arcana", "nature"],
     }:
         raise SystemExit("Solar Crow has the wrong elemental Recall Knowledge skills")
@@ -206,7 +209,7 @@ def main() -> int:
         raise SystemExit("Vault Builder has the wrong burrow Speed")
     if vault_data.get("recallKnowledge") != {
         "dc": 51,
-        "subject": "elemental",
+        "subjects": ["elemental"],
         "skills": ["arcana", "nature"],
     }:
         raise SystemExit("Vault Builder has the wrong elemental Recall Knowledge skills")
@@ -269,6 +272,10 @@ def main() -> int:
         raise SystemExit("Adult Executor Dragon is missing its divine save bonus")
     if executor_data.get("weaknesses", {}).get("divine-sanctification") != 10:
         raise SystemExit("Adult Executor Dragon is missing its opposing sanctification weakness")
+    if executor_data.get("recallKnowledge", {}).get("subjects") != ["dragon"]:
+        raise SystemExit("Adult Executor Dragon is missing its Dragon Recall Knowledge subject")
+    if by_slug["wyrmwraith-draconic-codex-creature-creature-4210"]["data"].get("recallKnowledge", {}).get("subjects") != ["dragon", "undead"]:
+        raise SystemExit("Wyrmwraith is missing one of its Recall Knowledge subjects")
     executor_attacks = {attack["name"]: attack for attack in executor_data["attacks"]}
     if "reach-10" not in executor_attacks["jaws"]["traits"] or "reach-15" not in executor_attacks["tail"]["traits"]:
         raise SystemExit("Adult Executor Dragon reach values are incomplete")
@@ -331,6 +338,16 @@ def main() -> int:
     for creature in creatures:
         data = creature.get("data", {})
         traits = set(data.get("traits") or [])
+        expected_subjects = list(dict.fromkeys(
+            trait
+            for trait in data.get("traits") or []
+            if trait in CREATURE_IDENTIFICATION_SKILLS
+        ))
+        recall = data.get("recallKnowledge") or {}
+        if "subject" in recall:
+            raise SystemExit(f"creature retains the obsolete singular subject: {creature['slug']}")
+        if expected_subjects and recall.get("subjects") != expected_subjects:
+            raise SystemExit(f"creature is missing Recall Knowledge subjects: {creature['slug']}")
         immunities = linked_labels(data.get("immunities") or [])
         if "mindless" in traits and "mental" not in immunities:
             raise SystemExit(f"mindless creature is missing Mental immunity: {creature['slug']}")
@@ -378,7 +395,7 @@ def main() -> int:
     if (
         "/action/recall-knowledge-player-core" not in creature_view
         or "data.recallKnowledge.dc" not in creature_view
-        or "/trait/{{data.recallKnowledge.subject}}" not in creature_view
+        or "data.recallKnowledge.subjects" not in creature_view
         or "data.languages" not in creature_view
         or "/rule/languages-rules-2080" not in creature_view
         or "/rule/skills-rules-2276" not in creature_view
@@ -387,6 +404,8 @@ def main() -> int:
         or "/language/{{language}}" not in creature_view
     ):
         raise SystemExit("creature identity fields are not separated in the stat block")
+    if "/trait/{{data.recallKnowledge.subject" in creature_view:
+        raise SystemExit("Recall Knowledge subjects duplicate the linked creature tags")
     if (
         "data.skills or data.loreSkills" not in creature_view
         or "[{{skill.name}}](/rule/lore-skill-player-core)" not in creature_view
@@ -468,7 +487,7 @@ def main() -> int:
         "data.hardness",
         "data.languagesDetails",
         "data.loreSkills",
-        "data.recallKnowledge.subject",
+        "data.recallKnowledge.subjects",
     }.issubset(creature_fields):
         raise SystemExit("creature editor does not expose restored metadata")
     if "data.hardness" not in secondary_view:

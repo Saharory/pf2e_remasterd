@@ -55,7 +55,6 @@ PUBLISHED_OVERRIDES = {
     "solar-crow-rage-of-elements": {
         "recallKnowledge": {
             "dc": 27,
-            "subject": "elemental",
             "skills": ["arcana", "nature"],
         },
         "attackTraits": {
@@ -66,7 +65,6 @@ PUBLISHED_OVERRIDES = {
     "vault-builder-rage-of-elements": {
         "recallKnowledge": {
             "dc": 51,
-            "subject": "elemental",
             "skills": ["arcana", "nature"],
         },
         "movement": {"burrow": 25},
