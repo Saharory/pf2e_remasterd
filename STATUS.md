@@ -12,7 +12,8 @@ Last updated: 2026-10-03
   repeated prepared spell slots display once with an editable multiplication
   count. Recall Knowledge now stores and displays an editable creature subject,
   with Solar Crow and Vault Builder correctly identified as Elementals. The
-  official GM Core Adamantine Weapon reference is included in-app.
+  official GM Core Adamantine Weapon reference is included in-app. Named Lore
+  skills now render inside the Skills field and link to the internal Lore rule.
 - Automated baseline: the public ORC/OGL packs, package definitions, creature
   links and spellcasting, area templates, and maintained UI regressions pass
   through `python3 tools/eplus_dev.py check --json`.
@@ -21,6 +22,7 @@ Last updated: 2026-10-03
   Builder, Solar Crow's Blinding Heat and attacks, Vault Builder's Telepathy,
   resistance, crystal shard, Craft Crystal Wand, and compact spell slots, and
   Adult Executor Dragon's sanctification, save/weakness fields, and reach links.
+  Also confirm that named Lore appears inline under Skills with no separate row.
 - Current product priority: continue the complete data audit and review upstream
   Encounter+ compatibility before releases. See `ROADMAP.md` for accepted,
   deferred, and completed feature decisions.

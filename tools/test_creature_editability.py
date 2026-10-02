@@ -387,8 +387,12 @@ def main() -> int:
         or "/language/{{language}}" not in creature_view
     ):
         raise SystemExit("creature identity fields are not separated in the stat block")
-    if "[{{skill.name}}](/rule/lore-skill-player-core)" in creature_view:
-        raise SystemExit("named Lore specialties must not link to the generic Lore rule")
+    if (
+        "data.skills or data.loreSkills" not in creature_view
+        or "[{{skill.name}}](/rule/lore-skill-player-core)" not in creature_view
+        or "[**Lore**](/rule/lore-skill-player-core)" in creature_view
+    ):
+        raise SystemExit("named Lore skills are not integrated into the Skills field")
 
     secondary_view = (REPO / "views/partials/creature-secondary.md").read_text(encoding="utf-8")
     if "/rule/immunity-rules-2313" not in secondary_view or "/rule/resistance-rules-2318" not in secondary_view:
