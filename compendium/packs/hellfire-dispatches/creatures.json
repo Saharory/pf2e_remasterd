@@ -36,7 +36,8 @@
       "saves": {
         "fortitude": 8,
         "reflex": 14,
-        "will": 11
+        "will": 11,
+        "details": ""
       },
       "skills": {
         "acrobatics": 12,
@@ -53,7 +54,9 @@
       "immunities": [],
       "weaknesses": {
         "area": 4,
-        "splash": 4
+        "splash": 4,
+        "area-damage": 4,
+        "splash-damage": 4
       },
       "resistances": {},
       "movement": {
@@ -184,7 +187,8 @@
       "saves": {
         "fortitude": 16,
         "reflex": 13,
-        "will": 12
+        "will": 12,
+        "details": ""
       },
       "skills": {
         "acrobatics": 11,
@@ -218,7 +222,7 @@
         "defensive": [
           {
             "name": "Crushing Despair",
-            "text": "10 feet, DC 24. Enemy creatures that enter or begin their turn in the area must attempt a Will save. Regardless of the result of the saving throw, the creature is then temporarily immune to the aura for 1 minute.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature is frightened 1.\n\n **Failure** The creature is frightened 1 and can’t use reactions for 1 round.\n\n **Critical Failure** As failure, and the creature [slowed](/condition/slowed-player-core) 1 as it sobs uncontrollably.",
+            "text": "10 feet, DC 24. Enemy creatures that enter or begin their turn in the area must attempt a Will save. Regardless of the result of the saving throw, the creature is then temporarily immune to the aura for 1 minute.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature is frightened 1.\n\n **Failure** The creature is frightened 1 and can’t use reactions for 1 round.\n\n **Critical Failure** As failure, and the creature slowed 1 as it sobs uncontrollably.",
             "traits": [
               "aura",
               "divine",
@@ -361,7 +365,8 @@
       "saves": {
         "fortitude": 8,
         "reflex": 14,
-        "will": 11
+        "will": 11,
+        "details": ""
       },
       "skills": {
         "acrobatics": 12,
@@ -383,7 +388,9 @@
       ],
       "weaknesses": {
         "area": 4,
-        "splash": 4
+        "splash": 4,
+        "area-damage": 4,
+        "splash-damage": 4
       },
       "resistances": {},
       "movement": {
@@ -506,7 +513,8 @@
       "saves": {
         "fortitude": 9,
         "reflex": 14,
-        "will": 11
+        "will": 11,
+        "details": ""
       },
       "skills": {
         "acrobatics": 13,
@@ -524,7 +532,9 @@
       "immunities": [],
       "weaknesses": {
         "area": 5,
-        "splash": 5
+        "splash": 5,
+        "area-damage": 5,
+        "splash-damage": 5
       },
       "resistances": {},
       "movement": {
@@ -660,7 +670,8 @@
       "saves": {
         "fortitude": 24,
         "reflex": 18,
-        "will": 21
+        "will": 21,
+        "details": ""
       },
       "skills": {
         "acrobatics": 20,
@@ -684,7 +695,9 @@
       "weaknesses": {
         "area": 10,
         "holy": 10,
-        "splash": 10
+        "splash": 10,
+        "area-damage": 10,
+        "splash-damage": 10
       },
       "resistances": {
         "bludgeoning": 5,
@@ -837,7 +850,8 @@
       "saves": {
         "fortitude": 16,
         "reflex": 11,
-        "will": 14
+        "will": 14,
+        "details": ""
       },
       "skills": {
         "acrobatics": 10,
@@ -861,7 +875,9 @@
       "immunities": [],
       "weaknesses": {
         "area": 5,
-        "splash": 5
+        "splash": 5,
+        "area-damage": 5,
+        "splash-damage": 5
       },
       "resistances": {
         "mental": "5"
@@ -894,7 +910,7 @@
           },
           {
             "name": "Pacify",
-            "text": "The unit's Whirling Onslaught gains the [nonlethal](/trait/nonlethal) trait until the end of their next turn.",
+            "text": "The unit's Whirling Onslaught gains the nonlethal trait until the end of their next turn.",
             "traits": [],
             "actions": "one"
           },
@@ -905,7 +921,7 @@
           },
           {
             "name": "You're Coming with Us",
-            "text": "**Trigger** The unit Strides; **Requirements** The unit has one or more creatures [grabbed](/condition/grabbed-player-core) or restrained; **Effect** Before moving any of its segments, the unit attempts a single Athletics check against the Fortitude DC of all creatures it has grabbed or restrained. On a success, the creature is moved alongside the unit, moving the same distance and direction until the end of the unit's current turn. The unit can't move a total number of creatures greater than double its current number of segments.",
+            "text": "**Trigger** The unit Strides; **Requirements** The unit has one or more creatures grabbed or restrained; **Effect** Before moving any of its segments, the unit attempts a single Athletics check against the Fortitude DC of all creatures it has grabbed or restrained. On a success, the creature is moved alongside the unit, moving the same distance and direction until the end of the unit's current turn. The unit can't move a total number of creatures greater than double its current number of segments.",
             "traits": [],
             "actions": "free"
           }
@@ -999,7 +1015,8 @@
       "saves": {
         "fortitude": 13,
         "reflex": 17,
-        "will": 14
+        "will": 14,
+        "details": "+2 status bonus to all saves vs. darkness and shadow"
       },
       "skills": {
         "acrobatics": 17,
@@ -1018,7 +1035,9 @@
       "immunities": [],
       "weaknesses": {
         "area": 7,
-        "splash": 7
+        "splash": 7,
+        "area-damage": 7,
+        "splash-damage": 7
       },
       "resistances": {},
       "movement": {
@@ -1163,7 +1182,8 @@
       "saves": {
         "fortitude": 18,
         "reflex": 15,
-        "will": 12
+        "will": 12,
+        "details": ""
       },
       "skills": {
         "acrobatics": 15,
@@ -1180,7 +1200,9 @@
       "immunities": [],
       "weaknesses": {
         "area": 5,
-        "splash": 5
+        "splash": 5,
+        "area-damage": 5,
+        "splash-damage": 5
       },
       "resistances": {
         "fire": "10"
@@ -1307,7 +1329,8 @@
       "saves": {
         "fortitude": 14,
         "reflex": 9,
-        "will": 11
+        "will": 11,
+        "details": ""
       },
       "skills": {
         "athletics": 14
@@ -1322,7 +1345,9 @@
       "weaknesses": {
         "area": 5,
         "holy": 5,
-        "splash": 5
+        "splash": 5,
+        "area-damage": 5,
+        "splash-damage": 5
       },
       "resistances": {
         "bludgeoning": 5,
@@ -1341,7 +1366,7 @@
         "offensive": [
           {
             "name": "Subservience",
-            "text": "An ort mob can be commandeered by any non-ort devil within 60 feet of it with a single action, which has the auditory and [concentrate](/trait/concentrate) traits. The devil picks one of the following commands, and the ort mob follows it to the best of their ability. The command and its effects end once the commander is out of the mob's sight or when a new command is issued by the same or another devil.\n\n- **Hustle** The mob gains a +10-foot circumstance bonus to its Speed until the command ends.\n- **Kill** The mob moves adjacent to one target singled out by its commander and spends all its available actions to use Grasping Claws until the target is dead or the command ends. The targeted creature takes a –1 circumstance penalty to its Reflex save against Grasping Claws and it takes an additional 1d6 slashing damage from the attack.\n- **Rally** The mob moves so that it shares a space with its commander. The commander doesn't treat the mob's spaces as difficult terrain and gains lesser cover while it's in the mob's spaces until the command ends.\n- **Work** The mob performs drudge work dictated by its commander. Faceless Horde An ort mob is less organized than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to other creatures.",
+            "text": "An ort mob can be commandeered by any non-ort devil within 60 feet of it with a single action, which has the auditory and concentrate traits. The devil picks one of the following commands, and the ort mob follows it to the best of their ability. The command and its effects end once the commander is out of the mob's sight or when a new command is issued by the same or another devil.\n\n- **Hustle** The mob gains a +10-foot circumstance bonus to its Speed until the command ends.\n- **Kill** The mob moves adjacent to one target singled out by its commander and spends all its available actions to use Grasping Claws until the target is dead or the command ends. The targeted creature takes a –1 circumstance penalty to its Reflex save against Grasping Claws and it takes an additional 1d6 slashing damage from the attack.\n- **Rally** The mob moves so that it shares a space with its commander. The commander doesn't treat the mob's spaces as difficult terrain and gains lesser cover while it's in the mob's spaces until the command ends.\n- **Work** The mob performs drudge work dictated by its commander. Faceless Horde An ort mob is less organized than most troops. It can move into other creatures' spaces, and other creatures can move into its spaces. Its spaces are difficult terrain to other creatures.",
             "traits": []
           },
           {
@@ -1451,7 +1476,8 @@
       "saves": {
         "fortitude": 16,
         "reflex": 19,
-        "will": 22
+        "will": 22,
+        "details": ""
       },
       "skills": {
         "acrobatics": 20,
@@ -1468,7 +1494,9 @@
       "immunities": [],
       "weaknesses": {
         "area": 10,
-        "splash": 10
+        "splash": 10,
+        "area-damage": 10,
+        "splash-damage": 10
       },
       "resistances": {},
       "movement": {
@@ -1503,7 +1531,7 @@
           },
           {
             "name": "Rebuking Strike",
-            "text": "**Frequency** once per round; **Effect** The regiment strikes with their longswords against enemies in a 5-foot emanation (DC 26 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Damage dealt depends on the number of actions. If a creature critically fails the Reflex save while affected by the regiment's Denounce Divinity, it is unable to reduce its stupefied or [frightened](/condition/frightened-player-core) condition by any means for 1 round.\n**Single Action** 1d8+2 slashing damage\n **Two Actions** 2d8+11 slashing damage\n **Three Actions** 3d8+13 slashing damage.",
+            "text": "**Frequency** once per round; **Effect** The regiment strikes with their longswords against enemies in a 5-foot emanation (DC 26 [basic Reflex save](/rule/basic-saving-throws-rules-2297)). Damage dealt depends on the number of actions. If a creature critically fails the Reflex save while affected by the regiment's Denounce Divinity, it is unable to reduce its stupefied or frightened condition by any means for 1 round.\n**Single Action** 1d8+2 slashing damage\n **Two Actions** 2d8+11 slashing damage\n **Three Actions** 3d8+13 slashing damage.",
             "traits": []
           }
         ]
@@ -1625,7 +1653,8 @@
       "saves": {
         "fortitude": 29,
         "reflex": 25,
-        "will": 24
+        "will": 24,
+        "details": "+1 status to all saves vs. magic"
       },
       "skills": {
         "acrobatics": 28,
@@ -1650,7 +1679,9 @@
         "area": 15,
         "holy": 15,
         "silver": 15,
-        "splash": 15
+        "splash": 15,
+        "area-damage": 15,
+        "splash-damage": 15
       },
       "resistances": {},
       "movement": {
@@ -1661,7 +1692,7 @@
         "interaction": [
           {
             "name": "Painsight",
-            "text": "Each member of a sacristan scourge automatically knows whether a creature they can see has any of the doomed, dying, and [wounded](/condition/wounded-player-core) conditions, as well as the value of those conditions.",
+            "text": "Each member of a sacristan scourge automatically knows whether a creature they can see has any of the doomed, dying, and wounded conditions, as well as the value of those conditions.",
             "traits": [
               "divine"
             ]
@@ -1838,7 +1869,8 @@
       "saves": {
         "fortitude": 10,
         "reflex": 15,
-        "will": 12
+        "will": 12,
+        "details": ""
       },
       "skills": {
         "acrobatics": 12,
@@ -1854,7 +1886,9 @@
       "immunities": [],
       "weaknesses": {
         "area": 4,
-        "splash": 4
+        "splash": 4,
+        "area-damage": 4,
+        "splash-damage": 4
       },
       "resistances": {},
       "movement": {
@@ -1966,7 +2000,8 @@
       "saves": {
         "fortitude": 24,
         "reflex": 18,
-        "will": 21
+        "will": 21,
+        "details": ""
       },
       "skills": {
         "acrobatics": 19,
@@ -1990,7 +2025,9 @@
       "weaknesses": {
         "area": 10,
         "holy": 10,
-        "splash": 10
+        "splash": 10,
+        "area-damage": 10,
+        "splash-damage": 10
       },
       "resistances": {},
       "movement": {
@@ -2118,7 +2155,8 @@
       "saves": {
         "fortitude": 12,
         "reflex": 18,
-        "will": 16
+        "will": 16,
+        "details": ""
       },
       "skills": {
         "acrobatics": 16,
@@ -2134,7 +2172,9 @@
       "immunities": [],
       "weaknesses": {
         "area": 8,
-        "splash": 8
+        "splash": 8,
+        "area-damage": 8,
+        "splash-damage": 8
       },
       "resistances": {},
       "movement": {
@@ -2152,7 +2192,7 @@
           },
           {
             "name": "Undercover",
-            "text": "By spending 2 hours preparing disguises, performing reconnaissance, and the like, the infiltrators can convincingly impersonate any troop unit of their level or lower that has the [humanoid](/trait/humanoid) trait. Alternatively, they can disguise themselves as a mixed assortment of humanoid noncombatants who don't obviously form a cohesive unit. This functions as the [Impersonate](/action/impersonate-player-core) action with the infiltrators gaining a +2 circumstance bonus to their Deception DC. Infiltrators can't use Undercover to appear as specific individuals, nor can they impersonate groups that require resources unavailable to them, at the GM's discretion (impersonating a cavalry unit without access to mounts, for example).",
+            "text": "By spending 2 hours preparing disguises, performing reconnaissance, and the like, the infiltrators can convincingly impersonate any troop unit of their level or lower that has the humanoid trait. Alternatively, they can disguise themselves as a mixed assortment of humanoid noncombatants who don't obviously form a cohesive unit. This functions as the Impersonate action with the infiltrators gaining a +2 circumstance bonus to their Deception DC. Infiltrators can't use Undercover to appear as specific individuals, nor can they impersonate groups that require resources unavailable to them, at the GM's discretion (impersonating a cavalry unit without access to mounts, for example).",
             "traits": [
               "concentrate",
               "exploration",

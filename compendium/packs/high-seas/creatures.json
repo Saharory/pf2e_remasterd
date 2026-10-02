@@ -35,7 +35,8 @@
       "saves": {
         "fortitude": 33,
         "reflex": 27,
-        "will": 30
+        "will": 30,
+        "details": "all-around vision"
       },
       "skills": {
         "athletics": 33,
@@ -80,7 +81,7 @@
           "actions": "one",
           "attack": 35,
           "traits": [
-            "reach"
+            "reach-20"
           ],
           "damage": "3d10+17 bludgeoning plus 2d10 void"
         },
@@ -102,7 +103,7 @@
           "traits": [
             "brutal",
             "divine",
-            "range-increment",
+            "range-increment-100",
             "void"
           ],
           "damage": "2d12+12 bludgeoning damage plus 2d10 void"
@@ -124,7 +125,7 @@
           },
           {
             "name": "Skeleton Crew",
-            "text": "The bone ship is compelled not by a single mind but by the collective consciousness of dead sailors' souls. The ship is immune to mental effects that target only a specific number of creatures. It's still subject to mental effects that affect all creatures in an area. Any creature that tries to communicate with the ship via telepathy or read its thoughts hears the dying screams and gasps of the crew, and is targeted with a 9th-rank _[warp mind](/spell/warp-mind-player-core)_spell (DC 41).\nThe ship animates skeletal crew members out of its own bones, arming them with rusty old cutlasses or other armaments so they can attack anyone who comes next to the ship. These entities have appearances matching those the bound souls had in life but aren't truly individuals; anything that targets them targets the bone ship they're a part of.\nHundreds of soul gems decorate the ship's exterior, each holding one soul. These gems can hold souls of creatures whose level was 16th or lower, and they have no value. If the ship is destroyed, all these gems shatter, freeing the souls within.",
+            "text": "The bone ship is compelled not by a single mind but by the collective consciousness of dead sailors' souls. The ship is immune to mental effects that target only a specific number of creatures. It's still subject to mental effects that affect all creatures in an area. Any creature that tries to communicate with the ship via telepathy or read its thoughts hears the dying screams and gasps of the crew, and is targeted with a 9th-rank _warp mind_spell (DC 41).\nThe ship animates skeletal crew members out of its own bones, arming them with rusty old cutlasses or other armaments so they can attack anyone who comes next to the ship. These entities have appearances matching those the bound souls had in life but aren't truly individuals; anything that targets them targets the bone ship they're a part of.\nHundreds of soul gems decorate the ship's exterior, each holding one soul. These gems can hold souls of creatures whose level was 16th or lower, and they have no value. If the ship is destroyed, all these gems shatter, freeing the souls within.",
             "traits": [
               "divine",
               "unholy"
@@ -140,13 +141,13 @@
           },
           {
             "name": "Chain Shot",
-            "text": "The bone ship makes a special bone cannon [Strike](/action/strike-player-core), firing a chain made of bones. A creature hit by this Strike is grabbed by the chain ([Escape](/action/escape-player-core) DC 41). The bone ship can use [Interact](/action/interact-player-core) actions to reel in a [grabbed](/condition/grabbed-player-core) creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.",
+            "text": "The bone ship makes a special bone cannon [Strike](/action/strike-player-core), firing a chain made of bones. A creature hit by this Strike is grabbed by the chain ([Escape](/action/escape-player-core) DC 41). The bone ship can use [Interact](/action/interact-player-core) actions to reel in a grabbed creature 50 feet per action spent, and when the ship moves, it pulls the grabbed creature along with it.",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Crew's Call",
-            "text": "The crew lets out an anguished cry in unison. This is a _[wails of the damned](/spell/wails-of-the-damned-player-core)_ spell in a 100-foot emanation (DC 39). In addition, any creature within 5 feet of the ship is automatically grabbed by the crew. The ship can't use Crew's Call again for 1d4+1 rounds.",
+            "text": "The crew lets out an anguished cry in unison. This is a _wails of the damned_ spell in a 100-foot emanation (DC 39). In addition, any creature within 5 feet of the ship is automatically grabbed by the crew. The ship can't use Crew's Call again for 1d4+1 rounds.",
             "traits": [
               "divine"
             ],
@@ -256,7 +257,8 @@
       "saves": {
         "fortitude": 4,
         "reflex": 9,
-        "will": 8
+        "will": 8,
+        "details": ""
       },
       "skills": {
         "acrobatics": 7,
@@ -314,7 +316,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -392,7 +395,8 @@
       "saves": {
         "fortitude": 21,
         "reflex": 15,
-        "will": 15
+        "will": 15,
+        "details": ""
       },
       "skills": {
         "athletics": 20
@@ -438,7 +442,7 @@
           "traits": [
             "agile",
             "magical",
-            "reach"
+            "reach-10"
           ],
           "damage": "2d10+8 slashing plus Improved Grab"
         }
@@ -471,7 +475,7 @@
           },
           {
             "name": "Electric Eel Shock",
-            "text": "**Requirements** The coral juggernaut has a creature [grabbed](/condition/grabbed-player-core) or restrained; **Effect** The electric eels that live within the coral juggernaut unleash jolting waves of electricity. The required creature takes 4d8 electricity damage and must attempt a DC 28 [basic Fortitude save](/rule/basic-saving-throws-rules-2297). On a failure the creature is also stunned 1 for 1 round (stunned 2 for 1 round on a critical failure).",
+            "text": "**Requirements** The coral juggernaut has a creature grabbed or restrained; **Effect** The electric eels that live within the coral juggernaut unleash jolting waves of electricity. The required creature takes 4d8 electricity damage and must attempt a DC 28 [basic Fortitude save](/rule/basic-saving-throws-rules-2297). On a failure the creature is also stunned 1 for 1 round (stunned 2 for 1 round on a critical failure).",
             "traits": [
               "electricity",
               "incapacitation"
@@ -495,7 +499,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -575,7 +580,8 @@
       "saves": {
         "fortitude": 23,
         "reflex": 26,
-        "will": 20
+        "will": 20,
+        "details": "+1 status to all saves vs. magic"
       },
       "skills": {
         "athletics": 27,
@@ -600,7 +606,8 @@
       ],
       "weaknesses": {
         "cold_iron": 10,
-        "holy": 10
+        "holy": 10,
+        "cold-iron": 10
       },
       "resistances": {},
       "movement": {
@@ -626,7 +633,7 @@
           "traits": [
             "brutal",
             "magical",
-            "reach",
+            "reach-10",
             "unholy"
           ],
           "damage": "3d6+14 slashing"
@@ -653,7 +660,7 @@
           },
           {
             "name": "Change Shape",
-            "text": "The dedalon takes on the appearance of a Medium humanoid. This doesn’t change their Speeds or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal (typically to bludgeoning). They lose any unarmed attacks with the [reach](/trait/reach) trait.",
+            "text": "The dedalon takes on the appearance of a Medium humanoid. This doesn’t change their Speeds or their attack and damage bonuses with their Strikes but might change the damage type their Strikes deal (typically to bludgeoning). They lose any unarmed attacks with the reach trait.",
             "traits": [
               "concentrate",
               "divine",
@@ -849,7 +856,8 @@
       "saves": {
         "fortitude": 11,
         "reflex": 8,
-        "will": 13
+        "will": 13,
+        "details": "(17 when broken), wreckage armor"
       },
       "skills": {
         "athletics": 12,
@@ -871,7 +879,8 @@
         "[unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {
-        "vitality": 5
+        "vitality": 5,
+        "discorporation-vulnerability": 5
       },
       "resistances": {},
       "movement": {
@@ -895,7 +904,7 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "thrown-30-feet"
+            "thrown-30"
           ],
           "damage": "2d6+6 piercing"
         }
@@ -915,7 +924,7 @@
           },
           {
             "name": "Discorporate",
-            "text": "**Requirements** The flotsam terror is in water; **Effect** The rubbish and detritus of the flotsam terror’s tangled body breaks apart into a swarming mass of broken bones and debris. While discorporated, the flotsam terror occupies a 10-foot space; gains the [swarm](/trait/swarm) trait; gains immunity to grabbed, prone, and restrained; loses its land Speed; and can no longer make Strikes. A discorporated flotsam terror can Dismiss this ability to reconstitute, choosing an unoccupied square of its discorporated form to reconstitute in.\n\n## Lost At Sea\n\nMost of a flotsam terror is composed of splintered wood and nails from a ship, but anything and everything on board can find its way into this mass. When something valuable is lost at sea and can't be recovered from the shipwreck, it might have been swept up into a flotsam terror as it formed from the unsettled spirits of the wreck. Many flotsam terrors hide small valuables like jewelry, silverware, coins, and precious gemstones tangled up within their other wreckage.",
+            "text": "**Requirements** The flotsam terror is in water; **Effect** The rubbish and detritus of the flotsam terror’s tangled body breaks apart into a swarming mass of broken bones and debris. While discorporated, the flotsam terror occupies a 10-foot space; gains the swarm trait; gains immunity to grabbed, prone, and restrained; loses its land Speed; and can no longer make Strikes. A discorporated flotsam terror can Dismiss this ability to reconstitute, choosing an unoccupied square of its discorporated form to reconstitute in.\n\n## Lost At Sea\n\nMost of a flotsam terror is composed of splintered wood and nails from a ship, but anything and everything on board can find its way into this mass. When something valuable is lost at sea and can't be recovered from the shipwreck, it might have been swept up into a flotsam terror as it formed from the unsettled spirits of the wreck. Many flotsam terrors hide small valuables like jewelry, silverware, coins, and precious gemstones tangled up within their other wreckage.",
             "traits": [
               "manipulate"
             ],
@@ -1018,7 +1027,8 @@
       "saves": {
         "fortitude": 14,
         "reflex": 11,
-        "will": 9
+        "will": 9,
+        "details": ""
       },
       "skills": {
         "acrobatics": 9,
@@ -1058,7 +1068,7 @@
           "attack": 14,
           "traits": [
             "agile",
-            "reach"
+            "reach-15"
           ],
           "damage": "2d4+6 bludgeoning plus Grab"
         }
@@ -1112,7 +1122,8 @@
       "recallKnowledge": {
         "dc": 19,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -1190,7 +1201,8 @@
       "saves": {
         "fortitude": 5,
         "reflex": 8,
-        "will": 11
+        "will": 11,
+        "details": ""
       },
       "skills": {
         "athletics": 8,
@@ -1224,7 +1236,7 @@
           "actions": "one",
           "attack": 9,
           "traits": [
-            "reach"
+            "reach-10"
           ],
           "damage": "1d6+5 bludgeoning plus Grab"
         },
@@ -1363,7 +1375,8 @@
       "saves": {
         "fortitude": 15,
         "reflex": 18,
-        "will": 14
+        "will": 14,
+        "details": ""
       },
       "skills": {
         "acrobatics": 16,
@@ -1383,7 +1396,9 @@
       "immunities": [],
       "weaknesses": {
         "area": 10,
-        "splash": 10
+        "splash": 10,
+        "area-damage": 10,
+        "splash-damage": 10
       },
       "resistances": {},
       "movement": {
@@ -1512,7 +1527,8 @@
       "saves": {
         "fortitude": 24,
         "reflex": 18,
-        "will": 21
+        "will": 21,
+        "details": "+1 status to all saves vs. magic"
       },
       "skills": {
         "athletics": 26,
@@ -1569,7 +1585,7 @@
           "attack": 22,
           "traits": [
             "magical",
-            "reach",
+            "reach-10",
             "unholy"
           ],
           "damage": "2d12+15 bludgeoning plus Grab"
@@ -1764,7 +1780,8 @@
       "saves": {
         "fortitude": 26,
         "reflex": 32,
-        "will": 28
+        "will": 28,
+        "details": ""
       },
       "skills": {
         "athletics": 28,
@@ -1806,7 +1823,7 @@
           "attack": 30,
           "traits": [
             "finesse",
-            "reach"
+            "reach-20"
           ],
           "damage": "3d10+15 bludgeoning plus Improved Grab"
         },
@@ -1859,7 +1876,7 @@
           },
           {
             "name": "Hurl and Whirl",
-            "text": "**Requirements** The scylla has a creature [grabbed](/condition/grabbed-player-core) or restrained, and there's an active charybdis within 30 feet; **Effect** The scylla attempts an Athletics check against the required creature's Fortitude DC. If they succeed, that creature is thrown into a free space in the charybdis, immediately taking the effects of a failed save against it. On a critical success, the creature takes the effects of a critically failed save instead.",
+            "text": "**Requirements** The scylla has a creature grabbed or restrained, and there's an active charybdis within 30 feet; **Effect** The scylla attempts an Athletics check against the required creature's Fortitude DC. If they succeed, that creature is thrown into a free space in the charybdis, immediately taking the effects of a failed save against it. On a critical success, the creature takes the effects of a critically failed save instead.",
             "traits": [
               "attack"
             ],
@@ -2077,7 +2094,8 @@
       "saves": {
         "fortitude": 11,
         "reflex": 14,
-        "will": 17
+        "will": 17,
+        "details": ""
       },
       "skills": {
         "acrobatics": 11,
@@ -2114,7 +2132,7 @@
           "actions": "one",
           "attack": 15,
           "traits": [
-            "reach"
+            "reach-10"
           ],
           "damage": "2d6+7 bludgeoning plus Grab"
         }

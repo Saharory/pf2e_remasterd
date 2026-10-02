@@ -10,6 +10,7 @@ from pathlib import Path
 import json5
 
 from build_public_orc_compendium import parameterized_trait_family
+from build_creature_metadata import PUBLISHED_OVERRIDES
 from creature_ability_glossary import GLOSSARY, GLOSSARY_ROUTES
 from creature_metadata import CREATURE_IDENTIFICATION_SKILLS
 from creature_senses import SENSE_ROUTES, link_shared_senses
@@ -55,6 +56,15 @@ def form(name: str) -> dict:
 
 
 def main() -> int:
+    source_generation_examples = {
+        "murajau-rage-of-elements",
+        "lithic-locus-rage-of-elements",
+        "solar-crow-rage-of-elements",
+        "vault-builder-rage-of-elements",
+        "adult-executor-dragon-draconic-codex-creature-creature-4139",
+    }
+    if source_generation_examples.intersection(PUBLISHED_OVERRIDES):
+        raise SystemExit("audited creatures must be generated from source, not patched by slug")
     if len(GLOSSARY) != 55:
         raise SystemExit("shared monster ability glossary is incomplete")
     glossary_keys = {normalize(code) for code in GLOSSARY}
@@ -348,6 +358,29 @@ def main() -> int:
             raise SystemExit(f"creature retains the obsolete singular subject: {creature['slug']}")
         if expected_subjects and recall.get("subjects") != expected_subjects:
             raise SystemExit(f"creature is missing Recall Knowledge subjects: {creature['slug']}")
+        expected_skills = {
+            skill
+            for subject in expected_subjects
+            for skill in CREATURE_IDENTIFICATION_SKILLS[subject]
+        }
+        if expected_skills.difference(recall.get("skills") or []):
+            raise SystemExit(f"creature is missing Recall Knowledge skills: {creature['slug']}")
+        for attack in data.get("attacks") or []:
+            attack_traits = [str(trait) for trait in attack.get("traits") or []]
+            if "unarmed" in attack_traits:
+                raise SystemExit(f"creature exposes an actor-only unarmed trait: {creature['slug']}")
+            if any(
+                trait.startswith(("thrown-", "range-increment-"))
+                for trait in attack_traits
+            ) and attack.get("type") != "ranged":
+                raise SystemExit(f"creature has a ranged Strike rendered as melee: {creature['slug']}")
+        for entries in data.get("abilities", {}).values():
+            for ability in entries or []:
+                if (
+                    not str(ability.get("text") or "").strip()
+                    and re.match(r"^[+-]\d+\s+", str(ability.get("name") or ""))
+                ):
+                    raise SystemExit(f"creature exposes an empty rule element: {creature['slug']}")
         immunities = linked_labels(data.get("immunities") or [])
         if "mindless" in traits and "mental" not in immunities:
             raise SystemExit(f"mindless creature is missing Mental immunity: {creature['slug']}")
@@ -444,7 +477,7 @@ def main() -> int:
             for trait in attack.get("traits", []):
                 slug = str(trait).strip().casefold().replace("_", "-").replace(" ", "-")
                 family = parameterized_trait_family(slug)
-                if family and (
+                if family and slug != family and (
                     attack_trait_routes.get(slug) != family
                     or family not in trait_slugs
                 ):

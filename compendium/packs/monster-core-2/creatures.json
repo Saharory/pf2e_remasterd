@@ -65,7 +65,6 @@
           "attack": 14,
           "traits": [
             "agile",
-            "unarmed",
             "unholy"
           ],
           "damage": "2d6+4 slashing"
@@ -76,7 +75,6 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "unarmed",
             "unholy"
           ],
           "damage": "3d6+4 piercing",
@@ -92,6 +90,7 @@
           "actions": "one",
           "attack": 11,
           "traits": [
+            "range-increment-20",
             "unholy"
           ],
           "damage": "2d6+4 bludgeoning"
@@ -310,6 +309,14 @@
             "name": "Repair Mode",
             "text": "When the adamant sentinel is at 0 HP, it isn't destroyed. Instead, it enters repair mode, during which it's [Slowed 1](/condition/slowed-player-core), can't take reactions, and can take only the Self-[Repair](/action/repair-player-core) action. Once it has more than 30 HP, it can use any type of action and can use reactions, though it remains slowed 1 and can't take any reactions until the start of its next turn. If a critical hit with a [Vorpal](/item/vorpal-gm-core) adamantine weapon reduces the sentinel to 0 HP, or if such a weapon hits it while it's already at 0 HP, the sentinel is destroyed.",
             "traits": []
+          },
+          {
+            "name": "Self-Repair",
+            "text": "The sentinel repairs itself, regaining 30 healing Hit Points.",
+            "traits": [
+              "manipulate"
+            ],
+            "actions": "one"
           }
         ],
         "offensive": [
@@ -325,14 +332,6 @@
             "actions": "one"
           },
           {
-            "name": "Self-Repair",
-            "text": "The sentinel repairs itself, regaining 30 healing Hit Points.",
-            "traits": [
-              "manipulate"
-            ],
-            "actions": "one"
-          },
-          {
             "name": "Vent",
             "text": "The sentinel vents a 30-foot [cone](/rule/cone-rules-2386) of superheated steam from its internal forge. This deals 15d6 fire damage to all creatures in the cone (basic Reflex DC 40). The sentinel can't use Vent again for 1d6 rounds.",
             "traits": [
@@ -345,7 +344,8 @@
       "recallKnowledge": {
         "dc": 43,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -460,14 +460,12 @@
           "type": "melee",
           "actions": "one",
           "attack": 19,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+9 slashing; 1d6 cold"
         },
         {
           "name": "Spear",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 21,
           "traits": [
@@ -639,7 +637,6 @@
             "agile",
             "finesse",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "2d6+5 slashing"
@@ -659,11 +656,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Hatred of Beauty",
             "text": "While aghashes hate all mortals, they particularly despise beautiful objects and beautiful or charismatic mortals. When not in physical peril, an aghash is compelled to destroy art and other works of beauty. An aghash can't enter an area of pristine beauty without first marring it in some way.\n\nGiven a choice, an aghash attacks a foe with the highest Charisma score first. If barred from doing so by force or some magical effect, they take 1d6 mental damage at the end of their turn.",
@@ -878,9 +870,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 17,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+8 piercing"
         },
         {
@@ -889,8 +879,7 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d6+8 slashing"
         },
@@ -933,7 +922,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -1034,8 +1024,7 @@
           "attack": 20,
           "traits": [
             "agile",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d8+9 slashing",
           "effects": [
@@ -1050,9 +1039,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 20,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d12+9 piercing"
         }
       ],
@@ -1243,7 +1230,8 @@
       "recallKnowledge": {
         "dc": 14,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -1429,9 +1417,7 @@
             "traits": [
               "divine"
             ]
-          }
-        ],
-        "offensive": [
+          },
           {
             "name": "Change Shape",
             "text": "The akizendri takes on the appearance of any Small or smaller creature. This doesn't change its Speed or its attack and damage bonuses with its Strikes, but might change the damage type its Strikes deal.",
@@ -1442,7 +1428,9 @@
             ],
             "actions": "one",
             "reference": "/action/change-shape-monster-core"
-          },
+          }
+        ],
+        "offensive": [
           {
             "name": "Constrict",
             "text": "1d8+3 bludgeoning damage, basic Fortitude DC 20",
@@ -1818,7 +1806,7 @@
         },
         {
           "name": "Caber",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 25,
           "traits": [
@@ -2146,7 +2134,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 12,
-          "traits": [],
+          "traits": [
+            "range-increment-15"
+          ],
           "damage": "1d6 poison",
           "effects": [
             {
@@ -2305,7 +2295,8 @@
           "attack": 27,
           "traits": [
             "fire",
-            "light"
+            "light",
+            "range-increment-60"
           ],
           "damage": "3d6 spirit; 3d6+6 fire"
         }
@@ -2366,7 +2357,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -2566,13 +2558,7 @@
             "reference": "/action/telepathy-monster-core"
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Endless Nightmare",
@@ -2755,8 +2741,7 @@
           "attack": 32,
           "traits": [
             "magical",
-            "reach-30",
-            "unarmed"
+            "reach-30"
           ],
           "damage": "3d12+17 bludgeoning",
           "effects": [
@@ -2774,8 +2759,7 @@
           "traits": [
             "agile",
             "magical",
-            "reach-20",
-            "unarmed"
+            "reach-20"
           ],
           "damage": "3d8+17 bludgeoning"
         }
@@ -2819,7 +2803,8 @@
       "recallKnowledge": {
         "dc": 34,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -2974,7 +2959,8 @@
       "recallKnowledge": {
         "dc": 26,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -3119,7 +3105,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -3256,7 +3243,8 @@
           "attack": 27,
           "traits": [
             "brutal",
-            "magical"
+            "magical",
+            "range-increment-120"
           ],
           "damage": "3d10+11 bludgeoning"
         }
@@ -3289,7 +3277,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -3406,6 +3395,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d8+6 piercing"
@@ -3413,14 +3403,7 @@
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [
-          {
-            "name": "Crystalline Dust",
-            "text": "**Frequency** once per day; **Effect** The sharpshooter becomes [Concealed](/condition/concealed-player-core) for 4 rounds, though they can't use the concealment to Hide or [Sneak](/action/sneak-player-core), as normal for concealment where their position is obvious.",
-            "traits": [],
-            "actions": "two"
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Calculated Reload",
@@ -3437,6 +3420,12 @@
               "mental"
             ],
             "actions": "one"
+          },
+          {
+            "name": "Crystalline Dust",
+            "text": "**Frequency** once per day; **Effect** The sharpshooter becomes [Concealed](/condition/concealed-player-core) for 4 rounds, though they can't use the concealment to Hide or [Sneak](/action/sneak-player-core), as normal for concealment where their position is obvious.",
+            "traits": [],
+            "actions": "two"
           }
         ]
       },
@@ -4417,8 +4406,7 @@
           "attack": 24,
           "traits": [
             "agile",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d4+13 bludgeoning"
         },
@@ -4442,11 +4430,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Disease",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Reactive Strike",
             "text": "",
@@ -4608,7 +4591,8 @@
           "traits": [
             "agile",
             "arcane",
-            "magical"
+            "magical",
+            "range-increment-60"
           ],
           "damage": "3d8+11 piercing",
           "effects": [
@@ -4655,7 +4639,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -4853,11 +4838,6 @@
         ],
         "defensive": [
           {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Reactive Strike",
             "text": "",
             "traits": [],
@@ -5027,8 +5007,7 @@
           "attack": 14,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d8 piercing",
           "effects": [
@@ -5442,7 +5421,8 @@
         "physical": "10 (except Silver)"
       },
       "movement": {
-        "walk": 15
+        "walk": 15,
+        "fly": 30
       },
       "attacks": [
         {
@@ -5464,6 +5444,7 @@
           "traits": [
             "auditory",
             "magical",
+            "range-60-feet",
             "unholy"
           ],
           "damage": "1d6 fire; 3d10+8 mental",
@@ -5707,9 +5688,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 8,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8 piercing"
         },
         {
@@ -5718,8 +5697,7 @@
           "actions": "one",
           "attack": 8,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d6 slashing"
         }
@@ -5838,8 +5816,7 @@
           "actions": "one",
           "attack": 38,
           "traits": [
-            "reach-20",
-            "unarmed"
+            "reach-20"
           ],
           "damage": "4d12+18 piercing",
           "effects": [
@@ -5855,7 +5832,8 @@
           "actions": "one",
           "attack": 38,
           "traits": [
-            "brutal"
+            "brutal",
+            "range-500-feet"
           ],
           "damage": "4d10+18 bludgeoning",
           "effects": [
@@ -6064,9 +6042,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 15,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d6+7 bludgeoning"
         }
       ],
@@ -6380,8 +6356,7 @@
           "actions": "one",
           "attack": 31,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d12+16 bludgeoning",
           "effects": [
@@ -6398,15 +6373,6 @@
             "name": "Deep Breath",
             "text": "A berberoka can hold their breath for 2 hours",
             "traits": []
-          },
-          {
-            "name": "Fear of Crabs",
-            "text": "If a berberoka sees a crab or crab-like creature, the berberoka must attempt a Will DC 33 save. They then become immune to the sight of that creature for 10 minutes.\n\n **Critical Success** The berberoka is unaffected.\n\n **Success** The berberoka becomes [Frightened 2](/condition/frightened-player-core).\n\n **Failure** The berberoka gains the [Fleeing](/condition/fleeing-player-core) condition for 1 round and is Frightened 4.",
-            "traits": [
-              "emotion",
-              "fear",
-              "mental"
-            ]
           }
         ],
         "defensive": [
@@ -6416,6 +6382,15 @@
             "traits": [],
             "actions": "reaction",
             "reference": "/action/reactive-strike-monster-core"
+          },
+          {
+            "name": "Fear of Crabs",
+            "text": "If a berberoka sees a crab or crab-like creature, the berberoka must attempt a Will DC 33 save. They then become immune to the sight of that creature for 10 minutes.\n\n **Critical Success** The berberoka is unaffected.\n\n **Success** The berberoka becomes [Frightened 2](/condition/frightened-player-core).\n\n **Failure** The berberoka gains the [Fleeing](/condition/fleeing-player-core) condition for 1 round and is Frightened 4.",
+            "traits": [
+              "emotion",
+              "fear",
+              "mental"
+            ]
           }
         ],
         "offensive": [
@@ -6555,8 +6530,7 @@
           "traits": [
             "agile",
             "finesse",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "3d12+10 void"
         }
@@ -6793,11 +6767,6 @@
             "text": "",
             "traits": [],
             "reference": "/action/all-around-vision-monster-core"
-          },
-          {
-            "name": "+2 Status to All Saves vs. Mental",
-            "text": "",
-            "traits": []
           },
           {
             "name": "Regeneration 20",
@@ -7076,9 +7045,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 12,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+6 piercing",
           "effects": [
             {
@@ -7252,7 +7219,8 @@
       "recallKnowledge": {
         "dc": 22,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -7396,7 +7364,8 @@
           "traits": [
             "agile",
             "fire",
-            "occult"
+            "occult",
+            "range-60-feet"
           ],
           "damage": "5d6 fire"
         }
@@ -7685,8 +7654,7 @@
           "attack": 20,
           "traits": [
             "agile",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d8+8 slashing; 1d8 bleed"
         }
@@ -8085,7 +8053,8 @@
           "traits": [
             "illusion",
             "mental",
-            "occult"
+            "occult",
+            "range-100-feet"
           ],
           "damage": "4d6+6 mental",
           "effects": [
@@ -8423,7 +8392,8 @@
           "attack": 7,
           "traits": [
             "agile",
-            "finesse"
+            "finesse",
+            "versatile-s"
           ],
           "damage": "1d6 piercing"
         }
@@ -8604,8 +8574,7 @@
           "attack": 32,
           "traits": [
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d8+16 bludgeoning; 2d8 cold"
         }
@@ -8619,11 +8588,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Regeneration 15 (Deactivated by Spirit)",
             "text": "",
@@ -9103,6 +9067,7 @@
           "attack": 10,
           "traits": [
             "deadly-d10",
+            "range-increment-100",
             "volley-30"
           ],
           "damage": "1d8+5 piercing"
@@ -9270,8 +9235,7 @@
           "traits": [
             "agile",
             "nonlethal",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d8+13 bludgeoning"
         }
@@ -9293,11 +9257,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Energy Conversion",
             "text": "Whenever the calikang is hit by an electricity spell's attack roll or rolls a successful save against a spell that deals electricity damage, they absorb the energy.\n\nThis heals the calikang for an amount of HP equal to quadruple the spell's rank and recharges their Breath Weapon. A calikang can't absorb their own spells this way.",
@@ -9458,9 +9417,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+4 piercing"
         },
         {
@@ -9594,8 +9551,7 @@
           "actions": "one",
           "attack": 5,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d6 piercing"
         }
@@ -9646,7 +9602,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -9791,8 +9748,7 @@
           "actions": "one",
           "attack": 25,
           "traits": [
-            "reach-30",
-            "unarmed"
+            "reach-30"
           ],
           "damage": "2d12+12 bludgeoning; 2d6 acid",
           "effects": [
@@ -9955,8 +9911,7 @@
           "attack": 25,
           "traits": [
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d10+13 piercing"
         },
@@ -10025,7 +9980,8 @@
       "recallKnowledge": {
         "dc": 30,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -10164,11 +10120,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Calming Presence",
             "text": "30 feet. A creature that begins its turn within the area must attempt a Will DC 18 save.\n\n **Critical Success** The creature is unaffected and is temporarily immune to calming presence for 24 hours.\n\n **Success** The creature's attack rolls take a –1 status penalty for 1 round.\n\n **Failure** Any emotion effects that would affect the creature are suppressed, and the creature can't use hostile actions. If the creature is subjected to hostility from any other creature, it ceases to be affected by calming presence and is temporarily immune to calming presence for 24 hours.\n\n **Critical Failure** As failure, but hostility doesn't end the effect.",
@@ -10400,8 +10351,7 @@
           "attack": 18,
           "traits": [
             "agile",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "1d8+9 bludgeoning"
         },
@@ -10411,7 +10361,8 @@
           "actions": "one",
           "attack": 16,
           "traits": [
-            "brutal"
+            "brutal",
+            "range-increment-120"
           ],
           "damage": "2d6+10 bludgeoning"
         }
@@ -10570,7 +10521,8 @@
           "actions": "one",
           "attack": 16,
           "traits": [
-            "brutal"
+            "brutal",
+            "range-increment-120"
           ],
           "damage": "1d12+8 bludgeoning"
         }
@@ -10773,7 +10725,8 @@
           "attack": 23,
           "traits": [
             "fire",
-            "magical"
+            "magical",
+            "range-60-feet"
           ],
           "damage": "2d10+10 fire"
         }
@@ -10812,7 +10765,8 @@
       "recallKnowledge": {
         "dc": 32,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -10988,11 +10942,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Boiling Blood",
             "text": "**Trigger** The dragon is critically hit with a melee attack; **Effect** The dragon's superheated blood spills onto the attacker. The target takes 8d6 fire damage (basic Reflex DC 34 save).",
@@ -11243,11 +11192,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Boiling Blood",
             "text": "**Trigger** The dragon is critically hit with a melee attack; **Effect** The dragon's superheated blood spills onto the attacker. The target takes 8d6 fire damage (basic Reflex DC 34 save).",
@@ -11642,11 +11586,6 @@
         ],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Boiling Blood",
             "text": "**Trigger** The dragon is critically hit with a melee attack; **Effect** The dragon's superheated blood spills onto the attacker. The target takes 10d6 fire damage (basic Reflex DC 41 save).",
             "traits": [
@@ -11906,11 +11845,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Boiling Blood",
             "text": "**Trigger** The dragon is critically hit with a melee attack; **Effect** The dragon's superheated blood spills onto the attacker. The target takes 10d6 fire damage (basic Reflex DC 41 save).",
@@ -12375,11 +12309,6 @@
         ],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Boiling Blood",
             "text": "**Trigger** The dragon is critically hit with a melee attack; **Effect** The dragon's superheated blood spills onto the attacker. The target takes 6d6 fire damage (basic Reflex DC 29 save).",
             "traits": [
@@ -12619,11 +12548,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Boiling Blood",
             "text": "**Trigger** The dragon is critically hit with a melee attack; **Effect** The dragon's superheated blood spills onto the attacker. The target takes 6d6 fire damage (basic Reflex DC 29 save).",
@@ -13001,7 +12925,8 @@
       "recallKnowledge": {
         "dc": 40,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -13125,8 +13050,7 @@
           "attack": 19,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d10+6 bludgeoning"
         }
@@ -13160,7 +13084,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -13432,8 +13357,7 @@
           "actions": "one",
           "attack": 16,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d8+10 bludgeoning",
           "effects": [
@@ -13446,11 +13370,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+2 vs. Disarm",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Wind-Up",
             "text": "24 hours, DC 22 Thievery, standby\n\nFor a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.\n\nA clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).\n\nA creature can attempt to Disable A Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.",
@@ -13478,7 +13397,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -13634,7 +13554,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -14066,11 +13987,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Biomineralize",
             "text": "**Trigger** The dragon is critically hit by a melee weapon without reach or an unarmed attack that deals slashing or piercing damage; **Effect** A gout of blood spurts from the dragon's wound and instantaneously calcifies into a jagged branch of sharpened coral. The coral branch impales the triggering creature, dealing 7d6 piercing damage (basic Reflex DC 32 save). The triggering creature also takes 1d4 persistent bleed damage on a critical failure. Regardless of the outcome, the coral then crumbles to dust.",
             "traits": [],
@@ -14287,11 +14203,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Biomineralize",
             "text": "**Trigger** The dragon is critically hit by a melee weapon without reach or an unarmed attack that deals slashing or piercing damage; **Effect** A gout of blood spurts from the dragon's wound and instantaneously calcifies into a jagged branch of sharpened coral. The coral branch impales the triggering creature, dealing 7d6 piercing damage (basic Reflex DC 32 save). The triggering creature also takes 1d4 persistent bleed damage on a critical failure. Regardless of the outcome, the coral then crumbles to dust.",
@@ -14668,11 +14579,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Biomineralize",
             "text": "**Trigger** The dragon is critically hit by a melee weapon without reach or an unarmed attack that deals slashing or piercing damage; **Effect** A gout of blood spurts from the dragon's wound and instantaneously calcifies into a jagged branch of sharpened coral. The coral branch impales the triggering creature, dealing 8d6 piercing damage (basic Reflex DC 38 save). The triggering creature also takes 1d4 persistent bleed damage on a critical failure. Regardless of the outcome, the coral then crumbles to dust.",
             "traits": [],
@@ -14897,11 +14803,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Biomineralize",
             "text": "**Trigger** The dragon is critically hit by a melee weapon without reach or an unarmed attack that deals slashing or piercing damage; **Effect** A gout of blood spurts from the dragon's wound and instantaneously calcifies into a jagged branch of sharpened coral. The coral branch impales the triggering creature, dealing 8d6 piercing damage (basic Reflex DC 38 save). The triggering creature also takes 1d4 persistent bleed damage on a critical failure. Regardless of the outcome, the coral then crumbles to dust.",
@@ -15348,11 +15249,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Biomineralize",
             "text": "**Trigger** The dragon is critically hit by a melee weapon without reach or an unarmed attack that deals slashing or piercing damage; **Effect** A gout of blood spurts from the dragon's wound and instantaneously calcifies into a jagged branch of sharpened coral. The coral branch impales the triggering creature, dealing 5d6 piercing damage (basic Reflex DC 26 save). The triggering creature also takes 1d4 persistent bleed damage on a critical failure. Regardless of the outcome, the coral then crumbles to dust.",
             "traits": [],
@@ -15560,11 +15456,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Biomineralize",
             "text": "**Trigger** The dragon is critically hit by a melee weapon without reach or an unarmed attack that deals slashing or piercing damage; **Effect** A gout of blood spurts from the dragon's wound and instantaneously calcifies into a jagged branch of sharpened coral. The coral branch impales the triggering creature, dealing 5d6 piercing damage (basic Reflex DC 26 save). The triggering creature also takes 1d4 persistent bleed damage on a critical failure. Regardless of the outcome, the coral then crumbles to dust.",
@@ -15851,15 +15742,6 @@
       "abilities": {
         "interaction": [
           {
-            "name": "Bond with Mortal",
-            "text": "**Frequency** once per day; **Effect** The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 10, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane.\n\nThe spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.\n\nThis bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and [spirit](/trait/spirit) traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.",
-            "traits": [
-              "mental",
-              "primal"
-            ],
-            "actions": "two"
-          },
-          {
             "name": "Constant Spells",
             "text": "",
             "traits": [],
@@ -15873,6 +15755,15 @@
             "text": "**Requirements** The spirit guide is currently Bonded with a Mortal; **Effect** The spirit guide makes a jaws [Strike](/action/strike-player-core). If this attack hits, the bonded mortal can spend their reaction to Strike the same target.",
             "traits": [],
             "actions": "two"
+          },
+          {
+            "name": "Bond with Mortal",
+            "text": "**Frequency** once per day; **Effect** The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 10, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane.\n\nThe spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.\n\nThis bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and [spirit](/trait/spirit) traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.",
+            "traits": [
+              "mental",
+              "primal"
+            ],
+            "actions": "two"
           }
         ]
       },
@@ -15880,7 +15771,8 @@
         "dc": 15,
         "skills": [
           "nature",
-          "occultism"
+          "occultism",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -16055,8 +15947,7 @@
           "attack": 12,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d10+4 piercing"
         }
@@ -16203,7 +16094,7 @@
         "fortitude": 41,
         "reflex": 37,
         "will": 37,
-        "details": "+4 status to all saves vs. mental or divine"
+        "details": "+4 status to all saves vs. mental or [divine](/trait/divine)"
       },
       "skills": {
         "acrobatics": 39,
@@ -16267,6 +16158,7 @@
           "traits": [
             "brutal",
             "magical",
+            "range-200-feet",
             "water"
           ],
           "damage": "2d12 cold; 4d6+20 bludgeoning"
@@ -16286,11 +16178,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+4 Status to All Saves vs. Mental or Divine",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Hadalic Presence",
             "text": "Creatures that fail their Will save against the titan's impossible stature aura also experience the crushing depths and darkness of the ocean floor. Such creatures see as if in an area of [Darkness](/spell/darkness-player-core) (10th rank), and the titan can use their wavesense to detect such creatures as a precise sense, even if neither are in water. On a critical failure, the creature is also [Immobilized](/condition/immobilized-player-core).",
@@ -16979,7 +16866,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 4,
           "traits": [
@@ -16999,7 +16886,7 @@
         },
         {
           "name": "Trident",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 4,
           "traits": [
@@ -17238,7 +17125,6 @@
             "agile",
             "finesse",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d8+18 slashing"
@@ -17257,22 +17143,12 @@
             "reference": "/action/telepathy-monster-core"
           },
           {
-            "name": "+4 Bonus on Perception to Sense motive",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Indomitable Oration",
             "text": "Any creature capable of comprehending speech understands the deimavigga, as if they constantly spoke in all languages at once.",
             "traits": []
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Whispers of Discord",
             "text": "**Trigger** A creature within 60 feet is targeted by a spell that would restore Hit Points or provide a status bonus (the deimavigga automatically recognizes such effects); **Effect** The deimavigga whispers disturbing lies, audible only to the target, to shake the target's faith in the spell's caster. The target must attempt a Will DC 38 save.\n\n **Critical Success** The target disbelieves the lies and receives the intended benefit of the spell; the target becomes temporarily immune to Whispers of Discord for 24 hours.\n\n **Success** As critical success, but the target isn't temporarily immune.\n\n **Failure** The spell fails to affect the target. The target refuses all aid from that caster for 1 round and doesn't count as the caster's ally.\n\n **Critical Failure** As failure, but the duration is 1 minute.",
@@ -17541,8 +17417,7 @@
           "attack": 17,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d10+6 piercing",
           "effects": [
@@ -17822,7 +17697,8 @@
           "actions": "one",
           "attack": 19,
           "traits": [
-            "brutal"
+            "brutal",
+            "range-increment-120"
           ],
           "damage": "2d8+12 bludgeoning"
         }
@@ -18023,11 +17899,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Consume Fear",
             "text": "**Trigger** A creature within 60 feet loses the [Frightened](/condition/frightened-player-core) condition; **Effect** The dragon feasts upon the fear that leaves the triggering creature's body, gaining 5d8 temporary Hit Points that last for 1 minute.",
@@ -18287,11 +18158,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Consume Fear",
             "text": "**Trigger** A creature within 60 feet loses the [Frightened](/condition/frightened-player-core) condition; **Effect** The dragon feasts upon the fear that leaves the triggering creature's body, gaining 5d8 temporary Hit Points that last for 1 minute.",
@@ -18693,11 +18559,6 @@
         ],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Occult",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Consume Fear",
             "text": "**Trigger** A creature within 60 feet loses the [Frightened](/condition/frightened-player-core) condition; **Effect** The dragon feasts upon the fear that leaves the triggering creature's body, gaining 7d8 temporary Hit Points that last for 1 minute.",
             "traits": [
@@ -18970,11 +18831,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Consume Fear",
             "text": "**Trigger** A creature within 60 feet loses the [Frightened](/condition/frightened-player-core) condition; **Effect** The dragon feasts upon the fear that leaves the triggering creature's body, gaining 7d8 temporary Hit Points that last for 1 minute.",
@@ -19434,11 +19290,6 @@
         ],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Occult",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Consume Fear",
             "text": "**Trigger** A creature within 60 feet loses the [Frightened](/condition/frightened-player-core) condition; **Effect** The dragon feasts upon the fear that leaves the triggering creature's body, gaining 4d8 temporary Hit Points that last for 1 minute.",
             "traits": [
@@ -19688,11 +19539,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Consume Fear",
             "text": "**Trigger** A creature within 60 feet loses the [Frightened](/condition/frightened-player-core) condition; **Effect** The dragon feasts upon the fear that leaves the triggering creature's body, gaining 4d8 temporary Hit Points that last for 1 minute.",
@@ -20011,6 +19857,7 @@
           "attack": 25,
           "traits": [
             "air",
+            "range-increment-30",
             "void"
           ],
           "damage": "4d10 void"
@@ -20092,7 +19939,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -20617,7 +20465,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -20781,7 +20630,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -21320,8 +21170,7 @@
           "attack": 30,
           "traits": [
             "agile",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "3d8+16 bludgeoning; 2d6 fire",
           "effects": [
@@ -21353,11 +21202,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status Bonus to Saves vs. Fear",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Regeneration 20 (Deactivated by Cold)",
             "text": "",
@@ -22018,8 +21862,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
@@ -22029,6 +21872,7 @@
           "actions": "one",
           "attack": 10,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8+3 piercing"
@@ -22172,7 +22016,7 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "reach-120"
+            "reach-20"
           ],
           "damage": "2d8+10 bludgeoning",
           "effects": [
@@ -22901,7 +22745,8 @@
       "recallKnowledge": {
         "dc": 25,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -23079,7 +22924,8 @@
       "recallKnowledge": {
         "dc": 14,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -23245,7 +23091,8 @@
       "recallKnowledge": {
         "dc": 19,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -23350,6 +23197,7 @@
           "actions": "one",
           "attack": 23,
           "traits": [
+            "magical",
             "versatile-p"
           ],
           "damage": "2d8+13 slashing"
@@ -23360,8 +23208,7 @@
           "actions": "one",
           "attack": 22,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d6+13 bludgeoning"
         },
@@ -23372,17 +23219,19 @@
           "attack": 23,
           "traits": [
             "agile",
+            "magical",
             "versatile-s"
           ],
           "damage": "2d4+13 piercing"
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 20,
           "traits": [
             "agile",
+            "magical",
             "thrown-10",
             "versatile-s"
           ],
@@ -23392,11 +23241,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+4 to Will Saves vs. Fear",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Raise a Shield",
             "text": "**Requirements** You are wielding a shield.\n\nYou position your shield to protect yourself. When you have Raised a Shield, you gain its listed circumstance bonus to AC. Your shield remains raised until the start of your next turn.",
@@ -23548,7 +23392,8 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 5,
+        "swim": 35
       },
       "attacks": [
         {
@@ -23726,7 +23571,7 @@
           "traits": [
             "fatal-d12",
             "magical",
-            "reach-15"
+            "reach-30"
           ],
           "damage": "4d10+20 piercing"
         },
@@ -23750,7 +23595,8 @@
             "agile",
             "fire",
             "light",
-            "magical"
+            "magical",
+            "range-increment-200"
           ],
           "damage": "2d10 fire; 3d12+10 piercing"
         }
@@ -23769,11 +23615,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+4 Status to All Saves vs. Mental",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Impossible Stature",
             "text": "100 feet. Titans warp perception and distance around them to seem even larger and more imposing. A creature that enters or begins its turn within the emanation must succeed at a Will DC 44 save or its movement toward the titan is movement over difficult terrain (greater difficult terrain on a critical failure) for 1 round.",
@@ -24018,7 +23859,8 @@
       "recallKnowledge": {
         "dc": 16,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -24617,7 +24459,7 @@
         },
         {
           "name": "Spirit Needle",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 33,
           "traits": [
@@ -24861,7 +24703,7 @@
           "traits": [
             "agile",
             "finesse",
-            "unarmed",
+            "magical",
             "unholy"
           ],
           "damage": "1d6 slashing; 1d4 spirit"
@@ -25343,7 +25185,8 @@
         "dc": 20,
         "skills": [
           "nature",
-          "occultism"
+          "occultism",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -25478,11 +25321,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Regeneration 10 (Deactivated by Holy or Silver)",
             "text": "",
@@ -25687,7 +25525,8 @@
             "fire",
             "holy",
             "magical",
-            "spirit"
+            "spirit",
+            "range-increment-40"
           ],
           "damage": "5d6 fire; 3d6 spirit"
         }
@@ -25964,8 +25803,7 @@
           "actions": "one",
           "attack": 21,
           "traits": [
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "3d10+9 force"
         },
@@ -25989,15 +25827,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Bond with Mortal",
-            "text": "**Frequency** once per day; **Effect** The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 20, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane.\n\nThe spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.\n\nThis bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and [spirit](/trait/spirit) traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.",
-            "traits": [
-              "mental",
-              "primal"
-            ],
-            "actions": "two"
-          },
           {
             "name": "Constant Spells",
             "text": "",
@@ -26038,6 +25867,15 @@
             "name": "Mauler",
             "text": "The feathered bear gains a +4 circumstance bonus to damage rolls against creatures they have [Grabbed](/condition/grabbed-player-core).",
             "traits": []
+          },
+          {
+            "name": "Bond with Mortal",
+            "text": "**Frequency** once per day; **Effect** The spirit guide forms a bond with a mortal creature. While the bond exists, the spirit guide increases their current and maximum Hit Points by 20, gains a +2 status bonus to their attack and damage rolls, and can communicate telepathically with the bonded mortal as long as the two beings are on the same plane.\n\nThe spirit guide can only be bonded with one mortal at a time, and they can take this action again to end the bond or to form a new bond (which also ends the old bond). The bond also ends if the spirit guide or the mortal dies.\n\nThis bond strengthens the spirit guide's connection to the Universe. While bonded, the spirit guide loses the incorporeal and [spirit](/trait/spirit) traits, loses their immunities and resistances, and changes their Strikes to deal the appropriate physical damage (typically piercing or slashing) instead of force damage.",
+            "traits": [
+              "mental",
+              "primal"
+            ],
+            "actions": "two"
           }
         ]
       },
@@ -26045,7 +25883,8 @@
         "dc": 27,
         "skills": [
           "nature",
-          "occultism"
+          "occultism",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -26360,7 +26199,6 @@
             "cold-iron",
             "magical",
             "shove",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d8+16 bludgeoning"
@@ -26374,7 +26212,6 @@
             "agile",
             "cold-iron",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d4+16 slashing",
@@ -26392,7 +26229,8 @@
           "traits": [
             "cold-iron",
             "magical",
-            "unholy"
+            "unholy",
+            "range-increment-40"
           ],
           "damage": "3d4 + 13 piercing",
           "effects": [
@@ -26416,11 +26254,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Metallic",
             "text": "A ferrugon is a metallic creature and thus affected by effects such as the circumstance penalty inflicted by [Thunderstrike](/spell/thunderstrike-player-core).",
@@ -26645,9 +26478,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 9,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+4 piercing"
         },
         {
@@ -26656,8 +26487,7 @@
           "actions": "one",
           "attack": 9,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d4+4 slashing",
           "effects": [
@@ -26815,7 +26645,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -27029,7 +26859,8 @@
       "recallKnowledge": {
         "dc": 19,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -27139,7 +26970,13 @@
       },
       "attacks": [],
       "abilities": {
-        "interaction": [],
+        "interaction": [
+          {
+            "name": "Agile Swimmer",
+            "text": "Fire jellyfish swarms use Acrobatics to [Swim](/action/swim-player-core).",
+            "traits": []
+          }
+        ],
         "defensive": [
           {
             "name": "Swarm Mind",
@@ -27149,11 +26986,6 @@
           }
         ],
         "offensive": [
-          {
-            "name": "Agile Swimmer",
-            "text": "Fire jellyfish swarms use Acrobatics to [Swim](/action/swim-player-core).",
-            "traits": []
-          },
           {
             "name": "Burning Swarm",
             "text": "Each enemy in the swarm's space takes 3d8 poison damage (basic Reflex DC 24 save) and is exposed to fire jelly venom.",
@@ -27335,7 +27167,8 @@
       "recallKnowledge": {
         "dc": 14,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -27465,7 +27298,8 @@
           "attack": 10,
           "traits": [
             "agile",
-            "fire"
+            "fire",
+            "range-increment-20"
           ],
           "damage": "1d12+2 fire"
         }
@@ -27620,7 +27454,8 @@
           "actions": "one",
           "attack": 9,
           "traits": [
-            "agile"
+            "agile",
+            "range-increment-20"
           ],
           "damage": "1d4+1 piercing"
         }
@@ -27796,7 +27631,7 @@
       "attacks": [
         {
           "name": "Shuriken",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 11,
           "traits": [
@@ -27821,11 +27656,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Controlled Condition",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Ganzi Resistance",
             "text": "The ganzi gains resistance 1 to acid, electricity, or sonic (chosen randomly each day).",
@@ -28046,8 +27876,8 @@
           "traits": [
             "forceful",
             "magical",
-            "reach-10",
-            "sweep"
+            "sweep",
+            "unholy"
           ],
           "damage": "2d6 poison; 1d6 spirit; 2d6+9 slashing"
         },
@@ -28057,7 +27887,8 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "agile"
+            "agile",
+            "unholy"
           ],
           "damage": "1d6 spirit; 2d6+9 piercing",
           "effects": [
@@ -28073,7 +27904,8 @@
           "attack": 24,
           "traits": [
             "agile",
-            "reach-15"
+            "reach-15",
+            "unholy"
           ],
           "damage": "2d6+9 bludgeoning; 1d6 spirit",
           "effects": [
@@ -28089,7 +27921,8 @@
           "actions": "one",
           "attack": 28,
           "traits": [
-            "agile"
+            "agile",
+            "range-60-feet"
           ],
           "damage": "2d6+6 poison",
           "effects": [
@@ -28318,8 +28151,9 @@
           "attack": 19,
           "traits": [
             "fire",
+            "magical",
             "holy",
-            "magical"
+            "range-100-feet"
           ],
           "damage": "2d10 fire; 2d6 spirit"
         }
@@ -28699,9 +28533,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 8,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6 acid",
           "effects": [
             {
@@ -28845,9 +28677,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 11,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+4 piercing"
         },
         {
@@ -28856,8 +28686,7 @@
           "actions": "one",
           "attack": 11,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d6+4 slashing"
         }
@@ -28981,8 +28810,7 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "1d10+7 piercing"
         },
@@ -29239,9 +29067,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 9,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d10+4 slashing",
           "effects": [
             {
@@ -30408,8 +30234,7 @@
           "actions": "one",
           "attack": 10,
           "traits": [
-            "deadly-d10",
-            "unarmed"
+            "deadly-d10"
           ],
           "damage": "1d10+4 piercing"
         },
@@ -30419,8 +30244,7 @@
           "actions": "one",
           "attack": 10,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d6+4 slashing"
         },
@@ -30444,11 +30268,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+2 Circumstance to All Saves vs. Disease",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Feign Death",
             "text": "**Trigger** The opossum is reduced below 15 HP; **Effect** The opossum collapses. It is [Off Guard](/condition/off-guard-player-core) and can use actions that require only its mind, but any other action ends the ruse.\n\nA successful Perception DC 18 check to [Seek](/action/seek-player-core) or Medicine DC 18 check to [Recall Knowledge](/action/recall-knowledge-player-core) is required to determine that the animal is not, in fact, dead.",
@@ -30571,8 +30390,7 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "3d8 + 12 bludgeoning",
           "effects": [
@@ -30588,8 +30406,7 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d6 + 12 piercing",
           "effects": [
@@ -30637,7 +30454,8 @@
         "dc": 30,
         "skills": [
           "nature",
-          "society"
+          "society",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -30917,8 +30735,7 @@
           "actions": "one",
           "attack": 20,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d8 + 9 bludgeoning",
           "effects": [
@@ -30934,8 +30751,7 @@
           "actions": "one",
           "attack": 20,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d6 + 9 piercing",
           "effects": [
@@ -30974,7 +30790,8 @@
         "dc": 24,
         "skills": [
           "nature",
-          "society"
+          "society",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -31112,7 +30929,8 @@
             "holy",
             "light",
             "magical",
-            "spirit"
+            "spirit",
+            "range-increment-20"
           ],
           "damage": "2d6 fire; 2d6 spirit"
         }
@@ -31133,11 +30951,6 @@
             "text": "",
             "traits": [],
             "reference": "/action/all-around-vision-monster-core"
-          },
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
           },
           {
             "name": "Archon's Protection",
@@ -31380,8 +31193,7 @@
           "actions": "one",
           "attack": 9,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d6+2 piercing"
         }
@@ -31532,8 +31344,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d6+5 piercing"
         }
@@ -31763,7 +31574,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -31975,7 +31787,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -32098,7 +31911,7 @@
           "traits": [
             "acid",
             "agile",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d4+7 bludgeoning; 1d6 acid"
         }
@@ -32296,8 +32109,7 @@
           "attack": 30,
           "traits": [
             "agile",
-            "fire",
-            "unarmed"
+            "fire"
           ],
           "damage": "3d6+16 bludgeoning; 1d6 fire"
         },
@@ -32310,7 +32122,8 @@
             "deadly-d10",
             "fire",
             "magical",
-            "reload-0"
+            "reload-0",
+            "range-increment-60"
           ],
           "damage": "3d6+10 piercing"
         }
@@ -32614,7 +32427,8 @@
           "traits": [
             "electricity",
             "magical",
-            "reload-2"
+            "reload-2",
+            "range-increment-120"
           ],
           "damage": "3d10+6 piercing"
         }
@@ -32850,7 +32664,8 @@
           "attack": 43,
           "traits": [
             "fatal-d12",
-            "reload-0"
+            "reload-0",
+            "range-increment-120"
           ],
           "damage": "4d8 + 27 piercing",
           "effects": [
@@ -33181,7 +32996,8 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "agile"
+            "agile",
+            "range-increment-20"
           ],
           "damage": "1d4 + 1 bludgeoning",
           "effects": [
@@ -33366,8 +33182,7 @@
           "attack": 10,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d8 + 2 piercing",
           "effects": [
@@ -33690,8 +33505,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d4 piercing",
           "effects": [
@@ -33910,9 +33724,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 26,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "3d10+14 piercing",
           "effects": [
             {
@@ -33927,8 +33739,7 @@
           "actions": "one",
           "attack": 26,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "3d8+12 slashing"
         }
@@ -33972,7 +33783,8 @@
       "recallKnowledge": {
         "dc": 35,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -34076,9 +33888,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 15,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+7 piercing"
         },
         {
@@ -34086,9 +33896,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 15,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d10+7 bludgeoning",
           "effects": [
             {
@@ -34102,7 +33910,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 13,
-          "traits": [],
+          "traits": [
+            "range-increment-60"
+          ],
           "damage": "3d6 bludgeoning",
           "effects": [
             {
@@ -34156,7 +33966,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -34287,8 +34098,7 @@
           "actions": "one",
           "attack": 23,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d12+13 piercing"
         },
@@ -34299,8 +34109,7 @@
           "attack": 23,
           "traits": [
             "agile",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d8+13 slashing"
         }
@@ -34587,7 +34396,8 @@
           "actions": "one",
           "attack": 18,
           "traits": [
-            "occult"
+            "occult",
+            "range-120-feet"
           ],
           "damage": "5d6 untyped"
         }
@@ -34879,7 +34689,7 @@
         "fortitude": 44,
         "reflex": 40,
         "will": 37,
-        "details": "+4 status to all saves vs. mental or divine"
+        "details": "+4 status to all saves vs. mental or [divine](/trait/divine)"
       },
       "skills": {
         "acrobatics": 42,
@@ -34915,21 +34725,19 @@
           "traits": [
             "magical",
             "reach-50",
-            "versatile-p",
-            "versatile-s"
+            "versatile-p-and-s"
           ],
           "damage": "4d12+18 bludgeoning"
         },
         {
           "name": "Empty Weapon",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 43,
           "traits": [
             "magical",
             "thrown-200",
-            "versatile-p",
-            "versatile-s"
+            "versatile-p-and-s"
           ],
           "damage": "4d12+18 bludgeoning"
         }
@@ -34953,11 +34761,6 @@
             "text": "",
             "traits": [],
             "reference": "/action/all-around-vision-monster-core"
-          },
-          {
-            "name": "+4 Status to All Saves vs. Mental or Divine",
-            "text": "",
-            "traits": []
           },
           {
             "name": "Impossible Stature",
@@ -35175,8 +34978,7 @@
           "traits": [
             "agile",
             "finesse",
-            "shove",
-            "unholy"
+            "shove"
           ],
           "damage": "1d4+3 bludgeoning"
         }
@@ -35350,7 +35152,7 @@
         "physical": "5 (except Silver)"
       },
       "movement": {
-        "walk": 25
+        "walk": 35
       },
       "attacks": [
         {
@@ -35385,21 +35187,7 @@
             "reference": "/action/telepathy-monster-core"
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
-            "name": "Elusive Terror",
-            "text": "A hellcat can live within the fears of others and use their dread to hide from sight. The hellcat can Hide in the presence of [Frightened](/condition/frightened-player-core) creatures. If successful, the hellcat becomes Hidden from frightened creatures as if it moved behind cover or into [concealment](/condition/concealed-player-core), but must otherwise Hide normally from non-frightened creatures.",
-            "traits": [
-              "divine",
-              "mental"
-            ]
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Fearful Attack",
@@ -35431,6 +35219,14 @@
             "text": "The hellcat Strides and makes a [Strike](/action/strike-player-core) at the end of that movement. If the hellcat began this action [Hidden](/condition/hidden-player-core), it remains hidden until after the ability's Strike.",
             "traits": [],
             "actions": "one"
+          },
+          {
+            "name": "Elusive Terror",
+            "text": "A hellcat can live within the fears of others and use their dread to hide from sight. The hellcat can Hide in the presence of [Frightened](/condition/frightened-player-core) creatures. If successful, the hellcat becomes Hidden from frightened creatures as if it moved behind cover or into [concealment](/condition/concealed-player-core), but must otherwise Hide normally from non-frightened creatures.",
+            "traits": [
+              "divine",
+              "mental"
+            ]
           }
         ]
       },
@@ -35438,7 +35234,8 @@
         "dc": 23,
         "skills": [
           "nature",
-          "religion"
+          "religion",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -35700,7 +35497,8 @@
           "actions": "one",
           "attack": 21,
           "traits": [
-            "magical"
+            "magical",
+            "range-increment-60"
           ],
           "damage": "2d12+6 fire; 1d6 vitality"
         }
@@ -35914,7 +35712,8 @@
           "actions": "one",
           "attack": 36,
           "traits": [
-            "magical"
+            "magical",
+            "range-increment-120"
           ],
           "damage": "4d12+13 fire; 1d6 vitality"
         }
@@ -36739,7 +36538,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -37062,7 +36862,9 @@
           "type": "melee",
           "actions": "one",
           "attack": 10,
-          "traits": [],
+          "traits": [
+            "agile"
+          ],
           "damage": "1d6+6 slashing"
         }
       ],
@@ -37404,8 +37206,7 @@
           "traits": [
             "agile",
             "finesse",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d8+4 void"
         }
@@ -37416,23 +37217,14 @@
             "name": "Living Visage",
             "text": "While they have more than 30 HP, the hungry ghost appears to be a living creature. They have an automatic result of 34 on Deception checks and DCs to conceal their undead status and can Feed on the Living covertly.",
             "traits": []
-          }
-        ],
-        "defensive": [
-          {
-            "name": "Feed on the Living",
-            "text": "The hungry ghost touches a living creature in reach to steal its life force. If the ghost is in their living visage, they can disguise Feed on the Living as a benign touch and delay the effects for up to 1 minute while keeping the target unaware of the effect. A creature can be affected by only one delayed Feed on the Living at a time, and if the ghost loses their living visage during that minute, the delayed effect is lost. When Feed on the Living takes effect, the target takes 2d8+4 void damage, depending on the result of its Fortitude DC 24 save.\n\n **Critical Success** The target's life energy overpowers the ghost. The hungry ghost takes 5 vitality damage, and the target is unaffected.\n\n **Success** The target takes half damage, and the hungry ghost regains HP equal to the damage dealt.\n\n **Failure** The target takes full damage and is [Enfeebled 1](/condition/enfeebled-player-core) for 1 minute, and the hungry ghost regains HP equal to the damage dealt.\n\n **Critical Failure** The target takes double damage and is Enfeebled 2 for 1 minute, and the hungry ghost regains HP equal to the damage dealt.",
-            "traits": [
-              "divine",
-              "void"
-            ],
-            "actions": "two"
           },
           {
             "name": "Ravenous Undoing",
             "text": "In each 24-hour period, the hungry ghost must use Feed on the Living to consume 30 HP (any HP the ghost would gain count toward this total, even if the ghost has enough HP that they don't actually regain the full amount). If the ghost hasn't consumed enough HP, they mindlessly and recklessly feed on any living creature they come across until satiated.",
             "traits": []
-          },
+          }
+        ],
+        "defensive": [
           {
             "name": "Rejuvenation",
             "text": "When a hungry ghost is destroyed, they reform after 2d4 days fully healed at the location where they were last destroyed. They're only permanently destroyed when they have been given a proper burial, have had their grave cleaned and maintained for at least a year, or have been judged to be redeemed by Pharasma.",
@@ -37447,7 +37239,17 @@
             "reference": "/action/void-healing-monster-core"
           }
         ],
-        "offensive": []
+        "offensive": [
+          {
+            "name": "Feed on the Living",
+            "text": "The hungry ghost touches a living creature in reach to steal its life force. If the ghost is in their living visage, they can disguise Feed on the Living as a benign touch and delay the effects for up to 1 minute while keeping the target unaware of the effect. A creature can be affected by only one delayed Feed on the Living at a time, and if the ghost loses their living visage during that minute, the delayed effect is lost. When Feed on the Living takes effect, the target takes 2d8+4 void damage, depending on the result of its Fortitude DC 24 save.\n\n **Critical Success** The target's life energy overpowers the ghost. The hungry ghost takes 5 vitality damage, and the target is unaffected.\n\n **Success** The target takes half damage, and the hungry ghost regains HP equal to the damage dealt.\n\n **Failure** The target takes full damage and is [Enfeebled 1](/condition/enfeebled-player-core) for 1 minute, and the hungry ghost regains HP equal to the damage dealt.\n\n **Critical Failure** The target takes double damage and is Enfeebled 2 for 1 minute, and the hungry ghost regains HP equal to the damage dealt.",
+            "traits": [
+              "divine",
+              "void"
+            ],
+            "actions": "two"
+          }
+        ]
       },
       "recallKnowledge": {
         "dc": 22,
@@ -37611,6 +37413,12 @@
             "name": "Lore Master",
             "text": "A hyakume can use their Bardic Lore skill to Recall Knowledge on any topic, and they know any languages [common](/language/common) to an area they have spent a day or more in.",
             "traits": []
+          },
+          {
+            "name": "Light Blindness",
+            "text": "",
+            "traits": [],
+            "reference": "/action/light-blindness-monster-core"
           }
         ],
         "defensive": [
@@ -37619,17 +37427,6 @@
             "text": "",
             "traits": [],
             "reference": "/action/all-around-vision-monster-core"
-          },
-          {
-            "name": "+2 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
-            "name": "Light Blindness",
-            "text": "",
-            "traits": [],
-            "reference": "/action/light-blindness-monster-core"
           }
         ],
         "offensive": [
@@ -37873,8 +37670,7 @@
           "actions": "one",
           "attack": 18,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d6+9 slashing; 1d4 spirit"
         }
@@ -38056,7 +37852,7 @@
         },
         {
           "name": "Hatchet",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -38269,6 +38065,7 @@
           "attack": 26,
           "traits": [
             "cold",
+            "range-increment-60",
             "water"
           ],
           "damage": "1d12 cold; 3d12+4 piercing"
@@ -38321,7 +38118,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -38502,7 +38300,8 @@
           "actions": "one",
           "attack": 23,
           "traits": [
-            "cold"
+            "cold",
+            "range-increment-60"
           ],
           "damage": "1d6+13 piercing; 1d6 cold"
         }
@@ -38538,7 +38337,8 @@
       "recallKnowledge": {
         "dc": 27,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -38661,9 +38461,7 @@
         }
       ],
       "abilities": {
-        "interaction": [],
-        "defensive": [],
-        "offensive": [
+        "interaction": [
           {
             "name": "Icicle",
             "text": "Until the next time it acts, the icicle snake appears to be an unassuming icicle. It has an automatic result of 27 on Deception checks and DCs to pass as an icicle.",
@@ -38672,12 +38470,15 @@
             ],
             "actions": "one"
           }
-        ]
+        ],
+        "defensive": [],
+        "offensive": []
       },
       "recallKnowledge": {
         "dc": 16,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -38981,11 +38782,6 @@
         ],
         "defensive": [
           {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Fast Healing 5",
             "text": "",
             "traits": [],
@@ -39252,9 +39048,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 8,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d4+4 bludgeoning",
           "effects": [
             {
@@ -39432,11 +39226,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Regeneration 20 (Deactivated by Holy or Silver)",
             "text": "",
@@ -39677,14 +39466,13 @@
           "actions": "one",
           "attack": 15,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d4+4 slashing; 1d12 electricity"
         },
         {
           "name": "Cutting Gale",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 13,
           "traits": [
@@ -40281,11 +40069,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Fast Healing 20",
             "text": "",
@@ -40897,7 +40680,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -40914,8 +40697,7 @@
           "attack": 10,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         }
@@ -41324,7 +41106,7 @@
         "fortitude": 15,
         "reflex": 18,
         "will": 21,
-        "details": "+1 status to all saves vs. magic, +2 status to all saves vs. divine magic"
+        "details": "+1 status to all saves vs. magic, +2 status to all saves vs. [divine](/trait/divine) magic"
       },
       "skills": {
         "acrobatics": 20,
@@ -41388,16 +41170,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
-            "name": "+2 Status to All Saves vs. Divine Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Vitality Energy Affinity",
             "text": "Vitality healing effects always heal the jyoti for the maximum amount. It doesn't gain the automatic Hit Points or temporary Hit Points from being on a plane with the vitality planar essence trait.",
@@ -41642,7 +41414,7 @@
         },
         {
           "name": "Stone Axe",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 32,
           "traits": [
@@ -41668,11 +41440,6 @@
             "text": "",
             "traits": [],
             "reference": "/action/all-around-vision-monster-core"
-          },
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
           },
           {
             "name": "Archon's Protection",
@@ -41926,8 +41693,7 @@
           "actions": "one",
           "attack": 11,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d10+3 slashing"
         }
@@ -41953,7 +41719,8 @@
       "recallKnowledge": {
         "dc": 16,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -42071,7 +41838,6 @@
           "attack": 34,
           "traits": [
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d12+14 slashing; 1d6 spirit"
@@ -42084,7 +41850,6 @@
           "traits": [
             "agile",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d8+14 slashing; 1d6 spirit"
@@ -42107,14 +41872,14 @@
             "text": "",
             "traits": [],
             "reference": "/action/constant-spells-monster-core"
+          },
+          {
+            "name": "Warp Sense",
+            "text": "The katpaskir senses changes in the planar fabric within 1 mile, including any teleportation effect, sensing the direction and distance to the disturbance. If it senses such a disturbance within 500 feet, the katpaskir can cast [Scouting Eye](/spell/scouting-eye-player-core) to observe the area without needing line of sight to the location.",
+            "traits": []
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Breach Planar Wards",
             "text": "**Trigger** An effect attempts to prevent the katpaskir from using a teleportation effect or from casting Summon Fiend; **Effect** The katpaskir attempts to counteract the triggering effect (counteract modifier of +29). The katpaskir automatically fails against an artifact's effect.",
@@ -42133,11 +41898,6 @@
             "text": "**Trigger** A creature within 30 feet that the katpaskir is aware of casts [Summon Celestial](/spell/summon-celestial-player-core) or otherwise summons a [holy](/trait/holy) creature; **Effect** The katpaskir casts summon fiend, regaining the daily ability to do so if needed. This effect is automatically sustained as long as the triggering summoning is sustained, for up to 1 minute.",
             "traits": [],
             "actions": "reaction"
-          },
-          {
-            "name": "Warp Sense",
-            "text": "The katpaskir senses changes in the planar fabric within 1 mile, including any teleportation effect, sensing the direction and distance to the disturbance. If it senses such a disturbance within 500 feet, the katpaskir can cast [Scouting Eye](/spell/scouting-eye-player-core) to observe the area without needing line of sight to the location.",
-            "traits": []
           }
         ],
         "offensive": [
@@ -42382,9 +42142,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 13,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d6+7 bludgeoning",
           "effects": [
             {
@@ -42529,8 +42287,7 @@
           "actions": "one",
           "attack": 21,
           "traits": [
-            "deadly-d12",
-            "unarmed"
+            "deadly-d12"
           ],
           "damage": "2d12+9 piercing"
         },
@@ -42540,8 +42297,7 @@
           "actions": "one",
           "attack": 21,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d10+9 slashing"
         },
@@ -42565,11 +42321,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+2 Circumstance to All Saves vs. Disease",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Feign Death",
             "text": "**Trigger** The khravgodon is reduced below 70 HP; **Effect** The khravgodon collapses. It is [Off Guard](/condition/off-guard-player-core) and can use actions that require only its mind, but any other action ends the ruse.\n\nA successful Perception DC 18 check to [Seek](/action/seek-player-core) or Medicine DC 18 check to [Recall Knowledge](/action/recall-knowledge-player-core) is required to determine that the animal is not, in fact, dead.",
@@ -42711,7 +42462,6 @@
           "traits": [
             "magical",
             "reach-15",
-            "unarmed",
             "unholy"
           ],
           "damage": "4d12+18 piercing; 3d6 spirit"
@@ -42725,7 +42475,6 @@
             "agile",
             "magical",
             "reach-15",
-            "unarmed",
             "unholy"
           ],
           "damage": "4d8+18 slashing; 3d6 spirit",
@@ -43086,11 +42835,6 @@
             "reference": "/action/all-around-vision-monster-core"
           },
           {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Animal Kindness Vulnerability",
             "text": "Kithangians find kindness to animals revolting. The first time each round that a kithangian sees someone heal or otherwise provide aid to a creature that has the [animal](/trait/animal) trait, the kithangian takes 3d6 mental.",
             "traits": []
@@ -43322,7 +43066,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -43349,7 +43093,8 @@
           "attack": 12,
           "traits": [
             "fire",
-            "magical"
+            "magical",
+            "range-20-feet"
           ],
           "damage": "1d4+2 fire"
         }
@@ -43763,6 +43508,7 @@
           "attack": 11,
           "traits": [
             "agile",
+            "finesse",
             "holy",
             "magical"
           ],
@@ -43775,7 +43521,10 @@
           "attack": 11,
           "traits": [
             "deadly-d10",
+            "holy",
+            "magical",
             "propulsive",
+            "range-increment-60",
             "reload-0"
           ],
           "damage": "1d6+5 piercing"
@@ -43974,11 +43723,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Steal Bearings",
             "text": "**Trigger** A creature within 30 feet Strides; **Effect** The lacridaemon attempts to redirect the triggering creature so it eventually becomes as lost as the lacridaemon. The triggering creature attempts a Will DC 17 save. Regardless of the result, the creature becomes temporarily immune to all attempts to Steal Bearings for 1 minute.\n\n **Success** The creature is unaffected.\n\n **Failure** The creature treats all squares as difficult terrain for its [Stride](/action/stride-player-core).\n\n **Critical Failure** As failure, except that the lacridaemon determines where the target moves during the Stride, though it can't move it into hazardous terrain or a place it can't stand.",
@@ -44179,7 +43923,8 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "magical"
+            "magical",
+            "range-increment-30"
           ],
           "damage": "1d8+2 mental; 1d6 fire; 1d6 vitality"
         }
@@ -44402,7 +44147,8 @@
           "actions": "one",
           "attack": 29,
           "traits": [
-            "magical"
+            "magical",
+            "range-increment-60"
           ],
           "damage": "2d8+9 mental; 2d6 fire; 2d6 vitality"
         }
@@ -44880,6 +44626,7 @@
           "traits": [
             "magical",
             "mental",
+            "range-60-feet",
             "visual"
           ],
           "damage": "2d8+10 mental",
@@ -45343,7 +45090,7 @@
         },
         {
           "name": "Trident",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 16,
           "traits": [
@@ -45365,7 +45112,8 @@
           "attack": 16,
           "traits": [
             "magical",
-            "unholy"
+            "unholy",
+            "range-increment-20"
           ],
           "damage": "",
           "effects": [
@@ -45394,11 +45142,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Phalanx Fighter",
             "text": "All devils of equal or lower level adjacent to a levaloch gain a +1 circumstance bonus to their AC as the levaloch shields them from harm.",
@@ -45435,7 +45178,8 @@
         "dc": 23,
         "skills": [
           "arcana",
-          "religion"
+          "religion",
+          "crafting"
         ],
         "subjects": [
           "construct",
@@ -45565,9 +45309,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 10,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+6 piercing"
         }
       ],
@@ -45591,7 +45333,8 @@
       "recallKnowledge": {
         "dc": 16,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -45715,7 +45458,8 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "electricity"
+            "electricity",
+            "range-increment-50"
           ],
           "damage": "2d12 electricity"
         }
@@ -45744,7 +45488,8 @@
       "recallKnowledge": {
         "dc": 19,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -45881,13 +45626,7 @@
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+2 Perception to Sense Motive",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Gloom Aura",
@@ -46324,7 +46063,8 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "fire"
+            "fire",
+            "range-increment-40"
           ],
           "damage": "1d6+9 fire; 1d6 fire"
         }
@@ -46353,7 +46093,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -46460,8 +46201,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d8+4 piercing",
           "effects": [
@@ -46640,9 +46380,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 29,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "3d6+14 slashing; 3d6 fire; 1d6 fire"
         },
         {
@@ -46651,7 +46389,8 @@
           "actions": "one",
           "attack": 29,
           "traits": [
-            "fire"
+            "fire",
+            "range-increment-40"
           ],
           "damage": "6d6 fire; 2d6 fire"
         }
@@ -46863,8 +46602,7 @@
           "actions": "one",
           "attack": 18,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d10+9 piercing",
           "effects": [
@@ -47030,7 +46768,6 @@
             "agile",
             "magical",
             "reach-10",
-            "unarmed",
             "unholy"
           ],
           "damage": "2d8+16 slashing",
@@ -47059,11 +46796,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Consumptive Aura",
             "text": "20 feet. A meladaemon emanates an aura of intense hunger. Each round a creature begins its turn in the aura, it must attempt a Fortitude DC 27 save. On a failure, the creature takes 1d6 void damage (2d6 void damage on a critical failure) and becomes [Fatigued](/condition/fatigued-player-core). This fatigue ends as soon as the creature eats any food.",
@@ -47295,7 +47027,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 23,
-          "traits": [],
+          "traits": [
+            "range-increment-70"
+          ],
           "damage": "2d8+10 sonic"
         }
       ],
@@ -47337,7 +47071,8 @@
       "recallKnowledge": {
         "dc": 27,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -47449,8 +47184,7 @@
           "attack": 15,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d6+4 slashing",
           "effects": [
@@ -47730,7 +47464,7 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 10
       },
       "attacks": [
         {
@@ -47908,8 +47642,8 @@
           "attack": 14,
           "traits": [
             "finesse",
-            "reach-10",
-            "sweep"
+            "sweep",
+            "reach-10"
           ],
           "damage": "2d8+4 bludgeoning",
           "effects": [
@@ -47926,9 +47660,7 @@
             "name": "Mist Vision",
             "text": "The mist stalker ignores the [Concealed](/condition/concealed-player-core) condition from mist and fog.",
             "traits": []
-          }
-        ],
-        "defensive": [
+          },
           {
             "name": "Mist Cloud",
             "text": "15 feet. The mist stalker is surrounded by mist. Creatures in the aura are [Concealed](/condition/concealed-player-core). If wind disperses the aura, it returns automatically at the start of the mist stalker's turn. This cloud is suppressed in water.",
@@ -47939,6 +47671,7 @@
             ]
           }
         ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Constrict",
@@ -47961,7 +47694,8 @@
       "recallKnowledge": {
         "dc": 19,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -48075,8 +47809,7 @@
           "actions": "one",
           "attack": 20,
           "traits": [
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d10+9 piercing",
           "effects": [
@@ -48141,7 +47874,8 @@
       "recallKnowledge": {
         "dc": 26,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -48359,8 +48093,7 @@
           "actions": "one",
           "attack": 23,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d12+13 piercing",
           "effects": [
@@ -48446,7 +48179,8 @@
       "recallKnowledge": {
         "dc": 27,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -49100,14 +48834,13 @@
           "actions": "one",
           "attack": 9,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d4+4 piercing"
         },
         {
           "name": "Club",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -49125,13 +48858,7 @@
             "reference": "/action/light-blindness-monster-core"
           }
         ],
-        "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Disease and Poison",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Instinctual Tinker",
@@ -49485,7 +49212,7 @@
         },
         {
           "name": "Light Hammer",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -49531,7 +49258,8 @@
         "dc": 16,
         "skills": [
           "arcana",
-          "society"
+          "society",
+          "nature"
         ],
         "subjects": [
           "elemental",
@@ -49643,9 +49371,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 14,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d6+4 bludgeoning",
           "effects": [
             {
@@ -49803,19 +49529,20 @@
       "attacks": [
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
             "agile",
             "finesse",
+            "thrown-10",
             "versatile-s"
           ],
           "damage": "1d4 piercing"
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -49830,7 +49557,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 8,
-          "traits": [],
+          "traits": [
+            "range-increment-30"
+          ],
           "damage": "1d8 fire; 1 fire; 1 fire"
         }
       ],
@@ -49995,6 +49724,7 @@
           "attack": 7,
           "traits": [
             "deadly-d10",
+            "range-increment-100",
             "volley-30"
           ],
           "damage": "1d8 piercing"
@@ -50318,8 +50048,7 @@
           "attack": 39,
           "traits": [
             "magical",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d10+19 piercing; 2d10 cold",
           "effects": [
@@ -50632,8 +50361,7 @@
           "traits": [
             "agile",
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d8+8 piercing"
         }
@@ -50656,11 +50384,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Fast Healing 2",
             "text": "",
@@ -50886,8 +50609,7 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d6+7 slashing",
           "effects": [
@@ -51076,7 +50798,8 @@
           "attack": 34,
           "traits": [
             "holy",
-            "magical"
+            "magical",
+            "range-60-feet"
           ],
           "damage": "3d8+8 piercing; 2d8 bleed"
         }
@@ -51353,8 +51076,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d6 slashing"
         }
@@ -51367,13 +51089,7 @@
             "traits": []
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Grant Desire",
@@ -52275,7 +51991,7 @@
           "attack": 12,
           "traits": [
             "deadly-d10",
-            "unarmed",
+            "magical",
             "unholy"
           ],
           "damage": "2d8+6 piercing; 1d4 spirit",
@@ -52759,9 +52475,9 @@
           "attack": 36,
           "traits": [
             "magical",
-            "reach-25",
-            "unholy",
-            "versatile-s"
+            "reach-20",
+            "versatile-s",
+            "unholy"
           ],
           "damage": "3d10+23 piercing"
         },
@@ -52773,7 +52489,6 @@
           "traits": [
             "magical",
             "reach-15",
-            "unarmed",
             "unholy"
           ],
           "damage": "4d6+20 piercing",
@@ -52810,11 +52525,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Reactive Strike",
             "text": "",
@@ -53238,7 +52948,8 @@
             "holy",
             "mental",
             "nonlethal",
-            "spirit"
+            "spirit",
+            "range-increment-60"
           ],
           "damage": "4d8 mental; 4d6 spirit",
           "effects": [
@@ -53256,11 +52967,6 @@
             "text": "",
             "traits": [],
             "reference": "/action/all-around-vision-monster-core"
-          },
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
           },
           {
             "name": "Archon's Protection",
@@ -53503,7 +53209,7 @@
         },
         {
           "name": "Light Hammer",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 6,
           "traits": [
@@ -53696,11 +53402,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Regeneration 5 (Deactivated by Holy or Silver)",
             "text": "",
@@ -53931,8 +53632,7 @@
           "attack": 9,
           "traits": [
             "finesse",
-            "magical",
-            "unholy"
+            "magic"
           ],
           "damage": "1d4 piercing; 1d4 acid"
         },
@@ -53942,8 +53642,7 @@
           "actions": "one",
           "attack": 9,
           "traits": [
-            "finesse",
-            "unholy"
+            "finesse"
           ],
           "damage": "1d12 piercing; 1d4 bleed"
         }
@@ -54279,8 +53978,7 @@
           "attack": 16,
           "traits": [
             "agile",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "1d8+7 slashing; 1d8 cold"
         },
@@ -54290,7 +53988,8 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "magical"
+            "magical",
+            "range-120-feet"
           ],
           "damage": "2d8 cold; 1d8 cold"
         }
@@ -54522,7 +54221,6 @@
           "traits": [
             "agile",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "2d8+11 slashing; 2d8 cold"
@@ -54533,7 +54231,8 @@
           "actions": "one",
           "attack": 25,
           "traits": [
-            "magical"
+            "magical",
+            "range-120-feet"
           ],
           "damage": "4d8 cold; 2d8 cold",
           "effects": [
@@ -54799,8 +54498,7 @@
           "attack": 29,
           "traits": [
             "agile",
-            "cold-iron",
-            "unarmed"
+            "cold-iron"
           ],
           "damage": "3d6+15 slashing"
         },
@@ -55037,8 +54735,7 @@
           "attack": 25,
           "traits": [
             "agile",
-            "cold-iron",
-            "unarmed"
+            "cold-iron"
           ],
           "damage": "3d6+15 slashing"
         },
@@ -55202,7 +54899,6 @@
             "agile",
             "finesse",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "2d8+9 slashing",
@@ -55227,11 +54923,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Hatred of Red",
             "text": "Pairakas hate the color red. They won't wear the color or willingly enter any place painted red. Given a choice, they'll attack a creature wearing red first.\n\nIf barred from expressing their displeasure toward the color by force or some magical effect, they take 2d6 mental damage at the end of their turn.",
@@ -55473,7 +55164,6 @@
           "traits": [
             "agile",
             "finesse",
-            "unarmed",
             "unholy"
           ],
           "damage": "2d10+6 slashing; 1d6 spirit"
@@ -55485,7 +55175,8 @@
           "attack": 18,
           "traits": [
             "agile",
-            "unholy"
+            "unholy",
+            "range-increment-50"
           ],
           "damage": "2d4+6 piercing; 1d6 spirit; 1d6 bleed",
           "effects": [
@@ -55955,11 +55646,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Shoo!",
             "text": "**Trigger** An enemy within 15 feet damages the dragon; **Effect** The dragon teleports the creature up to 25 feet away. The destination must be on the ground and in a space with no hazards.",
             "traits": [
@@ -56238,11 +55924,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Shoo!",
             "text": "**Trigger** An enemy within 15 feet damages the dragon; **Effect** The dragon teleports the creature up to 25 feet away. The destination must be on the ground and in a space with no hazards.",
@@ -56664,11 +56345,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Shoo!",
             "text": "**Trigger** An enemy within 15 feet damages the dragon; **Effect** The dragon teleports the creature up to 35 feet away. The destination must be on the ground and in a space with no hazards.",
             "traits": [
@@ -56987,11 +56663,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Shoo!",
             "text": "**Trigger** An enemy within 15 feet damages the dragon; **Effect** The dragon teleports the creature up to 35 feet away. The destination must be on the ground and in a space with no hazards.",
@@ -57497,11 +57168,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Shoo!",
             "text": "**Trigger** An enemy within 15 feet damages the dragon; **Effect** The dragon teleports the creature up to 15 feet away. The destination must be on the ground and in a space with no hazards.",
             "traits": [
@@ -57753,11 +57419,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Shoo!",
             "text": "**Trigger** An enemy within 15 feet damages the dragon; **Effect** The dragon teleports the creature up to 15 feet away. The destination must be on the ground and in a space with no hazards.",
@@ -58081,7 +57742,6 @@
           "traits": [
             "magical",
             "reach-10",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d10+19 piercing",
@@ -58101,7 +57761,6 @@
             "agile",
             "magical",
             "reach-10",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d8+19 slashing"
@@ -58127,11 +57786,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Frightful Presence",
             "text": "60 feet. Will DC 35",
@@ -58390,9 +58044,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 12,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d12+5 piercing",
           "effects": [
             {
@@ -58567,8 +58219,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
@@ -58578,7 +58229,8 @@
           "actions": "one",
           "attack": 6,
           "traits": [
-            "propulsive"
+            "propulsive",
+            "range-increment-50"
           ],
           "damage": "1d6+1 bludgeoning"
         }
@@ -58607,7 +58259,8 @@
         "dc": 19,
         "skills": [
           "arcana",
-          "society"
+          "society",
+          "crafting"
         ],
         "subjects": [
           "construct",
@@ -58751,7 +58404,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 9,
-          "traits": [],
+          "traits": [
+            "range-increment-60"
+          ],
           "damage": "1d6+3 piercing"
         }
       ],
@@ -58774,7 +58429,8 @@
         "dc": 21,
         "skills": [
           "arcana",
-          "society"
+          "society",
+          "crafting"
         ],
         "subjects": [
           "construct",
@@ -59128,8 +58784,7 @@
           "traits": [
             "agile",
             "holy",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d8+10 slashing; 1d6 spirit"
         },
@@ -59428,7 +59083,8 @@
           "attack": 31,
           "traits": [
             "force",
-            "magical"
+            "magical",
+            "range-increment-30"
           ],
           "damage": "4d10+6 force"
         }
@@ -59473,7 +59129,8 @@
       "recallKnowledge": {
         "dc": 38,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -60323,11 +59980,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Cowering Fear",
             "text": "90 feet. Will DC 42\n\nA ravener's frightful presence causes creatures to cower in fear as well. As long as a creature is at least [Frightened 2](/condition/frightened-player-core) or more as a result of the ravener's frightful presence, it's also [Immobilized](/condition/immobilized-player-core) from the fear.",
@@ -62120,7 +61772,7 @@
         "fortitude": 21,
         "reflex": 18,
         "will": 24,
-        "details": "+2 status to all saves vs. divine"
+        "details": "+2 status to all saves vs. [divine](/trait/divine)"
       },
       "skills": {
         "acrobatics": 19,
@@ -62208,11 +61860,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Divine",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Soul Anchor",
             "text": "A creature within 60 feet would drop to 0 Hit Points\n\n**Effect** The dragon anchors the triggering creature's soul to its body. The creature remains at 1 Hit Point, becomes [Doomed 2](/condition/doomed-player-core), and gains fast healing equal to the dragon's level for 1 minute. The creature becomes temporarily immune to further Soul Anchor usages for 24 hours.",
@@ -62379,7 +62026,7 @@
         "fortitude": 21,
         "reflex": 18,
         "will": 24,
-        "details": "+2 status to all saves vs. divine"
+        "details": "+2 status to all saves vs. [divine](/trait/divine)"
       },
       "skills": {
         "acrobatics": 19,
@@ -62467,11 +62114,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Divine",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Soul Anchor",
             "text": "A creature within 60 feet would drop to 0 Hit Points\n\n**Effect** The dragon anchors the triggering creature's soul to its body. The creature remains at 1 Hit Point, becomes [Doomed 2](/condition/doomed-player-core), and gains fast healing equal to the dragon's level for 1 minute. The creature becomes temporarily immune to further Soul Anchor usages for 24 hours.",
@@ -64893,11 +64535,6 @@
         ],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Canceling Rune",
             "text": "**Trigger** The dragon is the target of a spell that requires a saving throw; **Effect** The dragon attempts to unmake the spell's foundational runes. They attempt to counteract the spell (counteract rank 7th, counteract modifier +26). If successful, the dragon is unaffected by the spell; other subjects are affected by the spell normally. The dragon can't use Canceling Rune again for 1d4 rounds.",
             "traits": [
@@ -65145,11 +64782,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Canceling Rune",
             "text": "**Trigger** The dragon is the target of a spell that requires a saving throw; **Effect** The dragon attempts to unmake the spell's foundational runes. They attempt to counteract the spell (counteract rank 7th, counteract modifier +26). If successful, the dragon is unaffected by the spell; other subjects are affected by the spell normally. The dragon can't use Canceling Rune again for 1d4 rounds.",
@@ -65547,11 +65179,6 @@
         ],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Canceling Rune",
             "text": "**Trigger** The dragon is the target of a spell that requires a saving throw; **Effect** The dragon attempts to unmake the spell's foundational runes. They attempt to counteract the spell (counteract rank 10th, counteract modifier +33). If successful, the dragon is unaffected by the spell; other subjects are affected by the spell normally. The dragon can't use Canceling Rune again for 1d4 rounds.",
             "traits": [
@@ -65807,11 +65434,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Canceling Rune",
             "text": "**Trigger** The dragon is the target of a spell that requires a saving throw; **Effect** The dragon attempts to unmake the spell's foundational runes. They attempt to counteract the spell (counteract rank 10th, counteract modifier +33). If successful, the dragon is unaffected by the spell; other subjects are affected by the spell normally. The dragon can't use Canceling Rune again for 1d4 rounds.",
@@ -66276,11 +65898,6 @@
         ],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Retributive Rune",
             "text": "**Trigger** A creature within 15 feet damages the rune dragon; **Effect** With a burst of runic magic, the rune dragon uses their detonating rune ability on the triggering creature and immediately causes the rune to detonate if it didn't automatically do so.",
             "traits": [],
@@ -66511,11 +66128,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Arcane",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Retributive Rune",
             "text": "**Trigger** A creature within 15 feet damages the rune dragon; **Effect** With a burst of runic magic, the rune dragon uses their detonating rune ability on the triggering creature and immediately causes the rune to detonate if it didn't automatically do so.",
@@ -67031,8 +66643,7 @@
           "actions": "one",
           "attack": 15,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d10+4 piercing; 1 bleed"
         },
@@ -67043,8 +66654,7 @@
           "attack": 15,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d8+4 slashing",
           "effects": [
@@ -67064,7 +66674,7 @@
         },
         {
           "name": "Spear",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 15,
           "traits": [
@@ -67234,11 +66844,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Regeneration 10 (Deactivated by Holy or Silver)",
             "text": "",
@@ -67728,6 +67333,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
+            "range-increment-50",
             "reload-1"
           ],
           "damage": "1d4+2 bludgeoning"
@@ -67916,9 +67522,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 17,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+8 bludgeoning",
           "effects": [
             {
@@ -67952,7 +67556,8 @@
       "recallKnowledge": {
         "dc": 22,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -68065,8 +67670,7 @@
           "traits": [
             "agile",
             "finesse",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d6+4 piercing; 2d6 void",
           "effects": [
@@ -68092,11 +67696,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Void Child",
             "text": "Sceaduinar have neither souls nor the ability to create. A sceaduinar is immune to effects that target a soul (such as [Seize Soul](/spell/seize-soul-player-core) or a [Resurrect](/ritual/resurrect-player-core) ritual) or that require knowledge of a creature's identity (such as [Scrying](/spell/scrying-player-core)), and critically fails Crafting checks.",
@@ -68462,7 +68061,6 @@
           "traits": [
             "agile",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d6+16 slashing; 1d6 mental"
@@ -68482,11 +68080,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Blatant Liar",
             "text": "While all divs delight in lying, sepids are compulsive and predictable liars who always do the opposite of what they claim they'll do. If a sepid is ever forced or compelled to tell the truth, they take 4d8 mental damage.",
@@ -68738,8 +68331,7 @@
           "attack": 6,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d4+1 piercing"
         }
@@ -68870,7 +68462,6 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "unarmed",
             "unholy"
           ],
           "damage": "1d8+2 bludgeoning"
@@ -69005,9 +68596,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+2 bludgeoning"
         }
       ],
@@ -69025,7 +68614,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "occultism"
+          "occultism",
+          "religion"
         ],
         "subjects": [
           "astral",
@@ -69132,9 +68722,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+2 bludgeoning"
         }
       ],
@@ -69258,9 +68846,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+2 slashing"
         }
       ],
@@ -69645,21 +69231,13 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+2 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [
-          {
-            "name": "+1 Circumstance Bonus on all Saving Throws",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Planar Incarnation - Dreamlands (The Dreamers)",
@@ -69671,7 +69249,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "occultism"
+          "occultism",
+          "religion"
         ],
         "subjects": [
           "dream",
@@ -69779,8 +69358,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "holy",
-            "unarmed"
+            "holy"
           ],
           "damage": "1d8+2 bludgeoning"
         }
@@ -69909,9 +69487,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+2 bludgeoning"
         }
       ],
@@ -69929,7 +69505,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "occultism"
+          "occultism",
+          "religion"
         ],
         "subjects": [
           "ethereal",
@@ -70168,7 +69745,6 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "unarmed",
             "unholy"
           ],
           "damage": "1d8+2 piercing"
@@ -70302,9 +69878,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+2 bludgeoning"
         }
       ],
@@ -70566,8 +70140,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "holy",
-            "unarmed"
+            "holy"
           ],
           "damage": "1d8+2 slashing"
         }
@@ -70700,7 +70273,6 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "unarmed",
             "unholy"
           ],
           "damage": "1d8+2 piercing"
@@ -70956,8 +70528,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "earth",
-            "unarmed"
+            "earth"
           ],
           "damage": "1d8+2 bludgeoning"
         }
@@ -71576,9 +71147,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+2 bludgeoning"
         }
       ],
@@ -71724,7 +71293,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 13,
           "traits": [
@@ -72111,7 +71680,7 @@
         },
         {
           "name": "Spade",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -72259,8 +71828,7 @@
           "attack": 35,
           "traits": [
             "magical",
-            "reach-30",
-            "unarmed"
+            "reach-30"
           ],
           "damage": "4d10+18 bludgeoning",
           "effects": [
@@ -72279,11 +71847,6 @@
             "text": "",
             "traits": [],
             "reference": "/action/all-around-vision-monster-core"
-          },
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
           },
           {
             "name": "Fast Healing 20",
@@ -72669,7 +72232,7 @@
           "actions": "one",
           "attack": 19,
           "traits": [
-            "monk",
+            "magical",
             "two-hand-d8"
           ],
           "damage": "2d4+6 bludgeoning",
@@ -72689,13 +72252,7 @@
             "reference": "/action/constant-spells-monster-core"
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Infuse Staff",
@@ -72976,11 +72533,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+1 Status to All Saves vs. Mental",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Pyrophobia",
             "text": "If the shriezyx takes fire damage or starts its turn within 30 feet of a fire at least the size of a torch, it becomes [Frightened 1](/condition/frightened-player-core).",
             "traits": []
@@ -73116,8 +72668,7 @@
           "traits": [
             "finesse",
             "holy",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "1d6-2 piercing; 1d4 spirit"
         },
@@ -73130,8 +72681,7 @@
             "agile",
             "finesse",
             "holy",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "1d4-2 slashing; 1d4 spirit"
         }
@@ -73551,8 +73101,7 @@
           "attack": 26,
           "traits": [
             "agile",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d8+13 bludgeoning"
         },
@@ -73562,8 +73111,7 @@
           "actions": "one",
           "attack": 26,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d8+13 bludgeoning"
         },
@@ -73573,7 +73121,8 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "brutal"
+            "brutal",
+            "range-increment-60"
           ],
           "damage": "2d10+13 bludgeoning",
           "effects": [
@@ -73963,7 +73512,7 @@
         },
         {
           "name": "Light Hammer",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 19,
           "traits": [
@@ -73986,8 +73535,7 @@
             "agile",
             "finesse",
             "nonlethal",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "1d4+11 bludgeoning",
           "effects": [
@@ -74206,7 +73754,8 @@
       "recallKnowledge": {
         "dc": 22,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -74305,9 +73854,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 8,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+3 bludgeoning",
           "effects": [
             {
@@ -74338,7 +73885,8 @@
       "recallKnowledge": {
         "dc": 16,
         "skills": [
-          "nature"
+          "nature",
+          "occultism"
         ],
         "subjects": [
           "fungus",
@@ -74648,7 +74196,8 @@
       "recallKnowledge": {
         "dc": 22,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -74762,7 +74311,6 @@
           "traits": [
             "magical",
             "reach-15",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d8+14 bludgeoning; 1d6 spirit",
@@ -74787,11 +74335,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Miasma of Pollution",
             "text": "30 feet. A creature that enters the aura or begins its turn in it must succeed at a Fortitude DC 34 save or be [Sickened 2](/condition/sickened-player-core) (plus [Slowed 1](/condition/slowed-player-core) as long as it's sickened on a critical failure). Creatures in the aura can't reduce the value of the sickened condition. A creature that succeeds at its save is temporarily immune for 1 minute. Creatures made of water (such as water elementals) and plant creatures use an outcome one degree of success worse than the result of their save.",
@@ -75012,7 +74555,8 @@
           "actions": "one",
           "attack": 44,
           "traits": [
-            "propulsive"
+            "propulsive",
+            "range-increment-120"
           ],
           "damage": "5d6+21 slashing"
         }
@@ -75090,7 +74634,8 @@
       "recallKnowledge": {
         "dc": 58,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -75735,7 +75280,8 @@
       "recallKnowledge": {
         "dc": 16,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -76400,8 +75946,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d6 piercing",
           "effects": [
@@ -76549,8 +76094,7 @@
           "attack": 23,
           "traits": [
             "agile",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d8+14 slashing"
         }
@@ -76753,7 +76297,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -76860,15 +76405,7 @@
       },
       "attacks": [],
       "abilities": {
-        "interaction": [
-          {
-            "name": "Sportlebore Infestation",
-            "text": "**Saving Throw** Fortitude DC 22\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** [Enfeebled 1](/condition/enfeebled-player-core) (1 hour)\n\n**Stage 3** Enfeebled 2 (1 hour)\n\n**Stage 4** 4d6 bludgeoning damage (basic Fortitude DC 25 save) as the host painfully vomits out a sportlebore swarm and returns to stage 1",
-            "traits": [
-              "disease"
-            ]
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Swarm Mind",
@@ -76889,6 +76426,13 @@
             "text": "Each creature in the sportlebore swarm's area takes 3d6 piercing damage (basic Reflex DC 25 save).",
             "traits": [],
             "actions": "one"
+          },
+          {
+            "name": "Sportlebore Infestation",
+            "text": "**Saving Throw** Fortitude DC 22\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** [Enfeebled 1](/condition/enfeebled-player-core) (1 hour)\n\n**Stage 3** Enfeebled 2 (1 hour)\n\n**Stage 4** 4d6 bludgeoning damage (basic Fortitude DC 25 save) as the host painfully vomits out a sportlebore swarm and returns to stage 1",
+            "traits": [
+              "disease"
+            ]
           }
         ]
       },
@@ -77024,8 +76568,7 @@
           "traits": [
             "agile",
             "holy",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "2d4+12 bludgeoning; 2d6 poison"
         }
@@ -77400,7 +76943,8 @@
       "recallKnowledge": {
         "dc": 25,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -77518,7 +77062,9 @@
       ],
       "weaknesses": {},
       "resistances": {},
-      "movement": {},
+      "movement": {
+        "fly": 40
+      },
       "attacks": [],
       "abilities": {
         "interaction": [
@@ -77539,11 +77085,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Unholy",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Bonded Vessel",
             "text": "The condition of a stone lion's vessel dictates the lion's maximum Hit Point value. Undamaged, the vessel is an object with 50 Hit Points (BT 25). When the lion is in spirit form, damaging it doesn't hurt the vessel, but damaging the vessel deals an equal amount of damage to the lion. When the lion Inhabits its Vessel, they're a single target, and damage reduces the Hit Points of both the lion and the vessel. If the vessel is broken, the lion can still fight normally while inhabiting it and suffers no ill effect, but if the vessel is ever destroyed, the lion is instantly slain and can't reconstitute.",
@@ -77714,11 +77255,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Unholy",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Bonded Vessel",
             "text": "The condition of a stone cub's vessel dictates the cub's maximum Hit Point value. Undamaged, the vessel is an object with 28 Hit Points (BT 14). When the cub is in spirit form, damaging it doesn't hurt the vessel, but damaging the vessel deals an equal amount of damage to the cub. When the cub Inhabits its Vessel, they're a single target, and damage reduces the Hit Points of both the cub and the vessel. If the vessel is broken, the cub can still fight normally while inhabiting it and suffers no ill effect, but if the vessel is ever destroyed, the cub is instantly slain and can't reconstitute.",
@@ -77892,8 +77428,7 @@
           "actions": "one",
           "attack": 15,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d4+4 slashing; 1d12 electricity"
         },
@@ -77903,7 +77438,8 @@
           "actions": "one",
           "attack": 13,
           "traits": [
-            "air"
+            "air",
+            "range-60-feet"
           ],
           "damage": "4d6 slashing"
         }
@@ -77930,7 +77466,13 @@
             "traits": []
           }
         ],
-        "defensive": [],
+        "defensive": [
+          {
+            "name": "Wind Mastery",
+            "text": "A storm hag is unaffected by strong winds, natural or magical. Windy conditions are not difficult terrain for her.",
+            "traits": []
+          }
+        ],
         "offensive": [
           {
             "name": "Change Shape",
@@ -77951,11 +77493,6 @@
           {
             "name": "Stormcalling",
             "text": "A storm hag can perform a special [Control Weather](/ritual/control-weather-player-core) ritual, which requires no secondary casters, to change the weather within 5 miles of her location for 4d12 hours. The primary check is a Occultism DC 23 check, and she can't get an outcome worse than a failure.\n\nThe storm hag can create only hurricanes, thunderstorms, and tornadoes, but she can do so regardless of the current season. She can also quell natural weather events but never willingly does so.",
-            "traits": []
-          },
-          {
-            "name": "Wind Mastery",
-            "text": "A storm hag is unaffected by strong winds, natural or magical. Windy conditions are not difficult terrain for her.",
             "traits": []
           }
         ]
@@ -78256,7 +77793,8 @@
       "recallKnowledge": {
         "dc": 22,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -78371,7 +77909,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 21,
           "traits": [
@@ -78537,7 +78075,8 @@
           "actions": "one",
           "attack": 10,
           "traits": [
-            "deadly-d10"
+            "deadly-d10",
+            "range-increment-60"
           ],
           "damage": "1d6+2 piercing"
         }
@@ -78698,11 +78237,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Light Sickness",
             "text": "A stygira in an area of bright light is [Sickened 1](/condition/sickened-player-core).",
@@ -79309,7 +78843,7 @@
         },
         {
           "name": "Sumbreiva Huntblade",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 33,
           "traits": [
@@ -79554,7 +79088,7 @@
         },
         {
           "name": "Echoblade",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 23,
           "traits": [
@@ -79571,8 +79105,7 @@
           "attack": 23,
           "traits": [
             "agile",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d8+13 bludgeoning"
         }
@@ -79626,7 +79159,8 @@
       "recallKnowledge": {
         "dc": 29,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -79748,8 +79282,7 @@
           "attack": 31,
           "traits": [
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d8+12 bludgeoning; 1d10 cold; 2d8 bleed"
         }
@@ -80047,7 +79580,7 @@
         },
         {
           "name": "Starknife",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -80207,12 +79740,13 @@
         },
         {
           "name": "Dart",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
             "agile",
-            "thrown-20"
+            "range-increment-20",
+            "thrown"
           ],
           "damage": "1d4+2 piercing"
         }
@@ -80379,8 +79913,7 @@
           "actions": "one",
           "attack": 10,
           "traits": [
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "1d8+6 piercing"
         }
@@ -80502,7 +80035,8 @@
       },
       "movement": {
         "walk": 30,
-        "other": "dancer across the heavens, unfettered movement"
+        "other": "dancer across the heavens, unfettered movement",
+        "fly": 40
       },
       "attacks": [
         {
@@ -80763,8 +80297,7 @@
           "attack": 26,
           "traits": [
             "reach-15",
-            "versatile-b",
-            "versatile-s"
+            "versatile-b-and-s"
           ],
           "damage": "3d10+16 piercing",
           "effects": [
@@ -80779,7 +80312,8 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "propulsive"
+            "propulsive",
+            "range-increment-60"
           ],
           "damage": "3d8+12 bludgeoning"
         }
@@ -80833,7 +80367,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -81231,7 +80766,8 @@
       "resistances": {},
       "movement": {
         "walk": 25,
-        "Air Walk": 25
+        "Air Walk": 25,
+        "fly": 25
       },
       "attacks": [
         {
@@ -81262,7 +80798,6 @@
             "agile",
             "finesse",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d6+17 slashing",
@@ -81293,11 +80828,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Terrifying Gaze",
             "text": "30 feet. When a creature ends its turn in the aura, it must attempt a Will DC 30 save. If the creature fails, it becomes [Frightened 2](/condition/frightened-player-core). The creature is then temporarily immune to terrifying gaze (but not Focus Gaze) for 24 hours.",
@@ -81525,7 +81055,7 @@
         "fortitude": 37,
         "reflex": 34,
         "will": 35,
-        "details": "+4 status to all saves vs. mental or divine"
+        "details": "+4 status to all saves vs. mental or [divine](/trait/divine)"
       },
       "skills": {
         "athletics": 45,
@@ -81582,6 +81112,7 @@
           "attack": 39,
           "traits": [
             "brutal",
+            "range-increment-200",
             "void"
           ],
           "damage": "3d12 bludgeoning; 2d10 void",
@@ -81606,11 +81137,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+4 Status to All Saves vs. Mental or Divine",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Impossible Stature",
             "text": "100 feet. Titans warp perception and distance around them to seem even larger and more imposing. A creature that enters or begins its turn within the emanation must succeed at a Will DC 47 save or its movement toward the titan is movement over difficult terrain (greater difficult terrain on a critical failure) for 1 round.",
@@ -81880,8 +81406,7 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d10+8 bludgeoning"
         },
@@ -81892,8 +81417,7 @@
           "attack": 17,
           "traits": [
             "agile",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d8+8 slashing",
           "effects": [
@@ -81911,13 +81435,7 @@
             "traits": []
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Fate Drain",
@@ -82150,7 +81668,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 32,
           "traits": [
@@ -82176,8 +81694,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning",
           "effects": [
@@ -82194,7 +81711,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 30,
-          "traits": [],
+          "traits": [
+            "range-increment-40"
+          ],
           "damage": "3d8+10 piercing",
           "effects": [
             {
@@ -82398,7 +81917,7 @@
         },
         {
           "name": "Trident",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 26,
           "traits": [
@@ -82415,25 +81934,14 @@
           "traits": [
             "agile",
             "nonlethal",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d4+14 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [
-          {
-            "name": "Cloak of High Tide",
-            "text": "10 feet.\n\nElemental water magic ebbs and flows into a tide giant. At the start of each of the giant's turns in combat, their cloak of high tide automatically activates if it's inactive or ends if it's already active. Any creature other than a tide giant that enters or starts its turn in the aura while it's active regains 5 healing,vitality|shortLabel] HP; this is a healing vitality effect, and a creature can benefit from it only once per round. When active, the cloak appears as a magical, flowing cloak of seafoam that billows from the tidal giant's shoulders and the back of their limbs. The cloak is inactive when the tide giant isn't in combat.",
-            "traits": [
-              "aura",
-              "primal",
-              "water"
-            ]
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Blood Tide",
@@ -82452,6 +81960,15 @@
               "water"
             ],
             "actions": "two"
+          },
+          {
+            "name": "Cloak of High Tide",
+            "text": "10 feet.\n\nElemental water magic ebbs and flows into a tide giant. At the start of each of the giant's turns in combat, their cloak of high tide automatically activates if it's inactive or ends if it's already active. Any creature other than a tide giant that enters or starts its turn in the aura while it's active regains 5 healing,vitality|shortLabel] HP; this is a healing vitality effect, and a creature can benefit from it only once per round. When active, the cloak appears as a magical, flowing cloak of seafoam that billows from the tidal giant's shoulders and the back of their limbs. The cloak is inactive when the tide giant isn't in combat.",
+            "traits": [
+              "aura",
+              "primal",
+              "water"
+            ]
           }
         ]
       },
@@ -82591,7 +82108,9 @@
           "type": "melee",
           "actions": "one",
           "attack": 13,
-          "traits": [],
+          "traits": [
+            "agile"
+          ],
           "damage": "2d6+7 slashing"
         },
         {
@@ -82792,7 +82311,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -82942,8 +82462,7 @@
           "attack": 26,
           "traits": [
             "agile",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d6+13 slashing",
           "effects": [
@@ -82958,7 +82477,8 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "brutal"
+            "brutal",
+            "range-increment-120"
           ],
           "damage": "3d8+13 bludgeoning"
         }
@@ -83430,7 +82950,8 @@
       "recallKnowledge": {
         "dc": 34,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -83580,8 +83101,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d4-1 piercing"
         }
@@ -83956,14 +83476,13 @@
           "actions": "one",
           "attack": 9,
           "traits": [
-            "monk",
             "two-hand-d8"
           ],
           "damage": "1d4+4 bludgeoning"
         },
         {
           "name": "Dart",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 12,
           "traits": [
@@ -84199,7 +83718,7 @@
         },
         {
           "name": "Dart",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -84332,9 +83851,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 11,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d12+4 piercing",
           "effects": [
             {
@@ -84381,7 +83898,8 @@
       "recallKnowledge": {
         "dc": 18,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -84531,7 +84049,8 @@
       "recallKnowledge": {
         "dc": 23,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -84657,7 +84176,7 @@
         },
         {
           "name": "Club",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 13,
           "traits": [
@@ -84838,9 +84357,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 20,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d12+10 piercing",
           "effects": [
             {
@@ -85002,8 +84519,7 @@
           "attack": 20,
           "traits": [
             "deadly-d12",
-            "reach-20",
-            "unarmed"
+            "reach-20"
           ],
           "damage": "2d12+9 piercing",
           "effects": [
@@ -85019,8 +84535,7 @@
           "actions": "one",
           "attack": 20,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d10+9 bludgeoning"
         }
@@ -85202,7 +84717,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 34,
-          "traits": [],
+          "traits": [
+            "range-100-feet"
+          ],
           "damage": "4d12 electricity; 10d6 force"
         }
       ],
@@ -85482,7 +84999,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -86186,7 +85703,8 @@
           "traits": [
             "deadly-d10",
             "propulsive",
-            "volley-30"
+            "volley-30",
+            "range-increment-100"
           ],
           "damage": "1d8+4 piercing"
         }
@@ -86389,7 +85907,6 @@
             "deadly-2d10",
             "magical",
             "reach-10",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d10+16 slashing"
@@ -86432,13 +85949,7 @@
             "reference": "/action/constant-spells-monster-core"
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Earth Glide",
@@ -86676,8 +86187,7 @@
           "attack": 36,
           "traits": [
             "magical",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d10+14 slashing; 2d10 cold",
           "effects": [
@@ -86695,8 +86205,7 @@
           "traits": [
             "agile",
             "magical",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d6+14 slashing; 2d10 cold"
         },
@@ -86706,8 +86215,8 @@
           "actions": "one",
           "attack": 36,
           "traits": [
-            "magical",
             "poison",
+            "magical",
             "reach-20"
           ],
           "damage": "3d6+14 piercing; 2d10 cold",
@@ -87000,7 +86509,7 @@
         },
         {
           "name": "Spear",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 26,
           "traits": [
@@ -87283,7 +86792,7 @@
         },
         {
           "name": "Javelin",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -87461,8 +86970,7 @@
           "attack": 27,
           "traits": [
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d10+11 bludgeoning; 1d10 cold",
           "effects": [
@@ -87491,8 +86999,7 @@
           "attack": 27,
           "traits": [
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d10+11 piercing; 1d10 cold",
           "effects": [
@@ -87778,6 +87285,7 @@
           "traits": [
             "brutal",
             "magical",
+            "range-increment-100",
             "water"
           ],
           "damage": "2d8+16 bludgeoning",
@@ -87798,11 +87306,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Magic-Warping Aura",
             "text": "30 feet. A vaspercham's shell distorts nearby magic. Any creature in the aura who Casts a Spell must attempt a Will DC 37 save.\n\n **Critical Success** The spell is unaffected, and the caster is temporarily immune to the magic-warping aura for 1 minute.\n\n **Success** The spell is unaffected, but if the spell allows a saving throw, the vaspercham gains a +1 circumstance bonus to save against it.\n\n **Failure** If the spell has a target and there are one or more viable targets within its range, the spell's target changes, determined randomly by the GM. If there's no other possible target within range or the spell has no target, the spell is disrupted.\n\n **Critical Failure** The caster instead Casts another Spell, choosing randomly from their spell repertoire, prepared spells, or available focus spells (as appropriate) and selecting any targets at random.",
@@ -88167,7 +87670,7 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 30
       },
       "attacks": [
         {
@@ -88177,6 +87680,7 @@
           "attack": 27,
           "traits": [
             "magical",
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "2d8+12 piercing; 1d10 electricity"
@@ -88729,9 +88233,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 15,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d6+7 bludgeoning; 1d6 acid",
           "effects": [
             {
@@ -88907,7 +88409,6 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "unarmed",
             "unholy"
           ],
           "damage": "2d8+3 bludgeoning"
@@ -88919,7 +88420,6 @@
           "attack": 12,
           "traits": [
             "agile",
-            "unarmed",
             "unholy"
           ],
           "damage": "2d6+3 bludgeoning"
@@ -89118,7 +88618,7 @@
         "electricity": 10
       },
       "movement": {
-        "walk": 25
+        "walk": 30
       },
       "attacks": [
         {
@@ -89597,7 +89097,7 @@
         },
         {
           "name": "Shuriken",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 11,
           "traits": [
@@ -89609,13 +89109,7 @@
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [
-          {
-            "name": "+2 to Fortitude Saves vs. Poison",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Envenom",
@@ -89759,7 +89253,6 @@
           "actions": "one",
           "attack": 15,
           "traits": [
-            "unarmed",
             "unholy"
           ],
           "damage": "2d6+6 slashing; 1d6 spirit"
@@ -89796,11 +89289,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Restoration Vulnerability",
             "text": "A vloriak feels agonizing pain when a creature or object recovers from a debilitating effect in their proximity. The first time in a round in which a creature that is within sight of the demon reduces the value of their clumsy, enfeebled, sickened, or [stupefied](/condition/stupefied-player-core) condition, the demon takes 3d6 mental damage and cannot Lick Rust on their next turn.",
@@ -90045,6 +89533,7 @@
           "attack": 41,
           "traits": [
             "magical",
+            "range-increment-120",
             "sonic"
           ],
           "damage": "6d12 sonic",
@@ -90137,7 +89626,8 @@
       "recallKnowledge": {
         "dc": 54,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -90246,8 +89736,7 @@
           "traits": [
             "finesse",
             "holy",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d10+4 piercing; 1d6 spirit"
         },
@@ -90260,8 +89749,7 @@
             "agile",
             "finesse",
             "holy",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d6+4 slashing; 1d6 spirit"
         }
@@ -90719,10 +90207,7 @@
             "traits": [
               "primal"
             ]
-          }
-        ],
-        "defensive": [],
-        "offensive": [
+          },
           {
             "name": "Swallow Whole",
             "text": "Large, 2d8+8 bludgeoning damage, Rupture 22",
@@ -90731,7 +90216,10 @@
             ],
             "actions": "one",
             "reference": "/action/swallow-whole-monster-core"
-          },
+          }
+        ],
+        "defensive": [],
+        "offensive": [
           {
             "name": "Water Travel",
             "text": "A water orm can dissolve into water, appearing only as a long, dark, serpentine stretch of liquid. While in this form, a water orm's [swim Speed](/rule/swim-speed-rules-2351) increases to 600 feet, it automatically succeeds at Athletics checks to [Swim](/action/swim-player-core), and it gains a +4 circumstance bonus to Stealth checks in water. A water orm can remain in this form for 8 hours, but it can't enter salt water when using this ability. A water orm can return to its normal form by Dismissing this action.",
@@ -90746,7 +90234,8 @@
       "recallKnowledge": {
         "dc": 32,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -90910,7 +90399,8 @@
       "recallKnowledge": {
         "dc": 14,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -91032,13 +90522,7 @@
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Darkness or Shadow",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Shadowplay",
@@ -91178,7 +90662,7 @@
           "actions": "one",
           "attack": 29,
           "traits": [
-            "fatal-d12",
+            "deadly-d12",
             "reach-15",
             "sweep"
           ],
@@ -91196,7 +90680,8 @@
           "actions": "one",
           "attack": 27,
           "traits": [
-            "fatal-d12"
+            "fatal-d12",
+            "range-increment-60"
           ],
           "damage": "4d10+10 bludgeoning"
         }
@@ -91385,22 +90870,12 @@
             "reference": "/action/telepathy-monster-core"
           },
           {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Information Network",
             "text": "The dragon can attempt a Society check to [Recall Knowledge](/action/recall-knowledge-player-core) in place of a check to Gather Information, recalling intelligence from prior informants.",
             "traits": []
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Diplomatic Solution",
             "text": "**Trigger** The dragon rolls initiative; **Effect** The dragon targets all enemies it can see within 60 feet with [Calm](/spell/calm-player-core) heightened to a rank equal to half the dragon's level rounded up (Will DC 28 save). The dragon doesn't need to Sustain this effect, but if the dragon takes any hostile action against those affected, it breaks the effect for all creatures.",
@@ -91719,22 +91194,12 @@
             "reference": "/action/telepathy-monster-core"
           },
           {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Information Network",
             "text": "The dragon can attempt a Society check to [Recall Knowledge](/action/recall-knowledge-player-core) in place of a check to Gather Information, recalling intelligence from prior informants.",
             "traits": []
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Diplomatic Solution",
             "text": "**Trigger** The dragon rolls initiative; **Effect** The dragon targets all enemies it can see within 60 feet with [Calm](/spell/calm-player-core) heightened to a rank equal to half the dragon's level rounded up (Will DC 28 save). The dragon doesn't need to Sustain this effect, but if the dragon takes any hostile action against those affected, it breaks the effect for all creatures.",
@@ -92176,11 +91641,6 @@
             "reference": "/action/telepathy-monster-core"
           },
           {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Information Network",
             "text": "The dragon can attempt a Society check to [Recall Knowledge](/action/recall-knowledge-player-core) in place of a check to Gather Information, recalling intelligence from prior informants.",
             "traits": []
@@ -92193,11 +91653,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status To All Saves Vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Diplomatic Solution",
             "text": "**Trigger** The dragon rolls initiative; **Effect** The dragon targets all enemies it can see within 60 feet with [Calm](/spell/calm-player-core) heightened to a rank equal to half the dragon's level rounded up (Will DC 35 save). The dragon doesn't need to Sustain this effect, but if the dragon takes any hostile action against those affected, it breaks the effect for all creatures.",
@@ -92547,11 +92002,6 @@
             "reference": "/action/telepathy-monster-core"
           },
           {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Information Network",
             "text": "The dragon can attempt a Society check to [Recall Knowledge](/action/recall-knowledge-player-core) in place of a check to Gather Information, recalling intelligence from prior informants.",
             "traits": []
@@ -92564,11 +92014,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Diplomatic Solution",
             "text": "**Trigger** The dragon rolls initiative; **Effect** The dragon targets all enemies it can see within 60 feet with [Calm](/spell/calm-player-core) heightened to a rank equal to half the dragon's level rounded up (Will DC 35 save). The dragon doesn't need to Sustain this effect, but if the dragon takes any hostile action against those affected, it breaks the effect for all creatures.",
@@ -93082,22 +92527,12 @@
             "reference": "/action/telepathy-monster-core"
           },
           {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Information Network",
             "text": "The dragon can attempt a Society check to [Recall Knowledge](/action/recall-knowledge-player-core) in place of a check to Gather Information, recalling intelligence from prior informants.",
             "traits": []
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status To All Saves Vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Diplomatic Solution",
             "text": "**Trigger** The dragon rolls initiative; **Effect** The dragon targets all enemies it can see within 60 feet with [Calm](/spell/calm-player-core) heightened to a rank equal to half the dragon's level rounded up (Will DC 23 save). The dragon doesn't need to Sustain this effect, but if the dragon takes any hostile action against those affected, it breaks the effect for all creatures.",
@@ -93381,22 +92816,12 @@
             "reference": "/action/telepathy-monster-core"
           },
           {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Information Network",
             "text": "The dragon can attempt a Society check to [Recall Knowledge](/action/recall-knowledge-player-core) in place of a check to Gather Information, recalling intelligence from prior informants.",
             "traits": []
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status To All Saves Vs. Occult",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Diplomatic Solution",
             "text": "**Trigger** The dragon rolls initiative; **Effect** The dragon targets all enemies it can see within 60 feet with [Calm](/spell/calm-player-core) heightened to a rank equal to half the dragon's level rounded up (Will DC 23 save). The dragon doesn't need to Sustain this effect, but if the dragon takes any hostile action against those affected, it breaks the effect for all creatures.",
@@ -93718,7 +93143,7 @@
           "attack": 17,
           "traits": [
             "finesse",
-            "unarmed",
+            "magical",
             "unholy"
           ],
           "damage": "2d10+7 slashing; 1d4 spirit"
@@ -93966,8 +93391,7 @@
           "actions": "one",
           "attack": 16,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d6+7 slashing; 1d6 cold"
         }
@@ -94589,9 +94013,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 8,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d4+2 piercing",
           "effects": [
             {
@@ -94767,8 +94189,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         }
@@ -95052,7 +94473,7 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 20
       },
       "attacks": [
         {
@@ -95093,7 +94514,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -95211,7 +94633,6 @@
           "traits": [
             "magical",
             "reach-10",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d12+17 piercing; 2d6 spirit",
@@ -95230,7 +94651,6 @@
             "agile",
             "magical",
             "reach-15",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d8+17 slashing; 2d6 spirit",
@@ -95495,8 +94915,7 @@
           "actions": "one",
           "attack": 25,
           "traits": [
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d10+10 piercing; 2d8 fire",
           "effects": [
@@ -95531,13 +94950,7 @@
             ]
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Greater Constrict",
@@ -95583,7 +94996,8 @@
       "recallKnowledge": {
         "dc": 35,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -95867,7 +95281,7 @@
         },
         {
           "name": "Starknife",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 15,
           "traits": [
@@ -96147,13 +95561,7 @@
             "reference": "/action/telepathy-monster-core"
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Cocytan Filth",
@@ -96378,7 +95786,7 @@
         },
         {
           "name": "Looseleaf",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 27,
           "traits": [
@@ -96823,6 +96231,7 @@
             "deadly-d10",
             "holy",
             "magical",
+            "range-increment-100",
             "reload-0",
             "volley-30"
           ],

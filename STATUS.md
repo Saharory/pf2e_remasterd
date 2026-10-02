@@ -4,23 +4,25 @@ Last updated: 2026-10-03
 
 - Branch: `remaster-community-base`
 - Package version: `1.701.9` (unchanged since the last published release)
-- Latest completed local work: Recall Knowledge now derives every official
-  identification subject from each creature's imported traits instead of using
-  isolated overrides. The subject text remains plain because the same traits
-  are already linked in the tag row, while accepted skills retain their internal
-  quick links. The editable model supports multiple subjects; 1,633 creatures
-  now have subjects and 124 correctly have more than one (for example, Dragon
-  and Undead). The preceding Solar Crow, Vault Builder, Adult Executor Dragon,
-  defense, attack-trait, prepared-spell, and named-Lore repairs remain intact.
+- Latest completed local work: the Murajau, Lithic Locus, Solar Crow, Vault
+  Builder, and Adult Executor Dragon audits now exercise source-driven creature
+  generation rather than slug-specific patches. Printed or structured source
+  data supplies Strike type and traits, numeric reach/range parameters,
+  movement, ability placement, save details, weaknesses, items, and named Lore.
+  Shared cleanup removes leaked empty rule elements and actor-only `unarmed`
+  traits. Recall Knowledge derives every applicable subject and skill for all
+  creatures, including multi-subject entries. Tests reject reintroducing a
+  creature-specific override for the five audit examples and enforce the shared
+  invariants across all generated packs.
 - Automated baseline: the public ORC/OGL packs, package definitions, creature
   links and spellcasting, area templates, and maintained UI regressions pass
   through `python3 tools/eplus_dev.py check --json`.
 - Native-app verification still required: import `dist/test/pf2e-remaster.system`
-  and inspect the plain Elemental subject on Solar Crow/Vault Builder, Humanoid
-  on Murajau, Dragon on Adult Executor Dragon, and Dragon + Undead on Wyrmwraith.
-  Confirm the subjects remain editable, the skill names remain internal links,
-  and the subject words do not duplicate the linked trait tags. The preceding
-  creature repair checks still apply.
+  and spot-check all five audit creatures. Confirm Murajau's ranged spear and
+  active Retract, Lithic Locus's compact spell list, Solar Crow's printed Strike
+  traits, Vault Builder's Speeds/range/save fields, and Adult Executor Dragon's
+  save bonus, weakness, and numeric reach. Also confirm Recall subjects remain
+  plain editable text while accepted skills remain internal links.
 - Current product priority: continue the complete data audit and review upstream
   Encounter+ compatibility before releases. See `ROADMAP.md` for accepted,
   deferred, and completed feature decisions.

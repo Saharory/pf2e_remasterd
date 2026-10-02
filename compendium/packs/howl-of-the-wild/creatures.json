@@ -68,8 +68,7 @@
           "attack": 29,
           "traits": [
             "holy",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d6 spirit; 4d10+10 piercing"
         },
@@ -146,7 +145,8 @@
       "recallKnowledge": {
         "dc": 39,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -310,9 +310,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 13,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+7 slashing"
         },
         {
@@ -320,9 +318,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 13,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d6+7 piercing",
           "effects": [
             {
@@ -337,8 +333,7 @@
           "actions": "one",
           "attack": 13,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d4+7 slashing"
         }
@@ -491,6 +486,25 @@
       "abilities": {
         "interaction": [
           {
+            "name": "Internal Cauldron",
+            "text": "With an appropriate diet, an apothecary bee will create a potion of 6th level or lower every two weeks. Most often, this is a [Healing Potion (Moderate)](/item/healing-potion-moderate-gm-core). Each apothecary bee can store only one completed potion at a time. Unused potions can generally be harvested from an apothecary bee with a successful Nature DC 23 or Survival DC 23 check.",
+            "traits": []
+          },
+          {
+            "name": "Potionsight",
+            "text": "Apothecary bees' complex eyes let them see the auras of magical potions and instinctively identify potions of their level or lower. These auras are visible through mundane containers, though their eyes have no special ability to perceive or identify non-magical solutions, such as alchemical elixirs.",
+            "traits": []
+          }
+        ],
+        "defensive": [
+          {
+            "name": "Smoke Susceptibility",
+            "text": "An apothecary bee is [Slowed 1](/condition/slowed-player-core) if it starts its turn in heavy smoke.",
+            "traits": []
+          }
+        ],
+        "offensive": [
+          {
             "name": "Drain Potion",
             "text": "**Requirements** The apothecary bee has no stored potions; **Effect** The apothecary bee slurps up a potion within its reach, storing it internally. A creature can attempt a Reflex DC 25 save to protect a potion in its possession.",
             "traits": [
@@ -511,26 +525,8 @@
               "manipulate"
             ],
             "actions": "one"
-          },
-          {
-            "name": "Internal Cauldron",
-            "text": "With an appropriate diet, an apothecary bee will create a potion of 6th level or lower every two weeks. Most often, this is a [Healing Potion (Moderate)](/item/healing-potion-moderate-gm-core). Each apothecary bee can store only one completed potion at a time. Unused potions can generally be harvested from an apothecary bee with a successful Nature DC 23 or Survival DC 23 check.",
-            "traits": []
-          },
-          {
-            "name": "Potionsight",
-            "text": "Apothecary bees' complex eyes let them see the auras of magical potions and instinctively identify potions of their level or lower. These auras are visible through mundane containers, though their eyes have no special ability to perceive or identify non-magical solutions, such as alchemical elixirs.",
-            "traits": []
           }
-        ],
-        "defensive": [
-          {
-            "name": "Smoke Susceptibility",
-            "text": "An apothecary bee is [Slowed 1](/condition/slowed-player-core) if it starts its turn in heavy smoke.",
-            "traits": []
-          }
-        ],
-        "offensive": []
+        ]
       },
       "recallKnowledge": {
         "dc": 23,
@@ -630,9 +626,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 24,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "4d8+10 piercing"
         },
         {
@@ -650,9 +644,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 24,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "4d6+10 piercing",
           "effects": [
             {
@@ -666,7 +658,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 25,
-          "traits": [],
+          "traits": [
+            "range-60-feet"
+          ],
           "damage": "2d8+10 piercing"
         }
       ],
@@ -827,8 +821,7 @@
           "attack": 33,
           "traits": [
             "agile",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "3d8+15 slashing; 1d12 electricity"
         },
@@ -838,7 +831,8 @@
           "actions": "one",
           "attack": 31,
           "traits": [
-            "magical"
+            "magical",
+            "range-increment-40"
           ],
           "damage": "3d8+15 piercing"
         }
@@ -876,7 +870,8 @@
       "recallKnowledge": {
         "dc": 43,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -1143,7 +1138,8 @@
       "recallKnowledge": {
         "dc": 34,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -1270,8 +1266,7 @@
           "actions": "one",
           "attack": 18,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d10+9 piercing",
           "effects": [
@@ -1286,22 +1281,22 @@
           "actions": "one",
           "attack": 18,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "1d12+9 piercing"
         }
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [],
-        "offensive": [
+        "defensive": [
           {
             "name": "Headbutt",
             "text": "**Trigger** A creature ends a move action within reach of the carnotaurus's horn [Strike](/action/strike-player-core); **Effect** The carnotaurus makes a horn Strike against the triggering creature.",
             "traits": [],
             "actions": "reaction"
-          },
+          }
+        ],
+        "offensive": [
           {
             "name": "Powerful Charge",
             "text": "The carnotaurus lowers its horns and surges toward a foe. It Strides twice, then makes a horn [Strike](/action/strike-player-core). If it moved at least 20 feet from its starting position, the Strike's damage is increased to 2d12+9 and knocks the target [Prone](/condition/prone-player-core) if successful.",
@@ -1428,8 +1423,7 @@
           "actions": "one",
           "attack": 21,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d10+10 piercing"
         },
@@ -1439,8 +1433,7 @@
           "actions": "one",
           "attack": 21,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "3d6+10 slashing"
         },
@@ -1449,7 +1442,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 23,
-          "traits": [],
+          "traits": [
+            "range-120-feet"
+          ],
           "damage": "6d6 untyped",
           "effects": [
             {
@@ -1461,17 +1456,21 @@
       "abilities": {
         "interaction": [
           {
-            "name": "Storm Bolt",
-            "text": "The chaos falcon's bolt [Strike](/action/strike-player-core) always deals the damage type of their storm nexus aura.",
-            "traits": []
-          },
-          {
             "name": "Stormsight",
             "text": "Wind, precipitation, and clouds don't impair a chaos falcon's vision; they ignore the [Concealed](/condition/concealed-player-core) condition from storms, mist, precipitation, and the like.",
             "traits": []
           }
         ],
-        "defensive": [],
+        "defensive": [
+          {
+            "name": "Storm Nexus",
+            "text": "15 feet. 3d6 untyped, basic Reflex DC 26 save. The chaos falcon is surrounded by a cloud of volcanic ash, lightning arcing within the cloud as it glows hot in some areas and collects ice in others. A chaos falcon can change the damage type of this aura to cold, electricity, or fire as an action, which has the [concentrate](/trait/concentrate) trait.",
+            "traits": [
+              "aura",
+              "primal"
+            ]
+          }
+        ],
         "offensive": [
           {
             "name": "Dive-bomb",
@@ -1494,19 +1493,17 @@
             "actions": "one"
           },
           {
-            "name": "Storm Nexus",
-            "text": "15 feet. 3d6 untyped, basic Reflex DC 26 save. The chaos falcon is surrounded by a cloud of volcanic ash, lightning arcing within the cloud as it glows hot in some areas and collects ice in others. A chaos falcon can change the damage type of this aura to cold, electricity, or fire as an action, which has the [concentrate](/trait/concentrate) trait.",
-            "traits": [
-              "aura",
-              "primal"
-            ]
+            "name": "Storm Bolt",
+            "text": "The chaos falcon's bolt [Strike](/action/strike-player-core) always deals the damage type of their storm nexus aura.",
+            "traits": []
           }
         ]
       },
       "recallKnowledge": {
         "dc": 32,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -1619,9 +1616,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 18,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d10+11 piercing"
         },
         {
@@ -1630,13 +1625,22 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "sonic"
+            "sonic",
+            "range-30-feet"
           ],
           "damage": "2d8+9 sonic"
         }
       ],
       "abilities": {
-        "interaction": [
+        "interaction": [],
+        "defensive": [
+          {
+            "name": "Three-Frog Orchestra",
+            "text": "The concert frog has three froglets perched behind its lips, each of a different color. A creature can specifically target a froglet. If any froglets have died, the concert frog attempts a Flat DC 11 at the end of its turn; on a success, new froglets hatch in its stomach and emerge at the concert frog's lips.",
+            "traits": []
+          }
+        ],
+        "offensive": [
           {
             "name": "Conduct",
             "text": "One of the froglets begins to sing, granting one of three effects to the concert frog and all allies within 60 feet until the beginning of the concert frog's next turn.\n\nEffect: Conduct\n\n**Red** Grants a +10-foot status bonus to their Speeds.\n**Blue** Grants a +1 status bonus to AC and Fortitude saving throws.\n**Yellow** Allies gain a +1 status bonus to attack rolls and deal an additional 1d4 sonic damage on successful melee Strikes as their attacks resonate.",
@@ -1646,15 +1650,8 @@
               "primal"
             ],
             "actions": "one"
-          },
-          {
-            "name": "Three-Frog Orchestra",
-            "text": "The concert frog has three froglets perched behind its lips, each of a different color. A creature can specifically target a froglet. If any froglets have died, the concert frog attempts a Flat DC 11 at the end of its turn; on a success, new froglets hatch in its stomach and emerge at the concert frog's lips.",
-            "traits": []
           }
-        ],
-        "defensive": [],
-        "offensive": []
+        ]
       },
       "recallKnowledge": {
         "dc": 24,
@@ -1761,9 +1758,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 9,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+4 bludgeoning",
           "effects": [
             {
@@ -1775,21 +1770,12 @@
       "abilities": {
         "interaction": [
           {
-            "name": "Steal Voice",
-            "text": "**Requirements** An enemy creature has spoken since the crying cicada's last turn; **Effect** The crying cicada learns and mimics the sound of its opponent's voice. It can't make new sentences, but it can choose to repeat select parts of the phrases it has heard. All non-cicada creatures within 30 feet, other than the owner of the stolen voice, must succeed at a Will DC 19 save to disbelieve the mimicry.",
-            "traits": [
-              "auditory"
-            ],
-            "actions": "two"
-          }
-        ],
-        "defensive": [
-          {
             "name": "Wings Flat",
             "text": "When the crying cicada is still and perched on a tree, it blends seamlessly into the environment. It has an automatic result of 30 on Deception checks and DCs to pass as part of the tree.",
             "traits": []
           }
         ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Crying Cicada Poison",
@@ -1814,6 +1800,14 @@
             "text": "The crying cicada beats its wings together, exposing all creatures within a 10-foot burst to crying cicada poison.",
             "traits": [],
             "actions": "one"
+          },
+          {
+            "name": "Steal Voice",
+            "text": "**Requirements** An enemy creature has spoken since the crying cicada's last turn; **Effect** The crying cicada learns and mimics the sound of its opponent's voice. It can't make new sentences, but it can choose to repeat select parts of the phrases it has heard. All non-cicada creatures within 30 feet, other than the owner of the stolen voice, must succeed at a Will DC 19 save to disbelieve the mimicry.",
+            "traits": [
+              "auditory"
+            ],
+            "actions": "two"
           }
         ]
       },
@@ -1922,8 +1916,7 @@
           "actions": "one",
           "attack": 19,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d8+7 slashing; 2d6 poison"
         },
@@ -1934,8 +1927,7 @@
           "attack": 19,
           "traits": [
             "poison",
-            "reach-20",
-            "unarmed"
+            "reach-20"
           ],
           "damage": "5d6 poison",
           "effects": [
@@ -1952,24 +1944,9 @@
             "name": "All Aboard",
             "text": "A decapod dinghy can carry up to 30 Bulk of creatures or unattended items on their back, such as five Medium creatures. The anemones' gentle hold on the passengers is sufficient in most situations, but while in combat, those passengers are [Slowed 1](/condition/slowed-player-core) if they want to take other actions while remaining on the decapod dinghy's back.",
             "traits": []
-          },
-          {
-            "name": "Anemone Transport",
-            "text": "The decapod dinghy and all their willing passengers teleport to a patch of anemones within 10 miles large enough for the decapod dinghy to stand among them. Although the decapod dinghy doesn't need to see the location, they must have been there before. All creatures transported are temporarily immune to this ability for 24 hours.",
-            "traits": [
-              "primal",
-              "teleportation"
-            ],
-            "actions": "three"
           }
         ],
         "defensive": [
-          {
-            "name": "Inflate Anemones",
-            "text": "The anemones on the decapod dinghy's back inflate, enveloping all passengers and giving each passenger a +2 circumstance bonus to AC until the beginning of the decapod dinghy's next turn.",
-            "traits": [],
-            "actions": "one"
-          },
           {
             "name": "Protect Passenger",
             "text": "**Trigger** An enemy within 20 feet damages one of the decapod dinghy's passengers; **Effect** The decapod dinghy's anemones lash out for a tentacle [Strike](/action/strike-player-core) against the triggering creature.",
@@ -1985,13 +1962,29 @@
               "poison"
             ],
             "actions": "one"
+          },
+          {
+            "name": "Anemone Transport",
+            "text": "The decapod dinghy and all their willing passengers teleport to a patch of anemones within 10 miles large enough for the decapod dinghy to stand among them. Although the decapod dinghy doesn't need to see the location, they must have been there before. All creatures transported are temporarily immune to this ability for 24 hours.",
+            "traits": [
+              "primal",
+              "teleportation"
+            ],
+            "actions": "three"
+          },
+          {
+            "name": "Inflate Anemones",
+            "text": "The anemones on the decapod dinghy's back inflate, enveloping all passengers and giving each passenger a +2 circumstance bonus to AC until the beginning of the decapod dinghy's next turn.",
+            "traits": [],
+            "actions": "one"
           }
         ]
       },
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -2097,9 +2090,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 25,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "4d8+10 piercing",
           "effects": [
             {
@@ -2114,8 +2105,7 @@
           "actions": "one",
           "attack": 25,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "4d6+10 slashing"
         },
@@ -2170,7 +2160,8 @@
       "recallKnowledge": {
         "dc": 32,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -2266,9 +2257,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 16,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+4 piercing",
           "effects": [
             {
@@ -2279,7 +2268,7 @@
         },
         {
           "name": "Screech",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 17,
           "traits": [
@@ -2338,7 +2327,8 @@
       "recallKnowledge": {
         "dc": 22,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -2563,13 +2553,25 @@
           "actions": "one",
           "attack": 11,
           "traits": [
-            "acid"
+            "acid",
+            "range-40-feet"
           ],
           "damage": "1d8 acid"
         }
       ],
       "abilities": {
-        "interaction": [
+        "interaction": [],
+        "defensive": [
+          {
+            "name": "Spill",
+            "text": "**Requirements** The flynkett is Kettled Up; **Trigger** The flynkett takes physical damage or is knocked [Prone](/condition/prone-player-core); **Effect** The flynkett spills the contents of its full skin flaps, releasing its digestive juices in a cloud of acidic vapor that deals 2d8 acid damage to all non-flynkett creatures within 20 feet (basic Fortitude DC 18 save). If the flynkett was boiling, the damage is increased to 4d8.",
+            "traits": [
+              "acid"
+            ],
+            "actions": "reaction"
+          }
+        ],
+        "offensive": [
           {
             "name": "Glide",
             "text": "The flynkett stretches its flaps to glide through the air. It moves 5 feet down and up to 25 feet forward through the air. The flynkett can remain in the air long as it spends at least 1 action Gliding each round and does not Kettle Up.",
@@ -2584,18 +2586,7 @@
             "traits": [],
             "actions": "two"
           }
-        ],
-        "defensive": [
-          {
-            "name": "Spill",
-            "text": "**Requirements** The flynkett is Kettled Up; **Trigger** The flynkett takes physical damage or is knocked [Prone](/condition/prone-player-core); **Effect** The flynkett spills the contents of its full skin flaps, releasing its digestive juices in a cloud of acidic vapor that deals 2d8 acid damage to all non-flynkett creatures within 20 feet (basic Fortitude DC 18 save). If the flynkett was boiling, the damage is increased to 4d8.",
-            "traits": [
-              "acid"
-            ],
-            "actions": "reaction"
-          }
-        ],
-        "offensive": []
+        ]
       },
       "recallKnowledge": {
         "dc": 18,
@@ -2697,9 +2688,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 14,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+5 piercing"
         },
         {
@@ -2709,8 +2698,7 @@
           "attack": 14,
           "traits": [
             "agile",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "1d10+5 bludgeoning"
         }
@@ -2759,7 +2747,8 @@
         "dc": 21,
         "skills": [
           "nature",
-          "occultism"
+          "occultism",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -3294,9 +3283,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 13,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+6 piercing",
           "effects": [
             {
@@ -3441,8 +3428,7 @@
           "actions": "one",
           "attack": 25,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "3d8+8 slashing"
         }
@@ -3461,14 +3447,14 @@
             "name": "Three-Headed",
             "text": "Any ability that would sever a greater chimera's head (such as a critical hit with a [Vorpal](/item/vorpal-gm-core) weapon) severs one head at random. Losing a head doesn't kill a chimera (as long as it has at least one head left), but it does prevent it from making Strikes with the lost head or using any abilities granted by the head.",
             "traits": []
-          }
-        ],
-        "offensive": [
+          },
           {
             "name": "Multiple Reactions",
             "text": "A greater chimera gains 2 extra reactions each round that it can use only to make Reactive Strikes. It must use a different head for each reaction, and it can't use more than one on the same triggering action. If it loses one of its heads, it also loses one of these extra reactions.",
             "traits": []
-          },
+          }
+        ],
+        "offensive": [
           {
             "name": "Three-Headed Strike",
             "text": "The greater chimera makes a [Strike](/action/strike-player-core) with each of its heads, each at a –2 penalty and targeting a different creature. These Strikes count as only one attack for the greater chimera's multiple attack penalty, and the penalty doesn't increase until after it has made all three attacks.",
@@ -3480,7 +3466,8 @@
       "recallKnowledge": {
         "dc": 36,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -3572,9 +3559,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 9,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+4 piercing",
           "effects": [
             {
@@ -3711,9 +3696,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 4,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+2 piercing"
         }
       ],
@@ -3842,8 +3825,7 @@
           "actions": "one",
           "attack": 22,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d10+12 slashing; 1d8 bleed",
           "effects": [
@@ -3998,7 +3980,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 13,
-          "traits": [],
+          "traits": [
+            "range-30-feet"
+          ],
           "damage": "2d8+6 untyped"
         }
       ],
@@ -4268,9 +4252,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 13,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d6+5 piercing",
           "effects": [
             {
@@ -4285,8 +4267,7 @@
           "actions": "one",
           "attack": 13,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d4+5 slashing"
         }
@@ -4413,7 +4394,7 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "walk": 25,
+        "walk": 40,
         "other": "40ft in Wheels Up"
       },
       "attacks": [
@@ -4447,6 +4428,14 @@
             "text": "**Requirements** The hooplamander is Unfurled; **Trigger** The hooplamander is targeted by a [Strike](/action/strike-player-core); **Effect** The hooplamander gains a +2 circumstance bonus to AC against the triggering attack and enters its Wheels Up stance.",
             "traits": [],
             "actions": "reaction"
+          },
+          {
+            "name": "Wheels Up",
+            "text": "**Requirements** The hooplamander is Unfurled; **Effect** The hooplamander [Leaps](/action/leap-player-core) and then rolls into its wheeled form. Any creature within 5 feet must succeed at a Reflex DC 22 save or be [Off Guard](/condition/off-guard-player-core) for one round. While it's Wheels Up, the hooplamander can't make Strikes and its Speed increases to 40 feet.",
+            "traits": [
+              "stance"
+            ],
+            "actions": "one"
           }
         ],
         "offensive": [
@@ -4461,21 +4450,14 @@
             "text": "**Requirements** The hooplamander is Wheels Up; **Effect** The hooplamander releases its tail, [Leaping](/action/leap-player-core) up to 20 feet as it exits its wheeled shape and unfurls to land on its four legs.",
             "traits": [],
             "actions": "one"
-          },
-          {
-            "name": "Wheels Up",
-            "text": "**Requirements** The hooplamander is Unfurled; **Effect** The hooplamander [Leaps](/action/leap-player-core) and then rolls into its wheeled form. Any creature within 5 feet must succeed at a Reflex DC 22 save or be [Off Guard](/condition/off-guard-player-core) for one round. While it's Wheels Up, the hooplamander can't make Strikes and its Speed increases to 40 feet.",
-            "traits": [
-              "stance"
-            ],
-            "actions": "one"
           }
         ]
       },
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -4577,8 +4559,7 @@
           "attack": 17,
           "traits": [
             "holy",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d10+8 piercing"
         },
@@ -4628,7 +4609,8 @@
       "recallKnowledge": {
         "dc": 23,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -4773,9 +4755,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 12,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+6 piercing",
           "effects": [
             {
@@ -4926,8 +4906,7 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "electricity",
-            "unarmed"
+            "electricity"
           ],
           "damage": "2d12+5 piercing; 2d6 electricity"
         },
@@ -4937,7 +4916,8 @@
           "actions": "one",
           "attack": 22,
           "traits": [
-            "electricity"
+            "electricity",
+            "range-60-feet"
           ],
           "damage": "4d10 electricity"
         }
@@ -5080,8 +5060,7 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d8+5 piercing"
         }
@@ -5215,9 +5194,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+2 piercing"
         },
         {
@@ -5369,8 +5346,7 @@
           "actions": "one",
           "attack": 16,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d8+6 piercing",
           "effects": [
@@ -5386,19 +5362,13 @@
           "actions": "one",
           "attack": 16,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d6+6 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "Frightened Prey",
-            "text": "[Frightened](/condition/frightened-player-core) creatures are [Off Guard](/condition/off-guard-player-core) to a majungasaurus.",
-            "traits": []
-          },
           {
             "name": "Startling Roar",
             "text": "When the majungasaurus rolls initiative using Stealth, it can attempt to Demoralize each creature within 30 feet as a free action. Regardless of the effect, each creature is then temporarily immune for 1 hour.",
@@ -5412,6 +5382,11 @@
             "text": "**Requirements** The majungasaurus has a creature [Grabbed](/condition/grabbed-player-core) in its jaws; **Effect** The majungasaurus deals that creature 3d8 bludgeoning damage (basic Fortitude DC 24 save). A creature that fails this save is [Clumsy 1](/condition/clumsy-player-core) until it recovers to full Hit Points.",
             "traits": [],
             "actions": "one"
+          },
+          {
+            "name": "Frightened Prey",
+            "text": "[Frightened](/condition/frightened-player-core) creatures are [Off Guard](/condition/off-guard-player-core) to a majungasaurus.",
+            "traits": []
           }
         ]
       },
@@ -5519,7 +5494,8 @@
           "attack": 20,
           "traits": [
             "agile",
-            "reach-10"
+            "reach-10",
+            "effect-1d4-6-bludgeoning-plus-grab-melee-one-action-limb-spines-20-reach-10-feet"
           ],
           "damage": "1d4+6 bludgeoning",
           "effects": [
@@ -5557,11 +5533,6 @@
           {
             "name": "Limb Regrowth",
             "text": "A healthy mammoth land star typically has five limbs. A creature can sever a limb by targeting it and dealing damage equal to the limb's Hit Points. The mammoth land star can regrow a missing limb over the course of 24 hours.\n\nEffect: Mammoth Land Star Limbs",
-            "traits": []
-          },
-          {
-            "name": "Limbs",
-            "text": "**HP**(limb) 25, regrowth; **Immunities** mental",
             "traits": []
           },
           {
@@ -5606,6 +5577,11 @@
               "incapacitation",
               "poison"
             ]
+          },
+          {
+            "name": "Limbs",
+            "text": "**HP**(limb) 25, regrowth; **Immunities** mental",
+            "traits": []
           }
         ]
       },
@@ -5713,9 +5689,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 12,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d6+6 piercing"
         }
       ],
@@ -5761,7 +5735,8 @@
       "recallKnowledge": {
         "dc": 19,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -5864,8 +5839,7 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "2d8+8 force",
           "effects": [
@@ -5932,7 +5906,8 @@
       "recallKnowledge": {
         "dc": 23,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -6053,9 +6028,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 17,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d10+8 piercing"
         },
         {
@@ -6064,8 +6037,7 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d8+8 slashing",
           "effects": [
@@ -6117,7 +6089,8 @@
         "dc": 25,
         "skills": [
           "nature",
-          "occultism"
+          "occultism",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -6277,7 +6250,8 @@
       "recallKnowledge": {
         "dc": 19,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -6373,8 +6347,7 @@
           "actions": "one",
           "attack": 37,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "4d12+14 piercing"
         },
@@ -6447,7 +6420,8 @@
       "recallKnowledge": {
         "dc": 43,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -6544,9 +6518,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 13,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+5 piercing"
         },
         {
@@ -6555,8 +6527,7 @@
           "actions": "one",
           "attack": 13,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d6+5 slashing; 1d6 sonic"
         },
@@ -6566,6 +6537,7 @@
           "actions": "one",
           "attack": 10,
           "traits": [
+            "range-60-feet",
             "sonic"
           ],
           "damage": "4d6 sonic"
@@ -6579,14 +6551,15 @@
             "traits": []
           }
         ],
-        "defensive": [],
-        "offensive": [
+        "defensive": [
           {
             "name": "Auditory Swipe",
             "text": "**Trigger** A creature within the morthak's reach uses an auditory action; **Effect** The morthak makes a claw [Strike](/action/strike-player-core) against the triggering creature.",
             "traits": [],
             "actions": "reaction"
-          },
+          }
+        ],
+        "offensive": [
           {
             "name": "Shattering Scrape",
             "text": "The morthak makes a claw [Strike](/action/strike-player-core) against a creature wearing stone or metal armor. If the Strike hits and the armor's Hardness is 12 or lower, that armor is broken.",
@@ -6600,7 +6573,8 @@
       "recallKnowledge": {
         "dc": 19,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -6916,8 +6890,7 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d10+10 piercing",
           "effects": [
@@ -6993,7 +6966,8 @@
       "recallKnowledge": {
         "dc": 32,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -7101,7 +7075,8 @@
           "actions": "one",
           "attack": 28,
           "traits": [
-            "acid"
+            "acid",
+            "range-increment-60"
           ],
           "damage": "1d12 acid",
           "effects": [
@@ -7165,7 +7140,8 @@
       "recallKnowledge": {
         "dc": 40,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -7279,19 +7255,20 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "Defensive Posture",
-            "text": "The protoceratops tucks in its head and presents its sturdy frill, granting a +1 circumstance bonus to AC adjacent allies. The protoceratops remains in its Defensive Posture until the start of its next turn, but only grants the bonus while allies remain adjacent",
-            "traits": [],
-            "actions": "one"
-          },
-          {
             "name": "Frill Block",
             "text": "**Requirements** The protoceratops is in its Defensive Posture; **Trigger** An adjacent ally would take damage from a physical attack; **Effect** The protoceratops partially blocks the blow with its frill, reducing the damage by 5.",
             "traits": [],
             "actions": "reaction"
           }
         ],
-        "offensive": []
+        "offensive": [
+          {
+            "name": "Defensive Posture",
+            "text": "The protoceratops tucks in its head and presents its sturdy frill, granting a +1 circumstance bonus to AC adjacent allies. The protoceratops remains in its Defensive Posture until the start of its next turn, but only grants the bonus while allies remain adjacent",
+            "traits": [],
+            "actions": "one"
+          }
+        ]
       },
       "recallKnowledge": {
         "dc": 16,
@@ -7396,9 +7373,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 11,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d10+4 piercing",
           "effects": [
             {
@@ -7436,20 +7411,9 @@
       "abilities": {
         "interaction": [
           {
-            "name": "Extradimensional Gullet",
-            "text": "The rift chameleon's innards exist partially on the Ethereal Plane, allowing it to swallow any number of creatures, even ones larger than itself. Creatures that [Escape](/action/escape-player-core) or cut themselves free from the chameleon's stomach reappear in the Universe adjacent to the rift chameleon's position. Creatures cannot escape from the rift chameleon's gullet using teleportation effects unless those effects can also cross planar boundaries.",
-            "traits": [
-              "extradimensional"
-            ]
-          },
-          {
-            "name": "Flickering Dash",
-            "text": "**Frequency** once per round; **Effect** The rift chameleon Strides twice. During this movement, it flits quickly between the Universe and the Ethereal Plane, gaining resistance 5 to physical damage.",
-            "traits": [
-              "occult",
-              "teleportation"
-            ],
-            "actions": "one"
+            "name": "Ethereal Camouflage",
+            "text": "A rift chameleon can [Hide](/action/hide-player-core), even if it doesn't have cover, but it cannot be [Concealed](/condition/concealed-player-core) from creatures on the Ethereal Plane.",
+            "traits": []
           }
         ],
         "defensive": [
@@ -7458,11 +7422,6 @@
             "text": "",
             "traits": [],
             "reference": "/action/all-around-vision-monster-core"
-          },
-          {
-            "name": "Ethereal Camouflage",
-            "text": "A rift chameleon can [Hide](/action/hide-player-core), even if it doesn't have cover, but it cannot be [Concealed](/condition/concealed-player-core) from creatures on the Ethereal Plane.",
-            "traits": []
           }
         ],
         "offensive": [
@@ -7479,6 +7438,22 @@
             "name": "Tongue Pull",
             "text": "Any creature hit by the rift chameleon's tongue is pulled adjacent to the chameleon. The creature is [Off Guard](/condition/off-guard-player-core) to the next [Strike](/action/strike-player-core) the rift chameleon makes against it this round.",
             "traits": []
+          },
+          {
+            "name": "Extradimensional Gullet",
+            "text": "The rift chameleon's innards exist partially on the Ethereal Plane, allowing it to swallow any number of creatures, even ones larger than itself. Creatures that [Escape](/action/escape-player-core) or cut themselves free from the chameleon's stomach reappear in the Universe adjacent to the rift chameleon's position. Creatures cannot escape from the rift chameleon's gullet using teleportation effects unless those effects can also cross planar boundaries.",
+            "traits": [
+              "extradimensional"
+            ]
+          },
+          {
+            "name": "Flickering Dash",
+            "text": "**Frequency** once per round; **Effect** The rift chameleon Strides twice. During this movement, it flits quickly between the Universe and the Ethereal Plane, gaining resistance 5 to physical damage.",
+            "traits": [
+              "occult",
+              "teleportation"
+            ],
+            "actions": "one"
           }
         ]
       },
@@ -7486,7 +7461,8 @@
         "dc": 20,
         "skills": [
           "nature",
-          "occultism"
+          "occultism",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -7592,8 +7568,7 @@
           "actions": "one",
           "attack": 27,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "4d10+11 piercing",
           "effects": [
@@ -7623,7 +7598,8 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "poison"
+            "poison",
+            "range-120-feet"
           ],
           "damage": "5d10 poison",
           "effects": [
@@ -7693,7 +7669,8 @@
       "recallKnowledge": {
         "dc": 36,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -7792,8 +7769,7 @@
           "actions": "one",
           "attack": 30,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d12+15 piercing",
           "effects": [
@@ -7819,7 +7795,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 30,
-          "traits": [],
+          "traits": [
+            "range-increment-120"
+          ],
           "damage": "3d10+15 sonic"
         }
       ],
@@ -7902,7 +7880,8 @@
       "recallKnowledge": {
         "dc": 39,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -7995,8 +7974,7 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d8+3 piercing"
         },
@@ -8007,8 +7985,7 @@
           "attack": 12,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d6+3 slashing"
         }
@@ -8179,7 +8156,8 @@
       "recallKnowledge": {
         "dc": 18,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -8440,8 +8418,7 @@
           "actions": "one",
           "attack": 19,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d8+9 piercing"
         },
@@ -8451,8 +8428,7 @@
           "actions": "one",
           "attack": 19,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "3d6+9 slashing",
           "effects": [
@@ -8468,6 +8444,7 @@
           "actions": "one",
           "attack": 19,
           "traits": [
+            "range-60-feet",
             "sonic"
           ],
           "damage": "6d6 sonic",
@@ -8484,25 +8461,21 @@
             "name": "Sensitive Echolocation",
             "text": "The soniphak can use its hearing as a precise sense with the listed range. If the soniphak takes sonic damage beyond its resistance, its senses are overloaded and all creatures are [Concealed](/condition/concealed-player-core) from it for 1 round.",
             "traits": []
-          },
-          {
-            "name": "Snatch",
-            "text": "The soniphak can [Fly](/action/fly-player-core) at half Speed with a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) in its claws, carrying that creature along with it.",
-            "traits": []
           }
         ],
-        "defensive": [],
-        "offensive": [
-          {
-            "name": "Aftershock",
-            "text": "Whenever a soniphak hits with a screech [Strike](/action/strike-player-core), feedback deals each creature the soniphak has [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) 1d6 sonic damage.",
-            "traits": []
-          },
+        "defensive": [
           {
             "name": "Disruptive Screech",
             "text": "**Trigger** A creature within 30 feet of the soniphak uses an auditory action; **Effect** The soniphak makes a screech [Strike](/action/strike-player-core) against the triggering creature. This disrupts a triggering concentrate action if the Strike is a critical hit.",
             "traits": [],
             "actions": "reaction"
+          }
+        ],
+        "offensive": [
+          {
+            "name": "Aftershock",
+            "text": "Whenever a soniphak hits with a screech [Strike](/action/strike-player-core), feedback deals each creature the soniphak has [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) 1d6 sonic damage.",
+            "traits": []
           },
           {
             "name": "Shattering Scream",
@@ -8511,13 +8484,19 @@
               "sonic"
             ],
             "actions": "two"
+          },
+          {
+            "name": "Snatch",
+            "text": "The soniphak can [Fly](/action/fly-player-core) at half Speed with a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) in its claws, carrying that creature along with it.",
+            "traits": []
           }
         ]
       },
       "recallKnowledge": {
         "dc": 26,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -8613,9 +8592,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 13,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+6 piercing",
           "effects": [
             {
@@ -8756,8 +8733,7 @@
           "actions": "one",
           "attack": 21,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d8+8 piercing"
         }
@@ -8817,7 +8793,8 @@
       "recallKnowledge": {
         "dc": 26,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -8929,13 +8906,14 @@
         }
       ],
       "abilities": {
-        "interaction": [],
-        "defensive": [
+        "interaction": [
           {
             "name": "Camouflage",
             "text": "The stonefish can Hide in its natural environment even if it doesn't have cover.",
             "traits": []
-          },
+          }
+        ],
+        "defensive": [
           {
             "name": "Defensive Spines",
             "text": "When a creature moves into a space with one or more stonefish, that creature takes 1d4 piercing damage and is exposed to stonefish venom.",
@@ -9067,14 +9045,6 @@
             "name": "Defensive Spines",
             "text": "When a creature enters the stonefish swarm's space, that creature takes 1d4 piercing damage and is exposed to stonefish swarm venom.",
             "traits": []
-          },
-          {
-            "name": "Reef Camouflage",
-            "text": "Until the next time it acts, the stonefish swarm appears to be a colorful coral reef. It has an automatic result of 26 on Deception checks and DCs to pass as a reef.",
-            "traits": [
-              "concentrate"
-            ],
-            "actions": "one"
           }
         ],
         "offensive": [
@@ -9090,6 +9060,14 @@
             "traits": [
               "poison"
             ]
+          },
+          {
+            "name": "Reef Camouflage",
+            "text": "Until the next time it acts, the stonefish swarm appears to be a colorful coral reef. It has an automatic result of 26 on Deception checks and DCs to pass as a reef.",
+            "traits": [
+              "concentrate"
+            ],
+            "actions": "one"
           }
         ]
       },
@@ -9200,8 +9178,7 @@
           "actions": "one",
           "attack": 11,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d8+2 piercing",
           "effects": [
@@ -9249,7 +9226,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -9639,8 +9617,7 @@
           "attack": 28,
           "traits": [
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d8+11 force",
           "effects": [
@@ -9735,7 +9712,8 @@
       "recallKnowledge": {
         "dc": 34,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -9853,7 +9831,8 @@
         }
       ],
       "abilities": {
-        "interaction": [
+        "interaction": [],
+        "defensive": [
           {
             "name": "Warm Brain",
             "text": "**Requirements** The swordfish is in cold water; **Trigger** The swordfish rolls initiative; **Effect** The swordfish [Seeks](/action/seek-player-core) or [Swims](/action/swim-player-core).",
@@ -9861,7 +9840,6 @@
             "actions": "reaction"
           }
         ],
-        "defensive": [],
         "offensive": [
           {
             "name": "Fast Sweep",
@@ -9972,8 +9950,7 @@
           "actions": "one",
           "attack": 15,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d6+4 piercing",
           "effects": [
@@ -9989,8 +9966,7 @@
           "actions": "one",
           "attack": 13,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d8+4 slashing"
         },
@@ -9999,7 +9975,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 15,
-          "traits": [],
+          "traits": [
+            "range-20-feet"
+          ],
           "damage": "2d8+6 bludgeoning",
           "effects": [
             {
@@ -10273,8 +10251,7 @@
           "actions": "one",
           "attack": 21,
           "traits": [
-            "reach-20",
-            "unarmed"
+            "reach-20"
           ],
           "damage": "2d12+7 slashing",
           "effects": [
@@ -10420,8 +10397,7 @@
           "attack": 33,
           "traits": [
             "magical",
-            "reach-20",
-            "unarmed"
+            "reach-20"
           ],
           "damage": "3d12+16 piercing",
           "effects": [
@@ -10438,8 +10414,7 @@
           "attack": 33,
           "traits": [
             "magical",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d10+16 bludgeoning"
         }
@@ -10497,7 +10472,8 @@
       "recallKnowledge": {
         "dc": 41,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -10621,14 +10597,14 @@
           "actions": "one",
           "attack": 32,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d12+16 bludgeoning"
         }
       ],
       "abilities": {
-        "interaction": [
+        "interaction": [],
+        "defensive": [
           {
             "name": "Majestic Presence",
             "text": "90 feet. Creatures of Huge size or smaller that enter the aura must attempt a Will DC 38 save. Regardless of the result of the saving throw, the creature is temporarily immune to the titanosaur's Majestic Presence for 1 hour.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature is [Fascinated](/condition/fascinated-player-core) by the titanosaur for 1 round.\n\n **Failure** The creature is fascinated for 2 rounds.\n\n **Critical Failure** The creature is fascinated for 1 minute.",
@@ -10639,7 +10615,6 @@
             ]
           }
         ],
-        "defensive": [],
         "offensive": [
           {
             "name": "Seismic Slam",
@@ -10765,8 +10740,7 @@
           "actions": "one",
           "attack": 8,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d8+1 piercing"
         },
@@ -10777,21 +10751,13 @@
           "attack": 8,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d6+1 slashing"
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "Mimicry",
-            "text": "The troodon repeats up to twelve words it heard in the last week. If it succeeds at a Deception check against the listeners' Perception DC, the sound is indistinguishable from the original. The troodon can't duplicate voice-based abilities or spells, although it can mimic the verbal sounds of spellcasting.",
-            "traits": [],
-            "actions": "one"
-          }
-        ],
+        "interaction": [],
         "defensive": [],
         "offensive": [
           {
@@ -10799,6 +10765,12 @@
             "text": "The troodon Strides and makes a claw [Strike](/action/strike-player-core) at any point during that movement.",
             "traits": [],
             "actions": "two"
+          },
+          {
+            "name": "Mimicry",
+            "text": "The troodon repeats up to twelve words it heard in the last week. If it succeeds at a Deception check against the listeners' Perception DC, the sound is indistinguishable from the original. The troodon can't duplicate voice-based abilities or spells, although it can mimic the verbal sounds of spellcasting.",
+            "traits": [],
+            "actions": "one"
           }
         ]
       },
@@ -10907,8 +10879,7 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d10+9 piercing"
         }
@@ -10970,7 +10941,8 @@
       "recallKnowledge": {
         "dc": 30,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -11214,8 +11186,7 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d8+4 piercing"
         },
@@ -11226,8 +11197,7 @@
           "attack": 12,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d6+4 piercing"
         }
@@ -11268,7 +11238,8 @@
       "recallKnowledge": {
         "dc": 22,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -11488,7 +11459,8 @@
           "actions": "one",
           "attack": 33,
           "traits": [
-            "magical"
+            "magical",
+            "range-60-feet"
           ],
           "damage": "4d10+18 sonic"
         },
@@ -11498,7 +11470,8 @@
           "actions": "one",
           "attack": 33,
           "traits": [
-            "magical"
+            "magical",
+            "range-increment-60"
           ],
           "damage": "4d8+13 fire; 2d6 fire",
           "effects": [
@@ -11522,11 +11495,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 To All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Magmatic Reflex",
             "text": "**Trigger** The warden is targeted with an attack; **Effect** The warden issues a spray of magma as they jump away from danger. This spray deals 6d12 fire damage to all adjacent creatures (basic Reflex DC 42 save). They then [Leap](/action/leap-player-core) or [Step](/action/step-player-core) away, gaining a +2 circumstance bonus to their AC against the triggering attack.",
@@ -11581,7 +11549,8 @@
       "recallKnowledge": {
         "dc": 54,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -11697,8 +11666,7 @@
           "traits": [
             "finesse",
             "magical",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "4d10+15 piercing"
         },
@@ -11723,8 +11691,7 @@
             "agile",
             "finesse",
             "magical",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "4d6+15 slashing"
         },
@@ -11734,7 +11701,8 @@
           "actions": "one",
           "attack": 40,
           "traits": [
-            "magical"
+            "magical",
+            "range-120-feet"
           ],
           "damage": "4d10 sonic; 3d6 mental"
         }
@@ -11759,11 +11727,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 To All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Wild Trickery",
             "text": "**Trigger** An enemy within 60 feet targets the warden with an attack, spell, or other ability; **Effect** The triggering creature must attempt a Will DC 45 save. If it fails, the warden redirects the ability to target a different creature in range with a burst of mental laughter; this has no effect if there are no other eligible targets. The triggering creature is then temporarily immune for 24 hours unless it critically failed.",
@@ -11826,7 +11789,8 @@
       "recallKnowledge": {
         "dc": 54,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -12018,8 +11982,7 @@
           "attack": 43,
           "traits": [
             "agile",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "4d10+16 bludgeoning",
           "effects": [
@@ -12043,11 +12006,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 To All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Bioluminescent Maelstrom",
             "text": "30 feet. Will DC 45\n\nThe warden's wrath conjures a dazzling storm around them that makes the area difficult terrain. Creatures that enter the storm must attempt a Will save. A creature that succeeds at this save is temporarily immune to the luring visuals for 24 hours.\n\n **Success** The creature is unaffected.\n\n **Failure** The creature is [Dazzled](/condition/dazzled-player-core) for 1 round, and for the first action on its next turn, the creature must use a single action to move as close to the warden as possible.\n\n **Critical Failure** The creature is dazzled for as long as it remains in the aura. Whenever the creature begins its turn within the aura, the creature must use the first action of its turn to move as close to the warden as possible. It can attempt a new save at the end of its turn, ending this effect on a success.",
@@ -12099,7 +12057,8 @@
       "recallKnowledge": {
         "dc": 54,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -12214,8 +12173,7 @@
           "traits": [
             "finesse",
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "4d12+16 piercing"
         },
@@ -12239,7 +12197,8 @@
           "attack": 39,
           "traits": [
             "air",
-            "magical"
+            "magical",
+            "range-increment-90"
           ],
           "damage": "2d8+16 bludgeoning; 2d8 electricity"
         }
@@ -12262,13 +12221,7 @@
             "traits": []
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 To All Saves vs. Primal",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Crystal Exhalation",
@@ -12314,7 +12267,8 @@
       "recallKnowledge": {
         "dc": 54,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -12489,7 +12443,7 @@
         },
         {
           "name": "Hatchet",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -12556,7 +12510,8 @@
         "dc": 18,
         "skills": [
           "nature",
-          "society"
+          "society",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -12663,7 +12618,10 @@
         "silver": 5
       },
       "resistances": {},
-      "movement": {},
+      "movement": {
+        "walk": 25,
+        "swim": 25
+      },
       "attacks": [
         {
           "name": "Trident",
@@ -12680,7 +12638,7 @@
         },
         {
           "name": "Trident",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 13,
           "traits": [
@@ -12758,7 +12716,8 @@
         "dc": 19,
         "skills": [
           "nature",
-          "society"
+          "society",
+          "arcana"
         ],
         "subjects": [
           "beast",

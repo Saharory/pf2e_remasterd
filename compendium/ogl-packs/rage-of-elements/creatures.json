@@ -66,8 +66,7 @@
           "actions": "one",
           "attack": 23,
           "traits": [
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d4 poison; 2d8+10 slashing"
         },
@@ -78,7 +77,8 @@
           "attack": 23,
           "traits": [
             "brutal",
-            "propulsive"
+            "propulsive",
+            "range-increment-60"
           ],
           "damage": "2d4 poison; 2d8+7 piercing"
         }
@@ -114,7 +114,8 @@
       "recallKnowledge": {
         "dc": 27,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -238,7 +239,7 @@
         },
         {
           "name": "Thunderbolt",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -250,7 +251,7 @@
         },
         {
           "name": "Air Blast",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -340,7 +341,8 @@
       "recallKnowledge": {
         "dc": 43,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -553,7 +555,7 @@
           "attack": 8,
           "traits": [
             "deadly-d10",
-            "reload-0"
+            "range-increment-60"
           ],
           "damage": "1d6 piercing"
         }
@@ -756,8 +758,7 @@
           "attack": 21,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d12+10 piercing"
         }
@@ -771,11 +772,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Emotion",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Curtain of Calm",
             "text": "20 feet. The asp of grief consumes the emotions of the creatures around it. An enemy that begins its turn in the aura must attempt a Will DC 29 save. If it fails, the asp consumes its grief. The creature feels a lack of feelings and motivation, reducing its frightened value by 1 and becoming Stupefied 1 (or Stupefied 2 on a critical failure) for 1d4 rounds. Regardless of the result of the saving throw, the creature is temporarily immune to curtain of calm for 1 minute. The asp becomes charged with grief (see iron grief) for 1 minute whenever a creature fails this saving throw.",
@@ -990,7 +986,7 @@
         },
         {
           "name": "Thunderbolt",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -1002,7 +998,7 @@
         },
         {
           "name": "Air Blast",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -1092,7 +1088,8 @@
       "recallKnowledge": {
         "dc": 48,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -1361,7 +1358,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -1519,7 +1517,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -1644,7 +1643,8 @@
           "actions": "one",
           "attack": 27,
           "traits": [
-            "fire"
+            "fire",
+            "range-increment-50"
           ],
           "damage": "3d12 fire"
         }
@@ -1671,14 +1671,14 @@
               "aura",
               "fire"
             ]
-          }
-        ],
-        "offensive": [
+          },
           {
             "name": "Freeze and Shatter",
             "text": "If the boiling spring is destroyed with cold damage, their body freezes over and explodes, sending out a wave of frigid air and ice shards that deal 4d6 piercing damage plus 4d6 cold damage to creatures in a 20-foot emanation (basic Reflex DC 36 save).",
             "traits": []
-          },
+          }
+        ],
+        "offensive": [
           {
             "name": "Scalding Breath",
             "text": "The boiling spring breathes out a cloud of steam in a 30-foot [cone](/rule/cone-rules-2386) that deals 14d6 fire damage to each creature in the area (basic Reflex DC 33 save). The boiling spring can't use Scalding Breath again for 1d4 rounds.",
@@ -1693,7 +1693,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -1827,7 +1828,7 @@
         },
         {
           "name": "Thunderbolt",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -1839,7 +1840,7 @@
         },
         {
           "name": "Air Blast",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -1929,7 +1930,8 @@
       "recallKnowledge": {
         "dc": 48,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -2178,8 +2180,7 @@
           "traits": [
             "agile",
             "magical",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "2d6+12 bludgeoning"
         }
@@ -2216,7 +2217,8 @@
       "recallKnowledge": {
         "dc": 37,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -2346,7 +2348,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 25,
-          "traits": [],
+          "traits": [
+            "range-30-feet"
+          ],
           "damage": "3d6+7 fire; 3 fire; 1d8 fire",
           "effects": [
             {
@@ -2386,7 +2390,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -2527,7 +2532,8 @@
           "attack": 33,
           "traits": [
             "electricity",
-            "magical"
+            "magical",
+            "range-120-feet"
           ],
           "damage": "4d12 electricity"
         }
@@ -2542,10 +2548,10 @@
             "reference": "/action/all-around-vision-monster-core"
           },
           {
-            "name": "Shift Mood",
-            "text": "The capritellix rotates the segments of their face, changing their personality and demeanor. Until they Shift their Mood again, the capritellix gains a +4 status bonus to a certain skill and to their Will DC against that skill, as well as a specific occult innate spell they can cast at will (9th rank, DC 38).\n\n**Angry** Intimidation, [Dominate](/spell/dominate-player-core)\n\n**Gregarious** Performance, [Uncontrollable Dance](/spell/uncontrollable-dance-player-core)\n\n**Serene** Diplomacy, [Suggestion](/spell/suggestion-player-core)\n\n**Sly** Deception, [Warp Mind](/spell/warp-mind-player-core)",
+            "name": "Whirling Hands",
+            "text": "**Trigger** A creature starts its turn in the capritellix's melee reach; **Effect** The capritellix makes a metal hand [Strike](/action/strike-player-core) against the creature.",
             "traits": [],
-            "actions": "one"
+            "actions": "free"
           }
         ],
         "offensive": [
@@ -2561,24 +2567,25 @@
             "traits": []
           },
           {
-            "name": "Whirling Hands",
-            "text": "**Trigger** A creature starts its turn in the capritellix's melee reach; **Effect** The capritellix makes a metal hand [Strike](/action/strike-player-core) against the creature.",
-            "traits": [],
-            "actions": "free"
-          },
-          {
             "name": "Push 20 feet",
             "text": "",
             "traits": [],
             "actions": "one",
             "reference": "/action/push-monster-core"
+          },
+          {
+            "name": "Shift Mood",
+            "text": "The capritellix rotates the segments of their face, changing their personality and demeanor. Until they Shift their Mood again, the capritellix gains a +4 status bonus to a certain skill and to their Will DC against that skill, as well as a specific occult innate spell they can cast at will (9th rank, DC 38).\n\n**Angry** Intimidation, [Dominate](/spell/dominate-player-core)\n\n**Gregarious** Performance, [Uncontrollable Dance](/spell/uncontrollable-dance-player-core)\n\n**Serene** Diplomacy, [Suggestion](/spell/suggestion-player-core)\n\n**Sly** Deception, [Warp Mind](/spell/warp-mind-player-core)",
+            "traits": [],
+            "actions": "one"
           }
         ]
       },
       "recallKnowledge": {
         "dc": 41,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -2896,7 +2903,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -3010,7 +3018,8 @@
           "actions": "one",
           "attack": 15,
           "traits": [
-            "electricity"
+            "electricity",
+            "range-30-feet"
           ],
           "damage": "2d12 electricity"
         }
@@ -3053,7 +3062,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -3177,7 +3187,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 21,
-          "traits": [],
+          "traits": [
+            "range-increment-30"
+          ],
           "damage": "2d10+13 piercing"
         }
       ],
@@ -3219,7 +3231,8 @@
       "recallKnowledge": {
         "dc": 27,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -3352,7 +3365,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 10,
-          "traits": [],
+          "traits": [
+            "range-increment-60"
+          ],
           "damage": "1d6+5 piercing",
           "effects": [
             {
@@ -3389,7 +3404,8 @@
       "recallKnowledge": {
         "dc": 18,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -3525,11 +3541,13 @@
       "attacks": [
         {
           "name": "Hot Air",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
-            "air"
+            "air",
+            "effect-pushed-5-feet-ranged-one-action-lightning-bolt-7-electricity",
+            "range-increment-50"
           ],
           "damage": ""
         },
@@ -3572,7 +3590,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -3679,9 +3698,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 8,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+2 bludgeoning"
         }
       ],
@@ -3709,7 +3726,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -3840,7 +3858,8 @@
           "actions": "one",
           "attack": 27,
           "traits": [
-            "brutal"
+            "brutal",
+            "range-increment-120"
           ],
           "damage": "3d6+14 bludgeoning",
           "effects": [
@@ -3910,7 +3929,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -4198,7 +4218,7 @@
         },
         {
           "name": "Thunderbolt",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -4210,7 +4230,7 @@
         },
         {
           "name": "Air Blast",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -4300,7 +4320,8 @@
       "recallKnowledge": {
         "dc": 48,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -4547,14 +4568,13 @@
             "agile",
             "magical",
             "nonlethal",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d8+13 bludgeoning"
         },
         {
           "name": "Jambiya",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 29,
           "traits": [
@@ -4568,11 +4588,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+2 Bonus on Perception to Sense motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Detect Magic",
             "text": "You cast detect magic at regular intervals. You move at half your travel speed or slower. You have no chance of accidentally overlooking a magic aura at a travel speed up to 300 feet per minute, but must be traveling no more than 150 feet per minute to detect magic auras before the party moves into them.",
@@ -4637,7 +4652,8 @@
       "recallKnowledge": {
         "dc": 37,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -4916,7 +4932,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -5027,8 +5044,8 @@
           "actions": "one",
           "attack": 10,
           "traits": [
-            "finesse",
-            "magical"
+            "magical",
+            "finesse"
           ],
           "damage": "2d6 bludgeoning"
         }
@@ -5072,7 +5089,8 @@
       "recallKnowledge": {
         "dc": 16,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -5302,7 +5320,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -5588,8 +5607,7 @@
           "traits": [
             "agile",
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "1d4+16 bludgeoning; 4d6 fire"
         }
@@ -5662,7 +5680,8 @@
       "recallKnowledge": {
         "dc": 37,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -5849,7 +5868,8 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "fly": 75
       },
       "attacks": [
         {
@@ -5875,14 +5895,13 @@
             "agile",
             "finesse",
             "nonlethal",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "1d6+11 slashing; 1d12 electricity"
         },
         {
           "name": "Jambiya",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 24,
           "traits": [
@@ -5900,7 +5919,8 @@
           "attack": 23,
           "traits": [
             "air",
-            "arcane"
+            "arcane",
+            "range-increment-50"
           ],
           "damage": "3d8+8 bludgeoning"
         }
@@ -5974,7 +5994,8 @@
       "recallKnowledge": {
         "dc": 32,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -6186,8 +6207,7 @@
             "agile",
             "magical",
             "nonlethal",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d6+13 bludgeoning",
           "effects": [
@@ -6206,7 +6226,8 @@
           "actions": "one",
           "attack": 27,
           "traits": [
-            "brutal"
+            "brutal",
+            "range-increment-120"
           ],
           "damage": "2d8+13 bludgeoning"
         }
@@ -6279,7 +6300,8 @@
       "recallKnowledge": {
         "dc": 35,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -6521,8 +6543,7 @@
           "traits": [
             "agile",
             "magical",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d8+9 bludgeoning",
           "effects": [
@@ -6540,7 +6561,6 @@
             "deadly-d10",
             "magical",
             "propulsive",
-            "reload-0",
             "volley-30"
           ],
           "damage": "2d8+9 piercing",
@@ -6606,7 +6626,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -6837,7 +6858,8 @@
       },
       "movement": {
         "fly": 10,
-        "other": "(can't ascend more than 5 feet off the ground)"
+        "other": "(can't ascend more than 5 feet off the ground)",
+        "walk": 5
       },
       "attacks": [
         {
@@ -6870,7 +6892,8 @@
       "recallKnowledge": {
         "dc": 18,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -6983,7 +7006,6 @@
           "actions": "one",
           "attack": 16,
           "traits": [
-            "reach-10",
             "two-hand-d8"
           ],
           "damage": "2d4+10 bludgeoning"
@@ -7246,7 +7268,7 @@
         },
         {
           "name": "Spear",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 23,
           "traits": [
@@ -7540,8 +7562,7 @@
           "actions": "one",
           "attack": 9,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d4+1 piercing; 1d4 fire"
         },
@@ -7552,8 +7573,7 @@
           "attack": 9,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d4+1 slashing"
         }
@@ -7566,15 +7586,16 @@
             "traits": []
           }
         ],
-        "defensive": [],
-        "offensive": [
+        "defensive": [
           {
             "name": "Molten Form",
             "text": "Any creature that hits the lava otter with an unarmed [Strike](/action/strike-player-core) or otherwise touches it takes 1 fire damage. If a gallon or more of water touches the lava otter, or if it's affected by a water effect, its outer layer of lava hardens to a rocky shell, deactivating its molten form and imposing weakness 5 to bludgeoning damage. Molten form reactivates if the otter swims in lava for 1 minute.",
             "traits": [
               "fire"
             ]
-          },
+          }
+        ],
+        "offensive": [
           {
             "name": "Scattering Magma",
             "text": "**Requirements** The otter is in molten form, and its previous action was a successful jaws [Strike](/action/strike-player-core); **Effect** The otter grips with its jaws and rapidly twists, flinging lava. The otter deals 1d4 fire damage to all creatures adjacent to it.",
@@ -7593,7 +7614,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -7749,7 +7771,9 @@
         "dc": 37,
         "skills": [
           "arcana",
-          "occultism"
+          "occultism",
+          "crafting",
+          "nature"
         ],
         "subjects": [
           "construct",
@@ -7914,7 +7938,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 11,
-          "traits": [],
+          "traits": [
+            "range-increment-20"
+          ],
           "damage": "2d6+4 bludgeoning"
         }
       ],
@@ -8061,7 +8087,8 @@
           "attack": 13,
           "traits": [
             "magical",
-            "primal"
+            "primal",
+            "range-increment-60"
           ],
           "damage": "2d10+7 bludgeoning"
         }
@@ -8109,7 +8136,8 @@
       "recallKnowledge": {
         "dc": 22,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -8241,6 +8269,14 @@
               "fire"
             ],
             "actions": "reaction"
+          },
+          {
+            "name": "Volcanic Heat",
+            "text": "40 feet. Any creature that enters or starts its turn in the aura takes 15 fire damage (basic Fortitude DC 33 save). A creature that fails its save is also [Enfeebled 1](/condition/enfeebled-player-core) until it's no longer in the aura.",
+            "traits": [
+              "aura",
+              "fire"
+            ]
           }
         ],
         "offensive": [
@@ -8266,21 +8302,14 @@
               "fire"
             ],
             "actions": "two"
-          },
-          {
-            "name": "Volcanic Heat",
-            "text": "40 feet. Any creature that enters or starts its turn in the aura takes 15 fire damage (basic Fortitude DC 33 save). A creature that fails its save is also [Enfeebled 1](/condition/enfeebled-player-core) until it's no longer in the aura.",
-            "traits": [
-              "aura",
-              "fire"
-            ]
           }
         ]
       },
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -8390,7 +8419,8 @@
           "attack": 9,
           "traits": [
             "disarm",
-            "finesse"
+            "finesse",
+            "reach"
           ],
           "damage": "2d6 slashing",
           "effects": [
@@ -8549,7 +8579,6 @@
           "traits": [
             "agile",
             "reach-15",
-            "unarmed",
             "versatile-p",
             "versatile-s"
           ],
@@ -8562,20 +8591,21 @@
           "attack": 21,
           "traits": [
             "electricity",
-            "magical"
+            "magical",
+            "range-120-feet"
           ],
           "damage": "3d10+16 electricity"
         }
       ],
       "abilities": {
-        "interaction": [],
-        "defensive": [
+        "interaction": [
           {
             "name": "Heavy",
             "text": "As long as it is immobile, the elemental can't be forcibly moved or knocked [Prone](/condition/prone-player-core). If it takes a move action, it loses this immunity until the start of its next turn.",
             "traits": []
           }
         ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Lightning Punch",
@@ -8607,7 +8637,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -8716,19 +8747,19 @@
           "attack": 9,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d10+3 bludgeoning"
         },
         {
           "name": "Shuriken",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
             "agile",
-            "thrown-20"
+            "range-increment-20",
+            "thrown"
           ],
           "damage": "1d6+3 piercing"
         }
@@ -8762,7 +8793,8 @@
       "recallKnowledge": {
         "dc": 16,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -8875,9 +8907,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 9,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+2 slashing"
         }
       ],
@@ -8906,7 +8936,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -9078,7 +9109,8 @@
       "recallKnowledge": {
         "dc": 14,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -9205,7 +9237,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 6,
-          "traits": [],
+          "traits": [
+            "range-increment-15"
+          ],
           "damage": "1d6+2 bludgeoning"
         }
       ],
@@ -9359,7 +9393,8 @@
           "attack": 12,
           "traits": [
             "brutal",
-            "fire"
+            "fire",
+            "range-increment-20"
           ],
           "damage": "1d6 fire; 1d6 fire"
         }
@@ -9402,7 +9437,8 @@
         "dc": 19,
         "skills": [
           "arcana",
-          "society"
+          "society",
+          "nature"
         ],
         "subjects": [
           "elemental",
@@ -9534,6 +9570,7 @@
             "concealable",
             "concussive",
             "fatal-d10",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+6 piercing"
@@ -9584,7 +9621,8 @@
         "dc": 20,
         "skills": [
           "arcana",
-          "society"
+          "society",
+          "nature"
         ],
         "subjects": [
           "elemental",
@@ -9876,7 +9914,9 @@
         "piercing": 10,
         "slashing": 10
       },
-      "movement": {},
+      "movement": {
+        "walk": 25
+      },
       "attacks": [
         {
           "name": "Tendril",
@@ -9944,7 +9984,8 @@
       "recallKnowledge": {
         "dc": 26,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -10064,13 +10105,20 @@
           "actions": "one",
           "attack": 21,
           "traits": [
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d12+6 piercing"
         }
       ],
       "abilities": {
-        "interaction": [],
+        "interaction": [
+          {
+            "name": "Light Blindness",
+            "text": "",
+            "traits": [],
+            "reference": "/action/light-blindness-monster-core"
+          }
+        ],
         "defensive": [
           {
             "name": "Fire-fueled Rage",
@@ -10084,12 +10132,6 @@
               "primal",
               "wood"
             ]
-          },
-          {
-            "name": "Light Blindness",
-            "text": "",
-            "traits": [],
-            "reference": "/action/light-blindness-monster-core"
           },
           {
             "name": "Reactive Strike",
@@ -10248,7 +10290,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 8,
-          "traits": [],
+          "traits": [
+            "range-increment-20"
+          ],
           "damage": "1d6+3 piercing",
           "effects": [
             {
@@ -10380,9 +10424,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 11,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+3 piercing",
           "effects": [
             {
@@ -10392,15 +10434,14 @@
         }
       ],
       "abilities": {
-        "interaction": [],
-        "defensive": [
+        "interaction": [
           {
             "name": "Camouflage",
             "text": "An olobigonde can Hide in aquatic environments even if it doesn't have cover. However, there must be plants, debris, a seabed, or other objects for it to camouflage itself, not just open water.",
             "traits": []
           }
         ],
-        "offensive": [
+        "defensive": [
           {
             "name": "Ambush",
             "text": "**Trigger** A target creature passes within 20 feet of the olobigonde's hiding place and has not detected the olobigonde; **Effect** The olobigonde lunges out of its hiding place, Swims directly toward the triggering creature, and makes a jaws [Strike](/action/strike-player-core) against it. The target creature is [Off Guard](/condition/off-guard-player-core) to this attack.",
@@ -10408,17 +10449,19 @@
             "actions": "reaction"
           },
           {
+            "name": "Reactive Grab",
+            "text": "**Trigger** A creature within the olobigonde's reach leaves a square during a move action it's using; **Requirements** The olobigonde doesn't have a creature [Grabbed](/condition/grabbed-player-core); **Effect** The olobigonde attempts to [Grapple](/action/grapple-player-core) the triggering creature with its jaws. On a success, the target also takes 3 piercing damage (doubled on a critical success).",
+            "traits": [],
+            "actions": "reaction"
+          }
+        ],
+        "offensive": [
+          {
             "name": "Decomposing Toxin",
             "text": "A living creature struck by an olobigonde's jaws [Strike](/action/strike-player-core) must succeed at a Fortitude DC 15 save or become Enfeebled 1 and take 1d6 poison,persistent] damage (or Enfeebled 2 with 2d6 poison,persistent] damage on a critical failure). The [enfeebled](/condition/enfeebled-player-core) condition ends when the persistent damage does. A creature currently affected by decomposing toxin doesn't need to save again.",
             "traits": [
               "poison"
             ]
-          },
-          {
-            "name": "Reactive Grab",
-            "text": "**Trigger** A creature within the olobigonde's reach leaves a square during a move action it's using; **Requirements** The olobigonde doesn't have a creature [Grabbed](/condition/grabbed-player-core); **Effect** The olobigonde attempts to [Grapple](/action/grapple-player-core) the triggering creature with its jaws. On a success, the target also takes 3 piercing damage (doubled on a critical success).",
-            "traits": [],
-            "actions": "reaction"
           }
         ]
       },
@@ -10555,7 +10598,7 @@
           "attack": 14,
           "traits": [
             "finesse",
-            "reach-10"
+            "10-feet-reach"
           ],
           "damage": "2d8+4 bludgeoning",
           "effects": [
@@ -10617,7 +10660,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -10731,7 +10775,6 @@
           "actions": "one",
           "attack": 23,
           "traits": [
-            "adamantine",
             "reach-10"
           ],
           "damage": "2d12+12 piercing",
@@ -10747,8 +10790,7 @@
           "actions": "one",
           "attack": 23,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d6+12 slashing"
         }
@@ -10790,7 +10832,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -11117,7 +11160,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -11244,7 +11288,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 26,
-          "traits": [],
+          "traits": [
+            "range-increment-100"
+          ],
           "damage": "3d12 electricity"
         }
       ],
@@ -11310,7 +11356,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -11417,8 +11464,7 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d12+3 piercing"
         },
@@ -11575,8 +11621,7 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "2d6+6 bludgeoning",
           "effects": [
@@ -11626,7 +11671,8 @@
       "recallKnowledge": {
         "dc": 19,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -11785,7 +11831,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -11890,9 +11937,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 15,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+6 slashing",
           "effects": [
             {
@@ -11946,7 +11991,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -12067,6 +12113,14 @@
             "text": "**Thresholds** 160 (3 segments), 80 (2 segments)",
             "traits": [],
             "reference": "/action/troop-defenses-npc-core"
+          },
+          {
+            "name": "Saline Crust",
+            "text": "20 feet\n\n**Requirements** The saltborn stalkers are in a body of water; **Effect** Layers of the saltborn's salty skin flake off to foul the water around them. A creature that ends its turn in the aura takes 2d6 acid damage with a basic Reflex DC 30 save; creatures with the amphibious or [aquatic](/trait/aquatic) trait are immune.",
+            "traits": [
+              "aura",
+              "water"
+            ]
           }
         ],
         "offensive": [
@@ -12081,14 +12135,6 @@
               "visual"
             ],
             "actions": "one"
-          },
-          {
-            "name": "Saline Crust",
-            "text": "20 feet\n\n**Requirements** The saltborn stalkers are in a body of water; **Effect** Layers of the saltborn's salty skin flake off to foul the water around them. A creature that ends its turn in the aura takes 2d6 acid damage with a basic Reflex DC 30 save; creatures with the amphibious or [aquatic](/trait/aquatic) trait are immune.",
-            "traits": [
-              "aura",
-              "water"
-            ]
           },
           {
             "name": "Salty Clutch",
@@ -12113,7 +12159,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -12291,7 +12338,8 @@
       "recallKnowledge": {
         "dc": 23,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -12793,7 +12841,13 @@
       },
       "attacks": [],
       "abilities": {
-        "interaction": [],
+        "interaction": [
+          {
+            "name": "Smoke Vision",
+            "text": "Sootsoldiers ignore the [Concealed](/condition/concealed-player-core) condition from smoke.",
+            "traits": []
+          }
+        ],
         "defensive": [
           {
             "name": "Ashen Smoke",
@@ -12824,11 +12878,6 @@
             "actions": "one"
           },
           {
-            "name": "Smoke Vision",
-            "text": "Sootsoldiers ignore the [Concealed](/condition/concealed-player-core) condition from smoke.",
-            "traits": []
-          },
-          {
             "name": "Troop Movement",
             "text": "Whenever the sootsoldiers [Stride](/action/stride-player-core), they first Form Up as a free action to condense into a 20-foot-by-20- foot area (minus any missing squares), then move up to their Speed. This works just like a Gargantuan creature moving; for instance, if any of the sootsoldiers' squares enters difficult terrain, the extra movement cost applies to the whole troop.",
             "traits": [],
@@ -12839,7 +12888,8 @@
       "recallKnowledge": {
         "dc": 27,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -13007,7 +13057,8 @@
       "recallKnowledge": {
         "dc": 27,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -13128,7 +13179,6 @@
           "traits": [
             "agile",
             "finesse",
-            "unarmed",
             "versatile-s"
           ],
           "damage": "1d6+1 bludgeoning"
@@ -13145,7 +13195,7 @@
         },
         {
           "name": "Light Hammer",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -13298,9 +13348,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 15,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "5d6+5 piercing"
         },
         {
@@ -13308,9 +13356,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 15,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "5d4+5 piercing",
           "effects": [
             {
@@ -13323,7 +13369,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 13,
-          "traits": [],
+          "traits": [
+            "range-20-feet"
+          ],
           "damage": "4d6+5 bludgeoning",
           "effects": [
             {
@@ -13334,14 +13382,7 @@
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [
-          {
-            "name": "Shell Defense",
-            "text": "The tantriog retracts their limbs and head into their shell and ends their turn. This increases their AC to 26, but they can't act except to reemerge, which they can do as a single action.",
-            "traits": [],
-            "actions": "one"
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Listless Saliva",
@@ -13350,13 +13391,20 @@
               "emotion",
               "mental"
             ]
+          },
+          {
+            "name": "Shell Defense",
+            "text": "The tantriog retracts their limbs and head into their shell and ends their turn. This increases their AC to 26, but they can't act except to reemerge, which they can do as a single action.",
+            "traits": [],
+            "actions": "one"
           }
         ]
       },
       "recallKnowledge": {
         "dc": 23,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -13529,8 +13577,7 @@
           "attack": 25,
           "traits": [
             "agile",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "3d10+5 bludgeoning"
         },
@@ -13540,7 +13587,8 @@
           "actions": "one",
           "attack": 26,
           "traits": [
-            "brutal"
+            "brutal",
+            "range-increment-120"
           ],
           "damage": "2d10+15 bludgeoning"
         }
@@ -13678,7 +13726,7 @@
         "fortitude": 36,
         "reflex": 41,
         "will": 35,
-        "details": "+1 status to all saves vs. spells (+4 status vs. earth)"
+        "details": "+1 status to all saves vs. spells (+4 status vs. [earth](/trait/earth))"
       },
       "skills": {
         "acrobatics": 39,
@@ -13777,11 +13825,6 @@
               "magical"
             ],
             "reference": "/action/telepathy-monster-core"
-          },
-          {
-            "name": "+2 Status to Recall Knowledge About Earth",
-            "text": "",
-            "traits": []
           },
           {
             "name": "Craft Crystal Wand",
@@ -14246,8 +14289,7 @@
           "traits": [
             "agile",
             "finesse",
-            "magical",
-            "unarmed"
+            "magical"
           ],
           "damage": "3d10+10 slashing",
           "effects": [
@@ -14275,7 +14317,8 @@
           "attack": 28,
           "traits": [
             "earth",
-            "magical"
+            "magical",
+            "range-increment-100"
           ],
           "damage": "5d6+6 piercing"
         }
@@ -14290,11 +14333,6 @@
               "magical"
             ],
             "reference": "/action/telepathy-monster-core"
-          },
-          {
-            "name": "+2 Status to Recall Knowledge About Earth",
-            "text": "",
-            "traits": []
           },
           {
             "name": "Craft Crystal Wand",
@@ -14347,7 +14385,8 @@
       "recallKnowledge": {
         "dc": 37,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -14706,7 +14745,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 19,
-          "traits": [],
+          "traits": [
+            "range-increment-50"
+          ],
           "damage": "2d8+4 sonic"
         }
       ],
@@ -14738,7 +14779,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -14894,7 +14936,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -15164,9 +15207,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 8,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6 piercing",
           "effects": [
             {
@@ -15527,7 +15568,7 @@
         },
         {
           "name": "Thunderbolt",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -15539,7 +15580,7 @@
         },
         {
           "name": "Air Blast",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 35,
           "traits": [
@@ -15629,7 +15670,8 @@
       "recallKnowledge": {
         "dc": 48,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -15921,7 +15963,8 @@
       "recallKnowledge": {
         "dc": 26,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -16218,7 +16261,8 @@
       "recallKnowledge": {
         "dc": 31,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"

@@ -62,7 +62,8 @@
         "sonic": 20
       },
       "movement": {
-        "walk": 40
+        "walk": 40,
+        "fly": 60
       },
       "attacks": [
         {
@@ -73,8 +74,7 @@
           "traits": [
             "agile",
             "magical",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "4d10+14 slashing; 2d8 electricity"
         },
@@ -85,8 +85,7 @@
           "attack": 40,
           "traits": [
             "magical",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d12+14 piercing; 2d8 electricity"
         },
@@ -217,7 +216,8 @@
       "recallKnowledge": {
         "dc": 56,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -435,7 +435,8 @@
         "skills": [
           "nature",
           "occultism",
-          "society"
+          "society",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -627,9 +628,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 26,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "3d10+12 piercing",
           "effects": [
             {
@@ -824,8 +823,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "deadly-d10",
-            "unarmed"
+            "deadly-d10"
           ],
           "damage": "2d8+4 piercing"
         },
@@ -835,8 +833,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d6+4 piercing"
         },
@@ -1057,11 +1054,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Vitality",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Counterspell",
             "text": "**Trigger** A creature casts a spell the lich has prepared.; **Effect** The lich expends a prepared spell to counter the triggering creature's casting of that same spell. The lich loses its spell slot as if it had cast the triggering spell. The lich then attempts to counteract the triggering spell.",
@@ -1419,7 +1411,7 @@
         },
         {
           "name": "Javelin",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 12,
           "traits": [
@@ -1609,8 +1601,7 @@
           "attack": 45,
           "traits": [
             "magical",
-            "reach-20",
-            "unarmed"
+            "reach-20"
           ],
           "damage": "4d10+22 piercing",
           "effects": [
@@ -1628,8 +1619,7 @@
           "traits": [
             "agile",
             "magical",
-            "reach-15",
-            "unarmed"
+            "reach-15"
           ],
           "damage": "4d6+22 bludgeoning",
           "effects": [
@@ -1657,7 +1647,8 @@
           "attack": 43,
           "traits": [
             "deadly-2d8",
-            "propulsive"
+            "propulsive",
+            "range-increment-150"
           ],
           "damage": "4d8+16 bludgeoning"
         }
@@ -1690,11 +1681,6 @@
               "mental"
             ],
             "reference": "/action/frightful-presence-monster-core"
-          },
-          {
-            "name": "Legendary Vigor",
-            "text": "The Oliphaunt of Jandelay is immune to penalties to its Speeds, and it ignores difficult terrain and greater difficult terrain.",
-            "traits": []
           },
           {
             "name": "Mythic Immunity",
@@ -1762,6 +1748,11 @@
               "sonic"
             ],
             "actions": "two"
+          },
+          {
+            "name": "Legendary Vigor",
+            "text": "The Oliphaunt of Jandelay is immune to penalties to its Speeds, and it ignores difficult terrain and greater difficult terrain.",
+            "traits": []
           }
         ]
       },
@@ -1916,6 +1907,7 @@
           "attack": 16,
           "traits": [
             "mental",
+            "range-60-feet",
             "spirit"
           ],
           "damage": "2d6 spirit; 2d6 mental"
@@ -1948,11 +1940,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 Status to All Saves vs. Emotion",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Mythic Resilience",
             "text": "The sublime breath treats their Will saving throws as one step better than it actually is (so a critical failure is a failure, a failure is a success, and a success is a critical success).",
@@ -2127,7 +2114,6 @@
           "traits": [
             "magical",
             "reach-15",
-            "unarmed",
             "unholy"
           ],
           "damage": "5d10+22 slashing",
@@ -2145,7 +2131,6 @@
           "traits": [
             "magical",
             "reach-10",
-            "unarmed",
             "unholy"
           ],
           "damage": "4d12+22 piercing",
@@ -2179,7 +2164,7 @@
         },
         {
           "name": "Teeth",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 42,
           "traits": [
@@ -2388,7 +2373,6 @@
             "agile",
             "finesse",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "4d8+14 slashing; 2d6 bleed"
@@ -2401,7 +2385,8 @@
           "traits": [
             "magical",
             "mental",
-            "unholy"
+            "unholy",
+            "range-increment-120"
           ],
           "damage": "4d6+14 mental",
           "effects": [
@@ -2777,7 +2762,7 @@
         },
         {
           "name": "Web",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 24,
           "traits": [
@@ -2823,11 +2808,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Regeneration (Deactivated by Bright Light)",
             "text": "",
@@ -2880,7 +2860,8 @@
       "recallKnowledge": {
         "dc": 44,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"

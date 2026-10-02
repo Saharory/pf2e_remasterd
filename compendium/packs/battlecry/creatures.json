@@ -71,11 +71,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Harmonizing Aura",
             "text": "20 feet.\n\nAllies in the aura gain a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against effects with the auditory or [sonic](/trait/sonic) trait. Enemies in the aura take a –2 status penalty to sonic damage rolls and a –1 status penalty to AC and all saves against auditory and sonic effects.",
             "traits": [
@@ -414,7 +409,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -1079,11 +1075,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Archon's Aegis",
             "text": "**Trigger** An enemy damages an ally of the archon bastion and both are within 15 feet of the archon bastion; **Effect** The ally gains resistance 20 to all damage against the triggering damage and the enemy takes 1d8+4 piercing damage (basic Reflex DC 34 save).",
             "traits": [],
@@ -1465,7 +1456,7 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25,
+        "walk": 20,
         "swim": 25,
         "other": "troop movement"
       },
@@ -1847,7 +1838,8 @@
       "recallKnowledge": {
         "dc": 30,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -2020,7 +2012,8 @@
       "recallKnowledge": {
         "dc": 22,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -2446,7 +2439,7 @@
         "poison": 5
       },
       "movement": {
-        "walk": 25,
+        "walk": 20,
         "fly": 50,
         "other": "troop movement"
       },
@@ -3279,7 +3272,7 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25,
+        "walk": 20,
         "other": "troop movement"
       },
       "attacks": [],
@@ -3647,7 +3640,8 @@
       "recallKnowledge": {
         "dc": 26,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -4045,7 +4039,7 @@
       },
       "resistances": {},
       "movement": {
-        "walk": 25,
+        "walk": 30,
         "other": "troop movement"
       },
       "attacks": [],
@@ -4437,9 +4431,7 @@
             "text": "",
             "traits": [],
             "reference": "/action/troop-movement-npc-core"
-          }
-        ],
-        "offensive": [
+          },
           {
             "name": "Hellfire Breath",
             "text": "The hell hounds in the pack combine their efforts to bathe the battlefield in hellish flame, dealing 1d4 rounds. If the pack would take fire damage or be targeted by a fire effect, its Hellfire Breath recharges.",
@@ -4449,7 +4441,9 @@
               "unholy"
             ],
             "actions": "one"
-          },
+          }
+        ],
+        "offensive": [
           {
             "name": "Infernal Mauling",
             "text": "1 to 3\n\n**Frequency** once per round; **Effect** The pack tears into each enemy in a 5-foot emanation with their flaming jaws (basic Reflex DC 23 save). The damage dealt depends on the number of actions.\n\n1 1d4 piercing damage plus 1d6 fire damage\n\n2 1d8+7 piercing damage plus 2d6 fire damage\n\n3 2d8+7 piercing damage plus 2d6 fire damage",
@@ -4465,7 +4459,8 @@
         "dc": 24,
         "skills": [
           "nature",
-          "religion"
+          "religion",
+          "arcana"
         ],
         "subjects": [
           "beast",
@@ -6064,11 +6059,6 @@
         ],
         "defensive": [
           {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Absorb Weapon",
             "text": "**Trigger** A creature hits the omox slime pool with a melee weapon; **Effect** The omoxes attempt to Disarm the creature. On a critical success, the weapon becomes subsumed within the body of an omox rather than falling to the ground. Retrieving the weapon requires a successful DC 45 Athletics check to Disarm.",
             "traits": [
@@ -6113,7 +6103,8 @@
       "recallKnowledge": {
         "dc": 36,
         "skills": [
-          "religion"
+          "religion",
+          "occultism"
         ],
         "subjects": [
           "fiend",
@@ -6457,11 +6448,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Fast Healing 8",
             "text": "",
@@ -7171,7 +7157,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -7356,7 +7343,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -7539,7 +7527,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -7727,7 +7716,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -7909,7 +7899,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -8097,7 +8088,8 @@
       "recallKnowledge": {
         "dc": 24,
         "skills": [
-          "arcana"
+          "arcana",
+          "nature"
         ],
         "subjects": [
           "elemental"
@@ -8789,11 +8781,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "+2 Status to All Saves vs. Fear",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Sacrifice",
             "text": "**Requirements** The viking guard has a charge, and that creature is adjacent to the viking guard; **Trigger** The viking guard's charge takes Hit Point damage; **Effect** The viking guard's charge takes half damage, and the viking guard takes the remainder of the damage.",
             "traits": [],
@@ -8952,11 +8939,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Magic",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Reactive Attack",
             "text": "**Trigger** A creature within the vordine legion's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using; **Effect** The creature takes (2d8+11) piercing damage (basic Reflex DC 26 save); this damage has the magical and [unholy](/trait/unholy) traits. If the creature critically fails its saving throw and the trigger was a manipulate action, the legion disrupts that action.",
@@ -9605,12 +9587,6 @@
         "interaction": [],
         "defensive": [
           {
-            "name": "Javelin Barrage",
-            "text": "The xulgaths draw javelins and launch a coordinated barrage at range. This barrage is a 10-foot burst within 30 feet that deals 4d8 piercing damage (basic Reflex DC 30 save). When the cavalry is reduced to 2 segments, this area decreases to a 5-foot burst.",
-            "traits": [],
-            "actions": "two"
-          },
-          {
             "name": "Stench",
             "text": "30 feet. Fortitude DC 33",
             "traits": [
@@ -9650,6 +9626,12 @@
             "traits": [],
             "actions": "three",
             "reference": "/action/trample-monster-core"
+          },
+          {
+            "name": "Javelin Barrage",
+            "text": "The xulgaths draw javelins and launch a coordinated barrage at range. This barrage is a 10-foot burst within 30 feet that deals 4d8 piercing damage (basic Reflex DC 30 save). When the cavalry is reduced to 2 segments, this area decreases to a 5-foot burst.",
+            "traits": [],
+            "actions": "two"
           }
         ]
       },

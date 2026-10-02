@@ -72,7 +72,7 @@
         },
         {
           "name": "Warping Ray",
-          "type": "ranged",
+          "type": "melee",
           "actions": "one",
           "attack": 27,
           "traits": [
@@ -277,7 +277,7 @@
         },
         {
           "name": "Rope Dart",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 29,
           "traits": [
@@ -460,7 +460,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 18,
           "traits": [
@@ -473,14 +473,14 @@
         }
       ],
       "abilities": {
-        "interaction": [
+        "interaction": [],
+        "defensive": [
           {
             "name": "Crystal Vitality Link",
             "text": "The power of the island links Mitera's vitality to her followers. As long as any of the three quartz formations are intact, whenever Mitera takes damage, any of her followers within 10 miles lose the same amount of HP.",
             "traits": []
           }
         ],
-        "defensive": [],
         "offensive": [
           {
             "name": "Ascension is Near",
@@ -947,8 +947,7 @@
           "traits": [
             "agile",
             "finesse",
-            "reach-10",
-            "unarmed"
+            "reach-10"
           ],
           "damage": "3d8 + 14 slashing",
           "effects": [

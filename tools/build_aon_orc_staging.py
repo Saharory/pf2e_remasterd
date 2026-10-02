@@ -148,6 +148,18 @@ def slugify(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", plain.lower()).strip("-")
 
 
+def creature_trait_code(value: str) -> str:
+    """Preserve numeric creature-trait parameters used by the stat block."""
+    code = slugify(value)
+    code = re.sub(r"^(deadly|fatal|two-hand)-1d", r"\1-d", code)
+    code = re.sub(r"^(scatter|volley)-(\d+)-feet$", r"\1-\2", code)
+    code = re.sub(r"^two-handed-", "two-hand-", code)
+    if code == "reach-5" or code == "reach-5-feet":
+        return "reach"
+    match = re.fullmatch(r"(reach|range-increment|thrown)-(\d+)(?:-feet)?", code)
+    return f"{match.group(1)}-{match.group(2)}" if match else code
+
+
 def provider_text(value: Any) -> str:
     """Resolve AoN's compact ``{{collection id "label"}}`` references."""
     text = str(value or "")
@@ -603,8 +615,7 @@ def parse_attacks(raw: str) -> list[dict[str, Any]]:
         trait_names = re.findall(r"\[([^\]]+)\]\(/Traits\.aspx[^)]*\)", match.group(5) or "", flags=re.I)
         normalized_traits = []
         for value in trait_names:
-            code = slugify(value)
-            code = re.sub(r"^(reach|range-increment)-.*$", r"\1", code)
+            code = creature_trait_code(value)
             if code and code not in normalized_traits:
                 normalized_traits.append(code)
         actions = action_codes(match.group(2))
@@ -664,8 +675,7 @@ def find_ability(raw: str, name: str, next_names: list[str]) -> tuple[str, str, 
     traits = []
     if trait_block:
         for label in re.findall(r"\[([^\]]+)\]\(/Traits\.aspx[^)]*\)", trait_block.group(1), flags=re.I):
-            code = slugify(label)
-            code = re.sub(r"^(reach|range-increment)-.*$", r"\1", code)
+            code = creature_trait_code(label)
             if code and code not in traits:
                 traits.append(code)
         fragment = fragment[trait_block.end():]
@@ -711,6 +721,45 @@ def map_creature(record: dict[str, Any]) -> tuple[dict[str, Any], str]:
         match = re.match(rf"{re.escape(only)}\s+(.*)", resistance_raw, flags=re.I)
         if match:
             resistances[only] = match.group(1)
+    save_details = ""
+    saves_row = next(
+        (
+            block
+            for block in re.findall(r"<row\b[^>]*>(.*?)</row>", statblock, flags=re.I | re.S)
+            if re.search(r"\*\*Fort\*\*", block, flags=re.I)
+            and re.search(r"\*\*Ref\*\*", block, flags=re.I)
+            and re.search(r"\*\*Will\*\*", block, flags=re.I)
+        ),
+        "",
+    )
+    if saves_row:
+        save_details = clean_markup(saves_row).replace("**", "")
+        save_details = re.sub(
+            r"\b(?:AC|Fort|Ref|Will)\b\s*[+-]?\d+\b",
+            "",
+            save_details,
+            flags=re.I,
+        )
+        save_details = " ".join(save_details.split()).strip(" ;,")
+
+    weaknesses: dict[str, Any] = dict(record.get("weakness") or {})
+    weakness_raw = clean_markup(str(record.get("weakness_raw") or ""))
+    if weakness_raw:
+        entries = [part.strip() for part in re.split(r"[,;]", weakness_raw) if part.strip()]
+        inferred_values = {
+            int(value)
+            for ability in (entry for values in abilities.values() for entry in values)
+            for value in re.findall(r"\bweakness\s+(\d+)\b", str(ability.get("text") or ""), flags=re.I)
+        }
+        inferred_value = next(iter(inferred_values)) if len(inferred_values) == 1 else None
+        for entry in entries:
+            match = re.match(r"(.+?)\s+(\d+)$", entry)
+            key = slugify(match.group(1) if match else entry)
+            if key and key not in weaknesses:
+                if match:
+                    weaknesses[key] = int(match.group(2))
+                elif inferred_value is not None:
+                    weaknesses[key] = inferred_value
     skill_values = {slugify(key): int(value) for key, value in dict(record.get("skill_mod") or {}).items()}
     lore_skills = []
     for skill_name, value in re.findall(r"\[([^\]]+\s+Lore)\]\(/Skills\.aspx[^)]*\)\s*([+-]\d+)", str(record.get("skill_markdown") or ""), flags=re.I):
@@ -732,13 +781,14 @@ def map_creature(record: dict[str, Any]) -> tuple[dict[str, Any], str]:
             "fortitude": int(record.get("fortitude_save") or 0),
             "reflex": int(record.get("reflex_save") or 0),
             "will": int(record.get("will_save") or 0),
+            "details": save_details,
         },
         "skills": skill_values,
         "loreSkills": lore_skills,
         "languages": lower_list(record.get("language")),
         "senses": provider_text(record.get("sense") or record.get("vision") or ""),
         "immunities": [value.casefold() for value in list_of(record.get("immunity"))],
-        "weaknesses": dict(record.get("weakness") or {}),
+        "weaknesses": weaknesses,
         "resistances": resistances,
         "movement": movement,
         "attacks": parse_attacks(statblock),

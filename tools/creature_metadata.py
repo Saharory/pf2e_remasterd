@@ -7,7 +7,7 @@ import re
 from pathlib import Path
 from typing import Any
 
-from creature_ability_glossary import GLOSSARY_ROUTES, normalize
+from creature_ability_glossary import GLOSSARY_ROUTES, link_inline_mechanics, normalize
 
 
 CATALOG_PATH = Path(__file__).with_name("creature-metadata.json")
@@ -135,12 +135,15 @@ def configure_recall_knowledge(data: dict[str, Any]) -> None:
     recall.pop("subject", None)
     if subjects:
         recall["subjects"] = list(dict.fromkeys(subjects))
-        if not recall.get("skills"):
-            recall["skills"] = list(dict.fromkeys(
-                skill
-                for subject in recall["subjects"]
-                for skill in CREATURE_IDENTIFICATION_SKILLS[subject]
-            ))
+        derived_skills = [
+            skill
+            for subject in recall["subjects"]
+            for skill in CREATURE_IDENTIFICATION_SKILLS[subject]
+        ]
+        recall["skills"] = list(dict.fromkeys([
+            *(recall.get("skills") or []),
+            *derived_skills,
+        ]))
 
 
 def configure_creature_metadata(entity: dict[str, Any]) -> bool:
@@ -159,6 +162,9 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
         data["immunities"] = merge_unique(data.get("immunities") or [], derived)
     if not metadata:
         configure_recall_knowledge(data)
+        saves = data.get("saves")
+        if isinstance(saves, dict) and saves.get("details"):
+            saves["details"] = link_inline_mechanics(str(saves["details"]))
         if data.get("languagesDetails"):
             data["languagesDetails"] = link_language_details(data["languagesDetails"])
         data["immunities"] = [
@@ -188,6 +194,9 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
     for target, source in (("ac", "acDetails"), ("hp", "hpDetails"), ("saves", "savesDetails")):
         if metadata.get(source):
             data.setdefault(target, {})["details"] = metadata[source]
+    saves = data.get("saves")
+    if isinstance(saves, dict) and saves.get("details"):
+        saves["details"] = link_inline_mechanics(str(saves["details"]))
     if metadata.get("hardness"):
         data["hardness"] = metadata["hardness"]
     if metadata.get("immunities"):
@@ -219,6 +228,17 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
     ability_text = metadata.get("abilityText") or {}
     abilities = data.get("abilities") or {}
     if isinstance(abilities, dict):
+        # Numeric rule elements occasionally leak into the converted ability
+        # list as empty pseudo-abilities. Their values already belong to the
+        # structured save/skill fields and should never render as actions.
+        for category, entries in abilities.items():
+            if isinstance(entries, list):
+                abilities[category] = [
+                    ability
+                    for ability in entries
+                    if str(ability.get("text") or "").strip()
+                    or not re.match(r"^[+-]\d+\s+", str(ability.get("name") or ""))
+                ]
         for entries in abilities.values():
             for ability in entries or []:
                 replacement = ability_text.get(str(ability.get("name") or ""))
@@ -247,15 +267,36 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
             if selected is not None:
                 abilities.setdefault(destination, []).append(selected)
 
+    supplied_attacks: dict[str, list[dict[str, Any]]] = {}
+    for supplied in metadata.get("attacks") or []:
+        if isinstance(supplied, dict):
+            supplied_attacks.setdefault(
+                normalize(str(supplied.get("name") or "")), []
+            ).append(supplied)
     attack_types = metadata.get("attackTypes") or {}
     attack_traits = metadata.get("attackTraits") or {}
     for index, attack in enumerate(data.get("attacks") or []):
+        candidates = supplied_attacks.get(normalize(str(attack.get("name") or ""))) or []
+        if candidates:
+            supplied = candidates.pop(0)
+            if supplied.get("type"):
+                attack["type"] = supplied["type"]
+            if isinstance(supplied.get("traits"), list):
+                attack["traits"] = supplied["traits"]
         supplied = attack_types.get(str(index))
         if supplied:
             attack["type"] = supplied
         supplied_traits = attack_traits.get(str(index))
         if supplied_traits:
             attack["traits"] = supplied_traits
+        attack["traits"] = [
+            trait for trait in attack.get("traits") or [] if trait != "unarmed"
+        ]
+        if any(
+            str(trait).startswith(("thrown-", "range-increment-"))
+            for trait in attack.get("traits") or []
+        ):
+            attack["type"] = "ranged"
 
     linked_attack_abilities: set[str] = set()
     attack_effects = metadata.get("attackEffects") or {}

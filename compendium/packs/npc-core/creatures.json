@@ -74,8 +74,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -85,6 +84,7 @@
           "actions": "one",
           "attack": 6,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8+2 piercing"
@@ -224,8 +224,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         },
@@ -245,7 +244,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 20,
           "traits": [
@@ -274,11 +273,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Insightful",
             "text": "When the accuser agent succeeds at a Perception check, they critically succeed instead.",
@@ -427,8 +421,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         },
@@ -438,6 +431,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8 piercing"
@@ -646,14 +640,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -816,14 +809,13 @@
           "attack": 6,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         },
         {
           "name": "Journal",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 6,
           "traits": [
@@ -997,7 +989,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 11,
           "traits": [
@@ -1015,8 +1007,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -1295,14 +1286,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
         {
           "name": "Quill Pen",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 6,
           "traits": [
@@ -1458,8 +1448,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         },
@@ -1469,7 +1458,8 @@
           "actions": "one",
           "attack": 5,
           "traits": [
-            "splash"
+            "splash",
+            "range-increment-20"
           ],
           "damage": "1 acid; 1d6 acid; 1 acid"
         }
@@ -1487,13 +1477,7 @@
             "traits": []
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Circumstance Bonus on Saves vs. Poisons",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": []
       },
       "recallKnowledge": {
@@ -1606,7 +1590,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 4,
           "traits": [
@@ -1624,8 +1608,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         }
@@ -1765,8 +1748,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
@@ -1778,6 +1760,7 @@
           "traits": [
             "deadly-d10",
             "propulsive",
+            "range-increment-100",
             "reload-0",
             "volley-30"
           ],
@@ -1924,8 +1907,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
@@ -1937,6 +1919,7 @@
           "traits": [
             "concussive",
             "fatal-d10",
+            "range-increment-70",
             "reload-1"
           ],
           "damage": "1d6+3 piercing"
@@ -1970,17 +1953,12 @@
               "mental"
             ],
             "actions": "one"
-          },
-          {
-            "name": "You Call That a Gun?",
-            "text": "The arms dealer seems unaffected by your attempts to threaten them. The arms dealer gains a +2 circumstance bonus to their Will DC against Intimidation checks while they're holding a firearm.",
-            "traits": []
           }
         ],
         "defensive": [
           {
-            "name": "+2 to Sense Motive",
-            "text": "",
+            "name": "You Call That a Gun?",
+            "text": "The arms dealer seems unaffected by your attempts to threaten them. The arms dealer gains a +2 circumstance bonus to their Will DC against Intimidation checks while they're holding a firearm.",
             "traits": []
           }
         ],
@@ -2260,8 +2238,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         },
@@ -2277,7 +2254,7 @@
         },
         {
           "name": "Light Hammer",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -2295,6 +2272,7 @@
             "concealable",
             "concussive",
             "fatal-d10",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+3 piercing"
@@ -2467,8 +2445,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning"
         },
@@ -2481,7 +2458,8 @@
             "deadly-2d10",
             "magical",
             "propulsive",
-            "reload-0"
+            "reload-0",
+            "range-increment-60"
           ],
           "damage": "2d6+7 piercing"
         }
@@ -2655,8 +2633,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -2868,8 +2845,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -3137,7 +3113,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -3154,8 +3130,7 @@
           "attack": 9,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         },
@@ -3166,6 +3141,7 @@
           "attack": 9,
           "traits": [
             "propulsive",
+            "range-increment-50",
             "reload-1"
           ],
           "damage": "1d6+3 bludgeoning"
@@ -3471,8 +3447,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         }
@@ -3614,9 +3589,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 22,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d8+11 piercing; 1d6 bleed",
           "effects": [
             {
@@ -3631,8 +3604,7 @@
           "actions": "one",
           "attack": 22,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "2d6+11 bludgeoning"
         }
@@ -3673,7 +3645,8 @@
       "recallKnowledge": {
         "dc": 27,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -3791,8 +3764,7 @@
           "attack": 12,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -4023,14 +3995,13 @@
           "attack": 5,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         },
         {
           "name": "Rock",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -4174,8 +4145,7 @@
           "actions": "one",
           "attack": 15,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d6+5 piercing"
         },
@@ -4186,6 +4156,7 @@
           "attack": 14,
           "traits": [
             "deadly-d10",
+            "range-increment-60",
             "reload-0"
           ],
           "damage": "1d6+2 piercing"
@@ -4338,11 +4309,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+3 Status vs. Intimidation Checks",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Troop Defenses",
             "text": "**Thresholds** 60 (3 segments), 30 (2 segments)",
@@ -4510,8 +4476,7 @@
           "traits": [
             "agile",
             "magical",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "2d8+9 bludgeoning"
         }
@@ -4698,8 +4663,7 @@
           "attack": 9,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         },
@@ -4709,7 +4673,8 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-60"
           ],
           "damage": "1d6+2 piercing"
         }
@@ -4848,7 +4813,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -4867,8 +4832,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         },
@@ -4880,7 +4844,8 @@
           "traits": [
             "deadly-d10",
             "reload-0",
-            "volley-30"
+            "volley-30",
+            "range-increment-100"
           ],
           "damage": "1d8 piercing"
         }
@@ -5013,8 +4978,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
@@ -5047,6 +5011,7 @@
           "attack": 5,
           "traits": [
             "propulsive",
+            "range-increment-50",
             "reload-1"
           ],
           "damage": "1d6+2 bludgeoning"
@@ -5184,19 +5149,17 @@
           "traits": [
             "agile",
             "finesse",
-            "magical",
             "versatile-s"
           ],
           "damage": "1d4+6 piercing; 1d10 spirit"
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 16,
           "traits": [
             "agile",
-            "magical",
             "thrown-10",
             "versatile-s"
           ],
@@ -5209,8 +5172,7 @@
           "attack": 15,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d4+6 piercing; 1d10 spirit"
         }
@@ -5471,7 +5433,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 6,
           "traits": [
@@ -5487,9 +5449,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 5,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+2 piercing"
         }
       ],
@@ -5617,8 +5577,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         },
@@ -5644,7 +5603,7 @@
         },
         {
           "name": "Naval Pike",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 13,
           "traits": [
@@ -5801,6 +5760,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8+3 piercing"
@@ -5958,8 +5918,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         },
@@ -5977,24 +5936,8 @@
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+1 Bonus on Perception to Find Traps",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
-          {
-            "name": "+1 Circumstance to All Saves vs. Traps",
-            "text": "",
-            "traits": []
-          },
-          {
-            "name": "+1 AC vs. Traps",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Deny Advantage",
             "text": "The burglar isn't [Off Guard](/condition/off-guard-player-core) to creatures of 4th level or lower that are [Hidden](/condition/hidden-player-core), [Undetected](/condition/undetected-player-core), flanking, or using [Surprise Attack](/feat/surprise-attack-player-core).",
@@ -6148,8 +6091,7 @@
           "attack": 17,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+11 bludgeoning"
         },
@@ -6159,7 +6101,8 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-120"
           ],
           "damage": "1d8+6 piercing"
         }
@@ -6338,8 +6281,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         },
@@ -6513,8 +6455,7 @@
           "attack": 14,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d4+9 slashing"
         }
@@ -6745,7 +6686,7 @@
         },
         {
           "name": "Javelin",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -6945,8 +6886,7 @@
           "attack": 17,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -6956,6 +6896,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8+6 piercing"
@@ -7156,8 +7097,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
@@ -7422,7 +7362,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -7439,8 +7379,7 @@
           "attack": 8,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         },
@@ -7450,6 +7389,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8+3 piercing"
@@ -7825,8 +7765,7 @@
           "attack": 8,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -7836,6 +7775,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
+            "range-increment-120",
             "reload-2"
           ],
           "damage": "1d10 piercing"
@@ -7990,7 +7930,7 @@
         },
         {
           "name": "Rock",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 3,
           "traits": [
@@ -8005,8 +7945,7 @@
           "attack": 5,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         }
@@ -8276,8 +8215,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         }
@@ -8445,14 +8383,13 @@
           "attack": 10,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
         {
           "name": "Brick",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 6,
           "traits": [
@@ -8463,13 +8400,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "By Design",
-            "text": "The construction worker spends 1 minute inspecting the layout of a room and attempts a Architecture Lore DC 22 check. On a success, they learn the size and layout of all adjacent rooms on the same floor (or all rooms on the floor on a critical success). They can inspect each room only once per day.",
-            "traits": [
-              "exploration"
-            ]
-          },
           {
             "name": "Specialty Contractor",
             "text": "For encounters involving architecture or construction, the construction worker is a 6th-level challenge.",
@@ -8483,6 +8413,13 @@
             "text": "The construction worker makes a maul [Strike](/action/strike-player-core) against a creature. If it hits, the creature is pushed 10 feet. If the target is wearing metal armor, its armor also takes the damage, which bypasses 5 of the armor's Hardness.",
             "traits": [],
             "actions": "two"
+          },
+          {
+            "name": "By Design",
+            "text": "The construction worker spends 1 minute inspecting the layout of a room and attempts a Architecture Lore DC 22 check. On a success, they learn the size and layout of all adjacent rooms on the same floor (or all rooms on the floor on a critical success). They can inspect each room only once per day.",
+            "traits": [
+              "exploration"
+            ]
           }
         ]
       },
@@ -8746,14 +8683,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         },
         {
           "name": "Inkwell",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -8924,7 +8860,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 22,
           "traits": [
@@ -8942,8 +8878,7 @@
           "attack": 21,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         }
@@ -9090,19 +9025,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+4 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Group Impression",
             "text": "When the courtesan [Makes an Impression](/action/make-an-impression-player-core), they can compare their Diplomacy check result to the Will DCs of up to four targets instead of one.",
@@ -9269,7 +9198,7 @@
         },
         {
           "name": "Dart",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -9285,8 +9214,7 @@
           "attack": 8,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -9525,8 +9453,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+11 bludgeoning"
         },
@@ -9537,19 +9464,14 @@
           "attack": 26,
           "traits": [
             "magical",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "2d6+8 piercing"
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Deny Advantage",
@@ -9744,8 +9666,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -10036,7 +9957,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 6,
           "traits": [
@@ -10053,8 +9974,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -10209,8 +10129,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+13 bludgeoning"
         }
@@ -10552,14 +10471,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -10708,7 +10626,7 @@
         },
         {
           "name": "Spear",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 14,
           "traits": [
@@ -10724,8 +10642,7 @@
           "attack": 15,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         }
@@ -11009,8 +10926,7 @@
           "attack": 25,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+13 bludgeoning"
         },
@@ -11021,6 +10937,7 @@
           "attack": 23,
           "traits": [
             "magical",
+            "range-120-feet",
             "reload-1"
           ],
           "damage": "2d8+5 piercing"
@@ -11241,6 +11158,7 @@
           "attack": 28,
           "traits": [
             "deadly-d10",
+            "death",
             "magical",
             "trip",
             "unholy"
@@ -11254,8 +11172,8 @@
           "attack": 28,
           "traits": [
             "agile",
+            "death",
             "magical",
-            "unarmed",
             "unholy"
           ],
           "damage": "3d4+11 bludgeoning"
@@ -11739,8 +11657,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         }
@@ -11903,7 +11820,6 @@
           "actions": "one",
           "attack": 15,
           "traits": [
-            "cold-iron",
             "deadly-d8",
             "finesse",
             "reach"
@@ -11918,8 +11834,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning"
         },
@@ -11931,6 +11846,7 @@
           "traits": [
             "deadly-d10",
             "propulsive",
+            "range-increment-60",
             "reload-0"
           ],
           "damage": "1d6+7 piercing"
@@ -11942,15 +11858,15 @@
             "name": "Sin Sense",
             "text": "A demonbane warrior automatically learns all weaknesses of a demon they've identified by [Recalling Knowledge](/action/recall-knowledge-player-core).",
             "traits": []
-          }
-        ],
-        "defensive": [],
-        "offensive": [
+          },
           {
             "name": "Demonbane",
             "text": "A demonbane warrior gains a +1 circumstance bonus to damage rolls against demons. If their actions force a demon to take damage from its sin vulnerability, increase the damage from the vulnerability by 2.",
             "traits": []
-          },
+          }
+        ],
+        "defensive": [],
+        "offensive": [
           {
             "name": "Imbue Righteousness",
             "text": "The warrior imbues a weapon they wield with holy energy. Until the start of their next turn, their Strikes with that weapon gain the [holy](/trait/holy) trait and deal an additional 1d6 spirit damage to [unholy](/trait/unholy) creatures.",
@@ -12085,8 +12001,7 @@
           "attack": 16,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning"
         }
@@ -12374,8 +12289,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -12863,7 +12777,7 @@
         },
         {
           "name": "Trident",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 12,
           "traits": [
@@ -12879,8 +12793,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         }
@@ -13041,14 +12954,13 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
         {
           "name": "Bottle",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -13184,7 +13096,7 @@
       "attacks": [
         {
           "name": "Javelin",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 19,
           "traits": [
@@ -13210,8 +13122,7 @@
           "attack": 20,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+12 bludgeoning"
         }
@@ -13392,8 +13303,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -13403,7 +13313,8 @@
           "actions": "one",
           "attack": 10,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-60"
           ],
           "damage": "1d6+2 piercing"
         }
@@ -13427,11 +13338,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+6 Status to All Defenses While Driving",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Vehicle Block",
             "text": "**Requirements** The driver is driving a vehicle; **Trigger** The driver would take damage from an attack or from a damaging effect that requires a Reflex save; **Effect** With swift steering, the driver puts the bulk of the vehicle in between themself and the problem, causing the vehicle to take the damage instead of the driver.",
@@ -13578,7 +13484,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 15,
           "traits": [
@@ -13596,8 +13502,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning; 1d10 sonic"
         }
@@ -13851,8 +13756,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -13863,6 +13767,7 @@
           "attack": 6,
           "traits": [
             "propulsive",
+            "range-increment-50",
             "reload-1"
           ],
           "damage": "1d6+1 piercing"
@@ -14016,8 +13921,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
@@ -14028,6 +13932,7 @@
           "attack": 6,
           "traits": [
             "propulsive",
+            "range-increment-50",
             "reload-1"
           ],
           "damage": "1d6+1 bludgeoning"
@@ -14220,14 +14125,13 @@
           "attack": 9,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
         {
           "name": "Pewter Mug",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -14577,8 +14481,7 @@
           "attack": 19,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+11 bludgeoning"
         },
@@ -14589,6 +14492,7 @@
           "attack": 15,
           "traits": [
             "backstabber",
+            "range-increment-110",
             "reload-1"
           ],
           "damage": "1d10+6 piercing"
@@ -14781,7 +14685,7 @@
         },
         {
           "name": "Light Hammer",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 4,
           "traits": [
@@ -14797,8 +14701,7 @@
           "attack": 6,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         }
@@ -14933,7 +14836,9 @@
           "type": "melee",
           "actions": "one",
           "attack": 20,
-          "traits": [],
+          "traits": [
+            "see-below"
+          ],
           "damage": "2d8+12 bludgeoning"
         },
         {
@@ -14943,6 +14848,7 @@
           "attack": 18,
           "traits": [
             "concussive",
+            "range-increment-20",
             "reload-1",
             "scatter-5"
           ],
@@ -15077,7 +14983,7 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "walk": 25,
+        "walk": 50,
         "other": "teleport 50 ft"
       },
       "attacks": [
@@ -15088,8 +14994,7 @@
           "attack": 30,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+14 bludgeoning"
         },
@@ -15100,7 +15005,8 @@
           "attack": 31,
           "traits": [
             "magical",
-            "two-hand-d8"
+            "two-hand-d8-damage-3d4-14-bludgeoning-melee-one-action-fist-30-agile",
+            "nonlethal"
           ],
           "damage": "3d4+14 bludgeoning"
         },
@@ -15493,8 +15399,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+12 bludgeoning"
         },
@@ -15507,7 +15412,6 @@
             "deadly-d10",
             "magical",
             "propulsive",
-            "reload-0",
             "volley-30"
           ],
           "damage": "2d8+10 piercing"
@@ -15522,11 +15426,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status vs. mental effects",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Interposition",
             "text": "**Trigger** An ally within 15 feet of the guard would take damage; **Effect** The guard Strides. This movement does not trigger reactions, and the guard must end the [Stride](/action/stride-player-core) in a space adjacent to the ally. The guard then switches places with the ally, taking all damage and associated effects instead of the ally.",
@@ -15681,7 +15580,7 @@
         },
         {
           "name": "Club",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 28,
           "traits": [
@@ -15703,8 +15602,7 @@
           "traits": [
             "agile",
             "magical",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+12 bludgeoning; 2d6 mental",
           "effects": [
@@ -15720,7 +15618,8 @@
           "attack": 30,
           "traits": [
             "magical",
-            "mental"
+            "mental",
+            "range-100-feet"
           ],
           "damage": "9d6 mental",
           "effects": [
@@ -15731,13 +15630,7 @@
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+2 Circumstance to Skill Checks for Rituals",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Aura of Contentment",
@@ -16264,8 +16157,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         },
@@ -16276,7 +16168,8 @@
           "attack": 14,
           "traits": [
             "deadly-d10",
-            "reload-0"
+            "reload-0",
+            "range-increment-60"
           ],
           "damage": "1d6+6 piercing",
           "effects": [
@@ -16287,13 +16180,7 @@
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Knowing Glance",
@@ -16447,7 +16334,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -16465,19 +16352,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+6 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Diplomatic Specialist",
             "text": "When dealing with matters of statecraft and negotiation, the envoy is a 6th-level challenge.",
@@ -16622,8 +16503,7 @@
           "attack": 14,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         },
@@ -16633,7 +16513,8 @@
           "actions": "one",
           "attack": 11,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-120"
           ],
           "damage": "1d8+4 piercing"
         }
@@ -16784,8 +16665,7 @@
           "attack": 15,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning"
         }
@@ -16942,8 +16822,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -16957,18 +16836,14 @@
             "magical",
             "propulsive",
             "reload-0",
-            "volley-30"
+            "volley-30",
+            "range-increment-100"
           ],
           "damage": "1d8+8 piercing"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+3 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Former Courtier",
             "text": "An exiled revolutionary remembers well their former realm. In their home realm, be it a manor, castle, or capital city, the exiled revolutionary gains a +4 circumstance bonus to Perception checks and Will saves, and to Deception, Diplomacy, Intimidation, and Stealth checks, and is a 12th-level challenge in the arena of noble politics.",
@@ -17143,8 +17018,7 @@
           "attack": 20,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -17155,7 +17029,7 @@
           "attack": 19,
           "traits": [
             "deadly-d10",
-            "reload-0"
+            "range-increment-60"
           ],
           "damage": "1d6+6 piercing"
         }
@@ -17166,12 +17040,6 @@
             "name": "Familiarity with the Land",
             "text": "The expedition leader isn't affected by severe weather and ignores difficult terrain.",
             "traits": []
-          },
-          {
-            "name": "Memories of Expeditions Past",
-            "text": "**Frequency** once per day; **Trigger** The expedition leader fails a Survival check; **Effect** The expedition leader rethinks their choices based on prior experience. The degree of success increases by one step, from critical failure to failure or from failure to success.",
-            "traits": [],
-            "actions": "reaction"
           },
           {
             "name": "On Guard",
@@ -17186,6 +17054,12 @@
             "traits": [],
             "actions": "reaction",
             "reference": "/action/reactive-strike-monster-core"
+          },
+          {
+            "name": "Memories of Expeditions Past",
+            "text": "**Frequency** once per day; **Trigger** The expedition leader fails a Survival check; **Effect** The expedition leader rethinks their choices based on prior experience. The degree of success increases by one step, from critical failure to failure or from failure to success.",
+            "traits": [],
+            "actions": "reaction"
           }
         ],
         "offensive": [
@@ -17310,9 +17184,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 16,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d6+9 piercing",
           "effects": [
             {
@@ -17323,7 +17195,15 @@
         }
       ],
       "abilities": {
-        "interaction": [
+        "interaction": [],
+        "defensive": [],
+        "offensive": [
+          {
+            "name": "Drag",
+            "text": "**Requirements** The experienced hound is adjacent to a [Prone](/condition/prone-player-core) creature; **Effect** The experienced hound attempts an Athletics check to [Grapple](/action/grapple-player-core) the prone creature. The experienced hound can then [Step](/action/step-player-core) away from the target; if the target is Grabbed by the hound, it is moved into the hound's previous square and remains grabbed.",
+            "traits": [],
+            "actions": "one"
+          },
           {
             "name": "Humane Bite",
             "text": "The experienced hound doesn't take a penalty to make a nonlethal attack with its jaws.",
@@ -17333,15 +17213,6 @@
             "name": "Pack Attack",
             "text": "The hound's Strikes deal 2d6 extra damage to creatures within the reach of at least two of the hound's allies.",
             "traits": []
-          }
-        ],
-        "defensive": [],
-        "offensive": [
-          {
-            "name": "Drag",
-            "text": "**Requirements** The experienced hound is adjacent to a [Prone](/condition/prone-player-core) creature; **Effect** The experienced hound attempts an Athletics check to [Grapple](/action/grapple-player-core) the prone creature. The experienced hound can then [Step](/action/step-player-core) away from the target; if the target is Grabbed by the hound, it is moved into the hound's previous square and remains grabbed.",
-            "traits": [],
-            "actions": "one"
           }
         ]
       },
@@ -17451,8 +17322,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         }
@@ -17686,8 +17556,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         },
@@ -17843,7 +17712,7 @@
         },
         {
           "name": "Apple",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -17860,8 +17729,7 @@
           "attack": 6,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         }
@@ -18000,7 +17868,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 14,
           "traits": [
@@ -18030,8 +17898,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -18195,7 +18062,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -18213,8 +18080,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -18494,7 +18360,7 @@
         },
         {
           "name": "Spear",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 6,
           "traits": [
@@ -18509,8 +18375,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -18519,7 +18384,9 @@
           "type": "ranged",
           "actions": "one",
           "attack": 6,
-          "traits": [],
+          "traits": [
+            "range-increment-20"
+          ],
           "damage": "1 bleed; 1 piercing",
           "effects": [
             {
@@ -18529,13 +18396,7 @@
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+2 Bonus on Perception to Spot Fish",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [],
         "offensive": [
           {
@@ -18667,7 +18528,8 @@
             "agile",
             "finesse",
             "magical",
-            "versatile-s"
+            "versatile-s-damage-2d4-11-piercing-plus-spectacular-attack-melee-one-action-fist-27-agile",
+            "nonlethal"
           ],
           "damage": "2d4+11 piercing",
           "effects": [
@@ -18678,7 +18540,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 29,
           "traits": [
@@ -18702,8 +18564,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+11 bludgeoning",
           "effects": [
@@ -18890,7 +18751,7 @@
         },
         {
           "name": "Scalpel",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 18,
           "traits": [
@@ -18909,8 +18770,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning"
         },
@@ -18921,7 +18781,8 @@
           "attack": 17,
           "traits": [
             "alchemical",
-            "poison"
+            "poison",
+            "range-increment-20"
           ],
           "damage": "4d6 poison",
           "effects": [
@@ -19083,7 +18944,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -19101,14 +18962,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         },
         {
           "name": "Fruit or Vegetable",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -19119,11 +18979,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+4 to Notice Flora and Fauna",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Expert Subsistence",
             "text": "While using Survival to Subsist, if the forager rolls any result worse than a success, they get a success. On a success, they can provide subsistence living for themselves and four additional creatures, and on a critical success, they can take care of twice as many creatures as on a success.",
@@ -19273,8 +19128,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -19282,22 +19136,12 @@
       "abilities": {
         "interaction": [
           {
-            "name": "+2 Bonus on Perception to Notice Unusual Artwork",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Art Specialist",
             "text": "For encounters involving crafting or evaluating art, the forlorn artist is a 4th-level challenge.",
             "traits": []
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Circumstance vs. emotion effects",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Flick Ink",
             "text": "**Trigger** The artist is targeted with a melee or ranged [Strike](/action/strike-player-core) by a creature within 15 feet; **Effect** The artist flings ink in the attacker's eyes. The attacker must succeed at a Reflex DC 18 save or be [Blinded](/condition/blinded-player-core). This takes effect before the attacker targets the artist. The blindness lasts until the end of the target's next turn, but the creature can [Interact](/action/interact-player-core) to rub its eyes to attempt a new save to end the condition.",
@@ -19456,8 +19300,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         },
@@ -19615,8 +19458,7 @@
           "actions": "one",
           "attack": 10,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d6+2 piercing"
         },
@@ -19634,7 +19476,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -19647,11 +19489,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Social Specialist",
             "text": "For social encounters involving gaming or gambling, the gambling companion is a 5th-level challenge",
@@ -19791,8 +19628,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning"
         },
@@ -19812,7 +19648,8 @@
           "traits": [
             "backstabber",
             "magical",
-            "reload-1"
+            "reload-1",
+            "range-increment-110"
           ],
           "damage": "1d10+6 piercing"
         }
@@ -19980,8 +19817,7 @@
           "attack": 17,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -19992,6 +19828,7 @@
           "attack": 17,
           "traits": [
             "propulsive",
+            "range-increment-50",
             "reload-1"
           ],
           "damage": "1d6+8 bludgeoning"
@@ -20015,11 +19852,6 @@
             "text": "**Trigger** The gang leader is targeted with an attack by an attacker they can see; **Effect** The gang leader gains a +2 circumstance bonus to AC against the triggering attack.",
             "traits": [],
             "actions": "reaction"
-          },
-          {
-            "name": "Surprise Attacker",
-            "text": "On the first round of combat, creatures that haven't acted are [Off Guard](/condition/off-guard-player-core) to the gang leader.",
-            "traits": []
           }
         ],
         "offensive": [
@@ -20048,6 +19880,11 @@
           {
             "name": "Sneak Attack",
             "text": "The gang leader deals an extra 2d6 precision damage to [Off Guard](/condition/off-guard-player-core) creatures.",
+            "traits": []
+          },
+          {
+            "name": "Surprise Attacker",
+            "text": "On the first round of combat, creatures that haven't acted are [Off Guard](/condition/off-guard-player-core) to the gang leader.",
             "traits": []
           }
         ]
@@ -20203,7 +20040,8 @@
             "magical",
             "propulsive",
             "reload-0",
-            "volley-30"
+            "volley-30",
+            "range-increment-100"
           ],
           "damage": "1d8+8 piercing"
         }
@@ -20370,8 +20208,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+11 bludgeoning"
         },
@@ -20384,6 +20221,7 @@
             "concussive",
             "fatal-d8",
             "magical",
+            "range-increment-40",
             "reload-1"
           ],
           "damage": "2d4+8 piercing; 1d6 electricity"
@@ -20613,8 +20451,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         },
@@ -20626,6 +20463,7 @@
           "traits": [
             "magical",
             "propulsive",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+7 bludgeoning"
@@ -20887,8 +20725,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -20900,6 +20737,7 @@
           "traits": [
             "deadly-d10",
             "propulsive",
+            "range-increment-60",
             "reload-0"
           ],
           "damage": "1d6+3 piercing"
@@ -21036,8 +20874,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         }
@@ -21224,8 +21061,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d6+1 piercing"
         }
@@ -21243,13 +21079,7 @@
             "traits": []
           }
         ],
-        "defensive": [
-          {
-            "name": "+2 circumstance bonus against ingested poisons",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Eat a Pickle",
@@ -21536,9 +21366,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 12,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d8+3 bludgeoning"
         },
         {
@@ -21550,7 +21378,8 @@
             "cobbled",
             "fatal-d12",
             "modular",
-            "reload-1"
+            "reload-1",
+            "range-increment-20"
           ],
           "damage": "2d6+2 piercing"
         }
@@ -21694,8 +21523,7 @@
           "attack": 20,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -21948,7 +21776,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 12,
           "traits": [
@@ -21967,8 +21795,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning; 1d6 void"
         }
@@ -22278,7 +22105,7 @@
         },
         {
           "name": "Starknife",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 27,
           "traits": [
@@ -22297,26 +22124,14 @@
           "attack": 30,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+15 bludgeoning"
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+3 to Sense Motive",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
-          {
-            "name": "+3 to Reflex vs. Damaging Effects",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Reactive Strike",
             "text": "If the grand inquisitor's attack hits and this reaction was triggered by a [Frightened](/condition/frightened-player-core) creature, the triggering action is disrupted.",
@@ -22492,14 +22307,13 @@
           "traits": [
             "agile",
             "magical",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "3d6+14 bludgeoning"
         },
         {
           "name": "Shuriken",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 31,
           "traits": [
@@ -22705,8 +22519,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         },
@@ -22717,6 +22530,7 @@
           "attack": 7,
           "traits": [
             "alchemical",
+            "range-increment-20",
             "splash"
           ],
           "damage": "1 acid; 1d4 acid",
@@ -22865,8 +22679,7 @@
           "attack": 9,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -22998,8 +22811,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -23020,19 +22832,14 @@
           "actions": "one",
           "attack": 6,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-120"
           ],
           "damage": "1d8 piercing"
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+1 Bonus on Perception to Find Concealed Objects",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Reactive Strike",
@@ -23166,8 +22973,7 @@
           "attack": 12,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         },
@@ -23179,6 +22985,7 @@
           "traits": [
             "deadly-d10",
             "propulsive",
+            "range-increment-60",
             "reload-0"
           ],
           "damage": "1d6+6 piercing"
@@ -23322,7 +23129,7 @@
         },
         {
           "name": "Light Hammer",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 14,
           "traits": [
@@ -23339,8 +23146,7 @@
           "attack": 16,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         }
@@ -23489,8 +23295,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         },
@@ -23503,6 +23308,7 @@
             "concealable",
             "concussive",
             "fatal-d10",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+2 piercing"
@@ -23663,8 +23469,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         },
@@ -23677,7 +23482,8 @@
             "concussive",
             "fatal-d10",
             "magical",
-            "reload-1"
+            "reload-1",
+            "range-increment-70"
           ],
           "damage": "1d6+6 piercing; 1d6 force"
         }
@@ -23993,7 +23799,7 @@
         },
         {
           "name": "Filcher's Fork",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -24022,19 +23828,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+15 to Smell and Taste",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Culinary Specialist",
             "text": "For encounters involving cooking and taste, the head chef is a 7th-level challenge.",
@@ -24203,7 +24003,7 @@
         },
         {
           "name": "Filcher's Fork",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 17,
           "traits": [
@@ -24223,8 +24023,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning"
         },
@@ -24235,6 +24034,7 @@
           "attack": 16,
           "traits": [
             "propulsive",
+            "range-increment-50",
             "reload-1"
           ],
           "damage": "1d4+7 bludgeoning"
@@ -24410,8 +24210,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -24423,6 +24222,7 @@
           "traits": [
             "magical",
             "propulsive",
+            "range-increment-30",
             "reload-1"
           ],
           "damage": "1d10+3 bludgeoning",
@@ -24735,7 +24535,7 @@
         },
         {
           "name": "Hatchet",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -24752,8 +24552,7 @@
           "attack": 12,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         }
@@ -24905,8 +24704,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         }
@@ -25407,8 +25205,7 @@
           "attack": 26,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+13 bludgeoning",
           "effects": [
@@ -25424,6 +25221,7 @@
           "attack": 26,
           "traits": [
             "magical",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "2d6+8 piercing",
@@ -25598,7 +25396,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 17,
           "traits": [
@@ -25617,8 +25415,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning; 1d10 spirit"
         },
@@ -25628,7 +25425,8 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-60"
           ],
           "damage": "1d6+7 piercing; 1d10 spirit"
         }
@@ -25999,8 +25797,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+11 bludgeoning"
         },
@@ -26017,7 +25814,7 @@
         },
         {
           "name": "Card",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 23,
           "traits": [
@@ -26036,11 +25833,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+4 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Tip the Scales",
             "text": "**Trigger** A creature the high roller is observing critically fails a check; **Effect** The high roller picks up on luck that others dropped. They roll twice on their next d20 roll before the end of their next turn and take the better result.",
@@ -26359,8 +26151,7 @@
           "attack": 12,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         },
@@ -26370,18 +26161,26 @@
           "actions": "one",
           "attack": 10,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8+3 piercing"
         }
       ],
       "abilities": {
-        "interaction": [],
-        "defensive": [
+        "interaction": [
           {
             "name": "Arcane Magic Sense",
             "text": "The hobgoblin spellbreaker can detect the source of any arcane magic within range as an imprecise sense.",
             "traits": []
+          }
+        ],
+        "defensive": [
+          {
+            "name": "Spellbreaking Reactive Strike",
+            "text": "As Reactive [Strike](/action/strike-player-core), but if it was triggered by a creature casting an arcane spell, the target must succeed at a Flat DC 11 or the spell is disrupted. If the Strike was a critical hit, the spell is disrupted automatically.",
+            "traits": [],
+            "actions": "reaction"
           }
         ],
         "offensive": [
@@ -26390,12 +26189,6 @@
             "text": "The hobgoblin spellbreaker attempts a melee [Strike](/action/strike-player-core) against a creature under the effects of a beneficial arcane spell. If the Strike hits and deals damage, the hobgoblin spellbreaker can attempt to counteract a single arcane spell or arcane magical effect on the target (counteract rank 2, counteract modifier +10). If it fails, the hobgoblin spellbreaker can't attempt to counteract the same effect for 1 hour.",
             "traits": [],
             "actions": "two"
-          },
-          {
-            "name": "Spellbreaking Reactive Strike",
-            "text": "As Reactive [Strike](/action/strike-player-core), but if it was triggered by a creature casting an arcane spell, the target must succeed at a Flat DC 11 or the spell is disrupted. If the Strike was a critical hit, the spell is disrupted automatically.",
-            "traits": [],
-            "actions": "reaction"
           }
         ]
       },
@@ -26496,7 +26289,7 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 20
       },
       "attacks": [
         {
@@ -26523,8 +26316,7 @@
           "attack": 19,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         },
@@ -26534,6 +26326,7 @@
           "actions": "one",
           "attack": 16,
           "traits": [
+            "range-increment-20",
             "splash"
           ],
           "damage": "2 acid; 2d8 acid; 2 acid"
@@ -26664,7 +26457,9 @@
           "actions": "one",
           "attack": 20,
           "traits": [
-            "magical",
+            "parry",
+            "reach",
+            "trip",
             "two-hand-d8"
           ],
           "damage": "2d4+10 bludgeoning"
@@ -26676,8 +26471,7 @@
           "attack": 19,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         }
@@ -26977,8 +26771,7 @@
           "attack": 17,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -27003,6 +26796,7 @@
             "deadly-d10",
             "magical",
             "propulsive",
+            "range-increment-100",
             "reload-0",
             "volley-30"
           ],
@@ -27155,8 +26949,7 @@
           "attack": 10,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         },
@@ -27166,7 +26959,8 @@
           "actions": "one",
           "attack": 6,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-120"
           ],
           "damage": "1d8+2 piercing"
         }
@@ -27326,19 +27120,13 @@
           "attack": 18,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+14 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Contract Specialist",
             "text": "For encounters involving matters of contracts and dealings with Hell, the infernal registrar is an 18th-level challenge.",
@@ -27360,13 +27148,7 @@
             "traits": []
           }
         ],
-        "defensive": [
-          {
-            "name": "+2 Circumstance to All Saves vs. Fear",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "A Favor for a Favor",
@@ -27614,14 +27396,13 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
         {
           "name": "Pewter Mug",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -27791,19 +27572,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning; 1 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+3 to Sense Motive, Seek, or Search",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Investigation Specialist",
             "text": "For encounters involving investigation, the inspector is a 5th-level challenge.",
@@ -27934,7 +27709,7 @@
       "attacks": [
         {
           "name": "Dart",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 15,
           "traits": [
@@ -27957,7 +27732,6 @@
             "agile",
             "backstabber",
             "deadly-d8",
-            "finesse",
             "magical"
           ],
           "damage": "1d4+10 slashing",
@@ -27974,8 +27748,7 @@
           "attack": 16,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning",
           "effects": [
@@ -28121,8 +27894,7 @@
           "attack": 20,
           "traits": [
             "finesse",
-            "sweep",
-            "unarmed"
+            "sweep"
           ],
           "damage": "2d6+8 bludgeoning"
         },
@@ -28134,7 +27906,6 @@
           "traits": [
             "agile",
             "finesse",
-            "unarmed",
             "versatile-p"
           ],
           "damage": "2d4+8 slashing"
@@ -28146,6 +27917,7 @@
           "attack": 19,
           "traits": [
             "primal",
+            "range-30-feet",
             "sonic"
           ],
           "damage": "3d10 sonic"
@@ -28297,7 +28069,7 @@
         },
         {
           "name": "Club",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -28312,8 +28084,7 @@
           "attack": 11,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         },
@@ -28323,19 +28094,14 @@
           "actions": "one",
           "attack": 10,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8+4 piercing"
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+1 Bonus on Perception to Find Concealed Objects",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Reactive Strike",
@@ -28491,8 +28257,7 @@
           "actions": "one",
           "attack": 13,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d6+4 piercing"
         }
@@ -28639,8 +28404,7 @@
           "attack": 4,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         },
@@ -28654,7 +28418,7 @@
         },
         {
           "name": "Gavel",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 3,
           "traits": [
@@ -28665,11 +28429,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+7 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Group Impression",
             "text": "When the judge [Makes an Impression](/action/make-an-impression-player-core), they can compare their Diplomacy check result to the Will DCs of up to four targets instead of one.",
@@ -28975,7 +28734,7 @@
       "attacks": [
         {
           "name": "Dart",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -28992,14 +28751,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
         {
           "name": "Torch",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -29019,7 +28777,7 @@
         },
         {
           "name": "Juggling Club",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -29184,7 +28942,7 @@
         },
         {
           "name": "Hatchet",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 17,
           "traits": [
@@ -29200,9 +28958,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 18,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+7 piercing"
         },
         {
@@ -29214,20 +28970,14 @@
             "deadly-d10",
             "magical",
             "propulsive",
+            "range-increment-60",
             "reload-0"
           ],
           "damage": "1d6+5 piercing"
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "Bloody Flurry",
-            "text": "The kholo outrider Strikes, Steps, then Strikes again. If the kholo outrider hits the same enemy with both Strikes, that enemy takes an additional 1d6 persistent bleed damage.",
-            "traits": [],
-            "actions": "two"
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Reactive Strike",
@@ -29247,6 +28997,12 @@
             "name": "Solo Hunter",
             "text": "A kholo outrider deals 1d6 extra damage while adjacent to at least 2 enemies and no allies.",
             "traits": []
+          },
+          {
+            "name": "Bloody Flurry",
+            "text": "The kholo outrider Strikes, Steps, then Strikes again. If the kholo outrider hits the same enemy with both Strikes, that enemy takes an additional 1d6 persistent bleed damage.",
+            "traits": [],
+            "actions": "two"
           }
         ]
       },
@@ -29366,9 +29122,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 7,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+2 piercing"
         },
         {
@@ -29378,7 +29132,8 @@
           "attack": 7,
           "traits": [
             "propulsive",
-            "reload-1"
+            "reload-1",
+            "range-increment-50"
           ],
           "damage": "1d6+1 bludgeoning"
         }
@@ -29533,7 +29288,7 @@
         },
         {
           "name": "Spear",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 17,
           "traits": [
@@ -29727,8 +29482,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d4+10 slashing"
         },
@@ -29738,6 +29492,7 @@
           "actions": "one",
           "attack": 13,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8+6 piercing"
@@ -29745,18 +29500,17 @@
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [
-          {
-            "name": "Sinkhole",
-            "text": "**Requirements** The [earth](/trait/earth) diver is burrowed beneath a Medium or smaller creature aboveground; **Effect** The earth diver creates a small sinkhole under the creature, who must attempt a Reflex DC 20 save. Regardless of the result, the target's space becomes difficult terrain.\n\n **Failure** The creature falls into the sinkhole and is [Restrained](/condition/restrained-player-core) until it Escapes.\n\n **Critical Failure** As failure, and the creature takes 2d8 bludgeoning damage.",
-            "traits": [],
-            "actions": "two"
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Pick Smash",
             "text": "The kobold [earth](/trait/earth) diver smashes their pick into the ground, sending debris exploding in a 5-foot emanation. All creatures and unattended objects in range take 3d6 bludgeoning damage with a basic Reflex DC 20 save. A creature that is [Restrained](/condition/restrained-player-core) by an earth diver's Sinkhole takes an additional 1d6 bludgeoning damage.",
+            "traits": [],
+            "actions": "two"
+          },
+          {
+            "name": "Sinkhole",
+            "text": "**Requirements** The [earth](/trait/earth) diver is burrowed beneath a Medium or smaller creature aboveground; **Effect** The earth diver creates a small sinkhole under the creature, who must attempt a Reflex DC 20 save. Regardless of the result, the target's space becomes difficult terrain.\n\n **Failure** The creature falls into the sinkhole and is [Restrained](/condition/restrained-player-core) until it Escapes.\n\n **Critical Failure** As failure, and the creature takes 2d8 bludgeoning damage.",
             "traits": [],
             "actions": "two"
           }
@@ -29884,8 +29638,7 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d4+5 slashing"
         },
@@ -30035,7 +29788,7 @@
         },
         {
           "name": "Light Hammer",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -30050,8 +29803,7 @@
           "actions": "one",
           "attack": 7,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d4+1 slashing"
         },
@@ -30061,6 +29813,7 @@
           "actions": "one",
           "attack": 9,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8 piercing"
@@ -30069,23 +29822,12 @@
       "abilities": {
         "interaction": [
           {
-            "name": "+2 to Seek for Traps",
-            "text": "",
-            "traits": []
-          },
-          {
             "name": "Booby-Trapped",
             "text": "A kobold trapper protects items in their backpack with a booby trap. This booby trap requires a successful Perception DC 18 check to notice, and two successful Thievery DC 15 checks to disable.\n\nAccessing the backpack without disabling the trap destroys its contents, and splinters explode in a 10-foot burst centered on the backpack, dealing 3d6 piercing damage (basic Reflex DC 15 save).",
             "traits": []
           }
         ],
-        "defensive": [
-          {
-            "name": "+1 Circumstance to All Defenses vs. Traps",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Construct Trap",
@@ -30221,8 +29963,7 @@
           "attack": 11,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d4+6 slashing"
         }
@@ -30372,8 +30113,7 @@
           "attack": 16,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         }
@@ -30527,14 +30267,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         },
         {
           "name": "Book",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -30842,8 +30581,7 @@
           "attack": 9,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         }
@@ -31008,8 +30746,7 @@
           "attack": 5,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
@@ -31020,7 +30757,8 @@
           "attack": 7,
           "traits": [
             "fungus",
-            "poison"
+            "poison",
+            "range-increment-10"
           ],
           "damage": "1d4 poison; 1d4 poison"
         }
@@ -31181,8 +30919,7 @@
           "attack": 19,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "1d4+12 slashing"
         },
@@ -31384,8 +31121,7 @@
           "attack": 23,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -31398,6 +31134,7 @@
             "deadly-d10",
             "magical",
             "propulsive",
+            "range-increment-60",
             "reload-0"
           ],
           "damage": "2d6+9 piercing",
@@ -31422,11 +31159,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 circumstance bonus to saves vs. auditory, illusion, linguistic, sonic, or visual",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Resolve",
             "text": "When the maestro rolls a success on a Will save, they get a critical success instead.",
@@ -31888,12 +31620,13 @@
       "attacks": [
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 19,
           "traits": [
             "agile",
             "finesse",
+            "thrown-10",
             "versatile-s"
           ],
           "damage": "1d4+10 piercing",
@@ -31905,7 +31638,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 19,
           "traits": [
@@ -31947,8 +31680,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning",
           "effects": [
@@ -32105,8 +31837,7 @@
           "attack": 21,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+11 bludgeoning"
         },
@@ -32433,21 +32164,13 @@
           "attack": 11,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d6+4 bludgeoning"
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "Fancy Footwork",
-            "text": "The martial student Steps and Strides in any order.",
-            "traits": [],
-            "actions": "one"
-          }
-        ],
+        "interaction": [],
         "defensive": [],
         "offensive": [
           {
@@ -32460,6 +32183,12 @@
             "name": "Powerful Fists",
             "text": "The martial student's fist Strikes don't take penalties when making lethal attacks.",
             "traits": []
+          },
+          {
+            "name": "Fancy Footwork",
+            "text": "The martial student Steps and Strides in any order.",
+            "traits": [],
+            "actions": "one"
           }
         ]
       },
@@ -32582,7 +32311,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 16,
           "traits": [
@@ -32600,19 +32329,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+4 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Deep Cover",
             "text": "At most times, a master of disguise has infiltrated a specific organization, gaining a +2 circumstance bonus to Gather Information, Impersonate, Lie, or Request when dealing with its members.",
@@ -32783,8 +32506,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         },
@@ -32794,6 +32516,7 @@
           "actions": "one",
           "attack": 13,
           "traits": [
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+6 piercing"
@@ -32801,11 +32524,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+7 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Manipulation Specialist",
             "text": "When competing in a social or intellectual arena, the mastermind is a 7th-level challenge.",
@@ -33064,8 +32782,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         }
@@ -33215,8 +32932,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
@@ -33227,7 +32943,8 @@
           "attack": 8,
           "traits": [
             "backstabber",
-            "reload-1"
+            "reload-1",
+            "range-increment-110"
           ],
           "damage": "1d10 piercing"
         }
@@ -33520,8 +33237,7 @@
           "attack": 4,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
@@ -33535,7 +33251,7 @@
         },
         {
           "name": "Club",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 4,
           "traits": [
@@ -33679,7 +33395,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -33696,8 +33412,8 @@
           "attack": 8,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "finesse",
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
@@ -33707,8 +33423,8 @@
           "actions": "one",
           "attack": 8,
           "traits": [
-            "propulsive",
-            "reload-1"
+            "range-increment-50",
+            "propulsive"
           ],
           "damage": "1d6+2 bludgeoning"
         }
@@ -33721,13 +33437,16 @@
             "traits": []
           },
           {
-            "name": "Express Messenger",
-            "text": "Allies traveling with the messenger gain a +5-foot circumstance bonus to travel Speed, to a maximum of the messenger's travel Speed. If they use the [Hustle](/action/hustle-player-core) activity, they can Hustle for a minimum of 1 hour instead of the usual amount.",
-            "traits": []
-          },
-          {
             "name": "Road Runner",
             "text": "Messengers can use Society in place of Survival to Sense Direction when they're on a road.",
+            "traits": []
+          }
+        ],
+        "defensive": [],
+        "offensive": [
+          {
+            "name": "Express Messenger",
+            "text": "Allies traveling with the messenger gain a +5-foot circumstance bonus to travel Speed, to a maximum of the messenger's travel Speed. If they use the [Hustle](/action/hustle-player-core) activity, they can Hustle for a minimum of 1 hour instead of the usual amount.",
             "traits": []
           },
           {
@@ -33736,9 +33455,7 @@
             "traits": [],
             "actions": "two"
           }
-        ],
-        "defensive": [],
-        "offensive": []
+        ]
       },
       "recallKnowledge": {
         "dc": 15,
@@ -33850,8 +33567,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         }
@@ -34014,8 +33730,7 @@
           "attack": 6,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         }
@@ -34157,7 +33872,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 19,
           "traits": [
@@ -34186,8 +33901,7 @@
           "attack": 18,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         }
@@ -34488,8 +34202,7 @@
           "traits": [
             "agile",
             "magical",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d8+6 bludgeoning"
         }
@@ -34647,6 +34360,7 @@
           "traits": [
             "deadly-d10",
             "propulsive",
+            "range-increment-100",
             "reload-0",
             "volley-30"
           ],
@@ -34835,8 +34549,7 @@
           "attack": 14,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
@@ -34850,6 +34563,7 @@
             "earth",
             "impulse",
             "primal",
+            "range-increment-30",
             "versatile-p"
           ],
           "damage": "2d8 bludgeoning"
@@ -34858,11 +34572,6 @@
       "abilities": {
         "interaction": [],
         "defensive": [
-          {
-            "name": "+2 to Reflex vs. Damaging Effects",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Kinetic Aura",
             "text": "10 feet. Pieces of rock and [earth](/trait/earth) float in the aura. The aura must be active for the guardian to use impulse actions, and deactivates if the guardian uses an overflow impulse, is knocked out, or Dismisses it. The guardian can Channel Elements to reactivate it.",
@@ -35044,7 +34753,7 @@
         },
         {
           "name": "Hatchet",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 13,
           "traits": [
@@ -35062,8 +34771,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         }
@@ -35247,8 +34955,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         },
@@ -35260,6 +34967,7 @@
           "traits": [
             "concussive",
             "fatal-d10",
+            "range-increment-70",
             "reload-1"
           ],
           "damage": "1d6+4 piercing"
@@ -35404,14 +35112,13 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
         {
           "name": "Rock",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -35560,7 +35267,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -35583,8 +35290,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -35738,8 +35444,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         }
@@ -35928,8 +35633,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -36066,8 +35770,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         },
@@ -36242,7 +35945,7 @@
         },
         {
           "name": "Trident",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 17,
           "traits": [
@@ -36257,8 +35960,7 @@
           "attack": 16,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         }
@@ -36434,8 +36136,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
@@ -36447,7 +36148,8 @@
           "traits": [
             "agile",
             "nonlethal",
-            "reload-1"
+            "reload-1",
+            "range-increment-20"
           ],
           "damage": "1 piercing"
         }
@@ -36587,7 +36289,7 @@
       "attacks": [
         {
           "name": "Bola",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 14,
           "traits": [
@@ -36619,8 +36321,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning"
         }
@@ -36924,8 +36625,7 @@
           "attack": 24,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "2d4+13 bludgeoning"
         },
@@ -36938,6 +36638,7 @@
             "deadly-d10",
             "magical",
             "propulsive",
+            "range-increment-100",
             "reload-0",
             "volley-30"
           ],
@@ -37108,8 +36809,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
@@ -37120,7 +36820,8 @@
           "attack": 11,
           "traits": [
             "propulsive",
-            "reload-1"
+            "reload-1",
+            "range-increment-50"
           ],
           "damage": "1d6+4 bludgeoning"
         }
@@ -37367,20 +37068,13 @@
           "attack": 14,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+2 to Perception to Initiative",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Guard's Parry",
@@ -37513,8 +37207,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+11 bludgeoning"
         },
@@ -37528,6 +37221,7 @@
             "concussive",
             "fatal-d10",
             "magical",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "2d6+13 piercing"
@@ -37542,11 +37236,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+3 to Initiative with Perception",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Shoot First",
             "text": "**Trigger** An attacker the duelist can see targets them with a [Strike](/action/strike-player-core) or spell; **Requirements** The duelist is holding a loaded firearm; **Effect** The duelist makes a firearm Strike against the triggering creature. On a critical hit, they disrupt the triggering action.",
@@ -37701,8 +37390,7 @@
           "attack": 24,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning; 4d8 vitality"
         },
@@ -37712,7 +37400,6 @@
           "actions": "one",
           "attack": 25,
           "traits": [
-            "magical",
             "two-hand-d8"
           ],
           "damage": "2d4+9 bludgeoning; 4d8 vitality"
@@ -37726,27 +37413,12 @@
             "traits": []
           },
           {
-            "name": "Healing Echo",
-            "text": "**Trigger** The peerless healer restores Hit Points to an ally using Heal; **Effect** One willing creature within 30 feet who didn't benefit from the triggering spell regains Hit Points equal to half the healing granted. The peerless healer can't use Healing Echo again for 1d4 rounds.",
-            "traits": [
-              "manipulate",
-              "vitality"
-            ],
-            "actions": "free"
-          },
-          {
             "name": "Medical Specialist",
             "text": "The peerless healer is a 17th-level challenge for contests of medicine.",
             "traits": []
           }
         ],
-        "defensive": [
-          {
-            "name": "+2 Status vs. Poison and Disease",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Community Healer",
@@ -37757,6 +37429,15 @@
             "name": "Healing Hands",
             "text": "When the peerless healer casts [Heal](/spell/heal-player-core), they roll d10s instead of d8s.",
             "traits": []
+          },
+          {
+            "name": "Healing Echo",
+            "text": "**Trigger** The peerless healer restores Hit Points to an ally using Heal; **Effect** One willing creature within 30 feet who didn't benefit from the triggering spell regains Hit Points equal to half the healing granted. The peerless healer can't use Healing Echo again for 1d4 rounds.",
+            "traits": [
+              "manipulate",
+              "vitality"
+            ],
+            "actions": "free"
           }
         ]
       },
@@ -38134,7 +37815,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -38151,8 +37832,7 @@
           "attack": 6,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         }
@@ -38435,14 +38115,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4-1 bludgeoning"
         },
         {
           "name": "Medical Textbook",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -38454,11 +38133,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+2 Bonus on Perception to Notice Ailments",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Bedside Manner",
             "text": "A physician has a +4 circumstance bonus to Diplomacy checks to Make An Impression on or make a Request of a diseased, poisoned, or [wounded](/condition/wounded-player-core) creature.",
@@ -38594,14 +38268,13 @@
           "attack": 5,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d6+1 bludgeoning"
         },
         {
           "name": "Rock",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 4,
           "traits": [
@@ -38755,7 +38428,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 11,
           "traits": [
@@ -38773,8 +38446,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -38927,8 +38599,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         },
@@ -38938,6 +38609,7 @@
           "actions": "one",
           "attack": 10,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8 piercing"
@@ -38945,13 +38617,7 @@
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [
-          {
-            "name": "+2 Circumstance Bonus on Saves vs. Disease",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Healing Hands",
@@ -39193,8 +38859,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
@@ -39206,6 +38871,7 @@
           "traits": [
             "deadly-d10",
             "propulsive",
+            "range-increment-60",
             "reload-0"
           ],
           "damage": "1d6+3 piercing"
@@ -39343,8 +39009,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         }
@@ -39359,9 +39024,10 @@
         ],
         "defensive": [
           {
-            "name": "+3 to Sense Motive",
-            "text": "",
-            "traits": []
+            "name": "Retort",
+            "text": "A creature fails a Charisma-based skill check against the political upstart\n\n**Effect** The political upstart targets the creature with Fiery Rhetoric.",
+            "traits": [],
+            "actions": "reaction"
           }
         ],
         "offensive": [
@@ -39388,12 +39054,6 @@
               "mental"
             ],
             "actions": "one"
-          },
-          {
-            "name": "Retort",
-            "text": "A creature fails a Charisma-based skill check against the political upstart\n\n**Effect** The political upstart targets the creature with Fiery Rhetoric.",
-            "traits": [],
-            "actions": "reaction"
           }
         ]
       },
@@ -39523,8 +39183,7 @@
           "attack": 13,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         }
@@ -39804,19 +39463,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+10 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Political Specialist",
             "text": "For encounters involving politics, the prime minister is a 10th-level challenge.",
@@ -39966,8 +39619,7 @@
           "attack": 7,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         }
@@ -40110,7 +39762,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -40140,19 +39792,13 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Nuanced Spin",
             "text": "The propagandist phrases everything loosely and vaguely enough that, though it's always misleading, none of it is false. The propagandist can use Diplomacy instead of Deception to Create A Diversion or Feint, and instead of Intimidation to Coerce. A creature attempting to Sense Motive against the propagandist gets a result one degree of success worse than they rolled.",
@@ -40411,14 +40057,13 @@
           "attack": 8,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
         {
           "name": "Rock",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 7,
           "traits": [
@@ -40717,7 +40362,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 14,
           "traits": [
@@ -40734,8 +40379,7 @@
           "attack": 14,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         }
@@ -41120,7 +40764,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 13,
           "traits": [
@@ -41138,8 +40782,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -41149,7 +40792,8 @@
           "actions": "one",
           "attack": 13,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-60"
           ],
           "damage": "1d6+2 piercing"
         }
@@ -41410,8 +41054,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         },
@@ -41421,7 +41064,8 @@
           "actions": "one",
           "attack": 16,
           "traits": [
-            "splash"
+            "splash",
+            "range-increment-20"
           ],
           "damage": "2 untyped; 2 untyped; 2d6 untyped"
         }
@@ -41435,11 +41079,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+1 Status to All Saves vs. Poison",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Unstable Explosion",
             "text": "When an attacker scores a critical hit against the reckless scientist, one of the scientist's alchemical items bursts. The GM determines the item randomly. If it was a bomb, the alchemist takes damage from the bomb, and any creature adjacent to the alchemist takes the splash damage. Any other item is wasted.",
@@ -41585,7 +41224,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -41603,8 +41242,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         }
@@ -41735,7 +41373,8 @@
       "weaknesses": {},
       "resistances": {},
       "movement": {
-        "walk": 25
+        "walk": 25,
+        "fly": 30
       },
       "attacks": [
         {
@@ -41756,8 +41395,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         },
@@ -41770,6 +41408,7 @@
             "capacity-5",
             "concussive",
             "fatal-d10",
+            "range-increment-30",
             "reload-1"
           ],
           "damage": "1d6+6 piercing"
@@ -41928,8 +41567,7 @@
           "attack": 5,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         }
@@ -42109,14 +41747,13 @@
           "attack": 9,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         },
         {
           "name": "Club",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -42131,6 +41768,7 @@
           "attack": 8,
           "traits": [
             "propulsive",
+            "range-increment-50",
             "reload-1"
           ],
           "damage": "1d6+5 bludgeoning"
@@ -42284,8 +41922,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         },
@@ -42298,6 +41935,7 @@
             "concealable",
             "concussive",
             "fatal-d10",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+4 piercing"
@@ -42451,8 +42089,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         },
@@ -42462,6 +42099,7 @@
           "actions": "one",
           "attack": 9,
           "traits": [
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+2 piercing"
@@ -42626,8 +42264,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -42771,7 +42408,7 @@
         },
         {
           "name": "Cutlery",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 6,
           "traits": [
@@ -42789,8 +42426,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         }
@@ -42955,8 +42591,7 @@
           "attack": 16,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -42966,7 +42601,8 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-60"
           ],
           "damage": "1d6+6 piercing"
         }
@@ -43119,7 +42755,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -43137,8 +42773,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning; 1d6 spirit"
         }
@@ -43396,8 +43031,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+18 bludgeoning"
         },
@@ -43407,6 +43041,7 @@
           "actions": "one",
           "attack": 27,
           "traits": [
+            "range-increment-60",
             "splash"
           ],
           "damage": "3d6 untyped; 10 untyped; 10 untyped"
@@ -43586,7 +43221,8 @@
             "deadly-d10",
             "magical",
             "reload-0",
-            "volley-30"
+            "volley-30",
+            "range-increment-100"
           ],
           "damage": "2d8+6 piercing"
         }
@@ -43750,7 +43386,7 @@
         },
         {
           "name": "Light Hammer",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -43771,8 +43407,7 @@
           "attack": 10,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         }
@@ -43914,7 +43549,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 15,
           "traits": [
@@ -43932,8 +43567,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         },
@@ -43943,6 +43577,7 @@
           "actions": "one",
           "attack": 15,
           "traits": [
+            "range-150-feet",
             "concussive",
             "fatal-d12",
             "kickback",
@@ -44093,8 +43728,7 @@
           "traits": [
             "finesse",
             "magical",
-            "spirit",
-            "unarmed"
+            "spirit"
           ],
           "damage": "2d10+6 slashing; 2d6 spirit"
         },
@@ -44105,6 +43739,7 @@
           "attack": 19,
           "traits": [
             "magical",
+            "range-increment-60",
             "spirit"
           ],
           "damage": "2d6 spirit; 3d6 spirit"
@@ -44443,8 +44078,7 @@
           "attack": 11,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -44714,7 +44348,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 16,
           "traits": [
@@ -44732,8 +44366,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         }
@@ -44894,8 +44527,7 @@
           "attack": 12,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         }
@@ -45055,7 +44687,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -45072,8 +44704,7 @@
           "attack": 9,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -45260,12 +44891,12 @@
         },
         {
           "name": "Javelin",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 15,
           "traits": [
-            "tethered",
-            "thrown-30"
+            "range-30-feet",
+            "tethered"
           ],
           "damage": "1d6+8 piercing"
         }
@@ -45416,7 +45047,7 @@
         },
         {
           "name": "Scalpel",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 11,
           "traits": [
@@ -45435,8 +45066,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         },
@@ -45457,15 +45087,14 @@
             "name": "Doctor's Hand",
             "text": "When the surgeon rolls a critical failure on a check to [Treat Disease](/action/treat-disease-player-core), [Treat Poison](/action/treat-poison-player-core), or [Treat Wounds](/action/treat-wounds-player-core), they get a failure instead.",
             "traits": []
-          }
-        ],
-        "defensive": [
+          },
           {
             "name": "Medical Specialist",
             "text": "In medical matters, a surgeon is a 6th-level challenge.",
             "traits": []
           }
         ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Medical Malpractice",
@@ -45595,8 +45224,7 @@
           "actions": "one",
           "attack": 11,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d4+5 piercing"
         },
@@ -45625,11 +45253,6 @@
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+9 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Voice of the Swarm",
             "text": "For encounters involving negotiation or diplomacy, the swarm voice is a 7th-level challenge.",
@@ -45792,8 +45415,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         },
@@ -45803,7 +45425,8 @@
           "actions": "one",
           "attack": 5,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-120"
           ],
           "damage": "1d8 piercing"
         }
@@ -45957,8 +45580,7 @@
           "attack": 4,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4 bludgeoning"
         }
@@ -46115,8 +45737,7 @@
             "agile",
             "finesse",
             "magical",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "3d4+8 bludgeoning; 3d12 electricity",
           "effects": [
@@ -46468,7 +46089,6 @@
           "attack": 15,
           "traits": [
             "agile",
-            "cold-iron",
             "deadly-d8",
             "versatile-p"
           ],
@@ -46492,9 +46112,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 15,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "1d6+7 piercing"
         }
       ],
@@ -46650,8 +46268,7 @@
           "attack": 13,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -46662,7 +46279,10 @@
             "name": "Doctor's Hand",
             "text": "When the therapeutic healer rolls a critical failure on a check to [Treat Disease](/action/treat-disease-player-core), [Treat Poison](/action/treat-poison-player-core), or [Treat Wounds](/action/treat-wounds-player-core), they get a failure instead.",
             "traits": []
-          },
+          }
+        ],
+        "defensive": [],
+        "offensive": [
           {
             "name": "Emotionally Invested",
             "text": "When the therapeutic healer casts a spell with the [healing](/trait/healing) trait on a creature other than themself, the healer regains HP equal to the spell's rank.",
@@ -46677,15 +46297,7 @@
             "text": "When [Treating Wounds](/action/treat-wounds-player-core), the therapeutic healer can treat up to four targets. If they succeed at a DC 20 check to Treat Wounds, they can also reduce the value of one [Clumsy](/condition/clumsy-player-core), [Enfeebled](/condition/enfeebled-player-core), or [Stupefied](/condition/stupefied-player-core) condition affecting a single patient by 1. They can reduce a [Drained](/condition/drained-player-core) or [Doomed](/condition/doomed-player-core) condition instead if they succeed at a DC 30 check. This can't reduce permanent doomed conditions.",
             "traits": []
           }
-        ],
-        "defensive": [
-          {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          }
-        ],
-        "offensive": []
+        ]
       },
       "recallKnowledge": {
         "dc": 23,
@@ -46939,7 +46551,7 @@
         },
         {
           "name": "Trident",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 13,
           "traits": [
@@ -46954,8 +46566,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d6+7 piercing"
         }
@@ -47115,19 +46726,13 @@
           "attack": 6,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [
-          {
-            "name": "+6 Bonus on Perception to Eavesdrop",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Master Sends Their Regards",
             "text": "A toady can deliver a message from their boss to [Demoralize](/action/demoralize-player-core) using their boss's Intimidation modifier instead of their own.",
@@ -47278,8 +46883,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+9 bludgeoning"
         },
@@ -47289,6 +46893,7 @@
           "actions": "one",
           "attack": 15,
           "traits": [
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+6 piercing"
@@ -47423,7 +47028,7 @@
       "attacks": [
         {
           "name": "Acid Flask (Moderate)",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -47446,7 +47051,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -47464,14 +47069,15 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
       ],
       "abilities": {
-        "interaction": [
+        "interaction": [],
+        "defensive": [],
+        "offensive": [
           {
             "name": "Healing Bomb",
             "text": "The tonic merchant quickly crafts a [Antidote (Lesser)](/item/antidote-lesser-gm-core), [Antiplague (Lesser)](/item/antiplague-lesser-gm-core), or [Elixir Of Life (Minor)](/item/elixir-of-life-minor-gm-core) and lobs it at a willing or [Unconscious](/condition/unconscious-player-core) ally within 30 feet. The elixir affects the ally as though they imbibed it.\n\nThe tonic merchant can use the rarest materials in their toolkit to improve the item to a [Antidote (Moderate)](/item/antidote-moderate-gm-core), [Antiplague (Moderate)](/item/antiplague-moderate-gm-core), or [Elixir Of Life (Lesser)](/item/elixir-of-life-lesser-gm-core). Afterward, they must spend 10 minutes gathering new ingredients before they can do so again.",
@@ -47480,9 +47086,7 @@
             ],
             "actions": "two"
           }
-        ],
-        "defensive": [],
-        "offensive": []
+        ]
       },
       "recallKnowledge": {
         "dc": 18,
@@ -47611,7 +47215,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 6,
           "traits": [
@@ -47629,8 +47233,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+2 bludgeoning"
         },
@@ -47640,6 +47243,7 @@
           "actions": "one",
           "attack": 6,
           "traits": [
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6 piercing"
@@ -47769,8 +47373,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d8+5 bludgeoning"
         },
@@ -47788,7 +47391,7 @@
         },
         {
           "name": "Shuriken",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 14,
           "traits": [
@@ -47800,17 +47403,7 @@
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "Work the Crowd",
-            "text": "**Frequency** once per 10 minutes; **Requirements** The combatant is within 50 feet of at least three spectators; **Effect** With a flashy flurry of moves, the tournament combatant elicits cheers. The tournament combatant is [Quickened](/condition/quickened-player-core) for 1 minute. They can use the extra action only to [Strike](/action/strike-player-core) or [Stride](/action/stride-player-core).",
-            "traits": [
-              "emotion",
-              "mental"
-            ],
-            "actions": "one"
-          }
-        ],
+        "interaction": [],
         "defensive": [],
         "offensive": [
           {
@@ -47828,6 +47421,15 @@
             "name": "Somersault Attack",
             "text": "The tournament combatant attempts to Tumble Through a target's space. If they succeed on their Acrobatics check, the tournament combatant can make a fist or nunchaku [Strike](/action/strike-player-core) against that target while moving through its space.",
             "traits": [],
+            "actions": "one"
+          },
+          {
+            "name": "Work the Crowd",
+            "text": "**Frequency** once per 10 minutes; **Requirements** The combatant is within 50 feet of at least three spectators; **Effect** With a flashy flurry of moves, the tournament combatant elicits cheers. The tournament combatant is [Quickened](/condition/quickened-player-core) for 1 minute. They can use the extra action only to [Strike](/action/strike-player-core) or [Stride](/action/stride-player-core).",
+            "traits": [
+              "emotion",
+              "mental"
+            ],
             "actions": "one"
           }
         ]
@@ -47939,8 +47541,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
@@ -47951,6 +47552,7 @@
           "attack": 12,
           "traits": [
             "nonlethal",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+5 bludgeoning",
@@ -48106,7 +47708,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 11,
           "traits": [
@@ -48124,8 +47726,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         },
@@ -48137,6 +47738,7 @@
           "traits": [
             "deadly-d10",
             "propulsive",
+            "range-increment-100",
             "reload-0",
             "volley-30"
           ],
@@ -48278,8 +47880,7 @@
           "actions": "one",
           "attack": 14,
           "traits": [
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d6+6 piercing"
         },
@@ -48290,8 +47891,7 @@
           "attack": 14,
           "traits": [
             "agile",
-            "finesse",
-            "unarmed"
+            "finesse"
           ],
           "damage": "2d4+6 slashing"
         }
@@ -48429,8 +48029,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+6 bludgeoning"
         }
@@ -48589,7 +48188,7 @@
         },
         {
           "name": "Starknife",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 20,
           "traits": [
@@ -48609,8 +48208,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+8 bludgeoning"
         }
@@ -48933,8 +48531,7 @@
           "attack": 23,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning; 2d10 sonic"
         },
@@ -48947,6 +48544,7 @@
             "deadly-d10",
             "magical",
             "propulsive",
+            "range-increment-100",
             "reload-0",
             "volley-30"
           ],
@@ -48954,13 +48552,7 @@
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "Plant Empathy",
-            "text": "The tree singer can ask questions of, receive answers from, and use the Diplomacy skill with plants and fungus.",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Bloodthirsty Plants",
@@ -48969,6 +48561,11 @@
               "concentrate"
             ],
             "actions": "reaction"
+          },
+          {
+            "name": "Plant Empathy",
+            "text": "The tree singer can ask questions of, receive answers from, and use the Diplomacy skill with plants and fungus.",
+            "traits": []
           }
         ],
         "offensive": [
@@ -49275,7 +48872,7 @@
       "attacks": [
         {
           "name": "Dart",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -49298,7 +48895,7 @@
         },
         {
           "name": "Hand Adze",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 10,
           "traits": [
@@ -49316,8 +48913,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+3 bludgeoning"
         }
@@ -49461,7 +49057,7 @@
         },
         {
           "name": "Cruuk",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 17,
           "traits": [
@@ -49478,8 +49074,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         }
@@ -49621,7 +49216,7 @@
       "attacks": [
         {
           "name": "Dart",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -49644,7 +49239,7 @@
         },
         {
           "name": "Hand Adze",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 9,
           "traits": [
@@ -49662,27 +49257,25 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+1 bludgeoning"
         }
       ],
       "abilities": {
         "interaction": [],
-        "defensive": [
-          {
-            "name": "Forest Passage",
-            "text": "The scout ignores difficult terrain caused by plants, such as bushes, vines, and undergrowth.",
-            "traits": []
-          }
-        ],
+        "defensive": [],
         "offensive": [
           {
             "name": "Hurl Net",
             "text": "**Requirements** The scout is wielding a net in two hands; **Effect** The scout makes a ranged [Strike](/action/strike-player-core) (with a Hurl Net modifier) against a Medium or smaller creature within 20 feet. On a hit, the target is Off Guard and takes a –10-foot circumstance penalty to its Speeds. On a critical hit, the creature is Restrained instead. The DC to [Escape](/action/escape-player-core) the net is 16. A creature adjacent to the target can [Interact](/action/interact-player-core) with the net to remove it.",
             "traits": [],
             "actions": "one"
+          },
+          {
+            "name": "Forest Passage",
+            "text": "The scout ignores difficult terrain caused by plants, such as bushes, vines, and undergrowth.",
+            "traits": []
           }
         ]
       },
@@ -49808,8 +49401,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         }
@@ -50068,8 +49660,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         },
@@ -50079,7 +49670,8 @@
           "actions": "one",
           "attack": 12,
           "traits": [
-            "reload-1"
+            "reload-1",
+            "range-increment-120"
           ],
           "damage": "1d8+2 piercing"
         }
@@ -50264,8 +49856,7 @@
           "actions": "one",
           "attack": 8,
           "traits": [
-            "agile",
-            "unarmed"
+            "agile"
           ],
           "damage": "1d4+3 piercing"
         },
@@ -50276,6 +49867,7 @@
           "attack": 8,
           "traits": [
             "backstabber",
+            "range-increment-110",
             "reload-1"
           ],
           "damage": "1d10 piercing"
@@ -50426,8 +50018,7 @@
           "attack": 15,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         },
@@ -50440,6 +50031,7 @@
             "concealable",
             "concussive",
             "fatal-d10",
+            "range-increment-60",
             "reload-1"
           ],
           "damage": "1d6+5 piercing"
@@ -50454,11 +50046,6 @@
           }
         ],
         "defensive": [
-          {
-            "name": "+2 to Sense Motive",
-            "text": "",
-            "traits": []
-          },
           {
             "name": "Reactive Strike",
             "text": "",
@@ -50599,14 +50186,13 @@
           "attack": 5,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4-1 bludgeoning"
         },
         {
           "name": "Rock",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 5,
           "traits": [
@@ -50739,7 +50325,7 @@
         },
         {
           "name": "Club",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 8,
           "traits": [
@@ -50755,8 +50341,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+5 bludgeoning"
         }
@@ -50907,7 +50492,7 @@
         },
         {
           "name": "Dagger",
-          "type": "melee",
+          "type": "ranged",
           "actions": "one",
           "attack": 15,
           "traits": [
@@ -51071,9 +50656,7 @@
           "type": "melee",
           "actions": "one",
           "attack": 13,
-          "traits": [
-            "unarmed"
-          ],
+          "traits": [],
           "damage": "2d6+6 bludgeoning"
         }
       ],
@@ -51213,8 +50796,7 @@
           "attack": 16,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -51227,6 +50809,7 @@
             "deadly-d10",
             "magical",
             "propulsive",
+            "range-increment-100",
             "reload-0",
             "volley-30"
           ],
@@ -51370,8 +50953,7 @@
           "attack": 22,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+12 bludgeoning"
         },
@@ -51570,8 +51152,7 @@
           "attack": 13,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+7 bludgeoning"
         },
@@ -51581,19 +51162,14 @@
           "actions": "one",
           "attack": 10,
           "traits": [
+            "range-increment-120",
             "reload-1"
           ],
           "damage": "1d8+3 piercing"
         }
       ],
       "abilities": {
-        "interaction": [
-          {
-            "name": "+1 to Sense Motive",
-            "text": "",
-            "traits": []
-          }
-        ],
+        "interaction": [],
         "defensive": [
           {
             "name": "Air of Authority",
@@ -51746,8 +51322,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d6+5 bludgeoning"
         },
@@ -51759,7 +51334,7 @@
           "traits": [
             "deadly-d10",
             "magical",
-            "reload-0"
+            "range-increment-60"
           ],
           "damage": "1d6+4 piercing"
         }
@@ -52252,8 +51827,7 @@
           "traits": [
             "agile",
             "finesse",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning"
         },
@@ -52266,7 +51840,8 @@
             "concussive",
             "fatal-d10",
             "magical",
-            "reload-1"
+            "reload-1",
+            "range-increment-70"
           ],
           "damage": "2d6+6 piercing"
         }
@@ -52600,8 +52175,7 @@
           "attack": 19,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+12 bludgeoning"
         }
@@ -52752,8 +52326,7 @@
           "attack": 27,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+10 bludgeoning; 3d6 fire"
         },
@@ -53127,8 +52700,7 @@
           "attack": 12,
           "traits": [
             "agile",
-            "nonlethal",
-            "unarmed"
+            "nonlethal"
           ],
           "damage": "1d4+4 bludgeoning"
         },
@@ -53140,7 +52712,8 @@
           "traits": [
             "deadly-d10",
             "propulsive",
-            "reload-0"
+            "reload-0",
+            "range-increment-60"
           ],
           "damage": "1d6+2 piercing"
         }

@@ -35,7 +35,8 @@
       "saves": {
         "fortitude": 9,
         "reflex": 10,
-        "will": 6
+        "will": 6,
+        "details": "(16 when broken); construct armor"
       },
       "skills": {
         "acrobatics": 10,
@@ -76,7 +77,7 @@
           "attack": 10,
           "traits": [
             "magical",
-            "reach"
+            "reach-10"
           ],
           "damage": "1d8+4 bludgeoning plus Knockdown"
         }
@@ -102,7 +103,8 @@
       "recallKnowledge": {
         "dc": 16,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -180,7 +182,8 @@
       "saves": {
         "fortitude": 4,
         "reflex": 9,
-        "will": 4
+        "will": 4,
+        "details": "(13 when broken); construct armor"
       },
       "skills": {
         "acrobatics": 7
@@ -253,7 +256,8 @@
       "recallKnowledge": {
         "dc": 14,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -331,7 +335,8 @@
       "saves": {
         "fortitude": 11,
         "reflex": 7,
-        "will": 7
+        "will": 7,
+        "details": "(17 when broken); construct armor"
       },
       "skills": {
         "athletics": 17
@@ -411,7 +416,8 @@
       "recallKnowledge": {
         "dc": 18,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -488,7 +494,8 @@
       "saves": {
         "fortitude": 22,
         "reflex": 18,
-        "will": 16
+        "will": 16,
+        "details": ""
       },
       "skills": {
         "athletics": 21,
@@ -512,7 +519,7 @@
           "attack": 21,
           "traits": [
             "deadly-d12",
-            "reach"
+            "reach-10"
           ],
           "damage": "2d12+7 piercing plus 2d6 persistent bleed"
         },
@@ -523,7 +530,7 @@
           "attack": 21,
           "traits": [
             "agile",
-            "reach"
+            "reach-10"
           ],
           "damage": "2d8+7 bludgeoning"
         }
@@ -553,7 +560,7 @@
           },
           {
             "name": "Trample",
-            "text": "Medium, hoof, DC 29\n\n## Adyin Horns\n\nThe horns of an aoyin are a potent material for crafting magical items that induce a frenzied state or blood loss, much like in tales about the beast's calls. Each horn, of which an aoyin normally has four, can be used as 60 gp worth of materials for items like a _[wounding](/item/wounding-gm-core)_ rune.",
+            "text": "Medium, hoof, DC 29\n\n## Adyin Horns\n\nThe horns of an aoyin are a potent material for crafting magical items that induce a frenzied state or blood loss, much like in tales about the beast's calls. Each horn, of which an aoyin normally has four, can be used as 60 gp worth of materials for items like a _wounding_ rune.",
             "traits": [],
             "actions": "three",
             "reference": "/action/trample-monster-core"
@@ -635,7 +642,8 @@
       "saves": {
         "fortitude": 25,
         "reflex": 25,
-        "will": 27
+        "will": 27,
+        "details": ""
       },
       "skills": {
         "arcana": 21,
@@ -671,7 +679,7 @@
           "attack": 25,
           "traits": [
             "magical",
-            "reach"
+            "reach-10"
           ],
           "damage": "3d12+10 piercing plus 2d4 fire"
         },
@@ -683,7 +691,7 @@
           "traits": [
             "agile",
             "magical",
-            "reach"
+            "reach-10"
           ],
           "damage": "2d4+10 slashing plus 2d4 fire"
         },
@@ -705,7 +713,7 @@
         "offensive": [
           {
             "name": "Change Shape",
-            "text": "The aso berang takes the appearance of any Medium or Small humanoid creature. In this form, the aso berang can't use their tusk Strikes, and their claw [Strike](/action/strike-player-core) becomes a fist Strike that deals bludgeoning damage and loses the [reach](/trait/reach) trait.",
+            "text": "The aso berang takes the appearance of any Medium or Small humanoid creature. In this form, the aso berang can't use their tusk Strikes, and their claw [Strike](/action/strike-player-core) becomes a fist Strike that deals bludgeoning damage and loses the reach trait.",
             "traits": [
               "concentrate",
               "divine",
@@ -845,7 +853,8 @@
       "saves": {
         "fortitude": 28,
         "reflex": 22,
-        "will": 25
+        "will": 25,
+        "details": ""
       },
       "skills": {
         "athletics": 28,
@@ -884,7 +893,7 @@
         "defensive": [
           {
             "name": "Eclipse Aura",
-            "text": "100 feet. Light and shadows morph strangely around the bul-gae. Non-magical bright light is reduced to dim light within the aura. When a creature attempts an action within the aura that has the [light](/trait/light) trait, it must attempt a DC 34 Will save. On a failure, the action is disrupted.",
+            "text": "100 feet. Light and shadows morph strangely around the bul-gae. Non-magical bright light is reduced to dim light within the aura. When a creature attempts an action within the aura that has the light trait, it must attempt a DC 34 Will save. On a failure, the action is disrupted.",
             "traits": [
               "aura",
               "darkness",
@@ -930,7 +939,8 @@
       "recallKnowledge": {
         "dc": 32,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -1012,7 +1022,8 @@
       "saves": {
         "fortitude": 19,
         "reflex": 21,
-        "will": 16
+        "will": 16,
+        "details": ""
       },
       "skills": {
         "acrobatics": 19,
@@ -1058,14 +1069,14 @@
         "interaction": [
           {
             "name": "Floral Camouflage",
-            "text": "When Hiding, the five-color orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures [concealed](/condition/concealed-player-core).",
+            "text": "When Hiding, the five-color orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures concealed.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Elemental Expulsion",
-            "text": "**Requirements** The mantis has an [elemental](/trait/elemental) trait from Color Shift **Trigger** It's damaged by a weapon [Strike](/action/strike-player-core); **Effect** Elemental energy pushes back against the blow, giving the attacker a –2 status penalty to attack rolls until the beginning of its next turn. If the weapon contains material that matches the mantis's trait (such as [earth](/trait/earth) for a thrown rock or fire for a lit torch), the mantis gains resistance 10 to all damage from this Strike.",
+            "text": "**Requirements** The mantis has an elemental trait from Color Shift **Trigger** It's damaged by a weapon [Strike](/action/strike-player-core); **Effect** Elemental energy pushes back against the blow, giving the attacker a –2 status penalty to attack rolls until the beginning of its next turn. If the weapon contains material that matches the mantis's trait (such as [earth](/trait/earth) for a thrown rock or fire for a lit torch), the mantis gains resistance 10 to all damage from this Strike.",
             "traits": [],
             "actions": "reaction"
           },
@@ -1079,7 +1090,7 @@
         "offensive": [
           {
             "name": "Harvesting Limbs",
-            "text": "The mantis makes two leg attacks. If both attacks hit, the mantis gains 10 temporary Hit Points, and the target must succeed at a DC 27 Fortitude saving throw or become drained 1 (drained 2 on a critical failure). The [drained](/condition/drained-player-core) condition ends when the mantis is reduced to 0 Hit Points.",
+            "text": "The mantis makes two leg attacks. If both attacks hit, the mantis gains 10 temporary Hit Points, and the target must succeed at a DC 27 Fortitude saving throw or become drained 1 (drained 2 on a critical failure). The drained condition ends when the mantis is reduced to 0 Hit Points.",
             "traits": [],
             "actions": "two"
           },
@@ -1093,7 +1104,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -1165,7 +1177,8 @@
       "saves": {
         "fortitude": 8,
         "reflex": 13,
-        "will": 6
+        "will": 6,
+        "details": ""
       },
       "skills": {
         "athletics": 13,
@@ -1212,7 +1225,7 @@
           },
           {
             "name": "Subsumed Traits",
-            "text": "After it finishes digesting a full meal, the gau cho rong will gain a trait from that creature until the next time it's full. Gau cho rongs that gain the [animal](/trait/animal) trait have scent out to 60 feet as an imprecise sense, while those with the amphibious or [aquatic](/trait/aquatic) trait gain a swim speed of 25 feet. Humanoid hollow bears gain the Reactive [Strike](/action/strike-player-core) reaction. Traits like fire add that damage type to a gau cho rong's resistances. Other traits have effects at the GM's discretion.",
+            "text": "After it finishes digesting a full meal, the gau cho rong will gain a trait from that creature until the next time it's full. Gau cho rongs that gain the animal trait have scent out to 60 feet as an imprecise sense, while those with the amphibious or aquatic trait gain a swim speed of 25 feet. Humanoid hollow bears gain the Reactive [Strike](/action/strike-player-core) reaction. Traits like fire add that damage type to a gau cho rong's resistances. Other traits have effects at the GM's discretion.",
             "traits": []
           }
         ],
@@ -1235,7 +1248,8 @@
       "recallKnowledge": {
         "dc": 21,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -1307,7 +1321,8 @@
       "saves": {
         "fortitude": 9,
         "reflex": 10,
-        "will": 6
+        "will": 6,
+        "details": ""
       },
       "skills": {
         "acrobatics": 8,
@@ -1352,7 +1367,7 @@
         "interaction": [
           {
             "name": "Floral Camouflage",
-            "text": "When Hiding, the giant orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures [concealed](/condition/concealed-player-core).",
+            "text": "When Hiding, the giant orchid mantis is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures concealed.",
             "traits": []
           }
         ],
@@ -1447,7 +1462,8 @@
       "saves": {
         "fortitude": 5,
         "reflex": 10,
-        "will": 7
+        "will": 7,
+        "details": ""
       },
       "skills": {
         "athletics": 6,
@@ -1520,7 +1536,8 @@
       "recallKnowledge": {
         "dc": 15,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -1599,7 +1616,8 @@
       "saves": {
         "fortitude": 22,
         "reflex": 25,
-        "will": 28
+        "will": 28,
+        "details": ""
       },
       "skills": {
         "acrobatics": 25,
@@ -1810,7 +1828,8 @@
       "saves": {
         "fortitude": 12,
         "reflex": 19,
-        "will": 14
+        "will": 14,
+        "details": ""
       },
       "skills": {
         "acrobatics": 15,
@@ -1843,7 +1862,7 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "reach"
+            "reach-10"
           ],
           "damage": "2d10+8 piercing"
         },
@@ -1863,7 +1882,7 @@
           "actions": "one",
           "attack": 17,
           "traits": [
-            "reach"
+            "reach-15"
           ],
           "damage": "2d4+8 bludgeoning plus Grab"
         }
@@ -1872,7 +1891,7 @@
         "interaction": [
           {
             "name": "Nesting",
-            "text": "By coiling around a butterfly koi egg for 1 minute, the imugi designates it as their chosen heir, which grants the imugi the effects of a constant [status](/spell/status-player-core) spell on that egg. If the egg is destroyed or otherwise made nonviable, the imugi can choose a new koi egg with this ability after 1 week.",
+            "text": "By coiling around a butterfly koi egg for 1 minute, the imugi designates it as their chosen heir, which grants the imugi the effects of a constant status spell on that egg. If the egg is destroyed or otherwise made nonviable, the imugi can choose a new koi egg with this ability after 1 week.",
             "traits": []
           }
         ],
@@ -2027,7 +2046,8 @@
       "saves": {
         "fortitude": 2,
         "reflex": 6,
-        "will": 5
+        "will": 5,
+        "details": ""
       },
       "skills": {
         "athletics": 2,
@@ -2107,7 +2127,8 @@
       "recallKnowledge": {
         "dc": 13,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -2184,7 +2205,8 @@
       "saves": {
         "fortitude": 12,
         "reflex": 13,
-        "will": 9
+        "will": 9,
+        "details": ""
       },
       "skills": {
         "acrobatics": 11,
@@ -2229,7 +2251,7 @@
         "offensive": [
           {
             "name": "Consumed Fragments",
-            "text": "The jiidon takes on the form of any Medium or Small humanoid creature whose fingernails or similar fragments they've consumed within the last week, gaining the effects of a 3rd-rank _[illusory disguise](/spell/illusory-disguise-player-core)_ spell to impersonate the creature for 8 hours; this is a polymorph effect rather than an illusion effect. Once a jiidon has transformed into a creature in this way, they must eat that creature's fingernails again to transform into it again. If a jiidon consumes the nails of a specific humanoid three nights in a row, they can take the form of that humanoid at will but can't use this ability to imitate any other humanoid thereafter.",
+            "text": "The jiidon takes on the form of any Medium or Small humanoid creature whose fingernails or similar fragments they've consumed within the last week, gaining the effects of a 3rd-rank _illusory disguise_ spell to impersonate the creature for 8 hours; this is a polymorph effect rather than an illusion effect. Once a jiidon has transformed into a creature in this way, they must eat that creature's fingernails again to transform into it again. If a jiidon consumes the nails of a specific humanoid three nights in a row, they can take the form of that humanoid at will but can't use this ability to imitate any other humanoid thereafter.",
             "traits": [
               "concentrate",
               "polymorph",
@@ -2239,12 +2261,12 @@
           },
           {
             "name": "Sneak Attack",
-            "text": "The jiidon deals an additional 1d6 precision damage to [off-guard](/condition/off-guard-player-core) creatures.",
+            "text": "The jiidon deals an additional 1d6 precision damage to off-guard creatures.",
             "traits": []
           },
           {
             "name": "Tactical Gnaw",
-            "text": "The jiidon uses their nearly indestructible teeth to chew through even the toughest armor, leaving an opponent vulnerable. The jiidon makes a jaws [Strike](/action/strike-player-core). On a successful attack, if the target is wearing armor with Hardness 10 or lower, the armor becomes broken. This Strike doesn't further damage armor that's already broken.\n\n## Playing a Jiidon\n\nWhile jiidons don't have ancestral rules [in this book](/rule/in-this-book-rules-2089), a player interested in creating a jiidon character can use the beastkin versatile heritage to emulate a jiidon who has obtained a permanent humanoid form. The player should work with the GM to determine who the jiidon is imitating and what complications this might have.",
+            "text": "The jiidon uses their nearly indestructible teeth to chew through even the toughest armor, leaving an opponent vulnerable. The jiidon makes a jaws [Strike](/action/strike-player-core). On a successful attack, if the target is wearing armor with Hardness 10 or lower, the armor becomes broken. This Strike doesn't further damage armor that's already broken.\n\n## Playing a Jiidon\n\nWhile jiidons don't have ancestral rules in this book, a player interested in creating a jiidon character can use the beastkin versatile heritage to emulate a jiidon who has obtained a permanent humanoid form. The player should work with the GM to determine who the jiidon is imitating and what complications this might have.",
             "traits": [],
             "actions": "two"
           }
@@ -2253,7 +2275,8 @@
       "recallKnowledge": {
         "dc": 20,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -2326,7 +2349,8 @@
       "saves": {
         "fortitude": 25,
         "reflex": 25,
-        "will": 28
+        "will": 28,
+        "details": ""
       },
       "skills": {
         "athletics": 25,
@@ -2388,7 +2412,7 @@
           },
           {
             "name": "Reap Souls",
-            "text": "**Trigger** The joseung saja brings a target to 0 Hit Points or successfully Strikes a target with the [dying](/condition/dying-player-core) condition; **Effect** The target must succeed at a DC 34 Will save or immediately die. A reaped creature can't be return to life or become undead except by a 9th-rank or higher ritual.",
+            "text": "**Trigger** The joseung saja brings a target to 0 Hit Points or successfully Strikes a target with the dying condition; **Effect** The target must succeed at a DC 34 Will save or immediately die. A reaped creature can't be return to life or become undead except by a 9th-rank or higher ritual.",
             "traits": [
               "death"
             ],
@@ -2396,7 +2420,7 @@
           },
           {
             "name": "Shifting Form",
-            "text": "The joseung saja is incorporeal until the end of their next turn. While they're incorporeal, they have resistance 10 to all damage (except force, void, and [ghost touch](/item/ghost-touch-gm-core) weapons).",
+            "text": "The joseung saja is incorporeal until the end of their next turn. While they're incorporeal, they have resistance 10 to all damage (except force, void, and ghost touch weapons).",
             "traits": [],
             "actions": "one"
           },
@@ -2540,7 +2564,8 @@
       "saves": {
         "fortitude": 29,
         "reflex": 24,
-        "will": 23
+        "will": 23,
+        "details": ""
       },
       "skills": {
         "acrobatics": 25,
@@ -2571,7 +2596,7 @@
           "actions": "one",
           "attack": 28,
           "traits": [
-            "reach"
+            "reach-15"
           ],
           "damage": "3d12+14 piercing plus Grab and heart of darkness"
         },
@@ -2581,7 +2606,7 @@
           "actions": "one",
           "attack": 28,
           "traits": [
-            "reach",
+            "reach-20",
             "sweep"
           ],
           "damage": "3d12+14 bludgeoning"
@@ -2627,7 +2652,8 @@
       "recallKnowledge": {
         "dc": 34,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -2750,7 +2776,8 @@
       "saves": {
         "fortitude": 14,
         "reflex": 17,
-        "will": 19
+        "will": 19,
+        "details": ""
       },
       "skills": {
         "acrobatics": 18,
@@ -2801,13 +2828,13 @@
         "offensive": [
           {
             "name": "Blood Drain",
-            "text": "**Requirements** The manananggal has a creature [grabbed](/condition/grabbed-player-core); **Effect** The manananggal drives their tongue into the grabbed creature to drink its blood. This deals 4d6 damage, and the manananggal gains temporary Hit Points equal to the damage dealt. A creature whose blood is drained by a manananggal is drained 1 until it receives healing (of any kind or amount).",
+            "text": "**Requirements** The manananggal has a creature grabbed; **Effect** The manananggal drives their tongue into the grabbed creature to drink its blood. This deals 4d6 damage, and the manananggal gains temporary Hit Points equal to the damage dealt. A creature whose blood is drained by a manananggal is drained 1 until it receives healing (of any kind or amount).",
             "traits": [],
             "actions": "one"
           },
           {
             "name": "Separated Body",
-            "text": "A manananggal typically resembles a living humanoid. They don't appear as an aberration at first glance and receive a +4 status bonus to their Deception DC when Impersonating a humanoid. At any time, but especially at night, a manananggal can, as a 3-action activity with the [manipulate](/trait/manipulate) trait, rip their upper torso from their bottom half, leaving the lower torso limp and helpless but allowing the upper torso to fly free. A manananggal can separate their body at any time, but they risk further damage if they do so during the day. The manananggal's upper and lower halves share the same pool of HP. If its lower half is damaged, the manananggal is immediately aware of the attack. Each minute a manananggal remains separated after sunrise and before sunset, it takes 2d6 points of damage until it reattaches its upper and lower torsos or is destroyed, whichever comes first.\n\n## Grim Blades\n\nMinatan folktales have it that a forgotten demigod created the first manananggals by bisecting the torso of a human with a [divine](/trait/divine) knife. The demigod then cut into the human's shoulders and drove a pair of bat wings into their back, birthing the first manananggal. The divine power of the demigod's knife still resonates in every manananggal and makes each of the aberrations susceptible to cuts from similar weapons. Communities dealing with a manananggal's terror train with light blades and other slashing weapons to cut the monsters from the sky.",
+            "text": "A manananggal typically resembles a living humanoid. They don't appear as an aberration at first glance and receive a +4 status bonus to their Deception DC when Impersonating a humanoid. At any time, but especially at night, a manananggal can, as a 3-action activity with the manipulate trait, rip their upper torso from their bottom half, leaving the lower torso limp and helpless but allowing the upper torso to fly free. A manananggal can separate their body at any time, but they risk further damage if they do so during the day. The manananggal's upper and lower halves share the same pool of HP. If its lower half is damaged, the manananggal is immediately aware of the attack. Each minute a manananggal remains separated after sunrise and before sunset, it takes 2d6 points of damage until it reattaches its upper and lower torsos or is destroyed, whichever comes first.\n\n## Grim Blades\n\nMinatan folktales have it that a forgotten demigod created the first manananggals by bisecting the torso of a human with a [divine](/trait/divine) knife. The demigod then cut into the human's shoulders and drove a pair of bat wings into their back, birthing the first manananggal. The divine power of the demigod's knife still resonates in every manananggal and makes each of the aberrations susceptible to cuts from similar weapons. Communities dealing with a manananggal's terror train with light blades and other slashing weapons to cut the monsters from the sky.",
             "traits": []
           }
         ]
@@ -2952,7 +2979,8 @@
       "saves": {
         "fortitude": 21,
         "reflex": 24,
-        "will": 18
+        "will": 18,
+        "details": ""
       },
       "skills": {
         "acrobatics": 20,
@@ -2983,7 +3011,7 @@
           "attack": 24,
           "traits": [
             "finesse",
-            "reach"
+            "reach-10"
           ],
           "damage": "3d10+7 piercing"
         },
@@ -2996,7 +3024,7 @@
             "agile",
             "disarm",
             "finesse",
-            "reach"
+            "reach-10"
           ],
           "damage": "3d8+7 slashing"
         },
@@ -3008,7 +3036,7 @@
           "traits": [
             "agile",
             "finesse",
-            "reach"
+            "reach-15"
           ],
           "damage": "3d4+7 piercing plus 2d4 poison"
         }
@@ -3062,7 +3090,8 @@
       "recallKnowledge": {
         "dc": 28,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -3135,7 +3164,8 @@
       "saves": {
         "fortitude": 13,
         "reflex": 16,
-        "will": 12
+        "will": 12,
+        "details": ""
       },
       "skills": {
         "stealth": 16
@@ -3152,7 +3182,9 @@
       ],
       "weaknesses": {
         "area": 5,
-        "splash": 5
+        "splash": 5,
+        "area-damage": 5,
+        "splash-damage": 5
       },
       "resistances": {
         "bludgeoning": 2,
@@ -3169,7 +3201,7 @@
         "interaction": [
           {
             "name": "Floral Camouflage",
-            "text": "When Hiding, the orchid mantis swarm is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures [concealed](/condition/concealed-player-core).",
+            "text": "When Hiding, the orchid mantis swarm is concealed by any amount of leaves or petals, even if they aren't thick enough to make other creatures concealed.",
             "traits": []
           }
         ],
@@ -3275,7 +3307,8 @@
       "saves": {
         "fortitude": 23,
         "reflex": 24,
-        "will": 23
+        "will": 23,
+        "details": ""
       },
       "skills": {
         "acrobatics": 23,
@@ -3305,7 +3338,7 @@
           "actions": "one",
           "attack": 24,
           "traits": [
-            "reach"
+            "reach-10"
           ],
           "damage": "3d8+10 piercing"
         },
@@ -3331,7 +3364,7 @@
         "defensive": [
           {
             "name": "Calm Weather Aura",
-            "text": "1 mile. The ambient weather around a peng is always lightly cloudy with a pleasant breeze, and the temperature is pleasantly warm for the season. Another creature that attempts to alter the weather within this aura; otherwise, the effect is disrupted. The peng can activate or deactivate this aura as a single action with the [concentrate](/trait/concentrate) trait.",
+            "text": "1 mile. The ambient weather around a peng is always lightly cloudy with a pleasant breeze, and the temperature is pleasantly warm for the season. Another creature that attempts to alter the weather within this aura; otherwise, the effect is disrupted. The peng can activate or deactivate this aura as a single action with the concentrate trait.",
             "traits": [
               "air",
               "aura",
@@ -3360,7 +3393,8 @@
       "recallKnowledge": {
         "dc": 30,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -3487,7 +3521,8 @@
       "saves": {
         "fortitude": 18,
         "reflex": 14,
-        "will": 16
+        "will": 16,
+        "details": ""
       },
       "skills": {
         "acrobatics": 14,
@@ -3535,7 +3570,7 @@
         "interaction": [
           {
             "name": "Goldsense",
-            "text": "120 feet\n\n**Languages**\n[Draconic](/language/draconic)\n\n**Skills**\nAcrobatics +14, Athletics +18, Religion +16\n\n**Str** +6\n\n**Dex** +2\n\n**Con** +6\n\n**Int** -2\n\n**Wis** +4\n\n**Cha** +4\n\n**Goldsense** The pixiu can detect the presence, location, and approximate value of gold within 120 feet.",
+            "text": "120 feet\n\n**Languages**\nDraconic\n\n**Skills**\nAcrobatics +14, Athletics +18, Religion +16\n\n**Str** +6\n\n**Dex** +2\n\n**Con** +6\n\n**Int** -2\n\n**Wis** +4\n\n**Cha** +4\n\n**Goldsense** The pixiu can detect the presence, location, and approximate value of gold within 120 feet.",
             "traits": [
               "precise"
             ]
@@ -3671,7 +3706,8 @@
       "saves": {
         "fortitude": 9,
         "reflex": 14,
-        "will": 10
+        "will": 10,
+        "details": ""
       },
       "skills": {
         "athletics": 13,
@@ -3764,7 +3800,7 @@
           },
           {
             "name": "Ti Sh-on",
-            "text": "**Trigger** A creature [grabbed](/condition/grabbed-player-core) by the shui gui dies of suffocation **Effect** Ripping the spirit of its drowned victim out of the target's body, the shui gui enters the corpse to take the original owner's place. The shui gui then returns to life at the edge of its body of water as if it had been the target of a successful _[resurrect](/ritual/resurrect-player-core)_ ritual, except it has the appearance of the target rather than its original body. After a week, the spirit of the drowned creature becomes a shui gui. The new spirit can't be raised from the dead by normal magical means until they've been destroyed as a shui gui.",
+            "text": "**Trigger** A creature grabbed by the shui gui dies of suffocation **Effect** Ripping the spirit of its drowned victim out of the target's body, the shui gui enters the corpse to take the original owner's place. The shui gui then returns to life at the edge of its body of water as if it had been the target of a successful _resurrect_ ritual, except it has the appearance of the target rather than its original body. After a week, the spirit of the drowned creature becomes a shui gui. The new spirit can't be raised from the dead by normal magical means until they've been destroyed as a shui gui.",
             "traits": [
               "death",
               "divine"
@@ -3895,7 +3931,8 @@
       "saves": {
         "fortitude": 33,
         "reflex": 29,
-        "will": 30
+        "will": 30,
+        "details": ""
       },
       "skills": {
         "athletics": 35,
@@ -3948,7 +3985,7 @@
           "actions": "one",
           "attack": 35,
           "traits": [
-            "reach"
+            "reach-15"
           ],
           "damage": "4d10+17 piercing plus Improved Grab"
         },
@@ -3997,7 +4034,8 @@
       "recallKnowledge": {
         "dc": 48,
         "skills": [
-          "arcana"
+          "arcana",
+          "crafting"
         ],
         "subjects": [
           "construct"
@@ -4075,7 +4113,8 @@
       "saves": {
         "fortitude": 37,
         "reflex": 32,
-        "will": 33
+        "will": 33,
+        "details": ""
       },
       "skills": {
         "athletics": 38,
@@ -4115,7 +4154,7 @@
           "actions": "one",
           "attack": 40,
           "traits": [
-            "reach"
+            "reach-15"
           ],
           "damage": "4d8+20 piercing"
         },
@@ -4126,7 +4165,7 @@
           "attack": 40,
           "traits": [
             "agile",
-            "reach"
+            "reach-15"
           ],
           "damage": "3d6+20 bludgeoning"
         },
@@ -4192,7 +4231,8 @@
       "recallKnowledge": {
         "dc": 50,
         "skills": [
-          "nature"
+          "nature",
+          "arcana"
         ],
         "subjects": [
           "beast"
@@ -4269,7 +4309,8 @@
       "saves": {
         "fortitude": 15,
         "reflex": 13,
-        "will": 17
+        "will": 17,
+        "details": ""
       },
       "skills": {
         "athletics": 17,
@@ -4319,7 +4360,7 @@
         "interaction": [
           {
             "name": "Goldsense",
-            "text": "120 feet\n\n**Languages**\n[Diabolic](/language/diabolic), Draconic, Empyrean, Tien; telepathy 100 feet\n\n**Skills**\nAthletics +17, Diplomacy +15, Religion +15, Society +15, Stealth +13\n\n**Str** +6\n\n**Dex** +2\n\n**Con** +4\n\n**Int** +2\n\n**Wis** +6\n\n**Cha** +4\n\n**Goldsense** The yeongno can detect the presence, location, and approximate value of gold within 120 feet.\n\n**Items**\nwooden pipe",
+            "text": "120 feet\n\n**Languages**\nDiabolic, Draconic, Empyrean, Tien; telepathy 100 feet\n\n**Skills**\nAthletics +17, Diplomacy +15, Religion +15, Society +15, Stealth +13\n\n**Str** +6\n\n**Dex** +2\n\n**Con** +4\n\n**Int** +2\n\n**Wis** +6\n\n**Cha** +4\n\n**Goldsense** The yeongno can detect the presence, location, and approximate value of gold within 120 feet.\n\n**Items**\nwooden pipe",
             "traits": [
               "precise"
             ]
@@ -4329,7 +4370,7 @@
         "offensive": [
           {
             "name": "Fortune's Favor",
-            "text": "**Frequency** once per day; **Effect** A target creature within 30 feet must succeed at a DC 25 Will save or gain the effects of cursed metamorphosis, being polymorphed into a pig whose girth is determined by the target's wealth. After 24 hours, the target can end this effect using a [Dismiss](/action/dismiss-player-core) action, at which point the yeongno becomes aware that the effect has ended. A yeongno can use Fortune's Favor only if no targets are currently under its effects.",
+            "text": "**Frequency** once per day; **Effect** A target creature within 30 feet must succeed at a DC 25 Will save or gain the effects of cursed metamorphosis, being polymorphed into a pig whose girth is determined by the target's wealth. After 24 hours, the target can end this effect using a Dismiss action, at which point the yeongno becomes aware that the effect has ended. A yeongno can use Fortune's Favor only if no targets are currently under its effects.",
             "traits": [
               "curse",
               "divine",

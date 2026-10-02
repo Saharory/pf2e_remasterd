@@ -48,43 +48,6 @@ PUBLISHED_OVERRIDES = {
     "adamantine-dragon-adult-spellcaster-monster-core": {"resistances": {"physical": "15 (except adamantine)"}},
     "adamantine-dragon-ancient-monster-core": {"resistances": {"physical": "20 (except adamantine)"}},
     "adamantine-dragon-ancient-spellcaster-monster-core": {"resistances": {"physical": "20 (except adamantine)"}},
-    "murajau-rage-of-elements": {
-        "attackTypes": {"2": "ranged"},
-        "abilityCategories": {"Retract": "offensive"},
-    },
-    "solar-crow-rage-of-elements": {
-        "recallKnowledge": {
-            "dc": 27,
-            "skills": ["arcana", "nature"],
-        },
-        "attackTraits": {
-            "0": ["finesse"],
-            "1": ["agile", "finesse"],
-        },
-    },
-    "vault-builder-rage-of-elements": {
-        "recallKnowledge": {
-            "dc": 51,
-            "skills": ["arcana", "nature"],
-        },
-        "movement": {"burrow": 25},
-        "attackTraits": {
-            "0": ["agile", "finesse", "magical"],
-            "3": ["earth", "finesse", "magical", "range-increment-100"],
-        },
-        "removeAbilities": [
-            "+1 Status to All Saves vs. Magic",
-            "+4 Status to All Saves vs. Earth",
-        ],
-    },
-    "adult-executor-dragon-draconic-codex-creature-creature-4139": {
-        "savesDetails": "+2 status to all saves vs. [divine](/trait/divine)",
-        "weaknesses": {"divine-sanctification": 10},
-        "attackTraits": {
-            "0": ["magical", "reach-10", "sanctified"],
-            "2": ["magical", "reach-15", "sanctified"],
-        },
-    },
 }
 
 TRUNCATED_RECHARGE_TEXT = re.compile(r"\bdeals\s+1d4 rounds\b", re.I)
@@ -113,6 +76,103 @@ def clean_text(value: Any) -> str:
 
 def normalized_name(value: str) -> str:
     return " ".join(re.sub(r"[^a-z0-9]+", " ", value.casefold()).split())
+
+
+def display_trait(value: str) -> str:
+    """Normalize a printed creature Strike trait without losing its parameter."""
+    code = re.sub(r"[^a-z0-9]+", "-", value.casefold()).strip("-")
+    code = re.sub(r"^(deadly|fatal|two-hand)-1d", r"\1-d", code)
+    code = re.sub(r"^(scatter|volley)-(\d+)-feet$", r"\1-\2", code)
+    code = re.sub(r"^two-handed-", "two-hand-", code)
+    if code == "reach-5" or code == "reach-5-feet":
+        return "reach"
+    match = re.fullmatch(r"(reach|range-increment|thrown)-(\d+)(?:-feet)?", code)
+    return f"{match.group(1)}-{match.group(2)}" if match else code
+
+
+def source_attack_metadata(raw: str) -> list[dict[str, Any]]:
+    """Read the printed Strike type and traits from a staged stat block."""
+    flat = " ".join(str(raw or "").split())
+    pattern = re.compile(
+        r"\b(Melee|Ranged)\s+\[[^]]+\]\s+(.+?)\s+([+-]\d+)\s*"
+        r"(?:\((.*?)\))?,\s*Damage\b",
+        flags=re.I,
+    )
+    result: list[dict[str, Any]] = []
+    for match in pattern.finditer(flat):
+        traits = [
+            display_trait(value)
+            for value in (match.group(4) or "").split(",")
+            if display_trait(value) and display_trait(value) != "unarmed"
+        ]
+        result.append({
+            "name": match.group(2).strip(),
+            "type": match.group(1).casefold(),
+            "traits": list(dict.fromkeys(traits)),
+        })
+    return result
+
+
+def source_movement(raw: str) -> dict[str, int]:
+    """Read printed Speeds, which can be more precise than actor automation."""
+    match = re.search(r"(?m)^Speed\s+([^\n]+)", str(raw or ""), flags=re.I)
+    if not match:
+        return {}
+    movement: dict[str, int] = {}
+    for kind, value in re.findall(
+        r"(?:(walk|burrow|climb|fly|swim)\s+)?(\d+)\s+feet",
+        match.group(1).split(";", 1)[0],
+        flags=re.I,
+    ):
+        movement[(kind or "walk").casefold()] = int(value)
+    return movement
+
+
+def source_ability_categories(raw: str, names: list[str]) -> dict[str, str]:
+    """Place abilities according to their printed stat-block section."""
+    text = str(raw or "")
+    ac = re.search(r"(?m)^AC\b", text)
+    speed = re.search(r"(?m)^Speed\b", text)
+    if not ac or not speed:
+        return {}
+    result: dict[str, str] = {}
+    for name in names:
+        marker = re.search(
+            rf"(?m)^{re.escape(name)}(?:\s+\[[^]]+\]|\s+\(|\s+[A-Z])",
+            text,
+            flags=re.I,
+        )
+        if not marker:
+            continue
+        result[name] = (
+            "interaction"
+            if marker.start() < ac.start()
+            else ("defensive" if marker.start() < speed.start() else "offensive")
+        )
+    return result
+
+
+def attack_metadata_matches(
+    attacks: list[dict[str, Any]], supplied: list[dict[str, Any]]
+) -> bool:
+    """Avoid cataloguing source fields the staging converter already retained."""
+    if len(attacks) != len(supplied):
+        return False
+    available: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for attack in supplied:
+        available[normalized_name(str(attack.get("name") or ""))].append(attack)
+    for attack in attacks:
+        matches = available.get(normalized_name(str(attack.get("name") or ""))) or []
+        if not matches:
+            return False
+        source = matches.pop(0)
+        traits = [str(value) for value in attack.get("traits") or [] if value != "unarmed"]
+        attack_type = str(attack.get("type") or "melee")
+        if any(value.startswith(("thrown-", "range-increment-")) for value in traits):
+            attack_type = "ranged"
+        if attack_type != source.get("type") or traits != source.get("traits"):
+            return False
+    return not any(available.values())
 
 
 def item_route_index(staging: Path) -> dict[str, str]:
@@ -199,6 +259,7 @@ def actor_metadata(
     hardness_value = hardness.get("value") if isinstance(hardness, dict) else None
 
     attack_effects: dict[str, list[str]] = {}
+    attack_metadata: list[dict[str, Any]] = []
     lore_skills: list[dict[str, Any]] = []
     actor_abilities: dict[str, str] = {}
     carried_items: list[str] = []
@@ -211,6 +272,24 @@ def actor_metadata(
             effects = (item_system.get("attackEffects") or {}).get("value") or []
             if effects:
                 attack_effects[item_name.casefold()] = [str(value) for value in effects]
+            attack_traits = [
+                str(value)
+                for value in (item_system.get("traits") or {}).get("value", [])
+                if str(value) != "unarmed"
+            ]
+            attack_range = item_system.get("range") or {}
+            increment = attack_range.get("increment") if isinstance(attack_range, dict) else None
+            if increment:
+                attack_traits.append(f"range-increment-{int(increment)}")
+            attack_metadata.append({
+                "name": item_name,
+                "type": (
+                    "ranged"
+                    if increment or any(value.startswith("thrown-") for value in attack_traits)
+                    else "melee"
+                ),
+                "traits": list(dict.fromkeys(attack_traits)),
+            })
         elif item.get("type") == "lore":
             modifier = (item_system.get("mod") or {}).get("value")
             if item_name and modifier is not None:
@@ -248,6 +327,40 @@ def actor_metadata(
             if corrected and TRUNCATED_RECHARGE_TEXT.search(original):
                 ability_text[str(ability.get("name") or "")] = corrected
 
+    creature_data = creature.get("data") or {}
+    raw_text = str(creature_data.get("rawText") or "")
+    printed_attacks = source_attack_metadata(raw_text)
+    if printed_attacks:
+        attack_metadata = printed_attacks
+    actor_movement = {"walk": int(speed.get("value") or 0)} if speed.get("value") else {}
+    for entry in speed.get("otherSpeeds") or []:
+        if isinstance(entry, dict) and entry.get("type") and entry.get("value"):
+            actor_movement[str(entry["type"])] = int(entry["value"])
+    movement = source_movement(raw_text) or actor_movement
+    ability_names = [
+        str(ability.get("name") or "")
+        for entries in creature_abilities.values()
+        for ability in entries or []
+        if isinstance(ability, dict) and ability.get("name")
+    ]
+    if attack_metadata_matches(creature_data.get("attacks") or [], attack_metadata):
+        attack_metadata = []
+    current_movement = creature_data.get("movement") or {}
+    if movement and all(current_movement.get(key) == value for key, value in movement.items()):
+        movement = {}
+    ability_categories = source_ability_categories(raw_text, ability_names)
+    current_categories = {
+        str(ability.get("name") or ""): category
+        for category, entries in creature_abilities.items()
+        for ability in entries or []
+        if isinstance(ability, dict)
+    }
+    ability_categories = {
+        name: category
+        for name, category in ability_categories.items()
+        if current_categories.get(name) != category
+    }
+
     result: dict[str, Any] = {
         "senses": ", ".join(dict.fromkeys(filter(None, senses))),
         "languages": list(dict.fromkeys(str(value) for value in languages.get("value", []))),
@@ -260,9 +373,12 @@ def actor_metadata(
         "resistances": {},
         "movementOther": clean_text(speed.get("details")),
         "attackEffects": attack_effects,
+        "attacks": attack_metadata,
         "loreSkills": lore_skills,
         "abilityText": ability_text,
+        "abilityCategories": ability_categories,
         "items": ", ".join(carried_items),
+        "movement": movement,
     }
     if hardness_value:
         result["hardness"] = int(hardness_value)
