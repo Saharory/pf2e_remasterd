@@ -22,6 +22,13 @@ PLAIN_ACUITY = re.compile(
     re.S,
 )
 QUANTITY = re.compile(r"^(.*?)\s+\((\d+)\)$", re.S)
+ABILITY_TRIGGER = re.compile(r"\*\*Trigger\*\*\s*", re.I)
+ABILITY_EFFECT = re.compile(r"\*\*Effect\*\*\s*", re.I)
+ABILITY_METADATA = re.compile(
+    r"\*\*(?:Frequency|Requirements|Trigger|Effect)\*\*\s*",
+    re.I,
+)
+PARAGRAPH_BREAK = re.compile(r"\n\s*\n")
 
 
 def split_entries(value: str) -> list[str]:
@@ -202,6 +209,79 @@ def render_defense_entries(entries: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
+def _trim_metadata_separator(value: str) -> str:
+    return value.strip().strip(";").strip()
+
+
+def _join_ability_description(before: str, after: str) -> str:
+    before = _trim_metadata_separator(before)
+    after = _trim_metadata_separator(after)
+    if before and after:
+        return f"{before}; {after}"
+    return before or after
+
+
+def parse_ability_editor_fields(value: str) -> dict[str, Any]:
+    """Expose Trigger and Effect without discarding the published ability text."""
+    description = value.strip()
+    result: dict[str, Any] = {}
+
+    effect_match = ABILITY_EFFECT.search(description)
+    if effect_match:
+        result["effect"] = _trim_metadata_separator(description[effect_match.end():])
+        description = _trim_metadata_separator(description[:effect_match.start()])
+
+    trigger_match = ABILITY_TRIGGER.search(description)
+    if trigger_match:
+        value_start = trigger_match.end()
+        next_label = ABILITY_METADATA.search(description, value_start)
+        paragraph = PARAGRAPH_BREAK.search(description, value_start)
+        candidates = [
+            match.start()
+            for match in (next_label, paragraph)
+            if match is not None
+        ]
+        value_end = min(candidates) if candidates else len(description)
+        result["trigger"] = _trim_metadata_separator(
+            description[value_start:value_end]
+        )
+        before = description[:trigger_match.start()]
+        after = description[value_end:]
+        result["triggerBeforeDescription"] = not bool(
+            _trim_metadata_separator(before)
+        )
+        if paragraph is not None and paragraph.start() == value_end:
+            result["triggerParagraphBreak"] = True
+            after = description[paragraph.end():]
+        description = _join_ability_description(before, after)
+
+    result["description"] = description
+    return result
+
+
+def render_ability_editor_fields(fields: dict[str, Any]) -> str:
+    """Reference renderer proving the structured editor keeps visible content."""
+    description = str(fields.get("description") or "").strip()
+    trigger = str(fields.get("trigger") or "").strip()
+    effect = str(fields.get("effect") or "").strip()
+    rendered = ""
+    if trigger and fields.get("triggerBeforeDescription"):
+        rendered = f"**Trigger** {trigger}"
+        if description:
+            rendered += "\n\n" if fields.get("triggerParagraphBreak") else "; "
+    if description:
+        rendered += description
+    if trigger and not fields.get("triggerBeforeDescription"):
+        if rendered:
+            rendered += "; "
+        rendered += f"**Trigger** {trigger}"
+    if effect:
+        if rendered:
+            rendered += "; "
+        rendered += f"**Effect** {effect}"
+    return rendered
+
+
 def configure_creature_editor_data(entity: dict[str, Any]) -> bool:
     """Add structured editor data while retaining all published source fields."""
     if entity.get("kind") != "Creature":
@@ -246,5 +326,17 @@ def configure_creature_editor_data(entity: dict[str, Any]) -> bool:
     rituals = data.get("rituals")
     if isinstance(rituals, dict) and any(rituals.values()):
         data["ritualcasting"] = [copy.deepcopy(rituals)]
+
+    abilities = data.get("abilities")
+    if isinstance(abilities, dict):
+        for entries in abilities.values():
+            if not isinstance(entries, list):
+                continue
+            for ability in entries:
+                if not isinstance(ability, dict):
+                    continue
+                ability.update(
+                    parse_ability_editor_fields(str(ability.get("text") or ""))
+                )
 
     return data != before

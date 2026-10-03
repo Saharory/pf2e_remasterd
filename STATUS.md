@@ -1,6 +1,6 @@
 # Current status
 
-Last updated: 2026-10-03
+Last updated: 2026-10-04
 
 - Branch: `remaster-community-base`
 - Package version: `1.701.9` (unchanged since the last published release)
@@ -14,15 +14,21 @@ Last updated: 2026-10-03
   Existing source fields remain intact and the rendered stat-block information
   is preserved through generated editor mirrors and a compatibility migration.
   The Skills editor is nested in a valid Encounter+ group section, fixing the
-  `sections[4].type` decoding error seen when opening Edit Creature.
+  `sections[4].type` decoding error seen when opening Edit Creature, and its
+  nested skill-map control now uses the same valid grouping. Creature ability
+  editors separate source-backed Description, Trigger, and Effect fields while
+  retaining the original text as a compatibility fallback; Trigger remains
+  optional because both reactions and free actions can use it.
 - Automated baseline: the public ORC/OGL packs, package definitions, creature
   links and spellcasting, area templates, and maintained UI regressions pass
   through `python3 tools/eplus_dev.py check --json`.
 - Native-app verification still required: import `dist/test/pf2e-remaster.system`
-  and confirm Edit Creature opens without a decoding error and that a creature's
-  rendered stat block is unchanged while Special
+  and confirm Edit Creature opens without a decoding error, that Skills opens
+  with its values and named Lore, and that a creature's rendered stat block is
+  unchanged while Special
   Senses, Items, Immunities, Rituals, Lore, Recall Knowledge, and the optional
-  ability Effect field can be edited through their new controls. In particular,
+  ability Trigger and Effect fields can be edited through their new controls.
+  In particular,
   verify the Item reference search, item quantity, the empty Immunities `None`
   row, the empty Rituals `New Entry` row, Recall Knowledge values, Lore inside
   Skills, and Type/Value labels for weakness and resistance entries.

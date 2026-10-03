@@ -26,9 +26,59 @@ const LEADING_LINK = /^\[([^\]]+)\]\(([^)]+)\)(.*)$/s
 const ACUITY = /^\s*\(\[([^\]]+)\]\(([^)]+)\)\)(.*)$/s
 const PLAIN_ACUITY = /^(.*?)\s+\(\[([^\]]+)\]\(([^)]+)\)\)(.*)$/s
 const QUANTITY = /^(.*?)\s+\((\d+)\)$/s
+const ABILITY_TRIGGER = /\*\*Trigger\*\*\s*/i
+const ABILITY_EFFECT = /\*\*Effect\*\*\s*/i
+const ABILITY_METADATA = /\*\*(?:Frequency|Requirements|Trigger|Effect)\*\*\s*/i
+const PARAGRAPH_BREAK = /\n\s*\n/
 
 function clone(value) {
   return JSON.parse(JSON.stringify(value))
+}
+
+function trimMetadataSeparator(value) {
+  return String(value || "").trim().replace(/^;+|;+$/g, "").trim()
+}
+
+function joinAbilityDescription(before, after) {
+  const leading = trimMetadataSeparator(before)
+  const trailing = trimMetadataSeparator(after)
+  if (leading && trailing) return `${leading}; ${trailing}`
+  return leading || trailing
+}
+
+function abilityEditorFields(value) {
+  let description = String(value || "").trim()
+  const result = {}
+
+  const effect = ABILITY_EFFECT.exec(description)
+  if (effect) {
+    result.effect = trimMetadataSeparator(description.slice(effect.index + effect[0].length))
+    description = trimMetadataSeparator(description.slice(0, effect.index))
+  }
+
+  const trigger = ABILITY_TRIGGER.exec(description)
+  if (trigger) {
+    const valueStart = trigger.index + trigger[0].length
+    const tail = description.slice(valueStart)
+    const nextLabel = ABILITY_METADATA.exec(tail)
+    const paragraph = PARAGRAPH_BREAK.exec(tail)
+    const candidates = [nextLabel, paragraph]
+      .filter(Boolean)
+      .map((match) => valueStart + match.index)
+    const valueEnd = candidates.length ? Math.min(...candidates) : description.length
+    result.trigger = trimMetadataSeparator(description.slice(valueStart, valueEnd))
+    const before = description.slice(0, trigger.index)
+    let after = description.slice(valueEnd)
+    result.triggerBeforeDescription = !trimMetadataSeparator(before)
+    if (paragraph && valueStart + paragraph.index === valueEnd) {
+      result.triggerParagraphBreak = true
+      after = description.slice(valueEnd + paragraph[0].length)
+    }
+    description = joinAbilityDescription(before, after)
+  }
+
+  result.description = description
+  return result
 }
 
 function splitEntries(value) {
@@ -164,6 +214,17 @@ function migrate(entity, migration) {
   if (!data.resistanceEntries && data.resistances && Object.keys(data.resistances).length) {
     data.resistanceEntries = Object.entries(data.resistances).map(([type, value]) => ({ type, value: clone(value) }))
     changed = true
+  }
+  const abilities = data.abilities
+  if (abilities && typeof abilities === "object") {
+    for (const entries of Object.values(abilities)) {
+      if (!Array.isArray(entries)) continue
+      for (const ability of entries) {
+        if (!ability || typeof ability !== "object" || "description" in ability) continue
+        Object.assign(ability, abilityEditorFields(ability.text))
+        changed = true
+      }
+    }
   }
 
   return changed ? entity : null

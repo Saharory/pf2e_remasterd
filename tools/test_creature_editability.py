@@ -15,10 +15,12 @@ from creature_ability_glossary import GLOSSARY, GLOSSARY_ROUTES
 from creature_metadata import CREATURE_IDENTIFICATION_SKILLS
 from creature_senses import SENSE_ROUTES, link_shared_senses
 from creature_editor_data import (
+    parse_ability_editor_fields,
     parse_item_entries,
     parse_defense_entries,
     parse_reference_entry,
     parse_sense_entries,
+    render_ability_editor_fields,
     render_item_entries,
     render_defense_entries,
     render_reference_entry,
@@ -32,6 +34,11 @@ SEPARATOR = re.compile(r"\n\s*---\s*\n")
 
 def normalize(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", value.casefold())
+
+
+def content_tokens(value: str) -> list[str]:
+    """Compare visible/editor content without treating punctuation as data."""
+    return sorted(re.findall(r"[a-z0-9]+", value.casefold()))
 
 
 def linked_labels(values: list) -> set[str]:
@@ -101,6 +108,7 @@ def main() -> int:
     item_editor_count = 0
     immunity_editor_count = 0
     ritual_editor_count = 0
+    trigger_action_counts: dict[str, int] = {}
     for creature in creatures:
         data = creature.get("data", {})
         senses = str(data.get("senses") or "")
@@ -162,6 +170,23 @@ def main() -> int:
             for ability in entries or []:
                 ability_count += 1
                 text = str(ability.get("text") or "")
+                expected_editor_fields = parse_ability_editor_fields(text)
+                actual_editor_fields = {
+                    key: ability[key]
+                    for key in expected_editor_fields
+                    if key in ability
+                }
+                if actual_editor_fields != expected_editor_fields:
+                    raise SystemExit(
+                        f"creature ability editor is out of sync: {creature['slug']}: {ability.get('name')}"
+                    )
+                if content_tokens(render_ability_editor_fields(expected_editor_fields)) != content_tokens(text):
+                    raise SystemExit(
+                        f"creature ability editor changes visible content: {creature['slug']}: {ability.get('name')}"
+                    )
+                if expected_editor_fields.get("trigger"):
+                    action = str(ability.get("actions") or "none")
+                    trigger_action_counts[action] = trigger_action_counts.get(action, 0) + 1
                 shared_reference_count += int(bool(ability.get("reference")))
                 name = str(ability.get("name") or "")
                 if SEPARATOR.search(text):
@@ -189,6 +214,8 @@ def main() -> int:
 
     if shared_reference_count < 1500:
         raise SystemExit("creature shared-rule references are unexpectedly incomplete")
+    if not trigger_action_counts.get("reaction") or not trigger_action_counts.get("free"):
+        raise SystemExit("Trigger was incorrectly treated as reaction-only")
 
     moon_hag = by_slug["moon-hag-monster-core-2"]
     if moon_hag["data"].get("senses") != "[Darkvision](/action/darkvision-monster-core)":
@@ -513,7 +540,9 @@ def main() -> int:
             raise SystemExit(f"shared monster ability link is missing: {route}")
 
     ability_form = form("partials/ability.json")
-    if field_attributes(ability_form) != {"name", "actions", "traits", "text", "effect", "reference"}:
+    if field_attributes(ability_form) != {
+        "name", "actions", "traits", "description", "trigger", "effect", "reference"
+    }:
         raise SystemExit("ability form does not expose every rendered ability field")
 
     ability_view = (REPO / "views/partials/ability.md").read_text(encoding="utf-8")
@@ -523,6 +552,10 @@ def main() -> int:
         raise SystemExit("shared creature ability names are not linked")
     if "ability.effect" not in ability_view:
         raise SystemExit("creature abilities do not render the optional Effect field")
+    if "ability.trigger" not in ability_view:
+        raise SystemExit("creature abilities do not render the optional Trigger field")
+    if re.search(r"{%\s*elsif\b", ability_view):
+        raise SystemExit("creature ability view uses unsupported elsif syntax")
     if (
         "/trait/{{trait}}" not in ability_view
         or (
@@ -697,10 +730,20 @@ def main() -> int:
     if field_attributes(immunity_form) != {"name", "reference", "customText"}:
         raise SystemExit("immunity editor must omit the unnecessary Details field")
     skills_form = form("partials/creature-skills.json")
+    invalid_skills_section_types = {
+        index: section.get("type")
+        for index, section in enumerate(skills_form.get("sections", []))
+        if section.get("type") not in {"group", "list"}
+    }
+    if invalid_skills_section_types:
+        raise SystemExit(
+            f"Skills editor has invalid top-level sections: {invalid_skills_section_types}"
+        )
     skills_fields = {
-        str(section.get("attribute")): section
+        str(field.get("attribute")): field
         for section in skills_form.get("sections", [])
-        if section.get("attribute")
+        for field in ([section] if section.get("attribute") else []) + section.get("fields", [])
+        if field.get("attribute")
     }
     if (
         skills_fields.get("skills", {}).get("attributeType") != "CreatureSkill"
@@ -718,6 +761,11 @@ def main() -> int:
     defense_form = form("partials/defense-entry.json")
     if field_attributes(defense_form) != {"type", "value"}:
         raise SystemExit("weakness and resistance entries must use Type and Value")
+    ability_form = form("partials/ability.json")
+    if field_attributes(ability_form) != {
+        "name", "actions", "traits", "description", "trigger", "effect", "reference"
+    }:
+        raise SystemExit("creature ability editor does not expose Description, Trigger, and Effect")
     for attribute in ("data.weaknessEntries", "data.resistanceEntries"):
         field = editor_fields.get(attribute, {})
         if field.get("type") != "list" or field.get("form", {}).get("partial") != "defense-entry":
@@ -734,6 +782,7 @@ def main() -> int:
         "data.skillsEditor",
         "data.weaknessEntries",
         "data.resistanceEntries",
+        "abilityEditorFields",
     ):
         if field not in migration:
             raise SystemExit(f"existing creatures are not migrated for editor field: {field}")

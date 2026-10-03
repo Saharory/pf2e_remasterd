@@ -737,7 +737,6 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         configure_creature_abilities(result)
         configure_creature_senses(result)
         configure_creature_spellcasting(result)
-        configure_creature_editor_data(result)
 
     # Hazard and vehicle ability text is an in-play reference. Every explicit
     # condition or rule reference should stay clickable, including repeated
@@ -749,6 +748,10 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
     )
     if expected_kind not in {"Hazard", "Vehicle"} and not is_skill_reference:
         dedupe_entity_links(result)
+    if expected_kind == "Creature":
+        # Editor mirrors must reflect the final linked text, not an earlier
+        # version that the reference de-duplicator can still adjust.
+        configure_creature_editor_data(result)
 
     return result
 

@@ -85,13 +85,15 @@
           {
             "name": "Smeltable",
             "text": "If an aurosrath takes 5 or more fire damage from a single attack, the precious metals within their body enter a molten state until the end of their next turn. While in this state, the aurosrath takes a –10-foot status penalty to their Speeds, and their strikes deal an extra 1d6 fire damage. They also lose their weakness to slashing damage and their resistance to electricity damage. Finally, any creature currently [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by the aurosrath loses 1 round of air if it's holding its breath.",
-            "traits": []
+            "traits": [],
+            "description": "If an aurosrath takes 5 or more fire damage from a single attack, the precious metals within their body enter a molten state until the end of their next turn. While in this state, the aurosrath takes a –10-foot status penalty to their Speeds, and their strikes deal an extra 1d6 fire damage. They also lose their weakness to slashing damage and their resistance to electricity damage. Finally, any creature currently [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by the aurosrath loses 1 round of air if it's holding its breath."
           },
           {
             "name": "Void Healing",
             "text": "",
             "traits": [],
-            "reference": "/action/void-healing-monster-core"
+            "reference": "/action/void-healing-monster-core",
+            "description": ""
           }
         ],
         "offensive": [
@@ -105,12 +107,15 @@
               "mental",
               "occult"
             ],
-            "actions": "two"
+            "actions": "two",
+            "effect": "The aurosrath bellows a plea for gold, remarking that their foes are overladen. Creatures in a 15-foot emanation must succeed at a Will DC 19 save or become [Encumbered](/condition/encumbered-player-core) for 1 minute. The creature is aware that it can immediately end the condition by giving the aurosrath items or treasure worth at least 20 gp. Handing a held item to the aurosrath is a single [Interact](/action/interact-player-core) action. If the aurosrath's hands are full, the item falls in their space, but the condition still ends.",
+            "description": "**Frequency** once per 10 minutes"
           },
           {
             "name": "Suffocating Wealth",
             "text": "As the aurosrath holds their victim, the victim is smothered in a stream of phantom coins. A creature who begins its turn [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by an aurosrath can't speak and must hold its breath or it begins to suffocate. The coins produced are ephemeral and melt away to nothing when removed from the aurosrath's presence for more than 1 round.",
-            "traits": []
+            "traits": [],
+            "description": "As the aurosrath holds their victim, the victim is smothered in a stream of phantom coins. A creature who begins its turn [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by an aurosrath can't speak and must hold its breath or it begins to suffocate. The coins produced are ephemeral and melt away to nothing when removed from the aurosrath's presence for more than 1 round."
           }
         ]
       },
@@ -292,13 +297,15 @@
             "name": "Troop Defenses",
             "text": "",
             "traits": [],
-            "reference": "/action/troop-defenses-npc-core"
+            "reference": "/action/troop-defenses-npc-core",
+            "description": ""
           },
           {
             "name": "Troop Movement",
             "text": "",
             "traits": [],
-            "reference": "/action/troop-movement-npc-core"
+            "reference": "/action/troop-movement-npc-core",
+            "description": ""
           },
           {
             "name": "Unseasonable Cold",
@@ -307,7 +314,8 @@
               "aura",
               "cold",
               "primal"
-            ]
+            ],
+            "description": "Wherever the frosthunt goes, winter follows. The temperature within a quarter mile of a frosthunt drops to mild cold, then to severe cold within 500 feet, and extreme cold within 50 feet."
           }
         ],
         "offensive": [
@@ -317,7 +325,9 @@
             "traits": [
               "cold"
             ],
-            "actions": "one"
+            "actions": "one",
+            "effect": "The beirans descend on their prey, biting and clawing at each enemy in a 5-foot emanation, with a basic Reflex DC 17 save. The damage depends on the number of actions.\n\n1 1d6 slashing damage plus 1 cold damage\n\n2 2d6+2 slashing damage plus 1d4 cold damage\n\n3 2d6+5 cold damage plus 1d4 cold damage",
+            "description": "1 to 3\n\n**Frequency** once per round"
           }
         ]
       },
@@ -528,7 +538,8 @@
             "text": "The bibliodaemon is aware of non-mindless creatures within 60 feet as an imprecise sense.",
             "traits": [
               "mental"
-            ]
+            ],
+            "description": "The bibliodaemon is aware of non-mindless creatures within 60 feet as an imprecise sense."
           }
         ],
         "defensive": [
@@ -538,7 +549,8 @@
             "traits": [
               "aura",
               "divine"
-            ]
+            ],
+            "description": "30 feet.\n\nWhen a non-daemon enters or begins its turn within the aura, it must attempt a Will DC 23 save. On a failure, it takes a –2 status penalty to saving throws against linguistic effects for 1 round."
           }
         ],
         "offensive": [
@@ -551,7 +563,8 @@
               "polymorph"
             ],
             "actions": "one",
-            "reference": "/action/change-shape-monster-core"
+            "reference": "/action/change-shape-monster-core",
+            "description": "The bibliodaemon can take on the appearance of any Small or Medium humanoid. This doesn't change their Speed or their attack and damage modifiers with their Strikes, but it might change the damage type their claw Strikes deal (typically to bludgeoning)."
           },
           {
             "name": "Death by 1,000 Papercuts",
@@ -559,7 +572,8 @@
             "traits": [
               "divine"
             ],
-            "actions": "two"
+            "actions": "two",
+            "description": "The bibliodaemon launches a torrent of sharp papers from the sleeves of their robes. All creatures in a 15-foot [cone](/rule/cone-rules-2386) take 9d6 slashing damage (basic Reflex DC 23 save). Creatures that fail their save also take 2d4 bleed damage. The bibliodaemon can't use Death by 1,000 Papercuts again for 1d4 rounds."
           },
           {
             "name": "Inevitable Delays",
@@ -571,7 +585,9 @@
               "linguistic",
               "mental"
             ],
-            "actions": "one"
+            "actions": "one",
+            "effect": "The bibliodaemon intuits the next actions the creature they just damaged will take and explains how it doesn't have the proper clearance to perform those actions. The creature must succeed at a Will DC 23 save or become [Slowed 1](/condition/slowed-player-core).",
+            "description": "**Requirements** The bibliodaemon's last action was a successful [Strike](/action/strike-player-core) that dealt damage"
           }
         ]
       },
@@ -894,7 +910,8 @@
             "text": "30 feet.\n\nNon-corbayrants take a –2 circumstance penalty to saves against poison effects and gain weakness 10 to poison damage while within the aura.",
             "traits": [
               "aura"
-            ]
+            ],
+            "description": "30 feet.\n\nNon-corbayrants take a –2 circumstance penalty to saves against poison effects and gain weakness 10 to poison damage while within the aura."
           }
         ],
         "defensive": [
@@ -902,32 +919,40 @@
             "name": "Regeneration 20 (deactivated by cold)",
             "text": "",
             "traits": [],
-            "reference": "/action/regeneration-monster-core"
+            "reference": "/action/regeneration-monster-core",
+            "description": ""
           },
           {
             "name": "Reactive Strike",
             "text": "**Trigger** A creature within your reach uses a manipulate action or a [move](/trait/move) action, makes a ranged attack, or leaves a square during a move action it's using.\n\nYou lash out at a foe that leaves an opening. Make a melee [Strike](/action/strike-player-core) against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.",
             "traits": [],
             "actions": "reaction",
-            "reference": "/action/reactive-strike-monster-core"
+            "reference": "/action/reactive-strike-monster-core",
+            "trigger": "A creature within your reach uses a manipulate action or a [move](/trait/move) action, makes a ranged attack, or leaves a square during a move action it's using.",
+            "triggerBeforeDescription": true,
+            "triggerParagraphBreak": true,
+            "description": "You lash out at a foe that leaves an opening. Make a melee [Strike](/action/strike-player-core) against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike."
           },
           {
             "name": "Thorny Hide",
             "text": "A corbayrant's body is covered in jagged spines. Adjacent creatures that hit them with a melee attack, as well as creatures that touch them or hit them with an unarmed attack, take 4d6 piercing damage and are exposed to thorn paralysis.",
-            "traits": []
+            "traits": [],
+            "description": "A corbayrant's body is covered in jagged spines. Adjacent creatures that hit them with a melee attack, as well as creatures that touch them or hit them with an unarmed attack, take 4d6 piercing damage and are exposed to thorn paralysis."
           }
         ],
         "offensive": [
           {
             "name": "Corbayrant Venom",
             "text": "**Saving Throw** Fortitude DC 37\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 8d6 poison damage (1 round)\n\n**Stage 2** 9d6 poison damage (1 round)\n\n**Stage 3** 9d6 poison damage and [Drained 1](/condition/drained-player-core) (1 round)",
-            "traits": []
+            "traits": [],
+            "description": "**Saving Throw** Fortitude DC 37\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 8d6 poison damage (1 round)\n\n**Stage 2** 9d6 poison damage (1 round)\n\n**Stage 3** 9d6 poison damage and [Drained 1](/condition/drained-player-core) (1 round)"
           },
           {
             "name": "Spine Volley",
             "text": "The corbayrant makes four spine Strikes, each against a different target. These attacks all count toward the corbayrant's multiple attack penalty, but the penalty doesn't increase until after the corbayrant makes their attacks.",
             "traits": [],
-            "actions": "two"
+            "actions": "two",
+            "description": "The corbayrant makes four spine Strikes, each against a different target. These attacks all count toward the corbayrant's multiple attack penalty, but the penalty doesn't increase until after the corbayrant makes their attacks."
           },
           {
             "name": "Swallow Whole",
@@ -936,7 +961,8 @@
               "attack"
             ],
             "actions": "one",
-            "reference": "/action/swallow-whole-monster-core"
+            "reference": "/action/swallow-whole-monster-core",
+            "description": "Large, 9d6 piercing plus thorn paralysis, Rupture 30"
           },
           {
             "name": "Thorn Paralysis",
@@ -944,7 +970,8 @@
             "traits": [
               "incapacitation",
               "poison"
-            ]
+            ],
+            "description": "The corbayrant's spines are covered in a paralyzing toxin that cause verdurous thorns to sprout from their victim's body. When a non-corbayrant creature is exposed, it attempts a Fortitude DC 37 save.\n **Critical Success** The creature is unaffected.\n **Success** The creature sprouts spines like those of the corbayrant. For 1 minute, the creature gains the corbayrant's thorny hide ability. Allies attempting to aid the victim with touch-range spells and abilities run the risk of becoming infected themselves. At the end of the duration, the spines fall off harmlessly.\n **Failure** As success, but the creature is also [Paralyzed](/condition/paralyzed-player-core) for 1 minute. It can attempt another Fortitude save at the end of each turn to end the paralysis, but not the spines.\n **Critical Failure** As failure, but the creature doesn't receive a save at the end of its turn to end the paralysis."
           }
         ]
       },
@@ -1160,7 +1187,8 @@
           {
             "name": "Wealthsense",
             "text": "150 gp\n\nThe failed prophet can detect concentrations of coinage and other valuables as an imprecise sense with a range of 60 feet. The failed prophet detects any creature carrying coins and treasure totaling at least the average cost of a consumable item of the failed prophet's level.",
-            "traits": []
+            "traits": [],
+            "description": "150 gp\n\nThe failed prophet can detect concentrations of coinage and other valuables as an imprecise sense with a range of 60 feet. The failed prophet detects any creature carrying coins and treasure totaling at least the average cost of a consumable item of the failed prophet's level."
           }
         ],
         "defensive": [
@@ -1172,12 +1200,14 @@
               "illusion",
               "incapacitation",
               "mental"
-            ]
+            ],
+            "description": "30 feet. A creature entering the aura or starting its turn in the aura must attempt a Will DC 27 save.\n **Critical Success** The creature is unaffected and becomes immune to broken mindscape for 1 minute.\n **Success** The creature is [Stunned 1](/condition/stunned-player-core) as disjointed visions of the failed prophet's mindscape assail its senses.\n **Failure** The creature's mind is pulled into the failed prophet's mindscape. It's [Paralyzed](/condition/paralyzed-player-core) for 1 round. While paralyzed, the creature can take any actions with the mental or [spirit](/trait/spirit) traits, or that deal mental or spirit damage, as though those actions were purely mental. Such actions only have line of effect to the originating failed prophet and other creatures currently paralyzed by broken mindscape, though they treat all such creatures as though they were adjacent.\n **Critical Failure** As failure, but the duration is 1 minute or until the failed prophet is destroyed, whichever happens first."
           },
           {
             "name": "Taboos",
             "text": "Despite the failed prophet's transformed body, a lifelong adherence to the strictures of the Prophecies of Kalistrade has ingrained the philosophical prohibitions into their soul. Whenever a failed prophet is critically hit by an unarmed attack, is critically hit by or critically fails a save against a touch spell, or is exposed to a disease or poison effect (even though immune), they take a –2 status penalty to their AC, attack bonuses, DCs, Perception, saving throws, and skill modifiers for 1 minute. Breaking other Kalistocratic taboos can also trigger this penalty at the GM's discretion.",
-            "traits": []
+            "traits": [],
+            "description": "Despite the failed prophet's transformed body, a lifelong adherence to the strictures of the Prophecies of Kalistrade has ingrained the philosophical prohibitions into their soul. Whenever a failed prophet is critically hit by an unarmed attack, is critically hit by or critically fails a save against a touch spell, or is exposed to a disease or poison effect (even though immune), they take a –2 status penalty to their AC, attack bonuses, DCs, Perception, saving throws, and skill modifiers for 1 minute. Breaking other Kalistocratic taboos can also trigger this penalty at the GM's discretion."
           }
         ],
         "offensive": [
@@ -1185,7 +1215,9 @@
             "name": "Greedy Grab",
             "text": "**Requirements** The failed prophet's last action was a successful fist [Strike](/action/strike-player-core) that dealt damage; **Effect** The failed prophet attempts a Thievery check against the target's Reflex DC. On a success, the failed prophet pilfers coins and gems from the target with a total value as indicated in the table, to a maximum of what the target is carrying. Valuables in unlocked containers on the target's person can be taken just as easily as those carried. On a critical success, the failed prophet steals double that amount. The failed prophet gains a number of temporary Hit Points equal to the value stolen that last for 1 minute.\n\n| Level | Value Stolen |\n| --- | --- |\n| 10–12 | 5d10 gp |\n| 13–15 | 6d10 gp |\n| 16–18 | 7d10 gp |\n| 19–20 | 8d10 gp |",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "effect": "The failed prophet attempts a Thievery check against the target's Reflex DC. On a success, the failed prophet pilfers coins and gems from the target with a total value as indicated in the table, to a maximum of what the target is carrying. Valuables in unlocked containers on the target's person can be taken just as easily as those carried. On a critical success, the failed prophet steals double that amount. The failed prophet gains a number of temporary Hit Points equal to the value stolen that last for 1 minute.\n\n| Level | Value Stolen |\n| --- | --- |\n| 10–12 | 5d10 gp |\n| 13–15 | 6d10 gp |\n| 16–18 | 7d10 gp |\n| 19–20 | 8d10 gp |",
+            "description": "**Requirements** The failed prophet's last action was a successful fist [Strike](/action/strike-player-core) that dealt damage"
           },
           {
             "name": "This Is My Reality!",
@@ -1193,7 +1225,8 @@
             "traits": [
               "concentrate"
             ],
-            "actions": "two"
+            "actions": "two",
+            "description": "6d6 spirit, basic Will DC 30\n\nThe failed prophet exerts control over their crumbling mindscape to inflict harm upon those trapped within. This can take the form of falling debris, natural disasters, or anything else the failed prophet can imagine. No matter the form, each creature currently [Paralyzed](/condition/paralyzed-player-core) by the failed prophet's broken mindscape takes spirit damage with a [basic Will save](/rule/basic-saving-throws-rules-2297). The save DC uses the high spell DC for the failed prophet's level and the unlimited use area damage for the failed prophet's level."
           }
         ]
       },
@@ -1595,14 +1628,16 @@
             "name": "Chilling Currents",
             "text": "A goldpebble can cause the temperature of all water within a 30-foot emanation centered on itself to plummet for 1 minute. Any creature that starts its turn or enters the affected water takes 2d6 cold damage (basic Fortitude DC 19 save).",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "A goldpebble can cause the temperature of all water within a 30-foot emanation centered on itself to plummet for 1 minute. Any creature that starts its turn or enters the affected water takes 2d6 cold damage (basic Fortitude DC 19 save)."
           },
           {
             "name": "Pebblefang Poison",
             "text": "**Saving Throw** Fortitude DC 21\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 cold damage (2 rounds)\n\n**Stage 2** 2d6 cold damage (2 rounds)\n\n**Stage 3** 2d6 cold damage and [Drained 1](/condition/drained-player-core)",
             "traits": [
               "poison"
-            ]
+            ],
+            "description": "**Saving Throw** Fortitude DC 21\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 cold damage (2 rounds)\n\n**Stage 2** 2d6 cold damage (2 rounds)\n\n**Stage 3** 2d6 cold damage and [Drained 1](/condition/drained-player-core)"
           }
         ]
       },
@@ -1793,7 +1828,9 @@
             "traits": [
               "manipulate"
             ],
-            "actions": "one"
+            "actions": "one",
+            "effect": "The lamp blighter attempts to pluck out one of the required creature's eyes. The target must attempt a Fortitude DC 21 save. On a failure, the target takes 4 persistent bleed damage and is [Dazzled](/condition/dazzled-player-core) for 1 round. On a critical failure, the target's eye is also severely damaged, taking a –4 circumstance penalty on all sight-based Perception checks until the target returns to full Hit Points or the wound is otherwise healed (by magic such as [Sound Body](/spell/sound-body-player-core) or [Regenerate](/spell/regenerate-player-core)). If all a creature's eyes are severely damaged in this way, that creature is [Blinded](/condition/blinded-player-core) for the same duration.",
+            "description": "**Frequency** once per round; **Requirements** The lamp blighter's last action was a successful claw [Strike](/action/strike-player-core) against a creature with eyes"
           },
           {
             "name": "Fear the Darkness",
@@ -1805,7 +1842,9 @@
               "mental",
               "primal"
             ],
-            "actions": "two"
+            "actions": "two",
+            "effect": "The lamp blighter evokes the terror of being unable to see in the dark. Each creature within a 20-foot emanation that doesn't have darkvision must succeed at a Will DC 23 save or become [Frightened 2](/condition/frightened-player-core).",
+            "description": "**Requirements** The lamp blighter must be in an area of darkness"
           },
           {
             "name": "Snuff the Light",
@@ -1815,7 +1854,8 @@
               "fire",
               "primal"
             ],
-            "actions": "one"
+            "actions": "one",
+            "description": "The lamp blighter extinguishes light sources in a 10-foot emanation. They extinguish all non-magical light sources automatically and attempt to extinguish magical light sources with a +16 counteract modifier and a counteract rank of 3. If the lamp blighter successfully extinguishes any light, their next successful claw or shortbow [Strike](/action/strike-player-core) deals 1d6 persistent fire damage."
           }
         ]
       },
@@ -2074,14 +2114,16 @@
               "fear",
               "mental"
             ],
-            "actions": "one"
+            "actions": "one",
+            "description": "The shroudwing emits a guttural, haunting call that instills a sense of fear almost impossible to shake. Each non-shroudwing creature within a 30-foot emanation must attempt a Will DC 18 save. Regardless of the result, creatures are then temporarily immune to Death Rattle for 1 minute.\n **Critical Success** The creature is unaffected.\n **Success** The creature is [Off Guard](/condition/off-guard-player-core) until the start of the shroudwing's next turn.\n **Failure** The creature is [Frightened 1](/condition/frightened-player-core).\n **Critical Failure** The creature is Frightened 2."
           },
           {
             "name": "Grave Blight",
             "text": "**Saving Throw** Fortitude DC 18\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 persistent poison damage every hour, [Sickened 1](/condition/sickened-player-core), and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)\n\n**Stage 3** 2d6 persistent poison damage every hour, Sickened 2, and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)",
             "traits": [
               "disease"
-            ]
+            ],
+            "description": "**Saving Throw** Fortitude DC 18\n\n**Stage 1** carrier with no ill effect (1 day)\n\n**Stage 2** 1d6 persistent poison damage every hour, [Sickened 1](/condition/sickened-player-core), and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)\n\n**Stage 3** 2d6 persistent poison damage every hour, Sickened 2, and can't reduce the value of the sickened condition while taking persistent poison damage (1 day)"
           },
           {
             "name": "Soul Feeding",
@@ -2092,7 +2134,9 @@
               "divine",
               "manipulate"
             ],
-            "actions": "two"
+            "actions": "two",
+            "effect": "The shroudwing attempts to devour the dying creature's soul. The creature must attempt a Will DC 18 save or their dying condition increases by 1 and the shroudwing regains 2d8 healing Hit Points.",
+            "description": "**Requirements** The shroudwing is adjacent to a [dying](/condition/dying-player-core) creature"
           }
         ]
       },
@@ -2224,25 +2268,29 @@
           {
             "name": "Bound Limbs",
             "text": "A torn quartet ordinarily has four severed limbs tethered to a central point by near-incorporeal ropes. A limb is essentially cut away from the central point and rendered nonfunctional each time the torn quartet loses 60 Hit Points (so at 180 Hit Points, the torn quartet has three functional limbs, at 120 Hit Points, it has two functional limbs, and so on). Each functioning limb can [Grapple](/action/grapple-player-core) separate creatures within reach, or multiple functioning limbs can Grapple the same creature; for each additional limb used to Grapple a creature, the [Escape](/action/escape-player-core) DC increases by 2.",
-            "traits": []
+            "traits": [],
+            "description": "A torn quartet ordinarily has four severed limbs tethered to a central point by near-incorporeal ropes. A limb is essentially cut away from the central point and rendered nonfunctional each time the torn quartet loses 60 Hit Points (so at 180 Hit Points, the torn quartet has three functional limbs, at 120 Hit Points, it has two functional limbs, and so on). Each functioning limb can [Grapple](/action/grapple-player-core) separate creatures within reach, or multiple functioning limbs can Grapple the same creature; for each additional limb used to Grapple a creature, the [Escape](/action/escape-player-core) DC increases by 2."
           },
           {
             "name": "Reactive Strike",
             "text": "",
             "traits": [],
             "actions": "reaction",
-            "reference": "/action/reactive-strike-monster-core"
+            "reference": "/action/reactive-strike-monster-core",
+            "description": ""
           },
           {
             "name": "Replacement Parts",
             "text": "A torn quartet can spend 1 minute tearing apart the corpse of a humanoid creature that was killed within the last hour to regain 60 Hit Points and restore one of its nonfunctioning limbs. A torn quartet can't have more than four limbs.",
-            "traits": []
+            "traits": [],
+            "description": "A torn quartet can spend 1 minute tearing apart the corpse of a humanoid creature that was killed within the last hour to regain 60 Hit Points and restore one of its nonfunctioning limbs. A torn quartet can't have more than four limbs."
           },
           {
             "name": "Void Healing",
             "text": "",
             "traits": [],
-            "reference": "/action/void-healing-monster-core"
+            "reference": "/action/void-healing-monster-core",
+            "description": ""
           }
         ],
         "offensive": [
@@ -2250,18 +2298,22 @@
             "name": "Flurry of Limbs",
             "text": "The torn quartet makes a number of limb Strikes up to its number of functioning limbs, each against a different target. These attacks count toward the torn quartet's multiple attack penalty, but the multiple attack penalty doesn't increase until after the torn quartet makes all its attacks.",
             "traits": [],
-            "actions": "two"
+            "actions": "two",
+            "description": "The torn quartet makes a number of limb Strikes up to its number of functioning limbs, each against a different target. These attacks count toward the torn quartet's multiple attack penalty, but the multiple attack penalty doesn't increase until after the torn quartet makes all its attacks."
           },
           {
             "name": "Split Reactions",
             "text": "A torn quartet has a number of reactions per round equal to its number of still-functioning limbs, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the torn quartet must use a different limb for each Reactive [Strike](/action/strike-player-core) it makes. Whenever one of the torn quartet's limbs is rendered nonfunctional, the torn quartet loses one of its reactions.",
-            "traits": []
+            "traits": [],
+            "description": "A torn quartet has a number of reactions per round equal to its number of still-functioning limbs, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and the torn quartet must use a different limb for each Reactive [Strike](/action/strike-player-core) it makes. Whenever one of the torn quartet's limbs is rendered nonfunctional, the torn quartet loses one of its reactions."
           },
           {
             "name": "Tear Asunder",
             "text": "**Requirements** The torn quartet has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by at least two limbs; **Effect** The creature takes 5d6 slashing damage for each limb currently grabbing or restraining it (maximum 15d6), with a basic Fortitude DC 30 save. On a critical failure, the creature also loses a random body part, and one of the torn quartet's limbs is now no longer grabbing or restraining it.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "effect": "The creature takes 5d6 slashing damage for each limb currently grabbing or restraining it (maximum 15d6), with a basic Fortitude DC 30 save. On a critical failure, the creature also loses a random body part, and one of the torn quartet's limbs is now no longer grabbing or restraining it.",
+            "description": "**Requirements** The torn quartet has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core) by at least two limbs"
           }
         ]
       },
@@ -2460,21 +2512,27 @@
             "name": "Sweeping Tail",
             "text": "**Trigger** A creature within reach of the vorvorak's tail uses a [move](/trait/move) action or leaves a square during a move action it's using; **Effect** The vorvorak attempts a tail [Strike](/action/strike-player-core) against the triggering creature. If the attack is a critical hit, the vorvorak disrupts the action.",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "effect": "The vorvorak attempts a tail [Strike](/action/strike-player-core) against the triggering creature. If the attack is a critical hit, the vorvorak disrupts the action.",
+            "trigger": "A creature within reach of the vorvorak's tail uses a [move](/trait/move) action or leaves a square during a move action it's using",
+            "triggerBeforeDescription": true,
+            "description": ""
           }
         ],
         "offensive": [
           {
             "name": "Canal Walker",
             "text": "A vorvorak ignores difficult terrain caused by swamp terrain features.",
-            "traits": []
+            "traits": [],
+            "description": "A vorvorak ignores difficult terrain caused by swamp terrain features."
           },
           {
             "name": "Vorvorak Bile",
             "text": "**Saving Throw** Fortitude DC 28\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d8 poison and [Sickened 1](/condition/sickened-player-core) (2 rounds)\n\n**Stage 2** 3d8 poison and Sickened 2 (2 rounds)\n\n**Stage 3** 4d8 poison and Sickened 3 (2 rounds)",
             "traits": [
               "poison"
-            ]
+            ],
+            "description": "**Saving Throw** Fortitude DC 28\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d8 poison and [Sickened 1](/condition/sickened-player-core) (2 rounds)\n\n**Stage 2** 3d8 poison and Sickened 2 (2 rounds)\n\n**Stage 3** 4d8 poison and Sickened 3 (2 rounds)"
           }
         ]
       },
@@ -2708,14 +2766,16 @@
             "name": "Void Healing",
             "text": "",
             "traits": [],
-            "reference": "/action/void-healing-monster-core"
+            "reference": "/action/void-healing-monster-core",
+            "description": ""
           }
         ],
         "offensive": [
           {
             "name": "Sneak Attack",
             "text": "A walcofinde deals an additional 1d6 precision damage to [Off Guard](/condition/off-guard-player-core) creatures.",
-            "traits": []
+            "traits": [],
+            "description": "A walcofinde deals an additional 1d6 precision damage to [Off Guard](/condition/off-guard-player-core) creatures."
           },
           {
             "name": "Structural Possession",
@@ -2724,7 +2784,8 @@
               "manipulate",
               "morph"
             ],
-            "actions": "one"
+            "actions": "one",
+            "description": "A walcofinde can merge themself with any wall they can touch within their sealed chamber and can create a manifestation of themself through any part of that wall on either side within 100 feet. This manifestation appears as the rotting upper half of the walcofinde protruding from the wall, but their skin is patterned as if they were the same structural material as the wall they're emerging from. While manifested, the walcofinde's claw attack gains a reach of 10 feet, but they can move only by using Wall Glide. Any damage done to the manifestation affects the walcofinde themself. A walcofinde can Dismiss their structural possession to retreat back into their sealed chamber."
           },
           {
             "name": "Wall Blend",
@@ -2732,7 +2793,9 @@
             "traits": [
               "concentrate"
             ],
-            "actions": "one"
+            "actions": "one",
+            "effect": "Until the next time they act, the walcofinde's manifestation changes their visual appearance to match the surrounding wall. They have an automatic result of 31 on their Stealth checks to Hide.",
+            "description": "**Requirements** The walcofinde is manifested using Structural Possession and isn't observed by any enemies"
           },
           {
             "name": "Wall Glide",
@@ -2740,7 +2803,9 @@
             "traits": [
               "concentrate"
             ],
-            "actions": "one"
+            "actions": "one",
+            "effect": "The walcofinde's manifestation Strides, submerging into the wall and reemerging from the wall at the end of their movement. If the walcofinde takes 2 actions to Wall Glide, their manifestation can [Stride](/action/stride-player-core) twice before reemerging. In either case, they can move only within walls that are within 100 feet of their sealed chamber.",
+            "description": "**Requirements** The walcofinde is manifested using Structural Possession"
           }
         ]
       },

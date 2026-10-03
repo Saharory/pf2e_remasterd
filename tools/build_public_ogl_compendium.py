@@ -93,8 +93,11 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         configure_creature_abilities(result)
         configure_creature_senses(result)
         configure_creature_spellcasting(result)
-        configure_creature_editor_data(result)
     dedupe_entity_links(result)
+    if expected_kind == "Creature":
+        # Build mirrors from the final linked text so the editor and view stay
+        # byte-for-byte aligned after reference de-duplication.
+        configure_creature_editor_data(result)
     return result
 
 

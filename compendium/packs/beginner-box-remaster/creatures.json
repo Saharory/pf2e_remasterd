@@ -82,7 +82,8 @@
             "name": "Deep Plunge",
             "text": "The brine shark dives straight down into the water, swimming up to 100 feet in a straight vertical line. It can use this ability while [Grabbing](/condition/grabbed-player-core) a creature.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "The brine shark dives straight down into the water, swimming up to 100 feet in a straight vertical line. It can use this ability while [Grabbing](/condition/grabbed-player-core) a creature."
           }
         ]
       },
@@ -262,21 +263,24 @@
             "name": "Light Blindness",
             "text": "When first exposed to bright light, the caligni can't see until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a Flat DC 11. Light doesn't blind them again for 1 hour.",
             "traits": [],
-            "reference": "/action/light-blindness-monster-core"
+            "reference": "/action/light-blindness-monster-core",
+            "description": "When first exposed to bright light, the caligni can't see until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a Flat DC 11. Light doesn't blind them again for 1 hour."
           }
         ],
         "defensive": [
           {
             "name": "Final Dance",
             "text": "When a caligni dancer dies, their body dissolves into a swirl of darkness and light. All creatures within 10 feet must succeed at a Will DC 17 save or take a -2 circumstance penalty on all attack rolls for 1 round.",
-            "traits": []
+            "traits": [],
+            "description": "When a caligni dancer dies, their body dissolves into a swirl of darkness and light. All creatures within 10 feet must succeed at a Will DC 17 save or take a -2 circumstance penalty on all attack rolls for 1 round."
           }
         ],
         "offensive": [
           {
             "name": "Sneak Attack",
             "text": "The caligni dancer deals an additional 1d6 damage to [Off Guard](/condition/off-guard-player-core) creatures.",
-            "traits": []
+            "traits": [],
+            "description": "The caligni dancer deals an additional 1d6 damage to [Off Guard](/condition/off-guard-player-core) creatures."
           }
         ]
       },
@@ -435,19 +439,22 @@
             "name": "Light Blindness",
             "text": "When first exposed to bright light, the caligni can't see until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a Flat DC 11. Light doesn't blind them again for 1 hour.",
             "traits": [],
-            "reference": "/action/light-blindness-monster-core"
+            "reference": "/action/light-blindness-monster-core",
+            "description": "When first exposed to bright light, the caligni can't see until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a Flat DC 11. Light doesn't blind them again for 1 hour."
           },
           {
             "name": "Sneak Attack",
             "text": "The caligni hunter deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition.",
-            "traits": []
+            "traits": [],
+            "description": "The caligni hunter deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition."
           }
         ],
         "defensive": [
           {
             "name": "Final Fate",
             "text": "When a caligni hunter dies, their body explodes. All creatures within 20 feet must take 5d6 fire. Each creature in the area must attempt a basic Reflex DC 19 save.",
-            "traits": []
+            "traits": [],
+            "description": "When a caligni hunter dies, their body explodes. All creatures within 20 feet must take 5d6 fire. Each creature in the area must attempt a basic Reflex DC 19 save."
           }
         ],
         "offensive": [
@@ -457,7 +464,8 @@
             "traits": [
               "poison"
             ],
-            "actions": "one"
+            "actions": "one",
+            "description": "The next time the hunter deals damage with a shortsword [Strike](/action/strike-player-core), the target must succeed at a Fortitude DC 16 save or take 1d8 poison damage and treat all creatures as [Concealed](/condition/concealed-player-core) for 1 round."
           }
         ]
       },
@@ -654,14 +662,16 @@
             "name": "Light Blindness",
             "text": "When first exposed to bright light, the caligni can't see until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a Flat DC 11. Light doesn't blind them again for 1 hour.",
             "traits": [],
-            "reference": "/action/light-blindness-monster-core"
+            "reference": "/action/light-blindness-monster-core",
+            "description": "When first exposed to bright light, the caligni can't see until the end of their next turn. All squares are difficult terrain for them, and they take a -4 status penalty to Perception. If they try to attack a creature, the attack fails unless they succeed at a Flat DC 11. Light doesn't blind them again for 1 hour."
           }
         ],
         "defensive": [
           {
             "name": "Final Night",
             "text": "When a caligni skulker dies, their body dissolves fog of inky darkness. All light sources within 20 feet are extinguished. Any [light](/spell/light-player-core) spells in the area go out for 1 round.",
-            "traits": []
+            "traits": [],
+            "description": "When a caligni skulker dies, their body dissolves fog of inky darkness. All light sources within 20 feet are extinguished. Any [light](/spell/light-player-core) spells in the area go out for 1 round."
           }
         ],
         "offensive": [
@@ -671,12 +681,14 @@
             "traits": [
               "poison"
             ],
-            "actions": "one"
+            "actions": "one",
+            "description": "The next time the skulker deals damage with a dagger [Strike](/action/strike-player-core), the target must succeed at a Fortitude DC 16 save or take 1d8 poison damage and treat all creatures as [Concealed](/condition/concealed-player-core) for 1 round."
           },
           {
             "name": "Sneak Attack",
             "text": "The caligni skulker deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition.",
-            "traits": []
+            "traits": [],
+            "description": "The caligni skulker deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition."
           }
         ]
       },
@@ -827,14 +839,16 @@
           {
             "name": "Smoke Vision",
             "text": "The cinder rat ignores the [Concealed](/condition/concealed-player-core) condition from smoke.",
-            "traits": []
+            "traits": [],
+            "description": "The cinder rat ignores the [Concealed](/condition/concealed-player-core) condition from smoke."
           }
         ],
         "defensive": [
           {
             "name": "Fetid Fumes",
             "text": "A cloud of smoke surrounds the cinder rat. All creatures within 5 feet, including the cinder rat, gain the [Concealed](/condition/concealed-player-core) condition from this smoke. A creature that comes within 5 feet of the cinder rat or begins its turn within 5 feet must succeed at a Fortitude DC 22 save or take a -1 status penalty to all checks and DCs for 1 round *(Use [Sickened 1](/condition/sickened-player-core))*.",
-            "traits": []
+            "traits": [],
+            "description": "A cloud of smoke surrounds the cinder rat. All creatures within 5 feet, including the cinder rat, gain the [Concealed](/condition/concealed-player-core) condition from this smoke. A creature that comes within 5 feet of the cinder rat or begins its turn within 5 feet must succeed at a Fortitude DC 22 save or take a -1 status penalty to all checks and DCs for 1 round *(Use [Sickened 1](/condition/sickened-player-core))*."
           }
         ],
         "offensive": []
@@ -1018,7 +1032,8 @@
           {
             "name": "Sneak Attack",
             "text": "Zolgran deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition.",
-            "traits": []
+            "traits": [],
+            "description": "Zolgran deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition."
           }
         ]
       },
@@ -1252,7 +1267,8 @@
             "name": "Scamper",
             "text": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy."
           }
         ]
       },
@@ -1480,7 +1496,8 @@
             "name": "Scamper",
             "text": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy."
           }
         ]
       },
@@ -1708,7 +1725,8 @@
             "name": "Scamper",
             "text": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy."
           }
         ]
       },
@@ -1936,7 +1954,8 @@
             "name": "Scamper",
             "text": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy."
           }
         ]
       },
@@ -2164,7 +2183,8 @@
             "name": "Scamper",
             "text": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy."
           }
         ]
       },
@@ -2394,12 +2414,14 @@
             "name": "Scamper",
             "text": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy."
           },
           {
             "name": "Sneak Attack",
             "text": "The kobold scout deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition.",
-            "traits": []
+            "traits": [],
+            "description": "The kobold scout deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition."
           }
         ]
       },
@@ -2567,18 +2589,21 @@
             "name": "Quick Trap",
             "text": "The kobold trapmaster deploys one of their spike traps in an adjacent square.\n\nOnce this trap is deployed in a square, it deals 2d8 piercing|name:Spike Trap] damage to anyone who steps on that square and they must attempt a basic Reflex DC 17 saving throw. A hero takes no damage on a critical success, half damage on a success, full damage on a failure, and double damage on a critical failure. These traps can be disabled with a successful Thievery DC 15 check.",
             "traits": [],
-            "actions": "three"
+            "actions": "three",
+            "description": "The kobold trapmaster deploys one of their spike traps in an adjacent square.\n\nOnce this trap is deployed in a square, it deals 2d8 piercing|name:Spike Trap] damage to anyone who steps on that square and they must attempt a basic Reflex DC 17 saving throw. A hero takes no damage on a critical success, half damage on a success, full damage on a failure, and double damage on a critical failure. These traps can be disabled with a successful Thievery DC 15 check."
           },
           {
             "name": "Scamper",
             "text": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy."
           },
           {
             "name": "Sneak Attack",
             "text": "The kobold trapmaster deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition.",
-            "traits": []
+            "traits": [],
+            "description": "The kobold trapmaster deals an extra 1d6 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition."
           }
         ]
       },
@@ -2744,12 +2769,14 @@
             "name": "Scamper",
             "text": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "If the kobold is adjacent to at least one enemy, the kobold Strides up to 30 feet and gains a +2 circumstance bonus to AC against reactions triggered by this movement. The kobold must end this movement in a space that's not adjacent to any enemy."
           },
           {
             "name": "Sneak Attack",
             "text": "The kobold warrior deals an extra 1d4 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition.",
-            "traits": []
+            "traits": [],
+            "description": "The kobold warrior deals an extra 1d4 damage to creatures that have the [Off Guard](/condition/off-guard-player-core) condition."
           }
         ]
       },
@@ -2916,7 +2943,8 @@
           {
             "name": "Animal Talker",
             "text": "Pugwampis can talk to and understand animals.",
-            "traits": []
+            "traits": [],
+            "description": "Pugwampis can talk to and understand animals."
           }
         ],
         "defensive": [
@@ -2926,7 +2954,8 @@
             "traits": [
               "mental",
               "primal"
-            ]
+            ],
+            "description": "Creatures other than animals, gremlins, and kholo within 20 feet become extremely unlucky. They must attempt a Will DC 16 save, rolling this Will save twice and using the worse result.\n\nOn a successful save, the creature can't be affected by pugwampi unluck auras for 24 hours. On a failure, the creature must roll twice and use the worse result on all checks as long as it's within 20 feet of the pugwampi.\n\nMultiple pugwampis don't create any increased effect."
           }
         ],
         "offensive": []
@@ -3096,7 +3125,8 @@
             "name": "Death Frenzy",
             "text": "When the reefclaw is reduced to 0 hit points it can spend this reaction to make a claw [Strike](/action/strike-player-core) before dying.",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "description": "When the reefclaw is reduced to 0 hit points it can spend this reaction to make a claw [Strike](/action/strike-player-core) before dying."
           }
         ],
         "offensive": [
@@ -3105,14 +3135,16 @@
             "text": "If the reefclaw has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core), it can spend one action to crush them in its coils. The creature takes 1d6 bludgeoning damage depending on its basic Fortitude DC 17 save.",
             "traits": [],
             "actions": "one",
-            "reference": "/action/constrict-monster-core"
+            "reference": "/action/constrict-monster-core",
+            "description": "If the reefclaw has a creature [Grabbed](/condition/grabbed-player-core) or [Restrained](/condition/restrained-player-core), it can spend one action to crush them in its coils. The creature takes 1d6 bludgeoning damage depending on its basic Fortitude DC 17 save."
           },
           {
             "name": "Reefclaw Venom",
             "text": "A target that takes slashing damage from the reefclaw's claw [Strike](/action/strike-player-core) must succeed at a Fortitude DC 17 save or take 1d6 poison damage.",
             "traits": [
               "poison"
-            ]
+            ],
+            "description": "A target that takes slashing damage from the reefclaw's claw [Strike](/action/strike-player-core) must succeed at a Fortitude DC 17 save or take 1d6 poison damage."
           }
         ]
       },
@@ -3248,7 +3280,8 @@
           {
             "name": "Motion Sense 60 feet",
             "text": "A sewer ooze can sense nearby motion through vibration and air movement, allowing it to fight as well as if it could see. However, a sewer ooze can't see, so effects that depend on vision or seeing don't work on it.",
-            "traits": []
+            "traits": [],
+            "description": "A sewer ooze can sense nearby motion through vibration and air movement, allowing it to fight as well as if it could see. However, a sewer ooze can't see, so effects that depend on vision or seeing don't work on it."
           }
         ],
         "defensive": [],
@@ -3257,7 +3290,8 @@
             "name": "Filth Wave",
             "text": "The sewer ooze unleashes a wave of filth, covering all creatures within 20 feet of itself. Each creature in the area must succeed at a Reflex DC 17 save or take 1d4 acid damage and a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls over and gains the [Prone](/condition/prone-player-core) condition). A creature can [Interact](/action/interact-player-core) to clean someone off. This decreases the Speed penalty to -5 feet after 1 action, or to no penalty after 2 actions. After using Filth Wave, the ooze can't use it again for 1 minute.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "The sewer ooze unleashes a wave of filth, covering all creatures within 20 feet of itself. Each creature in the area must succeed at a Reflex DC 17 save or take 1d4 acid damage and a –10-foot penalty to its Speeds for 1 minute (on a critical failure, the creature also falls over and gains the [Prone](/condition/prone-player-core) condition). A creature can [Interact](/action/interact-player-core) to clean someone off. This decreases the Speed penalty to -5 feet after 1 action, or to no penalty after 2 actions. After using Filth Wave, the ooze can't use it again for 1 minute."
           }
         ]
       },
@@ -3437,13 +3471,15 @@
             "name": "Broad Swipe",
             "text": "The skeletal giant makes two Strikes with its greataxe against two adjacent foes, both of whom are within its reach. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -10 multiple attack penalty (or a -8 multiple attack penalty for its horns).",
             "traits": [],
-            "actions": "two"
+            "actions": "two",
+            "description": "The skeletal giant makes two Strikes with its greataxe against two adjacent foes, both of whom are within its reach. The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -10 multiple attack penalty (or a -8 multiple attack penalty for its horns)."
           },
           {
             "name": "Terrifying Charge",
             "text": "The giant Strides and makes a horns [Strike](/action/strike-player-core) with a +4 circumstance bonus to damage.\n\nIf the strike hits, the giant attempts to Demoralize the target.",
             "traits": [],
-            "actions": "two"
+            "actions": "two",
+            "description": "The giant Strides and makes a horns [Strike](/action/strike-player-core) with a +4 circumstance bonus to damage.\n\nIf the strike hits, the giant attempts to Demoralize the target."
           }
         ]
       },
@@ -3652,7 +3688,8 @@
           {
             "name": "Crystal Sense 60 feet",
             "text": "A sod hound can sense crystals or gems within 60 feet.",
-            "traits": []
+            "traits": [],
+            "description": "A sod hound can sense crystals or gems within 60 feet."
           }
         ],
         "defensive": [],
@@ -3661,7 +3698,8 @@
             "name": "Earth Glide",
             "text": "The sod hound burrows through any earthen matter, including rock. It moves up to 20 feet, leaving no tunnels or signs of its passing.",
             "traits": [],
-            "actions": "one"
+            "actions": "one",
+            "description": "The sod hound burrows through any earthen matter, including rock. It moves up to 20 feet, leaving no tunnels or signs of its passing."
           }
         ]
       },
@@ -3826,7 +3864,8 @@
             "name": "Slink",
             "text": "If a creature ends its movement adjacent to the viper or within the viper's space, the viper can use its reaction to [Stride](/action/stride-player-core), [Climb](/action/climb-player-core), or [Swim](/action/swim-player-core) up to 10 feet. It must end its movement in a location that isn't within 5 feet of a foe. This movement doesn't trigger reactions.",
             "traits": [],
-            "actions": "reaction"
+            "actions": "reaction",
+            "description": "If a creature ends its movement adjacent to the viper or within the viper's space, the viper can use its reaction to [Stride](/action/stride-player-core), [Climb](/action/climb-player-core), or [Swim](/action/swim-player-core) up to 10 feet. It must end its movement in a location that isn't within 5 feet of a foe. This movement doesn't trigger reactions."
           }
         ],
         "offensive": [
@@ -3835,7 +3874,8 @@
             "text": "A target damaged by the viper's fangs must succeed at a Fortitude DC 16 save or take 1d10 poison damage.",
             "traits": [
               "poison"
-            ]
+            ],
+            "description": "A target damaged by the viper's fangs must succeed at a Fortitude DC 16 save or take 1d10 poison damage."
           }
         ]
       },
@@ -3974,7 +4014,8 @@
             "name": "Circling Attack",
             "text": "The zephyr hawk flies up to half its Speed, makes two wing Strikes, then flies up to half its Speed again to return to its original location. The second half of this movement doesn't trigger reactions like Reactive [Strike](/action/strike-player-core). The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -8 multiple attack penalty.",
             "traits": [],
-            "actions": "two"
+            "actions": "two",
+            "description": "The zephyr hawk flies up to half its Speed, makes two wing Strikes, then flies up to half its Speed again to return to its original location. The second half of this movement doesn't trigger reactions like Reactive [Strike](/action/strike-player-core). The second attack uses the same multiple attack penalty as the first, but attacks it makes after this take a -8 multiple attack penalty."
           }
         ]
       },
