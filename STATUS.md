@@ -13,11 +13,14 @@ Last updated: 2026-10-03
   states are explicit, and creature abilities have an optional Effect field.
   Existing source fields remain intact and the rendered stat-block information
   is preserved through generated editor mirrors and a compatibility migration.
+  The Skills editor is nested in a valid Encounter+ group section, fixing the
+  `sections[4].type` decoding error seen when opening Edit Creature.
 - Automated baseline: the public ORC/OGL packs, package definitions, creature
   links and spellcasting, area templates, and maintained UI regressions pass
   through `python3 tools/eplus_dev.py check --json`.
 - Native-app verification still required: import `dist/test/pf2e-remaster.system`
-  and confirm a creature's rendered stat block is unchanged while Special
+  and confirm Edit Creature opens without a decoding error and that a creature's
+  rendered stat block is unchanged while Special
   Senses, Items, Immunities, Rituals, Lore, Recall Knowledge, and the optional
   ability Effect field can be edited through their new controls. In particular,
   verify the Item reference search, item quantity, the empty Immunities `None`

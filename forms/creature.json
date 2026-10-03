@@ -86,13 +86,19 @@
     },
     {
       "title": "Creature.Skills",
-      "type": "form",
-      "attribute": "data.skillsEditor",
-      "text": "{% if data.skillsEditor.skills %}{% for key, value in data.skillsEditor.skills %}{{key|map: 'Skill'}} {{value|signed}}{% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}{% if data.skillsEditor.loreSkills %}{% if data.skillsEditor.skills %}, {% endif %}{% for lore in data.skillsEditor.loreSkills %}{{lore.name}} {{lore.value|signed}}{% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}",
-      "form": {
-        "title": "Creature.Skills",
-        "partial": "creature-skills"
-      }
+      "type": "group",
+      "fields": [
+        {
+          "title": "Creature.Skills",
+          "type": "form",
+          "attribute": "data.skillsEditor",
+          "text": "{% if data.skillsEditor.skills %}{% for key, value in data.skillsEditor.skills %}{{key|map: 'Skill'}} {{value|signed}}{% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}{% if data.skillsEditor.loreSkills %}{% if data.skillsEditor.skills %}, {% endif %}{% for lore in data.skillsEditor.loreSkills %}{{lore.name}} {{lore.value|signed}}{% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}",
+          "form": {
+            "title": "Creature.Skills",
+            "partial": "creature-skills"
+          }
+        }
+      ]
     },
     {
       "type": "group",

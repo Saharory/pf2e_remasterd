@@ -621,6 +621,13 @@ def main() -> int:
         raise SystemExit("Adamantine Weapon is not an imported internal GM Core reference")
 
     creature_form = form("creature.json")
+    invalid_top_level_types = {
+        index: section.get("type")
+        for index, section in enumerate(creature_form.get("sections", []))
+        if section.get("type") not in {"group", "list"}
+    }
+    if invalid_top_level_types:
+        raise SystemExit(f"creature editor has invalid top-level sections: {invalid_top_level_types}")
     creature_fields = field_attributes(creature_form)
     if not {
         "data.hardness",
