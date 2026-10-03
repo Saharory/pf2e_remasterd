@@ -186,6 +186,19 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "intimidation": 12,
+          "stealth": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Mercantile Lore",
+            "value": 12
+          }
+        ]
       }
     },
     "attributes": {
@@ -377,7 +390,31 @@
             "name": "Cold"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 8,
+          "deception": 8,
+          "diplomacy": 8,
+          "stealth": 10
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "cold-iron",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -687,7 +724,34 @@
             "reference": "/rule/death-effects-rules-2331"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "deception": 18,
+          "diplomacy": 16,
+          "intimidation": 16,
+          "society": 18,
+          "stealth": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 16
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "holy",
+          "value": 10
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "mental",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -950,7 +1014,32 @@
             "name": "Visual"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 33,
+          "nature": 29,
+          "stealth": 27,
+          "survival": 27
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "cold",
+          "value": 15
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": 10
+        },
+        {
+          "type": "piercing",
+          "value": 15
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1358,7 +1447,36 @@
             "reference": "/trait/void"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 20,
+          "occultism": 23,
+          "thievery": 23
+        },
+        "loreSkills": [
+          {
+            "name": "Mercantile Lore",
+            "value": 26
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "spirit",
+          "value": 10
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 10
+        },
+        {
+          "type": "electricity",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1534,6 +1652,26 @@
           "acuity": "imprecise",
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "athletics": 12,
+          "stealth": 13
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "electricity",
+          "value": 5
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 5
         }
       ]
     },
@@ -1798,7 +1936,27 @@
             "name": "Blinded"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "deception": 13,
+          "intimidation": 13,
+          "nature": 13,
+          "stealth": 15
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "cold-iron",
+          "value": 5
+        },
+        {
+          "type": "fire",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1951,7 +2109,14 @@
           "name": "Darkvision",
           "reference": "/action/darkvision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "athletics": 13
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2158,7 +2323,20 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 27,
+          "athletics": 27
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "slashing",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2408,7 +2586,21 @@
             "reference": "/trait/poison"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 22,
+          "intimidation": 19,
+          "stealth": 15
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "cold",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2625,7 +2817,20 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 8,
+          "stealth": 11
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "vitality",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

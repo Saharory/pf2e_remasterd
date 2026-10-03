@@ -156,7 +156,16 @@
         {
           "name": "Religious Symbol of Abadar"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 6,
+          "diplomacy": 8,
+          "religion": 21,
+          "society": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -377,7 +386,23 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 20,
+          "diplomacy": 18,
+          "intimidation": 18,
+          "society": 18,
+          "stealth": 17,
+          "thievery": 19
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 20
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -616,7 +641,16 @@
         {
           "name": "Religious Text of Iomedae"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 5,
+          "intimidation": 5,
+          "religion": 7,
+          "society": 4
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -822,7 +856,22 @@
           "name": "Rope",
           "reference": "/item/rope-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "athletics": 8,
+          "deception": 5,
+          "performance": 9,
+          "stealth": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Circus Lore",
+            "value": 5
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1016,7 +1065,21 @@
         {
           "name": "Scroll Case"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 5,
+          "diplomacy": 3,
+          "occultism": 5,
+          "society": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Scribing Lore",
+            "value": 5
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1338,7 +1401,22 @@
           "name": "Healing Potion (Minor)",
           "reference": "/item/healing-potion-minor-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 14,
+          "diplomacy": 14,
+          "occultism": 10,
+          "performance": 12,
+          "society": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1524,7 +1602,18 @@
         {
           "name": "Book of Translations"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 7,
+          "diplomacy": 8,
+          "occultism": 7,
+          "performance": 6,
+          "religion": 5,
+          "society": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1708,6 +1797,20 @@
           "reference": "/item/elixir-of-life-minor-gm-core",
           "quantity": 2
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 5,
+          "medicine": 10,
+          "nature": 8
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "poison",
+          "value": 2
+        }
       ]
     },
     "attributes": {
@@ -1884,7 +1987,19 @@
           "name": "Assorted Maps",
           "quantity": 3
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 3,
+          "crafting": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Geography Lore",
+            "value": 5
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2066,7 +2181,20 @@
           "name": "Signal Whistle",
           "reference": "/item/signal-whistle-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 6,
+          "intimidation": 4
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 4
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2280,7 +2408,26 @@
           "name": "Sword Cane",
           "reference": "/item/sword-cane-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 7,
+          "deception": 7,
+          "diplomacy": 7,
+          "intimidation": 9,
+          "society": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Firearm Lore",
+            "value": 14
+          },
+          {
+            "name": "Underworld Lore",
+            "value": 9
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2443,6 +2590,28 @@
         {
           "name": "Settlement Lore",
           "value": 14
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 18,
+          "intimidation": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Settlement Lore",
+            "value": 14
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 10
+        },
+        {
+          "type": "splash-damage",
+          "value": 10
         }
       ]
     },
@@ -2663,7 +2832,25 @@
           "name": "Repair Toolkit",
           "reference": "/item/repair-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 9,
+          "diplomacy": 9,
+          "society": 9,
+          "thievery": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 11
+          },
+          {
+            "name": "Explosive Lore",
+            "value": 9
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2902,7 +3089,26 @@
           "reference": "/item/lethargy-poison-player-core-2",
           "quantity": 3
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 17,
+          "athletics": 13,
+          "deception": 12,
+          "diplomacy": 10,
+          "intimidation": 10,
+          "medicine": 14,
+          "society": 12,
+          "stealth": 19,
+          "thievery": 15
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 14
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3130,7 +3336,19 @@
         {
           "name": "Spellbook"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 8,
+          "occultism": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Astronomy Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3417,7 +3635,26 @@
         {
           "name": "Copy of a Book That They Wrote"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 18,
+          "diplomacy": 18,
+          "occultism": 12,
+          "performance": 18,
+          "society": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Academia Lore",
+            "value": 16
+          },
+          {
+            "name": "One Additional Lore",
+            "value": 18
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3630,7 +3867,23 @@
           "name": "Studded Leather Armor",
           "reference": "/item/studded-leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 6,
+          "deception": 5,
+          "intimidation": 6,
+          "stealth": 8,
+          "survival": 6,
+          "thievery": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Forest Lore",
+            "value": 4
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3802,6 +4055,27 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 16,
+          "deception": 14,
+          "intimidation": 16,
+          "stealth": 17,
+          "survival": 11,
+          "thievery": 16
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 8
+        },
+        {
+          "type": "splash-damage",
+          "value": 8
+        }
       ]
     },
     "attributes": {
@@ -3967,7 +4241,21 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 10,
+          "diplomacy": 12,
+          "performance": 10,
+          "society": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4150,6 +4438,21 @@
           "acuity": "imprecise",
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 16,
+          "athletics": 21,
+          "intimidation": 22,
+          "nature": 15
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 10
         }
       ]
     },
@@ -4423,7 +4726,23 @@
         {
           "name": "Animal Claw Necklace (Primal Symbol)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 8,
+          "diplomacy": 8,
+          "intimidation": 8,
+          "nature": 12,
+          "performance": 8,
+          "survival": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Circus Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4569,7 +4888,21 @@
           "name": "Underworld Lore",
           "value": 2
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 3,
+          "deception": 3,
+          "diplomacy": 3,
+          "stealth": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 2
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4768,7 +5101,16 @@
         {
           "name": "Battered Crown (or other symbol of authority)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "diplomacy": 13,
+          "intimidation": 15,
+          "stealth": 11
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4942,6 +5284,29 @@
       "senseEntries": [
         {
           "name": "keen eyes"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "athletics": 13,
+          "intimidation": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Sports Lore",
+            "value": 11
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
         }
       ]
     },
@@ -5151,7 +5516,20 @@
           "name": "Bands of Force",
           "reference": "/item/bands-of-force-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 25,
+          "athletics": 25,
+          "stealth": 20
+        },
+        "loreSkills": [
+          {
+            "name": "Martial Arts Lore",
+            "value": 22
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5327,7 +5705,17 @@
         {
           "name": "Religious Symbol of Zon-Kuthon"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 9,
+          "intimidation": 7,
+          "performance": 7,
+          "religion": 6,
+          "society": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5526,7 +5914,16 @@
           "name": "Longbow",
           "reference": "/item/longbow-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "intimidation": 7,
+          "medicine": 8,
+          "occultism": 7,
+          "survival": 8
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5714,7 +6111,15 @@
           "name": "Studded Leather Armor",
           "reference": "/item/studded-leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 7,
+          "intimidation": 6,
+          "society": 2
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6019,7 +6424,24 @@
         {
           "name": "Bones for fortune telling"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 14,
+          "intimidation": 14,
+          "medicine": 13,
+          "occultism": 16,
+          "performance": 14,
+          "religion": 13,
+          "society": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Fortune-Telling Lore",
+            "value": 16
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6193,7 +6615,17 @@
           "reference": "/item/dagger-player-core",
           "quantity": 2
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 5,
+          "athletics": 2,
+          "deception": 4,
+          "stealth": 6,
+          "survival": 4
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6381,7 +6813,20 @@
         {
           "name": "Naval Pike (Functions as a Spear)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 9,
+          "athletics": 9,
+          "intimidation": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Sailing Lore",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6561,7 +7006,18 @@
           "name": "Manacles (Simple)",
           "reference": "/item/manacles-simple-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 9,
+          "deception": 10,
+          "diplomacy": 8,
+          "intimidation": 8,
+          "stealth": 12,
+          "survival": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6778,7 +7234,23 @@
           "name": "Darkvision Elixir (Lesser)",
           "reference": "/item/darkvision-elixir-lesser-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 8,
+          "deception": 7,
+          "society": 7,
+          "stealth": 12,
+          "thievery": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 7
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6993,7 +7465,25 @@
           "name": "Full Plate",
           "reference": "/item/full-plate-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "diplomacy": 11,
+          "intimidation": 13,
+          "society": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 12
+          },
+          {
+            "name": "Warfare Lore",
+            "value": 8
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7184,7 +7674,17 @@
           "name": "Hatchet",
           "reference": "/item/hatchet-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "crafting": 12,
+          "nature": 11,
+          "stealth": 11,
+          "survival": 15
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7456,7 +7956,20 @@
         {
           "name": "Scroll of Protection (Rank 1)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "occultism": 12,
+          "performance": 14,
+          "society": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Catfolk Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7672,7 +8185,17 @@
           "name": "Half Plate",
           "reference": "/item/half-plate-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "deception": 10,
+          "intimidation": 12,
+          "religion": 8,
+          "survival": 8
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7905,7 +8428,17 @@
         {
           "name": "Religious Symbol of Shelyn"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 17,
+          "diplomacy": 16,
+          "performance": 14,
+          "religion": 15,
+          "society": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8202,7 +8735,25 @@
           "name": "Thieves' Toolkit",
           "reference": "/item/thieves-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "deception": 11,
+          "diplomacy": 9,
+          "occultism": 7,
+          "performance": 11,
+          "society": 7,
+          "stealth": 8,
+          "thievery": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 9
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8496,7 +9047,24 @@
         {
           "name": "Scroll of Heal (Rank 1)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "nature": 10,
+          "society": 9,
+          "survival": 7
+        },
+        "loreSkills": [
+          {
+            "name": "One Additional Lore",
+            "value": 10
+          },
+          {
+            "name": "Scribing Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8656,6 +9224,28 @@
         {
           "name": "Settlement Lore",
           "value": 9
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 14,
+          "intimidation": 11
+        },
+        "loreSkills": [
+          {
+            "name": "Settlement Lore",
+            "value": 9
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
         }
       ]
     },
@@ -8848,7 +9438,23 @@
           "name": "Studded Leather Armor",
           "reference": "/item/studded-leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 8,
+          "crafting": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 15
+          },
+          {
+            "name": "Warfare Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9009,7 +9615,19 @@
           "name": "Sickle",
           "reference": "/item/sickle-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 5,
+          "society": 2
+        },
+        "loreSkills": [
+          {
+            "name": "Lore (any one related to their trade)",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9156,6 +9774,22 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 9
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
         }
       ]
     },
@@ -9336,7 +9970,21 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 10,
+          "occultism": -1,
+          "performance": 10,
+          "society": 11
+        },
+        "loreSkills": [
+          {
+            "name": "Conspiracy Lore",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9526,7 +10174,20 @@
           "reference": "/item/chalk-player-core",
           "quantity": 10
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 10,
+          "crafting": 13,
+          "society": 6
+        },
+        "loreSkills": [
+          {
+            "name": "Architecture Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9688,6 +10349,24 @@
         {
           "name": "Low-Light Vision",
           "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "athletics": 10,
+          "nature": 12
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
         }
       ]
     },
@@ -9878,7 +10557,30 @@
         {
           "name": "Court Record"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "society": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Genealogy Lore",
+            "value": 13
+          },
+          {
+            "name": "Noble Court Lore",
+            "value": 13
+          },
+          {
+            "name": "Scribing Lore",
+            "value": 13
+          },
+          {
+            "name": "Settlement Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10059,6 +10761,23 @@
         },
         {
           "name": "Face Paints"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 22,
+          "deception": 19,
+          "diplomacy": 19,
+          "performance": 22,
+          "society": 19,
+          "stealth": 19
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "poison",
+          "value": 10
         }
       ]
     },
@@ -10264,7 +10983,21 @@
         {
           "name": "Jewelry"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 12,
+          "diplomacy": 12,
+          "performance": 13,
+          "society": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Art Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10535,7 +11268,18 @@
         {
           "name": "Cauldron"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 7,
+          "intimidation": 5,
+          "medicine": 5,
+          "occultism": 8,
+          "stealth": 7,
+          "survival": 5
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10785,7 +11529,24 @@
           "reference": "/item/healing-potion-moderate-gm-core",
           "quantity": 2
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 25,
+          "deception": 24,
+          "diplomacy": 22,
+          "intimidation": 28,
+          "society": 24,
+          "stealth": 23,
+          "thievery": 24
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 24
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11104,7 +11865,23 @@
         {
           "name": "Indecipherable Book of Sigils (Spellbook)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 13,
+          "deception": 16,
+          "diplomacy": 14,
+          "intimidation": 16,
+          "occultism": 17,
+          "society": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Cult Lore (applies to the leader's own cult)",
+            "value": 19
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11284,7 +12061,22 @@
         {
           "name": "Occult Text"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 3,
+          "intimidation": 3,
+          "occultism": 4,
+          "society": 4,
+          "stealth": 6
+        },
+        "loreSkills": [
+          {
+            "name": "Cult Lore (for the cultist's own cult)",
+            "value": 8
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11653,7 +12445,17 @@
         {
           "name": "Scroll of Fly (Rank 4)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 25,
+          "deception": 25,
+          "intimidation": 23,
+          "occultism": 29,
+          "stealth": 24
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11832,7 +12634,22 @@
         {
           "name": "Jewelry and Clothes"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7,
+          "athletics": 7,
+          "diplomacy": 6,
+          "performance": 13,
+          "stealth": 6
+        },
+        "loreSkills": [
+          {
+            "name": "Theatre Lore",
+            "value": 5
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12158,7 +12975,18 @@
           "name": "Scroll of Revealing Light (Rank 2)",
           "quantity": 2
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 14,
+          "intimidation": 12,
+          "nature": 17,
+          "religion": 15,
+          "stealth": 13,
+          "survival": 17
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12418,7 +13246,16 @@
           "name": "Potion of Flying (Standard)",
           "reference": "/item/potion-of-flying-standard-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 25,
+          "diplomacy": 22,
+          "intimidation": 26,
+          "religion": 23
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12801,7 +13638,33 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 26,
+          "deception": 27,
+          "intimidation": 29,
+          "religion": 31
+        },
+        "loreSkills": [
+          {
+            "name": "Undead Lore",
+            "value": 33
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "holy",
+          "value": 15
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "void",
+          "value": 15
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12969,6 +13832,28 @@
         {
           "name": "Conspiracy Lore",
           "value": 6
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 12,
+          "intimidation": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Conspiracy Lore",
+            "value": 6
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
         }
       ]
     },
@@ -13181,6 +14066,26 @@
         {
           "name": "Bag of Explosives"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 9,
+          "crafting": 12,
+          "intimidation": 10,
+          "thievery": 11
+        },
+        "loreSkills": [
+          {
+            "name": "Explosive Lore",
+            "value": 14
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": 5
+        }
       ]
     },
     "attributes": {
@@ -13378,7 +14283,21 @@
           "name": "Chain Shirt",
           "reference": "/item/chain-shirt-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "religion": 11,
+          "stealth": 10,
+          "survival": 11
+        },
+        "loreSkills": [
+          {
+            "name": "Demon Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13686,7 +14605,24 @@
         {
           "name": "Fiendish Hypotheses and Protections from Same (Spellbook)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 16,
+          "diplomacy": 11,
+          "religion": 15
+        },
+        "loreSkills": [
+          {
+            "name": "Academia Lore",
+            "value": 14
+          },
+          {
+            "name": "Demon Lore",
+            "value": 18
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13932,7 +14868,25 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 22,
+          "diplomacy": 15,
+          "occultism": 22,
+          "society": 17
+        },
+        "loreSkills": [
+          {
+            "name": "Academia Lore",
+            "value": 25
+          },
+          {
+            "name": "One Additional Lore",
+            "value": 22
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -14224,7 +15178,24 @@
           "reference": "/item/healing-potion-lesser-gm-core",
           "quantity": 2
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 11,
+          "deception": 13,
+          "diplomacy": 11,
+          "intimidation": 13,
+          "performance": 13,
+          "religion": 11,
+          "society": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -14421,7 +15392,21 @@
           "name": "Trident",
           "reference": "/item/trident-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 10,
+          "nature": 9,
+          "thievery": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Ocean Lore",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -14590,7 +15575,20 @@
         {
           "name": "Whiskey"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 3,
+          "athletics": 7,
+          "intimidation": 4
+        },
+        "loreSkills": [
+          {
+            "name": "Labor Lore",
+            "value": 4
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -14799,7 +15797,19 @@
           "name": "Chain Shirt",
           "reference": "/item/chain-shirt-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 18,
+          "intimidation": 20
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 18
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15005,7 +16015,30 @@
           "name": "Crowbar",
           "reference": "/item/crowbar-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 7,
+          "deception": 7,
+          "intimidation": 7,
+          "stealth": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Driving Lore",
+            "value": 8
+          },
+          {
+            "name": "Engineering Lore",
+            "value": 8
+          },
+          {
+            "name": "Piloting Lore",
+            "value": 8
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15296,7 +16329,21 @@
         {
           "name": "Lute"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 12,
+          "occultism": 11,
+          "performance": 12,
+          "society": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Orc Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15491,7 +16538,20 @@
           "name": "Signal Whistle",
           "reference": "/item/signal-whistle-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 7,
+          "nature": 5,
+          "survival": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Livestock Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15739,7 +16799,17 @@
           "name": "Primal Symbol",
           "reference": "/item/primal-symbol-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 3,
+          "medicine": 7,
+          "nature": 7,
+          "stealth": 4,
+          "survival": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15902,7 +16972,19 @@
         {
           "name": "Pewter Mug"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 7,
+          "intimidation": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Alcohol Lore",
+            "value": 3
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -16095,6 +17177,28 @@
         {
           "name": "Darkvision",
           "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "survival": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 11
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
         }
       ]
     },
@@ -16340,7 +17444,23 @@
           "name": "Full Plate",
           "reference": "/item/full-plate-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 19,
+          "diplomacy": 12,
+          "intimidation": 14,
+          "medicine": 15,
+          "society": 13,
+          "survival": 15
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -16541,6 +17661,20 @@
         {
           "name": "Artisan's Toolkit (blacksmithing)"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 6,
+          "crafting": 12,
+          "society": 6
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": 1
+        }
       ]
     },
     "attributes": {
@@ -16719,7 +17853,22 @@
           "name": "Repair Toolkit",
           "reference": "/item/repair-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 17,
+          "athletics": 18,
+          "crafting": 17,
+          "medicine": 16,
+          "thievery": 17
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 17
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -17130,7 +18279,22 @@
         {
           "name": "Spellbook"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 36,
+          "intimidation": 30,
+          "nature": 33,
+          "occultism": 33,
+          "religion": 33
+        },
+        "loreSkills": [
+          {
+            "name": "Academia Lore",
+            "value": 30
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -17341,7 +18505,21 @@
           "name": "Chain Shirt",
           "reference": "/item/chain-shirt-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 26,
+          "athletics": 23,
+          "intimidation": 24,
+          "society": 19
+        },
+        "loreSkills": [
+          {
+            "name": "Heraldry Lore",
+            "value": 21
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -17932,6 +19110,23 @@
           "name": "Ornate Ritual Book"
         }
       ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 34,
+          "deception": 35,
+          "diplomacy": 31,
+          "nature": 34,
+          "occultism": 36,
+          "religion": 34
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "mental",
+          "value": 20
+        }
+      ],
       "ritualcasting": [
         {
           "type": "Rituals",
@@ -18270,6 +19465,28 @@
           "name": "Everlight Crystal",
           "reference": "/item/everlight-crystal-gm-core"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "deception": 9,
+          "intimidation": 11,
+          "occultism": 12,
+          "society": 12,
+          "stealth": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Secret Society Lore",
+            "value": 14
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "mental",
+          "value": 5
+        }
       ]
     },
     "attributes": {
@@ -18459,7 +19676,16 @@
         {
           "name": "Letter of Diplomatic Status"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 13,
+          "diplomacy": 15,
+          "intimidation": 7,
+          "society": 15
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -18661,7 +19887,19 @@
           "name": "Signal Whistle",
           "reference": "/item/signal-whistle-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 12,
+          "nature": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Settlement Lore",
+            "value": 8
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -18832,7 +20070,15 @@
         {
           "name": "Hood"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "intimidation": 13,
+          "medicine": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -19066,7 +20312,25 @@
         {
           "name": "Signet Ring"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 18,
+          "athletics": 15,
+          "deception": 19,
+          "diplomacy": 19,
+          "intimidation": 17,
+          "society": 20,
+          "stealth": 20,
+          "thievery": 18
+        },
+        "loreSkills": [
+          {
+            "name": "Lore (home region or settlement)",
+            "value": 22
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -19304,7 +20568,22 @@
           "name": "Survey Map",
           "reference": "/item/survey-map-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 20,
+          "athletics": 20,
+          "diplomacy": 18,
+          "nature": 19,
+          "survival": 18
+        },
+        "loreSkills": [
+          {
+            "name": "Scouting Lore",
+            "value": 21
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -19453,7 +20732,16 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "athletics": 17,
+          "stealth": 15,
+          "survival": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -19700,7 +20988,22 @@
         {
           "name": "Textbooks"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Academia Lore",
+            "value": 10
+          },
+          {
+            "name": "Library Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -19906,7 +21209,18 @@
           "name": "Backpack",
           "reference": "/item/backpack-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 8,
+          "deception": 12,
+          "performance": 12,
+          "religion": 8,
+          "society": 6
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -20076,7 +21390,20 @@
           "name": "Apple",
           "quantity": 4
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 5,
+          "nature": 4,
+          "survival": 4
+        },
+        "loreSkills": [
+          {
+            "name": "Farming Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -20302,7 +21629,29 @@
           "reference": "/item/smoke-ball-lesser-gm-core",
           "quantity": 2
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "crafting": 13,
+          "deception": 13,
+          "diplomacy": 11,
+          "intimidation": 11,
+          "society": 11,
+          "stealth": 10,
+          "thievery": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Accounting Lore",
+            "value": 13
+          },
+          {
+            "name": "Underworld Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -20630,6 +21979,26 @@
           "name": "Ritual Materials"
         }
       ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 10,
+          "diplomacy": 15,
+          "intimidation": 10,
+          "occultism": 16,
+          "religion": 13,
+          "society": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Fiend Lore",
+            "value": 18
+          },
+          {
+            "name": "Legal Lore",
+            "value": 18
+          }
+        ]
+      },
       "ritualcasting": [
         {
           "type": "Rituals",
@@ -20849,7 +22218,24 @@
         {
           "name": "Assorted Knives"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 7,
+          "nature": 4,
+          "survival": 4
+        },
+        "loreSkills": [
+          {
+            "name": "Fishing Lore",
+            "value": 8
+          },
+          {
+            "name": "Sailing Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -21107,7 +22493,25 @@
           "name": "Smoke Ball (Greater)",
           "reference": "/item/smoke-ball-greater-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 29,
+          "athletics": 26,
+          "deception": 28,
+          "intimidation": 26,
+          "performance": 28,
+          "society": 24,
+          "stealth": 31,
+          "thievery": 31
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 28
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -21323,7 +22727,25 @@
           "name": "Healer's Toolkit",
           "reference": "/item/healer-s-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 17,
+          "medicine": 16,
+          "occultism": 15,
+          "stealth": 15
+        },
+        "loreSkills": [
+          {
+            "name": "Aberration Lore",
+            "value": 15
+          },
+          {
+            "name": "Fleshwarping Lore",
+            "value": 17
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -21520,7 +22942,21 @@
         {
           "name": "Wicker Baskets"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "medicine": 6,
+          "nature": 10,
+          "stealth": 3,
+          "survival": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Local Lore",
+            "value": 5
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -21736,7 +23172,20 @@
         {
           "name": "Art Supplies"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 11,
+          "diplomacy": 9,
+          "society": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Art Lore (+13 for visual arts)",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -21915,7 +23364,20 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 16,
+          "society": 12,
+          "thievery": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 18
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -22115,7 +23577,21 @@
           "reference": "/item/set-of-six-ivory-dice-gm-core",
           "quantity": 6
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 11,
+          "diplomacy": 11,
+          "society": 9,
+          "thievery": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Games Lore",
+            "value": 16
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -22312,7 +23788,22 @@
         {
           "name": "Animal Treats"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "diplomacy": 11,
+          "intimidation": 13,
+          "nature": 15,
+          "survival": 15
+        },
+        "loreSkills": [
+          {
+            "name": "Hunting Lore",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -22541,7 +24032,24 @@
           "name": "Healing Potion (Lesser)",
           "reference": "/item/healing-potion-lesser-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "athletics": 17,
+          "deception": 15,
+          "intimidation": 17,
+          "society": 11,
+          "stealth": 17,
+          "thievery": 15
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -22758,7 +24266,19 @@
           "name": "Half Plate",
           "reference": "/item/half-plate-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 18,
+          "intimidation": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 14
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -23036,7 +24556,18 @@
         {
           "name": "Notebook Filled with Sketches of Wild Animals and Ancient Ruins"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 24,
+          "athletics": 27,
+          "crafting": 22,
+          "nature": 27,
+          "stealth": 24,
+          "survival": 27
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -23328,7 +24859,16 @@
         {
           "name": "Trowel (Functions as a Sickle)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "crafting": 11,
+          "nature": 15,
+          "survival": 15
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -23507,7 +25047,16 @@
           "name": "Gnome Flickmace",
           "reference": "/item/gnome-flickmace-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 7,
+          "performance": 8,
+          "thievery": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -23717,7 +25266,25 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 3,
+          "crafting": 1,
+          "society": 4,
+          "thievery": 3
+        },
+        "loreSkills": [
+          {
+            "name": "History Lore",
+            "value": 5
+          },
+          {
+            "name": "One Additional Lore",
+            "value": 5
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -23905,6 +25472,20 @@
             "reference": "/condition/sickened-player-core"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "nature": 7,
+          "society": 4,
+          "stealth": 6,
+          "survival": 7
+        },
+        "loreSkills": [
+          {
+            "name": "Cooking Lore",
+            "value": 10
+          }
+        ]
       }
     },
     "attributes": {
@@ -24070,6 +25651,25 @@
         {
           "name": "Darkvision",
           "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 12,
+          "intimidation": 13,
+          "performance": 13,
+          "stealth": 10
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
         }
       ]
     },
@@ -24273,7 +25873,17 @@
           "reference": "/item/fireworks-display-guns-and-gears-remastered",
           "quantity": 2
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 12,
+          "society": 8,
+          "stealth": 11,
+          "survival": 10,
+          "thievery": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -24528,7 +26138,17 @@
         {
           "name": "Wand of Environmental Endurance (Rank 2)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 20,
+          "intimidation": 21,
+          "nature": 19,
+          "religion": 15,
+          "survival": 15
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -24878,7 +26498,17 @@
           "name": "Dagger",
           "reference": "/item/dagger-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "intimidation": 13,
+          "nature": 14,
+          "occultism": 16,
+          "survival": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -25115,7 +26745,17 @@
           "name": "Full Plate",
           "reference": "/item/full-plate-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 25,
+          "deception": 27,
+          "diplomacy": 30,
+          "intimidation": 30,
+          "society": 28
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -25364,7 +27004,23 @@
           "name": "Bands of Force",
           "reference": "/item/bands-of-force-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 33,
+          "athletics": 33,
+          "diplomacy": 25,
+          "intimidation": 25,
+          "medicine": 25,
+          "stealth": 25
+        },
+        "loreSkills": [
+          {
+            "name": "Martial Arts Lore",
+            "value": 30
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -25546,7 +27202,22 @@
           "name": "Embalming Flask",
           "quantity": 4
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 6,
+          "deception": 2,
+          "intimidation": 2,
+          "society": 6,
+          "stealth": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -25717,6 +27388,25 @@
           "name": "Oil (1 pint)",
           "reference": "/item/oil-1-pint-player-core",
           "quantity": 2
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 7,
+          "religion": 5,
+          "stealth": 4
+        },
+        "loreSkills": [
+          {
+            "name": "Graveyard Lore",
+            "value": 4
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "void",
+          "value": 2
         }
       ]
     },
@@ -25903,7 +27593,19 @@
           "name": "Signal Whistle",
           "reference": "/item/signal-whistle-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 7,
+          "intimidation": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 3
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -26084,7 +27786,21 @@
           "name": "Scale Mail",
           "reference": "/item/scale-mail-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 12,
+          "nature": 8,
+          "stealth": 10,
+          "survival": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Scouting Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -26283,7 +27999,26 @@
         {
           "name": "Tax Ledgers"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "crafting": 25,
+          "diplomacy": 24,
+          "intimidation": 22,
+          "society": 21
+        },
+        "loreSkills": [
+          {
+            "name": "Architecture Lore",
+            "value": 25
+          },
+          {
+            "name": "Bureaucracy Lore",
+            "value": 19
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -26462,7 +28197,20 @@
         {
           "name": "Artisan's Toolkit (Gunsmithing)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 4,
+          "crafting": 13,
+          "society": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Firearm Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -26816,7 +28564,21 @@
           "name": "Reinforced Stock",
           "reference": "/item/reinforced-stock-guns-and-gears-remastered"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 17,
+          "crafting": 15,
+          "intimidation": 15,
+          "occultism": 17
+        },
+        "loreSkills": [
+          {
+            "name": "Patron Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -27051,7 +28813,24 @@
           "name": "Herbs and Spices",
           "quantity": 3
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7,
+          "intimidation": 7,
+          "society": 6
+        },
+        "loreSkills": [
+          {
+            "name": "Baking Lore",
+            "value": 15
+          },
+          {
+            "name": "Cooking Lore",
+            "value": 17
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -27298,7 +29077,24 @@
           "name": "Smoke Ball (Lesser)",
           "reference": "/item/smoke-ball-lesser-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 14,
+          "athletics": 11,
+          "deception": 14,
+          "intimidation": 14,
+          "society": 10,
+          "stealth": 15,
+          "thievery": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 14
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -27671,7 +29467,25 @@
         {
           "name": "Book of Fables"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 16,
+          "deception": 16,
+          "diplomacy": 16,
+          "intimidation": 14,
+          "occultism": 17,
+          "performance": 19,
+          "religion": 15,
+          "society": 15
+        },
+        "loreSkills": [
+          {
+            "name": "History Lore",
+            "value": 19
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -27863,7 +29677,25 @@
         {
           "name": "Ledger"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 9,
+          "athletics": 9,
+          "diplomacy": 5,
+          "intimidation": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Fishing Lore",
+            "value": 8
+          },
+          {
+            "name": "Sailing Lore",
+            "value": 10
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -28036,7 +29868,21 @@
         {
           "name": "Harrow Deck (Simple)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 10,
+          "occultism": 5,
+          "performance": 5,
+          "society": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Fortune-Telling Lore",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -28211,6 +30057,30 @@
         {
           "name": "Warfare Lore",
           "value": 15
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "athletics": 17,
+          "intimidation": 15,
+          "nature": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 15
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 8
+        },
+        {
+          "type": "splash-damage",
+          "value": 8
         }
       ]
     },
@@ -28399,6 +30269,41 @@
         {
           "name": "Hell Lore",
           "value": 12
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "athletics": 18,
+          "intimidation": 17,
+          "religion": 12,
+          "society": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Hell Lore",
+            "value": 12
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 8
+        },
+        {
+          "type": "splash-damage",
+          "value": 8
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "mental",
+          "value": 5
+        },
+        {
+          "type": "slashing",
+          "value": 5
         }
       ]
     },
@@ -28625,7 +30530,19 @@
           "name": "Studded Leather Armor",
           "reference": "/item/studded-leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 23,
+          "athletics": 26,
+          "crafting": 24,
+          "deception": 19,
+          "nature": 21,
+          "stealth": 27,
+          "survival": 25
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -29060,6 +30977,21 @@
           "name": "Scroll of Cleanse Affliction (Rank 4)"
         }
       ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 25,
+          "intimidation": 17,
+          "medicine": 18,
+          "performance": 17,
+          "religion": 26
+        },
+        "loreSkills": [
+          {
+            "name": "Boneyard Lore",
+            "value": 27
+          }
+        ]
+      },
       "ritualcasting": [
         {
           "type": "Rituals",
@@ -29318,7 +31250,21 @@
           "name": "Predictable Silver Piece",
           "reference": "/item/predictable-silver-piece-player-core-2"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 24,
+          "intimidation": 22,
+          "society": 21,
+          "thievery": 22
+        },
+        "loreSkills": [
+          {
+            "name": "Games Lore",
+            "value": 26
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -29487,6 +31433,28 @@
         {
           "name": "Darkvision",
           "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "intimidation": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 12
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 8
+        },
+        {
+          "type": "splash-damage",
+          "value": 8
         }
       ]
     },
@@ -29698,7 +31666,17 @@
           "name": "Scale Mail",
           "reference": "/item/scale-mail-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 9,
+          "arcana": 10,
+          "athletics": 10,
+          "intimidation": 9,
+          "stealth": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -29887,7 +31865,16 @@
           "name": "Alchemist's Toolkit",
           "reference": "/item/alchemist-s-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 18,
+          "crafting": 17,
+          "intimidation": 16,
+          "survival": 16
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -30218,6 +32205,17 @@
           "reference": "/item/primal-symbol-player-core"
         }
       ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 19,
+          "diplomacy": 14,
+          "medicine": 21,
+          "nature": 19,
+          "society": 14,
+          "survival": 17
+        },
+        "loreSkills": []
+      },
       "ritualcasting": [
         {
           "type": "Rituals",
@@ -30441,7 +32439,21 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "medicine": 15,
+          "nature": 17,
+          "stealth": 17,
+          "survival": 17
+        },
+        "loreSkills": [
+          {
+            "name": "Forest Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -30627,7 +32639,19 @@
           "name": "Chain Mail",
           "reference": "/item/chain-mail-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 10,
+          "intimidation": 7
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -30927,6 +32951,30 @@
         {
           "name": "Staff of Office (Functions as +1 Flaming Striking Staff)"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 22,
+          "diplomacy": 33,
+          "religion": 30,
+          "society": 33
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 33
+          },
+          {
+            "name": "Scribe Lore",
+            "value": 30
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": 10
+        }
       ]
     },
     "attributes": {
@@ -31122,7 +33170,28 @@
         {
           "name": "Pewter Mug"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 6,
+          "diplomacy": 6,
+          "society": 7
+        },
+        "loreSkills": [
+          {
+            "name": "Accounting Lore",
+            "value": 5
+          },
+          {
+            "name": "Alcohol Lore",
+            "value": 7
+          },
+          {
+            "name": "Cooking Lore",
+            "value": 5
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -31301,7 +33370,22 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 9,
+          "diplomacy": 12,
+          "intimidation": 13,
+          "medicine": 8,
+          "society": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -31499,7 +33583,15 @@
           "name": "Healer's Toolkit",
           "reference": "/item/healer-s-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "intimidation": 13,
+          "medicine": 13
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -31701,7 +33793,24 @@
         {
           "name": "Maestro's Instrument (Lesser) (Hand Drum)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 17,
+          "athletics": 17,
+          "intimidation": 19,
+          "nature": 18,
+          "performance": 20,
+          "society": 16,
+          "survival": 18
+        },
+        "loreSkills": [
+          {
+            "name": "Iruxi Lore",
+            "value": 20
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -31916,7 +34025,15 @@
           "name": "Signal Whistle",
           "reference": "/item/signal-whistle-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 11,
+          "diplomacy": 5,
+          "intimidation": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -32104,7 +34221,22 @@
         {
           "name": "Bottle (containing fine alcohol to throw overboard as an offering)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "athletics": 9,
+          "deception": 12,
+          "intimidation": 12,
+          "occultism": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Sailing Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -32291,7 +34423,21 @@
         {
           "name": "Law and Rhetoric Book"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 8,
+          "diplomacy": 12,
+          "intimidation": 12,
+          "society": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 16
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -32489,7 +34635,20 @@
           "name": "Repair Toolkit",
           "reference": "/item/repair-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 27,
+          "crafting": 26,
+          "intimidation": 26
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 24
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -32706,7 +34865,20 @@
           "reference": "/item/torch-player-core",
           "quantity": 3
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 8,
+          "performance": 11
+        },
+        "loreSkills": [
+          {
+            "name": "Circus Lore",
+            "value": 8
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -32914,7 +35086,17 @@
           "name": "Hide Armor",
           "reference": "/item/hide-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "athletics": 18,
+          "intimidation": 13,
+          "stealth": 15,
+          "survival": 18
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -33105,7 +35287,17 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 6,
+          "athletics": 6,
+          "society": 4,
+          "stealth": 7,
+          "survival": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -33321,7 +35513,21 @@
         {
           "name": "Full Plate (with Livery)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 17,
+          "diplomacy": 12,
+          "intimidation": 16,
+          "society": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -33518,7 +35724,22 @@
         {
           "name": "Map (depicting landmarks above and below ground in 1 square mile)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 12,
+          "nature": 10,
+          "stealth": 10,
+          "survival": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Geology Lore",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -33699,7 +35920,16 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 9,
+          "athletics": 11,
+          "deception": 9,
+          "diplomacy": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -33901,7 +36131,16 @@
           "name": "Backpack",
           "reference": "/item/backpack-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 5,
+          "crafting": 8,
+          "stealth": 7,
+          "survival": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -34086,7 +36325,18 @@
           "name": "Thieves' Toolkit",
           "reference": "/item/thieves-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "athletics": 7,
+          "deception": 10,
+          "society": 9,
+          "stealth": 11,
+          "thievery": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -34258,7 +36508,16 @@
           "name": "Studded Leather Armor",
           "reference": "/item/studded-leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 16,
+          "intimidation": 15,
+          "stealth": 15,
+          "thievery": 13
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -34442,7 +36701,24 @@
           "name": "Book",
           "quantity": 3
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 9,
+          "nature": 8,
+          "religion": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Academia Lore",
+            "value": 11
+          },
+          {
+            "name": "Library Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -34600,6 +36876,27 @@
         {
           "name": "Warfare Lore",
           "value": 12
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 12
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
         }
       ]
     },
@@ -34785,7 +37082,22 @@
           "name": "Breastplate",
           "reference": "/item/breastplate-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 9,
+          "deception": 8,
+          "diplomacy": 8,
+          "intimidation": 8,
+          "society": 15
+        },
+        "loreSkills": [
+          {
+            "name": "Accounting Lore",
+            "value": 17
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -34970,7 +37282,16 @@
         {
           "name": "Medicine Bag (Functions as a Healer's Toolkit)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 6,
+          "diplomacy": 4,
+          "nature": 7,
+          "survival": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -35203,7 +37524,23 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 16,
+          "athletics": 14,
+          "deception": 14,
+          "nature": 16,
+          "stealth": 18,
+          "survival": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Lore about a magical creature type",
+            "value": 16
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -35545,7 +37882,28 @@
         {
           "name": "Lyre (Moderate Maestro's Instrument)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 21,
+          "deception": 23,
+          "diplomacy": 23,
+          "intimidation": 23,
+          "occultism": 19,
+          "performance": 30,
+          "society": 21
+        },
+        "loreSkills": [
+          {
+            "name": "Bardic Lore",
+            "value": 19
+          },
+          {
+            "name": "Music Lore",
+            "value": 21
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -35779,7 +38137,16 @@
           "name": "Invisibility Potion",
           "reference": "/item/invisibility-potion-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 11,
+          "society": 9,
+          "stealth": 7,
+          "thievery": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -36015,7 +38382,16 @@
           "name": "Studded Leather Armor",
           "reference": "/item/studded-leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 17,
+          "arcana": 13,
+          "athletics": 16,
+          "stealth": 18
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -36364,7 +38740,19 @@
         {
           "name": "Spellbook"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 22,
+          "athletics": 21
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 20
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -36509,7 +38897,14 @@
         {
           "name": "Handwraps"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 9,
+          "athletics": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -36726,7 +39121,23 @@
           "name": "Masquerade Scarf",
           "reference": "/item/masquerade-scarf-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 18,
+          "diplomacy": 16,
+          "performance": 16,
+          "society": 17,
+          "stealth": 17,
+          "thievery": 15
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -37039,7 +39450,27 @@
           "name": "Disguise Kit",
           "reference": "/item/disguise-kit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 13,
+          "deception": 15,
+          "diplomacy": 15,
+          "intimidation": 15,
+          "occultism": 15,
+          "performance": 17,
+          "religion": 11,
+          "society": 17,
+          "stealth": 11,
+          "thievery": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Underworld Lore",
+            "value": 17
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -37206,7 +39637,21 @@
         {
           "name": "Decorative Sword of Station (Functions as Shortsword)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 15,
+          "diplomacy": 15,
+          "intimidation": 15,
+          "society": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Guild Lore",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -37391,7 +39836,20 @@
           "name": "Repair Toolkit",
           "reference": "/item/repair-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 7,
+          "crafting": 16,
+          "thievery": 6
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 16
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -37548,6 +40006,31 @@
         {
           "name": "Military Lore",
           "value": 14
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 19,
+          "intimidation": 18,
+          "society": 14,
+          "survival": 15,
+          "thievery": 19
+        },
+        "loreSkills": [
+          {
+            "name": "Military Lore",
+            "value": 14
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 10
+        },
+        {
+          "type": "splash-damage",
+          "value": 10
         }
       ]
     },
@@ -37718,7 +40201,21 @@
           "name": "Padded Armor",
           "reference": "/item/padded-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 10,
+          "diplomacy": 12,
+          "performance": 8,
+          "society": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Mercantile Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -37914,7 +40411,17 @@
         {
           "name": "Satchel of Mail"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 5,
+          "diplomacy": 6,
+          "society": 7,
+          "survival": 4
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -38080,7 +40587,23 @@
           "slug": "humanoid"
         }
       ],
-      "languagesDetails": "sign language"
+      "languagesDetails": "sign language",
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 8,
+          "deception": 10,
+          "performance": 10,
+          "stealth": 10
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "sonic",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -38255,7 +40778,20 @@
           "reference": "/item/rope-player-core",
           "quantity": 2
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 3,
+          "athletics": 6,
+          "survival": 4
+        },
+        "loreSkills": [
+          {
+            "name": "Mining Lore",
+            "value": 4
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -38621,7 +41157,18 @@
         {
           "name": "Scroll of False Vision (Rank 5)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 21,
+          "diplomacy": 17,
+          "occultism": 19,
+          "performance": 17,
+          "society": 17,
+          "stealth": 17
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -38776,7 +41323,19 @@
           "name": "Handwraps of Mighty Blows",
           "reference": "/item/handwraps-of-mighty-blows-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "athletics": 17
+        },
+        "loreSkills": [
+          {
+            "name": "Martial Arts Lore",
+            "value": 17
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -38983,7 +41542,20 @@
           "name": "Hide Armor",
           "reference": "/item/hide-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "stealth": 13,
+          "survival": 11
+        },
+        "loreSkills": [
+          {
+            "name": "Monster Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -39204,6 +41776,26 @@
           "acuity": "imprecise",
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "10 feet"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 9,
+          "athletics": 15,
+          "intimidation": 13,
+          "nature": 11,
+          "survival": 9
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "earth",
+          "value": 6
+        },
+        {
+          "type": "poison",
+          "value": 6
         }
       ]
     },
@@ -39455,7 +42047,21 @@
           "reference": "/item/chalk-player-core",
           "quantity": 10
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "athletics": 13,
+          "nature": 12,
+          "survival": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Mountain Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -39639,7 +42245,18 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "athletics": 8,
+          "deception": 8,
+          "intimidation": 10,
+          "stealth": 11,
+          "thievery": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -39814,7 +42431,21 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 5,
+          "nature": 8,
+          "stealth": 5,
+          "survival": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Scouting Lore",
+            "value": 10
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -40011,7 +42642,21 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 6,
+          "nature": 11,
+          "society": 8,
+          "survival": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Sailing Lore",
+            "value": 14
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -40217,7 +42862,15 @@
         {
           "name": "Hooded Robe"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 11,
+          "intimidation": 8,
+          "occultism": 13
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -40397,7 +43050,21 @@
         {
           "name": "Loaded Dice"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 10,
+          "diplomacy": 10,
+          "intimidation": 9,
+          "society": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Games Lore",
+            "value": 8
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -40583,7 +43250,26 @@
         {
           "name": "Entirely Too Many Books"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "stealth": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Academia Lore",
+            "value": 19
+          },
+          {
+            "name": "Library Lore",
+            "value": 23
+          },
+          {
+            "name": "Narrow Lore",
+            "value": 25
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -40777,7 +43463,20 @@
           "name": "Net",
           "reference": "/item/net-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "nature": 10,
+          "survival": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Sailing Lore",
+            "value": 18
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -40987,7 +43686,21 @@
           "name": "Poisonous Herb",
           "quantity": 5
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 5,
+          "crafting": 3,
+          "nature": 11,
+          "survival": 7
+        },
+        "loreSkills": [
+          {
+            "name": "Farming Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -41184,7 +43897,17 @@
           "reference": "/item/hampering-snare-player-core-2",
           "quantity": 2
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "diplomacy": 9,
+          "nature": 13,
+          "stealth": 12,
+          "survival": 11
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -41351,6 +44074,31 @@
         {
           "name": "Darkvision",
           "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 17,
+          "intimidation": 15,
+          "stealth": 16,
+          "survival": 13
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 8
+        },
+        {
+          "type": "splash-damage",
+          "value": 8
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "void",
+          "value": 8
         }
       ]
     },
@@ -41564,7 +44312,22 @@
           "name": "Breastplate",
           "reference": "/item/breastplate-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 20,
+          "athletics": 23,
+          "diplomacy": 15,
+          "intimidation": 20,
+          "stealth": 20
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 18
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -41850,7 +44613,17 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 6,
+          "diplomacy": 9,
+          "nature": 12,
+          "stealth": 9,
+          "survival": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -42023,7 +44796,15 @@
           "name": "Manacles (Simple)",
           "reference": "/item/manacles-simple-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 14,
+          "diplomacy": 8,
+          "intimidation": 8
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -42234,7 +45015,22 @@
           "name": "Obsidian Goggles",
           "reference": "/item/obsidian-goggles-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 25,
+          "athletics": 23,
+          "crafting": 22,
+          "deception": 24,
+          "intimidation": 26
+        },
+        "loreSkills": [
+          {
+            "name": "Dueling Lore",
+            "value": 25
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -42667,6 +45463,22 @@
           "reference": "/item/healer-s-toolkit-expanded-player-core"
         }
       ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 26,
+          "medicine": 33,
+          "nature": 27,
+          "religion": 25,
+          "society": 23
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "poison",
+          "value": 15
+        }
+      ],
       "ritualcasting": [
         {
           "type": "Rituals",
@@ -42878,7 +45690,21 @@
         {
           "name": "Religious Symbol of Calistria"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 6,
+          "deception": 5,
+          "intimidation": 3,
+          "religion": 4
+        },
+        "loreSkills": [
+          {
+            "name": "Calistria Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -43033,6 +45859,28 @@
         {
           "name": "Warfare Lore",
           "value": 11
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 17,
+          "intimidation": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 11
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
         }
       ]
     },
@@ -43206,7 +46054,15 @@
         {
           "name": "Medical Textbook"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 6,
+          "medicine": 12,
+          "society": 5
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -43378,7 +46234,21 @@
         {
           "name": "Religious Symbol of Irori"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 5,
+          "religion": 5,
+          "society": 4,
+          "survival": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Irori Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -43576,7 +46446,21 @@
           "name": "Padded Armor",
           "reference": "/item/padded-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7,
+          "athletics": 8,
+          "deception": 6,
+          "intimidation": 6
+        },
+        "loreSkills": [
+          {
+            "name": "Sailing Lore",
+            "value": 8
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -43868,7 +46752,20 @@
           "reference": "/item/healing-potion-minor-gm-core",
           "quantity": 4
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "intimidation": 9,
+          "medicine": 13,
+          "religion": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Plague Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -44052,7 +46949,17 @@
         {
           "name": "Snare Toolkit (Functions as Artisan's Toolkit)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 4,
+          "deception": 4,
+          "nature": 7,
+          "stealth": 8,
+          "survival": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -44241,7 +47148,21 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 8,
+          "diplomacy": 10,
+          "performance": 10,
+          "society": 11
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -44539,6 +47460,16 @@
           "name": "Religious Symbol of Sarenrae"
         }
       ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 12,
+          "medicine": 14,
+          "religion": 14,
+          "society": 11,
+          "survival": 12
+        },
+        "loreSkills": []
+      },
       "ritualcasting": [
         {
           "type": "Rituals",
@@ -44733,7 +47664,25 @@
           "name": "Rapier",
           "reference": "/item/rapier-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 22,
+          "diplomacy": 22,
+          "intimidation": 19,
+          "society": 22
+        },
+        "loreSkills": [
+          {
+            "name": "Guild Lore",
+            "value": 17
+          },
+          {
+            "name": "Legal Lore",
+            "value": 19
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -44894,7 +47843,17 @@
         {
           "name": "Shiv"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7,
+          "athletics": 6,
+          "intimidation": 3,
+          "stealth": 7,
+          "thievery": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -45214,7 +48173,20 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 11,
+          "performance": 10,
+          "society": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 8
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -45463,7 +48435,16 @@
         {
           "name": "Robes"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 8,
+          "performance": 8,
+          "religion": 7,
+          "survival": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -45557,6 +48538,10 @@
             "name": "Object Immunities"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {},
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -45730,7 +48715,16 @@
           "name": "Puppet",
           "quantity": 3
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 15,
+          "occultism": 13,
+          "performance": 13,
+          "thievery": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -45977,6 +48971,24 @@
           }
         ]
       },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 22,
+          "intimidation": 21,
+          "religion": 22
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 10
+        },
+        {
+          "type": "splash-damage",
+          "value": 10
+        }
+      ],
       "ritualcasting": [
         {
           "type": "Rituals",
@@ -46309,7 +49321,18 @@
           "name": "Dueling Cape",
           "reference": "/item/dueling-cape-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 10,
+          "deception": 14,
+          "diplomacy": 14,
+          "intimidation": 12,
+          "performance": 14,
+          "thievery": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -46517,6 +49540,31 @@
           "reference": "/item/elixir-of-life-lesser-gm-core",
           "quantity": 3
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "crafting": 16,
+          "deception": 9,
+          "medicine": 10,
+          "stealth": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 14
+          },
+          {
+            "name": "Underworld Lore",
+            "value": 14
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "poison",
+          "value": 5
+        }
       ]
     },
     "attributes": {
@@ -46701,7 +49749,19 @@
           "name": "Rope",
           "reference": "/item/rope-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 6,
+          "athletics": 7
+        },
+        "loreSkills": [
+          {
+            "name": "Sailing Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -46901,7 +49961,20 @@
         {
           "name": "Artisan's Toolkit (Rocketry)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "crafting": 14,
+          "performance": 12
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 14
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -47105,7 +50178,21 @@
         {
           "name": "Shovel (Functions as Pick)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 5,
+          "nature": 5,
+          "stealth": 4,
+          "survival": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Labor Lore",
+            "value": 2
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -47296,7 +50383,15 @@
           "name": "Studded Leather Armor",
           "reference": "/item/studded-leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 7,
+          "intimidation": 6,
+          "stealth": 6
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -47481,7 +50576,20 @@
         {
           "name": "Signet Ring"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 9,
+          "diplomacy": 9,
+          "society": 11
+        },
+        "loreSkills": [
+          {
+            "name": "Genealogy Lore",
+            "value": 9
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -47698,7 +50806,31 @@
           "name": "Thieves' Toolkit",
           "reference": "/item/thieves-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7,
+          "athletics": 5,
+          "crafting": 6,
+          "deception": 7,
+          "diplomacy": 5,
+          "intimidation": 5,
+          "society": 6,
+          "stealth": 9,
+          "survival": 6,
+          "thievery": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 8
+          },
+          {
+            "name": "Underworld Lore",
+            "value": 6
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -47869,7 +51001,19 @@
           "name": "Religious Symbol (Wooden)",
           "reference": "/item/religious-symbol-wooden-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 12,
+          "diplomacy": 13,
+          "medicine": 12,
+          "nature": 14,
+          "occultism": 12,
+          "religion": 12,
+          "society": 14
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -48050,7 +51194,20 @@
         {
           "name": "Servant's Uniform"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 5,
+          "diplomacy": 4,
+          "society": 2
+        },
+        "loreSkills": [
+          {
+            "name": "Lore (any one subcategory related to their job, such as Alcohol Lore, Baking Lore, or Household Lore)",
+            "value": 4
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -48263,7 +51420,22 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 12,
+          "diplomacy": 11,
+          "intimidation": 13,
+          "survival": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Sailing Lore",
+            "value": 17
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -48556,7 +51728,16 @@
         {
           "name": "Bundle of Herbs"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 9,
+          "occultism": 9,
+          "performance": 9,
+          "religion": 11
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -48769,7 +51950,26 @@
         {
           "name": "Formula Book"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 25,
+          "athletics": 23,
+          "crafting": 27,
+          "stealth": 25,
+          "thievery": 23
+        },
+        "loreSkills": [
+          {
+            "name": "Engineering Lore",
+            "value": 29
+          },
+          {
+            "name": "Siege Lore",
+            "value": 29
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -48969,7 +52169,19 @@
           "name": "Hide Armor",
           "reference": "/item/hide-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "athletics": 14,
+          "diplomacy": 13,
+          "intimidation": 11,
+          "nature": 18,
+          "stealth": 12,
+          "survival": 18
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -49154,7 +52366,21 @@
           "name": "Artisan's Toolkit",
           "reference": "/item/artisan-s-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 8,
+          "crafting": 15,
+          "diplomacy": 5,
+          "society": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Smithy Lore",
+            "value": 15
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -49362,7 +52588,17 @@
           "reference": "/item/silencer-guns-and-gears-remastered",
           "quantity": 4
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "athletics": 11,
+          "medicine": 11,
+          "stealth": 15,
+          "survival": 11
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -49713,7 +52949,20 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 21,
+          "intimidation": 21,
+          "occultism": 22
+        },
+        "loreSkills": [
+          {
+            "name": "Spirits Lore",
+            "value": 24
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -49998,7 +53247,21 @@
           "name": "Clan Dagger",
           "reference": "/item/clan-dagger-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 12,
+          "diplomacy": 12,
+          "occultism": 10,
+          "religion": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Dwarf Lore",
+            "value": 10
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -50213,7 +53476,24 @@
           "name": "Thieves' Toolkit",
           "reference": "/item/thieves-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 14,
+          "deception": 16,
+          "diplomacy": 14,
+          "intimidation": 14,
+          "society": 14,
+          "stealth": 16,
+          "thievery": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Local Court Lore",
+            "value": 16
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -50415,7 +53695,20 @@
           "name": "Healer's Toolkit",
           "reference": "/item/healer-s-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 11,
+          "medicine": 10,
+          "society": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 10
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -50640,7 +53933,18 @@
           "name": "Musical Instrument (Handheld)",
           "reference": "/item/musical-instrument-handheld-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 6,
+          "crafting": 5,
+          "deception": 8,
+          "diplomacy": 8,
+          "performance": 8,
+          "society": 6
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -50819,7 +54123,19 @@
         {
           "name": "Chain (30 feet)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "crafting": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Ocean Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -51008,7 +54324,15 @@
         {
           "name": "Healer's Tools"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 10,
+          "diplomacy": 8,
+          "medicine": 16
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -51231,7 +54555,24 @@
           "name": "Longspear",
           "reference": "/item/longspear-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 9,
+          "diplomacy": 17,
+          "intimidation": 15,
+          "performance": 15,
+          "society": 16,
+          "survival": 10
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 16
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -51440,7 +54781,26 @@
         {
           "name": "Collection of Expired Documents with Intact Seals"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 8,
+          "diplomacy": 8,
+          "intimidation": 8,
+          "society": 9,
+          "thievery": 6
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 9
+          },
+          {
+            "name": "Mercantile Lore",
+            "value": 10
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -51615,7 +54975,23 @@
           "name": "Writing Set",
           "reference": "/item/writing-set-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 5,
+          "intimidation": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Academia Lore",
+            "value": 14
+          },
+          {
+            "name": "Additional Lore",
+            "value": 14
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -51991,6 +55367,26 @@
           "name": "Explorer's Clothing",
           "reference": "/item/explorer-s-clothing-player-core"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 35,
+          "intimidation": 37,
+          "nature": 34,
+          "stealth": 35,
+          "survival": 31
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 15
+        },
+        {
+          "type": "electricity",
+          "value": 20
+        }
       ]
     },
     "attributes": {
@@ -52183,7 +55579,22 @@
           "name": "Katana",
           "reference": "/item/katana-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 14,
+          "athletics": 16,
+          "crafting": 16,
+          "deception": 14,
+          "intimidation": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Tengu Lore",
+            "value": 14
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -52498,6 +55909,22 @@
           "name": "Healer's Toolkit (Expanded)",
           "reference": "/item/healer-s-toolkit-expanded-player-core"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "diplomacy": 17,
+          "medicine": 17,
+          "occultism": 16,
+          "performance": 15,
+          "society": 14
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "mental",
+          "value": 5
+        }
       ]
     },
     "attributes": {
@@ -52686,7 +56113,17 @@
           "name": "Studded Leather Armor",
           "reference": "/item/studded-leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "athletics": 12,
+          "nature": 10,
+          "stealth": 11,
+          "survival": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -52863,6 +56300,21 @@
         },
         {
           "name": "Supplies for the Boss"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 4,
+          "deception": 2,
+          "stealth": 6,
+          "thievery": 4
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "mental",
+          "value": 2
         }
       ]
     },
@@ -53050,7 +56502,27 @@
           "name": "Climbing Kit",
           "reference": "/item/climbing-kit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "athletics": 13,
+          "deception": 7,
+          "society": 9,
+          "stealth": 11,
+          "thievery": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Architecture Lore",
+            "value": 11
+          },
+          {
+            "name": "Engineering Lore",
+            "value": 11
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -53247,7 +56719,21 @@
           "name": "Healer's Toolkit",
           "reference": "/item/healer-s-toolkit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 11,
+          "diplomacy": 9,
+          "medicine": 10,
+          "society": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Mercantile Lore",
+            "value": 9
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -53451,7 +56937,21 @@
           "reference": "/item/matchstick-gm-core",
           "quantity": 5
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 5,
+          "athletics": 4,
+          "stealth": 5,
+          "survival": 3
+        },
+        "loreSkills": [
+          {
+            "name": "Architecture Lore",
+            "value": 2
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -53638,7 +57138,16 @@
           "reference": "/item/shuriken-player-core",
           "quantity": 5
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "athletics": 12,
+          "intimidation": 11,
+          "performance": 11
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -53817,7 +57326,21 @@
         {
           "name": "Artisan's Toolkit (Toymaking)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "crafting": 10,
+          "diplomacy": 9,
+          "performance": 9,
+          "society": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Toys Lore",
+            "value": 12
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -54019,7 +57542,20 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "nature": 11,
+          "stealth": 9,
+          "survival": 13
+        },
+        "loreSkills": [
+          {
+            "name": "Forest Lore",
+            "value": 5
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -54179,7 +57715,17 @@
           "name": "Light Barding",
           "reference": "/item/light-barding-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 9,
+          "intimidation": 6,
+          "stealth": 12,
+          "survival": 8
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -54356,7 +57902,22 @@
           "name": "Padded Armor",
           "reference": "/item/padded-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7,
+          "athletics": 7,
+          "deception": 10,
+          "performance": 10,
+          "society": 9
+        },
+        "loreSkills": [
+          {
+            "name": "Theater Lore",
+            "value": 9
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -54716,7 +58277,17 @@
           "name": "Shining Symbol",
           "reference": "/item/shining-symbol-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 17,
+          "diplomacy": 17,
+          "religion": 21,
+          "society": 16,
+          "survival": 19
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -55092,7 +58663,18 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 23,
+          "diplomacy": 25,
+          "intimidation": 23,
+          "nature": 26,
+          "performance": 27,
+          "survival": 22
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -55298,7 +58880,18 @@
           "name": "Disguise Kit",
           "reference": "/item/disguise-kit-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 5,
+          "crafting": 7,
+          "nature": 7,
+          "stealth": 11,
+          "survival": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -55495,7 +59088,18 @@
           "name": "Leather Armor",
           "reference": "/item/leather-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 17,
+          "athletics": 13,
+          "nature": 16,
+          "religion": 16,
+          "stealth": 17,
+          "survival": 16
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -55695,7 +59299,17 @@
           "name": "Net",
           "reference": "/item/net-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7,
+          "athletics": 4,
+          "nature": 6,
+          "stealth": 7,
+          "survival": 6
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -55979,7 +59593,28 @@
         {
           "name": "Poetry Book"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "deception": 9,
+          "diplomacy": 9,
+          "occultism": 7,
+          "performance": 13,
+          "society": 7,
+          "stealth": 8
+        },
+        "loreSkills": [
+          {
+            "name": "Bardic Lore",
+            "value": 7
+          },
+          {
+            "name": "Storytelling Lore",
+            "value": 9
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -56200,7 +59835,18 @@
           "name": "Dagger",
           "reference": "/item/dagger-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "diplomacy": 8,
+          "nature": 10,
+          "society": 7,
+          "stealth": 9,
+          "survival": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -56397,7 +60043,18 @@
           "reference": "/item/caltrops-player-core",
           "quantity": 3
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 6,
+          "athletics": 6,
+          "nature": 5,
+          "stealth": 8,
+          "survival": 5,
+          "thievery": 6
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -56596,7 +60253,17 @@
         {
           "name": "Badge"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "deception": 11,
+          "diplomacy": 11,
+          "intimidation": 13,
+          "society": 13
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -56758,7 +60425,18 @@
         {
           "name": "Shiv"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 5,
+          "deception": 4,
+          "society": 3,
+          "stealth": 5,
+          "survival": 3,
+          "thievery": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -56936,7 +60614,21 @@
           "name": "Arsenic",
           "reference": "/item/arsenic-player-core-2"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 9,
+          "nature": 6,
+          "stealth": 8,
+          "survival": 6
+        },
+        "loreSkills": [
+          {
+            "name": "Vermin Lore",
+            "value": 9
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -57149,7 +60841,25 @@
         {
           "name": "Signet Ring"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "deception": 12,
+          "diplomacy": 12,
+          "intimidation": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Heraldry Lore",
+            "value": 14
+          },
+          {
+            "name": "Warfare Lore",
+            "value": 14
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -57294,7 +61004,15 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "athletics": 15,
+          "intimidation": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -57493,7 +61211,16 @@
           "name": "Backpack",
           "reference": "/item/backpack-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "nature": 11,
+          "stealth": 13,
+          "survival": 13
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -57718,7 +61445,21 @@
           "name": "Hide Armor",
           "reference": "/item/hide-armor-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 24,
+          "intimidation": 20,
+          "stealth": 19,
+          "survival": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Warfare Lore",
+            "value": 21
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -57932,7 +61673,21 @@
           "name": "Signal Whistle",
           "reference": "/item/signal-whistle-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 11,
+          "diplomacy": 6,
+          "intimidation": 9,
+          "society": 5
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 7
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -58206,7 +61961,21 @@
         {
           "name": "Spellbook"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 13,
+          "athletics": 10,
+          "intimidation": 9,
+          "society": 11
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 13
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -58457,6 +62226,30 @@
         {
           "name": "invisibility scan"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 21,
+          "athletics": 19,
+          "intimidation": 20,
+          "society": 19
+        },
+        "loreSkills": [
+          {
+            "name": "Legal Lore",
+            "value": 21
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 10
+        },
+        {
+          "type": "splash-damage",
+          "value": 10
+        }
       ]
     },
     "attributes": {
@@ -58684,7 +62477,18 @@
         {
           "name": "Crimefighting Pouches (Function as Sleeves of Storage)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 16,
+          "athletics": 16,
+          "deception": 17,
+          "intimidation": 17,
+          "society": 16,
+          "stealth": 17
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -58860,6 +62664,32 @@
         {
           "name": "Low-Light Vision",
           "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 16,
+          "athletics": 15,
+          "medicine": 14,
+          "nature": 16,
+          "stealth": 18,
+          "survival": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Forest Lore",
+            "value": 17
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 8
+        },
+        {
+          "type": "splash-damage",
+          "value": 8
         }
       ]
     },
@@ -59063,6 +62893,26 @@
         },
         {
           "name": "Animal Treats"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 14,
+          "intimidation": 14,
+          "nature": 16,
+          "survival": 18
+        },
+        "loreSkills": [
+          {
+            "name": "Mountain Lore",
+            "value": 18
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 10
         }
       ]
     },
@@ -59440,6 +63290,21 @@
         {
           "name": "+1 Striking Staff of Fire (Major)"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "intimidation": 28,
+          "nature": 27,
+          "religion": 25,
+          "society": 27
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": 15
+        }
       ]
     },
     "attributes": {
@@ -59721,7 +63586,17 @@
           "name": "Half Plate",
           "reference": "/item/half-plate-player-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 9,
+          "deception": 10,
+          "intimidation": 10,
+          "religion": 12,
+          "society": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,

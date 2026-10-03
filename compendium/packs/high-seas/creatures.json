@@ -240,7 +240,41 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 33,
+          "intimidation": 31
+        },
+        "loreSkills": [
+          {
+            "name": "Sailing Lore",
+            "value": 37
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 10
+        },
+        {
+          "type": "electricity",
+          "value": 10
+        },
+        {
+          "type": "fire",
+          "value": 10
+        },
+        {
+          "type": "piercing",
+          "value": 10
+        },
+        {
+          "type": "slashing",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -393,7 +427,16 @@
           "name": "darkvision",
           "reference": "/action/darkvision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7,
+          "athletics": 3,
+          "stealth": 7,
+          "thievery": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -661,7 +704,27 @@
             "reference": "/trait/void"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 20
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "physical",
+          "value": 10
+        },
+        {
+          "type": "piercing",
+          "value": 10
+        },
+        {
+          "type": "slashing",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -966,6 +1029,33 @@
           }
         ]
       },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 27,
+          "deception": 25,
+          "diplomacy": 22,
+          "intimidation": 24,
+          "society": 22,
+          "stealth": 25,
+          "survival": 22,
+          "thievery": 27
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "cold_iron",
+          "value": 10
+        },
+        {
+          "type": "holy",
+          "value": 10
+        },
+        {
+          "type": "cold-iron",
+          "value": 10
+        }
+      ],
       "ritualcasting": [
         {
           "type": "Rituals",
@@ -1200,7 +1290,24 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 12,
+          "stealth": 7
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "vitality",
+          "value": 5
+        },
+        {
+          "type": "discorporation-vulnerability",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1391,6 +1498,21 @@
         },
         {
           "name": "inksight"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 9,
+          "athletics": 12,
+          "stealth": 9,
+          "survival": 9
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": "5"
         }
       ]
     },
@@ -1606,6 +1728,14 @@
             "reference": "/trait/sleep"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 8,
+          "deception": 8,
+          "stealth": 7
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -1763,6 +1893,37 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 16,
+          "athletics": 18,
+          "survival": 14
+        },
+        "loreSkills": [
+          {
+            "name": "Sailing Lore",
+            "value": 12
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "area",
+          "value": 10
+        },
+        {
+          "type": "splash",
+          "value": 10
+        },
+        {
+          "type": "area-damage",
+          "value": 10
+        },
+        {
+          "type": "splash-damage",
+          "value": 10
         }
       ]
     },
@@ -2043,7 +2204,58 @@
             "reference": "/rule/death-effects-rules-2331"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 26,
+          "deception": 21,
+          "diplomacy": 21,
+          "intimidation": 23,
+          "survival": 21
+        },
+        "loreSkills": [
+          {
+            "name": "Lake Lore",
+            "value": 21
+          },
+          {
+            "name": "Ocean Lore",
+            "value": 21
+          },
+          {
+            "name": "River Lore",
+            "value": 21
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "holy",
+          "value": 10
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 12
+        },
+        {
+          "type": "fire",
+          "value": 12
+        },
+        {
+          "type": "physical",
+          "value": 12
+        },
+        {
+          "type": "piercing",
+          "value": 12
+        },
+        {
+          "type": "slashing",
+          "value": 12
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2387,6 +2599,27 @@
           }
         ]
       },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 28,
+          "deception": 30,
+          "intimidation": 30,
+          "nature": 27,
+          "stealth": 30
+        },
+        "loreSkills": [
+          {
+            "name": "High Seas Lore",
+            "value": 30
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": "15"
+        }
+      ],
       "ritualcasting": [
         {
           "type": "Occult Rituals",
@@ -2579,6 +2812,26 @@
           "acuity": "imprecise",
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "athletics": 15,
+          "stealth": 13
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "poison",
+          "value": 5
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "sonic",
+          "value": "5"
         }
       ]
     },

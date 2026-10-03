@@ -203,6 +203,13 @@
             "reference": "/trait/void"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 10
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -438,6 +445,12 @@
             "reference": "/trait/void"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -680,6 +693,12 @@
             "reference": "/trait/void"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 17
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -856,7 +875,15 @@
           "acuityReference": "/rule/precise-senses-rules-2406",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 21,
+          "stealth": 18,
+          "survival": 19
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1086,6 +1113,27 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "120 feet"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "arcana": 21,
+          "athletics": 25,
+          "intimidation": 23,
+          "nature": 25,
+          "occultism": 21,
+          "religion": 25
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": 15
+        },
+        {
+          "type": "void",
+          "value": 15
+        }
       ]
     },
     "attributes": {
@@ -1277,6 +1325,25 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 28,
+          "intimidation": 23,
+          "stealth": 23,
+          "survival": 25
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 15
+        },
+        {
+          "type": "fire",
+          "value": 15
+        }
       ]
     },
     "attributes": {
@@ -1449,7 +1516,16 @@
           "name": "darkvision",
           "reference": "/action/darkvision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 19,
+          "athletics": 19,
+          "stealth": 21,
+          "survival": 18
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1608,6 +1684,25 @@
           "name": "darkvision",
           "reference": "/action/darkvision-monster-core"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "intimidation": 11,
+          "stealth": 13,
+          "survival": 10
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 5
+        },
+        {
+          "type": "slashing",
+          "value": 5
+        }
       ]
     },
     "attributes": {
@@ -1762,7 +1857,15 @@
           "name": "low-light vision",
           "reference": "/action/low-light-vision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 7,
+          "stealth": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1996,7 +2099,24 @@
             "reference": "/trait/void"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 6,
+          "intimidation": 6
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "electricity",
+          "value": 2
+        },
+        {
+          "type": "orichalcum",
+          "value": 2
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2233,7 +2353,28 @@
             "name": "fear"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 25,
+          "deception": 28,
+          "intimidation": 28,
+          "religion": 28,
+          "stealth": 25
+        },
+        "loreSkills": [
+          {
+            "name": "Boneyard Lore",
+            "value": 28
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "holy",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2485,7 +2626,22 @@
             "reference": "/trait/sleep"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "athletics": 17,
+          "intimidation": 15,
+          "stealth": 15
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "poison",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2734,7 +2890,24 @@
             "reference": "/trait/void"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 2,
+          "stealth": 3
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "cold",
+          "value": 5
+        },
+        {
+          "type": "fire",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2893,7 +3066,15 @@
           "name": "darkvision",
           "reference": "/action/darkvision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "deception": 9,
+          "stealth": 11
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3136,7 +3317,32 @@
             "reference": "/trait/disease"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 25,
+          "diplomacy": 28,
+          "religion": 28,
+          "society": 24,
+          "stealth": 24
+        },
+        "loreSkills": [
+          {
+            "name": "Boneyard Lore",
+            "value": 26
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "poison",
+          "value": 15
+        },
+        {
+          "type": "void",
+          "value": 15
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3371,6 +3577,27 @@
           "reference": "/action/wavesense-monster-core",
           "details": "60 feet"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 25,
+          "athletics": 29,
+          "intimidation": 22,
+          "survival": 25
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "holy",
+          "value": 10
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": "10"
+        }
       ]
     },
     "attributes": {
@@ -3591,6 +3818,20 @@
           "name": "darkvision",
           "reference": "/action/darkvision-monster-core"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 18,
+          "deception": 16,
+          "religion": 13
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "slashing",
+          "value": 8
+        }
       ]
     },
     "attributes": {
@@ -3798,6 +4039,17 @@
             "name": "fear"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 20,
+          "athletics": 22,
+          "deception": 18,
+          "intimidation": 18,
+          "occultism": 18,
+          "survival": 17
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -3974,7 +4226,45 @@
             "name": "swarm mind"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "stealth": 16
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area",
+          "value": 5
+        },
+        {
+          "type": "splash",
+          "value": 5
+        },
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 2
+        },
+        {
+          "type": "piercing",
+          "value": 5
+        },
+        {
+          "type": "slashing",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4198,6 +4488,26 @@
           ],
           "spellDC": 32
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 23,
+          "athletics": 22,
+          "nature": 25
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "unholy",
+          "value": 10
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": "10"
+        }
       ]
     },
     "attributes": {
@@ -4400,6 +4710,20 @@
           "acuity": "precise",
           "acuityReference": "/rule/precise-senses-rules-2406",
           "details": "120 feet"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 14,
+          "athletics": 18,
+          "religion": 16
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "void",
+          "value": "10"
         }
       ]
     },
@@ -4672,7 +4996,130 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "deception": 13,
+          "diplomacy": 11,
+          "religion": 12,
+          "stealth": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Ghost Lore",
+            "value": 15
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "fire",
+          "value": 10
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "acid",
+          "value": 5
+        },
+        {
+          "type": "all",
+          "value": 5
+        },
+        {
+          "type": "area",
+          "value": 5
+        },
+        {
+          "type": "bleed",
+          "value": 5
+        },
+        {
+          "type": "bludgeoning",
+          "value": 5
+        },
+        {
+          "type": "chaotic",
+          "value": 5
+        },
+        {
+          "type": "cold",
+          "value": 5
+        },
+        {
+          "type": "cold_iron",
+          "value": 5
+        },
+        {
+          "type": "electricity",
+          "value": 5
+        },
+        {
+          "type": "evil",
+          "value": 5
+        },
+        {
+          "type": "good",
+          "value": 5
+        },
+        {
+          "type": "holy",
+          "value": 5
+        },
+        {
+          "type": "lawful",
+          "value": 5
+        },
+        {
+          "type": "mental",
+          "value": 5
+        },
+        {
+          "type": "orichalcum",
+          "value": 5
+        },
+        {
+          "type": "physical",
+          "value": 5
+        },
+        {
+          "type": "piercing",
+          "value": 5
+        },
+        {
+          "type": "poison",
+          "value": 5
+        },
+        {
+          "type": "precision",
+          "value": 5
+        },
+        {
+          "type": "silver",
+          "value": 5
+        },
+        {
+          "type": "slashing",
+          "value": 5
+        },
+        {
+          "type": "sonic",
+          "value": 5
+        },
+        {
+          "type": "splash",
+          "value": 5
+        },
+        {
+          "type": "unholy",
+          "value": 5
+        },
+        {
+          "type": "void",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4947,7 +5394,43 @@
             "reference": "/trait/void"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 35,
+          "diplomacy": 30,
+          "intimidation": 30
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "electricity",
+          "value": 15
+        },
+        {
+          "type": "orichalcum",
+          "value": 15
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 15
+        },
+        {
+          "type": "physical",
+          "value": 15
+        },
+        {
+          "type": "piercing",
+          "value": 15
+        },
+        {
+          "type": "slashing",
+          "value": 15
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5178,7 +5661,31 @@
             "reference": "/trait/poison"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 38,
+          "deception": 33,
+          "diplomacy": 33,
+          "intimidation": 38,
+          "nature": 31,
+          "performance": 29,
+          "society": 33
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "mental",
+          "value": 20
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": "20"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5360,7 +5867,17 @@
           "acuityReference": "/rule/precise-senses-rules-2406",
           "details": "120 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 17,
+          "diplomacy": 15,
+          "religion": 15,
+          "society": 15,
+          "stealth": 13
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,

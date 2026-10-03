@@ -206,7 +206,36 @@
             "reference": "/trait/mental"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "arcana": 27,
+          "athletics": 22,
+          "occultism": 27
+        },
+        "loreSkills": [
+          {
+            "name": "Lore (Any One Subcategory)",
+            "value": 27
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "piercing",
+          "value": 10
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 10
+        },
+        {
+          "type": "slashing",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -401,7 +430,23 @@
           "name": "Esoteric Lore",
           "value": 30
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 28,
+          "arcana": 25,
+          "athletics": 25,
+          "nature": 25,
+          "occultism": 25,
+          "religion": 25
+        },
+        "loreSkills": [
+          {
+            "name": "Esoteric Lore",
+            "value": 30
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -658,7 +703,22 @@
         {
           "name": "Crystal Flower Crown"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "deception": 20,
+          "diplomacy": 18,
+          "nature": 18,
+          "religion": 18,
+          "society": 16
+        },
+        "loreSkills": [
+          {
+            "name": "Ludovica Lore",
+            "value": 16
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -852,7 +912,20 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "stealth": 14
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "all-damage",
+          "value": "5 (except Force, Ghost Touch, [Vitality](/trait/vitality); double vs. Non Magical)"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -961,6 +1034,10 @@
             "name": "Object Immunities"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {},
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -1128,7 +1205,17 @@
           "label": "time",
           "slug": "time"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 26,
+          "deception": 24,
+          "intimidation": 28,
+          "occultism": 25,
+          "stealth": 25
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1316,7 +1403,26 @@
             "name": "Electricity"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 19,
+          "stealth": 14
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "fire",
+          "value": 10
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "physical",
+          "value": "10 (except Slashing)"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

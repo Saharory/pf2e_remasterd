@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "title": "Creature.Skills",
+      "type": "attributes",
+      "attribute": "skills",
+      "attributeType": "CreatureSkill"
+    },
+    {
+      "title": "Skill.Lore",
+      "type": "list",
+      "attribute": "loreSkills",
+      "custom": {
+        "itemTitle": "{{name}}",
+        "itemDetail": "{{value|signed}}"
+      },
+      "form": {
+        "title": "Skill.Lore",
+        "partial": "lore-skill"
+      }
+    }
+  ]
+}

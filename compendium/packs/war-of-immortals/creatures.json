@@ -283,7 +283,28 @@
             "reference": "/condition/paralyzed-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 43,
+          "athletics": 41
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "acid",
+          "value": 20
+        },
+        {
+          "type": "fire",
+          "value": 20
+        },
+        {
+          "type": "sonic",
+          "value": 20
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -623,7 +644,24 @@
             "reference": "/condition/paralyzed-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "deception": 26,
+          "diplomacy": 23,
+          "nature": 21,
+          "society": 21,
+          "stealth": 23,
+          "thievery": 26
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "mythic",
+          "value": 11
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -836,6 +874,21 @@
           "name": "Darkvision",
           "reference": "/action/darkvision-monster-core"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 19,
+          "athletics": 24,
+          "stealth": 28,
+          "survival": 17
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "poison",
+          "value": 10
+        }
       ]
     },
     "attributes": {
@@ -1037,7 +1090,17 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "athletics": 12,
+          "intimidation": 10,
+          "stealth": 11,
+          "survival": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1488,7 +1551,24 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "arcana": 28,
+          "crafting": 24,
+          "deception": 17,
+          "diplomacy": 19,
+          "religion": 22,
+          "stealth": 20
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1696,6 +1776,20 @@
         {
           "name": "Breastplate",
           "reference": "/item/breastplate-player-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 20,
+          "intimidation": 16,
+          "stealth": 11
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "mythic",
+          "value": 7
         }
       ]
     },
@@ -2079,7 +2173,27 @@
             "name": "Stupefied"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 50
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "acid",
+          "value": 20
+        },
+        {
+          "type": "fire",
+          "value": 20
+        },
+        {
+          "type": "physical",
+          "value": 15
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2301,7 +2415,19 @@
           "name": "Immaculate Instrument",
           "reference": "/item/immaculate-instrument-war-of-immortals"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 14,
+          "athletics": 12,
+          "crafting": 26,
+          "deception": 18,
+          "diplomacy": 16,
+          "nature": 15,
+          "performance": 26
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2606,7 +2732,34 @@
             "reference": "/trait/poison"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 45,
+          "intimidation": 45
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "holy",
+          "value": 20
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 25
+        },
+        {
+          "type": "fire",
+          "value": 25
+        },
+        {
+          "type": "physical",
+          "value": "20 (except Holy)"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2983,6 +3136,25 @@
           }
         ]
       },
+      "skillsEditor": {
+        "skills": {
+          "deception": 43,
+          "diplomacy": 40,
+          "society": 40,
+          "thievery": 40
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "cold-iron",
+          "value": 10
+        },
+        {
+          "type": "holy",
+          "value": 15
+        }
+      ],
       "ritualcasting": [
         {
           "type": "Rituals",
@@ -3438,7 +3610,37 @@
             "reference": "/trait/poison"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 25,
+          "athletics": 30,
+          "crafting": 21,
+          "deception": 30,
+          "diplomacy": 27,
+          "intimidation": 30,
+          "nature": 25,
+          "occultism": 27,
+          "religion": 27,
+          "society": 27,
+          "stealth": 30
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "cold",
+          "value": 10
+        },
+        {
+          "type": "void",
+          "value": 10
+        },
+        {
+          "type": "mythic",
+          "value": 15
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

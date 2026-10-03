@@ -186,6 +186,22 @@ def render_reference_entry(entry: dict[str, Any]) -> str:
     return text
 
 
+def parse_defense_entries(values: dict[str, Any]) -> list[dict[str, Any]]:
+    """Preserve ordered weakness/resistance mappings with clearer editor names."""
+    return [
+        {"type": key, "value": copy.deepcopy(value)}
+        for key, value in values.items()
+    ]
+
+
+def render_defense_entries(entries: list[dict[str, Any]]) -> dict[str, Any]:
+    """Reference renderer used to prove defense editor mirrors are lossless."""
+    return {
+        str(entry.get("type") or ""): copy.deepcopy(entry.get("value"))
+        for entry in entries
+    }
+
+
 def configure_creature_editor_data(entity: dict[str, Any]) -> bool:
     """Add structured editor data while retaining all published source fields."""
     if entity.get("kind") != "Creature":
@@ -208,6 +224,24 @@ def configure_creature_editor_data(entity: dict[str, Any]) -> bool:
         data["immunityEditor"] = {
             "entries": [parse_reference_entry(str(value)) for value in immunities]
         }
+
+    skills = data.get("skills")
+    lore_skills = data.get("loreSkills")
+    if isinstance(skills, dict) or isinstance(lore_skills, list):
+        data["skillsEditor"] = {
+            "skills": copy.deepcopy(skills) if isinstance(skills, dict) else {},
+            "loreSkills": (
+                copy.deepcopy(lore_skills) if isinstance(lore_skills, list) else []
+            ),
+        }
+
+    for source, target in (
+        ("weaknesses", "weaknessEntries"),
+        ("resistances", "resistanceEntries"),
+    ):
+        values = data.get(source)
+        if isinstance(values, dict) and values:
+            data[target] = parse_defense_entries(values)
 
     rituals = data.get("rituals")
     if isinstance(rituals, dict) and any(rituals.values()):

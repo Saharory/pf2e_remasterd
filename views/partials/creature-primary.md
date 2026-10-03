@@ -10,9 +10,11 @@
 [**{{'Creature.Languages'|l}}**](/rule/languages-rules-2080) {% for language in data.languages %}[{{language|map: 'Language'}}](/language/{{language}}){% if not forloop.last %}, {% endif %}{% endfor %}{% if data.languagesDetails %}; {{data.languagesDetails}}{% endif %}
 {% endif %}
 
-{% if data.skills or data.loreSkills %}
+{% if data.skillsEditor.skills or data.skillsEditor.loreSkills %}
+[**{{'Creature.Skills'|l}}**](/rule/skills-rules-2276) {% if data.skillsEditor.skills %}{% for key, value in data.skillsEditor.skills %}[{{ key|map: 'Skill' }}](/rule/{{key}}-skill-player-core) [{{value|signed}}](roll "{{ key|map: 'Skill' }}"){% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}{% if data.skillsEditor.loreSkills %}{% if data.skillsEditor.skills %}, {% endif %}{% for skill in data.skillsEditor.loreSkills %}[{{skill.name}}](/rule/lore-skill-player-core) [{{skill.value|signed}}](roll "{{skill.name}}"){% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}
+{% else %}{% if data.skills or data.loreSkills %}
 [**{{'Creature.Skills'|l}}**](/rule/skills-rules-2276) {% if data.skills %}{% for key, value in data.skills %}[{{ key|map: 'Skill' }}](/rule/{{key}}-skill-player-core) [{{value|signed}}](roll "{{ key|map: 'Skill' }}"){% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}{% if data.loreSkills %}{% if data.skills %}, {% endif %}{% for skill in data.loreSkills %}[{{skill.name}}](/rule/lore-skill-player-core) [{{skill.value|signed}}](roll "{{skill.name}}"){% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}
-{% endif %}
+{% endif %}{% endif %}
 
 **{{'Attribute.STR'|l|capitalize}}** [{{data.attributes.str|default: 0|signed}}](roll "{{'strength'|map: 'Attribute'}}") **{{'Attribute.DEX'|l|capitalize}}** [{{data.attributes.dex|default: 0|signed}}](roll "{{'dexterity'|map: 'Attribute'}}") **{{'Attribute.CON'|l|capitalize}}** [{{data.attributes.con|default: 0|signed}}](roll "{{'constitution'|map: 'Attribute'}}") **{{'Attribute.INT'|l|capitalize}}** [{{data.attributes.int|default: 0|signed}}](roll "{{'intelligence'|map: 'Attribute'}}") **{{'Attribute.WIS'|l|capitalize}}** [{{data.attributes.wis|default: 0|signed}}](roll "{{'wisdom'|map: 'Attribute'}}") **{{'Attribute.CHA'|l|capitalize}}** [{{data.attributes.cha|default: 0|signed}}](roll "{{'charisma'|map: 'Attribute'}}")
 

@@ -265,6 +265,16 @@
             "reference": "/trait/poison"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 27,
+          "arcana": 27,
+          "athletics": 27,
+          "diplomacy": 30,
+          "stealth": 25
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -449,7 +459,15 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "40 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "stealth": 10,
+          "survival": 8
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -624,7 +642,15 @@
           "name": "Healing Potion (Moderate)",
           "reference": "/item/healing-potion-moderate-gm-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 17,
+          "stealth": 17,
+          "thievery": 15
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -821,7 +847,17 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "120 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 23,
+          "athletics": 23,
+          "intimidation": 25,
+          "stealth": 21,
+          "survival": 22
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1098,6 +1134,23 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 31,
+          "athletics": 35,
+          "crafting": 29,
+          "deception": 32,
+          "intimidation": 32,
+          "nature": 31
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "electricity",
+          "value": 15
+        }
       ]
     },
     "attributes": {
@@ -1331,6 +1384,27 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "40 feet"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 30,
+          "intimidation": 21,
+          "nature": 29,
+          "survival": 27
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "fire",
+          "value": 15
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "void",
+          "value": 15
+        }
       ]
     },
     "attributes": {
@@ -1495,7 +1569,14 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 18,
+          "survival": 14
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1715,6 +1796,29 @@
         {
           "name": "stormsight"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 22,
+          "athletics": 19,
+          "nature": 19,
+          "stealth": 19
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": 10
+        },
+        {
+          "type": "electricity",
+          "value": 10
+        },
+        {
+          "type": "cold",
+          "value": 10
+        }
       ]
     },
     "attributes": {
@@ -1866,7 +1970,16 @@
           "name": "Darkvision",
           "reference": "/action/darkvision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 16,
+          "athletics": 16,
+          "performance": 19,
+          "stealth": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2046,6 +2159,14 @@
             "reference": "/trait/poison"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "deception": 12,
+          "stealth": 10,
+          "survival": 8
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -2254,7 +2375,22 @@
             "reference": "/trait/poison"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "athletics": 18,
+          "nature": 17,
+          "stealth": 15
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2456,6 +2592,16 @@
             "reference": "/trait/poison"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 22,
+          "athletics": 25,
+          "deception": 22,
+          "intimidation": 26,
+          "stealth": 22
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -2653,7 +2799,21 @@
             "name": "Visual"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 16,
+          "stealth": 17,
+          "survival": 13
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "sonic",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2831,7 +2991,38 @@
             "name": "Swarm Mind"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 9,
+          "athletics": 5
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 5
+        },
+        {
+          "type": "piercing",
+          "value": 2
+        },
+        {
+          "type": "slashing",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2979,6 +3170,20 @@
         {
           "name": "Low-Light Vision",
           "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "athletics": 9,
+          "stealth": 11
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "acid",
+          "value": 6
         }
       ]
     },
@@ -3170,7 +3375,17 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 14,
+          "intimidation": 10,
+          "stealth": 12,
+          "survival": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3354,6 +3569,15 @@
             "name": "Electricity"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 17,
+          "athletics": 14,
+          "stealth": 17,
+          "survival": 15
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -3517,7 +3741,14 @@
           "acuityReference": "/rule/precise-senses-rules-2406",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "athletics": 14
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3682,6 +3913,20 @@
           "acuity": "imprecise",
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 19,
+          "stealth": 14,
+          "survival": 18
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "all-damage",
+          "value": 10
         }
       ]
     },
@@ -3850,7 +4095,15 @@
         {
           "name": "electrolocation 20 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 13,
+          "stealth": 15,
+          "survival": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4005,7 +4258,15 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 22,
+          "athletics": 27,
+          "stealth": 27
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4164,7 +4425,15 @@
         {
           "name": "whisker sense 30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 6,
+          "athletics": 10,
+          "stealth": 8
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4314,6 +4583,20 @@
           "acuity": "imprecise",
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 5,
+          "stealth": 5,
+          "survival": 6
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 3
         }
       ]
     },
@@ -4475,7 +4758,15 @@
         {
           "customText": "blood [scent](/action/scent-monster-core)"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 24,
+          "stealth": 17,
+          "survival": 15
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4644,6 +4935,20 @@
           "acuityReference": "/rule/precise-senses-rules-2406",
           "details": "120 feet"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 16,
+          "arcana": 18,
+          "stealth": 14
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "spells",
+          "value": 10
+        }
       ]
     },
     "attributes": {
@@ -4794,6 +5099,20 @@
           "acuity": "precise",
           "acuityReference": "/rule/precise-senses-rules-2406",
           "details": "60 feet"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "arcana": 12,
+          "stealth": 9
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "spells",
+          "value": 5
         }
       ]
     },
@@ -4974,7 +5293,15 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 11,
+          "stealth": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5138,7 +5465,15 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 13,
+          "athletics": 12,
+          "stealth": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5378,6 +5713,16 @@
             "reference": "/trait/poison"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 17,
+          "diplomacy": 13,
+          "intimidation": 15,
+          "medicine": 14,
+          "survival": 14
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -5554,7 +5899,15 @@
         {
           "name": "whisker sense 60 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 14,
+          "stealth": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5733,6 +6086,12 @@
             "name": "Electricity"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 25
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -5879,7 +6238,15 @@
           "name": "Low-Light Vision",
           "reference": "/action/low-light-vision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 15,
+          "intimidation": 13,
+          "survival": 15
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6055,6 +6422,14 @@
             "name": "Electricity"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 6,
+          "athletics": 6,
+          "stealth": 6
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -6221,7 +6596,16 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "athletics": 16,
+          "intimidation": 14,
+          "stealth": 16
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6448,6 +6832,14 @@
             "reference": "/trait/mental"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 16,
+          "stealth": 15,
+          "survival": 18
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -6613,7 +7005,16 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "athletics": 10,
+          "deception": 13,
+          "thievery": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6855,7 +7256,23 @@
             "name": "Precision"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "athletics": 12,
+          "intimidation": 11,
+          "stealth": 19,
+          "survival": 17
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "all-damage",
+          "value": "7 (except Force, Ghost Touch, [Spirit](/trait/spirit), [Vitality](/trait/vitality); double vs. Non Magical)"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7041,7 +7458,14 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 17,
+          "survival": 15
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7218,7 +7642,15 @@
           "acuityReference": "/rule/precise-senses-rules-2406",
           "details": "60 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 10,
+          "intimidation": 12,
+          "survival": 10
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7418,6 +7850,14 @@
             "reference": "/trait/sonic"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 35,
+          "deception": 36,
+          "performance": 35
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -7600,7 +8040,21 @@
             "name": "Visual"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 13,
+          "stealth": 12
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "sonic",
+          "value": 5
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -7871,7 +8325,21 @@
             "reference": "/condition/unconscious-player-core"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 26,
+          "intimidation": 20,
+          "stealth": 23
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "all-damage",
+          "value": "10 (except Force, Ghost Touch, [Vitality](/trait/vitality); double vs. Non Magical)"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8067,6 +8535,12 @@
             "name": "Petrified"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 25
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -8259,7 +8733,15 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 33,
+          "stealth": 27,
+          "survival": 29
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8416,7 +8898,13 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 8
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8635,7 +9123,15 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 9,
+          "stealth": 10,
+          "survival": 8
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8880,7 +9376,22 @@
             "reference": "/trait/poison"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 24,
+          "athletics": 27,
+          "stealth": 24,
+          "survival": 25
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "acid",
+          "value": 15
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9107,6 +9618,30 @@
           "acuityReference": "/rule/precise-senses-rules-2406",
           "details": "120 feet"
         }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 30,
+          "deception": 27,
+          "survival": 25
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "cold",
+          "value": 10
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "poison",
+          "value": 15
+        },
+        {
+          "type": "sonic",
+          "value": 15
+        }
       ]
     },
     "attributes": {
@@ -9256,7 +9791,15 @@
           "name": "Low-Light Vision",
           "reference": "/action/low-light-vision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 12,
+          "stealth": 12,
+          "thievery": 14
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9413,7 +9956,16 @@
           "name": "Darkvision",
           "reference": "/action/darkvision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 8,
+          "stealth": 8,
+          "survival": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9595,7 +10147,35 @@
             "name": "Precision"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 21,
+          "athletics": 21,
+          "stealth": 23
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "piercing",
+          "value": 7
+        },
+        {
+          "type": "slashing",
+          "value": 7
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 14
+        },
+        {
+          "type": "poison",
+          "value": 14
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9802,7 +10382,21 @@
             "name": "Visual"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 19,
+          "athletics": 20,
+          "survival": 17
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "sonic",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -9959,6 +10553,26 @@
         {
           "name": "Low-Light Vision",
           "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 12,
+          "stealth": 13
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "fire",
+          "value": 4
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "poison",
+          "value": 8
         }
       ]
     },
@@ -10132,7 +10746,15 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "60 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 20,
+          "stealth": 18,
+          "survival": 18
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10289,7 +10911,15 @@
           "name": "Low-Light Vision",
           "reference": "/action/low-light-vision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 7,
+          "athletics": 4,
+          "stealth": 9
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10470,7 +11100,35 @@
             "name": "Swarm Mind"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 9,
+          "athletics": 6,
+          "stealth": 11
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 3
+        },
+        {
+          "type": "splash-damage",
+          "value": 3
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 3
+        },
+        {
+          "type": "slashing",
+          "value": 3
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10639,6 +11297,13 @@
             "name": "Petrified"
           }
         ]
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "stealth": 11
+        },
+        "loreSkills": []
       }
     },
     "attributes": {
@@ -10804,7 +11469,15 @@
         {
           "name": "Cud"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 8,
+          "athletics": 8,
+          "survival": 6
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10961,6 +11634,19 @@
         {
           "name": "Low-Light Vision",
           "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "stealth": 10
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "electricity",
+          "value": 8
         }
       ]
     },
@@ -11226,7 +11912,22 @@
             "name": "Precision"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 25,
+          "athletics": 25,
+          "stealth": 33,
+          "survival": 28
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "all-damage",
+          "value": "14 (except Force, Ghost Touch, [Spirit](/trait/spirit), [Vitality](/trait/vitality); double vs. Non Magical)"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11363,7 +12064,14 @@
           "name": "Low-Light Vision",
           "reference": "/action/low-light-vision-monster-core"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 10,
+          "athletics": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11570,7 +12278,15 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "40 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 11,
+          "athletics": 12,
+          "survival": 13
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11720,7 +12436,20 @@
             "name": "Swarm Mind"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 19,
+          "survival": 21
+        },
+        "loreSkills": []
+      },
+      "resistanceEntries": [
+        {
+          "type": "all-damage",
+          "value": "5 (except Area Damage)"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11874,7 +12603,14 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 20,
+          "survival": 17
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12100,7 +12836,27 @@
             "reference": "/trait/fire"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 30,
+          "athletics": 35,
+          "intimidation": 30
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "holy",
+          "value": 15
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "physical",
+          "value": "15 (except Silver)"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12278,7 +13034,13 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 34
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12436,7 +13198,17 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "30 feet"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 6,
+          "athletics": 5,
+          "deception": 8,
+          "stealth": 8,
+          "survival": 7
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12634,7 +13406,21 @@
             "reference": "/trait/mental"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 23,
+          "deception": 21,
+          "survival": 22
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "cold-iron",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12817,7 +13603,37 @@
             "name": "Swarm Mind"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 16
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "area-damage",
+          "value": 5
+        },
+        {
+          "type": "splash-damage",
+          "value": 5
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 5
+        },
+        {
+          "type": "piercing",
+          "value": 10
+        },
+        {
+          "type": "slashing",
+          "value": 10
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -13063,7 +13879,16 @@
           "spellDC": 24,
           "spellAttack": 16
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 15,
+          "arcana": 14,
+          "performance": 16,
+          "stealth": 12
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13326,7 +14151,36 @@
             "reference": "/trait/fire"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "athletics": 42,
+          "intimidation": 37,
+          "stealth": 37
+        },
+        "loreSkills": [
+          {
+            "name": "Subterranean Lore",
+            "value": 35
+          }
+        ]
+      },
+      "weaknessEntries": [
+        {
+          "type": "cold",
+          "value": 20
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "physical",
+          "value": "10 (except [Adamantine](/item/adamantine-weapon-gm-core))"
+        },
+        {
+          "type": "sonic",
+          "value": 20
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -13647,7 +14501,21 @@
           "acuityReference": "/rule/imprecise-senses-rules-2407",
           "details": "1 mile"
         }
-      ]
+      ],
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 40,
+          "deception": 44,
+          "diplomacy": 40,
+          "intimidation": 42,
+          "nature": 36,
+          "society": 39,
+          "stealth": 42,
+          "survival": 36,
+          "thievery": 40
+        },
+        "loreSkills": []
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13897,7 +14765,34 @@
             "name": "Precision"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 37,
+          "athletics": 40,
+          "intimidation": 36,
+          "nature": 39,
+          "stealth": 42,
+          "survival": 42
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "electricity",
+          "value": 15
+        }
+      ],
+      "resistanceEntries": [
+        {
+          "type": "bludgeoning",
+          "value": 20
+        },
+        {
+          "type": "cold",
+          "value": 20
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -14189,7 +15084,36 @@
             "name": "Electricity"
           }
         ]
-      }
+      },
+      "skillsEditor": {
+        "skills": {
+          "acrobatics": 42,
+          "diplomacy": 34,
+          "medicine": 38,
+          "nature": 40,
+          "survival": 38
+        },
+        "loreSkills": [
+          {
+            "name": "Bird Lore",
+            "value": 38
+          },
+          {
+            "name": "Mountain Lore",
+            "value": 38
+          }
+        ]
+      },
+      "resistanceEntries": [
+        {
+          "type": "fire",
+          "value": 15
+        },
+        {
+          "type": "cold",
+          "value": 15
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -14430,6 +15354,19 @@
         {
           "name": "Scale Mail",
           "reference": "/item/scale-mail-player-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 9,
+          "intimidation": 8
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "silver",
+          "value": 5
         }
       ]
     },
@@ -14673,6 +15610,20 @@
         {
           "name": "Studded Leather Armor",
           "reference": "/item/studded-leather-armor-player-core"
+        }
+      ],
+      "skillsEditor": {
+        "skills": {
+          "athletics": 12,
+          "stealth": 9,
+          "survival": 8
+        },
+        "loreSkills": []
+      },
+      "weaknessEntries": [
+        {
+          "type": "silver",
+          "value": 5
         }
       ]
     },

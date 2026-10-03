@@ -1,0 +1,27 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Creature.RecallKnowledgeDC",
+          "type": "number",
+          "attribute": "dc"
+        }
+      ]
+    },
+    {
+      "title": "Creature.RecallKnowledgeEntries",
+      "type": "list",
+      "attribute": "entries",
+      "custom": {
+        "itemTitle": "{{subject|map: 'Trait'}}",
+        "itemDetail": "{% for skill in skills %}{{skill|map: 'Skill'}}{% if not forloop.last %}, {% endif %}{% endfor %}"
+      },
+      "form": {
+        "title": "Creature.RecallKnowledge",
+        "partial": "recall-knowledge-entry"
+      }
+    }
+  ]
+}

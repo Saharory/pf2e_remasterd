@@ -16,9 +16,11 @@ from creature_metadata import CREATURE_IDENTIFICATION_SKILLS
 from creature_senses import SENSE_ROUTES, link_shared_senses
 from creature_editor_data import (
     parse_item_entries,
+    parse_defense_entries,
     parse_reference_entry,
     parse_sense_entries,
     render_item_entries,
+    render_defense_entries,
     render_reference_entry,
     render_sense_entries,
 )
@@ -136,6 +138,26 @@ def main() -> int:
             ritual_editor_count += 1
             if data.get("ritualcasting") != [rituals]:
                 raise SystemExit(f"creature ritual editor is out of sync: {creature['slug']}")
+        skills = data.get("skills")
+        lore_skills = data.get("loreSkills")
+        if isinstance(skills, dict) or isinstance(lore_skills, list):
+            expected_skills_editor = {
+                "skills": skills if isinstance(skills, dict) else {},
+                "loreSkills": lore_skills if isinstance(lore_skills, list) else [],
+            }
+            if data.get("skillsEditor") != expected_skills_editor:
+                raise SystemExit(f"creature Skills editor is out of sync: {creature['slug']}")
+        for source, target in (
+            ("weaknesses", "weaknessEntries"),
+            ("resistances", "resistanceEntries"),
+        ):
+            defenses = data.get(source)
+            if isinstance(defenses, dict) and defenses:
+                expected_defenses = parse_defense_entries(defenses)
+                if data.get(target) != expected_defenses:
+                    raise SystemExit(f"creature defense editor is out of sync: {creature['slug']}: {source}")
+                if render_defense_entries(expected_defenses) != defenses:
+                    raise SystemExit(f"creature defense editor changes data: {creature['slug']}: {source}")
         for entries in creature.get("data", {}).get("abilities", {}).values():
             for ability in entries or []:
                 ability_count += 1
@@ -603,8 +625,7 @@ def main() -> int:
     if not {
         "data.hardness",
         "data.languagesDetails",
-        "data.loreSkills",
-        "data.recallKnowledge.entries",
+        "data.saves.details",
     }.issubset(creature_fields):
         raise SystemExit("creature editor does not expose restored metadata")
     top_level_fields = {
@@ -631,14 +652,14 @@ def main() -> int:
     item_section = editor_fields["data.itemEntries"]
     if item_section.get("attributeType") != "Item":
         raise SystemExit("creature item editor does not use the searchable Item picker")
-    skill_section = next(
-        field
-        for section in creature_form.get("sections", [])
-        for field in section.get("fields", [])
-        if field.get("attribute") == "data.skills"
-    )
-    if skill_section.get("attributeType") != "CreatureSkill":
-        raise SystemExit("creature Skills editor still exposes generic Lore")
+    recall_section = editor_fields.get("data.recallKnowledge", {})
+    if recall_section.get("type") != "form" or recall_section.get("form", {}).get("partial") != "recall-knowledge":
+        raise SystemExit("Recall Knowledge does not bind its complete nested object")
+    skills_section = editor_fields.get("data.skillsEditor", {})
+    if skills_section.get("type") != "form" or skills_section.get("form", {}).get("partial") != "creature-skills":
+        raise SystemExit("named Lore is not integrated into the Skills editor")
+    if "data.loreSkills" in editor_fields or "data.skills" in editor_fields:
+        raise SystemExit("creature editor still exposes legacy separate skill menus")
     immunity_section = next(
         field
         for section in creature_form.get("sections", [])
@@ -663,14 +684,52 @@ def main() -> int:
     }:
         raise SystemExit("special-sense editor does not expose references and custom text")
     item_form = form("partials/creature-item.json")
-    if field_attributes(item_form) != {"name", "quantity", "details", "reference"}:
-        raise SystemExit("creature item editor does not expose quantity and reference")
+    if field_attributes(item_form) != {"name", "quantity", "reference"}:
+        raise SystemExit("creature item editor must expose only name, quantity, and reference")
     immunity_form = form("partials/immunity.json")
-    if field_attributes(immunity_form) != {"name", "details", "reference", "customText"}:
-        raise SystemExit("immunity editor does not expose references and custom text")
+    if field_attributes(immunity_form) != {"name", "reference", "customText"}:
+        raise SystemExit("immunity editor must omit the unnecessary Details field")
+    skills_form = form("partials/creature-skills.json")
+    skills_fields = {
+        str(section.get("attribute")): section
+        for section in skills_form.get("sections", [])
+        if section.get("attribute")
+    }
+    if (
+        skills_fields.get("skills", {}).get("attributeType") != "CreatureSkill"
+        or skills_fields.get("loreSkills", {}).get("form", {}).get("partial") != "lore-skill"
+    ):
+        raise SystemExit("Skills editor does not include named Lore")
+    recall_editor = form("partials/recall-knowledge.json")
+    recall_editor_fields = {
+        str(section.get("attribute")): section
+        for section in recall_editor.get("sections", [])
+        if section.get("attribute")
+    }
+    if recall_editor_fields.get("entries", {}).get("form", {}).get("partial") != "recall-knowledge-entry":
+        raise SystemExit("Recall Knowledge editor does not list knowledge-skill pairs")
+    defense_form = form("partials/defense-entry.json")
+    if field_attributes(defense_form) != {"type", "value"}:
+        raise SystemExit("weakness and resistance entries must use Type and Value")
+    for attribute in ("data.weaknessEntries", "data.resistanceEntries"):
+        field = editor_fields.get(attribute, {})
+        if field.get("type") != "list" or field.get("form", {}).get("partial") != "defense-entry":
+            raise SystemExit(f"creature editor lacks a typed defense list: {attribute}")
+    save_details = editor_fields.get("data.saves.details", {})
+    if save_details.get("title") != "Creature.SpecialSaveModifiers":
+        raise SystemExit("saving throw details are not labeled Special Save Modifiers")
     recall_form = form("partials/recall-knowledge-entry.json")
     if field_attributes(recall_form) != {"subject", "skills"}:
         raise SystemExit("Recall Knowledge editor does not expose subject-skill pairs")
+    migration = (REPO / "migrations" / "1.7.3.js").read_text(encoding="utf-8")
+    for field in (
+        "recall.entries",
+        "data.skillsEditor",
+        "data.weaknessEntries",
+        "data.resistanceEntries",
+    ):
+        if field not in migration:
+            raise SystemExit(f"existing creatures are not migrated for editor field: {field}")
     if "data.hardness" not in secondary_view:
         raise SystemExit("creature view does not render Hardness")
 

@@ -44,21 +44,13 @@
       "type": "group",
       "fields": [
         {
-          "title": "Creature.RecallKnowledgeDC",
-          "type": "number",
-          "attribute": "data.recallKnowledge.dc"
-        },
-        {
           "title": "Creature.RecallKnowledge",
-          "type": "list",
-          "attribute": "data.recallKnowledge.entries",
-          "custom": {
-            "itemTitle": "{{subject|map: 'Trait'}}",
-            "itemDetail": "{% for skill in skills %}{{skill|map: 'Skill'}}{% if not forloop.last %}, {% endif %}{% endfor %}"
-          },
+          "type": "form",
+          "attribute": "data.recallKnowledge",
+          "text": "{% if data.recallKnowledge.dc %}DC {{data.recallKnowledge.dc}}{% endif %}{% if data.recallKnowledge.entries %} • {% for entry in data.recallKnowledge.entries %}{{entry.subject|map: 'Trait'}} ({% for skill in entry.skills %}{{skill|map: 'Skill'}}{% if not forloop.last %}, {% endif %}{% endfor %}){% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}",
           "form": {
             "title": "Creature.RecallKnowledge",
-            "partial": "recall-knowledge-entry"
+            "partial": "recall-knowledge"
           }
         },
         {
@@ -94,28 +86,13 @@
     },
     {
       "title": "Creature.Skills",
-      "type": "group",
-      "fields": [
-        {
-          "title": "Creature.Skills",
-          "type": "attributes",
-          "attribute": "data.skills",
-          "attributeType": "CreatureSkill"
-        },
-        {
-          "title": "Skill.Lore",
-          "type": "list",
-          "attribute": "data.loreSkills",
-          "custom": {
-            "itemTitle": "{{name}}",
-            "itemDetail": "{{value|signed}}"
-          },
-          "form": {
-            "title": "Skill.Lore",
-            "partial": "lore-skill"
-          }
-        },
-      ]
+      "type": "form",
+      "attribute": "data.skillsEditor",
+      "text": "{% if data.skillsEditor.skills %}{% for key, value in data.skillsEditor.skills %}{{key|map: 'Skill'}} {{value|signed}}{% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}{% if data.skillsEditor.loreSkills %}{% if data.skillsEditor.skills %}, {% endif %}{% for lore in data.skillsEditor.loreSkills %}{{lore.name}} {{lore.value|signed}}{% if not forloop.last %}, {% endif %}{% endfor %}{% endif %}",
+      "form": {
+        "title": "Creature.Skills",
+        "partial": "creature-skills"
+      }
     },
     {
       "type": "group",
@@ -222,7 +199,8 @@
           "attribute": "data.saves.will"
         },
         {
-          "placeholder": "Common.Details",
+          "title": "Creature.SpecialSaveModifiers",
+          "placeholder": "Creature.SpecialSaveModifiers",
           "attribute": "data.saves.details"
         },
       ]
@@ -262,15 +240,29 @@
         },
         {
           "title": "Creature.Weaknesses",
-          "type": "attributes",
-          "attribute": "data.weaknesses",
-          "attributeType": "Damage"
+          "type": "list",
+          "attribute": "data.weaknessEntries",
+          "custom": {
+            "itemTitle": "{{type|map: 'Damage'}}",
+            "itemDetail": "{{value}}"
+          },
+          "form": {
+            "title": "Creature.Weakness",
+            "partial": "defense-entry"
+          }
         },
         {
           "title": "Creature.Resistances",
-          "type": "attributes",
-          "attribute": "data.resistances",
-          "attributeType": "Damage"
+          "type": "list",
+          "attribute": "data.resistanceEntries",
+          "custom": {
+            "itemTitle": "{{type|map: 'Damage'}}",
+            "itemDetail": "{{value}}"
+          },
+          "form": {
+            "title": "Creature.Resistance",
+            "partial": "defense-entry"
+          }
         },
       ]
     },
