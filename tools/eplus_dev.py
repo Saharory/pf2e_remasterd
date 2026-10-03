@@ -28,7 +28,7 @@ DEFAULT_TARGET = (
     / "Library/Containers/sk.qbit.tracker/Data/Documents/systems/pf2e-remaster"
 )
 SYSTEM_ID = "pf2e-remaster"
-SEMVER = re.compile(r"^\d+\.\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$")
+PROJECT_VERSION = re.compile(r"^\d+\.\d+(?:[-+][0-9A-Za-z.-]+)?$")
 SYSTEM_FILES = {
     "system.json",
     "manifest.json",
@@ -222,8 +222,11 @@ def validate_project() -> dict[str, Any]:
             errors.append("manifest.json: type must be system")
         if system.get("version") != manifest.get("version"):
             errors.append("system.json and manifest.json versions differ")
-        if not SEMVER.match(str(system.get("version") or "")):
-            errors.append("system.json: version is not semantic versioning")
+        if not PROJECT_VERSION.match(str(system.get("version") or "")):
+            errors.append(
+                "system.json: version must use project numeric versioning "
+                "(for example 0.9 or 0.901)"
+            )
         if not str(system.get("package") or "").endswith("/manifest.json"):
             errors.append("system.json: package must point at the latest manifest")
         if not str(manifest.get("download") or "").endswith("/pf2e-remaster.system"):
