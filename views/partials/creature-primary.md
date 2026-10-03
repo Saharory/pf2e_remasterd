@@ -1,5 +1,5 @@
 {% if data.perception %}
-**{{'Creature.Perception'|l}}** [{{data.perception|signed}}](roll "{{'Creature.Perception'|l}}"){% if data.senses %}; {{data.senses}}{% endif %}
+**{{'Creature.Perception'|l}}** [{{data.perception|signed}}](roll "{{'Creature.Perception'|l}}"){% if data.senseEntries %}; {% for sense in data.senseEntries %}{% if sense.customText %}{{sense.customText}}{% else %}{% if sense.reference %}[{{sense.name}}]({{sense.reference}}){% else %}{{sense.name}}{% endif %}{% if sense.acuity %} ({% if sense.acuityReference %}[{{sense.acuity}}]({{sense.acuityReference}}){% else %}{{sense.acuity}}{% endif %}){% endif %}{% if sense.details %} {{sense.details}}{% endif %}{% endif %}{% if not forloop.last %}, {% endif %}{% endfor %}{% else %}{% if data.senses %}; {{data.senses}}{% endif %}{% endif %}
 {% endif %}
 
 {% if data.recallKnowledge.dc %}
@@ -16,8 +16,11 @@
 
 **{{'Attribute.STR'|l|capitalize}}** [{{data.attributes.str|default: 0|signed}}](roll "{{'strength'|map: 'Attribute'}}") **{{'Attribute.DEX'|l|capitalize}}** [{{data.attributes.dex|default: 0|signed}}](roll "{{'dexterity'|map: 'Attribute'}}") **{{'Attribute.CON'|l|capitalize}}** [{{data.attributes.con|default: 0|signed}}](roll "{{'constitution'|map: 'Attribute'}}") **{{'Attribute.INT'|l|capitalize}}** [{{data.attributes.int|default: 0|signed}}](roll "{{'intelligence'|map: 'Attribute'}}") **{{'Attribute.WIS'|l|capitalize}}** [{{data.attributes.wis|default: 0|signed}}](roll "{{'wisdom'|map: 'Attribute'}}") **{{'Attribute.CHA'|l|capitalize}}** [{{data.attributes.cha|default: 0|signed}}](roll "{{'charisma'|map: 'Attribute'}}")
 
-{% if data.items %}
+{% if data.itemEntries %}
+**{{'Creature.Items'|l}}** {% for item in data.itemEntries %}{% if item.reference %}[{{item.name}}]({{item.reference}}){% else %}{{item.name}}{% endif %}{% if item.quantity %} ({{item.quantity}}){% endif %}{% if item.details %} {{item.details}}{% endif %}{% if not forloop.last %}, {% endif %}{% endfor %}
+{% else %}{% if data.items %}
 **{{'Creature.Items'|l}}** {{data.items}}
+{% endif %}
 {% endif %}
 
 {% for ability in data.abilities.interaction %}

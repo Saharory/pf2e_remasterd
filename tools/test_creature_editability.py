@@ -14,6 +14,14 @@ from build_creature_metadata import PUBLISHED_OVERRIDES
 from creature_ability_glossary import GLOSSARY, GLOSSARY_ROUTES
 from creature_metadata import CREATURE_IDENTIFICATION_SKILLS
 from creature_senses import SENSE_ROUTES, link_shared_senses
+from creature_editor_data import (
+    parse_item_entries,
+    parse_reference_entry,
+    parse_sense_entries,
+    render_item_entries,
+    render_reference_entry,
+    render_sense_entries,
+)
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -88,8 +96,12 @@ def main() -> int:
     ability_count = 0
     shared_reference_count = 0
     sense_reference_count = 0
+    item_editor_count = 0
+    immunity_editor_count = 0
+    ritual_editor_count = 0
     for creature in creatures:
-        senses = str(creature.get("data", {}).get("senses") or "")
+        data = creature.get("data", {})
+        senses = str(data.get("senses") or "")
         if re.search(r"(?:^|;\s*)(?:Recall Knowledge|Languages)\b", senses, re.I):
             raise SystemExit(f"creature metadata remains embedded in senses: {creature['slug']}")
         if link_shared_senses(senses) != senses:
@@ -97,6 +109,33 @@ def main() -> int:
         sense_reference_count += sum(
             int(route in senses) for _, route in SENSE_ROUTES
         )
+        if senses:
+            expected_senses = parse_sense_entries(senses)
+            if data.get("senseEntries") != expected_senses:
+                raise SystemExit(f"creature sense editor is out of sync: {creature['slug']}")
+            if render_sense_entries(expected_senses) != senses:
+                raise SystemExit(f"creature sense editor changes rendered text: {creature['slug']}")
+        items = str(data.get("items") or "")
+        if items:
+            item_editor_count += 1
+            expected_items = parse_item_entries(items)
+            if data.get("itemEntries") != expected_items:
+                raise SystemExit(f"creature item editor is out of sync: {creature['slug']}")
+            if render_item_entries(expected_items) != items:
+                raise SystemExit(f"creature item editor changes rendered text: {creature['slug']}")
+        immunities = data.get("immunities") or []
+        if immunities:
+            immunity_editor_count += 1
+            expected_immunities = [parse_reference_entry(str(value)) for value in immunities]
+            if data.get("immunityEditor", {}).get("entries") != expected_immunities:
+                raise SystemExit(f"creature immunity editor is out of sync: {creature['slug']}")
+            if [render_reference_entry(entry) for entry in expected_immunities] != immunities:
+                raise SystemExit(f"creature immunity editor changes rendered text: {creature['slug']}")
+        rituals = data.get("rituals")
+        if isinstance(rituals, dict) and any(rituals.values()):
+            ritual_editor_count += 1
+            if data.get("ritualcasting") != [rituals]:
+                raise SystemExit(f"creature ritual editor is out of sync: {creature['slug']}")
         for entries in creature.get("data", {}).get("abilities", {}).values():
             for ability in entries or []:
                 ability_count += 1
@@ -452,7 +491,7 @@ def main() -> int:
             raise SystemExit(f"shared monster ability link is missing: {route}")
 
     ability_form = form("partials/ability.json")
-    if field_attributes(ability_form) != {"name", "actions", "traits", "text", "reference"}:
+    if field_attributes(ability_form) != {"name", "actions", "traits", "text", "effect", "reference"}:
         raise SystemExit("ability form does not expose every rendered ability field")
 
     ability_view = (REPO / "views/partials/ability.md").read_text(encoding="utf-8")
@@ -460,6 +499,8 @@ def main() -> int:
     creature_view = (REPO / "views/partials/creature-primary.md").read_text(encoding="utf-8")
     if "ability.reference" not in ability_view:
         raise SystemExit("shared creature ability names are not linked")
+    if "ability.effect" not in ability_view:
+        raise SystemExit("creature abilities do not render the optional Effect field")
     if (
         "/trait/{{trait}}" not in ability_view
         or (
@@ -566,6 +607,67 @@ def main() -> int:
         "data.recallKnowledge.entries",
     }.issubset(creature_fields):
         raise SystemExit("creature editor does not expose restored metadata")
+    top_level_fields = {
+        str(section.get("attribute")): section
+        for section in creature_form.get("sections", [])
+        if section.get("attribute")
+    }
+    nested_fields = {
+        str(field.get("attribute")): field
+        for section in creature_form.get("sections", [])
+        for field in section.get("fields", [])
+        if field.get("attribute")
+    }
+    editor_fields = {**nested_fields, **top_level_fields}
+    required_structured_lists = {
+        "data.senseEntries": "sense",
+        "data.itemEntries": "creature-item",
+        "data.ritualcasting": "rituals",
+    }
+    for attribute, partial in required_structured_lists.items():
+        section = editor_fields.get(attribute, {})
+        if section.get("type") != "list" or section.get("form", {}).get("partial") != partial:
+            raise SystemExit(f"creature editor lacks its structured list: {attribute}")
+    item_section = editor_fields["data.itemEntries"]
+    if item_section.get("attributeType") != "Item":
+        raise SystemExit("creature item editor does not use the searchable Item picker")
+    skill_section = next(
+        field
+        for section in creature_form.get("sections", [])
+        for field in section.get("fields", [])
+        if field.get("attribute") == "data.skills"
+    )
+    if skill_section.get("attributeType") != "CreatureSkill":
+        raise SystemExit("creature Skills editor still exposes generic Lore")
+    immunity_section = next(
+        field
+        for section in creature_form.get("sections", [])
+        for field in section.get("fields", [])
+        if field.get("attribute") == "data.immunityEditor"
+    )
+    if (
+        immunity_section.get("type") != "form"
+        or immunity_section.get("form", {}).get("partial") != "immunities"
+        or "Common.None" not in immunity_section.get("text", "")
+    ):
+        raise SystemExit("empty immunities do not use a clear None editor state")
+    type_definitions = json5.loads(
+        (REPO / "types.json").read_text(encoding="utf-8"),
+        allow_duplicate_keys=False,
+    )
+    if "lore" in type_definitions.get("CreatureSkill", {}):
+        raise SystemExit("named Lore still appears in the generic creature skill picker")
+    sense_form = form("partials/sense.json")
+    if field_attributes(sense_form) != {
+        "name", "reference", "acuity", "acuityReference", "details", "customText"
+    }:
+        raise SystemExit("special-sense editor does not expose references and custom text")
+    item_form = form("partials/creature-item.json")
+    if field_attributes(item_form) != {"name", "quantity", "details", "reference"}:
+        raise SystemExit("creature item editor does not expose quantity and reference")
+    immunity_form = form("partials/immunity.json")
+    if field_attributes(immunity_form) != {"name", "details", "reference", "customText"}:
+        raise SystemExit("immunity editor does not expose references and custom text")
     recall_form = form("partials/recall-knowledge-entry.json")
     if field_attributes(recall_form) != {"subject", "skills"}:
         raise SystemExit("Recall Knowledge editor does not expose subject-skill pairs")
@@ -608,7 +710,9 @@ def main() -> int:
     print(
         f"Validated {ability_count} editable creature abilities, "
         f"{shared_reference_count} shared-rule links, {len(GLOSSARY)} shared rules, "
-        f"{sense_reference_count} linked senses, and spell/ritual editor previews"
+        f"{sense_reference_count} linked senses, {item_editor_count} item editors, "
+        f"{immunity_editor_count} immunity editors, {ritual_editor_count} ritual editors, "
+        "and spell/ritual editor previews"
     )
     return 0
 

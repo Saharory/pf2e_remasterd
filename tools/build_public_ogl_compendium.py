@@ -29,6 +29,7 @@ from build_public_orc_compendium import (
 from build_reference_tables import build_tables
 from creature_ability_glossary import configure_creature_abilities
 from creature_senses import configure_creature_senses
+from creature_editor_data import configure_creature_editor_data
 from creature_spellcasting import configure_creature_spellcasting
 from creature_metadata import configure_creature_metadata
 from spell_area_templates import configure_spell_area_template
@@ -92,6 +93,7 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         configure_creature_abilities(result)
         configure_creature_senses(result)
         configure_creature_spellcasting(result)
+        configure_creature_editor_data(result)
     dedupe_entity_links(result)
     return result
 

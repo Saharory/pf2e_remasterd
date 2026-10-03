@@ -204,7 +204,43 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "skeleton crew"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -350,6 +386,12 @@
         {
           "label": "beast",
           "slug": "beast"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -543,7 +585,83 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "nonlethal"
+          },
+          {
+            "name": "Nonlethal Attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -827,7 +945,45 @@
           }
         ],
         "dc": 30
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "low-light vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "truesight"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "water"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "1st",
+              "rituals": [
+                {
+                  "name": "Demonic Pact",
+                  "rank": 1,
+                  "reference": "/ritual/demonic-pact-monster-core"
+                }
+              ]
+            }
+          ],
+          "dc": 30
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1008,7 +1164,43 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "precision"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1191,6 +1383,15 @@
           "label": "beast",
           "slug": "beast"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "inksight"
+        }
       ]
     },
     "attributes": {
@@ -1372,7 +1573,40 @@
           "label": "undead",
           "slug": "undead"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1792,7 +2026,24 @@
           ],
           "spellDC": 28
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2116,7 +2367,45 @@
           }
         ],
         "dc": 36
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "see the unseen"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "emotion"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Occult Rituals",
+          "ritualGroups": [
+            {
+              "label": "8th",
+              "rituals": [
+                {
+                  "name": "Control Weather",
+                  "rank": 8,
+                  "reference": "/ritual/control-weather-player-core",
+                  "details": "doesn’t require a secondary caster"
+                }
+              ]
+            }
+          ],
+          "dc": 36
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2278,6 +2567,18 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "low-light vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "magic sense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
         }
       ]
     },

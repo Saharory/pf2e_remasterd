@@ -248,7 +248,42 @@
           "slug": "mythic"
         }
       ],
-      "languagesDetails": "(can't speak any language)"
+      "languagesDetails": "(can't speak any language)",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "stormsight"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "Electricity"
+          },
+          {
+            "name": "Fear Effects"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -570,7 +605,25 @@
           "spellDC": 31,
           "spellAttack": 0
         }
-      ]
+      ],
+      "itemEntries": [
+        {
+          "name": "Wandering Pipe",
+          "reference": "/item/wandering-pipe-war-of-immortals"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -777,7 +830,13 @@
           "slug": "mythic"
         }
       ],
-      "languagesDetails": "(Can't Speak)"
+      "languagesDetails": "(Can't Speak)",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -964,6 +1023,19 @@
         {
           "label": "mythic",
           "slug": "mythic"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
         }
       ]
     },
@@ -1370,7 +1442,53 @@
           "spellDC": 36,
           "spellAttack": 26
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Staff of Fire (Greater)",
+          "reference": "/item/staff-of-fire-greater-gm-core"
+        },
+        {
+          "name": "Invisibility Potion",
+          "reference": "/item/invisibility-potion-gm-core"
+        },
+        {
+          "name": "Scroll of Teleport (Rank 6)"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1557,6 +1675,27 @@
         {
           "label": "humanoid",
           "slug": "humanoid"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Javelin",
+          "reference": "/item/javelin-player-core",
+          "quantity": 6
+        },
+        {
+          "name": "Gut-Ripper",
+          "reference": "/item/gut-ripper-war-of-immortals"
+        },
+        {
+          "name": "Breastplate",
+          "reference": "/item/breastplate-player-core"
         }
       ]
     },
@@ -1876,7 +2015,71 @@
           "spellDC": 46,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Clumsy"
+          },
+          {
+            "name": "Cold"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "Enfeebled"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Persistent Damage"
+          },
+          {
+            "name": "Petrified"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Polymorph"
+          },
+          {
+            "name": "Prone",
+            "reference": "/condition/prone-player-core"
+          },
+          {
+            "name": "Slowed"
+          },
+          {
+            "name": "Stunned"
+          },
+          {
+            "name": "Stupefied"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2092,7 +2295,13 @@
           "slug": "mythic"
         }
       ],
-      "languagesDetails": "truespeech"
+      "languagesDetails": "truespeech",
+      "itemEntries": [
+        {
+          "name": "Immaculate Instrument",
+          "reference": "/item/immaculate-instrument-war-of-immortals"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2362,7 +2571,42 @@
           "label": "mythic",
           "slug": "mythic"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Truesight",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Acid"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2718,7 +2962,44 @@
             ]
           }
         ]
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "many eyes in many places"
+        },
+        {
+          "name": "truesight"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "1st",
+              "rituals": [
+                {
+                  "name": "Demonic Pact",
+                  "rank": 1,
+                  "reference": "/ritual/demonic-pact-monster-core"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3125,7 +3406,39 @@
           "spellDC": 36,
           "spellAttack": 28
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Greater Darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        },
+        {
+          "name": "all-around vision",
+          "reference": "/action/all-around-vision-monster-core"
+        },
+        {
+          "name": "greater web sense"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,

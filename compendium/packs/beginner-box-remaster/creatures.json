@@ -120,7 +120,28 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -273,6 +294,22 @@
         {
           "label": "humanoid",
           "slug": "humanoid"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Dagger",
+          "reference": "/item/dagger-player-core"
+        },
+        {
+          "name": "Mace",
+          "reference": "/item/mace-player-core"
         }
       ]
     },
@@ -459,6 +496,23 @@
           "spellDC": 19,
           "spellAttack": 11
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Shortsword",
+          "reference": "/item/shortsword-player-core",
+          "quantity": 2
+        },
+        {
+          "name": "Leather Armor",
+          "reference": "/item/leather-armor-player-core"
+        }
       ]
     },
     "attributes": {
@@ -621,6 +675,18 @@
           "label": "humanoid",
           "slug": "humanoid"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Dagger",
+          "reference": "/item/dagger-player-core"
+        }
       ]
     },
     "attributes": {
@@ -760,7 +826,35 @@
           "label": "fire",
           "slug": "fire"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -955,6 +1049,24 @@
           ],
           "spellDC": 20,
           "spellAttack": 12
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Staff",
+          "reference": "/item/staff-player-core"
+        },
+        {
+          "name": "Eggshell Necklace"
+        },
+        {
+          "name": "Iron Key"
         }
       ]
     },
@@ -1151,6 +1263,18 @@
           "spellDC": 18,
           "spellAttack": 8
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Staff",
+          "reference": "/item/staff-player-core"
+        }
       ]
     },
     "attributes": {
@@ -1345,6 +1469,18 @@
           ],
           "spellDC": 18,
           "spellAttack": 8
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Staff",
+          "reference": "/item/staff-player-core"
         }
       ]
     },
@@ -1541,6 +1677,18 @@
           "spellDC": 18,
           "spellAttack": 8
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Staff",
+          "reference": "/item/staff-player-core"
+        }
       ]
     },
     "attributes": {
@@ -1735,6 +1883,18 @@
           ],
           "spellDC": 18,
           "spellAttack": 8
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Staff",
+          "reference": "/item/staff-player-core"
         }
       ]
     },
@@ -1931,6 +2091,18 @@
           "spellDC": 18,
           "spellAttack": 8
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Staff",
+          "reference": "/item/staff-player-core"
+        }
       ]
     },
     "attributes": {
@@ -2076,6 +2248,26 @@
         {
           "label": "kobold",
           "slug": "kobold"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Crossbow",
+          "reference": "/item/crossbow-player-core"
+        },
+        {
+          "name": "Shortsword",
+          "reference": "/item/shortsword-player-core"
+        },
+        {
+          "name": "Leather Armor",
+          "reference": "/item/leather-armor-player-core"
         }
       ]
     },
@@ -2226,6 +2418,30 @@
           "label": "kobold",
           "slug": "kobold"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Shortsword",
+          "reference": "/item/shortsword-player-core"
+        },
+        {
+          "name": "Spear",
+          "reference": "/item/spear-player-core",
+          "quantity": 3
+        },
+        {
+          "name": "Leather Armor",
+          "reference": "/item/leather-armor-player-core"
+        },
+        {
+          "name": "Spike Trap"
+        }
       ]
     },
     "attributes": {
@@ -2364,6 +2580,22 @@
         {
           "label": "kobold",
           "slug": "kobold"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Spear",
+          "reference": "/item/spear-player-core"
+        },
+        {
+          "name": "Leather Armor",
+          "reference": "/item/leather-armor-player-core"
         }
       ]
     },
@@ -2519,6 +2751,25 @@
           "label": "gremlin",
           "slug": "gremlin"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "(-2 to hear things)"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Shortbow",
+          "reference": "/item/shortbow-player-core"
+        },
+        {
+          "name": "Shortsword",
+          "reference": "/item/shortsword-player-core"
+        }
       ]
     },
     "attributes": {
@@ -2668,6 +2919,12 @@
           "label": "aquatic",
           "slug": "aquatic"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -2800,7 +3057,33 @@
           "label": "ooze",
           "slug": "ooze"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Motion Sense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Acid"
+          },
+          {
+            "name": "Critical Hits"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2964,7 +3247,46 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Greataxe",
+          "reference": "/item/greataxe-player-core"
+        },
+        {
+          "name": "Half Plate",
+          "reference": "/item/half-plate-player-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "Void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3106,7 +3428,31 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "crystal sense 60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3243,6 +3589,12 @@
           "label": "animal",
           "slug": "animal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -3373,7 +3725,28 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,

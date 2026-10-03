@@ -244,7 +244,28 @@
           "spellDC": 36,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -419,6 +440,15 @@
           "label": "animal",
           "slug": "animal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "40 feet"
+        }
       ]
     },
     "attributes": {
@@ -575,6 +605,24 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "potionsight",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Healing Potion (Moderate)",
+          "reference": "/item/healing-potion-moderate-gm-core"
         }
       ]
     },
@@ -759,6 +807,19 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
         }
       ]
     },
@@ -1024,6 +1085,19 @@
           "spellDC": 40,
           "spellAttack": 35
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
       ]
     },
     "attributes": {
@@ -1244,6 +1318,19 @@
           "spellDC": 33,
           "spellAttack": 0
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "40 feet"
+        }
       ]
     },
     "attributes": {
@@ -1394,6 +1481,19 @@
         {
           "label": "dinosaur",
           "slug": "dinosaur"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -1606,6 +1706,15 @@
           "label": "water",
           "slug": "water"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "stormsight"
+        }
       ]
     },
     "attributes": {
@@ -1750,6 +1859,12 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -1917,7 +2032,21 @@
           "label": "animal",
           "slug": "animal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2101,7 +2230,31 @@
           "slug": "beast"
         }
       ],
-      "languagesDetails": "(can't speak any language)"
+      "languagesDetails": "(can't speak any language)",
+      "senseEntries": [
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "Wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2282,7 +2435,28 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2458,7 +2632,28 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        },
+        {
+          "name": "sensitive echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Visual"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2594,7 +2789,49 @@
           "label": "swarm",
           "slug": "swarm"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        },
+        {
+          "name": "Wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "15 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Grabbed",
+            "reference": "/condition/grabbed-player-core"
+          },
+          {
+            "name": "Precision"
+          },
+          {
+            "name": "Prone",
+            "reference": "/condition/prone-player-core"
+          },
+          {
+            "name": "Restrained",
+            "reference": "/condition/restrained-player-core"
+          },
+          {
+            "name": "Swarm Mind"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2736,6 +2973,12 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -2914,6 +3157,19 @@
           "label": "ethereal",
           "slug": "ethereal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
       ]
     },
     "attributes": {
@@ -3075,7 +3331,30 @@
           "label": "animal",
           "slug": "animal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "greater electrolocation 20 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Electricity"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3217,6 +3496,26 @@
         {
           "label": "aquatic",
           "slug": "aquatic"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        },
+        {
+          "name": "Wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "30 feet"
         }
       ]
     },
@@ -3375,6 +3674,15 @@
           "label": "animal",
           "slug": "animal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
       ]
     },
     "attributes": {
@@ -3527,6 +3835,21 @@
           "label": "aquatic",
           "slug": "aquatic"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "100 feet"
+        },
+        {
+          "customText": "blood [scent](/action/scent-monster-core)"
+        },
+        {
+          "name": "electrolocation 20 feet"
+        }
       ]
     },
     "attributes": {
@@ -3668,6 +3991,19 @@
         {
           "label": "beast",
           "slug": "beast"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -3812,6 +4148,22 @@
           "label": "animal",
           "slug": "animal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "20 feet"
+        },
+        {
+          "name": "whisker sense 30 feet"
+        }
       ]
     },
     "attributes": {
@@ -3949,6 +4301,19 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -4097,6 +4462,18 @@
         {
           "label": "aquatic",
           "slug": "aquatic"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "100 feet"
+        },
+        {
+          "customText": "blood [scent](/action/scent-monster-core)"
         }
       ]
     },
@@ -4259,6 +4636,14 @@
           "label": "animal",
           "slug": "animal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "arcanosense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        }
       ]
     },
     "attributes": {
@@ -4401,6 +4786,14 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "arcanosense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
         }
       ]
     },
@@ -4561,6 +4954,26 @@
           "label": "animal",
           "slug": "animal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
       ]
     },
     "attributes": {
@@ -4715,6 +5128,15 @@
         {
           "label": "beast",
           "slug": "beast"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -4935,7 +5357,28 @@
           "spellDC": 25,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5094,6 +5537,22 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "40 feet"
+        },
+        {
+          "name": "whisker sense 60 feet"
         }
       ]
     },
@@ -5258,7 +5717,23 @@
           "label": "animal",
           "slug": "animal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "greater electrolocation 20 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Electricity"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5397,6 +5872,12 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -5558,7 +6039,23 @@
           "label": "animal",
           "slug": "animal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "greater electrolocation 20 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Electricity"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5710,6 +6207,19 @@
         {
           "label": "dinosaur",
           "slug": "dinosaur"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -5914,7 +6424,31 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "100 feet"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6066,6 +6600,18 @@
         {
           "label": "beast",
           "slug": "beast"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "goldsense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
         }
       ]
     },
@@ -6277,7 +6823,39 @@
           "spellDC": 22,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Precision"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6450,6 +7028,19 @@
           "label": "ethereal",
           "slug": "ethereal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
       ]
     },
     "attributes": {
@@ -6614,6 +7205,18 @@
         {
           "label": "beast",
           "slug": "beast"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "orescent",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
         }
       ]
     },
@@ -6795,7 +7398,27 @@
           "slug": "beast"
         }
       ],
-      "languagesDetails": "all (see uncanny mimicry)"
+      "languagesDetails": "all (see uncanny mimicry)",
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Auditory"
+          },
+          {
+            "name": "Sonic",
+            "reference": "/trait/sonic"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6956,7 +7579,28 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "90 feet"
+        },
+        {
+          "name": "sensitive echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "90 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Visual"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7183,7 +7827,51 @@
           "spellDC": 27,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "90 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7366,7 +8054,20 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Petrified"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7549,6 +8250,15 @@
           "label": "beast",
           "slug": "beast"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
       ]
     },
     "attributes": {
@@ -7692,6 +8402,19 @@
         {
           "label": "dinosaur",
           "slug": "dinosaur"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -7899,7 +8622,20 @@
           "slug": "ethereal"
         }
       ],
-      "languagesDetails": "can't speak any language"
+      "languagesDetails": "can't speak any language",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8111,7 +8847,40 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Iron Crown"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8330,6 +9099,14 @@
           "label": "beast",
           "slug": "beast"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Motion Sense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        }
       ]
     },
     "attributes": {
@@ -8472,6 +9249,12 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -8624,7 +9407,13 @@
           "slug": "beast"
         }
       ],
-      "languagesDetails": "(can't speak any languages), empathic communication"
+      "languagesDetails": "(can't speak any languages), empathic communication",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -8793,7 +9582,20 @@
           "label": "animal",
           "slug": "animal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Precision"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8979,7 +9781,28 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        },
+        {
+          "name": "sensitive echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Visual"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9130,6 +9953,12 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -9294,6 +10123,15 @@
           "label": "beast",
           "slug": "beast"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
       ]
     },
     "attributes": {
@@ -9444,6 +10282,12 @@
         {
           "label": "aquatic",
           "slug": "aquatic"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -9598,7 +10442,35 @@
           "label": "swarm",
           "slug": "swarm"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Grabbed",
+            "reference": "/condition/grabbed-player-core"
+          },
+          {
+            "name": "Precision"
+          },
+          {
+            "name": "Prone",
+            "reference": "/condition/prone-player-core"
+          },
+          {
+            "name": "Restrained",
+            "reference": "/condition/restrained-player-core"
+          },
+          {
+            "name": "Swarm Mind"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9752,7 +10624,22 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Petrified"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9906,6 +10793,17 @@
           "label": "animal",
           "slug": "animal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "all-around vision",
+          "reference": "/action/all-around-vision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Cud"
+        }
       ]
     },
     "attributes": {
@@ -10057,6 +10955,12 @@
         {
           "label": "electricity",
           "slug": "electricity"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -10290,7 +11194,39 @@
           "spellDC": 31,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "100 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Precision"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10420,6 +11356,12 @@
         {
           "label": "aquatic",
           "slug": "aquatic"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -10608,6 +11550,26 @@
           "label": "animal",
           "slug": "animal"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "40 feet"
+        }
       ]
     },
     "attributes": {
@@ -10739,7 +11701,26 @@
           "label": "animal",
           "slug": "animal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Precision"
+          },
+          {
+            "name": "Swarm Mind"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10879,6 +11860,19 @@
         {
           "label": "dinosaur",
           "slug": "dinosaur"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -11085,7 +12079,28 @@
           "slug": "unholy"
         }
       ],
-      "languagesDetails": "(can't speak any language)"
+      "languagesDetails": "(can't speak any language)",
+      "senseEntries": [
+        {
+          "name": "Greater Darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11250,6 +12265,19 @@
           "label": "dinosaur",
           "slug": "dinosaur"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
       ]
     },
     "attributes": {
@@ -11394,6 +12422,19 @@
         {
           "label": "dinosaur",
           "slug": "dinosaur"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -11576,7 +12617,24 @@
           "label": "fey",
           "slug": "fey"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11728,7 +12786,38 @@
           "label": "swarm",
           "slug": "swarm"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Grabbed",
+            "reference": "/condition/grabbed-player-core"
+          },
+          {
+            "name": "Precision"
+          },
+          {
+            "name": "Prone",
+            "reference": "/condition/prone-player-core"
+          },
+          {
+            "name": "Restrained",
+            "reference": "/condition/restrained-player-core"
+          },
+          {
+            "name": "Swarm Mind"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12216,7 +13305,28 @@
           "name": "Subterranean Lore",
           "value": 35
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12524,6 +13634,19 @@
           "spellDC": 45,
           "spellAttack": 41
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Greater Darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "1 mile"
+        }
       ]
     },
     "attributes": {
@@ -12740,7 +13863,41 @@
           "slug": "water"
         }
       ],
-      "languagesDetails": "voices of nature"
+      "languagesDetails": "voices of nature",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "200 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Controlled"
+          },
+          {
+            "name": "Emotion"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Precision"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13009,7 +14166,30 @@
           "spellDC": 45,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "stormsight"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Electricity"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13223,7 +14403,35 @@
           "slug": "werecreature"
         }
       ],
-      "languagesDetails": "deer empathy"
+      "languagesDetails": "deer empathy",
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Greataxe",
+          "reference": "/item/greataxe-player-core"
+        },
+        {
+          "name": "Hatchet",
+          "reference": "/item/hatchet-player-core",
+          "quantity": 2
+        },
+        {
+          "name": "Scale Mail",
+          "reference": "/item/scale-mail-player-core"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -13444,7 +14652,29 @@
           "slug": "werecreature"
         }
       ],
-      "languagesDetails": "shark empathy"
+      "languagesDetails": "shark empathy",
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "100 feet"
+        },
+        {
+          "customText": "blood [scent](/action/scent-monster-core)"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Trident",
+          "reference": "/item/trident-player-core"
+        },
+        {
+          "name": "Studded Leather Armor",
+          "reference": "/item/studded-leather-armor-player-core"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,

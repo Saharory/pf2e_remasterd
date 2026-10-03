@@ -130,7 +130,80 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "nonlethal attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -292,7 +365,80 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "nonlethal attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -461,7 +607,80 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "nonlethal attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -617,6 +836,25 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "bloodsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        },
+        {
+          "name": "low-light vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "30 feet"
         }
       ]
     },
@@ -835,6 +1073,19 @@
           ],
           "spellDC": 32
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
       ]
     },
     "attributes": {
@@ -1013,6 +1264,19 @@
           "label": "fire",
           "slug": "fire"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
       ]
     },
     "attributes": {
@@ -1179,6 +1443,12 @@
           "label": "beast",
           "slug": "beast"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -1332,6 +1602,12 @@
           "label": "beast",
           "slug": "beast"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -1479,6 +1755,12 @@
         {
           "label": "animal",
           "slug": "animal"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "low-light vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -1641,7 +1923,80 @@
           "label": "construct",
           "slug": "construct"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "nonlethal attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "Spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1860,7 +2215,25 @@
           ],
           "spellDC": 34
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2087,7 +2460,32 @@
           ],
           "spellDC": 25
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2257,7 +2655,86 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "critical hits"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "Drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "Fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "Healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Nonlethal Attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "precision"
+          },
+          {
+            "name": "Sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2409,6 +2886,12 @@
         {
           "label": "beast",
           "slug": "beast"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -2630,7 +3113,30 @@
           ],
           "spellDC": 34
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2851,6 +3357,20 @@
           ],
           "spellDC": 32
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "light blindness"
+        },
+        {
+          "name": "wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "details": "60 feet"
+        }
       ]
     },
     "attributes": {
@@ -3065,6 +3585,12 @@
           ],
           "spellDC": 26
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -3259,7 +3785,20 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3407,7 +3946,35 @@
           "label": "swarm",
           "slug": "swarm"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "low-light vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Grabbed",
+            "reference": "/condition/grabbed-player-core"
+          },
+          {
+            "name": "precision"
+          },
+          {
+            "name": "Prone",
+            "reference": "/condition/prone-player-core"
+          },
+          {
+            "name": "Restrained",
+            "reference": "/condition/restrained-player-core"
+          },
+          {
+            "name": "swarm mind"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3822,6 +4389,18 @@
           ],
           "spellDC": 26
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "goldsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        }
       ]
     },
     "attributes": {
@@ -4060,7 +4639,40 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "precision"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4255,7 +4867,87 @@
           "label": "construct",
           "slug": "construct"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "100 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "nonlethal attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "Spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4461,7 +5153,32 @@
           "label": "beast",
           "slug": "beast"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4634,6 +5351,14 @@
         {
           "label": "celestial",
           "slug": "celestial"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "goldsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
         }
       ]
     },

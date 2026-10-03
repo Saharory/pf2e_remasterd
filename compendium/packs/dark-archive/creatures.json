@@ -189,7 +189,24 @@
           "spellDC": 33,
           "spellAttack": 25
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Controlled"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -629,6 +646,18 @@
           "spellDC": 26,
           "spellAttack": 18
         }
+      ],
+      "itemEntries": [
+        {
+          "name": "Dagger",
+          "reference": "/item/dagger-player-core"
+        },
+        {
+          "name": "Ceremonial Robes"
+        },
+        {
+          "name": "Crystal Flower Crown"
+        }
       ]
     },
     "attributes": {
@@ -787,7 +816,43 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Precision"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -889,7 +954,14 @@
       },
       "languagesText": "",
       "recallKnowledgeText": "DC 22",
-      "traitLinks": []
+      "traitLinks": [],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Object Immunities"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1231,7 +1303,20 @@
           "slug": "plant"
         }
       ],
-      "languagesDetails": "[Telepathy](/action/telepathy-monster-core) 1 mile (other moonflowers only)"
+      "languagesDetails": "[Telepathy](/action/telepathy-monster-core) 1 mile (other moonflowers only)",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Electricity"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,

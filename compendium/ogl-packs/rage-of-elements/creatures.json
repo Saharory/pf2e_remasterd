@@ -141,7 +141,32 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -473,7 +498,62 @@
             ]
           }
         ]
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Electricity"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "8th",
+              "rituals": [
+                {
+                  "name": "Control Weather",
+                  "rank": 8,
+                  "reference": "/ritual/control-weather-player-core"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "rituals": [
+                {
+                  "name": "Sky Signs",
+                  "rank": 6,
+                  "reference": "/ritual/sky-signs-rage-of-elements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -690,6 +770,26 @@
           ],
           "spellDC": 17,
           "spellAttack": 9
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Shortbow",
+          "reference": "/item/shortbow-player-core"
+        },
+        {
+          "name": "Sickle",
+          "reference": "/item/sickle-player-core"
+        },
+        {
+          "name": "Glowing Lantern Fruit",
+          "reference": "/item/glowing-lantern-fruit-rage-of-elements"
         }
       ]
     },
@@ -919,6 +1019,15 @@
           ],
           "spellDC": 29,
           "spellAttack": 0
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "magnetic vision"
         }
       ]
     },
@@ -1273,7 +1382,62 @@
             ]
           }
         ]
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Electricity"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "8th",
+              "rituals": [
+                {
+                  "name": "Control Weather",
+                  "rank": 8,
+                  "reference": "/ritual/control-weather-player-core"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "rituals": [
+                {
+                  "name": "Sky Signs",
+                  "rank": 6,
+                  "reference": "/ritual/sky-signs-rage-of-elements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1440,7 +1604,39 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1608,7 +1804,32 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1797,7 +2018,39 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "steam vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2151,7 +2404,62 @@
             ]
           }
         ]
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Electricity"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "8th",
+              "rituals": [
+                {
+                  "name": "Control Weather",
+                  "rank": 8,
+                  "reference": "/ritual/control-weather-player-core"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "rituals": [
+                {
+                  "name": "Sky Signs",
+                  "rank": 6,
+                  "reference": "/ritual/sky-signs-rage-of-elements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -2336,7 +2644,94 @@
           "label": "mindless",
           "slug": "mindless"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Falchion",
+          "reference": "/item/falchion-player-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "Drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "Fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Nonlethal Attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "Spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "Vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "Void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2519,7 +2914,36 @@
           "name": "Cooking Lore",
           "value": 24
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2723,7 +3147,32 @@
           "name": "Plane of Metal Lore",
           "value": 30
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2894,7 +3343,26 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3063,7 +3531,32 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3231,7 +3724,35 @@
           "label": "incorporeal",
           "slug": "incorporeal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Electricity"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Precision"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3424,7 +3945,39 @@
           "spellDC": 29,
           "spellAttack": 21
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3622,7 +4175,39 @@
           "spellDC": 17,
           "spellAttack": 9
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3782,7 +4367,35 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Electricity"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3931,7 +4544,32 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4139,7 +4777,39 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4317,7 +4987,26 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4670,7 +5359,62 @@
             ]
           }
         ]
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Electricity"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "8th",
+              "rituals": [
+                {
+                  "name": "Control Weather",
+                  "rank": 8,
+                  "reference": "/ritual/control-weather-player-core"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "rituals": [
+                {
+                  "name": "Sky Signs",
+                  "rank": 6,
+                  "reference": "/ritual/sky-signs-rage-of-elements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -5039,6 +5783,30 @@
           "spellDC": 34,
           "spellAttack": 26
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "detect magic"
+        },
+        {
+          "name": "(+25 to Sense Motive)"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "+2 Striking Jambiya"
+        }
       ]
     },
     "attributes": {
@@ -5184,7 +5952,32 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5447,6 +6240,12 @@
           "spellDC": 18,
           "spellAttack": 10
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -5590,7 +6389,39 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5760,6 +6591,12 @@
         {
           "label": "wood",
           "slug": "wood"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -6062,7 +6899,31 @@
           "spellDC": 35,
           "spellAttack": 27
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Scimitar",
+          "reference": "/item/scimitar-player-core"
+        },
+        {
+          "name": "Breastplate",
+          "reference": "/item/breastplate-player-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6379,6 +7240,17 @@
           ],
           "spellDC": 30,
           "spellAttack": 22
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "+1 Striking Jambiya"
         }
       ]
     },
@@ -6710,7 +7582,45 @@
           "spellDC": 32,
           "spellAttack": 24
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Falchion",
+          "reference": "/item/falchion-player-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7075,6 +7985,22 @@
           "spellDC": 28,
           "spellAttack": 20
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Scimitar",
+          "reference": "/item/scimitar-player-core"
+        },
+        {
+          "name": "Composite Longbow",
+          "reference": "/item/composite-longbow-player-core"
+        }
       ]
     },
     "attributes": {
@@ -7222,7 +8148,32 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7492,6 +8443,18 @@
           ],
           "spellDC": 22,
           "spellAttack": 14
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Staff",
+          "reference": "/item/staff-player-core"
         }
       ]
     },
@@ -7812,6 +8775,18 @@
           "spellDC": 30,
           "spellAttack": 22
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Spear",
+          "reference": "/item/spear-player-core"
+        }
       ]
     },
     "attributes": {
@@ -7983,7 +8958,36 @@
           "label": "fire",
           "slug": "fire"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8209,7 +9213,87 @@
           "spellDC": 34,
           "spellAttack": 26
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "Drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "Fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "Healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Nonlethal Attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "Spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "Vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "Void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8378,7 +9462,35 @@
           "slug": "wood"
         }
       ],
-      "languagesDetails": "understands but can't speak"
+      "languagesDetails": "understands but can't speak",
+      "senseEntries": [
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8551,7 +9663,32 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8732,7 +9869,36 @@
           "label": "fire",
           "slug": "fire"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8898,6 +10064,12 @@
         {
           "name": "Gardening Lore",
           "value": 11
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -9078,7 +10250,32 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9250,7 +10447,39 @@
           "name": "Plane of Metal Lore",
           "value": 8
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Shuriken",
+          "reference": "/item/shuriken-player-core",
+          "quantity": 5
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9414,7 +10643,32 @@
           "spellDC": 17,
           "spellAttack": 9
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9587,7 +10841,38 @@
           "name": "Plane of Metal Lore",
           "value": 4
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "rust vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Electricity"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9757,7 +11042,26 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9947,7 +11251,26 @@
           "name": "Plane of Fire Lore",
           "value": 10
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Gatecrasher Armor"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10146,7 +11469,35 @@
           "name": "Plane of Fire Lore",
           "value": 11
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Warhammer",
+          "reference": "/item/warhammer-player-core"
+        },
+        {
+          "name": "Dueling Pistol",
+          "reference": "/item/dueling-pistol-guns-and-gears-remastered"
+        },
+        {
+          "name": "Breastplate",
+          "reference": "/item/breastplate-player-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10324,6 +11675,38 @@
         {
           "name": "Talisman Lore",
           "value": 13
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Spear",
+          "reference": "/item/spear-player-core",
+          "quantity": 3
+        },
+        {
+          "name": "Mesmerizing Opal",
+          "reference": "/item/mesmerizing-opal-gm-core"
+        },
+        {
+          "name": "Potency Crystal",
+          "reference": "/item/potency-crystal-gm-core"
+        },
+        {
+          "name": "Shark Tooth Charm",
+          "reference": "/item/shark-tooth-charm-gm-core"
         }
       ]
     },
@@ -10518,7 +11901,50 @@
           "label": "swarm",
           "slug": "swarm"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Grabbed",
+            "reference": "/condition/grabbed-player-core"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Precision"
+          },
+          {
+            "name": "Prone",
+            "reference": "/condition/prone-player-core"
+          },
+          {
+            "name": "Restrained",
+            "reference": "/condition/restrained-player-core"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "Swarm Mind"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10704,6 +12130,18 @@
           "name": "Nightwood Lore",
           "value": 15
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Club",
+          "reference": "/item/club-player-core"
+        }
       ]
     },
     "attributes": {
@@ -10867,7 +12305,26 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11036,6 +12493,15 @@
         {
           "label": "water",
           "slug": "water"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
         }
       ]
     },
@@ -11233,6 +12699,22 @@
           "label": "water",
           "slug": "water"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        },
+        {
+          "customText": "metal [scent](/action/scent-monster-core) 30 feet"
+        }
       ]
     },
     "attributes": {
@@ -11410,7 +12892,35 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "rust vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11589,7 +13099,26 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11767,7 +13296,15 @@
           "slug": "troop"
         }
       ],
-      "languagesDetails": "[Telepathy](/action/telepathy-monster-core) 30 feet"
+      "languagesDetails": "[Telepathy](/action/telepathy-monster-core) 30 feet",
+      "senseEntries": [
+        {
+          "name": "metalsense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11967,7 +13504,32 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12139,7 +13701,26 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12306,7 +13887,41 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "customText": "magic [scent](/action/scent-monster-core)"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Critical Hits"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Precision"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12476,7 +14091,36 @@
           "slug": "fire"
         }
       ],
-      "languagesDetails": "can't speak any language"
+      "languagesDetails": "can't speak any language",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12650,7 +14294,35 @@
           "name": "Plane of Metal Lore",
           "value": 11
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "rust vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12839,7 +14511,32 @@
           "name": "Warfare Lore",
           "value": 22
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13009,7 +14706,32 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13226,7 +14948,26 @@
           "slug": "wood"
         }
       ],
-      "languagesDetails": "can't speak any language"
+      "languagesDetails": "can't speak any language",
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13428,7 +15169,39 @@
           "name": "Sun Lore",
           "value": 18
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13606,7 +15379,39 @@
           "name": "Warfare Lore",
           "value": 18
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13784,7 +15589,39 @@
           "name": "Warfare Lore",
           "value": 18
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13963,6 +15800,37 @@
           ],
           "spellDC": 14,
           "spellAttack": 6
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Light Hammer",
+          "reference": "/item/light-hammer-player-core",
+          "quantity": 3
+        },
+        {
+          "name": "Leather Armor",
+          "reference": "/item/leather-armor-player-core"
+        },
+        {
+          "name": "Artisan's Tools"
+        },
+        {
+          "name": "Formula Book (Blank)",
+          "reference": "/item/formula-book-blank-player-core"
+        },
+        {
+          "name": "Blast Boots (Lesser)",
+          "reference": "/item/blast-boots-lesser-guns-and-gears-remastered"
+        },
+        {
+          "name": "Explosive Mine (Lesser)",
+          "reference": "/item/explosive-mine-lesser-guns-and-gears-remastered",
+          "quantity": 3
+        },
+        {
+          "name": "Ablative Armor Plating (Lesser)",
+          "reference": "/item/ablative-armor-plating-lesser-guns-and-gears-remastered"
         }
       ]
     },
@@ -14175,6 +16043,12 @@
           ],
           "spellDC": 25,
           "spellAttack": 17
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "all-around vision",
+          "reference": "/action/all-around-vision-monster-core"
         }
       ]
     },
@@ -14392,7 +16266,41 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Blinded"
+          },
+          {
+            "name": "Dazzled"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -14927,7 +16835,42 @@
           "spellDC": 50,
           "spellAttack": 42
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Radiation"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15240,7 +17183,42 @@
           "spellDC": 34,
           "spellAttack": 26
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Radiation"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15404,7 +17382,26 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15566,7 +17563,32 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15732,7 +17754,24 @@
           "label": "elemental",
           "slug": "elemental"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "all-around vision",
+          "reference": "/action/all-around-vision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Cold"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15907,7 +17946,26 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -16109,7 +18167,32 @@
           "spellDC": 15,
           "spellAttack": 7
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -16283,7 +18366,32 @@
           "name": "Plane of Wood Lore",
           "value": 4
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -16636,7 +18744,62 @@
             ]
           }
         ]
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Electricity"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "8th",
+              "rituals": [
+                {
+                  "name": "Control Weather",
+                  "rank": 8,
+                  "reference": "/ritual/control-weather-player-core"
+                }
+              ]
+            },
+            {
+              "label": "6th",
+              "rituals": [
+                {
+                  "name": "Sky Signs",
+                  "rank": 6,
+                  "reference": "/ritual/sky-signs-rage-of-elements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -16917,6 +19080,18 @@
           ],
           "spellDC": 26,
           "spellAttack": 18
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Spiked Chain",
+          "reference": "/item/spiked-chain-player-core"
         }
       ]
     },
@@ -17225,6 +19400,18 @@
           ],
           "spellDC": 32,
           "spellAttack": 24
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Spiked Chain",
+          "reference": "/item/spiked-chain-player-core"
         }
       ]
     },

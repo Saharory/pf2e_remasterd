@@ -130,6 +130,12 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "low-light vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -322,7 +328,20 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -479,7 +498,14 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1186,6 +1212,12 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "low-light vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -1339,6 +1371,12 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -1495,7 +1533,25 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "mental",
+            "reference": "/trait/mental"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1680,6 +1736,11 @@
             }
           ],
           "spellDC": 26
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "detect magic (divine magic only)"
         }
       ]
     },
@@ -1904,6 +1965,15 @@
             }
           ],
           "spellDC": 35
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "painsight"
         }
       ]
     },

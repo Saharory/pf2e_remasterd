@@ -68,7 +68,16 @@
         },
         {
           "title": "Creature.SpecialSenses",
-          "attribute": "data.senses"
+          "type": "list",
+          "attribute": "data.senseEntries",
+          "custom": {
+            "itemTitle": "{% if customText %}{{customText}}{% else %}{{name}}{% endif %}",
+            "itemDetail": "{% if acuity %}{{acuity|map: 'SenseAcuity'}}{% endif %}{% if details %} • {{details}}{% endif %}"
+          },
+          "form": {
+            "title": "Creature.SpecialSense",
+            "partial": "sense"
+          }
         },
         {
           "title": "Creature.Languages",
@@ -77,7 +86,8 @@
           "attributeType": "Language"
         },
         {
-          "placeholder": "Common.Details",
+          "title": "Creature.LanguageNotes",
+          "placeholder": "Creature.LanguageNotes",
           "attribute": "data.languagesDetails"
         },
       ]
@@ -90,7 +100,7 @@
           "title": "Creature.Skills",
           "type": "attributes",
           "attribute": "data.skills",
-          "attributeType": "Skill"
+          "attributeType": "CreatureSkill"
         },
         {
           "title": "Skill.Lore",
@@ -156,14 +166,17 @@
     },
     {
       "title": "Creature.Items",
-      "type": "group",
-      "fields": [
-        {
-          "placeholder": "Creature.Items",
-          "type": "textArea",
-          "attribute": "data.items"
-        }
-      ]
+      "type": "list",
+      "attribute": "data.itemEntries",
+      "attributeType": "Item",
+      "custom": {
+        "itemTitle": "{{name}}",
+        "itemDetail": "{% if quantity %}×{{quantity}}{% endif %}{% if details %} • {{details}}{% endif %}"
+      },
+      "form": {
+        "title": "Creature.Item",
+        "partial": "creature-item"
+      }
     },
     {
       "title": "Creature.InteractionAbilities",
@@ -239,8 +252,13 @@
       "fields": [
         {
           "title": "Creature.Immunities",
-          "type": "list",
-          "attribute": "data.immunities",
+          "type": "form",
+          "attribute": "data.immunityEditor",
+          "text": "{% if data.immunityEditor.entries %}{% for immunity in data.immunityEditor.entries %}{% if immunity.customText %}{{immunity.customText}}{% else %}{{immunity.name}}{% endif %}{% if not forloop.last %}, {% endif %}{% endfor %}{% else %}{{'Common.None'|l}}{% endif %}",
+          "form": {
+            "title": "Creature.Immunities",
+            "partial": "immunities"
+          }
         },
         {
           "title": "Creature.Weaknesses",
@@ -304,18 +322,16 @@
     },
     {
       "title": "Creature.Rituals",
-      "type": "group",
-      "fields": [
-        {
-          "title": "Creature.Rituals",
-          "type": "form",
-          "attribute": "data.rituals",
-          "text": "{{data.rituals.type}}",
-          "form": {
-            "partial": "rituals"
-          }
-        }
-      ]
+      "type": "list",
+      "attribute": "data.ritualcasting",
+      "custom": {
+        "itemTitle": "{{type}}",
+        "itemDetail": "{% if dc %}DC {{dc}} • {% endif %}{% for group in ritualGroups %}{{group.label}}{% if not forloop.last %}, {% endif %}{% endfor %}"
+      },
+      "form": {
+        "title": "Creature.Rituals",
+        "partial": "rituals"
+      }
     },
     {
       "title": "Creature.OffensiveOrProactiveAbilities",

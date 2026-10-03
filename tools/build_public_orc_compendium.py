@@ -27,6 +27,7 @@ from creature_spellcasting import configure_creature_spellcasting
 from creature_metadata import configure_creature_metadata
 from creature_ability_glossary import configure_creature_abilities
 from creature_senses import configure_creature_senses
+from creature_editor_data import configure_creature_editor_data
 from spell_area_templates import configure_spell_area_template
 from skill_references import skill_reference_records
 
@@ -736,6 +737,7 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         configure_creature_abilities(result)
         configure_creature_senses(result)
         configure_creature_spellcasting(result)
+        configure_creature_editor_data(result)
 
     # Hazard and vehicle ability text is an in-play reference. Every explicit
     # condition or rule reference should stay clickable, including repeated

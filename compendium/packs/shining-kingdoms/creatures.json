@@ -153,7 +153,40 @@
           "name": "Mercantile Lore",
           "value": 12
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -337,7 +370,14 @@
           "spellDC": 17,
           "spellAttack": 0
         }
-      ]
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Cold"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -622,7 +662,32 @@
           "spellDC": 26,
           "spellAttack": 18
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Thoughtsense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Gavel"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -867,7 +932,25 @@
           "label": "plant",
           "slug": "plant"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "blindsight",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "100 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Blinded"
+          },
+          {
+            "name": "Visual"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1196,7 +1279,86 @@
           "spellDC": 27,
           "spellAttack": 19
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "wealthsense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "Drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "Fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "Healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Nonlethal Attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "Spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "Vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "Void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1355,6 +1517,23 @@
         {
           "label": "beast",
           "slug": "beast"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
         }
       ]
     },
@@ -1596,7 +1775,30 @@
           "spellDC": 24,
           "spellAttack": 16
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "itemEntries": [
+        {
+          "name": "Shortbow",
+          "reference": "/item/shortbow-player-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Blinded"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1743,7 +1945,13 @@
       "languagesText": "Common, Necril",
       "recallKnowledgeText": "DC 19",
       "traitLinks": [],
-      "languagesDetails": "can't speak any language"
+      "languagesDetails": "can't speak any language",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -1917,7 +2125,40 @@
           "slug": "undead"
         }
       ],
-      "languagesDetails": "can't speak any language"
+      "languagesDetails": "can't speak any language",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2149,7 +2390,25 @@
           "spellDC": 26,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2322,7 +2581,51 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,

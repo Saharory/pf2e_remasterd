@@ -248,7 +248,42 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "petrified"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -476,7 +511,30 @@
           "label": "dragon",
           "slug": "dragon"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "ironsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "force"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -711,7 +769,42 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "90 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "acid"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -980,7 +1073,34 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "(24 to Sense Motive) aquatic echolocation 120 feet"
+        },
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "clumsy"
+          },
+          {
+            "name": "controlled"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1266,7 +1386,38 @@
           ],
           "spellDC": 34
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "mist vision"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1477,7 +1628,42 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fascinated"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1777,7 +1963,44 @@
           "spellDC": 34,
           "spellAttack": 26
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "whimsysense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2050,7 +2273,43 @@
           ],
           "spellDC": 33
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "sonic",
+            "reference": "/trait/sonic"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2365,7 +2624,36 @@
           ],
           "spellDC": 34
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2645,7 +2933,36 @@
           "spellDC": 33,
           "spellAttack": 23
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2908,7 +3225,28 @@
           ],
           "spellDC": 32
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3202,7 +3540,51 @@
           }
         ],
         "dc": 31
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "3rd",
+              "rituals": [
+                {
+                  "name": "Geas",
+                  "rank": 3,
+                  "reference": "/ritual/geas-player-core",
+                  "details": "willing targets only"
+                }
+              ]
+            }
+          ],
+          "dc": 31
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -3458,7 +3840,38 @@
           ],
           "spellDC": 29
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "snow vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3735,7 +4148,25 @@
           ],
           "spellDC": 33
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4045,7 +4476,51 @@
           }
         ],
         "dc": 32
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "8th",
+              "rituals": [
+                {
+                  "name": "Control Weather",
+                  "rank": 8,
+                  "reference": "/ritual/control-weather-player-core",
+                  "details": "doesn't require secondary casters"
+                }
+              ]
+            }
+          ],
+          "dc": 32
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -4335,7 +4810,38 @@
           ],
           "spellDC": 33
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "mist vision"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4636,7 +5142,35 @@
           ],
           "spellDC": 36
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "sanctified sight"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4941,7 +5475,47 @@
           ],
           "spellDC": 33
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "motionsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "dazzled"
+          },
+          {
+            "name": "deafened"
+          },
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5252,7 +5826,30 @@
           ],
           "spellDC": 36
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "customText": "(28 initiative) detect magic , [greater darkvision](/action/greater-darkvision-monster-core)"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "slowed"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5516,7 +6113,35 @@
           ],
           "spellDC": 33
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "voidsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5794,7 +6419,39 @@
           ],
           "spellDC": 30
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6087,7 +6744,38 @@
           ],
           "spellDC": 36
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "dragontongue"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "stupefied"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6344,7 +7032,37 @@
           ],
           "spellDC": 35
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "90 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "confused"
+          },
+          {
+            "name": "decapitation"
+          },
+          {
+            "name": "paralysis"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6621,7 +7339,34 @@
           ],
           "spellDC": 27
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "deafened"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6902,7 +7647,35 @@
           ],
           "spellDC": 34
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fascinated"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7140,7 +7913,30 @@
           "label": "dragon",
           "slug": "dragon"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "ironsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "force"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7382,7 +8178,42 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "acid"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7652,7 +8483,34 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "(31 to Sense Motive) aquatic echolocation 120 feet"
+        },
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "clumsy"
+          },
+          {
+            "name": "controlled"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7938,7 +8796,38 @@
           ],
           "spellDC": 41
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "mist vision"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8162,7 +9051,42 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fascinated"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8484,7 +9408,44 @@
           "spellDC": 41,
           "spellAttack": 33
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "whimsysense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8755,7 +9716,43 @@
           ],
           "spellDC": 40
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "sonic",
+            "reference": "/trait/sonic"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9085,7 +10082,36 @@
           ],
           "spellDC": 41
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9379,7 +10405,36 @@
           "spellDC": 40,
           "spellAttack": 32
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9642,7 +10697,28 @@
           ],
           "spellDC": 38
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9937,7 +11013,51 @@
           }
         ],
         "dc": 38
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "3rd",
+              "rituals": [
+                {
+                  "name": "Geas",
+                  "rank": 3,
+                  "reference": "/ritual/geas-player-core",
+                  "details": "willing targets only"
+                }
+              ]
+            }
+          ],
+          "dc": 38
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -10195,7 +11315,38 @@
           ],
           "spellDC": 36
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "snow vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10511,7 +11662,28 @@
           ],
           "spellDC": 40
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "detect magic"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -10820,7 +11992,51 @@
           }
         ],
         "dc": 38
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "8th",
+              "rituals": [
+                {
+                  "name": "Control Weather",
+                  "rank": 8,
+                  "reference": "/ritual/control-weather-player-core",
+                  "details": "doesn't require secondary casters"
+                }
+              ]
+            }
+          ],
+          "dc": 38
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -11115,7 +12331,38 @@
           ],
           "spellDC": 40
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "mist vision"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11421,7 +12668,35 @@
           ],
           "spellDC": 42
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "sanctified sight"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -11745,7 +13020,47 @@
           ],
           "spellDC": 40
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "motionsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "dazzled"
+          },
+          {
+            "name": "deafened"
+          },
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12095,7 +13410,30 @@
           ],
           "spellDC": 42
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "customText": "(36 initiative) detect magic , [greater darkvision](/action/greater-darkvision-monster-core)"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "slowed"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -12395,7 +13733,67 @@
           }
         ],
         "dc": 42
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "voidsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "enfeebled"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "2nd",
+              "rituals": [
+                {
+                  "name": "Create Undead",
+                  "rank": 2,
+                  "reference": "/ritual/create-undead-player-core",
+                  "details": "shadows only"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "rituals": [
+                {
+                  "name": "Shadow Double",
+                  "rank": 4,
+                  "reference": "/ritual/shadow-double-player-core-2"
+                }
+              ]
+            }
+          ],
+          "dc": 42
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -12684,7 +14082,39 @@
           ],
           "spellDC": 37
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13006,7 +14436,38 @@
           ],
           "spellDC": 42
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "80 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "dragontongue"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "stupefied"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13287,7 +14748,37 @@
           ],
           "spellDC": 40
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "confused"
+          },
+          {
+            "name": "decapitation"
+          },
+          {
+            "name": "paralysis"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13573,7 +15064,34 @@
           ],
           "spellDC": 34
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "deafened"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -13871,7 +15389,35 @@
           ],
           "spellDC": 41
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fascinated"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -14118,7 +15664,30 @@
           "label": "dragon",
           "slug": "dragon"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "ironsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "force"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -14406,7 +15975,42 @@
           ],
           "spellDC": 41
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "acid"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -14685,7 +16289,34 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "(38 to Sense Motive) aquatic echolocation 120 feet"
+        },
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "clumsy"
+          },
+          {
+            "name": "controlled"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -14966,7 +16597,39 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15270,7 +16933,38 @@
           ],
           "spellDC": 45
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "mist vision"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15576,7 +17270,34 @@
           ],
           "spellDC": 42
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "customText": "(38 to Sense Motive) [darkvision](/action/darkvision-monster-core)"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "controlled"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -15801,7 +17522,35 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "dazzled"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -16026,7 +17775,42 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fascinated"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -16365,7 +18149,44 @@
           "spellDC": 45,
           "spellAttack": 37
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "whimsysense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "180 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -16640,7 +18461,41 @@
           ],
           "spellDC": 45
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "fearsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -16967,7 +18822,39 @@
           "spellDC": 46,
           "spellAttack": 38
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -17350,7 +19237,66 @@
           }
         ],
         "dc": 46
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "precision"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Divine Rituals",
+          "ritualGroups": [
+            {
+              "label": "2nd",
+              "rituals": [
+                {
+                  "name": "Create Undead",
+                  "rank": 2,
+                  "reference": "/ritual/create-undead-player-core"
+                }
+              ]
+            }
+          ],
+          "dc": 46
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -17672,7 +19618,42 @@
           "spellDC": 46,
           "spellAttack": 38
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -17969,7 +19950,43 @@
           "spellDC": 44,
           "spellAttack": 37
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "sonic",
+            "reference": "/trait/sonic"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -18319,7 +20336,40 @@
           ],
           "spellDC": 45
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -18622,7 +20672,36 @@
           "spellDC": 50,
           "spellAttack": 42
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -18931,7 +21010,36 @@
           ],
           "spellDC": 44
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -19234,7 +21342,36 @@
           "spellDC": 44,
           "spellAttack": 36
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -19558,7 +21695,38 @@
           "spellDC": 45,
           "spellAttack": 40
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "illusion sense"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fascinated"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -19831,7 +21999,28 @@
           ],
           "spellDC": 42
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -20157,7 +22346,51 @@
           }
         ],
         "dc": 42
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "3rd",
+              "rituals": [
+                {
+                  "name": "Geas",
+                  "rank": 3,
+                  "reference": "/ritual/geas-player-core",
+                  "details": "willing targets only"
+                }
+              ]
+            }
+          ],
+          "dc": 42
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -20458,7 +22691,39 @@
           ],
           "spellDC": 44
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "confused"
+          },
+          {
+            "name": "doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -20653,7 +22918,25 @@
           ],
           "spellDC": 19
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -20800,7 +23083,46 @@
           "label": "swarm",
           "slug": "swarm"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "acid"
+          },
+          {
+            "name": "grabbed",
+            "reference": "/condition/grabbed-player-core"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "precision"
+          },
+          {
+            "name": "prone",
+            "reference": "/condition/prone-player-core"
+          },
+          {
+            "name": "restrained",
+            "reference": "/condition/restrained-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "swarm mind"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -21163,7 +23485,60 @@
           }
         ],
         "dc": 45
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "immobilized"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "7th",
+              "rituals": [
+                {
+                  "name": "Gathering Call",
+                  "rank": 7,
+                  "reference": "/ritual/gathering-call-player-core-2",
+                  "details": "doesn't require secondary casters"
+                },
+                {
+                  "name": "Teleportation Circle",
+                  "rank": 7,
+                  "reference": "/ritual/teleportation-circle-player-core-2",
+                  "details": "doesn't require secondary casters"
+                }
+              ]
+            }
+          ],
+          "dc": 45
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -21448,7 +23823,40 @@
           ],
           "spellDC": 48
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "details": "150 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "status sight"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -21767,7 +24175,36 @@
           "spellDC": 46,
           "spellAttack": 38
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -22026,7 +24463,38 @@
           ],
           "spellDC": 40
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        },
+        {
+          "name": "snow vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -22267,7 +24735,41 @@
           "label": "dragon",
           "slug": "dragon"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "magic sense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "shifting runes"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -22597,7 +25099,24 @@
           ],
           "spellDC": 44
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "customText": "[darkvision](/action/darkvision-monster-core) , detect magic"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -22933,7 +25452,51 @@
           }
         ],
         "dc": 42
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "8th",
+              "rituals": [
+                {
+                  "name": "Control Weather",
+                  "rank": 8,
+                  "reference": "/ritual/control-weather-player-core",
+                  "details": "doesn't require secondary casters"
+                }
+              ]
+            }
+          ],
+          "dc": 42
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -23243,7 +25806,38 @@
           ],
           "spellDC": 44
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "mist vision"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -23579,7 +26173,54 @@
           }
         ],
         "dc": 46
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "sanctified sight"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "10th",
+              "rituals": [
+                {
+                  "name": "Wish",
+                  "rank": 10,
+                  "reference": "/ritual/wish-player-core",
+                  "details": "doesn't require secondary casters"
+                }
+              ]
+            }
+          ],
+          "dc": 46
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -23924,7 +26565,47 @@
           ],
           "spellDC": 44
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "motionsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "dazzled"
+          },
+          {
+            "name": "deafened"
+          },
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -24138,7 +26819,25 @@
           "spellDC": 20,
           "spellAttack": 12
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -24523,7 +27222,30 @@
           ],
           "spellDC": 46
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "customText": "(42 initiative) detect magic , [greater darkvision](/action/greater-darkvision-monster-core)"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "slowed"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -24832,7 +27554,67 @@
           }
         ],
         "dc": 46
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "voidsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "enfeebled"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "2nd",
+              "rituals": [
+                {
+                  "name": "Create Undead",
+                  "rank": 2,
+                  "reference": "/ritual/create-undead-player-core",
+                  "details": "shadows and greater shadows only"
+                }
+              ]
+            },
+            {
+              "label": "4th",
+              "rituals": [
+                {
+                  "name": "Shadow Double",
+                  "rank": 4,
+                  "reference": "/ritual/shadow-double-player-core-2"
+                }
+              ]
+            }
+          ],
+          "dc": 46
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -25131,7 +27913,39 @@
           ],
           "spellDC": 41
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -25474,7 +28288,38 @@
           ],
           "spellDC": 46
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "dragontongue"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "stupefied"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -25756,7 +28601,37 @@
           ],
           "spellDC": 44
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "150 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "confused"
+          },
+          {
+            "name": "decapitation"
+          },
+          {
+            "name": "paralysis"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -26050,7 +28925,34 @@
           ],
           "spellDC": 38
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "deafened"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -26428,7 +29330,34 @@
           ],
           "spellDC": 42
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "customText": "(35 to Sense Motive) [darkvision](/action/darkvision-monster-core)"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "confused"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -26735,7 +29664,35 @@
           ],
           "spellDC": 45
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fascinated"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -27089,7 +30046,66 @@
           }
         ],
         "dc": 35
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "bleed"
+          },
+          {
+            "name": "death effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "precision"
+          },
+          {
+            "name": "unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Divine Rituals",
+          "ritualGroups": [
+            {
+              "label": "2nd",
+              "rituals": [
+                {
+                  "name": "Create Undead",
+                  "rank": 2,
+                  "reference": "/ritual/create-undead-player-core"
+                }
+              ]
+            }
+          ],
+          "dc": 35
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -27314,7 +30330,30 @@
           "label": "dragon",
           "slug": "dragon"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "ironsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "force"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -27541,7 +30580,42 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "acid"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -27789,7 +30863,34 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "(18 to Sense Motive) aquatic echolocation 120 feet"
+        },
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "clumsy"
+          },
+          {
+            "name": "controlled"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -28026,7 +31127,38 @@
           ],
           "spellDC": 29
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "mist vision"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -28221,7 +31353,42 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fascinated"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -28497,7 +31664,44 @@
           "spellDC": 29,
           "spellAttack": 21
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "whimsysense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -28729,7 +31933,43 @@
           ],
           "spellDC": 28
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "sonic",
+            "reference": "/trait/sonic"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -29018,7 +32258,36 @@
           ],
           "spellDC": 29
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -29272,7 +32541,36 @@
           "spellDC": 28,
           "spellAttack": 18
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -29530,7 +32828,28 @@
           ],
           "spellDC": 26
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fear"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -29813,7 +33132,51 @@
           }
         ],
         "dc": 26
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "3rd",
+              "rituals": [
+                {
+                  "name": "Geas",
+                  "rank": 3,
+                  "reference": "/ritual/geas-player-core",
+                  "details": "willing targets only"
+                }
+              ]
+            }
+          ],
+          "dc": 26
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -30040,7 +33403,38 @@
           "label": "primal",
           "slug": "primal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "snow vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -30310,7 +33704,25 @@
           ],
           "spellDC": 28
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -30585,7 +33997,32 @@
           ],
           "spellDC": 26
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "wavesense",
+          "reference": "/action/wavesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -30855,7 +34292,38 @@
           ],
           "spellDC": 28
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "mist vision"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -31120,7 +34588,35 @@
           ],
           "spellDC": 30
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "sanctified sight"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -31400,7 +34896,47 @@
           ],
           "spellDC": 28
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "motionsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "30 feet"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "dazzled"
+          },
+          {
+            "name": "deafened"
+          },
+          {
+            "name": "electricity"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -31674,7 +35210,30 @@
           ],
           "spellDC": 30
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "customText": "(21 initiative) detect magic , [greater darkvision](/action/greater-darkvision-monster-core)"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "cold"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "slowed"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -31928,7 +35487,35 @@
           ],
           "spellDC": 27
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "greater darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        },
+        {
+          "name": "voidsense",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -32193,7 +35780,39 @@
           ],
           "spellDC": 25
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -32440,7 +36059,35 @@
           ],
           "spellDC": 30
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          },
+          {
+            "name": "stupefied"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -32662,7 +36309,37 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "confused"
+          },
+          {
+            "name": "decapitation"
+          },
+          {
+            "name": "paralysis"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -32945,7 +36622,34 @@
           ],
           "spellDC": 22
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "echolocation",
+          "acuity": "precise",
+          "acuityReference": "/rule/precise-senses-rules-2406",
+          "details": "120 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "deafened"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -33206,7 +36910,35 @@
           ],
           "spellDC": 29
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "fascinated"
+          },
+          {
+            "name": "paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,

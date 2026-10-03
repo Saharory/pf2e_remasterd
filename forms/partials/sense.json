@@ -1,0 +1,48 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Common.Name",
+          "attribute": "name"
+        },
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "reference"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Creature.SenseAcuity",
+          "type": "picker",
+          "attribute": "acuity",
+          "attributeType": "SenseAcuity"
+        },
+        {
+          "title": "Creature.AcuityReference",
+          "type": "reference",
+          "attribute": "acuityReference"
+        },
+        {
+          "title": "Common.Details",
+          "attribute": "details"
+        }
+      ]
+    },
+    {
+      "title": "Creature.CustomSenseText",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "customText"
+        }
+      ]
+    }
+  ]
+}

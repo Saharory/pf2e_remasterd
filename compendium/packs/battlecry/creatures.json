@@ -285,7 +285,30 @@
             ]
           }
         ]
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "1st",
+              "rituals": [
+                {
+                  "name": "Angelic Messenger",
+                  "rank": 1,
+                  "reference": "/ritual/angelic-messenger-monster-core"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -449,7 +472,80 @@
           "slug": "troop"
         }
       ],
-      "hardness": 10
+      "hardness": 10,
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "Drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "Fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "Healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Nonlethal Attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "Spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "Vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "Void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -867,6 +963,12 @@
           "label": "wood",
           "slug": "wood"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -1243,7 +1345,20 @@
           "spellDC": 34,
           "spellAttack": 26
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Fear Effects"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1436,6 +1551,12 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -1613,6 +1734,12 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -1769,6 +1896,19 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -1952,7 +2092,80 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "Drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "Fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "Healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Nonlethal Attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "Spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "Vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "Void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2135,7 +2348,80 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Doomed",
+            "reference": "/condition/doomed-player-core"
+          },
+          {
+            "name": "Drained",
+            "reference": "/condition/drained-player-core"
+          },
+          {
+            "name": "Fatigued",
+            "reference": "/condition/fatigued-player-core"
+          },
+          {
+            "name": "Healing",
+            "reference": "/trait/healing"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Nonlethal Attacks",
+            "reference": "/rule/nonlethal-attacks-rules-2311"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sickened",
+            "reference": "/condition/sickened-player-core"
+          },
+          {
+            "name": "Spirit",
+            "reference": "/trait/spirit"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          },
+          {
+            "name": "Vitality",
+            "reference": "/trait/vitality"
+          },
+          {
+            "name": "Void",
+            "reference": "/trait/void"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2284,6 +2570,19 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -2466,6 +2765,12 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -2624,7 +2929,32 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2786,6 +3116,12 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -3197,6 +3533,12 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -3348,6 +3690,12 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -3679,7 +4027,24 @@
           "slug": "troop"
         }
       ],
-      "languagesDetails": "(cant speak any language)"
+      "languagesDetails": "(cant speak any language)",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Acid"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3840,7 +4205,20 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3995,6 +4373,19 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -4152,6 +4543,12 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -4305,6 +4702,12 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -4717,7 +5120,28 @@
           "slug": "unholy"
         }
       ],
-      "languagesDetails": "(cant speak any language)"
+      "languagesDetails": "(cant speak any language)",
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4882,6 +5306,12 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -5042,6 +5472,12 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -5267,7 +5703,31 @@
           "spellDC": 34,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "plaguesense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5698,7 +6158,36 @@
           "spellDC": 40,
           "spellAttack": 35
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5911,6 +6400,12 @@
           ],
           "spellDC": 18,
           "spellAttack": 0
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -6239,7 +6734,25 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6493,7 +7006,51 @@
             ]
           }
         ]
-      }
+      },
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Acid"
+          },
+          {
+            "name": "Critical Hits"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Precision"
+          }
+        ]
+      },
+      "ritualcasting": [
+        {
+          "type": "Rituals",
+          "ritualGroups": [
+            {
+              "label": "1st",
+              "rituals": [
+                {
+                  "name": "Demonic Pact",
+                  "rank": 1,
+                  "reference": "/ritual/demonic-pact-monster-core"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -6867,6 +7424,18 @@
           "spellDC": 29,
           "spellAttack": 0
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "entropy sense",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
       ]
     },
     "attributes": {
@@ -7204,6 +7773,12 @@
           "label": "troop",
           "slug": "troop"
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
       ]
     },
     "attributes": {
@@ -7373,6 +7948,12 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
         }
       ]
     },
@@ -7564,7 +8145,42 @@
           "spellDC": 21,
           "spellAttack": 15
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "Tremorsense",
+          "reference": "/action/tremorsense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7754,7 +8370,32 @@
           "spellDC": 21,
           "spellAttack": 15
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -7957,7 +8598,39 @@
           "spellDC": 21,
           "spellAttack": 15
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "smoke vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8150,7 +8823,32 @@
           "spellDC": 21,
           "spellAttack": 15
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8343,7 +9041,32 @@
           "spellDC": 21,
           "spellAttack": 15
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8535,7 +9258,35 @@
           "spellDC": 21,
           "spellAttack": 15
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "name": "fog vision"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Sleep",
+            "reference": "/trait/sleep"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8695,7 +9446,23 @@
           "label": "troop",
           "slug": "troop"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        },
+        {
+          "customText": "sin [scent](/action/scent-monster-core) ([imprecise](/rule/imprecise-senses-rules-2407)) 30 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Controlled"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -8867,7 +9634,44 @@
           "label": "unholy",
           "slug": "unholy"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          },
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          },
+          {
+            "name": "Mental",
+            "reference": "/trait/mental"
+          },
+          {
+            "name": "Paralyzed",
+            "reference": "/condition/paralyzed-player-core"
+          },
+          {
+            "name": "Poison",
+            "reference": "/trait/poison"
+          },
+          {
+            "name": "Unconscious",
+            "reference": "/condition/unconscious-player-core"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9119,7 +9923,28 @@
           "spellDC": 33,
           "spellAttack": 26
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Lifesense",
+          "reference": "/action/lifesense-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "60 feet"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Death Effects",
+            "reference": "/rule/death-effects-rules-2331"
+          },
+          {
+            "name": "Disease",
+            "reference": "/trait/disease"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9486,7 +10311,21 @@
           "spellDC": 26,
           "spellAttack": 0
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Greater Darkvision",
+          "reference": "/action/greater-darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Fire",
+            "reference": "/trait/fire"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9662,7 +10501,20 @@
           "label": "wight",
           "slug": "wight"
         }
-      ]
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
+        }
+      ],
+      "immunityEditor": {
+        "entries": [
+          {
+            "name": "Bleed"
+          }
+        ]
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9802,6 +10654,19 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
         }
       ]
     },
@@ -9962,6 +10827,12 @@
         {
           "label": "xulgath",
           "slug": "xulgath"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
@@ -10154,6 +11025,19 @@
           "name": "Dinosaur Lore",
           "value": 24
         }
+      ],
+      "senseEntries": [
+        {
+          "name": "Low-Light Vision",
+          "reference": "/action/low-light-vision-monster-core"
+        },
+        {
+          "name": "Scent",
+          "reference": "/action/scent-monster-core",
+          "acuity": "imprecise",
+          "acuityReference": "/rule/imprecise-senses-rules-2407",
+          "details": "30 feet"
+        }
       ]
     },
     "attributes": {
@@ -10317,6 +11201,12 @@
         {
           "label": "troop",
           "slug": "troop"
+        }
+      ],
+      "senseEntries": [
+        {
+          "name": "Darkvision",
+          "reference": "/action/darkvision-monster-core"
         }
       ]
     },
