@@ -69,6 +69,18 @@ class FoundryMarkupTests(unittest.TestCase):
             "(DC 28 basic Reflex save)",
         )
 
+    def test_action_roll_preserves_its_dc(self) -> None:
+        self.assertEqual(
+            replace_foundry_directives("becoming immobilized ([[/act escape dc=34]])"),
+            "becoming immobilized (Escape DC 34)",
+        )
+
+    def test_labeled_action_roll_preserves_its_dc(self) -> None:
+        self.assertEqual(
+            replace_foundry_directives("until it [[/act escape dc=34]]{Escapes}"),
+            "until it Escapes (DC 34)",
+        )
+
 
 class ItemPriceTests(unittest.TestCase):
     def test_variant_price_fallback_matches_base_level(self) -> None:

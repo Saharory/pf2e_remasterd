@@ -92,6 +92,7 @@ INLINE_MECHANIC_ROUTES = (
     ("Strike", "/action/strike-player-core"),
     ("Swim", "/action/swim-player-core"),
     ("Trip", "/action/trip-player-core"),
+    ("auditory", "/trait/auditory"),
     ("holy", "/trait/holy"),
     ("unholy", "/trait/unholy"),
     ("divine", "/trait/divine"),
@@ -105,9 +106,13 @@ ACTION_LABEL = re.compile(
     re.I,
 )
 LEADING_TRAITS = re.compile(r"^\s*\(([^()\n]+)\)\s*")
-DEGREE_OUTCOME = re.compile(
-    r"(?m)^(?!\u2003)(\*\*(?:Critical Success|Success|Failure|Critical Failure)\*\*)"
+DEGREE_OUTCOME_BREAK = re.compile(
+    r"\n+[ \t\u2003]*(?=\*\*(?:Critical Success|Success|Failure|Critical Failure)\*\*)"
 )
+DEGREE_OUTCOME = re.compile(
+    r"(?m)^[ \t\u2003]*(\*\*(?:Critical Success|Success|Failure|Critical Failure)\*\*)"
+)
+MOVE_ACTION = re.compile(r"(?<![\w\[])move(?=\s+actions?\b)", re.I)
 
 
 def normalize(value: str) -> str:
@@ -169,12 +174,39 @@ def link_inline_mechanics(value: str) -> str:
                 + text[match.end() :]
             )
             linked_routes.add(route)
+    move_route = "/trait/move"
+    if move_route not in linked_routes:
+        protected = [
+            (match.start(), match.end())
+            for match in re.finditer(r"\[[^\]]+\]\([^)]+\)", text)
+        ]
+        match = next(
+            (
+                candidate
+                for candidate in MOVE_ACTION.finditer(text)
+                if not any(
+                    candidate.start() < end and candidate.end() > start
+                    for start, end in protected
+                )
+            ),
+            None,
+        )
+        if match:
+            text = (
+                text[: match.start()]
+                + f"[{match.group(0)}]({move_route})"
+                + text[match.end() :]
+            )
     return text
 
 
 def indent_degree_outcomes(value: str) -> str:
     """Visually group saving-throw outcomes beneath their owning ability."""
-    return DEGREE_OUTCOME.sub("\u2003\\1", value)
+    # A blank Markdown line starts a new paragraph and causes Encounter+ to
+    # discard the leading indentation. Keep every outcome in its owning
+    # ability paragraph, matching the compact printed stat-block hierarchy.
+    normalized = DEGREE_OUTCOME_BREAK.sub("\n", value)
+    return DEGREE_OUTCOME.sub("\u2003\\1", normalized)
 
 
 def compact_stat_block_sections(value: str) -> str:

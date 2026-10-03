@@ -309,12 +309,16 @@ def _replace_foundry_rolls(
                 label = value[cursor + 1:label_end]
                 cursor = label_end + 1
 
-        if label:
-            output.append(label)
-            continue
         action = re.match(r"/act\s+([a-z0-9-]+)", body, flags=re.I)
         if action:
-            output.append(title_from_code(action.group(1)))
+            rendered = label or title_from_code(action.group(1))
+            dc = re.search(r"(?:^|\s)dc=([^\s]+)", body, flags=re.I)
+            if dc and not re.search(rf"\bDC\s+{re.escape(dc.group(1))}\b", rendered, re.I):
+                rendered += f" (DC {dc.group(1)})" if label else f" DC {dc.group(1)}"
+            output.append(rendered)
+            continue
+        if label:
+            output.append(label)
             continue
         roll = re.match(r"/(?:r|gmr)\s+(.+)", body, flags=re.I | re.S)
         if roll:

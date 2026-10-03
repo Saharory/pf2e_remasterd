@@ -157,7 +157,7 @@
         "offensive": [
           {
             "name": "Blinding Flash",
-            "text": "**Cost** 1 Mythic Point; **Effect** By spreading her wings while she stands upon the ground, Agyra can create a blinding flash of light that targets all creatures within 100 feet. Affected creatures must succeed at a Fortitude DC 43 check.\n\n **Critical Success** The target is unaffected.\n\n **Success** The target is Dazzled and Stupefied 1 for 1d4 rounds.\n\n **Failure** The target is Blinded and Stupefied 2 for 1 minute.\n\n **Critical Failure** The target is blinded and stupefied 2 for 10 minutes.",
+            "text": "**Cost** 1 Mythic Point; **Effect** By spreading her wings while she stands upon the ground, Agyra can create a blinding flash of light that targets all creatures within 100 feet. Affected creatures must succeed at a Fortitude DC 43 check.\n **Critical Success** The target is unaffected.\n **Success** The target is Dazzled and Stupefied 1 for 1d4 rounds.\n **Failure** The target is Blinded and Stupefied 2 for 1 minute.\n **Critical Failure** The target is blinded and stupefied 2 for 10 minutes.",
             "traits": [
               "light",
               "manipulate",
@@ -221,6 +221,15 @@
         ],
         "subjects": [
           "beast"
+        ],
+        "entries": [
+          {
+            "subject": "beast",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Tien",
@@ -442,6 +451,27 @@
           "beast",
           "humanoid",
           "spirit"
+        ],
+        "entries": [
+          {
+            "subject": "beast",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          },
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          },
+          {
+            "subject": "spirit",
+            "skills": [
+              "occultism"
+            ]
+          }
         ]
       },
       "languagesText": "Common",
@@ -725,6 +755,14 @@
         ],
         "subjects": [
           "aberration"
+        ],
+        "entries": [
+          {
+            "subject": "aberration",
+            "skills": [
+              "occultism"
+            ]
+          }
         ]
       },
       "languagesText": "Sakvroth",
@@ -882,7 +920,7 @@
           },
           {
             "name": "Regal Shriek",
-            "text": "The griffon unleashes a shriek that transitions into a terrifying roar. Each creature in a 60-foot emanation must attempt a Will DC 20 save. Regardless of the result, creatures are temporarily immune to all griffons' Regal Shrieks for 10 minutes.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature is [Frightened 1](/condition/frightened-player-core).\n\n **Failure** The creature is Frightened 2. Animals are [Slowed 1](/condition/slowed-player-core) for as long as they're frightened.\n\n **Critical Failure** The creature is Frightened 3. Animals are [Paralyzed](/condition/paralyzed-player-core) as long as they're frightened.",
+            "text": "The griffon unleashes a shriek that transitions into a terrifying roar. Each creature in a 60-foot emanation must attempt a Will DC 20 save. Regardless of the result, creatures are temporarily immune to all griffons' Regal Shrieks for 10 minutes.\n **Critical Success** The creature is unaffected.\n **Success** The creature is [Frightened 1](/condition/frightened-player-core).\n **Failure** The creature is Frightened 2. Animals are [Slowed 1](/condition/slowed-player-core) for as long as they're frightened.\n **Critical Failure** The creature is Frightened 3. Animals are [Paralyzed](/condition/paralyzed-player-core) as long as they're frightened.",
             "traits": [
               "auditory",
               "emotion",
@@ -906,6 +944,14 @@
         ],
         "subjects": [
           "animal"
+        ],
+        "entries": [
+          {
+            "subject": "animal",
+            "skills": [
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "",
@@ -1002,12 +1048,12 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core)",
       "immunities": [
+        "Bleed",
         "[Death Effects](/rule/death-effects-rules-2331)",
         "[Disease](/trait/disease)",
         "[Paralyzed](/condition/paralyzed-player-core)",
         "[Poison](/trait/poison)",
-        "[Unconscious](/condition/unconscious-player-core)",
-        "Bleed"
+        "[Unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {},
       "resistances": {
@@ -1121,6 +1167,14 @@
         ],
         "subjects": [
           "undead"
+        ],
+        "entries": [
+          {
+            "subject": "undead",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Aklo, Chthonian, Common, Diabolic, Draconic, Elven, Necril, Sakvroth",
@@ -1482,6 +1536,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Jotun",
@@ -1743,7 +1805,7 @@
           },
           {
             "name": "Trumpeting Blast",
-            "text": "The Oliphaunt of Jandelay emits a cacophonous blast from its trunk in a 120-foot [cone](/rule/cone-rules-2386). Each creature in the area must attempt a Fortitude DC 49 save. If the Oliphaunt spends 1 Mythic Point as part of the activity, the DC becomes 51 and the damage dice are increased to d12s. The Oliphaunt of Jandelay can't use Trumpeting Blast again for 1d4 rounds.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature takes 7d10 sonic damage and is [Deafened](/condition/deafened-player-core) for 1 round.\n\n **Failure** The creature takes 14d10 sonic damage, is [Slowed 1](/condition/slowed-player-core) for 2 rounds, and is deafened for 2 rounds.\n\n **Critical Failure** The creature takes 28d10 sonic damage, is Slowed 2 for 2 rounds, and is deafened for 4 rounds.",
+            "text": "The Oliphaunt of Jandelay emits a cacophonous blast from its trunk in a 120-foot [cone](/rule/cone-rules-2386). Each creature in the area must attempt a Fortitude DC 49 save. If the Oliphaunt spends 1 Mythic Point as part of the activity, the DC becomes 51 and the damage dice are increased to d12s. The Oliphaunt of Jandelay can't use Trumpeting Blast again for 1d4 rounds.\n **Critical Success** The creature is unaffected.\n **Success** The creature takes 7d10 sonic damage and is [Deafened](/condition/deafened-player-core) for 1 round.\n **Failure** The creature takes 14d10 sonic damage, is [Slowed 1](/condition/slowed-player-core) for 2 rounds, and is deafened for 2 rounds.\n **Critical Failure** The creature takes 28d10 sonic damage, is Slowed 2 for 2 rounds, and is deafened for 4 rounds.",
             "traits": [
               "sonic"
             ],
@@ -1763,6 +1825,14 @@
         ],
         "subjects": [
           "monitor"
+        ],
+        "entries": [
+          {
+            "subject": "monitor",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Aklo",
@@ -1999,6 +2069,14 @@
         ],
         "subjects": [
           "fey"
+        ],
+        "entries": [
+          {
+            "subject": "fey",
+            "skills": [
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Fey",
@@ -2263,6 +2341,14 @@
         ],
         "subjects": [
           "aberration"
+        ],
+        "entries": [
+          {
+            "subject": "aberration",
+            "skills": [
+              "occultism"
+            ]
+          }
         ]
       },
       "languagesText": "Aklo, Common, Orcish",
@@ -2447,7 +2533,7 @@
           },
           {
             "name": "Suffocated by a Thousand Breaths",
-            "text": "30 feet. Vulot's breath-stealing influence radiates out from their body, causing victims to feel like they are being smothered. Any creature that starts its turn within the aura must attempt a Fortitude DC 41 save.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature becomes short of breath and is [Off Guard](/condition/off-guard-player-core) until the beginning of its next turn.\n\n **Failure** The creature finds it very difficult to catch its breath. It can't speak or use auditory actions until the beginning of its next turn; this prevents it from casting spells that don't have the [subtle](/trait/subtle) trait.\n\n **Critical Failure** All the air immediately leaves the creature's lungs and it begins to suffocate. When it succeeds at the saving throw to regain consciousness at the end of its turn, it becomes [Fatigued](/condition/fatigued-player-core) until it gets a full night's rest.",
+            "text": "30 feet. Vulot's breath-stealing influence radiates out from their body, causing victims to feel like they are being smothered. Any creature that starts its turn within the aura must attempt a Fortitude DC 41 save.\n **Critical Success** The creature is unaffected.\n **Success** The creature becomes short of breath and is [Off Guard](/condition/off-guard-player-core) until the beginning of its next turn.\n **Failure** The creature finds it very difficult to catch its breath. It can't speak or use [auditory](/trait/auditory) actions until the beginning of its next turn; this prevents it from casting spells that don't have the [subtle](/trait/subtle) trait.\n **Critical Failure** All the air immediately leaves the creature's lungs and it begins to suffocate. When it succeeds at the saving throw to regain consciousness at the end of its turn, it becomes [Fatigued](/condition/fatigued-player-core) until it gets a full night's rest.",
             "traits": [
               "aura",
               "incapacitation"
@@ -2468,7 +2554,7 @@
           },
           {
             "name": "Steal Thoughts",
-            "text": "Vulot's mental attacks can confuse and disorient. A creature struck by Vulot's thought spike must attempt a Will DC 44 save. A creature stupefied by this effect is [Off Guard](/condition/off-guard-player-core) to Vulot's Steal Face ability.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature becomes [Stupefied 1](/condition/stupefied-player-core) for 1 round.\n\n **Failure** The creature becomes stupefied 1 for 1 minute. If it's already stupefied, its stupefied value increases by 1 instead (to a maximum of stupefied 4).\n\n **Critical Failure** As failure, plus the creature is [Confused](/condition/confused-player-core) for 1 minute.",
+            "text": "Vulot's mental attacks can confuse and disorient. A creature struck by Vulot's thought spike must attempt a Will DC 44 save. A creature stupefied by this effect is [Off Guard](/condition/off-guard-player-core) to Vulot's Steal Face ability.\n **Critical Success** The creature is unaffected.\n **Success** The creature becomes [Stupefied 1](/condition/stupefied-player-core) for 1 round.\n **Failure** The creature becomes stupefied 1 for 1 minute. If it's already stupefied, its stupefied value increases by 1 instead (to a maximum of stupefied 4).\n **Critical Failure** As failure, plus the creature is [Confused](/condition/confused-player-core) for 1 minute.",
             "traits": [
               "emotion",
               "mental"
@@ -2483,6 +2569,14 @@
         ],
         "subjects": [
           "fiend"
+        ],
+        "entries": [
+          {
+            "subject": "fiend",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Chthonian, Common, Draconic, Empyrean",
@@ -2801,7 +2895,7 @@
           },
           {
             "name": "Webbed Conveyance",
-            "text": "**Requirements** The Weaver is within 15 feet of a creature [Paralyzed](/condition/paralyzed-player-core) in her nightmare cocoon; **Effect** The Weaver grabs the paralyzed target, webs them to her back or one of her legs, and then Strides. As long as the creature is Immobilized by the Weaver's nightmare cocoon, it shares the Weaver's space and moves with her. The DC to [Escape](/action/escape-player-core) the nightmare cocoon increases to 36.",
+            "text": "**Requirements** The Weaver is within 15 feet of a creature [Paralyzed](/condition/paralyzed-player-core) in her nightmare cocoon; **Effect** The Weaver grabs the paralyzed target, webs them to her back or one of her legs, and then Strides. As long as the creature is Immobilized by the Weaver's nightmare cocoon, it shares the Weaver's space and moves with her. The DC to [Escape](/action/escape-player-core) (DC 36) the nightmare cocoon increases to 36.",
             "traits": [
               "manipulate"
             ]
@@ -2842,7 +2936,7 @@
           },
           {
             "name": "Nightmare Cocoon",
-            "text": "A creature struck by the Weaver's web [Strike](/action/strike-player-core) must succeed at a Reflex DC 34 save or become Immobilized ([Escape](/action/escape-player-core)). If the Weaver spends 1 Mythic Point as a free action when a creature fails this save, the creature is also Paralyzed, experiencing terrible nightmares of their deepest-held anxieties. The Weaver can view these dreams using a [Sustain](/action/sustain-player-core) action, which imparts a –2 circumstance penalty to any Will saves the target attempts against the Weaver's spells until the beginning of the Weaver's next turn. At the end of a paralyzed victim's turn, they can attempt a Will DC 34 save to end the paralyzed condition (though they are still immobilized until they Escape).",
+            "text": "A creature struck by the Weaver's web [Strike](/action/strike-player-core) must succeed at a Reflex DC 34 save or become Immobilized ([Escape](/action/escape-player-core) DC 34). If the Weaver spends 1 Mythic Point as a free action when a creature fails this save, the creature is also Paralyzed, experiencing terrible nightmares of their deepest-held anxieties. The Weaver can view these dreams using a [Sustain](/action/sustain-player-core) action, which imparts a –2 circumstance penalty to any Will saves the target attempts against the Weaver's spells until the beginning of the Weaver's next turn. At the end of a paralyzed victim's turn, they can attempt a Will DC 34 save to end the paralyzed condition (though they are still immobilized until they Escape).",
             "traits": [
               "incapacitation",
               "mental"
@@ -2865,6 +2959,15 @@
         ],
         "subjects": [
           "beast"
+        ],
+        "entries": [
+          {
+            "subject": "beast",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Aklo, Chthonian, Common, Diabolic, Draconic, Dwarven, Empyrean, Jotun, Sakvroth",

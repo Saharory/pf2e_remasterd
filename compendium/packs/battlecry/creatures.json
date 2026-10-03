@@ -72,7 +72,7 @@
         "defensive": [
           {
             "name": "Harmonizing Aura",
-            "text": "20 feet.\n\nAllies in the aura gain a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against effects with the auditory or [sonic](/trait/sonic) trait. Enemies in the aura take a –2 status penalty to sonic damage rolls and a –1 status penalty to AC and all saves against auditory and sonic effects.",
+            "text": "20 feet.\n\nAllies in the aura gain a +2 status bonus to sonic damage rolls and a +1 status bonus to AC and all saves against effects with the [auditory](/trait/auditory) or [sonic](/trait/sonic) trait. Enemies in the aura take a –2 status penalty to sonic damage rolls and a –1 status penalty to AC and all saves against auditory and sonic effects.",
             "traits": [
               "aura",
               "divine",
@@ -126,6 +126,14 @@
         ],
         "subjects": [
           "celestial"
+        ],
+        "entries": [
+          {
+            "subject": "celestial",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Diabolic, Draconic, Empyrean",
@@ -414,6 +422,15 @@
         ],
         "subjects": [
           "construct"
+        ],
+        "entries": [
+          {
+            "subject": "construct",
+            "skills": [
+              "arcana",
+              "crafting"
+            ]
+          }
         ]
       },
       "languagesText": "",
@@ -567,6 +584,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Draconic",
@@ -772,7 +797,7 @@
         "defensive": [
           {
             "name": "Reactive Attack",
-            "text": "**Trigger** An enemy within 5 feet of the arboreal copse uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using; **Effect** The arboreals swing their stone swords. The triggering enemy takes 2d8+9 bludgeoning damage (basic Reflex DC 25 save). If the creature critically fails their saving throw and the trigger was a manipulate action, the troop disrupts that action.",
+            "text": "**Trigger** An enemy within 5 feet of the arboreal copse uses a manipulate action or a [move](/trait/move) action, makes a ranged attack, or leaves a square during a move action it's using; **Effect** The arboreals swing their stone swords. The triggering enemy takes 2d8+9 bludgeoning damage (basic Reflex DC 25 save). If the creature critically fails their saving throw and the trigger was a manipulate action, the troop disrupts that action.",
             "traits": [],
             "actions": "reaction"
           },
@@ -817,6 +842,14 @@
         ],
         "subjects": [
           "plant"
+        ],
+        "entries": [
+          {
+            "subject": "plant",
+            "skills": [
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Arboreal, Common, Fey",
@@ -961,6 +994,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common",
@@ -1126,6 +1167,14 @@
         ],
         "subjects": [
           "celestial"
+        ],
+        "entries": [
+          {
+            "subject": "celestial",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Diabolic, Draconic, Empyrean, Utopian",
@@ -1348,6 +1397,20 @@
         "subjects": [
           "animal",
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "animal",
+            "skills": [
+              "nature"
+            ]
+          },
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Boggard, Common",
@@ -1521,6 +1584,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Boggard, Common",
@@ -1674,6 +1745,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Draconic, Mwangi",
@@ -1796,14 +1875,14 @@
         "interaction": [
           {
             "name": "Wind-Up",
-            "text": "24 hours, Disable Device, standby\n\nFor a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.\n\nA clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).\n\nA creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.",
+            "text": "24 hours, Disable Device DC 27, standby\n\nFor a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.\n\nA clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).\n\nA creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.",
             "traits": []
           }
         ],
         "defensive": [
           {
             "name": "Reactive Sweep",
-            "text": "**Trigger** An enemy within a 10-foot emanation uses a manipulate action or a move action, makes a ranged attack, or leaves a square in the area during a move action it's using; **Effect** The clockwork infantry lashes out with their halberds. The triggering enemy takes 2d10+10 untyped damage (basic Reflex DC 27 save). If the enemy critically fails this saving throw and the trigger was a manipulate action, the damage disrupts that action.",
+            "text": "**Trigger** An enemy within a 10-foot emanation uses a manipulate action or a [move](/trait/move) action, makes a ranged attack, or leaves a square in the area during a move action it's using; **Effect** The clockwork infantry lashes out with their halberds. The triggering enemy takes 2d10+10 untyped damage (basic Reflex DC 27 save). If the enemy critically fails this saving throw and the trigger was a manipulate action, the damage disrupts that action.",
             "traits": [],
             "actions": "reaction"
           },
@@ -1843,6 +1922,15 @@
         ],
         "subjects": [
           "construct"
+        ],
+        "entries": [
+          {
+            "subject": "construct",
+            "skills": [
+              "arcana",
+              "crafting"
+            ]
+          }
         ]
       },
       "languagesText": "",
@@ -1970,7 +2058,7 @@
         "interaction": [
           {
             "name": "Wind-Up",
-            "text": "48 hours, Disable Device, standby\n\nFor a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.\n\nA clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).\n\nA creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.",
+            "text": "48 hours, Disable Device DC 19, standby\n\nFor a clockwork to act, it must be wound with a unique key by another creature. This takes 1 minute. Once wound, it remains operational for the listed amount of time, usually 24 hours, after which time it becomes unaware of its surroundings and can't act until it's wound again. Some clockworks' abilities require them to spend some of their remaining operational time. They can't spend more than they have and shut down immediately once they have 0 time remaining. If it's unclear when a clockwork was last wound, most clockwork keepers wind all their clockworks at a set time, typically 8 a.m.\n\nA clockwork that lists standby in its wind-up entry can enter standby mode as a 3-action activity. Its operational time doesn't decrease in standby, but it can sense its surroundings (with a -2 penalty to Perception). It can't act, with one exception: when it perceives a creature, it can exit standby as a reaction (rolling initiative if appropriate).\n\nA creature can attempt to Disable a Device to wind a clockwork down (with a DC listed in the wind-up entry). For each success, the clockwork loses 1 hour of operational time. This can be done even if the clockwork is in standby mode.",
             "traits": []
           }
         ],
@@ -2017,6 +2105,15 @@
         ],
         "subjects": [
           "construct"
+        ],
+        "entries": [
+          {
+            "subject": "construct",
+            "skills": [
+              "arcana",
+              "crafting"
+            ]
+          }
         ]
       },
       "languagesText": "",
@@ -2163,6 +2260,14 @@
         ],
         "subjects": [
           "animal"
+        ],
+        "entries": [
+          {
+            "subject": "animal",
+            "skills": [
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "",
@@ -2340,6 +2445,14 @@
         ],
         "subjects": [
           "plant"
+        ],
+        "entries": [
+          {
+            "subject": "plant",
+            "skills": [
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "",
@@ -2490,6 +2603,14 @@
         ],
         "subjects": [
           "dragon"
+        ],
+        "entries": [
+          {
+            "subject": "dragon",
+            "skills": [
+              "arcana"
+            ]
+          }
         ]
       },
       "languagesText": "Draconic",
@@ -2633,6 +2754,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Orcish",
@@ -2792,6 +2921,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Wildsong",
@@ -3035,6 +3172,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Dwarven",
@@ -3179,6 +3324,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Dwarven",
@@ -3331,6 +3484,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common",
@@ -3492,6 +3653,14 @@
         ],
         "subjects": [
           "aberration"
+        ],
+        "entries": [
+          {
+            "subject": "aberration",
+            "skills": [
+              "occultism"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Sakvroth",
@@ -3645,6 +3814,15 @@
         ],
         "subjects": [
           "beast"
+        ],
+        "entries": [
+          {
+            "subject": "beast",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Petran",
@@ -3797,6 +3975,14 @@
         ],
         "subjects": [
           "animal"
+        ],
+        "entries": [
+          {
+            "subject": "animal",
+            "skills": [
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "",
@@ -3941,6 +4127,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Fey, Gnomish",
@@ -4068,7 +4262,7 @@
           },
           {
             "name": "Hobble Pursuit",
-            "text": "The goblin rabble hamstring and hobble as many enemies as possible. Each enemy in a 5-foot emanation must attempt a Reflex DC 18 save.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature takes a –5-foot circumstance penalty to their Speeds.\n\n **Failure** The creature takes a –10-foot circumstance penalty to their Speeds and is [Slowed 1](/condition/slowed-player-core).\n\n **Critical Failure** The creature takes a –15-foot circumstance penalty to their Speeds and is slowed 1.",
+            "text": "The goblin rabble hamstring and hobble as many enemies as possible. Each enemy in a 5-foot emanation must attempt a Reflex DC 18 save.\n **Critical Success** The creature is unaffected.\n **Success** The creature takes a –5-foot circumstance penalty to their Speeds.\n **Failure** The creature takes a –10-foot circumstance penalty to their Speeds and is [Slowed 1](/condition/slowed-player-core).\n **Critical Failure** The creature takes a –15-foot circumstance penalty to their Speeds and is slowed 1.",
             "traits": [],
             "actions": "two"
           },
@@ -4087,6 +4281,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Goblin",
@@ -4243,6 +4445,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Halfling",
@@ -4465,6 +4675,21 @@
         "subjects": [
           "beast",
           "fiend"
+        ],
+        "entries": [
+          {
+            "subject": "beast",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          },
+          {
+            "subject": "fiend",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Diabolic",
@@ -4632,6 +4857,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Goblin",
@@ -4785,6 +5018,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Sakvroth",
@@ -4965,6 +5206,14 @@
         ],
         "subjects": [
           "fiend"
+        ],
+        "entries": [
+          {
+            "subject": "fiend",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Daemonic",
@@ -5184,6 +5433,14 @@
         ],
         "subjects": [
           "undead"
+        ],
+        "entries": [
+          {
+            "subject": "undead",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Aklo, Common, Chthonian, Diabolic, Draconic, Elven, Necril, Sakvroth",
@@ -5580,6 +5837,20 @@
         "subjects": [
           "animal",
           "fey"
+        ],
+        "entries": [
+          {
+            "subject": "animal",
+            "skills": [
+              "nature"
+            ]
+          },
+          {
+            "subject": "fey",
+            "skills": [
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Sakvroth",
@@ -5773,6 +6044,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common",
@@ -5939,6 +6218,14 @@
         ],
         "subjects": [
           "aberration"
+        ],
+        "entries": [
+          {
+            "subject": "aberration",
+            "skills": [
+              "occultism"
+            ]
+          }
         ]
       },
       "languagesText": "Common",
@@ -6060,7 +6347,7 @@
         "defensive": [
           {
             "name": "Absorb Weapon",
-            "text": "**Trigger** A creature hits the omox slime pool with a melee weapon; **Effect** The omoxes attempt to Disarm the creature. On a critical success, the weapon becomes subsumed within the body of an omox rather than falling to the ground. Retrieving the weapon requires a successful DC 45 Athletics check to Disarm.",
+            "text": "**Trigger** A creature hits the omox slime pool with a melee weapon; **Effect** The omoxes attempt to Disarm the creature. On a critical success, the weapon becomes subsumed within the body of an omox rather than falling to the ground. Retrieving the weapon requires a successful DC 45 Athletics check to Disarm DC 45.",
             "traits": [
               "concentrate"
             ],
@@ -6109,6 +6396,20 @@
         "subjects": [
           "fiend",
           "ooze"
+        ],
+        "entries": [
+          {
+            "subject": "fiend",
+            "skills": [
+              "religion"
+            ]
+          },
+          {
+            "subject": "ooze",
+            "skills": [
+              "occultism"
+            ]
+          }
         ]
       },
       "languagesText": "Chthonian, Draconic, Empyrean",
@@ -6327,6 +6628,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Orcish",
@@ -6514,6 +6823,14 @@
         ],
         "subjects": [
           "monitor"
+        ],
+        "entries": [
+          {
+            "subject": "monitor",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Chthonian, Protean, Empyrean",
@@ -6698,6 +7015,20 @@
         "subjects": [
           "animal",
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "animal",
+            "skills": [
+              "nature"
+            ]
+          },
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Kelish",
@@ -6848,6 +7179,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common",
@@ -6960,7 +7299,7 @@
           },
           {
             "name": "Divine Revulsion",
-            "text": "If a redcap brigade sees a creature brandish a religious symbol of a deity (which requires an [Interact](/action/interact-player-core) action by that creature) or cast a [divine](/trait/divine) spell while wearing a religious symbol, the troop must attempt a Will DC 26 save. They then become temporarily immune to all brandished religious symbols for 10 minutes.\n\n **Critical Success** The troop is unaffected.\n\n **Success** The troop is [Frightened 1](/condition/frightened-player-core).\n\n **Failure** The troop is Frightened 2.\n\n **Critical Failure** The troop is Frightened 3.",
+            "text": "If a redcap brigade sees a creature brandish a religious symbol of a deity (which requires an [Interact](/action/interact-player-core) action by that creature) or cast a [divine](/trait/divine) spell while wearing a religious symbol, the troop must attempt a Will DC 26 save. They then become temporarily immune to all brandished religious symbols for 10 minutes.\n **Critical Success** The troop is unaffected.\n **Success** The troop is [Frightened 1](/condition/frightened-player-core).\n **Failure** The troop is Frightened 2.\n **Critical Failure** The troop is Frightened 3.",
             "traits": [
               "emotion",
               "fear",
@@ -6995,7 +7334,7 @@
           },
           {
             "name": "Bowl Over and Stomp",
-            "text": "The redcap brigade Strides; they can pass through spaces of Medium or smaller creatures, but can't end their movement in them. All enemies whose spaces the redcap brigade passed through take 4d8 bludgeoning damage and must attempt a Fortitude DC 26 save. Bowl Over and Stomp damages each creature only once.\n\n **Critical Success** The creature takes no damage.\n\n **Success** The creature takes half damage. If it is [Prone](/condition/prone-player-core), it also takes 1d6 persistent bleed damage.\n\n **Failure** The creature takes full damage, is knocked prone, and takes 2d6 persistent bleed damage.\n\n **Critical Failure** The creature takes double damage, is knocked prone, and takes 2d6 persistent bleed damage.",
+            "text": "The redcap brigade Strides; they can pass through spaces of Medium or smaller creatures, but can't end their movement in them. All enemies whose spaces the redcap brigade passed through take 4d8 bludgeoning damage and must attempt a Fortitude DC 26 save. Bowl Over and Stomp damages each creature only once.\n **Critical Success** The creature takes no damage.\n **Success** The creature takes half damage. If it is [Prone](/condition/prone-player-core), it also takes 1d6 persistent bleed damage.\n **Failure** The creature takes full damage, is knocked prone, and takes 2d6 persistent bleed damage.\n **Critical Failure** The creature takes double damage, is knocked prone, and takes 2d6 persistent bleed damage.",
             "traits": [],
             "actions": "two"
           },
@@ -7014,6 +7353,14 @@
         ],
         "subjects": [
           "fey"
+        ],
+        "entries": [
+          {
+            "subject": "fey",
+            "skills": [
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Fey",
@@ -7162,6 +7509,15 @@
         ],
         "subjects": [
           "elemental"
+        ],
+        "entries": [
+          {
+            "subject": "elemental",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Petran",
@@ -7348,6 +7704,15 @@
         ],
         "subjects": [
           "elemental"
+        ],
+        "entries": [
+          {
+            "subject": "elemental",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Thalassic",
@@ -7460,8 +7825,8 @@
       ],
       "senses": "[Darkvision](/action/darkvision-monster-core), smoke vision",
       "immunities": [
-        "[Fire](/trait/fire)",
         "Bleed",
+        "[Fire](/trait/fire)",
         "[Paralyzed](/condition/paralyzed-player-core)",
         "[Poison](/trait/poison)",
         "[Sleep](/trait/sleep)"
@@ -7532,6 +7897,15 @@
         ],
         "subjects": [
           "elemental"
+        ],
+        "entries": [
+          {
+            "subject": "elemental",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Pyric",
@@ -7721,6 +8095,15 @@
         ],
         "subjects": [
           "elemental"
+        ],
+        "entries": [
+          {
+            "subject": "elemental",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Talican",
@@ -7904,6 +8287,15 @@
         ],
         "subjects": [
           "elemental"
+        ],
+        "entries": [
+          {
+            "subject": "elemental",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Muan",
@@ -8093,6 +8485,15 @@
         ],
         "subjects": [
           "elemental"
+        ],
+        "entries": [
+          {
+            "subject": "elemental",
+            "skills": [
+              "arcana",
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "Sussuran",
@@ -8231,7 +8632,7 @@
         "defensive": [
           {
             "name": "Reactive Attack",
-            "text": "**Trigger** A creature within a 5-foot emanation of the sinswarm uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using; **Effect** The sinswarm lashes out at the triggering creature, dealing 2d8+9 piercing damage (basic Reflex DC 25 save). If the creature critically fails the save and the trigger was a manipulate action, that action is disrupted.",
+            "text": "**Trigger** A creature within a 5-foot emanation of the sinswarm uses a manipulate action or a [move](/trait/move) action, makes a ranged attack, or leaves a square during a move action it's using; **Effect** The sinswarm lashes out at the triggering creature, dealing 2d8+9 piercing damage (basic Reflex DC 25 save). If the creature critically fails the save and the trigger was a manipulate action, that action is disrupted.",
             "traits": [],
             "actions": "reaction"
           },
@@ -8257,7 +8658,7 @@
           },
           {
             "name": "Sinful Bite",
-            "text": "A creature bitten by a sinspawn must attempt a Will DC 28 save as it is assailed by sinful thoughts. The sinswarm can't inflict the same sin effect on multiple targets in the same round until it has inflicted all seven sins at least once.\n\n **Critical Success** The creature is unaffected.\n\n **Success** The creature is [Sickened 1](/condition/sickened-player-core).\n\n **Failure** The creature is Sickened 2.\n\n **Critical Failure** The creature is sickened 2 and takes one of the following additional effects, chosen by the GM:\n\n[Enfeebled 2](/condition/enfeebled-player-core) for 1 minute (envy)\n\n[Drained 1](/condition/drained-player-core) (gluttony)\n\n[Clumsy 2](/condition/clumsy-player-core) for 1 minute (greed)\n\n[Stupefied 2](/condition/stupefied-player-core) for 1 minute (lust)\n\nClumsy 1 and Enfeebled 1 for 1 minute (pride)\n\n–10-foot status penalty to all Speeds for 1 minute (sloth) Effect: Sinful Bite\n\ndrained 1 and enfeebled 1 for 1 minute (wrath)",
+            "text": "A creature bitten by a sinspawn must attempt a Will DC 28 save as it is assailed by sinful thoughts. The sinswarm can't inflict the same sin effect on multiple targets in the same round until it has inflicted all seven sins at least once.\n **Critical Success** The creature is unaffected.\n **Success** The creature is [Sickened 1](/condition/sickened-player-core).\n **Failure** The creature is Sickened 2.\n **Critical Failure** The creature is sickened 2 and takes one of the following additional effects, chosen by the GM:\n\n[Enfeebled 2](/condition/enfeebled-player-core) for 1 minute (envy)\n\n[Drained 1](/condition/drained-player-core) (gluttony)\n\n[Clumsy 2](/condition/clumsy-player-core) for 1 minute (greed)\n\n[Stupefied 2](/condition/stupefied-player-core) for 1 minute (lust)\n\nClumsy 1 and Enfeebled 1 for 1 minute (pride)\n\n–10-foot status penalty to all Speeds for 1 minute (sloth) Effect: Sinful Bite\n\ndrained 1 and enfeebled 1 for 1 minute (wrath)",
             "traits": [
               "arcane",
               "emotion",
@@ -8273,6 +8674,14 @@
         ],
         "subjects": [
           "aberration"
+        ],
+        "entries": [
+          {
+            "subject": "aberration",
+            "skills": [
+              "occultism"
+            ]
+          }
         ]
       },
       "languagesText": "Aklo, Thassilonian",
@@ -8359,10 +8768,10 @@
         "Bleed",
         "[Death Effects](/rule/death-effects-rules-2331)",
         "[Disease](/trait/disease)",
+        "[Mental](/trait/mental)",
         "[Paralyzed](/condition/paralyzed-player-core)",
         "[Poison](/trait/poison)",
-        "[Unconscious](/condition/unconscious-player-core)",
-        "[Mental](/trait/mental)"
+        "[Unconscious](/condition/unconscious-player-core)"
       ],
       "weaknesses": {
         "area-damage": 7,
@@ -8424,6 +8833,14 @@
         ],
         "subjects": [
           "undead"
+        ],
+        "entries": [
+          {
+            "subject": "undead",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "",
@@ -8585,7 +9002,7 @@
         "offensive": [
           {
             "name": "Guardians' Curse",
-            "text": "**Frequency** three times per day; **Effect** The guardian flock bestows a curse upon all enemies in a 5-foot emanation by touching them with their scythes. Each affected creature must attempt a Will DC 33 save.\n\n **Critical Success** The target is unaffected and is temporarily immune to Guardians' Curse for 24 hours.\n\n **Success** The target feels a momentary shudder of doom and is [Stupefied 1](/condition/stupefied-player-core) for 1 minute by the distracting sensation.\n\n **Failure** The target becomes morose and glum as it accepts its own inevitable fate. For 1 hour, the target is Stupefied 2. Each time the target gains the [dying](/condition/dying-player-core) condition, the stupefied condition value increases by 1, to a maximum value of Stupefied 4.\n\n **Critical Failure** As failure, but the effect is permanent.",
+            "text": "**Frequency** three times per day; **Effect** The guardian flock bestows a curse upon all enemies in a 5-foot emanation by touching them with their scythes. Each affected creature must attempt a Will DC 33 save.\n **Critical Success** The target is unaffected and is temporarily immune to Guardians' Curse for 24 hours.\n **Success** The target feels a momentary shudder of doom and is [Stupefied 1](/condition/stupefied-player-core) for 1 minute by the distracting sensation.\n **Failure** The target becomes morose and glum as it accepts its own inevitable fate. For 1 hour, the target is Stupefied 2. Each time the target gains the [dying](/condition/dying-player-core) condition, the stupefied condition value increases by 1, to a maximum value of Stupefied 4.\n **Critical Failure** As failure, but the effect is permanent.",
             "traits": [
               "curse",
               "divine",
@@ -8613,6 +9030,14 @@
         ],
         "subjects": [
           "monitor"
+        ],
+        "entries": [
+          {
+            "subject": "monitor",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Chthonian, Diabolic, Empyrean, Requian",
@@ -8826,6 +9251,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Skald",
@@ -8941,7 +9374,7 @@
         "defensive": [
           {
             "name": "Reactive Attack",
-            "text": "**Trigger** A creature within the vordine legion's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using; **Effect** The creature takes (2d8+11) piercing damage (basic Reflex DC 26 save); this damage has the magical and [unholy](/trait/unholy) traits. If the creature critically fails its saving throw and the trigger was a manipulate action, the legion disrupts that action.",
+            "text": "**Trigger** A creature within the vordine legion's reach uses a manipulate action or a [move](/trait/move) action, makes a ranged attack, or leaves a square during a move action it's using; **Effect** The creature takes (2d8+11) piercing damage (basic Reflex DC 26 save); this damage has the magical and [unholy](/trait/unholy) traits. If the creature critically fails its saving throw and the trigger was a manipulate action, the legion disrupts that action.",
             "traits": [],
             "actions": "reaction"
           },
@@ -8996,6 +9429,14 @@
         ],
         "subjects": [
           "fiend"
+        ],
+        "entries": [
+          {
+            "subject": "fiend",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Diabolic",
@@ -9191,6 +9632,14 @@
         ],
         "subjects": [
           "undead"
+        ],
+        "entries": [
+          {
+            "subject": "undead",
+            "skills": [
+              "religion"
+            ]
+          }
         ]
       },
       "languagesText": "Common, Necril",
@@ -9333,6 +9782,14 @@
         ],
         "subjects": [
           "animal"
+        ],
+        "entries": [
+          {
+            "subject": "animal",
+            "skills": [
+              "nature"
+            ]
+          }
         ]
       },
       "languagesText": "",
@@ -9481,6 +9938,14 @@
         ],
         "subjects": [
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Draconic, Sakvroth",
@@ -9644,6 +10109,20 @@
         "subjects": [
           "animal",
           "humanoid"
+        ],
+        "entries": [
+          {
+            "subject": "animal",
+            "skills": [
+              "nature"
+            ]
+          },
+          {
+            "subject": "humanoid",
+            "skills": [
+              "society"
+            ]
+          }
         ]
       },
       "languagesText": "Draconic, Sakvroth",
@@ -9780,7 +10259,7 @@
         "offensive": [
           {
             "name": "Harden Chitin",
-            "text": "The zecuis fuse their chitin into black metallic shells. The horde gains resistance 10 to all damage (except mental and spirit) until they next take a move action.",
+            "text": "The zecuis fuse their chitin into black metallic shells. The horde gains resistance 10 to all damage (except mental and spirit) until they next take a [move](/trait/move) action.",
             "traits": [],
             "actions": "one"
           },
@@ -9818,6 +10297,14 @@
         ],
         "subjects": [
           "aberration"
+        ],
+        "entries": [
+          {
+            "subject": "aberration",
+            "skills": [
+              "occultism"
+            ]
+          }
         ]
       },
       "languagesText": "Aklo",

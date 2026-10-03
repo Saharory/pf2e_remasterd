@@ -105,6 +105,12 @@ def link_defense_value(value: Any) -> Any:
     return text
 
 
+def defense_sort_key(value: Any) -> str:
+    """Sort linked defenses by their visible label, not Markdown syntax."""
+    label = re.sub(r"\[([^]]+)\]\([^)]+\)", r"\1", str(value))
+    return label.casefold()
+
+
 def link_language_details(value: Any) -> Any:
     """Link shared communication abilities without changing custom notes."""
     if not isinstance(value, str):
@@ -135,6 +141,13 @@ def configure_recall_knowledge(data: dict[str, Any]) -> None:
     recall.pop("subject", None)
     if subjects:
         recall["subjects"] = list(dict.fromkeys(subjects))
+        recall["entries"] = [
+            {
+                "subject": subject,
+                "skills": list(CREATURE_IDENTIFICATION_SKILLS[subject]),
+            }
+            for subject in recall["subjects"]
+        ]
         derived_skills = [
             skill
             for subject in recall["subjects"]
@@ -167,9 +180,10 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
             saves["details"] = link_inline_mechanics(str(saves["details"]))
         if data.get("languagesDetails"):
             data["languagesDetails"] = link_language_details(data["languagesDetails"])
-        data["immunities"] = [
-            link_defense_value(value) for value in data.get("immunities") or []
-        ]
+        data["immunities"] = sorted(
+            (link_defense_value(value) for value in data.get("immunities") or []),
+            key=defense_sort_key,
+        )
         for field in ("weaknesses", "resistances"):
             values = data.get(field)
             if isinstance(values, dict):
@@ -215,9 +229,10 @@ def configure_creature_metadata(entity: dict[str, Any]) -> bool:
     if metadata.get("items"):
         data["items"] = metadata["items"]
 
-    data["immunities"] = [
-        link_defense_value(value) for value in data.get("immunities") or []
-    ]
+    data["immunities"] = sorted(
+        (link_defense_value(value) for value in data.get("immunities") or []),
+        key=defense_sort_key,
+    )
     for field in ("weaknesses", "resistances"):
         values = data.get(field)
         if isinstance(values, dict):

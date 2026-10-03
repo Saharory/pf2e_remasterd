@@ -31,6 +31,20 @@ def linked_labels(values: list) -> set[str]:
     }
 
 
+def visible_label(value: object) -> str:
+    return re.sub(r"\[([^]]+)\]\([^)]+\)", r"\1", str(value)).casefold()
+
+
+def recall_entries(subjects: list[str]) -> list[dict]:
+    return [
+        {
+            "subject": subject,
+            "skills": list(CREATURE_IDENTIFICATION_SKILLS[subject]),
+        }
+        for subject in subjects
+    ]
+
+
 def records(name: str) -> list[dict]:
     result: list[dict] = []
     for base in (REPO / "compendium" / "packs", REPO / "compendium" / "ogl-packs"):
@@ -101,6 +115,10 @@ def main() -> int:
                         raise SystemExit(
                             f"creature repeats linked shared rule {code}: {creature['slug']}: {name}"
                         )
+                if re.search(r"\n\n\u2003\*\*(?:Critical Success|Success|Failure|Critical Failure)\*\*", text):
+                    raise SystemExit(
+                        f"creature outcome starts a detached paragraph: {creature['slug']}: {name}"
+                    )
         for attack in creature.get("data", {}).get("attacks", []):
             shared_reference_count += sum(
                 int(bool(effect.get("reference")))
@@ -168,6 +186,14 @@ def main() -> int:
         raise SystemExit("Murajau Retract is missing from its active abilities")
     if murajau_data.get("recallKnowledge", {}).get("subjects") != ["humanoid"]:
         raise SystemExit("Murajau is missing its Humanoid Recall Knowledge subject")
+    retract = next(
+        ability
+        for ability in murajau_data["abilities"]["offensive"]
+        if ability.get("name") == "Retract"
+    )
+    for expected in ("[auditory](/trait/auditory)", "[move](/trait/move) actions"):
+        if expected not in str(retract.get("text") or ""):
+            raise SystemExit(f"Murajau Retract is missing its inline rule link: {expected}")
 
     lithic = by_slug["lithic-locus-rage-of-elements"]
     lithic_spells = {
@@ -183,6 +209,16 @@ def main() -> int:
         for ability in lithic["data"]["abilities"]["interaction"]
     ):
         raise SystemExit("Lithic Locus repeats Tremorsense as an interaction ability")
+    lithic_recall = lithic["data"].get("recallKnowledge") or {}
+    if lithic_recall.get("entries") != recall_entries(["construct", "elemental", "spirit"]):
+        raise SystemExit("Lithic Locus does not pair each Recall Knowledge subject with its skills")
+    lithic_bury = next(
+        ability
+        for ability in lithic["data"]["abilities"]["offensive"]
+        if ability.get("name") == "Bury"
+    )
+    if "[Escape](/action/escape-player-core) DC 34" not in str(lithic_bury.get("text") or ""):
+        raise SystemExit("Lithic Locus Bury is missing its Escape DC")
 
     solar = by_slug["solar-crow-rage-of-elements"]
     solar_abilities = {
@@ -194,6 +230,7 @@ def main() -> int:
         raise SystemExit("Solar Crow Glinting Wing is missing its concealment link")
     if solar["data"].get("recallKnowledge") != {
         "dc": 27,
+        "entries": recall_entries(["elemental"]),
         "subjects": ["elemental"],
         "skills": ["arcana", "nature"],
     }:
@@ -219,6 +256,7 @@ def main() -> int:
         raise SystemExit("Vault Builder has the wrong burrow Speed")
     if vault_data.get("recallKnowledge") != {
         "dc": 51,
+        "entries": recall_entries(["elemental"]),
         "subjects": ["elemental"],
         "skills": ["arcana", "nature"],
     }:
@@ -365,6 +403,8 @@ def main() -> int:
         }
         if expected_skills.difference(recall.get("skills") or []):
             raise SystemExit(f"creature is missing Recall Knowledge skills: {creature['slug']}")
+        if expected_subjects and recall.get("entries") != recall_entries(expected_subjects):
+            raise SystemExit(f"creature does not pair Recall subjects and skills: {creature['slug']}")
         for attack in data.get("attacks") or []:
             attack_traits = [str(trait) for trait in attack.get("traits") or []]
             if "unarmed" in attack_traits:
@@ -382,6 +422,9 @@ def main() -> int:
                 ):
                     raise SystemExit(f"creature exposes an empty rule element: {creature['slug']}")
         immunities = linked_labels(data.get("immunities") or [])
+        immunity_values = data.get("immunities") or []
+        if immunity_values != sorted(immunity_values, key=visible_label):
+            raise SystemExit(f"creature immunities are not alphabetical: {creature['slug']}")
         if "mindless" in traits and "mental" not in immunities:
             raise SystemExit(f"mindless creature is missing Mental immunity: {creature['slug']}")
         if "swarm" in traits and not {"grabbed", "prone", "restrained"}.issubset(immunities):
@@ -428,7 +471,7 @@ def main() -> int:
     if (
         "/action/recall-knowledge-player-core" not in creature_view
         or "data.recallKnowledge.dc" not in creature_view
-        or "data.recallKnowledge.subjects" not in creature_view
+        or "data.recallKnowledge.entries" not in creature_view
         or "data.languages" not in creature_view
         or "/rule/languages-rules-2080" not in creature_view
         or "/rule/skills-rules-2276" not in creature_view
@@ -520,9 +563,12 @@ def main() -> int:
         "data.hardness",
         "data.languagesDetails",
         "data.loreSkills",
-        "data.recallKnowledge.subjects",
+        "data.recallKnowledge.entries",
     }.issubset(creature_fields):
         raise SystemExit("creature editor does not expose restored metadata")
+    recall_form = form("partials/recall-knowledge-entry.json")
+    if field_attributes(recall_form) != {"subject", "skills"}:
+        raise SystemExit("Recall Knowledge editor does not expose subject-skill pairs")
     if "data.hardness" not in secondary_view:
         raise SystemExit("creature view does not render Hardness")
 
