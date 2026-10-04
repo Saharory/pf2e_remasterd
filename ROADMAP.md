@@ -1,6 +1,6 @@
 # PF2E Remaster and Web Client Roadmap
 
-Last reviewed: 2026-10-04
+Last reviewed: 2026-10-05
 
 This is the decision record for work discovered while comparing the PF2E
 system and community web client with the official Encounter+ repositories,
@@ -90,6 +90,112 @@ confirmed that this workflow meets the intended need.
 - Existing safe area placement remains available without a selected token.
   Map areas do not inherit the token effect's timer; native area expiry is
   deferred below.
+
+### 6. PF2E editor efficiency — approved, spells first
+
+Approved on 2026-10-05. Work through the checklist below one step at a time,
+starting with spells. This is the saved design analysis and implementation
+reference; consult it before repeating the 5e comparison.
+
+The comparison used the local official 5e forms in `../dnd5e-source/forms/`
+and our `forms/`. The main opportunities are context-sensitive fields, useful
+summaries, fewer small sections, and navigation by editing task. PF2E needs
+more mechanics, but optional details do not all need permanent main-form rows.
+These findings come from source definitions; native scrolling, spacing, and
+tap behavior have not yet been compared in the app.
+
+**Design rules for every step**
+
+- Keep frequent edits directly accessible. Use native summary subforms for
+  optional details only where the reduced clutter justifies another click.
+- Show meaningful current values in summaries so users can inspect a record
+  without opening every entry. Never hide a populated exceptional field or
+  remove the route needed to add it to a new record.
+- Preserve all editable mechanics, internal references, storage paths, legacy
+  compatibility, variable-action casting, and existing load behavior.
+- Printed spell duration and native token expiry remain distinct settings.
+  The editor redesign does not add rule automation or map-area timers.
+- Reuse native groups, tabs, conditional fields, and existing partials. Keep
+  layouts and labels readable at narrow in-app widths.
+
+**Implementation order and saved findings**
+
+- [ ] **1. Spells — next implementation.**
+  Our main form exposes Requirements, Cast, Cost, and Trigger alongside Range,
+  Area, Targets, Defense, and Duration. The 5e form uses compact summaries for
+  related casting details and conditional fields within those editors.
+  Combine identifying fields; keep common spell mechanics directly editable;
+  collect optional requirements, casting notes, costs, and triggers under
+  **Casting details**. Group Area Template and Token Effect Duration under
+  **Map & token effects**, with useful summaries and clear labels. Preserve
+  both printed-duration storage variants and numeric token-duration editing.
+  Sources: `forms/spell.json`, `forms/partials/spell-effect-duration.json`,
+  `views/partials/spell-effect-duration.md`, and
+  `../dnd5e-source/forms/spell.json`.
+- [ ] **2. Items.**
+  Armor, shield, weapon, and gear sections already filter by category, but
+  Ammunition and Onset appear in the general group for every item. Category
+  follows separate rarity, traits, and level sections. Put category and level
+  early, combine identity fields, and expose specialized properties when
+  applicable while preserving unusual existing values and custom authoring.
+  Clarify the separate **Activate** and **Activations** editors before changing
+  their presentation; they use different storage paths and must not lose data.
+  Keep description and common equipment properties easy to reach.
+  Sources: `forms/item.json`, `forms/partials/item-type.json`, and
+  `../dnd5e-source/forms/item.json`.
+- [ ] **3. Shared ability editor.**
+  The 5e monster feature editor centers on Name, Usage, and Description. Ours
+  always gives Description, Trigger, Effect, and Reference separate sections.
+  Keep the PF2E distinctions, but compact optional material, put an applicable
+  trigger in a clear reading order, and retain separate editing of description,
+  trigger, effect, traits, action cost, and reference. Improve labels without
+  conflating passive abilities, actions, and reactions.
+  Sources: `forms/partials/ability.json`, `views/partials/ability.md`, and
+  `../dnd5e-source/forms/partials/monster-feature.json`.
+- [ ] **4. Creature layout and terminology.**
+  Our creature form has 18 top-level sections versus 11 in the 5e monster form.
+  Level alone, Base Traits, and Other Traits fragment the opening. Organize
+  related edits around **Identity**, **Statistics**, **Defenses**, and
+  **Actions & Magic**; choose groups or tabs according to the actual editing
+  flow. Keep ordinary statistics direct and exceptional notes accessible.
+  Shorten long ability-category labels while preserving their meaning, and
+  fix the existing **Ractive** typo.
+  Sources: `forms/creature.json`, `lang/en.json`, and
+  `../dnd5e-source/forms/monster.json`.
+- [ ] **5. Nested entries and summaries.**
+  Creature spell edits traverse casting entry, spell group, and individual
+  spell; attack damage components also have their own editors. Improve parent
+  summaries with attack modifiers, damage formulas/types, spell ranks, and
+  relevant usage details. Evaluate direct weakness/resistance lists in the
+  Defenses area to remove an intermediary screen. Preserve structured damage
+  components, casting groups, slots, uses, at-will/constant notes, and links;
+  do not replace them with free text to reduce clicks.
+  Sources: `forms/partials/attack.json`, `forms/partials/damage-part.json`,
+  `forms/partials/spellcasting*.json`, `forms/partials/defense-entry.json`, and
+  `forms/creature.json`.
+- [ ] **6. Character navigation.**
+  The 5e character editor has Main, Abilities & Skills, Inventory, and Spells
+  tabs; ours has 12 sections in one continuous form. Use task-based tabs to
+  make returning to statistics, inventory, and magic easier.
+  Sources: `forms/character.json` and
+  `../dnd5e-source/forms/character.json`.
+
+Library selection for character ancestry, class, and equipment is a later
+candidate. The 5e editor can select library entries where ours uses text; this
+needs a separate data/compatibility design rather than a layout-only change.
+
+**Completion and verification**
+
+For each step, verify existing records and new/custom records preserve their
+editable values, references, and behavior. Reuse the closest maintained suite
+(including `tools/test_creature_editability.py`,
+`tools/test_spell_area_templates.py`, and `tools/test_creature_spellcasting.py`
+where relevant); add coverage only for behavior the suite does not cover.
+Run focused checks while iterating and `.venv/bin/python tools/eplus_dev.py
+check --json` once when the implementation is complete. Record source/check
+completion separately from native-app verification; keep any pending app
+checks in `STATUS.md`. Update this checklist as work is completed. Commit each
+finished local step; do not bump versions, push, tag, or publish until requested.
 
 ## Additional source-backed possibilities
 
