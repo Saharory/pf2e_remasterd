@@ -247,20 +247,30 @@ process.stdout.write(JSON.stringify(fixtures));
         for section in effect_form["sections"] for field in section.get("fields", [])
     ), "unbound help text becomes a misleading None input in the native editor"
     assert not effect_field.get("attribute"), "duration subform must retain the entity context"
-    assert len(effect_form["sections"]) == 1
-    assert effect_form["sections"][0]["type"] == "group", "expiry selectors must share the parent form context"
-    effect_fields = {field["attribute"]: field for field in effect_form["sections"][0]["fields"]}
-    type_field = effect_fields["data.durationType"]
-    assert type_field["type"] == "picker"
-    assert type_field["attributeType"] == "DurationType", "spell expiry choices must match the native effect editor"
-    assert type_field["placeholder"] == "Common.None"
-    duration_field = effect_fields["data.duration"]
+    assert effect_form["title"] == "Spell.Duration"
+    assert len(effect_form["sections"]) == 3
+    type_section, duration_section, unit_section = effect_form["sections"]
+    assert type_section["type"] == "picker", "show expiry choices inline, without another picker screen"
+    assert type_section["attribute"] == "data.durationType"
+    assert type_section["attributeType"] == "DurationType", "spell expiry choices must match the native effect editor"
+    assert type_section["placeholder"] == "Common.None"
+    assert duration_section["type"] == "group"
+    assert len(duration_section["fields"]) == 1
+    duration_field = duration_section["fields"][0]
     assert duration_field["type"] == "number", "native duration must be numeric"
-    unit_field = effect_fields["data.durationUnit"]
-    assert unit_field["attributeType"] == "DurationUnit"
-    assert unit_field["defaultValue"] == "round"
-    for field in (duration_field, unit_field):
-        assert field["visibleIf"] == "data.durationType == 'time'", "timer fields must follow the selected expiry type"
+    assert duration_field["attribute"] == "data.duration"
+    assert unit_section["type"] == "picker", "show units directly below the value"
+    assert unit_section["attribute"] == "data.durationUnit"
+    assert unit_section["attributeType"] == "DurationUnit"
+    assert unit_section["defaultValue"] == "round"
+    for section in (duration_section, unit_section):
+        assert section["visibleIf"] == "data.durationType == 'time'", "timer controls must expand below Time"
+    collections = json5.loads((REPO / "collections.json").read_text())
+    assert collections["DurationType"] == [
+        "savingThrow", "sourceEndNextTurn", "sourceStartNextTurn",
+        "targetEndNextTurn", "targetStartNextTurn", "time", "untilDispelled",
+    ], "duration choices must follow the native editor order"
+    assert collections["DurationUnit"] == ["round", "minute", "hour", "day"]
     assert "SpellEffectDurationType" not in types, "spell expiry types must not diverge from native types"
     # Native registries supply values, but custom forms need package translations.
     # User screenshots exposed both enum keys and native preview plural keys.

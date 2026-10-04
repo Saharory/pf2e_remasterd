@@ -6,10 +6,10 @@ Last updated: 2026-10-04
 - Package version: `0.9.01`; release preparation, version changes, push, tags,
   and publication require explicit user approval. No release approval yet.
 - Current test package: `dist/test/pf2e-remaster.system`, rebuilt with the
-  system-wide form refresh repair, spell duration labels/picker candidate,
+  system-wide form refresh repair, readable spell duration labels/inline choices,
   and normal HTML display. All packaged forms
   match their source files; records, configuration, and version are unchanged.
-  SHA-256: `651331be52b41bf956c0d08ff039f77a1e8bea2fabeb50731bf8d028f4e95124`.
+  SHA-256: `69d96f5705d7509a40384b9ef81c2455433513a89c4eb82bb84c31671647b14c`.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 82 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
@@ -90,17 +90,19 @@ Last updated: 2026-10-04
   remains removed; help uses the parent's subtitle. Descriptors and records
   are unchanged. The native preview's own label lookup still needs user testing.
 - Time selection regression: the user reports the same delayed update when
-  selecting Time. The duration subform already retains the entity context,
-  but its Type/Unit controls were section-level pickers. Candidate now puts
-  both selectors and numeric Duration into one regular group, with full
-  entity paths and Time-only visibility on the two timer fields. Source
-  checks cover these bindings, visibility, and complete label coverage;
-  the focused spell suite and canonical check pass. Only the spell form,
-  duration summary, and two language files changed in the rebuilt archive.
-  Pending user test: switch None/Until Dispelled to Time; Duration and Unit
-  should appear immediately. Set two minutes, return and save/reopen, then
-  select Until Dispelled and check that timer controls immediately disappear.
-  Do not claim the picker refresh is fixed until the user confirms this candidate.
+  selecting Time. The user rejected the field-picker candidate because it
+  added navigation and explicitly requested the native-looking inline list.
+  Current Duration page directly lists Saving Throw, Source End Next Turn,
+  Source Start Next Turn, Target End Next Turn, Target Start Next Turn, Time,
+  and Until Dispelled, ordered through the existing collection mechanism.
+  Duration value and inline unit choices expand below Time using the direct
+  `data.durationType == 'time'` visibility condition. Full entity paths,
+  restored readable labels, plural summaries, and existing data are preserved.
+  No extra type/unit picker page or new custom controls. The focused spell
+  suite and canonical check pass; the latest archive changes only the spell
+  form and option ordering. Pending user test: press Time and confirm immediate
+  expansion, then save/reopen two minutes and switch to Until Dispelled.
+  Native immediate expansion remains unconfirmed; source checks do not prove it.
 - Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
   against all 1,404 durations; it preserves prose and GM settings and is
   idempotent. It remains inactive while the package is `0.9.01`. Legacy duration
