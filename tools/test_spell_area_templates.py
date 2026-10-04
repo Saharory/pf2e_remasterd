@@ -231,16 +231,20 @@ process.stdout.write(JSON.stringify(fixtures));
         "tabs[0].sections[0].form.sections[0].fields[0].fields[0].type: invalid field type 'group'"
     ], "validation missed an invalid nested field type"
 
-    serialized_form = json.dumps(form)
-    for attribute in ("data.areaEffectShape", "data.areaEffectSize"):
-        assert attribute in serialized_form, f"spell form is missing {attribute}"
-    for attribute in ("data.durationText", "data.duration", "data.durationType", "data.durationUnit"):
-        assert attribute in serialized_form, f"spell form is missing {attribute}"
     effect_field = next(
         field for field in form["sections"][3]["fields"]
         if field.get("title") == "Spell.EffectDuration"
     )
-    effect_form = effect_field["form"]
+    assert effect_field["form"] == {
+        "title": "Spell.Duration", "partial": "spell-effect-duration",
+    }, "duration controls must stay in a dedicated partial form, not on the main spell page"
+    effect_form = json5.loads((REPO / "forms" / "partials" / "spell-effect-duration.json").read_text())
+    assert not validate_form_definition(effect_form), "duration partial has invalid native form types"
+    serialized_form = json.dumps(form) + json.dumps(effect_form)
+    for attribute in ("data.areaEffectShape", "data.areaEffectSize"):
+        assert attribute in serialized_form, f"spell form is missing {attribute}"
+    for attribute in ("data.durationText", "data.duration", "data.durationType", "data.durationUnit"):
+        assert attribute in serialized_form, f"spell form is missing {attribute}"
     assert effect_field["detail"] == "Spell.EffectDurationHelp"
     assert all(
         field.get("attribute")

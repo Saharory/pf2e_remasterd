@@ -7,11 +7,11 @@ Last updated: 2026-10-04
   and publication require explicit user approval. No release approval yet.
 - Current test package: `dist/test/pf2e-remaster.system`, rebuilt with the
   system-wide form refresh repair, explicit duration option maps/inline choices,
-  and normal HTML display. All packaged forms
+  a dedicated duration partial form, and normal HTML display. All packaged forms
   match their source files; records, configuration, and version are unchanged.
-  SHA-256: `f22e831dd12f7e2fb1365a9bae4279d8c7d643b6c4843a590fd5b45dc28c7fb9`.
+  SHA-256: `df87f31a4523b58de6f8ba81b81490accccabf3eeee87707de5a1433a9f63b83`.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
-  with 82 definition files and every maintained validator, including 22 ORC
+  with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
   spell durations/areas, hazard/vehicle mechanics, and four UI regression files.
   This host's virtualenv points to a missing Python. Run with
@@ -103,8 +103,8 @@ Last updated: 2026-10-04
   requires leaving/re-entering its Duration page before timer controls appear.
   The same failure is therefore reproduced in an official system; distinguish
   this shared conditional-form refresh issue from the fixed PF2E option labels.
-  Focused and canonical checks pass. The rebuilt archive changes only
-  `forms/spell.json` and `types.json`; all other entries are identical.
+  The explicit option-map repair is native-confirmed; its visibility-template
+  change did not fix the nested page. See the new partial candidate below.
 - Native status-duration inspection: the working editor is app-owned. PF2E's
   `forms/status-effect.json` adds stage/rarity/traits/printed duration; it does
   not define the expiry picker or expanding timer controls. The bundled 5e
@@ -116,21 +116,34 @@ Last updated: 2026-10-04
   components, not the internal cause of the missed redraw. The public
   [FormDefinition schema](https://docs.encounter.plus/reference/schema/form-definition/)
   exposes no duration field or hook to embed/call `DurationForm`. No supported
-  way to reuse that native page in a spell's JSON form was found. Keep the
-  root-form diagnostic pending; do not invent unsupported refresh keys or
-  claim the native component was copied/fixed.
-- Focused refresh diagnostic: `dist/test/pf2e-remaster-duration-root-test.system`
+  way to reuse that native page in a spell's JSON form was found. Do not invent
+  unsupported refresh keys or claim the native component was copied/fixed.
+- Confirmed root-form diagnostic: `dist/test/pf2e-remaster-duration-root-test.system`
   temporarily moves the same three duration sections directly into the main
   Spell form. It changes only `forms/spell.json` in the regular archive, keeps
   the same stored paths/labels/visibility expressions, and remains `0.9.01`.
   Source: `dist/test/diagnostics/spell-duration-root-form.json`; native form
   definition validation passes. SHA-256:
   `479a20798aae760aad8c9479a5902ee7cc8596b471258c8f38713c8656bac157`.
-  No main-form layout change has been applied to the regular source/package.
-  Next user test: open Edit Spell, scroll to Token Effect Duration directly on
-  the main page, select Until Dispelled then Time, and report whether the value
-  and units appear immediately. This distinguishes a nested-page refresh
-  failure from general section visibility. Do not repeat the confirmed 5e test.
+  The user confirms immediate Time expansion works there, and asks why the
+  controls moved out of their section. The move was only to isolate the nested
+  page. Do not adopt that main-page layout as the final design or repeat this
+  confirmed test. The regular source retains the dedicated Duration page.
+- Current duration-page candidate: move its existing three sections to
+  `forms/partials/spell-effect-duration.json` and reference that partial from
+  the unbound parent form, matching the confirmed Skills/Immunities pattern.
+  Resolving this partial exactly reproduces the previous JSON definition:
+  layout, labels, conditions, summaries, and every stored path are identical.
+  Read-only app metadata distinguishes `EntityPartialForm` (own model and
+  form data) from `EntityEmbeddedForm` (definition and data). This supports
+  testing a partial page; it does not establish which route the app selects
+  or prove the redraw is fixed. The spell suite checks the dedicated partial
+  route and all existing duration behavior. Focused and canonical checks pass
+  (83 definitions, nine validators). The rebuilt archive adds only the new
+  partial and changes `forms/spell.json`; every other entry is identical.
+  Next user test after importing the
+  regular package: open Token Effect Duration, choose Until Dispelled then Time,
+  and confirm controls expand immediately inside that page. Native result pending.
 - Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
   against all 1,404 durations; it preserves prose and GM settings and is
   idempotent. It remains inactive while the package is `0.9.01`. Legacy duration
@@ -148,7 +161,7 @@ Last updated: 2026-10-04
   and a representative deity/hazard/vehicle list. Verify immediate redraw plus
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
-  ritual links, creature spell links, native duration labels/preview, custom
+  ritual links, creature spell links, dedicated duration-page refresh, custom
   manual spell loading, distinct caster/source-relative expiry, and Fireball /
   Detect Magic area placement with no token selected. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
