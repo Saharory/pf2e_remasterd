@@ -42,7 +42,8 @@ Last updated: 2026-10-04
   without issues. Name editing is therefore failing native verification;
   the earlier successful modifier save does not establish name persistence.
   Waiting two seconds and moving focus to Quantity did not rescue the
-  single-letter edit. Encounter+ version/device are unconfirmed. No package
+  single-letter edit in the earlier package. User confirms testing on Mac;
+  the local app is Encounter+ 5.0.8 (4530). No package
   script filters short name edits. The delayed summary redraw and lost text
   edits remain unresolved; a native input-commit/refresh issue is only a
   hypothesis. The test candidate now uses `textArea` for Lore and Items name
@@ -60,12 +61,16 @@ Last updated: 2026-10-04
   refresh setting. A read-only Mac editor inspection found a native Delete
   accessibility action on the Recall Knowledge summary row, but Items and
   Immunities removal actions have not yet been inspected. The user began an
-  import during inspection, so further app interaction stopped. The local app
-  is Encounter+ 5.0.8 (4530); confirm whether this is the test device and whether
-  these reports came from the rebuilt candidate or earlier package. Next:
-  inspect each affected row's native removal action and verify removal persists
-  after saving, then isolate the native list refresh failure. Do not treat
-  this package as ready for release.
+  import during inspection, so further app interaction stopped. User confirms
+  Mac and the rebuilt candidate with larger name controls: the broader list
+  refresh/removal report applies to the current candidate, not just the earlier
+  package. No supported JSON refresh callback or delete-option override was
+  found; do not claim these issues fixed by changing field types. Next:
+  check the context menu on an individual Items row and an individual Immunities
+  row for Delete, then verify removal persists after saving. If no action is
+  present, capture the affected row's native accessibility actions before
+  choosing a system-level workaround. Recheck single-letter name persistence
+  separately with the candidate. Do not treat this package as ready for release.
 - Native editor reference result (user report, 2026-10-04): selecting Chest
   through the Items Reference picker renders literal Markdown in the saved
   stat block: `[Chest](/item/chest-player-core/player core) (2)`.
