@@ -264,7 +264,7 @@ process.stdout.write(JSON.stringify(fixtures));
     assert unit_section["attributeType"] == "DurationUnit"
     assert unit_section["defaultValue"] == "round"
     for section in (duration_section, unit_section):
-        assert section["visibleIf"] == "data.durationType == 'time'", "timer controls must expand below Time"
+        assert section["visibleIf"] == "{% if data.durationType == 'time' %}true{% endif %}", "timer controls must use the 5e template pattern to expand below Time"
     collections = json5.loads((REPO / "collections.json").read_text())
     assert collections["DurationType"] == [
         "savingThrow", "sourceEndNextTurn", "sourceStartNextTurn",
@@ -272,10 +272,23 @@ process.stdout.write(JSON.stringify(fixtures));
     ], "duration choices must follow the native editor order"
     assert collections["DurationUnit"] == ["round", "minute", "hour", "day"]
     assert "SpellEffectDurationType" not in types, "spell expiry types must not diverge from native types"
-    # Native registries supply values, but custom forms need package translations.
-    # User screenshots exposed both enum keys and native preview plural keys.
-    for native_type in ("DurationType", "DurationUnit"):
-        assert native_type not in types, f"system overrides the engine's {native_type}"
+    # Like 5e, declare picker value/label maps in the package, rather than relying
+    # on injected app enums. Collection ordering alone cannot supply these labels.
+    expected_types = {
+        "DurationType": {
+            "savingThrow": "DurationType.SavingThrow",
+            "sourceEndNextTurn": "DurationType.SourceEndNextTurn",
+            "sourceStartNextTurn": "DurationType.SourceStartNextTurn",
+            "targetEndNextTurn": "DurationType.TargetEndNextTurn",
+            "targetStartNextTurn": "DurationType.TargetStartNextTurn",
+            "time": "DurationType.Time",
+            "untilDispelled": "DurationType.UntilDispelled",
+        },
+        "DurationUnit": {unit: f"DurationUnit.{unit.title()}" for unit in ("round", "minute", "hour", "day")},
+    }
+    for name, values in expected_types.items():
+        assert types.get(name) == values, f"{name}: incomplete or unmapped native duration choices"
+        assert set(collections[name]) == set(values), f"{name}: ordering drops duration choices"
     required_labels = {"Common.Unit"}
     required_labels.update(f"DurationType.{value}" for value in (
         "SavingThrow", "SourceEndNextTurn", "SourceStartNextTurn",

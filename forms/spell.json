@@ -150,7 +150,7 @@
               },
               {
                 "type": "group",
-                "visibleIf": "data.durationType == 'time'",
+                "visibleIf": "{% if data.durationType == 'time' %}true{% endif %}",
                 "fields": [
                   {
                     "title": "Spell.Duration",
@@ -162,7 +162,7 @@
               {
                 "title": "Common.Unit",
                 "type": "picker",
-                "visibleIf": "data.durationType == 'time'",
+                "visibleIf": "{% if data.durationType == 'time' %}true{% endif %}",
                 "attribute": "data.durationUnit",
                 "attributeType": "DurationUnit",
                 "defaultValue": "round"

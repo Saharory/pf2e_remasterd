@@ -6,10 +6,10 @@ Last updated: 2026-10-04
 - Package version: `0.9.01`; release preparation, version changes, push, tags,
   and publication require explicit user approval. No release approval yet.
 - Current test package: `dist/test/pf2e-remaster.system`, rebuilt with the
-  system-wide form refresh repair, readable spell duration labels/inline choices,
+  system-wide form refresh repair, explicit duration option maps/inline choices,
   and normal HTML display. All packaged forms
   match their source files; records, configuration, and version are unchanged.
-  SHA-256: `69d96f5705d7509a40384b9ef81c2455433513a89c4eb82bb84c31671647b14c`.
+  SHA-256: `f22e831dd12f7e2fb1365a9bae4279d8c7d643b6c4843a590fd5b45dc28c7fb9`.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 82 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
@@ -78,31 +78,31 @@ Last updated: 2026-10-04
   of the installed loader established support for that unit-only descriptor.
   Sustained durations supply a maximum timer, not automatic Sustain. The 308
   map-area templates remain intact; deferred upstream conversion is unchanged.
-- Duration display: spell editing/summary use built-in `DurationType` and
-  `DurationUnit`, with native Saving Throw, source/target turn endings, Time,
-  Until Dispelled, and None/reset. Native type registries are not overridden.
-  User's latest screenshot exposes raw `DurationType.*`, `DurationUnit.*`,
-  and `Common.Unit` keys; removing the package translations incorrectly assumed
-  the engine supplied these labels to custom forms. Restored all expiry/unit
-  labels and Unit in English/French, plus singular/plural
-  `durationunit.<unit>.one/other` keys observed in the earlier native preview.
-  The spell summary uses those singular/plural keys. The unbound help input
-  remains removed; help uses the parent's subtitle. Descriptors and records
-  are unchanged. The native preview's own label lookup still needs user testing.
-- Time selection regression: the user reports the same delayed update when
-  selecting Time. The user rejected the field-picker candidate because it
-  added navigation and explicitly requested the native-looking inline list.
-  Current Duration page directly lists Saving Throw, Source End Next Turn,
-  Source Start Next Turn, Target End Next Turn, Target Start Next Turn, Time,
-  and Until Dispelled, ordered through the existing collection mechanism.
-  Duration value and inline unit choices expand below Time using the direct
-  `data.durationType == 'time'` visibility condition. Full entity paths,
-  restored readable labels, plural summaries, and existing data are preserved.
-  No extra type/unit picker page or new custom controls. The focused spell
-  suite and canonical check pass; the latest archive changes only the spell
-  form and option ordering. Pending user test: press Time and confirm immediate
-  expansion, then save/reopen two minutes and switch to Until Dispelled.
-  Native immediate expansion remains unconfirmed; source checks do not prove it.
+- Duration regression, latest native result: restoring language entries alone
+  failed. The spell and native status-effect editors still show raw
+  `DurationType.*` / `DurationUnit.*`; Unit now translates. Spell Time requires
+  leaving/reopening before its value/unit controls appear. The native
+  status-effect editor expands immediately. Do not record either spell issue
+  as passed. The rejected field-picker candidate added navigation; retain the
+  user's requested inline choices and expanding value/unit controls.
+- D&D comparison and current candidate: the installed `dnd5e.system` and local
+  `../dnd5e-source/forms/spell.json` use an unbound parent form, full entity
+  paths, package-declared picker maps in `types.json`, and a full template
+  returning `true` for visible timer sections. PF2E already shares the context
+  pattern; it had removed its own duration maps and used bare visibility
+  comparisons. Restore the complete `DurationType` / `DurationUnit` maps (also
+  present in `../upstream-pf2e/types.json`) and use
+  `{% if data.durationType == 'time' %}true{% endif %}` for both timer sections.
+  Stored native values stay identical. Ordering lists all seven native types
+  and four units. English/French labels, singular/plural summaries, None/reset,
+  and parent help remain intact. No additional picker screens or controls.
+  D&D also shows timer controls for an unset type, so this comparison does not
+  prove PF2E's live Time transition. Source checks guard complete option maps,
+  labels, ordering, layout, and storage; native confirmation remains pending.
+  Focused and canonical checks pass. The rebuilt archive changes only
+  `forms/spell.json` and `types.json`; all other entries are identical.
+  Next test: spell labels and immediate Time expansion, save/reopen two minutes,
+  switch to Until Dispelled, then check native status-effect labels/preview.
 - Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
   against all 1,404 durations; it preserves prose and GM settings and is
   idempotent. It remains inactive while the package is `0.9.01`. Legacy duration
