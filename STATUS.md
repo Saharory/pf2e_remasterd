@@ -3,7 +3,7 @@
 Last updated: 2026-10-04
 
 - Branch: `remaster-community-base`
-- Package version: `0.9.0` (pushed; release not yet published)
+- Package version: `0.9.01` (release not yet published)
 - Latest completed local work: the creature editor now exposes lossless,
   structured controls for special senses, searchable inventory items and
   quantities, immunity references/custom text, and ritual lists. Named Lore is
