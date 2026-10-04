@@ -4,11 +4,13 @@
 from __future__ import annotations
 
 import json
+from copy import deepcopy
 from pathlib import Path
 
 import json5
 
 from spell_area_templates import parse_spell_area
+from eplus_dev import validate_form_definition
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -94,6 +96,38 @@ def main() -> None:
     assert configured_shapes <= shapes, "AreaEffectShape is missing a configured shape"
 
     form = json5.loads((REPO / "forms" / "spell.json").read_text(encoding="utf-8"))
+    assert not validate_form_definition(form), "spell editor has invalid native form types"
+    area_form = form["sections"][3]["fields"][8]["form"]
+    size_section = area_form["sections"][1]
+    assert size_section["type"] == "group", "area size must use a group section"
+    size_field = size_section["fields"][0]
+    assert size_field["type"] == "decimal", "area size must allow fractional values"
+    assert size_field["units"] == "ft", "area size must support native unit conversion"
+
+    # The screenshot failure must be caught at the same nested decoder path.
+    broken = deepcopy(form)
+    broken["sections"][3]["fields"][8]["form"]["sections"][1] = {
+        "type": "decimal", "attribute": "data.areaEffectSize"
+    }
+    assert validate_form_definition(broken) == [
+        "sections[3].fields[8].form.sections[1].type: invalid section type 'decimal'"
+    ], "validation missed the spell editor decoding failure"
+
+    # Check the same rules inside tabs, list row editors, and field containers.
+    nested = {
+        "tabs": [{"sections": [{
+            "type": "list",
+            "form": {"sections": [{"type": "group", "fields": [{
+                "type": "hStack", "fields": [{"type": "decimal"}]
+            }]}]},
+        }]}]
+    }
+    assert not validate_form_definition(nested), "valid nested editors were rejected"
+    nested["tabs"][0]["sections"][0]["form"]["sections"][0]["fields"][0]["fields"][0]["type"] = "group"
+    assert validate_form_definition(nested) == [
+        "tabs[0].sections[0].form.sections[0].fields[0].fields[0].type: invalid field type 'group'"
+    ], "validation missed an invalid nested field type"
+
     serialized_form = json.dumps(form)
     for attribute in ("data.areaEffectShape", "data.areaEffectSize"):
         assert attribute in serialized_form, f"spell form is missing {attribute}"

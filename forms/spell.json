@@ -88,7 +88,7 @@
         {
           "title": "Spell.AreaTemplate",
           "type": "form",
-          "text": "{{data.areaEffectSize}} ft. {{data.areaEffectShape|map: 'AreaEffectShape'}}",
+          "text": "{{data.areaEffectSize|units: 'ft'}} {{data.areaEffectShape|map: 'AreaEffectShape'}}",
           "form": {
             "title": "Spell.AreaTemplate",
             "sections": [
@@ -99,9 +99,15 @@
                 "attributeType": "AreaEffectShape"
               },
               {
-                "title": "AreaEffect.SizeWithUnit",
-                "type": "decimal",
-                "attribute": "data.areaEffectSize"
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "AreaEffect.Size",
+                    "units": "ft",
+                    "type": "decimal",
+                    "attribute": "data.areaEffectSize"
+                  }
+                ]
               }
             ]
           }

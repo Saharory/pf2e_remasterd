@@ -107,6 +107,15 @@ LABEL_TO_COLLECTION = {
     "vehicle": "vehicles",
 }
 
+# Encounter+ uses separate enums for section containers and input fields.
+# https://docs.encounter.plus/reference/schema/form-definition/
+FORM_SECTION_TYPES = {"group", "list", "picker", "multiPicker", "dnd5eClassFeatures"}
+FORM_FIELD_TYPES = {
+    "number", "decimal", "toggle", "reference", "text", "textArea", "picker",
+    "multiPicker", "colorPicker", "menu", "tags", "attributes", "modifiers",
+    "list", "form", "hStack", "checkbox",
+}
+
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -121,6 +130,46 @@ def load_json5(path: Path) -> Any:
             "python3 -m pip install -r requirements-dev.txt"
         ) from exc
     return json5.loads(path.read_text(encoding="utf-8"), allow_duplicate_keys=False)
+
+
+def validate_form_definition(definition: Any) -> list[str]:
+    """Check native container/input types, including tabs and nested editors.
+
+    JSON5 parsing alone cannot catch a valid field type used as a section.
+    Standalone partials are checked by the same pass as top-level forms.
+    """
+    errors: list[str] = []
+
+    def walk(node: Any, role: str, location: str) -> None:
+        if not isinstance(node, dict):
+            errors.append(f"{location or 'form'}: expected an object")
+            return
+        if role != "form":
+            default = "group" if role == "section" else "text"
+            kind = node.get("type") if node.get("type") is not None else default
+            allowed = FORM_SECTION_TYPES if role == "section" else FORM_FIELD_TYPES
+            if not isinstance(kind, str) or kind not in allowed:
+                errors.append(f"{location}.type: invalid {role} type {kind!r}")
+
+        children = (
+            {"tabs": "form", "sections": "section"}
+            if role == "form" else {"fields": "field"}
+        )
+        for key, child_role in children.items():
+            value = node.get(key)
+            if value is None:
+                continue
+            child_path = f"{location}.{key}" if location else key
+            if not isinstance(value, list):
+                errors.append(f"{child_path}: expected an array")
+                continue
+            for index, child in enumerate(value):
+                walk(child, child_role, f"{child_path}[{index}]")
+        if role != "form" and node.get("form") is not None:
+            walk(node["form"], "form", f"{location}.form")
+
+    walk(definition, "form", "")
+    return errors
 
 
 def sha256(path: Path) -> str:
@@ -202,8 +251,13 @@ def validate_project() -> dict[str, Any]:
     parsed = 0
     for path in definition_files():
         try:
-            load_json5(path)
+            definition = load_json5(path)
             parsed += 1
+            if path.is_relative_to(REPO / "forms"):
+                errors.extend(
+                    f"{path.relative_to(REPO)}: {error}"
+                    for error in validate_form_definition(definition)
+                )
         except Exception as exc:  # decoder messages are the useful result here
             errors.append(f"{path.relative_to(REPO)}: {exc}")
 
