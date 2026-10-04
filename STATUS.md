@@ -145,21 +145,26 @@ Last updated: 2026-10-04
   controls. A partial reference does not avoid the missed redraw. Do not repeat
   this candidate or claim that the dedicated page now works. The main-page
   diagnostic remains the only confirmed immediate Time expansion.
-- Duration-field consolidation, report before implementation: the user asks
-  whether token duration can also supply the spell's displayed duration, and
-  explicitly requests a report first if it cannot represent all descriptions.
+- Duration-field decision: the user explicitly chose to keep printed duration
+  and token expiry separate after the feasibility report. Do not consolidate.
   Audited all 1,404 spells: 694 plain timers, 56 turn-relative endings, 59 timed
   descriptions with additional wording, and 595 manual reminders covering 22
   distinct descriptions (including empty). The native value/type/unit fields
   alone are lossy: Haste's `1 minute` and Buzzing Bites' `sustained up to 1 minute`
   both store the same 1-minute timer; Mystic Armor's `until your next daily
   preparations` and Restyle's `unlimited` both store the same unit-only manual
-  reminder. `data.durationText` retains the full descriptions. Recommended
-  design: one Duration editor, generated normal text for simple timers/turn
-  endings, and optional preserved/custom description text for qualifiers and
-  non-timer durations. Do not delete or silently replace source duration prose.
-  Report this limitation before changing fields, templates, or records; no
-  consolidation has been implemented yet.
+  reminder. `data.durationText` retains the full descriptions. Do not delete or
+  silently replace source duration prose. No consolidation was implemented.
+- Nested Time refresh disposition: no reliable package fix preserving the
+  existing dedicated page has been found. Keep that layout and use leaving /
+  reopening as the workaround. The user accepts waiting for the Encounter+
+  developer if this cannot be solved here; do not send further speculative
+  packages or repeat the confirmed experiments. The local developer report
+  is `NATIVE-FORM-REFRESH.md`, with exact steps, official 5e reproduction,
+  passing controls, and a bounded inference about nested section invalidation.
+  Nothing has been submitted or sent externally. Continue other verification
+  independently; this known issue remains unresolved and no release approval
+  has been given.
 - Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
   against all 1,404 durations; it preserves prose and GM settings and is
   idempotent. It remains inactive while the package is `0.9.01`. Legacy duration
@@ -177,7 +182,7 @@ Last updated: 2026-10-04
   and a representative deity/hazard/vehicle list. Verify immediate redraw plus
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
-  ritual links, creature spell links, dedicated duration-page refresh, custom
+  ritual links, creature spell links, custom
   manual spell loading, distinct caster/source-relative expiry, and Fireball /
   Detect Magic area placement with no token selected. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
