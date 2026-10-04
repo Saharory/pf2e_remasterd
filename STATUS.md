@@ -105,6 +105,20 @@ Last updated: 2026-10-04
   this shared conditional-form refresh issue from the fixed PF2E option labels.
   Focused and canonical checks pass. The rebuilt archive changes only
   `forms/spell.json` and `types.json`; all other entries are identical.
+- Native status-duration inspection: the working editor is app-owned. PF2E's
+  `forms/status-effect.json` adds stage/rarity/traits/printed duration; it does
+  not define the expiry picker or expanding timer controls. The bundled 5e
+  archive has no corresponding status-effect duration form. Read-only Swift
+  metadata inspection of the installed app identifies a separate `DurationForm`
+  with `_duration`, `_durationUnit`, and `_durationType` properties, alongside
+  `StatusEffectForm`. Generic custom editors instead use `EntityEmbeddedForm`
+  and `EntityFormSection` with a definition and `_data`. This confirms separate
+  components, not the internal cause of the missed redraw. The public
+  [FormDefinition schema](https://docs.encounter.plus/reference/schema/form-definition/)
+  exposes no duration field or hook to embed/call `DurationForm`. No supported
+  way to reuse that native page in a spell's JSON form was found. Keep the
+  root-form diagnostic pending; do not invent unsupported refresh keys or
+  claim the native component was copied/fixed.
 - Focused refresh diagnostic: `dist/test/pf2e-remaster-duration-root-test.system`
   temporarily moves the same three duration sections directly into the main
   Spell form. It changes only `forms/spell.json` in the regular archive, keeps
