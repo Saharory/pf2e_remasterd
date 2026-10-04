@@ -837,14 +837,60 @@ def main() -> int:
         f"data.movement.{key}" for key in ("walk", "burrow", "climb", "fly", "swim", "other")
     }:
         raise SystemExit("shared movement editor does not preserve its entity storage paths")
+    item_editor = form("item.json")
+    item_nodes = list(form_nodes(item_editor))
+    item_controls = [node for node in item_nodes if node.get("attribute")]
+    required_item_attributes = {
+        "data.category", "data.level", "data.rarity", "data.traits", "data.subcategory",
+        "data.price", "data.usage", "data.bulk", "data.ammunition", "data.onset",
+        "data.craftRequirements", "data.ac", "data.dexCap", "data.checkPenalty",
+        "data.speedPenalty", "data.str", "data.armorCategory", "data.armorGroup",
+        "data.hardness", "data.hp", "data.bt", "data.damage", "data.range",
+        "data.reload", "data.hands", "data.weaponType", "data.weaponCategory",
+        "data.weaponGroup", "descr", "data.activation.actions", "data.activation.type",
+        "data.activation.traits", "data.activation.text", "data.activations", "data.types",
+    }
+    if {node["attribute"] for node in item_controls} != required_item_attributes:
+        raise SystemExit("item editor regrouping changed editable storage paths")
+    item_by_attribute = {node["attribute"]: node for node in item_controls}
+    for attribute, kind in {
+        "data.speedPenalty": "decimal", "data.traits": "tags",
+        "data.activation.actions": "picker", "data.activation.traits": "tags",
+        "data.activation.text": "textArea", "data.craftRequirements": "textArea",
+        "descr": "textArea",
+    }.items():
+        if item_by_attribute[attribute].get("type") != kind:
+            raise SystemExit(f"item editor changed the input type for {attribute}")
+    details = next(node for node in item_nodes if node.get("type") == "form"
+                   and node.get("title") == "Item.AdditionalDetails")
+    if details.get("attribute") or details.get("visibleIf"):
+        raise SystemExit("optional item details must be accessible for every category, including empty items")
+    if field_attributes(details["form"]) != {
+        "data.ammunition", "data.onset", "data.craftRequirements"
+    }:
+        raise SystemExit("optional item details lost ammunition, onset, or crafting")
+    for attribute in field_attributes(details["form"]):
+        if "{{" + attribute + "}}" not in details["text"]:
+            raise SystemExit(f"item details summary omits {attribute}")
+    if "'Common.None'|l" not in details["text"]:
+        raise SystemExit("empty item details need a localized summary")
+    for attribute, partial in (("data.activations", "ability"), ("data.types", "item-type")):
+        control = item_by_attribute[attribute]
+        if control.get("type") != "list" or control.get("form", {}).get("partial") != partial:
+            raise SystemExit(f"item editor changed the list entry schema for {attribute}")
     activation = next(
-        node for node in form_nodes(form("item.json"))
-        if node.get("title") == "Item.Activate"
+        node for node in item_nodes
+        if node.get("type") == "form" and node.get("title") == "Item.PrimaryActivation"
     )
     if field_attributes(activation.get("form", {})) != {
         f"data.activation.{key}" for key in ("actions", "type", "traits", "text")
     }:
         raise SystemExit("item activation editor does not preserve its entity storage paths")
+    for attribute in field_attributes(activation["form"]):
+        if attribute not in activation["text"]:
+            raise SystemExit(f"primary activation summary omits {attribute}")
+    if "'Common.None'|l" not in activation["text"]:
+        raise SystemExit("empty primary activation needs a localized summary")
     defense_form = form("partials/defense-entry.json")
     if field_attributes(defense_form) != {"type", "value"}:
         raise SystemExit("weakness and resistance entries must use Type and Value")

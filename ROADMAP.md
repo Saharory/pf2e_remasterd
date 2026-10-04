@@ -142,7 +142,7 @@ tap behavior have not yet been compared in the app.
   Focused checks and the canonical check pass; native checks remain in
   `STATUS.md` while user testing is paused. The pre-redesign baseline was
   pushed to `origin/remaster-community-base` at `4ea2835` before this work.
-- [ ] **2. Items — next implementation.**
+- [x] **2. Items — source complete; native verification pending.**
   Armor, shield, weapon, and gear sections already filter by category, but
   Ammunition and Onset appear in the general group for every item. Category
   follows separate rarity, traits, and level sections. Put category and level
@@ -153,6 +153,20 @@ tap behavior have not yet been compared in the app.
   Keep description and common equipment properties easy to reach.
   Sources: `forms/item.json`, `forms/partials/item-type.json`, and
   `../dnd5e-source/forms/item.json`.
+  Implemented on 2026-10-05: category/level/rarity/traits/subcategory share the
+  opening group; price, usage, and bulk remain direct. A root-context
+  **Additional details** summary/editor collects ammunition, onset, and
+  crafting requirements, available for every category even when empty.
+  Armor/shield/weapon/gear properties remain direct and populated exceptional
+  properties retain an editing route after category changes. **Primary
+  activation** and **Additional activations** clarify the separate single
+  activation and named-entry list without changing their storage or schemas.
+  Item types are labeled **Variants** in the editor. Top-level sections decrease
+  from 12 to 10, with typical non-category rows decreasing from 15 to 13.
+  All 38 bound controls preserve paths, input types, defaults, and units;
+  English/French labels, summaries, and the existing editability suite were
+  updated. Focused and canonical checks pass. Pending native checks are saved
+  in `STATUS.md`; shared abilities are next after item feedback.
 - [ ] **3. Shared ability editor.**
   The 5e monster feature editor centers on Name, Usage, and Description. Ours
   always gives Description, Trigger, Effect, and Reference separate sections.

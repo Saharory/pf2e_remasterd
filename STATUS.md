@@ -19,13 +19,14 @@ Last updated: 2026-10-05
   delivery restriction and is saved in `AGENTS.md`. Native testing remains
   user-controlled; no agent app automation is authorized.
 - Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-05
-  with the spell-editor redesign and previous system-wide refresh repairs.
+  with the item and spell editor redesigns and previous system-wide refresh
+  repairs.
   Archive inspection/CRC/checksums pass; all 198 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `a9b098c50563c8645c3138d7bc750282f09843f36d34dcabe4e49628de394a03`.
+  SHA-256: `d28c8f14f9cff34a69b40fc4bd4cfb73bb5566385c46a8def4105e96f206edd4`.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
@@ -43,8 +44,8 @@ Last updated: 2026-10-05
   All 21 controls retain their storage paths, input/picker types, visibility,
   defaults, and units. English/French labels are included; spell-area/duration
   and creature-editability checks pass, as does the canonical check. Records,
-  migrations, native loading, and versions are unchanged. Items are next in
-  the roadmap; no item redesign has begun.
+  migrations, native loading, and versions are unchanged. Item editor source
+  work is now complete as described below.
   Pending user checks after the existing hotfix pause ends: open a new spell
   and add casting details; edit/save/reopen populated notes, requirements,
   cost, and trigger and inspect summary refresh/stat-block text; retain multiple
@@ -52,6 +53,30 @@ Last updated: 2026-10-05
   edit template shape/fractional size and numeric token expiry independently
   and verify summaries/save/reopen; check an older custom spell with prose in
   `data.duration`. These are future checks, not a request to resume testing.
+- Item editor efficiency: source complete, native verification pending.
+  Category/level/rarity/traits/subcategory share the opening group. Price,
+  usage, bulk, description, and category-specific equipment stats remain
+  direct. Ammunition, onset, and crafting requirements share a root-context
+  **Additional details** editor with a populated summary or localized **None**;
+  it remains accessible for empty/custom items of every category. Equipment
+  sections also expose populated exceptional properties after category changes,
+  preserving zero-valued numeric stats. **Primary activation** edits the original
+  `data.activation` fields; **Additional activations** keeps the separate named
+  list at `data.activations`. Both remain available when empty. The primary
+  summary now includes traits. The original `data.types` list is labeled
+  **Variants**, with its entry schema unchanged. Top-level sections decrease
+  from 12 to 10 and typical non-category rows from 15 to 13. All 38 bound
+  controls preserve paths, input types, defaults, and units. English/French
+  labels, focused editability regression, and canonical source checks pass.
+  No content, migration, stat-block, or version changes were required.
+  Pending user checks when native testing resumes: inspect new gear, armor,
+  shields, and weapons; add/edit/clear ammunition, onset, and crafting details
+  and verify summary refresh and save/reopen; edit primary activation including
+  traits, create/delete named activations, and confirm they remain independent;
+  edit variants and their level/price/bulk/crafting fields; change a category
+  with populated equipment stats and ensure those values remain editable.
+  No agent app automation is authorized. Shared abilities are next after item
+  feedback; no ability-editor redesign has begun.
 - Native testing: user tests on Mac, Encounter+ 5.0.8 (4530). The user performs
   all further app tests; do not run agent UI automation or visual app inspection.
   Analyze an attached image/recording only when explicitly requested.
