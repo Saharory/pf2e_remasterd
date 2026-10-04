@@ -65,9 +65,10 @@ Last updated: 2026-10-04
   documented text replacement or change-notification option was found in the
   form schema. Keep normal text fields and do not add another speculative
   control change. Native refresh and text replacement persistence remain
-  unresolved. Next user check: confirm Chest is tappable and opens its correct
-  item reference with the repaired templates, then continue the remaining
-  creature and spell tests using the confirmed workaround as needed.
+  unresolved. Chest rendering and navigation now pass by user confirmation.
+  Continue the remaining creature and spell tests using the confirmed
+  workaround as needed; next check is Resilient Form's Trigger/Effect editing
+  and saved stat-block rendering.
   Release preparation remains pending resolution and approval. The user will
   perform all further app testing; do not run visual inspection or UI automation.
 - Broader native list result (user report, 2026-10-04): New Entry does not
@@ -93,9 +94,10 @@ Last updated: 2026-10-04
   dynamic destinations (Items, senses/acuity, immunities, abilities/attack
   effects, spells, and both ritual paths). The maintained creature regression
   protects these destinations. No record rewrite or migration is needed.
-  Native app rendering and tapping Chest to open its quick reference still
-  require verification using the rebuilt test package. Canonical source checks
-  pass with all maintained validators. `dist/test/pf2e-remaster.system` was
+  Native app rendering and tapping Chest to open its correct item reference
+  pass by user confirmation (2026-10-04). Other editor reference types still
+  require native verification. Canonical source checks pass with all maintained
+  validators. `dist/test/pf2e-remaster.system` was
   rebuilt at unchanged `0.9.01` after restoring normal name fields; both name
   forms and the repaired Items template match the packaged copies. Current
   test package SHA-256:
