@@ -1,1 +1,1 @@
-{% if data.durationType == nil or data.durationType == 'time' %}{% if data.duration != nil %}{{data.duration|format}} {{data.durationUnit|map: 'DurationUnit'}}{% endif %}{% else %}{{data.durationType|map: 'SpellEffectDurationType'}}{% endif %}
+{% if data.durationType == 'time' %}{{data.duration|format}} {{data.durationUnit|map: 'DurationUnit'}}{% else %}{% if data.durationType != nil and data.durationType != '' %}{{data.durationType|map: 'SpellEffectDurationType'}}{% else %}{{'Spell.ManualReminder'|l}}{% endif %}{% endif %}

@@ -153,11 +153,12 @@
                 "title": "Common.Type",
                 "type": "picker",
                 "attribute": "data.durationType",
-                "attributeType": "SpellEffectDurationType"
+                "attributeType": "SpellEffectDurationType",
+                "placeholder": "Spell.ManualReminder"
               },
               {
                 "type": "group",
-                "visibleIf": "{% if data.durationType == nil or data.durationType == 'time' %}true{% endif %}",
+                "visibleIf": "{% if data.durationType == 'time' %}true{% endif %}",
                 "fields": [
                   {
                     "title": "Spell.Duration",
@@ -169,9 +170,10 @@
               {
                 "title": "Common.Unit",
                 "type": "picker",
-                "visibleIf": "{% if data.durationType == nil or data.durationType == 'time' %}true{% endif %}",
+                "visibleIf": "{% if data.durationType == 'time' %}true{% endif %}",
                 "attribute": "data.durationUnit",
-                "attributeType": "DurationUnit"
+                "attributeType": "DurationUnit",
+                "defaultValue": "round"
               }
             ]
           }

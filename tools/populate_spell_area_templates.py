@@ -20,6 +20,7 @@ def main() -> None:
     skipped = 0
     files = 0
     effect_durations = 0
+    manual_reminders = 0
 
     roots = (REPO / "compendium" / "packs", REPO / "compendium" / "ogl-packs")
     for root in roots:
@@ -32,6 +33,8 @@ def main() -> None:
                 configure_spell_load_data(record)
                 if data.get("durationType"):
                     effect_durations += 1
+                elif data.get("durationUnit") and data.get("duration") is None:
+                    manual_reminders += 1
                 if str(data.get("area") or "").strip():
                     area_spells += 1
                     if configure_spell_area_template(record):
@@ -53,7 +56,7 @@ def main() -> None:
         f"spell areas: {configured} configured, {skipped} intentionally skipped "
         f"from {area_spells} area spells across {files} files"
     )
-    print(f"spell token effects: {effect_durations} native durations configured")
+    print(f"spell token effects: {effect_durations} native durations, {manual_reminders} manual reminders configured")
 
 
 if __name__ == "__main__":

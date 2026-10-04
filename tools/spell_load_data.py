@@ -8,6 +8,10 @@ from typing import Any
 
 
 NATIVE_DURATION_FIELDS = ("duration", "durationType", "durationUnit")
+# The native loader accepts a duration descriptor with only a unit. With no
+# value or expiry type, the resulting status effect has no countdown. Keep the
+# unit populated so generic spell loading does not treat this as no descriptor.
+MANUAL_REMINDER_DURATION = {"durationUnit": "round"}
 TURN_DURATIONS = {
     "until the start of your next turn": "sourceStartNextTurn",
     "until the beginning of your next turn": "sourceStartNextTurn",
@@ -25,7 +29,7 @@ TIMED_DURATION = re.compile(
 
 
 def parse_spell_duration(text: str) -> dict[str, Any]:
-    """Derive only a clear timer or a native next-turn expiration.
+    """Derive a clear timer/turn ending, otherwise a manual reminder.
 
     A sustained/up-to duration is a maximum, not automatic Sustain. Alternative
     durations, daily preparations, calendar months/years, and current-turn
@@ -41,10 +45,10 @@ def parse_spell_duration(text: str) -> dict[str, Any]:
         }
     match = TIMED_DURATION.fullmatch(normalized)
     if not match:
-        return {}
+        return dict(MANUAL_REMINDER_DURATION)
     value, unit = int(match[1]), match[2]
     if value <= 0:
-        return {}
+        return dict(MANUAL_REMINDER_DURATION)
     if unit == "week":
         value, unit = value * 7, "day"
     return {"duration": value, "durationType": "time", "durationUnit": unit}
@@ -55,14 +59,24 @@ def configure_spell_load_data(entity: dict[str, Any]) -> bool:
     if entity.get("kind") != "Spell" or not isinstance(entity.get("data"), dict):
         return False
     data = entity["data"]
-    if not isinstance(data.get("duration"), str):
+    duration = data.get("duration")
+    if not isinstance(duration, str):
+        # Also upgrade records converted by 0.9.01, and custom spells whose
+        # native fields are all empty, without replacing a GM-authored timer.
+        if (
+            duration is None and data.get("durationType") in (None, "")
+            and data.get("durationUnit") in (None, "")
+        ):
+            data.update(MANUAL_REMINDER_DURATION)
+            return True
         return False
     # Preserve existing native settings rather than overwrite a GM's choice.
     if data.get("durationType") or data.get("durationUnit"):
         return False
-    text = data["duration"]
+    text = duration
+    manual = "durationType" in data and data["durationType"] == ""
     data.setdefault("durationText", text)
     for field in NATIVE_DURATION_FIELDS:
         data.pop(field, None)
-    data.update(parse_spell_duration(text))
+    data.update(MANUAL_REMINDER_DURATION if manual else parse_spell_duration(text))
     return True

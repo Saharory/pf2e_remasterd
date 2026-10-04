@@ -12,7 +12,9 @@ from pathlib import Path
 import json5
 
 from spell_area_templates import parse_spell_area
-from spell_load_data import configure_spell_load_data, parse_spell_duration
+from spell_load_data import (
+    MANUAL_REMINDER_DURATION, configure_spell_load_data, parse_spell_duration,
+)
 from eplus_dev import validate_form_definition
 
 
@@ -41,6 +43,7 @@ def main() -> None:
     configured = 0
     skipped = 0
     durations: list[dict] = []
+    manual_reminders = 0
 
     roots = (REPO / "compendium" / "packs", REPO / "compendium" / "ogl-packs")
     for root in roots:
@@ -57,6 +60,9 @@ def main() -> None:
                 }
                 assert actual_duration == expected_duration, f"{slug}: incorrect native duration"
                 assert not isinstance(data.get("duration"), str), f"{slug}: legacy duration passed to native loading"
+                if not data.get("durationType"):
+                    manual_reminders += 1
+                    assert actual_duration == {"durationUnit": "round"}, f"{slug}: reminder acquired a countdown"
                 durations.append({"kind": "Spell", "data": {"duration": data["durationText"]}})
                 area = str(data.get("area") or "").strip()
                 parsed = parse_spell_area(area)
@@ -103,8 +109,8 @@ def main() -> None:
         "haste-player-core": {"durationType": "time", "duration": 1, "durationUnit": "minute"},
         "shield-player-core": {"durationType": "sourceStartNextTurn", "duration": 1, "durationUnit": "round"},
         "command-player-core": {"durationType": "targetEndNextTurn", "duration": 1, "durationUnit": "round"},
-        "heal-player-core": {},
-        "mystic-armor-player-core": {},
+        "heal-player-core": MANUAL_REMINDER_DURATION,
+        "mystic-armor-player-core": MANUAL_REMINDER_DURATION,
     }
     for slug, expected in expected_durations.items():
         data = records[slug]["data"]
@@ -121,23 +127,30 @@ def main() -> None:
         "sustained for up to 10 minutes": {"durationType": "time", "duration": 10, "durationUnit": "minute"},
         "1 week": {"durationType": "time", "duration": 7, "durationUnit": "day"},
         "1 minute or until expended": {"durationType": "time", "duration": 1, "durationUnit": "minute"},
-        "10 minutes or 8 hours": {},
-        "until the end of your turn": {},
-        "1 or more rounds": {},
-        "varies": {},
-        "1 year": {},
-        "0 rounds": {},
+        "10 minutes or 8 hours": MANUAL_REMINDER_DURATION,
+        "until the end of your turn": MANUAL_REMINDER_DURATION,
+        "1 or more rounds": MANUAL_REMINDER_DURATION,
+        "varies": MANUAL_REMINDER_DURATION,
+        "1 year": MANUAL_REMINDER_DURATION,
+        "0 rounds": MANUAL_REMINDER_DURATION,
     }.items():
         assert parse_spell_duration(text) == expected, text
         durations.append({"kind": "Spell", "data": {"duration": text}})
 
     # Existing/custom records need the same lossless conversion as the builders.
+    already_converted = {
+        "kind": "Spell", "data": {"durationText": "until your next daily preparations"}
+    }
     fixtures = durations + [
         {"kind": "Spell", "data": {"duration": 3, "durationUnit": "round", "durationType": "time"}},
         {"kind": "Spell", "data": {"duration": "custom", "durationType": "targetEndNextTurn"}},
         {"kind": "Spell", "data": {}},
         {"kind": "Creature", "data": {"duration": "1 minute"}},
         {"kind": "Spell", "data": {"duration": "1 minute", "durationText": "GM notes"}},
+        already_converted,
+        {"kind": "Spell", "data": {"duration": "1 minute", "durationType": ""}},
+        {"kind": "Spell", "data": {"durationUnit": "round"}},
+        {"kind": "Spell", "data": {"duration": 2, "durationType": "", "durationUnit": "minute"}},
     ]
     converted = deepcopy(fixtures)
     for entity in converted:
@@ -161,6 +174,16 @@ process.stdout.write(JSON.stringify(fixtures));
         cwd=REPO, text=True, capture_output=True, check=True,
     )
     assert json.loads(migrated.stdout) == converted, "native migration and builder disagree"
+    assert manual_reminders == 595, f"unexpected manual reminder count: {manual_reminders}"
+    # A missing or empty expiry type cannot turn a manual marker into a timer,
+    # even when switching a GM-authored timed spell to manual leaves an amount.
+    for original, result in zip(fixtures, converted):
+        if original.get("kind") == "Spell" and original["data"].get("durationType") == "":
+            assert not result["data"].get("durationType"), "manual selection became a timer"
+    migrated_reminder = converted[fixtures.index(already_converted)]
+    assert migrated_reminder["data"] == {
+        "durationText": "until your next daily preparations", "durationUnit": "round"
+    }, "already-converted spells did not gain manual loading"
 
     types = json5.loads((REPO / "types.json").read_text(encoding="utf-8"))
     shapes = set(types["AreaEffectShape"])
@@ -217,10 +240,14 @@ process.stdout.write(JSON.stringify(fixtures));
     assert duration_field["type"] == "number", "native duration must be numeric"
     assert duration_field["attribute"] == "data.duration"
     assert effect_form["sections"][3]["attribute"] == "data.durationUnit"
+    assert effect_form["sections"][3]["defaultValue"] == "round"
     assert set(types["SpellEffectDurationType"]) == {
-        "time", "sourceStartNextTurn", "sourceEndNextTurn",
+        "", "time", "sourceStartNextTurn", "sourceEndNextTurn",
         "targetStartNextTurn", "targetEndNextTurn",
     }, "spell effect editor must only offer supported native expiry types"
+    assert types["SpellEffectDurationType"][""] == "Spell.ManualReminder"
+    summary = (REPO / "views" / "partials" / "spell-effect-duration.md").read_text()
+    assert "'Spell.ManualReminder'|l" in summary, "manual reminder summary is missing"
 
     primary = (REPO / "views" / "partials" / "spell-primary.md").read_text()
     assert "data.durationText|lowercase" in primary, "spell card lost source duration text"
@@ -230,7 +257,7 @@ process.stdout.write(JSON.stringify(fixtures));
         f"spell area templates: {configured} configured, {skipped} manual, "
         f"{area_spells} total area spells OK"
     )
-    print(f"spell effect durations: {len(records)} records and lossless migration OK")
+    print(f"spell effect durations: {len(records) - manual_reminders} timed/turn, {manual_reminders} manual; lossless migration OK")
 
 
 if __name__ == "__main__":
