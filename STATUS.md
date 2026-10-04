@@ -91,6 +91,22 @@ Last updated: 2026-10-04
   assigns add/remove behavior to the native list and exposes no separate
   deletion or refresh setting. No supported JSON refresh callback was found;
   do not claim field-type changes fixed the issue. Keep this package unreleased.
+- Refresh comparison (user report, 2026-10-04): the built-in status editor
+  saves and updates immediately, while PF2E spell/creature form summaries
+  require leaving and reopening their screens. Treat this as a shared form
+  problem to investigate separately from duration option labels. Read-only
+  comparison with the installed official `dnd5e.system` found the same supported
+  patterns: root-context spell Duration/Area forms without a parent attribute,
+  object-bound nested monster forms with relative child paths, default text
+  fields bound to `name`, and no explicit field/section IDs. Those patterns
+  alone therefore do not identify a PF2E defect. Creature view transforms only
+  derive armor, initiative, and combat details; they do not rewrite these edits.
+  No demonstrated package correction follows from this comparison. Pending
+  controlled user test: edit a copied D&D spell's Duration and return one level;
+  check whether its summary updates immediately. This compares the app's shared
+  entity-form renderer with PF2E rather than its separate status editor. Keep
+  refresh and replacement-text persistence unresolved until that result; no
+  further speculative control changes or agent UI tests were made.
 - Native editor reference result (user report, 2026-10-04): selecting Chest
   through the Items Reference picker renders literal Markdown in the saved
   stat block: `[Chest](/item/chest-player-core/player core) (2)`.
