@@ -67,8 +67,10 @@ Last updated: 2026-10-04
   control change. Native refresh and text replacement persistence remain
   unresolved. Chest rendering and navigation now pass by user confirmation.
   Continue the remaining creature and spell tests using the confirmed
-  workaround as needed; next check is Resilient Form's Trigger/Effect editing
-  and saved stat-block rendering.
+  workaround as needed. Resilient Form's Trigger/Effect editing, save/reopen,
+  and stat-block rendering pass by user confirmation (2026-10-04); editing
+  Effect leaves Trigger unchanged. Next user check: load Haste and Shield
+  on a test token to verify native timer units and next-turn expiry.
   Release preparation remains pending resolution and approval. The user will
   perform all further app testing; do not run visual inspection or UI automation.
 - Broader native list result (user report, 2026-10-04): New Entry does not
@@ -149,6 +151,12 @@ Last updated: 2026-10-04
   verify the Item reference search, item quantity, the empty Immunities `None`
   row, the empty Rituals `New Entry` row, Recall Knowledge values, Lore inside
   Skills, and Type/Value labels for weakness and resistance entries.
+  Confirmed native passes so far: Lore modifier persistence (with stale row
+  redraw), Items quantity editing, Items/Immunities removal via the Mac
+  context menu, Chest reference rendering/navigation, and Resilient Form
+  Trigger/Effect editing/persistence/rendering. The remaining controls and
+  source-relative spell expiry still need user verification. Agent visual
+  testing is disabled at the user's request.
 - Current product priority: continue the complete data audit and review upstream
   Encounter+ compatibility before releases. See `ROADMAP.md` for accepted,
   deferred, and completed feature decisions.
