@@ -29,11 +29,22 @@ Last updated: 2026-10-04
   the bundled Node executable via `NODE`. A temporary deterministic rebuild
   matches `dist/test/pf2e-remaster.system` byte for byte. Package SHA-256:
   `6641cb21a9ef1c90191a3f4c16815f3a004d73c4d48e77e602d270be6e31719f`.
-  Native results are pending user testing, starting with import, Edit Creature,
-  and Skills/Lore; no native pass is inferred from source checks. Release
+  Native testing is in progress; no native pass is inferred from source checks. Release
   preparation awaits user approval; version changes, push, and publication
   also require explicit approval. The `0.9.02` migration remains inactive in
   this `0.9.01` test package.
+- Native Skills/Lore result (user report, 2026-10-04): the Lore editor is
+  reachable and saving the changed value works without issues. The Lore list
+  summary does not redraw immediately after returning from the entry editor;
+  leaving and reopening Skills displays the changed value. The supplied image
+  shows Mining Lore +25. Record persistence passes; immediate summary refresh
+  fails. Encounter+ version/device and saved stat-block rendering are not yet
+  confirmed. The Lore list uses the same native `custom.itemTitle` and
+  `custom.itemDetail` templates as other maintained list editors, with no
+  system-form refresh hook found. A native nested-editor refresh issue is a
+  hypothesis, not an established cause. Next comparison: change a Lore name
+  and an Items quantity and check immediate row refresh, then save/reopen.
+  No speculative form change has been made; this finding remains unresolved.
 - Spell editor compatibility: fixed the nested area-size input that caused
   `sections[3].fields[8].form.sections[1].type` to reject `decimal`. Size is now
   a decimal field in a group, with native feet conversion in its editor and
