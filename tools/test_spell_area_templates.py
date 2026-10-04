@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Regression checks for derived structured spell-area templates."""
+"""Regression checks for native spell loading: map areas and token effects."""
 
 from __future__ import annotations
 
 import json
+import os
+import subprocess
 from copy import deepcopy
 from pathlib import Path
 
 import json5
 
 from spell_area_templates import parse_spell_area
+from spell_load_data import configure_spell_load_data, parse_spell_duration
 from eplus_dev import validate_form_definition
 
 
@@ -37,6 +40,7 @@ def main() -> None:
     area_spells = 0
     configured = 0
     skipped = 0
+    durations: list[dict] = []
 
     roots = (REPO / "compendium" / "packs", REPO / "compendium" / "ogl-packs")
     for root in roots:
@@ -45,6 +49,15 @@ def main() -> None:
                 slug = str(record.get("slug") or "")
                 records[slug] = record
                 data = record.get("data") or {}
+                assert isinstance(data.get("durationText"), str), f"{slug}: missing duration prose"
+                expected_duration = parse_spell_duration(data["durationText"])
+                actual_duration = {
+                    key: data[key] for key in ("duration", "durationType", "durationUnit")
+                    if key in data
+                }
+                assert actual_duration == expected_duration, f"{slug}: incorrect native duration"
+                assert not isinstance(data.get("duration"), str), f"{slug}: legacy duration passed to native loading"
+                durations.append({"kind": "Spell", "data": {"duration": data["durationText"]}})
                 area = str(data.get("area") or "").strip()
                 parsed = parse_spell_area(area)
                 has_shape = "areaEffectShape" in data
@@ -85,6 +98,69 @@ def main() -> None:
     entities = json5.loads((REPO / "entities.json").read_text(encoding="utf-8"))
     spell = next(entity for entity in entities if entity.get("name") == "Spell")
     assert spell.get("loadable") is True, "Spell must be loadable for map placement"
+
+    expected_durations = {
+        "haste-player-core": {"durationType": "time", "duration": 1, "durationUnit": "minute"},
+        "shield-player-core": {"durationType": "sourceStartNextTurn", "duration": 1, "durationUnit": "round"},
+        "command-player-core": {"durationType": "targetEndNextTurn", "duration": 1, "durationUnit": "round"},
+        "heal-player-core": {},
+        "mystic-armor-player-core": {},
+    }
+    for slug, expected in expected_durations.items():
+        data = records[slug]["data"]
+        assert parse_spell_duration(data["durationText"]) == expected, slug
+    for slug, text in {
+        "haste-player-core": "1 minute",
+        "shield-player-core": "until the start of your next turn",
+        "command-player-core": "until the end of the target's next turn",
+        "mystic-armor-player-core": "until your next daily preparations",
+    }.items():
+        assert records[slug]["data"]["durationText"] == text, f"{slug}: source duration changed"
+
+    for text, expected in {
+        "sustained for up to 10 minutes": {"durationType": "time", "duration": 10, "durationUnit": "minute"},
+        "1 week": {"durationType": "time", "duration": 7, "durationUnit": "day"},
+        "1 minute or until expended": {"durationType": "time", "duration": 1, "durationUnit": "minute"},
+        "10 minutes or 8 hours": {},
+        "until the end of your turn": {},
+        "1 or more rounds": {},
+        "varies": {},
+        "1 year": {},
+        "0 rounds": {},
+    }.items():
+        assert parse_spell_duration(text) == expected, text
+        durations.append({"kind": "Spell", "data": {"duration": text}})
+
+    # Existing/custom records need the same lossless conversion as the builders.
+    fixtures = durations + [
+        {"kind": "Spell", "data": {"duration": 3, "durationUnit": "round", "durationType": "time"}},
+        {"kind": "Spell", "data": {"duration": "custom", "durationType": "targetEndNextTurn"}},
+        {"kind": "Spell", "data": {}},
+        {"kind": "Creature", "data": {"duration": "1 minute"}},
+        {"kind": "Spell", "data": {"duration": "1 minute", "durationText": "GM notes"}},
+    ]
+    converted = deepcopy(fixtures)
+    for entity in converted:
+        configure_spell_load_data(entity)
+        again = deepcopy(entity)
+        assert not configure_spell_load_data(entity), "duration conversion must be idempotent"
+        assert entity == again, "duration conversion changed native GM settings"
+    runner = """
+const fs = require('node:fs'), vm = require('node:vm');
+const context = {};
+vm.runInNewContext(fs.readFileSync('migrations/0.9.02.js', 'utf8'), context);
+const fixtures = JSON.parse(fs.readFileSync(0, 'utf8'));
+for (const entity of fixtures) {
+  context.migrate(entity, {});
+  if (context.migrate(entity, {}) !== null) throw Error('migration is not idempotent');
+}
+process.stdout.write(JSON.stringify(fixtures));
+"""
+    migrated = subprocess.run(
+        [os.environ.get("NODE", "node"), "-e", runner], input=json.dumps(fixtures),
+        cwd=REPO, text=True, capture_output=True, check=True,
+    )
+    assert json.loads(migrated.stdout) == converted, "native migration and builder disagree"
 
     types = json5.loads((REPO / "types.json").read_text(encoding="utf-8"))
     shapes = set(types["AreaEffectShape"])
@@ -131,11 +207,30 @@ def main() -> None:
     serialized_form = json.dumps(form)
     for attribute in ("data.areaEffectShape", "data.areaEffectSize"):
         assert attribute in serialized_form, f"spell form is missing {attribute}"
+    for attribute in ("data.durationText", "data.duration", "data.durationType", "data.durationUnit"):
+        assert attribute in serialized_form, f"spell form is missing {attribute}"
+    effect_form = next(
+        field["form"] for field in form["sections"][3]["fields"]
+        if field.get("title") == "Spell.EffectDuration"
+    )
+    duration_field = effect_form["sections"][2]["fields"][0]
+    assert duration_field["type"] == "number", "native duration must be numeric"
+    assert duration_field["attribute"] == "data.duration"
+    assert effect_form["sections"][3]["attribute"] == "data.durationUnit"
+    assert set(types["SpellEffectDurationType"]) == {
+        "time", "sourceStartNextTurn", "sourceEndNextTurn",
+        "targetStartNextTurn", "targetEndNextTurn",
+    }, "spell effect editor must only offer supported native expiry types"
+
+    primary = (REPO / "views" / "partials" / "spell-primary.md").read_text()
+    assert "data.durationText|lowercase" in primary, "spell card lost source duration text"
+    assert "data.duration|lowercase" in primary, "spell card lost legacy/custom fallback"
 
     print(
         f"spell area templates: {configured} configured, {skipped} manual, "
         f"{area_spells} total area spells OK"
     )
+    print(f"spell effect durations: {len(records)} records and lossless migration OK")
 
 
 if __name__ == "__main__":

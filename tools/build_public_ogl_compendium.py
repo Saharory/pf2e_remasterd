@@ -33,6 +33,7 @@ from creature_editor_data import configure_creature_editor_data
 from creature_spellcasting import configure_creature_spellcasting
 from creature_metadata import configure_creature_metadata
 from spell_area_templates import configure_spell_area_template
+from spell_load_data import configure_spell_load_data
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -86,6 +87,7 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         data["summary"] = ""
     if expected_kind == "Spell":
         configure_spell_area_template(result)
+        configure_spell_load_data(result)
     if expected_kind == "Action":
         configure_creature_abilities(result)
     if expected_kind == "Creature":

@@ -19,7 +19,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "varies",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -45,7 +44,8 @@
           "label": "spirit",
           "slug": "spirit"
         }
-      ]
+      ],
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -89,7 +89,6 @@
       "cast": "3",
       "range": "60 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "primal"
@@ -117,7 +116,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -161,7 +164,6 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -183,7 +185,8 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -226,7 +229,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 ally and 1 enemy",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "divine",
@@ -251,7 +253,11 @@
           "label": "spirit",
           "slug": "spirit"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -295,7 +301,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot cone",
       "defense": "fortitude",
@@ -328,7 +333,8 @@
         }
       ],
       "areaEffectShape": "cone",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -373,7 +379,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "10-foot emanation",
       "defense": "basicreflex",
@@ -406,7 +411,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -450,7 +456,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -472,7 +477,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -515,7 +524,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature with a land Speed greater than yours",
-      "duration": "varies",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -542,7 +550,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -585,7 +594,6 @@
       "cast": "10 minutes",
       "range": "1000 miles",
       "targets": "you and up to 6 willing creatures",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -606,7 +614,11 @@
           "label": "teleportation",
           "slug": "teleportation"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -650,7 +662,6 @@
       "cast": "1",
       "range": "60 feet",
       "targets": "1 willing creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -676,7 +687,11 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -720,7 +735,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 willing creature",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -746,7 +760,8 @@
           "label": "teleportation",
           "slug": "teleportation"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -789,7 +804,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "varies",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -815,7 +829,8 @@
           "label": "mental",
           "slug": "mental"
         }
-      ]
+      ],
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -860,7 +875,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 round",
       "requirements": "",
       "area": "30-foot emanation",
       "traditions": [],
@@ -893,7 +907,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": "1 round",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -938,7 +956,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot burst",
       "defense": "basicwill",
@@ -966,7 +983,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1009,7 +1027,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot burst",
       "defense": "fortitude",
@@ -1038,7 +1055,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1081,7 +1102,6 @@
       "cast": "reaction",
       "range": "20 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -1103,7 +1123,8 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1144,7 +1165,6 @@
       "cast": "1 to 3",
       "range": "varies",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "divine",
@@ -1162,7 +1182,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1204,7 +1228,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 living creature",
-      "duration": "4 rounds",
       "requirements": "",
       "traditions": [
         "divine"
@@ -1232,7 +1255,11 @@
           "label": "vitality",
           "slug": "vitality"
         }
-      ]
+      ],
+      "durationText": "4 rounds",
+      "duration": 4,
+      "durationType": "time",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -1276,7 +1303,6 @@
       "cast": "2",
       "range": "240 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "divine"
@@ -1300,7 +1326,8 @@
           "label": "teleportation",
           "slug": "teleportation"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1343,7 +1370,6 @@
       "cast": "2",
       "range": "",
       "targets": "up to 2 creatures",
-      "duration": "",
       "requirements": "",
       "area": "60-foot emanation",
       "defense": "fortitude",
@@ -1372,7 +1398,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 60
+      "areaEffectSize": 60,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1415,7 +1442,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 item you're holding and 1 item in another creature's possession you can see, each no more than light Bulk",
-      "duration": "",
       "requirements": "",
       "defense": "reflex",
       "traditions": [
@@ -1442,7 +1468,8 @@
           "label": "teleportation",
           "slug": "teleportation"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1487,7 +1514,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [],
@@ -1518,7 +1544,11 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1565,7 +1595,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 round",
       "requirements": "",
       "area": "30-foot emanation",
       "traditions": [],
@@ -1598,7 +1627,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": "1 round",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -1643,7 +1676,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "20-foot burst",
       "defense": "reflex",
@@ -1673,7 +1705,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1715,7 +1751,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -1733,7 +1768,11 @@
           "label": "focus",
           "slug": "focus"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1775,7 +1814,6 @@
       "cast": "reaction",
       "range": "30 feet",
       "targets": "1 willing creature that would take damage from the triggering effect",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane"
@@ -1799,7 +1837,8 @@
           "label": "teleportation",
           "slug": "teleportation"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,

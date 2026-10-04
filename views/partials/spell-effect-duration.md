@@ -1,0 +1,1 @@
+{% if data.durationType == nil or data.durationType == 'time' %}{% if data.duration != nil %}{{data.duration|format}} {{data.durationUnit|map: 'DurationUnit'}}{% endif %}{% else %}{{data.durationType|map: 'SpellEffectDurationType'}}{% endif %}

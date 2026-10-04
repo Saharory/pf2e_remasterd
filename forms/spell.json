@@ -124,7 +124,57 @@
         },
         {
           "title": "Spell.Duration",
-          "attribute": "data.duration"
+          "attribute": "data.durationText",
+          "visibleIf": "{% if data.durationText != nil or data.duration == nil or data.durationType != nil or data.durationUnit != nil %}true{% endif %}"
+        },
+        {
+          "title": "Spell.Duration",
+          "attribute": "data.duration",
+          "visibleIf": "{% if data.durationText == nil and data.duration != nil and data.durationType == nil and data.durationUnit == nil %}true{% endif %}"
+        },
+        {
+          "title": "Spell.EffectDuration",
+          "type": "form",
+          "visibleIf": "{% if data.durationText != nil or data.duration == nil or data.durationType != nil or data.durationUnit != nil %}true{% endif %}",
+          "text": "{% include 'spell-effect-duration.md' %}",
+          "form": {
+            "title": "Spell.EffectDuration",
+            "sections": [
+              {
+                "type": "group",
+                "fields": [
+                  {
+                    "type": "text",
+                    "text": "{{'Spell.EffectDurationHelp'|l}}"
+                  }
+                ]
+              },
+              {
+                "title": "Common.Type",
+                "type": "picker",
+                "attribute": "data.durationType",
+                "attributeType": "SpellEffectDurationType"
+              },
+              {
+                "type": "group",
+                "visibleIf": "{% if data.durationType == nil or data.durationType == 'time' %}true{% endif %}",
+                "fields": [
+                  {
+                    "title": "Spell.Duration",
+                    "type": "number",
+                    "attribute": "data.duration"
+                  }
+                ]
+              },
+              {
+                "title": "Common.Unit",
+                "type": "picker",
+                "visibleIf": "{% if data.durationType == nil or data.durationType == 'time' %}true{% endif %}",
+                "attribute": "data.durationUnit",
+                "attributeType": "DurationUnit"
+              }
+            ]
+          }
         },
       ]
     },

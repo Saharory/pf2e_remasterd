@@ -19,7 +19,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute (see text)",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -45,7 +44,11 @@
           "label": "misfortune",
           "slug": "misfortune"
         }
-      ]
+      ],
+      "durationText": "1 minute (see text)",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -89,7 +92,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "15-foot burst",
       "defense": "reflex",
@@ -117,7 +119,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -164,7 +170,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature that can bleed",
-      "duration": "1 minute",
       "requirements": "The target is taking persistent bleed damage or your last action dealt slashing damage to the target.",
       "defense": "basicreflex",
       "traditions": [],
@@ -199,7 +204,11 @@
           "label": "witch",
           "slug": "witch"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -247,7 +256,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -280,7 +288,11 @@
           "label": "morph",
           "slug": "morph"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -328,7 +340,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "yourself or your animal companion",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -358,7 +369,11 @@
           "label": "ranger",
           "slug": "ranger"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -403,7 +418,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "divine",
@@ -428,7 +442,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -475,7 +493,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "20-foot emanation",
       "defense": "will",
@@ -516,7 +533,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -564,7 +585,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [
@@ -594,7 +614,11 @@
           "label": "morph",
           "slug": "morph"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -640,7 +664,6 @@
       "cast": "1",
       "range": "10 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "defense": "will",
       "traditions": [],
@@ -667,7 +690,8 @@
           "label": "visual",
           "slug": "visual"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -710,7 +734,6 @@
       "cast": "10 minutes",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "primal"
@@ -726,7 +749,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -768,7 +792,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "basicreflex",
       "traditions": [
@@ -789,7 +812,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -834,7 +861,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "squares contain plants",
       "area": "20-foot burst",
       "defense": "reflex",
@@ -868,7 +894,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -912,7 +942,6 @@
       "cast": "reaction",
       "range": "60 feet",
       "targets": "1 creature",
-      "duration": "1 round",
       "requirements": "A creature within range is hit with a Strike that deals physical damage.",
       "traditions": [
         "arcane",
@@ -933,7 +962,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 round",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -977,7 +1010,6 @@
       "cast": "2",
       "range": "10 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "You're mostly or totally submerged in water.",
       "traditions": [
         "arcane",
@@ -1006,7 +1038,8 @@
           "label": "morph",
           "slug": "morph"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1053,7 +1086,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 willing animal",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -1083,7 +1115,11 @@
           "label": "ranger",
           "slug": "ranger"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -1130,7 +1166,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -1160,7 +1195,11 @@
           "label": "ranger",
           "slug": "ranger"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1207,7 +1246,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "60-foot emanation",
       "defense": "will",
@@ -1244,7 +1282,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 60
+      "areaEffectSize": 60,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1292,7 +1334,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "will",
       "traditions": [],
@@ -1323,7 +1364,11 @@
           "label": "witch",
           "slug": "witch"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1372,7 +1417,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [],
@@ -1407,7 +1451,11 @@
           "label": "witch",
           "slug": "witch"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1455,7 +1503,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "will",
       "traditions": [],
@@ -1486,7 +1533,11 @@
           "label": "ranger",
           "slug": "ranger"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1532,7 +1583,6 @@
       "cast": "3",
       "range": "1-mile burst",
       "targets": "",
-      "duration": "until your next daily preparations",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -1561,7 +1611,8 @@
           "label": "mental",
           "slug": "mental"
         }
-      ]
+      ],
+      "durationText": "until your next daily preparations"
     },
     "attributes": {
       "remaster": true,
@@ -1609,7 +1660,6 @@
       "cast": "2",
       "range": "",
       "targets": "1 creature within reach",
-      "duration": "",
       "requirements": "",
       "area": "15-foot cone",
       "defense": "basicfortitude",
@@ -1647,7 +1697,8 @@
         }
       ],
       "areaEffectShape": "cone",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1692,7 +1743,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "",
-      "duration": "",
       "requirements": "You worship a deity.",
       "area": "5-foot burst",
       "defense": "basicreflex",
@@ -1717,7 +1767,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 5
+      "areaEffectSize": 5,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1764,7 +1815,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "will",
       "traditions": [],
@@ -1803,7 +1853,11 @@
           "label": "witch",
           "slug": "witch"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1851,7 +1905,6 @@
       "cast": "reaction",
       "range": "15 feet",
       "targets": "1 ally",
-      "duration": "",
       "requirements": "An ally moves through a square within 15 feet of you or uses an action that has the move trait.",
       "traditions": [],
       "traditionsText": "",
@@ -1877,7 +1930,8 @@
           "label": "witch",
           "slug": "witch"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1923,7 +1977,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "defense": "reflex",
       "traditions": [],
@@ -1954,7 +2007,8 @@
           "label": "ranger",
           "slug": "ranger"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1999,7 +2053,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "primal"
@@ -2023,7 +2076,11 @@
           "label": "morph",
           "slug": "morph"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2068,7 +2125,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "15-foot emanation",
       "defense": "basicreflex",
@@ -2102,7 +2158,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2147,7 +2207,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "your animal companion",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -2169,7 +2228,11 @@
           "label": "morph",
           "slug": "morph"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2213,7 +2276,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [],
@@ -2240,7 +2302,11 @@
           "label": "witch",
           "slug": "witch"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2285,7 +2351,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "until the end of your next turn",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -2310,7 +2375,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "until the end of your next turn",
+      "duration": 1,
+      "durationType": "sourceEndNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -2354,7 +2423,6 @@
       "cast": "3",
       "range": "100 feet",
       "targets": "",
-      "duration": "until the end of your next turn",
       "requirements": "",
       "traditions": [
         "primal"
@@ -2378,7 +2446,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "until the end of your next turn",
+      "duration": 1,
+      "durationType": "sourceEndNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -2427,7 +2499,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "10-foot emanation",
       "defense": "will",
@@ -2473,7 +2544,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2523,7 +2595,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -2553,7 +2624,11 @@
           "label": "ranger",
           "slug": "ranger"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,

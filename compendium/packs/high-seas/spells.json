@@ -18,7 +18,6 @@
       "cast": "Reaction",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "trigger": "A creature attempts a melee Strike against you.",
       "defense": "reflex",
@@ -41,7 +40,8 @@
           "label": "concentrate",
           "slug": "concentrate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -85,7 +85,6 @@
       "cast": "Two Actions",
       "range": "30 feet",
       "targets": "1 enemy",
-      "duration": "1 minute",
       "requirements": "",
       "trigger": "",
       "defense": "",
@@ -107,7 +106,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -152,7 +155,6 @@
       "cast": "Two Actions",
       "range": "500 feet",
       "targets": "1 vehicle",
-      "duration": "",
       "requirements": "",
       "trigger": "",
       "defense": "fortitude",
@@ -178,7 +180,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -224,7 +227,6 @@
       "cast": "Two Actions",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "trigger": "",
       "defense": "",
@@ -253,7 +255,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -301,7 +307,6 @@
       "cast": "Two Actions",
       "range": "60 feet",
       "targets": "",
-      "duration": "sustained up to 1 minute",
       "requirements": "",
       "trigger": "",
       "defense": "will",
@@ -339,7 +344,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": "sustained up to 1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -388,7 +397,6 @@
       "cast": "Two Actions",
       "range": "30 feet",
       "targets": "2 creatures",
-      "duration": "",
       "requirements": "",
       "trigger": "",
       "defense": "will",
@@ -418,7 +426,8 @@
           "label": "mental",
           "slug": "mental"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,

@@ -19,7 +19,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "10-foot emanation",
       "defense": "reflex",
@@ -48,7 +47,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -92,7 +92,6 @@
       "cast": "2",
       "range": "100 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot burst",
       "defense": "basicreflex",
@@ -121,7 +120,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -165,7 +165,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "60-foot line",
       "defense": "reflex",
@@ -193,7 +192,8 @@
         }
       ],
       "areaEffectShape": "line",
-      "areaEffectSize": 60
+      "areaEffectSize": 60,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -236,7 +236,6 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "20-foot emanation",
       "defense": "basicreflex",
@@ -261,7 +260,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -304,7 +304,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 willing creature",
-      "duration": "5 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -330,7 +329,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "5 minutes",
+      "duration": 5,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -375,7 +378,6 @@
       "cast": "reaction",
       "range": "30 feet",
       "targets": "the creature that took damage",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -404,7 +406,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -448,7 +451,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -469,7 +471,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -512,7 +518,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "15-foot emanation",
       "defense": "fortitude",
@@ -541,7 +546,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -586,7 +595,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "up to 5 willing creatures",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -616,7 +624,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -661,7 +673,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "20-foot burst",
       "defense": "basicreflex",
@@ -690,7 +701,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -734,7 +749,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -759,7 +773,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -803,7 +821,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 metal object of 5 Bulk or less that's unattended or attended by a willing creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -829,7 +846,11 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -873,7 +894,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "30-foot burst",
       "traditions": [
@@ -902,7 +922,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -945,7 +969,6 @@
       "cast": "reaction",
       "range": "60 feet",
       "targets": "the creature targeted by the attack",
-      "duration": "1 round",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -966,7 +989,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 round",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -1009,7 +1036,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [],
@@ -1036,7 +1062,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1081,7 +1108,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 metal weapon that is unattended or is wielded by you or a willing ally",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1110,7 +1136,11 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1156,7 +1186,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "reflex",
       "traditions": [
@@ -1186,7 +1215,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1232,7 +1265,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 creature",
-      "duration": "1 round",
       "requirements": "",
       "defense": "reflex",
       "traditions": [],
@@ -1259,7 +1291,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 round",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -1303,7 +1339,6 @@
       "cast": "3",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "30-foot burst",
       "defense": "basicreflex",
@@ -1332,7 +1367,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1376,7 +1415,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1401,7 +1439,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1445,7 +1487,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "5-foot burst",
       "defense": "fortitude",
@@ -1474,7 +1515,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 5
+      "areaEffectSize": 5,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1520,7 +1565,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot emanation",
       "traditions": [
@@ -1558,7 +1602,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1605,7 +1650,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "defense": "basicreflex",
       "traditions": [
@@ -1635,7 +1679,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1681,7 +1726,6 @@
       "cast": "2",
       "range": "10 feet",
       "targets": "1 object",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1711,7 +1755,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1756,7 +1801,6 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "duration": "until the end of your next turn",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1782,7 +1826,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "until the end of your next turn",
+      "duration": 1,
+      "durationType": "sourceEndNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -1829,7 +1877,6 @@
       "cast": "2 to 2 rounds",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot cone",
       "defense": "basicreflex",
@@ -1866,7 +1913,8 @@
         }
       ],
       "areaEffectShape": "cone",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1911,7 +1959,6 @@
       "cast": "2 or 3",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "60-foot cone",
       "defense": "basicreflex",
@@ -1936,7 +1983,8 @@
         }
       ],
       "areaEffectShape": "cone",
-      "areaEffectSize": 60
+      "areaEffectSize": 60,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1977,7 +2025,6 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1998,7 +2045,8 @@
           "label": "concentrate",
           "slug": "concentrate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2041,7 +2089,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2066,7 +2113,11 @@
           "label": "revelation",
           "slug": "revelation"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2110,7 +2161,6 @@
       "cast": "1 minute",
       "range": "touch",
       "targets": "1 stone of at least 1 Bulk",
-      "duration": "unlimited",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2131,7 +2181,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "unlimited"
     },
     "attributes": {
       "remaster": true,
@@ -2175,7 +2226,6 @@
       "cast": "1 minute",
       "range": "",
       "targets": "Up to 5 willing living creatures",
-      "duration": "10 minutes",
       "requirements": "",
       "area": "20-foot burst",
       "traditions": [
@@ -2199,7 +2249,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2244,7 +2298,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [
@@ -2274,7 +2327,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2320,7 +2374,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 willing creature or object",
-      "duration": "8 hours",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2349,7 +2402,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "8 hours",
+      "duration": 8,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -2395,7 +2452,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2424,7 +2480,11 @@
           "label": "polymorph",
           "slug": "polymorph"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -2469,7 +2529,6 @@
       "cast": "3",
       "range": "60 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "20-foot burst",
       "defense": "basicreflex",
@@ -2498,7 +2557,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2543,7 +2603,6 @@
       "cast": "1 minute",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2568,7 +2627,8 @@
           "label": "teleportation",
           "slug": "teleportation"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2612,7 +2672,6 @@
       "cast": "1 minute",
       "range": "touch",
       "targets": "1 object up to 10 Bulk",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2634,7 +2693,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -2678,7 +2741,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 willing creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2704,7 +2766,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2751,7 +2817,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "1 creature",
-      "duration": "varies",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -2790,7 +2855,8 @@
           "label": "mental",
           "slug": "mental"
         }
-      ]
+      ],
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -2838,7 +2904,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "5-foot burst",
       "defense": "basicreflex",
@@ -2871,7 +2936,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 5
+      "areaEffectSize": 5,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2916,7 +2982,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 unattended metallic object up to 5 Bulk",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane"
@@ -2940,7 +3005,11 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2985,7 +3054,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "10 minutes",
       "requirements": "",
       "area": "20-foot burst",
       "defense": "reflex",
@@ -3018,7 +3086,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -3064,7 +3136,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "reflex",
       "traditions": [
@@ -3094,7 +3165,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -3141,7 +3216,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "",
-      "duration": "10 Minutes",
       "requirements": "",
       "area": "40-foot burst",
       "traditions": [
@@ -3178,7 +3252,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 40
+      "areaEffectSize": 40,
+      "durationText": "10 Minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -3224,7 +3302,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 willing creature",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -3249,7 +3326,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -3293,7 +3374,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "until the start of your next turn",
       "requirements": "",
       "defense": "basicreflex",
       "traditions": [
@@ -3319,7 +3399,11 @@
           "label": "earth",
           "slug": "earth"
         }
-      ]
+      ],
+      "durationText": "until the start of your next turn",
+      "duration": 1,
+      "durationType": "sourceStartNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -3364,7 +3448,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -3394,7 +3477,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -3439,7 +3526,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot burst",
       "defense": "fortitude",
@@ -3468,7 +3554,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -3512,7 +3602,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 willing creature",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -3539,7 +3628,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -3583,7 +3676,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "1 creature or object on the ground",
-      "duration": "",
       "requirements": "",
       "defense": "basicreflex",
       "traditions": [
@@ -3609,7 +3701,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -3653,7 +3746,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "5-foot burst",
       "traditions": [
@@ -3681,7 +3773,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 5
+      "areaEffectSize": 5,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -3726,7 +3822,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "5-foot burst",
       "defense": "basicreflex",
@@ -3759,7 +3854,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 5
+      "areaEffectSize": 5,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -3804,7 +3903,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot emanation",
       "defense": "reflex",
@@ -3835,7 +3933,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -3881,7 +3980,6 @@
       "cast": "10 minutes",
       "range": "",
       "targets": "",
-      "duration": "24 hours",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -3912,7 +4010,11 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": "24 hours",
+      "duration": 24,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -3957,7 +4059,6 @@
       "cast": "1 minute",
       "range": "10 feet",
       "targets": "",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -3978,7 +4079,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -4021,7 +4126,6 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "duration": "3 rounds",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -4042,7 +4146,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "3 rounds",
+      "duration": 3,
+      "durationType": "time",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -4086,7 +4194,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot line",
       "defense": "basicreflex",
@@ -4119,7 +4226,8 @@
         }
       ],
       "areaEffectShape": "line",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -4165,7 +4273,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "1 creature made of flesh",
-      "duration": "varies",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [
@@ -4195,7 +4302,8 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -4241,7 +4349,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -4271,7 +4378,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -4317,7 +4428,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "1 creature or object",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -4346,7 +4456,8 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -4390,7 +4501,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "up to 10 metal objects with a total Bulk of 1 or less",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -4415,7 +4525,8 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -4458,7 +4569,6 @@
       "cast": "3",
       "range": "",
       "targets": "any number of creatures wearing metal armor, creatures made of metal, creatures that have the metal trait, and unattended metal objects",
-      "duration": "1 minute",
       "requirements": "",
       "area": "100-foot emanation",
       "defense": "reflex",
@@ -4487,7 +4597,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 100
+      "areaEffectSize": 100,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -4531,7 +4645,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -4556,7 +4669,11 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -4600,7 +4717,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -4629,7 +4745,11 @@
           "label": "morph",
           "slug": "morph"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -4676,7 +4796,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -4709,7 +4828,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -4756,7 +4879,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [
@@ -4786,7 +4908,8 @@
           "label": "poison",
           "slug": "poison"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -4831,7 +4954,6 @@
       "cast": "1 minute",
       "range": "",
       "targets": "1 body of water of at least 5 square feet",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -4853,7 +4975,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -4899,7 +5025,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "all squares on the ground that contain plants in an 80-foot burst",
-      "duration": "1 minute",
       "requirements": "",
       "area": "80-foot burst",
       "traditions": [
@@ -4934,7 +5059,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 80
+      "areaEffectSize": 80,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -4981,7 +5110,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -5016,7 +5144,8 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -5063,7 +5192,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "20-foot burst",
       "defense": "basicfortitude",
@@ -5095,7 +5223,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -5140,7 +5269,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "60-foot line",
       "traditions": [
@@ -5168,7 +5296,11 @@
         }
       ],
       "areaEffectShape": "line",
-      "areaEffectSize": 60
+      "areaEffectSize": 60,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -5212,7 +5344,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -5237,7 +5368,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -5282,7 +5417,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot burst",
       "defense": "basicfortitude",
@@ -5316,7 +5450,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -5361,7 +5499,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "divine",
@@ -5386,7 +5523,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -5430,7 +5571,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -5455,7 +5595,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -5500,7 +5644,6 @@
       "cast": "2",
       "range": "100 feet",
       "targets": "",
-      "duration": "12 hours",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [
@@ -5530,7 +5673,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "12 hours",
+      "duration": 12,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -5576,7 +5723,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "10-foot emanation",
       "defense": "basicfortitude",
@@ -5606,7 +5752,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -5650,7 +5797,6 @@
       "cast": "3",
       "range": "500 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "20-foot burst",
       "defense": "fortitude",
@@ -5679,7 +5825,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -5723,7 +5873,6 @@
       "cast": "reaction",
       "range": "60 feet",
       "targets": "the triggering creature",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -5748,7 +5897,8 @@
           "label": "move",
           "slug": "move"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -5793,7 +5943,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "10-foot burst",
       "defense": "basicreflex",
@@ -5823,7 +5972,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -5869,7 +6019,6 @@
       "cast": "3",
       "range": "500 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "20-foot cylinder",
       "defense": "basicreflex",
@@ -5906,7 +6055,11 @@
         }
       ],
       "areaEffectShape": "cylinder",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -5952,7 +6105,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -5977,7 +6129,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -6022,7 +6178,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -6048,7 +6203,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -6093,7 +6249,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot emanation",
       "traditions": [
@@ -6125,7 +6280,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -6171,7 +6327,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "divine",
@@ -6200,7 +6355,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -6245,7 +6401,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 willing creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -6270,7 +6425,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -6314,7 +6473,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "20-foot burst",
       "defense": "basicfortitude",
@@ -6343,7 +6501,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -6387,7 +6549,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 willing creature",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -6412,7 +6573,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -6457,7 +6622,6 @@
       "cast": "1 minute",
       "range": "touch",
       "targets": "1 gallon of water or more",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -6484,7 +6648,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -6529,7 +6697,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 willing creature",
-      "duration": "1 minute or until expended",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -6555,7 +6722,11 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": "1 minute or until expended",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -6602,7 +6773,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 living creature or 1 corpse that died within the last round",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "divine",
@@ -6640,7 +6810,11 @@
           "label": "vitality",
           "slug": "vitality"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -6688,7 +6862,6 @@
       "cast": "3",
       "range": "1,000 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot burst",
       "defense": "reflex",
@@ -6722,7 +6895,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -6769,7 +6943,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 or 2 creatures",
-      "duration": "",
       "requirements": "You have at least one free hand.",
       "traditions": [
         "arcane",
@@ -6802,7 +6975,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -6848,7 +7022,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -6873,7 +7046,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -6918,7 +7095,6 @@
       "cast": "2 or 3",
       "range": "60 feet",
       "targets": "1 or 2 creatures",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -6947,7 +7123,8 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -6993,7 +7170,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "20-foot burst",
       "defense": "basicfortitude",
@@ -7026,7 +7202,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -7073,7 +7253,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -7103,7 +7282,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -7148,7 +7331,6 @@
       "cast": "3",
       "range": "100 feet",
       "targets": "",
-      "duration": "until the end of your next turn",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -7174,7 +7356,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "until the end of your next turn",
+      "duration": 1,
+      "durationType": "sourceEndNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -7219,7 +7405,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "1 willing creature",
-      "duration": "1 round",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -7248,7 +7433,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "1 round",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -7293,7 +7482,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 willing creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -7318,7 +7506,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -7362,7 +7554,6 @@
       "cast": "1 minute",
       "range": "touch",
       "targets": "up to 1 gallon of non-magical liquid or up to 5 pounds of food",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -7384,7 +7575,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -7429,7 +7624,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "15-foot line",
       "defense": "basicreflex",
@@ -7462,7 +7656,8 @@
         }
       ],
       "areaEffectShape": "line",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -7508,7 +7703,6 @@
       "cast": "1",
       "range": "120 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -7539,7 +7733,8 @@
           "label": "subtle",
           "slug": "subtle"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -7584,7 +7779,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -7610,7 +7804,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -7655,7 +7853,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "defense": "basicreflex",
       "traditions": [],
@@ -7682,7 +7879,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -7727,7 +7925,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "15-foot emanation",
       "defense": "fortitude",
@@ -7760,7 +7957,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -7805,7 +8006,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "",
-      "duration": "varies",
       "requirements": "",
       "area": "15-foot cone",
       "defense": "reflex",
@@ -7834,7 +8034,8 @@
         }
       ],
       "areaEffectShape": "cone",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -7878,7 +8079,6 @@
       "cast": "2",
       "range": "10 miles",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "10-foot burst",
       "traditions": [
@@ -7907,7 +8107,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -7951,7 +8152,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -7976,7 +8176,11 @@
           "label": "metal",
           "slug": "metal"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -8021,7 +8225,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -8050,7 +8253,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -8095,7 +8302,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 object up to 10 Bulk",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -8120,7 +8326,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -8164,7 +8374,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 creature, unattended object, or hazard or structure made of stone or earth",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [
@@ -8190,7 +8399,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -8234,7 +8447,6 @@
       "cast": "1 minute",
       "range": "touch",
       "targets": "1 piece of unprocessed wood, reeds, or plant fiber of 1 Bulk or less",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -8255,7 +8467,8 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -8299,7 +8512,6 @@
       "cast": "3",
       "range": "500 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "25-foot cylinder",
       "defense": "reflex",
@@ -8328,7 +8540,11 @@
         }
       ],
       "areaEffectShape": "cylinder",
-      "areaEffectSize": 25
+      "areaEffectSize": 25,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -8373,7 +8589,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot burst",
       "defense": "reflex",
@@ -8403,7 +8618,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -8447,7 +8666,6 @@
       "cast": "1 minute",
       "range": "",
       "targets": "",
-      "duration": "varies",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -8470,7 +8688,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -8513,7 +8732,6 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -8535,7 +8753,8 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -8579,7 +8798,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -8608,7 +8826,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -8655,7 +8877,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 creature",
-      "duration": "varies",
       "requirements": "",
       "defense": "basicreflex",
       "traditions": [
@@ -8690,7 +8911,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -8735,7 +8957,6 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -8760,7 +8981,8 @@
           "label": "move",
           "slug": "move"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,

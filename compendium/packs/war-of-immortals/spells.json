@@ -21,7 +21,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "area": "30-foot emanation",
       "defense": "basicfortitude",
@@ -55,7 +54,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -101,7 +101,6 @@
       "cast": "1 to 3",
       "range": "touch",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -133,7 +132,8 @@
           "label": "mythic",
           "slug": "mythic"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -178,7 +178,6 @@
       "cast": "3",
       "range": "100 feet",
       "targets": "",
-      "duration": "until the end of your next turn",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -209,7 +208,11 @@
           "label": "mythic",
           "slug": "mythic"
         }
-      ]
+      ],
+      "durationText": "until the end of your next turn",
+      "duration": 1,
+      "durationType": "sourceEndNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -255,7 +258,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "30-foot emanation",
       "traditions": [
@@ -287,7 +289,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -332,7 +338,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -354,7 +359,11 @@
           "label": "polymorph",
           "slug": "polymorph"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -397,7 +406,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -419,7 +427,11 @@
           "label": "morph",
           "slug": "morph"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -464,7 +476,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -499,7 +510,11 @@
           "label": "sanctified",
           "slug": "sanctified"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -547,7 +562,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "5-foot emanation",
       "defense": "will",
@@ -581,7 +595,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 5
+      "areaEffectSize": 5,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -627,7 +645,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot burst",
       "defense": "basicreflex",
@@ -657,7 +674,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -700,7 +721,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -718,7 +738,11 @@
           "label": "focus",
           "slug": "focus"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -761,7 +785,6 @@
       "cast": "3",
       "range": "500 feet",
       "targets": "",
-      "duration": "until the end of your next turn",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -792,7 +815,11 @@
           "label": "mythic",
           "slug": "mythic"
         }
-      ]
+      ],
+      "durationText": "until the end of your next turn",
+      "duration": 1,
+      "durationType": "sourceEndNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -840,7 +867,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot emanation",
       "traditions": [],
@@ -877,7 +903,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -924,7 +954,6 @@
       "cast": "3",
       "range": "100 feet",
       "targets": "",
-      "duration": "until the end of your next turn",
       "requirements": "",
       "traditions": [
         "divine",
@@ -953,7 +982,11 @@
           "label": "mythic",
           "slug": "mythic"
         }
-      ]
+      ],
+      "durationText": "until the end of your next turn",
+      "duration": 1,
+      "durationType": "sourceEndNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -997,7 +1030,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "until the end of your next turn",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1023,7 +1055,11 @@
           "label": "prediction",
           "slug": "prediction"
         }
-      ]
+      ],
+      "durationText": "until the end of your next turn",
+      "duration": 1,
+      "durationType": "sourceEndNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -1069,7 +1105,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot emanation",
       "traditions": [],
@@ -1102,7 +1137,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1152,7 +1191,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot emanation",
       "defense": "will",
@@ -1194,7 +1232,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1244,7 +1286,6 @@
       "cast": "1 minute",
       "range": "30 feet",
       "targets": "you and up to 6 willing creatures",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1279,7 +1320,11 @@
           "label": "mythic",
           "slug": "mythic"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1327,7 +1372,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1357,7 +1401,11 @@
           "label": "prediction",
           "slug": "prediction"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1404,7 +1452,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot burst",
       "defense": "basicfortitude",
@@ -1443,7 +1490,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1488,7 +1539,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -1510,7 +1560,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1556,7 +1610,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 intelligent creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -1594,7 +1647,11 @@
           "label": "visual",
           "slug": "visual"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1641,7 +1698,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "10-foot emanation",
       "traditions": [],
@@ -1666,7 +1722,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1708,7 +1768,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -1726,7 +1785,11 @@
           "label": "focus",
           "slug": "focus"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1769,7 +1832,6 @@
       "cast": "2",
       "range": "500 feet",
       "targets": "",
-      "duration": "until the end of your next turn",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1798,7 +1860,11 @@
           "label": "mythic",
           "slug": "mythic"
         }
-      ]
+      ],
+      "durationText": "until the end of your next turn",
+      "duration": 1,
+      "durationType": "sourceEndNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -1843,7 +1909,6 @@
       "cast": "3",
       "range": "60 feet",
       "targets": "",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1868,7 +1933,11 @@
           "label": "mythic",
           "slug": "mythic"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -1912,7 +1981,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute, or 8 hours",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -1934,7 +2002,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute, or 8 hours"
     },
     "attributes": {
       "remaster": true,
@@ -1979,7 +2048,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "24 hours",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2014,7 +2082,11 @@
           "label": "visual",
           "slug": "visual"
         }
-      ]
+      ],
+      "durationText": "24 hours",
+      "duration": 24,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -2061,7 +2133,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "basicwill",
       "traditions": [],
@@ -2092,7 +2163,11 @@
           "label": "visual",
           "slug": "visual"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2136,7 +2211,6 @@
       "cast": "1",
       "range": "60 feet",
       "targets": "your hunted prey",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [],
@@ -2155,7 +2229,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2198,7 +2276,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "your hunted prey",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -2224,7 +2301,11 @@
           "label": "sanctified",
           "slug": "sanctified"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,

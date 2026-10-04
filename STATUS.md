@@ -27,16 +27,30 @@ Last updated: 2026-10-04
   a decimal field in a group, with native feet conversion in its editor and
   summary. Source checks validate section and field types recursively across
   every form and partial, including tabs, list editors, and field containers.
-  The 308 configured spell areas and all published spell records are unchanged;
-  this definition-only repair applies to existing/custom spells without a data
-  migration. The new asset conversion and timed self/target loading remain
-  deferred until the developer confirms the updated app's loading format.
-- Spell verification: full source checks pass and the test archive includes the
-  corrected editor. Native Edit Spell, area-size editing/saving, and area loading
-  still need verification in the updated app: app inspection stalled and macOS
-  denied installed-system reads. Check Fireball, Detect Magic, and Bless, and
-  confirm creature spell links open their full records. Timed self/target effects
-  and expiry are pending the deferred loading upgrade.
+  This definition-only repair applies to existing/custom spells without a data
+  migration. Upstream asset conversion remains deferred.
+- Spell token loading: all 1,404 published spells now preserve printed duration
+  prose in `data.durationText` and expose editable native effect-duration
+  controls. The builders and focused population script configure 809 clear
+  timers/next-turn endings using numeric `data.duration`, `data.durationUnit`,
+  and `data.durationType`; the 308 map-area templates are unchanged. Sustained
+  durations supply a maximum timer, not automatic Sustain. Instantaneous,
+  ambiguous, daily-preparation, and other unsupported endings stay unset rather
+  than receive invented timers. The user's preference for reminder effects on
+  those spells is still open; the documented native Load action requires a
+  duration, so a supported no-expiry loading contract is also needed.
+- Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
+  against the same 1,404 duration strings as the Python builder. It preserves
+  prose and existing native GM settings and is idempotent. The package remains
+  `0.9.01`; the new migration cannot run until a future release claims its
+  version. Legacy duration text remains readable and editable in the meantime.
+- Spell verification: full source checks pass. `dist/test/pf2e-remaster.system`
+  includes the new spell records/editor for user testing, at the unchanged
+  `0.9.01` version. No visual app inspection is requested. Native loading/expiry
+  still needs verification: select a token and load Haste, Shield, and Command;
+  check timer units, turn endings, and the effect's caster/source for
+  source-relative expiry. With no token selected, verify Fireball/Detect Magic
+  still place areas. Check effect-duration editing and creature spell links.
 - Native-app verification still required: import `dist/test/pf2e-remaster.system`
   and confirm Edit Creature opens without a decoding error, that Skills opens
   with its values and named Lore, and that a creature's rendered stat block is

@@ -18,7 +18,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "",
-      "duration": "1 round",
       "requirements": "",
       "area": "15-foot burst",
       "traditions": [
@@ -42,7 +41,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": "1 round",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -84,7 +87,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 willing creature",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "occult"
@@ -108,7 +110,11 @@
           "label": "subtle",
           "slug": "subtle"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -151,7 +157,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 unattended object of light Bulk or less",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -177,7 +182,8 @@
           "label": "teleportation",
           "slug": "teleportation"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -221,7 +227,6 @@
       "cast": "2",
       "range": "60 feet (see text)",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -247,7 +252,11 @@
           "label": "teleportation",
           "slug": "teleportation"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,

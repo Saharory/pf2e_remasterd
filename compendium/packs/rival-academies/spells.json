@@ -21,7 +21,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "1 living creature",
-      "duration": "",
       "requirements": "",
       "defense": "basicfortitude",
       "traditions": [],
@@ -52,7 +51,8 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -97,7 +97,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "10 minutes (see text)",
       "requirements": "",
       "area": "30-foot emanation",
       "defense": "will",
@@ -126,7 +125,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": "10 minutes (see text)",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -168,7 +171,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature other than yourself",
-      "duration": "10 minutes",
       "requirements": "",
       "traditions": [
         "divine",
@@ -189,7 +191,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -232,7 +238,6 @@
       "cast": "3",
       "range": "60 feet",
       "targets": "",
-      "duration": "10 minutes",
       "requirements": "",
       "defense": "reflex",
       "traditions": [
@@ -262,7 +267,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "10 minutes",
+      "duration": 10,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -305,7 +314,6 @@
       "cast": "3",
       "range": "30 feet",
       "targets": "one unoccupied 5-foot square",
-      "duration": "1 minute",
       "requirements": "",
       "area": "5-foot square",
       "traditions": [
@@ -330,7 +338,11 @@
         }
       ],
       "areaEffectShape": "square",
-      "areaEffectSize": 5
+      "areaEffectSize": 5,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -372,7 +384,6 @@
       "cast": "3",
       "range": "30 feet",
       "targets": "up to 10 creatures, including yourself",
-      "duration": "",
       "requirements": "",
       "defense": "basicfortitude",
       "traditions": [],
@@ -395,7 +406,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -441,7 +453,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [],
@@ -476,7 +487,8 @@
           "label": "witch",
           "slug": "witch"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -522,7 +534,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "one creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -548,7 +559,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -591,7 +606,6 @@
       "cast": "2",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "30-foot emanation",
       "traditions": [
@@ -619,7 +633,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -666,7 +684,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "until the beginning of your next turn",
       "requirements": "",
       "defense": "will",
       "traditions": [],
@@ -705,7 +722,11 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": "until the beginning of your next turn",
+      "duration": 1,
+      "durationType": "sourceStartNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -752,7 +773,6 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "You're aware of the attack or spell.",
       "traditions": [],
       "traditionsText": "",
@@ -774,7 +794,8 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -817,7 +838,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "30-foot burst",
       "defense": "basicfortitude",
@@ -847,7 +867,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -891,7 +915,6 @@
       "cast": "2",
       "range": "your Speed",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -921,7 +944,8 @@
           "label": "visual",
           "slug": "visual"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -967,7 +991,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "up to 3 creatures",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1001,7 +1024,11 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1049,7 +1076,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "1 unattended object of up to 8 Bulk, or Medium or smaller creature that is currently on the ground",
-      "duration": "1 minute (see text)",
       "requirements": "",
       "defense": "reflex",
       "traditions": [],
@@ -1084,7 +1110,11 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "1 minute (see text)",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1131,7 +1161,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 willing living creature",
-      "duration": "",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -1157,7 +1186,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1204,7 +1234,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "two creatures",
-      "duration": "",
       "requirements": "",
       "defense": "will",
       "traditions": [],
@@ -1239,7 +1268,8 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1286,7 +1316,6 @@
       "cast": "1 to 3",
       "range": "varies",
       "targets": "1 or more creature",
-      "duration": "",
       "requirements": "",
       "area": "10-foot emanation",
       "defense": "basicwill",
@@ -1320,7 +1349,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 10
+      "areaEffectSize": 10,
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1366,7 +1396,6 @@
       "cast": "3",
       "range": "120 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "20-foot burst",
       "defense": "will",
@@ -1403,7 +1432,11 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 20
+      "areaEffectSize": 20,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1450,7 +1483,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "will",
       "traditions": [],
@@ -1481,7 +1513,11 @@
           "label": "witch",
           "slug": "witch"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1527,7 +1563,6 @@
       "cast": "1 or 2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1556,7 +1591,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1601,7 +1640,6 @@
       "cast": "reaction",
       "range": "30 feet",
       "targets": "one creature",
-      "duration": "",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -1631,7 +1669,8 @@
           "label": "mental",
           "slug": "mental"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1674,7 +1713,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 creature",
-      "duration": "24 hours",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -1696,7 +1734,11 @@
           "label": "mental",
           "slug": "mental"
         }
-      ]
+      ],
+      "durationText": "24 hours",
+      "duration": 24,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -1737,7 +1779,6 @@
       "cast": "reaction",
       "range": "120 feet",
       "targets": "",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1758,7 +1799,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -1801,7 +1843,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1830,7 +1871,11 @@
           "label": "mental",
           "slug": "mental"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1875,7 +1920,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "15-foot cylinder",
       "defense": "basicreflex",
@@ -1905,7 +1949,11 @@
         }
       ],
       "areaEffectShape": "cylinder",
-      "areaEffectSize": 15
+      "areaEffectSize": 15,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -1949,7 +1997,6 @@
       "cast": "3",
       "range": "",
       "targets": "",
-      "duration": "24 hours",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -1974,7 +2021,11 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": "24 hours",
+      "duration": 24,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -2019,7 +2070,6 @@
       "cast": "1",
       "range": "60 feet",
       "targets": "1 weapon that is unattended or wielded by a willing creature.",
-      "duration": "until the beginning of your next turn",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -2049,7 +2099,11 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": "until the beginning of your next turn",
+      "duration": 1,
+      "durationType": "sourceStartNextTurn",
+      "durationUnit": "round"
     },
     "attributes": {
       "remaster": true,
@@ -2098,7 +2152,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "varies",
       "requirements": "",
       "defense": "fortitude",
       "traditions": [
@@ -2140,7 +2193,8 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -2187,7 +2241,6 @@
       "cast": "3",
       "range": "touch",
       "targets": "1 willing creature",
-      "duration": "Until the target's next daily preparations",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2212,7 +2265,8 @@
           "label": "mental",
           "slug": "mental"
         }
-      ]
+      ],
+      "durationText": "Until the target's next daily preparations"
     },
     "attributes": {
       "remaster": true,
@@ -2257,7 +2311,6 @@
       "cast": "1",
       "range": "60 feet",
       "targets": "1 unattended object of light Bulk or less",
-      "duration": "",
       "requirements": "",
       "traditions": [],
       "traditionsText": "",
@@ -2287,7 +2340,8 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2332,7 +2386,6 @@
       "cast": "2",
       "range": "120 feet",
       "targets": "",
-      "duration": "varies",
       "requirements": "",
       "area": "30-foot burst",
       "traditions": [
@@ -2360,7 +2413,8 @@
         }
       ],
       "areaEffectShape": "sphere",
-      "areaEffectSize": 30
+      "areaEffectSize": 30,
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -2404,7 +2458,6 @@
       "cast": "1 to 3",
       "range": "varies",
       "targets": "1 or more creatures",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "occult",
@@ -2434,7 +2487,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2478,7 +2532,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "defense": "will",
       "traditions": [
@@ -2504,7 +2557,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2548,7 +2602,6 @@
       "cast": "3",
       "range": "",
       "targets": "",
-      "duration": "1 minute",
       "requirements": "",
       "area": "60-foot line",
       "defense": "fortitude",
@@ -2582,7 +2635,11 @@
         }
       ],
       "areaEffectShape": "line",
-      "areaEffectSize": 60
+      "areaEffectSize": 60,
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2625,7 +2682,6 @@
       "cast": "2",
       "range": "60 feet",
       "targets": "one beneficial spell effect currently affecting a creature, with a duration of 10 minutes or less",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2646,7 +2702,8 @@
           "label": "manipulate",
           "slug": "manipulate"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2690,7 +2747,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 creature",
-      "duration": "",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2723,7 +2779,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2769,7 +2826,6 @@
       "cast": "1",
       "range": "",
       "targets": "",
-      "duration": "",
       "requirements": "You're wielding an improvised weapon.",
       "defense": "fortitude",
       "traditions": [],
@@ -2796,7 +2852,8 @@
           "label": "water",
           "slug": "water"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,
@@ -2840,7 +2897,6 @@
       "cast": "2",
       "range": "touch",
       "targets": "1 broken weapon that is unattended or held by a willing creature",
-      "duration": "1 hour",
       "requirements": "",
       "traditions": [
         "arcane",
@@ -2865,7 +2921,11 @@
           "label": "nonlethal",
           "slug": "nonlethal"
         }
-      ]
+      ],
+      "durationText": "1 hour",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "hour"
     },
     "attributes": {
       "remaster": true,
@@ -2911,7 +2971,6 @@
       "cast": "2",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "1 minute",
       "requirements": "",
       "defense": "will",
       "traditions": [],
@@ -2946,7 +3005,11 @@
           "label": "witch",
           "slug": "witch"
         }
-      ]
+      ],
+      "durationText": "1 minute",
+      "duration": 1,
+      "durationType": "time",
+      "durationUnit": "minute"
     },
     "attributes": {
       "remaster": true,
@@ -2994,7 +3057,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "1 creature",
-      "duration": "varies",
       "requirements": "",
       "defense": "will",
       "traditions": [],
@@ -3025,7 +3087,8 @@
           "label": "wood",
           "slug": "wood"
         }
-      ]
+      ],
+      "durationText": "varies"
     },
     "attributes": {
       "remaster": true,
@@ -3070,7 +3133,6 @@
       "cast": "1",
       "range": "30 feet",
       "targets": "one creature you can see",
-      "duration": "",
       "requirements": "",
       "defense": "basicfortitude",
       "traditions": [],
@@ -3093,7 +3155,8 @@
           "label": "wizard",
           "slug": "wizard"
         }
-      ]
+      ],
+      "durationText": ""
     },
     "attributes": {
       "remaster": true,

@@ -29,6 +29,7 @@ from creature_ability_glossary import configure_creature_abilities
 from creature_senses import configure_creature_senses
 from creature_editor_data import configure_creature_editor_data
 from spell_area_templates import configure_spell_area_template
+from spell_load_data import configure_spell_load_data
 from skill_references import skill_reference_records
 
 
@@ -728,6 +729,7 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
 
     if expected_kind == "Spell":
         configure_spell_area_template(result)
+        configure_spell_load_data(result)
 
     if expected_kind == "Action":
         configure_creature_abilities(result)
