@@ -1,6 +1,6 @@
 # PF2E Remaster and Web Client Roadmap
 
-Last reviewed: 2026-09-28
+Last reviewed: 2026-10-04
 
 This is the decision record for work discovered while comparing the PF2E
 system and community web client with the official Encounter+ repositories,
@@ -63,7 +63,8 @@ uses. All available spells and rituals link to their full library records and
 therefore inherit the existing safe fixed-area load behavior. Six legacy OGL
 names whose records are not distributed in the Remaster system remain visible
 as plain text instead of opening dead links. Spells without a safe fixed area
-remain normal spell records with no forced template.
+receive no forced map template; they can still load an effect onto a selected
+token.
 
 ### 4. Keep following upstream compatibility work
 
@@ -71,6 +72,24 @@ Continue reviewing official system, package, and web-client changes before
 each release. Reuse official migrations, manifest conventions, validation,
 and packaging behavior where appropriate instead of maintaining avoidable
 fork-only machinery.
+
+### 5. Spell effects — complete
+
+All 1,404 published spells can now create their own native status effect when
+loaded onto a selected token. This resolves the spell-effect menu problem:
+keep the menu focused on conditions and reusable general effects, including
+effects caused by nonmagical attacks. Do not add a separate menu entry for each
+spell; load its effect directly from the spell record instead. The user has
+confirmed that this workflow meets the intended need.
+
+- The 809 spells with a clear duration use native timers or next-turn endings.
+- The remaining 595 spells create manually removed reminders, as agreed.
+- Printed duration text remains intact and native effect settings are editable.
+- Sustained spells use their stated maximum duration; the GM still handles
+  Sustain, early removal, and mechanical modifiers.
+- Existing safe area placement remains available without a selected token.
+  Map areas do not inherit the token effect's timer; native area expiry is
+  deferred below.
 
 ## Additional source-backed possibilities
 
@@ -113,9 +132,9 @@ explicit Access text can be extracted from item descriptions when present.
 
 The official 5e entity definitions demonstrate native load actions for spells,
 vehicles, characters, monsters, and NPCs. PF2E spell loading now uses this for
-area templates. Other load actions should only be added when they produce a
-clear Encounter+ map or encounter behavior rather than merely duplicating a
-Library record.
+area templates and token status effects. Other load actions should only be
+added when they produce a clear Encounter+ map or encounter behavior rather
+than merely duplicating a Library record.
 
 ### HTML/JavaScript GM tools
 
@@ -135,6 +154,11 @@ panel and link back to the complete sourced rule.
 - Encounter XP Planner and bookmarkable Operations Center.
 - Safe structured spell-area templates, including radius mapping for
   emanations where Encounter+ cannot express a distinct emanation type.
+- Native spell loading onto selected tokens, with printed durations mapped to
+  timers/turn endings or manual reminders, without expanding the general
+  status-effect menu into a spell catalog.
+- Spell-editor compatibility with the rebuilt native forms, including valid
+  nested numeric fields and recursive form-schema checks.
 - Compact entity views that retain their theme and resize text to fit the host
   Library/search panel.
 - Packaging, validation, release inspection, update manifests, and migrations.
@@ -143,8 +167,14 @@ panel and link back to the complete sourced rule.
 
 - **Per-token initiative-skill overrides:** the status-effect experiment was
   unreliable and was reverted. Library creatures retain Perception by default.
-- **Rule automation and effect durations:** the system supplies references and
-  display data; the GM remains responsible for modifiers and timing.
+- **Rule automation:** native spell-effect timers and turn endings are now
+  supported. Automatic modifiers, Sustain, and rule-dependent early endings
+  remain the GM's responsibility.
+- **Timers for placed map areas:** deferred because native `AreaEffect`
+  records expose no duration or expiry fields. A placed area such as Frozen
+  Fog cannot inherit automatic expiry through system spell data. The user
+  requested aborting this change unless the host supports it; no workaround
+  was added. Reconsider when Encounter+ provides native area-duration support.
 - **Virtual 3D dice in the web client:** rejected because recreating the app's
   renderer and server behavior is too much maintenance for the benefit.
 - **Persistent/saved player area templates:** unnecessary for previews and
