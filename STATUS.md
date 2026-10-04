@@ -27,10 +27,10 @@ Last updated: 2026-10-04
   existing virtualenv points to a missing Python; verification used the pinned
   `json5==0.15.0` in `/private/tmp/pf2e-verification-deps` via `PYTHONPATH` and
   the bundled Node executable via `NODE`. A temporary deterministic rebuild
-  matches `dist/test/pf2e-remaster.system` byte for byte. Package SHA-256:
+  matched the original test package byte for byte. Original package SHA-256:
   `6641cb21a9ef1c90191a3f4c16815f3a004d73c4d48e77e602d270be6e31719f`.
-  Native testing is in progress; no native pass is inferred from source checks. Release
-  preparation awaits user approval; version changes, push, and publication
+  Native testing is in progress; no native pass is inferred from source checks.
+  Release preparation awaits user approval; version changes, push, and publication
   also require explicit approval. The `0.9.02` migration remains inactive in
   this `0.9.01` test package.
 - Native Skills/Lore result (user report, 2026-10-04): the Lore editor is
@@ -41,16 +41,33 @@ Last updated: 2026-10-04
   larger edits such as a whole word do persist. Item quantity edits work
   without issues. Name editing is therefore failing native verification;
   the earlier successful modifier save does not establish name persistence.
-  Encounter+ version/device and saved stat-block rendering are unconfirmed.
-  Both name controls bind directly to `name` using the documented default
-  `text` type; quantity/modifier controls use `number`. No package script
-  filters short name edits. The delayed summary redraw and lost text edits
-  remain unresolved, and a native input-commit/refresh issue is only a
-  hypothesis. Next check: make a single-letter edit, wait, move focus to
-  Quantity/Modifier without changing it, then return and save/reopen the
-  creature. This distinguishes focus/timing behavior from edit size.
-  No speculative form change has been made. Release preparation remains
-  pending resolution and user approval.
+  Waiting two seconds and moving focus to Quantity did not rescue the
+  single-letter edit. Encounter+ version/device are unconfirmed. No package
+  script filters short name edits. The delayed summary redraw and lost text
+  edits remain unresolved; a native input-commit/refresh issue is only a
+  hypothesis. The test candidate now uses `textArea` for Lore and Items name
+  controls, retaining the same `name` binding and numeric controls. This is
+  a candidate workaround, not a confirmed persistence fix. Retest single-letter
+  insertion and deletion in both editors, save/reopen, and check immediate
+  summary refresh. Release preparation remains pending resolution and approval.
+- Native editor reference result (user report, 2026-10-04): selecting Chest
+  through the Items Reference picker renders literal Markdown in the saved
+  stat block: `[Chest](/item/chest-player-core/player core) (2)`.
+  The template interpolated a destination containing a raw source-name space.
+  Apple Foundation's Markdown parser reproduces the failure and recognizes
+  an angle-wrapped destination as a link to
+  `/item/chest-player-core/player%20core`, keeping `Chest (2)` visible. The
+  same parser check passes for a source suffix with parentheses and a route
+  without a source suffix. Creature reference templates now wrap all nine
+  dynamic destinations (Items, senses/acuity, immunities, abilities/attack
+  effects, spells, and both ritual paths). The maintained creature regression
+  protects these destinations. No record rewrite or migration is needed.
+  Native app rendering and tapping Chest to open its quick reference still
+  require verification using the rebuilt test package. Canonical source checks
+  pass with all maintained validators. `dist/test/pf2e-remaster.system` was
+  rebuilt at unchanged `0.9.01`; all eight changed packaged files match their
+  sources. Current test package SHA-256:
+  `e37f5d81f278b6437908af238fe6a6542d3107db6ef3473cf558c8bcf8035206`.
 - Spell editor compatibility: fixed the nested area-size input that caused
   `sections[3].fields[8].form.sections[1].type` to reject `decimal`. Size is now
   a decimal field in a group, with native feet conversion in its editor and

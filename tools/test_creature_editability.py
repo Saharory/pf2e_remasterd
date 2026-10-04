@@ -548,6 +548,29 @@ def main() -> int:
     ability_view = (REPO / "views/partials/ability.md").read_text(encoding="utf-8")
     attack_view = (REPO / "views/partials/attack.md").read_text(encoding="utf-8")
     creature_view = (REPO / "views/partials/creature-primary.md").read_text(encoding="utf-8")
+    # The native reference picker includes a source suffix, e.g.
+    # /item/chest-player-core/player core. A bare Markdown destination treats
+    # its space as a separator and displays the entire link as literal text.
+    # Angle destinations preserve both the path and source in the link.
+    reference_templates = {
+        "creature-primary.md": {"item.reference", "sense.reference", "sense.acuityReference"},
+        "creature-secondary.md": {"immunity.reference"},
+        "creature-tertiary.md": {"ritual.reference"},
+        "ability.md": {"ability.reference"},
+        "attack.md": {"effect.reference"},
+        "spellcasting.md": {"spell.reference"},
+    }
+    for filename, expected_references in reference_templates.items():
+        template = (REPO / "views/partials" / filename).read_text(encoding="utf-8")
+        destinations = re.findall(r"\]\((<?)\{\{([^}]+)\}\}(>?)\)", template)
+        safe_references = set()
+        for opening, attribute, closing in destinations:
+            if attribute in expected_references:
+                if opening != "<" or closing != ">":
+                    raise SystemExit(f"editor reference breaks with a spaced source: {filename}: {attribute}")
+                safe_references.add(attribute)
+        if safe_references != expected_references:
+            raise SystemExit(f"editor reference destinations are missing: {filename}")
     if "ability.reference" not in ability_view:
         raise SystemExit("shared creature ability names are not linked")
     if "ability.effect" not in ability_view:
