@@ -56,9 +56,18 @@ Last updated: 2026-10-04
   that summary. These tests did not establish persistence after final Save;
   the copy's Lore edits were left unsaved when agent app interaction stopped.
   The automation's direct value setter did not commit an edit and is not
-  equivalent to user typing. Next user-only comparison: edit one letter in
-  place versus select all and enter the complete changed name; save/reopen in
-  each case. Native refresh and small-edit persistence remain unresolved.
+  equivalent to user typing. Follow-up user test: selecting existing text and
+  pasting its replacement still fails to save. Explicitly deleting the text
+  first, then pasting the new name, saves even when the final name differs by
+  only one letter. This confirms clear-then-paste as a working user workaround;
+  there is no demonstrated minimum edit-size rule. A missed native change
+  notification/dirty-state update is a hypothesis, not a diagnosed cause. No
+  documented text replacement or change-notification option was found in the
+  form schema. Keep normal text fields and do not add another speculative
+  control change. Native refresh and text replacement persistence remain
+  unresolved. Next user check: confirm Chest is tappable and opens its correct
+  item reference with the repaired templates, then continue the remaining
+  creature and spell tests using the confirmed workaround as needed.
   Release preparation remains pending resolution and approval. The user will
   perform all further app testing; do not run visual inspection or UI automation.
 - Broader native list result (user report, 2026-10-04): New Entry does not
