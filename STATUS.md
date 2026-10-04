@@ -7,11 +7,12 @@ Last updated: 2026-10-05
   reproduction will be supplied there; neither issue has been investigated
   or fixed in this chat.
 - Branch: `remaster-community-base`
-- Package version: `0.9.01`; release preparation, version changes, push, tags,
-  and publication require explicit user approval. No release approval yet.
+- Package version: `0.9.01`. The user authorized pushing the completed editor
+  work and replacing the main dist package on 2026-10-05. Version changes,
+  tags, and release publication have not been requested.
 - Requested baseline push completed on 2026-10-05: `4ea2835` is on
   `origin/remaster-community-base`, including the saved editor design roadmap.
-  The subsequent spell-editor redesign is a separate local step.
+  The subsequent editor work is included in the newer user-authorized push.
 - Standing user instruction (2026-10-05): always package each completed system
   implementation/fix for testing, even during the native-testing pause. Keep
   only the latest `.system` in `dist/test`; validate the replacement before
@@ -28,6 +29,12 @@ Last updated: 2026-10-05
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
   SHA-256: `b30bc9e4fcbcd39efe2e52bebbf5c07d72fcf5dbfee21a6857637ba9fc059618`.
+- Main distribution package: `dist/pf2e-remaster.system` was replaced on
+  2026-10-05 with the verified latest test package above, as requested. The
+  manifest, release summary, and checksums were replaced alongside it. The
+  main and test archives are identical; source definitions, archive CRC, and
+  checksums pass. Version remains `0.9.01`. Distribution artifacts are ignored
+  by Git; the branch push carries source changes and documentation.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
