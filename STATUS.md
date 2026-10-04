@@ -21,13 +21,13 @@ Last updated: 2026-10-05
 - Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-05
   with the creature, item, and spell editor redesigns and previous system-wide
   refresh repairs, improved attack/casting/usage summaries, and numeric
-  spellcasting-input repair.
+  spellcasting-input repair, plus the shared ability writing flow.
   Archive inspection/CRC/checksums pass; all 198 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `67b2ff91c6bf5404d677e981784ca8a1df1f0a85cfa58283a4cc2692b1b26931`.
+  SHA-256: `3bf4828a1f2b14d5484a115db84dbb4b185e02452df59756c6f29262c5667744`.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
@@ -79,7 +79,8 @@ Last updated: 2026-10-05
   edit variants and their level/price/bulk/crafting fields; change a category
   with populated equipment stats and ensure those values remain editable.
   No agent app automation is authorized. The user selected creatures next,
-  ahead of shared abilities; no ability-editor redesign has begun.
+  ahead of shared abilities. The shared ability editor is now implemented as
+  described below.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in
@@ -147,6 +148,25 @@ Last updated: 2026-10-05
   package SHA-256 `67b2ff91c6bf5404d677e981784ca8a1df1f0a85cfa58283a4cc2692b1b26931`
   on 2026-10-05. The requested value population, edit/save/reopen, and parent
   preview checks pass. This repair is native-confirmed.
+- Shared ability writing flow: source complete, native verification pending.
+  The shared partial now has two groups instead of six: Name, Action cost, and
+  Traits first, then **Rules text** with Trigger (optional), Description,
+  Effect, and Linked action (optional). Short English/French placeholders
+  distinguish activation conditions, context/requirements/passive rules, and
+  the effect. All seven bound controls retain their paths, types, attribute
+  types, defaults, units, and visibility in a before/after comparison. Trigger
+  and Effect stay editable for every action cost and for passive abilities.
+  This applies to all three creature ability lists, additional item
+  activations, hazards, and vehicles. No binding scope, nested screen, data
+  migration, content, summary, rendering, or load behavior changed; original
+  trigger-order/paragraph flags and reference links are preserved. The existing
+  editability regression covers the seven bindings and source-text fidelity
+  and passes, as does the canonical source check.
+  Pending user checks: inspect labels/prompts at narrow width; edit a reaction
+  with Trigger/Effect and a passive ability with Description; verify each
+  field persists independently on save/reopen and renders in the stat block;
+  check a linked action and one additional item activation or hazard/vehicle
+  ability using the same editor. No agent app automation is authorized.
 - Recent native feedback (2026-10-05): the user said the spell layout looks
   good apart from Cast actions offering Custom Options, and approved the item
   layout with no issues. The user subsequently approved creature tabs and

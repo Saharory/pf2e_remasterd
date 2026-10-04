@@ -169,7 +169,7 @@ tap behavior have not yet been compared in the app.
   2026-10-05, reporting no issues and much better organization; individual
   save/reopen checks were not separately reported. The user chose creatures
   next, ahead of the shared ability editor.
-- [ ] **3. Shared ability editor.**
+- [x] **3. Give abilities a clearer writing flow — source complete; native verification pending.**
   The 5e monster feature editor centers on Name, Usage, and Description. Ours
   always gives Description, Trigger, Effect, and Reference separate sections.
   Keep the PF2E distinctions, but compact optional material, put an applicable
@@ -178,6 +178,22 @@ tap behavior have not yet been compared in the app.
   conflating passive abilities, actions, and reactions.
   Sources: `forms/partials/ability.json`, `views/partials/ability.md`, and
   `../dnd5e-source/forms/partials/monster-feature.json`.
+  Implemented on 2026-10-05: Name, **Action cost**, and Traits share the opening
+  group. **Rules text** follows Trigger (optional) → Description → Effect →
+  Linked action (optional), with short localized writing prompts distinguishing
+  activation conditions, context/passive rules, and the resulting effect.
+  Six sections become two; all seven original controls remain directly
+  accessible with identical paths, types, attribute types, defaults, units,
+  and visibility. Trigger and Effect remain available for every action cost,
+  including passive/free-action abilities. Creature interaction/defensive/
+  offensive entries, item activations, hazards, and vehicles share this partial.
+  No additional editor level, data conversion, or rendering change was added;
+  the existing trigger-order/paragraph flags and stat-block references remain
+  intact. English/French labels are included. The existing editability suite
+  covers all seven bindings and source-text preservation and passes, as does
+  the canonical source check. Native writing-field labels/prompts, editing,
+  save/reopen, and linked-action checks
+  remain in `STATUS.md`.
 - [x] **4. Creature layout and terminology — source complete; user tests pass.**
   Our creature form has 18 top-level sections versus 11 in the 5e monster form.
   Level alone, Base Traits, and Other Traits fragment the opening. Organize

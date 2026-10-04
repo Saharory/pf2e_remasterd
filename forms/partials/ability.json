@@ -5,15 +5,11 @@
       "fields": [
         {
           "placeholder": "Common.Name",
-          "attribute": "name"
+          "attribute": "name",
+          "title": "Common.Name"
         },
-      ]
-    },
-    {
-      "type": "group",
-      "fields": [
         {
-          "title": "Common.Actions",
+          "title": "Ability.ActionCost",
           "type": "picker",
           "attribute": "actions",
           "attributeType": "Action"
@@ -23,45 +19,33 @@
           "type": "tags",
           "attribute": "traits",
           "attributeType": "Trait"
-        }, 
-      ]
-    },
-    {
-      "title": "Common.Description",
-      "type": "group",
-      "fields": [
-        {
-          "type": "textArea",
-          "attribute": "description"
         }
       ]
     },
     {
-      "title": "Common.Trigger",
+      "title": "Ability.RulesText",
       "type": "group",
       "fields": [
         {
           "type": "textArea",
-          "attribute": "trigger"
-        }
-      ]
-    },
-    {
-      "title": "Common.Effect",
-      "type": "group",
-      "fields": [
+          "attribute": "trigger",
+          "title": "Ability.Trigger",
+          "placeholder": "Ability.TriggerPrompt"
+        },
         {
           "type": "textArea",
-          "attribute": "effect"
-        }
-      ]
-    },
-    {
-      "title": "Reference",
-      "type": "group",
-      "fields": [
+          "attribute": "description",
+          "title": "Common.Description",
+          "placeholder": "Ability.DescriptionPrompt"
+        },
         {
-          "title": "Reference",
+          "type": "textArea",
+          "attribute": "effect",
+          "title": "Common.Effect",
+          "placeholder": "Ability.EffectPrompt"
+        },
+        {
+          "title": "Ability.LinkedAction",
           "type": "reference",
           "attribute": "reference",
           "attributeType": "Action"
