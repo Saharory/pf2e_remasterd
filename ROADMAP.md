@@ -169,7 +169,7 @@ tap behavior have not yet been compared in the app.
   2026-10-05, reporting no issues and much better organization; individual
   save/reopen checks were not separately reported. The user chose creatures
   next, ahead of the shared ability editor.
-- [x] **3. Give abilities a clearer writing flow — source complete; native verification pending.**
+- [x] **3. Give abilities a clearer writing flow — source complete; user tests pass.**
   The 5e monster feature editor centers on Name, Usage, and Description. Ours
   always gives Description, Trigger, Effect, and Reference separate sections.
   Keep the PF2E distinctions, but compact optional material, put an applicable
@@ -191,9 +191,8 @@ tap behavior have not yet been compared in the app.
   the existing trigger-order/paragraph flags and stat-block references remain
   intact. English/French labels are included. The existing editability suite
   covers all seven bindings and source-text preservation and passes, as does
-  the canonical source check. Native writing-field labels/prompts, editing,
-  save/reopen, and linked-action checks
-  remain in `STATUS.md`.
+  the canonical source check. The user approved the result and reported a
+  native pass on 2026-10-05; that confirmation is recorded in `STATUS.md`.
 - [x] **4. Creature layout and terminology — source complete; user tests pass.**
   Our creature form has 18 top-level sections versus 11 in the 5e monster form.
   Level alone, Base Traits, and Other Traits fragment the opening. Organize
@@ -261,12 +260,23 @@ tap behavior have not yet been compared in the app.
   a separate repair changes only those two input types to `number`, with the
   original paths and groups intact. The user confirms the repair's native
   tests pass on 2026-10-05; the earlier creature layout pass is preserved.
-- [ ] **6. Character navigation.**
+- [x] **6. Character navigation — source complete; native verification pending.**
   The 5e character editor has Main, Abilities & Skills, Inventory, and Spells
   tabs; ours has 12 sections in one continuous form. Use task-based tabs to
   make returning to statistics, inventory, and magic easier.
   Sources: `forms/character.json` and
   `../dnd5e-source/forms/character.json`.
+  Implemented on 2026-10-05 using the same native tab containers and icons:
+  **Main** holds identity, traits, HP, core statistics, movement, and resources;
+  **Abilities & Skills** holds attribute modifiers, saves, skills, and attacks;
+  **Inventory** holds equipment; **Spells** holds spellcasting entries. The
+  original 12 sections are retained across tabs (6/4/1/1), with no added
+  nested screen. All 63 resolved bound controls retain identical paths and
+  metadata in a before/after audit, including root-context movement and
+  row-context attack/casting editors. The inventory remains its existing
+  editable text field. English/French tab labels are included. The maintained
+  editability regression and canonical source check pass; native tab
+  navigation and save/reopen checks remain in `STATUS.md`.
 
 Library selection for character ancestry, class, and equipment is a later
 candidate. The 5e editor can select library entries where ours uses text; this
