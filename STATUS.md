@@ -41,7 +41,7 @@ Last updated: 2026-10-04
   path is identical, including all list-entry paths. No content rebuild or
   migration is needed. The maintained creature suite checks context preservation
   throughout the forms and guards the shared movement/activation/recall paths.
-  Skills/Immunities and creature Weaknesses/Resistances are native-confirmed;
+  Skills/Immunities, creature Weaknesses/Resistances, and creature Speed are native-confirmed;
   other extensions need user spot checks.
 - Separate text-edit persistence issue: small name edits and selecting existing
   text then pasting a replacement can fail to save. The user reproduced the
@@ -65,6 +65,15 @@ Last updated: 2026-10-04
   appears immediately, type/value edits update on return to the list, saved
   values persist and render in the stat block, and context-menu deletion
   redraws immediately and remains deleted after saving/reopening.
+  Creature Speed also passes: Walk/Fly editing, immediate summary updates,
+  save/reopen, and stat-block rendering. Recall Knowledge deletion works, but
+  subject/skill picker checkmarks appear only after leaving/re-entering Recall
+  Knowledge, so selection feedback fails. Its entry controls correctly use the
+  row-relative `subject` / `skills` paths, a standard pattern also used by 5e
+  list-entry forms. No binding error was identified. Clarification pending:
+  whether the selected value displayed in the entry editor updates immediately
+  or also requires reopening. DC/stat-block/save verification is not yet
+  confirmed; do not mark the whole Recall Knowledge test passed.
 - Reference repair: native selections can include source-name spaces, e.g.
   `/item/chest-player-core/player core`. All nine dynamic creature Markdown
   destinations now use angle wrappers, preserving valid links with spaces or
@@ -182,8 +191,8 @@ Last updated: 2026-10-04
   manual persists and behaves correctly, although its preview was stale before
   the display/refresh changes. Distinct caster/source assignment remains untested.
 
-- Next user checks on the regular test package: Recall Knowledge, speed editing,
-  item activation,
+- Next user checks on the regular test package: clarify Recall Knowledge picker
+  feedback and finish its persistence/stat-block checks, then item activation,
   and a representative deity/hazard/vehicle list. Verify immediate redraw plus
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,

@@ -59,3 +59,14 @@ generic nested page to refresh.
 Workaround while preserving the existing nested layout: select Time, leave
 Duration, and reopen it. The printed spell duration and token expiry fields
 remain separate to preserve PF2E duration qualifiers.
+
+## Additional Recall Knowledge selection feedback
+
+The user reports that the subject/skill selection checkmark does not appear
+until leaving/re-entering Recall Knowledge. Deleting an entry works correctly.
+Whether the displayed selected value also stays stale is awaiting clarification;
+this is not yet established as the same internal issue as Duration visibility.
+
+Relevant source: `forms/partials/recall-knowledge-entry.json`. Its single picker
+binds to the list row's `subject`; its multi-picker binds to `skills`. Those are
+the existing stored paths, not paths into a separate editor object.
