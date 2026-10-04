@@ -34,17 +34,23 @@ Last updated: 2026-10-04
   also require explicit approval. The `0.9.02` migration remains inactive in
   this `0.9.01` test package.
 - Native Skills/Lore result (user report, 2026-10-04): the Lore editor is
-  reachable and saving the changed value works without issues. The Lore list
-  summary does not redraw immediately after returning from the entry editor;
-  leaving and reopening Skills displays the changed value. The supplied image
-  shows Mining Lore +25. Record persistence passes; immediate summary refresh
-  fails. Encounter+ version/device and saved stat-block rendering are not yet
-  confirmed. The Lore list uses the same native `custom.itemTitle` and
-  `custom.itemDetail` templates as other maintained list editors, with no
-  system-form refresh hook found. A native nested-editor refresh issue is a
-  hypothesis, not an established cause. Next comparison: change a Lore name
-  and an Items quantity and check immediate row refresh, then save/reopen.
-  No speculative form change has been made; this finding remains unresolved.
+  reachable and the modifier change saves, but its list summary requires
+  leaving and reopening Skills to redraw (image shows Mining Lore +25).
+  Follow-up reveals a separate persistence failure: adding or deleting one
+  letter in a Lore name or Items name does not persist even after reopening;
+  larger edits such as a whole word do persist. Item quantity edits work
+  without issues. Name editing is therefore failing native verification;
+  the earlier successful modifier save does not establish name persistence.
+  Encounter+ version/device and saved stat-block rendering are unconfirmed.
+  Both name controls bind directly to `name` using the documented default
+  `text` type; quantity/modifier controls use `number`. No package script
+  filters short name edits. The delayed summary redraw and lost text edits
+  remain unresolved, and a native input-commit/refresh issue is only a
+  hypothesis. Next check: make a single-letter edit, wait, move focus to
+  Quantity/Modifier without changing it, then return and save/reopen the
+  creature. This distinguishes focus/timing behavior from edit size.
+  No speculative form change has been made. Release preparation remains
+  pending resolution and user approval.
 - Spell editor compatibility: fixed the nested area-size input that caused
   `sections[3].fields[8].form.sections[1].type` to reject `decimal`. Size is now
   a decimal field in a group, with native feet conversion in its editor and
