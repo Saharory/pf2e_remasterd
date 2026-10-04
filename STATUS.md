@@ -129,7 +129,7 @@ Last updated: 2026-10-04
   controls moved out of their section. The move was only to isolate the nested
   page. Do not adopt that main-page layout as the final design or repeat this
   confirmed test. The regular source retains the dedicated Duration page.
-- Current duration-page candidate: move its existing three sections to
+- Failed duration-page candidate: move its existing three sections to
   `forms/partials/spell-effect-duration.json` and reference that partial from
   the unbound parent form, matching the confirmed Skills/Immunities pattern.
   Resolving this partial exactly reproduces the previous JSON definition:
@@ -141,9 +141,25 @@ Last updated: 2026-10-04
   route and all existing duration behavior. Focused and canonical checks pass
   (83 definitions, nine validators). The rebuilt archive adds only the new
   partial and changes `forms/spell.json`; every other entry is identical.
-  Next user test after importing the
-  regular package: open Token Effect Duration, choose Until Dispelled then Time,
-  and confirm controls expand immediately inside that page. Native result pending.
+  Latest user result: it still requires leaving/re-entering to reveal Time
+  controls. A partial reference does not avoid the missed redraw. Do not repeat
+  this candidate or claim that the dedicated page now works. The main-page
+  diagnostic remains the only confirmed immediate Time expansion.
+- Duration-field consolidation, report before implementation: the user asks
+  whether token duration can also supply the spell's displayed duration, and
+  explicitly requests a report first if it cannot represent all descriptions.
+  Audited all 1,404 spells: 694 plain timers, 56 turn-relative endings, 59 timed
+  descriptions with additional wording, and 595 manual reminders covering 22
+  distinct descriptions (including empty). The native value/type/unit fields
+  alone are lossy: Haste's `1 minute` and Buzzing Bites' `sustained up to 1 minute`
+  both store the same 1-minute timer; Mystic Armor's `until your next daily
+  preparations` and Restyle's `unlimited` both store the same unit-only manual
+  reminder. `data.durationText` retains the full descriptions. Recommended
+  design: one Duration editor, generated normal text for simple timers/turn
+  endings, and optional preserved/custom description text for qualifiers and
+  non-timer durations. Do not delete or silently replace source duration prose.
+  Report this limitation before changing fields, templates, or records; no
+  consolidation has been implemented yet.
 - Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
   against all 1,404 durations; it preserves prose and GM settings and is
   idempotent. It remains inactive while the package is `0.9.01`. Legacy duration
