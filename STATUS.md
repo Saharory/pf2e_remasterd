@@ -71,8 +71,11 @@ Last updated: 2026-10-04
   and stat-block rendering pass by user confirmation (2026-10-04); editing
   Effect leaves Trigger unchanged. Haste's 1-minute native timer and Shield's
   expiry at the start of the loaded token's next turn pass by user confirmation
-  (2026-10-04). Next user check: Command's target-relative end-next-turn expiry
-  and Heal/Mystic Armor manual reminder persistence/removal.
+  (2026-10-04). Command's expiry at the end of the target's next turn and
+  Heal/Mystic Armor reminders without countdowns, persistence through several
+  turns, and manual removal also pass by user confirmation. Next user check:
+  change a timer to Manual until removed, create a custom manual spell, and
+  verify Fireball/Detect Magic area placement with no token selected.
   Release preparation remains pending resolution and approval. The user will
   perform all further app testing; do not run visual inspection or UI automation.
 - Broader native list result (user report, 2026-10-04): New Entry does not
@@ -138,9 +141,10 @@ Last updated: 2026-10-04
   `0.9.01` version. No visual app inspection is requested. Native loading/expiry
   is partly verified by the user: Haste shows its 1-minute timer, and Shield
   persists until the start of the loaded token's next turn, then expires.
-  Command's target-end-next-turn expiry and distinct caster/source assignment
-  for source-relative expiry still need verification. Load Heal and Mystic Armor to verify manually removed
-  reminders persist through turns, then remove them. Check switching a timer to
+  Command persists through the target's next turn and expires at its end.
+  Heal and Mystic Armor have no countdown, persist through several turns,
+  and can be removed manually. Distinct caster/source assignment for
+  source-relative expiry still needs verification. Check switching a timer to
   `Manual until removed` and creating a custom spell with manual duration.
   With no token selected, verify Fireball/Detect Magic still place areas. Check
   effect-duration editing and creature spell links.
