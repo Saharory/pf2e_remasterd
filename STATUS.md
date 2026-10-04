@@ -78,14 +78,13 @@ Last updated: 2026-10-04
   of the installed loader established support for that unit-only descriptor.
   Sustained durations supply a maximum timer, not automatic Sustain. The 308
   map-area templates remain intact; deferred upstream conversion is unchanged.
-- Duration regression, latest native result: restoring language entries alone
-  failed. The spell and native status-effect editors still show raw
-  `DurationType.*` / `DurationUnit.*`; Unit now translates. Spell Time requires
-  leaving/reopening before its value/unit controls appear. The native
-  status-effect editor expands immediately. Do not record either spell issue
-  as passed. The rejected field-picker candidate added navigation; retain the
-  user's requested inline choices and expanding value/unit controls.
-- D&D comparison and current candidate: the installed `dnd5e.system` and local
+- Duration regression, latest native result: the user confirms readable spell
+  and status-effect duration names after restoring explicit option maps; the
+  other requested duration checks pass (save/reopen and preview). Only Spell
+  Time still requires leaving/reopening before value/unit controls appear.
+  The native status-effect editor expands immediately. The rejected field-picker
+  candidate added navigation; retain inline choices and expanding controls.
+- D&D comparison and current regular package: the installed `dnd5e.system` and local
   `../dnd5e-source/forms/spell.json` use an unbound parent form, full entity
   paths, package-declared picker maps in `types.json`, and a full template
   returning `true` for visible timer sections. PF2E already shares the context
@@ -98,11 +97,26 @@ Last updated: 2026-10-04
   and parent help remain intact. No additional picker screens or controls.
   D&D also shows timer controls for an unset type, so this comparison does not
   prove PF2E's live Time transition. Source checks guard complete option maps,
-  labels, ordering, layout, and storage; native confirmation remains pending.
+  labels, ordering, layout, and storage. The user confirms the option-map repair,
+  but matching the visibility template did not repair live Time expansion.
+  The user also confirms that official 5e Instantaneous to Concentration
+  requires leaving/re-entering its Duration page before timer controls appear.
+  The same failure is therefore reproduced in an official system; distinguish
+  this shared conditional-form refresh issue from the fixed PF2E option labels.
   Focused and canonical checks pass. The rebuilt archive changes only
   `forms/spell.json` and `types.json`; all other entries are identical.
-  Next test: spell labels and immediate Time expansion, save/reopen two minutes,
-  switch to Until Dispelled, then check native status-effect labels/preview.
+- Focused refresh diagnostic: `dist/test/pf2e-remaster-duration-root-test.system`
+  temporarily moves the same three duration sections directly into the main
+  Spell form. It changes only `forms/spell.json` in the regular archive, keeps
+  the same stored paths/labels/visibility expressions, and remains `0.9.01`.
+  Source: `dist/test/diagnostics/spell-duration-root-form.json`; native form
+  definition validation passes. SHA-256:
+  `479a20798aae760aad8c9479a5902ee7cc8596b471258c8f38713c8656bac157`.
+  No main-form layout change has been applied to the regular source/package.
+  Next user test: open Edit Spell, scroll to Token Effect Duration directly on
+  the main page, select Until Dispelled then Time, and report whether the value
+  and units appear immediately. This distinguishes a nested-page refresh
+  failure from general section visibility. Do not repeat the confirmed 5e test.
 - Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
   against all 1,404 durations; it preserves prose and GM settings and is
   idempotent. It remains inactive while the package is `0.9.01`. Legacy duration
