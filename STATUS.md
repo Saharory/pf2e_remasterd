@@ -22,6 +22,18 @@ Last updated: 2026-10-04
 - Automated baseline: the public ORC/OGL packs, package definitions, creature
   links and spellcasting, area templates, and maintained UI regressions pass
   through `python3 tools/eplus_dev.py check --json`.
+- Verification resumed 2026-10-04 at source commit `db52118`: canonical checks
+  pass with 82 definition files and all maintained validators. This host's
+  existing virtualenv points to a missing Python; verification used the pinned
+  `json5==0.15.0` in `/private/tmp/pf2e-verification-deps` via `PYTHONPATH` and
+  the bundled Node executable via `NODE`. A temporary deterministic rebuild
+  matches `dist/test/pf2e-remaster.system` byte for byte. Package SHA-256:
+  `6641cb21a9ef1c90191a3f4c16815f3a004d73c4d48e77e602d270be6e31719f`.
+  Native results are pending user testing, starting with import, Edit Creature,
+  and Skills/Lore; no native pass is inferred from source checks. Release
+  preparation awaits user approval; version changes, push, and publication
+  also require explicit approval. The `0.9.02` migration remains inactive in
+  this `0.9.01` test package.
 - Spell editor compatibility: fixed the nested area-size input that caused
   `sections[3].fields[8].form.sections[1].type` to reject `decimal`. Size is now
   a decimal field in a group, with native feet conversion in its editor and
