@@ -105,20 +105,40 @@ Last updated: 2026-10-04
   failure, but immediate redraw for adding values/pressing plus. Text-edit
   persistence is therefore not unique to PF2E; delayed redraw still differs
   between the tested systems. Do not treat these as one diagnosed failure.
-  One configuration difference remains to isolate: PF2E defaults to HTML
-  detail views, while bundled D&D uses native views. A separate diagnostic
+  Renderer comparison: PF2E defaults to HTML detail views, while bundled D&D
+  uses native views. A separate diagnostic
   `dist/test/pf2e-remaster-native-refresh-test.system` changes only its archived
   `config.json`, explicitly selecting native Creature and Spell views. All
   forms, records, scripts, and the `0.9.01` version are byte-identical to the
   regular test package; source configuration and the regular package are
   unchanged. Its SHA-256 is
   `67b16858b6b911ea4031d544a70daadca8a57516697dcf02dd21643638517c24`.
-  Native layouts may look different during this test. Pending user check:
-  import the diagnostic, edit a Lore modifier and return one level, then use
-  Immunities New Entry; check immediate row refresh in both. Reimport the
-  regular package to restore HTML views afterward. This is a diagnostic,
-  not a claimed fix; no renderer change has been adopted for release. No
-  further agent UI tests were made. Release preparation remains unapproved.
+  User confirms their supplied 15.785-second recording was made with this
+  native-view diagnostic. The recording begins with three Immunities rows;
+  reopening at about 5 seconds reveals an additional Empty row. Selecting
+  Delete at about 7 seconds leaves that row visible until the section is
+  reopened at about 11.5 seconds. Add/delete changes therefore reach the
+  in-progress editor data while its displayed list remains stale. Final Save
+  is not shown. Native views do not resolve this Immunities refresh failure;
+  no renderer change has been adopted. Agent analysis was limited to frames
+  from the explicitly supplied recording; no app interaction was performed.
+  Next binding candidate restores the regular HTML display and removes the
+  object scope from only the Skills and Immunities parent forms. Their partial
+  controls now bind through full entity paths (`data.skillsEditor.skills`,
+  `data.skillsEditor.loreSkills`, `data.immunityEditor.entries`), following the
+  root-context form pattern used by bundled D&D. Individual row editor fields
+  remain relative to their row. Stored data and rendered summaries are intact;
+  no record or migration changes. This tests whether nested-object mutations
+  fail to invalidate the displayed form; it is not a diagnosed engine cause.
+  Focused creature regression and the canonical source check pass (82
+  definition files, all maintained validators). The separate candidate package is
+  `dist/test/pf2e-remaster-root-binding-test.system`, at unchanged `0.9.01`.
+  Only its three affected form files differ from the regular test package.
+  SHA-256: `e40907aaf578953675a29d74dfe8a5c61ff8c0fa31eae9576a0743d4258ed2ba`.
+  Pending user check: Immunities New Entry/Delete and a Lore modifier change
+  must redraw without reopening. Other list refresh and text replacement
+  persistence are still unresolved; do not claim this candidate fixes them.
+  Release preparation remains unapproved.
 - Native editor reference result (user report, 2026-10-04): selecting Chest
   through the Items Reference picker renders literal Markdown in the saved
   stat block: `[Chest](/item/chest-player-core/player core) (2)`.

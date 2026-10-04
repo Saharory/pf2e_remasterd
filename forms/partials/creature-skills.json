@@ -7,7 +7,7 @@
         {
           "title": "Creature.Skills",
           "type": "attributes",
-          "attribute": "skills",
+          "attribute": "data.skillsEditor.skills",
           "attributeType": "CreatureSkill"
         }
       ]
@@ -15,7 +15,7 @@
     {
       "title": "Skill.Lore",
       "type": "list",
-      "attribute": "loreSkills",
+      "attribute": "data.skillsEditor.loreSkills",
       "custom": {
         "itemTitle": "{{name}}",
         "itemDetail": "{{value|signed}}"

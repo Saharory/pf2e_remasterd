@@ -718,19 +718,26 @@ def main() -> int:
     recall_section = editor_fields.get("data.recallKnowledge", {})
     if recall_section.get("type") != "form" or recall_section.get("form", {}).get("partial") != "recall-knowledge":
         raise SystemExit("Recall Knowledge does not bind its complete nested object")
-    skills_section = editor_fields.get("data.skillsEditor", {})
+    skills_section = next(
+        field for section in creature_form.get("sections", [])
+        for field in section.get("fields", [])
+        if field.get("form", {}).get("partial") == "creature-skills"
+    )
     if skills_section.get("type") != "form" or skills_section.get("form", {}).get("partial") != "creature-skills":
         raise SystemExit("named Lore is not integrated into the Skills editor")
+    if skills_section.get("attribute"):
+        raise SystemExit("Skills must retain the entity context for its nested list bindings")
     if "data.loreSkills" in editor_fields or "data.skills" in editor_fields:
         raise SystemExit("creature editor still exposes legacy separate skill menus")
     immunity_section = next(
         field
         for section in creature_form.get("sections", [])
         for field in section.get("fields", [])
-        if field.get("attribute") == "data.immunityEditor"
+        if field.get("form", {}).get("partial") == "immunities"
     )
     if (
         immunity_section.get("type") != "form"
+        or immunity_section.get("attribute")
         or immunity_section.get("form", {}).get("partial") != "immunities"
         or "Common.None" not in immunity_section.get("text", "")
     ):
@@ -769,10 +776,16 @@ def main() -> int:
         if field.get("attribute")
     }
     if (
-        skills_fields.get("skills", {}).get("attributeType") != "CreatureSkill"
-        or skills_fields.get("loreSkills", {}).get("form", {}).get("partial") != "lore-skill"
+        skills_fields.get("data.skillsEditor.skills", {}).get("attributeType") != "CreatureSkill"
+        or skills_fields.get("data.skillsEditor.loreSkills", {}).get("form", {}).get("partial") != "lore-skill"
     ):
         raise SystemExit("Skills editor does not include named Lore")
+    immunity_list = form("partials/immunities.json").get("sections", [{}])[0]
+    if (
+        immunity_list.get("attribute") != "data.immunityEditor.entries"
+        or immunity_list.get("form", {}).get("partial") != "immunity"
+    ):
+        raise SystemExit("Immunities must bind its list through the entity context")
     recall_editor = form("partials/recall-knowledge.json")
     recall_editor_fields = {
         str(section.get("attribute")): section
