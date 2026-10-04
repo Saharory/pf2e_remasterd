@@ -134,6 +134,7 @@
         },
         {
           "title": "Spell.EffectDuration",
+          "detail": "Spell.EffectDurationHelp",
           "type": "form",
           "visibleIf": "{% if data.durationText != nil or data.duration == nil or data.durationType != nil or data.durationUnit != nil %}true{% endif %}",
           "text": "{% include 'spell-effect-duration.md' %}",
@@ -141,20 +142,11 @@
             "title": "Spell.EffectDuration",
             "sections": [
               {
-                "type": "group",
-                "fields": [
-                  {
-                    "type": "text",
-                    "text": "{{'Spell.EffectDurationHelp'|l}}"
-                  }
-                ]
-              },
-              {
                 "title": "Common.Type",
                 "type": "picker",
                 "attribute": "data.durationType",
-                "attributeType": "SpellEffectDurationType",
-                "placeholder": "Spell.ManualReminder"
+                "attributeType": "DurationType",
+                "placeholder": "Common.None"
               },
               {
                 "type": "group",

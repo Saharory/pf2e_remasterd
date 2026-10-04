@@ -143,6 +143,8 @@ def main() -> None:
     }
     fixtures = durations + [
         {"kind": "Spell", "data": {"duration": 3, "durationUnit": "round", "durationType": "time"}},
+        {"kind": "Spell", "data": {"durationType": "untilDispelled", "durationUnit": "round"}},
+        {"kind": "Spell", "data": {"durationType": "savingThrow", "durationUnit": "round"}},
         {"kind": "Spell", "data": {"duration": "custom", "durationType": "targetEndNextTurn"}},
         {"kind": "Spell", "data": {}},
         {"kind": "Creature", "data": {"duration": "1 minute"}},
@@ -180,6 +182,8 @@ process.stdout.write(JSON.stringify(fixtures));
     for original, result in zip(fixtures, converted):
         if original.get("kind") == "Spell" and original["data"].get("durationType") == "":
             assert not result["data"].get("durationType"), "manual selection became a timer"
+        if original.get("kind") == "Spell" and original["data"].get("durationType") in ("untilDispelled", "savingThrow"):
+            assert result == original, "conversion changed a native engine expiry choice"
     migrated_reminder = converted[fixtures.index(already_converted)]
     assert migrated_reminder["data"] == {
         "durationText": "until your next daily preparations", "durationUnit": "round"
@@ -232,22 +236,38 @@ process.stdout.write(JSON.stringify(fixtures));
         assert attribute in serialized_form, f"spell form is missing {attribute}"
     for attribute in ("data.durationText", "data.duration", "data.durationType", "data.durationUnit"):
         assert attribute in serialized_form, f"spell form is missing {attribute}"
-    effect_form = next(
-        field["form"] for field in form["sections"][3]["fields"]
+    effect_field = next(
+        field for field in form["sections"][3]["fields"]
         if field.get("title") == "Spell.EffectDuration"
     )
-    duration_field = effect_form["sections"][2]["fields"][0]
+    effect_form = effect_field["form"]
+    assert effect_field["detail"] == "Spell.EffectDurationHelp"
+    assert all(
+        field.get("attribute")
+        for section in effect_form["sections"] for field in section.get("fields", [])
+    ), "unbound help text becomes a misleading None input in the native editor"
+    type_section = effect_form["sections"][0]
+    assert type_section["attribute"] == "data.durationType"
+    assert type_section["attributeType"] == "DurationType", "spell expiry choices must match the native effect editor"
+    assert type_section["placeholder"] == "Common.None"
+    duration_field = effect_form["sections"][1]["fields"][0]
     assert duration_field["type"] == "number", "native duration must be numeric"
     assert duration_field["attribute"] == "data.duration"
-    assert effect_form["sections"][3]["attribute"] == "data.durationUnit"
-    assert effect_form["sections"][3]["defaultValue"] == "round"
-    assert set(types["SpellEffectDurationType"]) == {
-        "", "time", "sourceStartNextTurn", "sourceEndNextTurn",
-        "targetStartNextTurn", "targetEndNextTurn",
-    }, "spell effect editor must only offer supported native expiry types"
-    assert types["SpellEffectDurationType"][""] == "Spell.ManualReminder"
+    assert effect_form["sections"][2]["attribute"] == "data.durationUnit"
+    assert effect_form["sections"][2]["defaultValue"] == "round"
+    assert "SpellEffectDurationType" not in types, "spell expiry types must not diverge from native types"
+    # Encounter+ injects these types with their labels and plural-aware units.
+    # Partial overrides can leak keys like durationunit.minute.one into the UI.
+    for native_type in ("DurationType", "DurationUnit"):
+        assert native_type not in types, f"system overrides the engine's {native_type}"
+        for path in sorted((REPO / "lang").glob("*.json")):
+            language = json5.loads(path.read_text(encoding="utf-8"))
+            assert not any(
+                key.lower().startswith(native_type.lower() + ".") for key in language
+            ), f"{path.name}: system overrides native duration localization"
     summary = (REPO / "views" / "partials" / "spell-effect-duration.md").read_text()
-    assert "'Spell.ManualReminder'|l" in summary, "manual reminder summary is missing"
+    assert "map: 'DurationType'" in summary, "spell summary does not use native expiry labels"
+    assert "'Common.None'|l" in summary, "unconfigured expiry must match the native None label"
 
     primary = (REPO / "views" / "partials" / "spell-primary.md").read_text()
     assert "data.durationText|lowercase" in primary, "spell card lost source duration text"

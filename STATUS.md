@@ -74,8 +74,10 @@ Last updated: 2026-10-04
   (2026-10-04). Command's expiry at the end of the target's next turn and
   Heal/Mystic Armor reminders without countdowns, persistence through several
   turns, and manual removal also pass by user confirmation. Next user check:
-  change a timer to Manual until removed, create a custom manual spell, and
-  verify Fireball/Detect Magic area placement with no token selected.
+  verify native duration choices/labels after the display repair, then confirm
+  custom manual spell loading and Fireball/Detect Magic area placement with no
+  token selected. Changing a timer to manual behaves correctly and persists
+  by user report, but its native preview retains the previous timer label.
   Release preparation remains pending resolution and approval. The user will
   perform all further app testing; do not run visual inspection or UI automation.
 - Broader native list result (user report, 2026-10-04): New Entry does not
@@ -105,10 +107,10 @@ Last updated: 2026-10-04
   pass by user confirmation (2026-10-04). Other editor reference types still
   require native verification. Canonical source checks pass with all maintained
   validators. `dist/test/pf2e-remaster.system` was
-  rebuilt at unchanged `0.9.01` after restoring normal name fields; both name
-  forms and the repaired Items template match the packaged copies. Current
-  test package SHA-256:
-  `b7af4a0e55fcd209d45e572db89bf2068584e0f4edc5f1e8fdd886c177db0343`.
+  rebuilt at unchanged `0.9.01` with the duration display repair and normal name
+  fields; types, spell form, duration summary, and both language files match
+  the packaged copies. Current test package SHA-256:
+  `daae2ea6ef1aca6db488ba1e76e5e46ff0f99b03a8a7dbc911a1fcbd20fc231a`.
 - Spell editor compatibility: fixed the nested area-size input that caused
   `sections[3].fields[8].form.sections[1].type` to reject `decimal`. Size is now
   a decimal field in a group, with native feet conversion in its editor and
@@ -128,7 +130,9 @@ Last updated: 2026-10-04
   that a unit-only descriptor is recognized and passes absent value/type into
   the status effect; existing manual effects in the API also omit expiry data.
   This supplies no countdown or stat modifiers. The duration editor labels the
-  empty expiry choice `Manual until removed` and hides timer controls for it.
+  empty expiry choice `None` using the native type registry and hides timer
+  controls for it. `Until Dispelled` is also available as an explicit native
+  expiry choice. Existing unit-only reminders retain their absent expiry type.
 - Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
   against the same 1,404 duration strings as the Python builder. It preserves
   prose and existing native GM settings and is idempotent. The package remains
@@ -144,10 +148,26 @@ Last updated: 2026-10-04
   Command persists through the target's next turn and expires at its end.
   Heal and Mystic Armor have no countdown, persist through several turns,
   and can be removed manually. Distinct caster/source assignment for
-  source-relative expiry still needs verification. Check switching a timer to
-  `Manual until removed` and creating a custom spell with manual duration.
+  source-relative expiry still needs verification. Switching a timer to manual
+  persists and behaves correctly by user report; its preview label remains
+  stale. Custom spell creation with manual duration still needs confirmation.
   With no token selected, verify Fireball/Detect Magic still place areas. Check
   effect-duration editing and creature spell links.
+- Duration editor display repair (2026-10-04): the user's screenshots show
+  stale native preview text `1 durationunit.minute.one` after a working manual
+  change, and a spell-only menu that differs from the native effect editor.
+  Spell editing and its summary now use Encounter+'s built-in `DurationType`,
+  with native Saving Throw, source/target turn endings, Time, Until Dispelled,
+  and None/reset for absent expiry. Removed the package's `DurationType` and
+  `DurationUnit` definitions and their localization overrides so the engine
+  supplies its own option labels and plural-aware unit strings. Removed the
+  unbound help-text input which rendered as a misleading None row; help now
+  uses the parent field's subtitle. No spell records or expiry descriptors
+  were rewritten. The maintained spell suite protects the native registry,
+  summaries, and preservation of the newly exposed native choices. All
+  maintained validators pass through the canonical source check.
+  Proper unit labels and native option parity still need user retesting;
+  the broader stale native preview is unresolved, not claimed fixed by labels.
 - Native-app verification still required: import `dist/test/pf2e-remaster.system`
   and confirm Edit Creature opens without a decoding error, that Skills opens
   with its values and named Lore, and that a creature's rendered stat block is
