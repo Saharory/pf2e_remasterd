@@ -16,7 +16,7 @@
       "attributeType": "Ritual",
       "custom": {
         "itemTitle": "{{name}}",
-        "itemDetail": "{{rank|ordinal}} rank{% if details %} • {{details}}{% endif %}"
+        "itemDetail": "{% if rank != nil %}{{'Spell.Rank'|l}} {{rank}}{% endif %}{% if details %}{% if rank != nil %} • {% endif %}{{details}}{% endif %}"
       },
       "form": {
         "title": "Entity.Ritual",

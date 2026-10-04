@@ -976,12 +976,42 @@ def main() -> int:
         if sections.get(attribute, {}).get("custom", {}).get("itemDetail"):
             raise SystemExit(f"ability list should remain name-only: {attribute}")
 
+    # List previews expose the mechanics needed to choose an entry without
+    # navigating into it. Keep structured editors and legacy display fallbacks.
+    for editor in (creature_form, form("character.json")):
+        list_controls = {node.get("attribute"): node for node in form_nodes(editor)
+                         if node.get("type") == "list"}
+        attack_preview = list_controls["data.attacks"].get("custom", {}).get("itemDetail", "")
+        for value in ("type", "actions", "attack|signed", "part.name", "part.formula",
+                      "part.details", "part.connector", "damage", "effect.name"):
+            if value not in attack_preview:
+                raise SystemExit(f"attack preview omits {value}")
+        if "attack != nil" not in attack_preview:
+            raise SystemExit("attack previews must retain zero modifiers")
+        casting_preview = list_controls["data.spellcasting"].get("custom", {}).get("itemDetail", "")
+        for value in ("spellDC", "spellAttack|signed", "focusPoints", "group.label"):
+            if value not in casting_preview:
+                raise SystemExit(f"casting preview omits {value}")
+        for value in ("spellDC", "spellAttack", "focusPoints"):
+            if value + " != nil" not in casting_preview:
+                raise SystemExit(f"casting previews must retain zero values: {value}")
+            if value + " != ''" not in casting_preview:
+                raise SystemExit(f"casting previews must omit cleared values: {value}")
+    damage_list = next(section for section in attack_form["sections"]
+                       if section.get("attribute") == "damageParts")
+    damage_title = damage_list.get("custom", {}).get("itemTitle", "")
+    if "{{name}}" not in damage_title or "{{formula}}" not in damage_title:
+        raise SystemExit("damage rows must preview both current and legacy formulas")
+
     spellcasting = form("partials/spellcasting.json")
     spell_groups = next(
         section for section in spellcasting["sections"] if section.get("attribute") == "spellGroups"
     )
     if spell_groups.get("custom", {}).get("itemTitle") != "{{label}}" or "spell.name" not in spell_groups.get("custom", {}).get("itemDetail", ""):
         raise SystemExit("spell groups do not preview their rank and spell names")
+    for value in ("spell.atWill", "spell.details"):
+        if value not in spell_groups["custom"]["itemDetail"]:
+            raise SystemExit(f"spell-group previews omit usage notes: {value}")
 
     rituals = form("partials/rituals.json")
     ritual_groups = next(
@@ -989,6 +1019,20 @@ def main() -> int:
     )
     if ritual_groups.get("custom", {}).get("itemTitle") != "{{label}}" or "ritual.name" not in ritual_groups.get("custom", {}).get("itemDetail", ""):
         raise SystemExit("ritual groups do not preview their rank and ritual names")
+    if "ritual.details" not in ritual_groups["custom"]["itemDetail"]:
+        raise SystemExit("ritual-group previews omit usage notes")
+    for filename, attribute in (("spellcasting-group.json", "spells"), ("ritual-group.json", "rituals")):
+        rows = next(section for section in form("partials/" + filename)["sections"]
+                    if section.get("attribute") == attribute)
+        detail = rows.get("custom", {}).get("itemDetail", "")
+        if "rank != nil" not in detail or "'Spell.Rank'|l" not in detail or "{{rank}}" not in detail:
+            raise SystemExit(f"{filename}: previews must localize ranks, retain rank zero, and omit missing ranks")
+        if "details" not in detail:
+            raise SystemExit(f"{filename}: previews omit entry usage notes")
+    for language in ("en", "fr"):
+        labels = json.loads((REPO / "lang" / (language + ".json")).read_text())
+        if not labels.get("Spellcasting.AtWill"):
+            raise SystemExit(f"{language}: at-will summaries need a localized label")
 
     print(
         f"Validated {ability_count} editable creature abilities, "

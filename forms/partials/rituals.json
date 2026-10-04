@@ -20,7 +20,7 @@
       "attribute": "ritualGroups",
       "custom": {
         "itemTitle": "{{label}}",
-        "itemDetail": "{% for ritual in rituals %}{{ritual.name}}{% if not forloop.last %}, {% endif %}{% endfor %}"
+        "itemDetail": "{% for ritual in rituals %}{{ritual.name}}{% if ritual.details %} ({{ritual.details}}){% endif %}{% if not forloop.last %}, {% endif %}{% endfor %}"
       },
       "form": {
         "title": "Creature.Rituals",

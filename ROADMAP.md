@@ -178,7 +178,7 @@ tap behavior have not yet been compared in the app.
   conflating passive abilities, actions, and reactions.
   Sources: `forms/partials/ability.json`, `views/partials/ability.md`, and
   `../dnd5e-source/forms/partials/monster-feature.json`.
-- [x] **4. Creature layout and terminology — source complete; native verification pending.**
+- [x] **4. Creature layout and terminology — source complete; user tests pass.**
   Our creature form has 18 top-level sections versus 11 in the 5e monster form.
   Level alone, Base Traits, and Other Traits fragment the opening. Organize
   related edits around **Identity**, **Statistics**, **Defenses**, and
@@ -205,10 +205,10 @@ tap behavior have not yet been compared in the app.
   partials were not changed. The maintained editability suite now traverses
   tabs and guards the complete inline path set and direct ordinary stats.
   Focused editability/spellcasting checks and the canonical source check pass.
-  Native tab navigation and refresh/save/reopen spot checks remain pending;
-  follow the handoff in `STATUS.md`. Shared abilities and deeper nested-entry
-  improvements remain separate unchecked steps.
-- [ ] **5. Nested entries and summaries.**
+  The user approved the layout and reported all tests passing on 2026-10-05.
+  Preserve that native pass when working on summaries. Shared abilities remain
+  a separate unchecked step.
+- [x] **5. Improve summaries before adding more nested screens — source complete; native verification pending.**
   Creature spell edits traverse casting entry, spell group, and individual
   spell; attack damage components also have their own editors. Improve parent
   summaries with attack modifiers, damage formulas/types, spell ranks, and
@@ -219,6 +219,24 @@ tap behavior have not yet been compared in the app.
   Sources: `forms/partials/attack.json`, `forms/partials/damage-part.json`,
   `forms/partials/spellcasting*.json`, `forms/partials/defense-entry.json`, and
   `forms/creature.json`.
+  Implemented on 2026-10-05: attack rows preview melee/ranged type, action cost,
+  signed modifier, structured damage formulas/types/connectors, and effect
+  names, retaining legacy printed-damage and formula fallbacks. Damage rows
+  explicitly preview the formula and type/effect. Casting rows preview DC,
+  signed spell attack, focus points, and original rank-group labels; ritual
+  rows retain DC and original group labels. Spell/ritual group previews add
+  at-will and usage/constant notes to names. Entry previews localize rank and
+  at-will labels, preserve rank/modifier zero, and omit missing rank labels.
+  Character attack/casting rows reuse the same previews without changing
+  character navigation. Cleared casting values omit their labels while zero
+  values remain visible. All existing control paths, input types, defaults,
+  units, visibility, list mappings/pickers, and routes are unchanged in a
+  before/after comparison of nine affected/referenced form trees. No additional
+  screens or content/migration changes were introduced. Reviewed direct
+  weakness/resistance lists and retained their native-confirmed wrappers in
+  this summary step; removing that screen remains a later candidate.
+  Focused editability/spellcasting and canonical source checks pass; new native
+  summary rendering/refresh checks remain in `STATUS.md`.
 - [ ] **6. Character navigation.**
   The 5e character editor has Main, Abilities & Skills, Inventory, and Spells
   tabs; ours has 12 sections in one continuous form. Use task-based tabs to

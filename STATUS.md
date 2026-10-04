@@ -20,13 +20,13 @@ Last updated: 2026-10-05
   user-controlled; no agent app automation is authorized.
 - Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-05
   with the creature, item, and spell editor redesigns and previous system-wide
-  refresh repairs.
+  refresh repairs, plus the improved attack/casting/usage summaries.
   Archive inspection/CRC/checksums pass; all 198 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `3a94378992e3f12f740c09a3cbfae84f97613e75f386659f7c9329dc5b88377b`.
+  SHA-256: `2c1ac0de8439babd03252c3a30dd9df95c581797e1afba4ea0602cf2aeed507c`.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
@@ -79,7 +79,11 @@ Last updated: 2026-10-05
   with populated equipment stats and ensure those values remain editable.
   No agent app automation is authorized. The user selected creatures next,
   ahead of shared abilities; no ability-editor redesign has begun.
-- Creature editor efficiency: source complete, native verification pending.
+- Creature editor efficiency: source complete, user tests pass on 2026-10-05.
+  The user approved the four-tab layout and explicitly reported all tests
+  passing. This native pass covers the layout/refresh iteration delivered in
+  package SHA-256 `3a94378992e3f12f740c09a3cbfae84f97613e75f386659f7c9329dc5b88377b`;
+  new summary rendering is a separate pending check below.
   Four native tabs organize the existing editors: **Identity** holds combined
   level/rarity/size/traits, Recall Knowledge, inventory, and interaction
   abilities; **Statistics** holds perception, senses, Skills/Lore, Speed,
@@ -98,18 +102,43 @@ Last updated: 2026-10-05
   Focused editability/spellcasting and canonical source checks pass.
   English/French labels are included, and the Ractive typo is corrected.
   Content, migrations, rendering, and native loading are unchanged.
-  Pending user checks: open existing and new creatures; switch among all four
-  tabs and inspect labels at narrow width; edit ordinary stats/notes and verify
-  save/reopen; spot-check the previously repaired Lore, immunities,
-  weaknesses/resistances, and Speed summaries after adding/editing/deleting;
-  check inventory quantities/links and each ability list; open an attack with
-  multiple damage components and casting/ritual entries with grouped spells,
-  slots, uses, or at-will notes. These are recorded follow-up checks, not
-  confirmation of native behavior. No agent app automation is authorized.
+  The previously pending tab navigation, ordinary stats/notes, save/reopen,
+  Lore/immunity/weakness/resistance/Speed refresh, inventory, ability-list,
+  attack component, and grouped spell/ritual checks are covered by the user's
+  reported all-tests pass. No agent app automation is authorized.
+- Existing entry summaries: source complete, native verification pending.
+  Attack rows now preview type/action cost, signed attack modifier, damage
+  components with their original connectors and types/effects, and named
+  effects; legacy printed damage and component formulas retain display
+  fallbacks. Component rows explicitly show formula plus type/effect.
+  Casting previews show DC, signed attack, focus points, and original rank-group
+  labels; cleared text values omit their labels while zero remains visible.
+  Ritual previews retain DC/rank groups. Spell and ritual group rows
+  add at-will and usage/constant notes to their names. Entry rows localize rank
+  and at-will labels, retain rank/modifier zero, and omit missing-rank labels.
+  Character attack/casting rows use the same summaries; its navigation is
+  unchanged. A before/after comparison verifies nine affected/referenced form
+  trees preserve controls, bindings, types, defaults, units, visibility,
+  picker mappings, and routes. Native if/for tags are balanced in 29 inspected
+  row templates. The maintained editability regression guards summary coverage
+  and zero-value visibility; focused editability/spellcasting and canonical
+  source checks pass.
+  Existing structured editors, ability name-only rows, tabs, references,
+  content, migrations, stat blocks, and load behavior remain intact. No new
+  nested screens were added; weakness/resistance wrappers retain the earlier
+  native-confirmed implementation.
+  Pending user check for this step: inspect attack previews with multiple
+  damage types/effects, spellcasting DC/attack/focus/rank labels, and spell or
+  ritual usage notes; change a value and verify its parent preview refreshes
+  and persists on save/reopen. Check narrow-width wrapping and custom entries
+  with missing ranks or zero modifiers. Native rendering is not confirmed by
+  source checks. No agent app automation is authorized.
 - Recent native feedback (2026-10-05): the user said the spell layout looks
   good apart from Cast actions offering Custom Options, and approved the item
-  layout with no issues. Cast actions remains unchanged after the user aborted
-  the attempted workaround; app picker behavior is deferred to another chat.
+  layout with no issues. The user subsequently approved creature tabs and
+  reported all creature tests passing. Cast actions remains unchanged after
+  the user aborted the attempted workaround; app picker behavior is deferred
+  to another chat.
   This feedback does not confirm the earlier hotfix or a new app version.
 - Native testing: user tests on Mac, Encounter+ 5.0.8 (4530). The user performs
   all further app tests; do not run agent UI automation or visual app inspection.

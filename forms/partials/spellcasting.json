@@ -33,7 +33,7 @@
       "attribute": "spellGroups",
       "custom": {
         "itemTitle": "{{label}}",
-        "itemDetail": "{% for spell in spells %}{{spell.name}}{% if not forloop.last %}, {% endif %}{% endfor %}"
+        "itemDetail": "{% for spell in spells %}{{spell.name}}{% if spell.atWill or spell.details %} ({% if spell.atWill %}{{'Spellcasting.AtWill'|l}}{% endif %}{% if spell.details %}{% if spell.atWill %}; {% endif %}{{spell.details}}{% endif %}){% endif %}{% if not forloop.last %}, {% endif %}{% endfor %}"
       },
       "form": {
         "title": "Entity.Spell.many",

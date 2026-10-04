@@ -49,6 +49,7 @@
       "type": "list",
       "attribute": "damageParts",
       "custom": {
+        "itemTitle": "{% if name %}{{name}}{% else %}{% if formula %}{{formula}}{% else %}{{'Common.Damage'|l}}{% endif %}{% endif %}",
         "itemDetail": "{{details}}"
       },
       "form": {
