@@ -2,6 +2,10 @@
 
 Last updated: 2026-10-05
 
+- Follow-up in a separate chat: the user reported import bugs in **TRADE
+  DEATH FOR LIFE** and **TREE OF LIFE AND DEATH** on 2026-10-05. Details and
+  reproduction will be supplied there; neither issue has been investigated
+  or fixed in this chat.
 - Branch: `remaster-community-base`
 - Package version: `0.9.01`; release preparation, version changes, push, tags,
   and publication require explicit user approval. No release approval yet.
