@@ -69,8 +69,8 @@
         },
         {
           "title": "Item.Activate",
-          "attribute": "data.activation",
           "type": "form",
+          "text": "{% if data.activation.actions %}{{data.activation.actions|map: 'Action'}} {% endif %}{{data.activation.type}}{% if data.activation.text %} {{data.activation.text}}{% endif %}",
           "form": {
             "sections": [
               {
@@ -79,18 +79,18 @@
                   {
                     "title": "Common.Actions",
                     "type": "picker",
-                    "attribute": "actions",
+                    "attribute": "data.activation.actions",
                     "attributeType": "Action"
                   },
                   {
                     "title": "Common.Type",
-                    "attribute": "type",
+                    "attribute": "data.activation.type",
                     "attributeType": "ItemActivationType"
                   },
                   {
                     "title": "Common.Traits",
                     "type": "tags",
-                    "attribute": "traits",
+                    "attribute": "data.activation.traits",
                     "attributeType": "Trait"
                   },
                 ]
@@ -102,7 +102,7 @@
                   {
                     "title": "Common.Description",
                     "type": "textArea",
-                    "attribute": "text"
+                    "attribute": "data.activation.text"
                   }
                 ]
               }

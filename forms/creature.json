@@ -46,7 +46,6 @@
         {
           "title": "Creature.RecallKnowledge",
           "type": "form",
-          "attribute": "data.recallKnowledge",
           "text": "{% if data.recallKnowledge.dc %}DC {{data.recallKnowledge.dc}}{% endif %}{% if data.recallKnowledge.entries %} • {% for entry in data.recallKnowledge.entries %}{{entry.subject|map: 'Trait'}} ({% for skill in entry.skills %}{{skill|map: 'Skill'}}{% if not forloop.last %}, {% endif %}{% endfor %}){% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}",
           "form": {
             "title": "Creature.RecallKnowledge",
@@ -60,15 +59,25 @@
         },
         {
           "title": "Creature.SpecialSenses",
-          "type": "list",
-          "attribute": "data.senseEntries",
-          "custom": {
-            "itemTitle": "{% if customText %}{{customText}}{% else %}{{name}}{% endif %}",
-            "itemDetail": "{% if acuity %}{{acuity|map: 'SenseAcuity'}}{% endif %}{% if details %} • {{details}}{% endif %}"
-          },
+          "type": "form",
+          "text": "{% if data.senseEntries %}{% for sense in data.senseEntries %}{% if sense.customText %}{{sense.customText}}{% else %}{{sense.name}}{% endif %}{% if not forloop.last %}, {% endif %}{% endfor %}{% else %}{{'Common.None'|l}}{% endif %}",
           "form": {
-            "title": "Creature.SpecialSense",
-            "partial": "sense"
+            "title": "Creature.SpecialSenses",
+            "sections": [
+              {
+                "title": "Creature.SpecialSenses",
+                "type": "list",
+                "attribute": "data.senseEntries",
+                "custom": {
+                  "itemTitle": "{% if customText %}{{customText}}{% else %}{{name}}{% endif %}",
+                  "itemDetail": "{% if acuity %}{{acuity|map: 'SenseAcuity'}}{% endif %}{% if details %} • {{details}}{% endif %}"
+                },
+                "form": {
+                  "title": "Creature.SpecialSense",
+                  "partial": "sense"
+                }
+              }
+            ]
           }
         },
         {
@@ -244,28 +253,48 @@
         },
         {
           "title": "Creature.Weaknesses",
-          "type": "list",
-          "attribute": "data.weaknessEntries",
-          "custom": {
-            "itemTitle": "{{type|map: 'Damage'}}",
-            "itemDetail": "{{value}}"
-          },
+          "type": "form",
+          "text": "{% if data.weaknessEntries %}{% for entry in data.weaknessEntries %}{{entry.type|map: 'Damage'}} {{entry.value}}{% if not forloop.last %}, {% endif %}{% endfor %}{% else %}{{'Common.None'|l}}{% endif %}",
           "form": {
-            "title": "Creature.Weakness",
-            "partial": "defense-entry"
+            "title": "Creature.Weaknesses",
+            "sections": [
+              {
+                "title": "Creature.Weaknesses",
+                "type": "list",
+                "attribute": "data.weaknessEntries",
+                "custom": {
+                  "itemTitle": "{{type|map: 'Damage'}}",
+                  "itemDetail": "{{value}}"
+                },
+                "form": {
+                  "title": "Creature.Weakness",
+                  "partial": "defense-entry"
+                }
+              }
+            ]
           }
         },
         {
           "title": "Creature.Resistances",
-          "type": "list",
-          "attribute": "data.resistanceEntries",
-          "custom": {
-            "itemTitle": "{{type|map: 'Damage'}}",
-            "itemDetail": "{{value}}"
-          },
+          "type": "form",
+          "text": "{% if data.resistanceEntries %}{% for entry in data.resistanceEntries %}{{entry.type|map: 'Damage'}} {{entry.value}}{% if not forloop.last %}, {% endif %}{% endfor %}{% else %}{{'Common.None'|l}}{% endif %}",
           "form": {
-            "title": "Creature.Resistance",
-            "partial": "defense-entry"
+            "title": "Creature.Resistances",
+            "sections": [
+              {
+                "title": "Creature.Resistances",
+                "type": "list",
+                "attribute": "data.resistanceEntries",
+                "custom": {
+                  "itemTitle": "{{type|map: 'Damage'}}",
+                  "itemDetail": "{{value}}"
+                },
+                "form": {
+                  "title": "Creature.Resistance",
+                  "partial": "defense-entry"
+                }
+              }
+            ]
           }
         },
       ]
@@ -286,7 +315,6 @@
         {
           "title": "Common.Speed",
           "type": "form",
-          "attribute": "data.movement",
           "text": "{% include \"movement.md\" data.movement %}",
           "form": {
             "partial": "movement",

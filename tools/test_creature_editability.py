@@ -86,7 +86,48 @@ def form(name: str) -> dict:
     )
 
 
+def form_nodes(definition: dict):
+    """Walk inline definitions without changing their binding context."""
+    yield definition
+    for key in ("tabs", "sections", "fields"):
+        for child in definition.get(key, []):
+            yield from form_nodes(child)
+    if isinstance(definition.get("form"), dict):
+        yield from form_nodes(definition["form"])
+
+
+def validate_form_refresh_bindings() -> None:
+    """Protect the entity-context pattern verified on Mac in Encounter+.
+
+    Entry forms still receive their list row; object subforms and implicit
+    field-level list pages must not introduce another binding scope.
+    """
+    def walk(node: dict, role: str, location: str, row: bool, nested: bool) -> None:
+        kind = node.get("type")
+        attribute = node.get("attribute")
+        if kind == "form" and attribute:
+            raise SystemExit(f"{location}: nested form loses its parent context")
+        if role == "field" and kind == "list":
+            raise SystemExit(f"{location}: use an explicit context-preserving list page")
+        if kind == "form" and not node.get("text"):
+            raise SystemExit(f"{location}: context-preserving form needs an explicit summary")
+        if nested and not row and attribute and not attribute.startswith("data."):
+            raise SystemExit(f"{location}: nested entity binding is not fully qualified: {attribute}")
+        for key, child_role in (("tabs", "form"), ("sections", "section"), ("fields", "field")):
+            for index, child in enumerate(node.get(key, [])):
+                walk(child, child_role, f"{location}.{key}[{index}]", row, nested)
+        child_form = node.get("form")
+        if isinstance(child_form, dict):
+            if child_form.get("partial"):
+                child_form = form(f"partials/{child_form['partial']}.json")
+            walk(child_form, "form", f"{location}.form", row or kind == "list", True)
+
+    for path in sorted((REPO / "forms").glob("*.json")):
+        walk(form(path.name), "form", path.name, False, False)
+
+
 def main() -> int:
+    validate_form_refresh_bindings()
     source_generation_examples = {
         "murajau-rage-of-elements",
         "lithic-locus-rage-of-elements",
@@ -691,18 +732,11 @@ def main() -> int:
         "data.saves.details",
     }.issubset(creature_fields):
         raise SystemExit("creature editor does not expose restored metadata")
-    top_level_fields = {
-        str(section.get("attribute")): section
-        for section in creature_form.get("sections", [])
-        if section.get("attribute")
+    editor_fields = {
+        str(node["attribute"]): node
+        for node in form_nodes(creature_form)
+        if node.get("attribute")
     }
-    nested_fields = {
-        str(field.get("attribute")): field
-        for section in creature_form.get("sections", [])
-        for field in section.get("fields", [])
-        if field.get("attribute")
-    }
-    editor_fields = {**nested_fields, **top_level_fields}
     required_structured_lists = {
         "data.senseEntries": "sense",
         "data.itemEntries": "creature-item",
@@ -715,9 +749,12 @@ def main() -> int:
     item_section = editor_fields["data.itemEntries"]
     if item_section.get("attributeType") != "Item":
         raise SystemExit("creature item editor does not use the searchable Item picker")
-    recall_section = editor_fields.get("data.recallKnowledge", {})
+    recall_section = next(
+        node for node in form_nodes(creature_form)
+        if node.get("form", {}).get("partial") == "recall-knowledge"
+    )
     if recall_section.get("type") != "form" or recall_section.get("form", {}).get("partial") != "recall-knowledge":
-        raise SystemExit("Recall Knowledge does not bind its complete nested object")
+        raise SystemExit("Recall Knowledge does not expose its complete nested editor")
     skills_section = next(
         field for section in creature_form.get("sections", [])
         for field in section.get("fields", [])
@@ -792,8 +829,22 @@ def main() -> int:
         for section in recall_editor.get("sections", [])
         if section.get("attribute")
     }
-    if recall_editor_fields.get("entries", {}).get("form", {}).get("partial") != "recall-knowledge-entry":
+    if recall_editor_fields.get("data.recallKnowledge.entries", {}).get("form", {}).get("partial") != "recall-knowledge-entry":
         raise SystemExit("Recall Knowledge editor does not list knowledge-skill pairs")
+    if field_attributes(recall_editor) != {"data.recallKnowledge.dc"}:
+        raise SystemExit("Recall Knowledge DC does not bind through the entity context")
+    if field_attributes(form("partials/movement.json")) != {
+        f"data.movement.{key}" for key in ("walk", "burrow", "climb", "fly", "swim", "other")
+    }:
+        raise SystemExit("shared movement editor does not preserve its entity storage paths")
+    activation = next(
+        node for node in form_nodes(form("item.json"))
+        if node.get("title") == "Item.Activate"
+    )
+    if field_attributes(activation.get("form", {})) != {
+        f"data.activation.{key}" for key in ("actions", "type", "traits", "text")
+    }:
+        raise SystemExit("item activation editor does not preserve its entity storage paths")
     defense_form = form("partials/defense-entry.json")
     if field_attributes(defense_form) != {"type", "value"}:
         raise SystemExit("weakness and resistance entries must use Type and Value")
