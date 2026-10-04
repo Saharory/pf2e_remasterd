@@ -6,9 +6,10 @@ Last updated: 2026-10-04
 - Package version: `0.9.01`; release preparation, version changes, push, tags,
   and publication require explicit user approval. No release approval yet.
 - Current test package: `dist/test/pf2e-remaster.system`, rebuilt with the
-  system-wide form refresh repair and normal HTML display. All packaged forms
+  system-wide form refresh repair, spell duration labels/picker candidate,
+  and normal HTML display. All packaged forms
   match their source files; records, configuration, and version are unchanged.
-  SHA-256: `c54150588dc9ad54fc20e28a06f0ccd4baa4fa594c0875d2ded84fba09781a6b`.
+  SHA-256: `651331be52b41bf956c0d08ff039f77a1e8bea2fabeb50731bf8d028f4e95124`.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 82 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
@@ -79,11 +80,27 @@ Last updated: 2026-10-04
   map-area templates remain intact; deferred upstream conversion is unchanged.
 - Duration display: spell editing/summary use built-in `DurationType` and
   `DurationUnit`, with native Saving Throw, source/target turn endings, Time,
-  Until Dispelled, and None/reset. Removed custom type/localization overrides
-  and the unbound help-text field that displayed an extra None row. Help uses
-  the parent's subtitle. Existing descriptors and manual reminders are intact.
-  Proper unit labels/menu parity and the previously stale spell preview still
-  need native retesting with the current package.
+  Until Dispelled, and None/reset. Native type registries are not overridden.
+  User's latest screenshot exposes raw `DurationType.*`, `DurationUnit.*`,
+  and `Common.Unit` keys; removing the package translations incorrectly assumed
+  the engine supplied these labels to custom forms. Restored all expiry/unit
+  labels and Unit in English/French, plus singular/plural
+  `durationunit.<unit>.one/other` keys observed in the earlier native preview.
+  The spell summary uses those singular/plural keys. The unbound help input
+  remains removed; help uses the parent's subtitle. Descriptors and records
+  are unchanged. The native preview's own label lookup still needs user testing.
+- Time selection regression: the user reports the same delayed update when
+  selecting Time. The duration subform already retains the entity context,
+  but its Type/Unit controls were section-level pickers. Candidate now puts
+  both selectors and numeric Duration into one regular group, with full
+  entity paths and Time-only visibility on the two timer fields. Source
+  checks cover these bindings, visibility, and complete label coverage;
+  the focused spell suite and canonical check pass. Only the spell form,
+  duration summary, and two language files changed in the rebuilt archive.
+  Pending user test: switch None/Until Dispelled to Time; Duration and Unit
+  should appear immediately. Set two minutes, return and save/reopen, then
+  select Until Dispelled and check that timer controls immediately disappear.
+  Do not claim the picker refresh is fixed until the user confirms this candidate.
 - Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
   against all 1,404 durations; it preserves prose and GM settings and is
   idempotent. It remains inactive while the package is `0.9.01`. Legacy duration

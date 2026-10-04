@@ -246,28 +246,41 @@ process.stdout.write(JSON.stringify(fixtures));
         field.get("attribute")
         for section in effect_form["sections"] for field in section.get("fields", [])
     ), "unbound help text becomes a misleading None input in the native editor"
-    type_section = effect_form["sections"][0]
-    assert type_section["attribute"] == "data.durationType"
-    assert type_section["attributeType"] == "DurationType", "spell expiry choices must match the native effect editor"
-    assert type_section["placeholder"] == "Common.None"
-    duration_field = effect_form["sections"][1]["fields"][0]
+    assert not effect_field.get("attribute"), "duration subform must retain the entity context"
+    assert len(effect_form["sections"]) == 1
+    assert effect_form["sections"][0]["type"] == "group", "expiry selectors must share the parent form context"
+    effect_fields = {field["attribute"]: field for field in effect_form["sections"][0]["fields"]}
+    type_field = effect_fields["data.durationType"]
+    assert type_field["type"] == "picker"
+    assert type_field["attributeType"] == "DurationType", "spell expiry choices must match the native effect editor"
+    assert type_field["placeholder"] == "Common.None"
+    duration_field = effect_fields["data.duration"]
     assert duration_field["type"] == "number", "native duration must be numeric"
-    assert duration_field["attribute"] == "data.duration"
-    assert effect_form["sections"][2]["attribute"] == "data.durationUnit"
-    assert effect_form["sections"][2]["defaultValue"] == "round"
+    unit_field = effect_fields["data.durationUnit"]
+    assert unit_field["attributeType"] == "DurationUnit"
+    assert unit_field["defaultValue"] == "round"
+    for field in (duration_field, unit_field):
+        assert field["visibleIf"] == "data.durationType == 'time'", "timer fields must follow the selected expiry type"
     assert "SpellEffectDurationType" not in types, "spell expiry types must not diverge from native types"
-    # Encounter+ injects these types with their labels and plural-aware units.
-    # Partial overrides can leak keys like durationunit.minute.one into the UI.
+    # Native registries supply values, but custom forms need package translations.
+    # User screenshots exposed both enum keys and native preview plural keys.
     for native_type in ("DurationType", "DurationUnit"):
         assert native_type not in types, f"system overrides the engine's {native_type}"
-        for path in sorted((REPO / "lang").glob("*.json")):
-            language = json5.loads(path.read_text(encoding="utf-8"))
-            assert not any(
-                key.lower().startswith(native_type.lower() + ".") for key in language
-            ), f"{path.name}: system overrides native duration localization"
+    required_labels = {"Common.Unit"}
+    required_labels.update(f"DurationType.{value}" for value in (
+        "SavingThrow", "SourceEndNextTurn", "SourceStartNextTurn",
+        "TargetEndNextTurn", "TargetStartNextTurn", "Time", "UntilDispelled",
+    ))
+    required_labels.update(f"DurationUnit.{unit.title()}" for unit in ("round", "minute", "hour", "day"))
+    required_labels.update(f"durationunit.{unit}.{count}" for unit in ("round", "minute", "hour", "day") for count in ("one", "other"))
+    for path in sorted((REPO / "lang").glob("*.json")):
+        language = json5.loads(path.read_text(encoding="utf-8"))
+        for key in required_labels:
+            assert language.get(key) and language[key] != key, f"{path.name}: untranslated duration label {key}"
     summary = (REPO / "views" / "partials" / "spell-effect-duration.md").read_text()
     assert "map: 'DurationType'" in summary, "spell summary does not use native expiry labels"
     assert "'Common.None'|l" in summary, "unconfigured expiry must match the native None label"
+    assert "data.duration == 1" in summary and "suffix: '.one'" in summary and "suffix: '.other'" in summary, "spell summary loses singular/plural units"
 
     primary = (REPO / "views" / "partials" / "spell-primary.md").read_text()
     assert "data.durationText|lowercase" in primary, "spell card lost source duration text"
