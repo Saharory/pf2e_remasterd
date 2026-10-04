@@ -107,7 +107,7 @@ Last updated: 2026-10-05
   Lore/immunity/weakness/resistance/Speed refresh, inventory, ability-list,
   attack component, and grouped spell/ritual checks are covered by the user's
   reported all-tests pass. No agent app automation is authorized.
-- Existing entry summaries: source complete, native verification pending.
+- Existing entry summaries: source complete, user reports all tests pass.
   Attack rows now preview type/action cost, signed attack modifier, damage
   components with their original connectors and types/effects, and named
   effects; legacy printed damage and component formulas retain display
@@ -128,12 +128,10 @@ Last updated: 2026-10-05
   content, migrations, stat blocks, and load behavior remain intact. No new
   nested screens were added; weakness/resistance wrappers retain the earlier
   native-confirmed implementation.
-  Pending user check for this step: inspect attack previews with multiple
-  damage types/effects, spellcasting DC/attack/focus/rank labels, and spell or
-  ritual usage notes; change a value and verify its parent preview refreshes
-  and persists on save/reopen. Check narrow-width wrapping and custom entries
-  with missing ranks or zero modifiers. Native rendering is not confirmed by
-  source checks. No agent app automation is authorized.
+  After the numeric-input repair below, the user reports the latest package
+  looks good and all tests pass on 2026-10-05. Preserve that reported native
+  pass for this summary iteration; do not repeat its analysis or testing
+  request. No agent app automation is authorized.
 - Spellcasting numeric-input repair (2026-10-05): the user supplied screenshots
   showing **Divine Innate Spells** with DC 37 / attack +29 in the parent preview,
   but **None** in the entry's Spell Attack/DC controls. The user confirms the
@@ -145,10 +143,10 @@ Last updated: 2026-10-05
   paths, rank groups, spell entries, summaries, content, and migrations remain
   unchanged. The maintained casting regression covers the real Astradaemon
   fixture and numeric control types. Focused and canonical source checks pass.
-  Pending native check:
-  reopen that entry and verify attack 29 / DC 37 populate, then edit/save/reopen
-  those values and confirm the parent preview updates. This source repair is
-  a candidate until the user confirms the native result.
+  Native confirmation: the user reports "looks good all pass" after testing
+  package SHA-256 `67b2ff91c6bf5404d677e981784ca8a1df1f0a85cfa58283a4cc2692b1b26931`
+  on 2026-10-05. The requested value population, edit/save/reopen, and parent
+  preview checks pass. This repair is native-confirmed.
 - Recent native feedback (2026-10-05): the user said the spell layout looks
   good apart from Cast actions offering Custom Options, and approved the item
   layout with no issues. The user subsequently approved creature tabs and

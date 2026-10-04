@@ -208,7 +208,7 @@ tap behavior have not yet been compared in the app.
   The user approved the layout and reported all tests passing on 2026-10-05.
   Preserve that native pass when working on summaries. Shared abilities remain
   a separate unchecked step.
-- [x] **5. Improve summaries before adding more nested screens — source complete; native verification pending.**
+- [x] **5. Improve summaries before adding more nested screens — source complete; user tests pass.**
   Creature spell edits traverse casting entry, spell group, and individual
   spell; attack damage components also have their own editors. Improve parent
   summaries with attack modifiers, damage formulas/types, spell ranks, and
@@ -235,15 +235,16 @@ tap behavior have not yet been compared in the app.
   screens or content/migration changes were introduced. Reviewed direct
   weakness/resistance lists and retained their native-confirmed wrappers in
   this summary step; removing that screen remains a later candidate.
-  Focused editability/spellcasting and canonical source checks pass; new native
-  summary rendering/refresh checks remain in `STATUS.md`.
+  Focused editability/spellcasting and canonical source checks pass. Following
+  the numeric-input repair below, the user approved the latest package and
+  reported all tests passing on 2026-10-05; the native pass is saved in `STATUS.md`.
   Native follow-up on 2026-10-05: the casting preview displays DC/attack and
   ranks correctly, and the user confirms rank groups load. Spell Attack/DC
   inputs nevertheless display None for numeric Astradaemon data. The inherited
   casting partial used text controls for those values before today's redesign;
   a separate repair changes only those two input types to `number`, with the
-  original paths and groups intact. Native confirmation is pending in
-  `STATUS.md`; this does not invalidate the earlier creature layout pass.
+  original paths and groups intact. The user confirms the repair's native
+  tests pass on 2026-10-05; the earlier creature layout pass is preserved.
 - [ ] **6. Character navigation.**
   The 5e character editor has Main, Abilities & Skills, Inventory, and Spells
   tabs; ours has 12 sections in one continuous form. Use task-based tabs to
