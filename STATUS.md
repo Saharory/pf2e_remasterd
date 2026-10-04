@@ -101,12 +101,24 @@ Last updated: 2026-10-04
   fields bound to `name`, and no explicit field/section IDs. Those patterns
   alone therefore do not identify a PF2E defect. Creature view transforms only
   derive armor, initiative, and combat details; they do not rewrite these edits.
-  No demonstrated package correction follows from this comparison. Pending
-  controlled user test: edit a copied D&D spell's Duration and return one level;
-  check whether its summary updates immediately. This compares the app's shared
-  entity-form renderer with PF2E rather than its separate status editor. Keep
-  refresh and replacement-text persistence unresolved until that result; no
-  further speculative control changes or agent UI tests were made.
+  Controlled D&D user test now reports the same single-character saving
+  failure, but immediate redraw for adding values/pressing plus. Text-edit
+  persistence is therefore not unique to PF2E; delayed redraw still differs
+  between the tested systems. Do not treat these as one diagnosed failure.
+  One configuration difference remains to isolate: PF2E defaults to HTML
+  detail views, while bundled D&D uses native views. A separate diagnostic
+  `dist/test/pf2e-remaster-native-refresh-test.system` changes only its archived
+  `config.json`, explicitly selecting native Creature and Spell views. All
+  forms, records, scripts, and the `0.9.01` version are byte-identical to the
+  regular test package; source configuration and the regular package are
+  unchanged. Its SHA-256 is
+  `67b16858b6b911ea4031d544a70daadca8a57516697dcf02dd21643638517c24`.
+  Native layouts may look different during this test. Pending user check:
+  import the diagnostic, edit a Lore modifier and return one level, then use
+  Immunities New Entry; check immediate row refresh in both. Reimport the
+  regular package to restore HTML views afterward. This is a diagnostic,
+  not a claimed fix; no renderer change has been adopted for release. No
+  further agent UI tests were made. Release preparation remains unapproved.
 - Native editor reference result (user report, 2026-10-04): selecting Chest
   through the Items Reference picker renders literal Markdown in the saved
   stat block: `[Chest](/item/chest-player-core/player core) (2)`.
