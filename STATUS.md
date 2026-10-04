@@ -41,7 +41,8 @@ Last updated: 2026-10-04
   path is identical, including all list-entry paths. No content rebuild or
   migration is needed. The maintained creature suite checks context preservation
   throughout the forms and guards the shared movement/activation/recall paths.
-  Skills/Immunities are native-confirmed; other extensions need user spot checks.
+  Skills/Immunities and creature Weaknesses/Resistances are native-confirmed;
+  other extensions need user spot checks.
 - Separate text-edit persistence issue: small name edits and selecting existing
   text then pasting a replacement can fail to save. The user reproduced the
   single-character saving failure in official D&D as well. Clearing the text
@@ -60,6 +61,10 @@ Last updated: 2026-10-04
   Confirmed user passes: Lore modifier persistence, Items quantity editing,
   Items/Immunities removal through Mac's Copy/Delete context menu, and Resilient
   Form Effect editing, save/reopen, and stat-block rendering with Trigger intact.
+  The user also confirms the complete Weaknesses/Resistances test: New Entry
+  appears immediately, type/value edits update on return to the list, saved
+  values persist and render in the stat block, and context-menu deletion
+  redraws immediately and remains deleted after saving/reopening.
 - Reference repair: native selections can include source-name spaces, e.g.
   `/item/chest-player-core/player core`. All nine dynamic creature Markdown
   destinations now use angle wrappers, preserving valid links with spaces or
@@ -177,8 +182,8 @@ Last updated: 2026-10-04
   manual persists and behaves correctly, although its preview was stale before
   the display/refresh changes. Distinct caster/source assignment remains untested.
 
-- Next user checks after importing the regular test package: Weaknesses and
-  Resistances New Entry/Delete, Recall Knowledge, speed editing, item activation,
+- Next user checks on the regular test package: Recall Knowledge, speed editing,
+  item activation,
   and a representative deity/hazard/vehicle list. Verify immediate redraw plus
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
