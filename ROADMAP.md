@@ -120,7 +120,7 @@ tap behavior have not yet been compared in the app.
 
 **Implementation order and saved findings**
 
-- [ ] **1. Spells — next implementation.**
+- [x] **1. Spells — source complete; native verification pending.**
   Our main form exposes Requirements, Cast, Cost, and Trigger alongside Range,
   Area, Targets, Defense, and Duration. The 5e form uses compact summaries for
   related casting details and conditional fields within those editors.
@@ -132,7 +132,17 @@ tap behavior have not yet been compared in the app.
   Sources: `forms/spell.json`, `forms/partials/spell-effect-duration.json`,
   `views/partials/spell-effect-duration.md`, and
   `../dnd5e-source/forms/spell.json`.
-- [ ] **2. Items.**
+  Implemented on 2026-10-05: combined identity fields, a root-context
+  **Casting details** summary/editor, direct **Range & effect** fields, and a
+  **Map & token effects** group retaining the existing direct subform links.
+  Grouping the map/token links adds no extra editor level. Typical main-form
+  rows decrease from 17 to 14; all 21 editable controls retain their original
+  bindings, input/picker types, visibility rules, defaults, and units.
+  English/French labels and the maintained spell regression were updated.
+  Focused checks and the canonical check pass; native checks remain in
+  `STATUS.md` while user testing is paused. The pre-redesign baseline was
+  pushed to `origin/remaster-community-base` at `4ea2835` before this work.
+- [ ] **2. Items — next implementation.**
   Armor, shield, weapon, and gear sections already filter by category, but
   Ammunition and Onset appear in the general group for every item. Category
   follows separate rarity, traits, and level sections. Put category and level

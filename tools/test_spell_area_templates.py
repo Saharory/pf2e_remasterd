@@ -37,6 +37,17 @@ def load_json(path: Path) -> object:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def form_nodes(definition: dict, location: str = ""):
+    """Find controls by meaning while allowing editor sections to move."""
+    yield location, definition
+    for key in ("tabs", "sections", "fields"):
+        for index, child in enumerate(definition.get(key, [])):
+            path = f"{location}.{key}[{index}]" if location else f"{key}[{index}]"
+            yield from form_nodes(child, path)
+    if isinstance(definition.get("form"), dict):
+        yield from form_nodes(definition["form"], f"{location}.form")
+
+
 def main() -> None:
     records: dict[str, dict] = {}
     area_spells = 0
@@ -200,7 +211,11 @@ process.stdout.write(JSON.stringify(fixtures));
 
     form = json5.loads((REPO / "forms" / "spell.json").read_text(encoding="utf-8"))
     assert not validate_form_definition(form), "spell editor has invalid native form types"
-    area_form = form["sections"][3]["fields"][8]["form"]
+    area_path, area_field = next(
+        (path, node) for path, node in form_nodes(form)
+        if node.get("type") == "form" and node.get("title") == "Spell.AreaTemplate"
+    )
+    area_form = area_field["form"]
     size_section = area_form["sections"][1]
     assert size_section["type"] == "group", "area size must use a group section"
     size_field = size_section["fields"][0]
@@ -209,11 +224,15 @@ process.stdout.write(JSON.stringify(fixtures));
 
     # The screenshot failure must be caught at the same nested decoder path.
     broken = deepcopy(form)
-    broken["sections"][3]["fields"][8]["form"]["sections"][1] = {
+    broken_area = next(
+        node for _, node in form_nodes(broken)
+        if node.get("type") == "form" and node.get("title") == "Spell.AreaTemplate"
+    )
+    broken_area["form"]["sections"][1] = {
         "type": "decimal", "attribute": "data.areaEffectSize"
     }
     assert validate_form_definition(broken) == [
-        "sections[3].fields[8].form.sections[1].type: invalid section type 'decimal'"
+        f"{area_path}.form.sections[1].type: invalid section type 'decimal'"
     ], "validation missed the spell editor decoding failure"
 
     # Check the same rules inside tabs, list row editors, and field containers.
@@ -232,19 +251,55 @@ process.stdout.write(JSON.stringify(fixtures));
     ], "validation missed an invalid nested field type"
 
     effect_field = next(
-        field for field in form["sections"][3]["fields"]
-        if field.get("title") == "Spell.EffectDuration"
+        node for _, node in form_nodes(form)
+        if node.get("type") == "form" and node.get("title") == "Spell.EffectDuration"
     )
     assert effect_field["form"] == {
         "title": "Spell.Duration", "partial": "spell-effect-duration",
     }, "duration controls must stay in a dedicated partial form, not on the main spell page"
     effect_form = json5.loads((REPO / "forms" / "partials" / "spell-effect-duration.json").read_text())
     assert not validate_form_definition(effect_form), "duration partial has invalid native form types"
-    serialized_form = json.dumps(form) + json.dumps(effect_form)
-    for attribute in ("data.areaEffectShape", "data.areaEffectSize"):
-        assert attribute in serialized_form, f"spell form is missing {attribute}"
-    for attribute in ("data.durationText", "data.duration", "data.durationType", "data.durationUnit"):
-        assert attribute in serialized_form, f"spell form is missing {attribute}"
+    # Regrouping must retain every editable mechanic, including variable casting
+    # actions and both the legacy prose and native numeric duration controls.
+    editable_fields = [
+        node for definition in (form, effect_form)
+        for _, node in form_nodes(definition) if node.get("attribute")
+    ]
+    required_attributes = {
+        "data.type", "data.rank", "data.rarity", "data.traits",
+        "data.castActions", "data.traditions", "data.requirements", "data.cast",
+        "data.cost", "data.trigger", "data.range", "data.area", "data.targets",
+        "data.defense", "data.durationText", "data.duration", "data.durationType",
+        "data.durationUnit", "data.areaEffectShape", "data.areaEffectSize",
+    }
+    assert {
+        field["attribute"] for field in editable_fields
+    } == required_attributes, "spell editor changed its entity storage paths"
+    for attribute in ("data.castActions", "data.traditions"):
+        field = next(field for field in editable_fields if field["attribute"] == attribute)
+        assert field["type"] == "multiPicker", (
+            f"{attribute}: multiple selections must remain editable"
+        )
+    assert {
+        field.get("type", "text") for field in editable_fields
+        if field["attribute"] == "data.duration"
+    } == {"text", "number"}, "legacy duration prose and numeric token timers need separate controls"
+
+    casting_field = next(
+        node for _, node in form_nodes(form)
+        if node.get("type") == "form" and node.get("title") == "Spell.CastingDetails"
+    )
+    assert not casting_field.get("attribute"), "casting details must retain the entity context"
+    assert not casting_field.get("visibleIf"), "empty spells must allow adding optional casting details"
+    for attribute in ("data.cast", "data.requirements", "data.cost", "data.trigger"):
+        assert any(
+            node.get("attribute") == attribute for _, node in form_nodes(casting_field["form"])
+        ), f"casting details lost the editor for {attribute}"
+        assert "{{" + attribute + "}}" in casting_field["text"], (
+            f"casting summary omits {attribute}"
+        )
+    assert "'Common.None'|l" in casting_field["text"], "empty casting details need a localized summary"
+    assert "'Common.None'|l" in area_field["text"], "unconfigured map templates need a localized summary"
     assert effect_field["detail"] == "Spell.EffectDurationHelp"
     assert all(
         field.get("attribute")
@@ -294,6 +349,10 @@ process.stdout.write(JSON.stringify(fixtures));
         assert types.get(name) == values, f"{name}: incomplete or unmapped native duration choices"
         assert set(collections[name]) == set(values), f"{name}: ordering drops duration choices"
     required_labels = {"Common.Unit"}
+    required_labels.update({
+        "Spell.CastActions", "Spell.Casting", "Spell.CastingDetails",
+        "Spell.CastingNotes", "Spell.RangeAndEffect", "Spell.MapAndTokenEffects",
+    })
     required_labels.update(f"DurationType.{value}" for value in (
         "SavingThrow", "SourceEndNextTurn", "SourceStartNextTurn",
         "TargetEndNextTurn", "TargetStartNextTurn", "Time", "UntilDispelled",

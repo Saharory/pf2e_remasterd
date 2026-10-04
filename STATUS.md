@@ -1,22 +1,47 @@
 # Current status
 
-Last updated: 2026-10-04
+Last updated: 2026-10-05
 
 - Branch: `remaster-community-base`
 - Package version: `0.9.01`; release preparation, version changes, push, tags,
   and publication require explicit user approval. No release approval yet.
+- Requested baseline push completed on 2026-10-05: `4ea2835` is on
+  `origin/remaster-community-base`, including the saved editor design roadmap.
+  The subsequent spell-editor redesign is a separate local step.
 - Current test package: `dist/test/pf2e-remaster.system`, rebuilt with the
   system-wide form refresh repair, explicit duration option maps/inline choices,
-  a dedicated duration partial form, and normal HTML display. All packaged forms
-  match their source files; records, configuration, and version are unchanged.
+  a dedicated duration partial form, and normal HTML display. At that build,
+  all packaged forms matched their source files; records, configuration, and
+  version were unchanged.
   SHA-256: `df87f31a4523b58de6f8ba81b81490accccabf3eeee87707de5a1433a9f63b83`.
+  This package predates the spell-editor redesign below; no replacement was
+  built while native testing remains paused.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
   spell durations/areas, hazard/vehicle mechanics, and four UI regression files.
-  This host's virtualenv points to a missing Python. Run with
-  `PYTHONPATH=/private/tmp/pf2e-verification-deps` (pinned `json5==0.15.0`) and
-  `NODE=/Users/saharyona/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node`.
+  Revalidated on 2026-10-05 with the repaired virtualenv and bundled Node via
+  `../tools/project-env python tools/eplus_dev.py check --json`.
+- Spell editor efficiency: source complete, native verification pending.
+  Type/rank/rarity/traits now share the opening group. **Casting** keeps
+  variable action selection and traditions direct, with casting notes,
+  requirements, cost, and trigger in a root-context **Casting details** editor
+  whose summary shows populated values. **Range & effect** keeps range, printed
+  area, targets, defense, and printed duration direct. **Map & token effects**
+  groups the existing template/timer links without adding a navigation level.
+  Unconfigured casting details and map templates show localized **None**.
+  All 21 controls retain their storage paths, input/picker types, visibility,
+  defaults, and units. English/French labels are included; spell-area/duration
+  and creature-editability checks pass, as does the canonical check. Records,
+  migrations, native loading, and versions are unchanged. Items are next in
+  the roadmap; no item redesign has begun.
+  Pending user checks after the existing hotfix pause ends: open a new spell
+  and add casting details; edit/save/reopen populated notes, requirements,
+  cost, and trigger and inspect summary refresh/stat-block text; retain multiple
+  cast-action selections; check direct range/defense/printed-duration edits;
+  edit template shape/fractional size and numeric token expiry independently
+  and verify summaries/save/reopen; check an older custom spell with prose in
+  `data.duration`. These are future checks, not a request to resume testing.
 - Native testing: user tests on Mac, Encounter+ 5.0.8 (4530). The user performs
   all further app tests; do not run agent UI automation or visual app inspection.
   Analyze an attached image/recording only when explicitly requested.
