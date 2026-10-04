@@ -46,31 +46,32 @@ Last updated: 2026-10-04
   the local app is Encounter+ 5.0.8 (4530). No package
   script filters short name edits. The delayed summary redraw and lost text
   edits remain unresolved; a native input-commit/refresh issue is only a
-  hypothesis. The test candidate now uses `textArea` for Lore and Items name
-  controls, retaining the same `name` binding and numeric controls. This is
-  a candidate workaround, not a confirmed persistence fix. Retest single-letter
-  insertion and deletion in both editors, save/reopen, and check immediate
-  summary refresh. Release preparation remains pending resolution and approval.
+  hypothesis. The `textArea` trial did not help, and the user found the larger
+  boxes awkward; both name fields are restored to the normal text controls.
+  Before the user stopped agent visual testing, a separate native copy named
+  `Adamantine Dragon — Verification` was created (slug
+  `adamantine-dragon---verification`). Its Lore row remained stale after a
+  whole-name paste, but leaving Skills updated the main editor summary.
+  Replacing the whole name with a value differing by one letter also reached
+  that summary. These tests did not establish persistence after final Save;
+  the copy's Lore edits were left unsaved when agent app interaction stopped.
+  The automation's direct value setter did not commit an edit and is not
+  equivalent to user typing. Next user-only comparison: edit one letter in
+  place versus select all and enter the complete changed name; save/reopen in
+  each case. Native refresh and small-edit persistence remain unresolved.
+  Release preparation remains pending resolution and approval. The user will
+  perform all further app testing; do not run visual inspection or UI automation.
 - Broader native list result (user report, 2026-10-04): New Entry does not
   display immediately in Immunities, Weaknesses, or Resistances; leaving and
-  reopening the section reveals it. The user also cannot find a working
-  removal control for Items or Immunities. These are unresolved creation/
-  refresh and removal failures, not confirmed data loss for the newly added
-  entries. All use native `list` controls. Official form documentation assigns
-  add/remove behavior to the native list and exposes no separate deletion or
-  refresh setting. A read-only Mac editor inspection found a native Delete
-  accessibility action on the Recall Knowledge summary row, but Items and
-  Immunities removal actions have not yet been inspected. The user began an
-  import during inspection, so further app interaction stopped. User confirms
-  Mac and the rebuilt candidate with larger name controls: the broader list
-  refresh/removal report applies to the current candidate, not just the earlier
-  package. No supported JSON refresh callback or delete-option override was
-  found; do not claim these issues fixed by changing field types. Next:
-  check the context menu on an individual Items row and an individual Immunities
-  row for Delete, then verify removal persists after saving. If no action is
-  present, capture the affected row's native accessibility actions before
-  choosing a system-level workaround. Recheck single-letter name persistence
-  separately with the candidate. Do not treat this package as ready for release.
+  reopening the section reveals it. User confirms these results on Mac with
+  the rebuilt candidate. New-row refresh fails; data loss for the newly added
+  entries is not established. Removal passes by user confirmation: right-click
+  an Items or Immunities entry and use the native Copy/Delete menu. The earlier
+  missing-delete report was an undiscovered UI gesture, not a missing feature.
+  All affected arrays use native `list` controls. Official form documentation
+  assigns add/remove behavior to the native list and exposes no separate
+  deletion or refresh setting. No supported JSON refresh callback was found;
+  do not claim field-type changes fixed the issue. Keep this package unreleased.
 - Native editor reference result (user report, 2026-10-04): selecting Chest
   through the Items Reference picker renders literal Markdown in the saved
   stat block: `[Chest](/item/chest-player-core/player core) (2)`.
@@ -86,9 +87,10 @@ Last updated: 2026-10-04
   Native app rendering and tapping Chest to open its quick reference still
   require verification using the rebuilt test package. Canonical source checks
   pass with all maintained validators. `dist/test/pf2e-remaster.system` was
-  rebuilt at unchanged `0.9.01`; all eight changed packaged files match their
-  sources. Current test package SHA-256:
-  `e37f5d81f278b6437908af238fe6a6542d3107db6ef3473cf558c8bcf8035206`.
+  rebuilt at unchanged `0.9.01` after restoring normal name fields; both name
+  forms and the repaired Items template match the packaged copies. Current
+  test package SHA-256:
+  `b7af4a0e55fcd209d45e572db89bf2068584e0f4edc5f1e8fdd886c177db0343`.
 - Spell editor compatibility: fixed the nested area-size input that caused
   `sections[3].fields[8].form.sections[1].type` to reject `decimal`. Size is now
   a decimal field in a group, with native feet conversion in its editor and
