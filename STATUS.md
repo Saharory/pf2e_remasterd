@@ -20,13 +20,14 @@ Last updated: 2026-10-05
   user-controlled; no agent app automation is authorized.
 - Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-05
   with the creature, item, and spell editor redesigns and previous system-wide
-  refresh repairs, plus the improved attack/casting/usage summaries.
+  refresh repairs, improved attack/casting/usage summaries, and numeric
+  spellcasting-input repair.
   Archive inspection/CRC/checksums pass; all 198 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `2c1ac0de8439babd03252c3a30dd9df95c581797e1afba4ea0602cf2aeed507c`.
+  SHA-256: `67b2ff91c6bf5404d677e981784ca8a1df1f0a85cfa58283a4cc2692b1b26931`.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
@@ -133,6 +134,21 @@ Last updated: 2026-10-05
   and persists on save/reopen. Check narrow-width wrapping and custom entries
   with missing ranks or zero modifiers. Native rendering is not confirmed by
   source checks. No agent app automation is authorized.
+- Spellcasting numeric-input repair (2026-10-05): the user supplied screenshots
+  showing **Divine Innate Spells** with DC 37 / attack +29 in the parent preview,
+  but **None** in the entry's Spell Attack/DC controls. The user confirms the
+  rank groups appear normally. This matches Astradaemon's numeric source data;
+  that entry has no focus-point value, so its **None** is expected. The shared
+  casting partial inherited text controls for `spellAttack` and `spellDC` from
+  the original form, predating today's redesign. Both now use native `number`
+  controls, matching the numeric data and existing Focus Points control. All
+  paths, rank groups, spell entries, summaries, content, and migrations remain
+  unchanged. The maintained casting regression covers the real Astradaemon
+  fixture and numeric control types. Focused and canonical source checks pass.
+  Pending native check:
+  reopen that entry and verify attack 29 / DC 37 populate, then edit/save/reopen
+  those values and confirm the parent preview updates. This source repair is
+  a candidate until the user confirms the native result.
 - Recent native feedback (2026-10-05): the user said the spell layout looks
   good apart from Cast actions offering Custom Options, and approved the item
   layout with no issues. The user subsequently approved creature tabs and

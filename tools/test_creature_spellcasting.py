@@ -6,6 +6,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import json5
+
 from creature_spellcasting import CATALOG_STATS, CREATURE_SPELLCASTING
 
 
@@ -140,6 +142,26 @@ def main() -> int:
     casting = goblin["data"]["spellcasting"][0]
     if casting.get("spellDC") != 17 or casting.get("spellAttack") != 7:
         raise SystemExit("Goblin War Chanter sanity check failed")
+    # Native regression: the parent preview showed Astradaemon's numeric
+    # DC/attack while inherited text controls displayed None in the entry.
+    astradaemon_casting = by_slug["astradaemon-monster-core"]["data"]["spellcasting"][0]
+    if astradaemon_casting.get("spellDC") != 37 or astradaemon_casting.get("spellAttack") != 29:
+        raise SystemExit("Astradaemon numeric spellcasting fixture changed")
+    casting_form = json5.loads(
+        (REPO / "forms/partials/spellcasting.json").read_text(encoding="utf-8")
+    )
+    casting_fields = {
+        field.get("attribute"): field
+        for section in casting_form.get("sections", [])
+        for field in section.get("fields", [])
+    }
+    for attribute in ("spellDC", "spellAttack", "focusPoints"):
+        if casting_fields.get(attribute, {}).get("type") != "number":
+            raise SystemExit(f"{attribute}: numeric casting data must use a native number control")
+    casting_groups = next(section for section in casting_form["sections"]
+                          if section.get("attribute") == "spellGroups")
+    if casting_groups.get("type") != "list" or casting_groups.get("form", {}).get("partial") != "spellcasting-group":
+        raise SystemExit("numeric casting control repair changed the structured rank-group editor")
     if at_will < 500:
         raise SystemExit("creature at-will spell markers are unexpectedly incomplete")
     for creature in creatures:

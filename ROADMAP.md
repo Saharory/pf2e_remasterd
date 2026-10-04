@@ -237,6 +237,13 @@ tap behavior have not yet been compared in the app.
   this summary step; removing that screen remains a later candidate.
   Focused editability/spellcasting and canonical source checks pass; new native
   summary rendering/refresh checks remain in `STATUS.md`.
+  Native follow-up on 2026-10-05: the casting preview displays DC/attack and
+  ranks correctly, and the user confirms rank groups load. Spell Attack/DC
+  inputs nevertheless display None for numeric Astradaemon data. The inherited
+  casting partial used text controls for those values before today's redesign;
+  a separate repair changes only those two input types to `number`, with the
+  original paths and groups intact. Native confirmation is pending in
+  `STATUS.md`; this does not invalidate the earlier creature layout pass.
 - [ ] **6. Character navigation.**
   The 5e character editor has Main, Abilities & Skills, Inventory, and Spells
   tabs; ours has 12 sections in one continuous form. Use task-based tabs to
