@@ -16,7 +16,14 @@ current handoff; read only the one relevant to the task.
 - Extend the existing domain regression suite for a demonstrated failure; do
   not create a new test file for every fix.
 - `python3 tools/eplus_dev.py check --json` is the single source-check command.
-  It runs every maintained content and UI regression. Build a test package only
-  when app verification is useful.
+  It runs every maintained content and UI regression.
+- After each completed system implementation or fix, always build an installable
+  game system for user testing with `tools/package_public_release.py`. Keep the
+  latest package at `dist/test/pf2e-remaster.system`; remove older `.system`
+  packages from the test folder only after the replacement passes archive
+  inspection and its packaged definitions match the current source. Refresh
+  the companion checksums/metadata and link the package in the handoff. This
+  standing user instruction applies even while native testing is paused; a
+  package build does not prove app behavior or authorize a release/version bump.
 - Do not bump versions, push, or publish until requested. Commit completed local
   work and record pending native-app verification in `STATUS.md`.

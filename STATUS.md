@@ -8,14 +8,20 @@ Last updated: 2026-10-05
 - Requested baseline push completed on 2026-10-05: `4ea2835` is on
   `origin/remaster-community-base`, including the saved editor design roadmap.
   The subsequent spell-editor redesign is a separate local step.
-- Current test package: `dist/test/pf2e-remaster.system`, rebuilt with the
-  system-wide form refresh repair, explicit duration option maps/inline choices,
-  a dedicated duration partial form, and normal HTML display. At that build,
-  all packaged forms matched their source files; records, configuration, and
-  version were unchanged.
-  SHA-256: `df87f31a4523b58de6f8ba81b81490accccabf3eeee87707de5a1433a9f63b83`.
-  This package predates the spell-editor redesign below; no replacement was
-  built while native testing remains paused.
+- Standing user instruction (2026-10-05): always package each completed system
+  implementation/fix for testing, even during the native-testing pause. Keep
+  only the latest `.system` in `dist/test`; validate the replacement before
+  deleting older systems. This supersedes the earlier pause-related package
+  delivery restriction and is saved in `AGENTS.md`. Native testing remains
+  user-controlled; no agent app automation is authorized.
+- Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-05
+  with the spell-editor redesign and previous system-wide refresh repairs.
+  Archive inspection/CRC/checksums pass; all 198 packaged source files match
+  current source. It includes 18,041 records, including 1,404 spells. Version
+  remains `0.9.01`. The three older named test systems were removed after the
+  replacement passed verification; this is the only `.system` in `dist/test`.
+  Companion manifest, summary, and checksums were refreshed.
+  SHA-256: `a9b098c50563c8645c3138d7bc750282f09843f36d34dcabe4e49628de394a03`.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
@@ -50,7 +56,8 @@ Last updated: 2026-10-05
   recent app update and expects a hotfix later on 2026-10-04. This is a reported
   upstream diagnosis/plan, not confirmation that a fix is released or passes.
   Await the user's return after installing the hotfix; do not request more
-  testing, send speculative packages, or schedule monitoring automatically.
+  testing or schedule monitoring automatically. Package completed system
+  changes under the newer standing user instruction above.
   Preserve all existing passes, source checks, and failed-case reproduction.
 
 - Confirmed refresh repair: object-bound nested forms retained stale rows and
