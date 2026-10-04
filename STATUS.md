@@ -50,6 +50,22 @@ Last updated: 2026-10-04
   a candidate workaround, not a confirmed persistence fix. Retest single-letter
   insertion and deletion in both editors, save/reopen, and check immediate
   summary refresh. Release preparation remains pending resolution and approval.
+- Broader native list result (user report, 2026-10-04): New Entry does not
+  display immediately in Immunities, Weaknesses, or Resistances; leaving and
+  reopening the section reveals it. The user also cannot find a working
+  removal control for Items or Immunities. These are unresolved creation/
+  refresh and removal failures, not confirmed data loss for the newly added
+  entries. All use native `list` controls. Official form documentation assigns
+  add/remove behavior to the native list and exposes no separate deletion or
+  refresh setting. A read-only Mac editor inspection found a native Delete
+  accessibility action on the Recall Knowledge summary row, but Items and
+  Immunities removal actions have not yet been inspected. The user began an
+  import during inspection, so further app interaction stopped. The local app
+  is Encounter+ 5.0.8 (4530); confirm whether this is the test device and whether
+  these reports came from the rebuilt candidate or earlier package. Next:
+  inspect each affected row's native removal action and verify removal persists
+  after saving, then isolate the native list refresh failure. Do not treat
+  this package as ready for release.
 - Native editor reference result (user report, 2026-10-04): selecting Chest
   through the Items Reference picker renders literal Markdown in the saved
   stat block: `[Chest](/item/chest-player-core/player core) (2)`.
