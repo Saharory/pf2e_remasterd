@@ -20,6 +20,13 @@ Last updated: 2026-10-04
 - Native testing: user tests on Mac, Encounter+ 5.0.8 (4530). The user performs
   all further app tests; do not run agent UI automation or visual app inspection.
   Analyze an attached image/recording only when explicitly requested.
+- Native testing stopped by the user on 2026-10-04. The user relays that the
+  Encounter+ developer confirmed these issues are a bug introduced by the
+  recent app update and expects a hotfix later on 2026-10-04. This is a reported
+  upstream diagnosis/plan, not confirmation that a fix is released or passes.
+  Await the user's return after installing the hotfix; do not request more
+  testing, send speculative packages, or schedule monitoring automatically.
+  Preserve all existing passes, source checks, and failed-case reproduction.
 
 - Confirmed refresh repair: object-bound nested forms retained stale rows and
   summaries after mutations. Immunities New Entry/Delete reached the editor
@@ -70,7 +77,8 @@ Last updated: 2026-10-04
   subject/skill picker checkmarks appear only after leaving/re-entering Recall
   Knowledge, so selection feedback fails. Its entry controls correctly use the
   row-relative `subject` / `skills` paths, a standard pattern also used by 5e
-  list-entry forms. No binding error was identified. Clarification pending:
+  list-entry forms. No binding error was identified. Clarification deferred
+  while native testing is stopped:
   whether the selected value displayed in the entry editor updates immediately
   or also requires reopening. DC/stat-block/save verification is not yet
   confirmed; do not mark the whole Recall Knowledge test passed.
@@ -191,8 +199,12 @@ Last updated: 2026-10-04
   manual persists and behaves correctly, although its preview was stale before
   the display/refresh changes. Distinct caster/source assignment remains untested.
 
-- Next user checks on the regular test package: clarify Recall Knowledge picker
-  feedback and finish its persistence/stat-block checks, then item activation,
+- On user-requested resumption after the app hotfix: record the new app version /
+  build, then retest the previously failing cases first: nested Duration Time
+  expansion, Recall Knowledge selection checkmarks/displayed values, and small
+  text edits / selected-text paste persistence. Do not assume the hotfix resolves
+  them until the user verifies. Then finish Recall Knowledge persistence /
+  stat-block checks and continue item activation,
   and a representative deity/hazard/vehicle list. Verify immediate redraw plus
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,

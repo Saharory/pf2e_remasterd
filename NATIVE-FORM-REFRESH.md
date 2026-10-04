@@ -4,6 +4,12 @@ Environment: Encounter+ 5.0.8 (4530), Mac. PF2E Remaster test package 0.9.01.
 All native results below were reported by the user; no automated app testing
 was performed.
 
+Status on 2026-10-04: the user stopped native testing after the Encounter+
+developer confirmed a bug introduced by the recent app update, with a hotfix
+expected later that day. This diagnosis and release plan were relayed by the
+user. The hotfix has not yet been verified here; retain this report and retest
+the failed cases after the user installs it and resumes testing.
+
 ## Reproduction
 
 1. Edit a spell and open Token Effect Duration.
@@ -64,8 +70,9 @@ remain separate to preserve PF2E duration qualifiers.
 
 The user reports that the subject/skill selection checkmark does not appear
 until leaving/re-entering Recall Knowledge. Deleting an entry works correctly.
-Whether the displayed selected value also stays stale is awaiting clarification;
-this is not yet established as the same internal issue as Duration visibility.
+Whether the displayed selected value also stays stale remains unconfirmed;
+clarification is deferred while testing is stopped.
+This is not yet established as the same internal issue as Duration visibility.
 
 Relevant source: `forms/partials/recall-knowledge-entry.json`. Its single picker
 binds to the list row's `subject`; its multi-picker binds to `skills`. Those are
