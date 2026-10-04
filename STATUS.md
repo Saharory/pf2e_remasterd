@@ -165,7 +165,8 @@ Last updated: 2026-10-05
   The user approved the result ("stunning pass") on 2026-10-05. Preserve this
   native confirmation for package SHA-256
   `3bf4828a1f2b14d5484a115db84dbb4b185e02452df59756c6f29262c5667744`.
-- Character navigation: source complete, native verification pending.
+- Character navigation: source complete; blank-state layout approved,
+  populated-character verification pending.
   Four native tabs replace the continuous 12-section form: **Main** (identity,
   traits, HP, core statistics, movement, resources), **Abilities & Skills**
   (attribute modifiers, saves, skills, attacks), **Inventory**, and **Spells**.
@@ -175,9 +176,14 @@ Last updated: 2026-10-05
   root-context movement and row-context attack/casting editors are preserved.
   The existing editable inventory text field remains accessible. The focused
   editability regression and canonical source check pass.
-  Pending user checks: open each tab at narrow width; edit a statistic, Speed,
-  an attack, inventory text, and casting numeric values; save/reopen and verify
-  the edits persist. Check both an existing and a new/custom character.
+  Native feedback (2026-10-05): the user inspected a blank character form
+  and said the overall layout looks good. They do not yet have a character
+  to test populated records. This confirms the blank-state layout only for
+  package SHA-256
+  `b30bc9e4fcbcd39efe2e52bebbf5c07d72fcf5dbfee21a6857637ba9fc059618`.
+  When a character is available, pending checks are editing a statistic,
+  Speed, an attack, inventory text, and casting numeric values, then saving/
+  reopening to verify persistence. Existing/populated records remain untested.
   No agent app automation is authorized.
 - Recent native feedback (2026-10-05): the user said the spell layout looks
   good apart from Cast actions offering Custom Options, and approved the item

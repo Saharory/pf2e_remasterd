@@ -260,7 +260,7 @@ tap behavior have not yet been compared in the app.
   a separate repair changes only those two input types to `number`, with the
   original paths and groups intact. The user confirms the repair's native
   tests pass on 2026-10-05; the earlier creature layout pass is preserved.
-- [x] **6. Character navigation — source complete; native verification pending.**
+- [x] **6. Character navigation — source complete; blank-state layout approved.**
   The 5e character editor has Main, Abilities & Skills, Inventory, and Spells
   tabs; ours has 12 sections in one continuous form. Use task-based tabs to
   make returning to statistics, inventory, and magic easier.
@@ -275,8 +275,10 @@ tap behavior have not yet been compared in the app.
   metadata in a before/after audit, including root-context movement and
   row-context attack/casting editors. The inventory remains its existing
   editable text field. English/French tab labels are included. The maintained
-  editability regression and canonical source check pass; native tab
-  navigation and save/reopen checks remain in `STATUS.md`.
+  editability regression and canonical source check pass. On 2026-10-05, the
+  user approved the overall layout of a blank character form; no populated
+  character is available yet. Populated editing and save/reopen checks remain
+  in `STATUS.md`.
 
 Library selection for character ancestry, class, and equipment is a later
 candidate. The 5e editor can select library entries where ours uses text; this
