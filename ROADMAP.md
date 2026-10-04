@@ -142,7 +142,7 @@ tap behavior have not yet been compared in the app.
   Focused checks and the canonical check pass; native checks remain in
   `STATUS.md` while user testing is paused. The pre-redesign baseline was
   pushed to `origin/remaster-community-base` at `4ea2835` before this work.
-- [x] **2. Items — source complete; native verification pending.**
+- [x] **2. Items — source complete; user approved.**
   Armor, shield, weapon, and gear sections already filter by category, but
   Ammunition and Onset appear in the general group for every item. Category
   follows separate rarity, traits, and level sections. Put category and level
@@ -165,8 +165,10 @@ tap behavior have not yet been compared in the app.
   from 12 to 10, with typical non-category rows decreasing from 15 to 13.
   All 38 bound controls preserve paths, input types, defaults, and units;
   English/French labels, summaries, and the existing editability suite were
-  updated. Focused and canonical checks pass. Pending native checks are saved
-  in `STATUS.md`; shared abilities are next after item feedback.
+  updated. Focused and canonical checks pass. The user approved the layout on
+  2026-10-05, reporting no issues and much better organization; individual
+  save/reopen checks were not separately reported. The user chose creatures
+  next, ahead of the shared ability editor.
 - [ ] **3. Shared ability editor.**
   The 5e monster feature editor centers on Name, Usage, and Description. Ours
   always gives Description, Trigger, Effect, and Reference separate sections.
@@ -176,7 +178,7 @@ tap behavior have not yet been compared in the app.
   conflating passive abilities, actions, and reactions.
   Sources: `forms/partials/ability.json`, `views/partials/ability.md`, and
   `../dnd5e-source/forms/partials/monster-feature.json`.
-- [ ] **4. Creature layout and terminology.**
+- [x] **4. Creature layout and terminology — source complete; native verification pending.**
   Our creature form has 18 top-level sections versus 11 in the 5e monster form.
   Level alone, Base Traits, and Other Traits fragment the opening. Organize
   related edits around **Identity**, **Statistics**, **Defenses**, and
@@ -186,6 +188,26 @@ tap behavior have not yet been compared in the app.
   fix the existing **Ractive** typo.
   Sources: `forms/creature.json`, `lang/en.json`, and
   `../dnd5e-source/forms/monster.json`.
+  Selected by the user on 2026-10-05, with extra care to preserve previous
+  optimization/refresh work. Implemented four native tabs following the official
+  5e character form's tab mechanism: **Identity** (level/rarity/size/traits,
+  Recall Knowledge, inventory, interaction abilities), **Statistics**
+  (perception, senses, Skills/Lore, Speed, attribute modifiers, languages/notes),
+  **Defenses** (AC/HP/hardness and notes, saving throws/notes, immunities,
+  weaknesses/resistances, automatic/reactive abilities), and **Actions & Magic**
+  (attacks, spellcasting, rituals, offensive/proactive abilities). Sections
+  decrease from 18 to 15, with at most four sections per tab. AC/HP notes have
+  explicit labels; ability headings are shorter and the Ractive typo is fixed.
+  All existing subforms/list entries and their navigation remain intact.
+  A before/after audit verified all 118 resolved control bindings through
+  nested partials, including their input types, defaults, units, visibility,
+  and list metadata. Shared ability, attack/damage, spellcasting, and ritual
+  partials were not changed. The maintained editability suite now traverses
+  tabs and guards the complete inline path set and direct ordinary stats.
+  Focused editability/spellcasting checks and the canonical source check pass.
+  Native tab navigation and refresh/save/reopen spot checks remain pending;
+  follow the handoff in `STATUS.md`. Shared abilities and deeper nested-entry
+  improvements remain separate unchecked steps.
 - [ ] **5. Nested entries and summaries.**
   Creature spell edits traverse casting entry, spell group, and individual
   spell; attack damage components also have their own editors. Improve parent

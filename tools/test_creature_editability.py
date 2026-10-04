@@ -718,14 +718,20 @@ def main() -> int:
         raise SystemExit("Adamantine Weapon is not an imported internal GM Core reference")
 
     creature_form = form("creature.json")
+    creature_tabs = creature_form.get("tabs", [])
+    if len(creature_tabs) != 4 or creature_form.get("sections"):
+        raise SystemExit("creature editor must use four task-based tabs")
+    if any(tab.get("attribute") or tab.get("visibleIf") for tab in creature_tabs):
+        raise SystemExit("creature tabs must retain entity context and be accessible when empty")
+    creature_sections = [section for tab in creature_tabs for section in tab.get("sections", [])]
     invalid_top_level_types = {
         index: section.get("type")
-        for index, section in enumerate(creature_form.get("sections", []))
+        for index, section in enumerate(creature_sections)
         if section.get("type") not in {"group", "list"}
     }
     if invalid_top_level_types:
         raise SystemExit(f"creature editor has invalid top-level sections: {invalid_top_level_types}")
-    creature_fields = field_attributes(creature_form)
+    creature_fields = field_attributes({"sections": creature_sections})
     if not {
         "data.hardness",
         "data.languagesDetails",
@@ -737,6 +743,33 @@ def main() -> int:
         for node in form_nodes(creature_form)
         if node.get("attribute")
     }
+    required_creature_attributes = {
+        "data.level", "data.rarity", "data.size", "data.traits", "data.perception",
+        "data.languages", "data.languagesDetails", "data.senseEntries", "data.itemEntries",
+        *(f"data.attributes.{key}" for key in ("str", "dex", "con", "int", "wis", "cha")),
+        "data.ac.value", "data.ac.details", "data.hp.value", "data.hp.details", "data.hardness",
+        *(f"data.saves.{key}" for key in ("fortitude", "reflex", "will", "details")),
+        "data.weaknessEntries", "data.resistanceEntries", "data.attacks", "data.spellcasting",
+        "data.ritualcasting", *(f"data.abilities.{key}" for key in ("interaction", "defensive", "offensive")),
+    }
+    if set(editor_fields) != required_creature_attributes:
+        raise SystemExit("creature navigation changed the inline editable storage paths")
+    # Ordinary values stay directly editable; the proven object/list editors
+    # retain their own navigation rather than acquiring another subform scope.
+    direct_nodes = [node for section in creature_sections for node in section.get("fields", [])]
+    direct_attributes = set()
+    while direct_nodes:
+        node = direct_nodes.pop()
+        if node.get("attribute"):
+            direct_attributes.add(node["attribute"])
+        direct_nodes.extend(node.get("fields", []))
+    for attribute in ("data.ac.value", "data.hp.value", "data.perception", "data.hardness",
+                      "data.languages", "data.saves.fortitude", "data.saves.reflex", "data.saves.will"):
+        if attribute not in direct_attributes:
+            raise SystemExit(f"creature navigation hides a frequent statistic in another editor: {attribute}")
+    for attribute in ("data.ac.details", "data.hp.details", "data.saves.details", "data.languagesDetails"):
+        if not editor_fields[attribute].get("title"):
+            raise SystemExit(f"creature editor notes need an explicit label: {attribute}")
     required_structured_lists = {
         "data.senseEntries": "sense",
         "data.itemEntries": "creature-item",
@@ -756,7 +789,7 @@ def main() -> int:
     if recall_section.get("type") != "form" or recall_section.get("form", {}).get("partial") != "recall-knowledge":
         raise SystemExit("Recall Knowledge does not expose its complete nested editor")
     skills_section = next(
-        field for section in creature_form.get("sections", [])
+        field for section in creature_sections
         for field in section.get("fields", [])
         if field.get("form", {}).get("partial") == "creature-skills"
     )
@@ -768,7 +801,7 @@ def main() -> int:
         raise SystemExit("creature editor still exposes legacy separate skill menus")
     immunity_section = next(
         field
-        for section in creature_form.get("sections", [])
+        for section in creature_sections
         for field in section.get("fields", [])
         if field.get("form", {}).get("partial") == "immunities"
     )
@@ -934,10 +967,12 @@ def main() -> int:
     }
     sections = {
         section.get("attribute"): section
-        for section in creature_form.get("sections", [])
+        for section in creature_sections
         if section.get("attribute")
     }
     for attribute in required_lists:
+        if sections.get(attribute, {}).get("type") != "list" or sections[attribute].get("form", {}).get("partial") != "ability":
+            raise SystemExit(f"creature editor lost a distinct ability list: {attribute}")
         if sections.get(attribute, {}).get("custom", {}).get("itemDetail"):
             raise SystemExit(f"ability list should remain name-only: {attribute}")
 
