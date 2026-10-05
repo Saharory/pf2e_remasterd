@@ -98,7 +98,7 @@
     },
     {
       "type": "text",
-      "value": "{% for activation in data.activations %}**Activate** {% if activation.actions %}![Action](/icons/Action/{{activation.actions}}.png#height=18) {% endif %}{{activation.components|map: 'ItemActivationComponent'}} {% if activation.traits %}({{activation.traits|map: 'Trait'|lowercase}}); {% endif %}{{activation.text}}{% endfor %}", 
+      "value": "{% for activation in data.activations %}{% include 'item-activation.md' %}{% if not forloop.last %}\n\n{% endif %}{% endfor %}",
       "style": "stats-body",
     },
     {

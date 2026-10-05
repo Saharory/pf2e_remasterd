@@ -23,17 +23,20 @@ Last updated: 2026-10-05
   with the creature, item, and spell editor redesigns and previous system-wide
   refresh repairs, improved attack/casting/usage summaries, and numeric
   spellcasting-input repair, shared ability writing flow, and character tabs.
-  Archive inspection/CRC/checksums pass; all 198 packaged source files match
+  It now also includes the named item activation rendering repair below.
+  Archive inspection/CRC/checksums pass; all 199 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `b30bc9e4fcbcd39efe2e52bebbf5c07d72fcf5dbfee21a6857637ba9fc059618`.
+  SHA-256: `e8bfb58e35895f341168da1c189cd17db4cb16b35922b8b3e3c60fc3e21a74ad`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
-  main and test archives are identical; source definitions, archive CRC, and
-  checksums pass. Version remains `0.9.01`. Distribution artifacts are ignored
+  main and test archives were identical at that point; archive CRC and
+  checksums passed. The newer activation-rendering fix is currently only in
+  the test package, not this main distribution or the previous branch push.
+  Version remains `0.9.01`. Distribution artifacts are ignored
   by Git; the branch push carries source changes and documentation.
 - Source checks: the canonical `python3 tools/eplus_dev.py check --json` passes
   with 83 definition files and every maintained validator, including 22 ORC
@@ -88,6 +91,25 @@ Last updated: 2026-10-05
   No agent app automation is authorized. The user selected creatures next,
   ahead of shared abilities. The shared ability editor is now implemented as
   described below.
+- Named item activation rendering: source repair completed on 2026-10-05;
+  native verification pending. Inspection before the activation test found
+  that the shared editor writes `description`, `trigger`, `effect`, and
+  `reference`, but the item display rendered only legacy `text`. Both HTML and
+  native item views now use the same activation partial in the loop's row
+  context. It renders all seven editable ability fields, preserves shared
+  Trigger/Description ordering flags, falls back to legacy text when structured
+  fields are empty, retains legacy components, and wraps reference destinations
+  safely. Native action icon routes now match the existing lower-case folder.
+  No form, storage path, record, migration, or version changed. The maintained
+  editability regression covers this previously missing rendering contract;
+  focused and canonical checks pass (83 definitions, nine validators).
+  Verified replacement test archive changes only `views/item.html`,
+  `views/item.json`, and `views/partials/item-activation.md`; all other entries
+  and all 18,041 records are unchanged. CRC, checksums, and 199 packaged source
+  files match. Next native test: primary/named activation independence,
+  structured rules rendering, save/reopen, and named activation deletion.
+  Known app redraw/save symptoms remain separate and unresolved. This repair is
+  committed locally only; no push or release publication was performed.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in

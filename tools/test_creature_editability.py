@@ -598,6 +598,7 @@ def main() -> int:
         "creature-secondary.md": {"immunity.reference"},
         "creature-tertiary.md": {"ritual.reference"},
         "ability.md": {"ability.reference"},
+        "item-activation.md": {"activation.reference"},
         "attack.md": {"effect.reference"},
         "spellcasting.md": {"spell.reference"},
     }
@@ -618,6 +619,23 @@ def main() -> int:
         raise SystemExit("creature abilities do not render the optional Effect field")
     if "ability.trigger" not in ability_view:
         raise SystemExit("creature abilities do not render the optional Trigger field")
+    activation_view = (REPO / "views/partials/item-activation.md").read_text(encoding="utf-8")
+    for attribute in field_attributes(ability_form) | {"text"}:
+        if f"activation.{attribute}" not in activation_view:
+            raise SystemExit(f"named item activations do not render their editable/legacy {attribute}")
+    structured_condition = "{% if activation.description or activation.trigger or activation.effect %}"
+    if structured_condition not in activation_view or "{% else %}{% if activation.text %}" not in activation_view:
+        raise SystemExit("named activations must prefer structured rules with a legacy-text fallback")
+    for flag in ("triggerBeforeDescription", "triggerParagraphBreak"):
+        if f"activation.{flag}" not in activation_view:
+            raise SystemExit(f"named activations lose the shared ability's {flag} ordering")
+    item_html = (REPO / "views/item.html").read_text(encoding="utf-8")
+    native_item_view = json5.loads((REPO / "views/item.json").read_text(encoding="utf-8"))
+    for template in (item_html, json.dumps(native_item_view)):
+        if "for activation in data.activations" not in template or "item-activation.md" not in template:
+            raise SystemExit("both item display modes must use the named-activation renderer in its row context")
+    if '/icons/actions/{{activation.actions}}.png' not in activation_view:
+        raise SystemExit("named activation action icons use an invalid route")
     if re.search(r"{%\s*elsif\b", ability_view):
         raise SystemExit("creature ability view uses unsupported elsif syntax")
     if (
