@@ -54,13 +54,13 @@ Last updated: 2026-10-05
   and creature-editability checks pass, as does the canonical check. Records,
   migrations, native loading, and versions are unchanged. Item editor source
   work is now complete as described below.
-  Pending user checks after the existing hotfix pause ends: open a new spell
+  Pending functional checks, now authorized with known app bugs noted: open a new spell
   and add casting details; edit/save/reopen populated notes, requirements,
   cost, and trigger and inspect summary refresh/stat-block text; retain multiple
   cast-action selections; check direct range/defense/printed-duration edits;
   edit template shape/fractional size and numeric token expiry independently
   and verify summaries/save/reopen; check an older custom spell with prose in
-  `data.duration`. These are future checks, not a request to resume testing.
+  `data.duration`. Keep redraw, persistence, and rendered content results distinct.
 - Item editor efficiency: source complete, user approved on 2026-10-05.
   The user reports no issues and much better organization. Individual
   save/reopen checks below were not separately reported.
@@ -79,7 +79,7 @@ Last updated: 2026-10-05
   controls preserve paths, input types, defaults, and units. English/French
   labels, focused editability regression, and canonical source checks pass.
   No content, migration, stat-block, or version changes were required.
-  Pending user checks when native testing resumes: inspect new gear, armor,
+  Pending functional checks during resumed testing: inspect new gear, armor,
   shields, and weapons; add/edit/clear ammunition, onset, and crafting details
   and verify summary refresh and save/reopen; edit primary activation including
   traits, create/delete named activations, and confirm they remain independent;
@@ -202,12 +202,21 @@ Last updated: 2026-10-05
 - Native testing: user tests on Mac, Encounter+ 5.0.8 (4530). The user performs
   all further app tests; do not run agent UI automation or visual app inspection.
   Analyze an attached image/recording only when explicitly requested.
-- Native testing stopped by the user on 2026-10-04. The user relays that the
+- Native testing resumed by the user on 2026-10-05 despite the hotfix still
+  being unavailable. Read-only installed-app metadata still reports 5.0.8
+  (4530). Continue the remaining functional verification, documenting known
+  selection/redraw/text-save issues separately from content and storage-path
+  regressions. Do not assume any native bug is fixed. No agent app automation.
+  Next focused test: item primary/additional activation independence, rendered
+  text, save/reopen, and named-entry deletion. Item layout approval alone did
+  not establish those individual outcomes; avoid repeating approved creature
+  layout/refresh tests.
+- Earlier pause: native testing stopped by the user on 2026-10-04. The user relays that the
   Encounter+ developer confirmed these issues are a bug introduced by the
   recent app update and expects a hotfix later on 2026-10-04. This is a reported
   upstream diagnosis/plan, not confirmation that a fix is released or passes.
-  Await the user's return after installing the hotfix; do not request more
-  testing or schedule monitoring automatically. Package completed system
+  The user has now resumed without the hotfix; do not schedule monitoring
+  automatically. Package completed system
   changes under the newer standing user instruction above.
   Preserve all existing passes, source checks, and failed-case reproduction.
 
@@ -260,8 +269,8 @@ Last updated: 2026-10-05
   subject/skill picker checkmarks appear only after leaving/re-entering Recall
   Knowledge, so selection feedback fails. Its entry controls correctly use the
   row-relative `subject` / `skills` paths, a standard pattern also used by 5e
-  list-entry forms. No binding error was identified. Clarification deferred
-  while native testing is stopped:
+  list-entry forms. No binding error was identified. Earlier clarification
+  remains unconfirmed:
   whether the selected value displayed in the entry editor updates immediately
   or also requires reopening. DC/stat-block/save verification is not yet
   confirmed; do not mark the whole Recall Knowledge test passed.
@@ -382,13 +391,13 @@ Last updated: 2026-10-05
   manual persists and behaves correctly, although its preview was stale before
   the display/refresh changes. Distinct caster/source assignment remains untested.
 
-- On user-requested resumption after the app hotfix: record the new app version /
+- When the user installs the app hotfix: record the new app version /
   build, then retest the previously failing cases first: nested Duration Time
   expansion, Recall Knowledge selection checkmarks/displayed values, and small
   text edits / selected-text paste persistence. Do not assume the hotfix resolves
-  them until the user verifies. Then finish Recall Knowledge persistence /
-  stat-block checks and continue item activation,
-  and a representative deity/hazard/vehicle list. Verify immediate redraw plus
+  them until the user verifies. Meanwhile continue item activation and details,
+  spell casting/details/map-template functionality, and a representative deity /
+  hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
   ritual links, creature spell links, custom

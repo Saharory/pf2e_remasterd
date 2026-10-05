@@ -10,6 +10,11 @@ expected later that day. This diagnosis and release plan were relayed by the
 user. The hotfix has not yet been verified here; retain this report and retest
 the failed cases after the user installs it and resumes testing.
 
+Update on 2026-10-05: the user resumed other functional verification without
+the hotfix. Installed-app metadata still reports 5.0.8 (4530). These known
+native failures remain unresolved; track redraw, persistence, and rendered
+content separately while testing the remaining features.
+
 ## Reproduction
 
 1. Edit a spell and open Token Effect Duration.
@@ -71,7 +76,7 @@ remain separate to preserve PF2E duration qualifiers.
 The user reports that the subject/skill selection checkmark does not appear
 until leaving/re-entering Recall Knowledge. Deleting an entry works correctly.
 Whether the displayed selected value also stays stale remains unconfirmed;
-clarification is deferred while testing is stopped.
+no updated native result has been supplied for this specific symptom.
 This is not yet established as the same internal issue as Duration visibility.
 
 Relevant source: `forms/partials/recall-knowledge-entry.json`. Its single picker
