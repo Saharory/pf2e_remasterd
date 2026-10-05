@@ -4,6 +4,10 @@
 from __future__ import annotations
 
 import unittest
+from copy import deepcopy
+from collections import Counter
+import json
+import re
 import sys
 import tempfile
 from pathlib import Path
@@ -13,6 +17,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_aon_orc_staging import item_price
 from foundry_markup import has_conversion_artifact, replace_foundry_directives
 from package_public_release import clear_owned_output
+from item_editor_data import configure_item_editor_data, parse_item_activations
+from creature_editor_data import render_ability_editor_fields
 
 
 class FoundryMarkupTests(unittest.TestCase):
@@ -100,6 +106,108 @@ class ItemPriceTests(unittest.TestCase):
 
     def test_zero_price_is_preserved(self) -> None:
         self.assertEqual(item_price({"price": 0}), "0 gp")
+
+
+class ItemActivationTests(unittest.TestCase):
+    def item(self, text: str, name: str = "Test Item") -> dict:
+        return {"kind": "Item", "name": name, "descr": text, "data": {"level": 3}}
+
+    def test_equipment_header_keeps_general_prose(self) -> None:
+        item = self.item("**Activate** A (manipulate)\n\n---\n\nGeneral item rules.")
+        self.assertTrue(configure_item_editor_data(item))
+        self.assertEqual(item["data"]["activation"], {"actions": "one", "traits": ["manipulate"], "text": ""})
+        self.assertEqual(item["descr"], "---\n\nGeneral item rules.")
+
+    def test_named_reaction_preserves_rules_links_and_variant_text(self) -> None:
+        body = "**Frequency** once per day; **Trigger** An ally falls; **Effect** Cast [heal](/spell/heal-player-core).\n\nA second paragraph."
+        item = self.item("Overview.\n\n**Activate—Restore** **Reaction** ([healing](/trait/healing)) " + body + "\n\n## Greater Item\n\nOther variant rules.")
+        self.assertTrue(configure_item_editor_data(item))
+        activation = item["data"]["activations"][0]
+        self.assertEqual(activation["name"], "Restore")
+        self.assertEqual(activation["actions"], "reaction")
+        self.assertEqual(activation["traits"], ["healing"])
+        self.assertEqual(activation["trigger"], "An ally falls")
+        self.assertEqual(render_ability_editor_fields(activation), body)
+        self.assertEqual(item["descr"], "Overview.\n\n## Greater Item\n\nOther variant rules.")
+
+    def test_primary_and_additional_activations_stay_independent(self) -> None:
+        item = self.item("Overview.\n\n**Activate** Cast a Spell; Cast [light](/spell/light-player-core).\n\n**Activate - Flash** **Two Actions** (manipulate) **Effect** Bright light.")
+        self.assertTrue(configure_item_editor_data(item))
+        self.assertEqual(item["data"]["activation"]["type"], "Cast a Spell")
+        self.assertIn("/spell/light-player-core", item["data"]["activation"]["text"])
+        self.assertEqual(item["data"]["activations"][0]["effect"], "Bright light.")
+        self.assertEqual(item["descr"], "Overview.")
+
+    def test_crafting_and_shield_properties_remain_general(self) -> None:
+        text = "Overview.\n\n**Activate—Flash** **Free Action** **Effect** Light.\n\n---\n\n| Hardness | HP | BT |\n| --- | --- | --- |\n| 3 | 6 | 3 |\n\n**Craft Requirements** A crystal."
+        item = self.item(text)
+        configure_item_editor_data(item)
+        self.assertEqual(item["data"]["activations"][0]["effect"], "Light.")
+        self.assertIn("| Hardness | HP | BT |", item["descr"])
+        self.assertIn("**Craft Requirements** A crystal.", item["descr"])
+
+    def test_variable_or_timed_cost_is_not_guessed(self) -> None:
+        for cost in ("1 minute", "10 minutes", "1 or 2", "1 to 3"):
+            with self.subTest(cost=cost):
+                item = self.item(f"**Activate—Travel** {cost} (manipulate) **Effect** Travel safely.")
+                configure_item_editor_data(item)
+                activation = item["data"]["activations"][0]
+                self.assertNotIn("actions", activation)
+                self.assertIn(cost, activation["description"])
+
+    def test_only_exact_matching_variant_is_extracted(self) -> None:
+        text = "Overview.\n\n## Test Item\n\nBase rules.\n\n## Greater Item\n\n**Activate—Flash** **Two Actions** **Effect** Light."
+        base = self.item(text)
+        self.assertFalse(configure_item_editor_data(base))
+        self.assertEqual(base["descr"], text)
+        greater = self.item(text, "Greater Item")
+        self.assertTrue(configure_item_editor_data(greater))
+        self.assertEqual(greater["data"]["activations"][0]["name"], "Flash")
+        self.assertIn("Base rules.", greater["descr"])
+
+    def test_existing_or_cleared_gm_settings_are_preserved(self) -> None:
+        for key, value in (("activation", {}), ("activations", []), ("activation", {"text": "Custom"})):
+            item = self.item("**Activate** 1 (manipulate)")
+            item["data"][key] = value
+            before = deepcopy(item)
+            self.assertFalse(configure_item_editor_data(item))
+            self.assertEqual(item, before)
+
+    def test_incidental_mentions_and_empty_headers_are_preserved(self) -> None:
+        for text in ("You do not need to Activate this item.", "**Activate**"):
+            item = self.item(text)
+            self.assertFalse(configure_item_editor_data(item))
+            self.assertEqual(item["descr"], text)
+
+    def test_spans_preserve_original_text_and_conversion_is_idempotent(self) -> None:
+        text = "Overview.\n\n**Activate—Flash** 1 (manipulate) **Effect** Light.\n\n**Activate—Hide** **Free Action** **Trigger** You hide; **Effect** Darkness.\n\n## Other Item\n\nRemaining rules."
+        blocks = parse_item_activations(text, "Test Item")
+        rebuilt = "";cursor = 0
+        for block in blocks:
+            rebuilt += text[cursor:block.start] + block.original
+            cursor = block.end
+        self.assertEqual(rebuilt + text[cursor:], text)
+        item = self.item(text)
+        self.assertTrue(configure_item_editor_data(item))
+        converted = deepcopy(item)
+        self.assertFalse(configure_item_editor_data(item))
+        self.assertEqual(item, converted)
+
+    def test_published_named_activation_rules_and_links_are_preserved(self) -> None:
+        repo = Path(__file__).resolve().parents[1]
+        checked = 0
+        for root in (repo / "compendium/packs", repo / "compendium/ogl-packs"):
+            for path in root.glob("*/items.json"):
+                for item in json.loads(path.read_text()):
+                    for activation in item.get("data", {}).get("activations", []):
+                        if "text" not in activation:
+                            continue
+                        # The shared editor may group Requirements with Frequency,
+                        # but no rule word, number, sign, or link may disappear.
+                        tokens = lambda text: Counter(re.sub(r"[;\s]+", " ", text).strip().split())
+                        self.assertEqual(tokens(activation["text"]), tokens(render_ability_editor_fields(activation)), item["name"])
+                        checked += 1
+        self.assertGreater(checked, 1000, "published activations were not populated")
 
 
 class ReleaseOutputTests(unittest.TestCase):

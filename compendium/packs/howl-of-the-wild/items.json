@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Alicorn Hair",
     "slug": "alicorn-hair-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell (add 1 action)\n\n---\n\nHair shed from an alicorn's mane glows when it comes into contact with a living creature. A [Stabilize](/spell/stabilize-player-core) spell empowered with an *alicorn hair* allows you to target 1 additional creature.",
+    "descr": "---\n\nHair shed from an alicorn's mane glows when it comes into contact with a living creature. A [Stabilize](/spell/stabilize-player-core) spell empowered with an *alicorn hair* allows you to target 1 additional creature.",
     "data": {
       "level": 1,
       "rarity": "common",
@@ -32,7 +32,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "(add 1 action)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -63,7 +67,7 @@
     "systemVersion": "1.2.10",
     "name": "Alicorn Trigger",
     "slug": "alicorn-trigger-howl-of-the-wild",
-    "descr": "This *+2 greater striking jezail* features a preserved alicorn horn mounted underneath the barrel. Such a horn is usually willingly granted by the creature at the end of its natural lifespan, but some wicked gunsmiths acquire the horn through violence.\n\n---\n\n**Activate—Glimmer Beam** 2 (manipulate)\n\n**Frequency** once per day\n\n**Effect** The *alicorn trigger* unleashes a beam of radiant light in a 60-foot line. Creatures in the area of effect take 6d6 fire damage and must attempt a Fortitude DC 33 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage and is [Dazzled](/condition/dazzled-player-core) 1.\n\n**Failure** The creature takes full damage and is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Critical Failure** The creature takes double damage and is blinded for 1 minute.\n\n---\n\n**Craft Requirements** The initial raw materials must include a horn from an alicorn.",
+    "descr": "This *+2 greater striking jezail* features a preserved alicorn horn mounted underneath the barrel. Such a horn is usually willingly granted by the creature at the end of its natural lifespan, but some wicked gunsmiths acquire the horn through violence.\n\n---\n\n**Craft Requirements** The initial raw materials must include a horn from an alicorn.",
     "data": {
       "level": 15,
       "rarity": "rare",
@@ -96,6 +100,18 @@
           "label": "magical",
           "slug": "magical"
         }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Glimmer Beam",
+          "text": "**Frequency** once per day\n\n**Effect** The *alicorn trigger* unleashes a beam of radiant light in a 60-foot line. Creatures in the area of effect take 6d6 fire damage and must attempt a Fortitude DC 33 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage and is [Dazzled](/condition/dazzled-player-core) 1.\n\n**Failure** The creature takes full damage and is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Critical Failure** The creature takes double damage and is blinded for 1 minute.\n\n---",
+          "effect": "The *alicorn trigger* unleashes a beam of radiant light in a 60-foot line. Creatures in the area of effect take 6d6 fire damage and must attempt a Fortitude DC 33 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature takes half damage and is [Dazzled](/condition/dazzled-player-core) 1.\n\n**Failure** The creature takes full damage and is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Critical Failure** The creature takes double damage and is blinded for 1 minute.\n\n---",
+          "description": "**Frequency** once per day"
+        }
       ]
     },
     "attributes": {
@@ -127,7 +143,7 @@
     "systemVersion": "1.2.10",
     "name": "Alluring Lantern",
     "slug": "alluring-lantern-howl-of-the-wild",
-    "descr": "An antenna with a bioluminescent lure protrudes from your head, drawing enemies' attention. When not activated, the antenna lays flat and blends in with your hair or skin.\n\n---\n\n**Activate—Raise Lure** 1 (manipulate, mental, visual)\n\n**Frequency** once per day\n\n**Effect** Until the beginning of your next turn, the lure raises above your head and lights up with multicolored flashes that draws creatures closer. Any creature that begins its turn within 20 feet of you must succeed at a Will DC 23 save or become [Fascinated](/condition/fascinated-player-core) by the lure and must spend at least one of its actions to move toward you. The fascination ends at the end of the creature's turn.",
+    "descr": "An antenna with a bioluminescent lure protrudes from your head, drawing enemies' attention. When not activated, the antenna lays flat and blends in with your hair or skin.\n\n---",
     "data": {
       "level": 8,
       "rarity": "common",
@@ -152,6 +168,20 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate",
+            "mental",
+            "visual"
+          ],
+          "name": "Raise Lure",
+          "text": "**Frequency** once per day\n\n**Effect** Until the beginning of your next turn, the lure raises above your head and lights up with multicolored flashes that draws creatures closer. Any creature that begins its turn within 20 feet of you must succeed at a Will DC 23 save or become [Fascinated](/condition/fascinated-player-core) by the lure and must spend at least one of its actions to move toward you. The fascination ends at the end of the creature's turn.",
+          "effect": "Until the beginning of your next turn, the lure raises above your head and lights up with multicolored flashes that draws creatures closer. Any creature that begins its turn within 20 feet of you must succeed at a Will DC 23 save or become [Fascinated](/condition/fascinated-player-core) by the lure and must spend at least one of its actions to move toward you. The fascination ends at the end of the creature's turn.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -183,7 +213,7 @@
     "systemVersion": "1.2.10",
     "name": "Amphisbaena Handwraps",
     "slug": "amphisbaena-handwraps-howl-of-the-wild",
-    "descr": "Your hands fit through the venomous mouths of this pair of handwraps made from amphisbaena skin. Your unarmed strikes gain the [versatile P](/trait/versatile) trait. *Amphisbaena handwraps* can have weapon runes etched onto them, similar to [Handwraps Of Mighty Blows](/item/handwraps-of-mighty-blows-gm-core).\n\n---\n\n**Activate—Twin Venom Strike** 2 (manipulate)\n\n**Frequency** once per hour\n\n**Effect** Make two unarmed Strikes. Both Strikes count toward your multiple attack penalty, but the penalty doesn't increase until after both attacks. Each Strike deals an additional 1d6 poison damage.\n\n---\n\n**Craft Requirements** The initial raw materials must include the skin and heads of an amphisbaena.",
+    "descr": "Your hands fit through the venomous mouths of this pair of handwraps made from amphisbaena skin. Your unarmed strikes gain the [versatile P](/trait/versatile) trait. *Amphisbaena handwraps* can have weapon runes etched onto them, similar to [Handwraps Of Mighty Blows](/item/handwraps-of-mighty-blows-gm-core).\n\n---\n\n**Craft Requirements** The initial raw materials must include the skin and heads of an amphisbaena.",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -208,6 +238,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Twin Venom Strike",
+          "text": "**Frequency** once per hour\n\n**Effect** Make two unarmed Strikes. Both Strikes count toward your multiple attack penalty, but the penalty doesn't increase until after both attacks. Each Strike deals an additional 1d6 poison damage.\n\n---",
+          "effect": "Make two unarmed Strikes. Both Strikes count toward your multiple attack penalty, but the penalty doesn't increase until after both attacks. Each Strike deals an additional 1d6 poison damage.\n\n---",
+          "description": "**Frequency** once per hour"
         }
       ]
     },
@@ -239,7 +281,7 @@
     "systemVersion": "1.2.10",
     "name": "Amphisbaena Spittle",
     "slug": "amphisbaena-spittle-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell\n\n---\n\nHardened clumps of *amphisbaena spittle* can be harvested from the dual-headed snake's hunting grounds. When a casting of [Web Of Eyes](/spell/web-of-eyes-impossible-magic-spell-spell-2866) is empowered with this catalyst, you can place an additional scrying sensor on the back of each target's head, in the shape of a closed snake's eye. When a target shares their vision with the others affected by the spell, the eye blinks open, preventing the target from being flanked until the start of its next turn.\n\nEffect: Amphisbaena Spittle",
+    "descr": "---\n\nHardened clumps of *amphisbaena spittle* can be harvested from the dual-headed snake's hunting grounds. When a casting of [Web Of Eyes](/spell/web-of-eyes-impossible-magic-spell-spell-2866) is empowered with this catalyst, you can place an additional scrying sensor on the back of each target's head, in the shape of a closed snake's eye. When a target shares their vision with the others affected by the spell, the eye blinks open, preventing the target from being flanked until the start of its next turn.\n\nEffect: Amphisbaena Spittle",
     "data": {
       "level": 5,
       "rarity": "common",
@@ -265,7 +307,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -296,7 +342,7 @@
     "systemVersion": "1.2.10",
     "name": "Amulet of the Hellcat",
     "slug": "amulet-of-the-hellcat-howl-of-the-wild",
-    "descr": "This glass amulet is set on a steel backing shaped like a cage and flickers with an eerie crimson glow. Magically sealed within is a portion of a hellcat's ever-burning heart. While wearing the amulet, you gain a +1 item bonus to Stealth checks made while in bright light, and you can cast the [Light](/spell/light-player-core) cantrip emanating from the amulet as an innate divine spell.\n\n---\n\n**Activate—Invisible Pounce** 2 (concentrate, manipulate)\n\n**Frequency** once per day\n\n**Requirements** You are in bright light\n\n**Effect** You become [Invisible](/condition/invisible-player-core), Stride up to your speed, and then make a melee Strike at the end of that movement. After making the Strike, you are no longer invisible. If at any point during your Stride, you pass out of bright light, you are no longer invisible and must stop moving. You may make a melee Strike if you have a target within reach.\n\n---\n\n**Craft Requirements** The initial raw materials must include the heart of a hellcat.",
+    "descr": "This glass amulet is set on a steel backing shaped like a cage and flickers with an eerie crimson glow. Magically sealed within is a portion of a hellcat's ever-burning heart. While wearing the amulet, you gain a +1 item bonus to Stealth checks made while in bright light, and you can cast the [Light](/spell/light-player-core) cantrip emanating from the amulet as an innate divine spell.\n\n---\n\n**Craft Requirements** The initial raw materials must include the heart of a hellcat.",
     "data": {
       "level": 7,
       "rarity": "uncommon",
@@ -316,6 +362,19 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Invisible Pounce",
+          "text": "**Frequency** once per day\n\n**Requirements** You are in bright light\n\n**Effect** You become [Invisible](/condition/invisible-player-core), Stride up to your speed, and then make a melee Strike at the end of that movement. After making the Strike, you are no longer invisible. If at any point during your Stride, you pass out of bright light, you are no longer invisible and must stop moving. You may make a melee Strike if you have a target within reach.\n\n---",
+          "effect": "You become [Invisible](/condition/invisible-player-core), Stride up to your speed, and then make a melee Strike at the end of that movement. After making the Strike, you are no longer invisible. If at any point during your Stride, you pass out of bright light, you are no longer invisible and must stop moving. You may make a melee Strike if you have a target within reach.\n\n---",
+          "description": "**Frequency** once per day\n\n**Requirements** You are in bright light"
         }
       ]
     },
@@ -419,7 +478,7 @@
     "systemVersion": "1.2.10",
     "name": "Animal Pheromones (Greater)",
     "slug": "animal-pheromones-greater-howl-of-the-wild",
-    "descr": "**Activate** 1 minute (Interact)\n\n---\n\nThese chemicals convey myriad signals. Many varieties of these alchemical cocktails exist, each tailored for the unique chemistry of a specific type of animal. You can, for example, make wolf pheromones, but not pheromones that affect all animals. The pheromones don't work on creatures that are similar to the specific kind of animal, but aren't actually animals—for example, wolf pheromones don't work on werewolves. When you learn the formula for animal pheromones, you learn the formulas for all common animals. If no animals of a kind are common, you must learn the formula for it separately, and the formula has the same rarity as the least-rare creature of that kind.\n\nYou Activate animal pheromones by rubbing them on yourself or a creature within reach. The pheromones last for 24 hours or until scrubbed clean with 1 minute of work (consisting of multiple [Interact](/action/interact-player-core) actions). During this time, the pheromones exude a subtle aroma in a 15-foot radius that calms and influences the designated animals. A designated animal that ends its turn within the affected area must attempt a Will DC 35 saving throw with the following effects. The animal is then temporarily immune to the pheromones for 24 hours. The effect lasts for the duration of the pheromones, even after the creature leaves the affected area.\n\n---\n\n**Critical Success** The animal is unaffected. It doesn't necessarily become aware of the pheromones, although intelligent animals might become suspicious if they observe others of their kind being affected.\n\n**Success** The animal's attitude toward the affected creature improves by one step. If this improves its attitude to at least indifferent, it can't take hostile actions against the affected creature, though the change in attitude ends as soon as the affected creature takes a hostile action against the animal or its allies.\n\n**Failure** As success, but the attitude increases by two steps.\n\n**Critical Failure** As success, but the attitude increases to helpful.",
+    "descr": "---\n\nThese chemicals convey myriad signals. Many varieties of these alchemical cocktails exist, each tailored for the unique chemistry of a specific type of animal. You can, for example, make wolf pheromones, but not pheromones that affect all animals. The pheromones don't work on creatures that are similar to the specific kind of animal, but aren't actually animals—for example, wolf pheromones don't work on werewolves. When you learn the formula for animal pheromones, you learn the formulas for all common animals. If no animals of a kind are common, you must learn the formula for it separately, and the formula has the same rarity as the least-rare creature of that kind.\n\nYou Activate animal pheromones by rubbing them on yourself or a creature within reach. The pheromones last for 24 hours or until scrubbed clean with 1 minute of work (consisting of multiple [Interact](/action/interact-player-core) actions). During this time, the pheromones exude a subtle aroma in a 15-foot radius that calms and influences the designated animals. A designated animal that ends its turn within the affected area must attempt a Will DC 35 saving throw with the following effects. The animal is then temporarily immune to the pheromones for 24 hours. The effect lasts for the duration of the pheromones, even after the creature leaves the affected area.\n\n---\n\n**Critical Success** The animal is unaffected. It doesn't necessarily become aware of the pheromones, although intelligent animals might become suspicious if they observe others of their kind being affected.\n\n**Success** The animal's attitude toward the affected creature improves by one step. If this improves its attitude to at least indifferent, it can't take hostile actions against the affected creature, though the change in attitude ends as soon as the affected creature takes a hostile action against the animal or its allies.\n\n**Failure** As success, but the attitude increases by two steps.\n\n**Critical Failure** As success, but the attitude increases to helpful.",
     "data": {
       "level": 17,
       "rarity": "common",
@@ -445,7 +504,10 @@
           "label": "olfactory",
           "slug": "olfactory"
         }
-      ]
+      ],
+      "activation": {
+        "text": "1 minute (Interact)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -475,7 +537,7 @@
     "systemVersion": "1.2.10",
     "name": "Animal Pheromones (Lesser)",
     "slug": "animal-pheromones-lesser-howl-of-the-wild",
-    "descr": "**Activate** 1 minute (Interact)\n\n---\n\nThese chemicals convey myriad signals. Many varieties of these alchemical cocktails exist, each tailored for the unique chemistry of a specific type of animal. You can, for example, make wolf pheromones, but not pheromones that affect all animals. The pheromones don't work on creatures that are similar to the specific kind of animal, but aren't actually animals—for example, wolf pheromones don't work on werewolves. When you learn the formula for animal pheromones, you learn the formulas for all common animals. If no animals of a kind are common, you must learn the formula for it separately, and the formula has the same rarity as the least-rare creature of that kind.\n\nYou Activate animal pheromones by rubbing them on yourself or a creature within reach. The pheromones last for 24 hours or until scrubbed clean with 1 minute of work (consisting of multiple [Interact](/action/interact-player-core) actions). During this time, the pheromones exude a subtle aroma in a 15-foot radius that calms and influences the designated animals. A designated animal that ends its turn within the affected area must attempt a Will DC 19 saving throw with the following effects. The animal is then temporarily immune to the pheromones for 24 hours. The effect lasts for the duration of the pheromones, even after the creature leaves the affected area.\n\n---\n\n**Critical Success** The animal is unaffected. It doesn't necessarily become aware of the pheromones, although intelligent animals might become suspicious if they observe others of their kind being affected.\n\n**Success** The animal's attitude toward the affected creature improves by one step. If this improves its attitude to at least indifferent, it can't take hostile actions against the affected creature, though the change in attitude ends as soon as the affected creature takes a hostile action against the animal or its allies.\n\n**Failure** As success, but the attitude increases by two steps.\n\n**Critical Failure** As success, but the attitude increases to helpful.",
+    "descr": "---\n\nThese chemicals convey myriad signals. Many varieties of these alchemical cocktails exist, each tailored for the unique chemistry of a specific type of animal. You can, for example, make wolf pheromones, but not pheromones that affect all animals. The pheromones don't work on creatures that are similar to the specific kind of animal, but aren't actually animals—for example, wolf pheromones don't work on werewolves. When you learn the formula for animal pheromones, you learn the formulas for all common animals. If no animals of a kind are common, you must learn the formula for it separately, and the formula has the same rarity as the least-rare creature of that kind.\n\nYou Activate animal pheromones by rubbing them on yourself or a creature within reach. The pheromones last for 24 hours or until scrubbed clean with 1 minute of work (consisting of multiple [Interact](/action/interact-player-core) actions). During this time, the pheromones exude a subtle aroma in a 15-foot radius that calms and influences the designated animals. A designated animal that ends its turn within the affected area must attempt a Will DC 19 saving throw with the following effects. The animal is then temporarily immune to the pheromones for 24 hours. The effect lasts for the duration of the pheromones, even after the creature leaves the affected area.\n\n---\n\n**Critical Success** The animal is unaffected. It doesn't necessarily become aware of the pheromones, although intelligent animals might become suspicious if they observe others of their kind being affected.\n\n**Success** The animal's attitude toward the affected creature improves by one step. If this improves its attitude to at least indifferent, it can't take hostile actions against the affected creature, though the change in attitude ends as soon as the affected creature takes a hostile action against the animal or its allies.\n\n**Failure** As success, but the attitude increases by two steps.\n\n**Critical Failure** As success, but the attitude increases to helpful.",
     "data": {
       "level": 5,
       "rarity": "common",
@@ -501,7 +563,10 @@
           "label": "olfactory",
           "slug": "olfactory"
         }
-      ]
+      ],
+      "activation": {
+        "text": "1 minute (Interact)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -531,7 +596,7 @@
     "systemVersion": "1.2.10",
     "name": "Animal Pheromones (Moderate)",
     "slug": "animal-pheromones-moderate-howl-of-the-wild",
-    "descr": "**Activate** 1 minute (Interact)\n\n---\n\nThese chemicals convey myriad signals. Many varieties of these alchemical cocktails exist, each tailored for the unique chemistry of a specific type of animal. You can, for example, make wolf pheromones, but not pheromones that affect all animals. The pheromones don't work on creatures that are similar to the specific kind of animal, but aren't actually animals—for example, wolf pheromones don't work on werewolves. When you learn the formula for animal pheromones, you learn the formulas for all common animals. If no animals of a kind are common, you must learn the formula for it separately, and the formula has the same rarity as the least-rare creature of that kind.\n\nYou Activate animal pheromones by rubbing them on yourself or a creature within reach. The pheromones last for 24 hours or until scrubbed clean with 1 minute of work (consisting of multiple [Interact](/action/interact-player-core) actions). During this time, the pheromones exude a subtle aroma in a 15-foot radius that calms and influences the designated animals. A designated animal that ends its turn within the affected area must attempt a Will DC 27 saving throw with the following effects. The animal is then temporarily immune to the pheromones for 24 hours. The effect lasts for the duration of the pheromones, even after the creature leaves the affected area.\n\n---\n\n**Critical Success** The animal is unaffected. It doesn't necessarily become aware of the pheromones, although intelligent animals might become suspicious if they observe others of their kind being affected.\n\n**Success** The animal's attitude toward the affected creature improves by one step. If this improves its attitude to at least indifferent, it can't take hostile actions against the affected creature, though the change in attitude ends as soon as the affected creature takes a hostile action against the animal or its allies.\n\n**Failure** As success, but the attitude increases by two steps.\n\n**Critical Failure** As success, but the attitude increases to helpful.",
+    "descr": "---\n\nThese chemicals convey myriad signals. Many varieties of these alchemical cocktails exist, each tailored for the unique chemistry of a specific type of animal. You can, for example, make wolf pheromones, but not pheromones that affect all animals. The pheromones don't work on creatures that are similar to the specific kind of animal, but aren't actually animals—for example, wolf pheromones don't work on werewolves. When you learn the formula for animal pheromones, you learn the formulas for all common animals. If no animals of a kind are common, you must learn the formula for it separately, and the formula has the same rarity as the least-rare creature of that kind.\n\nYou Activate animal pheromones by rubbing them on yourself or a creature within reach. The pheromones last for 24 hours or until scrubbed clean with 1 minute of work (consisting of multiple [Interact](/action/interact-player-core) actions). During this time, the pheromones exude a subtle aroma in a 15-foot radius that calms and influences the designated animals. A designated animal that ends its turn within the affected area must attempt a Will DC 27 saving throw with the following effects. The animal is then temporarily immune to the pheromones for 24 hours. The effect lasts for the duration of the pheromones, even after the creature leaves the affected area.\n\n---\n\n**Critical Success** The animal is unaffected. It doesn't necessarily become aware of the pheromones, although intelligent animals might become suspicious if they observe others of their kind being affected.\n\n**Success** The animal's attitude toward the affected creature improves by one step. If this improves its attitude to at least indifferent, it can't take hostile actions against the affected creature, though the change in attitude ends as soon as the affected creature takes a hostile action against the animal or its allies.\n\n**Failure** As success, but the attitude increases by two steps.\n\n**Critical Failure** As success, but the attitude increases to helpful.",
     "data": {
       "level": 11,
       "rarity": "common",
@@ -557,7 +622,10 @@
           "label": "olfactory",
           "slug": "olfactory"
         }
-      ]
+      ],
+      "activation": {
+        "text": "1 minute (Interact)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -587,7 +655,7 @@
     "systemVersion": "1.2.10",
     "name": "Ankhrav Duster",
     "slug": "ankhrav-duster-howl-of-the-wild",
-    "descr": "Acid drips from the ankhrav mandibles protruding from this *+1 [Knuckle Duster](/item/knuckle-duster-guns-and-gears-remastered)*. Strikes with this weapon deal an additional 1 acid damage.\n\n---\n\n**Activate—Caustic Jabs** 1 (concentrate)\n\n**Frequency** once per hour\n\n**Effect** Until the end of your next turn, your Strikes with the *ankhrav duster* deal an additional 1d6 persistent acid damage.\n\nEffect: Caustic Jabs\n\n---\n\n**Craft Requirements** The initial raw materials must include the mandibles of an ankhrav.",
+    "descr": "Acid drips from the ankhrav mandibles protruding from this *+1 [Knuckle Duster](/item/knuckle-duster-guns-and-gears-remastered)*. Strikes with this weapon deal an additional 1 acid damage.\n\n---\n\n**Craft Requirements** The initial raw materials must include the mandibles of an ankhrav.",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -623,6 +691,18 @@
           "label": "monk",
           "slug": "monk"
         }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Caustic Jabs",
+          "text": "**Frequency** once per hour\n\n**Effect** Until the end of your next turn, your Strikes with the *ankhrav duster* deal an additional 1d6 persistent acid damage.\n\nEffect: Caustic Jabs\n\n---",
+          "effect": "Until the end of your next turn, your Strikes with the *ankhrav duster* deal an additional 1d6 persistent acid damage.\n\nEffect: Caustic Jabs\n\n---",
+          "description": "**Frequency** once per hour"
+        }
       ]
     },
     "attributes": {
@@ -655,7 +735,7 @@
     "systemVersion": "1.2.10",
     "name": "Arachnolute",
     "slug": "arachnolute-howl-of-the-wild",
-    "descr": "The strings of this spider-shaped lute are made from the webbing of a goliath spider and the tuning pegs are crafted from the spider's spinnerets. An *arachnolute* grants you a +2 item bonus to Performance checks while playing music with the instrument.\n\n---\n\n**Activate—Web Chord** 2 (manipulate)\n\n**Frequency** once per hour\n\n**Effect** Sticky webbing sprays in a 30-foot cone as you strum the lute's strings. Each creature in the area of the webbing is [Immobilized](/condition/immobilized-player-core) unless it succeeds at a Reflex DC 29 save.\n\n---\n\n**Craft Requirements** The initial materials must include the spinnerets of a goliath spider, as well as a spool of its webbing.",
+    "descr": "The strings of this spider-shaped lute are made from the webbing of a goliath spider and the tuning pegs are crafted from the spider's spinnerets. An *arachnolute* grants you a +2 item bonus to Performance checks while playing music with the instrument.\n\n---\n\n**Craft Requirements** The initial materials must include the spinnerets of a goliath spider, as well as a spool of its webbing.",
     "data": {
       "level": 11,
       "rarity": "uncommon",
@@ -670,6 +750,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Web Chord",
+          "text": "**Frequency** once per hour\n\n**Effect** Sticky webbing sprays in a 30-foot cone as you strum the lute's strings. Each creature in the area of the webbing is [Immobilized](/condition/immobilized-player-core) unless it succeeds at a Reflex DC 29 save.\n\n---",
+          "effect": "Sticky webbing sprays in a 30-foot cone as you strum the lute's strings. Each creature in the area of the webbing is [Immobilized](/condition/immobilized-player-core) unless it succeeds at a Reflex DC 29 save.\n\n---",
+          "description": "**Frequency** once per hour"
         }
       ]
     },
@@ -700,7 +792,7 @@
     "systemVersion": "1.2.10",
     "name": "Arctic Worm Chitin Shield",
     "slug": "arctic-worm-chitin-shield-howl-of-the-wild",
-    "descr": "This tower shield is crafted from interlocking sections of an arctic cave worm's chitin that are rimed with constant frost. It has Hardness 13, HP 104, and BT 52.\n\n---\n\n**Activate—Misty Chill** 1 (cold, concentrate, manipulate)\n\n**Effect** You Raise the Shield and an icy mist begins to flow off it. Until the beginning of your next turn, you gain resistance 5 to cold and any creature that ends its turn adjacent to you takes 3d6 cold damage (basic Reflex DC 29 save).\n\nEffect: Misty Chill\n\n---\n\n**Craft Requirements** The initial raw materials must include chitin from an arctic cave worm.",
+    "descr": "This tower shield is crafted from interlocking sections of an arctic cave worm's chitin that are rimed with constant frost. It has Hardness 13, HP 104, and BT 52.\n\n---\n\n**Craft Requirements** The initial raw materials must include chitin from an arctic cave worm.",
     "data": {
       "level": 12,
       "rarity": "uncommon",
@@ -723,6 +815,20 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "cold",
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Misty Chill",
+          "text": "**Effect** You Raise the Shield and an icy mist begins to flow off it. Until the beginning of your next turn, you gain resistance 5 to cold and any creature that ends its turn adjacent to you takes 3d6 cold damage (basic Reflex DC 29 save).\n\nEffect: Misty Chill\n\n---",
+          "effect": "You Raise the Shield and an icy mist begins to flow off it. Until the beginning of your next turn, you gain resistance 5 to cold and any creature that ends its turn adjacent to you takes 3d6 cold damage (basic Reflex DC 29 save).\n\nEffect: Misty Chill\n\n---",
+          "description": ""
         }
       ]
     },
@@ -754,7 +860,7 @@
     "systemVersion": "1.2.10",
     "name": "Aroma Concealer",
     "slug": "aroma-concealer-howl-of-the-wild",
-    "descr": "**Activate** 1 minute (Interact)\n\n---\n\nThis oily mix of herbs and natural detergents can be applied to a creature to reduce and cover any ordinary odors they produce. The creature receives a +2 item bonus to Stealth checks to [Hide](/action/hide-player-core) or [Sneak](/action/sneak-player-core) against creatures using primarily smell. This bonus also applies to the DC to [Track](/action/track-player-core) the creature by scent. The listed amount is enough to cover one Medium or smaller creature and takes 1 minute to apply. The effect lasts for 1 hour after applying.",
+    "descr": "---\n\nThis oily mix of herbs and natural detergents can be applied to a creature to reduce and cover any ordinary odors they produce. The creature receives a +2 item bonus to Stealth checks to [Hide](/action/hide-player-core) or [Sneak](/action/sneak-player-core) against creatures using primarily smell. This bonus also applies to the DC to [Track](/action/track-player-core) the creature by scent. The listed amount is enough to cover one Medium or smaller creature and takes 1 minute to apply. The effect lasts for 1 hour after applying.",
     "data": {
       "level": 1,
       "rarity": "common",
@@ -780,7 +886,10 @@
           "label": "oil",
           "slug": "oil"
         }
-      ]
+      ],
+      "activation": {
+        "text": "1 minute (Interact)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1028,7 +1137,7 @@
     "systemVersion": "1.2.10",
     "name": "Bloodgorger Scythe",
     "slug": "bloodgorger-scythe-howl-of-the-wild",
-    "descr": "This *+1 striking scythe* is made from the cruel, blackened branches of the carnivorous scythe tree, which hungrily drink up spilled blood.\n\n---\n\n**Activate—Root in Blood** 1 (manipulate)\n\n**Requirements** Your last action was a successful Strike with this weapon and your target isn't currently taking any persistent bleed damage\n\n**Effect** You break off a piece of the *bloodgorger scythe* inside your enemy to feed on their blood and sprout into a new tree. The target takes 1 bleed damage at the end of their turn. Each failure to stop the bleeding increases this bleed damage by 1 as a small scythe tree grows from the wound, to a maximum of 3 persistent bleed damage.\n\n---\n\n**Activate—Sapling Slash** 1 (concentrate)\n\n**Requirements** A target has a piece of the *bloodgorger scythe* broken off inside them and has failed to recover from the persistent bleed damage for 3 consecutive turns\n\n**Effect** The sprouted scythe tree grows large enough to be commanded. It makes a melee Strike against the target or a creature adjacent to the target, with a +18 to hit and dealing 1d10 slashing damage.\n\n---\n\n**Craft Requirements** The initial raw materials must include branches and roots from a scythe tree.",
+    "descr": "This *+1 striking scythe* is made from the cruel, blackened branches of the carnivorous scythe tree, which hungrily drink up spilled blood.\n\n---\n\n**Craft Requirements** The initial raw materials must include branches and roots from a scythe tree.",
     "data": {
       "level": 7,
       "rarity": "uncommon",
@@ -1058,6 +1167,28 @@
         {
           "label": "trip",
           "slug": "trip"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Root in Blood",
+          "text": "**Requirements** Your last action was a successful Strike with this weapon and your target isn't currently taking any persistent bleed damage\n\n**Effect** You break off a piece of the *bloodgorger scythe* inside your enemy to feed on their blood and sprout into a new tree. The target takes 1 bleed damage at the end of their turn. Each failure to stop the bleeding increases this bleed damage by 1 as a small scythe tree grows from the wound, to a maximum of 3 persistent bleed damage.\n\n---",
+          "effect": "You break off a piece of the *bloodgorger scythe* inside your enemy to feed on their blood and sprout into a new tree. The target takes 1 bleed damage at the end of their turn. Each failure to stop the bleeding increases this bleed damage by 1 as a small scythe tree grows from the wound, to a maximum of 3 persistent bleed damage.\n\n---",
+          "description": "**Requirements** Your last action was a successful Strike with this weapon and your target isn't currently taking any persistent bleed damage"
+        },
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Sapling Slash",
+          "text": "**Requirements** A target has a piece of the *bloodgorger scythe* broken off inside them and has failed to recover from the persistent bleed damage for 3 consecutive turns\n\n**Effect** The sprouted scythe tree grows large enough to be commanded. It makes a melee Strike against the target or a creature adjacent to the target, with a +18 to hit and dealing 1d10 slashing damage.\n\n---",
+          "effect": "The sprouted scythe tree grows large enough to be commanded. It makes a melee Strike against the target or a creature adjacent to the target, with a +18 to hit and dealing 1d10 slashing damage.\n\n---",
+          "description": "**Requirements** A target has a piece of the *bloodgorger scythe* broken off inside them and has failed to recover from the persistent bleed damage for 3 consecutive turns"
         }
       ]
     },
@@ -1090,7 +1221,7 @@
     "systemVersion": "1.2.10",
     "name": "Bristling Spines (Greater)",
     "slug": "bristling-spines-greater-howl-of-the-wild",
-    "descr": "Your exposed skin is covered in fine, needle-like hairs that you can flick into the eyes of enemies.\n\n---\n\n**Activate—Urticating Burst** 2 (manipulate)\n\n**Frequency** once per day\n\n**Effect** You flick tiny spines in a 15-foot cone, dealing 5d8 piercing damage to all creatures in the area with a basic Reflex DC 23 save. On a critical failure, the creature is also Blinded until the end of their next turn.",
+    "descr": "Your exposed skin is covered in fine, needle-like hairs that you can flick into the eyes of enemies.\n\n---",
     "data": {
       "level": 7,
       "rarity": "common",
@@ -1115,6 +1246,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Urticating Burst",
+          "text": "**Frequency** once per day\n\n**Effect** You flick tiny spines in a 15-foot cone, dealing 5d8 piercing damage to all creatures in the area with a basic Reflex DC 23 save. On a critical failure, the creature is also Blinded until the end of their next turn.",
+          "effect": "You flick tiny spines in a 15-foot cone, dealing 5d8 piercing damage to all creatures in the area with a basic Reflex DC 23 save. On a critical failure, the creature is also Blinded until the end of their next turn.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -1146,7 +1289,7 @@
     "systemVersion": "1.2.10",
     "name": "Bristling Spines (Lesser)",
     "slug": "bristling-spines-lesser-howl-of-the-wild",
-    "descr": "Your exposed skin is covered in fine, needle-like hairs that you can flick into the eyes of enemies.\n\n---\n\n**Activate—Urticating Burst** 2 (manipulate)\n\n**Frequency** once per day\n\n**Effect** You flick tiny spines in a 15-foot cone, dealing 1d8 piercing damage to all creatures in the area with a basic Reflex DC 15 save. On a critical failure, the creature is also Dazzled until the end of their next turn.",
+    "descr": "Your exposed skin is covered in fine, needle-like hairs that you can flick into the eyes of enemies.\n\n---",
     "data": {
       "level": 1,
       "rarity": "common",
@@ -1171,6 +1314,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Urticating Burst",
+          "text": "**Frequency** once per day\n\n**Effect** You flick tiny spines in a 15-foot cone, dealing 1d8 piercing damage to all creatures in the area with a basic Reflex DC 15 save. On a critical failure, the creature is also Dazzled until the end of their next turn.",
+          "effect": "You flick tiny spines in a 15-foot cone, dealing 1d8 piercing damage to all creatures in the area with a basic Reflex DC 15 save. On a critical failure, the creature is also Dazzled until the end of their next turn.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -1202,7 +1357,7 @@
     "systemVersion": "1.2.10",
     "name": "Bristling Spines (Moderate)",
     "slug": "bristling-spines-moderate-howl-of-the-wild",
-    "descr": "Your exposed skin is covered in fine, needle-like hairs that you can flick into the eyes of enemies.\n\n---\n\n**Activate—Urticating Burst** 2 (manipulate)\n\n**Frequency** once per day\n\n**Effect** You flick tiny spines in a 15-foot cone, dealing 2d8 piercing damage to all creatures in the area with a basic Reflex DC 18 save. On a critical failure, the creature is also Dazzled until the end of their next turn.",
+    "descr": "Your exposed skin is covered in fine, needle-like hairs that you can flick into the eyes of enemies.\n\n---",
     "data": {
       "level": 3,
       "rarity": "common",
@@ -1227,6 +1382,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Urticating Burst",
+          "text": "**Frequency** once per day\n\n**Effect** You flick tiny spines in a 15-foot cone, dealing 2d8 piercing damage to all creatures in the area with a basic Reflex DC 18 save. On a critical failure, the creature is also Dazzled until the end of their next turn.",
+          "effect": "You flick tiny spines in a 15-foot cone, dealing 2d8 piercing damage to all creatures in the area with a basic Reflex DC 18 save. On a critical failure, the creature is also Dazzled until the end of their next turn.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -1258,7 +1425,7 @@
     "systemVersion": "1.2.10",
     "name": "Broken Ram's Thorn",
     "slug": "broken-ram-s-thorn-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell (add 1 action)\n\n---\n\nThe thorny growths on a rosethorn ram's horns break off into jagged pieces when these animals fight. When used to enhance the two-action version of a [Howling Blizzard](/spell/howling-blizzard-player-core) spell, these thorns cause the squares directly adjacent to every creature within the spell's area of effect to become littered with icy caltrops. The first creature that moves into each affected square must succeed at an Acrobatics check with a DC equal to spell's save DC or take an amount of cold damage equal to the spell's rank. When a creature takes damage from the icy caltrops, enough are damaged that other creatures moving into that square are safe.",
+    "descr": "---\n\nThe thorny growths on a rosethorn ram's horns break off into jagged pieces when these animals fight. When used to enhance the two-action version of a [Howling Blizzard](/spell/howling-blizzard-player-core) spell, these thorns cause the squares directly adjacent to every creature within the spell's area of effect to become littered with icy caltrops. The first creature that moves into each affected square must succeed at an Acrobatics check with a DC equal to spell's save DC or take an amount of cold damage equal to the spell's rank. When a creature takes damage from the icy caltrops, enough are damaged that other creatures moving into that square are safe.",
     "data": {
       "level": 9,
       "rarity": "common",
@@ -1284,7 +1451,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "(add 1 action)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1314,7 +1485,7 @@
     "systemVersion": "1.2.10",
     "name": "Camouflaging Chromatophores (Greater)",
     "slug": "camouflaging-chromatophores-greater-howl-of-the-wild",
-    "descr": "Special cells in your skin can change color to help you blend in with your environment. You gain a +2 item bonus to Stealth checks to [Sneak](/action/sneak-player-core) and [Hide](/action/hide-player-core).\n\n---\n\n**Activate—Background Adaptation** 2 (concentrate)\n\n**Frequency** once per hour\n\n**Effect** For 1 minute, you can Hide without needing cover or concealment to do so. This doesn't allow you to Sneak without ending your movement in cover or concealment, however, as your skin's attempts to match the background as you move produce noticeable rippling waves of color.",
+    "descr": "Special cells in your skin can change color to help you blend in with your environment. You gain a +2 item bonus to Stealth checks to [Sneak](/action/sneak-player-core) and [Hide](/action/hide-player-core).\n\n---",
     "data": {
       "level": 9,
       "rarity": "uncommon",
@@ -1339,6 +1510,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Background Adaptation",
+          "text": "**Frequency** once per hour\n\n**Effect** For 1 minute, you can Hide without needing cover or concealment to do so. This doesn't allow you to Sneak without ending your movement in cover or concealment, however, as your skin's attempts to match the background as you move produce noticeable rippling waves of color.",
+          "effect": "For 1 minute, you can Hide without needing cover or concealment to do so. This doesn't allow you to Sneak without ending your movement in cover or concealment, however, as your skin's attempts to match the background as you move produce noticeable rippling waves of color.",
+          "description": "**Frequency** once per hour"
         }
       ]
     },
@@ -1370,7 +1553,7 @@
     "systemVersion": "1.2.10",
     "name": "Camouflaging Chromatophores (Lesser)",
     "slug": "camouflaging-chromatophores-lesser-howl-of-the-wild",
-    "descr": "Special cells in your skin can change color to help you blend in with your environment. You gain a +1 item bonus to Stealth checks to [Sneak](/action/sneak-player-core) and [Hide](/action/hide-player-core).\n\n---\n\n**Activate—Background Adaptation** 2 (concentrate)\n\n**Frequency** once per day\n\n**Effect** For 1 minute, you can Hide without needing cover or concealment to do so. This doesn't allow you to Sneak without ending your movement in cover or concealment, however, as your skin's attempts to match the background as you move produce noticeable rippling waves of color.",
+    "descr": "Special cells in your skin can change color to help you blend in with your environment. You gain a +1 item bonus to Stealth checks to [Sneak](/action/sneak-player-core) and [Hide](/action/hide-player-core).\n\n---",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -1395,6 +1578,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Background Adaptation",
+          "text": "**Frequency** once per day\n\n**Effect** For 1 minute, you can Hide without needing cover or concealment to do so. This doesn't allow you to Sneak without ending your movement in cover or concealment, however, as your skin's attempts to match the background as you move produce noticeable rippling waves of color.",
+          "effect": "For 1 minute, you can Hide without needing cover or concealment to do so. This doesn't allow you to Sneak without ending your movement in cover or concealment, however, as your skin's attempts to match the background as you move produce noticeable rippling waves of color.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -1462,7 +1657,7 @@
     "systemVersion": "1.2.10",
     "name": "Catoblepas Maul",
     "slug": "catoblepas-maul-howl-of-the-wild",
-    "descr": "The putrid stench emanating from the catoblepas antlers adorning this *+2 greater striking Greater Crushing maul* interferes with your sense of smell. While wielding this weapon, you gain a +2 item bonus to saves against olfactory effects.\n\n---\n\n**Activate—Vile Stench** 1 (manipulate, olfactory)\n\n**Requirements** Your last action was a successful Strike with the *catoblepas maul*\n\n**Effect** The target must succeed at a Fortitude DC 30 save or become [Sickened 1](/condition/sickened-player-core) (plus [Slowed 1](/condition/slowed-player-core) for as long as it's sickened on a critical failure). A creature that succeeds at its save becomes temporarily immune to Vile Stench for 1 minute.\n\n---\n\n**Craft Requirements** The initial raw materials must include antlers from a catoblepas.",
+    "descr": "The putrid stench emanating from the catoblepas antlers adorning this *+2 greater striking Greater Crushing maul* interferes with your sense of smell. While wielding this weapon, you gain a +2 item bonus to saves against olfactory effects.\n\n---\n\n**Craft Requirements** The initial raw materials must include antlers from a catoblepas.",
     "data": {
       "level": 13,
       "rarity": "uncommon",
@@ -1492,6 +1687,19 @@
         {
           "label": "shove",
           "slug": "shove"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate",
+            "olfactory"
+          ],
+          "name": "Vile Stench",
+          "text": "**Requirements** Your last action was a successful Strike with the *catoblepas maul*\n\n**Effect** The target must succeed at a Fortitude DC 30 save or become [Sickened 1](/condition/sickened-player-core) (plus [Slowed 1](/condition/slowed-player-core) for as long as it's sickened on a critical failure). A creature that succeeds at its save becomes temporarily immune to Vile Stench for 1 minute.\n\n---",
+          "effect": "The target must succeed at a Fortitude DC 30 save or become [Sickened 1](/condition/sickened-player-core) (plus [Slowed 1](/condition/slowed-player-core) for as long as it's sickened on a critical failure). A creature that succeeds at its save becomes temporarily immune to Vile Stench for 1 minute.\n\n---",
+          "description": "**Requirements** Your last action was a successful Strike with the *catoblepas maul*"
         }
       ]
     },
@@ -1524,7 +1732,7 @@
     "systemVersion": "1.2.10",
     "name": "Cauthooj Bagpipes",
     "slug": "cauthooj-bagpipes-howl-of-the-wild",
-    "descr": "The main portion of this set of bagpipes is fashioned from the dried skin of a cauthooj, with the feathers still attached. The bird's vocal cords are crafted into the instrument's reeds. The pipes grant a +2 item bonus to Performance checks while playing music with them.\n\n---\n\n**Activate—Disorienting Fugue** 2(auditory, incapacitation, manipulation, mental)\n\n**Frequency** once per hour\n\n**Effect** You play several notes on the pipes, quickly altering their pitch and tone. Each creature within a 20-foot emanation must attempt a Will DC 31 save to resist the song. Creatures that attempt this save become temporarily immune to Disorienting Fugue for 1 minute.\n\n---\n\n**Critical Success** The target is unaffected and its temporary immunity to Disorienting Fugue increases to 1 hour.\n\n**Success** The target is unaffected.\n\n**Failure** The target is [Confused](/condition/confused-player-core) for 1 round.\n\n**Critical Failure** The target is confused for 1 round and immediately attacks itself (in the normal fashion for attacking oneself while confused). This Strike doesn't give the creature a flat check to recover from the confusion.\n\n---\n\n**Activate—Throw Song** R (auditory, mental)\n\n**Trigger** A creature within 30 feet attempts a melee Strike against you or an ally\n\n**Effect** You let loose a staccato chirp from the pipes that appears to come from somewhere else. The triggering creature must attempt a Will DC 31 save. On a failure, the creature redirects the Strike to another creature of your choice within reach of the melee Strike. If no other creatures are within range, the affected creature instead takes a –2 penalty to the Strike.\n\n---\n\n**Craft Requirements** The initial raw materials must include the skin and vocal cords of a cauthooj.",
+    "descr": "The main portion of this set of bagpipes is fashioned from the dried skin of a cauthooj, with the feathers still attached. The bird's vocal cords are crafted into the instrument's reeds. The pipes grant a +2 item bonus to Performance checks while playing music with them.\n\n---\n\n**Craft Requirements** The initial raw materials must include the skin and vocal cords of a cauthooj.",
     "data": {
       "level": 13,
       "rarity": "uncommon",
@@ -1539,6 +1747,28 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "name": "Disorienting Fugue",
+          "text": "(auditory, incapacitation, manipulation, mental)\n\n**Frequency** once per hour\n\n**Effect** You play several notes on the pipes, quickly altering their pitch and tone. Each creature within a 20-foot emanation must attempt a Will DC 31 save to resist the song. Creatures that attempt this save become temporarily immune to Disorienting Fugue for 1 minute.\n\n---\n\n**Critical Success** The target is unaffected and its temporary immunity to Disorienting Fugue increases to 1 hour.\n\n**Success** The target is unaffected.\n\n**Failure** The target is [Confused](/condition/confused-player-core) for 1 round.\n\n**Critical Failure** The target is confused for 1 round and immediately attacks itself (in the normal fashion for attacking oneself while confused). This Strike doesn't give the creature a flat check to recover from the confusion.\n\n---",
+          "effect": "You play several notes on the pipes, quickly altering their pitch and tone. Each creature within a 20-foot emanation must attempt a Will DC 31 save to resist the song. Creatures that attempt this save become temporarily immune to Disorienting Fugue for 1 minute.\n\n---\n\n**Critical Success** The target is unaffected and its temporary immunity to Disorienting Fugue increases to 1 hour.\n\n**Success** The target is unaffected.\n\n**Failure** The target is [Confused](/condition/confused-player-core) for 1 round.\n\n**Critical Failure** The target is confused for 1 round and immediately attacks itself (in the normal fashion for attacking oneself while confused). This Strike doesn't give the creature a flat check to recover from the confusion.\n\n---",
+          "description": "(auditory, incapacitation, manipulation, mental)\n\n**Frequency** once per hour"
+        },
+        {
+          "actions": "reaction",
+          "traits": [
+            "auditory",
+            "mental"
+          ],
+          "name": "Throw Song",
+          "text": "**Trigger** A creature within 30 feet attempts a melee Strike against you or an ally\n\n**Effect** You let loose a staccato chirp from the pipes that appears to come from somewhere else. The triggering creature must attempt a Will DC 31 save. On a failure, the creature redirects the Strike to another creature of your choice within reach of the melee Strike. If no other creatures are within range, the affected creature instead takes a –2 penalty to the Strike.\n\n---",
+          "effect": "You let loose a staccato chirp from the pipes that appears to come from somewhere else. The triggering creature must attempt a Will DC 31 save. On a failure, the creature redirects the Strike to another creature of your choice within reach of the melee Strike. If no other creatures are within range, the affected creature instead takes a –2 penalty to the Strike.\n\n---",
+          "trigger": "A creature within 30 feet attempts a melee Strike against you or an ally",
+          "triggerBeforeDescription": true,
+          "description": ""
         }
       ]
     },
@@ -1569,7 +1799,7 @@
     "systemVersion": "1.2.10",
     "name": "Chaos Falcon Feather",
     "slug": "chaos-falcon-feather-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell\n\n---\n\nWhen used as catalysts, *chaos falcon feathers* lend flexibility to spells that deal with elemental energy. For the duration of a catalyzed [Resist Energy](/spell/resist-energy-player-core) spell, you can Sustain the Spell on an adjacent target, touching them and changing the type of energy to which they have resistance. This reduces the remaining duration of the spell by 1 minute; if the spell has less than a minute remaining, it reduces the duration to 1 round.",
+    "descr": "---\n\nWhen used as catalysts, *chaos falcon feathers* lend flexibility to spells that deal with elemental energy. For the duration of a catalyzed [Resist Energy](/spell/resist-energy-player-core) spell, you can Sustain the Spell on an adjacent target, touching them and changing the type of energy to which they have resistance. This reduces the remaining duration of the spell by 1 minute; if the spell has less than a minute remaining, it reduces the duration to 1 round.",
     "data": {
       "level": 3,
       "rarity": "common",
@@ -1595,7 +1825,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1626,7 +1860,7 @@
     "systemVersion": "1.2.10",
     "name": "Chimera Flail",
     "slug": "chimera-flail-howl-of-the-wild",
-    "descr": "The three spiked heads of this *+1 striking war flail* are fashioned to resemble the heads of a chimera. Preserved fragments of bone from the creature are fused with the metal of each head, replacing the typical weight at the end of the chain. Each head has been shrunk and preserved for use. You can have only one head slotted at a time and can use only the ability of the currently slotted head, while the other two hang off the pommel. Switching between heads requires an [Interact](/action/interact-player-core) action.\n\n---\n\n**Dragon** This head does piercing damage instead of the normal bludgeoning damage, plus 1 damage type based on the magical tradition of the chimera's dragon head. (**Arcane** force; **Divine** spirit; **Occult** mental; **Primal** acid, cold, electricity, fire, sonic, or poison, chosen at item creation)\n\n**Activate—Bursting Breath** 1 (concentrate)\n\n**Frequency** once per 10 minutes\n\n**Requirements** your last action was a successful Strike\n\n**Effect** You tap into the residual energy of the dragon head and release it as a small breath explosion. This does 2d6 untyped damage of the dragon's additional damage type in a 10-foot burst centered around one corner of the space the target occupies. After using this, the dragon head attachment loses its additional damage type. You can spend 10 minutes to rest and recharge the head.\n\n---\n\n**Lion** This head does piercing damage instead of the normal bludgeoning damage, plus 1 additional precision damage if the target is [Off Guard](/condition/off-guard-player-core).\n\n**Activate—Pouncing Whirl** 2 (concentrate)\n\n**Frequency** once per 10 minutes\n\n**Requirements** you have not made an attack this turn\n\n**Effect** You tap into the predator speed of a lion. You Stride up to half your Speed and make a Strike against a target. If that creature is within reach of an ally, regardless if they would normally provide flanking or not, that creature is considered off-guard to your Strike. Your additional precision damage against an off-guard creature increases to 1d4. After using this, the lion head loses its additional precision damage. You can spend 10 minutes to rest and recharge the head.\n\n---\n\n**Goat** If your last action was to Stride at least half your Speed, this does an additional 1d4 force damage.\n\n**Activate—Charging Horns** 3 (concentrate)\n\n**Frequency** once per 10 minutes\n\n**Effect** You swing the hammer around with the full force of a charging ram. Make a Strike against up to three enemies within your reach. The first two Strikes are at your current attack bonus, and the third is with the normal attack penalty. On a successful hit, the target takes an additional 1d6 force damage and is pushed back 5 feet, or 10 feet on a critical hit. After using this, the goat head loses its additional force damage. You can spend 10 minutes to rest and recharge the head.\n\n---\n\n**Craft Requirements** The initial raw materials must include all three heads from a chimera.",
+    "descr": "The three spiked heads of this *+1 striking war flail* are fashioned to resemble the heads of a chimera. Preserved fragments of bone from the creature are fused with the metal of each head, replacing the typical weight at the end of the chain. Each head has been shrunk and preserved for use. You can have only one head slotted at a time and can use only the ability of the currently slotted head, while the other two hang off the pommel. Switching between heads requires an [Interact](/action/interact-player-core) action.\n\n---\n\n**Dragon** This head does piercing damage instead of the normal bludgeoning damage, plus 1 damage type based on the magical tradition of the chimera's dragon head. (**Arcane** force; **Divine** spirit; **Occult** mental; **Primal** acid, cold, electricity, fire, sonic, or poison, chosen at item creation)\n\n**Craft Requirements** The initial raw materials must include all three heads from a chimera.",
     "data": {
       "level": 9,
       "rarity": "uncommon",
@@ -1661,6 +1895,38 @@
         {
           "label": "trip",
           "slug": "trip"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Bursting Breath",
+          "text": "**Frequency** once per 10 minutes\n\n**Requirements** your last action was a successful Strike\n\n**Effect** You tap into the residual energy of the dragon head and release it as a small breath explosion. This does 2d6 untyped damage of the dragon's additional damage type in a 10-foot burst centered around one corner of the space the target occupies. After using this, the dragon head attachment loses its additional damage type. You can spend 10 minutes to rest and recharge the head.\n\n---\n\n**Lion** This head does piercing damage instead of the normal bludgeoning damage, plus 1 additional precision damage if the target is [Off Guard](/condition/off-guard-player-core).",
+          "effect": "You tap into the residual energy of the dragon head and release it as a small breath explosion. This does 2d6 untyped damage of the dragon's additional damage type in a 10-foot burst centered around one corner of the space the target occupies. After using this, the dragon head attachment loses its additional damage type. You can spend 10 minutes to rest and recharge the head.\n\n---\n\n**Lion** This head does piercing damage instead of the normal bludgeoning damage, plus 1 additional precision damage if the target is [Off Guard](/condition/off-guard-player-core).",
+          "description": "**Frequency** once per 10 minutes\n\n**Requirements** your last action was a successful Strike"
+        },
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Pouncing Whirl",
+          "text": "**Frequency** once per 10 minutes\n\n**Requirements** you have not made an attack this turn\n\n**Effect** You tap into the predator speed of a lion. You Stride up to half your Speed and make a Strike against a target. If that creature is within reach of an ally, regardless if they would normally provide flanking or not, that creature is considered off-guard to your Strike. Your additional precision damage against an off-guard creature increases to 1d4. After using this, the lion head loses its additional precision damage. You can spend 10 minutes to rest and recharge the head.\n\n---\n\n**Goat** If your last action was to Stride at least half your Speed, this does an additional 1d4 force damage.",
+          "effect": "You tap into the predator speed of a lion. You Stride up to half your Speed and make a Strike against a target. If that creature is within reach of an ally, regardless if they would normally provide flanking or not, that creature is considered off-guard to your Strike. Your additional precision damage against an off-guard creature increases to 1d4. After using this, the lion head loses its additional precision damage. You can spend 10 minutes to rest and recharge the head.\n\n---\n\n**Goat** If your last action was to Stride at least half your Speed, this does an additional 1d4 force damage.",
+          "description": "**Frequency** once per 10 minutes\n\n**Requirements** you have not made an attack this turn"
+        },
+        {
+          "actions": "three",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Charging Horns",
+          "text": "**Frequency** once per 10 minutes\n\n**Effect** You swing the hammer around with the full force of a charging ram. Make a Strike against up to three enemies within your reach. The first two Strikes are at your current attack bonus, and the third is with the normal attack penalty. On a successful hit, the target takes an additional 1d6 force damage and is pushed back 5 feet, or 10 feet on a critical hit. After using this, the goat head loses its additional force damage. You can spend 10 minutes to rest and recharge the head.\n\n---",
+          "effect": "You swing the hammer around with the full force of a charging ram. Make a Strike against up to three enemies within your reach. The first two Strikes are at your current attack bonus, and the third is with the normal attack penalty. On a successful hit, the target takes an additional 1d6 force damage and is pushed back 5 feet, or 10 feet on a critical hit. After using this, the goat head loses its additional force damage. You can spend 10 minutes to rest and recharge the head.\n\n---",
+          "description": "**Frequency** once per 10 minutes"
         }
       ]
     },
@@ -1793,7 +2059,7 @@
     "systemVersion": "1.2.10",
     "name": "Constricting Meteor",
     "slug": "constricting-meteor-howl-of-the-wild",
-    "descr": "The weights of this *+1 striking meteor hammer* are shaped like snake heads, and anaconda scales adorn the chain.\n\n---\n\n**Activate—Coiling Chain** 1 (concentrate)\n\n**Requirements** Your last action was a successful melee Strike or [Trip](/action/trip-player-core) with the *constricting meteor*\n\n**Effect** The chain of the meteor hammer wraps around the target and squeezes. Attempt an Athletics check to [Grapple](/action/grapple-player-core) the creature with a +1 item bonus. In addition to being [Grabbed](/condition/grabbed-player-core) on a success, the target takes 1d10+7 bludgeoning damage.\n\n---\n\n**Craft Requirements** The initial raw materials must include the scales of a giant anaconda.",
+    "descr": "The weights of this *+1 striking meteor hammer* are shaped like snake heads, and anaconda scales adorn the chain.\n\n---\n\n**Craft Requirements** The initial raw materials must include the scales of a giant anaconda.",
     "data": {
       "level": 8,
       "rarity": "uncommon",
@@ -1833,6 +2099,18 @@
         {
           "label": "trip",
           "slug": "trip"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Coiling Chain",
+          "text": "**Requirements** Your last action was a successful melee Strike or [Trip](/action/trip-player-core) with the *constricting meteor*\n\n**Effect** The chain of the meteor hammer wraps around the target and squeezes. Attempt an Athletics check to [Grapple](/action/grapple-player-core) the creature with a +1 item bonus. In addition to being [Grabbed](/condition/grabbed-player-core) on a success, the target takes 1d10+7 bludgeoning damage.\n\n---",
+          "effect": "The chain of the meteor hammer wraps around the target and squeezes. Attempt an Athletics check to [Grapple](/action/grapple-player-core) the creature with a +1 item bonus. In addition to being [Grabbed](/condition/grabbed-player-core) on a success, the target takes 1d10+7 bludgeoning damage.\n\n---",
+          "description": "**Requirements** Your last action was a successful melee Strike or [Trip](/action/trip-player-core) with the *constricting meteor*"
         }
       ]
     },
@@ -1979,7 +2257,7 @@
     "systemVersion": "1.2.10",
     "name": "Dischoran Rubble",
     "slug": "dischoran-rubble-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell (add 1 action)\n\n---\n\nRock fragments exposed to any dischoran's sonic blasts can sometimes retain a portion of the attack's energy, trembling slightly whenever they are touched. When you cast [Noise Blast](/spell/noise-blast-player-core) using a piece of *dischoran rubble*, the cacophony reverberates through the targets' forms for 1 round. If a creature that failed or critically failed its initial saving throw moves 10 feet or more on their next turn, it takes an additional 2d10 sonic damage.",
+    "descr": "---\n\nRock fragments exposed to any dischoran's sonic blasts can sometimes retain a portion of the attack's energy, trembling slightly whenever they are touched. When you cast [Noise Blast](/spell/noise-blast-player-core) using a piece of *dischoran rubble*, the cacophony reverberates through the targets' forms for 1 round. If a creature that failed or critically failed its initial saving throw moves 10 feet or more on their next turn, it takes an additional 2d10 sonic damage.",
     "data": {
       "level": 4,
       "rarity": "common",
@@ -2005,7 +2283,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "(add 1 action)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2093,7 +2375,7 @@
     "systemVersion": "1.2.10",
     "name": "Dweomerveil",
     "slug": "dweomerveil-howl-of-the-wild",
-    "descr": "This soft covering for the mouth and nose is made from the sleek fur of a dweomercat and is fastened with two gnarled teeth of the same beast. Each day during daily preparations, you must brush and oil the veil. At the conclusion of the activity, select one tradition of magic (arcane, divine, occult, or primal). You gain a +1 item bonus to all saves against magic from that tradition until your next daily preparations.\n\n---\n\n**Activate—Dimension Leap** R (concentration, teleportation)\n\n**Frequency** once per day\n\n**Trigger** You succeed at a saving throw against a spell from the chosen tradition\n\n**Effect** Your veil billows out and you disappear behind it. You use the traces of dweomercat magic to teleport yourself instantly to any unoccupied square within 30 feet. If you critically succeeded at the triggering save, you can instead teleport within 45 feet.\n\n---\n\n**Craft Requirements** The initial raw materials must include the hide and teeth of a dweomercat.",
+    "descr": "This soft covering for the mouth and nose is made from the sleek fur of a dweomercat and is fastened with two gnarled teeth of the same beast. Each day during daily preparations, you must brush and oil the veil. At the conclusion of the activity, select one tradition of magic (arcane, divine, occult, or primal). You gain a +1 item bonus to all saves against magic from that tradition until your next daily preparations.\n\n---\n\n**Craft Requirements** The initial raw materials must include the hide and teeth of a dweomercat.",
     "data": {
       "level": 8,
       "rarity": "rare",
@@ -2113,6 +2395,17 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "reaction",
+          "name": "Dimension Leap",
+          "text": "(concentration, teleportation)\n\n**Frequency** once per day\n\n**Trigger** You succeed at a saving throw against a spell from the chosen tradition\n\n**Effect** Your veil billows out and you disappear behind it. You use the traces of dweomercat magic to teleport yourself instantly to any unoccupied square within 30 feet. If you critically succeeded at the triggering save, you can instead teleport within 45 feet.\n\n---",
+          "effect": "Your veil billows out and you disappear behind it. You use the traces of dweomercat magic to teleport yourself instantly to any unoccupied square within 30 feet. If you critically succeeded at the triggering save, you can instead teleport within 45 feet.\n\n---",
+          "trigger": "You succeed at a saving throw against a spell from the chosen tradition",
+          "triggerBeforeDescription": false,
+          "description": "(concentration, teleportation)\n\n**Frequency** once per day"
         }
       ]
     },
@@ -2201,7 +2494,7 @@
     "systemVersion": "1.2.10",
     "name": "Essence of Mandragora",
     "slug": "essence-of-mandragora-howl-of-the-wild",
-    "descr": "**Activate** 2 (manipulate)\n\n---\n\nThis poison is extracted carefully from a mandragora's thorny vines in a process that, due to the mandragora's humanoid form, eerily mirrors drawing blood.\n\n**Saving Throw** Fortitude DC 21\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison damage and [Stupefied 1](/condition/stupefied-player-core) (1 round)\n\n**Stage 2** 1d6 poison damage, [Confused](/condition/confused-player-core), and stupefied 1 (1 round)\n\n**Stage 3** 2d6 poison damage, confused, and stupefied 1 (1 round)",
+    "descr": "---\n\nThis poison is extracted carefully from a mandragora's thorny vines in a process that, due to the mandragora's humanoid form, eerily mirrors drawing blood.\n\n**Saving Throw** Fortitude DC 21\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 1d6 poison damage and [Stupefied 1](/condition/stupefied-player-core) (1 round)\n\n**Stage 2** 1d6 poison damage, [Confused](/condition/confused-player-core), and stupefied 1 (1 round)\n\n**Stage 3** 2d6 poison damage, confused, and stupefied 1 (1 round)",
     "data": {
       "level": 4,
       "rarity": "common",
@@ -2232,7 +2525,14 @@
           "label": "poison",
           "slug": "poison"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "two",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2300,7 +2600,7 @@
     "systemVersion": "1.2.10",
     "name": "Flash Beetle Lantern",
     "slug": "flash-beetle-lantern-howl-of-the-wild",
-    "descr": "This unassuming hooded lantern contains a mass of flash beetle eggs suspended in a magical solution. It sheds light on a 45-foot radius (and dim light in the next 45 feet).\n\n---\n\n**Activate—Spotlight** 1 (light, manipulate, visual)\n\n**Frequency** once per day\n\n**Effect** Flipping a concealed lever in the lantern's handle triggers a small current to pass through the solution. The eggs brighten and emit a series of brilliant flashes in a 30-foot cone. Each creature in the area of effect must attempt a Fortitude DC 18 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Failure** The creature is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Critical Failure** The creature is blinded for 1 minute.\n\n---\n\n**Craft Requirements** The initial raw materials must include the eggs of a flash beetle.",
+    "descr": "This unassuming hooded lantern contains a mass of flash beetle eggs suspended in a magical solution. It sheds light on a 45-foot radius (and dim light in the next 45 feet).\n\n---\n\n**Craft Requirements** The initial raw materials must include the eggs of a flash beetle.",
     "data": {
       "level": 3,
       "rarity": "uncommon",
@@ -2315,6 +2615,20 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "light",
+            "manipulate",
+            "visual"
+          ],
+          "name": "Spotlight",
+          "text": "**Frequency** once per day\n\n**Effect** Flipping a concealed lever in the lantern's handle triggers a small current to pass through the solution. The eggs brighten and emit a series of brilliant flashes in a 30-foot cone. Each creature in the area of effect must attempt a Fortitude DC 18 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Failure** The creature is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Critical Failure** The creature is blinded for 1 minute.\n\n---",
+          "effect": "Flipping a concealed lever in the lantern's handle triggers a small current to pass through the solution. The eggs brighten and emit a series of brilliant flashes in a 30-foot cone. Each creature in the area of effect must attempt a Fortitude DC 18 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Dazzled](/condition/dazzled-player-core) for 1 round.\n\n**Failure** The creature is [Blinded](/condition/blinded-player-core) for 1 round.\n\n**Critical Failure** The creature is blinded for 1 minute.\n\n---",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -2381,7 +2695,7 @@
     "systemVersion": "1.2.10",
     "name": "Frogskin Tincture",
     "slug": "frogskin-tincture-howl-of-the-wild",
-    "descr": "**Activate** A (manipulate)\n\n---\n\nOnce you imbibe this bitter elixir, your skin exudes a toxin for 1 hour, affecting any creature that hits you with a jaws Strike or other bite attack. If you are Swallowed Whole by another creature, they are automatically exposed to the poison every round and take a –2 penalty to their saving throw against it.\n\n**Frogskin Tincture Poison** (poison)\n\n**Saving Throw** Fortitude DC 22\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d4 poison damage (1 round)\n\n**Stage 2** 2d6 poison damage and [Enfeebled 2](/condition/enfeebled-player-core) (1 round)\n\n**Stage 3** 3d6 poison damage, Enfeebled 3, and [Sickened 1](/condition/sickened-player-core) (1 round)",
+    "descr": "---\n\nOnce you imbibe this bitter elixir, your skin exudes a toxin for 1 hour, affecting any creature that hits you with a jaws Strike or other bite attack. If you are Swallowed Whole by another creature, they are automatically exposed to the poison every round and take a –2 penalty to their saving throw against it.\n\n**Frogskin Tincture Poison** (poison)\n\n**Saving Throw** Fortitude DC 22\n\n**Maximum Duration** 6 rounds\n\n**Stage 1** 2d4 poison damage (1 round)\n\n**Stage 2** 2d6 poison damage and [Enfeebled 2](/condition/enfeebled-player-core) (1 round)\n\n**Stage 3** 3d6 poison damage, Enfeebled 3, and [Sickened 1](/condition/sickened-player-core) (1 round)",
     "data": {
       "level": 6,
       "rarity": "common",
@@ -2412,7 +2726,14 @@
           "label": "poison",
           "slug": "poison"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2444,7 +2765,7 @@
     "systemVersion": "1.2.10",
     "name": "Fulmination Fang",
     "slug": "fulmination-fang-howl-of-the-wild",
-    "descr": "The stock and barrel of this *+1 striking gun sword* are lined with scales from a storm snake. Their insulating properties grant their wielder some protection against electricity.\n\n---\n\n**Activate—Lightning Rod** R\n\n**Trigger** You take electricity damage\n\n**Effect** You gain resistance 5 to the triggering damage, and the *fulmination fang* crackles with the absorbed energy. You can Interact to change between the gun sword's current usage (melee to ranged, or ranged to melee). The next melee Strike you make with the *fulmination fang* within the next minute deals an additional 1d6 electricity damage. After a minute, the absorbed energy dissipates.\n\nEffect: Lightning Rod\n\n---\n\n**Craft Requirements** The initial raw materials must include the scales of a storm snake.",
+    "descr": "The stock and barrel of this *+1 striking gun sword* are lined with scales from a storm snake. Their insulating properties grant their wielder some protection against electricity.\n\n---\n\n**Craft Requirements** The initial raw materials must include the scales of a storm snake.",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -2481,6 +2802,17 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "reaction",
+          "name": "Lightning Rod",
+          "text": "**Trigger** You take electricity damage\n\n**Effect** You gain resistance 5 to the triggering damage, and the *fulmination fang* crackles with the absorbed energy. You can Interact to change between the gun sword's current usage (melee to ranged, or ranged to melee). The next melee Strike you make with the *fulmination fang* within the next minute deals an additional 1d6 electricity damage. After a minute, the absorbed energy dissipates.\n\nEffect: Lightning Rod\n\n---",
+          "effect": "You gain resistance 5 to the triggering damage, and the *fulmination fang* crackles with the absorbed energy. You can Interact to change between the gun sword's current usage (melee to ranged, or ranged to melee). The next melee Strike you make with the *fulmination fang* within the next minute deals an additional 1d6 electricity damage. After a minute, the absorbed energy dissipates.\n\nEffect: Lightning Rod\n\n---",
+          "trigger": "You take electricity damage",
+          "triggerBeforeDescription": true,
+          "description": ""
         }
       ]
     },
@@ -2550,7 +2882,7 @@
     "systemVersion": "1.2.10",
     "name": "Giant Squid Lash",
     "slug": "giant-squid-lash-howl-of-the-wild",
-    "descr": "Three dried tentacles from a giant squid studded with pufferfish spines have been twisted together to form this robust *+1 Wounding whip*. With a clever flick of the wrist, they can be unfurled into a deadly arc of poisonous barbs.\n\n---\n\n**Activate—Poison Barrage** 2 (manipulate)\n\n**Frequency** once per hour\n\n**Effect** You lash out with the whip's three tentacles in a 15-foot cone. Each creature inside the cone must attempt a basic Fortitude DC 27 save or take 4d6 poison damage. On a critical failure, the creature also takes 1d6 persistent poison damage.\n\n---\n\n**Craft Requirements** The initial raw materials must include three tentacles from a giant squid.",
+    "descr": "Three dried tentacles from a giant squid studded with pufferfish spines have been twisted together to form this robust *+1 Wounding whip*. With a clever flick of the wrist, they can be unfurled into a deadly arc of poisonous barbs.\n\n---\n\n**Craft Requirements** The initial raw materials must include three tentacles from a giant squid.",
     "data": {
       "level": 10,
       "rarity": "uncommon",
@@ -2595,6 +2927,18 @@
         {
           "label": "trip",
           "slug": "trip"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Poison Barrage",
+          "text": "**Frequency** once per hour\n\n**Effect** You lash out with the whip's three tentacles in a 15-foot cone. Each creature inside the cone must attempt a basic Fortitude DC 27 save or take 4d6 poison damage. On a critical failure, the creature also takes 1d6 persistent poison damage.\n\n---",
+          "effect": "You lash out with the whip's three tentacles in a 15-foot cone. Each creature inside the cone must attempt a basic Fortitude DC 27 save or take 4d6 poison damage. On a critical failure, the creature also takes 1d6 persistent poison damage.\n\n---",
+          "description": "**Frequency** once per hour"
         }
       ]
     },
@@ -2942,7 +3286,7 @@
     "systemVersion": "1.2.10",
     "name": "Hippogriff Feather",
     "slug": "hippogriff-feather-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell\n\n---\n\nTawny-colored hippogriff feathers can be up to 2 feet long. Used as a catalyst with a [Ghostly Carrier](/spell/ghostly-carrier-player-core) spell, a single *hippogriff feather* grants the hand semicorporeal wings that increase the hand's maneuverability. The hand has a range of only 60 feet, but its increased agility grants it a +1 status bonus to its AC and Reflex saves.",
+    "descr": "---\n\nTawny-colored hippogriff feathers can be up to 2 feet long. Used as a catalyst with a [Ghostly Carrier](/spell/ghostly-carrier-player-core) spell, a single *hippogriff feather* grants the hand semicorporeal wings that increase the hand's maneuverability. The hand has a range of only 60 feet, but its increased agility grants it a +1 status bonus to its AC and Reflex saves.",
     "data": {
       "level": 3,
       "rarity": "common",
@@ -2968,7 +3312,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -2999,7 +3347,7 @@
     "systemVersion": "1.2.10",
     "name": "Hippopotamus Klar",
     "slug": "hippopotamus-klar-howl-of-the-wild",
-    "descr": "This *+1 striking klar* is fashioned from the skull of a hippopotamus, with one of its canines acting as the blade. While wielding a *hippopotamus klar*, you gain a +1 item bonus to Intimidation checks.\n\n---\n\n**Activate—Engulfing Jaws** 1 (manipulate)\n\n**Frequency** once per day\n\n**Effect** The hippo jaws of the shield open impossibly wide. Make a melee Strike with the klar blade targeting two creatures adjacent to each other. Roll the attack and damage once and apply it to each creature separately. This counts as two attacks for your multiple attack penalty.\n\n---\n\n**Craft Requirements** The initial raw materials must include the entire skull of a hippopotamus.",
+    "descr": "This *+1 striking klar* is fashioned from the skull of a hippopotamus, with one of its canines acting as the blade. While wielding a *hippopotamus klar*, you gain a +1 item bonus to Intimidation checks.\n\n---\n\n**Craft Requirements** The initial raw materials must include the entire skull of a hippopotamus.",
     "data": {
       "level": 10,
       "rarity": "uncommon",
@@ -3027,6 +3375,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Engulfing Jaws",
+          "text": "**Frequency** once per day\n\n**Effect** The hippo jaws of the shield open impossibly wide. Make a melee Strike with the klar blade targeting two creatures adjacent to each other. Roll the attack and damage once and apply it to each creature separately. This counts as two attacks for your multiple attack penalty.\n\n---",
+          "effect": "The hippo jaws of the shield open impossibly wide. Make a melee Strike with the klar blade targeting two creatures adjacent to each other. Roll the attack and damage once and apply it to each creature separately. This counts as two attacks for your multiple attack penalty.\n\n---",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -3059,7 +3419,7 @@
     "systemVersion": "1.2.10",
     "name": "Hive Mother Bottle",
     "slug": "hive-mother-bottle-howl-of-the-wild",
-    "descr": "**Activate** 2 (manipulate)\n\n---\n\nThis bottle is packed with dirt, though the shrunken corpse of an ankhrav hive mother is buried within. When you open the bottle, the effigy of a Huge ankhrav hive mother emerges, burrows up to 20 feet, and then erupts from the ground spraying acid, creating a 15-foot-by-15-foot pit that's 10 feet deep. Creatures standing in this area take 6d6 acid damage and 1d6 persistent acid damage (basic Reflex DC 24 save). A success or critical success means the creature also leaps to safety, landing in the nearest space adjacent to the pit. A failure or critical failure means the creature falls into the pit. Climbing out of the pit requires a successful Athletics DC 22 check.\n\n---\n\n**Craft Requirements** Supply the corpse of an ankhrav hive mother.",
+    "descr": "---\n\nThis bottle is packed with dirt, though the shrunken corpse of an ankhrav hive mother is buried within. When you open the bottle, the effigy of a Huge ankhrav hive mother emerges, burrows up to 20 feet, and then erupts from the ground spraying acid, creating a 15-foot-by-15-foot pit that's 10 feet deep. Creatures standing in this area take 6d6 acid damage and 1d6 persistent acid damage (basic Reflex DC 24 save). A success or critical success means the creature also leaps to safety, landing in the nearest space adjacent to the pit. A failure or critical failure means the creature falls into the pit. Climbing out of the pit requires a successful Athletics DC 22 check.\n\n---\n\n**Craft Requirements** Supply the corpse of an ankhrav hive mother.",
     "data": {
       "level": 8,
       "rarity": "uncommon",
@@ -3085,7 +3445,14 @@
           "label": "expandable",
           "slug": "expandable"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "two",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3116,7 +3483,7 @@
     "systemVersion": "1.2.10",
     "name": "Hodag Leather",
     "slug": "hodag-leather-howl-of-the-wild",
-    "descr": "Dyed green and white and studded with the natural spines of a hodag, this *+1 Deathless studded leather armor* is an imposing sight, especially when its wearer is barreling towards you.\n\n---\n\n**Activate—Hodag Toss** 2 (concentrate, manipulate)\n\n**Effect** You Stride up to your Speed and make a Strike at the end of your movement. If you succeed at your Strike, attempt an Athletics check against the creature's Fortitude DC. On a success, the creature is thrown 10 feet in a straight line in the direction of your choice and lands Prone. If the creature is knocked into a solid object, it takes 1d4 rounds.\n\n---\n\n**Craft Requirements** The initial raw materials must include the hide of a hodag.",
+    "descr": "Dyed green and white and studded with the natural spines of a hodag, this *+1 Deathless studded leather armor* is an imposing sight, especially when its wearer is barreling towards you.\n\n---\n\n**Craft Requirements** The initial raw materials must include the hide of a hodag.",
     "data": {
       "level": 8,
       "rarity": "uncommon",
@@ -3143,6 +3510,19 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Hodag Toss",
+          "text": "**Effect** You Stride up to your Speed and make a Strike at the end of your movement. If you succeed at your Strike, attempt an Athletics check against the creature's Fortitude DC. On a success, the creature is thrown 10 feet in a straight line in the direction of your choice and lands Prone. If the creature is knocked into a solid object, it takes 1d4 rounds.\n\n---",
+          "effect": "You Stride up to your Speed and make a Strike at the end of your movement. If you succeed at your Strike, attempt an Athletics check against the creature's Fortitude DC. On a success, the creature is thrown 10 feet in a straight line in the direction of your choice and lands Prone. If the creature is knocked into a solid object, it takes 1d4 rounds.\n\n---",
+          "description": ""
         }
       ]
     },
@@ -3174,7 +3554,7 @@
     "systemVersion": "1.2.10",
     "name": "Howler Pistol",
     "slug": "howler-pistol-howl-of-the-wild",
-    "descr": "Designed by a gunsmith as a personal challenge, a *howler pistol* strikes a miniature version of the *sonic horn* siege weapon's resonating orb with its hammer to generate beams of sonic energy. A *howler pistol* is a *+1 striking dragon mouth pistol* that deals sonic damage instead of piercing damage and doesn't have the [concussive](/trait/concussive) trait.\n\n---\n\n**Activate—Resonant Shatter** 2 (manipulate)\n\n**Frequency** once per day\n\n**Requirements** The *howler pistol* is loaded\n\n**Effect** You over-torque the *howler pistol*'s hammer to strike the resonating orb harder than normal. The gun fires a concentrated burst of sonic energy that shatters a nearby stone or rock surface, creating a 10-foot burst at a point of impact within the gun's first range increment. Creatures in the area take 5d6 piercing damage (basic Reflex DC 27 save).\n\n---\n\n**Craft Requirements** The initial raw materials must include the powdered horn from a soniphak, processed into a resonating orb.",
+    "descr": "Designed by a gunsmith as a personal challenge, a *howler pistol* strikes a miniature version of the *sonic horn* siege weapon's resonating orb with its hammer to generate beams of sonic energy. A *howler pistol* is a *+1 striking dragon mouth pistol* that deals sonic damage instead of piercing damage and doesn't have the [concussive](/trait/concussive) trait.\n\n---\n\n**Craft Requirements** The initial raw materials must include the powdered horn from a soniphak, processed into a resonating orb.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -3201,6 +3581,18 @@
         {
           "label": "scatter-5",
           "slug": "scatter"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Resonant Shatter",
+          "text": "**Frequency** once per day\n\n**Requirements** The *howler pistol* is loaded\n\n**Effect** You over-torque the *howler pistol*'s hammer to strike the resonating orb harder than normal. The gun fires a concentrated burst of sonic energy that shatters a nearby stone or rock surface, creating a 10-foot burst at a point of impact within the gun's first range increment. Creatures in the area take 5d6 piercing damage (basic Reflex DC 27 save).\n\n---",
+          "effect": "You over-torque the *howler pistol*'s hammer to strike the resonating orb harder than normal. The gun fires a concentrated burst of sonic energy that shatters a nearby stone or rock surface, creating a 10-foot burst at a point of impact within the gun's first range increment. Creatures in the area take 5d6 piercing damage (basic Reflex DC 27 save).\n\n---",
+          "description": "**Frequency** once per day\n\n**Requirements** The *howler pistol* is loaded"
         }
       ]
     },
@@ -3232,7 +3624,7 @@
     "systemVersion": "1.2.10",
     "name": "Hydra Mutagen",
     "slug": "hydra-mutagen-howl-of-the-wild",
-    "descr": "**Activate** A (manipulate)\n\n---\n\nYou sprout a second head, increasing your awareness, intuition, and cognitive ability but also causing your physical capabilities to be impaired as both minds struggle to control a single body.\n\n**Benefit** For 10 minutes, you gain all-around vision and a +3 item bonus to all Intelligence- and Wisdom-based skill checks. Once during the mutagen's effect, if you fail or critically fail a Will saving throw against a mental effect, you can treat the result as one degree of success better.\n\n**Drawback** You are [Clumsy 1](/condition/clumsy-player-core) for 10 minutes.\n\nEffect: Hydra Mutagen",
+    "descr": "---\n\nYou sprout a second head, increasing your awareness, intuition, and cognitive ability but also causing your physical capabilities to be impaired as both minds struggle to control a single body.\n\n**Benefit** For 10 minutes, you gain all-around vision and a +3 item bonus to all Intelligence- and Wisdom-based skill checks. Once during the mutagen's effect, if you fail or critically fail a Will saving throw against a mental effect, you can treat the result as one degree of success better.\n\n**Drawback** You are [Clumsy 1](/condition/clumsy-player-core) for 10 minutes.\n\nEffect: Hydra Mutagen",
     "data": {
       "level": 13,
       "rarity": "common",
@@ -3263,7 +3655,14 @@
           "label": "polymorph",
           "slug": "polymorph"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3295,7 +3694,7 @@
     "systemVersion": "1.2.10",
     "name": "Hydrocannon",
     "slug": "hydrocannon-howl-of-the-wild",
-    "descr": "This *+1 striking hand cannon* is crafted by wrapping the water-producing organ cluster of a grodair around its barrel, eliminating the need for ammunition, though the living tissue must be maintained with 1 sp of specialized nutrient feed each day. If not, its misfire check is Flat DC 10. If you fail this misfire check, the organ bursts, dealing an amount of bludgeoning damage equal to double the number of weapon damage dice to you and rendering the *hydrocannon* broken.\n\n---\n\n**Activate—Tinker Shot** 2 (manipulation)\n\n**Frequency** once per minute\n\n**Effect** You fiddle with the pressure regulator on the *hydrocannon* and then make a ranged Strike with the gun. A successful attack has an additional effect depending on which modular configuration the *hydrocannon* is currently in.\n\n**Bludgeoning** The target is pushed 5 feet away from you; this forced movement is increased to 10 feet on a critical hit.\n\n**Piercing** The target takes a –10-foot circumstance penalty to its Speeds for 1 round.\n\n**Slashing** The target takes 1d6 bleed damage.\n\n---\n\n**Craft Requirements** The initial raw materials must include the extradimensional organ cluster extracted from a grodair. Harvesting the organs of a grodair in this way differs greatly from the normal method; it takes an hour and a successful Arcana DC 22 check. On a critical failure, the organ cluster bursts and deals 4d6 bludgeoning damage to the harvester.",
+    "descr": "This *+1 striking hand cannon* is crafted by wrapping the water-producing organ cluster of a grodair around its barrel, eliminating the need for ammunition, though the living tissue must be maintained with 1 sp of specialized nutrient feed each day. If not, its misfire check is Flat DC 10. If you fail this misfire check, the organ bursts, dealing an amount of bludgeoning damage equal to double the number of weapon damage dice to you and rendering the *hydrocannon* broken.\n\n---\n\n**Craft Requirements** The initial raw materials must include the extradimensional organ cluster extracted from a grodair. Harvesting the organs of a grodair in this way differs greatly from the normal method; it takes an hour and a successful Arcana DC 22 check. On a critical failure, the organ cluster bursts and deals 4d6 bludgeoning damage to the harvester.",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -3322,6 +3721,15 @@
         {
           "label": "modular",
           "slug": "modular"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "name": "Tinker Shot",
+          "text": "(manipulation)\n\n**Frequency** once per minute\n\n**Effect** You fiddle with the pressure regulator on the *hydrocannon* and then make a ranged Strike with the gun. A successful attack has an additional effect depending on which modular configuration the *hydrocannon* is currently in.\n\n**Bludgeoning** The target is pushed 5 feet away from you; this forced movement is increased to 10 feet on a critical hit.\n\n**Piercing** The target takes a –10-foot circumstance penalty to its Speeds for 1 round.\n\n**Slashing** The target takes 1d6 bleed damage.\n\n---",
+          "effect": "You fiddle with the pressure regulator on the *hydrocannon* and then make a ranged Strike with the gun. A successful attack has an additional effect depending on which modular configuration the *hydrocannon* is currently in.\n\n**Bludgeoning** The target is pushed 5 feet away from you; this forced movement is increased to 10 feet on a critical hit.\n\n**Piercing** The target takes a –10-foot circumstance penalty to its Speeds for 1 round.\n\n**Slashing** The target takes 1d6 bleed damage.\n\n---",
+          "description": "(manipulation)\n\n**Frequency** once per minute"
         }
       ]
     },
@@ -3353,7 +3761,7 @@
     "systemVersion": "1.2.10",
     "name": "Kirin Echo Chime",
     "slug": "kirin-echo-chime-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell (add 1 action)\n\n---\n\nThe echo of kirin's song can be captured within this small glass chime, which shatters and calls up a meandering breeze of its own when rung. Adding this catalyst to a [Gust Of Wind](/spell/gust-of-wind-player-core) spell causes any flying creatures that would be pushed by the spell's effects to be pushed 30 feet in a direction of your choice, rather than 30 feet in the direction of the spell.",
+    "descr": "---\n\nThe echo of kirin's song can be captured within this small glass chime, which shatters and calls up a meandering breeze of its own when rung. Adding this catalyst to a [Gust Of Wind](/spell/gust-of-wind-player-core) spell causes any flying creatures that would be pushed by the spell's effects to be pushed 30 feet in a direction of your choice, rather than 30 feet in the direction of the spell.",
     "data": {
       "level": 2,
       "rarity": "common",
@@ -3379,7 +3787,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "(add 1 action)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3410,7 +3822,7 @@
     "systemVersion": "1.2.10",
     "name": "Kushtaka Relic",
     "slug": "kushtaka-relic-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell (add one action)\n\n---\n\nThese relics come in many forms, as the only requirement is they were owned by a human who transformed into a kushtaka. Used as a catalyst for [Spirit Blast](/spell/spirit-blast-player-core) against a target possessing another creature, a *kushtaka relic* attempts to banish such a spirit. A creature who fails the Fortitude save against *spirit blast* has its grasp on its possessed target weakened. The result of the possessed creature's next Will save against the possession effect is improved by one degree. A creature who is possessing another and critically fails the Fortitude save against *spirit blast* takes damage and then is banished from the body it was possessing.",
+    "descr": "---\n\nThese relics come in many forms, as the only requirement is they were owned by a human who transformed into a kushtaka. Used as a catalyst for [Spirit Blast](/spell/spirit-blast-player-core) against a target possessing another creature, a *kushtaka relic* attempts to banish such a spirit. A creature who fails the Fortitude save against *spirit blast* has its grasp on its possessed target weakened. The result of the possessed creature's next Will save against the possession effect is improved by one degree. A creature who is possessing another and critically fails the Fortitude save against *spirit blast* takes damage and then is banished from the body it was possessing.",
     "data": {
       "level": 13,
       "rarity": "common",
@@ -3436,7 +3848,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "(add one action)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3502,7 +3918,7 @@
     "systemVersion": "1.2.10",
     "name": "Leydroth Spellbreaker",
     "slug": "leydroth-spellbreaker-howl-of-the-wild",
-    "descr": "The larynx of a leydroth, a dangerous creature whose roar can unravel magic, is integrated into the firing mechanism of this *+3 greater striking blunderbuss*.\n\n---\n\n**Activate—Dispelling Blast** 2 (manipulate)\n\n**Frequency** once per day\n\n**Effect** The *leydroth spellbreaker* emits a 30-foot cone of dispelling energy. Attempt a single counteract check at +25 against each spell or magical effect in the area, plus one item or effect on each creature in the area, with the effects of Dispel Magic.\n\n---\n\n**Craft Requirements** The initial raw materials must include the larynx of a leydroth.",
+    "descr": "The larynx of a leydroth, a dangerous creature whose roar can unravel magic, is integrated into the firing mechanism of this *+3 greater striking blunderbuss*.\n\n---\n\n**Craft Requirements** The initial raw materials must include the larynx of a leydroth.",
     "data": {
       "level": 17,
       "rarity": "rare",
@@ -3535,6 +3951,18 @@
           "label": "scatter-10",
           "slug": "scatter"
         }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Dispelling Blast",
+          "text": "**Frequency** once per day\n\n**Effect** The *leydroth spellbreaker* emits a 30-foot cone of dispelling energy. Attempt a single counteract check at +25 against each spell or magical effect in the area, plus one item or effect on each creature in the area, with the effects of Dispel Magic.\n\n---",
+          "effect": "The *leydroth spellbreaker* emits a 30-foot cone of dispelling energy. Attempt a single counteract check at +25 against each spell or magical effect in the area, plus one item or effect on each creature in the area, with the effects of Dispel Magic.\n\n---",
+          "description": "**Frequency** once per day"
+        }
       ]
     },
     "attributes": {
@@ -3566,7 +3994,7 @@
     "systemVersion": "1.2.10",
     "name": "Mamlambo Scale",
     "slug": "mamlambo-scale-howl-of-the-wild",
-    "descr": "The faint glow beneath the thick, algae-green scales of this suit of *+1 resilient scale mail* hints at the armor's source.\n\n---\n\n**Activate—Luminous Lure** 1 (concentrate, light, manipulate, mental, visual)\n\n**Frequency** Once per day\n\n**Effect** The *mamlambo scale* sheds dim light in a 20-foot emanation. The light has a duration of 1 minute, but you can extinguish the light with an [Interact](/action/interact-player-core) action. A creature that begins its turn in the light must attempt a Will DC 26 save. Regardless of the save's result, the creature is temporarily immune for 1 hour.\n\nEffect: Luminous Lure\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Slowed 1](/condition/slowed-player-core) for 1 round.\n\n**Failure** The creature is [Fascinated](/condition/fascinated-player-core), and for as long as it remains in the light, it must spend at least 1 of its actions on each of its turns to move closer to the source of the light. If the creature ends its movement adjacent to you, it is slowed 1 until it is out of the light or until you make a Strike against it.\n\n**Critical Failure** As failure, but the creature is also [Off Guard](/condition/off-guard-player-core) against the first Strike you make against it while it is slowed.\n\n---\n\n**Craft Requirements** The initial raw materials must include the scales and hide of a mamlambo.",
+    "descr": "The faint glow beneath the thick, algae-green scales of this suit of *+1 resilient scale mail* hints at the armor's source.\n\n---\n\n**Craft Requirements** The initial raw materials must include the scales and hide of a mamlambo.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -3593,6 +4021,22 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate",
+            "light",
+            "manipulate",
+            "mental",
+            "visual"
+          ],
+          "name": "Luminous Lure",
+          "text": "**Frequency** Once per day\n\n**Effect** The *mamlambo scale* sheds dim light in a 20-foot emanation. The light has a duration of 1 minute, but you can extinguish the light with an [Interact](/action/interact-player-core) action. A creature that begins its turn in the light must attempt a Will DC 26 save. Regardless of the save's result, the creature is temporarily immune for 1 hour.\n\nEffect: Luminous Lure\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Slowed 1](/condition/slowed-player-core) for 1 round.\n\n**Failure** The creature is [Fascinated](/condition/fascinated-player-core), and for as long as it remains in the light, it must spend at least 1 of its actions on each of its turns to move closer to the source of the light. If the creature ends its movement adjacent to you, it is slowed 1 until it is out of the light or until you make a Strike against it.\n\n**Critical Failure** As failure, but the creature is also [Off Guard](/condition/off-guard-player-core) against the first Strike you make against it while it is slowed.\n\n---",
+          "effect": "The *mamlambo scale* sheds dim light in a 20-foot emanation. The light has a duration of 1 minute, but you can extinguish the light with an [Interact](/action/interact-player-core) action. A creature that begins its turn in the light must attempt a Will DC 26 save. Regardless of the save's result, the creature is temporarily immune for 1 hour.\n\nEffect: Luminous Lure\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is [Slowed 1](/condition/slowed-player-core) for 1 round.\n\n**Failure** The creature is [Fascinated](/condition/fascinated-player-core), and for as long as it remains in the light, it must spend at least 1 of its actions on each of its turns to move closer to the source of the light. If the creature ends its movement adjacent to you, it is slowed 1 until it is out of the light or until you make a Strike against it.\n\n**Critical Failure** As failure, but the creature is also [Off Guard](/condition/off-guard-player-core) against the first Strike you make against it while it is slowed.\n\n---",
+          "description": "**Frequency** Once per day"
         }
       ]
     },
@@ -3624,7 +4068,7 @@
     "systemVersion": "1.2.10",
     "name": "Mantis Plate",
     "slug": "mantis-plate-howl-of-the-wild",
-    "descr": "The beautiful plates of this *+2 resilient Greater Ready [full plate](/item/full-plate-player-core)* armor are shaped from the carapace of a deadly mantis, providing excellent protection with added flexibility. When wearing a suit of mantis plate, you gain a +2 item bonus to your Athletics DC.\n\n---\n\n**Activate—Mandible Vambraces** 2 (concentrate, manipulate)\n\n**Effect** Make a melee Strike. If you succeed, the target is caught by the spikes on the armor's forearms, taking an additional 6d6 piercing damage (basic Reflex DC 30 save).\n\n---\n\n**Craft Requirements** The initial raw materials must include the arms and carapace of a deadly mantis.",
+    "descr": "The beautiful plates of this *+2 resilient Greater Ready [full plate](/item/full-plate-player-core)* armor are shaped from the carapace of a deadly mantis, providing excellent protection with added flexibility. When wearing a suit of mantis plate, you gain a +2 item bonus to your Athletics DC.\n\n---\n\n**Craft Requirements** The initial raw materials must include the arms and carapace of a deadly mantis.",
     "data": {
       "level": 13,
       "rarity": "rare",
@@ -3657,6 +4101,19 @@
           "label": "magical",
           "slug": "magical"
         }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Mandible Vambraces",
+          "text": "**Effect** Make a melee Strike. If you succeed, the target is caught by the spikes on the armor's forearms, taking an additional 6d6 piercing damage (basic Reflex DC 30 save).\n\n---",
+          "effect": "Make a melee Strike. If you succeed, the target is caught by the spikes on the armor's forearms, taking an additional 6d6 piercing damage (basic Reflex DC 30 save).\n\n---",
+          "description": ""
+        }
       ]
     },
     "attributes": {
@@ -3688,7 +4145,7 @@
     "systemVersion": "1.2.10",
     "name": "Mantle of the Tikbalang",
     "slug": "mantle-of-the-tikbalang-howl-of-the-wild",
-    "descr": "This long hide cloak is stitched with patches of the ebony hair of a tikbalang. While wearing this cloak, you take a –2 item penalty to saves against illusions but gain a +2 item bonus to Deception checks.\n\n---\n\n**Activate—Illusory Thrash** 2 (concentrate, illusion, manipulate, mental)\n\n**Frequency** once per day\n\n**Effect** You wrap the mantle around your body, causing you to briefly appear much larger than you are. Make a melee Strike. This Strike deals an additional 4d6 mental damage.\n\n---\n\n**Craft Requirements** The initial raw materials must include the hide of a tikbalang.",
+    "descr": "This long hide cloak is stitched with patches of the ebony hair of a tikbalang. While wearing this cloak, you take a –2 item penalty to saves against illusions but gain a +2 item bonus to Deception checks.\n\n---\n\n**Craft Requirements** The initial raw materials must include the hide of a tikbalang.",
     "data": {
       "level": 8,
       "rarity": "uncommon",
@@ -3708,6 +4165,21 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate",
+            "mental"
+          ],
+          "name": "Illusory Thrash",
+          "text": "**Frequency** once per day\n\n**Effect** You wrap the mantle around your body, causing you to briefly appear much larger than you are. Make a melee Strike. This Strike deals an additional 4d6 mental damage.\n\n---",
+          "effect": "You wrap the mantle around your body, causing you to briefly appear much larger than you are. Make a melee Strike. This Strike deals an additional 4d6 mental damage.\n\n---",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -3739,7 +4211,7 @@
     "systemVersion": "1.2.10",
     "name": "Nightmare's Lament",
     "slug": "nightmare-s-lament-howl-of-the-wild",
-    "descr": "Ritually constructed from the bones of a nightmare, a *nightmare's lament* is a *+1 striking rapier pistol*. Thin wisps of dark smoke continually surround the red-flecked blade.\n\n---\n\n**Activate—Fuming Cloak** 2 (manipulate)\n\n**Frequency** once per day\n\n**Effect** For 1 minute, the *nightmare's lament* continually vents thick, black smoke that creates concealment in a 15-foot aura around the gun's wielder. The wielder of the *nightmare's lament* can see through this smoke. A creature that begins its turn in the area becomes [Sickened 2](/condition/sickened-player-core) (Fortitude DC 23 negates) and is then temporarily immune to the sickness from the smoke for 1 minute. The wielder of the *nightmare's lament*, any creature currently holding its breath (or that does not need to breathe), and any creature immune to poison are immune to the aura's sickened effect but not the concealment.\n\nAura: Fuming Cloak\n\n---\n\n**Craft Requirements** The initial raw materials must include the rib bones and inner fire of a nightmare.",
+    "descr": "Ritually constructed from the bones of a nightmare, a *nightmare's lament* is a *+1 striking rapier pistol*. Thin wisps of dark smoke continually surround the red-flecked blade.\n\n---\n\n**Craft Requirements** The initial raw materials must include the rib bones and inner fire of a nightmare.",
     "data": {
       "level": 6,
       "rarity": "uncommon",
@@ -3777,6 +4249,18 @@
           "label": "magical",
           "slug": "magical"
         }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Fuming Cloak",
+          "text": "**Frequency** once per day\n\n**Effect** For 1 minute, the *nightmare's lament* continually vents thick, black smoke that creates concealment in a 15-foot aura around the gun's wielder. The wielder of the *nightmare's lament* can see through this smoke. A creature that begins its turn in the area becomes [Sickened 2](/condition/sickened-player-core) (Fortitude DC 23 negates) and is then temporarily immune to the sickness from the smoke for 1 minute. The wielder of the *nightmare's lament*, any creature currently holding its breath (or that does not need to breathe), and any creature immune to poison are immune to the aura's sickened effect but not the concealment.\n\nAura: Fuming Cloak\n\n---",
+          "effect": "For 1 minute, the *nightmare's lament* continually vents thick, black smoke that creates concealment in a 15-foot aura around the gun's wielder. The wielder of the *nightmare's lament* can see through this smoke. A creature that begins its turn in the area becomes [Sickened 2](/condition/sickened-player-core) (Fortitude DC 23 negates) and is then temporarily immune to the sickness from the smoke for 1 minute. The wielder of the *nightmare's lament*, any creature currently holding its breath (or that does not need to breathe), and any creature immune to poison are immune to the aura's sickened effect but not the concealment.\n\nAura: Fuming Cloak\n\n---",
+          "description": "**Frequency** once per day"
+        }
       ]
     },
     "attributes": {
@@ -3808,7 +4292,7 @@
     "systemVersion": "1.2.10",
     "name": "Ogre Spider Filament",
     "slug": "ogre-spider-filament-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell\n\n---\n\nThis delicate strand of spiderweb sticks to the target of a [Spider Sting](/spell/spider-sting-player-core) spell, hampering their movement. Using this catalyst causes a creature afflicted with spider venom to become [Clumsy](/condition/clumsy-player-core) instead of [Enfeebled](/condition/enfeebled-player-core).",
+    "descr": "---\n\nThis delicate strand of spiderweb sticks to the target of a [Spider Sting](/spell/spider-sting-player-core) spell, hampering their movement. Using this catalyst causes a creature afflicted with spider venom to become [Clumsy](/condition/clumsy-player-core) instead of [Enfeebled](/condition/enfeebled-player-core).",
     "data": {
       "level": 1,
       "rarity": "common",
@@ -3834,7 +4318,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3901,7 +4389,7 @@
     "systemVersion": "1.2.10",
     "name": "Ommatophoric Mutagen",
     "slug": "ommatophoric-mutagen-howl-of-the-wild",
-    "descr": "**Activate** A (manipulate)\n\n---\n\nYour eyes bulge from their sockets and extend upwards from your head on long, prehensile stalks, greatly enhancing your eyesight and field of view but leaving you unable to close your eyes, increasing your vulnerability to harmful visual effects.\n\n**Benefit** You gain all-around vision, a +2 item bonus to visual Perception checks, and low-light vision if you don't already have it. These effects last for 1 minute.\n\n**Drawback** For 1 minute, you take a –2 penalty to saving throws against effects that have the [visual](/trait/visual) trait.\n\nEffect: Ommatophoric Mutagen",
+    "descr": "---\n\nYour eyes bulge from their sockets and extend upwards from your head on long, prehensile stalks, greatly enhancing your eyesight and field of view but leaving you unable to close your eyes, increasing your vulnerability to harmful visual effects.\n\n**Benefit** You gain all-around vision, a +2 item bonus to visual Perception checks, and low-light vision if you don't already have it. These effects last for 1 minute.\n\n**Drawback** For 1 minute, you take a –2 penalty to saving throws against effects that have the [visual](/trait/visual) trait.\n\nEffect: Ommatophoric Mutagen",
     "data": {
       "level": 7,
       "rarity": "uncommon",
@@ -3937,7 +4425,14 @@
           "label": "polymorph",
           "slug": "polymorph"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3970,7 +4465,7 @@
     "systemVersion": "1.2.10",
     "name": "Orm Choker",
     "slug": "orm-choker-howl-of-the-wild",
-    "descr": "This elaborate choker is fashioned from the treated hide of a water orm. Its interior is lined with the creature's silky hair. While wearing an *orm choker*, your form blurs slightly around the edges, granting you a +1 item bonus to saving throws against detection, revelation, and scrying effects.\n\n---\n\n**Activate—Watery Form** 3 (concentration, water)\n\n**Frequency** once per day\n\n**Effect** You dissolve into liquid, appearing only as a stretch of flowing water. While in this form, you gain a swim Speed of 45 feet, you automatically succeed at Athletics checks to Swim, and you gain a +4 circumstance bonus to Stealth checks in water. However, you can't speak, use any of your other items or abilities, or enter a body of salt water while in this form. You can remain in this form for up to 1 hour, though you can return to your normal form using a single action that has the [concentrate](/trait/concentrate) trait.\n\nEffect: Watery Form\n\n---\n\n**Craft Requirements** The initial raw materials must include the hide and hair of a water orm.",
+    "descr": "This elaborate choker is fashioned from the treated hide of a water orm. Its interior is lined with the creature's silky hair. While wearing an *orm choker*, your form blurs slightly around the edges, granting you a +1 item bonus to saving throws against detection, revelation, and scrying effects.\n\n---\n\n**Craft Requirements** The initial raw materials must include the hide and hair of a water orm.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -3990,6 +4485,15 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "three",
+          "name": "Watery Form",
+          "text": "(concentration, water)\n\n**Frequency** once per day\n\n**Effect** You dissolve into liquid, appearing only as a stretch of flowing water. While in this form, you gain a swim Speed of 45 feet, you automatically succeed at Athletics checks to Swim, and you gain a +4 circumstance bonus to Stealth checks in water. However, you can't speak, use any of your other items or abilities, or enter a body of salt water while in this form. You can remain in this form for up to 1 hour, though you can return to your normal form using a single action that has the [concentrate](/trait/concentrate) trait.\n\nEffect: Watery Form\n\n---",
+          "effect": "You dissolve into liquid, appearing only as a stretch of flowing water. While in this form, you gain a swim Speed of 45 feet, you automatically succeed at Athletics checks to Swim, and you gain a +4 circumstance bonus to Stealth checks in water. However, you can't speak, use any of your other items or abilities, or enter a body of salt water while in this form. You can remain in this form for up to 1 hour, though you can return to your normal form using a single action that has the [concentrate](/trait/concentrate) trait.\n\nEffect: Watery Form\n\n---",
+          "description": "(concentration, water)\n\n**Frequency** once per day"
         }
       ]
     },
@@ -4020,7 +4524,7 @@
     "systemVersion": "1.2.10",
     "name": "Pallesthetic Mutagen",
     "slug": "pallesthetic-mutagen-howl-of-the-wild",
-    "descr": "**Activate** A (manipulate)\n\n---\n\nYou gain unparalleled sensitivity to the tiniest of vibrations through solid surfaces and even the very air around you, but your eyes become useless.\n\n**Benefit** For 1 minute, you gain precise echolocation out to 40 feet, imprecise tremorsense out to 60 feet, and a +2 item bonus to Perception checks using either of these senses.\n\n**Drawback** You are [Blinded](/condition/blinded-player-core) for 1 minute.\n\nEffect: Pallesthetic Mutagen",
+    "descr": "---\n\nYou gain unparalleled sensitivity to the tiniest of vibrations through solid surfaces and even the very air around you, but your eyes become useless.\n\n**Benefit** For 1 minute, you gain precise echolocation out to 40 feet, imprecise tremorsense out to 60 feet, and a +2 item bonus to Perception checks using either of these senses.\n\n**Drawback** You are [Blinded](/condition/blinded-player-core) for 1 minute.\n\nEffect: Pallesthetic Mutagen",
     "data": {
       "level": 9,
       "rarity": "uncommon",
@@ -4056,7 +4560,14 @@
           "label": "polymorph",
           "slug": "polymorph"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4125,7 +4636,7 @@
     "systemVersion": "1.2.10",
     "name": "Pheromone Flare (Greater)",
     "slug": "pheromone-flare-greater-howl-of-the-wild",
-    "descr": "**Activate** 2 (manipulate)\n\n---\n\nThis alchemical candle is attached to a tall pole and grounding stake. When the flare is lit, it sprays a concentrated cloud of pheromones to attract the attention of a specific kind of animal (see [alchemical pheromones](/item/animal-pheromones-greater-howl-of-the-wild)). Similar to animal pheromones, when you learn the formula for a pheromone flare, you learn the formulas for all common animals.\n\nA pheromone flare has a built-in delayed activation timer of up to 1 hour. When it's activated, the flare releases a cloud of pheromones in a 60-foot emanation that lasts for 1 hour. A strong wind reduces the emanation to 15 feet for as long as the wind lasts. Moving the flare after it has been activated ends the effect. A designated animal that enters the area must attempt a Will DC 35 save with the following effects. Animals with an Intelligence modifier of –3 or higher increase the result of their save by one step.\n\n---\n\n**Critical Success** The animal is unaffected and temporarily immune for 24 hours.\n\n**Success** The animal is unaffected but must attempt a new save every 10 minutes it remains within the area.\n\n**Failure** The animal is attracted by the pheromones, following the cloud to its source. The creature becomes [Fascinated](/condition/fascinated-player-core) until it reaches the flare and spends 1 round investigating it. After this, it becomes temporarily immune for 24 hours.\n\n**Critical Failure** As failure, except the fascination lasts for up to 1 hour, though the animal can attempt a new save against the effect every 10 minutes. The animal takes a –1 status penalty to this save that increases by 1 with each subsequent failure or critical failure, up to a maximum of a –3 status penalty",
+    "descr": "---\n\nThis alchemical candle is attached to a tall pole and grounding stake. When the flare is lit, it sprays a concentrated cloud of pheromones to attract the attention of a specific kind of animal (see [alchemical pheromones](/item/animal-pheromones-greater-howl-of-the-wild)). Similar to animal pheromones, when you learn the formula for a pheromone flare, you learn the formulas for all common animals.\n\nA pheromone flare has a built-in delayed activation timer of up to 1 hour. When it's activated, the flare releases a cloud of pheromones in a 60-foot emanation that lasts for 1 hour. A strong wind reduces the emanation to 15 feet for as long as the wind lasts. Moving the flare after it has been activated ends the effect. A designated animal that enters the area must attempt a Will DC 35 save with the following effects. Animals with an Intelligence modifier of –3 or higher increase the result of their save by one step.\n\n---\n\n**Critical Success** The animal is unaffected and temporarily immune for 24 hours.\n\n**Success** The animal is unaffected but must attempt a new save every 10 minutes it remains within the area.\n\n**Failure** The animal is attracted by the pheromones, following the cloud to its source. The creature becomes [Fascinated](/condition/fascinated-player-core) until it reaches the flare and spends 1 round investigating it. After this, it becomes temporarily immune for 24 hours.\n\n**Critical Failure** As failure, except the fascination lasts for up to 1 hour, though the animal can attempt a new save against the effect every 10 minutes. The animal takes a –1 status penalty to this save that increases by 1 with each subsequent failure or critical failure, up to a maximum of a –3 status penalty",
     "data": {
       "level": 17,
       "rarity": "common",
@@ -4151,7 +4662,14 @@
           "label": "olfactory",
           "slug": "olfactory"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "two",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4181,7 +4699,7 @@
     "systemVersion": "1.2.10",
     "name": "Pheromone Flare (Lesser)",
     "slug": "pheromone-flare-lesser-howl-of-the-wild",
-    "descr": "**Activate** 2 (manipulate)\n\n---\n\nThis alchemical candle is attached to a tall pole and grounding stake. When the flare is lit, it sprays a concentrated cloud of pheromones to attract the attention of a specific kind of animal (see [alchemical pheromones](/item/animal-pheromones-lesser-howl-of-the-wild)). Similar to animal pheromones, when you learn the formula for a pheromone flare, you learn the formulas for all common animals.\n\nA pheromone flare has a built-in delayed activation timer of up to 1 hour. When it's activated, the flare releases a cloud of pheromones in a 60-foot emanation that lasts for 1 hour. A strong wind reduces the emanation to 15 feet for as long as the wind lasts. Moving the flare after it has been activated ends the effect. A designated animal that enters the area must attempt a Will DC 19 save with the following effects. Animals with an Intelligence modifier of –3 or higher increase the result of their save by one step.\n\n---\n\n**Critical Success** The animal is unaffected and temporarily immune for 24 hours.\n\n**Success** The animal is unaffected but must attempt a new save every 10 minutes it remains within the area.\n\n**Failure** The animal is attracted by the pheromones, following the cloud to its source. The creature becomes [Fascinated](/condition/fascinated-player-core) until it reaches the flare and spends 1 round investigating it. After this, it becomes temporarily immune for 24 hours.\n\n**Critical Failure** As failure, except the fascination lasts for up to 1 hour, though the animal can attempt a new save against the effect every 10 minutes. The animal takes a –1 status penalty to this save that increases by 1 with each subsequent failure or critical failure, up to a maximum of a –3 status penalty",
+    "descr": "---\n\nThis alchemical candle is attached to a tall pole and grounding stake. When the flare is lit, it sprays a concentrated cloud of pheromones to attract the attention of a specific kind of animal (see [alchemical pheromones](/item/animal-pheromones-lesser-howl-of-the-wild)). Similar to animal pheromones, when you learn the formula for a pheromone flare, you learn the formulas for all common animals.\n\nA pheromone flare has a built-in delayed activation timer of up to 1 hour. When it's activated, the flare releases a cloud of pheromones in a 60-foot emanation that lasts for 1 hour. A strong wind reduces the emanation to 15 feet for as long as the wind lasts. Moving the flare after it has been activated ends the effect. A designated animal that enters the area must attempt a Will DC 19 save with the following effects. Animals with an Intelligence modifier of –3 or higher increase the result of their save by one step.\n\n---\n\n**Critical Success** The animal is unaffected and temporarily immune for 24 hours.\n\n**Success** The animal is unaffected but must attempt a new save every 10 minutes it remains within the area.\n\n**Failure** The animal is attracted by the pheromones, following the cloud to its source. The creature becomes [Fascinated](/condition/fascinated-player-core) until it reaches the flare and spends 1 round investigating it. After this, it becomes temporarily immune for 24 hours.\n\n**Critical Failure** As failure, except the fascination lasts for up to 1 hour, though the animal can attempt a new save against the effect every 10 minutes. The animal takes a –1 status penalty to this save that increases by 1 with each subsequent failure or critical failure, up to a maximum of a –3 status penalty",
     "data": {
       "level": 5,
       "rarity": "common",
@@ -4207,7 +4725,14 @@
           "label": "olfactory",
           "slug": "olfactory"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "two",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4237,7 +4762,7 @@
     "systemVersion": "1.2.10",
     "name": "Pheromone Flare (Moderate)",
     "slug": "pheromone-flare-moderate-howl-of-the-wild",
-    "descr": "**Activate** 2 (manipulate)\n\n---\n\nThis alchemical candle is attached to a tall pole and grounding stake. When the flare is lit, it sprays a concentrated cloud of pheromones to attract the attention of a specific kind of animal (see [alchemical pheromones](/item/animal-pheromones-moderate-howl-of-the-wild)). Similar to animal pheromones, when you learn the formula for a pheromone flare, you learn the formulas for all common animals.\n\nA pheromone flare has a built-in delayed activation timer of up to 1 hour. When it's activated, the flare releases a cloud of pheromones in a 60-foot emanation that lasts for 1 hour. A strong wind reduces the emanation to 15 feet for as long as the wind lasts. Moving the flare after it has been activated ends the effect. A designated animal that enters the area must attempt a Will DC 27 save with the following effects. Animals with an Intelligence modifier of –3 or higher increase the result of their save by one step.\n\n---\n\n**Critical Success** The animal is unaffected and temporarily immune for 24 hours.\n\n**Success** The animal is unaffected but must attempt a new save every 10 minutes it remains within the area.\n\n**Failure** The animal is attracted by the pheromones, following the cloud to its source. The creature becomes [Fascinated](/condition/fascinated-player-core) until it reaches the flare and spends 1 round investigating it. After this, it becomes temporarily immune for 24 hours.\n\n**Critical Failure** As failure, except the fascination lasts for up to 1 hour, though the animal can attempt a new save against the effect every 10 minutes. The animal takes a –1 status penalty to this save that increases by 1 with each subsequent failure or critical failure, up to a maximum of a –3 status penalty",
+    "descr": "---\n\nThis alchemical candle is attached to a tall pole and grounding stake. When the flare is lit, it sprays a concentrated cloud of pheromones to attract the attention of a specific kind of animal (see [alchemical pheromones](/item/animal-pheromones-moderate-howl-of-the-wild)). Similar to animal pheromones, when you learn the formula for a pheromone flare, you learn the formulas for all common animals.\n\nA pheromone flare has a built-in delayed activation timer of up to 1 hour. When it's activated, the flare releases a cloud of pheromones in a 60-foot emanation that lasts for 1 hour. A strong wind reduces the emanation to 15 feet for as long as the wind lasts. Moving the flare after it has been activated ends the effect. A designated animal that enters the area must attempt a Will DC 27 save with the following effects. Animals with an Intelligence modifier of –3 or higher increase the result of their save by one step.\n\n---\n\n**Critical Success** The animal is unaffected and temporarily immune for 24 hours.\n\n**Success** The animal is unaffected but must attempt a new save every 10 minutes it remains within the area.\n\n**Failure** The animal is attracted by the pheromones, following the cloud to its source. The creature becomes [Fascinated](/condition/fascinated-player-core) until it reaches the flare and spends 1 round investigating it. After this, it becomes temporarily immune for 24 hours.\n\n**Critical Failure** As failure, except the fascination lasts for up to 1 hour, though the animal can attempt a new save against the effect every 10 minutes. The animal takes a –1 status penalty to this save that increases by 1 with each subsequent failure or critical failure, up to a maximum of a –3 status penalty",
     "data": {
       "level": 11,
       "rarity": "common",
@@ -4263,7 +4788,14 @@
           "label": "olfactory",
           "slug": "olfactory"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "two",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4386,7 +4918,7 @@
     "systemVersion": "1.2.10",
     "name": "Sargassum Phial",
     "slug": "sargassum-phial-howl-of-the-wild",
-    "descr": "**Activate** 2 (manipulate)\n\n---\n\nA layer of vapor swirls just below the surface of this glass container holding a large, dried heap of fungal-encrusted seaweed. You can throw the phial up to 30 feet when you Activate it. When opened or thrown, a Medium sargassum heap effigy reconstitutes to release a hallucinogenic cloud in a 15-foot emanation, forcing each creature to attempt a Fortitude DC 20 save. On a failure, a creature rolls 1d4 to determine what it is hallucinating for the next 1d4 rounds (unless otherwise noted). At the beginning of their turn, an affected creature attempts a new save.\n\n**1** The target thinks they are sinking through the floor. It falls Prone and spends 1 action on its next turn flailing its limbs as if attempting to swim.\n\n**2** The target thinks an item they are holding turns into a viper. The target Releases the item and spends its next turn Fleeing from it.\n\n**3** The target thinks they have shrunk to 1/10 their normal size. For 1 round, it is Slowed 2, Enfeebled 2, and takes a –10-foot status penalty to its Speed.\n\n**4** The target believes they are melting. It drops everything it's holding and becomes slowed 2 and Clumsy 2 for 1 round.\n\n---\n\n**Craft Requirements** Supply the corpse of a sargassum heap.",
+    "descr": "---\n\nA layer of vapor swirls just below the surface of this glass container holding a large, dried heap of fungal-encrusted seaweed. You can throw the phial up to 30 feet when you Activate it. When opened or thrown, a Medium sargassum heap effigy reconstitutes to release a hallucinogenic cloud in a 15-foot emanation, forcing each creature to attempt a Fortitude DC 20 save. On a failure, a creature rolls 1d4 to determine what it is hallucinating for the next 1d4 rounds (unless otherwise noted). At the beginning of their turn, an affected creature attempts a new save.\n\n**1** The target thinks they are sinking through the floor. It falls Prone and spends 1 action on its next turn flailing its limbs as if attempting to swim.\n\n**2** The target thinks an item they are holding turns into a viper. The target Releases the item and spends its next turn Fleeing from it.\n\n**3** The target thinks they have shrunk to 1/10 their normal size. For 1 round, it is Slowed 2, Enfeebled 2, and takes a –10-foot status penalty to its Speed.\n\n**4** The target believes they are melting. It drops everything it's holding and becomes slowed 2 and Clumsy 2 for 1 round.\n\n---\n\n**Craft Requirements** Supply the corpse of a sargassum heap.",
     "data": {
       "level": 6,
       "rarity": "common",
@@ -4427,7 +4959,14 @@
           "label": "poison",
           "slug": "poison"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "two",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4518,7 +5057,7 @@
     "systemVersion": "1.2.10",
     "name": "Shuln Fang Katar",
     "slug": "shuln-fang-katar-howl-of-the-wild",
-    "descr": "This *+2 greater striking katar* masterfully crafted from the adamantine-laced fang of a shuln can puncture even the toughest of armors.\n\n---\n\n**Activate—Piercing Critical** 1 (concentrate)\n\n**Frequency** once per round\n\n**Requirements** Your last action was to score a critical hit with the *shuln fang katar* against a creature that is wearing armor\n\n**Effect** You deal the same amount of damage as the critical hit to the creature's armor, bypassing any Hardness lower than 10, like adamantine.\n\n---\n\n**Craft Requirements** The initial raw materials must include a fang from a shuln.",
+    "descr": "This *+2 greater striking katar* masterfully crafted from the adamantine-laced fang of a shuln can puncture even the toughest of armors.\n\n---\n\n**Craft Requirements** The initial raw materials must include a fang from a shuln.",
     "data": {
       "level": 12,
       "rarity": "rare",
@@ -4553,6 +5092,18 @@
         {
           "label": "monk",
           "slug": "monk"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Piercing Critical",
+          "text": "**Frequency** once per round\n\n**Requirements** Your last action was to score a critical hit with the *shuln fang katar* against a creature that is wearing armor\n\n**Effect** You deal the same amount of damage as the critical hit to the creature's armor, bypassing any Hardness lower than 10, like adamantine.\n\n---",
+          "effect": "You deal the same amount of damage as the critical hit to the creature's armor, bypassing any Hardness lower than 10, like adamantine.\n\n---",
+          "description": "**Frequency** once per round\n\n**Requirements** Your last action was to score a critical hit with the *shuln fang katar* against a creature that is wearing armor"
         }
       ]
     },
@@ -4622,7 +5173,7 @@
     "systemVersion": "1.2.10",
     "name": "Silvered Marp Fur",
     "slug": "silvered-marp-fur-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell\n\n---\n\nA marp that gnaws on silver rather than gold grows fur tipped with silver that can be further processed into a versatile spell catalyst. A spellcaster who uses *silvered marp fur* with an [Impaling Spike](/spell/impaling-spike-player-core) spell creates a silver spike rather than a cold iron one.",
+    "descr": "---\n\nA marp that gnaws on silver rather than gold grows fur tipped with silver that can be further processed into a versatile spell catalyst. A spellcaster who uses *silvered marp fur* with an [Impaling Spike](/spell/impaling-spike-player-core) spell creates a silver spike rather than a cold iron one.",
     "data": {
       "level": 9,
       "rarity": "common",
@@ -4648,7 +5199,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4679,7 +5234,7 @@
     "systemVersion": "1.2.10",
     "name": "Skyfisher Vapors",
     "slug": "skyfisher-vapors-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell\n\n---\n\n*Skyfisher vapors* are only visible via their effect on a [Toxic Cloud](/spell/toxic-cloud-player-core) spell, or apparent lack thereof. These gases cause the conjured cloud to be as transparent as a skyfisher. The cloud is invisible, meaning it does not provide concealment, but it requires a successful Perception check against your spell DC to notice the cloud by faint distortions in the air. Your magical connection to the cloud means you always know where it is. This has no effect on its damage.",
+    "descr": "---\n\n*Skyfisher vapors* are only visible via their effect on a [Toxic Cloud](/spell/toxic-cloud-player-core) spell, or apparent lack thereof. These gases cause the conjured cloud to be as transparent as a skyfisher. The cloud is invisible, meaning it does not provide concealment, but it requires a successful Perception check against your spell DC to notice the cloud by faint distortions in the air. Your magical connection to the cloud means you always know where it is. This has no effect on its damage.",
     "data": {
       "level": 5,
       "rarity": "common",
@@ -4705,7 +5260,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4793,7 +5352,7 @@
     "systemVersion": "1.2.10",
     "name": "Splithead Bow",
     "slug": "splithead-bow-howl-of-the-wild",
-    "descr": "This *+1 striking Hauling longbow* is lined with the flesh of a fallen hydra and ornate carvings on the grip that depict the hydra's number of heads it had before it was slain. When you wield the bow in combat, you regain 2 Hit Points at the start of each of your turns.\n\n---\n\n**Activate—Two-Headed Arrow** 2 (manipulate)\n\n**Effect** You imbue your arrow with the properties of a hydra, splitting it in two and sending each at a different foe. Make two ranged Strikes, each against a separate target. Both targets must be in your line of sight, and within 50 feet of you. Both Strikes count toward your multiple attack penalty, but the penalty doesn't increase until after you've made both attacks. Additionally, after using this ability, you do not regain Hit Points from wielding the bow on your next turn.\n\n---\n\n**Activate—Five-Headed Arrow** 2 (manipulate)\n\n**Frequency** once per day\n\n**Effect** You make a powerful Strike propelled by the ferocity of a hydra at a target within your first range increment. If your Strike is successful, the arrow deals damage as normal and then passes through the target, splitting into four pieces. Choose four other targets within 30 feet of the original target and make a single ranged Strike with your multiple attack penalty, comparing the result to each secondary target's AC. After using this ability, you do not regain Hit Points from wielding the bow until after your next daily preparations.\n\n---\n\n**Craft Requirements** The initial raw materials must include the flesh from a severed head of a hydra.",
+    "descr": "This *+1 striking Hauling longbow* is lined with the flesh of a fallen hydra and ornate carvings on the grip that depict the hydra's number of heads it had before it was slain. When you wield the bow in combat, you regain 2 Hit Points at the start of each of your turns.\n\n---\n\n**Craft Requirements** The initial raw materials must include the flesh from a severed head of a hydra.",
     "data": {
       "level": 7,
       "rarity": "uncommon",
@@ -4826,6 +5385,28 @@
           "label": "volley-30",
           "slug": "volley"
         }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Two-Headed Arrow",
+          "text": "**Effect** You imbue your arrow with the properties of a hydra, splitting it in two and sending each at a different foe. Make two ranged Strikes, each against a separate target. Both targets must be in your line of sight, and within 50 feet of you. Both Strikes count toward your multiple attack penalty, but the penalty doesn't increase until after you've made both attacks. Additionally, after using this ability, you do not regain Hit Points from wielding the bow on your next turn.\n\n---",
+          "effect": "You imbue your arrow with the properties of a hydra, splitting it in two and sending each at a different foe. Make two ranged Strikes, each against a separate target. Both targets must be in your line of sight, and within 50 feet of you. Both Strikes count toward your multiple attack penalty, but the penalty doesn't increase until after you've made both attacks. Additionally, after using this ability, you do not regain Hit Points from wielding the bow on your next turn.\n\n---",
+          "description": ""
+        },
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Five-Headed Arrow",
+          "text": "**Frequency** once per day\n\n**Effect** You make a powerful Strike propelled by the ferocity of a hydra at a target within your first range increment. If your Strike is successful, the arrow deals damage as normal and then passes through the target, splitting into four pieces. Choose four other targets within 30 feet of the original target and make a single ranged Strike with your multiple attack penalty, comparing the result to each secondary target's AC. After using this ability, you do not regain Hit Points from wielding the bow until after your next daily preparations.\n\n---",
+          "effect": "You make a powerful Strike propelled by the ferocity of a hydra at a target within your first range increment. If your Strike is successful, the arrow deals damage as normal and then passes through the target, splitting into four pieces. Choose four other targets within 30 feet of the original target and make a single ranged Strike with your multiple attack penalty, comparing the result to each secondary target's AC. After using this ability, you do not regain Hit Points from wielding the bow until after your next daily preparations.\n\n---",
+          "description": "**Frequency** once per day"
+        }
       ]
     },
     "attributes": {
@@ -4857,7 +5438,7 @@
     "systemVersion": "1.2.10",
     "name": "Sportlebore Capsule",
     "slug": "sportlebore-capsule-howl-of-the-wild",
-    "descr": "**Activate** 1 (manipulate)\n\n---\n\nThis tiny capsule of soluble material is filled with a flavorless clear powder mixed with thousands of microscopic eggs laid by insidious parasites known as sportlebores. If the capsule or its contents are swallowed by an unwitting victim, the eggs rapidly hatch inside their unfortunate host, causing great abdominal pain. The target can't recover from the poison's enfeebled or [sickened](/condition/sickened-player-core) condition except by magic. After stage 3, the target returns to stage 1, but if it progresses to stage 3 a second time, the damage is doubled.\n\n**Saving Throw** Fortitude DC 22\n\n**Onset** 1 minute\n\n**Maximum Duration** 6 minutes\n\n**Stage 1** Sickened 1 (1 minute)\n\n**Stage 2** Enfeebled 1 and sickened 1 (1 minute)\n\n**Stage 3** 4d6 bludgeoning damage (basic Fortitude DC 23 save) and Enfeebled 2 as the affected target painfully vomits (1 minute)",
+    "descr": "---\n\nThis tiny capsule of soluble material is filled with a flavorless clear powder mixed with thousands of microscopic eggs laid by insidious parasites known as sportlebores. If the capsule or its contents are swallowed by an unwitting victim, the eggs rapidly hatch inside their unfortunate host, causing great abdominal pain. The target can't recover from the poison's enfeebled or [sickened](/condition/sickened-player-core) condition except by magic. After stage 3, the target returns to stage 1, but if it progresses to stage 3 a second time, the damage is doubled.\n\n**Saving Throw** Fortitude DC 22\n\n**Onset** 1 minute\n\n**Maximum Duration** 6 minutes\n\n**Stage 1** Sickened 1 (1 minute)\n\n**Stage 2** Enfeebled 1 and sickened 1 (1 minute)\n\n**Stage 3** 4d6 bludgeoning damage (basic Fortitude DC 23 save) and Enfeebled 2 as the affected target painfully vomits (1 minute)",
     "data": {
       "level": 7,
       "rarity": "common",
@@ -4888,7 +5469,14 @@
           "label": "poison",
           "slug": "poison"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5032,7 +5620,7 @@
     "systemVersion": "1.2.10",
     "name": "Squid Ink Sac",
     "slug": "squid-ink-sac-howl-of-the-wild",
-    "descr": "Sacs full of dark ink have been implanted inside your mouth, allowing you to spit it forth.\n\n---\n\n**Activate—Spray Ink** 1 (manipulate)\n\n**Frequency** once per day\n\n**Effect** You splatter ink in a 10-foot cone, covering creatures and revealing [Invisible](/condition/invisible-player-core) ones. Each creature in the area must succeed at a Reflex DC 20 save or become covered in ink. If a creature has its invisibility negated by this ink, it is [Concealed](/condition/concealed-player-core) instead of invisible. A creature can negate the effects of the ink by spending two [Interact](/action/interact-player-core) actions to wipe off the ink.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target's invisibility is negated for 2 rounds.\n\n**Failure** The target is [Blinded](/condition/blinded-player-core) for 1 round. Its invisibility is negated for 1 minute.\n\n**Critical Failure** The target is blinded for 10 minutes. Its invisibility is negated for 10 minutes.\n\n---\n\nIf this graft is used underwater, you can instead choose to release the ink in a 10-foot emanation. The resulting ink cloud lasts for 10 minutes. All creatures in the ink cloud become concealed, and all creatures outside the ink cloud become concealed to creatures within it.",
+    "descr": "Sacs full of dark ink have been implanted inside your mouth, allowing you to spit it forth.\n\n---",
     "data": {
       "level": 5,
       "rarity": "common",
@@ -5057,6 +5645,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Spray Ink",
+          "text": "**Frequency** once per day\n\n**Effect** You splatter ink in a 10-foot cone, covering creatures and revealing [Invisible](/condition/invisible-player-core) ones. Each creature in the area must succeed at a Reflex DC 20 save or become covered in ink. If a creature has its invisibility negated by this ink, it is [Concealed](/condition/concealed-player-core) instead of invisible. A creature can negate the effects of the ink by spending two [Interact](/action/interact-player-core) actions to wipe off the ink.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target's invisibility is negated for 2 rounds.\n\n**Failure** The target is [Blinded](/condition/blinded-player-core) for 1 round. Its invisibility is negated for 1 minute.\n\n**Critical Failure** The target is blinded for 10 minutes. Its invisibility is negated for 10 minutes.\n\n---\n\nIf this graft is used underwater, you can instead choose to release the ink in a 10-foot emanation. The resulting ink cloud lasts for 10 minutes. All creatures in the ink cloud become concealed, and all creatures outside the ink cloud become concealed to creatures within it.",
+          "effect": "You splatter ink in a 10-foot cone, covering creatures and revealing [Invisible](/condition/invisible-player-core) ones. Each creature in the area must succeed at a Reflex DC 20 save or become covered in ink. If a creature has its invisibility negated by this ink, it is [Concealed](/condition/concealed-player-core) instead of invisible. A creature can negate the effects of the ink by spending two [Interact](/action/interact-player-core) actions to wipe off the ink.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target's invisibility is negated for 2 rounds.\n\n**Failure** The target is [Blinded](/condition/blinded-player-core) for 1 round. Its invisibility is negated for 1 minute.\n\n**Critical Failure** The target is blinded for 10 minutes. Its invisibility is negated for 10 minutes.\n\n---\n\nIf this graft is used underwater, you can instead choose to release the ink in a 10-foot emanation. The resulting ink cloud lasts for 10 minutes. All creatures in the ink cloud become concealed, and all creatures outside the ink cloud become concealed to creatures within it.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -5089,7 +5689,7 @@
     "systemVersion": "1.2.10",
     "name": "Storm Herald",
     "slug": "storm-herald-howl-of-the-wild",
-    "descr": "This iridescent, black *+2 striking Shock Thundering fighting fan* is crafted from the crackling feathers of thunderbirds to resemble one of the beast's mighty wings. Channeling the avian's tempestuous nature, you are surrounded by a stormy shell of wind and electricity while wielding a *storm herald*, granting you resistance 5 to electricity and sonic damage.\n\n---\n\n**Activate—Call the Storm** 2 (concentrate, magical, manipulate)\n\n**Frequency** once per day\n\n**Effect** You channel the full might of a storm with you as its epicenter. All creatures within 30 feet take 3d10 electricity damage and 3d10 sonic damage (basic Reflex DC 30 save).\n\n---\n\n**Craft Requirements** The initial raw materials must include feathers from a thunderbird.",
+    "descr": "This iridescent, black *+2 striking Shock Thundering fighting fan* is crafted from the crackling feathers of thunderbirds to resemble one of the beast's mighty wings. Channeling the avian's tempestuous nature, you are surrounded by a stormy shell of wind and electricity while wielding a *storm herald*, granting you resistance 5 to electricity and sonic damage.\n\n---\n\n**Craft Requirements** The initial raw materials must include feathers from a thunderbird.",
     "data": {
       "level": 12,
       "rarity": "uncommon",
@@ -5144,6 +5744,20 @@
         {
           "label": "sonic",
           "slug": "sonic"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "magical",
+            "manipulate"
+          ],
+          "name": "Call the Storm",
+          "text": "**Frequency** once per day\n\n**Effect** You channel the full might of a storm with you as its epicenter. All creatures within 30 feet take 3d10 electricity damage and 3d10 sonic damage (basic Reflex DC 30 save).\n\n---",
+          "effect": "You channel the full might of a storm with you as its epicenter. All creatures within 30 feet take 3d10 electricity damage and 3d10 sonic damage (basic Reflex DC 30 save).\n\n---",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -5310,7 +5924,7 @@
     "systemVersion": "1.2.10",
     "name": "Tarantula Ampoule",
     "slug": "tarantula-ampoule-howl-of-the-wild",
-    "descr": "**Activate** 2 (manipulate)\n\n---\n\nThe dried, shrunken corpse of a giant tarantula inside this smoked glass bottle is obscured by swirling vapor and cobwebs. You can throw the ampoule up to 30 feet when you Activate it. When you open or throw the ampoule, a Large giant tarantula effigy bursts forth and lunges at one adjacent creature. If the target fails a Fortitude DC 21 save, it takes 1d10+4 piercing damage. If the target critically fails the save, it's also exposed to tarantula venom.\n\n---\n\n**Giant Tarantula Venom** (poison)\n\n**Saving Throw** Fortitude DC 23\n\n**Maximum Duration** 8 rounds\n\n**Stage 1** 1d10 poison damage (1 round)\n\n**Stage 2** 1d12 poison damage, [Clumsy 1](/condition/clumsy-player-core), and [Off Guard](/condition/off-guard-player-core) (1 round)\n\n**Stage 3** 2d6 poison damage, Clumsy 2, and off-guard (1 round)\n\n**Stage 4** 2d6 poison damage and [Paralyzed](/condition/paralyzed-player-core) (1 round)\n\n---\n\n**Craft Requirements** Supply the corpse of a giant tarantula.",
+    "descr": "---\n\nThe dried, shrunken corpse of a giant tarantula inside this smoked glass bottle is obscured by swirling vapor and cobwebs. You can throw the ampoule up to 30 feet when you Activate it. When you open or throw the ampoule, a Large giant tarantula effigy bursts forth and lunges at one adjacent creature. If the target fails a Fortitude DC 21 save, it takes 1d10+4 piercing damage. If the target critically fails the save, it's also exposed to tarantula venom.\n\n---\n\n**Giant Tarantula Venom** (poison)\n\n**Saving Throw** Fortitude DC 23\n\n**Maximum Duration** 8 rounds\n\n**Stage 1** 1d10 poison damage (1 round)\n\n**Stage 2** 1d12 poison damage, [Clumsy 1](/condition/clumsy-player-core), and [Off Guard](/condition/off-guard-player-core) (1 round)\n\n**Stage 3** 2d6 poison damage, Clumsy 2, and off-guard (1 round)\n\n**Stage 4** 2d6 poison damage and [Paralyzed](/condition/paralyzed-player-core) (1 round)\n\n---\n\n**Craft Requirements** Supply the corpse of a giant tarantula.",
     "data": {
       "level": 6,
       "rarity": "uncommon",
@@ -5336,7 +5950,14 @@
           "label": "expandable",
           "slug": "expandable"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "two",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5367,7 +5988,7 @@
     "systemVersion": "1.2.10",
     "name": "Tatzlwyrm's Gasp",
     "slug": "tatzlwyrm-s-gasp-howl-of-the-wild",
-    "descr": "**Activate** 2 (manipulate)\n\n---\n\nBrave alchemists take great care to capture a tatzlwyrm's poisonous vapor in small vials, typically through a system of compressors that can concentrate their exhalations.\n\n**Saving Throw** Fortitude DC 15\n\n**Maximum Duration** 3 rounds\n\n**Stage 1** [Sickened 1](/condition/sickened-player-core) (1 round)\n\n**Stage 2** 2d6 poison damage and [Enfeebled 1](/condition/enfeebled-player-core) (1 round)\n\n**Stage 3** 4d6 poison damage and enfeebled 1 (1 round)",
+    "descr": "---\n\nBrave alchemists take great care to capture a tatzlwyrm's poisonous vapor in small vials, typically through a system of compressors that can concentrate their exhalations.\n\n**Saving Throw** Fortitude DC 15\n\n**Maximum Duration** 3 rounds\n\n**Stage 1** [Sickened 1](/condition/sickened-player-core) (1 round)\n\n**Stage 2** 2d6 poison damage and [Enfeebled 1](/condition/enfeebled-player-core) (1 round)\n\n**Stage 3** 4d6 poison damage and enfeebled 1 (1 round)",
     "data": {
       "level": 2,
       "rarity": "common",
@@ -5398,7 +6019,14 @@
           "label": "poison",
           "slug": "poison"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "two",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5429,7 +6057,7 @@
     "systemVersion": "1.2.10",
     "name": "Tidal Crossbow",
     "slug": "tidal-crossbow-howl-of-the-wild",
-    "descr": "The beak and talons of a tidehawk form the triggering mechanism of this *+2 greater striking crossbow*. Its grip is constantly damp, though this doesn't affect your ability to keep ahold of the weapon. When used in aquatic combat, a *tidal crossbow* doesn't have its range increments halved. A *tidal crossbow* deals 1d4 additional bludgeoning damage on a successful Strike. On a critical hit, the bow's additional damage is instead 1d4 bludgeoning splash damage, and the target must succeed at a Reflex DC 31 save or be pushed back 5 feet. The bow critical specialization effect applies to creatures with the [water](/trait/water) trait even if it wouldn't normally.\n\n---\n\n**Activate—Typhoon Swell** 2 (manipulate, water)\n\n**Frequency** once per day\n\n**Effect** The *tidal crossbow* produces a torrent of water in a 30-foot line, dealing 8d6 bludgeoning damage (basic Fortitude DC 30 save). Creatures that fail the save are also knocked Prone.\n\n---\n\n**Craft Requirements** The initial raw materials must include the beak, talons, and several watery feathers of a tidehawk.",
+    "descr": "The beak and talons of a tidehawk form the triggering mechanism of this *+2 greater striking crossbow*. Its grip is constantly damp, though this doesn't affect your ability to keep ahold of the weapon. When used in aquatic combat, a *tidal crossbow* doesn't have its range increments halved. A *tidal crossbow* deals 1d4 additional bludgeoning damage on a successful Strike. On a critical hit, the bow's additional damage is instead 1d4 bludgeoning splash damage, and the target must succeed at a Reflex DC 31 save or be pushed back 5 feet. The bow critical specialization effect applies to creatures with the [water](/trait/water) trait even if it wouldn't normally.\n\n---\n\n**Craft Requirements** The initial raw materials must include the beak, talons, and several watery feathers of a tidehawk.",
     "data": {
       "level": 13,
       "rarity": "rare",
@@ -5456,6 +6084,19 @@
         {
           "label": "water",
           "slug": "water"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate",
+            "water"
+          ],
+          "name": "Typhoon Swell",
+          "text": "**Frequency** once per day\n\n**Effect** The *tidal crossbow* produces a torrent of water in a 30-foot line, dealing 8d6 bludgeoning damage (basic Fortitude DC 30 save). Creatures that fail the save are also knocked Prone.\n\n---",
+          "effect": "The *tidal crossbow* produces a torrent of water in a 30-foot line, dealing 8d6 bludgeoning damage (basic Fortitude DC 30 save). Creatures that fail the save are also knocked Prone.\n\n---",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -5586,7 +6227,7 @@
     "systemVersion": "1.2.10",
     "name": "Trollhound Pick",
     "slug": "trollhound-pick-howl-of-the-wild",
-    "descr": "This *+1 striking greatpick* bears a head studded with the tusks of a trollhound.\n\n---\n\n**Activate—Ravenous Strike** 2 (magical, manipulate)\n\n**Effect** You Strike with the *trollhound pick*, transferring a portion of a trollhound's legendary appetite to the target. A living enemy who takes damage from the attack must attempt a Will DC 19 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature suffers hunger pangs, becoming [Off Guard](/condition/off-guard-player-core) for 1 round.\n\n**Failure** The creature experiences gnawing hunger, becoming off-guard for 1 round and [Enfeebled 1](/condition/enfeebled-player-core) for 1 minute. If the creature consumes any amount of food or drink (including imbibing a potion), the enfeebled condition ends.\n\n**Critical Failure** As failure, but the creature is Enfeebled 2 and each instance of consuming food or drink reduces the penalty by 1.\n\n---\n\n**Craft Requirements** The initial raw materials must include the teeth and tongue from a trollhound.",
+    "descr": "This *+1 striking greatpick* bears a head studded with the tusks of a trollhound.\n\n---\n\n**Craft Requirements** The initial raw materials must include the teeth and tongue from a trollhound.",
     "data": {
       "level": 5,
       "rarity": "common",
@@ -5611,6 +6252,19 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "magical",
+            "manipulate"
+          ],
+          "name": "Ravenous Strike",
+          "text": "**Effect** You Strike with the *trollhound pick*, transferring a portion of a trollhound's legendary appetite to the target. A living enemy who takes damage from the attack must attempt a Will DC 19 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature suffers hunger pangs, becoming [Off Guard](/condition/off-guard-player-core) for 1 round.\n\n**Failure** The creature experiences gnawing hunger, becoming off-guard for 1 round and [Enfeebled 1](/condition/enfeebled-player-core) for 1 minute. If the creature consumes any amount of food or drink (including imbibing a potion), the enfeebled condition ends.\n\n**Critical Failure** As failure, but the creature is Enfeebled 2 and each instance of consuming food or drink reduces the penalty by 1.\n\n---",
+          "effect": "You Strike with the *trollhound pick*, transferring a portion of a trollhound's legendary appetite to the target. A living enemy who takes damage from the attack must attempt a Will DC 19 save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature suffers hunger pangs, becoming [Off Guard](/condition/off-guard-player-core) for 1 round.\n\n**Failure** The creature experiences gnawing hunger, becoming off-guard for 1 round and [Enfeebled 1](/condition/enfeebled-player-core) for 1 minute. If the creature consumes any amount of food or drink (including imbibing a potion), the enfeebled condition ends.\n\n**Critical Failure** As failure, but the creature is Enfeebled 2 and each instance of consuming food or drink reduces the penalty by 1.\n\n---",
+          "description": ""
         }
       ]
     },
@@ -5798,7 +6452,7 @@
     "systemVersion": "1.2.10",
     "name": "Viperous Elixir (Greater)",
     "slug": "viperous-elixir-greater-howl-of-the-wild",
-    "descr": "**Activate** A (manipulate)\n\n---\n\nYour teeth elongate into fangs with grooves that can channel a deadly venom. You gain a fangs unarmed attack that deals 1d6 piercing damage, unless you already have an unarmed bite attack that deals more damage. You gain the listed item bonus to unarmed attack and damage rolls when you Strike with your fangs or another bite attack.\n\nThe bonus is +3, your fangs inflict [Wyvern Poison](/item/wyvern-poison-player-core-2), and the duration is 10 minutes or until you hit and deal damage with your fangs three times, whichever comes first.\n\nEffect: Viperous Elixir (Greater)",
+    "descr": "---\n\nYour teeth elongate into fangs with grooves that can channel a deadly venom. You gain a fangs unarmed attack that deals 1d6 piercing damage, unless you already have an unarmed bite attack that deals more damage. You gain the listed item bonus to unarmed attack and damage rolls when you Strike with your fangs or another bite attack.\n\nThe bonus is +3, your fangs inflict [Wyvern Poison](/item/wyvern-poison-player-core-2), and the duration is 10 minutes or until you hit and deal damage with your fangs three times, whichever comes first.\n\nEffect: Viperous Elixir (Greater)",
     "data": {
       "level": 11,
       "rarity": "common",
@@ -5834,7 +6488,14 @@
           "label": "poison",
           "slug": "poison"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5866,7 +6527,7 @@
     "systemVersion": "1.2.10",
     "name": "Viperous Elixir (Lesser)",
     "slug": "viperous-elixir-lesser-howl-of-the-wild",
-    "descr": "**Activate** A (manipulate)\n\n---\n\nYour teeth elongate into fangs with grooves that can channel a deadly venom. You gain a fangs unarmed attack that deals 1d6 piercing damage, unless you already have an unarmed bite attack that deals more damage. You gain the listed item bonus to unarmed attack and damage rolls when you Strike with your fangs or another bite attack.\n\nThe bonus is +1 item, your fangs inflict [Black Adder Venom](/item/black-adder-venom-player-core-2), and the duration is 1 minute or until you hit and deal damage with your fangs, whichever comes first.\n\nEffect: Viperous Elixir (Lesser)",
+    "descr": "---\n\nYour teeth elongate into fangs with grooves that can channel a deadly venom. You gain a fangs unarmed attack that deals 1d6 piercing damage, unless you already have an unarmed bite attack that deals more damage. You gain the listed item bonus to unarmed attack and damage rolls when you Strike with your fangs or another bite attack.\n\nThe bonus is +1 item, your fangs inflict [Black Adder Venom](/item/black-adder-venom-player-core-2), and the duration is 1 minute or until you hit and deal damage with your fangs, whichever comes first.\n\nEffect: Viperous Elixir (Lesser)",
     "data": {
       "level": 5,
       "rarity": "common",
@@ -5902,7 +6563,14 @@
           "label": "poison",
           "slug": "poison"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5934,7 +6602,7 @@
     "systemVersion": "1.2.10",
     "name": "Viperous Elixir (Moderate)",
     "slug": "viperous-elixir-moderate-howl-of-the-wild",
-    "descr": "**Activate** A (manipulate)\n\n---\n\nYour teeth elongate into fangs with grooves that can channel a deadly venom. You gain a fangs unarmed attack that deals 1d6 piercing damage, unless you already have an unarmed bite attack that deals more damage. You gain the listed item bonus to unarmed attack and damage rolls when you Strike with your fangs or another bite attack.\n\nThe bonus is +2, your fangs inflict [Giant Scorpion Venom](/item/giant-scorpion-venom-player-core-2), and the duration is 10 minutes or until you hit and deal damage with your fangs twice, whichever comes first.\n\nEffect: Viperous Elixir (Moderate)",
+    "descr": "---\n\nYour teeth elongate into fangs with grooves that can channel a deadly venom. You gain a fangs unarmed attack that deals 1d6 piercing damage, unless you already have an unarmed bite attack that deals more damage. You gain the listed item bonus to unarmed attack and damage rolls when you Strike with your fangs or another bite attack.\n\nThe bonus is +2, your fangs inflict [Giant Scorpion Venom](/item/giant-scorpion-venom-player-core-2), and the duration is 10 minutes or until you hit and deal damage with your fangs twice, whichever comes first.\n\nEffect: Viperous Elixir (Moderate)",
     "data": {
       "level": 8,
       "rarity": "common",
@@ -5970,7 +6638,14 @@
           "label": "poison",
           "slug": "poison"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6002,7 +6677,7 @@
     "systemVersion": "1.2.10",
     "name": "Wemmuth Trinket",
     "slug": "wemmuth-trinket-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell (add 1 action)\n\n---\n\nThe baubles wemmuths use to lure victims to their hunting grounds are dangerous to retrieve and often stained by blood. One of these trinkets covers the plant matter created by [Entangling Flora](/spell/entangling-flora-player-core) with blood-drinking thorns. Creatures who fail or critically fail their Reflex saves against *entangling flora* also take piercing damage equal to the spell's rank.\n\nEffect: Wemmuth Trinket",
+    "descr": "---\n\nThe baubles wemmuths use to lure victims to their hunting grounds are dangerous to retrieve and often stained by blood. One of these trinkets covers the plant matter created by [Entangling Flora](/spell/entangling-flora-player-core) with blood-drinking thorns. Creatures who fail or critically fail their Reflex saves against *entangling flora* also take piercing damage equal to the spell's rank.\n\nEffect: Wemmuth Trinket",
     "data": {
       "level": 3,
       "rarity": "common",
@@ -6028,7 +6703,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "(add 1 action)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6115,7 +6794,7 @@
     "systemVersion": "1.2.10",
     "name": "Whip-Tongue Sling",
     "slug": "whip-tongue-sling-howl-of-the-wild",
-    "descr": "This is a *+2 striking sling* made from the neck, jaw, and tongue of a mobogo to resemble its mouth. The tongue curls around each bullet, which is thrown with the snap of your wrist. Each throw causes a small croak to echo from the sling.\n\n---\n\n**Activate—Bolstering Croak** 2 (auditory, concentrate, emotion, manipulate, mental)\n\n**Frequency** once per day;\n\n**Effect** You raise your sling and work the handle to mimic a mobogo's croaking song. Allies within 25 feet gain a +1 status bonus to saves against fear effects for 1 round. You can Sustain this for up to 4 rounds. During this time, you can't use the sling to Strike or activate its Tongue Twister ability. After using Bolstering Croak, you can recharge it once per day by feeding the sling a number of gallons of water equal to double the number of rounds for which the Bolstering Croak was active. For example, if you activated but didn't sustain Bolstering Croak, you would require 2 gallons of water to recharge it. If you activated Bolstering Cloak and then Sustained for 1 round, you would require 4 gallons of water.\n\nEffect: Bolstering Croak\n\n---\n\n**Activate—Tongue Twister** 2 (manipulate)\n\n**Requirements** The sling isn't loaded\n\n**Effect** You fully unfurl the sling's tongue to grab hold of a creature within 20 feet, and attempt to move them. Attempt an Athletics check against the creature's Fortitude DC. On a success, you can move the creature up to 15 feet into any space within 20 feet of you. If you target a willing ally with this ability, you automatically succeed at the Athletics check.\n\n---\n\n**Craft Requirements** The initial raw materials must include the throat, tongue, and skin from a mobogo.",
+    "descr": "This is a *+2 striking sling* made from the neck, jaw, and tongue of a mobogo to resemble its mouth. The tongue curls around each bullet, which is thrown with the snap of your wrist. Each throw causes a small croak to echo from the sling.\n\n---\n\n**Craft Requirements** The initial raw materials must include the throat, tongue, and skin from a mobogo.",
     "data": {
       "level": 11,
       "rarity": "uncommon",
@@ -6137,6 +6816,32 @@
         {
           "label": "propulsive",
           "slug": "propulsive"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "auditory",
+            "concentrate",
+            "emotion",
+            "manipulate",
+            "mental"
+          ],
+          "name": "Bolstering Croak",
+          "text": "**Frequency** once per day;\n\n**Effect** You raise your sling and work the handle to mimic a mobogo's croaking song. Allies within 25 feet gain a +1 status bonus to saves against fear effects for 1 round. You can Sustain this for up to 4 rounds. During this time, you can't use the sling to Strike or activate its Tongue Twister ability. After using Bolstering Croak, you can recharge it once per day by feeding the sling a number of gallons of water equal to double the number of rounds for which the Bolstering Croak was active. For example, if you activated but didn't sustain Bolstering Croak, you would require 2 gallons of water to recharge it. If you activated Bolstering Cloak and then Sustained for 1 round, you would require 4 gallons of water.\n\nEffect: Bolstering Croak\n\n---",
+          "effect": "You raise your sling and work the handle to mimic a mobogo's croaking song. Allies within 25 feet gain a +1 status bonus to saves against fear effects for 1 round. You can Sustain this for up to 4 rounds. During this time, you can't use the sling to Strike or activate its Tongue Twister ability. After using Bolstering Croak, you can recharge it once per day by feeding the sling a number of gallons of water equal to double the number of rounds for which the Bolstering Croak was active. For example, if you activated but didn't sustain Bolstering Croak, you would require 2 gallons of water to recharge it. If you activated Bolstering Cloak and then Sustained for 1 round, you would require 4 gallons of water.\n\nEffect: Bolstering Croak\n\n---",
+          "description": "**Frequency** once per day"
+        },
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Tongue Twister",
+          "text": "**Requirements** The sling isn't loaded\n\n**Effect** You fully unfurl the sling's tongue to grab hold of a creature within 20 feet, and attempt to move them. Attempt an Athletics check against the creature's Fortitude DC. On a success, you can move the creature up to 15 feet into any space within 20 feet of you. If you target a willing ally with this ability, you automatically succeed at the Athletics check.\n\n---",
+          "effect": "You fully unfurl the sling's tongue to grab hold of a creature within 20 feet, and attempt to move them. Attempt an Athletics check against the creature's Fortitude DC. On a success, you can move the creature up to 15 feet into any space within 20 feet of you. If you target a willing ally with this ability, you automatically succeed at the Athletics check.\n\n---",
+          "description": "**Requirements** The sling isn't loaded"
         }
       ]
     },
@@ -6167,7 +6872,7 @@
     "systemVersion": "1.2.10",
     "name": "Witchwarg Fur",
     "slug": "witchwarg-fur-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell\n\n---\n\nThe pelt of a witchwarg stays cold long after it leaves the creature's body. A tuft of this fur can freeze a [Fire Shield](/spell/fire-shield-player-core) spell into solid ice, inverting its usual effects. The spell's [fire](/trait/fire) trait is replaced with the [cold](/trait/cold) trait, you gain resistance to fire damage and environmental heat effects (instead of cold effects), the shield is immune to cold damage instead of fire damage, and its Hardness is halved against fire effects. The damage you deal to creatures that touch you or hit you with a melee or unarmed attack has its type changed to cold.",
+    "descr": "---\n\nThe pelt of a witchwarg stays cold long after it leaves the creature's body. A tuft of this fur can freeze a [Fire Shield](/spell/fire-shield-player-core) spell into solid ice, inverting its usual effects. The spell's [fire](/trait/fire) trait is replaced with the [cold](/trait/cold) trait, you gain resistance to fire damage and environmental heat effects (instead of cold effects), the shield is immune to cold damage instead of fire damage, and its Hardness is halved against fire effects. The damage you deal to creatures that touch you or hit you with a melee or unarmed attack has its type changed to cold.",
     "data": {
       "level": 7,
       "rarity": "common",
@@ -6193,7 +6898,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -6224,7 +6933,7 @@
     "systemVersion": "1.2.10",
     "name": "Wolliped Fleece",
     "slug": "wolliped-fleece-howl-of-the-wild",
-    "descr": "**Activate** Cast a Spell (add one action)\n\n---\n\nA small bundle of *wolliped fleece* contains the memory of winter snows. Adding this catalyst to a casting of [Chilling Spray](/spell/chilling-spray-player-core-2) coats all squares within the area of effect with a thin layer of ice. These squares become difficult terrain until the beginning of your next turn.",
+    "descr": "---\n\nA small bundle of *wolliped fleece* contains the memory of winter snows. Adding this catalyst to a casting of [Chilling Spray](/spell/chilling-spray-player-core-2) coats all squares within the area of effect with a thin layer of ice. These squares become difficult terrain until the beginning of your next turn.",
     "data": {
       "level": 1,
       "rarity": "common",
@@ -6250,7 +6959,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "(add one action)"
+      }
     },
     "attributes": {
       "remaster": true,

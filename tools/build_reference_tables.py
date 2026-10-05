@@ -291,6 +291,14 @@ def build_tables(records: list[dict], source_id: str) -> list[dict]:
     for spec in ROLL_TABLES.get(source_id, []):
         entity = entities[(spec.kind, spec.slug)]
         tables = markdown_tables(entity.get("descr") or "")
+        if entity.get("kind") == "Item":
+            # Activation-owned tables move with their source text into the
+            # editable fields. Keep them available to reference-table rebuilds.
+            data = entity.get("data") or {}
+            primary = data.get("activation") or {}
+            tables.extend(markdown_tables(primary.get("text") or ""))
+            for activation in data.get("activations") or []:
+                tables.extend(markdown_tables(activation.get("text") or ""))
         if spec.table_index >= len(tables):
             raise ValueError(
                 f"missing roll table {spec.table_index} from {source_id}/{spec.slug}"

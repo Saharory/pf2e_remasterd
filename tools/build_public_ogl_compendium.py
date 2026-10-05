@@ -12,6 +12,7 @@ from typing import Any
 
 from build_public_orc_compendium import (
     COLLECTION_KIND,
+    CANONICAL_TRAIT_SLUGS,
     COMMUNITY_USE_NOTICE,
     PRIVATE_OR_PROVENANCE_KEYS,
     STRIP_TOP_LEVEL_DESCRIPTION,
@@ -30,6 +31,7 @@ from build_reference_tables import build_tables
 from creature_ability_glossary import configure_creature_abilities
 from creature_senses import configure_creature_senses
 from creature_editor_data import configure_creature_editor_data
+from item_editor_data import configure_item_editor_data
 from creature_spellcasting import configure_creature_spellcasting
 from creature_metadata import configure_creature_metadata
 from spell_area_templates import configure_spell_area_template
@@ -145,12 +147,16 @@ def main() -> int:
             raise ValueError(f"{path} must contain a JSON array")
         cleaned = [sanitize_entity(record, expected_kind) for record in records]
         if cleaned:
+            # Preserve printed table order while exposing editable activation fields.
+            module_records.extend(copy.deepcopy(cleaned) if expected_kind == "Item" else cleaned)
+            if expected_kind == "Item":
+                for entity in cleaned:
+                    configure_item_editor_data(entity, CANONICAL_TRAIT_SLUGS)
             (args.output / path.name).write_text(
                 json.dumps(cleaned, ensure_ascii=False, indent=2) + "\n"
             )
             written.add(path.name)
             counts[expected_kind] = len(cleaned)
-            module_records.extend(cleaned)
 
     tables = build_tables(module_records, source["id"])
     if tables:

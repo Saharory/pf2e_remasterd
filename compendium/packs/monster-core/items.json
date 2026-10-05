@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Blackaxe",
     "slug": "blackaxe-monster-core",
-    "descr": "This potent weapon used by Treerazer is a *+4 greater corrosive major striking obsidian greataxe* that grants a +4 item bonus to attack rolls, deals an extra 2d6 damage to plants, and has the properties of adamantine. It deals an additional die of damage when wielded by Treerazer.\n\n---\n\n**Activate—Owner's Authority** 1 (concentrate, scrying)\n\n**Requirements** You aren't wielding Blackaxe and you are its true owner\n\n---\n\n**Effect** You sense the world around Blackaxe as though you were in its location and can use any of your innate spells through the link as if it were the source of the spell. If another creature is wielding Blackaxe, it must succeed at a Will DC 50 save or be [Slowed 2](/condition/slowed-player-core) until it relinquishes the weapon.\n\n---\n\n**Activate—Owner's Reclamation** F (concentrate, teleportation)\n\n**Requirements** You aren't wielding Blackaxe and you are its true owner\n\n---\n\n**Effect** Blackaxe appears in your hands, teleporting instantly from its prior location.\n\n---\n\n**Activate—Rejuvenating Deforestation** 1 (concentrate, death, healing, positive)\n\n**Frequency** once per minute\n\n---\n\n**Effect** Make a Strike against a living tree with Blackaxe. If it hits, the tree withers to ash and you heal 250 Hit Points and gain the benefit of a 6th-rank Restoration (6th) and [Sound Body](/spell/sound-body-player-core) spell.\n\n---\n\n**Destruction** Chop a powerful magical tree with Blackaxe, and while the sap is still fresh, sever one of Cyth-V'sug's limbs. This makes Blackaxe explode violently.",
+    "descr": "This potent weapon used by Treerazer is a *+4 greater corrosive major striking obsidian greataxe* that grants a +4 item bonus to attack rolls, deals an extra 2d6 damage to plants, and has the properties of adamantine. It deals an additional die of damage when wielded by Treerazer.\n\n---",
     "data": {
       "level": 25,
       "rarity": "unique",
@@ -46,6 +46,37 @@
         {
           "label": "unholy",
           "slug": "unholy"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate",
+            "scrying"
+          ],
+          "name": "Owner's Authority",
+          "text": "**Requirements** You aren't wielding Blackaxe and you are its true owner\n\n---\n\n**Effect** You sense the world around Blackaxe as though you were in its location and can use any of your innate spells through the link as if it were the source of the spell. If another creature is wielding Blackaxe, it must succeed at a Will DC 50 save or be [Slowed 2](/condition/slowed-player-core) until it relinquishes the weapon.\n\n---",
+          "effect": "You sense the world around Blackaxe as though you were in its location and can use any of your innate spells through the link as if it were the source of the spell. If another creature is wielding Blackaxe, it must succeed at a Will DC 50 save or be [Slowed 2](/condition/slowed-player-core) until it relinquishes the weapon.\n\n---",
+          "description": "**Requirements** You aren't wielding Blackaxe and you are its true owner\n\n---"
+        },
+        {
+          "actions": "free",
+          "traits": [
+            "concentrate",
+            "teleportation"
+          ],
+          "name": "Owner's Reclamation",
+          "text": "**Requirements** You aren't wielding Blackaxe and you are its true owner\n\n---\n\n**Effect** Blackaxe appears in your hands, teleporting instantly from its prior location.\n\n---",
+          "effect": "Blackaxe appears in your hands, teleporting instantly from its prior location.\n\n---",
+          "description": "**Requirements** You aren't wielding Blackaxe and you are its true owner\n\n---"
+        },
+        {
+          "actions": "one",
+          "name": "Rejuvenating Deforestation",
+          "text": "(concentrate, death, healing, positive)\n\n**Frequency** once per minute\n\n---\n\n**Effect** Make a Strike against a living tree with Blackaxe. If it hits, the tree withers to ash and you heal 250 Hit Points and gain the benefit of a 6th-rank Restoration (6th) and [Sound Body](/spell/sound-body-player-core) spell.\n\n---\n\n**Destruction** Chop a powerful magical tree with Blackaxe, and while the sap is still fresh, sever one of Cyth-V'sug's limbs. This makes Blackaxe explode violently.",
+          "effect": "Make a Strike against a living tree with Blackaxe. If it hits, the tree withers to ash and you heal 250 Hit Points and gain the benefit of a 6th-rank Restoration (6th) and [Sound Body](/spell/sound-body-player-core) spell.\n\n---\n\n**Destruction** Chop a powerful magical tree with Blackaxe, and while the sap is still fresh, sever one of Cyth-V'sug's limbs. This makes Blackaxe explode violently.",
+          "description": "(concentrate, death, healing, positive)\n\n**Frequency** once per minute\n\n---"
         }
       ]
     },

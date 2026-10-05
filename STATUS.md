@@ -1,6 +1,6 @@
 # Current status
 
-Last updated: 2026-10-05
+Last updated: 2026-10-06
 
 - Follow-up in a separate chat: the user reported import bugs in **TRADE
   DEATH FOR LIFE** and **TREE OF LIFE AND DEATH** on 2026-10-05. Details and
@@ -19,22 +19,23 @@ Last updated: 2026-10-05
   deleting older systems. This supersedes the earlier pause-related package
   delivery restriction and is saved in `AGENTS.md`. Native testing remains
   user-controlled; no agent app automation is authorized.
-- Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-05
+- Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-06
   with the creature, item, and spell editor redesigns and previous system-wide
   refresh repairs, improved attack/casting/usage summaries, and numeric
   spellcasting-input repair, shared ability writing flow, and character tabs.
-  It now also includes the named item activation rendering repair below.
+  It now also includes the named item activation rendering repair and imported
+  activation field conversion below.
   Archive inspection/CRC/checksums pass; all 199 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `e8bfb58e35895f341168da1c189cd17db4cb16b35922b8b3e3c60fc3e21a74ad`.
+  SHA-256: `ff7562719de1a98042f64449e7dbcffaa770149edd3b723421035a3f127f991a`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
   main and test archives were identical at that point; archive CRC and
-  checksums passed. The newer activation-rendering fix is currently only in
+  checksums passed. The newer activation rendering/import fixes are only in
   the test package, not this main distribution or the previous branch push.
   Version remains `0.9.01`. Distribution artifacts are ignored
   by Git; the branch push carries source changes and documentation.
@@ -42,7 +43,7 @@ Last updated: 2026-10-05
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
   spell durations/areas, hazard/vehicle mechanics, and four UI regression files.
-  Revalidated on 2026-10-05 with the repaired virtualenv and bundled Node via
+  Revalidated on 2026-10-06 with the repaired virtualenv and bundled Node via
   `../tools/project-env python tools/eplus_dev.py check --json`.
 - Spell editor efficiency: source complete, native verification pending.
   Type/rank/rarity/traits now share the opening group. **Casting** keeps
@@ -110,6 +111,38 @@ Last updated: 2026-10-05
   structured rules rendering, save/reopen, and named activation deletion.
   Known app redraw/save symptoms remain separate and unresolved. This repair is
   committed locally only; no push or release publication was performed.
+- Imported item activation conversion: source complete on 2026-10-06;
+  native verification pending. The user confirms that the complaint concerns
+  existing imported text, not new editor input. Audit found 2,661 items mention
+  Activate in general `descr`, with no structured activation data. The new
+  deterministic `tools/item_editor_data.py` pass recognizes explicit headings
+  and populates 2,653 items across 20 ORC/OGL item collections: 1,873 primary
+  activations and 1,162 additional entries. It preserves general prose,
+  crafting/shield properties, and variant sections. Only root activations and
+  exact-name variant activations are assigned to the current item; ambiguous
+  or incidental mentions remain intact. Equipment-header activations supply
+  actions/traits without guessing that all following prose is their Effect.
+  Timed/variable costs remain readable in description text instead of acquiring
+  a guessed fixed action cost. Named rules use the shared Trigger/Description /
+  Effect parser and retain their legacy body. Activation trait links remain
+  clickable in both renderers. Existing/cleared explicit settings are preserved.
+  Full builders invoke the same converter; the activation-only CLI runs after
+  public link enrichment so unrelated linked records are not regenerated.
+  Reference-table rebuilding also reads activation-owned text; table IDs and
+  outcomes are unchanged. Tests cover scope, timing, coexistence, idempotence,
+  source rules/links, and compatibility. Corpus comparisons prove item IDs,
+  licenses, other data, all non-item collections, and tables unchanged; only
+  the owned activation fields/description spans changed. All 24 conversion
+  tests and the canonical check pass (83 definitions, nine validators).
+  The verified test archive changes only `items.json` and the two activation
+  display partials; 199 packaged source files match, CRC/checksums pass, and
+  all 18,041 records remain. Version stays `0.9.01`; no push/publication or
+  active user-record migration. Fresh stock items get converted fields;
+  older personal copies may retain their pre-conversion data.
+  Next native checks after importing: fresh Antler Arrow → Primary activation
+  shows one action/manipulate while general rules remain; fresh Accolade Robe
+  → Additional activations shows Review/Extra Credit with their rules. Check
+  save/reopen/rendering and report native redraw/persistence separately.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in

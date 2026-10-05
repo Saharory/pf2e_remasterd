@@ -8389,7 +8389,7 @@
     "systemVersion": "1.2.10",
     "name": "Spined Shield",
     "slug": "spined-shield-player-core",
-    "descr": "Five jagged spines project from the surface of this steel shield (Hardness 6, HP 24, BT 12). The spines are +1 striking shield spikes.\n\nWhen you use the Shield Block reaction with this shield, the spines take the damage before the shield itself does. When the shield would take damage (after applying Hardness), one spine snaps off per 6 damage, reducing the damage by 6. The shield takes any remaining damage. When there are no spines left, the shield takes damage as normal.\n\nWhen all the spines are gone, you lose the ability to attack with them until the spines regenerate the next day.\n\nEffect: Spined Shield Spines\n\n**Activate** A Interact\n\n---\n\n**Effect** You shoot one of the shield's spines at a target. A fired spine uses the spikes' statistics, but it is a martial ranged weapon with a range increment of 120 feet.",
+    "descr": "Five jagged spines project from the surface of this steel shield (Hardness 6, HP 24, BT 12). The spines are +1 striking shield spikes.\n\nWhen you use the Shield Block reaction with this shield, the spines take the damage before the shield itself does. When the shield would take damage (after applying Hardness), one spine snaps off per 6 damage, reducing the damage by 6. The shield takes any remaining damage. When there are no spines left, the shield takes damage as normal.\n\nWhen all the spines are gone, you lose the ability to attack with them until the spines regenerate the next day.\n\nEffect: Spined Shield Spines\n\n---\n\n**Effect** You shoot one of the shield's spines at a target. A fired spine uses the spikes' statistics, but it is a martial ranged weapon with a range increment of 120 feet.",
     "data": {
       "level": 7,
       "rarity": "common",
@@ -8408,7 +8408,12 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "type": "Interact",
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -9273,7 +9278,7 @@
     "systemVersion": "1.2.10",
     "name": "Tiger Fork",
     "slug": "tiger-fork-player-core",
-    "descr": "The tiger fork is a *+1 trident* with the disarm and [grapple](/trait/grapple) traits. It has wide, flaring prongs that can be used to fend off deadly beasts and entrap opponents during combat. While you have another creature [Grabbed](/condition/grabbed-player-core) with the *tiger fork*, you gain a +1 circumstance bonus to saves against forced movement effects.\n\n**Activate—Fork Grip** 1 (manipulate)\n\n**Requirements** Your last action was a successful Strike against a creature\n\n---\n\n**Effect** You can activate the *tiger fork* to attempt to [Grapple](/action/grapple-player-core) the creature. This attempt uses the same multiple attack penalty as the required Strike.",
+    "descr": "The tiger fork is a *+1 trident* with the disarm and [grapple](/trait/grapple) traits. It has wide, flaring prongs that can be used to fend off deadly beasts and entrap opponents during combat. While you have another creature [Grabbed](/condition/grabbed-player-core) with the *tiger fork*, you gain a +1 circumstance bonus to saves against forced movement effects.",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -9309,6 +9314,18 @@
         {
           "label": "thrown-20",
           "slug": "thrown"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Fork Grip",
+          "text": "**Requirements** Your last action was a successful Strike against a creature\n\n---\n\n**Effect** You can activate the *tiger fork* to attempt to [Grapple](/action/grapple-player-core) the creature. This attempt uses the same multiple attack penalty as the required Strike.",
+          "effect": "You can activate the *tiger fork* to attempt to [Grapple](/action/grapple-player-core) the creature. This attempt uses the same multiple attack penalty as the required Strike.",
+          "description": "**Requirements** Your last action was a successful Strike against a creature\n\n---"
         }
       ]
     },

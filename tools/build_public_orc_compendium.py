@@ -28,6 +28,7 @@ from creature_metadata import configure_creature_metadata
 from creature_ability_glossary import configure_creature_abilities
 from creature_senses import configure_creature_senses
 from creature_editor_data import configure_creature_editor_data
+from item_editor_data import configure_item_editor_data
 from spell_area_templates import configure_spell_area_template
 from spell_load_data import configure_spell_load_data
 from skill_references import skill_reference_records
@@ -908,12 +909,16 @@ def build_module(
             else:
                 cleaned.append(entity)
         if cleaned:
+            # Roll-table extraction needs the original description/table order.
+            module_records.extend(copy.deepcopy(cleaned) if expected_kind == "Item" else cleaned)
+            if expected_kind == "Item":
+                for entity in cleaned:
+                    configure_item_editor_data(entity, CANONICAL_TRAIT_SLUGS)
             (output_dir / path.name).write_text(
                 json.dumps(cleaned, ensure_ascii=False, indent=2) + "\n"
             )
             written.add(path.name)
             counts[expected_kind] = len(cleaned)
-            module_records.extend(cleaned)
 
     # Roll tables can originate in rules, feats, spells, actions, or items.
     # Generate them only after every collection has been sanitized so a full

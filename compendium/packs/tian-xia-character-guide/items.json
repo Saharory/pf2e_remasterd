@@ -150,7 +150,7 @@
     "systemVersion": "1.2.10",
     "name": "Bow of Sun Slaying",
     "slug": "bow-of-sun-slaying-tian-xia-character-guide-equipment-equipment-3478",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Base Weapon** [Composite Shortbow](/item/composite-shortbow-player-core)\n\n---\n\nThe Bow of Sun Slaying is a +3 [major striking](/item/striking-gm-core) greater frost composite shortbow constructed out of wood, horn, and sinew. It bears carvings of a long-forgotten demigod who legends say possessed the ability to destroy the sun with a single arrow.\n\n**Activate—Darkness for My Foes** **Single Action** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Requirements** Your last action was a successful [Strike](/action/strike-player-core) against your foe with this weapon; **Effect** You whisper, “Darkness for my foes,” and the target of your last attack takes 10d6 [cold](/trait/cold) damage and 10d6 [spirit](/trait/spirit) damage (DC 45 basic Will save).",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Base Weapon** [Composite Shortbow](/item/composite-shortbow-player-core)\n\n---\n\nThe Bow of Sun Slaying is a +3 [major striking](/item/striking-gm-core) greater frost composite shortbow constructed out of wood, horn, and sinew. It bears carvings of a long-forgotten demigod who legends say possessed the ability to destroy the sun with a single arrow.",
     "data": {
       "level": 20,
       "rarity": "unique",
@@ -174,6 +174,18 @@
         {
           "label": "divine",
           "slug": "divine"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Darkness for My Foes",
+          "text": "**Frequency** once per day; **Requirements** Your last action was a successful [Strike](/action/strike-player-core) against your foe with this weapon; **Effect** You whisper, “Darkness for my foes,” and the target of your last attack takes 10d6 [cold](/trait/cold) damage and 10d6 [spirit](/trait/spirit) damage (DC 45 basic Will save).",
+          "effect": "You whisper, “Darkness for my foes,” and the target of your last attack takes 10d6 [cold](/trait/cold) damage and 10d6 [spirit](/trait/spirit) damage (DC 45 basic Will save).",
+          "description": "**Frequency** once per day; **Requirements** Your last action was a successful [Strike](/action/strike-player-core) against your foe with this weapon"
         }
       ]
     },
@@ -296,7 +308,7 @@
     "systemVersion": "1.2.10",
     "name": "Caress of the Great Serpent",
     "slug": "caress-of-the-great-serpent-tian-xia-character-guide-equipment-equipment-3461",
-    "descr": "**Price** 24,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** 2\n\n**Base Weapon** [Urumi](/item/urumi-tian-xia-character-guide-weapon-weapon-306)\n\n---\n\nThis +3 [greater striking](/item/striking-gm-core) [extending](/item/extending-gm-core) urumi was fashioned after the legendary eightheaded orochi serpent, with its whiplike metal blades carved to resemble the many heads of the mythical beast, and its hilt wrapped in scaled leather. These weapons are commonly used by those who worship an orochi, raiding and threatening settlements to obtain sacrifices for the beast in hopes of being granted some modicum of its power.\n\n**Activate—Serpent’s Kiss** **Three Actions** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Effect** You use your urumi as an effigy with which to call upon an orochi’s power, offering your blood in exchange. You can make up to eight [Strikes](/action/strike-player-core) with a –2 penalty, each against a different target within 30 feet. For each Strike you choose to make, you take 1d6 piercing damage. Each attack counts toward your multiple attack penalty, but don’t increase your penalty until you’ve made all your attacks.",
+    "descr": "**Price** 24,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** 2\n\n**Base Weapon** [Urumi](/item/urumi-tian-xia-character-guide-weapon-weapon-306)\n\n---\n\nThis +3 [greater striking](/item/striking-gm-core) [extending](/item/extending-gm-core) urumi was fashioned after the legendary eightheaded orochi serpent, with its whiplike metal blades carved to resemble the many heads of the mythical beast, and its hilt wrapped in scaled leather. These weapons are commonly used by those who worship an orochi, raiding and threatening settlements to obtain sacrifices for the beast in hopes of being granted some modicum of its power.",
     "data": {
       "level": 18,
       "rarity": "uncommon",
@@ -311,6 +323,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "three",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Serpent’s Kiss",
+          "text": "**Frequency** once per day; **Effect** You use your urumi as an effigy with which to call upon an orochi’s power, offering your blood in exchange. You can make up to eight [Strikes](/action/strike-player-core) with a –2 penalty, each against a different target within 30 feet. For each Strike you choose to make, you take 1d6 piercing damage. Each attack counts toward your multiple attack penalty, but don’t increase your penalty until you’ve made all your attacks.",
+          "effect": "You use your urumi as an effigy with which to call upon an orochi’s power, offering your blood in exchange. You can make up to eight [Strikes](/action/strike-player-core) with a –2 penalty, each against a different target within 30 feet. For each Strike you choose to make, you take 1d6 piercing damage. Each attack counts toward your multiple attack penalty, but don’t increase your penalty until you’ve made all your attacks.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -344,7 +368,7 @@
     "systemVersion": "1.2.10",
     "name": "Celestial Peachwood Sword",
     "slug": "celestial-peachwood-sword-tian-xia-character-guide-equipment-equipment-3462",
-    "descr": "**Price** 15,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Base Weapon** [Shortsword](/item/shortsword-player-core)\n\n---\n\nFrom blade to pommel, this sword is carved from a branch of the now-extinct celestial peach tree. The blade of this +3 [greater striking](/item/striking-gm-core) [holy](/item/holy-gm-core) [vitalizing](/item/vitalizing-gm-core) [peachwood](/item/peachwood-tian-xia-character-guide-equipment-equipment-3470) shortsword has ancient runes that can permanently destroy the most powerful undead—if you are willing to pay the price.\nAn [undead](/trait/undead) creature of 12th level or lower that takes damage from a [Strike](/action/strike-player-core) with the sword takes 10d6 [vitality](/trait/vitality) damage with a DC 35 basic Fortitude save. This damage is separate from the Strike itself and isn't included in any effect based on the Strike's damage.\n\n**Activate—Violent Exorcism** **Reaction** ([concentrate](/trait/concentrate)) **Frequency** once per day; Trigger You critically hit an undead creature with the sword; **Effect** The creature must succeed at a DC 35 Fortitude save or be destroyed. If the undead fails its saving throw and is destroyed, you suffer a backlash, taking 1d6 [void](/trait/void) damage per level of the destroyed undead.",
+    "descr": "**Price** 15,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Base Weapon** [Shortsword](/item/shortsword-player-core)\n\n---\n\nFrom blade to pommel, this sword is carved from a branch of the now-extinct celestial peach tree. The blade of this +3 [greater striking](/item/striking-gm-core) [holy](/item/holy-gm-core) [vitalizing](/item/vitalizing-gm-core) [peachwood](/item/peachwood-tian-xia-character-guide-equipment-equipment-3470) shortsword has ancient runes that can permanently destroy the most powerful undead—if you are willing to pay the price.\nAn [undead](/trait/undead) creature of 12th level or lower that takes damage from a [Strike](/action/strike-player-core) with the sword takes 10d6 [vitality](/trait/vitality) damage with a DC 35 basic Fortitude save. This damage is separate from the Strike itself and isn't included in any effect based on the Strike's damage.",
     "data": {
       "level": 17,
       "rarity": "rare",
@@ -369,6 +393,18 @@
         {
           "label": "vitality",
           "slug": "vitality"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "reaction",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Violent Exorcism",
+          "text": "**Frequency** once per day; Trigger You critically hit an undead creature with the sword; **Effect** The creature must succeed at a DC 35 Fortitude save or be destroyed. If the undead fails its saving throw and is destroyed, you suffer a backlash, taking 1d6 [void](/trait/void) damage per level of the destroyed undead.",
+          "effect": "The creature must succeed at a DC 35 Fortitude save or be destroyed. If the undead fails its saving throw and is destroyed, you suffer a backlash, taking 1d6 [void](/trait/void) damage per level of the destroyed undead.",
+          "description": "**Frequency** once per day; Trigger You critically hit an undead creature with the sword"
         }
       ]
     },
@@ -456,7 +492,7 @@
     "systemVersion": "1.2.10",
     "name": "Chilled Fire Noodles",
     "slug": "chilled-fire-noodles-tian-xia-character-guide-equipment-equipment-3458",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n([manipulate](/trait/manipulate))\n\n---\n\nThese cool noodles are served with dark fermented sauces and vinegars before finally being tossed with spicy chili oil. When you consume the noodles, you temporarily ignore the -1 status penalty to AC and saving throws caused by the [fatigued](/condition/fatigued-player-core) condition for 1 hour.\n\n## Chilled Fire Noodles\n\n**Price** 3 gp\n\n## Chilled Fire Noodles (Greater)\n\n**Price** 15 gp\n\n---\n\nYou temporarily ignore the -1 status penalty to AC and saving throws caused by the fatigued condition for 4 hours.",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nThese cool noodles are served with dark fermented sauces and vinegars before finally being tossed with spicy chili oil. When you consume the noodles, you temporarily ignore the -1 status penalty to AC and saving throws caused by the [fatigued](/condition/fatigued-player-core) condition for 1 hour.\n\n## Chilled Fire Noodles\n\n**Price** 3 gp\n\n## Chilled Fire Noodles (Greater)\n\n**Price** 15 gp\n\n---\n\nYou temporarily ignore the -1 status penalty to AC and saving throws caused by the fatigued condition for 4 hours.",
     "data": {
       "level": 1,
       "rarity": "uncommon",
@@ -477,7 +513,14 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -509,7 +552,7 @@
     "systemVersion": "1.2.10",
     "name": "Chilled Fire Noodles",
     "slug": "chilled-fire-noodles-tian-xia-character-guide-equipment-equipment-3458-3355",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n([manipulate](/trait/manipulate))\n\n---\n\nThese cool noodles are served with dark fermented sauces and vinegars before finally being tossed with spicy chili oil. When you consume the noodles, you temporarily ignore the -1 status penalty to AC and saving throws caused by the [fatigued](/condition/fatigued-player-core) condition for 1 hour.\n\n## Chilled Fire Noodles\n\n**Price** 3 gp\n\n## Chilled Fire Noodles (Greater)\n\n**Price** 15 gp\n\n---\n\nYou temporarily ignore the -1 status penalty to AC and saving throws caused by the fatigued condition for 4 hours.",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nThese cool noodles are served with dark fermented sauces and vinegars before finally being tossed with spicy chili oil. When you consume the noodles, you temporarily ignore the -1 status penalty to AC and saving throws caused by the [fatigued](/condition/fatigued-player-core) condition for 1 hour.\n\n## Chilled Fire Noodles\n\n**Price** 3 gp\n\n## Chilled Fire Noodles (Greater)\n\n**Price** 15 gp\n\n---\n\nYou temporarily ignore the -1 status penalty to AC and saving throws caused by the fatigued condition for 4 hours.",
     "data": {
       "level": 1,
       "rarity": "uncommon",
@@ -530,7 +573,14 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -562,7 +612,7 @@
     "systemVersion": "1.2.10",
     "name": "Chilled Fire Noodles (Greater)",
     "slug": "chilled-fire-noodles-greater-tian-xia-character-guide-equipment-equipment-3458-3356",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n([manipulate](/trait/manipulate))\n\n---\n\nThese cool noodles are served with dark fermented sauces and vinegars before finally being tossed with spicy chili oil. When you consume the noodles, you temporarily ignore the -1 status penalty to AC and saving throws caused by the [fatigued](/condition/fatigued-player-core) condition for 1 hour.\n\n## Chilled Fire Noodles\n\n**Price** 3 gp\n\n## Chilled Fire Noodles (Greater)\n\n**Price** 15 gp\n\n---\n\nYou temporarily ignore the -1 status penalty to AC and saving throws caused by the fatigued condition for 4 hours.",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nThese cool noodles are served with dark fermented sauces and vinegars before finally being tossed with spicy chili oil. When you consume the noodles, you temporarily ignore the -1 status penalty to AC and saving throws caused by the [fatigued](/condition/fatigued-player-core) condition for 1 hour.\n\n## Chilled Fire Noodles\n\n**Price** 3 gp\n\n## Chilled Fire Noodles (Greater)\n\n**Price** 15 gp\n\n---\n\nYou temporarily ignore the -1 status penalty to AC and saving throws caused by the fatigued condition for 4 hours.",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -583,7 +633,14 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -615,7 +672,7 @@
     "systemVersion": "1.2.10",
     "name": "Cloak of Waves & Clouds",
     "slug": "cloak-of-waves-clouds-tian-xia-character-guide-equipment-equipment-3463",
-    "descr": "**Price** 38,000 gp\n\n**Usage** worn cloak\n\n**Bulk** L\n\n---\n\nThis magical cloak was crafted from the feathers and scales of a legendary giant fish that could transform into a resplendent bird.\n\n**Activate—Cut Air and Sea** **Single Action** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Effect** The cloak ripples, becoming either giant eagle feathers or iridescent fish scales. Until you next Activate the cloak, you gain either a [swim](/action/swim-player-core) Speed of 60 feet and the ability to breathe underwater or a [fly](/action/fly-player-core) Speed of 40 feet.",
+    "descr": "**Price** 38,000 gp\n\n**Usage** worn cloak\n\n**Bulk** L\n\n---\n\nThis magical cloak was crafted from the feathers and scales of a legendary giant fish that could transform into a resplendent bird.",
     "data": {
       "level": 19,
       "rarity": "common",
@@ -635,6 +692,19 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Cut Air and Sea",
+          "text": "**Effect** The cloak ripples, becoming either giant eagle feathers or iridescent fish scales. Until you next Activate the cloak, you gain either a [swim](/action/swim-player-core) Speed of 60 feet and the ability to breathe underwater or a [fly](/action/fly-player-core) Speed of 40 feet.",
+          "effect": "The cloak ripples, becoming either giant eagle feathers or iridescent fish scales. Until you next Activate the cloak, you gain either a [swim](/action/swim-player-core) Speed of 60 feet and the ability to breathe underwater or a [fly](/action/fly-player-core) Speed of 40 feet.",
+          "description": ""
         }
       ]
     },
@@ -669,7 +739,7 @@
     "systemVersion": "1.2.10",
     "name": "Cloud Buns",
     "slug": "cloud-buns-tian-xia-character-guide-equipment-equipment-3459",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n([manipulate](/trait/manipulate))\n\n---\n\nWhite, pillowy dough surrounds an interior containing minced meats, spices, and herbs. The dough is steamed with elemental magic to make it light and airy while keeping the meaty center moist. When you consume a bun, a set of small clouds form around your feet that grant you a [_fly_](/spell/fly-player-core) Speed of 30 feet or your speed, whichever is lower, for 1 round.\n\n## Cloud Buns\n\n**Price** 17 gp\n\n## Cloud Buns (Greater)\n\n**Price** 150 gp\n\n---\n\nYou have a fly Speed of 30 feet or your speed, whichever is lower, for 1 minute. You also have a +2 item bonus to Acrobatics checks to [Maneuver in Flight](/action/maneuver-in-flight-player-core).",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nWhite, pillowy dough surrounds an interior containing minced meats, spices, and herbs. The dough is steamed with elemental magic to make it light and airy while keeping the meaty center moist. When you consume a bun, a set of small clouds form around your feet that grant you a [_fly_](/spell/fly-player-core) Speed of 30 feet or your speed, whichever is lower, for 1 round.\n\n## Cloud Buns\n\n**Price** 17 gp\n\n## Cloud Buns (Greater)\n\n**Price** 150 gp\n\n---\n\nYou have a fly Speed of 30 feet or your speed, whichever is lower, for 1 minute. You also have a +2 item bonus to Acrobatics checks to [Maneuver in Flight](/action/maneuver-in-flight-player-core).",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -690,7 +760,14 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -722,7 +799,7 @@
     "systemVersion": "1.2.10",
     "name": "Cloud Buns",
     "slug": "cloud-buns-tian-xia-character-guide-equipment-equipment-3459-3357",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n([manipulate](/trait/manipulate))\n\n---\n\nWhite, pillowy dough surrounds an interior containing minced meats, spices, and herbs. The dough is steamed with elemental magic to make it light and airy while keeping the meaty center moist. When you consume a bun, a set of small clouds form around your feet that grant you a [_fly_](/spell/fly-player-core) Speed of 30 feet or your speed, whichever is lower, for 1 round.\n\n## Cloud Buns\n\n**Price** 17 gp\n\n## Cloud Buns (Greater)\n\n**Price** 150 gp\n\n---\n\nYou have a fly Speed of 30 feet or your speed, whichever is lower, for 1 minute. You also have a +2 item bonus to Acrobatics checks to [Maneuver in Flight](/action/maneuver-in-flight-player-core).",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nWhite, pillowy dough surrounds an interior containing minced meats, spices, and herbs. The dough is steamed with elemental magic to make it light and airy while keeping the meaty center moist. When you consume a bun, a set of small clouds form around your feet that grant you a [_fly_](/spell/fly-player-core) Speed of 30 feet or your speed, whichever is lower, for 1 round.\n\n## Cloud Buns\n\n**Price** 17 gp\n\n## Cloud Buns (Greater)\n\n**Price** 150 gp\n\n---\n\nYou have a fly Speed of 30 feet or your speed, whichever is lower, for 1 minute. You also have a +2 item bonus to Acrobatics checks to [Maneuver in Flight](/action/maneuver-in-flight-player-core).",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -743,7 +820,14 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -775,7 +859,7 @@
     "systemVersion": "1.2.10",
     "name": "Cloud Buns (Greater)",
     "slug": "cloud-buns-greater-tian-xia-character-guide-equipment-equipment-3459-3358",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n([manipulate](/trait/manipulate))\n\n---\n\nWhite, pillowy dough surrounds an interior containing minced meats, spices, and herbs. The dough is steamed with elemental magic to make it light and airy while keeping the meaty center moist. When you consume a bun, a set of small clouds form around your feet that grant you a [_fly_](/spell/fly-player-core) Speed of 30 feet or your speed, whichever is lower, for 1 round.\n\n## Cloud Buns\n\n**Price** 17 gp\n\n## Cloud Buns (Greater)\n\n**Price** 150 gp\n\n---\n\nYou have a fly Speed of 30 feet or your speed, whichever is lower, for 1 minute. You also have a +2 item bonus to Acrobatics checks to [Maneuver in Flight](/action/maneuver-in-flight-player-core).",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nWhite, pillowy dough surrounds an interior containing minced meats, spices, and herbs. The dough is steamed with elemental magic to make it light and airy while keeping the meaty center moist. When you consume a bun, a set of small clouds form around your feet that grant you a [_fly_](/spell/fly-player-core) Speed of 30 feet or your speed, whichever is lower, for 1 round.\n\n## Cloud Buns\n\n**Price** 17 gp\n\n## Cloud Buns (Greater)\n\n**Price** 150 gp\n\n---\n\nYou have a fly Speed of 30 feet or your speed, whichever is lower, for 1 minute. You also have a +2 item bonus to Acrobatics checks to [Maneuver in Flight](/action/maneuver-in-flight-player-core).",
     "data": {
       "level": 9,
       "rarity": "uncommon",
@@ -796,7 +880,14 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1000,7 +1091,7 @@
     "systemVersion": "1.2.10",
     "name": "Dragon Pearl",
     "slug": "dragon-pearl-tian-xia-character-guide-equipment-equipment-3482",
-    "descr": "**Price** 180 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Activate**\n\n1 minute (manipulate)\n\n---\n\nThese fermented and dried tea leaves are rolled into a ball shaped like a pearl. When brewed as a tea and consumed, it promotes an outpouring of vital energy that surges through your body. For the next 10 minutes, you have resistance 15 to void damage, and your unarmed attacks deal an additional 1d6 points of vitality damage on a successful Strike. While this effect is active, whenever a damaging attack or effect would reduce you to 0 Hit Points, you can use your reaction to immediately end the benefits of dragon pearl and remain conscious and standing with 10 Hit Points, increasing your [wounded](/condition/wounded-player-core) condition by 1.",
+    "descr": "**Price** 180 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n---\n\nThese fermented and dried tea leaves are rolled into a ball shaped like a pearl. When brewed as a tea and consumed, it promotes an outpouring of vital energy that surges through your body. For the next 10 minutes, you have resistance 15 to void damage, and your unarmed attacks deal an additional 1d6 points of vitality damage on a successful Strike. While this effect is active, whenever a damaging attack or effect would reduce you to 0 Hit Points, you can use your reaction to immediately end the benefits of dragon pearl and remain conscious and standing with 10 Hit Points, increasing your [wounded](/condition/wounded-player-core) condition by 1.",
     "data": {
       "level": 10,
       "rarity": "rare",
@@ -1021,7 +1112,10 @@
           "label": "consumable",
           "slug": "consumable"
         }
-      ]
+      ],
+      "activation": {
+        "text": "1 minute (manipulate)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1216,7 +1310,7 @@
     "systemVersion": "1.2.10",
     "name": "Flashblade",
     "slug": "flashblade-tian-xia-character-guide-equipment-equipment-3465",
-    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Nodachi](/item/nodachi-tian-xia-character-guide-weapon-weapon-298)\n\n---\n\nA sleek and impossibly lightweight blade attached to a haft scriven with lightning bolts make up this +1 [striking](/item/striking-gm-core) nodachi.\n\n**Activate—Prepare Flash** **Two Actions** ([concentrate](/trait/concentrate)) **Frequency** once per 10 minutes; **Effect** You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.\n\n## Flashblade\n\n**Price** 230 gp\n\n## Flashblade (Greater)\n\n**Price** 1,900 gp\n\n---\n\nThis is a _+2greater striking nodachi_, and the activated reach increases to 20 feet.\n\n## Flashblade (Major)\n\n**Price** 14,700 gp\n\n---\n\nThis is a _+3greater striking nodachi_, and the activated reach increases to 25 feet.",
+    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Nodachi](/item/nodachi-tian-xia-character-guide-weapon-weapon-298)\n\n---\n\nA sleek and impossibly lightweight blade attached to a haft scriven with lightning bolts make up this +1 [striking](/item/striking-gm-core) nodachi.\n\n## Flashblade\n\n**Price** 230 gp\n\n## Flashblade (Greater)\n\n**Price** 1,900 gp\n\n---\n\nThis is a _+2greater striking nodachi_, and the activated reach increases to 20 feet.\n\n## Flashblade (Major)\n\n**Price** 14,700 gp\n\n---\n\nThis is a _+3greater striking nodachi_, and the activated reach increases to 25 feet.",
     "data": {
       "level": 6,
       "rarity": "common",
@@ -1231,6 +1325,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Prepare Flash",
+          "text": "**Frequency** once per 10 minutes; **Effect** You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.",
+          "effect": "You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.",
+          "description": "**Frequency** once per 10 minutes"
         }
       ]
     },
@@ -1264,7 +1370,7 @@
     "systemVersion": "1.2.10",
     "name": "Flashblade",
     "slug": "flashblade-tian-xia-character-guide-equipment-equipment-3465-3359",
-    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Nodachi](/item/nodachi-tian-xia-character-guide-weapon-weapon-298)\n\n---\n\nA sleek and impossibly lightweight blade attached to a haft scriven with lightning bolts make up this +1 [striking](/item/striking-gm-core) nodachi.\n\n**Activate—Prepare Flash** **Two Actions** ([concentrate](/trait/concentrate)) **Frequency** once per 10 minutes; **Effect** You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.\n\n## Flashblade\n\n**Price** 230 gp\n\n## Flashblade (Greater)\n\n**Price** 1,900 gp\n\n---\n\nThis is a _+2greater striking nodachi_, and the activated reach increases to 20 feet.\n\n## Flashblade (Major)\n\n**Price** 14,700 gp\n\n---\n\nThis is a _+3greater striking nodachi_, and the activated reach increases to 25 feet.",
+    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Nodachi](/item/nodachi-tian-xia-character-guide-weapon-weapon-298)\n\n---\n\nA sleek and impossibly lightweight blade attached to a haft scriven with lightning bolts make up this +1 [striking](/item/striking-gm-core) nodachi.\n\n## Flashblade\n\n**Price** 230 gp\n\n## Flashblade (Greater)\n\n**Price** 1,900 gp\n\n---\n\nThis is a _+2greater striking nodachi_, and the activated reach increases to 20 feet.\n\n## Flashblade (Major)\n\n**Price** 14,700 gp\n\n---\n\nThis is a _+3greater striking nodachi_, and the activated reach increases to 25 feet.",
     "data": {
       "level": 6,
       "rarity": "common",
@@ -1279,6 +1385,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Prepare Flash",
+          "text": "**Frequency** once per 10 minutes; **Effect** You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.",
+          "effect": "You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.",
+          "description": "**Frequency** once per 10 minutes"
         }
       ]
     },
@@ -1312,7 +1430,7 @@
     "systemVersion": "1.2.10",
     "name": "Flashblade (Greater)",
     "slug": "flashblade-greater-tian-xia-character-guide-equipment-equipment-3465-3360",
-    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Nodachi](/item/nodachi-tian-xia-character-guide-weapon-weapon-298)\n\n---\n\nA sleek and impossibly lightweight blade attached to a haft scriven with lightning bolts make up this +1 [striking](/item/striking-gm-core) nodachi.\n\n**Activate—Prepare Flash** **Two Actions** ([concentrate](/trait/concentrate)) **Frequency** once per 10 minutes; **Effect** You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.\n\n## Flashblade\n\n**Price** 230 gp\n\n## Flashblade (Greater)\n\n**Price** 1,900 gp\n\n---\n\nThis is a _+2greater striking nodachi_, and the activated reach increases to 20 feet.\n\n## Flashblade (Major)\n\n**Price** 14,700 gp\n\n---\n\nThis is a _+3greater striking nodachi_, and the activated reach increases to 25 feet.",
+    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Nodachi](/item/nodachi-tian-xia-character-guide-weapon-weapon-298)\n\n---\n\nA sleek and impossibly lightweight blade attached to a haft scriven with lightning bolts make up this +1 [striking](/item/striking-gm-core) nodachi.\n\n## Flashblade\n\n**Price** 230 gp\n\n## Flashblade (Greater)\n\n**Price** 1,900 gp\n\n---\n\nThis is a _+2greater striking nodachi_, and the activated reach increases to 20 feet.\n\n## Flashblade (Major)\n\n**Price** 14,700 gp\n\n---\n\nThis is a _+3greater striking nodachi_, and the activated reach increases to 25 feet.",
     "data": {
       "level": 12,
       "rarity": "common",
@@ -1327,6 +1445,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Prepare Flash",
+          "text": "**Frequency** once per 10 minutes; **Effect** You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.",
+          "effect": "You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.",
+          "description": "**Frequency** once per 10 minutes"
         }
       ]
     },
@@ -1360,7 +1490,7 @@
     "systemVersion": "1.2.10",
     "name": "Flashblade (Major)",
     "slug": "flashblade-major-tian-xia-character-guide-equipment-equipment-3465-3361",
-    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Nodachi](/item/nodachi-tian-xia-character-guide-weapon-weapon-298)\n\n---\n\nA sleek and impossibly lightweight blade attached to a haft scriven with lightning bolts make up this +1 [striking](/item/striking-gm-core) nodachi.\n\n**Activate—Prepare Flash** **Two Actions** ([concentrate](/trait/concentrate)) **Frequency** once per 10 minutes; **Effect** You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.\n\n## Flashblade\n\n**Price** 230 gp\n\n## Flashblade (Greater)\n\n**Price** 1,900 gp\n\n---\n\nThis is a _+2greater striking nodachi_, and the activated reach increases to 20 feet.\n\n## Flashblade (Major)\n\n**Price** 14,700 gp\n\n---\n\nThis is a _+3greater striking nodachi_, and the activated reach increases to 25 feet.",
+    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Nodachi](/item/nodachi-tian-xia-character-guide-weapon-weapon-298)\n\n---\n\nA sleek and impossibly lightweight blade attached to a haft scriven with lightning bolts make up this +1 [striking](/item/striking-gm-core) nodachi.\n\n## Flashblade\n\n**Price** 230 gp\n\n## Flashblade (Greater)\n\n**Price** 1,900 gp\n\n---\n\nThis is a _+2greater striking nodachi_, and the activated reach increases to 20 feet.\n\n## Flashblade (Major)\n\n**Price** 14,700 gp\n\n---\n\nThis is a _+3greater striking nodachi_, and the activated reach increases to 25 feet.",
     "data": {
       "level": 17,
       "rarity": "common",
@@ -1375,6 +1505,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Prepare Flash",
+          "text": "**Frequency** once per 10 minutes; **Effect** You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.",
+          "effect": "You concentrate with complete focus on your surroundings, breathing in the flashblade’s magic to make you lighter and faster, and the blade of your sword more flexible. You [Ready](/action/ready-player-core) a melee Strike, increasing the flashblade’s reach for that Strike to 15 feet. If the trigger doesn’t occur, this doesn’t count against the flashblade’s frequency.",
+          "description": "**Frequency** once per 10 minutes"
         }
       ]
     },
@@ -1408,7 +1550,7 @@
     "systemVersion": "1.2.10",
     "name": "Frost Fair Yanyuedao",
     "slug": "frost-fair-yanyuedao-tian-xia-character-guide-equipment-equipment-3479",
-    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Glaive](/item/glaive-tian-xia-character-guide-weapon-weapon-375)\n\n---\n\nThe Frost Fair Yanyuedao is a +2 [greater striking](/item/striking-gm-core) yanyuedao (use statistics for glaive) once wielded by a legendary military general from Goka. This weapon was constructed from pieces harvested from a dragon’s body. When in an area of severe cold or colder, the Frost Fair Yanyuedao becomes a +3 major striking yanyuedao with a glowing blue cutting edge and the following ability.\n\n**Activate—Dragon Chill** **Single Action** ([manipulate](/trait/manipulate)) **Effect** Until the end of your turn, the Frost Fair Yanyuedao gains the effects of a greater [frost](/item/frost-gm-core) rune. While under this effect, if you critically succeed at a Strike using this weapon against a creature who has [resistance](/rule/resistance-rules-2318) or [immunity](/rule/immunity-rules-2313) to [cold](/trait/cold), that creature must attempt a DC 31 Fortitude save or be [slowed](/condition/slowed-player-core) 1 for 1 minute.",
+    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Glaive](/item/glaive-tian-xia-character-guide-weapon-weapon-375)\n\n---\n\nThe Frost Fair Yanyuedao is a +2 [greater striking](/item/striking-gm-core) yanyuedao (use statistics for glaive) once wielded by a legendary military general from Goka. This weapon was constructed from pieces harvested from a dragon’s body. When in an area of severe cold or colder, the Frost Fair Yanyuedao becomes a +3 major striking yanyuedao with a glowing blue cutting edge and the following ability.",
     "data": {
       "level": 14,
       "rarity": "unique",
@@ -1432,6 +1574,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Dragon Chill",
+          "text": "**Effect** Until the end of your turn, the Frost Fair Yanyuedao gains the effects of a greater [frost](/item/frost-gm-core) rune. While under this effect, if you critically succeed at a Strike using this weapon against a creature who has [resistance](/rule/resistance-rules-2318) or [immunity](/rule/immunity-rules-2313) to [cold](/trait/cold), that creature must attempt a DC 31 Fortitude save or be [slowed](/condition/slowed-player-core) 1 for 1 minute.",
+          "effect": "Until the end of your turn, the Frost Fair Yanyuedao gains the effects of a greater [frost](/item/frost-gm-core) rune. While under this effect, if you critically succeed at a Strike using this weapon against a creature who has [resistance](/rule/resistance-rules-2318) or [immunity](/rule/immunity-rules-2313) to [cold](/trait/cold), that creature must attempt a DC 31 Fortitude save or be [slowed](/condition/slowed-player-core) 1 for 1 minute.",
+          "description": ""
         }
       ]
     },
@@ -1532,7 +1686,7 @@
     "systemVersion": "1.2.10",
     "name": "Ghost Fowl Porridge",
     "slug": "ghost-fowl-porridge-tian-xia-character-guide-equipment-equipment-3460",
-    "descr": "**Price** 140 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n(manipulate)\n\n---\n\nThis robust porridge—made from a cockatrice distilled into a broth, hot peppers from a demonic source, and various toppings—causes diners to utter a ghostly wail from the intense heat. Consuming the porridge grants you a +2 item bonus to saving throws against being petrified for 1 hour. You also gain resistance 3 against physical damage for the duration.",
+    "descr": "**Price** 140 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nThis robust porridge—made from a cockatrice distilled into a broth, hot peppers from a demonic source, and various toppings—causes diners to utter a ghostly wail from the intense heat. Consuming the porridge grants you a +2 item bonus to saving throws against being petrified for 1 hour. You also gain resistance 3 against physical damage for the duration.",
     "data": {
       "level": 9,
       "rarity": "uncommon",
@@ -1553,7 +1707,14 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1648,7 +1809,7 @@
     "systemVersion": "1.2.10",
     "name": "Heavenly Rolling Flames",
     "slug": "heavenly-rolling-flames-tian-xia-character-guide-equipment-equipment-3466",
-    "descr": "**Price** 4,500 gp\n\n**Usage** held in 1 hand each\n\n**Bulk** L\n\n**Base Weapon** [Feng Huo Lun](/item/feng-huo-lun-tian-xia-character-guide-weapon-weapon-283)\n\n---\n\nThis set of +2 [greater striking](/item/striking-gm-core) [flaming](/item/flaming-gm-core) feng huo lun is warm to the touch and wreathed in the bright red and orange glow of a constantly flickering flame. While wielded, you gain [cold](/trait/cold) [resistance](/rule/resistance-rules-2318) 2, and you treat the effects of [environmental cold](/rule/climate-rules-2814) as one degree lower. Heavenly rolling flames can be Activated only if you wield two of them, and Activating them counts against the frequency for both weapons.\n\n**Activate—Rolling Flight** **Two Actions** ([concentrate](/trait/concentrate)) **Frequency** once per hour; **Effect** You attach the wheels to your feet, and their constant movement and energy allow you to move through the air. You gain a [fly Speed](/rule/fly-speed-rules-2350) of 20 feet for 10 minutes. While in use in this way, you can’t wield the wheels as weapons. You can spend an [Interact](/action/interact-player-core) action at any time to end this effect and re-grip the heavenly rolling flames. If you lack enough free hands to wield them, you drop them in your space.\n\n**Activate—Speed of Heaven** **Two Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You cast [_haste_](/spell/haste-player-core) as a 3rd-rank occult spell, but you can target only yourself.",
+    "descr": "**Price** 4,500 gp\n\n**Usage** held in 1 hand each\n\n**Bulk** L\n\n**Base Weapon** [Feng Huo Lun](/item/feng-huo-lun-tian-xia-character-guide-weapon-weapon-283)\n\n---\n\nThis set of +2 [greater striking](/item/striking-gm-core) [flaming](/item/flaming-gm-core) feng huo lun is warm to the touch and wreathed in the bright red and orange glow of a constantly flickering flame. While wielded, you gain [cold](/trait/cold) [resistance](/rule/resistance-rules-2318) 2, and you treat the effects of [environmental cold](/rule/climate-rules-2814) as one degree lower. Heavenly rolling flames can be Activated only if you wield two of them, and Activating them counts against the frequency for both weapons.",
     "data": {
       "level": 14,
       "rarity": "uncommon",
@@ -1663,6 +1824,28 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Rolling Flight",
+          "text": "**Frequency** once per hour; **Effect** You attach the wheels to your feet, and their constant movement and energy allow you to move through the air. You gain a [fly Speed](/rule/fly-speed-rules-2350) of 20 feet for 10 minutes. While in use in this way, you can’t wield the wheels as weapons. You can spend an [Interact](/action/interact-player-core) action at any time to end this effect and re-grip the heavenly rolling flames. If you lack enough free hands to wield them, you drop them in your space.",
+          "effect": "You attach the wheels to your feet, and their constant movement and energy allow you to move through the air. You gain a [fly Speed](/rule/fly-speed-rules-2350) of 20 feet for 10 minutes. While in use in this way, you can’t wield the wheels as weapons. You can spend an [Interact](/action/interact-player-core) action at any time to end this effect and re-grip the heavenly rolling flames. If you lack enough free hands to wield them, you drop them in your space.",
+          "description": "**Frequency** once per hour"
+        },
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Speed of Heaven",
+          "text": "**Frequency** once per day; **Effect** You cast [_haste_](/spell/haste-player-core) as a 3rd-rank occult spell, but you can target only yourself.",
+          "effect": "You cast [_haste_](/spell/haste-player-core) as a 3rd-rank occult spell, but you can target only yourself.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -1874,7 +2057,7 @@
     "systemVersion": "1.2.10",
     "name": "Iron Wine",
     "slug": "iron-wine-tian-xia-character-guide-equipment-equipment-3455",
-    "descr": "**Price** 3 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n([manipulate](/trait/manipulate))\n\n---\n\nThis strong, clear liquor is made from fermented rice. When you drink a cup of iron wine, your sweat becomes highly combustive for the next 10 minutes, igniting with the slightest bit of friction. This causes your [unarmed](/trait/unarmed) attacks to deal an additional 1d4 [fire](/trait/fire) damage for the duration of the effect. Drinking more than one cup of iron wine in a single day gives you [weakness](/rule/diagonal-movement-rules-2357) 5 to fire until your next daily preparations.",
+    "descr": "**Price** 3 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nThis strong, clear liquor is made from fermented rice. When you drink a cup of iron wine, your sweat becomes highly combustive for the next 10 minutes, igniting with the slightest bit of friction. This causes your [unarmed](/trait/unarmed) attacks to deal an additional 1d4 [fire](/trait/fire) damage for the duration of the effect. Drinking more than one cup of iron wine in a single day gives you [weakness](/rule/diagonal-movement-rules-2357) 5 to fire until your next daily preparations.",
     "data": {
       "level": 1,
       "rarity": "uncommon",
@@ -1900,7 +2083,14 @@
           "label": "elixir",
           "slug": "elixir"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -1934,7 +2124,7 @@
     "systemVersion": "1.2.10",
     "name": "Jian of Life's Duality",
     "slug": "jian-of-life-s-duality-tian-xia-character-guide-equipment-equipment-3467",
-    "descr": "**Price** 3,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Base Weapon** [Longsword](/item/longsword-player-core)\n\n---\n\nThis +2 [greater striking](/item/striking-gm-core) longsword sports no extravagant characteristics save for a blade of pure, unblemished ivory and a hilt of unmarred obsidian. It takes on the propensity of its user, turning whiter or darker based on their actions.\n\nThe effects of life's duality are based on the number and type of charges it has. It begins with 0 charges and can gain either dark or light charges, up to a maximum of 3 charges of one type. A charge dissipates after 10 minutes or when a charge of the opposite type is gained. If you have a charge of one type and would gain the opposite type of charge, you lose your current charges.\n\nLife's duality gains a dark charge when it critically succeeds at a [Strike](/action/strike-player-core) against an opponent or reduces the Hit Points of a living enemy to 0. For each dark charge it has, it deals an additional 1d4 [void](/trait/void) damage (maximum 3d4).\n\nLife's duality gains a light charge when you use a spell, skill check, or ability to restore at least 10 Hit Points to an ally. The damage healed must have been inflicted by a significant foe or threat. For each light charge it has, you gain 1d4 temporary Hit Points at the end of each round (maximum 3d4).\n\n**Activate—Burst of Duality** **Three Actions** ([concentrate](/trait/concentrate)) **Requirements** Life’s duality has 3 dark charges or 3 light charges; Frequency once per day; **Effect** You unleash the sword’s charged energy in a magical display. You cast a 3-action 5th-rank [_harm_](/spell/harm-player-core) spell if you have 3 dark charges or a 3-action 5th-rank [_heal_](/spell/heal-player-core) spell if you have 3 light charges (DC 30). The sword then reverts to having 0 charges.",
+    "descr": "**Price** 3,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Base Weapon** [Longsword](/item/longsword-player-core)\n\n---\n\nThis +2 [greater striking](/item/striking-gm-core) longsword sports no extravagant characteristics save for a blade of pure, unblemished ivory and a hilt of unmarred obsidian. It takes on the propensity of its user, turning whiter or darker based on their actions.\n\nThe effects of life's duality are based on the number and type of charges it has. It begins with 0 charges and can gain either dark or light charges, up to a maximum of 3 charges of one type. A charge dissipates after 10 minutes or when a charge of the opposite type is gained. If you have a charge of one type and would gain the opposite type of charge, you lose your current charges.\n\nLife's duality gains a dark charge when it critically succeeds at a [Strike](/action/strike-player-core) against an opponent or reduces the Hit Points of a living enemy to 0. For each dark charge it has, it deals an additional 1d4 [void](/trait/void) damage (maximum 3d4).\n\nLife's duality gains a light charge when you use a spell, skill check, or ability to restore at least 10 Hit Points to an ally. The damage healed must have been inflicted by a significant foe or threat. For each light charge it has, you gain 1d4 temporary Hit Points at the end of each round (maximum 3d4).",
     "data": {
       "level": 13,
       "rarity": "uncommon",
@@ -1949,6 +2139,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "three",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Burst of Duality",
+          "text": "**Requirements** Life’s duality has 3 dark charges or 3 light charges; Frequency once per day; **Effect** You unleash the sword’s charged energy in a magical display. You cast a 3-action 5th-rank [_harm_](/spell/harm-player-core) spell if you have 3 dark charges or a 3-action 5th-rank [_heal_](/spell/heal-player-core) spell if you have 3 light charges (DC 30). The sword then reverts to having 0 charges.",
+          "effect": "You unleash the sword’s charged energy in a magical display. You cast a 3-action 5th-rank [_harm_](/spell/harm-player-core) spell if you have 3 dark charges or a 3-action 5th-rank [_heal_](/spell/heal-player-core) spell if you have 3 light charges (DC 30). The sword then reverts to having 0 charges.",
+          "description": "**Requirements** Life’s duality has 3 dark charges or 3 light charges; Frequency once per day"
         }
       ]
     },
@@ -2417,7 +2619,7 @@
     "systemVersion": "1.2.10",
     "name": "Kotodama Bells",
     "slug": "kotodama-bells-tian-xia-character-guide-equipment-equipment-3468",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n---\n\nThis set of bronze bells bear engravings with symbols representing the word “awaken.” Among kotodama magic users, who seek to touch the souls of objects using the power of words, the peals of these bells are known to awaken the spirits of even inanimate objects.\n\n**Activate—Awaken the Soul** **Two Actions** ([auditory](/trait/auditory), [concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You ring the bell and focus on an object of negligible Bulk within 10 feet. The bell’s toll animates the object for 24 hours. The object becomes a [minion](/trait/minion) that can’t attack but can move and take simple [Interact](/action/interact-player-core) actions appropriate for an item of its type, as determined by the GM. For example, a piece of chalk can write a message or draw a symbol, a hand fan can open or fan in a particular direction, or a magnifying glass can set itself up to dramatically reveal incriminating evidence. The [animated](/item/animated-gm-core) item has AC 5, 5 Hit Points, a Speed of 10 feet, and automatically fails all saves. If the object is [broken](/condition/broken-player-core), it can no longer move, though it can still Interact as appropriate for an item of its type. As normal with minions you control, you must Command the object to grant it actions.",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n---\n\nThis set of bronze bells bear engravings with symbols representing the word “awaken.” Among kotodama magic users, who seek to touch the souls of objects using the power of words, the peals of these bells are known to awaken the spirits of even inanimate objects.",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -2431,6 +2633,20 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "auditory",
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Awaken the Soul",
+          "text": "**Frequency** once per day; **Effect** You ring the bell and focus on an object of negligible Bulk within 10 feet. The bell’s toll animates the object for 24 hours. The object becomes a [minion](/trait/minion) that can’t attack but can move and take simple [Interact](/action/interact-player-core) actions appropriate for an item of its type, as determined by the GM. For example, a piece of chalk can write a message or draw a symbol, a hand fan can open or fan in a particular direction, or a magnifying glass can set itself up to dramatically reveal incriminating evidence. The [animated](/item/animated-gm-core) item has AC 5, 5 Hit Points, a Speed of 10 feet, and automatically fails all saves. If the object is [broken](/condition/broken-player-core), it can no longer move, though it can still Interact as appropriate for an item of its type. As normal with minions you control, you must Command the object to grant it actions.",
+          "effect": "You ring the bell and focus on an object of negligible Bulk within 10 feet. The bell’s toll animates the object for 24 hours. The object becomes a [minion](/trait/minion) that can’t attack but can move and take simple [Interact](/action/interact-player-core) actions appropriate for an item of its type, as determined by the GM. For example, a piece of chalk can write a message or draw a symbol, a hand fan can open or fan in a particular direction, or a magnifying glass can set itself up to dramatically reveal incriminating evidence. The [animated](/item/animated-gm-core) item has AC 5, 5 Hit Points, a Speed of 10 feet, and automatically fails all saves. If the object is [broken](/condition/broken-player-core), it can no longer move, though it can still Interact as appropriate for an item of its type. As normal with minions you control, you must Command the object to grant it actions.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -2464,7 +2680,7 @@
     "systemVersion": "1.2.10",
     "name": "Kotodama Whistle",
     "slug": "kotodama-whistle-tian-xia-character-guide-equipment-equipment-3469",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n---\n\nThis small wooden whistle bears an engraving with a symbol representing the word “query.” Practitioners of kotodama magic use these whistles to speak with the spirits of objects.\n\n**Activate—Question the Soul** **Single Action** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You place your hand on an object and play a single note on the whistle, causing the item to stir and respond to your questions for 1 minute. During this time, the object attempts to answer your questions to the best of its ability but can provide an answer of only “yes” or “no.” In most cases, an object has knowledge only of events it was personally present for and has no particular knowledge skills to interpret the events it has seen. If the object can’t answer a question with a simple yes or no answer, it stays silent.",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n---\n\nThis small wooden whistle bears an engraving with a symbol representing the word “query.” Practitioners of kotodama magic use these whistles to speak with the spirits of objects.",
     "data": {
       "level": 3,
       "rarity": "uncommon",
@@ -2478,6 +2694,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Question the Soul",
+          "text": "**Frequency** once per day; **Effect** You place your hand on an object and play a single note on the whistle, causing the item to stir and respond to your questions for 1 minute. During this time, the object attempts to answer your questions to the best of its ability but can provide an answer of only “yes” or “no.” In most cases, an object has knowledge only of events it was personally present for and has no particular knowledge skills to interpret the events it has seen. If the object can’t answer a question with a simple yes or no answer, it stays silent.",
+          "effect": "You place your hand on an object and play a single note on the whistle, causing the item to stir and respond to your questions for 1 minute. During this time, the object attempts to answer your questions to the best of its ability but can provide an answer of only “yes” or “no.” In most cases, an object has knowledge only of events it was personally present for and has no particular knowledge skills to interpret the events it has seen. If the object can’t answer a question with a simple yes or no answer, it stays silent.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -2919,7 +3147,7 @@
     "systemVersion": "1.2.10",
     "name": "Navaratna of the Solar Ruby",
     "slug": "navaratna-of-the-solar-ruby-tian-xia-character-guide-equipment-equipment-3480",
-    "descr": "**Usage** worn\n\n---\n\nThese nine flawless gems are set within a golden necklace, their centerpiece a holy ruby pulled from the center of a sun. So long as you are wearing the navaratna, you ignore all [environmental effects due to temperature](/rule/temperature-rules-2820), do not take penalties due to [wind](/rule/wind-rules-2821), and ignore all damage and effects from droughts, [floods](/rule/floods-rules-2832), and [earthquakes](/rule/earthquakes-rules-2828). You are also immune to damage from [starvation](/rule/starvation-and-thirst-rules-2603). The navaratna does not otherwise grant you resistance against damage (such as [fire](/trait/fire) or [cold](/trait/cold) damage).\n\n**Activate—Sutra of the Flawless Servant** **Reaction** ([concentrate](/trait/concentrate), [divine](/trait/divine), [fortune](/trait/fortune)) **Frequency** once per hour;; **Trigger** An ally within 30 feet fails a saving throw against an temperature environmental effect; **Effect** You offer a prayer for your divine protection to extend to your companion. The creature rerolls the triggering saving throw with a +2 item bonus. They must take the new result, even if it is worse.\n\n**Destruction** The navaratna must be swallowed by a fiendish divine lion; the lion must then by killed by drowning in a lake of naga venom and left to rot for a year. At the stroke of midnight on the final day, the artifact is destroyed.",
+    "descr": "**Usage** worn\n\n---\n\nThese nine flawless gems are set within a golden necklace, their centerpiece a holy ruby pulled from the center of a sun. So long as you are wearing the navaratna, you ignore all [environmental effects due to temperature](/rule/temperature-rules-2820), do not take penalties due to [wind](/rule/wind-rules-2821), and ignore all damage and effects from droughts, [floods](/rule/floods-rules-2832), and [earthquakes](/rule/earthquakes-rules-2828). You are also immune to damage from [starvation](/rule/starvation-and-thirst-rules-2603). The navaratna does not otherwise grant you resistance against damage (such as [fire](/trait/fire) or [cold](/trait/cold) damage).",
     "data": {
       "level": 13,
       "rarity": "unique",
@@ -2937,6 +3165,22 @@
         {
           "label": "divine",
           "slug": "divine"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "reaction",
+          "traits": [
+            "concentrate",
+            "divine",
+            "fortune"
+          ],
+          "name": "Sutra of the Flawless Servant",
+          "text": "**Frequency** once per hour;; **Trigger** An ally within 30 feet fails a saving throw against an temperature environmental effect; **Effect** You offer a prayer for your divine protection to extend to your companion. The creature rerolls the triggering saving throw with a +2 item bonus. They must take the new result, even if it is worse.\n\n**Destruction** The navaratna must be swallowed by a fiendish divine lion; the lion must then by killed by drowning in a lake of naga venom and left to rot for a year. At the stroke of midnight on the final day, the artifact is destroyed.",
+          "effect": "You offer a prayer for your divine protection to extend to your companion. The creature rerolls the triggering saving throw with a +2 item bonus. They must take the new result, even if it is worse.\n\n**Destruction** The navaratna must be swallowed by a fiendish divine lion; the lion must then by killed by drowning in a lake of naga venom and left to rot for a year. At the stroke of midnight on the final day, the artifact is destroyed.",
+          "trigger": "An ally within 30 feet fails a saving throw against an temperature environmental effect",
+          "triggerBeforeDescription": false,
+          "description": "**Frequency** once per hour"
         }
       ]
     },
@@ -3629,7 +3873,7 @@
     "systemVersion": "1.2.10",
     "name": "Preserved Moonflower",
     "slug": "preserved-moonflower-tian-xia-character-guide-equipment-equipment-3457",
-    "descr": "**Price** 60 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n([manipulate](/trait/manipulate))\n\n---\n\nThough these preserved vegetables aren't actual moonflowers, they're made using a moonflower-distilled vinegar. When consumed, tendrils sprout from your veins and curl around you, granting you a +2 status bonus to saves against [void](/trait/void) effects for 10 minutes and reducing your [wounded](/condition/wounded-player-core) condition by up to 2. Eating more than one preserved moonflower dish in a day doesn't grant further benefits and makes you [drained](/condition/drained-player-core) 1.",
+    "descr": "**Price** 60 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nThough these preserved vegetables aren't actual moonflowers, they're made using a moonflower-distilled vinegar. When consumed, tendrils sprout from your veins and curl around you, granting you a +2 status bonus to saves against [void](/trait/void) effects for 10 minutes and reducing your [wounded](/condition/wounded-player-core) condition by up to 2. Eating more than one preserved moonflower dish in a day doesn't grant further benefits and makes you [drained](/condition/drained-player-core) 1.",
     "data": {
       "level": 7,
       "rarity": "uncommon",
@@ -3650,7 +3894,14 @@
           "label": "consumable",
           "slug": "consumable"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3683,7 +3934,7 @@
     "systemVersion": "1.2.10",
     "name": "Rainbow Vinegar",
     "slug": "rainbow-vinegar-tian-xia-character-guide-equipment-equipment-3456",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n(manipulate)\n\n---\n\nBlack swill with multicolored ribbons makes this vinegar look like an oil spill. Ingesting a dose of rainbow vinegar makes your sweat acidic and nonconductive for 10 minutes. During this time, your unarmed attacks deal an additional 1d4 acid damage, and you have resistance 10 to electricity. Vampires find this vinegar particularly harmful and take an additional 2d4 acid damage instead. Taking more than one dose of rainbow vinegar in a single day gives you weakness 5 to acid until your next daily preparations.\n\n## Rainbow Vinegar\n\n**Price** 15 gp\n\n## Rainbow Vinegar (Greater)\n\n**Price** 110 gp\n\n---\n\nThe resistance increases to 15. You deal an additional 1d8 acid damage with your unarmed attacks, or 2d8 acid damage against vampires.",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nBlack swill with multicolored ribbons makes this vinegar look like an oil spill. Ingesting a dose of rainbow vinegar makes your sweat acidic and nonconductive for 10 minutes. During this time, your unarmed attacks deal an additional 1d4 acid damage, and you have resistance 10 to electricity. Vampires find this vinegar particularly harmful and take an additional 2d4 acid damage instead. Taking more than one dose of rainbow vinegar in a single day gives you weakness 5 to acid until your next daily preparations.\n\n## Rainbow Vinegar\n\n**Price** 15 gp\n\n## Rainbow Vinegar (Greater)\n\n**Price** 110 gp\n\n---\n\nThe resistance increases to 15. You deal an additional 1d8 acid damage with your unarmed attacks, or 2d8 acid damage against vampires.",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -3709,7 +3960,14 @@
           "label": "elixir",
           "slug": "elixir"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3743,7 +4001,7 @@
     "systemVersion": "1.2.10",
     "name": "Rainbow Vinegar",
     "slug": "rainbow-vinegar-tian-xia-character-guide-equipment-equipment-3456-3353",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n(manipulate)\n\n---\n\nBlack swill with multicolored ribbons makes this vinegar look like an oil spill. Ingesting a dose of rainbow vinegar makes your sweat acidic and nonconductive for 10 minutes. During this time, your unarmed attacks deal an additional 1d4 acid damage, and you have resistance 10 to electricity. Vampires find this vinegar particularly harmful and take an additional 2d4 acid damage instead. Taking more than one dose of rainbow vinegar in a single day gives you weakness 5 to acid until your next daily preparations.\n\n## Rainbow Vinegar\n\n**Price** 15 gp\n\n## Rainbow Vinegar (Greater)\n\n**Price** 110 gp\n\n---\n\nThe resistance increases to 15. You deal an additional 1d8 acid damage with your unarmed attacks, or 2d8 acid damage against vampires.",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nBlack swill with multicolored ribbons makes this vinegar look like an oil spill. Ingesting a dose of rainbow vinegar makes your sweat acidic and nonconductive for 10 minutes. During this time, your unarmed attacks deal an additional 1d4 acid damage, and you have resistance 10 to electricity. Vampires find this vinegar particularly harmful and take an additional 2d4 acid damage instead. Taking more than one dose of rainbow vinegar in a single day gives you weakness 5 to acid until your next daily preparations.\n\n## Rainbow Vinegar\n\n**Price** 15 gp\n\n## Rainbow Vinegar (Greater)\n\n**Price** 110 gp\n\n---\n\nThe resistance increases to 15. You deal an additional 1d8 acid damage with your unarmed attacks, or 2d8 acid damage against vampires.",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -3769,7 +4027,14 @@
           "label": "elixir",
           "slug": "elixir"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -3803,7 +4068,7 @@
     "systemVersion": "1.2.10",
     "name": "Rainbow Vinegar (Greater)",
     "slug": "rainbow-vinegar-greater-tian-xia-character-guide-equipment-equipment-3456-3354",
-    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n**Activate**\n**Single Action**\n(manipulate)\n\n---\n\nBlack swill with multicolored ribbons makes this vinegar look like an oil spill. Ingesting a dose of rainbow vinegar makes your sweat acidic and nonconductive for 10 minutes. During this time, your unarmed attacks deal an additional 1d4 acid damage, and you have resistance 10 to electricity. Vampires find this vinegar particularly harmful and take an additional 2d4 acid damage instead. Taking more than one dose of rainbow vinegar in a single day gives you weakness 5 to acid until your next daily preparations.\n\n## Rainbow Vinegar\n\n**Price** 15 gp\n\n## Rainbow Vinegar (Greater)\n\n**Price** 110 gp\n\n---\n\nThe resistance increases to 15. You deal an additional 1d8 acid damage with your unarmed attacks, or 2d8 acid damage against vampires.",
+    "descr": "**Usage** held in 1 hand\n\n**Bulk** L\n\n**Access** Tian Xia Origin\n\n---\n\nBlack swill with multicolored ribbons makes this vinegar look like an oil spill. Ingesting a dose of rainbow vinegar makes your sweat acidic and nonconductive for 10 minutes. During this time, your unarmed attacks deal an additional 1d4 acid damage, and you have resistance 10 to electricity. Vampires find this vinegar particularly harmful and take an additional 2d4 acid damage instead. Taking more than one dose of rainbow vinegar in a single day gives you weakness 5 to acid until your next daily preparations.\n\n## Rainbow Vinegar\n\n**Price** 15 gp\n\n## Rainbow Vinegar (Greater)\n\n**Price** 110 gp\n\n---\n\nThe resistance increases to 15. You deal an additional 1d8 acid damage with your unarmed attacks, or 2d8 acid damage against vampires.",
     "data": {
       "level": 12,
       "rarity": "uncommon",
@@ -3829,7 +4094,14 @@
           "label": "elixir",
           "slug": "elixir"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -4359,7 +4631,7 @@
     "systemVersion": "1.2.10",
     "name": "Staff of Sun Wukong",
     "slug": "staff-of-sun-wukong-tian-xia-character-guide-equipment-equipment-3481",
-    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Bo Staff](/item/bo-staff-tian-xia-character-guide-weapon-weapon-372)\n\n---\n\nAlso known as _Ruyi Bang_, this +3 [major striking](/item/striking-gm-core) greater extending [grievous](/item/grievous-gm-core) bo staff is a legendary artifact wielded by the Monkey King, [Sun Wukong](/deity/sun-wukong-the-monkey-king-divine-mysteries-deity-deity-316). Unlike normal bo staves, the Staff of Sun Wukong is made of solid iron with two brilliant gold bands at either end.\n\n**Activate—Meteor Slam** **Single Action** ([concentrate](/trait/concentrate), [manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You extend the staff with the force of a meteor, dealing 10d10 bludgeoning damage to a single creature within 120 feet and making it [enfeebled](/condition/enfeebled-player-core) 1 for 1 day. All other creatures within 10 feet of the target (except the staff’s wielder) take 8d10 [sonic](/trait/sonic) damage (DC 43 basic Reflex save).\n\n**Activate** **Free Action** Close at Hand; **Effect** It’s said that Sun Wukong tucked this magical staff behind his ear during his travels. When not in use, the Staff of Sun Wukong shrinks to the size and weight of a needle or toothpick, making it highly concealable (+4 circumstance bonus to Stealth checks to hide it from sight). In this form, the item has negligible Bulk. You can Activate this ability again to return the staff to its normal size.\n\n**Activate—Cloud Somersault** **Single Action** (manipulate) **Effect** You use the shapeshifting capabilities of this relic to propel yourself great distances. You [Leap](/action/leap-player-core) up to 50 feet in any direction.\n\n**Destruction** Despite being made of iron and gold, mundane heat sources can’t damage the Staff of Sun Wukong. Magical fire similarly has no effect on this relic. The only way to destroy this item is to expose it to the intense heat of a specific volcano in the depths of the Songil Sea (though which volcano remains shrouded in myth).",
+    "descr": "**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Bo Staff](/item/bo-staff-tian-xia-character-guide-weapon-weapon-372)\n\n---\n\nAlso known as _Ruyi Bang_, this +3 [major striking](/item/striking-gm-core) greater extending [grievous](/item/grievous-gm-core) bo staff is a legendary artifact wielded by the Monkey King, [Sun Wukong](/deity/sun-wukong-the-monkey-king-divine-mysteries-deity-deity-316). Unlike normal bo staves, the Staff of Sun Wukong is made of solid iron with two brilliant gold bands at either end.",
     "data": {
       "level": 20,
       "rarity": "unique",
@@ -4378,6 +4650,33 @@
         {
           "label": "divine",
           "slug": "divine"
+        }
+      ],
+      "activation": {
+        "actions": "free",
+        "text": "Close at Hand; **Effect** It’s said that Sun Wukong tucked this magical staff behind his ear during his travels. When not in use, the Staff of Sun Wukong shrinks to the size and weight of a needle or toothpick, making it highly concealable (+4 circumstance bonus to Stealth checks to hide it from sight). In this form, the item has negligible Bulk. You can Activate this ability again to return the staff to its normal size."
+      },
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Meteor Slam",
+          "text": "**Frequency** once per day; **Effect** You extend the staff with the force of a meteor, dealing 10d10 bludgeoning damage to a single creature within 120 feet and making it [enfeebled](/condition/enfeebled-player-core) 1 for 1 day. All other creatures within 10 feet of the target (except the staff’s wielder) take 8d10 [sonic](/trait/sonic) damage (DC 43 basic Reflex save).",
+          "effect": "You extend the staff with the force of a meteor, dealing 10d10 bludgeoning damage to a single creature within 120 feet and making it [enfeebled](/condition/enfeebled-player-core) 1 for 1 day. All other creatures within 10 feet of the target (except the staff’s wielder) take 8d10 [sonic](/trait/sonic) damage (DC 43 basic Reflex save).",
+          "description": "**Frequency** once per day"
+        },
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Cloud Somersault",
+          "text": "**Effect** You use the shapeshifting capabilities of this relic to propel yourself great distances. You [Leap](/action/leap-player-core) up to 50 feet in any direction.\n\n**Destruction** Despite being made of iron and gold, mundane heat sources can’t damage the Staff of Sun Wukong. Magical fire similarly has no effect on this relic. The only way to destroy this item is to expose it to the intense heat of a specific volcano in the depths of the Songil Sea (though which volcano remains shrouded in myth).",
+          "effect": "You use the shapeshifting capabilities of this relic to propel yourself great distances. You [Leap](/action/leap-player-core) up to 50 feet in any direction.\n\n**Destruction** Despite being made of iron and gold, mundane heat sources can’t damage the Staff of Sun Wukong. Magical fire similarly has no effect on this relic. The only way to destroy this item is to expose it to the intense heat of a specific volcano in the depths of the Songil Sea (though which volcano remains shrouded in myth).",
+          "description": ""
         }
       ]
     },
@@ -4540,7 +4839,7 @@
     "systemVersion": "1.2.10",
     "name": "Sun Herald's Stylus",
     "slug": "sun-herald-s-stylus-tian-xia-character-guide-equipment-equipment-3473",
-    "descr": "**Price** 4,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** 1\n\n---\n\nThis writing instrument was made from the spur of one of the giant divine roosters that heralds the presence of [Shizuru](/deity/shizuru-ruler-of-heaven-divine-mysteries-deity-deity-315). While you hold it, you gain a +2 item bonus to Calligraphy Lore and Medicine checks.\n\n**Activate—Rejuvenating Ink** **Two Actions** (manipulate) **Frequency** once per day; **Effect** Drawing a circle on the ground with your stylus, you cast [_field of life_](/spell/field-of-life-player-core) centered on yourself.",
+    "descr": "**Price** 4,000 gp\n\n**Usage** held in 1 hand\n\n**Bulk** 1\n\n---\n\nThis writing instrument was made from the spur of one of the giant divine roosters that heralds the presence of [Shizuru](/deity/shizuru-ruler-of-heaven-divine-mysteries-deity-deity-315). While you hold it, you gain a +2 item bonus to Calligraphy Lore and Medicine checks.",
     "data": {
       "level": 14,
       "rarity": "common",
@@ -4555,6 +4854,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Rejuvenating Ink",
+          "text": "**Frequency** once per day; **Effect** Drawing a circle on the ground with your stylus, you cast [_field of life_](/spell/field-of-life-player-core) centered on yourself.",
+          "effect": "Drawing a circle on the ground with your stylus, you cast [_field of life_](/spell/field-of-life-player-core) centered on yourself.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -4990,7 +5301,7 @@
     "systemVersion": "1.2.10",
     "name": "Tiger Fork",
     "slug": "tiger-fork-tian-xia-character-guide-equipment-equipment-3474",
-    "descr": "**Price** 275 gp\n\n**Usage** held in 1 hand\n\n**Bulk** 1\n\n**Base Weapon** [Trident](/item/trident-player-core)\n\n---\n\nThe tiger fork is a +1 trident with the [disarm](/trait/disarm) and [grapple](/trait/grapple) traits. It has wide, flaring prongs that can be used to fend off deadly beasts and entrap opponents during combat. While you have another creature [Grabbed](/condition/grabbed-player-core) with the tiger fork, you gain a +1 circumstance bonus to saves against [forced movement](/rule/forced-movement-rules-2364) effects.\n\n**Activate—Fork Grip** **Single Action** ([manipulate](/trait/manipulate)) **Requirements** Your last action was a successful Strike against a creature; **Effect** You can activate the tiger fork to attempt to [Grapple](/action/grapple-player-core) the creature. This attempt uses the same multiple attack penalty as the required Strike.",
+    "descr": "**Price** 275 gp\n\n**Usage** held in 1 hand\n\n**Bulk** 1\n\n**Base Weapon** [Trident](/item/trident-player-core)\n\n---\n\nThe tiger fork is a +1 trident with the [disarm](/trait/disarm) and [grapple](/trait/grapple) traits. It has wide, flaring prongs that can be used to fend off deadly beasts and entrap opponents during combat. While you have another creature [Grabbed](/condition/grabbed-player-core) with the tiger fork, you gain a +1 circumstance bonus to saves against [forced movement](/rule/forced-movement-rules-2364) effects.",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -5005,6 +5316,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Fork Grip",
+          "text": "**Requirements** Your last action was a successful Strike against a creature; **Effect** You can activate the tiger fork to attempt to [Grapple](/action/grapple-player-core) the creature. This attempt uses the same multiple attack penalty as the required Strike.",
+          "effect": "You can activate the tiger fork to attempt to [Grapple](/action/grapple-player-core) the creature. This attempt uses the same multiple attack penalty as the required Strike.",
+          "description": "**Requirements** Your last action was a successful Strike against a creature"
         }
       ]
     },
@@ -5176,7 +5499,7 @@
     "systemVersion": "1.2.10",
     "name": "Twisting Gale",
     "slug": "twisting-gale-tian-xia-character-guide-equipment-equipment-3475",
-    "descr": "**Price** 4,200 gp\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Sansetsukon](/item/sansetsukon-tian-xia-character-guide-weapon-weapon-302)\n\n---\n\nThis +2 [greater striking](/item/striking-gm-core) impactful sansetsukon is made of metal colored pale blue that echoes howling winds when swung and emits the force of a storm when it connects.\n\n**Activate—Sonic Gale** **Reaction** ([concentrate](/trait/concentrate), [force](/trait/force), [magical](/trait/magical)) **Frequency** once per 10 minutes; **Trigger** You critically hit with the twisting gale; **Effect** The energy of your follow-through erupts from your opponent in a wave of concussive energy. You deal [sonic](/trait/sonic) damage equal to your normal [Strike](/action/strike-player-core) damage with the twisting gale in a 30-foot [cone](/rule/cone-rules-2386) behind your target. Creatures in the area, not including your target, must attempt a basic Fortitude save against your class DC.",
+    "descr": "**Price** 4,200 gp\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Sansetsukon](/item/sansetsukon-tian-xia-character-guide-weapon-weapon-302)\n\n---\n\nThis +2 [greater striking](/item/striking-gm-core) impactful sansetsukon is made of metal colored pale blue that echoes howling winds when swung and emits the force of a storm when it connects.",
     "data": {
       "level": 14,
       "rarity": "uncommon",
@@ -5196,6 +5519,22 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "reaction",
+          "traits": [
+            "concentrate",
+            "force",
+            "magical"
+          ],
+          "name": "Sonic Gale",
+          "text": "**Frequency** once per 10 minutes; **Trigger** You critically hit with the twisting gale; **Effect** The energy of your follow-through erupts from your opponent in a wave of concussive energy. You deal [sonic](/trait/sonic) damage equal to your normal [Strike](/action/strike-player-core) damage with the twisting gale in a 30-foot [cone](/rule/cone-rules-2386) behind your target. Creatures in the area, not including your target, must attempt a basic Fortitude save against your class DC.",
+          "effect": "The energy of your follow-through erupts from your opponent in a wave of concussive energy. You deal [sonic](/trait/sonic) damage equal to your normal [Strike](/action/strike-player-core) damage with the twisting gale in a 30-foot [cone](/rule/cone-rules-2386) behind your target. Creatures in the area, not including your target, must attempt a basic Fortitude save against your class DC.",
+          "trigger": "You critically hit with the twisting gale",
+          "triggerBeforeDescription": false,
+          "description": "**Frequency** once per 10 minutes"
         }
       ]
     },
@@ -5356,7 +5695,7 @@
     "systemVersion": "1.2.10",
     "name": "Wand of Purification",
     "slug": "wand-of-purification-tian-xia-character-guide-equipment-equipment-3476",
-    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n**Activate** **** Cast a Spell; **Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
+    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
     "data": {
       "level": 6,
       "rarity": "common",
@@ -5376,7 +5715,11 @@
           "label": "wand",
           "slug": "wand"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "**Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5408,7 +5751,7 @@
     "systemVersion": "1.2.10",
     "name": "Wand of Purification (2nd-rank Spell)",
     "slug": "wand-of-purification-2nd-rank-spell-tian-xia-character-guide-equipment-equipment-3476-3368",
-    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n**Activate** **** Cast a Spell; **Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
+    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
     "data": {
       "level": 6,
       "rarity": "common",
@@ -5428,7 +5771,11 @@
           "label": "wand",
           "slug": "wand"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "**Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5460,7 +5807,7 @@
     "systemVersion": "1.2.10",
     "name": "Wand of Purification (3rd-rank Spell)",
     "slug": "wand-of-purification-3rd-rank-spell-tian-xia-character-guide-equipment-equipment-3476-3369",
-    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n**Activate** **** Cast a Spell; **Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
+    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
     "data": {
       "level": 8,
       "rarity": "common",
@@ -5480,7 +5827,11 @@
           "label": "wand",
           "slug": "wand"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "**Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5512,7 +5863,7 @@
     "systemVersion": "1.2.10",
     "name": "Wand of Purification (4th-rank Spell)",
     "slug": "wand-of-purification-4th-rank-spell-tian-xia-character-guide-equipment-equipment-3476-3370",
-    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n**Activate** **** Cast a Spell; **Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
+    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
     "data": {
       "level": 10,
       "rarity": "common",
@@ -5532,7 +5883,11 @@
           "label": "wand",
           "slug": "wand"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "**Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5564,7 +5919,7 @@
     "systemVersion": "1.2.10",
     "name": "Wand of Purification (5th-rank Spell)",
     "slug": "wand-of-purification-5th-rank-spell-tian-xia-character-guide-equipment-equipment-3476-3371",
-    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n**Activate** **** Cast a Spell; **Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
+    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
     "data": {
       "level": 12,
       "rarity": "common",
@@ -5584,7 +5939,11 @@
           "label": "wand",
           "slug": "wand"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "**Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5616,7 +5975,7 @@
     "systemVersion": "1.2.10",
     "name": "Wand of Purification (6th-rank Spell)",
     "slug": "wand-of-purification-6th-rank-spell-tian-xia-character-guide-equipment-equipment-3476-3372",
-    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n**Activate** **** Cast a Spell; **Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
+    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
     "data": {
       "level": 14,
       "rarity": "common",
@@ -5636,7 +5995,11 @@
           "label": "wand",
           "slug": "wand"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "**Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5668,7 +6031,7 @@
     "systemVersion": "1.2.10",
     "name": "Wand of Purification (7th-rank Spell)",
     "slug": "wand-of-purification-7th-rank-spell-tian-xia-character-guide-equipment-equipment-3476-3373",
-    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n**Activate** **** Cast a Spell; **Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
+    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
     "data": {
       "level": 16,
       "rarity": "common",
@@ -5688,7 +6051,11 @@
           "label": "wand",
           "slug": "wand"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "**Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5720,7 +6087,7 @@
     "systemVersion": "1.2.10",
     "name": "Wand of Purification (8th-rank Spell)",
     "slug": "wand-of-purification-8th-rank-spell-tian-xia-character-guide-equipment-equipment-3476-3374",
-    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n**Activate** **** Cast a Spell; **Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
+    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
     "data": {
       "level": 18,
       "rarity": "common",
@@ -5740,7 +6107,11 @@
           "label": "wand",
           "slug": "wand"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "**Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5772,7 +6143,7 @@
     "systemVersion": "1.2.10",
     "name": "Wand of Purification (9th-rank Spell)",
     "slug": "wand-of-purification-9th-rank-spell-tian-xia-character-guide-equipment-equipment-3476-3375",
-    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n**Activate** **** Cast a Spell; **Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
+    "descr": "**Usage** held in 1 hand\n\n---\n\nThis cypress onusa rod is decorated with a number of paper streamers that rustle when shaken to direct purification magic. Wands of purification contain either [_cleanse affliction_](/spell/cleanse-affliction-player-core), [_clear mind_](/spell/clear-mind-player-core), or [_sound body_](/spell/sound-body-player-core), decided when the wand is created.\n\n## Wand of Purification (2nd-rank Spell)\n\n**Price** 250 gp\n\n## Wand of Purification (3rd-rank Spell)\n\n**Price** 500 gp\n\n## Wand of Purification (4th-rank Spell)\n\n**Price** 1,400 gp\n\n## Wand of Purification (5th-rank Spell)\n\n**Price** 3,000 gp\n\n## Wand of Purification (6th-rank Spell)\n\n**Price** 4,500 gp\n\n## Wand of Purification (7th-rank Spell)\n\n**Price** 10,000 gp\n\n## Wand of Purification (8th-rank Spell)\n\n**Price** 24,000 gp\n\n## Wand of Purification (9th-rank Spell)\n\n**Price** 70,000 gp",
     "data": {
       "level": 20,
       "rarity": "common",
@@ -5792,7 +6163,11 @@
           "label": "wand",
           "slug": "wand"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "**Frequency** once per day, plus overcharge; **Effect** You cast cleanse affliction, clear mind, or sound body of the indicated level. If your [counteract](/rule/counteracting-rules-2250) check would be sufficient only to suppress the effect until the beginning of your next turn, instead of to fully counteract it, then you can [Sustain](/action/sustain-player-core) the Activation of the wand each round to suppress the effect for an additional round, to a maximum of 1 minute. You Sustain the Activation by shaking the wand, so if at any point you release or otherwise drop the wand, the effect immediately stops being suppressed and resumes on the target as normal."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -5824,7 +6199,7 @@
     "systemVersion": "1.2.10",
     "name": "Worldringer",
     "slug": "worldringer-tian-xia-character-guide-equipment-equipment-3477",
-    "descr": "**Usage** held in 1 or 2 hands\n\n**Bulk** 1\n\n**Base Weapon** [Khakkhara](/item/khakkhara-tian-xia-character-guide-weapon-weapon-412)\n\n---\n\nThis +1 [striking](/item/striking-gm-core) khakkhara is topped by an ornate finial depiction of a small-statured traveler with animal companions. While the rings of a khakkhara are normally meant to alert others of one’s presence, the magic of the worldringer enhances the chimes to entreat upon those who hear it.\n\n**Activate—Chimes of Command** **Three Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You call upon beings of this plane or another to hear your call. Choose [_summon lesser servitor_](/spell/summon-lesser-servitor-player-core-2) or [_command_](/spell/command-player-core). You [Cast the chosen Spell](/action/cast-a-spell-player-core) at 1st rank (DC 19). When casting summon lesser servitor in this way, you must choose to summon a [magical](/trait/magical) [animal](/trait/animal).\n\n## Worldringer\n\n**Price** 160 gp\n\n## Worldringer (Greater)\n\n**Price** 4,200 gp\n\n---\n\nThe weapon is a +2 greater striking khakkhara. Chimes of Command grants you the choice of casting summon lesser servitor or command as 5th-rank spells (DC 33).",
+    "descr": "**Usage** held in 1 or 2 hands\n\n**Bulk** 1\n\n**Base Weapon** [Khakkhara](/item/khakkhara-tian-xia-character-guide-weapon-weapon-412)\n\n---\n\nThis +1 [striking](/item/striking-gm-core) khakkhara is topped by an ornate finial depiction of a small-statured traveler with animal companions. While the rings of a khakkhara are normally meant to alert others of one’s presence, the magic of the worldringer enhances the chimes to entreat upon those who hear it.\n\n## Worldringer\n\n**Price** 160 gp\n\n## Worldringer (Greater)\n\n**Price** 4,200 gp\n\n---\n\nThe weapon is a +2 greater striking khakkhara. Chimes of Command grants you the choice of casting summon lesser servitor or command as 5th-rank spells (DC 33).",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -5839,6 +6214,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "three",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Chimes of Command",
+          "text": "**Frequency** once per day; **Effect** You call upon beings of this plane or another to hear your call. Choose [_summon lesser servitor_](/spell/summon-lesser-servitor-player-core-2) or [_command_](/spell/command-player-core). You [Cast the chosen Spell](/action/cast-a-spell-player-core) at 1st rank (DC 19). When casting summon lesser servitor in this way, you must choose to summon a [magical](/trait/magical) [animal](/trait/animal).",
+          "effect": "You call upon beings of this plane or another to hear your call. Choose [_summon lesser servitor_](/spell/summon-lesser-servitor-player-core-2) or [_command_](/spell/command-player-core). You [Cast the chosen Spell](/action/cast-a-spell-player-core) at 1st rank (DC 19). When casting summon lesser servitor in this way, you must choose to summon a [magical](/trait/magical) [animal](/trait/animal).",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -5872,7 +6259,7 @@
     "systemVersion": "1.2.10",
     "name": "Worldringer",
     "slug": "worldringer-tian-xia-character-guide-equipment-equipment-3477-3376",
-    "descr": "**Usage** held in 1 or 2 hands\n\n**Bulk** 1\n\n**Base Weapon** [Khakkhara](/item/khakkhara-tian-xia-character-guide-weapon-weapon-412)\n\n---\n\nThis +1 [striking](/item/striking-gm-core) khakkhara is topped by an ornate finial depiction of a small-statured traveler with animal companions. While the rings of a khakkhara are normally meant to alert others of one’s presence, the magic of the worldringer enhances the chimes to entreat upon those who hear it.\n\n**Activate—Chimes of Command** **Three Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You call upon beings of this plane or another to hear your call. Choose [_summon lesser servitor_](/spell/summon-lesser-servitor-player-core-2) or [_command_](/spell/command-player-core). You [Cast the chosen Spell](/action/cast-a-spell-player-core) at 1st rank (DC 19). When casting summon lesser servitor in this way, you must choose to summon a [magical](/trait/magical) [animal](/trait/animal).\n\n## Worldringer\n\n**Price** 160 gp\n\n## Worldringer (Greater)\n\n**Price** 4,200 gp\n\n---\n\nThe weapon is a +2 greater striking khakkhara. Chimes of Command grants you the choice of casting summon lesser servitor or command as 5th-rank spells (DC 33).",
+    "descr": "**Usage** held in 1 or 2 hands\n\n**Bulk** 1\n\n**Base Weapon** [Khakkhara](/item/khakkhara-tian-xia-character-guide-weapon-weapon-412)\n\n---\n\nThis +1 [striking](/item/striking-gm-core) khakkhara is topped by an ornate finial depiction of a small-statured traveler with animal companions. While the rings of a khakkhara are normally meant to alert others of one’s presence, the magic of the worldringer enhances the chimes to entreat upon those who hear it.\n\n## Worldringer\n\n**Price** 160 gp\n\n## Worldringer (Greater)\n\n**Price** 4,200 gp\n\n---\n\nThe weapon is a +2 greater striking khakkhara. Chimes of Command grants you the choice of casting summon lesser servitor or command as 5th-rank spells (DC 33).",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -5887,6 +6274,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "three",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Chimes of Command",
+          "text": "**Frequency** once per day; **Effect** You call upon beings of this plane or another to hear your call. Choose [_summon lesser servitor_](/spell/summon-lesser-servitor-player-core-2) or [_command_](/spell/command-player-core). You [Cast the chosen Spell](/action/cast-a-spell-player-core) at 1st rank (DC 19). When casting summon lesser servitor in this way, you must choose to summon a [magical](/trait/magical) [animal](/trait/animal).",
+          "effect": "You call upon beings of this plane or another to hear your call. Choose [_summon lesser servitor_](/spell/summon-lesser-servitor-player-core-2) or [_command_](/spell/command-player-core). You [Cast the chosen Spell](/action/cast-a-spell-player-core) at 1st rank (DC 19). When casting summon lesser servitor in this way, you must choose to summon a [magical](/trait/magical) [animal](/trait/animal).",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -5920,7 +6319,7 @@
     "systemVersion": "1.2.10",
     "name": "Worldringer (Greater)",
     "slug": "worldringer-greater-tian-xia-character-guide-equipment-equipment-3477-3377",
-    "descr": "**Usage** held in 1 or 2 hands\n\n**Bulk** 1\n\n**Base Weapon** [Khakkhara](/item/khakkhara-tian-xia-character-guide-weapon-weapon-412)\n\n---\n\nThis +1 [striking](/item/striking-gm-core) khakkhara is topped by an ornate finial depiction of a small-statured traveler with animal companions. While the rings of a khakkhara are normally meant to alert others of one’s presence, the magic of the worldringer enhances the chimes to entreat upon those who hear it.\n\n**Activate—Chimes of Command** **Three Actions** ([manipulate](/trait/manipulate)) **Frequency** once per day; **Effect** You call upon beings of this plane or another to hear your call. Choose [_summon lesser servitor_](/spell/summon-lesser-servitor-player-core-2) or [_command_](/spell/command-player-core). You [Cast the chosen Spell](/action/cast-a-spell-player-core) at 1st rank (DC 19). When casting summon lesser servitor in this way, you must choose to summon a [magical](/trait/magical) [animal](/trait/animal).\n\n## Worldringer\n\n**Price** 160 gp\n\n## Worldringer (Greater)\n\n**Price** 4,200 gp\n\n---\n\nThe weapon is a +2 greater striking khakkhara. Chimes of Command grants you the choice of casting summon lesser servitor or command as 5th-rank spells (DC 33).",
+    "descr": "**Usage** held in 1 or 2 hands\n\n**Bulk** 1\n\n**Base Weapon** [Khakkhara](/item/khakkhara-tian-xia-character-guide-weapon-weapon-412)\n\n---\n\nThis +1 [striking](/item/striking-gm-core) khakkhara is topped by an ornate finial depiction of a small-statured traveler with animal companions. While the rings of a khakkhara are normally meant to alert others of one’s presence, the magic of the worldringer enhances the chimes to entreat upon those who hear it.\n\n## Worldringer\n\n**Price** 160 gp\n\n## Worldringer (Greater)\n\n**Price** 4,200 gp\n\n---\n\nThe weapon is a +2 greater striking khakkhara. Chimes of Command grants you the choice of casting summon lesser servitor or command as 5th-rank spells (DC 33).",
     "data": {
       "level": 14,
       "rarity": "uncommon",
@@ -5935,6 +6334,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "three",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Chimes of Command",
+          "text": "**Frequency** once per day; **Effect** You call upon beings of this plane or another to hear your call. Choose [_summon lesser servitor_](/spell/summon-lesser-servitor-player-core-2) or [_command_](/spell/command-player-core). You [Cast the chosen Spell](/action/cast-a-spell-player-core) at 1st rank (DC 19). When casting summon lesser servitor in this way, you must choose to summon a [magical](/trait/magical) [animal](/trait/animal).",
+          "effect": "You call upon beings of this plane or another to hear your call. Choose [_summon lesser servitor_](/spell/summon-lesser-servitor-player-core-2) or [_command_](/spell/command-player-core). You [Cast the chosen Spell](/action/cast-a-spell-player-core) at 1st rank (DC 19). When casting summon lesser servitor in this way, you must choose to summon a [magical](/trait/magical) [animal](/trait/animal).",
+          "description": "**Frequency** once per day"
         }
       ]
     },

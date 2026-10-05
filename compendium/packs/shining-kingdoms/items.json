@@ -6,7 +6,7 @@
     "systemVersion": "1.2.10",
     "name": "Bolka's Blessing",
     "slug": "bolka-s-blessing-shining-kingdoms",
-    "descr": "This filigree grants you a +1 item bonus to Diplomacy checks and to Perception checks to Sense Motive. Additionally, once per day, the filigree symbol can be activated for a healing effect.\n\n**Activate—Gift of Life** 1 (concentrate, healing, vitality)\n\n**Frequency** once per day\n\n---\n\n**Effect** You regain 3d10 healing,vitality|shortLabel] Hit Points.",
+    "descr": "This filigree grants you a +1 item bonus to Diplomacy checks and to Perception checks to Sense Motive. Additionally, once per day, the filigree symbol can be activated for a healing effect.",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -26,6 +26,20 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate",
+            "healing",
+            "vitality"
+          ],
+          "name": "Gift of Life",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** You regain 3d10 healing,vitality|shortLabel] Hit Points.",
+          "effect": "You regain 3d10 healing,vitality|shortLabel] Hit Points.",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -56,7 +70,7 @@
     "systemVersion": "1.2.10",
     "name": "Bolka's Blessing (Greater)",
     "slug": "bolka-s-blessing-greater-shining-kingdoms",
-    "descr": "This filigree grants you a +2 item bonus to Diplomacy checks and to Perception checks to Sense Motive. Additionally, once per day, the filigree symbol can be activated for a healing effect.\n\n**Activate—Gift of Life** 1 (concentrate, healing, vitality)\n\n**Frequency** once per day\n\n---\n\n**Effect** You regain 6d10 healing,vitality|shortLabel] Hit Points.",
+    "descr": "This filigree grants you a +2 item bonus to Diplomacy checks and to Perception checks to Sense Motive. Additionally, once per day, the filigree symbol can be activated for a healing effect.",
     "data": {
       "level": 11,
       "rarity": "uncommon",
@@ -76,6 +90,20 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate",
+            "healing",
+            "vitality"
+          ],
+          "name": "Gift of Life",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** You regain 6d10 healing,vitality|shortLabel] Hit Points.",
+          "effect": "You regain 6d10 healing,vitality|shortLabel] Hit Points.",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -106,7 +134,7 @@
     "systemVersion": "1.2.10",
     "name": "Breath of Freedom",
     "slug": "breath-of-freedom-shining-kingdoms",
-    "descr": "**Activate** R (concentrate)\n\n**Trigger** You become [Grabbed](/condition/grabbed-player-core), [Immobilized](/condition/immobilized-player-core), or [Restrained](/condition/restrained-player-core)\n\n**Requirements** You're an expert in Reflex saves.\n\n---\n\nThis delicate feather ornament looks fragile but is solid as stone. When you Activate the talisman, you can immediately attempt to [Escape](/action/escape-player-core).",
+    "descr": "---\n\nThis delicate feather ornament looks fragile but is solid as stone. When you Activate the talisman, you can immediately attempt to [Escape](/action/escape-player-core).",
     "data": {
       "level": 4,
       "rarity": "common",
@@ -132,7 +160,14 @@
           "label": "talisman",
           "slug": "talisman"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "reaction",
+        "traits": [
+          "concentrate"
+        ],
+        "text": "**Trigger** You become [Grabbed](/condition/grabbed-player-core), [Immobilized](/condition/immobilized-player-core), or [Restrained](/condition/restrained-player-core)\n\n**Requirements** You're an expert in Reflex saves."
+      }
     },
     "attributes": {
       "remaster": true,
@@ -162,7 +197,7 @@
     "systemVersion": "1.2.10",
     "name": "Crimson Godsblood Serum (Greater)",
     "slug": "crimson-godsblood-serum-greater-shining-kingdoms",
-    "descr": "**Activate** 1 (manipulate)\n\n---\n\nThough it contains but a tiny drop of Gorum's blood, drinking this thick, swirling potion fills the user with divine wrath and resilience. While under the effect of the potion, you gain a +4 status bonus to physical damage rolls for 1 minute.\n\nEffect: Crimson Godsblood Serum\n\nThe first time during that minute you're reduced to 0 Hit Points but not immediately killed, you avoid being knocked out, regain (6d8+20) healing Hit Points, and become Confused for 1 round, and your [Wounded](/condition/wounded-player-core) condition increases by 1.",
+    "descr": "---\n\nThough it contains but a tiny drop of Gorum's blood, drinking this thick, swirling potion fills the user with divine wrath and resilience. While under the effect of the potion, you gain a +4 status bonus to physical damage rolls for 1 minute.\n\nEffect: Crimson Godsblood Serum\n\nThe first time during that minute you're reduced to 0 Hit Points but not immediately killed, you avoid being knocked out, regain (6d8+20) healing Hit Points, and become Confused for 1 round, and your [Wounded](/condition/wounded-player-core) condition increases by 1.",
     "data": {
       "level": 18,
       "rarity": "rare",
@@ -188,7 +223,14 @@
           "label": "potion",
           "slug": "potion"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -218,7 +260,7 @@
     "systemVersion": "1.2.10",
     "name": "Crimson Godsblood Serum (Lesser)",
     "slug": "crimson-godsblood-serum-lesser-shining-kingdoms",
-    "descr": "**Activate** 1 (manipulate)\n\n---\n\nThough it contains but a tiny drop of Gorum's blood, drinking this thick, swirling potion fills the user with divine wrath and resilience. While under the effect of the potion, you gain a +2 status bonus to physical damage rolls for 1 minute.\n\nEffect: Crimson Godsblood Serum\n\nThe first time during that minute you're reduced to 0 Hit Points but not immediately killed, you avoid being knocked out, regain (2d8+5) healing Hit Points, and become Confused for 1 round, and your [Wounded](/condition/wounded-player-core) condition increases by 1.",
+    "descr": "---\n\nThough it contains but a tiny drop of Gorum's blood, drinking this thick, swirling potion fills the user with divine wrath and resilience. While under the effect of the potion, you gain a +2 status bonus to physical damage rolls for 1 minute.\n\nEffect: Crimson Godsblood Serum\n\nThe first time during that minute you're reduced to 0 Hit Points but not immediately killed, you avoid being knocked out, regain (2d8+5) healing Hit Points, and become Confused for 1 round, and your [Wounded](/condition/wounded-player-core) condition increases by 1.",
     "data": {
       "level": 6,
       "rarity": "rare",
@@ -244,7 +286,14 @@
           "label": "potion",
           "slug": "potion"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -274,7 +323,7 @@
     "systemVersion": "1.2.10",
     "name": "Crimson Godsblood Serum (Moderate)",
     "slug": "crimson-godsblood-serum-moderate-shining-kingdoms",
-    "descr": "**Activate** 1 (manipulate)\n\n---\n\nThough it contains but a tiny drop of Gorum's blood, drinking this thick, swirling potion fills the user with divine wrath and resilience. While under the effect of the potion, you gain a +3 status bonus to physical damage rolls for 1 minute.\n\nEffect: Crimson Godsblood Serum\n\nThe first time during that minute you're reduced to 0 Hit Points but not immediately killed, you avoid being knocked out, regain (3d8+10) healing Hit Points, and become Confused for 1 round, and your [Wounded](/condition/wounded-player-core) condition increases by 1.",
+    "descr": "---\n\nThough it contains but a tiny drop of Gorum's blood, drinking this thick, swirling potion fills the user with divine wrath and resilience. While under the effect of the potion, you gain a +3 status bonus to physical damage rolls for 1 minute.\n\nEffect: Crimson Godsblood Serum\n\nThe first time during that minute you're reduced to 0 Hit Points but not immediately killed, you avoid being knocked out, regain (3d8+10) healing Hit Points, and become Confused for 1 round, and your [Wounded](/condition/wounded-player-core) condition increases by 1.",
     "data": {
       "level": 12,
       "rarity": "rare",
@@ -300,7 +349,14 @@
           "label": "potion",
           "slug": "potion"
         }
-      ]
+      ],
+      "activation": {
+        "actions": "one",
+        "traits": [
+          "manipulate"
+        ],
+        "text": ""
+      }
     },
     "attributes": {
       "remaster": true,
@@ -380,7 +436,7 @@
     "systemVersion": "1.2.10",
     "name": "Fan Buckler",
     "slug": "fan-buckler-shining-kingdoms",
-    "descr": "**Access** You're a member of the Lion Blades.\n\n---\n\nWhen collapsed, a *fan buckler* appears to be no more than an elegant wooden fan. Any attempts to discern that there's more to the item require a successful Perception check against the Deception DC of the wielder.\n\n**Activate—Unfurl Fan** 1 (manipulate)\n\n---\n\n**Effect** You transform the fan into a wooden [Buckler](/item/buckler-player-core) (Hardness 3, HP 6, BT 3) or vice versa.",
+    "descr": "**Access** You're a member of the Lion Blades.\n\n---\n\nWhen collapsed, a *fan buckler* appears to be no more than an elegant wooden fan. Any attempts to discern that there's more to the item require a successful Perception check against the Deception DC of the wielder.",
     "data": {
       "level": 3,
       "rarity": "uncommon",
@@ -395,6 +451,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Unfurl Fan",
+          "text": "---\n\n**Effect** You transform the fan into a wooden [Buckler](/item/buckler-player-core) (Hardness 3, HP 6, BT 3) or vice versa.",
+          "effect": "You transform the fan into a wooden [Buckler](/item/buckler-player-core) (Hardness 3, HP 6, BT 3) or vice versa.",
+          "description": "---"
         }
       ]
     },
@@ -524,7 +592,7 @@
     "systemVersion": "1.2.10",
     "name": "Jaws of the Grogrisant",
     "slug": "jaws-of-the-grogrisant-shining-kingdoms",
-    "descr": "The teeth that fell off the Mantle of the Grogrisant were given to the scholars of Houses Fahlspar, Lotheed, Nicodemius, and Zespire, who—after much heated discussion—created this regal circlet. You gain a +3 item bonus to Diplomacy and Intimidation skill checks and [Sense Motive](/action/sense-motive-player-core) checks against creatures that have the [primal](/trait/primal) trait. When you invest in the headband, you either increase your Wisdom modifier by 1 or increase it to +4, whichever would give you a higher value.\n\n**Activate—Primal Empathy** 2 (concentrate, mental)\n\n**Frequency** once per hour\n\n---\n\n**Effect** You gain the ability to communicate with nature as if you were a part of it. You cast [Telepathy](/spell/telepathy-player-core) at 6th rank, which can only be used to communicate with creatures that have the primal trait.",
+    "descr": "The teeth that fell off the Mantle of the Grogrisant were given to the scholars of Houses Fahlspar, Lotheed, Nicodemius, and Zespire, who—after much heated discussion—created this regal circlet. You gain a +3 item bonus to Diplomacy and Intimidation skill checks and [Sense Motive](/action/sense-motive-player-core) checks against creatures that have the [primal](/trait/primal) trait. When you invest in the headband, you either increase your Wisdom modifier by 1 or increase it to +4, whichever would give you a higher value.",
     "data": {
       "level": 17,
       "rarity": "unique",
@@ -549,6 +617,19 @@
         {
           "label": "primal",
           "slug": "primal"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "mental"
+          ],
+          "name": "Primal Empathy",
+          "text": "**Frequency** once per hour\n\n---\n\n**Effect** You gain the ability to communicate with nature as if you were a part of it. You cast [Telepathy](/spell/telepathy-player-core) at 6th rank, which can only be used to communicate with creatures that have the primal trait.",
+          "effect": "You gain the ability to communicate with nature as if you were a part of it. You cast [Telepathy](/spell/telepathy-player-core) at 6th rank, which can only be used to communicate with creatures that have the primal trait.",
+          "description": "**Frequency** once per hour\n\n---"
         }
       ]
     },
@@ -629,7 +710,7 @@
     "systemVersion": "1.2.10",
     "name": "Keep Stone Amulet",
     "slug": "keep-stone-amulet-shining-kingdoms",
-    "descr": "The superior adamantine-lead alloy known as keep stone is as highly prized as it is expensive, and for good reason: keep stone combines the Hardness and durability of the finest metal with inherent magical protection. Not only does the metal itself resist magical effects, but anyone in proximity to a large amount of it also enjoys a degree of protection from divination magic. Dwarven crafters have attempted to make this extra protection more portable and more affordable in the form of *keep stone amulets*. Each amulet is unique in its exact shape, size, thickness, and decorations, but typically, a keep stone amulet is roughly palm-sized and engraved with clan symbols, holy aphorisms, or a favorite line of poetry.\n\nWhile wearing a *keep stone amulet*, if you're the target of a spell with the detection or [scrying](/trait/scrying) trait, the caster must succeed at a Flat DC 5 or lose the spell.\n\n---\n\n**Activate—Rebuff Magic** r (concentrate, misfortune)\n\n**Frequency** once per day\n\n**Trigger** You're the target of a spell with a spell attack roll\n\n---\n\n**Effect** The caster must roll the spell attack roll twice and take the worse result.",
+    "descr": "The superior adamantine-lead alloy known as keep stone is as highly prized as it is expensive, and for good reason: keep stone combines the Hardness and durability of the finest metal with inherent magical protection. Not only does the metal itself resist magical effects, but anyone in proximity to a large amount of it also enjoys a degree of protection from divination magic. Dwarven crafters have attempted to make this extra protection more portable and more affordable in the form of *keep stone amulets*. Each amulet is unique in its exact shape, size, thickness, and decorations, but typically, a keep stone amulet is roughly palm-sized and engraved with clan symbols, holy aphorisms, or a favorite line of poetry.\n\nWhile wearing a *keep stone amulet*, if you're the target of a spell with the detection or [scrying](/trait/scrying) trait, the caster must succeed at a Flat DC 5 or lose the spell.\n\n---",
     "data": {
       "level": 19,
       "rarity": "rare",
@@ -649,6 +730,22 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "reaction",
+          "traits": [
+            "concentrate",
+            "misfortune"
+          ],
+          "name": "Rebuff Magic",
+          "text": "**Frequency** once per day\n\n**Trigger** You're the target of a spell with a spell attack roll\n\n---\n\n**Effect** The caster must roll the spell attack roll twice and take the worse result.",
+          "effect": "The caster must roll the spell attack roll twice and take the worse result.",
+          "trigger": "You're the target of a spell with a spell attack roll",
+          "triggerBeforeDescription": false,
+          "triggerParagraphBreak": true,
+          "description": "**Frequency** once per day; ---"
         }
       ]
     },
@@ -679,7 +776,7 @@
     "systemVersion": "1.2.10",
     "name": "Kols's Oath",
     "slug": "kols-s-oath-shining-kingdoms",
-    "descr": "This filigree grants you, as the clan dagger's owner, a +1 item bonus to Society checks and to Diplomacy checks to Request. Additionally, once per day, the filigree symbol can be activated to compel an enemy to act.\n\n**Activate—Vow Unbreakable** 1 (auditory, concentrate, linguistic, mental)\n\n**Frequency** once per day\n\n---\n\n**Effect** You command a creature within 30 feet to Stride away from you, drop Prone, or release one item it's holding. The creature can choose to perform that action as the first action on its next turn; if it doesn't, it takes 4d6 mental damage (basic Will DC 20 save).",
+    "descr": "This filigree grants you, as the clan dagger's owner, a +1 item bonus to Society checks and to Diplomacy checks to Request. Additionally, once per day, the filigree symbol can be activated to compel an enemy to act.",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -699,6 +796,21 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "auditory",
+            "concentrate",
+            "linguistic",
+            "mental"
+          ],
+          "name": "Vow Unbreakable",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** You command a creature within 30 feet to Stride away from you, drop Prone, or release one item it's holding. The creature can choose to perform that action as the first action on its next turn; if it doesn't, it takes 4d6 mental damage (basic Will DC 20 save).",
+          "effect": "You command a creature within 30 feet to Stride away from you, drop Prone, or release one item it's holding. The creature can choose to perform that action as the first action on its next turn; if it doesn't, it takes 4d6 mental damage (basic Will DC 20 save).",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -729,7 +841,7 @@
     "systemVersion": "1.2.10",
     "name": "Kols's Oath (Greater)",
     "slug": "kols-s-oath-greater-shining-kingdoms",
-    "descr": "This filigree grants you, as the clan dagger's owner, a +2 item bonus to Society checks and to Diplomacy checks to Request. Additionally, once per day, the filigree symbol can be activated to compel an enemy to act.\n\n**Activate—Vow Unbreakable** 1 (auditory, concentrate, linguistic, mental)\n\n**Frequency** once per day\n\n---\n\n**Effect** You command a creature within 30 feet to Stride away from you, drop Prone, or release one item it's holding. The creature can choose to perform that action as the first action on its next turn; if it doesn't, it takes 8d6 mental damage (basic Will DC 28 save).",
+    "descr": "This filigree grants you, as the clan dagger's owner, a +2 item bonus to Society checks and to Diplomacy checks to Request. Additionally, once per day, the filigree symbol can be activated to compel an enemy to act.",
     "data": {
       "level": 11,
       "rarity": "uncommon",
@@ -749,6 +861,21 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "auditory",
+            "concentrate",
+            "linguistic",
+            "mental"
+          ],
+          "name": "Vow Unbreakable",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** You command a creature within 30 feet to Stride away from you, drop Prone, or release one item it's holding. The creature can choose to perform that action as the first action on its next turn; if it doesn't, it takes 8d6 mental damage (basic Will DC 28 save).",
+          "effect": "You command a creature within 30 feet to Stride away from you, drop Prone, or release one item it's holding. The creature can choose to perform that action as the first action on its next turn; if it doesn't, it takes 8d6 mental damage (basic Will DC 28 save).",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -779,7 +906,7 @@
     "systemVersion": "1.2.10",
     "name": "Lion's Call",
     "slug": "lion-s-call-shining-kingdoms",
-    "descr": "**Access** You're a member of the Lion Blades.\n\n---\n\nGiven only to highly trusted agents by the grand princes back when Lion Blades protected the Primogen Crown, these historic *+1 striking authorized shortswords* allow a Lion Blade wielder to locate resources.\n\n**Activate—Find the Pride** 3 (arcane, concentrate, manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You cast [Locate](/spell/locate-player-core) at 5th rank to learn the location of one of the following of your choice: the nearest Lion Blade safe house, shadow school, Lion Blade agent, Lion Blade kith, or a person other than yourself who's in possession of a *lion's call*.\n\n---\n\n**Activate—Echo the Call** r (arcane, concentrate)\n\n**Frequency** once per day\n\n**Trigger** A creature locates you using another *lion's call*\n\n---\n\n**Effect** You immediately learn the location and appearance of the triggering creature. You can communicate telepathically with the triggering creature while you remain within 1 mile of each other for the next hour",
+    "descr": "**Access** You're a member of the Lion Blades.\n\n---\n\nGiven only to highly trusted agents by the grand princes back when Lion Blades protected the Primogen Crown, these historic *+1 striking authorized shortswords* allow a Lion Blade wielder to locate resources.",
     "data": {
       "level": 10,
       "rarity": "uncommon",
@@ -809,6 +936,34 @@
         {
           "label": "versatile-s",
           "slug": "versatile"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "three",
+          "traits": [
+            "arcane",
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Find the Pride",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** You cast [Locate](/spell/locate-player-core) at 5th rank to learn the location of one of the following of your choice: the nearest Lion Blade safe house, shadow school, Lion Blade agent, Lion Blade kith, or a person other than yourself who's in possession of a *lion's call*.\n\n---",
+          "effect": "You cast [Locate](/spell/locate-player-core) at 5th rank to learn the location of one of the following of your choice: the nearest Lion Blade safe house, shadow school, Lion Blade agent, Lion Blade kith, or a person other than yourself who's in possession of a *lion's call*.\n\n---",
+          "description": "**Frequency** once per day\n\n---"
+        },
+        {
+          "actions": "reaction",
+          "traits": [
+            "arcane",
+            "concentrate"
+          ],
+          "name": "Echo the Call",
+          "text": "**Frequency** once per day\n\n**Trigger** A creature locates you using another *lion's call*\n\n---\n\n**Effect** You immediately learn the location and appearance of the triggering creature. You can communicate telepathically with the triggering creature while you remain within 1 mile of each other for the next hour",
+          "effect": "You immediately learn the location and appearance of the triggering creature. You can communicate telepathically with the triggering creature while you remain within 1 mile of each other for the next hour",
+          "trigger": "A creature locates you using another *lion's call*",
+          "triggerBeforeDescription": false,
+          "triggerParagraphBreak": true,
+          "description": "**Frequency** once per day; ---"
         }
       ]
     },
@@ -840,7 +995,7 @@
     "systemVersion": "1.2.10",
     "name": "Lion's Pelt (Chain)",
     "slug": "lion-s-pelt-chain-shining-kingdoms",
-    "descr": "**Access** You're a member of the Lion Blades.\n\n---\n\nLaurisa Tromaine ordered these as prototype uniforms. The fur-lined pauldrons bear the insignia of a lion with a blade in its mouth. The type of blade indicates which bard school one graduated from. When you disguise the armor via its [Raiment](/item/raiment-gm-core) rune, you can choose whether to conceal this symbol or not. You can also use the rune's activation to quickly display or hide the insignia.\n\n**Activate—Contact Ally** 1 (arcane, concentrate)\n\n**Frequency** once per hour\n\n---\n\n**Effect** You cast [Message](/spell/message-player-core) at 1st rank to a target that you know is also wearing a *lion's pelt* uniform. If you and the target share an insignia, the spell is heightened to 3rd rank.",
+    "descr": "**Access** You're a member of the Lion Blades.\n\n---\n\nLaurisa Tromaine ordered these as prototype uniforms. The fur-lined pauldrons bear the insignia of a lion with a blade in its mouth. The type of blade indicates which bard school one graduated from. When you disguise the armor via its [Raiment](/item/raiment-gm-core) rune, you can choose whether to conceal this symbol or not. You can also use the rune's activation to quickly display or hide the insignia.",
     "data": {
       "level": 6,
       "rarity": "uncommon",
@@ -867,6 +1022,19 @@
         {
           "label": "noisy",
           "slug": "noisy"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "arcane",
+            "concentrate"
+          ],
+          "name": "Contact Ally",
+          "text": "**Frequency** once per hour\n\n---\n\n**Effect** You cast [Message](/spell/message-player-core) at 1st rank to a target that you know is also wearing a *lion's pelt* uniform. If you and the target share an insignia, the spell is heightened to 3rd rank.",
+          "effect": "You cast [Message](/spell/message-player-core) at 1st rank to a target that you know is also wearing a *lion's pelt* uniform. If you and the target share an insignia, the spell is heightened to 3rd rank.",
+          "description": "**Frequency** once per hour\n\n---"
         }
       ]
     },
@@ -897,7 +1065,7 @@
     "systemVersion": "1.2.10",
     "name": "Lion's Pelt (Leather)",
     "slug": "lion-s-pelt-leather-shining-kingdoms",
-    "descr": "**Access** You're a member of the Lion Blades.\n\n---\n\nLaurisa Tromaine ordered these as prototype uniforms. The fur-lined pauldrons bear the insignia of a lion with a blade in its mouth. The type of blade indicates which bard school one graduated from. When you disguise the armor via its [Raiment](/item/raiment-gm-core) rune, you can choose whether to conceal this symbol or not. You can also use the rune's activation to quickly display or hide the insignia.\n\n**Activate—Contact Ally** 1 (arcane, concentrate)\n\n**Frequency** once per hour\n\n---\n\n**Effect** You cast [Message](/spell/message-player-core) at 1st rank to a target that you know is also wearing a *lion's pelt* uniform. If you and the target share an insignia, the spell is heightened to 3rd rank.",
+    "descr": "**Access** You're a member of the Lion Blades.\n\n---\n\nLaurisa Tromaine ordered these as prototype uniforms. The fur-lined pauldrons bear the insignia of a lion with a blade in its mouth. The type of blade indicates which bard school one graduated from. When you disguise the armor via its [Raiment](/item/raiment-gm-core) rune, you can choose whether to conceal this symbol or not. You can also use the rune's activation to quickly display or hide the insignia.",
     "data": {
       "level": 6,
       "rarity": "uncommon",
@@ -913,7 +1081,20 @@
       "str": 0,
       "armorCategory": "light",
       "armorGroup": "leather",
-      "traitLinks": []
+      "traitLinks": [],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "arcane",
+            "concentrate"
+          ],
+          "name": "Contact Ally",
+          "text": "**Frequency** once per hour\n\n---\n\n**Effect** You cast [Message](/spell/message-player-core) at 1st rank to a target that you know is also wearing a *lion's pelt* uniform. If you and the target share an insignia, the spell is heightened to 3rd rank.",
+          "effect": "You cast [Message](/spell/message-player-core) at 1st rank to a target that you know is also wearing a *lion's pelt* uniform. If you and the target share an insignia, the spell is heightened to 3rd rank.",
+          "description": "**Frequency** once per hour\n\n---"
+        }
+      ]
     },
     "attributes": {
       "remaster": true,
@@ -940,7 +1121,7 @@
     "systemVersion": "1.2.10",
     "name": "Memory Ribbon",
     "slug": "memory-ribbon-shining-kingdoms",
-    "descr": "The time-honored tradition of weaving beautiful, embroidered glory ribbons throughout one's hair and beard remains an important cultural practice among some dwarven clans, with the choice of colors and style of presentation representing status, achievements, and other significant aspects of someone's position. Magical versions also exist that help enhance the wearer's memory. These magical ribbons are especially popular when someone has been invited to serve as a toastmaster at a guild banquet or as a master of ceremonies at an important festival. Their use in final oral exams for high positions is, however, hotly debated.\n\n---\n\n**Activate—Read the Ribbon's Story** f (concentrate)\n\n**Trigger** You attempt a skill check to Recall Knowledge but haven't rolled yet\n\n---\n\n**Effect** The memory ribbon grants you a +2 item bonus to the triggering skill check to Recall Knowledge. Afterward, the ribbon becomes non-magical.",
+    "descr": "The time-honored tradition of weaving beautiful, embroidered glory ribbons throughout one's hair and beard remains an important cultural practice among some dwarven clans, with the choice of colors and style of presentation representing status, achievements, and other significant aspects of someone's position. Magical versions also exist that help enhance the wearer's memory. These magical ribbons are especially popular when someone has been invited to serve as a toastmaster at a guild banquet or as a master of ceremonies at an important festival. Their use in final oral exams for high positions is, however, hotly debated.\n\n---",
     "data": {
       "level": 4,
       "rarity": "uncommon",
@@ -960,6 +1141,21 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "free",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Read the Ribbon's Story",
+          "text": "**Trigger** You attempt a skill check to Recall Knowledge but haven't rolled yet\n\n---\n\n**Effect** The memory ribbon grants you a +2 item bonus to the triggering skill check to Recall Knowledge. Afterward, the ribbon becomes non-magical.",
+          "effect": "The memory ribbon grants you a +2 item bonus to the triggering skill check to Recall Knowledge. Afterward, the ribbon becomes non-magical.",
+          "trigger": "You attempt a skill check to Recall Knowledge but haven't rolled yet",
+          "triggerBeforeDescription": true,
+          "triggerParagraphBreak": true,
+          "description": "---"
         }
       ]
     },
@@ -990,7 +1186,7 @@
     "systemVersion": "1.2.10",
     "name": "Paws of the Grogrisant",
     "slug": "paws-of-the-grogrisant-shining-kingdoms",
-    "descr": "Princess Eutropia commissioned Taldor's Imperial College of Heralds to preserve the paws that fell off the Mantle of the Grogrisant. A few weeks later, the college presented this pair of boots. You gain a +3 item bonus to Athletics checks and saves against forced movement. When you invest in the boots, you either increase your Strength modifier by 1 or increase it to +4, whichever would give you a higher value.\n\n**Activate—Grogrisant Leap** 1 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** The Grogrisant's legendary strength and reflexes empower your movement. You Leap, doubling the vertical and horizontal distance of your [Leap](/action/leap-player-core) action. If you land adjacent to a creature, you can Strike that creature once as part of this action.",
+    "descr": "Princess Eutropia commissioned Taldor's Imperial College of Heralds to preserve the paws that fell off the Mantle of the Grogrisant. A few weeks later, the college presented this pair of boots. You gain a +3 item bonus to Athletics checks and saves against forced movement. When you invest in the boots, you either increase your Strength modifier by 1 or increase it to +4, whichever would give you a higher value.",
     "data": {
       "level": 17,
       "rarity": "unique",
@@ -1015,6 +1211,18 @@
         {
           "label": "primal",
           "slug": "primal"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Grogrisant Leap",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** The Grogrisant's legendary strength and reflexes empower your movement. You Leap, doubling the vertical and horizontal distance of your [Leap](/action/leap-player-core) action. If you land adjacent to a creature, you can Strike that creature once as part of this action.",
+          "effect": "The Grogrisant's legendary strength and reflexes empower your movement. You Leap, doubling the vertical and horizontal distance of your [Leap](/action/leap-player-core) action. If you land adjacent to a creature, you can Strike that creature once as part of this action.",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -1046,7 +1254,7 @@
     "systemVersion": "1.2.10",
     "name": "Resonating Crystal Boots",
     "slug": "resonating-crystal-boots-shining-kingdoms",
-    "descr": "These supple leather boots are studded with tiny crystals.\n\n**Activate—Chiming Steps** 1 (auditory, concentrate, sonic)\n\n**Frequency** once per day\n\n---\n\n**Effect** Stride up to half your Speed. The crystals ring out with pleasant-sounding chimes that reverberate painfully in the ears of others. Each creature that you pass adjacent to during your Stride takes 4d8 sonic damage (basic Fortitude DC 24 save); a creature takes this damage only once. A creature who critically fails the save is also Deafened for 1 minute.",
+    "descr": "These supple leather boots are studded with tiny crystals.",
     "data": {
       "level": 8,
       "rarity": "uncommon",
@@ -1066,6 +1274,20 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "auditory",
+            "concentrate",
+            "sonic"
+          ],
+          "name": "Chiming Steps",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** Stride up to half your Speed. The crystals ring out with pleasant-sounding chimes that reverberate painfully in the ears of others. Each creature that you pass adjacent to during your Stride takes 4d8 sonic damage (basic Fortitude DC 24 save); a creature takes this damage only once. A creature who critically fails the save is also Deafened for 1 minute.",
+          "effect": "Stride up to half your Speed. The crystals ring out with pleasant-sounding chimes that reverberate painfully in the ears of others. Each creature that you pass adjacent to during your Stride takes 4d8 sonic damage (basic Fortitude DC 24 save); a creature takes this damage only once. A creature who critically fails the save is also Deafened for 1 minute.",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -1096,7 +1318,7 @@
     "systemVersion": "1.2.10",
     "name": "Screaming Pinion",
     "slug": "screaming-pinion-shining-kingdoms",
-    "descr": "This *+2 greater striking flintlock musket* is an innovation of the Platinum Wing, and possession of one by a civilian is a high crime in Andoran. The gun's secret is the chip of a warshard used as the hammer in the striking mechanism.\n\n**Activate—Transcendent Shot** 1 (manipulate)\n\n**Requirements** The screaming pinion is unloaded\n\n---\n\n**Effect** You call on the power of the warshard to load the screaming pinion with a bullet made of divine fury. The next attack from the gun deals spirit damage, rather than its typical type, and on a critical hit, the target is subject to the weapon's critical specialization effect. If the gun isn't fired before the end of your next turn, the bullet disappears, and the gun becomes unloaded.\n\n---\n\n**Activate—Eagle's Cry** 2 (concentrate, manipulate, sonic)\n\n**Frequency** once per day\n\n---\n\n**Effect** The musket unleashes a piercing sound wave in a 70-foot line. Each creature in the area takes 8d10 sonic damage with a basic Fortitude DC 30 save. A creature that critically fails its save is also Deafened. If the screaming pinion has a +3 potency rune, the DC increases to 35 (basic Fortitude DC 35), and the damage increases to 10d10 sonic.",
+    "descr": "This *+2 greater striking flintlock musket* is an innovation of the Platinum Wing, and possession of one by a civilian is a high crime in Andoran. The gun's secret is the chip of a warshard used as the hammer in the striking mechanism.",
     "data": {
       "level": 13,
       "rarity": "rare",
@@ -1123,6 +1345,30 @@
         {
           "label": "fatal-d10",
           "slug": "fatal"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Transcendent Shot",
+          "text": "**Requirements** The screaming pinion is unloaded\n\n---\n\n**Effect** You call on the power of the warshard to load the screaming pinion with a bullet made of divine fury. The next attack from the gun deals spirit damage, rather than its typical type, and on a critical hit, the target is subject to the weapon's critical specialization effect. If the gun isn't fired before the end of your next turn, the bullet disappears, and the gun becomes unloaded.\n\n---",
+          "effect": "You call on the power of the warshard to load the screaming pinion with a bullet made of divine fury. The next attack from the gun deals spirit damage, rather than its typical type, and on a critical hit, the target is subject to the weapon's critical specialization effect. If the gun isn't fired before the end of your next turn, the bullet disappears, and the gun becomes unloaded.\n\n---",
+          "description": "**Requirements** The screaming pinion is unloaded\n\n---"
+        },
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "sonic"
+          ],
+          "name": "Eagle's Cry",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** The musket unleashes a piercing sound wave in a 70-foot line. Each creature in the area takes 8d10 sonic damage with a basic Fortitude DC 30 save. A creature that critically fails its save is also Deafened. If the screaming pinion has a +3 potency rune, the DC increases to 35 (basic Fortitude DC 35), and the damage increases to 10d10 sonic.",
+          "effect": "The musket unleashes a piercing sound wave in a 70-foot line. Each creature in the area takes 8d10 sonic damage with a basic Fortitude DC 30 save. A creature that critically fails its save is also Deafened. If the screaming pinion has a +3 potency rune, the DC increases to 35 (basic Fortitude DC 35), and the damage increases to 10d10 sonic.",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -1153,7 +1399,7 @@
     "systemVersion": "1.2.10",
     "name": "Shawl of Seasons",
     "slug": "shawl-of-seasons-shining-kingdoms",
-    "descr": "This woven shawl changes its color, material, and abilities with the seasons. In its usual state, it reflects the current season of the environment the wearer is in. The handsome embroidery grants you a +2 item bonus to Diplomacy checks to [Make An Impression](/action/make-an-impression-player-core).\n\n**Activate—Change of Seasons** 10 minutes (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You arrange the shawl on your shoulders to gain the benefits of a season of your choice until your next daily preparations. If the season you choose is the current season, you also gain a +1 item bonus to Fortitude saving throws.\n\n**Spring** The shawl becomes smooth silk covered in delicate flowers. You gain a +5-foot item bonus to your Speed.**Summer** The shawl becomes light cotton with the hues of fresh grass. You're protected from the effects of severe heat.**Fall** The shawl becomes thin leather with an ombre of red and orange leaves. You treat falls as 10 feet shorter.**Winter** The shawl becomes warm wool as white as snow. You're protected from the effects of severe cold.",
+    "descr": "This woven shawl changes its color, material, and abilities with the seasons. In its usual state, it reflects the current season of the environment the wearer is in. The handsome embroidery grants you a +2 item bonus to Diplomacy checks to [Make An Impression](/action/make-an-impression-player-core).",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -1173,6 +1419,14 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "name": "Change of Seasons",
+          "text": "10 minutes (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You arrange the shawl on your shoulders to gain the benefits of a season of your choice until your next daily preparations. If the season you choose is the current season, you also gain a +1 item bonus to Fortitude saving throws.\n\n**Spring** The shawl becomes smooth silk covered in delicate flowers. You gain a +5-foot item bonus to your Speed.**Summer** The shawl becomes light cotton with the hues of fresh grass. You're protected from the effects of severe heat.**Fall** The shawl becomes thin leather with an ombre of red and orange leaves. You treat falls as 10 feet shorter.**Winter** The shawl becomes warm wool as white as snow. You're protected from the effects of severe cold.",
+          "effect": "You arrange the shawl on your shoulders to gain the benefits of a season of your choice until your next daily preparations. If the season you choose is the current season, you also gain a +1 item bonus to Fortitude saving throws.\n\n**Spring** The shawl becomes smooth silk covered in delicate flowers. You gain a +5-foot item bonus to your Speed.**Summer** The shawl becomes light cotton with the hues of fresh grass. You're protected from the effects of severe heat.**Fall** The shawl becomes thin leather with an ombre of red and orange leaves. You treat falls as 10 feet shorter.**Winter** The shawl becomes warm wool as white as snow. You're protected from the effects of severe cold.",
+          "description": "10 minutes (concentrate)\n\n**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -1326,7 +1580,7 @@
     "systemVersion": "1.2.10",
     "name": "Taldogis Badge",
     "slug": "taldogis-badge-shining-kingdoms",
-    "descr": "This badge depicting a hunting dog is used by Eutropia's supporters to indicate their allegiances.\n\n**Activate—Bark** 2 (concentrate, manipulate, subtle)\n\n**Frequency** once per hour\n\n---\n\n**Effect** The hunting dog makes a single bark that only you and a single target of your choice within 30 feet can hear. If the target is a supporter of Eutropia, you gain a +2 circumstance bonus to Diplomacy checks against them for the next minute.\n\nEffect: Taldogis Badge",
+    "descr": "This badge depicting a hunting dog is used by Eutropia's supporters to indicate their allegiances.",
     "data": {
       "level": 2,
       "rarity": "uncommon",
@@ -1346,6 +1600,20 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "manipulate",
+            "subtle"
+          ],
+          "name": "Bark",
+          "text": "**Frequency** once per hour\n\n---\n\n**Effect** The hunting dog makes a single bark that only you and a single target of your choice within 30 feet can hear. If the target is a supporter of Eutropia, you gain a +2 circumstance bonus to Diplomacy checks against them for the next minute.\n\nEffect: Taldogis Badge",
+          "effect": "The hunting dog makes a single bark that only you and a single target of your choice within 30 feet can hear. If the target is a supporter of Eutropia, you gain a +2 circumstance bonus to Diplomacy checks against them for the next minute.\n\nEffect: Taldogis Badge",
+          "description": "**Frequency** once per hour\n\n---"
         }
       ]
     },
@@ -1438,7 +1706,7 @@
     "systemVersion": "1.2.10",
     "name": "Trudd's Strength",
     "slug": "trudd-s-strength-shining-kingdoms",
-    "descr": "This filigree depiction of a warhammer in front of a kite-shaped shield grants you a +1 item bonus to Athletics checks and to Intimidation checks to [Coerce](/action/coerce-player-core). Additionally, once per day, the filigree symbol can be activated to protect your allies.\n\n**Activate—Protect the Clan!** 1 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** Protective energy releases in a 10-foot emanation, granting a +1 status bonus to Armor Class to all allies within the area. The bonus lasts for 1 minute.\n\nEffect: Trudd'S Strength",
+    "descr": "This filigree depiction of a warhammer in front of a kite-shaped shield grants you a +1 item bonus to Athletics checks and to Intimidation checks to [Coerce](/action/coerce-player-core). Additionally, once per day, the filigree symbol can be activated to protect your allies.",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -1458,6 +1726,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Protect the Clan!",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** Protective energy releases in a 10-foot emanation, granting a +1 status bonus to Armor Class to all allies within the area. The bonus lasts for 1 minute.\n\nEffect: Trudd'S Strength",
+          "effect": "Protective energy releases in a 10-foot emanation, granting a +1 status bonus to Armor Class to all allies within the area. The bonus lasts for 1 minute.\n\nEffect: Trudd'S Strength",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -1488,7 +1768,7 @@
     "systemVersion": "1.2.10",
     "name": "Trudd's Strength (Greater)",
     "slug": "trudd-s-strength-greater-shining-kingdoms",
-    "descr": "This filigree depiction of a warhammer in front of a kite-shaped shield grants you a +2 item bonus to Athletics checks and to Intimidation checks to [Coerce](/action/coerce-player-core). Additionally, once per day, the filigree symbol can be activated to protect your allies.\n\n**Activate—Protect the Clan!** 1 (concentrate)\n\n**Frequency** once per day\n\n---\n\n**Effect** Protective energy releases in a 10-foot emanation, granting a +2 status bonus to Armor Class to all allies within the area. The bonus lasts for 1 minute.\n\nEffect: Trudd'S Strength",
+    "descr": "This filigree depiction of a warhammer in front of a kite-shaped shield grants you a +2 item bonus to Athletics checks and to Intimidation checks to [Coerce](/action/coerce-player-core). Additionally, once per day, the filigree symbol can be activated to protect your allies.",
     "data": {
       "level": 11,
       "rarity": "uncommon",
@@ -1508,6 +1788,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Protect the Clan!",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** Protective energy releases in a 10-foot emanation, granting a +2 status bonus to Armor Class to all allies within the area. The bonus lasts for 1 minute.\n\nEffect: Trudd'S Strength",
+          "effect": "Protective energy releases in a 10-foot emanation, granting a +2 status bonus to Armor Class to all allies within the area. The bonus lasts for 1 minute.\n\nEffect: Trudd'S Strength",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },
@@ -1538,7 +1830,7 @@
     "systemVersion": "1.2.10",
     "name": "Twilight Tattoo",
     "slug": "twilight-tattoo-shining-kingdoms",
-    "descr": "**Access** You're a member of the Twilight Talons.\n\n---\n\nThis tattoo of a black eagle gripping a sword and arrows in its talons identifies the bearer as a member of the Twilight Talons. Agents typically keep the tattoo hidden unless they need to prove their identity to another member. The bearer gains a +1 item bonus to Deception checks.\n\n**Activate—Fade** 1 (concentrate, illusion)\n\n---\n\n**Effect** You hide your tattoo from view. The tattoo is invisible for 1 day and can't be detected by effects such as detect magic and read aura. You can Dismiss this effect.\n\n---\n\n**Activate—Inscribe** 2 (concentrate, illusion, manipulate)\n\n**Frequency** once per day\n\n---\n\n**Effect** You lay your hand on a piece of text, and your tattoo makes a perfect copy of it, storing it as a ring of swirling letters surrounding the design. The tattoo can hold text equivalent to two pages of a book, a single scroll, or a similar area of other surfaces, though it doesn't replicate any magical effect or other special properties of the original words. You can Dismiss this effect, and when you Dismiss it, the tattoo copies the original text onto a blank writing surface you're touching.",
+    "descr": "**Access** You're a member of the Twilight Talons.\n\n---\n\nThis tattoo of a black eagle gripping a sword and arrows in its talons identifies the bearer as a member of the Twilight Talons. Agents typically keep the tattoo hidden unless they need to prove their identity to another member. The bearer gains a +1 item bonus to Deception checks.",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -1563,6 +1855,31 @@
         {
           "label": "tattoo",
           "slug": "tattoo"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate",
+            "illusion"
+          ],
+          "name": "Fade",
+          "text": "---\n\n**Effect** You hide your tattoo from view. The tattoo is invisible for 1 day and can't be detected by effects such as detect magic and read aura. You can Dismiss this effect.\n\n---",
+          "effect": "You hide your tattoo from view. The tattoo is invisible for 1 day and can't be detected by effects such as detect magic and read aura. You can Dismiss this effect.\n\n---",
+          "description": "---"
+        },
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "illusion",
+            "manipulate"
+          ],
+          "name": "Inscribe",
+          "text": "**Frequency** once per day\n\n---\n\n**Effect** You lay your hand on a piece of text, and your tattoo makes a perfect copy of it, storing it as a ring of swirling letters surrounding the design. The tattoo can hold text equivalent to two pages of a book, a single scroll, or a similar area of other surfaces, though it doesn't replicate any magical effect or other special properties of the original words. You can Dismiss this effect, and when you Dismiss it, the tattoo copies the original text onto a blank writing surface you're touching.",
+          "effect": "You lay your hand on a piece of text, and your tattoo makes a perfect copy of it, storing it as a ring of swirling letters surrounding the design. The tattoo can hold text equivalent to two pages of a book, a single scroll, or a similar area of other surfaces, though it doesn't replicate any magical effect or other special properties of the original words. You can Dismiss this effect, and when you Dismiss it, the tattoo copies the original text onto a blank writing surface you're touching.",
+          "description": "**Frequency** once per day\n\n---"
         }
       ]
     },

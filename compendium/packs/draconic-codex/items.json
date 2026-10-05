@@ -126,7 +126,7 @@
     "systemVersion": "1.2.10",
     "name": "Dragon Eye",
     "slug": "dragon-eye-draconic-codex-equipment-equipment-4014",
-    "descr": "**Price** 30 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n**Activate**\n\nCast a Spell (add 1 action)\n\n---\n\nEven in death, a dragon’s gaze is terrible to behold. When used to cast [_breathe fire_](/spell/breathe-fire-player-core) at 3rd rank or higher, an eye from a dragon causes the spell to manifest some of the creature’s fearsome aura and inspire terror. Creatures in the spell’s area must attempt a [basic](/rule/basic-saving-throws-rules-2297) Will save instead of a basic Reflex save, and in addition to taking the spell’s normal damage on a failure, they’re [frightened](/condition/frightened-player-core) 1. This adds the [emotion](/trait/emotion), [fear](/trait/fear), and [mental](/trait/mental) traits to the spell.",
+    "descr": "**Price** 30 gp\n\n**Usage** held in 1 hand\n\n**Bulk** L\n\n---\n\nEven in death, a dragon’s gaze is terrible to behold. When used to cast [_breathe fire_](/spell/breathe-fire-player-core) at 3rd rank or higher, an eye from a dragon causes the spell to manifest some of the creature’s fearsome aura and inspire terror. Creatures in the spell’s area must attempt a [basic](/rule/basic-saving-throws-rules-2297) Will save instead of a basic Reflex save, and in addition to taking the spell’s normal damage on a failure, they’re [frightened](/condition/frightened-player-core) 1. This adds the [emotion](/trait/emotion), [fear](/trait/fear), and [mental](/trait/mental) traits to the spell.",
     "data": {
       "level": 5,
       "rarity": "uncommon",
@@ -152,7 +152,11 @@
           "label": "magical",
           "slug": "magical"
         }
-      ]
+      ],
+      "activation": {
+        "type": "Cast a Spell",
+        "text": "(add 1 action)"
+      }
     },
     "attributes": {
       "remaster": true,
@@ -185,7 +189,7 @@
     "systemVersion": "1.2.10",
     "name": "Dragon Pearl",
     "slug": "dragon-pearl-draconic-codex-equipment-equipment-4011",
-    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Price** 9,000 gp\n\n**Usage** worn\n\n**Bulk** L\n\n---\n\nWhen an irritant is caught within a dragon’s scales, the dragon’s body protects itself by coating the object in layers of dragon scale. Over time, it can form an item called a _dragon pearl_. Such pearls, hard and iridescent, are infused with draconic magic and can be powerful tools in the right hands. They’re usually placed in an ornate setting on a pin or necklace. Wearing the _dragon pearl_ grants you a +2 item bonus to Intimidation checks.\n\n**Activate—Pearlescent Shell** **Single Action** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Effect** You call protective power from the pearl to form a defensive barrier around yourself. You’re affected by an 8th-rank [_containment_](/spell/containment-player-core-2) spell, which takes on the appearance of shimmering translucent dragon scales. The field has [resistance](/rule/immunity-weakness-and-resistance-rules-2312) 15 to one damage type related to the dragon the pearl came from. When you activate the pearl, you choose the type from all types the dragon has immunity or resistance to plus a type based on their tradition: [force](/trait/force) for arcane, [spirit](/trait/spirit) for divine, [mental](/trait/mental) for occult, or [poison](/trait/poison) for [primal](/trait/primal).",
+    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Price** 9,000 gp\n\n**Usage** worn\n\n**Bulk** L\n\n---\n\nWhen an irritant is caught within a dragon’s scales, the dragon’s body protects itself by coating the object in layers of dragon scale. Over time, it can form an item called a _dragon pearl_. Such pearls, hard and iridescent, are infused with draconic magic and can be powerful tools in the right hands. They’re usually placed in an ornate setting on a pin or necklace. Wearing the _dragon pearl_ grants you a +2 item bonus to Intimidation checks.",
     "data": {
       "level": 16,
       "rarity": "uncommon",
@@ -205,6 +209,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Pearlescent Shell",
+          "text": "**Frequency** once per day; **Effect** You call protective power from the pearl to form a defensive barrier around yourself. You’re affected by an 8th-rank [_containment_](/spell/containment-player-core-2) spell, which takes on the appearance of shimmering translucent dragon scales. The field has [resistance](/rule/immunity-weakness-and-resistance-rules-2312) 15 to one damage type related to the dragon the pearl came from. When you activate the pearl, you choose the type from all types the dragon has immunity or resistance to plus a type based on their tradition: [force](/trait/force) for arcane, [spirit](/trait/spirit) for divine, [mental](/trait/mental) for occult, or [poison](/trait/poison) for [primal](/trait/primal).",
+          "effect": "You call protective power from the pearl to form a defensive barrier around yourself. You’re affected by an 8th-rank [_containment_](/spell/containment-player-core-2) spell, which takes on the appearance of shimmering translucent dragon scales. The field has [resistance](/rule/immunity-weakness-and-resistance-rules-2312) 15 to one damage type related to the dragon the pearl came from. When you activate the pearl, you choose the type from all types the dragon has immunity or resistance to plus a type based on their tradition: [force](/trait/force) for arcane, [spirit](/trait/spirit) for divine, [mental](/trait/mental) for occult, or [poison](/trait/poison) for [primal](/trait/primal).",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -298,7 +314,7 @@
     "systemVersion": "1.2.10",
     "name": "Dragon's Tongue",
     "slug": "dragon-s-tongue-draconic-codex-equipment-equipment-4012",
-    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Longspear](/item/longspear-player-core)\n\n---\n\nThis _+2 striking longspear_ was crafted by a renowned monster hunter, who designed the prototype from the bones and scales of a diabolic dragon. The drathyrican folds of a young dragon, the organ that generates their magical breath, are crucial to the operation of the spear. The mechanics of the weapon are largely based on an injection spear: when the safety is disengaged and a secondary lever is squeezed, it produces a magical effect like a dragon’s breath from the hollow tip of the spear.\n\n**Activate—Breath of the Spear** **Two Actions** (concentrate, manipulate) **Effect** The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.\n\n**Craft Requirements** The initial raw materials must include the drathyrican folds of a dragon.\n\n## Dragon's Tongue\n\n**Price** 1,350 gp\n\n## Greater Dragon's Tongue\n\n**Price** 2,750 gp\n\n---\n\nMade using the drathyrican folds of an adult dragon, the longspear is a _+2 greater striking longspear_ and the activation’s damage is 7d6 (DC 30).\n\n## Major Dragon's Tongue\n\n**Price** 55,000 gp\n\n---\n\nMade using the drathyrican folds of an ancient dragon, the longspear is a _+3 major striking longspear_ and the activation’s damage is 10d6 (DC 43).",
+    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Longspear](/item/longspear-player-core)\n\n---\n\nThis _+2 striking longspear_ was crafted by a renowned monster hunter, who designed the prototype from the bones and scales of a diabolic dragon. The drathyrican folds of a young dragon, the organ that generates their magical breath, are crucial to the operation of the spear. The mechanics of the weapon are largely based on an injection spear: when the safety is disengaged and a secondary lever is squeezed, it produces a magical effect like a dragon’s breath from the hollow tip of the spear.\n\n**Craft Requirements** The initial raw materials must include the drathyrican folds of a dragon.\n\n## Dragon's Tongue\n\n**Price** 1,350 gp\n\n## Greater Dragon's Tongue\n\n**Price** 2,750 gp\n\n---\n\nMade using the drathyrican folds of an adult dragon, the longspear is a _+2 greater striking longspear_ and the activation’s damage is 7d6 (DC 30).\n\n## Major Dragon's Tongue\n\n**Price** 55,000 gp\n\n---\n\nMade using the drathyrican folds of an ancient dragon, the longspear is a _+3 major striking longspear_ and the activation’s damage is 10d6 (DC 43).",
     "data": {
       "level": 11,
       "rarity": "uncommon",
@@ -313,6 +329,19 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Breath of the Spear",
+          "text": "**Effect** The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.",
+          "effect": "The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.",
+          "description": ""
         }
       ]
     },
@@ -346,7 +375,7 @@
     "systemVersion": "1.2.10",
     "name": "Dragon's Tongue",
     "slug": "dragon-s-tongue-draconic-codex-equipment-equipment-4012-3679",
-    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Longspear](/item/longspear-player-core)\n\n---\n\nThis _+2 striking longspear_ was crafted by a renowned monster hunter, who designed the prototype from the bones and scales of a diabolic dragon. The drathyrican folds of a young dragon, the organ that generates their magical breath, are crucial to the operation of the spear. The mechanics of the weapon are largely based on an injection spear: when the safety is disengaged and a secondary lever is squeezed, it produces a magical effect like a dragon’s breath from the hollow tip of the spear.\n\n**Activate—Breath of the Spear** **Two Actions** (concentrate, manipulate) **Effect** The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.\n\n**Craft Requirements** The initial raw materials must include the drathyrican folds of a dragon.\n\n## Dragon's Tongue\n\n**Price** 1,350 gp\n\n## Greater Dragon's Tongue\n\n**Price** 2,750 gp\n\n---\n\nMade using the drathyrican folds of an adult dragon, the longspear is a _+2 greater striking longspear_ and the activation’s damage is 7d6 (DC 30).\n\n## Major Dragon's Tongue\n\n**Price** 55,000 gp\n\n---\n\nMade using the drathyrican folds of an ancient dragon, the longspear is a _+3 major striking longspear_ and the activation’s damage is 10d6 (DC 43).",
+    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Longspear](/item/longspear-player-core)\n\n---\n\nThis _+2 striking longspear_ was crafted by a renowned monster hunter, who designed the prototype from the bones and scales of a diabolic dragon. The drathyrican folds of a young dragon, the organ that generates their magical breath, are crucial to the operation of the spear. The mechanics of the weapon are largely based on an injection spear: when the safety is disengaged and a secondary lever is squeezed, it produces a magical effect like a dragon’s breath from the hollow tip of the spear.\n\n**Craft Requirements** The initial raw materials must include the drathyrican folds of a dragon.\n\n## Dragon's Tongue\n\n**Price** 1,350 gp\n\n## Greater Dragon's Tongue\n\n**Price** 2,750 gp\n\n---\n\nMade using the drathyrican folds of an adult dragon, the longspear is a _+2 greater striking longspear_ and the activation’s damage is 7d6 (DC 30).\n\n## Major Dragon's Tongue\n\n**Price** 55,000 gp\n\n---\n\nMade using the drathyrican folds of an ancient dragon, the longspear is a _+3 major striking longspear_ and the activation’s damage is 10d6 (DC 43).",
     "data": {
       "level": 11,
       "rarity": "uncommon",
@@ -361,6 +390,19 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Breath of the Spear",
+          "text": "**Effect** The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.",
+          "effect": "The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.",
+          "description": ""
         }
       ]
     },
@@ -394,7 +436,7 @@
     "systemVersion": "1.2.10",
     "name": "Dragonaut's Wingsuit",
     "slug": "dragonaut-s-wingsuit-draconic-codex-equipment-equipment-4013",
-    "descr": "**Price** 625 gp\n\n**Usage** worn armor\n\n**Bulk** L\n\n**Base Armor** [Leather Armor](/item/leather-armor-player-core)\n\n---\n\nThis _+1 resilient leather armor_ is made from drake hide, and includes wing-like membranes that connect the limbs to one another. Originally designed to allow riders of aerial mounts to safely dismount if the need arises, such wingsuits remain uncommon but have gained some popularity among thrill-seeking adventurers and some mountain-dwelling communities.\n\n**Activate—Drake's Glide** **Single Action** (manipulate) **Frequency** once per day; **Effect** You take 2 move actions, each of which can be a Fly or Stride. If you don’t have a fly Speed, you gain a 20-foot fly Speed for [Fly](/action/fly-player-core) actions from this activation.\n\n**Activate—Descend** **Reaction** (concentrate, manipulate) **Frequency** once per 10 minutes; **Trigger** You're falling; **Effect** Your fall slows to 60 feet per round for 1 minute, and if you reach the ground during this time you take no damage from the fall.",
+    "descr": "**Price** 625 gp\n\n**Usage** worn armor\n\n**Bulk** L\n\n**Base Armor** [Leather Armor](/item/leather-armor-player-core)\n\n---\n\nThis _+1 resilient leather armor_ is made from drake hide, and includes wing-like membranes that connect the limbs to one another. Originally designed to allow riders of aerial mounts to safely dismount if the need arises, such wingsuits remain uncommon but have gained some popularity among thrill-seeking adventurers and some mountain-dwelling communities.",
     "data": {
       "level": 9,
       "rarity": "uncommon",
@@ -414,6 +456,31 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "manipulate"
+          ],
+          "name": "Drake's Glide",
+          "text": "**Frequency** once per day; **Effect** You take 2 move actions, each of which can be a Fly or Stride. If you don’t have a fly Speed, you gain a 20-foot fly Speed for [Fly](/action/fly-player-core) actions from this activation.",
+          "effect": "You take 2 move actions, each of which can be a Fly or Stride. If you don’t have a fly Speed, you gain a 20-foot fly Speed for [Fly](/action/fly-player-core) actions from this activation.",
+          "description": "**Frequency** once per day"
+        },
+        {
+          "actions": "reaction",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Descend",
+          "text": "**Frequency** once per 10 minutes; **Trigger** You're falling; **Effect** Your fall slows to 60 feet per round for 1 minute, and if you reach the ground during this time you take no damage from the fall.",
+          "effect": "Your fall slows to 60 feet per round for 1 minute, and if you reach the ground during this time you take no damage from the fall.",
+          "trigger": "You're falling",
+          "triggerBeforeDescription": false,
+          "description": "**Frequency** once per 10 minutes"
         }
       ]
     },
@@ -448,7 +515,7 @@
     "systemVersion": "1.2.10",
     "name": "Duty of the Oathsworn",
     "slug": "duty-of-the-oathsworn-draconic-codex-equipment-equipment-4017",
-    "descr": "---\n\nThe oath that ties you to your bound dragon transcends the boundaries of life and death. When the pact is made, the dragon chooses one type of creature other than humanoid. (The GM selects the appropriate trait.) You gain resistance equal to half your level to physical and mental damage from these creatures. You also gain the Draconic Precision action. If you die from damage delivered by a creature of this type, you rise as an [undead](/trait/undead) creature of the dragon’s choice. This undead’s level can be no higher than your level or your bound dragon’s, whichever is lower. This undead creature has your mind; if it’s normally [mindless](/trait/mindless), it loses that trait and any immunity to [mental](/trait/mental).\n\nAs you are sworn to slay the enemies of the dragon, the dragon is sworn to protect a chosen group, person, or location chosen by you. When battling in defense of your chosen ward, the dragon bypasses 5 [resistance](/rule/immunity-weakness-and-resistance-rules-2312) of any creature they would damage.\n\n**Activate—Draconic Precision** **Single Action** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Effect** Your Strikes against the chosen type of enemy deal an additional 1d6 precision damage for 1 minute. This damage increases to 2d6 if you’re 17th level or higher.\n\n---\n\n**Oathbreaker’s Calamity** Should either party break the oath, both you and the dragon are forever forsworn from comradery. Creatures can’t treat either of you as an ally while in combat.",
+    "descr": "---\n\nThe oath that ties you to your bound dragon transcends the boundaries of life and death. When the pact is made, the dragon chooses one type of creature other than humanoid. (The GM selects the appropriate trait.) You gain resistance equal to half your level to physical and mental damage from these creatures. You also gain the Draconic Precision action. If you die from damage delivered by a creature of this type, you rise as an [undead](/trait/undead) creature of the dragon’s choice. This undead’s level can be no higher than your level or your bound dragon’s, whichever is lower. This undead creature has your mind; if it’s normally [mindless](/trait/mindless), it loses that trait and any immunity to [mental](/trait/mental).\n\nAs you are sworn to slay the enemies of the dragon, the dragon is sworn to protect a chosen group, person, or location chosen by you. When battling in defense of your chosen ward, the dragon bypasses 5 [resistance](/rule/immunity-weakness-and-resistance-rules-2312) of any creature they would damage.",
     "data": {
       "level": 9,
       "rarity": "rare",
@@ -470,6 +537,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Draconic Precision",
+          "text": "**Frequency** once per day; **Effect** Your Strikes against the chosen type of enemy deal an additional 1d6 precision damage for 1 minute. This damage increases to 2d6 if you’re 17th level or higher.\n\n---\n\n**Oathbreaker’s Calamity** Should either party break the oath, both you and the dragon are forever forsworn from comradery. Creatures can’t treat either of you as an ally while in combat.",
+          "effect": "Your Strikes against the chosen type of enemy deal an additional 1d6 precision damage for 1 minute. This damage increases to 2d6 if you’re 17th level or higher.\n\n---\n\n**Oathbreaker’s Calamity** Should either party break the oath, both you and the dragon are forever forsworn from comradery. Creatures can’t treat either of you as an ally while in combat.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -681,7 +760,7 @@
     "systemVersion": "1.2.10",
     "name": "Greater Dragon's Tongue",
     "slug": "greater-dragon-s-tongue-draconic-codex-equipment-equipment-4012-3680",
-    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Longspear](/item/longspear-player-core)\n\n---\n\nThis _+2 striking longspear_ was crafted by a renowned monster hunter, who designed the prototype from the bones and scales of a diabolic dragon. The drathyrican folds of a young dragon, the organ that generates their magical breath, are crucial to the operation of the spear. The mechanics of the weapon are largely based on an injection spear: when the safety is disengaged and a secondary lever is squeezed, it produces a magical effect like a dragon’s breath from the hollow tip of the spear.\n\n**Activate—Breath of the Spear** **Two Actions** (concentrate, manipulate) **Effect** The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.\n\n**Craft Requirements** The initial raw materials must include the drathyrican folds of a dragon.\n\n## Dragon's Tongue\n\n**Price** 1,350 gp\n\n## Greater Dragon's Tongue\n\n**Price** 2,750 gp\n\n---\n\nMade using the drathyrican folds of an adult dragon, the longspear is a _+2 greater striking longspear_ and the activation’s damage is 7d6 (DC 30).\n\n## Major Dragon's Tongue\n\n**Price** 55,000 gp\n\n---\n\nMade using the drathyrican folds of an ancient dragon, the longspear is a _+3 major striking longspear_ and the activation’s damage is 10d6 (DC 43).",
+    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Longspear](/item/longspear-player-core)\n\n---\n\nThis _+2 striking longspear_ was crafted by a renowned monster hunter, who designed the prototype from the bones and scales of a diabolic dragon. The drathyrican folds of a young dragon, the organ that generates their magical breath, are crucial to the operation of the spear. The mechanics of the weapon are largely based on an injection spear: when the safety is disengaged and a secondary lever is squeezed, it produces a magical effect like a dragon’s breath from the hollow tip of the spear.\n\n**Craft Requirements** The initial raw materials must include the drathyrican folds of a dragon.\n\n## Dragon's Tongue\n\n**Price** 1,350 gp\n\n## Greater Dragon's Tongue\n\n**Price** 2,750 gp\n\n---\n\nMade using the drathyrican folds of an adult dragon, the longspear is a _+2 greater striking longspear_ and the activation’s damage is 7d6 (DC 30).\n\n## Major Dragon's Tongue\n\n**Price** 55,000 gp\n\n---\n\nMade using the drathyrican folds of an ancient dragon, the longspear is a _+3 major striking longspear_ and the activation’s damage is 10d6 (DC 43).",
     "data": {
       "level": 13,
       "rarity": "uncommon",
@@ -696,6 +775,19 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Breath of the Spear",
+          "text": "**Effect** The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.",
+          "effect": "The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.",
+          "description": ""
         }
       ]
     },
@@ -788,7 +880,7 @@
     "systemVersion": "1.2.10",
     "name": "Major Dragon's Tongue",
     "slug": "major-dragon-s-tongue-draconic-codex-equipment-equipment-4012-3681",
-    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Longspear](/item/longspear-player-core)\n\n---\n\nThis _+2 striking longspear_ was crafted by a renowned monster hunter, who designed the prototype from the bones and scales of a diabolic dragon. The drathyrican folds of a young dragon, the organ that generates their magical breath, are crucial to the operation of the spear. The mechanics of the weapon are largely based on an injection spear: when the safety is disengaged and a secondary lever is squeezed, it produces a magical effect like a dragon’s breath from the hollow tip of the spear.\n\n**Activate—Breath of the Spear** **Two Actions** (concentrate, manipulate) **Effect** The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.\n\n**Craft Requirements** The initial raw materials must include the drathyrican folds of a dragon.\n\n## Dragon's Tongue\n\n**Price** 1,350 gp\n\n## Greater Dragon's Tongue\n\n**Price** 2,750 gp\n\n---\n\nMade using the drathyrican folds of an adult dragon, the longspear is a _+2 greater striking longspear_ and the activation’s damage is 7d6 (DC 30).\n\n## Major Dragon's Tongue\n\n**Price** 55,000 gp\n\n---\n\nMade using the drathyrican folds of an ancient dragon, the longspear is a _+3 major striking longspear_ and the activation’s damage is 10d6 (DC 43).",
+    "descr": "_**PFS Note** The damage type(s) for this item must be chosen at purchase or when crafted._\n\n**Usage** held in 2 hands\n\n**Bulk** 2\n\n**Base Weapon** [Longspear](/item/longspear-player-core)\n\n---\n\nThis _+2 striking longspear_ was crafted by a renowned monster hunter, who designed the prototype from the bones and scales of a diabolic dragon. The drathyrican folds of a young dragon, the organ that generates their magical breath, are crucial to the operation of the spear. The mechanics of the weapon are largely based on an injection spear: when the safety is disengaged and a secondary lever is squeezed, it produces a magical effect like a dragon’s breath from the hollow tip of the spear.\n\n**Craft Requirements** The initial raw materials must include the drathyrican folds of a dragon.\n\n## Dragon's Tongue\n\n**Price** 1,350 gp\n\n## Greater Dragon's Tongue\n\n**Price** 2,750 gp\n\n---\n\nMade using the drathyrican folds of an adult dragon, the longspear is a _+2 greater striking longspear_ and the activation’s damage is 7d6 (DC 30).\n\n## Major Dragon's Tongue\n\n**Price** 55,000 gp\n\n---\n\nMade using the drathyrican folds of an ancient dragon, the longspear is a _+3 major striking longspear_ and the activation’s damage is 10d6 (DC 43).",
     "data": {
       "level": 20,
       "rarity": "uncommon",
@@ -803,6 +895,19 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "concentrate",
+            "manipulate"
+          ],
+          "name": "Breath of the Spear",
+          "text": "**Effect** The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.",
+          "effect": "The dragon’s tongue releases a burst of energy that manifests as a 30-foot cone dealing 6d6 damage with a DC 28 basic Reflex save. You can’t use this activation again for 1d4 rounds. The damage type matches the breath of the dragon the weapon was made from, and this activation has the corresponding trait.",
+          "description": ""
         }
       ]
     },
@@ -895,7 +1000,7 @@
     "systemVersion": "1.2.10",
     "name": "Pact of the Agonized Destroyer",
     "slug": "pact-of-the-agonized-destroyer-draconic-codex-equipment-equipment-4020",
-    "descr": "---\n\nYour very quintessence has been hijacked by the agony of [Dahak](/deity/dahak-the-endless-destruction-draconic-codex-deity-deity-337) that lingered within your bound dragon. The wracked god’s whispers burn your soul and ride your body to work in dire concordance with his whims. You are the very face of horror, an heir of the Dragon Plague’s rancor, the Endless Destruction made manifest in an overwhelmed mortal form. You gain the Scream of Unending Destruction activity. In exchange, the dragon who bound you to this pact is now free from the influences of Dahak, losing any boons or abilities that might have been granted if they were a follower of Dahak and gaining a +2 item bonus on saving throws against any spells or abilities cast by followers of Dahak.\n\n**Activate—Scream of Unending Destruction** **Two Actions** ([auditory](/trait/auditory), [concentrate](/trait/concentrate), [emotion](/trait/emotion), [fear](/trait/fear), [incapacitation](/trait/incapacitation), [mental](/trait/mental), [unholy](/trait/unholy)) **Frequency** once per day; **Effect** Attempt an Intimidation check against the Will DC of each creature in a 30-foot [emanation](/rule/emanation-rules-2387) that you observe and that observes you.\n\n**Critical Success** The target must attempt a Fortitude save against your Intimidation DC. On a critical failure, it dies in an explosion of hellfire that deals 6d6 fire damage to each creature in a 5-foot emanation. On any other result, the creature becomes [frightened](/condition/frightened-player-core) 3 and is [fleeing](/condition/fleeing-player-core) for 1 round. The critical failure effect has the [death](/trait/death) trait.\n\n**Success** The target becomes frightened 3 and takes 4d6 fire damage.\n\n**Failure** The target becomes frightened 2.\n\n**Critical Failure** The target is unaffected.\n\n---\n\n**Oathbreaker’s Calamity** The souls of both parties begin to become consumed by the agony of Dahak. At the end of each day, you and your dragon become [doomed](/condition/doomed-player-core) 1 (or increase your doomed values by 1 if you’re already doomed) unless both of you acted in service to Dahak that day. If you or your bound dragon die while under this effect, both of you explode in a catastrophe of hellfire and pitch, dealing 16d6 fire damage to all creatures in a 30-foot emanation; this effect has the [divine](/trait/divine) and unholy traits. If the creature who didn’t die also survives this blast, the pact of the agonized destroyer ends.",
+    "descr": "---\n\nYour very quintessence has been hijacked by the agony of [Dahak](/deity/dahak-the-endless-destruction-draconic-codex-deity-deity-337) that lingered within your bound dragon. The wracked god’s whispers burn your soul and ride your body to work in dire concordance with his whims. You are the very face of horror, an heir of the Dragon Plague’s rancor, the Endless Destruction made manifest in an overwhelmed mortal form. You gain the Scream of Unending Destruction activity. In exchange, the dragon who bound you to this pact is now free from the influences of Dahak, losing any boons or abilities that might have been granted if they were a follower of Dahak and gaining a +2 item bonus on saving throws against any spells or abilities cast by followers of Dahak.",
     "data": {
       "level": 18,
       "rarity": "rare",
@@ -917,6 +1022,24 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "two",
+          "traits": [
+            "auditory",
+            "concentrate",
+            "emotion",
+            "fear",
+            "incapacitation",
+            "mental",
+            "unholy"
+          ],
+          "name": "Scream of Unending Destruction",
+          "text": "**Frequency** once per day; **Effect** Attempt an Intimidation check against the Will DC of each creature in a 30-foot [emanation](/rule/emanation-rules-2387) that you observe and that observes you.\n\n**Critical Success** The target must attempt a Fortitude save against your Intimidation DC. On a critical failure, it dies in an explosion of hellfire that deals 6d6 fire damage to each creature in a 5-foot emanation. On any other result, the creature becomes [frightened](/condition/frightened-player-core) 3 and is [fleeing](/condition/fleeing-player-core) for 1 round. The critical failure effect has the [death](/trait/death) trait.\n\n**Success** The target becomes frightened 3 and takes 4d6 fire damage.\n\n**Failure** The target becomes frightened 2.\n\n**Critical Failure** The target is unaffected.\n\n---\n\n**Oathbreaker’s Calamity** The souls of both parties begin to become consumed by the agony of Dahak. At the end of each day, you and your dragon become [doomed](/condition/doomed-player-core) 1 (or increase your doomed values by 1 if you’re already doomed) unless both of you acted in service to Dahak that day. If you or your bound dragon die while under this effect, both of you explode in a catastrophe of hellfire and pitch, dealing 16d6 fire damage to all creatures in a 30-foot emanation; this effect has the [divine](/trait/divine) and unholy traits. If the creature who didn’t die also survives this blast, the pact of the agonized destroyer ends.",
+          "effect": "Attempt an Intimidation check against the Will DC of each creature in a 30-foot [emanation](/rule/emanation-rules-2387) that you observe and that observes you.\n\n**Critical Success** The target must attempt a Fortitude save against your Intimidation DC. On a critical failure, it dies in an explosion of hellfire that deals 6d6 fire damage to each creature in a 5-foot emanation. On any other result, the creature becomes [frightened](/condition/frightened-player-core) 3 and is [fleeing](/condition/fleeing-player-core) for 1 round. The critical failure effect has the [death](/trait/death) trait.\n\n**Success** The target becomes frightened 3 and takes 4d6 fire damage.\n\n**Failure** The target becomes frightened 2.\n\n**Critical Failure** The target is unaffected.\n\n---\n\n**Oathbreaker’s Calamity** The souls of both parties begin to become consumed by the agony of Dahak. At the end of each day, you and your dragon become [doomed](/condition/doomed-player-core) 1 (or increase your doomed values by 1 if you’re already doomed) unless both of you acted in service to Dahak that day. If you or your bound dragon die while under this effect, both of you explode in a catastrophe of hellfire and pitch, dealing 16d6 fire damage to all creatures in a 30-foot emanation; this effect has the [divine](/trait/divine) and unholy traits. If the creature who didn’t die also survives this blast, the pact of the agonized destroyer ends.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -952,7 +1075,7 @@
     "systemVersion": "1.2.10",
     "name": "Pact of the Herald and Host",
     "slug": "pact-of-the-herald-and-host-draconic-codex-equipment-equipment-4016",
-    "descr": "---\n\nYou have exchanged your voice for the authority and breath of your bound dragon. Your voice echoes with the dragon’s idiosyncrasies. You can cast [_fear_](/spell/fear-player-core) as an [innate spell](/rule/innate-spells-rules-2232) once per day, with the spell’s tradition matching that of your bound dragon.\n\nOnce per day, from any distance, your bound dragon can choose to take control of your voice. They dictate everything you say (or don’t say) for up to 10 minutes. They can choose to speak in any language you or they know, though they can’t use your voice to cast spells or activate items.\n\n**Activate—Breath of the Dragon** **Single Action** ([concentrate](/trait/concentrate)) **Frequency** once per day; **Effect** You exhale a torrent of energy in a 30-foot [cone](/rule/cone-rules-2386) or a 60-foot [line](/rule/line-rules-2388), dealing 1d6 damage per level. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can’t use this ability again for 1d4 rounds. The area, damage type, and type of saving throw match those of your draconic benefactor. This ability has the trait associated with the type of damage it deals.\n\n---\n\n**Oathbreaker’s Calamity** Should either party break the oath, your throat and mouth become swollen and elongated, preventing you from speaking any language but [Draconic](/language/draconic) and causing any use of the Dragon Breath ability granted by this pact to also damage you. The dragon becomes [deafened](/condition/deafened-player-core), but call still hear your voice.",
+    "descr": "---\n\nYou have exchanged your voice for the authority and breath of your bound dragon. Your voice echoes with the dragon’s idiosyncrasies. You can cast [_fear_](/spell/fear-player-core) as an [innate spell](/rule/innate-spells-rules-2232) once per day, with the spell’s tradition matching that of your bound dragon.\n\nOnce per day, from any distance, your bound dragon can choose to take control of your voice. They dictate everything you say (or don’t say) for up to 10 minutes. They can choose to speak in any language you or they know, though they can’t use your voice to cast spells or activate items.",
     "data": {
       "level": 6,
       "rarity": "rare",
@@ -974,6 +1097,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Breath of the Dragon",
+          "text": "**Frequency** once per day; **Effect** You exhale a torrent of energy in a 30-foot [cone](/rule/cone-rules-2386) or a 60-foot [line](/rule/line-rules-2388), dealing 1d6 damage per level. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can’t use this ability again for 1d4 rounds. The area, damage type, and type of saving throw match those of your draconic benefactor. This ability has the trait associated with the type of damage it deals.\n\n---\n\n**Oathbreaker’s Calamity** Should either party break the oath, your throat and mouth become swollen and elongated, preventing you from speaking any language but [Draconic](/language/draconic) and causing any use of the Dragon Breath ability granted by this pact to also damage you. The dragon becomes [deafened](/condition/deafened-player-core), but call still hear your voice.",
+          "effect": "You exhale a torrent of energy in a 30-foot [cone](/rule/cone-rules-2386) or a 60-foot [line](/rule/line-rules-2388), dealing 1d6 damage per level. Each creature in the area must attempt a basic saving throw against the higher of your class DC or spell DC. You can’t use this ability again for 1d4 rounds. The area, damage type, and type of saving throw match those of your draconic benefactor. This ability has the trait associated with the type of damage it deals.\n\n---\n\n**Oathbreaker’s Calamity** Should either party break the oath, your throat and mouth become swollen and elongated, preventing you from speaking any language but [Draconic](/language/draconic) and causing any use of the Dragon Breath ability granted by this pact to also damage you. The dragon becomes [deafened](/condition/deafened-player-core), but call still hear your voice.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
@@ -1009,7 +1144,7 @@
     "systemVersion": "1.2.10",
     "name": "The Timeless Bond",
     "slug": "the-timeless-bond-draconic-codex-equipment-equipment-4018",
-    "descr": "---\n\nYou’ve linked your lifespan to your bound dragon. Your natural physical aging ceases and you gain the Draconic Vitality action, but your soul grows withered and scabrous by the weight of a dragon’s experience with time.\n\nOnce per week, from any distance, the dragon can use a free action, which has the [concentrate](/trait/concentrate) trait, to become [quickened](/condition/quickened-player-core) for 1 minute. They can use the extra action to [Stride](/action/stride-player-core), [Strike](/action/strike-player-core), or to contribute an action to casting a spell. When the dragon uses this ability, you age 10 years and become [drained](/condition/drained-player-core) 3 for 1 hour.\n\n**Activate—Draconic Vitality** **Single Action** (concentrate) **Frequency** once per day; **Effect** Reduce your [doomed](/condition/doomed-player-core) value by 2. For 1 hour, you gain a +2 status bonus to saves against [poisons](/trait/poison) and [diseases](/rule/diseases-rules-2767), and a status bonus equal to your level to Hit Points you regain from spells with the same tradition as your bound dragon.\n\n---\n\n**Oathbreaker’s Calamity** Should either party break the oath, you begin aging at an accelerated rate. Every 1d6 days, you must succeed at a flat DC 14 check or age 10 years and become drained 3. In turn, the dragon loses years of experience, reducing its age 100 years every time you fail the flat check. If the dragon is de-aged past the time they made the pact, the pact remains, but the dragon loses all memories of you and the pact.",
+    "descr": "---\n\nYou’ve linked your lifespan to your bound dragon. Your natural physical aging ceases and you gain the Draconic Vitality action, but your soul grows withered and scabrous by the weight of a dragon’s experience with time.\n\nOnce per week, from any distance, the dragon can use a free action, which has the [concentrate](/trait/concentrate) trait, to become [quickened](/condition/quickened-player-core) for 1 minute. They can use the extra action to [Stride](/action/stride-player-core), [Strike](/action/strike-player-core), or to contribute an action to casting a spell. When the dragon uses this ability, you age 10 years and become [drained](/condition/drained-player-core) 3 for 1 hour.",
     "data": {
       "level": 12,
       "rarity": "rare",
@@ -1031,6 +1166,18 @@
         {
           "label": "magical",
           "slug": "magical"
+        }
+      ],
+      "activations": [
+        {
+          "actions": "one",
+          "traits": [
+            "concentrate"
+          ],
+          "name": "Draconic Vitality",
+          "text": "**Frequency** once per day; **Effect** Reduce your [doomed](/condition/doomed-player-core) value by 2. For 1 hour, you gain a +2 status bonus to saves against [poisons](/trait/poison) and [diseases](/rule/diseases-rules-2767), and a status bonus equal to your level to Hit Points you regain from spells with the same tradition as your bound dragon.\n\n---\n\n**Oathbreaker’s Calamity** Should either party break the oath, you begin aging at an accelerated rate. Every 1d6 days, you must succeed at a flat DC 14 check or age 10 years and become drained 3. In turn, the dragon loses years of experience, reducing its age 100 years every time you fail the flat check. If the dragon is de-aged past the time they made the pact, the pact remains, but the dragon loses all memories of you and the pact.",
+          "effect": "Reduce your [doomed](/condition/doomed-player-core) value by 2. For 1 hour, you gain a +2 status bonus to saves against [poisons](/trait/poison) and [diseases](/rule/diseases-rules-2767), and a status bonus equal to your level to Hit Points you regain from spells with the same tradition as your bound dragon.\n\n---\n\n**Oathbreaker’s Calamity** Should either party break the oath, you begin aging at an accelerated rate. Every 1d6 days, you must succeed at a flat DC 14 check or age 10 years and become drained 3. In turn, the dragon loses years of experience, reducing its age 100 years every time you fail the flat check. If the dragon is de-aged past the time they made the pact, the pact remains, but the dragon loses all memories of you and the pact.",
+          "description": "**Frequency** once per day"
         }
       ]
     },
