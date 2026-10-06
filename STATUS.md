@@ -85,9 +85,9 @@ Last updated: 2026-10-07
   labels, focused editability regression, and canonical source checks pass.
   No content, migration, stat-block, or version changes were required.
   Pending functional checks during resumed testing: inspect new gear, armor,
-  shields, and weapons; add/edit/clear ammunition, onset, and crafting details
-  and verify summary refresh and save/reopen; edit primary activation including
-  traits, create/delete named activations, and confirm they remain independent;
+  shields, and weapons; add/edit/clear ammunition and onset, clear crafting
+  requirements, and verify summary refresh and save/reopen; edit primary
+  activation including traits and confirm independence from named activations;
   edit variants and their level/price/bulk/crafting fields; change a category
   with populated equipment stats and ensure those values remain editable.
   No agent app automation is authorized. The user selected creatures next,
@@ -148,8 +148,8 @@ Last updated: 2026-10-07
   of Accolade Robe, save/reopen/displayed rules, adding/deleting a temporary
   named activation, and preservation of Extra Credit. Those checks are passed;
   do not repeat them without a new regression.
-- Item Craft Requirements: source repair complete on 2026-10-07; native
-  confirmation pending. The user clarifies that the Additional details text
+- Item Craft Requirements: source repair complete and requested native checks
+  passed on 2026-10-07 (user: "works well now"). The user clarifies that the Additional details text
   box is present and saves, but the item preview omits the saved text. The
   native `views/item.json` lacked this field; the HTML template already renders
   it. Native display now includes the saved field and its label, with regression
@@ -168,11 +168,11 @@ Last updated: 2026-10-07
   nine validators). The validated test archive changes only `items.json` and
   `views/item.json` from its predecessor; all 199 packaged source files match,
   CRC/checksums pass, and all 18,041 records remain. Version stays `0.9.01`.
-  Next native check: import the latest test package, open a fresh Caltrop Snare
-  or Staff of Healing, verify populated Craft Requirements in Additional
-  details, edit/save/reopen, and confirm the displayed item shows the saved text.
+  The user confirms the requested fresh-item populated field, edit/save/reopen,
+  and displayed-text test works after importing the rebuilt package. Do not
+  repeat that test without a new regression. Clearing the field remains pending.
   Older personal copies may retain their previous description-only data.
-  Ammunition/onset checks are not covered by this reported crafting failure.
+  Ammunition/onset checks remain pending.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in
@@ -494,8 +494,9 @@ Last updated: 2026-10-07
 - After the confirmed 5.0.9 (4536) update: save issues are user-confirmed fixed.
   Nested Duration Time expansion and Recall Knowledge selection checkmarks
   also pass in the user's follow-up. Do not repeat these resolved cases without
-  a new regression. Next focused test: item Additional details, add/edit/clear
-  ammunition, onset, and crafting requirements; verify summary and save/reopen.
+  a new regression. Craft Requirements import/edit/save/display also passes.
+  Next focused test: item Additional details, add/edit/clear ammunition and
+  onset, then clear crafting requirements; verify summary, display, and save/reopen.
   Continue primary item activation,
   spell casting/details/map-template functionality, and a representative deity /
   hazard/vehicle list. Verify redraw and
