@@ -634,6 +634,8 @@ def main() -> int:
     for template in (item_html, json.dumps(native_item_view)):
         if "for activation in data.activations" not in template or "item-activation.md" not in template:
             raise SystemExit("both item display modes must use the named-activation renderer in its row context")
+        if "{{data.craftRequirements}}" not in template or "Item.CraftRequirements" not in template:
+            raise SystemExit("both item display modes must render editable crafting requirements")
     if '/icons/actions/{{activation.actions}}.png' not in activation_view:
         raise SystemExit("named activation action icons use an invalid route")
     if re.search(r"{%\s*elsif\b", ability_view):

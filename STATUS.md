@@ -19,23 +19,24 @@ Last updated: 2026-10-07
   deleting older systems. This supersedes the earlier pause-related package
   delivery restriction and is saved in `AGENTS.md`. Native testing remains
   user-controlled; no agent app automation is authorized.
-- Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-06
+- Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-07
   with the creature, item, and spell editor redesigns and previous system-wide
   refresh repairs, improved attack/casting/usage summaries, and numeric
   spellcasting-input repair, shared ability writing flow, and character tabs.
   It now also includes the named item activation rendering repair and imported
-  activation field conversion below.
+  activation field conversion below, plus imported Craft Requirements and
+  their native item-preview rendering repair.
   Archive inspection/CRC/checksums pass; all 199 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `ff7562719de1a98042f64449e7dbcffaa770149edd3b723421035a3f127f991a`.
+  SHA-256: `3612a232458f9c818490fa81809acfd1e7371f35f33d9c3155cf0ed9ae65bf6b`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
   main and test archives were identical at that point; archive CRC and
-  checksums passed. The newer activation rendering/import fixes are only in
+  checksums passed. The newer activation and crafting rendering/import fixes are only in
   the test package, not this main distribution or the previous branch push.
   Version remains `0.9.01`. Distribution artifacts are ignored
   by Git; the branch push carries source changes and documentation.
@@ -43,7 +44,7 @@ Last updated: 2026-10-07
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
   spell durations/areas, hazard/vehicle mechanics, and four UI regression files.
-  Revalidated on 2026-10-06 with the repaired virtualenv and bundled Node via
+  Revalidated on 2026-10-07 with the repaired virtualenv and bundled Node via
   `../tools/project-env python tools/eplus_dev.py check --json`.
 - Spell editor efficiency: source complete, native verification pending.
   Type/rank/rarity/traits now share the opening group. **Casting** keeps
@@ -147,6 +148,31 @@ Last updated: 2026-10-07
   of Accolade Robe, save/reopen/displayed rules, adding/deleting a temporary
   named activation, and preservation of Extra Credit. Those checks are passed;
   do not repeat them without a new regression.
+- Item Craft Requirements: source repair complete on 2026-10-07; native
+  confirmation pending. The user clarifies that the Additional details text
+  box is present and saves, but the item preview omits the saved text. The
+  native `views/item.json` lacked this field; the HTML template already renders
+  it. Native display now includes the saved field and its label, with regression
+  coverage guarding both display modes. A separate import gap left requirements
+  in `descr`: 532 items contain explicit labels, none had the structured field.
+  The deterministic item-editor converter now populates `data.craftRequirements`
+  for 530 items in 14 ORC/OGL collections. Two records contain only other-variant
+  requirements and remain untouched. Root/exact-name variant requirements are
+  moved without guessing; following headings, dividers, properties, other
+  variants, and general notes stay in the description. Explicit/cleared GM
+  crafting settings and existing activation fields are preserved. Full ORC/OGL
+  builders and the post-link enrichment CLI share this conversion.
+  Comparison with the pre-conversion corpus proves every rule token and link
+  preserved, with only owned description/requirement fields changed. Six added
+  conversion cases pass (30 total), as does the canonical check (83 definitions,
+  nine validators). The validated test archive changes only `items.json` and
+  `views/item.json` from its predecessor; all 199 packaged source files match,
+  CRC/checksums pass, and all 18,041 records remain. Version stays `0.9.01`.
+  Next native check: import the latest test package, open a fresh Caltrop Snare
+  or Staff of Healing, verify populated Craft Requirements in Additional
+  details, edit/save/reopen, and confirm the displayed item shows the saved text.
+  Older personal copies may retain their previous description-only data.
+  Ammunition/onset checks are not covered by this reported crafting failure.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in

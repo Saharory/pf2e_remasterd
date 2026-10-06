@@ -1,4 +1,4 @@
-"""Expose explicitly printed item activations without guessing prose mechanics."""
+"""Expose explicitly printed item rules without guessing prose mechanics."""
 
 from __future__ import annotations
 
@@ -33,6 +33,7 @@ ACTION_CODES = {
 TRAIT_LINK = re.compile(r"^\[([^]]+)\]\(/trait/([a-z0-9-]+)\)$")
 METHOD = re.compile(r"^(Cast [Aa] Spell|Interact|Command|Envision|Strike)(?=\s|;|$)")
 CRAFTING = re.compile(r"(?m)^\*\*Craft Requirements\*\*")
+PROPERTY_LINE = re.compile(r"(?m)^[ \t]*\*\*[A-Z][^*\n]*\*\*")
 SHIELD_TABLE = re.compile(r"(?m)^\|\s*Hardness\s*\|\s*HP\s*\|\s*BT\s*\|")
 
 
@@ -138,17 +139,58 @@ def parse_item_activations(description: str, name: str, trait_slugs: Collection[
     return result
 
 
+def configure_item_crafting_data(entity: dict[str, Any]) -> bool:
+    """Move explicit root/exact-variant requirements into their editable field.
+
+    Keep other variants and following labeled properties/dividers in general
+    prose. Explicit GM settings, including a cleared field, take precedence.
+    """
+    data = entity["data"]
+    if "craftRequirements" in data:
+        return False
+    description = str(entity.get("descr") or "")
+    headings = list(HEADING.finditer(description))
+    spans: list[tuple[int, int]] = []
+    requirements: list[str] = []
+    for match in CRAFTING.finditer(description):
+        previous_heading = next((h for h in reversed(headings) if h.start() < match.start()), None)
+        if previous_heading and _label(previous_heading[1]) != _label(str(entity.get("name") or "")):
+            continue
+        end = len(description)
+        for boundary in (HEADING, DIVIDER, PROPERTY_LINE):
+            following = boundary.search(description, match.end())
+            if following:
+                end = min(end, following.start())
+        text = description[match.end():end].strip()
+        if not text:
+            continue
+        requirements.append(text)
+        spans.append((match.start(), end))
+    if not spans:
+        return False
+    pieces: list[str] = []
+    cursor = 0
+    for start, end in spans:
+        pieces.append(description[cursor:start])
+        cursor = end
+    pieces.append(description[cursor:])
+    data["craftRequirements"] = "\n\n".join(requirements)
+    entity["descr"] = re.sub(r"\n{3,}", "\n\n", "".join(pieces)).strip()
+    return True
+
+
 def configure_item_editor_data(entity: dict[str, Any], trait_slugs: Collection[str] | None = None) -> bool:
-    """Convert once; preserve explicitly supplied/cleared GM activation settings."""
+    """Convert printed fields; preserve explicitly supplied/cleared GM settings."""
     if entity.get("kind") != "Item" or not isinstance(entity.get("data"), dict):
         return False
     data = entity["data"]
+    changed = configure_item_crafting_data(entity)
     if "activation" in data or "activations" in data:
-        return False
+        return changed
     description = str(entity.get("descr") or "")
     blocks = parse_item_activations(description, str(entity.get("name") or ""), trait_slugs)
     if not blocks:
-        return False
+        return changed
     additional: list[dict[str, Any]] = []
     for block in blocks:
         fields = dict(block.fields)
@@ -178,13 +220,13 @@ def configure_item_editor_data(entity: dict[str, Any], trait_slugs: Collection[s
 
 
 def main() -> None:
-    """Regenerate activation fields after the existing public link-enrichment pass.
+    """Regenerate editor fields after the existing public link-enrichment pass.
 
     Like other editor/table enrichment tools, this touches only its owned
     collections. Full ORC/OGL builds also call the same conversion function.
     """
     repo = Path(__file__).resolve().parents[1]
-    converted = primary = additional = files = 0
+    converted = primary = additional = crafting = files = 0
     for root in (repo / "compendium/packs", repo / "compendium/ogl-packs"):
         for path in sorted(root.glob("*/items.json")):
             records = json.loads(path.read_text())
@@ -194,11 +236,12 @@ def main() -> None:
                     converted += 1
                     primary += bool(item["data"].get("activation"))
                     additional += len(item["data"].get("activations", []))
+                    crafting += bool(item["data"].get("craftRequirements"))
                     changed = True
             if changed:
                 path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n")
                 files += 1
-    print(json.dumps({"convertedItems": converted, "primary": primary, "additional": additional, "files": files}))
+    print(json.dumps({"convertedItems": converted, "primary": primary, "additional": additional, "crafting": crafting, "files": files}))
 
 
 if __name__ == "__main__":

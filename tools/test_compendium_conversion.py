@@ -144,7 +144,8 @@ class ItemActivationTests(unittest.TestCase):
         configure_item_editor_data(item)
         self.assertEqual(item["data"]["activations"][0]["effect"], "Light.")
         self.assertIn("| Hardness | HP | BT |", item["descr"])
-        self.assertIn("**Craft Requirements** A crystal.", item["descr"])
+        self.assertNotIn("**Craft Requirements**", item["descr"])
+        self.assertEqual(item["data"]["craftRequirements"], "A crystal.")
 
     def test_variable_or_timed_cost_is_not_guessed(self) -> None:
         for cost in ("1 minute", "10 minutes", "1 or 2", "1 to 3"):
@@ -208,6 +209,57 @@ class ItemActivationTests(unittest.TestCase):
                         self.assertEqual(tokens(activation["text"]), tokens(render_ability_editor_fields(activation)), item["name"])
                         checked += 1
         self.assertGreater(checked, 1000, "published activations were not populated")
+
+
+class ItemCraftingTests(unittest.TestCase):
+    def item(self, text: str, name: str = "Test Item") -> dict:
+        return {"kind": "Item", "name": name, "descr": text, "data": {}}
+
+    def test_explicit_requirements_preserve_links_and_following_properties(self) -> None:
+        item = self.item("Overview.\n\n**Craft Requirements** Supply [caltrops](/item/caltrops-player-core).\n\n**Special** Keep this rule.")
+        self.assertTrue(configure_item_editor_data(item))
+        self.assertEqual(item["data"]["craftRequirements"], "Supply [caltrops](/item/caltrops-player-core).")
+        self.assertEqual(item["descr"], "Overview.\n\n**Special** Keep this rule.")
+
+    def test_divider_separates_following_note(self) -> None:
+        item = self.item("**Craft Requirements** Supply a spell.\n\n---\n\nA general note.")
+        configure_item_editor_data(item)
+        self.assertEqual(item["data"]["craftRequirements"], "Supply a spell.")
+        self.assertEqual(item["descr"], "---\n\nA general note.")
+
+    def test_only_current_variant_requirements_are_extracted(self) -> None:
+        text = "Overview.\n\n## Test Item\n\n**Craft Requirements** A crystal.\n\n## Greater Item\n\n**Craft Requirements** A diamond."
+        item = self.item(text)
+        configure_item_editor_data(item)
+        self.assertEqual(item["data"]["craftRequirements"], "A crystal.")
+        self.assertIn("**Craft Requirements** A diamond.", item["descr"])
+        other = self.item(text, "Unmatched Item")
+        self.assertFalse(configure_item_editor_data(other))
+        self.assertEqual(other["descr"], text)
+
+    def test_existing_activation_does_not_block_crafting_conversion(self) -> None:
+        item = self.item("**Craft Requirements** A crystal.")
+        item["data"]["activations"] = [{"name": "Flash", "effect": "Light."}]
+        before = deepcopy(item["data"]["activations"])
+        self.assertTrue(configure_item_editor_data(item))
+        self.assertEqual(item["data"]["activations"], before)
+        converted = deepcopy(item)
+        self.assertFalse(configure_item_editor_data(item))
+        self.assertEqual(item, converted)
+
+    def test_explicit_or_cleared_crafting_settings_are_preserved(self) -> None:
+        for value in ("", "Custom requirement"):
+            item = self.item("**Craft Requirements** A crystal.")
+            item["data"]["craftRequirements"] = value
+            before = deepcopy(item)
+            self.assertFalse(configure_item_editor_data(item))
+            self.assertEqual(item, before)
+
+    def test_empty_and_incidental_mentions_are_preserved(self) -> None:
+        for text in ("**Craft Requirements**", "Some items have Craft Requirements."):
+            item = self.item(text)
+            self.assertFalse(configure_item_editor_data(item))
+            self.assertEqual(item["descr"], text)
 
 
 class ReleaseOutputTests(unittest.TestCase):

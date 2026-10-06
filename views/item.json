@@ -103,6 +103,12 @@
     },
     {
       "type": "text",
+      "visibleIf": "data.craftRequirements != nil",
+      "value": "{% if data.craftRequirements %}**{{'Item.CraftRequirements'|l}}** {{data.craftRequirements}}{% endif %}",
+      "style": "stats-body",
+    },
+    {
+      "type": "text",
       "title": "Common.Notes",
       "value": "{{notes}}",
     },
