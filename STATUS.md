@@ -582,7 +582,10 @@ Last updated: 2026-10-07
   manual persists and behaves correctly, although its preview was stale before
   the display/refresh changes. No-token map loading/placement/removal now passes
   for stock Fireball / Detect Magic and the modified fractional cone.
-  Distinct caster/source assignment remains untested.
+  Distinct caster/source assignment also passes on 2026-10-07: effect loaded
+  onto B with Source A survives B's turn and expires at A's next turn start
+  for Source Start Next Turn; Target End Next Turn expires at B's next turn
+  end while Source remains A.
 
 - After the confirmed 5.0.9 (4536) update: save issues are user-confirmed fixed.
   Nested Duration Time expansion and Recall Knowledge selection checkmarks
@@ -598,18 +601,18 @@ Last updated: 2026-10-07
   Multiple Cast actions selections/icons/save/reopen/removal also pass.
   Area-template/numeric-expiry settings and printed-field independence pass.
   No-token map placement/loading/removal with stock/fractional geometry passes.
-  Next focused test: two initiative tokens A (caster/source), B (target).
-  On A's turn load a test spell onto B and set the effect's Source to A.
-  Source Start Next Turn should survive B's turn and expire at A's next turn
-  start. Repeat with Target End Next Turn: expire at the end of B's next turn,
-  while Source remains A. Continue
+  Distinct caster/source and target-relative expiry also pass.
+  Next focused test: create a new custom test spell without an area template,
+  set Token effect duration Until Dispelled, save/reopen and load onto a test
+  token. Confirm no countdown, persistence through two rounds, and manual
+  removal. Continue
   empty-item category field visibility,
   and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
   ritual links, creature spell links, custom
-  manual spell loading and distinct caster/source-relative expiry. Avoid repeating confirmed
+  manual spell loading. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
   compatibility before releases. See `ROADMAP.md` for product decisions.
