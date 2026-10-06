@@ -8,10 +8,10 @@ was performed.
 
 Current status on 2026-10-07: the user reports that the app update fixed all
 save-issue bugs. Imported named activation editing, save/reopen/rendering,
-addition/deletion, and preservation of the other entry also pass. Nested
-Duration expansion and Recall Knowledge checkmark/display refresh have not
-yet been separately confirmed after the update. Retain the reproduction below
-as historical evidence, not a claim that every symptom remains in 5.0.9.
+addition/deletion, and preservation of the other entry also pass. The user then
+confirmed immediate nested Duration Time expansion and Recall Knowledge
+selection checkmarks. The reported save/refresh failures are resolved in these
+native tests. Retain the reproduction below as historical evidence.
 The current explicit list bindings preserve the original storage paths;
 removing the outer form scope does not leave entries unbound. No restoration
 of that extra scope is recommended without a demonstrated regression.
@@ -85,10 +85,10 @@ remain separate to preserve PF2E duration qualifiers.
 
 ## Additional Recall Knowledge selection feedback
 
-The user reports that the subject/skill selection checkmark does not appear
+Before the app update, the user reported that the subject/skill selection checkmark did not appear
 until leaving/re-entering Recall Knowledge. Deleting an entry works correctly.
 Whether the displayed selected value also stays stale remains unconfirmed;
-no updated native result has been supplied for this specific symptom.
+the user confirmed immediate checkmarks after the 5.0.9 update on 2026-10-07.
 This is not yet established as the same internal issue as Duration visibility.
 
 Relevant source: `forms/partials/recall-knowledge-entry.json`. Its single picker

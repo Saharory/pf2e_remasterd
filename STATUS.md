@@ -264,9 +264,11 @@ Last updated: 2026-10-07
   Analyze an attached image/recording only when explicitly requested.
 - App update confirmed on 2026-10-07: the user reports the app was updated and
   all save-issue bugs are fixed. Record text persistence as user-confirmed
-  fixed after the update; no agent app testing was performed. The statement
-  does not separately establish nested Duration conditional expansion or
-  Recall Knowledge checkmark/display refresh; those remain focused checks.
+  fixed after the update; no agent app testing was performed. The user then
+  confirmed both requested refresh checks pass: nested Duration selecting Time
+  immediately reveals value/unit controls, and Recall Knowledge selection
+  checkmarks appear immediately. The previously reported save/refresh bugs are
+  now resolved in the user's native tests.
   Binding review: retain the current Immunities/Weaknesses/Resistances forms.
   Their list sections still bind to `data.immunityEditor.entries`,
   `data.weaknessEntries`, and `data.resistanceEntries`; row controls remain
@@ -341,10 +343,9 @@ Last updated: 2026-10-07
   subject/skill picker checkmarks appear only after leaving/re-entering Recall
   Knowledge, so selection feedback fails. Its entry controls correctly use the
   row-relative `subject` / `skills` paths, a standard pattern also used by 5e
-  list-entry forms. No binding error was identified. Earlier clarification
-  remains unconfirmed:
-  whether the selected value displayed in the entry editor updates immediately
-  or also requires reopening. DC/stat-block/save verification is not yet
+  list-entry forms. No binding error was identified. The user confirmed
+  immediate selection checkmarks after the 5.0.9 update on 2026-10-07.
+  Recall Knowledge DC/stat-block/save verification is not yet
   confirmed; do not mark the whole Recall Knowledge test passed.
 - Reference repair: native selections can include source-name spaces, e.g.
   `/item/chest-player-core/player core`. All nine dynamic creature Markdown
@@ -364,7 +365,8 @@ Last updated: 2026-10-07
   of the installed loader established support for that unit-only descriptor.
   Sustained durations supply a maximum timer, not automatic Sustain. The 308
   map-area templates remain intact; deferred upstream conversion is unchanged.
-- Duration regression, latest specific native result before the app update: the user confirms readable spell
+- Duration regression: nested Time expansion now passes after the app update,
+  confirmed by the user on 2026-10-07. Earlier specific result: readable spell
   and status-effect duration names after restoring explicit option maps; the
   other requested duration checks pass (save/reopen and preview). Only Spell
   Time still requires leaving/reopening before value/unit controls appear.
@@ -464,10 +466,11 @@ Last updated: 2026-10-07
   the display/refresh changes. Distinct caster/source assignment remains untested.
 
 - After the confirmed 5.0.9 (4536) update: save issues are user-confirmed fixed.
-  Check the two separately unconfirmed refresh cases: nested Duration Time
-  expansion and Recall Knowledge selection checkmarks/displayed values.
-  Do not infer those outcomes from the save-issue report. Continue primary item
-  activation and additional details,
+  Nested Duration Time expansion and Recall Knowledge selection checkmarks
+  also pass in the user's follow-up. Do not repeat these resolved cases without
+  a new regression. Next focused test: item Additional details, add/edit/clear
+  ammunition, onset, and crafting requirements; verify summary and save/reopen.
+  Continue primary item activation,
   spell casting/details/map-template functionality, and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
