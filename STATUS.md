@@ -93,8 +93,9 @@ Last updated: 2026-10-07
   save/reopen while named Review/Extra Credit remain unchanged throughout.
   Variant native checks also pass on 2026-10-07: all six fields display, the
   label says Variant, save/reopen and deletion persist, and activations remain
-  unchanged. Pending functional checks: inspect new gear, armor, shields, and weapons; change a category
-  with populated equipment stats and ensure those values remain editable.
+  unchanged. Category-change populated-property retention also passes on
+  2026-10-07. Separate empty-category field visibility for new gear/armor/
+  shield/weapon items has not been explicitly confirmed.
   No agent app automation is authorized. The user selected creatures next,
   ahead of shared abilities. The shared ability editor is now implemented as
   described below.
@@ -201,8 +202,10 @@ Last updated: 2026-10-07
   predecessor. CRC/checksums pass; all other packaged files are unchanged.
   All requested variant checks are now passed; do not repeat without a new
   regression.
-- Item category visibility: source repair complete on 2026-10-07; native
-  verification pending. Preparation found unsupported `elsif` tags in the
+- Item category visibility: source repair complete on 2026-10-07; the user
+  confirms populated values retained after changing category and save/reopen
+  ("yea it retained"). Separate empty-category field visibility remains
+  unconfirmed. Preparation found unsupported `elsif` tags in the
   Armor and Adventuring Gear visibility conditions. These now use supported
   `elif`, as in official 5e templates. Conditions, controls, and stored paths
   otherwise remain identical. The maintained editability suite now rejects
@@ -210,11 +213,11 @@ Last updated: 2026-10-07
   nine validators). The verified test archive changes only `forms/item.json`;
   content and every other packaged file remain unchanged. CRC/checksums pass,
   version remains `0.9.01`, and no push/publication occurred.
-  Next native test: on test items, switch among Adventuring Gear, Armor, Shield,
-  and Weapon and check corresponding fields. Populate armor AC 2/Dex Cap 0,
-  switch to Adventuring Gear and save/reopen: armor values should remain
-  editable. Separately populate gear Hands 2, switch to Consumable and
-  save/reopen: Hands should remain editable and retain its value.
+  The requested retention test used armor AC 2/Dex Cap 0 changed to Adventuring
+  Gear and gear Hands 2 changed to Consumable, followed by save/reopen.
+  The user's confirmation covers retention; do not repeat it without a new
+  regression. The separate empty-item category-switch field-appearance check
+  was not explicitly reported.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in
@@ -540,10 +543,12 @@ Last updated: 2026-10-07
   Additional details ammunition/onset and clearing checks also pass.
   Primary activation editing/clearing and named-entry independence also pass.
   All requested item variant checks also pass.
-  Next focused test: item category visibility and populated-property retention
-  as specified above, including a zero-valued armor field and gear Hands.
-  Continue
-  spell casting/details/map-template functionality, and a representative deity /
+  Item populated-property retention after category changes passes.
+  Next focused test: spell Casting details on a test copy, populate notes,
+  requirements, cost, and trigger; check summary/display and save/reopen, then
+  clear the fields and verify clearing persists. Continue remaining spell
+  casting/map-template functionality, empty-item category field visibility,
+  and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
