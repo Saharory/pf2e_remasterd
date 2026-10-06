@@ -108,7 +108,10 @@ Last updated: 2026-10-07
   Area-template/numeric-expiry settings also pass on 2026-10-07: Fireball test
   copy Cone / 12.5 ft and Time / 2 rounds, summaries and save/reopen; printed
   Area/Duration remain unchanged.
-  Pending functional checks: actual map placement/loading; check an older custom spell with prose in
+  Map placement/loading also passes on 2026-10-07 with no token selected:
+  stock Fireball 20-ft-radius area, Detect Magic 30-ft-radius area, and edited
+  Fireball Cone / 12.5 ft all place/remove with expected geometry.
+  Pending functional checks: check an older custom spell with prose in
   `data.duration`. Keep redraw, persistence, and rendered content results distinct.
 - Item editor efficiency: source complete, user approved on 2026-10-05.
   The user reports no issues and much better organization. Individual
@@ -577,7 +580,9 @@ Last updated: 2026-10-07
   next turn and expiring at its end; Heal/Mystic Armor without countdowns,
   persisting through several turns, and manual removal. Switching a timer to
   manual persists and behaves correctly, although its preview was stale before
-  the display/refresh changes. Distinct caster/source assignment remains untested.
+  the display/refresh changes. No-token map loading/placement/removal now passes
+  for stock Fireball / Detect Magic and the modified fractional cone.
+  Distinct caster/source assignment remains untested.
 
 - After the confirmed 5.0.9 (4536) update: save issues are user-confirmed fixed.
   Nested Duration Time expansion and Recall Knowledge selection checkmarks
@@ -592,10 +597,12 @@ Last updated: 2026-10-07
   Direct spell Range/Defense/printed Duration edits also pass.
   Multiple Cast actions selections/icons/save/reopen/removal also pass.
   Area-template/numeric-expiry settings and printed-field independence pass.
-  Next focused test on a test map with no token selected: load fresh stock
-  Fireball (20-ft-radius area) and Detect Magic (30-ft-radius area), then the
-  modified Fireball (Cone / 12.5 ft). Check placement, configured geometry,
-  and removal without needing to select a token. Continue
+  No-token map placement/loading/removal with stock/fractional geometry passes.
+  Next focused test: two initiative tokens A (caster/source), B (target).
+  On A's turn load a test spell onto B and set the effect's Source to A.
+  Source Start Next Turn should survive B's turn and expire at A's next turn
+  start. Repeat with Target End Next Turn: expire at the end of B's next turn,
+  while Source remains A. Continue
   empty-item category field visibility,
   and a representative deity /
   hazard/vehicle list. Verify redraw and
