@@ -1,14 +1,26 @@
 # Nested duration form does not refresh conditional sections
 
-Environment: Encounter+ 5.0.8 (4530), Mac. PF2E Remaster test package 0.9.01.
+Original reproduction environment: Encounter+ 5.0.8 (4530), Mac.
+Current installed app: 5.0.9 (4536), confirmed from read-only metadata on
+2026-10-07. PF2E Remaster test package 0.9.01.
 All native results below were reported by the user; no automated app testing
 was performed.
+
+Current status on 2026-10-07: the user reports that the app update fixed all
+save-issue bugs. Imported named activation editing, save/reopen/rendering,
+addition/deletion, and preservation of the other entry also pass. Nested
+Duration expansion and Recall Knowledge checkmark/display refresh have not
+yet been separately confirmed after the update. Retain the reproduction below
+as historical evidence, not a claim that every symptom remains in 5.0.9.
+The current explicit list bindings preserve the original storage paths;
+removing the outer form scope does not leave entries unbound. No restoration
+of that extra scope is recommended without a demonstrated regression.
 
 Status on 2026-10-04: the user stopped native testing after the Encounter+
 developer confirmed a bug introduced by the recent app update, with a hotfix
 expected later that day. This diagnosis and release plan were relayed by the
-user. The hotfix has not yet been verified here; retain this report and retest
-the failed cases after the user installs it and resumes testing.
+user. At that point the hotfix had not been verified; the update above records
+the later installed version and user result.
 
 Update on 2026-10-05: the user resumed other functional verification without
 the hotfix. Installed-app metadata still reports 5.0.8 (4530). These known
@@ -25,7 +37,7 @@ content separately while testing the remaining features.
 Expected: the duration value and unit choices appear immediately below the
 type choices.
 
-Actual: Time is selected and persists, but those controls remain hidden until
+Actual in the original reproduction: Time is selected and persists, but those controls remain hidden until
 the Duration page is closed and reopened. Names, saving, reopened values, and
 duration previews now work correctly.
 
@@ -67,7 +79,7 @@ cause. The app-owned status duration page is a separate component; the public
 provides no documented hook to embed that native duration page or force a
 generic nested page to refresh.
 
-Workaround while preserving the existing nested layout: select Time, leave
+Original workaround while preserving the existing nested layout: select Time, leave
 Duration, and reopen it. The printed spell duration and token expiry fields
 remain separate to preserve PF2E duration qualifiers.
 

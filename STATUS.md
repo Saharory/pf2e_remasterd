@@ -93,7 +93,8 @@ Last updated: 2026-10-07
   ahead of shared abilities. The shared ability editor is now implemented as
   described below.
 - Named item activation rendering: source repair completed on 2026-10-05;
-  native verification pending. Inspection before the activation test found
+  imported named-entry editing/rendering, save/reopen, and deletion passed on
+  2026-10-07. Inspection before the activation test found
   that the shared editor writes `description`, `trigger`, `effect`, and
   `reference`, but the item display rendered only legacy `text`. Both HTML and
   native item views now use the same activation partial in the loop's row
@@ -107,13 +108,14 @@ Last updated: 2026-10-07
   Verified replacement test archive changes only `views/item.html`,
   `views/item.json`, and `views/partials/item-activation.md`; all other entries
   and all 18,041 records are unchanged. CRC, checksums, and 199 packaged source
-  files match. Next native test: primary/named activation independence,
-  structured rules rendering, save/reopen, and named activation deletion.
-  Known app redraw/save symptoms remain separate and unresolved. This repair is
+  files match. The imported-item test below confirms structured named rules,
+  save/reopen, deletion, and preservation of the other named entry. Independent
+  primary activation editing remains pending. App update results are tracked
+  separately below. This repair is
   committed locally only; no push or release publication was performed.
 - Imported item activation conversion: source complete on 2026-10-06;
-  native presentation approved on 2026-10-07 (user: "looks good"). Editing,
-  save/reopen, and deletion remain pending. The user confirms that the complaint concerns
+  native presentation and the requested follow-up checks passed on 2026-10-07.
+  The user confirms that the complaint concerns
   existing imported text, not new editor input. Audit found 2,661 items mention
   Activate in general `descr`, with no structured activation data. The new
   deterministic `tools/item_editor_data.py` pass recognizes explicit headings
@@ -141,11 +143,10 @@ Last updated: 2026-10-07
   active user-record migration. Fresh stock items get converted fields;
   older personal copies may retain their pre-conversion data.
   The user approved the imported activation presentation in the current test
-  package; this does not establish edit/save/reopen or deletion results.
-  Next native check: on a test copy of Accolade Robe, edit Review's Effect,
-  save/reopen and inspect the displayed rules, then add/delete a temporary named
-  activation while checking that Extra Credit remains intact. Report native
-  redraw/persistence symptoms separately.
+  package, then reported "all good" for editing Review's Effect on a test copy
+  of Accolade Robe, save/reopen/displayed rules, adding/deleting a temporary
+  named activation, and preservation of Extra Credit. Those checks are passed;
+  do not repeat them without a new regression.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in
@@ -257,23 +258,35 @@ Last updated: 2026-10-07
   the user aborted the attempted workaround; app picker behavior is deferred
   to another chat.
   This feedback does not confirm the earlier hotfix or a new app version.
-- Native testing: user tests on Mac, Encounter+ 5.0.8 (4530). The user performs
+- Native testing: user tests on Mac, Encounter+ 5.0.9 (4536), confirmed from
+  installed-app metadata on 2026-10-07. The user performs
   all further app tests; do not run agent UI automation or visual app inspection.
   Analyze an attached image/recording only when explicitly requested.
-- Native testing resumed by the user on 2026-10-05 despite the hotfix still
+- App update confirmed on 2026-10-07: the user reports the app was updated and
+  all save-issue bugs are fixed. Record text persistence as user-confirmed
+  fixed after the update; no agent app testing was performed. The statement
+  does not separately establish nested Duration conditional expansion or
+  Recall Knowledge checkmark/display refresh; those remain focused checks.
+  Binding review: retain the current Immunities/Weaknesses/Resistances forms.
+  Their list sections still bind to `data.immunityEditor.entries`,
+  `data.weaknessEntries`, and `data.resistanceEntries`; row controls remain
+  relative to their own entry. Only the outer page's extra object/list scope
+  was removed. Resolved storage paths are preserved and guarded by the existing
+  regression suite; no technical reason to restore that extra scope was found.
+  No source/package change is required by this app update.
+- Earlier resumption: native testing resumed by the user on 2026-10-05 despite the hotfix still
   being unavailable. Read-only installed-app metadata still reports 5.0.8
   (4530). Continue the remaining functional verification, documenting known
   selection/redraw/text-save issues separately from content and storage-path
-  regressions. Do not assume any native bug is fixed. No agent app automation.
-  Next focused test: item primary/additional activation independence, rendered
-  text, save/reopen, and named-entry deletion. Item layout approval alone did
-  not establish those individual outcomes; avoid repeating approved creature
+  regressions. The 2026-10-07 update above supersedes the save-issue status.
+  No agent app automation. Named activation checks now pass as recorded above;
+  primary activation editing remains pending. Avoid repeating approved creature
   layout/refresh tests.
 - Earlier pause: native testing stopped by the user on 2026-10-04. The user relays that the
   Encounter+ developer confirmed these issues are a bug introduced by the
   recent app update and expects a hotfix later on 2026-10-04. This is a reported
   upstream diagnosis/plan, not confirmation that a fix is released or passes.
-  The user has now resumed without the hotfix; do not schedule monitoring
+  The user subsequently resumed and installed the app update; do not schedule monitoring
   automatically. Package completed system
   changes under the newer standing user instruction above.
   Preserve all existing passes, source checks, and failed-case reproduction.
@@ -300,14 +313,15 @@ Last updated: 2026-10-07
   throughout the forms and guards the shared movement/activation/recall paths.
   Skills/Immunities, creature Weaknesses/Resistances, and creature Speed are native-confirmed;
   other extensions need user spot checks.
-- Separate text-edit persistence issue: small name edits and selecting existing
+- Separate text-edit persistence issue, fixed after the app update according to
+  the user's 2026-10-07 report. Earlier reproduction: small name edits and selecting existing
   text then pasting a replacement can fail to save. The user reproduced the
   single-character saving failure in official D&D as well. Clearing the text
   first, then pasting, works even if the final name differs by one letter;
   there is no demonstrated minimum edit-size rule. Waiting/focus changes and
   a larger textArea control did not help. Keep normal name controls. This issue
-  is not claimed fixed by the refresh repair; retain the confirmed workaround
-  unless a new user test establishes otherwise.
+  was not fixed by the system refresh repair. The workaround is retained here
+  as historical reproduction; it is no longer required by the latest user result.
 - Creature editor: lossless structured controls expose special senses, inventory
   item references/quantities, immunity references/custom text, rituals, named
   Lore inside Skills, and Recall Knowledge subject/skill pairs. Language and
@@ -323,7 +337,7 @@ Last updated: 2026-10-07
   values persist and render in the stat block, and context-menu deletion
   redraws immediately and remains deleted after saving/reopening.
   Creature Speed also passes: Walk/Fly editing, immediate summary updates,
-  save/reopen, and stat-block rendering. Recall Knowledge deletion works, but
+  save/reopen, and stat-block rendering. Before the app update, Recall Knowledge deletion worked, but
   subject/skill picker checkmarks appear only after leaving/re-entering Recall
   Knowledge, so selection feedback fails. Its entry controls correctly use the
   row-relative `subject` / `skills` paths, a standard pattern also used by 5e
@@ -350,7 +364,7 @@ Last updated: 2026-10-07
   of the installed loader established support for that unit-only descriptor.
   Sustained durations supply a maximum timer, not automatic Sustain. The 308
   map-area templates remain intact; deferred upstream conversion is unchanged.
-- Duration regression, latest native result: the user confirms readable spell
+- Duration regression, latest specific native result before the app update: the user confirms readable spell
   and status-effect duration names after restoring explicit option maps; the
   other requested duration checks pass (save/reopen and preview). Only Spell
   Time still requires leaving/reopening before value/unit controls appear.
@@ -413,7 +427,7 @@ Last updated: 2026-10-07
   route and all existing duration behavior. Focused and canonical checks pass
   (83 definitions, nine validators). The rebuilt archive adds only the new
   partial and changes `forms/spell.json`; every other entry is identical.
-  Latest user result: it still requires leaving/re-entering to reveal Time
+  Last result before the app update: it still requires leaving/re-entering to reveal Time
   controls. A partial reference does not avoid the missed redraw. Do not repeat
   this candidate or claim that the dedicated page now works. The main-page
   diagnostic remains the only confirmed immediate Time expansion.
@@ -449,11 +463,11 @@ Last updated: 2026-10-07
   manual persists and behaves correctly, although its preview was stale before
   the display/refresh changes. Distinct caster/source assignment remains untested.
 
-- When the user installs the app hotfix: record the new app version /
-  build, then retest the previously failing cases first: nested Duration Time
-  expansion, Recall Knowledge selection checkmarks/displayed values, and small
-  text edits / selected-text paste persistence. Do not assume the hotfix resolves
-  them until the user verifies. Meanwhile continue item activation and details,
+- After the confirmed 5.0.9 (4536) update: save issues are user-confirmed fixed.
+  Check the two separately unconfirmed refresh cases: nested Duration Time
+  expansion and Recall Knowledge selection checkmarks/displayed values.
+  Do not infer those outcomes from the save-issue report. Continue primary item
+  activation and additional details,
   spell casting/details/map-template functionality, and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
