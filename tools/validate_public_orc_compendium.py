@@ -322,8 +322,10 @@ def main() -> int:
         data = deity.get("data", {})
         if not data.get("rulesText"):
             errors.append(f"incomplete mechanical deity record: {deity.get('name')}")
-        if deity.get("descr") != data.get("rulesText"):
-            errors.append(f"deity mechanics are not exposed in the original description field: {deity.get('name')}")
+        if deity.get("descr"):
+            errors.append(f"deity import description duplicates structured mechanics: {deity.get('name')}")
+        if not isinstance(data.get("deityReferences"), dict) or not isinstance(data.get("deityReferenceKeys"), dict):
+            errors.append(f"deity live display lacks preserved references: {deity.get('name')}")
 
     create_undead = next(
         (ritual for ritual in by_kind.get("Ritual", []) if ritual.get("name") == "Create Undead"),

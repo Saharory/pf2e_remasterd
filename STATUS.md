@@ -29,13 +29,13 @@ Last updated: 2026-10-07
   their native item-preview rendering repair, native item variant display,
   corrected category visibility syntax, spell description metadata cleanup,
   restored native scalar-list controls for hazards/vehicles/deities,
-  and live deity metadata/description previews.
+  and live deity previews with clean imported Description and joined table lists.
   Archive inspection/CRC/checksums pass; all 200 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `f56dd549ad6adf19d3fa3579c2557e71f2d421657fc489854aec546ff491b90c`.
+  SHA-256: `e21cf70b14753bf3561271f58bca58ee8cd741244d51f1cf53bf937abfd795c3`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -155,6 +155,13 @@ Last updated: 2026-10-07
   so structured edits could not update it; HTML rendered current fields but
   ignored custom Description. Both now render current deity mechanics and show
   custom descriptions when they differ from the original import summary.
+  Latest native feedback found the summary still present inside Description,
+  and table values/separators stacked because each value passed through `md`
+  separately. The converter now clears Description only when it exactly equals
+  the import summary; all 420 stock descriptions are empty, and custom text is
+  preserved. HTML table cells render the joined values through one Markdown
+  block, keeping links and separators on the same paragraph. Native retest of
+  these two repairs remains pending; do not mark the deity test passed yet.
   Native uses the new `deity-stats.md` partial; HTML retains its existing table.
   `tools/deity_editor_data.py` derives per-value reference caches from the
   existing linked summary. Views use a cached link only when the live value
@@ -168,12 +175,18 @@ Last updated: 2026-10-07
   reference caches retain their legacy native display to preserve original
   links; no active user-record migration is included. New custom deities use
   live fields and custom Description directly.
-  Five added conversion cases pass (45 total); focused editability and canonical
+  Six added conversion cases pass (46 total); focused editability and canonical
   checks pass (83 definitions, nine validators). Verified latest test package
   changes `deities.json` and the two deity views, adding only the new partial;
-  all other archived entries are identical. All 200 source files match,
+  The subsequent verified test archive changes only `deities.json` (duplicate
+  Description clearing) and `views/deity.html` (joined cell rendering); all
+  other data and files remain identical. All 200 source files match,
   CRC/checksums pass, 18,041 records remain, version is `0.9.01`. No push/release.
-  Next native test after importing: fresh copy of a deity such as Erastil,
+  Next native test after importing: create a fresh copy of a deity such as
+  Erastil. Description should start empty, and Divine Attribute/Domains/Cleric
+  Spells values should display inline with separators. Existing saved copies
+  keep their old description text; no active user-record migration is included.
+  Then
   confirm existing Edicts/Anathema inside the lists; add/edit/delete test entries
   and verify summary/display/save/reopen. Add a custom Description line and
   confirm it displays. Check original weapon/domain/spell links still open.

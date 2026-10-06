@@ -720,8 +720,8 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         data["summary"] = ""
     if isinstance(data, dict) and expected_kind == "Deity":
         data["rulesText"] = deity_rules_text(data)
-        # Keep deity mechanics in Encounter+'s original description field so
-        # they render reliably in both the detail view and editor.
+        # Preserve the linked import summary. The editor enrichment below
+        # moves its exact duplicate out of the editable description.
         result["descr"] = data["rulesText"]
 
     if expected_kind in {"Hazard", "Vehicle"}:

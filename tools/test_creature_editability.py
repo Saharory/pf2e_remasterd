@@ -919,6 +919,10 @@ def main() -> int:
     for preview in (deity_html, deity_stats):
         if "reference.value == value" not in preview or "{% else %}{{value" not in preview:
             raise SystemExit("deity reference caches override edited values without a live fallback")
+    for cell in re.findall(r"<td>(.*?)</td>", deity_html, re.S):
+        if "for value in data." in cell:
+            if cell.count("{% markdown -%}") != 1 or cell.count("{% endmarkdown %}") != 1 or "|md" in cell:
+                raise SystemExit("deity table lists must render together, not as separate Markdown paragraphs")
     item_nodes = list(form_nodes(item_editor))
     item_controls = [node for node in item_nodes if node.get("attribute")]
     required_item_attributes = {

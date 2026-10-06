@@ -353,6 +353,18 @@ class SpellMetadataTests(unittest.TestCase):
 
 
 class DeityDisplayTests(unittest.TestCase):
+    def test_import_summary_is_removed_from_editable_description_only_when_exact(self) -> None:
+        summary = "**Edicts** Help others.\n\n**Divine Font** [Heal](/spell/heal-player-core)"
+        deity = {"kind": "Deity", "descr": summary, "data": {"edicts": ["Help others."], "clericFont": ["heal"], "rulesText": summary}}
+        self.assertTrue(configure_deity_editor_data(deity))
+        self.assertEqual(deity["descr"], "")
+        self.assertEqual(deity["data"]["rulesText"], summary)
+        self.assertIn("/spell/heal-player-core", json.dumps(deity["data"]["deityReferences"]))
+        self.assertFalse(configure_deity_editor_data(deity))
+        deity["descr"] = summary + "\n\nA custom note."
+        configure_deity_editor_data(deity)
+        self.assertTrue(deity["descr"].endswith("A custom note."))
+
     def test_source_reference_cache_preserves_live_values_and_description(self) -> None:
         deity = {"kind": "Deity", "descr": "Custom text.", "data": {
             "edicts": ["Cast heal for an ally."], "clericFont": ["heal"],

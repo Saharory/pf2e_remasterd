@@ -43,7 +43,7 @@ def configure_deity_editor_data(entity: dict[str, Any]) -> bool:
     if entity.get("kind") != "Deity" or not isinstance(entity.get("data"), dict):
         return False
     data = entity["data"]
-    before = json.dumps(data, sort_keys=True)
+    before = json.dumps(entity, sort_keys=True)
     # One legacy source uses rank -> spell rather than the editor's string list.
     if isinstance(data.get("spells"), dict):
         data["spells"] = [f"{rank}: {spell}" for rank, spell in data["spells"].items()]
@@ -68,7 +68,12 @@ def configure_deity_editor_data(entity: dict[str, Any]) -> bool:
             keys[field] = [entry["value"] for entry in entries]
     data["deityReferences"] = catalog
     data["deityReferenceKeys"] = keys
-    return before != json.dumps(data, sort_keys=True)
+    # The linked import summary is reference metadata, not editable narrative.
+    # Clear only its exact duplicate; preserve any GM-authored description.
+    summary = str(data.get("rulesText") or "").strip()
+    if summary and str(entity.get("descr") or "").strip() == summary:
+        entity["descr"] = ""
+    return before != json.dumps(entity, sort_keys=True)
 
 
 def main() -> None:
