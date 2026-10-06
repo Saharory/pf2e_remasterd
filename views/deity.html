@@ -38,40 +38,44 @@
       <table class="deity-stat-table">
         <tbody>
           {% if data.areasOfConcern %}
-          <tr><th>Areas of Concern</th><td>{{data.areasOfConcern}}</td></tr>
+          <tr><th>Areas of Concern</th><td>{% if data.areasOfConcern in data.deityReferenceKeys.areasOfConcern %}{% for reference in data.deityReferences.areasOfConcern %}{% if reference.value == data.areasOfConcern %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{data.areasOfConcern|md}}{% endif %}</td></tr>
           {% endif %}
           {% if data.edicts %}
-          <tr><th>Edicts</th><td>{% for value in data.edicts %}{{value}}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
+          <tr><th>Edicts</th><td>{% for value in data.edicts %}{% if value in data.deityReferenceKeys.edicts %}{% for reference in data.deityReferences.edicts %}{% if reference.value == value %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{value|md}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
           {% endif %}
           {% if data.anathema %}
-          <tr><th>Anathema</th><td>{% for value in data.anathema %}{{value}}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
+          <tr><th>Anathema</th><td>{% for value in data.anathema %}{% if value in data.deityReferenceKeys.anathema %}{% for reference in data.deityReferences.anathema %}{% if reference.value == value %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{value|md}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
           {% endif %}
           {% if data.divineAttribute %}
-          <tr><th>Divine Attribute</th><td>{{data.divineAttribute|map: "Attribute", ", "}}</td></tr>
+          <tr><th>Divine Attribute</th><td>{% for value in data.divineAttribute %}{% if value in data.deityReferenceKeys.divineAttribute %}{% for reference in data.deityReferences.divineAttribute %}{% if reference.value == value %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{value|map: 'Attribute'|md}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
           {% endif %}
           {% if data.clericFont %}
-          <tr><th>Divine Font</th><td>{% for value in data.clericFont %}{{value}}{% if not forloop.last %}, {% endif %}{% endfor %}</td></tr>
+          <tr><th>Divine Font</th><td>{% for value in data.clericFont %}{% if value in data.deityReferenceKeys.clericFont %}{% for reference in data.deityReferences.clericFont %}{% if reference.value == value %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{value|md}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
           {% endif %}
-          {% if data.sanctificationOptions %}
-          <tr class="deity-emphasis"><th>Sanctification</th><td>{% for value in data.sanctificationOptions %}<a href="/trait/{{value}}">{{value}}</a>{% if not forloop.last %}, {% endif %}{% endfor %}</td></tr>
-          {% endif %}
+          {% if data.sanctification %}<tr class="deity-emphasis"><th>Sanctification</th><td>{{data.sanctification|map: 'Sanctification'}}</td></tr>{% else %}{% if data.sanctificationOptions %}
+          <tr class="deity-emphasis"><th>Sanctification</th><td>{% for value in data.sanctificationOptions %}{% if value in data.deityReferenceKeys.sanctificationOptions %}{% for reference in data.deityReferences.sanctificationOptions %}{% if reference.value == value %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{value|md}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
+          {% endif %}{% endif %}
           {% if data.divineSkill %}
-          <tr><th>Divine Skill</th><td>{{data.divineSkill|map: 'Skill'}}</td></tr>
+          <tr><th>Divine Skill</th><td>{% if data.divineSkill in data.deityReferenceKeys.divineSkill %}{% for reference in data.deityReferences.divineSkill %}{% if reference.value == data.divineSkill %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{data.divineSkill|map: 'Skill'|md}}{% endif %}</td></tr>
           {% endif %}
           {% if data.favoredWeapon %}
-          <tr><th>Favored Weapon</th><td>{% for value in data.favoredWeapon %}{{value}}{% if not forloop.last %}, {% endif %}{% endfor %}</td></tr>
+          <tr><th>Favored Weapon</th><td>{% for value in data.favoredWeapon %}{% if value in data.deityReferenceKeys.favoredWeapon %}{% for reference in data.deityReferences.favoredWeapon %}{% if reference.value == value %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{value|md}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
           {% endif %}
           {% if data.domains %}
-          <tr class="deity-emphasis"><th>Domains</th><td>{% for value in data.domains %}<a href="/domain/{{value}}">{{value}}</a>{% if not forloop.last %} · {% endif %}{% endfor %}</td></tr>
+          <tr class="deity-emphasis"><th>Domains</th><td>{% for value in data.domains %}{% if value in data.deityReferenceKeys.domains %}{% for reference in data.deityReferences.domains %}{% if reference.value == value %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{value|md}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
           {% endif %}
           {% if data.alternateDomains %}
-          <tr><th>Alternate Domains</th><td>{% for value in data.alternateDomains %}<a href="/domain/{{value}}">{{value}}</a>{% if not forloop.last %} · {% endif %}{% endfor %}</td></tr>
+          <tr><th>Alternate Domains</th><td>{% for value in data.alternateDomains %}{% if value in data.deityReferenceKeys.alternateDomains %}{% for reference in data.deityReferences.alternateDomains %}{% if reference.value == value %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{value|md}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
           {% endif %}
           {% if data.spells %}
-          <tr class="deity-emphasis"><th>Cleric Spells</th><td>{% for value in data.spells %}{{value}}{% if not forloop.last %} · {% endif %}{% endfor %}</td></tr>
+          <tr class="deity-emphasis"><th>Cleric Spells</th><td>{% for value in data.spells %}{% if value in data.deityReferenceKeys.spells %}{% for reference in data.deityReferences.spells %}{% if reference.value == value %}{{reference.text|md}}{% endif %}{% endfor %}{% else %}{{value|md}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}</td></tr>
           {% endif %}
         </tbody>
       </table>
+
+      {% if descr and descr != data.rulesText %}
+      <section class="core-section">{{descr|md}}</section>
+      {% endif %}
 
       {% if notes %}
       <section class="core-section">

@@ -17,7 +17,9 @@ removing the outer form scope does not leave structured entries unbound.
 Separate regression found on 2026-10-07: hazard/vehicle immunities and deity
 lists contain plain strings, so the record-section wrapper hides their entries.
 These ten scalar lists now use native field-level list controls again, with
-unchanged saved paths/data; native retest is pending. Structured creature
+unchanged saved paths/data. The user confirms hazard/vehicle population,
+editing/deletion, display and save/reopen pass; deity list testing is pending.
+Structured creature
 immunity/weakness/resistance controls remain unchanged. This is a system
 workaround regression, separate from the app save/refresh bugs resolved above.
 

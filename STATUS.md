@@ -28,19 +28,20 @@ Last updated: 2026-10-07
   activation field conversion below, plus imported Craft Requirements and
   their native item-preview rendering repair, native item variant display,
   corrected category visibility syntax, spell description metadata cleanup,
-  and restored native scalar-list controls for hazards/vehicles/deities.
-  Archive inspection/CRC/checksums pass; all 199 packaged source files match
+  restored native scalar-list controls for hazards/vehicles/deities,
+  and live deity metadata/description previews.
+  Archive inspection/CRC/checksums pass; all 200 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `478a7e26feb564284be69e475706291e67596d31d35982d39eee3848445bbdc4`.
+  SHA-256: `f56dd549ad6adf19d3fa3579c2557e71f2d421657fc489854aec546ff491b90c`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
   main and test archives were identical at that point; archive CRC and
   checksums passed. The newer activation/crafting, variant rendering, category,
-  spell metadata, and scalar-list fixes are only in
+  spell metadata, scalar-list, and deity display fixes are only in
   the test package, not this main distribution or the previous branch push.
   Version remains `0.9.01`. Distribution artifacts are ignored
   by Git; the branch push carries source changes and documentation.
@@ -149,17 +150,36 @@ Last updated: 2026-10-07
   No agent app automation is authorized. The user selected creatures next,
   ahead of shared abilities. The shared ability editor is now implemented as
   described below.
-- Deity native display issue identified during verification preparation on
-  2026-10-07: `views/deity.json` renders only `descr`, which stock imports set
-  equal to the static linked `data.rulesText` summary. Structured Edicts /
-  Anathema edits therefore do not feed the native preview. HTML reads current
-  structured fields, but does not render the editable description. Repair and
-  native deity-list testing remain open; preserve original reference links and
-  custom description when repairing. This is a source finding, not a user
-  native failure report. No deity display change made yet; scalar-list controls
-  are repaired separately below.
-- Scalar-list regression: source repair complete on 2026-10-07; native retest
-  pending. The user reports imported immunities visible in the parent summary
+- Deity display repair: source complete on 2026-10-07; native confirmation
+  pending. Native preview previously rendered the imported `descr` snapshot,
+  so structured edits could not update it; HTML rendered current fields but
+  ignored custom Description. Both now render current deity mechanics and show
+  custom descriptions when they differ from the original import summary.
+  Native uses the new `deity-stats.md` partial; HTML retains its existing table.
+  `tools/deity_editor_data.py` derives per-value reference caches from the
+  existing linked summary. Views use a cached link only when the live value
+  matches and render edited/new values directly, avoiding stale rules. All 420
+  stock deities in four collections are enriched by the shared full-builder /
+  post-link pass; IDs, licensing, description snapshots, and original fields
+  remain unchanged except The Tides of Chaos's legacy cleric-spell dictionary,
+  converted to a string list preserving each rank and spell. All 4,428 original
+  reference occurrences retain their routes; comparison finds no metadata-word
+  loss. Controls and saved paths are unchanged. Older personal copies without
+  reference caches retain their legacy native display to preserve original
+  links; no active user-record migration is included. New custom deities use
+  live fields and custom Description directly.
+  Five added conversion cases pass (45 total); focused editability and canonical
+  checks pass (83 definitions, nine validators). Verified latest test package
+  changes `deities.json` and the two deity views, adding only the new partial;
+  all other archived entries are identical. All 200 source files match,
+  CRC/checksums pass, 18,041 records remain, version is `0.9.01`. No push/release.
+  Next native test after importing: fresh copy of a deity such as Erastil,
+  confirm existing Edicts/Anathema inside the lists; add/edit/delete test entries
+  and verify summary/display/save/reopen. Add a custom Description line and
+  confirm it displays. Check original weapon/domain/spell links still open.
+  Also check The Tides of Chaos's Cleric Spells shows its three ranked entries.
+- Scalar-list regression: source repair complete on 2026-10-07; the hazard /
+  vehicle native retest passes (user: "all good"). The user reported imported immunities visible in the parent summary
   but an empty inner list before editing. Published hazard/vehicle data is
   present and contains plain strings (21 populated hazards / 62 vehicles).
   The earlier refresh workaround incorrectly treated scalar text lists as
@@ -175,11 +195,9 @@ Last updated: 2026-10-07
   The verified package changes only `forms/hazard.json`, `forms/vehicle.json`,
   and `forms/deity.json`; all 18,041 records and other packaged files are
   identical. CRC/checksums pass, version stays `0.9.01`, no push/publication.
-  Next native check after importing: open the same hazard/vehicle records and
-  confirm their existing immunities appear internally. On test copies add/edit/
-  delete a value, checking summary/display and save/reopen. Deity scalar-list
-  population/editing also needs a spot check; its separate static preview issue
-  remains open.
+  The user confirms existing hazard/vehicle immunities populate internally,
+  add/edit/delete updates summary/display, and changes/deletion persist through
+  save/reopen. Deity scalar lists remain covered by the next deity test above.
 - Named item activation rendering: source repair completed on 2026-10-05;
   imported named-entry editing/rendering, save/reopen, and deletion passed on
   2026-10-07. Inspection before the activation test found
@@ -640,13 +658,12 @@ Last updated: 2026-10-07
   No-token map placement/loading/removal with stock/fractional geometry passes.
   Distinct caster/source and target-relative expiry also pass.
   New custom spell manual loading also passes.
-  Next focused test: retest the scalar-list repair on the same hazard/vehicle
-  records. Confirm existing immunities populate the inner list, then on copies
-  add/edit/remove an entry; verify list/summary updates, displayed mechanics,
-  and save/reopen including deletion. Continue
+  Hazard/vehicle immunity population/add/edit/delete/display/save also passes.
+  Next focused test: the deity display/list/description/reference checks above.
+  Continue
   empty-item category field visibility,
-  the deity native-display repair and representative deity list. Verify redraw and
-  save/reopen; source checks alone do not establish native passes. Remaining
+  with any remaining deity results. Verify redraw and save/reopen; source checks
+  alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
   ritual links and creature spell links. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.

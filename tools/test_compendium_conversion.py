@@ -20,6 +20,7 @@ from package_public_release import clear_owned_output
 from item_editor_data import configure_item_editor_data, parse_item_activations
 from creature_editor_data import render_ability_editor_fields
 from spell_editor_data import configure_spell_editor_data
+from deity_editor_data import configure_deity_editor_data, linked_value, LINK as DEITY_LINK
 
 
 class FoundryMarkupTests(unittest.TestCase):
@@ -349,6 +350,54 @@ class SpellMetadataTests(unittest.TestCase):
                 self.assertNotIn(f"**{label}**", spell["descr"])
             self.assertIn("**Heightened (+1)**", spell["descr"])
             self.assertFalse(configure_spell_editor_data(deepcopy(spell)))
+
+
+class DeityDisplayTests(unittest.TestCase):
+    def test_source_reference_cache_preserves_live_values_and_description(self) -> None:
+        deity = {"kind": "Deity", "descr": "Custom text.", "data": {
+            "edicts": ["Cast heal for an ally."], "clericFont": ["heal"],
+            "rulesText": "**Edicts** Cast [heal](/spell/heal-player-core) for an ally.\n\n**Divine Font** [Heal](/spell/heal-player-core)"}}
+        before = deepcopy(deity)
+        self.assertTrue(configure_deity_editor_data(deity))
+        self.assertEqual(deity["descr"], before["descr"])
+        self.assertEqual(deity["data"]["edicts"], before["data"]["edicts"])
+        self.assertEqual(deity["data"]["deityReferenceKeys"]["clericFont"], ["heal"])
+        self.assertEqual(deity["data"]["deityReferences"]["edicts"][0]["text"], "Cast [heal](</spell/heal-player-core>) for an ally.")
+        converted = deepcopy(deity)
+        self.assertFalse(configure_deity_editor_data(deity))
+        self.assertEqual(deity, converted)
+
+    def test_reference_cache_cannot_match_changed_or_removed_values(self) -> None:
+        deity = {"kind": "Deity", "data": {"clericFont": ["heal"], "rulesText": "**Divine Font** [Heal](/spell/heal-player-core)"}}
+        configure_deity_editor_data(deity)
+        deity["data"]["clericFont"] = ["New custom value"]
+        self.assertNotIn(deity["data"]["clericFont"][0], deity["data"]["deityReferenceKeys"]["clericFont"])
+        deity["data"]["clericFont"] = []
+        self.assertFalse(deity["data"]["clericFont"])
+
+    def test_existing_markdown_and_overlapping_labels_are_not_corrupted(self) -> None:
+        text = "[heal](/spell/heal-player-core) or harm"
+        self.assertEqual(linked_value(text, [("heal", "/other")]), text)
+        self.assertEqual(linked_value("Air Walk and air", [("Air", "/domain/air"), ("Air Walk", "/spell/air-walk")]), "[Air Walk](</spell/air-walk>) and [air](</domain/air>)")
+
+    def test_legacy_spell_rank_dictionary_is_losslessly_editable(self) -> None:
+        deity = {"kind": "Deity", "data": {"spells": {"1": "Ill Omen", "5": "Subconscious Suggestion"}}}
+        configure_deity_editor_data(deity)
+        self.assertEqual(deity["data"]["spells"], ["1: Ill Omen", "5: Subconscious Suggestion"])
+        self.assertFalse(configure_deity_editor_data(deity))
+
+    def test_all_published_original_deity_reference_routes_are_preserved(self) -> None:
+        repo = Path(__file__).resolve().parents[1]
+        count = 0
+        for path in (repo / "compendium/packs").glob("*/deities.json"):
+            for deity in json.loads(path.read_text()):
+                data = deity["data"]
+                visible = {k: v for k, v in data.items() if k not in {"rulesText"}}
+                for _, route in DEITY_LINK.findall(data["rulesText"]):
+                    self.assertIn(route.strip("<>"), json.dumps(visible), deity["name"])
+                    count += 1
+                self.assertIsInstance(data["spells"], list, deity["name"])
+        self.assertGreater(count, 4000)
 
 
 class ReleaseOutputTests(unittest.TestCase):

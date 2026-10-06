@@ -903,6 +903,22 @@ def main() -> int:
     item_editor = form("item.json")
     if re.search(r"{%\s*elsif\b", json.dumps(item_editor)):
         raise SystemExit("item category visibility uses unsupported elsif syntax")
+    deity_native = (REPO / "views/deity.json").read_text()
+    deity_html = (REPO / "views/deity.html").read_text()
+    deity_stats = (REPO / "views/partials/deity-stats.md").read_text()
+    if "deity-stats.md" not in deity_native:
+        raise SystemExit("native deity preview does not render current editable fields")
+    for field in ("areasOfConcern", "edicts", "anathema", "divineAttribute", "clericFont",
+                  "sanctification", "sanctificationOptions", "divineSkill", "favoredWeapon",
+                  "domains", "alternateDomains", "spells"):
+        if f"data.{field}" not in deity_stats or f"data.{field}" not in deity_html:
+            raise SystemExit(f"deity previews omit current {field}")
+    for preview in (deity_html, deity_native):
+        if "descr != data.rulesText" not in preview:
+            raise SystemExit("deity previews lose custom descriptions or duplicate the import summary")
+    for preview in (deity_html, deity_stats):
+        if "reference.value == value" not in preview or "{% else %}{{value" not in preview:
+            raise SystemExit("deity reference caches override edited values without a live fallback")
     item_nodes = list(form_nodes(item_editor))
     item_controls = [node for node in item_nodes if node.get("attribute")]
     required_item_attributes = {
