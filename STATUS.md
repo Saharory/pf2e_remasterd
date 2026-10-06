@@ -5,7 +5,8 @@ Last updated: 2026-10-07
 - The previously reported **Trade Death for Life** and **Tree of Life and
   Death** import issues were investigated here on 2026-10-07 after the user
   clarified that structured spell metadata remained in descriptions. The
-  shared import repair below is source-complete; native confirmation pending.
+  shared import repair below is source-complete; the user approved its native
+  presentation on 2026-10-07. Subsequent field-edit verification remains pending.
 - Branch: `remaster-community-base`
 - Package version: `0.9.01`. The user authorized pushing the completed editor
   work and replacing the main dist package on 2026-10-05. Version changes,
@@ -49,7 +50,7 @@ Last updated: 2026-10-07
   Revalidated on 2026-10-07 with the repaired virtualenv and bundled Node via
   `../tools/project-env python tools/eplus_dev.py check --json`.
 - Spell description metadata: source repair complete on 2026-10-07; native
-  confirmation pending. Audit found 503 spells with leading metadata for fields
+  presentation approved (user: "yea all looks good"). Audit found 503 spells with leading metadata for fields
   already offered in the editor. `tools/spell_editor_data.py` repairs 479 across
   13 ORC/OGL collections, removing represented leading headers and populating
   missing ordinary text fields such as Trigger/Requirements. It also preserves
@@ -74,11 +75,13 @@ Last updated: 2026-10-07
   479 of 1,404 spells change, all 18,041 records remain, every other packaged
   file is identical, CRC/checksums pass, and version remains `0.9.01`.
   No user-record migration, version change, push, or publication was performed.
-  Next native test after importing: fresh Trade Death for Life and Tree of Life
-  and Death should show mapped metadata once, with effect/heightened rules intact;
-  on a test copy, edit Range and save/reopen, verifying the displayed value
-  updates without an old description header. Fresh Blastback should have its
-  Trigger populated in Casting details. Old personal copies may retain old data.
+  The user approved the requested presentation checks: fresh Trade Death for
+  Life / Tree of Life and Death show mapped metadata once with effect rules
+  intact, and Blastback's Trigger appears in Casting details. Individual field
+  edits/save/reopen were not requested in that final test and remain pending.
+  Next check: on a test copy of Trade Death for Life, change Range, Defense,
+  and printed Duration; verify displayed values and save/reopen without old
+  description headers returning. Old personal copies may retain old data.
 - Spell editor efficiency: source complete, native verification pending.
   Type/rank/rarity/traits now share the opening group. **Casting** keeps
   variable action selection and traditions direct, with casting notes,
@@ -581,9 +584,10 @@ Last updated: 2026-10-07
   All requested item variant checks also pass.
   Item populated-property retention after category changes passes.
   Spell Casting details fill/display/save/reopen/clear also passes.
-  Next focused test: the imported spell metadata repair above. Then continue
-  spell Cast actions multiple selections and direct range/defense/printed-duration
-  edits, map-template functionality, empty-item category field visibility,
+  Imported spell metadata presentation also passes.
+  Next focused test: direct spell range/defense/printed-duration edits and
+  display/save/reopen, as specified above. Then continue spell Cast actions
+  multiple selections, map-template functionality, empty-item category field visibility,
   and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
