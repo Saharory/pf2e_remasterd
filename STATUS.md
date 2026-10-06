@@ -111,6 +111,9 @@ Last updated: 2026-10-07
   Map placement/loading also passes on 2026-10-07 with no token selected:
   stock Fireball 20-ft-radius area, Detect Magic 30-ft-radius area, and edited
   Fireball Cone / 12.5 ft all place/remove with expected geometry.
+  Newly created custom manual spell loading also passes on 2026-10-07: empty
+  Area template, Until Dispelled, save/reopen, load onto a test token, no
+  countdown, persistence through two rounds, and manual removal.
   Pending functional checks: check an older custom spell with prose in
   `data.duration`. Keep redraw, persistence, and rendered content results distinct.
 - Item editor efficiency: source complete, user approved on 2026-10-05.
@@ -145,6 +148,14 @@ Last updated: 2026-10-07
   No agent app automation is authorized. The user selected creatures next,
   ahead of shared abilities. The shared ability editor is now implemented as
   described below.
+- Deity native display issue identified during verification preparation on
+  2026-10-07: `views/deity.json` renders only `descr`, which stock imports set
+  equal to the static linked `data.rulesText` summary. Structured Edicts /
+  Anathema edits therefore do not feed the native preview. HTML reads current
+  structured fields, but does not render the editable description. Repair and
+  native deity-list testing remain open; preserve original reference links and
+  custom description when repairing. This is a source finding, not a user
+  native failure report. No deity implementation change made yet.
 - Named item activation rendering: source repair completed on 2026-10-05;
   imported named-entry editing/rendering, save/reopen, and deletion passed on
   2026-10-07. Inspection before the activation test found
@@ -602,17 +613,15 @@ Last updated: 2026-10-07
   Area-template/numeric-expiry settings and printed-field independence pass.
   No-token map placement/loading/removal with stock/fractional geometry passes.
   Distinct caster/source and target-relative expiry also pass.
-  Next focused test: create a new custom test spell without an area template,
-  set Token effect duration Until Dispelled, save/reopen and load onto a test
-  token. Confirm no countdown, persistence through two rounds, and manual
-  removal. Continue
+  New custom spell manual loading also passes.
+  Next focused test: on copies of a hazard and a vehicle, add/edit/remove an
+  Immunities entry; verify immediate list/summary updates, displayed mechanics,
+  and save/reopen including deletion. Continue
   empty-item category field visibility,
-  and a representative deity /
-  hazard/vehicle list. Verify redraw and
+  the deity native-display repair and representative deity list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
-  ritual links, creature spell links, custom
-  manual spell loading. Avoid repeating confirmed
+  ritual links and creature spell links. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
   compatibility before releases. See `ROADMAP.md` for product decisions.
