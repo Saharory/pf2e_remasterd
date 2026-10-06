@@ -1,6 +1,6 @@
 # Current status
 
-Last updated: 2026-10-06
+Last updated: 2026-10-07
 
 - Follow-up in a separate chat: the user reported import bugs in **TRADE
   DEATH FOR LIFE** and **TREE OF LIFE AND DEATH** on 2026-10-05. Details and
@@ -112,7 +112,8 @@ Last updated: 2026-10-06
   Known app redraw/save symptoms remain separate and unresolved. This repair is
   committed locally only; no push or release publication was performed.
 - Imported item activation conversion: source complete on 2026-10-06;
-  native verification pending. The user confirms that the complaint concerns
+  native presentation approved on 2026-10-07 (user: "looks good"). Editing,
+  save/reopen, and deletion remain pending. The user confirms that the complaint concerns
   existing imported text, not new editor input. Audit found 2,661 items mention
   Activate in general `descr`, with no structured activation data. The new
   deterministic `tools/item_editor_data.py` pass recognizes explicit headings
@@ -139,10 +140,12 @@ Last updated: 2026-10-06
   all 18,041 records remain. Version stays `0.9.01`; no push/publication or
   active user-record migration. Fresh stock items get converted fields;
   older personal copies may retain their pre-conversion data.
-  Next native checks after importing: fresh Antler Arrow → Primary activation
-  shows one action/manipulate while general rules remain; fresh Accolade Robe
-  → Additional activations shows Review/Extra Credit with their rules. Check
-  save/reopen/rendering and report native redraw/persistence separately.
+  The user approved the imported activation presentation in the current test
+  package; this does not establish edit/save/reopen or deletion results.
+  Next native check: on a test copy of Accolade Robe, edit Review's Effect,
+  save/reopen and inspect the displayed rules, then add/delete a temporary named
+  activation while checking that Extra Credit remains intact. Report native
+  redraw/persistence symptoms separately.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in
