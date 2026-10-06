@@ -102,8 +102,10 @@ Last updated: 2026-10-07
   while `data.castActions` separately supplies the action selections/icons.
   Direct Range/Defense/printed Duration edits, display, and save/reopen pass on
   2026-10-07, including absence of stale description headers.
-  Pending functional checks: retain multiple cast-action selections;
-  edit template shape/fractional size and numeric token expiry independently
+  Multiple Cast actions also pass on 2026-10-07: Heal test copy retains 1/2/3
+  selections and displayed icons after save/reopen; removing one preserves the
+  remaining two after save/reopen.
+  Pending functional checks: edit template shape/fractional size and numeric token expiry independently
   and verify summaries/save/reopen; check an older custom spell with prose in
   `data.duration`. Keep redraw, persistence, and rendered content results distinct.
 - Item editor efficiency: source complete, user approved on 2026-10-05.
@@ -586,9 +588,11 @@ Last updated: 2026-10-07
   Spell Casting details fill/display/save/reopen/clear also passes.
   Imported spell metadata presentation also passes.
   Direct spell Range/Defense/printed Duration edits also pass.
-  Next focused test: on a test copy of Heal, select 1/2/3 Cast actions, verify
-  all selections/icons and save/reopen, then remove one selection and confirm
-  the remaining two persist. Continue map-template functionality, empty-item category field visibility,
+  Multiple Cast actions selections/icons/save/reopen/removal also pass.
+  Next focused test: Fireball test copy, set Area template Cone / 12.5 ft and
+  Token effect duration Time / 2 rounds; check summaries and save/reopen while
+  printed Area/Duration stay unchanged. Continue map placement/loading,
+  empty-item category field visibility,
   and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
