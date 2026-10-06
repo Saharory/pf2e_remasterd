@@ -77,10 +77,9 @@ Last updated: 2026-10-07
   No user-record migration, version change, push, or publication was performed.
   The user approved the requested presentation checks: fresh Trade Death for
   Life / Tree of Life and Death show mapped metadata once with effect rules
-  intact, and Blastback's Trigger appears in Casting details. Individual field
-  edits/save/reopen were not requested in that final test and remain pending.
-  Next check: on a test copy of Trade Death for Life, change Range, Defense,
-  and printed Duration; verify displayed values and save/reopen without old
+  intact, and Blastback's Trigger appears in Casting details. The subsequent
+  Trade Death for Life test also passes: edited Range, Defense, and printed
+  Duration display correctly and persist after save/reopen without old
   description headers returning. Old personal copies may retain old data.
 - Spell editor efficiency: source complete, native verification pending.
   Type/rank/rarity/traits now share the opening group. **Casting** keeps
@@ -101,8 +100,9 @@ Last updated: 2026-10-07
   Casting notes is the original free-text `data.cast` field, displayed as Cast;
   imports retain printed timing/action wording here (e.g. 1 minute, Two Actions),
   while `data.castActions` separately supplies the action selections/icons.
+  Direct Range/Defense/printed Duration edits, display, and save/reopen pass on
+  2026-10-07, including absence of stale description headers.
   Pending functional checks: retain multiple cast-action selections;
-  check direct range/defense/printed-duration edits;
   edit template shape/fractional size and numeric token expiry independently
   and verify summaries/save/reopen; check an older custom spell with prose in
   `data.duration`. Keep redraw, persistence, and rendered content results distinct.
@@ -585,9 +585,10 @@ Last updated: 2026-10-07
   Item populated-property retention after category changes passes.
   Spell Casting details fill/display/save/reopen/clear also passes.
   Imported spell metadata presentation also passes.
-  Next focused test: direct spell range/defense/printed-duration edits and
-  display/save/reopen, as specified above. Then continue spell Cast actions
-  multiple selections, map-template functionality, empty-item category field visibility,
+  Direct spell Range/Defense/printed Duration edits also pass.
+  Next focused test: on a test copy of Heal, select 1/2/3 Cast actions, verify
+  all selections/icons and save/reopen, then remove one selection and confirm
+  the remaining two persist. Continue map-template functionality, empty-item category field visibility,
   and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
