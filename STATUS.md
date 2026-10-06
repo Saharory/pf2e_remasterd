@@ -84,9 +84,10 @@ Last updated: 2026-10-07
   controls preserve paths, input types, defaults, and units. English/French
   labels, focused editability regression, and canonical source checks pass.
   No content, migration, stat-block, or version changes were required.
-  Pending functional checks during resumed testing: inspect new gear, armor,
-  shields, and weapons; add/edit/clear ammunition and onset, clear crafting
-  requirements, and verify summary refresh and save/reopen; edit primary
+  Additional details native tests pass on 2026-10-07: filling ammunition/onset,
+  summary/displayed text and save/reopen, then clearing both and Craft
+  Requirements and confirming they stay cleared after save/reopen.
+  Pending functional checks: inspect new gear, armor, shields, and weapons; edit primary
   activation including traits and confirm independence from named activations;
   edit variants and their level/price/bulk/crafting fields; change a category
   with populated equipment stats and ensure those values remain editable.
@@ -170,9 +171,10 @@ Last updated: 2026-10-07
   CRC/checksums pass, and all 18,041 records remain. Version stays `0.9.01`.
   The user confirms the requested fresh-item populated field, edit/save/reopen,
   and displayed-text test works after importing the rebuilt package. Do not
-  repeat that test without a new regression. Clearing the field remains pending.
+  repeat that test without a new regression. The user also confirms clearing
+  the field persists after save/reopen in the follow-up Additional details test.
   Older personal copies may retain their previous description-only data.
-  Ammunition/onset checks remain pending.
+  Ammunition/onset filling, summary/display, save/reopen, and clearing also pass.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in
@@ -495,9 +497,11 @@ Last updated: 2026-10-07
   Nested Duration Time expansion and Recall Knowledge selection checkmarks
   also pass in the user's follow-up. Do not repeat these resolved cases without
   a new regression. Craft Requirements import/edit/save/display also passes.
-  Next focused test: item Additional details, add/edit/clear ammunition and
-  onset, then clear crafting requirements; verify summary, display, and save/reopen.
-  Continue primary item activation,
+  Additional details ammunition/onset and clearing checks also pass.
+  Next focused test: on a copy of Accolade Robe, populate Primary activation
+  actions/traits/text, verify summary/display and save/reopen, then clear the
+  primary fields. Named Review/Extra Credit must remain unchanged throughout.
+  Continue item variants/category properties,
   spell casting/details/map-template functionality, and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
