@@ -31,7 +31,7 @@ Last updated: 2026-10-07
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `50db6b8d031cbf3868fa46a9cda8279ccba485af15f64a8286e0e75f6d78c373`.
+  SHA-256: `3e8047b5d3a1dededced833e8a955e7e28372d37db273e54a82f57d1ef347501`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -178,8 +178,9 @@ Last updated: 2026-10-07
   the field persists after save/reopen in the follow-up Additional details test.
   Older personal copies may retain their previous description-only data.
   Ammunition/onset filling, summary/display, save/reopen, and clearing also pass.
-- Item variant display: source repair complete on 2026-10-07; native testing
-  pending. Preparation for the next verification found native `views/item.json`
+- Item variant display: source repair complete on 2026-10-07; the user confirms
+  all six variant values display, including level zero. Save/reopen, deletion,
+  and activation independence remain pending. Preparation for the next verification found native `views/item.json`
   omitted the editable `data.types` list, while HTML already rendered it.
   The native view now uses the existing `item-type.md` partial with each variant
   as its context, matching HTML. The shared partial also preserves level zero
@@ -189,10 +190,15 @@ Last updated: 2026-10-07
   archive changes only `views/item.json` and `views/partials/item-type.md`;
   all content, forms, and stored data remain unchanged. CRC/checksums and all
   199 source files match. Version remains `0.9.01`; no push/publication.
-  Next native test after importing: add a test variant with name, level (include
-  zero), price, bulk, crafting requirements, and description; check displayed
-  text and save/reopen, then delete and confirm deletion persists. Primary and
-  named activations must remain unchanged.
+  Native feedback also identified the old shared display label "Type" instead
+  of "Variant". The shared partial now uses the existing localized
+  `Item.Variant` label (English Variant / French Variante), aligning HTML and
+  native views with the editor. No data or form binding changes. Canonical
+  checks pass; the rebuilt test archive changes only `item-type.md` from its
+  predecessor. CRC/checksums pass; all other packaged files are unchanged.
+  Next native test after importing: confirm the Variant label, save/reopen the
+  populated variant, then delete and confirm deletion persists. Primary and
+  named activations must remain unchanged. Do not repeat confirmed value display.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in
