@@ -113,6 +113,19 @@ class HazardVehicleMechanicsTests(unittest.TestCase):
             for field in fields:
                 self.assertIn(field, combined)
 
+    def test_scalar_immunities_use_native_text_list_controls(self) -> None:
+        for kind in ("hazard", "vehicle"):
+            form = json.loads((ROOT / f"forms/{kind}.json").read_text())
+            controls = [field for section in form["sections"] for field in section.get("fields", [])
+                        if field.get("attribute") == "data.immunities"]
+            self.assertEqual(len(controls), 1, kind)
+            self.assertEqual(controls[0]["type"], "list", kind)
+            self.assertNotIn("form", controls[0], kind)
+            for path in (ROOT / "compendium/packs").glob(f"*/{kind}s.json"):
+                for entity in json.loads(path.read_text()):
+                    for entry in entity.get("data", {}).get("immunities") or []:
+                        self.assertIsInstance(entry, str, entity["name"])
+
     def test_new_partials_use_balanced_supported_control_tags(self) -> None:
         for kind in ("hazard", "vehicle"):
             content = (ROOT / f"views/partials/{kind}-stats.md").read_text()

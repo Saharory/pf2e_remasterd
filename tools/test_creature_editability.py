@@ -99,16 +99,18 @@ def form_nodes(definition: dict):
 def validate_form_refresh_bindings() -> None:
     """Protect the entity-context pattern verified on Mac in Encounter+.
 
-    Entry forms still receive their list row; object subforms and implicit
-    field-level list pages must not introduce another binding scope.
+    Entry forms still receive their list row. Object lists retain explicit
+    context-preserving pages; scalar string lists use native field controls.
     """
     def walk(node: dict, role: str, location: str, row: bool, nested: bool) -> None:
         kind = node.get("type")
         attribute = node.get("attribute")
         if kind == "form" and attribute:
             raise SystemExit(f"{location}: nested form loses its parent context")
-        if role == "field" and kind == "list":
-            raise SystemExit(f"{location}: use an explicit context-preserving list page")
+        if role == "field" and kind == "list" and node.get("form"):
+            raise SystemExit(f"{location}: object lists need an explicit context-preserving list page")
+        if role == "section" and kind == "list" and not node.get("form"):
+            raise SystemExit(f"{location}: scalar lists need a native field-level list control")
         if kind == "form" and not node.get("text"):
             raise SystemExit(f"{location}: context-preserving form needs an explicit summary")
         if nested and not row and attribute and not attribute.startswith("data."):

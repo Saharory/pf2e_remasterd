@@ -27,19 +27,20 @@ Last updated: 2026-10-07
   It now also includes the named item activation rendering repair and imported
   activation field conversion below, plus imported Craft Requirements and
   their native item-preview rendering repair, native item variant display,
-  corrected category visibility syntax, and spell description metadata cleanup.
+  corrected category visibility syntax, spell description metadata cleanup,
+  and restored native scalar-list controls for hazards/vehicles/deities.
   Archive inspection/CRC/checksums pass; all 199 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `dab475384f29c40f3c4fabc73a9adff68b7321bb7ba36c8542e89e25c14db365`.
+  SHA-256: `478a7e26feb564284be69e475706291e67596d31d35982d39eee3848445bbdc4`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
   main and test archives were identical at that point; archive CRC and
   checksums passed. The newer activation/crafting, variant rendering, category,
-  and spell metadata fixes are only in
+  spell metadata, and scalar-list fixes are only in
   the test package, not this main distribution or the previous branch push.
   Version remains `0.9.01`. Distribution artifacts are ignored
   by Git; the branch push carries source changes and documentation.
@@ -155,7 +156,30 @@ Last updated: 2026-10-07
   structured fields, but does not render the editable description. Repair and
   native deity-list testing remain open; preserve original reference links and
   custom description when repairing. This is a source finding, not a user
-  native failure report. No deity implementation change made yet.
+  native failure report. No deity display change made yet; scalar-list controls
+  are repaired separately below.
+- Scalar-list regression: source repair complete on 2026-10-07; native retest
+  pending. The user reports imported immunities visible in the parent summary
+  but an empty inner list before editing. Published hazard/vehicle data is
+  present and contains plain strings (21 populated hazards / 62 vehicles).
+  The earlier refresh workaround incorrectly treated scalar text lists as
+  record-list sections. Restore native field-level `type: list` controls at
+  `data.immunities` for hazards/vehicles and the eight analogous deity lists.
+  This matches the upstream PF2E scalar-list pattern; structured creature
+  immunity/weakness/resistance lists retain their working form/row controls.
+  All stored control paths and imported records remain unchanged; no migration
+  is needed. The maintained refresh guard now distinguishes scalar fields from
+  record sections and rejects bare scalar section lists. Hazard/vehicle tests
+  verify native control shape against published string entries. Focused checks
+  and the canonical check pass (83 definitions, nine validators).
+  The verified package changes only `forms/hazard.json`, `forms/vehicle.json`,
+  and `forms/deity.json`; all 18,041 records and other packaged files are
+  identical. CRC/checksums pass, version stays `0.9.01`, no push/publication.
+  Next native check after importing: open the same hazard/vehicle records and
+  confirm their existing immunities appear internally. On test copies add/edit/
+  delete a value, checking summary/display and save/reopen. Deity scalar-list
+  population/editing also needs a spot check; its separate static preview issue
+  remains open.
 - Named item activation rendering: source repair completed on 2026-10-05;
   imported named-entry editing/rendering, save/reopen, and deletion passed on
   2026-10-07. Inspection before the activation test found
@@ -397,7 +421,7 @@ Last updated: 2026-10-07
   immediately reveals value/unit controls, and Recall Knowledge selection
   checkmarks appear immediately. The previously reported save/refresh bugs are
   now resolved in the user's native tests.
-  Binding review: retain the current Immunities/Weaknesses/Resistances forms.
+  Binding review: retain the current creature Immunities/Weaknesses/Resistances forms.
   Their list sections still bind to `data.immunityEditor.entries`,
   `data.weaknessEntries`, and `data.resistanceEntries`; row controls remain
   relative to their own entry. Only the outer page's extra object/list scope
@@ -430,11 +454,13 @@ Last updated: 2026-10-07
   the full entity paths. The user confirms that candidate works and explicitly
   requested applying it throughout the system. Treat that as confirmation of
   the tested redraw behavior, not proof of the app's internal cause.
-- System-wide application: all 22 nested form pages now retain the parent
+- Earlier system-wide application: 22 nested form pages retained the parent
   context. Movement (Ancestry, Character, Creature), Recall Knowledge, and item
   activation use fully qualified paths. Field-level list pages for creature
-  senses/weaknesses/resistances, deity lists, and hazard/vehicle immunities now
-  use explicit form wrappers with root-bound list sections. Skills/Immunities
+  senses/weaknesses/resistances retain explicit form wrappers with root-bound
+  record-list sections. Deity lists and hazard/vehicle immunities were also
+  wrapped then, but their scalar-list wrappers are now reverted after the
+  user-reported empty-inner-list regression above. Skills/Immunities
   retain the confirmed repair; spell Area/Duration already used root context.
   Entry forms remain relative to their own list row, including references and
   quantities. A before/after traversal verified that every resolved storage
@@ -614,8 +640,9 @@ Last updated: 2026-10-07
   No-token map placement/loading/removal with stock/fractional geometry passes.
   Distinct caster/source and target-relative expiry also pass.
   New custom spell manual loading also passes.
-  Next focused test: on copies of a hazard and a vehicle, add/edit/remove an
-  Immunities entry; verify immediate list/summary updates, displayed mechanics,
+  Next focused test: retest the scalar-list repair on the same hazard/vehicle
+  records. Confirm existing immunities populate the inner list, then on copies
+  add/edit/remove an entry; verify list/summary updates, displayed mechanics,
   and save/reopen including deletion. Continue
   empty-item category field visibility,
   the deity native-display repair and representative deity list. Verify redraw and

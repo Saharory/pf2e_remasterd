@@ -13,8 +13,13 @@ confirmed immediate nested Duration Time expansion and Recall Knowledge
 selection checkmarks. The reported save/refresh failures are resolved in these
 native tests. Retain the reproduction below as historical evidence.
 The current explicit list bindings preserve the original storage paths;
-removing the outer form scope does not leave entries unbound. No restoration
-of that extra scope is recommended without a demonstrated regression.
+removing the outer form scope does not leave structured entries unbound.
+Separate regression found on 2026-10-07: hazard/vehicle immunities and deity
+lists contain plain strings, so the record-section wrapper hides their entries.
+These ten scalar lists now use native field-level list controls again, with
+unchanged saved paths/data; native retest is pending. Structured creature
+immunity/weakness/resistance controls remain unchanged. This is a system
+workaround regression, separate from the app save/refresh bugs resolved above.
 
 Status on 2026-10-04: the user stopped native testing after the Encounter+
 developer confirmed a bug introduced by the recent app update, with a hotfix

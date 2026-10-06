@@ -6,127 +6,15 @@
       { "title": "Common.Sanctification", "type": "picker", "attribute": "data.sanctification", "attributeType": "Sanctification" },
       { "title": "Common.Traits", "type": "tags", "attribute": "data.traits", "attributeType": "Trait" },
       { "title": "Areas of Concern", "attribute": "data.areasOfConcern" },
-      {
-        "title": "Edicts",
-        "type": "form",
-        "text": "{% if data.edicts %}{{data.edicts|join: ', '}}{% else %}{{'Common.None'|l}}{% endif %}",
-        "form": {
-          "title": "Edicts",
-          "sections": [
-            {
-              "title": "Edicts",
-              "type": "list",
-              "attribute": "data.edicts"
-            }
-          ]
-        }
-      },
-      {
-        "title": "Anathema",
-        "type": "form",
-        "text": "{% if data.anathema %}{{data.anathema|join: ', '}}{% else %}{{'Common.None'|l}}{% endif %}",
-        "form": {
-          "title": "Anathema",
-          "sections": [
-            {
-              "title": "Anathema",
-              "type": "list",
-              "attribute": "data.anathema"
-            }
-          ]
-        }
-      },
-      {
-        "title": "Divine Attribute",
-        "type": "form",
-        "text": "{% if data.divineAttribute %}{{data.divineAttribute|join: ', '}}{% else %}{{'Common.None'|l}}{% endif %}",
-        "form": {
-          "title": "Divine Attribute",
-          "sections": [
-            {
-              "title": "Divine Attribute",
-              "type": "list",
-              "attribute": "data.divineAttribute"
-            }
-          ]
-        }
-      },
-      {
-        "title": "Divine Font",
-        "type": "form",
-        "text": "{% if data.clericFont %}{{data.clericFont|join: ', '}}{% else %}{{'Common.None'|l}}{% endif %}",
-        "form": {
-          "title": "Divine Font",
-          "sections": [
-            {
-              "title": "Divine Font",
-              "type": "list",
-              "attribute": "data.clericFont"
-            }
-          ]
-        }
-      },
+      { "title": "Edicts", "type": "list", "attribute": "data.edicts" },
+      { "title": "Anathema", "type": "list", "attribute": "data.anathema" },
+      { "title": "Divine Attribute", "type": "list", "attribute": "data.divineAttribute" },
+      { "title": "Divine Font", "type": "list", "attribute": "data.clericFont" },
       { "title": "Divine Skill", "attribute": "data.divineSkill" },
-      {
-        "title": "Favored Weapon",
-        "type": "form",
-        "text": "{% if data.favoredWeapon %}{{data.favoredWeapon|join: ', '}}{% else %}{{'Common.None'|l}}{% endif %}",
-        "form": {
-          "title": "Favored Weapon",
-          "sections": [
-            {
-              "title": "Favored Weapon",
-              "type": "list",
-              "attribute": "data.favoredWeapon"
-            }
-          ]
-        }
-      },
-      {
-        "title": "Domains",
-        "type": "form",
-        "text": "{% if data.domains %}{{data.domains|join: ', '}}{% else %}{{'Common.None'|l}}{% endif %}",
-        "form": {
-          "title": "Domains",
-          "sections": [
-            {
-              "title": "Domains",
-              "type": "list",
-              "attribute": "data.domains"
-            }
-          ]
-        }
-      },
-      {
-        "title": "Alternate Domains",
-        "type": "form",
-        "text": "{% if data.alternateDomains %}{{data.alternateDomains|join: ', '}}{% else %}{{'Common.None'|l}}{% endif %}",
-        "form": {
-          "title": "Alternate Domains",
-          "sections": [
-            {
-              "title": "Alternate Domains",
-              "type": "list",
-              "attribute": "data.alternateDomains"
-            }
-          ]
-        }
-      },
-      {
-        "title": "Cleric Spells",
-        "type": "form",
-        "text": "{% if data.spells %}{{data.spells|join: ', '}}{% else %}{{'Common.None'|l}}{% endif %}",
-        "form": {
-          "title": "Cleric Spells",
-          "sections": [
-            {
-              "title": "Cleric Spells",
-              "type": "list",
-              "attribute": "data.spells"
-            }
-          ]
-        }
-      }
+      { "title": "Favored Weapon", "type": "list", "attribute": "data.favoredWeapon" },
+      { "title": "Domains", "type": "list", "attribute": "data.domains" },
+      { "title": "Alternate Domains", "type": "list", "attribute": "data.alternateDomains" },
+      { "title": "Cleric Spells", "type": "list", "attribute": "data.spells" }
     ] },
     { "title": "Common.Description", "type": "group", "fields": [
       { "type": "textArea", "attribute": "descr", "custom": { "lines": 10 } }

@@ -22,21 +22,7 @@
       { "title": "Break Threshold (BT)", "type": "number", "attribute": "data.hp.bt" },
       { "title": "Item.Hardness", "type": "number", "attribute": "data.hardness" },
       { "title": "SavingThrow.Fortitude", "type": "number", "attribute": "data.fortitude" },
-      {
-        "title": "Immunities",
-        "type": "form",
-        "text": "{% if data.immunities %}{{data.immunities|join: ', '}}{% else %}{{'Common.None'|l}}{% endif %}",
-        "form": {
-          "title": "Immunities",
-          "sections": [
-            {
-              "title": "Immunities",
-              "type": "list",
-              "attribute": "data.immunities"
-            }
-          ]
-        }
-      },
+      { "title": "Immunities", "type": "list", "attribute": "data.immunities" },
       { "title": "Weaknesses", "attribute": "data.weaknesses" },
       { "title": "Resistances", "attribute": "data.resistances" },
       { "title": "Collision DC", "type": "number", "attribute": "data.collisionDC" },
