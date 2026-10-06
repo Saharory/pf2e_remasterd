@@ -103,6 +103,11 @@
     },
     {
       "type": "text",
+      "value": "{% for type in data.types %}{% include 'item-type.md' type %}{% if not forloop.last %}\n\n{% endif %}{% endfor %}",
+      "style": "stats-body",
+    },
+    {
+      "type": "text",
       "visibleIf": "data.craftRequirements != nil",
       "value": "{% if data.craftRequirements %}**{{'Item.CraftRequirements'|l}}** {{data.craftRequirements}}{% endif %}",
       "style": "stats-body",

@@ -25,18 +25,18 @@ Last updated: 2026-10-07
   spellcasting-input repair, shared ability writing flow, and character tabs.
   It now also includes the named item activation rendering repair and imported
   activation field conversion below, plus imported Craft Requirements and
-  their native item-preview rendering repair.
+  their native item-preview rendering repair, and native item variant display.
   Archive inspection/CRC/checksums pass; all 199 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `3612a232458f9c818490fa81809acfd1e7371f35f33d9c3155cf0ed9ae65bf6b`.
+  SHA-256: `50db6b8d031cbf3868fa46a9cda8279ccba485af15f64a8286e0e75f6d78c373`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
   main and test archives were identical at that point; archive CRC and
-  checksums passed. The newer activation and crafting rendering/import fixes are only in
+  checksums passed. The newer activation/crafting and variant rendering fixes are only in
   the test package, not this main distribution or the previous branch push.
   Version remains `0.9.01`. Distribution artifacts are ignored
   by Git; the branch push carries source changes and documentation.
@@ -87,8 +87,10 @@ Last updated: 2026-10-07
   Additional details native tests pass on 2026-10-07: filling ammunition/onset,
   summary/displayed text and save/reopen, then clearing both and Craft
   Requirements and confirming they stay cleared after save/reopen.
-  Pending functional checks: inspect new gear, armor, shields, and weapons; edit primary
-  activation including traits and confirm independence from named activations;
+  Primary activation native tests also pass on 2026-10-07: populate action,
+  trait, and text; summary/display and save/reopen; clear those fields and
+  save/reopen while named Review/Extra Credit remain unchanged throughout.
+  Pending functional checks: inspect new gear, armor, shields, and weapons;
   edit variants and their level/price/bulk/crafting fields; change a category
   with populated equipment stats and ensure those values remain editable.
   No agent app automation is authorized. The user selected creatures next,
@@ -112,7 +114,8 @@ Last updated: 2026-10-07
   and all 18,041 records are unchanged. CRC, checksums, and 199 packaged source
   files match. The imported-item test below confirms structured named rules,
   save/reopen, deletion, and preservation of the other named entry. Independent
-  primary activation editing remains pending. App update results are tracked
+  primary activation editing/clearing now also passes in the follow-up test.
+  App update results are tracked
   separately below. This repair is
   committed locally only; no push or release publication was performed.
 - Imported item activation conversion: source complete on 2026-10-06;
@@ -175,6 +178,21 @@ Last updated: 2026-10-07
   the field persists after save/reopen in the follow-up Additional details test.
   Older personal copies may retain their previous description-only data.
   Ammunition/onset filling, summary/display, save/reopen, and clearing also pass.
+- Item variant display: source repair complete on 2026-10-07; native testing
+  pending. Preparation for the next verification found native `views/item.json`
+  omitted the editable `data.types` list, while HTML already rendered it.
+  The native view now uses the existing `item-type.md` partial with each variant
+  as its context, matching HTML. The shared partial also preserves level zero
+  instead of treating it as an absent value. The maintained editability suite
+  guards both display routes and all six editable variant fields. Canonical
+  checks pass (83 definitions, nine validators). The verified latest test
+  archive changes only `views/item.json` and `views/partials/item-type.md`;
+  all content, forms, and stored data remain unchanged. CRC/checksums and all
+  199 source files match. Version remains `0.9.01`; no push/publication.
+  Next native test after importing: add a test variant with name, level (include
+  zero), price, bulk, crafting requirements, and description; check displayed
+  text and save/reopen, then delete and confirm deletion persists. Primary and
+  named activations must remain unchanged.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in
@@ -310,7 +328,7 @@ Last updated: 2026-10-07
   selection/redraw/text-save issues separately from content and storage-path
   regressions. The 2026-10-07 update above supersedes the save-issue status.
   No agent app automation. Named activation checks now pass as recorded above;
-  primary activation editing remains pending. Avoid repeating approved creature
+  primary activation editing also passes. Avoid repeating approved creature
   layout/refresh tests.
 - Earlier pause: native testing stopped by the user on 2026-10-04. The user relays that the
   Encounter+ developer confirmed these issues are a bug introduced by the
@@ -498,10 +516,10 @@ Last updated: 2026-10-07
   also pass in the user's follow-up. Do not repeat these resolved cases without
   a new regression. Craft Requirements import/edit/save/display also passes.
   Additional details ammunition/onset and clearing checks also pass.
-  Next focused test: on a copy of Accolade Robe, populate Primary activation
-  actions/traits/text, verify summary/display and save/reopen, then clear the
-  primary fields. Named Review/Extra Credit must remain unchanged throughout.
-  Continue item variants/category properties,
+  Primary activation editing/clearing and named-entry independence also pass.
+  Next focused test: on a test item, add/edit a variant's name, level, price,
+  bulk, crafting requirements, and description; verify display and save/reopen,
+  then delete the variant and confirm deletion persists. Continue item category properties,
   spell casting/details/map-template functionality, and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining

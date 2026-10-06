@@ -636,6 +636,14 @@ def main() -> int:
             raise SystemExit("both item display modes must use the named-activation renderer in its row context")
         if "{{data.craftRequirements}}" not in template or "Item.CraftRequirements" not in template:
             raise SystemExit("both item display modes must render editable crafting requirements")
+        if "for type in data.types" not in template or "item-type.md" not in template:
+            raise SystemExit("both item display modes must render editable variants")
+    variant_view = (REPO / "views/partials/item-type.md").read_text(encoding="utf-8")
+    for attribute in field_attributes(form("partials/item-type.json")):
+        if not re.search(r"{{\s*" + re.escape(attribute) + r"(?:\s*\||\s*}})", variant_view):
+            raise SystemExit(f"item variants do not render their editable {attribute}")
+    if "{% if level != nil %}" not in variant_view:
+        raise SystemExit("item variants must display level zero")
     if '/icons/actions/{{activation.actions}}.png' not in activation_view:
         raise SystemExit("named activation action icons use an invalid route")
     if re.search(r"{%\s*elsif\b", ability_view):
