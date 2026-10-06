@@ -60,10 +60,14 @@ Last updated: 2026-10-07
   and creature-editability checks pass, as does the canonical check. Records,
   migrations, native loading, and versions are unchanged. Item editor source
   work is now complete as described below.
-  Pending functional checks, now authorized with known app bugs noted: open a new spell
-  and add casting details; edit/save/reopen populated notes, requirements,
-  cost, and trigger and inspect summary refresh/stat-block text; retain multiple
-  cast-action selections; check direct range/defense/printed-duration edits;
+  Casting details native checks pass on 2026-10-07: fill notes, requirements,
+  cost, and trigger; summary/displayed spell text and save/reopen; clear all
+  fields and confirm clearing persists. The user reports "it works".
+  Casting notes is the original free-text `data.cast` field, displayed as Cast;
+  imports retain printed timing/action wording here (e.g. 1 minute, Two Actions),
+  while `data.castActions` separately supplies the action selections/icons.
+  Pending functional checks: retain multiple cast-action selections;
+  check direct range/defense/printed-duration edits;
   edit template shape/fractional size and numeric token expiry independently
   and verify summaries/save/reopen; check an older custom spell with prose in
   `data.duration`. Keep redraw, persistence, and rendered content results distinct.
@@ -544,10 +548,10 @@ Last updated: 2026-10-07
   Primary activation editing/clearing and named-entry independence also pass.
   All requested item variant checks also pass.
   Item populated-property retention after category changes passes.
-  Next focused test: spell Casting details on a test copy, populate notes,
-  requirements, cost, and trigger; check summary/display and save/reopen, then
-  clear the fields and verify clearing persists. Continue remaining spell
-  casting/map-template functionality, empty-item category field visibility,
+  Spell Casting details fill/display/save/reopen/clear also passes.
+  Next focused test: spell Cast actions multiple selections and direct
+  range/defense/printed-duration edits, verifying display and save/reopen.
+  Continue map-template functionality, empty-item category field visibility,
   and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
