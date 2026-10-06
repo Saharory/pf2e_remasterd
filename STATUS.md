@@ -105,8 +105,10 @@ Last updated: 2026-10-07
   Multiple Cast actions also pass on 2026-10-07: Heal test copy retains 1/2/3
   selections and displayed icons after save/reopen; removing one preserves the
   remaining two after save/reopen.
-  Pending functional checks: edit template shape/fractional size and numeric token expiry independently
-  and verify summaries/save/reopen; check an older custom spell with prose in
+  Area-template/numeric-expiry settings also pass on 2026-10-07: Fireball test
+  copy Cone / 12.5 ft and Time / 2 rounds, summaries and save/reopen; printed
+  Area/Duration remain unchanged.
+  Pending functional checks: actual map placement/loading; check an older custom spell with prose in
   `data.duration`. Keep redraw, persistence, and rendered content results distinct.
 - Item editor efficiency: source complete, user approved on 2026-10-05.
   The user reports no issues and much better organization. Individual
@@ -589,17 +591,18 @@ Last updated: 2026-10-07
   Imported spell metadata presentation also passes.
   Direct spell Range/Defense/printed Duration edits also pass.
   Multiple Cast actions selections/icons/save/reopen/removal also pass.
-  Next focused test: Fireball test copy, set Area template Cone / 12.5 ft and
-  Token effect duration Time / 2 rounds; check summaries and save/reopen while
-  printed Area/Duration stay unchanged. Continue map placement/loading,
+  Area-template/numeric-expiry settings and printed-field independence pass.
+  Next focused test on a test map with no token selected: load fresh stock
+  Fireball (20-ft-radius area) and Detect Magic (30-ft-radius area), then the
+  modified Fireball (Cone / 12.5 ft). Check placement, configured geometry,
+  and removal without needing to select a token. Continue
   empty-item category field visibility,
   and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
   ritual links, creature spell links, custom
-  manual spell loading, distinct caster/source-relative expiry, and Fireball /
-  Detect Magic area placement with no token selected. Avoid repeating confirmed
+  manual spell loading and distinct caster/source-relative expiry. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
   compatibility before releases. See `ROADMAP.md` for product decisions.
