@@ -227,7 +227,7 @@
     "systemVersion": "1.2.10",
     "name": "Blastback",
     "slug": "blastback-rage-of-elements",
-    "descr": "**Trigger** You fall more than 10 feet.\n\n---\n\nYou hit the ground with a shuddering boom, propelling the force of your fall out in a wave. You take no damage from the fall as the displaced air allows you to land gently, but all other creatures in the spell's area take 6d4 bludgeoning damage. Creatures that fail their save are also pushed back 5 feet.\n\n---\n\n**Heightened (+2)** The emanation increases by 10 feet, and the damage increases by 1d4.",
+    "descr": "You hit the ground with a shuddering boom, propelling the force of your fall out in a wave. You take no damage from the fall as the displaced air allows you to land gently, but all other creatures in the spell's area take 6d4 bludgeoning damage. Creatures that fail their save are also pushed back 5 feet.\n\n---\n\n**Heightened (+2)** The emanation increases by 10 feet, and the damage increases by 1d4.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -265,7 +265,8 @@
       "areaEffectShape": "sphere",
       "areaEffectSize": 20,
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You fall more than 10 feet."
     },
     "attributes": {
       "remaster": true,
@@ -368,7 +369,7 @@
     "systemVersion": "1.2.10",
     "name": "Brine Dragon Bile",
     "slug": "brine-dragon-bile-rage-of-elements",
-    "descr": "**Trigger** A creature within range takes damage from a slashing or piercing attack, or one that inflicts persistent bleed damage.\n\n---\n\nYou spit a glob of caustic saltwater that stings the wounds of the creature. Make a ranged spell attack against the triggering creature's AC. On a hit, salt scours its open wound, dealing 2d6 persistent acid damage.\n\n---\n\n**Heightened (+2)** The persistent damage increases by 2d6.",
+    "descr": "You spit a glob of caustic saltwater that stings the wounds of the creature. Make a ranged spell attack against the triggering creature's AC. On a hit, salt scours its open wound, dealing 2d6 persistent acid damage.\n\n---\n\n**Heightened (+2)** The persistent damage increases by 2d6.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -412,7 +413,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A creature within range takes damage from a slashing or piercing attack, or one that inflicts persistent bleed damage."
     },
     "attributes": {
       "remaster": true,
@@ -962,7 +964,7 @@
     "systemVersion": "1.2.10",
     "name": "Cloud Dragon's Cloak",
     "slug": "cloud-dragon-s-cloak-rage-of-elements",
-    "descr": "**Trigger** You or an ally in range is targeted by a ranged attack.\n\n---\n\nA cloud of mist enshrouds the target, appearing much like the deflecting clouds created by cloud dragons. The target is treated as [Hidden](/condition/hidden-player-core) for the purposes of resolving the triggering attack (so normally the attacker must succeed at a Flat DC 11 to target it) and all ranged attacks against it for the duration.",
+    "descr": "A cloud of mist enshrouds the target, appearing much like the deflecting clouds created by cloud dragons. The target is treated as [Hidden](/condition/hidden-player-core) for the purposes of resolving the triggering attack (so normally the attacker must succeed at a Flat DC 11 to target it) and all ranged attacks against it for the duration.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -998,7 +1000,8 @@
       "durationText": "1 round",
       "duration": 1,
       "durationType": "time",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You or an ally in range is targeted by a ranged attack."
     },
     "attributes": {
       "remaster": true,
@@ -1797,7 +1800,7 @@
     "systemVersion": "1.2.10",
     "name": "Eat Fire",
     "slug": "eat-fire-rage-of-elements",
-    "descr": "**Trigger** You would take fire damage.\n\n---\n\nYou consume and ingest fire, making it less harmful to you. You gain resistance 5 to fire damage until the end of the current turn. During the remaining duration of the spell, you can use the Belch Smoke action. The spell ends if you fall [Unconscious](/condition/unconscious-player-core), inhale, or exhale (this includes speaking).\n\nSpell Effect: Eat Fire\n\n**Belch Smoke** 1 You exhale what remains of the smoke, ending the spell and creating a smoke cloud in a 5-foot burst within 20 feet. All creatures within the smoke cloud are [Concealed](/condition/concealed-player-core), and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.\n\n---\n\n**Heightened (+3)** The resistance increases by 5.",
+    "descr": "You consume and ingest fire, making it less harmful to you. You gain resistance 5 to fire damage until the end of the current turn. During the remaining duration of the spell, you can use the Belch Smoke action. The spell ends if you fall [Unconscious](/condition/unconscious-player-core), inhale, or exhale (this includes speaking).\n\nSpell Effect: Eat Fire\n\n**Belch Smoke** 1 You exhale what remains of the smoke, ending the spell and creating a smoke cloud in a 5-foot burst within 20 feet. All creatures within the smoke cloud are [Concealed](/condition/concealed-player-core), and all other creatures are concealed to them. The smoke lasts for 1 minute or until dispersed by a strong wind.\n\n---\n\n**Heightened (+3)** The resistance increases by 5.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -1839,7 +1842,8 @@
       "durationText": "until the end of your next turn",
       "duration": 1,
       "durationType": "sourceEndNextTurn",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You would take fire damage."
     },
     "attributes": {
       "remaster": true,
@@ -2024,7 +2028,7 @@
     "systemVersion": "1.2.10",
     "name": "Elemental Counter",
     "slug": "elemental-counter-rage-of-elements",
-    "descr": "**Trigger** You or a creature within 60 feet rolls a saving throw against a spell with the earth, fire, metal, plant, water, or [wood](/trait/wood) trait, or are targeted by a spell attack with such a trait.\n\n**Requirements** You have a spell slot from which you could Cast a Spell of the triggering spell's countering element; see text.\n\n---\n\nEach element in the elemental cycle counters another, and you can use your elemental spells to protect against elements they counter. You lose your spell slot as if you had cast the triggering spell. You then attempt to counteract the triggering spell, using the rank of the spell you lost for the counteract rank. You can lose a plant or wood spell to counter earth, an earth spell to counter water, a water spell to counter fire, a fire spell to counter metal, or a metal spell to counter plant or wood.",
+    "descr": "Each element in the elemental cycle counters another, and you can use your elemental spells to protect against elements they counter. You lose your spell slot as if you had cast the triggering spell. You then attempt to counteract the triggering spell, using the rank of the spell you lost for the counteract rank. You can lose a plant or wood spell to counter earth, an earth spell to counter water, a water spell to counter fire, a fire spell to counter metal, or a metal spell to counter plant or wood.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -2036,7 +2040,7 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "requirements": "",
+      "requirements": "You have a spell slot from which you could Cast a Spell of the triggering spell's countering element; see text.",
       "traditions": [
         "arcane",
         "primal"
@@ -2058,7 +2062,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You or a creature within 60 feet rolls a saving throw against a spell with the earth, fire, metal, plant, water, or [wood](/trait/wood) trait, or are targeted by a spell attack with such a trait."
     },
     "attributes": {
       "remaster": true,
@@ -4134,7 +4139,7 @@
     "systemVersion": "1.2.10",
     "name": "Interposing Earth",
     "slug": "interposing-earth-rage-of-elements",
-    "descr": "**Trigger** You are the target of a Strike or would attempt a Reflex save against a damaging area effect.\n\n---\n\nYou raise a flimsy barrier of earth to shield you from harm. This barrier is 1 inch thick, 5 feet long, 5 feet high, and must be placed on the border between two squares. This barrier appears between you and the source of the triggering effect and grants you standard cover against the triggering effect. If you would be damaged by the triggering effect despite this barrier, the barrier is destroyed, and the damage dealt to you is reduced by 2. The barrier remains in place for 3 rounds (or until destroyed). It has AC 5, 2 Hardness, and 5 Hit Points.\n\n---\n\n**Heightened (4th)** The damage reduced increases to 8, the barrier's hardness increases to 8, and the barrier's Hit Points increases to 20.",
+    "descr": "You raise a flimsy barrier of earth to shield you from harm. This barrier is 1 inch thick, 5 feet long, 5 feet high, and must be placed on the border between two squares. This barrier appears between you and the source of the triggering effect and grants you standard cover against the triggering effect. If you would be damaged by the triggering effect despite this barrier, the barrier is destroyed, and the damage dealt to you is reduced by 2. The barrier remains in place for 3 rounds (or until destroyed). It has AC 5, 2 Hardness, and 5 Hit Points.\n\n---\n\n**Heightened (4th)** The damage reduced increases to 8, the barrier's hardness increases to 8, and the barrier's Hit Points increases to 20.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -4170,7 +4175,8 @@
       "durationText": "3 rounds",
       "duration": 3,
       "durationType": "time",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You are the target of a Strike or would attempt a Reflex save against a damaging area effect."
     },
     "attributes": {
       "remaster": true,
@@ -5888,7 +5894,7 @@
     "systemVersion": "1.2.10",
     "name": "Propulsive Breeze",
     "slug": "propulsive-breeze-rage-of-elements",
-    "descr": "**Trigger** An ally in range Strides or Leaps.\n\n---\n\nYou create a current of wind at your ally's back, propelling their movement. When your ally's Stride or [Leap](/action/leap-player-core) ends, the current propels them an additional 15 feet in the same direction as the last 5 feet of their Stride or Leap.",
+    "descr": "You create a current of wind at your ally's back, propelling their movement. When your ally's Stride or [Leap](/action/leap-player-core) ends, the current propels them an additional 15 feet in the same direction as the last 5 feet of their Stride or Leap.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -5927,7 +5933,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An ally in range Strides or Leaps."
     },
     "attributes": {
       "remaster": true,
@@ -8763,7 +8770,7 @@
     "systemVersion": "1.2.10",
     "name": "Wooden Double",
     "slug": "wooden-double-rage-of-elements",
-    "descr": "**Trigger** You're critically hit by a damage-dealing effect or a Strike.\n\n---\n\nA wooden double appears out of nowhere and takes the blow in your place. Take a [Step](/action/step-player-core) action. A wooden block of your size and roughly shaped like you appears in the space you left and absorbs the hit. This block has Hardness 5 and 20 Hit Points. If the wooden block is destroyed, you take any excess damage that the block didn't absorb. After taking the blow, the wooden block collapses into a pile of splinters and dust.\n\n---\n\n**Heightened (+1)** The block's Hit Points increase by 10.",
+    "descr": "A wooden double appears out of nowhere and takes the blow in your place. Take a [Step](/action/step-player-core) action. A wooden block of your size and roughly shaped like you appears in the space you left and absorbs the hit. This block has Hardness 5 and 20 Hit Points. If the wooden block is destroyed, you take any excess damage that the block didn't absorb. After taking the blow, the wooden block collapses into a pile of splinters and dust.\n\n---\n\n**Heightened (+1)** The block's Hit Points increase by 10.",
     "data": {
       "rank": 3,
       "rarity": "common",
@@ -8798,7 +8805,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You're critically hit by a damage-dealing effect or a Strike."
     },
     "attributes": {
       "remaster": true,
@@ -8989,7 +8997,7 @@
     "systemVersion": "1.2.10",
     "name": "Zephyr Slip",
     "slug": "zephyr-slip-rage-of-elements",
-    "descr": "**Trigger** A creature enters a space within 5 feet of you.\n\n---\n\nAn arresting breeze sweeps you up in an instant and moves you to safety. You Fly 15 feet directly away from the triggering creature.\n\n---\n\n**Heightened (6th)** You and one adjacent ally Fly up to 25 feet directly away from the triggering creature.\n\n**Heightened (8th)** You and up to 5 allies within 30 feet Fly up to 25 feet directly away from the triggering creature.",
+    "descr": "An arresting breeze sweeps you up in an instant and moves you to safety. You Fly 15 feet directly away from the triggering creature.\n\n---\n\n**Heightened (6th)** You and one adjacent ally Fly up to 25 feet directly away from the triggering creature.\n\n**Heightened (8th)** You and up to 5 allies within 30 feet Fly up to 25 feet directly away from the triggering creature.",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -9028,7 +9036,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A creature enters a space within 5 feet of you."
     },
     "attributes": {
       "remaster": true,

@@ -36,6 +36,7 @@ from creature_spellcasting import configure_creature_spellcasting
 from creature_metadata import configure_creature_metadata
 from spell_area_templates import configure_spell_area_template
 from spell_load_data import configure_spell_load_data
+from spell_editor_data import configure_spell_editor_data
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -102,6 +103,8 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         # Build mirrors from the final linked text so the editor and view stay
         # byte-for-byte aligned after reference de-duplication.
         configure_creature_editor_data(result)
+    if expected_kind == "Spell":
+        configure_spell_editor_data(result)
     return result
 
 

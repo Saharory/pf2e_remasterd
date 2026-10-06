@@ -19,6 +19,7 @@ from foundry_markup import has_conversion_artifact, replace_foundry_directives
 from package_public_release import clear_owned_output
 from item_editor_data import configure_item_editor_data, parse_item_activations
 from creature_editor_data import render_ability_editor_fields
+from spell_editor_data import configure_spell_editor_data
 
 
 class FoundryMarkupTests(unittest.TestCase):
@@ -260,6 +261,94 @@ class ItemCraftingTests(unittest.TestCase):
             item = self.item(text)
             self.assertFalse(configure_item_editor_data(item))
             self.assertEqual(item["descr"], text)
+
+
+class SpellMetadataTests(unittest.TestCase):
+    def spell(self, text: str, **data) -> dict:
+        return {"kind": "Spell", "descr": text, "data": data}
+
+    def test_duplicates_move_out_of_description_with_body_and_heightening_intact(self) -> None:
+        body = "Two trees grow.\n\n- **Tree of Death** Damage.\n\n---\n**Heightened (+1)** More damage."
+        spell = self.spell("**Traditions**\nDivine, Primal\n\n**Range** 120 feet\n\n**Duration** 1 minute\n\n---\n\n" + body,
+                           traditionsText="Divine, Primal", range="120 feet", durationText="1 minute", duration=1, durationType="time", durationUnit="minute")
+        before = deepcopy(spell["data"])
+        self.assertTrue(configure_spell_editor_data(spell))
+        self.assertEqual(spell["descr"], body)
+        self.assertEqual(spell["data"], before)
+        converted = deepcopy(spell)
+        self.assertFalse(configure_spell_editor_data(spell))
+        self.assertEqual(spell, converted)
+
+    def test_missing_trigger_requirements_and_links_are_preserved_in_fields(self) -> None:
+        spell = self.spell("**Trigger** You [fall](/rule/falling).\n\n**Requirements** You can bleed.\n\n---\n\nSpell effect.", trigger="", requirements="")
+        configure_spell_editor_data(spell)
+        self.assertEqual(spell["data"]["trigger"], "You [fall](/rule/falling).")
+        self.assertEqual(spell["data"]["requirements"], "You can bleed.")
+        self.assertEqual(spell["descr"], "Spell effect.")
+
+    def test_unknown_patron_theme_and_unsupported_defense_remain_printed(self) -> None:
+        spell = self.spell("**Patron Theme**\nParadox of Opposites\n\n**Range** 30 feet\n\n**Defense** AC\n\n---\n\nEffect.", range="30 feet", defense="")
+        configure_spell_editor_data(spell)
+        self.assertIn("Paradox of Opposites", spell["descr"])
+        self.assertIn("**Defense** AC", spell["descr"])
+        self.assertNotIn("**Range**", spell["descr"])
+        self.assertEqual(spell["data"]["defense"], "")
+
+    def test_defense_option_is_normalized_only_for_known_native_choices(self) -> None:
+        spell = self.spell("**Defense**\nBasic Fortitude\n\n---\n\nEffect.", defense="")
+        configure_spell_editor_data(spell)
+        self.assertEqual(spell["data"]["defense"], "basicfortitude")
+        self.assertEqual(spell["descr"], "Effect.")
+
+    def test_linked_defense_header_keeps_its_rule_link(self) -> None:
+        spell = self.spell("**Range** 30 feet\n\n**Defense** [basic](/rule/basic-saving-throws) Fortitude\n\n---\n\nEffect.", range="30 feet", defense="basicfortitude")
+        self.assertTrue(configure_spell_editor_data(spell))
+        self.assertNotIn("**Range**", spell["descr"])
+        self.assertIn("/rule/basic-saving-throws", spell["descr"])
+
+    def test_linked_duration_keeps_route_without_changing_native_timer(self) -> None:
+        spell = self.spell("**Range** 30 feet\n\n**Duration** [sustained](/action/sustain) up to 1 minute\n\n---\n\nEffect.", range="30 feet", durationText="sustained up to 1 minute", duration=1, durationType="time", durationUnit="minute")
+        before = deepcopy(spell["data"])
+        configure_spell_editor_data(spell)
+        self.assertIn("/action/sustain", spell["descr"])
+        self.assertEqual(spell["data"], before)
+
+    def test_conflicts_qualified_area_and_area_links_do_not_change_templates(self) -> None:
+        for text in ("30-foot burst centered on you", "30-foot [burst](/rule/burst)"):
+            spell = self.spell(f"**Range** 60 feet\n\n**Area** {text}\n\n---\n\nEffect.", range="30 feet", area="30-foot burst", areaEffectShape="sphere", areaEffectSize=30)
+            before = deepcopy(spell)
+            self.assertFalse(configure_spell_editor_data(spell))
+            self.assertEqual(spell, before)
+
+    def test_body_labels_and_inline_headers_are_not_guessed(self) -> None:
+        for text in ("Effect.\n\n**Range** 30 feet", "**Range** 30 feet; **Targets** one creature"):
+            spell = self.spell(text)
+            before = deepcopy(spell)
+            self.assertFalse(configure_spell_editor_data(spell))
+            self.assertEqual(spell, before)
+
+    def test_repeated_header_fields_are_preserved(self) -> None:
+        spell = self.spell("**Range** 30 feet\n\n**Range** 60 feet\n\n---\n\nEffect.", range="30 feet")
+        before = deepcopy(spell)
+        self.assertFalse(configure_spell_editor_data(spell))
+        self.assertEqual(spell, before)
+
+    def test_reported_spells_have_clean_headers_and_preserve_special_metadata(self) -> None:
+        repo = Path(__file__).resolve().parents[1]
+        spells = {
+            item["name"]: item
+            for book in ("impossible-magic", "divine-mysteries")
+            for item in json.loads((repo / "compendium/packs" / book / "spells.json").read_text())
+        }
+        tree = spells["Tree of Life and Death"]
+        trade = spells["Trade Death for Life"]
+        self.assertTrue(tree["descr"].startswith("The cycle of life"))
+        self.assertIn("**Patron Theme**", trade["descr"])
+        for spell in (tree, trade):
+            for label in ("Range", "Target", "Traditions", "Duration", "Defense"):
+                self.assertNotIn(f"**{label}**", spell["descr"])
+            self.assertIn("**Heightened (+1)**", spell["descr"])
+            self.assertFalse(configure_spell_editor_data(deepcopy(spell)))
 
 
 class ReleaseOutputTests(unittest.TestCase):

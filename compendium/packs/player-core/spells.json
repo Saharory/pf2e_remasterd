@@ -213,7 +213,7 @@
     "systemVersion": "1.2.10",
     "name": "Air Bubble",
     "slug": "air-bubble-player-core",
-    "descr": "**Trigger** A creature within range enters an environment where it can't breathe.\n\nA bubble of pure air appears around the target's head, allowing it to breathe normally. The effect ends as soon as the target returns to an environment where it can breathe normally.",
+    "descr": "A bubble of pure air appears around the target's head, allowing it to breathe normally. The effect ends as soon as the target returns to an environment where it can breathe normally.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -250,7 +250,8 @@
       "durationText": "1 minute",
       "duration": 1,
       "durationType": "time",
-      "durationUnit": "minute"
+      "durationUnit": "minute",
+      "trigger": "A creature within range enters an environment where it can't breathe."
     },
     "attributes": {
       "remaster": true,
@@ -1823,7 +1824,7 @@
     "systemVersion": "1.2.10",
     "name": "Blood Vendetta",
     "slug": "blood-vendetta-player-core",
-    "descr": "**Requirements** You can bleed.\n\n**Trigger** A creature deals piercing, slashing, or persistent bleed damage to you.\n\n---\n\nYou curse the target, punishing it for having the audacity to spill your blood. The target takes 2d6 persistent bleed damage and must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half the persistent bleed damage.\n\n**Failure** The target takes the full persistent bleed damage. Until the bleeding stops, the target has weakness 1 to piercing and slashing damage. Spell Effect: Blood Vendetta (Failure)\n\n**Critical Failure** As failure, but the target takes double the persistent bleed damage.\n\n---\n\n**Heightened (+2)** The persistent bleed damage increases by 2d6.",
+    "descr": "You curse the target, punishing it for having the audacity to spill your blood. The target takes 2d6 persistent bleed damage and must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target takes half the persistent bleed damage.\n\n**Failure** The target takes the full persistent bleed damage. Until the bleeding stops, the target has weakness 1 to piercing and slashing damage. Spell Effect: Blood Vendetta (Failure)\n\n**Critical Failure** As failure, but the target takes double the persistent bleed damage.\n\n---\n\n**Heightened (+2)** The persistent bleed damage increases by 2d6.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -1854,7 +1855,8 @@
         }
       ],
       "durationText": "varies",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A creature deals piercing, slashing, or persistent bleed damage to you."
     },
     "attributes": {
       "remaster": true,
@@ -2033,7 +2035,7 @@
     "systemVersion": "1.2.10",
     "name": "Breath of Life",
     "slug": "breath-of-life-player-core",
-    "descr": "**Trigger** A living creature within range would die.\n\n---\n\nYour blessing revives a creature at the moment of its death. You prevent the target from dying and restore 5d8 Hit Points to the target. You can't use breath of life if the triggering effect was a death effect or an effect that leaves no remains, such as [Disintegrate](/spell/disintegrate-player-core)\n\n---\n\n**Heightened (+2)** The healing increases by 1d8.",
+    "descr": "Your blessing revives a creature at the moment of its death. You prevent the target from dying and restore 5d8 Hit Points to the target. You can't use breath of life if the triggering effect was a death effect or an effect that leaves no remains, such as [Disintegrate](/spell/disintegrate-player-core)\n\n---\n\n**Heightened (+2)** The healing increases by 1d8.",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -2071,7 +2073,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A living creature within range would die."
     },
     "attributes": {
       "remaster": true,
@@ -3820,7 +3823,7 @@
     "systemVersion": "1.2.10",
     "name": "Community Restoration",
     "slug": "community-restoration-player-core",
-    "descr": "**Trigger** You Cast a Spell from a wizard spell slot, and the spell affects one or more willing allies without damaging them.\n\n---\n\nWhen you use your magic to support your allies, shared strength bolsters you all. You gain 2 temporary Hit Points per rank of the triggering spell, and can grant an equal number divided as you choose among allies affected by the triggering spell. These temporary Hit Points last for 1 minute.\n\nSpell Effect: Community Restoration",
+    "descr": "When you use your magic to support your allies, shared strength bolsters you all. You gain 2 temporary Hit Points per rank of the triggering spell, and can grant an equal number divided as you choose among allies affected by the triggering spell. These temporary Hit Points last for 1 minute.\n\nSpell Effect: Community Restoration",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -3861,7 +3864,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You Cast a Spell from a wizard spell slot, and the spell affects one or more willing allies without damaging them."
     },
     "attributes": {
       "remaster": true,
@@ -4272,7 +4276,7 @@
     "systemVersion": "1.2.10",
     "name": "Counter Performance",
     "slug": "counter-performance-player-core",
-    "descr": "**Trigger** You or an ally within 60 feet rolls a saving throw against an auditory or visual effect.\n\n---\n\nYour performance protects you and your allies. Roll a Performance check for a type you know—it must be an auditory performance if the trigger was auditory or a visual one for a visual trigger, and this action gains the traits for the type of performance. You and allies in the area can use the better result between your Performance check and the saving throw.",
+    "descr": "Your performance protects you and your allies. Roll a Performance check for a type you know—it must be an auditory performance if the trigger was auditory or a visual one for a visual trigger, and this action gains the traits for the type of performance. You and allies in the area can use the better result between your Performance check and the saving throw.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -4331,7 +4335,8 @@
       "areaEffectShape": "sphere",
       "areaEffectSize": 60,
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You or an ally within 60 feet rolls a saving throw against an auditory or visual effect."
     },
     "attributes": {
       "remaster": true,
@@ -5593,7 +5598,7 @@
     "systemVersion": "1.2.10",
     "name": "Death's Call",
     "slug": "death-s-call-player-core",
-    "descr": "**Trigger** A living creature within 20 feet of you dies, or an undead creature within 20 feet of you is destroyed.\n\n---\n\nSeeing another pass from this world invigorates you. You gain temporary Hit Points equal to the triggering creature's level plus your spellcasting attribute modifier. If the triggering creature was undead, double the number of temporary Hit Points you gain. These last for the duration of the spell, and the spell ends if all the temporary Hit Points are depleted earlier.",
+    "descr": "Seeing another pass from this world invigorates you. You gain temporary Hit Points equal to the triggering creature's level plus your spellcasting attribute modifier. If the triggering creature was undead, double the number of temporary Hit Points you gain. These last for the duration of the spell, and the spell ends if all the temporary Hit Points are depleted earlier.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -5631,7 +5636,8 @@
       "durationText": "1 minute",
       "duration": 1,
       "durationType": "time",
-      "durationUnit": "minute"
+      "durationUnit": "minute",
+      "trigger": "A living creature within 20 feet of you dies, or an undead creature within 20 feet of you is destroyed."
     },
     "attributes": {
       "remaster": true,
@@ -6853,7 +6859,7 @@
     "systemVersion": "1.2.10",
     "name": "Disperse into Air",
     "slug": "disperse-into-air-player-core",
-    "descr": "**Trigger** You take damage from an enemy or a hazard.\n\n---\n\nAfter taking the triggering damage, you transform into air. Until the end of the current turn, you can't be attacked or targeted, you don't take up space, you can't act, and any auras or emanations you have are suppressed. At the end of the turn, you re-form in any space you can occupy within 15 feet of where you were when you dispersed. Any auras or emanations you had are restored as long as their duration didn't run out while you were dispersed.",
+    "descr": "After taking the triggering damage, you transform into air. Until the end of the current turn, you can't be attacked or targeted, you don't take up space, you can't act, and any auras or emanations you have are suppressed. At the end of the turn, you re-form in any space you can occupy within 15 feet of where you were when you dispersed. Any auras or emanations you had are restored as long as their duration didn't run out while you were dispersed.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -6899,7 +6905,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You take damage from an enemy or a hazard."
     },
     "attributes": {
       "remaster": true,
@@ -8536,7 +8543,7 @@
     "systemVersion": "1.2.10",
     "name": "Enduring Might",
     "slug": "enduring-might-player-core",
-    "descr": "**Trigger** An attack or effect would deal damage to you.\n\n---\n\nYour own might mingles with divine power to protect you from harm. You gain resistance equal to 8 plus your Strength modifier against all damage from the triggering attack or effect.\n\nSpell Effect: Enduring Might\n\n---\n\n**Heightened (+1)** The resistance increases by 2.",
+    "descr": "Your own might mingles with divine power to protect you from harm. You gain resistance equal to 8 plus your Strength modifier against all damage from the triggering attack or effect.\n\nSpell Effect: Enduring Might\n\n---\n\n**Heightened (+1)** The resistance increases by 2.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -8572,7 +8579,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An attack or effect would deal damage to you."
     },
     "attributes": {
       "remaster": true,
@@ -8602,7 +8610,7 @@
     "systemVersion": "1.2.10",
     "name": "Energy Absorption",
     "slug": "energy-absorption-player-core",
-    "descr": "**Trigger** An effect would deal acid, cold, electricity, or fire damage to you\n\n---\n\nYou're used to mitigating the damage done by bombs, siege engines, and magical artillery. You gain resistance 15 to your choice of acid, cold, electricity, or fire damage from the triggering effect. The resistance applies only to the triggering effect's initial damage.\n\nSpell Effect: Energy Absorption\n\n---\n\n**Heightened (+1)** The resistance increases by 5.",
+    "descr": "You're used to mitigating the damage done by bombs, siege engines, and magical artillery. You gain resistance 15 to your choice of acid, cold, electricity, or fire damage from the triggering effect. The resistance applies only to the triggering effect's initial damage.\n\nSpell Effect: Energy Absorption\n\n---\n\n**Heightened (+1)** The resistance increases by 5.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -8633,7 +8641,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An effect would deal acid, cold, electricity, or fire damage to you"
     },
     "attributes": {
       "remaster": true,
@@ -10599,7 +10608,7 @@
     "systemVersion": "1.2.10",
     "name": "Flame Barrier",
     "slug": "flame-barrier-player-core",
-    "descr": "**Trigger** An effect would deal fire damage to either you or an ally within range.\n\n---\n\nYou swiftly deflect incoming flames. The target gains fire resistance 15 against the triggering effect.\n\nSpell Effect: Flame Barrier\n\n---\n\n**Heightened (+2)** The resistance increases by 5.",
+    "descr": "You swiftly deflect incoming flames. The target gains fire resistance 15 against the triggering effect.\n\nSpell Effect: Flame Barrier\n\n---\n\n**Heightened (+2)** The resistance increases by 5.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -10635,7 +10644,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An effect would deal fire damage to either you or an ally within range."
     },
     "attributes": {
       "remaster": true,
@@ -11648,7 +11658,7 @@
     "systemVersion": "1.2.10",
     "name": "Gentle Landing",
     "slug": "gentle-landing-player-core",
-    "descr": "**Trigger** a creature within range is falling\n\n---\n\nYou raise a magical updraft to arrest a fall. The target's fall slows to 60 feet per round, and the portion of the fall during the spell's duration doesn't count when calculating falling damage. If the target reaches the ground while the spell is in effect, it takes no damage from the fall. The spell ends as soon as the target lands.",
+    "descr": "You raise a magical updraft to arrest a fall. The target's fall slows to 60 feet per round, and the portion of the fall during the spell's duration doesn't count when calculating falling damage. If the target reaches the ground while the spell is in effect, it takes no damage from the fall. The spell ends as soon as the target lands.",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -11684,7 +11694,8 @@
       "durationText": "1 minute",
       "duration": 1,
       "durationType": "time",
-      "durationUnit": "minute"
+      "durationUnit": "minute",
+      "trigger": "a creature within range is falling"
     },
     "attributes": {
       "remaster": true,
@@ -13459,7 +13470,7 @@
     "systemVersion": "1.2.10",
     "name": "Hunter's Luck",
     "slug": "hunter-s-luck-player-core",
-    "descr": "**Trigger** You attempt a check to [Recall Knowledge](/action/recall-knowledge-player-core) about a creature, but you haven't rolled yet.\n\n---\n\nYou have a preternatural ability to remember details about your foes. Roll the triggering check twice and use the better result.",
+    "descr": "You have a preternatural ability to remember details about your foes. Roll the triggering check twice and use the better result.",
     "data": {
       "rank": 2,
       "rarity": "uncommon",
@@ -13500,7 +13511,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You attempt a check to [Recall Knowledge](/action/recall-knowledge-player-core) about a creature, but you haven't rolled yet."
     },
     "attributes": {
       "remaster": true,
@@ -14047,7 +14059,7 @@
     "systemVersion": "1.2.10",
     "name": "Ignite Ambition",
     "slug": "ignite-ambition-player-core",
-    "descr": "**Trigger** You or an ally in range attempt to use a mental effect to convince a creature to do something (such as a [Coerce](/action/coerce-player-core), [Request](/action/request-player-core), or a [Suggestion](/spell/suggestion-player-core) spell).\n\n---\n\nYou strengthen a target's ambition, increase its resentment of allies, and make its allegiances more susceptible to change. The target must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected and realized you attempted to influence its reaction with magic.\n\n**Success** The target takes a -1 status penalty to its defenses against the triggering effect. This penalty is -2 if the target is being encouraged to advance its own ambitions.The target doesn't realize you Cast the Spell on it.\n\n**Failure** As success, but the penalty is -4 if the target is being encouraged to advance its own ambitions.\n\n**Critical Failure** As success, but the creature automatically follows a suggestion that advances its own ambitions.",
+    "descr": "You strengthen a target's ambition, increase its resentment of allies, and make its allegiances more susceptible to change. The target must attempt a Will save.\n\n---\n\n**Critical Success** The target is unaffected and realized you attempted to influence its reaction with magic.\n\n**Success** The target takes a -1 status penalty to its defenses against the triggering effect. This penalty is -2 if the target is being encouraged to advance its own ambitions.The target doesn't realize you Cast the Spell on it.\n\n**Failure** As success, but the penalty is -4 if the target is being encouraged to advance its own ambitions.\n\n**Critical Failure** As success, but the creature automatically follows a suggestion that advances its own ambitions.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -14099,7 +14111,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You or an ally in range attempt to use a mental effect to convince a creature to do something (such as a [Coerce](/action/coerce-player-core), [Request](/action/request-player-core), or a [Suggestion](/spell/suggestion-player-core) spell)."
     },
     "attributes": {
       "remaster": true,
@@ -15059,7 +15072,7 @@
     "systemVersion": "1.2.10",
     "name": "Interdisciplinary Incantation",
     "slug": "interdisciplinary-incantation-player-core",
-    "descr": "**Trigger** A creature within 30 feet casts an arcane spell.\n\n---\n\nYou gather the embers of another caster's spell, using your understanding of unified magic to pick apart their formulas and incantations well enough to imitate the spell yourself, if only for a short time. Until the end of your next turn, you can Cast the triggering Spell by expending a wizard spell slot of the same rank. That caster's spells can't trigger your *interdisciplinary incantation* again for 24 hours.",
+    "descr": "You gather the embers of another caster's spell, using your understanding of unified magic to pick apart their formulas and incantations well enough to imitate the spell yourself, if only for a short time. Until the end of your next turn, you can Cast the triggering Spell by expending a wizard spell slot of the same rank. That caster's spells can't trigger your *interdisciplinary incantation* again for 24 hours.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -15095,7 +15108,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A creature within 30 feet casts an arcane spell."
     },
     "attributes": {
       "remaster": true,
@@ -15125,7 +15139,7 @@
     "systemVersion": "1.2.10",
     "name": "Interplanar Teleport",
     "slug": "interplanar-teleport-player-core",
-    "descr": "**Requirements** You have a planar key for the destination plane, used as a locus\n\n---\n\nYou and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell *interplanar teleport*, more obscure planes and demiplanes often have rare or possibly even unique planar keys.\n\nThe spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. *Interplanar teleport* doesn't provide a means of return travel, though casting *interplanar teleport* again allows you to return to your previous plane unless there are extenuating circumstances.",
+    "descr": "You and your allies traverse the barriers between planes of existence. The targets move to another plane, such as the Plane of Fire, the Netherworld, or the Outer Rifts. You must know the destination plane exists and use a magic planar key created from material from that plane as a locus for the spell. While the planar keys for most prominent planes are uncommon, just like the spell *interplanar teleport*, more obscure planes and demiplanes often have rare or possibly even unique planar keys.\n\nThe spell is highly imprecise, and you appear 1d20×25 miles from the last place one of the targets (of your choice) was located the last time that target traveled to the plane. If it's the first time traveling to a particular plane for all targets, you appear at a random location on the plane. *Interplanar teleport* doesn't provide a means of return travel, though casting *interplanar teleport* again allows you to return to your previous plane unless there are extenuating circumstances.",
     "data": {
       "rank": 7,
       "rarity": "uncommon",
@@ -15138,7 +15152,7 @@
       "cast": "10 minutes",
       "range": "5 feet",
       "targets": "up to 8 willing creatures",
-      "requirements": "",
+      "requirements": "You have a planar key for the destination plane, used as a locus",
       "traditions": [
         "arcane",
         "divine",
@@ -15636,7 +15650,7 @@
     "systemVersion": "1.2.10",
     "name": "Know the Enemy",
     "slug": "know-the-enemy-player-core",
-    "descr": "**Trigger** You roll initiative and can see a creature, you succeed at an attack roll against a creature, or a creature fails a saving throw against one of your spells.\n\n---\n\nYou quickly remind yourself of useful information. Use a [Recall Knowledge](/action/recall-knowledge-player-core) action, rolling the appropriate skill check to identify the triggering creature's abilities. You can roll your check twice and use the better result.\n\nSpell Effect: Know The Enemy",
+    "descr": "You quickly remind yourself of useful information. Use a [Recall Knowledge](/action/recall-knowledge-player-core) action, rolling the appropriate skill check to identify the triggering creature's abilities. You can roll your check twice and use the better result.\n\nSpell Effect: Know The Enemy",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -15677,7 +15691,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You roll initiative and can see a creature, you succeed at an attack roll against a creature, or a creature fails a saving throw against one of your spells."
     },
     "attributes": {
       "remaster": true,
@@ -16509,7 +16524,7 @@
     "systemVersion": "1.2.10",
     "name": "Loremaster's Etude",
     "slug": "loremaster-s-etude-player-core",
-    "descr": "**Trigger** You or an ally within range attempts a skill check to Recall Knowledge\n\n---\n\nYou call upon your muse's deep mysteries, granting the target a greater ability to think and recall information. Roll the triggering Recall Knowledge skill check twice and use the higher result.\n\nSpell Effect: Loremaster'S Etude",
+    "descr": "You call upon your muse's deep mysteries, granting the target a greater ability to think and recall information. Roll the triggering Recall Knowledge skill check twice and use the higher result.\n\nSpell Effect: Loremaster'S Etude",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -16555,7 +16570,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You or an ally within range attempts a skill check to Recall Knowledge"
     },
     "attributes": {
       "remaster": true,
@@ -16587,7 +16603,7 @@
     "systemVersion": "1.2.10",
     "name": "Lucky Break",
     "slug": "lucky-break-player-core",
-    "descr": "**Trigger** You fail, but don't critically fail, a saving throw.\n\n---\n\nReroll the saving throw and use the better result. You then become temporarily immune for 10 minutes.",
+    "descr": "Reroll the saving throw and use the better result. You then become temporarily immune for 10 minutes.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -16628,7 +16644,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You fail, but don't critically fail, a saving throw."
     },
     "attributes": {
       "remaster": true,
@@ -19396,7 +19413,7 @@
     "systemVersion": "1.2.10",
     "name": "Ode to Ouroboros",
     "slug": "ode-to-ouroboros-player-core",
-    "descr": "**Trigger** A creature's [dying](/condition/dying-player-core) condition would reach the value at which they would die.\n\n---\n\nYour ode staves off death. The target's dying condition remains 1 below the value at which it dies. This doesn't help prevent death from effects that kill the target without increasing its dying condition, such as [Disintegrate](/spell/disintegrate-player-core) and death effects.",
+    "descr": "Your ode staves off death. The target's dying condition remains 1 below the value at which it dies. This doesn't help prevent death from effects that kill the target without increasing its dying condition, such as [Disintegrate](/spell/disintegrate-player-core) and death effects.",
     "data": {
       "rank": 5,
       "rarity": "uncommon",
@@ -19437,7 +19454,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A creature's [dying](/condition/dying-player-core) condition would reach the value at which they would die."
     },
     "attributes": {
       "remaster": true,
@@ -20023,7 +20041,7 @@
     "systemVersion": "1.2.10",
     "name": "Patron's Puppet",
     "slug": "patron-s-puppet-player-core",
-    "descr": "**Trigger** Your turn begins.\n\n---\n\nAt your unspoken plea, your patron temporarily assumes control over your familiar. You Command your familiar, allowing it to take its normal actions this turn. Your Command does not have the auditory or [concentrate](/trait/concentrate) traits; your patron simply moves its agent directly.",
+    "descr": "At your unspoken plea, your patron temporarily assumes control over your familiar. You Command your familiar, allowing it to take its normal actions this turn. Your Command does not have the auditory or [concentrate](/trait/concentrate) traits; your patron simply moves its agent directly.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -20059,7 +20077,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "Your turn begins."
     },
     "attributes": {
       "remaster": true,
@@ -20218,7 +20237,7 @@
     "systemVersion": "1.2.10",
     "name": "Perfected Body",
     "slug": "perfected-body-player-core",
-    "descr": "**Trigger** You fail or critically fail a saving throw against an effect that has the morph, poison, or [polymorph](/trait/polymorph) trait, or that would make you [Clumsy](/condition/clumsy-player-core), [Doomed](/condition/doomed-player-core), [Enfeebled](/condition/enfeebled-player-core), [Petrified](/condition/petrified-player-core), or [Sickened](/condition/sickened-player-core).\n\n---\n\nYour body's perfection keeps you just a little bit healthier than most. You get a failure if you rolled a critical failure or a success if you rolled a failure.",
+    "descr": "Your body's perfection keeps you just a little bit healthier than most. You get a failure if you rolled a critical failure or a success if you rolled a failure.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -20254,7 +20273,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You fail or critically fail a saving throw against an effect that has the morph, poison, or [polymorph](/trait/polymorph) trait, or that would make you [Clumsy](/condition/clumsy-player-core), [Doomed](/condition/doomed-player-core), [Enfeebled](/condition/enfeebled-player-core), [Petrified](/condition/petrified-player-core), or [Sickened](/condition/sickened-player-core)."
     },
     "attributes": {
       "remaster": true,
@@ -20946,7 +20966,7 @@
     "systemVersion": "1.2.10",
     "name": "Phase Familiar",
     "slug": "phase-familiar-player-core",
-    "descr": "**Trigger** Your familiar would take damage.\n\n---\n\nYour patron momentarily recalls your familiar to the ether, shifting it from its solid, physical form into a ghostly version of itself. Against the triggering damage, your familiar gains resistance 5 to all damage and is immune to precision damage.\n\nSpell Effect: Phase Familiar\n\n---\n\n**Heightened (+1)** Increase the resistance by 2.",
+    "descr": "Your patron momentarily recalls your familiar to the ether, shifting it from its solid, physical form into a ghostly version of itself. Against the triggering damage, your familiar gains resistance 5 to all damage and is immune to precision damage.\n\nSpell Effect: Phase Familiar\n\n---\n\n**Heightened (+1)** Increase the resistance by 2.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -20987,7 +21007,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "Your familiar would take damage."
     },
     "attributes": {
       "remaster": true,
@@ -21969,7 +21990,7 @@
     "systemVersion": "1.2.10",
     "name": "Protector's Sacrifice",
     "slug": "protector-s-sacrifice-player-core",
-    "descr": "**Trigger** An ally within 30 feet takes damage.\n\n---\n\nYou protect your ally by suffering in their stead. Reduce the damage the triggering ally would take by 3. You redirect this damage to yourself, but your immunities, weaknesses, resistances and so on do not apply.\n\nYou aren't subject to any conditions or other effects of whatever damaged your ally (such as poison from a venomous bite). Your ally is still subject to those effects even if you redirect all of the triggering damage to yourself.\n\n---\n\n**Heightened (+1)** The damage you redirect increases by 3.",
+    "descr": "You protect your ally by suffering in their stead. Reduce the damage the triggering ally would take by 3. You redirect this damage to yourself, but your immunities, weaknesses, resistances and so on do not apply.\n\nYou aren't subject to any conditions or other effects of whatever damaged your ally (such as poison from a venomous bite). Your ally is still subject to those effects even if you redirect all of the triggering damage to yourself.\n\n---\n\n**Heightened (+1)** The damage you redirect increases by 3.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -22005,7 +22026,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An ally within 30 feet takes damage."
     },
     "attributes": {
       "remaster": true,
@@ -23395,7 +23417,7 @@
     "systemVersion": "1.2.10",
     "name": "Retributive Pain",
     "slug": "retributive-pain-player-core",
-    "descr": "**Trigger** A creature in range damages you.\n\n---\n\nYou vengefully reflect your pain upon your tormentor. The target takes mental damage equal to half the triggering damage.",
+    "descr": "You vengefully reflect your pain upon your tormentor. The target takes mental damage equal to half the triggering damage.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -23442,7 +23464,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A creature in range damages you."
     },
     "attributes": {
       "remaster": true,
@@ -24327,7 +24350,7 @@
     "systemVersion": "1.2.10",
     "name": "Scholarly Recollection",
     "slug": "scholarly-recollection-player-core",
-    "descr": "**Trigger** You attempt a Perception check to Seek, or you attempt a skill check to [Recall Knowledge](/action/recall-knowledge-player-core) with a skill you're trained in.\n\n---\n\nSpeaking a short prayer as you gather your thoughts, you're blessed to find yourself pointed in the right direction. The GM rolls the triggering check twice and uses the better result.\n\nSpell Effect: Scholarly Recollection",
+    "descr": "Speaking a short prayer as you gather your thoughts, you're blessed to find yourself pointed in the right direction. The GM rolls the triggering check twice and uses the better result.\n\nSpell Effect: Scholarly Recollection",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -24368,7 +24391,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You attempt a Perception check to Seek, or you attempt a skill check to [Recall Knowledge](/action/recall-knowledge-player-core) with a skill you're trained in."
     },
     "attributes": {
       "remaster": true,
@@ -27840,7 +27864,7 @@
     "systemVersion": "1.2.10",
     "name": "Sudden Shift",
     "slug": "sudden-shift-player-core",
-    "descr": "**Trigger** An enemy misses you with a melee attack.\n\n---\n\nYou swiftly move from a dangerous spot and veil yourself. You Step and become [Concealed](/condition/concealed-player-core).",
+    "descr": "You swiftly move from a dangerous spot and veil yourself. You Step and become [Concealed](/condition/concealed-player-core).",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -27878,7 +27902,8 @@
       "durationText": "until the end of your next turn",
       "duration": 1,
       "durationType": "sourceEndNextTurn",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An enemy misses you with a melee attack."
     },
     "attributes": {
       "remaster": true,
@@ -30280,7 +30305,7 @@
     "systemVersion": "1.2.10",
     "name": "Tempt Fate",
     "slug": "tempt-fate-player-core",
-    "descr": "**Trigger** You or an ally within range attempts a saving throw.\n\n---\n\nYou twist the forces of fate to make a moment dire or uneventful, with no in-between. The target gains a +1 status bonus to the triggering saving throw. If the saving throw's result is a success, it becomes a critical success. If it's a failure, it becomes a critical failure, and the critical failure can't be reduced by abilities that usually reduce critical failure.\n\nIf the triggering ability did not have both a critical success and critical failure condition, *tempt fate* fails, but you don't expend the Focus Point for Casting this Spell.\n\nSpell Effect: Tempt Fate\n\n---\n\n**Heightened (8th)** The bonus on the saving throw is +2.",
+    "descr": "You twist the forces of fate to make a moment dire or uneventful, with no in-between. The target gains a +1 status bonus to the triggering saving throw. If the saving throw's result is a success, it becomes a critical success. If it's a failure, it becomes a critical failure, and the critical failure can't be reduced by abilities that usually reduce critical failure.\n\nIf the triggering ability did not have both a critical success and critical failure condition, *tempt fate* fails, but you don't expend the Focus Point for Casting this Spell.\n\nSpell Effect: Tempt Fate\n\n---\n\n**Heightened (8th)** The bonus on the saving throw is +2.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -30321,7 +30346,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You or an ally within range attempts a saving throw."
     },
     "attributes": {
       "remaster": true,
@@ -31992,7 +32018,7 @@
     "systemVersion": "1.2.10",
     "name": "Unity",
     "slug": "unity-player-core",
-    "descr": "**Trigger** You and 1 or more allies within range are targeted by a spell or ability that allows a saving throw.\n\n---\n\nYou put up a united defense. Each ally can use your saving throw modifier instead of its own against the triggering spell. Each ally decides individually which modifier to use.",
+    "descr": "You put up a united defense. Each ally can use your saving throw modifier instead of its own against the triggering spell. Each ally decides individually which modifier to use.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -32033,7 +32059,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You and 1 or more allies within range are targeted by a spell or ability that allows a saving throw."
     },
     "attributes": {
       "remaster": true,
@@ -34961,7 +34988,7 @@
     "systemVersion": "1.2.10",
     "name": "Zeal for Battle",
     "slug": "zeal-for-battle-player-core",
-    "descr": "**Trigger** You and at least 1 ally are about to roll initiative.\n\n---\n\nYou stoke the righteous anger within yourself and an ally. You and the target ally each roll a d20 and use the higher result for both your initiative rolls. You each still use your own Perception modifier or other statistic to determine your results.",
+    "descr": "You stoke the righteous anger within yourself and an ally. You and the target ally each roll a d20 and use the higher result for both your initiative rolls. You each still use your own Perception modifier or other statistic to determine your results.",
     "data": {
       "rank": 4,
       "rarity": "uncommon",
@@ -35012,7 +35039,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You and at least 1 ally are about to roll initiative."
     },
     "attributes": {
       "remaster": true,

@@ -165,7 +165,7 @@
     "systemVersion": "1.2.10",
     "name": "Ancestral Defense",
     "slug": "ancestral-defense-player-core-2",
-    "descr": "**Trigger** You are about to attempt a Will save.\n\n---\n\nYour ancestor protects you against those who would bend your will. You roll the triggering save twice and use the better result.",
+    "descr": "Your ancestor protects you against those who would bend your will. You roll the triggering save twice and use the better result.",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -211,7 +211,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You are about to attempt a Will save."
     },
     "attributes": {
       "remaster": true,
@@ -834,7 +835,7 @@
     "systemVersion": "1.2.10",
     "name": "Arcane Countermeasure",
     "slug": "arcane-countermeasure-player-core-2",
-    "descr": "**Trigger** A creature within range that you can see Casts a Spell.\n\n---\n\nYou undermine the target spell, making it easier to defend against. You reduce the spell's rank by 1, and targets of the spell gain a +2 status bonus to any saving throws, skill checks, AC, or DC against it.\n\nYou can't reduce the spell's rank below its minimum. For example, a 5th-rank [Howling Blizzard](/spell/howling-blizzard-player-core) would remain 5th-rank, but a 5th-rank [Fireball](/spell/fireball-player-core) would become 4th-rank. Targets still gain all the other benefits, even if you don't reduce the spell's rank.\n\nSpell Effect: Arcane Countermeasure",
+    "descr": "You undermine the target spell, making it easier to defend against. You reduce the spell's rank by 1, and targets of the spell gain a +2 status bonus to any saving throws, skill checks, AC, or DC against it.\n\nYou can't reduce the spell's rank below its minimum. For example, a 5th-rank [Howling Blizzard](/spell/howling-blizzard-player-core) would remain 5th-rank, but a 5th-rank [Fireball](/spell/fireball-player-core) would become 4th-rank. Targets still gain all the other benefits, even if you don't reduce the spell's rank.\n\nSpell Effect: Arcane Countermeasure",
     "data": {
       "rank": 5,
       "rarity": "uncommon",
@@ -870,7 +871,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A creature within range that you can see Casts a Spell."
     },
     "attributes": {
       "remaster": true,
@@ -968,7 +970,7 @@
     "systemVersion": "1.2.10",
     "name": "Battlefield Persistence",
     "slug": "battlefield-persistence-player-core-2",
-    "descr": "**Trigger** You are about to attempt a saving throw, but you haven't rolled yet.\n\n---\n\nYou're difficult to deter in battle. You gain a +2 status bonus to the triggering save, and if the triggering save is against an incapacitation effect, it treats you as if you were 2 levels higher.\n\nSpell Effect: Battlefield Persistence",
+    "descr": "You're difficult to deter in battle. You gain a +2 status bonus to the triggering save, and if the triggering save is against an incapacitation effect, it treats you as if you were 2 levels higher.\n\nSpell Effect: Battlefield Persistence",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -1004,7 +1006,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You are about to attempt a saving throw, but you haven't rolled yet."
     },
     "attributes": {
       "remaster": true,
@@ -1183,7 +1186,7 @@
     "systemVersion": "1.2.10",
     "name": "Blinding Fury",
     "slug": "blinding-fury-player-core-2",
-    "descr": "**Trigger** A creature damages you.\n\n---\n\nYou curse the target with your outrage at being attacked. The effect is determined by the target's Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target can't [Observe](/condition/observed-player-core) you until the end of its turn, and if you're currently observed by it, you become [Hidden](/condition/hidden-player-core) to it.\n\n**Failure** As success, and for 1 minute, every time the target damages you, it can't observe you until the end of its turn.\n\n**Critical Failure** As success, and for an unlimited duration, the first time each round the target damages a creature, it can't observe that creature until the end of its turn. If it damages several creatures at once, the creature it can't perceive is chosen randomly among those creatures.",
+    "descr": "You curse the target with your outrage at being attacked. The effect is determined by the target's Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The target can't [Observe](/condition/observed-player-core) you until the end of its turn, and if you're currently observed by it, you become [Hidden](/condition/hidden-player-core) to it.\n\n**Failure** As success, and for 1 minute, every time the target damages you, it can't observe you until the end of its turn.\n\n**Critical Failure** As success, and for an unlimited duration, the first time each round the target damages a creature, it can't observe that creature until the end of its turn. If it damages several creatures at once, the creature it can't perceive is chosen randomly among those creatures.",
     "data": {
       "rank": 6,
       "rarity": "common",
@@ -1234,7 +1237,8 @@
         }
       ],
       "durationText": "varies",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A creature damages you."
     },
     "attributes": {
       "remaster": true,
@@ -1798,7 +1802,7 @@
     "systemVersion": "1.2.10",
     "name": "Champion's Sacrifice",
     "slug": "champion-s-sacrifice-player-core-2",
-    "descr": "**Trigger** An ally is hit by a Strike, or an ally fails a saving throw against an effect that doesn't affect you.\n\n---\n\nYou form a link with an ally, allowing you to take harm in their stead. All the effects of the hit or failed save are applied to you instead of the target. For example, if the target critically fails a saving throw against a fireball, you would take double damage. These effects ignore any resistances, immunities, or other abilities you have that might mitigate them in any way, although those of the target apply before you take the effect",
+    "descr": "You form a link with an ally, allowing you to take harm in their stead. All the effects of the hit or failed save are applied to you instead of the target. For example, if the target critically fails a saving throw against a fireball, you would take double damage. These effects ignore any resistances, immunities, or other abilities you have that might mitigate them in any way, although those of the target apply before you take the effect",
     "data": {
       "rank": 6,
       "rarity": "uncommon",
@@ -1834,7 +1838,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An ally is hit by a Strike, or an ally fails a saving throw against an effect that doesn't affect you."
     },
     "attributes": {
       "remaster": true,
@@ -3586,7 +3591,7 @@
     "systemVersion": "1.2.10",
     "name": "Drop Dead",
     "slug": "drop-dead-player-core-2",
-    "descr": "**Trigger** A creature within range is hit by an attack from an enemy.\n\n---\n\nThe target appears to fall down dead, though it actually turns [Invisible](/condition/invisible-player-core). Its illusory corpse remains where it fell, complete with a believable fatal wound. This illusion looks and feels like a dead body. If the target's death seems absurd—for instance, a barbarian at full health appears to be slain by 2 damage—the GM can grant the attacker an immediate Perception check to disbelieve the illusion. If the target uses hostile actions, the spell ends. This ends the entire spell, so the illusory corpse disappears too.\n\n---\n\n**Heightened (7th)** The spell doesn't end if the target uses a hostile action.",
+    "descr": "The target appears to fall down dead, though it actually turns [Invisible](/condition/invisible-player-core). Its illusory corpse remains where it fell, complete with a believable fatal wound. This illusion looks and feels like a dead body. If the target's death seems absurd—for instance, a barbarian at full health appears to be slain by 2 damage—the GM can grant the attacker an immediate Perception check to disbelieve the illusion. If the target uses hostile actions, the spell ends. This ends the entire spell, so the illusory corpse disappears too.\n\n---\n\n**Heightened (7th)** The spell doesn't end if the target uses a hostile action.",
     "data": {
       "rank": 5,
       "rarity": "uncommon",
@@ -3633,7 +3638,8 @@
       "durationText": "1 minute",
       "duration": 1,
       "durationType": "time",
-      "durationUnit": "minute"
+      "durationUnit": "minute",
+      "trigger": "A creature within range is hit by an attack from an enemy."
     },
     "attributes": {
       "remaster": true,
@@ -5643,7 +5649,7 @@
     "systemVersion": "1.2.10",
     "name": "Hero's Defiance",
     "slug": "hero-s-defiance-player-core-2",
-    "descr": "**Trigger** An attack would bring you to 0 Hit Points.\n\n---\n\nYou shout in defiance and are filled with a burst of healing. Just before applying the attack's damage, you recover 6d8+20 Hit Points. If this is enough to prevent the attack from bringing you to 0 Hit Points, you don't become [Unconscious](/condition/unconscious-player-core) or [Dying](/condition/dying-player-core). Either way, cheating death is difficult, and you can't use *hero's defiance* again until you Refocus or make your daily preparations. *Hero's defiance* can't be used against effects with the [death](/trait/death) trait or that would leave no remains, such as disintegrate.",
+    "descr": "You shout in defiance and are filled with a burst of healing. Just before applying the attack's damage, you recover 6d8+20 Hit Points. If this is enough to prevent the attack from bringing you to 0 Hit Points, you don't become [Unconscious](/condition/unconscious-player-core) or [Dying](/condition/dying-player-core). Either way, cheating death is difficult, and you can't use *hero's defiance* again until you Refocus or make your daily preparations. *Hero's defiance* can't be used against effects with the [death](/trait/death) trait or that would leave no remains, such as disintegrate.",
     "data": {
       "rank": 10,
       "rarity": "uncommon",
@@ -5689,7 +5695,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An attack would bring you to 0 Hit Points."
     },
     "attributes": {
       "remaster": true,
@@ -8490,7 +8497,7 @@
     "systemVersion": "1.2.10",
     "name": "Schadenfreude",
     "slug": "schadenfreude-player-core-2",
-    "descr": "**Trigger** You critically fail a saving throw against a foe's effect.\n\n---\n\nYou distract your enemy with their feeling of smug pleasure when you fail catastrophically. They must attempt a Will save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is distracted by its amusement and takes a -1 status penalty on Perception checks and Will saves for 1 round. Spell Effect: Schadenfreude (Success)\n\n**Failure** The creature is overcome by its amusement and is [Stupefied 1](/condition/stupefied-player-core) for 1 round.\n\n**Critical Failure** The creature is lost in its amusement and is Stupefied 2 for 1 round and [Stunned 1](/condition/stunned-player-core).",
+    "descr": "You distract your enemy with their feeling of smug pleasure when you fail catastrophically. They must attempt a Will save.\n\n---\n\n**Critical Success** The creature is unaffected.\n\n**Success** The creature is distracted by its amusement and takes a -1 status penalty on Perception checks and Will saves for 1 round. Spell Effect: Schadenfreude (Success)\n\n**Failure** The creature is overcome by its amusement and is [Stupefied 1](/condition/stupefied-player-core) for 1 round.\n\n**Critical Failure** The creature is lost in its amusement and is Stupefied 2 for 1 round and [Stunned 1](/condition/stunned-player-core).",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -8531,7 +8538,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You critically fail a saving throw against a foe's effect."
     },
     "attributes": {
       "remaster": true,
@@ -8561,7 +8569,7 @@
     "systemVersion": "1.2.10",
     "name": "Scintillating Safeguard",
     "slug": "scintillating-safeguard-player-core-2",
-    "descr": "**Trigger** An effect would deal physical or energy damage to you or a creature in range.\n\n---\n\nA sparkling magical barrier envelops each target, shielding them against the triggering effect. Choose one type of physical or energy damage the triggering effect deals. Each target gains resistance 10 against that damage type for the triggering effect. The resistance applies only against the initial damage, not against any persistent damage or other lingering effects.\n\n---\n\n**Heightened (+1)** The resistance increases by 1.\n\nSpell Effect: Scintillating Safeguard",
+    "descr": "A sparkling magical barrier envelops each target, shielding them against the triggering effect. Choose one type of physical or energy damage the triggering effect deals. Each target gains resistance 10 against that damage type for the triggering effect. The resistance applies only against the initial damage, not against any persistent damage or other lingering effects.\n\n---\n\n**Heightened (+1)** The resistance increases by 1.\n\nSpell Effect: Scintillating Safeguard",
     "data": {
       "rank": 6,
       "rarity": "common",
@@ -8591,7 +8599,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An effect would deal physical or energy damage to you or a creature in range."
     },
     "attributes": {
       "remaster": true,
@@ -8852,7 +8861,7 @@
     "systemVersion": "1.2.10",
     "name": "Shields of the Spirit",
     "slug": "shields-of-the-spirit-player-core-2",
-    "descr": "**Requirements** You are wielding a shield.\n\n---\n\nYou Raise your Shield, causing ephemeral spirit shields to float within your champion's aura. The shields last until the start of your next turn or until you're no longer raising your shield, whichever comes first. While one of your allies is in your champion's aura, the shields grant them a +1 status bonus to AC, and each time an enemy makes an attack against the ally, the enemy takes 1d4 spirit damage (even if it misses).\n\nThe benefit applies only while an ally is in your aura, ending for any ally that leaves and applying to any that enters later. As normal, you don't count as your own ally and therefore don't get the benefits of the spirit shields yourself.\n\nSpell Effect: Shields Of The Spirit\n\n---\n\n**Heightened (+2)** The damage increases by 1d4.",
+    "descr": "You Raise your Shield, causing ephemeral spirit shields to float within your champion's aura. The shields last until the start of your next turn or until you're no longer raising your shield, whichever comes first. While one of your allies is in your champion's aura, the shields grant them a +1 status bonus to AC, and each time an enemy makes an attack against the ally, the enemy takes 1d4 spirit damage (even if it misses).\n\nThe benefit applies only while an ally is in your aura, ending for any ally that leaves and applying to any that enters later. As normal, you don't count as your own ally and therefore don't get the benefits of the spirit shields yourself.\n\nSpell Effect: Shields Of The Spirit\n\n---\n\n**Heightened (+2)** The damage increases by 1d4.",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -9217,7 +9226,7 @@
     "systemVersion": "1.2.10",
     "name": "Spell Riposte",
     "slug": "spell-riposte-player-core-2",
-    "descr": "**Trigger** You're the target of a spell you're aware of.\n\n---\n\nYou attempt to counteract the triggering spell. If the spell would be counteracted, it instead continues with the caster as a target instead of you. *Spell riposte* can't affect spells that aren't targeted (such as area spells).",
+    "descr": "You attempt to counteract the triggering spell. If the spell would be counteracted, it instead continues with the caster as a target instead of you. *Spell riposte* can't affect spells that aren't targeted (such as area spells).",
     "data": {
       "rank": 7,
       "rarity": "uncommon",
@@ -9247,7 +9256,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You're the target of a spell you're aware of."
     },
     "attributes": {
       "remaster": true,

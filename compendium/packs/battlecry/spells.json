@@ -458,7 +458,7 @@
     "systemVersion": "1.2.10",
     "name": "Curse of Recoil",
     "slug": "curse-of-recoil-battlecry",
-    "descr": "**Trigger** An enemy you can see is about to make a ranged attack.\n\n---\n\nYou curse an enemy to suffer a kickback as they make a ranged attack, potentially causing them to miss. The triggering enemy attempts a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The recoil from their ranged attack causes the target to be [Off Guard](/condition/off-guard-player-core) until the beginning of their next turn.\n\n**Failure** The recoil imposes a –1 status penalty to the ranged attack and renders the target off-guard until the beginning of their next turn.\n\nSpell Effect: Curse Of Recoil (Failure)\n\n**Critical Failure** The recoil imposes a –2 status penalty to the ranged attack and renders the target off-guard until the beginning of their next turn. Until the start of their next turn, any additional ranged attacks made with the same weapon, spell, or ability take the same penalty.\n\nSpell Effect: Curse Of Recoil (Critical Failure)",
+    "descr": "You curse an enemy to suffer a kickback as they make a ranged attack, potentially causing them to miss. The triggering enemy attempts a Will save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The recoil from their ranged attack causes the target to be [Off Guard](/condition/off-guard-player-core) until the beginning of their next turn.\n\n**Failure** The recoil imposes a –1 status penalty to the ranged attack and renders the target off-guard until the beginning of their next turn.\n\nSpell Effect: Curse Of Recoil (Failure)\n\n**Critical Failure** The recoil imposes a –2 status penalty to the ranged attack and renders the target off-guard until the beginning of their next turn. Until the start of their next turn, any additional ranged attacks made with the same weapon, spell, or ability take the same penalty.\n\nSpell Effect: Curse Of Recoil (Critical Failure)",
     "data": {
       "rank": 1,
       "rarity": "common",
@@ -495,7 +495,8 @@
       "durationText": "1 round",
       "duration": 1,
       "durationType": "time",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An enemy you can see is about to make a ranged attack."
     },
     "attributes": {
       "remaster": true,
@@ -593,7 +594,7 @@
     "systemVersion": "1.2.10",
     "name": "Desperate Repair",
     "slug": "desperate-repair-battlecry",
-    "descr": "**Trigger** A shield within range would be reduced to 0 Hit Points by a damaging effect\n\n**Requirements** The triggering shield had more than 1 Hit Point before taking damage.\n\n---\n\nYou hold a shield together with the power of your magic, forcing wood and steel to fuse back together. The shield remains at 1 Hit Point and isn't destroyed. Its construction is weakened until someone takes the time to repair it, preventing *desperate repair* or a similar ability from saving the same shield until your next daily preparations.",
+    "descr": "You hold a shield together with the power of your magic, forcing wood and steel to fuse back together. The shield remains at 1 Hit Point and isn't destroyed. Its construction is weakened until someone takes the time to repair it, preventing *desperate repair* or a similar ability from saving the same shield until your next daily preparations.",
     "data": {
       "rank": 5,
       "rarity": "common",
@@ -604,7 +605,7 @@
       "cast": "reaction",
       "range": "60 feet",
       "targets": "1 shield",
-      "requirements": "",
+      "requirements": "The triggering shield had more than 1 Hit Point before taking damage.",
       "traditions": [
         "arcane",
         "primal"
@@ -622,7 +623,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A shield within range would be reduced to 0 Hit Points by a damaging effect"
     },
     "attributes": {
       "remaster": true,
@@ -887,7 +889,7 @@
     "systemVersion": "1.2.10",
     "name": "Filter Air",
     "slug": "filter-air-battlecry",
-    "descr": "**Trigger** You're exposed to a poison or disease that has the [inhaled](/trait/inhaled) trait, and you're aware of the exposure\n\n**Requirements** You breathe air.\n\n---\n\nYou suck in a rough breath of air, and your body automatically filters out the harmful molecules that would infest your lungs. As you breathe for the duration of the spell, you get the outcome one degree of success higher on your saving throws against inhaled poisons and diseases.\n\nSpell Effect: Filter Air",
+    "descr": "You suck in a rough breath of air, and your body automatically filters out the harmful molecules that would infest your lungs. As you breathe for the duration of the spell, you get the outcome one degree of success higher on your saving throws against inhaled poisons and diseases.\n\nSpell Effect: Filter Air",
     "data": {
       "rank": 4,
       "rarity": "common",
@@ -901,7 +903,7 @@
       "cast": "reaction",
       "range": "",
       "targets": "",
-      "requirements": "",
+      "requirements": "You breathe air.",
       "traditions": [
         "arcane",
         "divine",
@@ -934,7 +936,8 @@
       "durationText": "1 minute",
       "duration": 1,
       "durationType": "time",
-      "durationUnit": "minute"
+      "durationUnit": "minute",
+      "trigger": "You're exposed to a poison or disease that has the [inhaled](/trait/inhaled) trait, and you're aware of the exposure"
     },
     "attributes": {
       "remaster": true,
@@ -1119,7 +1122,7 @@
     "systemVersion": "1.2.10",
     "name": "Helpful Reload",
     "slug": "helpful-reload-battlecry",
-    "descr": "**Trigger** One of your allies makes a ranged Strike with a weapon with a reload of 1 or less\n\n**Requirements** Your ally has more ammunition for their ranged weapon available.\n\n---\n\nWith a quick gesture, you reload your ally's weapon, allowing them to focus on fighting the enemy. You reload their weapon with a piece of mundane ammunition from the triggering creature's inventory.\n\n---\n\n**Heightened (4th)** You reload your ally's weapon and grant them a +1 status bonus to their next Strike with this weapon.\n\nSpell Effect: Helpful Reload\n\n**Heightened (6th)** You reload your ally's weapon with the ammunition of their choice from their inventory. Your ally gains a +1 status bonus to their next Strike with this weapon.\n\n**Heightened (8th)** The spell no longer requires your ally to have appropriate ammunition available. You summon a single piece of common magical ammunition of 10th level or lower to reload your ally's weapon with. Your ally gains a +1 status bonus to their next Strike with this weapon.",
+    "descr": "With a quick gesture, you reload your ally's weapon, allowing them to focus on fighting the enemy. You reload their weapon with a piece of mundane ammunition from the triggering creature's inventory.\n\n---\n\n**Heightened (4th)** You reload your ally's weapon and grant them a +1 status bonus to their next Strike with this weapon.\n\nSpell Effect: Helpful Reload\n\n**Heightened (6th)** You reload your ally's weapon with the ammunition of their choice from their inventory. Your ally gains a +1 status bonus to their next Strike with this weapon.\n\n**Heightened (8th)** The spell no longer requires your ally to have appropriate ammunition available. You summon a single piece of common magical ammunition of 10th level or lower to reload your ally's weapon with. Your ally gains a +1 status bonus to their next Strike with this weapon.",
     "data": {
       "rank": 2,
       "rarity": "common",
@@ -1131,7 +1134,7 @@
       "cast": "reaction",
       "range": "30 feet",
       "targets": "the triggering creature",
-      "requirements": "",
+      "requirements": "Your ally has more ammunition for their ranged weapon available.",
       "traditions": [
         "arcane",
         "divine",
@@ -1154,7 +1157,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "One of your allies makes a ranged Strike with a weapon with a reload of 1 or less"
     },
     "attributes": {
       "remaster": true,

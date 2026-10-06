@@ -763,7 +763,7 @@
     "systemVersion": "1.2.10",
     "name": "Cutting Eye",
     "slug": "cutting-eye-rival-academies",
-    "descr": "**Trigger** You are the target of an attack or must attempt a saving throw against a spell.\n\n---\n\nYour eyes open enviously, stealing the power of an opponent for yourself. You are not [Off Guard](/condition/off-guard-player-core) to the attacker or spellcaster until the beginning of your next turn. You gain a +2 circumstance bonus to your AC against the triggering attack or a +2 circumstance bonus to the triggering save.\n\nSpell Effect: Cutting Eye",
+    "descr": "Your eyes open enviously, stealing the power of an opponent for yourself. You are not [Off Guard](/condition/off-guard-player-core) to the attacker or spellcaster until the beginning of your next turn. You gain a +2 circumstance bonus to your AC against the triggering attack or a +2 circumstance bonus to the triggering save.\n\nSpell Effect: Cutting Eye",
     "data": {
       "rank": 1,
       "rarity": "uncommon",
@@ -799,7 +799,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You are the target of an attack or must attempt a saving throw against a spell."
     },
     "attributes": {
       "remaster": true,
@@ -1634,7 +1635,7 @@
     "systemVersion": "1.2.10",
     "name": "Love's Sacrifice",
     "slug": "love-s-sacrifice-rival-academies",
-    "descr": "**Trigger** You take damage that would reduce you to 0 Hit Points.\n\n---\n\nYou cry out for aid, and a creature near you feels compelled to throw itself in front of the threat as the ultimate expression of their love. A target that genuinely loves the caster without magical compulsion, at their player's or the GM's discretion, fails the save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The creature moves adjacent to you, moving further than its Speed if necessary as the magic compels it to exceed its limits. It takes half the damage you would have taken, while you take the rest. If you would be reduced to 0 Hit Points, you're reduced to 1 instead.\n\n**Failure** As success, except they take the full damage. If the damage reduces them to 0 Hit Points, they immediately die; this is a death effect.\n\n---\n\n*PFS Note:* This spell can only be cast on a friendly NPC with GM approval, and on a PC with their player's approval.",
+    "descr": "You cry out for aid, and a creature near you feels compelled to throw itself in front of the threat as the ultimate expression of their love. A target that genuinely loves the caster without magical compulsion, at their player's or the GM's discretion, fails the save.\n\n---\n\n**Critical Success** The target is unaffected.\n\n**Success** The creature moves adjacent to you, moving further than its Speed if necessary as the magic compels it to exceed its limits. It takes half the damage you would have taken, while you take the rest. If you would be reduced to 0 Hit Points, you're reduced to 1 instead.\n\n**Failure** As success, except they take the full damage. If the damage reduces them to 0 Hit Points, they immediately die; this is a death effect.\n\n---\n\n*PFS Note:* This spell can only be cast on a friendly NPC with GM approval, and on a PC with their player's approval.",
     "data": {
       "rank": 7,
       "rarity": "uncommon",
@@ -1679,7 +1680,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "You take damage that would reduce you to 0 Hit Points."
     },
     "attributes": {
       "remaster": true,
@@ -1776,7 +1778,7 @@
     "systemVersion": "1.2.10",
     "name": "Mimic Spell",
     "slug": "mimic-spell-rival-academies",
-    "descr": "**Trigger** A creature you're aware of within range Casts a Spell of the same tradition as *mimic spell* and of the same or lower rank.\n\n---\n\nYou learn the secrets of a spell just by watching someone else cast it. Attempt to counteract the spell cast by the triggering creature. If the spell would be counteracted, you instead gain the ability to Cast that Spell without expending a slot.\n\nOn your next turn, you spend the same number of actions to Cast the Spell as the triggering creature, but you choose the targets (if any) and use your spell attack modifier or spell DC as appropriate. The spell is heightened to the same rank as mimic spell. The mimicked spell is of the same tradition as the spells you normally cast.\n\nIf you don't Cast the mimicked Spell by the end of your next turn, it is lost, unless you Sustain the knowledge of it. You can Sustain this knowledge for up to 1 minute, after which it is lost.",
+    "descr": "You learn the secrets of a spell just by watching someone else cast it. Attempt to counteract the spell cast by the triggering creature. If the spell would be counteracted, you instead gain the ability to Cast that Spell without expending a slot.\n\nOn your next turn, you spend the same number of actions to Cast the Spell as the triggering creature, but you choose the targets (if any) and use your spell attack modifier or spell DC as appropriate. The spell is heightened to the same rank as mimic spell. The mimicked spell is of the same tradition as the spells you normally cast.\n\nIf you don't Cast the mimicked Spell by the end of your next turn, it is lost, unless you Sustain the knowledge of it. You can Sustain this knowledge for up to 1 minute, after which it is lost.",
     "data": {
       "rank": 8,
       "rarity": "rare",
@@ -1810,7 +1812,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "A creature you're aware of within range Casts a Spell of the same tradition as *mimic spell* and of the same or lower rank."
     },
     "attributes": {
       "remaster": true,

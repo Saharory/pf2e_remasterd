@@ -2,10 +2,10 @@
 
 Last updated: 2026-10-07
 
-- Follow-up in a separate chat: the user reported import bugs in **TRADE
-  DEATH FOR LIFE** and **TREE OF LIFE AND DEATH** on 2026-10-05. Details and
-  reproduction will be supplied there; neither issue has been investigated
-  or fixed in this chat.
+- The previously reported **Trade Death for Life** and **Tree of Life and
+  Death** import issues were investigated here on 2026-10-07 after the user
+  clarified that structured spell metadata remained in descriptions. The
+  shared import repair below is source-complete; native confirmation pending.
 - Branch: `remaster-community-base`
 - Package version: `0.9.01`. The user authorized pushing the completed editor
   work and replacing the main dist package on 2026-10-05. Version changes,
@@ -26,18 +26,19 @@ Last updated: 2026-10-07
   It now also includes the named item activation rendering repair and imported
   activation field conversion below, plus imported Craft Requirements and
   their native item-preview rendering repair, native item variant display,
-  and corrected category visibility syntax.
+  corrected category visibility syntax, and spell description metadata cleanup.
   Archive inspection/CRC/checksums pass; all 199 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `6918edd264ab631a2ccdc622d99395e12e6ac8d499f98f476dcf473650cc32f0`.
+  SHA-256: `dab475384f29c40f3c4fabc73a9adff68b7321bb7ba36c8542e89e25c14db365`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
   main and test archives were identical at that point; archive CRC and
-  checksums passed. The newer activation/crafting, variant rendering, and category fixes are only in
+  checksums passed. The newer activation/crafting, variant rendering, category,
+  and spell metadata fixes are only in
   the test package, not this main distribution or the previous branch push.
   Version remains `0.9.01`. Distribution artifacts are ignored
   by Git; the branch push carries source changes and documentation.
@@ -47,6 +48,37 @@ Last updated: 2026-10-07
   spell durations/areas, hazard/vehicle mechanics, and four UI regression files.
   Revalidated on 2026-10-07 with the repaired virtualenv and bundled Node via
   `../tools/project-env python tools/eplus_dev.py check --json`.
+- Spell description metadata: source repair complete on 2026-10-07; native
+  confirmation pending. Audit found 503 spells with leading metadata for fields
+  already offered in the editor. `tools/spell_editor_data.py` repairs 479 across
+  13 ORC/OGL collections, removing represented leading headers and populating
+  missing ordinary text fields such as Trigger/Requirements. It also preserves
+  links by retaining richer linked text where ordinary fields can carry it.
+  Only consecutive known metadata paragraphs at the start are considered;
+  effect prose, outcome blocks, heightened rules, IDs, licensing, and source
+  records otherwise remain intact. Unknown metadata (Patron Theme, Deity,
+  Domain, Mystery, legacy version notices) stays in the description. Conflicting
+  populated values, repeated/inline headers, unmapped areas, qualified geometry,
+  unsupported Defense AC, and linked defense/duration/area text remain printed
+  rather than losing information or changing native parsing.
+  Both full builders call the shared converter after link deduplication; its
+  post-link CLI updates only owned spell collections, preserving enrichment.
+  The reported Tree of Life and Death now starts with its actual effect;
+  Trade Death for Life retains Patron Theme but removes duplicate Range/Target/
+  Defense/Duration. Missing reaction triggers such as Blastback's populate the
+  Casting details field. Corpus comparison proves all effect/heightened body
+  text and internal link routes preserved, and all native timers/map templates
+  unchanged. Conversion is idempotent. Ten added conversion cases pass (40
+  total), as does the canonical check (83 definitions, nine validators).
+  The verified test archive changes only `spells.json` from its predecessor:
+  479 of 1,404 spells change, all 18,041 records remain, every other packaged
+  file is identical, CRC/checksums pass, and version remains `0.9.01`.
+  No user-record migration, version change, push, or publication was performed.
+  Next native test after importing: fresh Trade Death for Life and Tree of Life
+  and Death should show mapped metadata once, with effect/heightened rules intact;
+  on a test copy, edit Range and save/reopen, verifying the displayed value
+  updates without an old description header. Fresh Blastback should have its
+  Trigger populated in Casting details. Old personal copies may retain old data.
 - Spell editor efficiency: source complete, native verification pending.
   Type/rank/rarity/traits now share the opening group. **Casting** keeps
   variable action selection and traditions direct, with casting notes,
@@ -549,9 +581,9 @@ Last updated: 2026-10-07
   All requested item variant checks also pass.
   Item populated-property retention after category changes passes.
   Spell Casting details fill/display/save/reopen/clear also passes.
-  Next focused test: spell Cast actions multiple selections and direct
-  range/defense/printed-duration edits, verifying display and save/reopen.
-  Continue map-template functionality, empty-item category field visibility,
+  Next focused test: the imported spell metadata repair above. Then continue
+  spell Cast actions multiple selections and direct range/defense/printed-duration
+  edits, map-template functionality, empty-item category field visibility,
   and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining

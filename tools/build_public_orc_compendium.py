@@ -31,6 +31,7 @@ from creature_editor_data import configure_creature_editor_data
 from item_editor_data import configure_item_editor_data
 from spell_area_templates import configure_spell_area_template
 from spell_load_data import configure_spell_load_data
+from spell_editor_data import configure_spell_editor_data
 from skill_references import skill_reference_records
 
 
@@ -755,6 +756,8 @@ def sanitize_entity(entity: dict[str, Any], expected_kind: str) -> dict[str, Any
         # Editor mirrors must reflect the final linked text, not an earlier
         # version that the reference de-duplicator can still adjust.
         configure_creature_editor_data(result)
+    if expected_kind == "Spell":
+        configure_spell_editor_data(result)
 
     return result
 

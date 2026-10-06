@@ -755,7 +755,7 @@
     "systemVersion": "1.2.10",
     "name": "Entropic Wheel",
     "slug": "entropic-wheel-dark-archive",
-    "descr": "**Trigger** You deal cold or fire damage to an enemy.\n\nYou stockpile thermal energy in a magical wheel-like construct that lets you burn opponents with cold or freeze their bodies with heat. When you Cast the Spell, the wheel has one mote of thermal energy, and when you use a cold or fire effect or deal cold or fire damage, the wheel spins, siphoning off a bit of energy and gaining another mote. The wheel can't gain motes more than once on a given turn, and the maximum number of motes is equal to *entropic wheel*'s rank.\n\nWhen you Cast a Spell that deals fire damage, the target also takes cold damage equal to the number of motes in the *entropic wheel*. When you Cast a Spell that deals cold damage, the target also takes fire damage equal to the number of motes in the *entropic wheel*. This applies only to the initial damage of the spell, not to any persistent damage or ongoing effects.\n\nSpell Effect: Entropic Wheel",
+    "descr": "You stockpile thermal energy in a magical wheel-like construct that lets you burn opponents with cold or freeze their bodies with heat. When you Cast the Spell, the wheel has one mote of thermal energy, and when you use a cold or fire effect or deal cold or fire damage, the wheel spins, siphoning off a bit of energy and gaining another mote. The wheel can't gain motes more than once on a given turn, and the maximum number of motes is equal to *entropic wheel*'s rank.\n\nWhen you Cast a Spell that deals fire damage, the target also takes cold damage equal to the number of motes in the *entropic wheel*. When you Cast a Spell that deals cold damage, the target also takes fire damage equal to the number of motes in the *entropic wheel*. This applies only to the initial damage of the spell, not to any persistent damage or ongoing effects.\n\nSpell Effect: Entropic Wheel",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -803,7 +803,8 @@
       "durationText": "1 minute",
       "duration": 1,
       "durationType": "time",
-      "durationUnit": "minute"
+      "durationUnit": "minute",
+      "trigger": "You deal cold or fire damage to an enemy."
     },
     "attributes": {
       "remaster": true,
@@ -3203,7 +3204,7 @@
     "systemVersion": "1.2.10",
     "name": "Return the Favor",
     "slug": "return-the-favor-dark-archive",
-    "descr": "**Trigger** An ally uses a reaction to grant you a beneficial effect during a combat encounter.\n\nYou're unable to leave any debts unpaid. When an ally supports you in a fight, you offer assistance in turn for the favor. The triggering ally gains 12 temporary Hit Points for 1 minute.\n\n---\n\n**Heightened (+1)** The temporary Hit Points increase by 4.\n\nSpell Effect: Return The Favor",
+    "descr": "You're unable to leave any debts unpaid. When an ally supports you in a fight, you offer assistance in turn for the favor. The triggering ally gains 12 temporary Hit Points for 1 minute.\n\n---\n\n**Heightened (+1)** The temporary Hit Points increase by 4.\n\nSpell Effect: Return The Favor",
     "data": {
       "rank": 3,
       "rarity": "uncommon",
@@ -3244,7 +3245,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An ally uses a reaction to grant you a beneficial effect during a combat encounter."
     },
     "attributes": {
       "remaster": true,
@@ -3405,7 +3407,7 @@
     "systemVersion": "1.2.10",
     "name": "Shaken Confidence",
     "slug": "shaken-confidence-dark-archive",
-    "descr": "**Trigger** An enemy within 30 feet of you critically fails an attack roll, Perception check, or skill check.\n\n---\n\nYou mock the target for all its failings, twisting its self-confidence into doubt. The enemy attempts a Will saving throw.\n\n---\n\n**Success** The target is unaffected.\n\n**Failure** The target is briefly shaken and unsure of its abilities. It must roll twice and take the worse result on the next roll of the same type as the critical failure that triggered the spell (such as the target's next Acrobatics check if the spell's trigger was a critical failure on an Acrobatics check). If the target doesn't attempt any qualifying checks, the spell ends at the end of the target's next turn.",
+    "descr": "You mock the target for all its failings, twisting its self-confidence into doubt. The enemy attempts a Will saving throw.\n\n---\n\n**Success** The target is unaffected.\n\n**Failure** The target is briefly shaken and unsure of its abilities. It must roll twice and take the worse result on the next roll of the same type as the critical failure that triggered the spell (such as the target's next Acrobatics check if the spell's trigger was a critical failure on an Acrobatics check). If the target doesn't attempt any qualifying checks, the spell ends at the end of the target's next turn.",
     "data": {
       "rank": 4,
       "rarity": "rare",
@@ -3457,7 +3459,8 @@
         }
       ],
       "durationText": "varies",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An enemy within 30 feet of you critically fails an attack roll, Perception check, or skill check."
     },
     "attributes": {
       "remaster": true,
@@ -4699,7 +4702,7 @@
     "systemVersion": "1.2.10",
     "name": "Victory Cry",
     "slug": "victory-cry-dark-archive",
-    "descr": "**Trigger** An ally within range critically succeeds at a melee Strike.\n\n---\n\nYour true might comes from your bonds with your allies, and you glory in their achievements. The weapon used to make the Strike deals an additional 1d6 sonic damage (not doubled due to the critical hit), and the ally can immediately attempt to [Shove](/action/shove-player-core) the creature struck, even if the ally's hands are full. Your ally can use its item bonus to the triggering attack roll on the Athletics check, if any, and it gains a +1 status bonus to the Athletics check if the triggering Strike was with a weapon that has the [trip](/trait/trip) trait or an unarmed attack that has the trip trait.\n\n---\n\n**Heightened (+2)** The sonic damage increases by 1d6.",
+    "descr": "Your true might comes from your bonds with your allies, and you glory in their achievements. The weapon used to make the Strike deals an additional 1d6 sonic damage (not doubled due to the critical hit), and the ally can immediately attempt to [Shove](/action/shove-player-core) the creature struck, even if the ally's hands are full. Your ally can use its item bonus to the triggering attack roll on the Athletics check, if any, and it gains a +1 status bonus to the Athletics check if the triggering Strike was with a weapon that has the [trip](/trait/trip) trait or an unarmed attack that has the trip trait.\n\n---\n\n**Heightened (+2)** The sonic damage increases by 1d6.",
     "data": {
       "rank": 1,
       "rarity": "rare",
@@ -4740,7 +4743,8 @@
         }
       ],
       "durationText": "",
-      "durationUnit": "round"
+      "durationUnit": "round",
+      "trigger": "An ally within range critically succeeds at a melee Strike."
     },
     "attributes": {
       "remaster": true,
