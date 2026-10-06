@@ -25,18 +25,19 @@ Last updated: 2026-10-07
   spellcasting-input repair, shared ability writing flow, and character tabs.
   It now also includes the named item activation rendering repair and imported
   activation field conversion below, plus imported Craft Requirements and
-  their native item-preview rendering repair, and native item variant display.
+  their native item-preview rendering repair, native item variant display,
+  and corrected category visibility syntax.
   Archive inspection/CRC/checksums pass; all 199 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `3e8047b5d3a1dededced833e8a955e7e28372d37db273e54a82f57d1ef347501`.
+  SHA-256: `6918edd264ab631a2ccdc622d99395e12e6ac8d499f98f476dcf473650cc32f0`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
   main and test archives were identical at that point; archive CRC and
-  checksums passed. The newer activation/crafting and variant rendering fixes are only in
+  checksums passed. The newer activation/crafting, variant rendering, and category fixes are only in
   the test package, not this main distribution or the previous branch push.
   Version remains `0.9.01`. Distribution artifacts are ignored
   by Git; the branch push carries source changes and documentation.
@@ -90,8 +91,9 @@ Last updated: 2026-10-07
   Primary activation native tests also pass on 2026-10-07: populate action,
   trait, and text; summary/display and save/reopen; clear those fields and
   save/reopen while named Review/Extra Credit remain unchanged throughout.
-  Pending functional checks: inspect new gear, armor, shields, and weapons;
-  edit variants and their level/price/bulk/crafting fields; change a category
+  Variant native checks also pass on 2026-10-07: all six fields display, the
+  label says Variant, save/reopen and deletion persist, and activations remain
+  unchanged. Pending functional checks: inspect new gear, armor, shields, and weapons; change a category
   with populated equipment stats and ensure those values remain editable.
   No agent app automation is authorized. The user selected creatures next,
   ahead of shared abilities. The shared ability editor is now implemented as
@@ -179,8 +181,9 @@ Last updated: 2026-10-07
   Older personal copies may retain their previous description-only data.
   Ammunition/onset filling, summary/display, save/reopen, and clearing also pass.
 - Item variant display: source repair complete on 2026-10-07; the user confirms
-  all six variant values display, including level zero. Save/reopen, deletion,
-  and activation independence remain pending. Preparation for the next verification found native `views/item.json`
+  all six variant values display, including level zero. The remaining label,
+  save/reopen, deletion, and activation independence checks also pass in the
+  user's follow-up. Preparation for the next verification found native `views/item.json`
   omitted the editable `data.types` list, while HTML already rendered it.
   The native view now uses the existing `item-type.md` partial with each variant
   as its context, matching HTML. The shared partial also preserves level zero
@@ -196,9 +199,22 @@ Last updated: 2026-10-07
   native views with the editor. No data or form binding changes. Canonical
   checks pass; the rebuilt test archive changes only `item-type.md` from its
   predecessor. CRC/checksums pass; all other packaged files are unchanged.
-  Next native test after importing: confirm the Variant label, save/reopen the
-  populated variant, then delete and confirm deletion persists. Primary and
-  named activations must remain unchanged. Do not repeat confirmed value display.
+  All requested variant checks are now passed; do not repeat without a new
+  regression.
+- Item category visibility: source repair complete on 2026-10-07; native
+  verification pending. Preparation found unsupported `elsif` tags in the
+  Armor and Adventuring Gear visibility conditions. These now use supported
+  `elif`, as in official 5e templates. Conditions, controls, and stored paths
+  otherwise remain identical. The maintained editability suite now rejects
+  this unsupported tag in item forms. Canonical checks pass (83 definitions,
+  nine validators). The verified test archive changes only `forms/item.json`;
+  content and every other packaged file remain unchanged. CRC/checksums pass,
+  version remains `0.9.01`, and no push/publication occurred.
+  Next native test: on test items, switch among Adventuring Gear, Armor, Shield,
+  and Weapon and check corresponding fields. Populate armor AC 2/Dex Cap 0,
+  switch to Adventuring Gear and save/reopen: armor values should remain
+  editable. Separately populate gear Hands 2, switch to Consumable and
+  save/reopen: Hands should remain editable and retain its value.
 - Creature editor efficiency: source complete, user tests pass on 2026-10-05.
   The user approved the four-tab layout and explicitly reported all tests
   passing. This native pass covers the layout/refresh iteration delivered in
@@ -523,9 +539,10 @@ Last updated: 2026-10-07
   a new regression. Craft Requirements import/edit/save/display also passes.
   Additional details ammunition/onset and clearing checks also pass.
   Primary activation editing/clearing and named-entry independence also pass.
-  Next focused test: on a test item, add/edit a variant's name, level, price,
-  bulk, crafting requirements, and description; verify display and save/reopen,
-  then delete the variant and confirm deletion persists. Continue item category properties,
+  All requested item variant checks also pass.
+  Next focused test: item category visibility and populated-property retention
+  as specified above, including a zero-valued armor field and gear Hands.
+  Continue
   spell casting/details/map-template functionality, and a representative deity /
   hazard/vehicle list. Verify redraw and
   save/reopen; source checks alone do not establish native passes. Remaining

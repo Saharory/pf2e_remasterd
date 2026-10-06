@@ -899,6 +899,8 @@ def main() -> int:
     }:
         raise SystemExit("shared movement editor does not preserve its entity storage paths")
     item_editor = form("item.json")
+    if re.search(r"{%\s*elsif\b", json.dumps(item_editor)):
+        raise SystemExit("item category visibility uses unsupported elsif syntax")
     item_nodes = list(form_nodes(item_editor))
     item_controls = [node for node in item_nodes if node.get("attribute")]
     required_item_attributes = {

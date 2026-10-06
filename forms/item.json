@@ -91,7 +91,7 @@
     {
       "title": "ItemCategory.Armor",
       "type": "group",
-      "visibleIf": "{% if data.category == 'armor' or data.dexCap != nil or data.checkPenalty != nil or data.str != nil or data.armorCategory or data.armorGroup %}true{% elsif data.category != 'shield' %}{% if data.ac != nil or data.speedPenalty != nil %}true{% endif %}{% endif %}",
+      "visibleIf": "{% if data.category == 'armor' or data.dexCap != nil or data.checkPenalty != nil or data.str != nil or data.armorCategory or data.armorGroup %}true{% elif data.category != 'shield' %}{% if data.ac != nil or data.speedPenalty != nil %}true{% endif %}{% endif %}",
       "fields": [
         {
           "title": "Item.AcBonus",
@@ -209,7 +209,7 @@
     {
       "title": "ItemCategory.AdventuringGear",
       "type": "group",
-      "visibleIf": "{% if data.category == 'adventuringGear' %}true{% elsif data.category != 'weapon' and data.hands %}true{% endif %}",
+      "visibleIf": "{% if data.category == 'adventuringGear' %}true{% elif data.category != 'weapon' and data.hands %}true{% endif %}",
       "fields": [
         {
           "title": "Item.Hands",
