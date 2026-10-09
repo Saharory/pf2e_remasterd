@@ -850,9 +850,21 @@ def main() -> int:
         raise SystemExit("named Lore still appears in the generic creature skill picker")
     sense_form = form("partials/sense.json")
     if field_attributes(sense_form) != {
-        "name", "reference", "acuity", "acuityReference", "details", "customText"
+        "name", "reference", "acuity", "details", "customText"
     }:
         raise SystemExit("special-sense editor does not expose references and custom text")
+    # Fixed acuities must resolve from the live choice, ahead of any saved legacy link.
+    for acuity in type_definitions["SenseAcuity"]:
+        route = next(route for pattern, route in SENSE_ROUTES if pattern.fullmatch(acuity))
+        branch = re.search(r"\{% (?:if|elif) sense\.acuity == '" + acuity + r"' %\}(.*?)(?=\{% (?:elif|else|endif))", creature_view)
+        if not branch or f"]({route})" not in branch.group(1):
+            raise SystemExit(f"sense acuity {acuity} does not link its selected rule automatically")
+    if creature_view.index("sense.acuity == 'vague'") > creature_view.index("elif sense.acuityReference"):
+        raise SystemExit("legacy acuity references override the live choice")
+    for path in (REPO / "forms").rglob("*.json"):
+        for node in form_nodes(json5.loads(path.read_text())):
+            if node.get("type") == "reference" and node.get("placeholder") != "Reference":
+                raise SystemExit(f"empty reference field lacks its Reference label: {path}")
     item_form = form("partials/creature-item.json")
     if field_attributes(item_form) != {"name", "quantity", "reference"}:
         raise SystemExit("creature item editor must expose only name, quantity, and reference")

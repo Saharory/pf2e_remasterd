@@ -30,13 +30,14 @@ Last updated: 2026-10-10
   corrected category visibility syntax, spell description metadata cleanup,
   restored native scalar-list controls for hazards/vehicles/deities,
   live deity previews with clean imported Description and joined table lists,
-  multiline Edicts/Anathema, and generic ranked cleric-spell labels/links.
+  multiline Edicts/Anathema, generic ranked cleric-spell labels/links, clear
+  empty reference placeholders, and automatic sense-acuity rule links.
   Archive inspection/CRC/checksums pass; all 200 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `daf7502848cdd4577ffa98a5d1d2f70ed7331d36d893a6a83855759329a1b2a7`.
+  SHA-256: `84585b4d3ede33430d695ce940ed477843da334f12bf33ef436213b6864de760`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -543,6 +544,25 @@ Last updated: 2026-10-10
   a larger textArea control did not help. Keep normal name controls. This issue
   was not fixed by the system refresh repair. The workaround is retained here
   as historical reproduction; it is no longer required by the latest user result.
+- Special senses: the user confirms add/reference selection, Imprecise choice,
+  Details editing (30 to 60 feet), statblock link opening, save/reopen, and
+  deletion pass on 2026-10-10. Requested polish is source complete, native
+  confirmation pending: all seven remaining native reference controls now use
+  the documented `placeholder: Reference`, instead of an empty None row.
+  Sense acuity no longer exposes a manual reference picker. The shared native /
+  HTML statblock partial derives the fixed Precise/Imprecise/Vague rule route
+  from the current selection, ahead of any stale saved `acuityReference`.
+  Original reference data is retained; unknown legacy acuities keep their saved
+  link fallback, and Custom Sense Text stays authoritative. No content rewrite
+  or new save hook is needed. The maintained editability guard covers all three
+  live-choice routes, legacy precedence, and reference placeholders. Canonical
+  checks pass (83 definitions/nine validators); package CRC/checksums and all
+  200 source matches pass. Only seven form partials and creature-primary.md
+  changed in the archive; all 18,041 records remain byte-identical, version
+  remains 0.9.01. Latest test package rebuilt; no push or release.
+  Next native check: empty Reference row label, no manual Acuity Reference row,
+  and each acuity's automatic statblock link. Switch acuity on an existing entry
+  with a saved legacy link and confirm the link follows the new choice.
 - Creature editor: lossless structured controls expose special senses, inventory
   item references/quantities, immunity references/custom text, rituals, named
   Lore inside Skills, and Recall Knowledge subject/skill pairs. Language and
@@ -709,10 +729,11 @@ Last updated: 2026-10-10
   Deity directive clearing, custom Description display, and all three Tides
   spell links also pass on 2026-10-10. Small-edit saving remains unresolved.
   Empty-item category field visibility/immediate switching also passes on
-  2026-10-10. Next focused test: special-sense editing and links. Remaining deity
+  2026-10-10. Special-sense mechanics also pass.
+  Next focused test: reference placeholders and automatic acuity links above. Remaining deity
   checks include original weapon/domain links. Verify redraw and save/reopen;
   source checks alone do not establish native passes. Remaining
-  earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
+  earlier coverage: empty Immunities/Rituals,
   ritual links and creature spell links. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
