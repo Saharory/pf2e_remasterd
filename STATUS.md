@@ -573,6 +573,15 @@ Last updated: 2026-10-10
   passed, including the visible Reference heading, custom acuity reference
   selection/save/reopen/link, and hiding its section when switching to standard
   acuities with the correct automatic link. Do not repeat without a regression.
+- Ritual/spell editor simplification investigation on 2026-10-10: user asks
+  to report special cases before changing ritual type and spell level/group
+  fields. Across 95 published creature ritual blocks, 92 use Rituals, Scylla
+  uses Occult Rituals, and Elder Wyrmwraith / Wyrmwraith use Divine Rituals.
+  Spell groups also include Cantrips, Constant, Focus Spells and slot counts
+  alongside numbered ranks. Shared entry rank controls already display Rank
+  via Spell.Rank; user prefers Level. No implementation change made because
+  special cases were found and must be reported first. Empty-ritual functional
+  verification remains pending; the screenshot is not a persistence pass.
 - Immunity choice editor: user-requested change source complete on 2026-10-10,
   native confirmation pending. Replace the name text field with a native picker
   using 54 built-in immunity choices: damage, common conditions, effect traits,
