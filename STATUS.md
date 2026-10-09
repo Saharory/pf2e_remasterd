@@ -146,8 +146,8 @@ Last updated: 2026-10-10
   Variant native checks also pass on 2026-10-07: all six fields display, the
   label says Variant, save/reopen and deletion persist, and activations remain
   unchanged. Category-change populated-property retention also passes on
-  2026-10-07. Separate empty-category field visibility for new gear/armor/
-  shield/weapon items has not been explicitly confirmed.
+  2026-10-07. Empty-category field visibility and immediate switching for new
+  gear/armor/shield/weapon items also pass on 2026-10-10.
   No agent app automation is authorized. The user selected creatures next,
   ahead of shared abilities. The shared ability editor is now implemented as
   described below.
@@ -348,8 +348,10 @@ Last updated: 2026-10-10
   regression.
 - Item category visibility: source repair complete on 2026-10-07; the user
   confirms populated values retained after changing category and save/reopen
-  ("yea it retained"). Separate empty-category field visibility remains
-  unconfirmed. Preparation found unsupported `elsif` tags in the
+  ("yea it retained"). On 2026-10-10, the user confirms all requested blank-item
+  category checks pass: Armor AC/Dexterity cap, Shield Hardness/HP/Broken
+  Threshold, Weapon Damage/Range/Hands, and Adventuring Gear Hands appear
+  immediately when switching category. Preparation found unsupported `elsif` tags in the
   Armor and Adventuring Gear visibility conditions. These now use supported
   `elif`, as in official 5e templates. Conditions, controls, and stored paths
   otherwise remain identical. The maintained editability suite now rejects
@@ -706,7 +708,8 @@ Last updated: 2026-10-10
   Hazard/vehicle immunity population/add/edit/delete/display/save also passes.
   Deity directive clearing, custom Description display, and all three Tides
   spell links also pass on 2026-10-10. Small-edit saving remains unresolved.
-  Next focused test: empty-item category field visibility. Remaining deity
+  Empty-item category field visibility/immediate switching also passes on
+  2026-10-10. Next focused test: special-sense editing and links. Remaining deity
   checks include original weapon/domain links. Verify redraw and save/reopen;
   source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
