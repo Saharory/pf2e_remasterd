@@ -121,8 +121,10 @@ Last updated: 2026-10-10
   Newly created custom manual spell loading also passes on 2026-10-07: empty
   Area template, Until Dispelled, save/reopen, load onto a test token, no
   countdown, persistence through two rounds, and manual removal.
-  Pending functional checks: check an older custom spell with prose in
-  `data.duration`. Keep redraw, persistence, and rendered content results distinct.
+  Older custom-spell compatibility check is unavailable on 2026-10-10: the
+  user has no older custom spell to test. Do not mark this as passed or failed.
+  Source migration/compatibility tests remain the available evidence; active
+  migration stays deferred until a separately approved version change.
 - Item editor efficiency: source complete, user approved on 2026-10-05.
   The user reports no issues and much better organization. Individual
   save/reopen checks below were not separately reported.
@@ -811,11 +813,12 @@ Last updated: 2026-10-10
   name/rank/reference after save/reopen; changing Reference changes the saved
   statblock destination. Erastil weapon/domains/alternate domain links also
   pass on 2026-10-10. Temporary Character population/edits across all four tabs
-  and save/reopen also pass. Next focused test: older custom-spell printed
-  duration readability/edit/save/reopen, if the user has such a saved record.
-  Older saved character compatibility remains unverified,
-  along with the recurring small-edit save issue and recorded Tides source
-  completeness follow-up. No release approval. Source checks alone do not
+  and save/reopen also pass. Older custom-spell duration compatibility is
+  unavailable: the user reports no older custom record on 2026-10-10. Older
+  saved character compatibility remains unverified separately. Next focused
+  test: single-letter and selected-text paste persistence in deity directives,
+  the remaining reported editor save failure. The recorded Tides source
+  completeness follow-up also remains open. No release approval. Source checks alone do not
   establish native passes. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
