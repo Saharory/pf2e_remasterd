@@ -593,12 +593,12 @@ Last updated: 2026-10-10
   validators). Verified test archive changes only types.json, immunity.json
   and creature-secondary.md; CRC/checksums and all 200 source matches pass.
   All 18,041 records are byte-identical; version remains 0.9.01. No push/release.
-  Next native test on a new blank creature: select Poison, save/reopen and open
-  its automatic link; change it to Paralyzed and verify the new link; add an
-  entry using Custom Immunity Text plus Reference and check saving/link opening;
-  clear custom text and confirm its Reference section hides; delete entries,
-  save/reopen and confirm empty list/statblock. The preceding empty-immunity
-  test was not reported as passed before this requested editor change.
+  Native confirmation on 2026-10-10: the user reports all requested tests pass
+  on a new blank creature. Poison selection/save/reopen/automatic link works;
+  switching to Paralyzed changes the link; Custom Immunity Text plus Reference
+  saves and opens; clearing custom text hides Reference; deleting every entry
+  remains empty in the list/statblock after save/reopen. Empty Immunities and
+  the new choice/custom-reference editor are passed.
 - Creature editor: lossless structured controls expose special senses, inventory
   item references/quantities, immunity references/custom text, rituals, named
   Lore inside Skills, and Recall Knowledge subject/skill pairs. Language and
@@ -767,11 +767,12 @@ Last updated: 2026-10-10
   Empty-item category field visibility/immediate switching also passes on
   2026-10-10. Special-sense mechanics also pass.
   Reference headings, custom acuity references and standard automatic links
-  also pass on 2026-10-10. Next focused test: the new Immunity choice/custom-reference editor above. Remaining deity
+  also pass on 2026-10-10. Empty creature Immunities and built-in/custom immunity
+  editing/linking/deletion also pass. Next focused test: empty creature Rituals
+  and ritual links. Remaining deity
   checks include original weapon/domain links. Verify redraw and save/reopen;
   source checks alone do not establish native passes. Remaining
-  earlier coverage: empty Immunities/Rituals,
-  ritual links and creature spell links. Avoid repeating confirmed
+  earlier coverage: empty Rituals, ritual links and creature spell links. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
   compatibility before releases. See `ROADMAP.md` for product decisions.
