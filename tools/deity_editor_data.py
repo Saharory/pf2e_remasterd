@@ -40,6 +40,21 @@ def known_spell_references() -> dict[str, str]:
     return {name: choice[1] for name, choice in choices.items()}
 
 
+@lru_cache(maxsize=1)
+def known_item_references() -> dict[str, str]:
+    """Resolve favored weapons against published items, preferring Player Core."""
+    repo = Path(__file__).resolve().parents[1]
+    choices = {}
+    for root in (repo / "compendium/packs", repo / "compendium/ogl-packs"):
+        for path in sorted(root.glob("*/items.json")):
+            for item in json.loads(path.read_text()):
+                name, slug = spell_name(item["name"]), item["slug"]
+                priority = (0 if slug.endswith("-player-core") else 1, slug)
+                if name not in choices or priority < choices[name][0]:
+                    choices[name] = (priority, f"/item/{slug}")
+    return {name: choice[1] for name, choice in choices.items()}
+
+
 def ranked_spell(value: str) -> str:
     """Format only an explicit supplied rank; never infer a grant's rank."""
     rank = re.match(r"^(\d+)(?:st|nd|rd|th)?:\s*", value)
@@ -87,6 +102,7 @@ def configure_deity_editor_data(entity: dict[str, Any]) -> bool:
             links_by_field[FIELDS[heading[1]]] = LINK.findall(heading[2])
     # Ranked grants still need catalog links when an import has no summary.
     links_by_field.setdefault("spells", [])
+    links_by_field.setdefault("favoredWeapon", [])
     catalog = {}
     keys = {}
     for field, links in links_by_field.items():
@@ -101,6 +117,10 @@ def configure_deity_editor_data(entity: dict[str, Any]) -> bool:
                 route = known_spell_references().get(spell_name(name))
                 if text == value and route and not LINK.search(value):
                     text = linked_value(value, [(name, route)])
+            if field == "favoredWeapon" and text == value and not LINK.search(value):
+                route = known_item_references().get(spell_name(value))
+                if route:
+                    text = linked_value(value, [(value, route)])
             if text != value:
                 entries.append({"value": value, "text": text})
         if entries:
@@ -113,6 +133,12 @@ def configure_deity_editor_data(entity: dict[str, Any]) -> bool:
         if text_field not in data:
             by_value = {entry["value"]: entry["text"] for entry in catalog.get(field, [])}
             data[text_field] = "\n\n".join(by_value.get(value, value) for value in data.get(field, []))
+    # A single editable sentence retains can/must and unusual conditional rules.
+    if "sanctificationText" not in data and data.get("deitySanctificationFormat") != "text":
+        options = data.get("sanctificationOptions") or ([data["sanctification"]] if data.get("sanctification") else [])
+        by_value = {entry["value"]: entry["text"] for entry in catalog.get("sanctificationOptions", [])}
+        data["sanctificationText"] = " or ".join(by_value.get(value, value) for value in options)
+    data["deitySanctificationFormat"] = "text"
     # A cleared text attribute must not resurrect its legacy array values.
     data["deityDirectiveFormat"] = "text"
     # The linked import summary is reference metadata, not editable narrative.

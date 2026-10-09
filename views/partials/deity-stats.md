@@ -4,14 +4,16 @@
 
 {% if data.deityDirectiveFormat == 'text' or data.anathemaText != nil %}{% if data.anathemaText %}**Anathema** {{data.anathemaText}}{% endif %}{% else %}{% if data.anathema %}**Anathema** {% for value in data.anathema %}{% if value in data.deityReferenceKeys.anathema %}{% for reference in data.deityReferences.anathema %}{% if reference.value == value %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{value}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}{% endif %}
 
-{% if data.divineAttribute %}**Divine Attribute** {% for value in data.divineAttribute %}{% if value in data.deityReferenceKeys.divineAttribute %}{% for reference in data.deityReferences.divineAttribute %}{% if reference.value == value %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{value|map: 'Attribute'}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}
+{% if data.divineAttribute %}**Divine Attribute** {% for value in data.divineAttribute %}{% if value in data.deityReferenceKeys.divineAttribute %}{% for reference in data.deityReferences.divineAttribute %}{% if reference.value == value %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{value|map: 'DeityAttribute'}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}
+
+{% if data.divineAttributeNotes %}**Divine Attribute Notes** {{data.divineAttributeNotes}}{% endif %}
 
 {% if data.clericFont %}**Divine Font** {% for value in data.clericFont %}{% if value in data.deityReferenceKeys.clericFont %}{% for reference in data.deityReferences.clericFont %}{% if reference.value == value %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{value}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}
 
-{% if data.sanctification %}**Sanctification** {{data.sanctification|map: 'Sanctification'}}{% else %}
+{% if data.deitySanctificationFormat == 'text' or data.sanctificationText != nil %}{% if data.sanctificationText %}**Sanctification** {{data.sanctificationText}}{% endif %}{% else %}{% if data.sanctification %}**Sanctification** {{data.sanctification|map: 'Sanctification'}}{% else %}
 {% if data.sanctificationOptions %}**Sanctification** {% for value in data.sanctificationOptions %}{% if value in data.deityReferenceKeys.sanctificationOptions %}{% for reference in data.deityReferences.sanctificationOptions %}{% if reference.value == value %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{value}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}
 
-{% endif %}
+{% endif %}{% endif %}
 
 {% if data.divineSkill %}**Divine Skill** {% if data.divineSkill in data.deityReferenceKeys.divineSkill %}{% for reference in data.deityReferences.divineSkill %}{% if reference.value == data.divineSkill %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{data.divineSkill|map: 'Skill'}}{% endif %}{% endif %}
 

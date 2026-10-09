@@ -34,13 +34,14 @@ Last updated: 2026-10-10
   reference section labels, custom-only acuity references, and automatic
   standard sense-acuity rule links, plus built-in immunity choices/automatic
   links and custom-text reference selection, plus explicit ritual/spell group
-  labels and example hints.
+  labels and example hints, restored confirmed deity mechanics, Any attribute
+  selection/notes, and editable sanctification sentences.
   Archive inspection/CRC/checksums pass; all 200 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `425e22bb9776c8036835e7e8c035d8d6809ec6d05abb7b19547e3b88e7c69997`.
+  SHA-256: `380554ab45d017a5191f67a5effa0ec8c05369a27e17fa0c31492837398b4713`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -258,6 +259,43 @@ Last updated: 2026-10-10
   No source data, converter, or package changed during this confirmation.
   Repair scope requires preserving genuine None/freeform cases and resolving
   source conflicts rather than blindly filling every blank from Foundry.
+- Confirmed deity completeness repair: source complete on 2026-10-10 at the
+  user's request; native confirmation pending. Editable structured source now
+  restores Tides concerns/directives/Dexterity+Intelligence/dagger/can-choose-
+  unholy; Angazhan must-choose-unholy; Ydersius serpentfolk/immortality/poison;
+  Asmodeus Any divine attribute plus a paraphrased soul-binding restriction.
+  Changes are in ../structured-modules/shining-kingdoms/deities.json and
+  ../structured-modules/divine-mysteries/deities.json. The workspace converter
+  ../tools/build_structured_pf2e_modules.py now reads current Foundry arrays,
+  modern modal/what sanctification and description metadata, retaining older
+  value/own schemas. Modern and legacy converter fixtures pass. Those workspace
+  source/converter files are outside this Git repository and remain saved
+  locally; no other repository was pushed or published.
+  Deity Divine Attribute is a native multiPicker for six full attribute names
+  plus Any; Divine Attribute Notes is a two-line optional text area, preserving
+  editability of special restrictions. Sanctification uses one two-line text
+  area with an e.g. hint, retaining can/must/None and arbitrary conditions rather
+  than imposing extra fields. Original scalar/options values remain for legacy
+  copies. Fresh imports have sanctificationText + deitySanctificationFormat;
+  clearing does not restore stale old values. Both previews render the current
+  text and attribute notes; old copies keep their prior scalar editor/display.
+  All four deity collections rebuilt from structured source using existing
+  summary/reference linking and sanitation. Every pre-existing deity summary
+  route is preserved; new favored-weapon cache lookup links Dagger to Player
+  Core and resolves other weapon names generically. Only the four confirmed
+  records change existing mechanical fields. Other deities gain the editor
+  mirror/marker; IDs, licensing, all non-deity records remain unchanged.
+  Essence Dancers and Rokoga Gin differences are deliberately unchanged pending
+  publisher confirmation/conflict resolution; genuine absence is not filled.
+  Maintained conversion tests now total 50; canonical checks pass (83
+  definitions/nine validators). Archive CRC/checksums and all 200 source
+  matches pass; latest archive changes only combined deities.json, types.json,
+  forms/deity.json, views/deity.html and deity-stats.md. 18,041 records remain,
+  version stays 0.9.01; test package rebuilt, no version bump/push/release.
+  Next native check on fresh copies: restored Tides fields and Dagger link,
+  Angazhan/Ydersius values, Asmodeus Any/notes; edit attributes, notes and
+  sanctification sentence, save/reopen and confirm live preview updates. Clear
+  sanctification and verify old values do not return.
 - Scalar-list regression: source repair complete on 2026-10-07; the hazard /
   vehicle native retest passes (user: "all good"). The user reported imported immunities visible in the parent summary
   but an empty inner list before editing. Published hazard/vehicle data is
@@ -848,7 +886,9 @@ Last updated: 2026-10-10
   explicitly excludes single-letter/selected-text paste saving from our scope:
   it is an app-developer bug scheduled for a future fix. Do not retest or add
   system workarounds for it unless requested. Next system follow-up: audit the
-  recorded Tides import-completeness gap. No release approval. Source checks alone do not
+  restored deity fields/editor controls above. Confirmed omissions are repaired;
+  unverified Essence Dancers and conflicting Rokoga Gin remain separate source
+  questions. No release approval. Source checks alone do not
   establish native passes. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream

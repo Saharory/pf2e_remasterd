@@ -971,6 +971,16 @@ def main() -> int:
         control = deity_fields.get(f"data.{field}", {})
         if control.get("type") != "textArea" or control.get("custom", {}).get("lines") != 2:
             raise SystemExit(f"deity {field} needs the requested two-line multiline editor")
+    if deity_fields["data.divineAttribute"].get("attributeType") != "DeityAttribute" or "any" not in type_definitions["DeityAttribute"]:
+        raise SystemExit("deity attribute choices must include Any")
+    for field in ("divineAttributeNotes", "sanctificationText"):
+        if deity_fields.get(f"data.{field}", {}).get("type") != "textArea":
+            raise SystemExit(f"deity {field} is not editable")
+        if f"data.{field}" not in deity_html or f"data.{field}" not in deity_stats:
+            raise SystemExit(f"deity {field} is not displayed in both views")
+    for preview in (deity_html, deity_stats):
+        if "data.deitySanctificationFormat == 'text'" not in preview:
+            raise SystemExit("cleared sanctification prose falls back to stale legacy values")
     for cell in re.findall(r"<td>(.*?)</td>", deity_html, re.S):
         if "for value in data." in cell:
             if cell.count("{% markdown -%}") != 1 or cell.count("{% endmarkdown %}") != 1 or "|md" in cell:

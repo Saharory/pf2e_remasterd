@@ -353,6 +353,39 @@ class SpellMetadataTests(unittest.TestCase):
 
 
 class DeityDisplayTests(unittest.TestCase):
+    def test_confirmed_missing_mechanics_are_restored(self) -> None:
+        repo = Path(__file__).resolve().parents[1]
+        deities = {row["name"]: row for book in ("divine-mysteries", "shining-kingdoms")
+                   for row in json.loads((repo / "compendium/packs" / book / "deities.json").read_text())}
+        tides = deities["The Tides of Chaos"]["data"]
+        self.assertEqual(tides["divineAttribute"], ["dexterity", "intelligence"])
+        self.assertEqual(tides["favoredWeapon"], ["dagger"])
+        self.assertTrue(all(tides[field] for field in ("areasOfConcern", "edictsText", "anathemaText")))
+        self.assertEqual(tides["sanctificationText"], "Can choose unholy")
+        self.assertIn("/item/dagger-player-core", tides["deityReferences"]["favoredWeapon"][0]["text"])
+        self.assertEqual(deities["Angazhan (The Ravenous King)"]["data"]["sanctificationText"], "Must choose unholy")
+        self.assertEqual(deities["Ydersius (Lord of Coiling Poison)"]["data"]["areasOfConcern"], "serpentfolk, immortality, poison")
+        asmodeus = deities["Asmodeus (The Prince of Darkness)"]["data"]
+        self.assertEqual(asmodeus["divineAttribute"], ["any"])
+        self.assertIn("soul", asmodeus["divineAttributeNotes"])
+        # Publisher conflict and unverified source differences remain unchanged.
+        self.assertEqual(deities["Rokoga Gin (The World Walker)"]["data"]["sanctificationOptions"], [])
+
+    def test_sanctification_sentence_and_clearing_are_authoritative(self) -> None:
+        deity = {"kind": "Deity", "data": {"sanctification": "unholy", "sanctificationOptions": ["unholy"], "sanctificationText": "Must choose unholy"}}
+        configure_deity_editor_data(deity)
+        self.assertEqual(deity["data"]["sanctificationText"], "Must choose unholy")
+        deity["data"]["sanctificationText"] = ""
+        configure_deity_editor_data(deity)
+        self.assertEqual(deity["data"]["sanctificationText"], "")
+        del deity["data"]["sanctificationText"]
+        configure_deity_editor_data(deity)
+        self.assertNotIn("sanctificationText", deity["data"])
+        self.assertEqual(deity["data"]["sanctification"], "unholy")
+        deity["data"]["sanctificationText"] = "None"
+        configure_deity_editor_data(deity)
+        self.assertEqual(deity["data"]["sanctificationText"], "None")
+
     def test_import_summary_is_removed_from_editable_description_only_when_exact(self) -> None:
         summary = "**Edicts** Help others.\n\n**Divine Font** [Heal](/spell/heal-player-core)"
         deity = {"kind": "Deity", "descr": summary, "data": {"edicts": ["Help others."], "clericFont": ["heal"], "rulesText": summary}}

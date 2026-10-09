@@ -684,7 +684,7 @@ def deity_rules_text(data: dict[str, Any]) -> str:
         ("Anathema", "anathema"),
         ("Divine Attribute", "divineAttribute"),
         ("Divine Font", "clericFont"),
-        ("Sanctification", "sanctificationOptions"),
+        ("Sanctification", "sanctificationText" if "sanctificationText" in data else "sanctificationOptions"),
         ("Divine Skill", "divineSkill"),
         ("Favored Weapon", "favoredWeapon"),
         ("Domains", "domains"),
