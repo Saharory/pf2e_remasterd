@@ -23,6 +23,17 @@ Structured creature
 immunity/weakness/resistance controls remain unchanged. This is a system
 workaround regression, separate from the app save/refresh bugs resolved above.
 
+Update on 2026-10-10: deity Edicts/Anathema multiline fields show a remaining
+text-save failure. In either edit order, the first change initially appeared
+lost after save/reopen. The user subsequently reports that single-letter edits
+or pasted replacements fail, but more than one input saves both fields. This
+resembles the historical small-edit bug; the cause of this recurrence is not
+confirmed. The two fields have distinct storage paths. The proposed separate
+editor pages were withdrawn before packaging, leaving the approved inline
+multiline controls and test package unchanged. Multiple-input persistence
+passes; small-edit persistence remains unresolved. Last installed-app version
+was checked on 2026-10-07, not rechecked for this report.
+
 Status on 2026-10-04: the user stopped native testing after the Encounter+
 developer confirmed a bug introduced by the recent app update, with a hotfix
 expected later that day. This diagnosis and release plan were relayed by the

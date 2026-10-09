@@ -192,8 +192,16 @@ Last updated: 2026-10-10
   `../foundry-pf2e/packs/pf2e/deities/covenants/the-tides-of-chaos.json` (Shining
   Kingdoms, p.23). Its three entries now link to the corresponding core spells.
   The user approved the latest layout/presentation on 2026-10-10 ("looks good").
-  This confirms the multiline/ordinal appearance; individual persistence,
-  clearing, custom Description, and link-opening checks remain pending.
+  This confirms the multiline/ordinal appearance. On 2026-10-10, editing both
+  directive boxes initially appeared to lose the first edit in either order.
+  The user narrowed this down: single-letter edits / pasted replacements fail,
+  while making more than one input persists both boxes after saving/reopening.
+  This resembles the earlier native text-save bug; app causation is not yet
+  independently confirmed for this recurrence. It is not evidence that the two
+  distinct field paths overwrite each other. A proposed separate-page workaround
+  was withdrawn before packaging; the approved inline boxes remain unchanged.
+  Multiple-input persistence passes; small edits, clearing, custom Description,
+  and link-opening checks remain unresolved or pending.
   Eight deity conversion cases pass (48 total); focused editability and canonical
   checks pass (83 definitions, nine validators). Verified latest test package
   changes `deities.json` and the two deity views, adding only the new partial;
