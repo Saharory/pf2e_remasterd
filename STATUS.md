@@ -802,10 +802,12 @@ Last updated: 2026-10-10
   also pass on 2026-10-10. Empty creature Immunities and built-in/custom immunity
   editing/linking/deletion also pass. Ritual labels/hints, empty-creature
   ritual addition/display/save/reopen/link/deletion also pass on 2026-10-10.
-  Next focused test: creature spell links. Remaining deity
-  checks include original weapon/domain links. Verify redraw and save/reopen;
-  source checks alone do not establish native passes. Remaining
-  earlier coverage: creature spell links. Avoid repeating confirmed
+  Creature spell links also pass on 2026-10-10: existing statblock link opens
+  the expected spell; adding a spell via the group chooser preserves its
+  name/rank/reference after save/reopen; changing Reference changes the saved
+  statblock destination. Next focused test: original deity weapon/domain links.
+  Verify redraw and save/reopen; source checks alone do not establish native
+  passes. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
   compatibility before releases. See `ROADMAP.md` for product decisions.
