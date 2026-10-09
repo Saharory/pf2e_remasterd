@@ -919,6 +919,16 @@ def main() -> int:
     for preview in (deity_html, deity_stats):
         if "reference.value == value" not in preview or "{% else %}{{value" not in preview:
             raise SystemExit("deity reference caches override edited values without a live fallback")
+        for field in ("edictsText", "anathemaText"):
+            if f"data.{field} != nil" not in preview or f"{{{{data.{field}" not in preview:
+                raise SystemExit(f"deity preview loses the editable/cleared multiline {field}")
+        if "data.deityDirectiveFormat == 'text'" not in preview:
+            raise SystemExit("cleared deity text fields must not fall back to old array values")
+    deity_fields = {node.get("attribute"): node for node in form_nodes(form("deity.json")) if node.get("attribute")}
+    for field in ("edictsText", "anathemaText"):
+        control = deity_fields.get(f"data.{field}", {})
+        if control.get("type") != "textArea" or control.get("custom", {}).get("lines") != 2:
+            raise SystemExit(f"deity {field} needs the requested two-line multiline editor")
     for cell in re.findall(r"<td>(.*?)</td>", deity_html, re.S):
         if "for value in data." in cell:
             if cell.count("{% markdown -%}") != 1 or cell.count("{% endmarkdown %}") != 1 or "|md" in cell:

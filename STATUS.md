@@ -1,12 +1,12 @@
 # Current status
 
-Last updated: 2026-10-07
+Last updated: 2026-10-10
 
 - The previously reported **Trade Death for Life** and **Tree of Life and
   Death** import issues were investigated here on 2026-10-07 after the user
   clarified that structured spell metadata remained in descriptions. The
   shared import repair below is source-complete; the user approved its native
-  presentation on 2026-10-07. Subsequent field-edit verification remains pending.
+  presentation and subsequent field-edit/save/reopen checks on 2026-10-07.
 - Branch: `remaster-community-base`
 - Package version: `0.9.01`. The user authorized pushing the completed editor
   work and replacing the main dist package on 2026-10-05. Version changes,
@@ -20,7 +20,7 @@ Last updated: 2026-10-07
   deleting older systems. This supersedes the earlier pause-related package
   delivery restriction and is saved in `AGENTS.md`. Native testing remains
   user-controlled; no agent app automation is authorized.
-- Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-07
+- Current test package: `dist/test/pf2e-remaster.system`, rebuilt on 2026-10-10
   with the creature, item, and spell editor redesigns and previous system-wide
   refresh repairs, improved attack/casting/usage summaries, and numeric
   spellcasting-input repair, shared ability writing flow, and character tabs.
@@ -29,13 +29,14 @@ Last updated: 2026-10-07
   their native item-preview rendering repair, native item variant display,
   corrected category visibility syntax, spell description metadata cleanup,
   restored native scalar-list controls for hazards/vehicles/deities,
-  and live deity previews with clean imported Description and joined table lists.
+  live deity previews with clean imported Description and joined table lists,
+  multiline Edicts/Anathema, and generic ranked cleric-spell labels/links.
   Archive inspection/CRC/checksums pass; all 200 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `e21cf70b14753bf3561271f58bca58ee8cd741244d51f1cf53bf937abfd795c3`.
+  SHA-256: `daf7502848cdd4577ffa98a5d1d2f70ed7331d36d893a6a83855759329a1b2a7`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -49,7 +50,7 @@ Last updated: 2026-10-07
   with 83 definition files and every maintained validator, including 22 ORC
   packs / 17,359 records, 681 OGL records, creature editability/spellcasting,
   spell durations/areas, hazard/vehicle mechanics, and four UI regression files.
-  Revalidated on 2026-10-07 with the repaired virtualenv and bundled Node via
+  Revalidated on 2026-10-10 with the repaired virtualenv and bundled Node via
   `../tools/project-env python tools/eplus_dev.py check --json`.
 - Spell description metadata: source repair complete on 2026-10-07; native
   presentation approved (user: "yea all looks good"). Audit found 503 spells with leading metadata for fields
@@ -160,8 +161,9 @@ Last updated: 2026-10-07
   separately. The converter now clears Description only when it exactly equals
   the import summary; all 420 stock descriptions are empty, and custom text is
   preserved. HTML table cells render the joined values through one Markdown
-  block, keeping links and separators on the same paragraph. Native retest of
-  these two repairs remains pending; do not mark the deity test passed yet.
+  block, keeping links and separators on the same paragraph. The user confirms
+  the clean Description/table layout now looks good. Remaining deity functional
+  checks must still be recorded separately.
   Native uses the new `deity-stats.md` partial; HTML retains its existing table.
   `tools/deity_editor_data.py` derives per-value reference caches from the
   existing linked summary. Views use a cached link only when the live value
@@ -171,26 +173,46 @@ Last updated: 2026-10-07
   remain unchanged except The Tides of Chaos's legacy cleric-spell dictionary,
   converted to a string list preserving each rank and spell. All 4,428 original
   reference occurrences retain their routes; comparison finds no metadata-word
-  loss. Controls and saved paths are unchanged. Older personal copies without
+  loss. Older personal copies without
   reference caches retain their legacy native display to preserve original
   links; no active user-record migration is included. New custom deities use
   live fields and custom Description directly.
-  Six added conversion cases pass (46 total); focused editability and canonical
+  User-requested follow-up completed on 2026-10-10: one two-line multiline box
+  for each whole Edicts/Anathema section. Imported values and original links
+  seed `data.edictsText` / `data.anathemaText`; original arrays stay intact for
+  compatibility. Both views prefer the text form, including empty/cleared text,
+  so old values do not reappear. Older saved copies without text fields keep
+  their existing list controls; fresh imports/new records use the larger boxes.
+  Cleric spells now use a shared ordinal formatter for every explicit supplied
+  rank (1st/2nd/3rd/4th/etc.), including dictionary and list inputs. Ranks are
+  never inferred from a spell's base rank. Missing links resolve against the
+  published spell catalog, preferring core references; no deity/name-specific
+  patch. The Tides of Chaos's 1st Ill Omen / 2nd Invisibility / 5th Subconscious
+  Suggestion matches both the structured source and local Foundry ORC record
+  `../foundry-pf2e/packs/pf2e/deities/covenants/the-tides-of-chaos.json` (Shining
+  Kingdoms, p.23). Its three entries now link to the corresponding core spells.
+  Eight deity conversion cases pass (48 total); focused editability and canonical
   checks pass (83 definitions, nine validators). Verified latest test package
   changes `deities.json` and the two deity views, adding only the new partial;
   The subsequent verified test archive changes only `deities.json` (duplicate
   Description clearing) and `views/deity.html` (joined cell rendering); all
-  other data and files remain identical. All 200 source files match,
+  other data and files remain identical. Latest verified archive changes only
+  `deities.json`, `forms/deity.json`, `views/deity.html`, and `deity-stats.md`
+  for multiline directives and ordinal/catalog links. All 200 source files match,
   CRC/checksums pass, 18,041 records remain, version is `0.9.01`. No push/release.
   Next native test after importing: create a fresh copy of a deity such as
-  Erastil. Description should start empty, and Divine Attribute/Domains/Cleric
-  Spells values should display inline with separators. Existing saved copies
+  Erastil. Check the two multiline boxes: edit, save/reopen, confirm displayed
+  text, then clear/save/reopen and confirm clearing persists. Existing saved copies
   keep their old description text; no active user-record migration is included.
-  Then
-  confirm existing Edicts/Anathema inside the lists; add/edit/delete test entries
-  and verify summary/display/save/reopen. Add a custom Description line and
+  Add a custom Description line and
   confirm it displays. Check original weapon/domain/spell links still open.
-  Also check The Tides of Chaos's Cleric Spells shows its three ranked entries.
+  Also check fresh The Tides of Chaos's Cleric Spells shows 1st/2nd/5th and all
+  three links open the expected spells.
+  Source-completeness follow-up: comparison with the local Foundry record also
+  indicates missing non-spell Tides metadata in the structured import (concerns,
+  directives, divine attributes, favored weapon, sanctification options).
+  Investigate that source mapping separately; it is not a native control bug
+  and was not changed by this editor/rank repair.
 - Scalar-list regression: source repair complete on 2026-10-07; the hazard /
   vehicle native retest passes (user: "all good"). The user reported imported immunities visible in the parent summary
   but an empty inner list before editing. Published hazard/vehicle data is
@@ -628,7 +650,7 @@ Last updated: 2026-10-07
   preparations` and Restyle's `unlimited` both store the same unit-only manual
   reminder. `data.durationText` retains the full descriptions. Do not delete or
   silently replace source duration prose. No consolidation was implemented.
-- Nested Time refresh disposition: no reliable package fix preserving the
+- Earlier nested Time refresh disposition, before app 5.0.9: no reliable package fix preserving the
   existing dedicated page has been found. Keep that layout and use leaving /
   reopening as the workaround. The user accepts waiting for the Encounter+
   developer if this cannot be solved here; do not send further speculative
@@ -636,8 +658,8 @@ Last updated: 2026-10-07
   is `NATIVE-FORM-REFRESH.md`, with exact steps, official 5e reproduction,
   passing controls, and a bounded inference about nested section invalidation.
   Nothing has been submitted or sent externally. Continue other verification
-  independently; this known issue remains unresolved and no release approval
-  has been given.
+  independently. This issue is now resolved in the user's 5.0.9 native retest
+  recorded above; no release approval has been given.
 - Existing/custom spell migration: `migrations/0.9.02.js` is prepared and tested
   against all 1,404 durations; it preserves prose and GM settings and is
   idempotent. It remains inactive while the package is `0.9.01`. Legacy duration

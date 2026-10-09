@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -17,6 +18,36 @@ FIELDS = {
     "Cleric Spells": "spells",
 }
 LINK = re.compile(r"\[([^]]+)\]\(([^)]+)\)")
+
+
+def spell_name(value: str) -> str:
+    return " ".join(value.replace("’", "'").casefold().split())
+
+
+@lru_cache(maxsize=1)
+def known_spell_references() -> dict[str, str]:
+    """Resolve reviewed published spell names, preferring the core catalog."""
+    repo = Path(__file__).resolve().parents[1]
+    choices = {}
+    for root in (repo / "compendium/packs", repo / "compendium/ogl-packs"):
+        for path in sorted(root.glob("*/spells.json")):
+            for spell in json.loads(path.read_text()):
+                name = spell_name(spell["name"])
+                slug = spell["slug"]
+                priority = (0 if slug.endswith("-player-core") else 1, slug)
+                if name not in choices or priority < choices[name][0]:
+                    choices[name] = (priority, f"/spell/{slug}")
+    return {name: choice[1] for name, choice in choices.items()}
+
+
+def ranked_spell(value: str) -> str:
+    """Format only an explicit supplied rank; never infer a grant's rank."""
+    rank = re.match(r"^(\d+)(?:st|nd|rd|th)?:\s*", value)
+    if not rank:
+        return value
+    number = int(rank[1])
+    suffix = "th" if 10 <= number % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(number % 10, "th")
+    return f"{number}{suffix}: " + value[rank.end():]
 
 
 def linked_value(value: str, links: list[tuple[str, str]]) -> str:
@@ -47,11 +78,15 @@ def configure_deity_editor_data(entity: dict[str, Any]) -> bool:
     # One legacy source uses rank -> spell rather than the editor's string list.
     if isinstance(data.get("spells"), dict):
         data["spells"] = [f"{rank}: {spell}" for rank, spell in data["spells"].items()]
+    if isinstance(data.get("spells"), list):
+        data["spells"] = [ranked_spell(value) for value in data["spells"]]
     links_by_field = {}
     for paragraph in str(data.get("rulesText") or "").split("\n\n"):
         heading = re.match(r"^\*\*([^*]+)\*\*\s*(.*)", paragraph, re.S)
         if heading and heading[1] in FIELDS:
             links_by_field[FIELDS[heading[1]]] = LINK.findall(heading[2])
+    # Ranked grants still need catalog links when an import has no summary.
+    links_by_field.setdefault("spells", [])
     catalog = {}
     keys = {}
     for field, links in links_by_field.items():
@@ -61,6 +96,11 @@ def configure_deity_editor_data(entity: dict[str, Any]) -> bool:
         entries = []
         for value in dict.fromkeys(str(value) for value in values):
             text = linked_value(value, links)
+            if field == "spells":
+                name = re.sub(r"^\d+(?:st|nd|rd|th)?:\s*", "", value)
+                route = known_spell_references().get(spell_name(name))
+                if text == value and route and not LINK.search(value):
+                    text = linked_value(value, [(name, route)])
             if text != value:
                 entries.append({"value": value, "text": text})
         if entries:
@@ -68,6 +108,13 @@ def configure_deity_editor_data(entity: dict[str, Any]) -> bool:
             keys[field] = [entry["value"] for entry in entries]
     data["deityReferences"] = catalog
     data["deityReferenceKeys"] = keys
+    for field in ("edicts", "anathema"):
+        text_field = field + "Text"
+        if text_field not in data:
+            by_value = {entry["value"]: entry["text"] for entry in catalog.get(field, [])}
+            data[text_field] = "\n\n".join(by_value.get(value, value) for value in data.get(field, []))
+    # A cleared text attribute must not resurrect its legacy array values.
+    data["deityDirectiveFormat"] = "text"
     # The linked import summary is reference metadata, not editable narrative.
     # Clear only its exact duplicate; preserve any GM-authored description.
     summary = str(data.get("rulesText") or "").strip()

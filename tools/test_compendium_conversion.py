@@ -20,7 +20,7 @@ from package_public_release import clear_owned_output
 from item_editor_data import configure_item_editor_data, parse_item_activations
 from creature_editor_data import render_ability_editor_fields
 from spell_editor_data import configure_spell_editor_data
-from deity_editor_data import configure_deity_editor_data, linked_value, LINK as DEITY_LINK
+from deity_editor_data import configure_deity_editor_data, linked_value, ranked_spell, LINK as DEITY_LINK
 
 
 class FoundryMarkupTests(unittest.TestCase):
@@ -395,8 +395,28 @@ class DeityDisplayTests(unittest.TestCase):
     def test_legacy_spell_rank_dictionary_is_losslessly_editable(self) -> None:
         deity = {"kind": "Deity", "data": {"spells": {"1": "Ill Omen", "5": "Subconscious Suggestion"}}}
         configure_deity_editor_data(deity)
-        self.assertEqual(deity["data"]["spells"], ["1: Ill Omen", "5: Subconscious Suggestion"])
+        self.assertEqual(deity["data"]["spells"], ["1st: Ill Omen", "5th: Subconscious Suggestion"])
         self.assertFalse(configure_deity_editor_data(deity))
+
+    def test_rank_ordinals_and_catalog_links_apply_to_every_deity(self) -> None:
+        for rank, ordinal in ((1, "1st"), (2, "2nd"), (3, "3rd"), (4, "4th"), (11, "11th"), (12, "12th"), (13, "13th"), (21, "21st")):
+            self.assertEqual(ranked_spell(f"{rank}: Test"), f"{ordinal}: Test")
+        for name in ("First test deity", "Another test deity"):
+            deity = {"kind": "Deity", "name": name, "data": {"spells": {"3": "Fireball"}}}
+            configure_deity_editor_data(deity)
+            self.assertEqual(deity["data"]["spells"], ["3rd: Fireball"])
+            self.assertIn("/spell/fireball-player-core", deity["data"]["deityReferences"]["spells"][0]["text"])
+        self.assertEqual(ranked_spell("Fireball"), "Fireball")
+
+    def test_multiline_directives_preserve_links_and_explicit_clearing(self) -> None:
+        deity = {"kind": "Deity", "data": {"edicts": ["Cast heal.", "Help others."], "anathema": ["Lie."], "rulesText": "**Edicts** Cast [heal](/spell/heal-player-core); Help others."}}
+        configure_deity_editor_data(deity)
+        self.assertEqual(deity["data"]["edictsText"], "Cast [heal](</spell/heal-player-core>).\n\nHelp others.")
+        self.assertEqual(deity["data"]["anathemaText"], "Lie.")
+        deity["data"]["edictsText"] = ""
+        configure_deity_editor_data(deity)
+        self.assertEqual(deity["data"]["edictsText"], "")
+        self.assertEqual(deity["data"]["edicts"], ["Cast heal.", "Help others."])
 
     def test_all_published_original_deity_reference_routes_are_preserved(self) -> None:
         repo = Path(__file__).resolve().parents[1]
