@@ -40,7 +40,7 @@ Last updated: 2026-10-10
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `61e45cd9745adc81c6c74f2160020e018ab852e7c6b0b127d6623c52a047f438`.
+  SHA-256: `425e22bb9776c8036835e7e8c035d8d6809ec6d05abb7b19547e3b88e7c69997`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -591,10 +591,14 @@ Last updated: 2026-10-10
   the placeholder was too long and sounded restrictive. Correct all three
   fields using literal English detail text prefixed Examples: and short
   localized placeholders (e.g. Rituals / e.g. 2nd / e.g. 8th). The app does not
-  automatically localize detail strings as it does placeholders. Latest visual
-  confirmation remains pending; do not mark the first hint package as passed.
+  automatically localize detail strings as it does placeholders. The corrected
+  subtitles render properly, but the user found the presentation too busy.
+  Latest requested simplification removes detail subtitles from all three
+  fields, retaining explicit titles and short e.g. placeholders only. Native
+  confirmation of this final layout remains pending.
   Canonical checks pass (83 definitions/nine validators); rebuilt test archive
-  changes only three form partials and lang/en.json, with all 200 source files
+  initially changed three form partials and lang/en.json; the latest subtitle
+  removal changes only the three form partials, with all 200 source files
   matching, CRC/checksums passing and 18,041 records byte-identical. Version
   remains 0.9.01; no push/release. Native hint/layout confirmation and
   empty-ritual functional verification remain pending; the screenshot is not
