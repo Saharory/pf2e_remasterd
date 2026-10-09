@@ -218,8 +218,9 @@ Last updated: 2026-10-10
   `deities.json`, `forms/deity.json`, `views/deity.html`, and `deity-stats.md`
   for multiline directives and ordinal/catalog links. All 200 source files match,
   CRC/checksums pass, 18,041 records remain, version is `0.9.01`. No push/release.
-  Deity follow-up: original weapon/domain links still need explicit native
-  confirmation. Existing saved copies keep their old description text; no
+  Native deity link confirmation on 2026-10-10: Erastil Longbow, Earth, Family,
+  Nature, Wealth, and alternate Duty all open their correct entries.
+  Existing saved copies keep their old description text; no
   active user-record migration is included. Do not repeat passed directive
   clearing, custom Description, Tides spell links, or approved visual layout.
   Source-completeness follow-up: comparison with the local Foundry record also
@@ -805,9 +806,13 @@ Last updated: 2026-10-10
   Creature spell links also pass on 2026-10-10: existing statblock link opens
   the expected spell; adding a spell via the group chooser preserves its
   name/rank/reference after save/reopen; changing Reference changes the saved
-  statblock destination. Next focused test: original deity weapon/domain links.
-  Verify redraw and save/reopen; source checks alone do not establish native
-  passes. Avoid repeating confirmed
+  statblock destination. Erastil weapon/domains/alternate domain links also
+  pass on 2026-10-10. Next focused test: populated Character tab persistence
+  (a temporary character can supply the fields if no existing character is
+  available). Older custom-spell duration compatibility remains unverified,
+  along with the recurring small-edit save issue and recorded Tides source
+  completeness follow-up. No release approval. Source checks alone do not
+  establish native passes. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
   compatibility before releases. See `ROADMAP.md` for product decisions.
