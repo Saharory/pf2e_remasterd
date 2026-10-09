@@ -453,8 +453,9 @@ Last updated: 2026-10-10
   The user approved the result ("stunning pass") on 2026-10-05. Preserve this
   native confirmation for package SHA-256
   `3bf4828a1f2b14d5484a115db84dbb4b185e02452df59756c6f29262c5667744`.
-- Character navigation: source complete; blank-state layout approved,
-  populated-character verification pending.
+- Character navigation: source complete; blank-state layout and temporary
+  populated-character workflow pass. Older saved character compatibility
+  remains untested separately.
   Four native tabs replace the continuous 12-section form: **Main** (identity,
   traits, HP, core statistics, movement, resources), **Abilities & Skills**
   (attribute modifiers, saves, skills, attacks), **Inventory**, and **Spells**.
@@ -469,9 +470,11 @@ Last updated: 2026-10-10
   to test populated records. This confirms the blank-state layout only for
   package SHA-256
   `b30bc9e4fcbcd39efe2e52bebbf5c07d72fcf5dbfee21a6857637ba9fc059618`.
-  When a character is available, pending checks are editing a statistic,
-  Speed, an attack, inventory text, and casting numeric values, then saving/
-  reopening to verify persistence. Existing/populated records remain untested.
+  Native confirmation on 2026-10-10: the user populated a temporary character
+  across all four tabs (AC/Speed, attack, inventory text, spellcasting DC/spell),
+  saved/reopened, changed those values and saved/reopened again; all requested
+  checks pass. This verifies creation and subsequent populated edits, not
+  compatibility with an older saved character created before the tab change.
   No agent app automation is authorized.
 - Recent native feedback (2026-10-05): the user said the spell layout looks
   good apart from Cast actions offering Custom Options, and approved the item
@@ -807,9 +810,10 @@ Last updated: 2026-10-10
   the expected spell; adding a spell via the group chooser preserves its
   name/rank/reference after save/reopen; changing Reference changes the saved
   statblock destination. Erastil weapon/domains/alternate domain links also
-  pass on 2026-10-10. Next focused test: populated Character tab persistence
-  (a temporary character can supply the fields if no existing character is
-  available). Older custom-spell duration compatibility remains unverified,
+  pass on 2026-10-10. Temporary Character population/edits across all four tabs
+  and save/reopen also pass. Next focused test: older custom-spell printed
+  duration readability/edit/save/reopen, if the user has such a saved record.
+  Older saved character compatibility remains unverified,
   along with the recurring small-edit save issue and recorded Tides source
   completeness follow-up. No release approval. Source checks alone do not
   establish native passes. Avoid repeating confirmed
