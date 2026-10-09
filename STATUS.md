@@ -200,8 +200,11 @@ Last updated: 2026-10-10
   independently confirmed for this recurrence. It is not evidence that the two
   distinct field paths overwrite each other. A proposed separate-page workaround
   was withdrawn before packaging; the approved inline boxes remain unchanged.
-  Multiple-input persistence passes; small edits, clearing, custom Description,
-  and link-opening checks remain unresolved or pending.
+  Multiple-input persistence passes. The user then confirmed all three requested
+  follow-up checks on 2026-10-10: clearing a directive remains empty after
+  save/reopen, custom Description displays, and all three Tides spell links open
+  the correct spells. Small-edit persistence remains unresolved; original
+  weapon/domain link-opening was not included in this three-check confirmation.
   Eight deity conversion cases pass (48 total); focused editability and canonical
   checks pass (83 definitions, nine validators). Verified latest test package
   changes `deities.json` and the two deity views, adding only the new partial;
@@ -211,14 +214,10 @@ Last updated: 2026-10-10
   `deities.json`, `forms/deity.json`, `views/deity.html`, and `deity-stats.md`
   for multiline directives and ordinal/catalog links. All 200 source files match,
   CRC/checksums pass, 18,041 records remain, version is `0.9.01`. No push/release.
-  Next native test after importing: create a fresh copy of a deity such as
-  Erastil. Check the two multiline boxes: edit, save/reopen, confirm displayed
-  text, then clear/save/reopen and confirm clearing persists. Existing saved copies
-  keep their old description text; no active user-record migration is included.
-  Add a custom Description line and
-  confirm it displays. Check original weapon/domain/spell links still open.
-  The ranked-label appearance is approved; check that all three Tides spell
-  links open the expected spells. Do not repeat the approved visual layout.
+  Deity follow-up: original weapon/domain links still need explicit native
+  confirmation. Existing saved copies keep their old description text; no
+  active user-record migration is included. Do not repeat passed directive
+  clearing, custom Description, Tides spell links, or approved visual layout.
   Source-completeness follow-up: comparison with the local Foundry record also
   indicates missing non-spell Tides metadata in the structured import (concerns,
   directives, divine attributes, favored weapon, sanctification options).
@@ -705,11 +704,11 @@ Last updated: 2026-10-10
   Distinct caster/source and target-relative expiry also pass.
   New custom spell manual loading also passes.
   Hazard/vehicle immunity population/add/edit/delete/display/save also passes.
-  Next focused test: the deity display/list/description/reference checks above.
-  Continue
-  empty-item category field visibility,
-  with any remaining deity results. Verify redraw and save/reopen; source checks
-  alone do not establish native passes. Remaining
+  Deity directive clearing, custom Description display, and all three Tides
+  spell links also pass on 2026-10-10. Small-edit saving remains unresolved.
+  Next focused test: empty-item category field visibility. Remaining deity
+  checks include original weapon/domain links. Verify redraw and save/reopen;
+  source checks alone do not establish native passes. Remaining
   earlier coverage: special-sense/reference editing, empty Immunities/Rituals,
   ritual links and creature spell links. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
