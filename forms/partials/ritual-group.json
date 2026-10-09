@@ -4,8 +4,10 @@
       "type": "group",
       "fields": [
         {
-          "placeholder": "Common.Details",
-          "attribute": "label"
+          "placeholder": "Creature.RitualLevelHint",
+          "attribute": "label",
+          "title": "Creature.RitualLevel",
+          "detail": "Creature.RitualLevelHint"
         }
       ]
     },
@@ -16,7 +18,7 @@
       "attributeType": "Ritual",
       "custom": {
         "itemTitle": "{{name}}",
-        "itemDetail": "{% if rank != nil %}{{'Spell.Rank'|l}} {{rank}}{% endif %}{% if details %}{% if rank != nil %} • {% endif %}{{details}}{% endif %}"
+        "itemDetail": "{% if rank != nil %}{{'Spell.Rank'|l}} {{rank}}{% endif %}{% if details %}{% if rank != nil %} \u2022 {% endif %}{{details}}{% endif %}"
       },
       "form": {
         "title": "Entity.Ritual",

@@ -33,13 +33,14 @@ Last updated: 2026-10-10
   multiline Edicts/Anathema, generic ranked cleric-spell labels/links, clear
   reference section labels, custom-only acuity references, and automatic
   standard sense-acuity rule links, plus built-in immunity choices/automatic
-  links and custom-text reference selection.
+  links and custom-text reference selection, plus explicit ritual/spell group
+  labels and example hints.
   Archive inspection/CRC/checksums pass; all 200 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `374da97273479402a2ed64f4d3d4fdc1581dd7cccd345041c1688a7cdb5ee47b`.
+  SHA-256: `03bf6431307d9aefa47fc47f4477474e8392f68110170bf9e4c7d4b812c5d271`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -579,9 +580,21 @@ Last updated: 2026-10-10
   uses Occult Rituals, and Elder Wyrmwraith / Wyrmwraith use Divine Rituals.
   Spell groups also include Cantrips, Constant, Focus Spells and slot counts
   alongside numbered ranks. Shared entry rank controls already display Rank
-  via Spell.Rank; user prefers Level. No implementation change made because
-  special cases were found and must be reported first. Empty-ritual functional
-  verification remains pending; the screenshot is not a persistence pass.
+  via Spell.Rank; the user clarified they meant the editable group heading
+  such as 8th, previously labeled only Details. After reporting special cases,
+  the user approved explicit labels/hints: Ritual Heading (Rituals, Divine
+  Rituals, or Occult Rituals), Ritual Level (2nd or 8th), and Spell Level / Group
+  (8th, Cantrips (4th), or Constant (2nd)). These three controls now have titles,
+  example placeholders and detail hints, preserving type/label storage paths
+  and all special headings. Individual numeric Rank controls are unchanged.
+  Canonical checks pass (83 definitions/nine validators); rebuilt test archive
+  changes only three form partials and lang/en.json, with all 200 source files
+  matching, CRC/checksums passing and 18,041 records byte-identical. Version
+  remains 0.9.01; no push/release. Native hint/layout confirmation and
+  empty-ritual functional verification remain pending; the screenshot is not
+  a persistence pass. Next check: confirm labels/hints in Rituals and spell
+  group editors, then continue the previously requested ritual add/link/save/
+  reopen/delete test.
 - Immunity choice editor: user-requested change source complete on 2026-10-10,
   native confirmation pending. Replace the name text field with a native picker
   using 54 built-in immunity choices: damage, common conditions, effect traits,
