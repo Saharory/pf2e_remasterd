@@ -985,17 +985,18 @@ def main() -> int:
     if set(skill_routes) != set(type_definitions["Skill"]):
         raise SystemExit("every divine skill needs its own rule route")
     published_rules = {"/rule/" + row["slug"] for row in records("rules.json")}
-    for route in [*skill_routes.values(), *type_definitions["DeityAttributeReference"].values()]:
+    for route in skill_routes.values():
         if route not in published_rules:
-            raise SystemExit(f"deity benefit link is missing from the package: {route}")
-    if set(type_definitions["DeityAttributeReference"]) != set(type_definitions["DeityAttribute"]) - {"any"}:
-        raise SystemExit("attribute links must cover the six attributes and preserve Any as a special choice")
+            raise SystemExit(f"divine skill link is missing from the package: {route}")
+    if not any(row["slug"] == "raised-by-belief-player-core" for row in records("backgrounds.json")):
+        raise SystemExit("Divine Attribute heading points to an unpublished background")
     for preview in (deity_html, deity_stats):
-        for lookup in ("valueMap: 'DeityAttributeReference'", "valueMap: 'SkillReference'"):
-            if lookup not in preview:
-                raise SystemExit(f"deity preview is missing live benefit links: {lookup}")
-        if "/rule/attribute-modifier-rules-3289" not in preview or "/rule/skills-rules-2276" not in preview:
-            raise SystemExit("deity benefit headings are missing quick links")
+        if "valueMap: 'SkillReference'" not in preview:
+            raise SystemExit("deity preview is missing live skill-value links")
+        if "/background/raised-by-belief-player-core" not in preview:
+            raise SystemExit("Divine Attribute must link to Raised by Belief")
+        if "attributeRoute" in preview or "DeityAttributeReference" in preview or "/rule/skills-rules-2276" in preview:
+            raise SystemExit("deity attribute values and Divine Skill heading must stay unlinked")
     for cell in re.findall(r"<td>(.*?)</td>", deity_html, re.S):
         if "for value in data." in cell:
             if cell.count("{% markdown -%}") != 1 or cell.count("{% endmarkdown %}") != 1 or "|md" in cell:

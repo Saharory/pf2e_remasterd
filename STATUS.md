@@ -41,7 +41,7 @@ Last updated: 2026-10-10
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `c407321400ee33a53fffa90b59558b6e13b59873f5eff98a8a1fe75b3d55e40c`.
+  SHA-256: `72018aacf9971ae687b973a30faf6b5913128fc293aaf79ecb9f2a0d60282299`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -317,6 +317,20 @@ Last updated: 2026-10-10
   Native follow-up: attribute/skill heading links,
   individual skill destinations, edited skills and Any display, alongside the
   restored deity-field/save/clear checks above.
+- Deity link placement correction on 2026-10-10: user clarified the previous
+  links were misplaced. Divine Attribute heading now links to the packaged
+  Raised by Belief background; all attribute values (including Any) are plain.
+  Divine Skill heading is plain; its skill value retains the individual
+  Player Core skill link. Both HTML and native previews match. The unused
+  DeityAttributeReference lookup was removed; DeityAttribute display choices
+  and live SkillReference lookup remain. Maintained guards verify Raised by
+  Belief exists, correct heading destination, no attribute-value/skill-heading
+  links, and continuing skill-value links. Native confirmation pending; no
+  restored mechanics/editor controls or source data changed. Canonical checks
+  pass (83 definitions/nine validators); rebuilt test archive changes only
+  types.json and the two deity views. All 200 source matches, CRC/checksums
+  pass; 18,041 records remain byte-identical and version stays 0.9.01. No
+  version bump, push or release.
 - Scalar-list regression: source repair complete on 2026-10-07; the hazard /
   vehicle native retest passes (user: "all good"). The user reported imported immunities visible in the parent summary
   but an empty inner list before editing. Published hazard/vehicle data is
