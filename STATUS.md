@@ -595,16 +595,16 @@ Last updated: 2026-10-10
   subtitles render properly, but the user found the presentation too busy.
   Latest requested simplification removes detail subtitles from all three
   fields, retaining explicit titles and short e.g. placeholders only. Native
-  confirmation of this final layout remains pending.
+  confirmation on 2026-10-10: the user reports the final layout looks good
+  and all requested ritual checks pass.
   Canonical checks pass (83 definitions/nine validators); rebuilt test archive
   initially changed three form partials and lang/en.json; the latest subtitle
   removal changes only the three form partials, with all 200 source files
   matching, CRC/checksums passing and 18,041 records byte-identical. Version
-  remains 0.9.01; no push/release. Native hint/layout confirmation and
-  empty-ritual functional verification remain pending; the screenshot is not
-  a persistence pass. Next check: confirm labels/hints in Rituals and spell
-  group editors, then continue the previously requested ritual add/link/save/
-  reopen/delete test.
+  remains 0.9.01; no push/release. Native confirmation on 2026-10-10 covers
+  labels/short hints, ritual creation from an empty creature, DC/group/entry
+  display and save/reopen, ritual link opening, and deletion without leftover
+  text after reopening. Do not repeat these passed checks without a regression.
 - Immunity choice editor: user-requested change source complete on 2026-10-10,
   native confirmation pending. Replace the name text field with a native picker
   using 54 built-in immunity choices: damage, common conditions, effect traits,
@@ -800,11 +800,12 @@ Last updated: 2026-10-10
   2026-10-10. Special-sense mechanics also pass.
   Reference headings, custom acuity references and standard automatic links
   also pass on 2026-10-10. Empty creature Immunities and built-in/custom immunity
-  editing/linking/deletion also pass. Next focused test: empty creature Rituals
-  and ritual links. Remaining deity
+  editing/linking/deletion also pass. Ritual labels/hints, empty-creature
+  ritual addition/display/save/reopen/link/deletion also pass on 2026-10-10.
+  Next focused test: creature spell links. Remaining deity
   checks include original weapon/domain links. Verify redraw and save/reopen;
   source checks alone do not establish native passes. Remaining
-  earlier coverage: empty Rituals, ritual links and creature spell links. Avoid repeating confirmed
+  earlier coverage: creature spell links. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
   compatibility before releases. See `ROADMAP.md` for product decisions.
