@@ -260,7 +260,7 @@ Last updated: 2026-10-10
   Repair scope requires preserving genuine None/freeform cases and resolving
   source conflicts rather than blindly filling every blank from Foundry.
 - Confirmed deity completeness repair: source complete on 2026-10-10 at the
-  user's request; native confirmation pending. Editable structured source now
+  user's request; user reports the deity checks passed on 2026-10-10. Editable structured source now
   restores Tides concerns/directives/Dexterity+Intelligence/dagger/can-choose-
   unholy; Angazhan must-choose-unholy; Ydersius serpentfolk/immortality/poison;
   Asmodeus Any divine attribute plus a paraphrased soul-binding restriction.
@@ -292,10 +292,10 @@ Last updated: 2026-10-10
   matches pass; latest archive changes only combined deities.json, types.json,
   forms/deity.json, views/deity.html and deity-stats.md. 18,041 records remain,
   version stays 0.9.01; test package rebuilt, no version bump/push/release.
-  Next native check on fresh copies: restored Tides fields and Dagger link,
-  Angazhan/Ydersius values, Asmodeus Any/notes; edit attributes, notes and
-  sanctification sentence, save/reopen and confirm live preview updates. Clear
-  sanctification and verify old values do not return.
+  Native confirmation on 2026-10-10: after the link-placement corrections below,
+  the user reports all deity checks passed. This closes the requested restored
+  fields/editor/save/clear verification and final heading/value link placement.
+  Preserve these results; do not repeat without a regression.
 - Deity benefit links: source complete on 2026-10-10 after the user reported
   missing Divine Attribute and Divine Skill links; native confirmation pending.
   Both heading labels now link to Player Core's Attribute Modifier overview /
@@ -325,7 +325,8 @@ Last updated: 2026-10-10
   DeityAttributeReference lookup was removed; DeityAttribute display choices
   and live SkillReference lookup remain. Maintained guards verify Raised by
   Belief exists, correct heading destination, no attribute-value/skill-heading
-  links, and continuing skill-value links. Native confirmation pending; no
+  links, and continuing skill-value links. The user confirms all final deity
+  checks pass on 2026-10-10. No
   restored mechanics/editor controls or source data changed. Canonical checks
   pass (83 definitions/nine validators); rebuilt test archive changes only
   types.json and the two deity views. All 200 source matches, CRC/checksums
@@ -766,7 +767,10 @@ Last updated: 2026-10-10
   destinations now use angle wrappers, preserving valid links with spaces or
   parentheses. Foundation Markdown checks and the maintained regression pass.
   The user confirms Chest renders correctly and opens the expected item.
-  Other editor reference types still need native verification.
+  Subsequent native tests cover special senses, immunity/custom text, ritual
+  and spell references. Ability Linked Action and attack-effect Reference have
+  no separate native link/save/reopen result recorded; keep these two explicit
+  link checks pending rather than treating generic layout passes as evidence.
 
 - Spell editor compatibility: the nested area-size input is a decimal field
   inside a valid group, with native feet conversion in the editor and summary.
@@ -920,9 +924,12 @@ Last updated: 2026-10-10
   saved character compatibility remains unverified separately. The user
   explicitly excludes single-letter/selected-text paste saving from our scope:
   it is an app-developer bug scheduled for a future fix. Do not retest or add
-  system workarounds for it unless requested. Next system follow-up: audit the
-  restored deity fields/editor controls above. Confirmed omissions are repaired;
-  unverified Essence Dancers and conflicting Rokoga Gin remain separate source
+  system workarounds for it unless requested. Final deity field/editor/link
+  checks pass. Checklist review identifies three remaining explicit native
+  results: Recall Knowledge DC/statblock/save/reopen, Ability Linked Action
+  link/save/reopen, and attack-effect Reference link/save/reopen. Do not repeat
+  other passed flows. Confirmed deity omissions are repaired; unverified
+  Essence Dancers and conflicting Rokoga Gin remain separate content-source
   questions. No release approval. Source checks alone do not
   establish native passes. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
