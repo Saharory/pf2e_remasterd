@@ -2,6 +2,11 @@
 
 Last updated: 2026-10-10
 
+- Native verification milestone: all requested available editor/reference checks
+  pass as of 2026-10-10. Older-record checks are unavailable/unverified, the
+  app small-edit bug is excluded at the user's request, and two deity source
+  questions remain documented separately. Release preparation is not approved.
+
 - The previously reported **Trade Death for Life** and **Tree of Life and
   Death** import issues were investigated here on 2026-10-07 after the user
   clarified that structured spell metadata remained in descriptions. The
@@ -760,17 +765,18 @@ Last updated: 2026-10-10
   row-relative `subject` / `skills` paths, a standard pattern also used by 5e
   list-entry forms. No binding error was identified. The user confirmed
   immediate selection checkmarks after the 5.0.9 update on 2026-10-07.
-  Recall Knowledge DC/stat-block/save verification is not yet
-  confirmed; do not mark the whole Recall Knowledge test passed.
+  Final native confirmation on 2026-10-10: Recall Knowledge DC edits display
+  in the statblock and persist after save/reopen. With previously passed
+  selections/checkmarks and deletion, the requested Recall Knowledge checks pass.
 - Reference repair: native selections can include source-name spaces, e.g.
   `/item/chest-player-core/player core`. All nine dynamic creature Markdown
   destinations now use angle wrappers, preserving valid links with spaces or
   parentheses. Foundation Markdown checks and the maintained regression pass.
   The user confirms Chest renders correctly and opens the expected item.
   Subsequent native tests cover special senses, immunity/custom text, ritual
-  and spell references. Ability Linked Action and attack-effect Reference have
-  no separate native link/save/reopen result recorded; keep these two explicit
-  link checks pending rather than treating generic layout passes as evidence.
+  and spell references. Final native confirmation on 2026-10-10 also covers
+  Ability Linked Action and attack-effect Reference selection/save/reopen and
+  opening their statblock links. All requested reference checks pass.
 
 - Spell editor compatibility: the nested area-size input is a decimal field
   inside a valid group, with native feet conversion in the editor and summary.
@@ -925,12 +931,15 @@ Last updated: 2026-10-10
   explicitly excludes single-letter/selected-text paste saving from our scope:
   it is an app-developer bug scheduled for a future fix. Do not retest or add
   system workarounds for it unless requested. Final deity field/editor/link
-  checks pass. Checklist review identifies three remaining explicit native
-  results: Recall Knowledge DC/statblock/save/reopen, Ability Linked Action
-  link/save/reopen, and attack-effect Reference link/save/reopen. Do not repeat
-  other passed flows. Confirmed deity omissions are repaired; unverified
-  Essence Dancers and conflicting Rokoga Gin remain separate content-source
-  questions. No release approval. Source checks alone do not
+  checks pass. The user reports all three final explicit checks pass on
+  2026-10-10: Recall Knowledge DC/statblock/save/reopen, Ability Linked Action
+  link/save/reopen, and attack-effect Reference link/save/reopen. The available
+  native verification checklist is complete; do not repeat passed flows without
+  a regression. Older-record compatibility lacks native fixtures and is not
+  claimed passed. Confirmed deity omissions are repaired; unverified Essence
+  Dancers and conflicting Rokoga Gin remain separate content-source questions.
+  Release preparation awaits explicit user approval; no version bump, push,
+  tag or publication is authorized. Source checks alone do not
   establish native passes. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
