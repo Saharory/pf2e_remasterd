@@ -850,7 +850,7 @@ def main() -> int:
         raise SystemExit("named Lore still appears in the generic creature skill picker")
     sense_form = form("partials/sense.json")
     if field_attributes(sense_form) != {
-        "name", "reference", "acuity", "details", "customText"
+        "name", "reference", "acuity", "acuityReference", "details", "customText"
     }:
         raise SystemExit("special-sense editor does not expose references and custom text")
     # Fixed acuities must resolve from the live choice, ahead of any saved legacy link.
@@ -861,10 +861,15 @@ def main() -> int:
             raise SystemExit(f"sense acuity {acuity} does not link its selected rule automatically")
     if creature_view.index("sense.acuity == 'vague'") > creature_view.index("elif sense.acuityReference"):
         raise SystemExit("legacy acuity references override the live choice")
+    custom_acuity = next(section for section in sense_form["sections"]
+                        if any(field.get("attribute") == "acuityReference" for field in section.get("fields", [])))
+    if custom_acuity.get("visibleIf") != "{% if acuity and acuity != 'precise' and acuity != 'imprecise' and acuity != 'vague' %}true{% endif %}":
+        raise SystemExit("manual acuity reference must appear only for a nonempty custom acuity")
     for path in (REPO / "forms").rglob("*.json"):
         for node in form_nodes(json5.loads(path.read_text())):
-            if node.get("type") == "reference" and node.get("placeholder") != "Reference":
-                raise SystemExit(f"empty reference field lacks its Reference label: {path}")
+            if any(field.get("type") == "reference" for field in node.get("fields", [])):
+                if node.get("title") not in {"Reference", "Custom Acuity Reference"}:
+                    raise SystemExit(f"reference picker lacks a visible section label: {path}")
     item_form = form("partials/creature-item.json")
     if field_attributes(item_form) != {"name", "quantity", "reference"}:
         raise SystemExit("creature item editor must expose only name, quantity, and reference")

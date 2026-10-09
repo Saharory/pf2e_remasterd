@@ -31,13 +31,14 @@ Last updated: 2026-10-10
   restored native scalar-list controls for hazards/vehicles/deities,
   live deity previews with clean imported Description and joined table lists,
   multiline Edicts/Anathema, generic ranked cleric-spell labels/links, clear
-  empty reference placeholders, and automatic sense-acuity rule links.
+  reference section labels, custom-only acuity references, and automatic
+  standard sense-acuity rule links.
   Archive inspection/CRC/checksums pass; all 200 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `84585b4d3ede33430d695ce940ed477843da334f12bf33ef436213b6864de760`.
+  SHA-256: `2bdaab036bb5dbe6b62fa43efdd36a4e0047996e35ce5d1d7aacd4a66f4c37e6`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -546,23 +547,30 @@ Last updated: 2026-10-10
   as historical reproduction; it is no longer required by the latest user result.
 - Special senses: the user confirms add/reference selection, Imprecise choice,
   Details editing (30 to 60 feet), statblock link opening, save/reopen, and
-  deletion pass on 2026-10-10. Requested polish is source complete, native
-  confirmation pending: all seven remaining native reference controls now use
-  the documented `placeholder: Reference`, instead of an empty None row.
-  Sense acuity no longer exposes a manual reference picker. The shared native /
-  HTML statblock partial derives the fixed Precise/Imprecise/Vague rule route
-  from the current selection, ahead of any stale saved `acuityReference`.
-  Original reference data is retained; unknown legacy acuities keep their saved
-  link fallback, and Custom Sense Text stays authoritative. No content rewrite
-  or new save hook is needed. The maintained editability guard covers all three
-  live-choice routes, legacy precedence, and reference placeholders. Canonical
-  checks pass (83 definitions/nine validators); package CRC/checksums and all
-  200 source matches pass. Only seven form partials and creature-primary.md
-  changed in the archive; all 18,041 records remain byte-identical, version
-  remains 0.9.01. Latest test package rebuilt; no push or release.
-  Next native check: empty Reference row label, no manual Acuity Reference row,
-  and each acuity's automatic statblock link. Switch acuity on an existing entry
-  with a saved legacy link and confirm the link follows the new choice.
+  deletion pass on 2026-10-10. First polish package failed its native label
+  check: the app ignores `placeholder: Reference` on native reference controls
+  and still displays None. Do not record that placeholder change as a pass.
+  Latest correction gives all seven existing reference pickers an explicit
+  Reference section heading, preserving one-tap picker access. Ineffective
+  placeholders were removed. Native empty value may still read None under
+  the heading; no undocumented row-text override is claimed.
+  The user also requested manual reference selection for custom acuity. A
+  Custom Acuity Reference section now exposes the existing `acuityReference`
+  only when `acuity` is nonempty and not precise/imprecise/vague. Choose a custom
+  value in the native picker and return to the sense editor to access it.
+  Standard choices hide this section and automatically link their fixed rule
+  from the live acuity in both previews, ahead of stale saved references.
+  Hidden custom reference data is retained; Custom Sense Text remains
+  authoritative. No content rewrite or save hook was introduced.
+  Maintained guards cover live-choice routes, legacy precedence, custom-only
+  visibility and visible reference headings. Canonical checks pass (83
+  definitions/nine validators); package CRC/checksums and all 200 source
+  matches pass. Latest archive changes only seven form partials; all 18,041
+  records and views remain byte-identical to the preceding test archive.
+  Version remains 0.9.01; latest test package rebuilt, no push or release.
+  Next native check: visible Reference heading, custom acuity reference
+  selection/save/reopen/link, and hiding the custom-reference section when
+  switching to each standard acuity (whose link follows the new choice).
 - Creature editor: lossless structured controls expose special senses, inventory
   item references/quantities, immunity references/custom text, rituals, named
   Lore inside Skills, and Recall Knowledge subject/skill pairs. Language and

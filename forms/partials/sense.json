@@ -6,11 +6,16 @@
         {
           "title": "Common.Name",
           "attribute": "name"
-        },
+        }
+      ]
+    },
+    {
+      "title": "Reference",
+      "type": "group",
+      "fields": [
         {
           "title": "Reference",
           "type": "reference",
-          "placeholder": "Reference",
           "attribute": "reference"
         }
       ]
@@ -27,6 +32,18 @@
         {
           "title": "Common.Details",
           "attribute": "details"
+        }
+      ]
+    },
+    {
+      "title": "Custom Acuity Reference",
+      "type": "group",
+      "visibleIf": "{% if acuity and acuity != 'precise' and acuity != 'imprecise' and acuity != 'vague' %}true{% endif %}",
+      "fields": [
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "acuityReference"
         }
       ]
     },
