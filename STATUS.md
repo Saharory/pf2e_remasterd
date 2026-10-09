@@ -227,11 +227,37 @@ Last updated: 2026-10-10
   Existing saved copies keep their old description text; no
   active user-record migration is included. Do not repeat passed directive
   clearing, custom Description, Tides spell links, or approved visual layout.
-  Source-completeness follow-up: comparison with the local Foundry record also
-  indicates missing non-spell Tides metadata in the structured import (concerns,
-  directives, divine attributes, favored weapon, sanctification options).
-  Investigate that source mapping separately; it is not a native control bug
-  and was not changed by this editor/rank repair.
+  Source-completeness investigation confirmed on 2026-10-10 (read-only; user
+  requested confirmation before assuming blank fields are missing). Tides source
+  includes concern/edict/anathema paragraphs, Dexterity/Intelligence, dagger,
+  and can-choose-unholy sanctification, all absent from the structured data and
+  published preview. `../tools/build_structured_pf2e_modules.py:1203` expects
+  separate description metadata plus old attribute.value/weapons.value and
+  sanctification.own fields; the current Foundry source uses description
+  paragraphs, arrays and modal/what. Original Tides source Description contains
+  its directives; publication stripping hides them because they were never
+  converted to structured mechanics. This is an import gap, not intentionally
+  empty metadata and not a native editor defect.
+  Broader comparison matched 411/420 imported entries by ID/name (epithet
+  normalization); nine remain unmatched. This is a six-field absence audit,
+  not full content validation. It also flags Angazhan missing sanctification
+  and Ydersius missing Areas of Concern; both confirmed against Paizo's official
+  Divine Mysteries web supplement. Angazhan must choose unholy; Ydersius has
+  serpentfolk/immortality/poison concerns. Asmodeus's blank divineAttribute
+  is a special freeform case: Paizo says Any, not no attributes; Foundry also
+  stores an empty array, so array-only comparison missed this loss.
+  Essence Dancers lacks sanctification in the import while its local Foundry
+  source offers holy/unholy; book verification still needed. Rokoga Gin is
+  an authority conflict, not a confirmed import bug: local Foundry allows
+  holy/unholy but Paizo's published supplement explicitly says None. Do not
+  replace it based only on Foundry. Other empty fields can be intentional:
+  Laws of Mortality, Prophecies of Kalistrade and Whispering Way are philosophies
+  with no favored weapon in their source; Gozreh and Pharasma have None for
+  sanctification in the publisher's table. Never fill absent values by guess.
+  Official comparison: https://downloads.paizo.com/PZO13003_SupplementalGodTable.pdf
+  No source data, converter, or package changed during this confirmation.
+  Repair scope requires preserving genuine None/freeform cases and resolving
+  source conflicts rather than blindly filling every blank from Foundry.
 - Scalar-list regression: source repair complete on 2026-10-07; the hazard /
   vehicle native retest passes (user: "all good"). The user reported imported immunities visible in the parent summary
   but an empty inner list before editing. Published hazard/vehicle data is
