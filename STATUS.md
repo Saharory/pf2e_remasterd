@@ -32,13 +32,14 @@ Last updated: 2026-10-10
   live deity previews with clean imported Description and joined table lists,
   multiline Edicts/Anathema, generic ranked cleric-spell labels/links, clear
   reference section labels, custom-only acuity references, and automatic
-  standard sense-acuity rule links.
+  standard sense-acuity rule links, plus built-in immunity choices/automatic
+  links and custom-text reference selection.
   Archive inspection/CRC/checksums pass; all 200 packaged source files match
   current source. It includes 18,041 records, including 1,404 spells. Version
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `2bdaab036bb5dbe6b62fa43efdd36a4e0047996e35ce5d1d7aacd4a66f4c37e6`.
+  SHA-256: `374da97273479402a2ed64f4d3d4fdc1581dd7cccd345041c1688a7cdb5ee47b`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -572,6 +573,32 @@ Last updated: 2026-10-10
   passed, including the visible Reference heading, custom acuity reference
   selection/save/reopen/link, and hiding its section when switching to standard
   acuities with the correct automatic link. Do not repeat without a regression.
+- Immunity choice editor: user-requested change source complete on 2026-10-10,
+  native confirmation pending. Replace the name text field with a native picker
+  using 54 built-in immunity choices: damage, common conditions, effect traits,
+  death effects/nonlethal attacks, critical hits and object immunities.
+  `types.json` owns the labels and case-insensitive route lookup. Every route
+  resolves to a published condition/trait/rule; critical hits link specifically
+  to their immunity rule, damage entries without dedicated records link to the
+  Damage Type rule. Existing name/reference/customText paths and all published
+  records remain intact. Unknown/imported names retain the legacy reference
+  fallback; known choices derive their link from the current choice so an old
+  saved reference cannot point to the previous choice.
+  Reference follows Custom Immunity Text and is shown only while customText is
+  populated. Custom text with a selected reference now renders as a clickable
+  label; without a reference its existing Markdown rendering is retained.
+  The maintained editability suite verifies picker binding, complete option
+  routes, published destinations, custom-reference visibility and rendering,
+  and live-choice precedence. Canonical checks pass (83 definitions/nine
+  validators). Verified test archive changes only types.json, immunity.json
+  and creature-secondary.md; CRC/checksums and all 200 source matches pass.
+  All 18,041 records are byte-identical; version remains 0.9.01. No push/release.
+  Next native test on a new blank creature: select Poison, save/reopen and open
+  its automatic link; change it to Paralyzed and verify the new link; add an
+  entry using Custom Immunity Text plus Reference and check saving/link opening;
+  clear custom text and confirm its Reference section hides; delete entries,
+  save/reopen and confirm empty list/statblock. The preceding empty-immunity
+  test was not reported as passed before this requested editor change.
 - Creature editor: lossless structured controls expose special senses, inventory
   item references/quantities, immunity references/custom text, rituals, named
   Lore inside Skills, and Recall Knowledge subject/skill pairs. Language and
@@ -740,7 +767,7 @@ Last updated: 2026-10-10
   Empty-item category field visibility/immediate switching also passes on
   2026-10-10. Special-sense mechanics also pass.
   Reference headings, custom acuity references and standard automatic links
-  also pass on 2026-10-10. Next focused test: empty creature Immunities. Remaining deity
+  also pass on 2026-10-10. Next focused test: the new Immunity choice/custom-reference editor above. Remaining deity
   checks include original weapon/domain links. Verify redraw and save/reopen;
   source checks alone do not establish native passes. Remaining
   earlier coverage: empty Immunities/Rituals,

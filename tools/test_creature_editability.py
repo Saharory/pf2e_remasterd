@@ -876,6 +876,31 @@ def main() -> int:
     immunity_form = form("partials/immunity.json")
     if field_attributes(immunity_form) != {"name", "reference", "customText"}:
         raise SystemExit("immunity editor must omit the unnecessary Details field")
+    immunity_choice = immunity_form["sections"][0]["fields"][0]
+    if (immunity_choice.get("type"), immunity_choice.get("attribute"), immunity_choice.get("attributeType")) != ("picker", "name", "ImmunityChoice"):
+        raise SystemExit("immunity choices must keep the existing editable name path")
+    immunity_reference = next(section for section in immunity_form["sections"]
+                              if any(field.get("type") == "reference" for field in section.get("fields", [])))
+    if immunity_reference.get("visibleIf") != "{% if customText %}true{% endif %}":
+        raise SystemExit("manual immunity reference must accompany custom text only")
+    choices = type_definitions["ImmunityChoice"]
+    routes = type_definitions["ImmunityReference"]
+    if {name.lower() for name in choices} != set(routes):
+        raise SystemExit("every built-in immunity needs an automatic route")
+    published_routes = {f"/{route_kind}/{row['slug']}"
+                        for collection, route_kind in (("rules.json", "rule"), ("conditions.json", "condition"), ("traits.json", "trait"))
+                        for row in records(collection)}
+    if set(routes.values()) - published_routes:
+        raise SystemExit(f"immunity choices point to unpublished rules: {set(routes.values()) - published_routes}")
+    for label, route in {"Poison": "/trait/poison", "Paralyzed": "/condition/paralyzed-player-core",
+                         "Critical Hits": "/rule/immunity-to-critical-hits-rules-2314"}.items():
+        if routes.get(label.lower()) != route:
+            raise SystemExit(f"wrong automatic immunity route for {label}")
+    immunity_view = (REPO / "views/partials/creature-secondary.md").read_text()
+    if "immunityName|valueMap: 'ImmunityReference'" not in immunity_view or "[{{immunity.customText|lowercase}}](<{{immunity.reference}}>)" not in immunity_view:
+        raise SystemExit("immunity view lacks automatic choices or linked custom text")
+    if immunity_view.index("if immunityRoute") > immunity_view.index("elif immunity.reference"):
+        raise SystemExit("saved immunity reference overrides a newly selected built-in choice")
     skills_form = form("partials/creature-skills.json")
     invalid_skills_section_types = {
         index: section.get("type")

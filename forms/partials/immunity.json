@@ -4,19 +4,10 @@
       "type": "group",
       "fields": [
         {
-          "title": "Common.Name",
-          "attribute": "name"
-        }
-      ]
-    },
-    {
-      "title": "Reference",
-      "type": "group",
-      "fields": [
-        {
-          "title": "Reference",
-          "type": "reference",
-          "attribute": "reference"
+          "title": "Creature.Immunity",
+          "type": "picker",
+          "attribute": "name",
+          "attributeType": "ImmunityChoice"
         }
       ]
     },
@@ -27,6 +18,18 @@
         {
           "type": "textArea",
           "attribute": "customText"
+        }
+      ]
+    },
+    {
+      "title": "Reference",
+      "type": "group",
+      "visibleIf": "{% if customText %}true{% endif %}",
+      "fields": [
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "reference"
         }
       ]
     }
