@@ -40,7 +40,7 @@ Last updated: 2026-10-10
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `03bf6431307d9aefa47fc47f4477474e8392f68110170bf9e4c7d4b812c5d271`.
+  SHA-256: `61e45cd9745adc81c6c74f2160020e018ab852e7c6b0b127d6623c52a047f438`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -587,6 +587,12 @@ Last updated: 2026-10-10
   (8th, Cantrips (4th), or Constant (2nd)). These three controls now have titles,
   example placeholders and detail hints, preserving type/label storage paths
   and all special headings. Individual numeric Rank controls are unchanged.
+  Native feedback found the subtitle displayed the raw localization key while
+  the placeholder was too long and sounded restrictive. Correct all three
+  fields using literal English detail text prefixed Examples: and short
+  localized placeholders (e.g. Rituals / e.g. 2nd / e.g. 8th). The app does not
+  automatically localize detail strings as it does placeholders. Latest visual
+  confirmation remains pending; do not mark the first hint package as passed.
   Canonical checks pass (83 definitions/nine validators); rebuilt test archive
   changes only three form partials and lang/en.json, with all 200 source files
   matching, CRC/checksums passing and 18,041 records byte-identical. Version
