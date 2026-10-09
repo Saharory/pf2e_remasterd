@@ -34,6 +34,11 @@ multiline controls and test package unchanged. Multiple-input persistence
 passes; small-edit persistence remains unresolved. Last installed-app version
 was checked on 2026-10-07, not rechecked for this report.
 
+Disposition on 2026-10-10: the user confirms the remaining small-edit saving
+bug belongs to the app developer and asks us to skip it pending a future app
+fix. Exclude it from PF2E system verification blockers and package workarounds.
+Keep the reproduction for reference; do not retest unless requested.
+
 Status on 2026-10-04: the user stopped native testing after the Encounter+
 developer confirmed a bug introduced by the recent app update, with a hotfix
 expected later that day. This diagnosis and release plan were relayed by the

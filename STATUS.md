@@ -209,8 +209,10 @@ Last updated: 2026-10-10
   Multiple-input persistence passes. The user then confirmed all three requested
   follow-up checks on 2026-10-10: clearing a directive remains empty after
   save/reopen, custom Description displays, and all three Tides spell links open
-  the correct spells. Small-edit persistence remains unresolved; original
-  weapon/domain link-opening was not included in this three-check confirmation.
+  the correct spells. Small-edit persistence is deferred to the app developer
+  at the user's explicit request on 2026-10-10; exclude it from system fixes
+  and native verification blockers. Original weapon/domain links passed later
+  as recorded below.
   Eight deity conversion cases pass (48 total); focused editability and canonical
   checks pass (83 definitions, nine validators). Verified latest test package
   changes `deities.json` and the two deity views, adding only the new partial;
@@ -801,7 +803,8 @@ Last updated: 2026-10-10
   New custom spell manual loading also passes.
   Hazard/vehicle immunity population/add/edit/delete/display/save also passes.
   Deity directive clearing, custom Description display, and all three Tides
-  spell links also pass on 2026-10-10. Small-edit saving remains unresolved.
+  spell links also pass on 2026-10-10. Small-edit saving is an app issue deferred
+  to its developer at the user's request; it does not block system verification.
   Empty-item category field visibility/immediate switching also passes on
   2026-10-10. Special-sense mechanics also pass.
   Reference headings, custom acuity references and standard automatic links
@@ -815,10 +818,11 @@ Last updated: 2026-10-10
   pass on 2026-10-10. Temporary Character population/edits across all four tabs
   and save/reopen also pass. Older custom-spell duration compatibility is
   unavailable: the user reports no older custom record on 2026-10-10. Older
-  saved character compatibility remains unverified separately. Next focused
-  test: single-letter and selected-text paste persistence in deity directives,
-  the remaining reported editor save failure. The recorded Tides source
-  completeness follow-up also remains open. No release approval. Source checks alone do not
+  saved character compatibility remains unverified separately. The user
+  explicitly excludes single-letter/selected-text paste saving from our scope:
+  it is an app-developer bug scheduled for a future fix. Do not retest or add
+  system workarounds for it unless requested. Next system follow-up: audit the
+  recorded Tides import-completeness gap. No release approval. Source checks alone do not
   establish native passes. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream
