@@ -191,6 +191,9 @@ Last updated: 2026-10-10
   Suggestion matches both the structured source and local Foundry ORC record
   `../foundry-pf2e/packs/pf2e/deities/covenants/the-tides-of-chaos.json` (Shining
   Kingdoms, p.23). Its three entries now link to the corresponding core spells.
+  The user approved the latest layout/presentation on 2026-10-10 ("looks good").
+  This confirms the multiline/ordinal appearance; individual persistence,
+  clearing, custom Description, and link-opening checks remain pending.
   Eight deity conversion cases pass (48 total); focused editability and canonical
   checks pass (83 definitions, nine validators). Verified latest test package
   changes `deities.json` and the two deity views, adding only the new partial;
@@ -206,8 +209,8 @@ Last updated: 2026-10-10
   keep their old description text; no active user-record migration is included.
   Add a custom Description line and
   confirm it displays. Check original weapon/domain/spell links still open.
-  Also check fresh The Tides of Chaos's Cleric Spells shows 1st/2nd/5th and all
-  three links open the expected spells.
+  The ranked-label appearance is approved; check that all three Tides spell
+  links open the expected spells. Do not repeat the approved visual layout.
   Source-completeness follow-up: comparison with the local Foundry record also
   indicates missing non-spell Tides metadata in the structured import (concerns,
   directives, divine attributes, favored weapon, sanctification options).
