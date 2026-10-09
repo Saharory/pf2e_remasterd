@@ -371,6 +371,15 @@ class DeityDisplayTests(unittest.TestCase):
         # Publisher conflict and unverified source differences remain unchanged.
         self.assertEqual(deities["Rokoga Gin (The World Walker)"]["data"]["sanctificationOptions"], [])
 
+    def test_divine_skill_array_is_editable_without_losing_values(self) -> None:
+        deity = {"kind": "Deity", "data": {"divineSkill": ["stealth"]}}
+        configure_deity_editor_data(deity)
+        self.assertEqual(deity["data"]["divineSkill"], "stealth")
+        self.assertFalse(configure_deity_editor_data(deity))
+        deity["data"]["divineSkill"] = ["stealth", "deception"]
+        configure_deity_editor_data(deity)
+        self.assertEqual(deity["data"]["divineSkill"], "stealth, deception")
+
     def test_sanctification_sentence_and_clearing_are_authoritative(self) -> None:
         deity = {"kind": "Deity", "data": {"sanctification": "unholy", "sanctificationOptions": ["unholy"], "sanctificationText": "Must choose unholy"}}
         configure_deity_editor_data(deity)

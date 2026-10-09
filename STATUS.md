@@ -41,7 +41,7 @@ Last updated: 2026-10-10
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `380554ab45d017a5191f67a5effa0ec8c05369a27e17fa0c31492837398b4713`.
+  SHA-256: `c407321400ee33a53fffa90b59558b6e13b59873f5eff98a8a1fe75b3d55e40c`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -296,6 +296,27 @@ Last updated: 2026-10-10
   Angazhan/Ydersius values, Asmodeus Any/notes; edit attributes, notes and
   sanctification sentence, save/reopen and confirm live preview updates. Clear
   sanctification and verify old values do not return.
+- Deity benefit links: source complete on 2026-10-10 after the user reported
+  missing Divine Attribute and Divine Skill links; native confirmation pending.
+  Both heading labels now link to Player Core's Attribute Modifier overview /
+  Skills rule. The six named attribute values automatically link to that
+  packaged overview (no invented individual attribute pages); Any stays a
+  special unlinked choice. All 17 divine skills link to their respective
+  Player Core skill pages. Lookup tables use current lowercase values, so
+  edited values link correctly without rebuilding reference caches. Unknown
+  custom text retains its plain fallback and existing matching source references
+  remain authoritative. Tides' one-element divineSkill array is normalized to
+  the text field's scalar by deity_editor_data; the workspace source converter
+  also emits scalar skill text while preserving multiple values.
+  The maintained suite checks all destinations exist, six/17 option coverage,
+  both live views and scalar/array preservation. Conversion tests total 51;
+  focused editability and canonical checks pass (83 definitions/nine validators).
+  Verified test archive changes only deities.json, types.json and the two
+  deity views; CRC/checksums and all 200 source matches pass, 18,041 records
+  remain and version stays 0.9.01. No push/release.
+  Native follow-up: attribute/skill heading links,
+  individual skill destinations, edited skills and Any display, alongside the
+  restored deity-field/save/clear checks above.
 - Scalar-list regression: source repair complete on 2026-10-07; the hazard /
   vehicle native retest passes (user: "all good"). The user reported imported immunities visible in the parent summary
   but an empty inner list before editing. Published hazard/vehicle data is

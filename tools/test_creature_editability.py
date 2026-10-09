@@ -981,6 +981,21 @@ def main() -> int:
     for preview in (deity_html, deity_stats):
         if "data.deitySanctificationFormat == 'text'" not in preview:
             raise SystemExit("cleared sanctification prose falls back to stale legacy values")
+    skill_routes = type_definitions["SkillReference"]
+    if set(skill_routes) != set(type_definitions["Skill"]):
+        raise SystemExit("every divine skill needs its own rule route")
+    published_rules = {"/rule/" + row["slug"] for row in records("rules.json")}
+    for route in [*skill_routes.values(), *type_definitions["DeityAttributeReference"].values()]:
+        if route not in published_rules:
+            raise SystemExit(f"deity benefit link is missing from the package: {route}")
+    if set(type_definitions["DeityAttributeReference"]) != set(type_definitions["DeityAttribute"]) - {"any"}:
+        raise SystemExit("attribute links must cover the six attributes and preserve Any as a special choice")
+    for preview in (deity_html, deity_stats):
+        for lookup in ("valueMap: 'DeityAttributeReference'", "valueMap: 'SkillReference'"):
+            if lookup not in preview:
+                raise SystemExit(f"deity preview is missing live benefit links: {lookup}")
+        if "/rule/attribute-modifier-rules-3289" not in preview or "/rule/skills-rules-2276" not in preview:
+            raise SystemExit("deity benefit headings are missing quick links")
     for cell in re.findall(r"<td>(.*?)</td>", deity_html, re.S):
         if "for value in data." in cell:
             if cell.count("{% markdown -%}") != 1 or cell.count("{% endmarkdown %}") != 1 or "|md" in cell:

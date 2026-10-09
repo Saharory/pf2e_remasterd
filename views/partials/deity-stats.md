@@ -4,7 +4,7 @@
 
 {% if data.deityDirectiveFormat == 'text' or data.anathemaText != nil %}{% if data.anathemaText %}**Anathema** {{data.anathemaText}}{% endif %}{% else %}{% if data.anathema %}**Anathema** {% for value in data.anathema %}{% if value in data.deityReferenceKeys.anathema %}{% for reference in data.deityReferences.anathema %}{% if reference.value == value %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{value}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}{% endif %}
 
-{% if data.divineAttribute %}**Divine Attribute** {% for value in data.divineAttribute %}{% if value in data.deityReferenceKeys.divineAttribute %}{% for reference in data.deityReferences.divineAttribute %}{% if reference.value == value %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{value|map: 'DeityAttribute'}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}
+{% if data.divineAttribute %}[**Divine Attribute**](/rule/attribute-modifier-rules-3289) {% for value in data.divineAttribute %}{% if value in data.deityReferenceKeys.divineAttribute %}{% for reference in data.deityReferences.divineAttribute %}{% if reference.value == value %}{{reference.text}}{% endif %}{% endfor %}{% else %}{% set attributeName %}{{value|lowercase}}{% endset %}{% set attributeRoute %}{{attributeName|valueMap: 'DeityAttributeReference'}}{% endset %}{% if attributeRoute and attributeRoute != attributeName %}[{{value|map: 'DeityAttribute'}}](<{{attributeRoute}}>){% else %}{{value|map: 'DeityAttribute'}}{% endif %}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}
 
 {% if data.divineAttributeNotes %}**Divine Attribute Notes** {{data.divineAttributeNotes}}{% endif %}
 
@@ -15,7 +15,7 @@
 
 {% endif %}{% endif %}
 
-{% if data.divineSkill %}**Divine Skill** {% if data.divineSkill in data.deityReferenceKeys.divineSkill %}{% for reference in data.deityReferences.divineSkill %}{% if reference.value == data.divineSkill %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{data.divineSkill|map: 'Skill'}}{% endif %}{% endif %}
+{% if data.divineSkill %}[**Divine Skill**](/rule/skills-rules-2276) {% if data.divineSkill in data.deityReferenceKeys.divineSkill %}{% for reference in data.deityReferences.divineSkill %}{% if reference.value == data.divineSkill %}{{reference.text}}{% endif %}{% endfor %}{% else %}{% set skillName %}{{data.divineSkill|lowercase}}{% endset %}{% set skillRoute %}{{skillName|valueMap: 'SkillReference'}}{% endset %}{% if skillRoute and skillRoute != skillName %}[{{data.divineSkill|map: 'Skill'}}](<{{skillRoute}}>){% else %}{{data.divineSkill|map: 'Skill'}}{% endif %}{% endif %}{% endif %}
 
 {% if data.favoredWeapon %}**Favored Weapon** {% for value in data.favoredWeapon %}{% if value in data.deityReferenceKeys.favoredWeapon %}{% for reference in data.deityReferences.favoredWeapon %}{% if reference.value == value %}{{reference.text}}{% endif %}{% endfor %}{% else %}{{value}}{% endif %}{% if not forloop.last %}; {% endif %}{% endfor %}{% endif %}
 

@@ -90,6 +90,9 @@ def configure_deity_editor_data(entity: dict[str, Any]) -> bool:
         return False
     data = entity["data"]
     before = json.dumps(entity, sort_keys=True)
+    # Native skill text fields need a scalar; older imports may use a list.
+    if isinstance(data.get("divineSkill"), list):
+        data["divineSkill"] = ", ".join(str(value) for value in data["divineSkill"])
     # One legacy source uses rank -> spell rather than the editor's string list.
     if isinstance(data.get("spells"), dict):
         data["spells"] = [f"{rank}: {spell}" for rank, spell in data["spells"].items()]
