@@ -568,9 +568,10 @@ Last updated: 2026-10-10
   matches pass. Latest archive changes only seven form partials; all 18,041
   records and views remain byte-identical to the preceding test archive.
   Version remains 0.9.01; latest test package rebuilt, no push or release.
-  Next native check: visible Reference heading, custom acuity reference
-  selection/save/reopen/link, and hiding the custom-reference section when
-  switching to each standard acuity (whose link follows the new choice).
+  Native confirmation on 2026-10-10: the user reports all requested checks
+  passed, including the visible Reference heading, custom acuity reference
+  selection/save/reopen/link, and hiding its section when switching to standard
+  acuities with the correct automatic link. Do not repeat without a regression.
 - Creature editor: lossless structured controls expose special senses, inventory
   item references/quantities, immunity references/custom text, rituals, named
   Lore inside Skills, and Recall Knowledge subject/skill pairs. Language and
@@ -738,7 +739,8 @@ Last updated: 2026-10-10
   spell links also pass on 2026-10-10. Small-edit saving remains unresolved.
   Empty-item category field visibility/immediate switching also passes on
   2026-10-10. Special-sense mechanics also pass.
-  Next focused test: reference placeholders and automatic acuity links above. Remaining deity
+  Reference headings, custom acuity references and standard automatic links
+  also pass on 2026-10-10. Next focused test: empty creature Immunities. Remaining deity
   checks include original weapon/domain links. Verify redraw and save/reopen;
   source checks alone do not establish native passes. Remaining
   earlier coverage: empty Immunities/Rituals,
