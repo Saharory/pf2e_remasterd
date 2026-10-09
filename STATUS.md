@@ -2,10 +2,22 @@
 
 Last updated: 2026-10-10
 
+- Release 0.9.02 prepared under explicit user authorization, with one version
+  bump for the push. Source checks pass (83 definitions/nine validators) and
+  installer inspection passes (18,041 records, one installer). All 200 packaged
+  source files match; CRC/checksums pass. Main and test distribution artifacts
+  now contain the identical release package. Against the last native-verified
+  0.9.01 package, only system/manifest version metadata and each record's
+  systemVersion change; every record's remaining fields are identical.
+  The existing 0.9.02 duration migration becomes active through the approved
+  version. Next release action: push the release commit/tag together, publish
+  v0.9.02 with four artifacts, then verify uploaded bytes. No extra version
+  bump or second source push is planned.
+
 - Native verification milestone: all requested available editor/reference checks
   pass as of 2026-10-10. Older-record checks are unavailable/unverified, the
   app small-edit bug is excluded at the user's request, and two deity source
-  questions remain documented separately. Release preparation is not approved.
+  questions remain documented separately. The user authorized pushing and publishing version 0.9.02, with one version bump per push; release checks are in progress.
 
 - The previously reported **Trade Death for Life** and **Tree of Life and
   Death** import issues were investigated here on 2026-10-07 after the user
@@ -13,9 +25,13 @@ Last updated: 2026-10-10
   shared import repair below is source-complete; the user approved its native
   presentation and subsequent field-edit/save/reopen checks on 2026-10-07.
 - Branch: `remaster-community-base`
-- Package version: `0.9.01`. The user authorized pushing the completed editor
+- Package version: `0.9.02` (approved release bump). The user authorized pushing the completed editor
   work and replacing the main dist package on 2026-10-05. Version changes,
-  tags, and release publication have not been requested.
+  tags, and release publication were previously deferred. On 2026-10-10 the
+  user authorized push/release and clarified the final version is 0.9.02,
+  with one bump per push. The attempted 1.701.8 version/migration rename was
+  fully reverted before commit or push. migrations/0.9.02.js remains at its
+  original path and becomes active with this release.
 - Requested baseline push completed on 2026-10-05: `4ea2835` is on
   `origin/remaster-community-base`, including the saved editor design roadmap.
   The subsequent editor work is included in the newer user-authorized push.
@@ -46,7 +62,7 @@ Last updated: 2026-10-10
   remains `0.9.01`. The three older named test systems were removed after the
   replacement passed verification; this is the only `.system` in `dist/test`.
   Companion manifest, summary, and checksums were refreshed.
-  SHA-256: `72018aacf9971ae687b973a30faf6b5913128fc293aaf79ecb9f2a0d60282299`.
+  SHA-256: `40ee27d70fead140ac0040c193cbd3a6f44e86504085a4bb90cc479943547581`.
 - Main distribution package: `dist/pf2e-remaster.system` was replaced on
   2026-10-05 with the verified latest test package above, as requested. The
   manifest, release summary, and checksums were replaced alongside it. The
@@ -938,8 +954,8 @@ Last updated: 2026-10-10
   a regression. Older-record compatibility lacks native fixtures and is not
   claimed passed. Confirmed deity omissions are repaired; unverified Essence
   Dancers and conflicting Rokoga Gin remain separate content-source questions.
-  Release preparation awaits explicit user approval; no version bump, push,
-  tag or publication is authorized. Source checks alone do not
+  On 2026-10-10 the user authorized push/release while explicitly retaining
+  version 0.9.02, with one version bump for this push. Release checks are in progress. Source checks alone do not
   establish native passes. Avoid repeating confirmed
   passes unless a new regression or scope change warrants it.
 - Current product priority: continue the complete data audit and review upstream

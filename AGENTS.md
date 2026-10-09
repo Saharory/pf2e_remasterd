@@ -27,3 +27,7 @@ current handoff; read only the one relevant to the task.
   package build does not prove app behavior or authorize a release/version bump.
 - Do not bump versions, push, or publish until requested. Commit completed local
   work and record pending native-app verification in `STATUS.md`.
+
+- Versioning: one version bump per authorized push, as specified by the user.
+  Do not increment repeatedly during testing or release preparation; use the
+  user-approved version for the push. The 2026-10-10 release is 0.9.02.
